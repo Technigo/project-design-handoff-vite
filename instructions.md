@@ -34,4 +34,6 @@ After the design handoff you will hopefully have a good idea on how to move forw
 
 ### Design Recommendations
 
-You'll be handed a design from a fellow UX student at Technigo. It's important to stick to this design when you're building your project. If you're looking for an easy way to style your React project, give styled-components or tailwindCSS a try. They're both great tools that can help you bring the design to life without a lot of fuss. Happy coding!
+You'll be handed a design from a fellow UX student at Technigo. It's important to stick to this design when you're building your project. If you're looking for an easy way to style your React project, give styled-components or tailwindCSS a try. They're both great tools that can help you bring the design to life without a lot of fuss.
+
+Happy coding!
