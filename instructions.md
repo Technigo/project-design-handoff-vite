@@ -1,16 +1,18 @@
 # Instructions
 
-## Survey
+## Design Handoff Project - UX Design Collaboration Project
 
-This week we will be practicing React state and controlled forms by making a Typeform-like product. Your completed project should consist of at least 3 questions that need to be answered by users. When the user presses submit, they should see a summary of their answers.
+This week, you will experience a design hand-off from a UX-design student and work on transforming that design into code. It is a landing page for a fitness club [’Gym”, “Yoga Studio”] and you will build it in React. We want you to think about how you want to structure the site and what components to create. Your mission is to follow the designs thoroughly, but keep in mind that the designs are made from students that are, like you, learning a new profession. Interpret the design kindly.
+
+This is a perfect opportunity to explore fun npm packages to create an image carousel or make some fun animations if that’s included in the design.
 
 ### Context:
 
-You can choose what you'd like your survey to be about. Perhaps you'd like to ask other developers what they think about different technologies, or perhaps you'd like to ask people about their favourite foods or hobbies. It's completely up to you.
+This is a special week for all of us. It’s the first time we get the chance to collaborate with our UX design students 🤩 Everything will not run smoothly, but honestly - it doesn’t in a real work setting either. We will do this together 💪
 
-Once a user has “submitted” the survey you created they should see a summary. It doesn't actually need to be submitted anywhere - the focus here is to practice using React state and controlling forms.
-
-You don't have to use a lot of components to start with when doing this project, see that as more of a stretch goal…
+- Details do matter. Assume that all design decisions are intentional.
+- Be honest about any constraints. Try to implement the design, but if there's something that you feel you really can't do - speak up.
+- Since you will not be able to actually build the project until you've seen the design, we've put together a list of the elements that the UX designers have gotten in _their_ project brief. If you want to get a head start before the design handoff, you could start by having a look at that and create some components.
 
 ### Requirements:
 
