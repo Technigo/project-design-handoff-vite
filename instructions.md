@@ -25,10 +25,11 @@ After the design handoff you will hopefully have a good idea on how to move forw
 
 ### Requirements:
 
-- Your survey should consist of at least 3 questions.
-- At least one question should use radio buttons.
-- At least one question should use a select dropdown.
-- There should be a submit button. When pressed your app should hide the input form and show a summary of the user's submissions.
+- The app should be built with React
+- Your app should have reusable components
+- Your app should look as close as possible to the given design
+- Your app's content will be fetched globally via `zustand` or React's useContext.
+- Your app's content will be translated using `react-i18next` into 2 languages. - English & a language of your team's selection -
 
 ### Your page should be responsive:
 
