@@ -21,6 +21,8 @@ This is a special week for all of us. It’s the first time we get the chance to
   - A footer with relevant information
   - Any other information or building blocks you want to add to your landing page
 
+After the design handoff you will hopefully have a good idea on how to move forward with the design. Use your knowledge of React and feel free to use any npm packages that can make life easier for you. Remember to have fun 🥳
+
 ### Requirements:
 
 - Your survey should consist of at least 3 questions.
