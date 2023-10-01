@@ -27,16 +27,11 @@ After the design handoff you will hopefully have a good idea on how to move forw
 
 - The app should be built with React
 - Your app should have reusable components
+- Your app should be responsive
 - Your app should look as close as possible to the given design
 - Your app's content will be fetched globally via `zustand` or React's useContext.
 - Your app's content will be translated using `react-i18next` into 2 languages. - English & a language of your team's selection -
 
-### Your page should be responsive:
+### Design Recommendations
 
-- Adapting to the different viewports
-
-### Design
-
-How you design your page is up to you, but take accessibility into account when you are styling your form elements - so inputs should have labels and should be easily readable and usable. We STRONGLY recommend having some kind of design or sketch before starting to code.
-
-Feel free to use other survey tools such as Typeform, Google Forms as inspiration. Or you can check out Dribbble, Behance or Pinterest.
+You'll be handed a design from a fellow UX student at Technigo. It's important to stick to this design when you're building your project. If you're looking for an easy way to style your React project, give styled-components or tailwindCSS a try. They're both great tools that can help you bring the design to life without a lot of fuss. Happy coding!
