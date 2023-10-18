@@ -23,7 +23,6 @@ After the design handoff, you will hopefully have a good idea of how to move for
 - Your app should have reusable components
 - Your app should be responsive
 - Your app should look as close as possible to the given design
-- Your app's content will be fetched globally via `zustand` or React's `useContext`.
 - Your app's content will be translated using `react-i18next` into 2 languages. - English & a language of your team's selection -
 
 ## Design Recommendations
