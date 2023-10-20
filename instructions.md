@@ -9,7 +9,7 @@ This is a special week for all of us. It’s the first time we get the chance to
 - Be honest about any constraints. Try to implement the design, but if there's something that you feel you really can't do - speak up.
 - Since you will not be able to actually build the project until you've seen the design, we've put together a list of the elements that the UX designers have gotten in _their_ project brief. If you want to get a head start before the design handoff, you could start by having a look at that and create some components:
   - A header section with a logotype and navigation
-  - A main hero section and the rest of the page with all information needed for the user to register and key value preposition
+  - A main [hero](https://www.optimizely.com/optimization-glossary/hero-image/) section and the rest of the page with all information needed for the user to register and key value preposition
   - UX copy (no lorem ipsum this time)
   - A form for user input (to register/sign up for the class)
   - Form states (active, passive, filled, errors)
