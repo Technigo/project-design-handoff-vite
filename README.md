@@ -4,27 +4,19 @@
   </a>
 </h1>
 
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The task was to, in cooperation with a UX Design Student, transform a design for a fitness club into code using React and several third-party libraries of our choice. The site also needed to be translated into at least one other language.
 
 ## Getting Started with the Project
 
-### Dependency Installation & Startup Development Server
+### Dependency Installation
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
+Since I didn't have the design when I started on the project, I first installed all the required dependencies, as well as the dependencies for Styled Components, react-i18next and Day.js. I chose to work with Day.js instead of Moment.js for two reasons. First, I have already tried Moment.js at an other time, and second, I wanted to try and keep the file size of the project to a minimum.
 
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
+### Deployment to Netlify
 
-```bash
-npm i && code . && npm run dev
-```
+I deployed the project right away to allow the UX Designer Linnea Pettersson to view it from her end, in review purposes. The link can be found further down.
 
 ### The Problem
 
@@ -32,10 +24,4 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+wellness-site-lyckholm-pettersson.netlify.app
