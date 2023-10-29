@@ -1,7 +1,7 @@
 
-import { Header } from "../src/Components/Header/Header"
-import { MainCont } from "../src/Components/MainCont/MainCont"
-import { Footer } from "../src/Components/Footer/Footer"
+import { Header } from "../src/components/Header/Header"
+import { MainCont } from "../src/components/MainCont/MainCont"
+import { Footer } from "../src/components/Footer/Footer"
 
 
 //Glöm inte att mounta MainCont och Footer här nedan!
