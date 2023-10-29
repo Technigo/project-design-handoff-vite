@@ -1,8 +1,14 @@
+/* .fullcontent {
+    margin-left: 112px;
+    margin-right: 112px;
+} */
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    
 }
 
 .image-group {
@@ -88,6 +94,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-top: 36px;
+    margin-bottom: 36px;
 }
 
 .frame2 {
@@ -110,8 +118,8 @@
     font-weight: 500;
     line-height: 100%;
     letter-spacing: -0.528px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .description2 p {
@@ -130,6 +138,8 @@
     font-weight: 400;
     line-height: 100%;
     letter-spacing: -0.88px;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 .card-container {
@@ -180,6 +190,7 @@
     font-weight: 400;
     line-height: normal;
     margin-right: 423px;
+    /* position: relative; */
 }
 
 @font-face {
@@ -196,10 +207,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* margin-right: 200px; */
 }
 
+
+
+
 .address {
-    width: 375.949px;
+    /* width: 375.949px; */
     flex-shrink: 0;
     color: var(--Dark, #0A142F);
     font-family: Assistant;
@@ -207,4 +222,142 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.tele {
+    /* width: 100.253px; */
+    flex-shrink: 0;
+    color: var(--Dark, #0A142F);
+font-family: Assistant;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+/* margin-left: -220px; */
+margin-top: 5px;
+margin-right: 73px;
+}
+
+.address-tele-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.tele-svg-container {
+    display: flex;
+    align-items: center;
+}
+
+.mail {
+    color: var(--Dark, #0A142F);
+font-family: Assistant;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-left: 34px;
+}
+
+.socialmediatitle {
+    width: 88.318px;
+    height: 15.064px;
+    flex-shrink: 0;
+    color: var(--Dark, #0A142F);
+font-family: Staatliches;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+opacity: 0.5;
+margin-left: -60px;
+margin-top: 30px;
+}
+
+.socialmedia-svg-container {
+    display: flex;
+    align-items: center; /* This will vertically center the text and the SVG */
+    gap: 10px; /* Adjust this value to set the space between the text and the SVG */
+}
+
+.socialmedia-icon {
+    margin-top: 30px;  /* Adjust this value to get the desired positioning */
+}
+
+.socialmedia-icons-container {
+    display: flex;
+    align-items: center; /* This will ensure vertical alignment */
+    gap: 10px; /* Optional: This creates some space between the icons */
+}
+
+.socialmedia-icon-new {
+    margin-top: 30px;  /* Optional: Adjust this value if you need to align this icon vertically with respect to the other icon */
+}
+
+.socialmedia-icon-new1{
+    margin-top: 30px;
+}
+
+.socialmedia-icon-new2 {
+    margin-top: 30px;
+}
+
+.socialmedia-icon-new3 {
+    margin-top: 30px;
+}
+
+.socialmedia-icon-new4 {
+    margin-top: 30px;
+}
+
+.socialmedia-icon-new5 {
+    margin-top: 30px;
+}
+
+.socialmedia-icon-new6 {
+    margin-top: 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    color: var(--Dark, #0A142F);
+font-family: Staatliches;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
+}
+
+.footer-text {
+    color: var(--Dark, #0A142F);
+font-family: Assistant;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+opacity: 0.5;
+}
+
+/* .icons-container {
+    margin-left: -400px;
+} */
+
+.icons-container {
+    position: absolute;
+    left: 10%;  
+    
+}
+
+.ep-icons-wrapper {
+    display: flex;
+    align-items: flex-start; /* Adjust alignment as needed */
+    justify-content: space-between;
+    width: 100%;
 }
