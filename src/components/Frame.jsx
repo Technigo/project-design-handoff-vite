@@ -6,7 +6,7 @@ import { NewFrame } from './NewFrame';
 import { StyledInfoText } from './StyledInfoText';
 import { NewDividingLine } from './NewDividingLine';
 import { Card } from './Card';
-import Rectangle30 from '../assets/Rectangle30.png'
+import { TestImageComponent } from './TestImageComponent';
 
 export const Frame = styled.div`
   display: flex;
@@ -38,10 +38,10 @@ export const FrameWithText = () => {
             </StyledInfoText>
             <NewDividingLine />
             <Card 
-              imagePath={Rectangle30}
               title="TECHNOLOGY EDGE"
               description="We take you from the rink to the lab. <br/> <br/> We offer Skatemill practice and analysis, VO2-max and VO2-peak measurements, lactate threshold or submax tests and iDXA body composition tests that will help us boost you to peak performance."
             />
+            <TestImageComponent />
         </Frame>
     )
 }

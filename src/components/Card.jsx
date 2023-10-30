@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Rectangle30 from '../assets/Rectangle30.png';
 
 const CardContainer = styled.div`
   display: flex;
@@ -15,7 +16,7 @@ const Image = styled.div`
   height: 220px;
   flex: 1 0 0;
   border-radius: 8px;
-  background: url(${props => props.imagePath}), lightgray -62.422px 0px / 212.58% 100% no-repeat;
+  background: url(${props => props.image}) no-repeat center/cover;
 `;
 
 const TextContainer = styled.div`
@@ -42,16 +43,17 @@ const Description = styled.div`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  white-space: pre-line;
 `;
 
-export const Card = ({ imagePath, title, description, isLast}) => {
+export const Card = ({ title, description, isLast}) => {
   return (
     <CardContainer>
         <InnerContainer>
-            <Image imagePath={imagePath} />
+            <Image image={Rectangle30} />
             <TextContainer>
               <Title isLast={isLast}>{title}</Title>
-              <Description>{description}</Description>
+              <Description dangerouslySetInnerHTML={{ __html: description }} />
             </TextContainer>
         </InnerContainer>
     </CardContainer>
