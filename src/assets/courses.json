@@ -1,0 +1,31 @@
+{
+  "courses": [
+    {
+      "id": "1",
+      "image": "/src/assets/icon/Illustration1.svg",
+      "alt": "preschool",
+      "course": "PreSchool",
+      "age": "age 3-5 (with adult)",
+      "time": "Thursdays 16.30-17.15 Sundays 09.00-10.00",
+      "teacher": "Lisanne"
+    },
+    {
+      "id": "2",
+      "image": "/src/assets/icon/Illustration1.svg",
+      "alt": "junior-elementary",
+      "course": "Elementary class F-2",
+      "age": "age 5-8",
+      "time": "Tuesdays 17.00-18.00 Sundays 10.00-11.00",
+      "teacher": "Ted"
+    },
+    {
+      "id": "3",
+      "image": "/src/assets/icon/Illustration1.svg",
+      "alt": "elementary",
+      "course": "Elementary class 3-5",
+      "age": "age 8-11",
+      "time": "Wednesdays 17.00-18.00 Sundays 14.00-15.00",
+      "teacher": "Kaya"
+    }
+  ]
+}

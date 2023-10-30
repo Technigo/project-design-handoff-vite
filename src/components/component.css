@@ -1,0 +1,29 @@
+.btnLight {
+  display: flex;
+  padding: 16px 64px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 45px;
+  border: 3px solid #494f59;
+  box-shadow: 4px 4px 4px 0px #4f2b39;
+  color: #494f59;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.btnDark {
+  display: flex;
+  padding: 11px 25px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  border-radius: 30px;
+  background: #4f2b39;
+  box-shadow: 2px 2px 0px 0px rgba(79, 43, 57, 0.5);
+}
