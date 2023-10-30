@@ -1,0 +1,23 @@
+[
+    {
+        "imageUrl": "https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imgageAlt": "Woman sitting on a mat in a yoga position.",
+        "id": "01",
+        "text": "Using yoga and meditation on a daily basis to improve your body and mind. Prepare to meet new experiences with renewed strenght, with soft movements.",
+        "heading": "8 weeks Sensing Yoga and meditation practice, includes videos and live classes, start 26/10, price 3400 SEK"
+    },
+    {
+        "imageUrl": "",
+        "imgageAlt": "Close-up picture of a hand on a knee in meditation.",
+        "id": "02", 
+        "text": "Meditation can help you reduce stress, sleep better and really get the recovery you need. It also helps you listen to your emotions and body to know when it’s time to slow down.",
+        "heading": "10 weeks meditation practice, includes videos and live classes, start 23/11, price 4300 SEK"
+    },
+    {
+        "imageUrl": "https://images.unsplash.com/photo-1613602025754-04e1b4a24156?auto=format&fit=crop&q=80&w=1022&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "imgageAlt": "Above perspective, picture of woman with locked hands.",
+        "id": "03",
+        "text": "Yin yoga course. Learn to relax and stretch your body with slow movement and static positions. Stress reducing and it helps you strengthen your mental health.",
+        "heading": "8 weeks Yon Yoga, includes videos and live classes, start 6/12, price 3400 SEK"
+    }
+]

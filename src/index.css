@@ -1,13 +1,39 @@
 :root {
+  /*colours!*/
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Nunito Sans", sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --black: #1d1c25;
+  --white: #FFFFFF;
+  --purplebright: #612E77;
+  --purplelight: #DCD3E0;
+  --yellowlight: #FDE6BA; 
+  --yellow: #FFD075; 
+
+  
+ 
+  --h2: ; 
+  --h3: ;
+  --p: "Readex Pro"; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+
+}
+
+img {
+  max-width: 100%;
+}
+
+.nav-bar {
+  background-color: var(--black);
+}
+.logo-img {
+  height: 40px;
 }
