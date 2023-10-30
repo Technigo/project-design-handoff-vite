@@ -1,8 +1,20 @@
+import { FollowUsIconsLight } from "../ReusableComponents/FollowUs/FollowUsIconsLight";
+import { Translation } from "../Translation/Translation";
+import { Copyright } from "./Copyright";
+
 export const Footer = () => {
   return (
-    <div>
-      <p>THIS WILL BE A FOOTER</p>
-      <p>Here you will perhaps see a logo and links</p>
-    </div>
+    <>
+      <div>
+        <FollowUsIconsLight />
+        <p>Terms & Conditions</p>
+        <p>Privacy</p>
+        <p>Accessibility</p>
+      </div>
+      <div className="language-copy">
+        <Translation />
+        <Copyright />
+      </div>
+    </>
   );
 };

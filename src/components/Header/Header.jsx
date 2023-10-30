@@ -1,8 +1,8 @@
 export const Header = () => {
   return (
     <div>
-      <p>THIS WILL BE A HEADER</p>
-      <p>Here you will see a logo and links</p>
+      <p>saddle up</p>
+      <p>yoga studio</p>
 
       {/* <header>
       <nav class="navbar">
