@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import { Frame } from './Frame';
+import { FrameWithText } from './Frame';
+// import { NewFrame } from './NewFrame';
 
 export const Wrapper = styled.div`
   width: 430px;
@@ -10,7 +11,8 @@ export const Wrapper = styled.div`
 export const WrapperWithFrame = () => {
     return (
         <Wrapper>
-            <Frame />
+            <FrameWithText />
+            {/* <NewFrame /> */}
         </Wrapper>
     )
 }
