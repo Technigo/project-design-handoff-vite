@@ -1,3 +1,10 @@
+import { TranslationComponent } from "./components/TranslationComponent";
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <>
+   <h1>Find me in src/app.jsx!</h1>
+   <TranslationComponent />
+   </>
+  )
 };
