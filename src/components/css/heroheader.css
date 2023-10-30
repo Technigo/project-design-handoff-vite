@@ -1,0 +1,48 @@
+.heroheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.heroheader img {
+    border-radius: 30px 0px 0px 30px;
+    width: 860px;
+    margin: 0;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+    background-color: #525B64;
+    border-radius: 0px 30px 30px 0px;
+    width: 400px;
+    padding: 10px;
+}
+
+.heroheader h1 {
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #F2ECE4;
+    font-weight: 500;
+    margin: 0;
+    padding-top: 200px;
+    padding-bottom: 10px;
+}
+
+.heroheader p {
+    color: #F2ECE4;
+    text-align: center;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+}
