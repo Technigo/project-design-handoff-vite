@@ -1,4 +1,8 @@
-.workout {}
+.workout {
+    width: 90%;
+    margin-left: 80px;
+    margin-top: 100px;
+}
 
 .workout h1 {
     color: #3C3C3C;
@@ -10,6 +14,26 @@
     line-height: normal;
     text-transform: uppercase;
     text-align: left;
+    margin: 0;
+}
+
+.workout h3 {
+    color: #000;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.workout p {
+    color: #000;
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .workout-links {
@@ -35,6 +59,11 @@
     text-decoration: underline;
 }
 
+.workout a.active {
+    text-decoration: underline;
+    /* Style for the active link */
+}
+
 .workout img {
     border-radius: 20px;
     width: 292px;
@@ -42,8 +71,19 @@
     padding: 0;
 }
 
+.workout-images-container {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
 .workout-images {
     display: flex;
-    flex-direction: row;
     gap: 32px;
+}
+
+.workout-item {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
 }

@@ -19,6 +19,26 @@
             "image": "/glute.png",
             "name": "GLUTE BUILDER",
             "minutes": "20 min"
+        },
+        {
+            "image": "/hiit.png",
+            "name": "HIIT",
+            "minutes": "10 min"
+        },
+        {
+            "image": "/lowimpact.png",
+            "name": "LOW IMPACT CARDO",
+            "minutes": "15 min"
+        },
+        {
+            "image": "/band.png",
+            "name": "BAND RESISTANCE",
+            "minutes": "7 min"
+        },
+        {
+            "image": "/glute.png",
+            "name": "GLUTE BUILDER",
+            "minutes": "20 min"
         }
     ]
 }

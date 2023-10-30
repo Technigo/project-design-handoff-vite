@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./css/workout.css";
+import workoutsData from "../data/workouts.json";
 
 const Workout = () => {
+    const [workouts, setWorkouts] = useState([]);
+
+    useEffect(() => {
+        // Set the workouts data from the imported JSON
+        setWorkouts(workoutsData.workouts);
+    }, []);
 
     return (
         <div className="workout">
             <h1>Workout</h1>
             <div className='workout-links'>
-                <a href="#">Cardio</a>
+                <a href="#" className='active'>Cardio</a>
                 <a href="#">Hiit</a>
                 <a href="#">Yoga</a>
                 <a href="#">Glutes</a>
@@ -16,14 +23,19 @@ const Workout = () => {
                 <a href="#">Zumba</a>
                 <a href="#">Stretch</a>
             </div>
-            <div className='workout-images'>
-                <img src="/hiit.png" alt="HIIT" />
-                <img src="/lowimpact.png" alt="Low Impact" />
-                <img src="/band.png" alt="Band Workout" />
-                <img src="/glute.png" alt="Glute Workout" />
+            <div className="workout-images-container">
+                <div className='workout-images'>
+                    {workouts.map((workout, index) => (
+                        <div key={index} className="workout-item">
+                            <img src={workout.image} alt="workout" />
+                            <h3>{workout.name}</h3>
+                            <p>{workout.minutes}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
 }
 
-export default Workout; 
+export default Workout;
