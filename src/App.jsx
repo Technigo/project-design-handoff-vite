@@ -1,3 +1,18 @@
+
+
+import { BrowserRouter, Routes } from "react-router-dom";
+import { routes } from "./Routes/routes";
+
 export const App = () => {
-  return <div>Hello World!</div>;
+  return (
+    <>
+     <BrowserRouter>
+     
+     <Routes>
+      {routes}
+     </Routes>
+
+     </BrowserRouter>
+    </>
+  );
 };

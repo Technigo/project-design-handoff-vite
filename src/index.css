@@ -5,9 +5,16 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* body {
+  background-image: url("src/assets/Images/space-background.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+} */
