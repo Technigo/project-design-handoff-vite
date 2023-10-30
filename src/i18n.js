@@ -17,6 +17,11 @@ const resources = {
       welcome: "Välkommen till vår webbplats!",
     },
   },
+  de: {
+    translation: {
+      welcome: "Willkommen auf unserer Webseite!",
+    },
+  },
 };
 
 i18n.use(initReactI18next).init({
