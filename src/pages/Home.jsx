@@ -15,6 +15,7 @@ export const Home = () => {
             <Courses />
             <Membership />
             <Instagram />
+            <Footer />
         </>
     );
 };

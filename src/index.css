@@ -1,39 +1,78 @@
 :root {
-  /*colours!*/
-  margin: 0;
-  font-family: "Nunito Sans", sans-serif; 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  --black: #1d1c25;
-  --white: #FFFFFF;
-  --purplebright: #612E77;
-  --purplelight: #DCD3E0;
-  --yellowlight: #FDE6BA; 
-  --yellow: #FFD075; 
+    /*colours!*/
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    --black: #1d1c25;
+    --white: #ffffff;
+    --purplebright: #612e77;
+    --purplelight: #dcd3e0;
+    --yellowlight: #fde6ba;
+    --yellow: #ffd075;
 
-  
- 
-  --h2: ; 
-  --h3: ;
-  --p: "Readex Pro"; 
+    --h2: ;
+    --h3: ;
+    --p: "Readex Pro";
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: "Courier New", monospace;
 }
 
-h1 {
-
+*{
+  margin: 0;
+  padding: 0;
+  font-size: 17px;
+  color: var(--black);
 }
 
 img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .nav-bar {
-  background-color: var(--black);
+    background-color: var(--black);
 }
 .logo-img {
-  height: 40px;
+    height: 40px;
+}
+
+.hero-section {
+  background-color: var(--purplebright);
+  color: var(--white)
+}
+
+.hero-section img {
+  /*MAKE IT OVAL*/
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+ font-size: 32px;
+ color: var(--purplebright);
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.p-bold {
+  font-weight: 600;
+}
+
+
+
+.instagram-section {
+  background-color: var(--purplebright);
+  color: var(--white) 
+}
+
+.copyright {
+  background-color: var(--purplebright);
+  color: var(--white)
 }
