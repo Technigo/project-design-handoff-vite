@@ -6,7 +6,7 @@
   color: white;
 }
 
-.main-wrapper {
+main {
   background-image: url(/public/backroundGF.png);
   background-repeat: repeat;
 }

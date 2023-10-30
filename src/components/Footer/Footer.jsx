@@ -1,6 +1,6 @@
 //Mounted in App.jsx
 
-import { Logo } from "../Reusable comp/Logo"
+import { Logo } from "../ReusableComp/Logo"
 
 export const Footer = () => {
     return (
