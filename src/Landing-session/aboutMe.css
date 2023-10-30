@@ -1,0 +1,16 @@
+.aboutMe {
+  display: flex;
+  padding: 10px 23px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  border-radius: 45px;
+  border: 1px solid rgba(73, 79, 89, 0.5);
+  background: #efdfc6;
+  margin-top: 1em;
+}
+
+.about h1 {
+  font-size: 0.8em;
+}

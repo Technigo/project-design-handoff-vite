@@ -1,6 +1,4 @@
 .intro {
-  height: 428px;
-  align-self: stretch;
   border-radius: 30px;
   background: url(/src/assets/img/mon_kid_yoga.avif),
     lightgray 50% / cover no-repeat;
@@ -10,7 +8,7 @@
   color: #000;
   text-align: center;
   font-family: Open Sans;
-  font-size: 48px;
+  font-size: 3em;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

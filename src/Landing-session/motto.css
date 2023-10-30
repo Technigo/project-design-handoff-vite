@@ -1,0 +1,17 @@
+.motto-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.motto {
+  border-radius: 30px;
+  background: url(/src/assets/img/kid_back.jpg), lightgray 50% / cover no-repeat;
+}
+
+.motto p {
+  margin: 0.5em;
+}
+.circle-divider {
+  margin: 1em 0 1em 0;
+  width: 60%;
+}

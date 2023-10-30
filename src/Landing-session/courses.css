@@ -1,3 +1,29 @@
 .course-info {
   display: flex;
+  flex-direction: column;
+  padding: 1em 0px;
+  margin-bottom: 2em;
+  align-items: center;
+  text-align: center;
+  border-radius: 45px;
+  border: 1px solid rgba(73, 79, 89, 0.5);
+  background: #efdfc6;
+  /* Sprint 3 */
+  box-shadow: 8px 8px 0px 0px rgba(239, 223, 198, 0.6);
+}
+
+.course-info h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.logo {
+  width: 30%;
+}
+
+.readMore {
+  color: #4f2b39;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 600;
 }
