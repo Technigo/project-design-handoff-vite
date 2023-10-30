@@ -1,3 +1,4 @@
+import { LottieComponent } from "./components/LottieComponent";
 import { TranslationComponent } from "./components/TranslationComponent";
 
 export const App = () => {
@@ -5,6 +6,7 @@ export const App = () => {
     <>
    <h1>Find me in src/app.jsx!</h1>
    <TranslationComponent />
+   <LottieComponent />
    </>
   )
 };
