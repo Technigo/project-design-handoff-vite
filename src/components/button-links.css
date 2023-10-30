@@ -1,0 +1,71 @@
+.btn-style, a-style {
+    font-family: var(--main-font);
+    font-weight: 300;
+    font-size: var(--buttons-captions-font-size);
+    padding: 8px 14px;
+    border-radius: var(--button-border-radius);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+.brown {
+    background-color: var(--brown);
+    color: var(--primary-white);
+}
+  
+.brown:hover {
+    background-color: var(--dark-beige);
+    color: var(--primary-white);
+}
+
+.green {
+    background-color: var(--dark-green);
+    color: var(--primary-white);
+}
+  
+.green:hover {
+    background-color: var(--brown);
+    color: var(--primary-white);
+}
+
+.grey {
+    background-color: var(--light-beige);
+    color: var(--primary-black);
+}
+  
+.grey:hover {
+    background-color: var(--dark-beige);
+    color: var(--primary-white);
+}
+
+.brown-to-green {
+    background-color: var(--brown);
+    color: var(--primary-white);
+}
+
+.brown-to-green:hover {
+    background-color: var(--light-green);
+    color: var(--primary-white);
+}
+
+.green-outlined {
+    background-color: var(--darg-green);
+    color: var(--primary-white);
+    border: 1px solid var(--dark-green);
+}
+
+.green-outlined:hover {
+    background-color: var(--primary-white);
+    color: var(--dark-green);
+    border: 1px solid var(--dark-green);
+}
+
+.a-style {
+    display: flex;
+    align-items: center;
+}
+
+.a-style:hover {
+    font-weight: 700;
+}

@@ -1,9 +1,14 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* ------------ Font Imports ------------ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@font-face {font-family: 'Fathan'; src:"./assets/fonts/Fathan-DisplaySerif-BF652fce22a8698.otf";}
 
-/* ------------ Start CSS resets ------------ */
+/* ------------ Tailwind directives ------------ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------ CSS-resets ------------ */
 
 html,
 body,
@@ -94,7 +99,6 @@ video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article,
 aside,
 details,
@@ -110,7 +114,7 @@ section {
 }
 
 body {
-  line-height: 1;
+  line-height: normal;
 }
 
 ol,
@@ -127,7 +131,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -136,4 +140,72 @@ table {
   border-spacing: 0;
 }
 
-/* ------------ End CSS resets ------------ */
+/* ------------ Custom properties ------------ */
+
+  :root {
+  /* Colors */
+  --primary-white: #F3F3F3;
+  --primary-black: #27262C;
+  --secondary-white: #EDEDEB;
+  --dark-green: #233B35;
+  --light-green: #9EA18D;
+  --brown: #90562E;
+  --dark-beige: #C8B7AA;
+  --light-beige: #E1DBD4;
+
+  /* Font */
+  --main-font: "Roboto", sans-serif;
+  --logo-font: "Fathan", serif;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.25rem;
+  --subheader-font-size: 1.125rem;
+  --paragraph-font-size: 0.875rem;
+  --buttons-captions-font-size: 0.875rem;
+  --nav-footer-info-font-size: 1rem;
+  --h1-font-size-desktop: 4rem;
+  --h2-font-size-desktop: 2.5rem;
+  --subheader-font-size-desktop: 1.75rem;
+  --paragraph-font-size-desktop: 1.25rem;
+  --buttons-captions-font-size-desktop: 1.25rem;
+  --nav-footer-info-font-size-desktop: 1.231rem;
+
+  /* Other styles */
+  --card-border-radius: 20px;
+  --button-border-radius: 25px;
+  --main-width-desktop: 1290px;
+
+  /* Breakpoints */
+  /* To make these work I had to install a PostCSS plugin: https://www.npmjs.com/package/postcss-media-variables */
+  --mobile: 393px;
+	--tablet: 834px;
+  --desktop: 1512px;
+}
+
+/* ------------ START Global styles ------------ */
+
+h1 {
+  font-family: var(--main-font);
+  font-size: var(--h1-font-size);
+  color: var(--dark-beige);
+  font-weight: 600;
+}
+
+h2 {
+  font-family: var(--main-font);
+  font-size: var(--h2-font-size);
+  color: var(--primary-black);
+  font-weight: 400;
+}
+
+p {
+  font-family: var(--main-font);
+  font-size: var(--paragraph-font-size);
+  color: var(--primary-black);
+}
+
+a {
+  font-family: var(--main-font);
+  font-size: var(--nav-footer-info-font-size);
+  color: var(--primary-black);
+  font-weight: 300;
+}

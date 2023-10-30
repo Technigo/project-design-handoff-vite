@@ -1,6 +1,6 @@
 export const ContactForm = () => {
     return (
-        <form action="">
+        <form action="" >
             {/* htmlFor represents the for="" used in regular html */}
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" />
@@ -12,3 +12,4 @@ export const ContactForm = () => {
         </form>
     )
 }
+

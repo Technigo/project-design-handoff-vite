@@ -1,13 +1,11 @@
-import { Footer } from "../components/Reusable-components/Footer/Footer"
-import { Header } from "../components/Reusable-components/Header/Header"
-import { LandingMain } from "../components/LandingPage-components/LandingMain"
+import { Hero } from "../components/Hero";
+import { TextComponent } from "../components/TextComponent";
 
 export const LandingPage = () => {
     return (
         <>
-            <Header />
-            <LandingMain />
-            <Footer />
+            <Hero />
+            <TextComponent text={"We at Align Yoga are dedicated to providing the highest quality yoga instruction through an exceptional variety of classes both online and in our fabulous studio."} />
         </>
     )
 }
