@@ -1,3 +1,8 @@
+import React from "react";
+import Navbar from "./components/Navbar";
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return <div>
+    <Navbar />
+  </div>;
 };
