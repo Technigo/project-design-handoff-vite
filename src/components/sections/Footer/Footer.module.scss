@@ -1,0 +1,70 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.footer {
+  padding: 16px 8px;
+  font-family: $font-normal;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include md {
+    padding: 32px;
+  }
+
+  @include lg {
+    padding: 16px 8px;
+    gap: 25px;
+    font-size: 16px;
+  }
+
+  &_under {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &_left,
+    &_right {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+
+      @include lg {
+        flex-direction: row;
+      }
+
+      & a {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &_right {
+      & .icons {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        align-items: end;
+
+        & img {
+          width: 23px;
+          height: 23px;
+        }
+
+        @include lg {
+          flex-direction: row;
+          align-items: center;
+        }
+      }
+    }
+  }
+
+  & select {
+    width: fit-content;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+}

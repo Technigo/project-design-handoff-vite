@@ -1,0 +1,46 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.card {
+  padding: 16px;
+  background-color: $color-dark;
+  color: $color-green-light;
+  font-size: 16px;
+  font-family: $font-body;
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  border-radius: 8px;
+
+  @include lg {
+    padding: 32px;
+    font-size: 32px;
+    gap: 24px;
+  }
+}
+
+.border {
+  position: relative;
+  $border: 2px;
+  background-clip: padding-box; /* !importanté */
+  border: solid $border transparent; /* !importanté */
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -$border; /* !importanté */
+    border-radius: inherit; /* !importanté */
+    background: linear-gradient(to bottom, $color-green, transparent);
+  }
+}
+
+.center {
+  @include lg {
+    text-align: center;
+  }
+}

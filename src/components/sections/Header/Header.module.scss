@@ -1,0 +1,69 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+.header {
+  min-width: 100vw;
+  background-color: $color-dark;
+  padding: 8px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include md {
+    padding: 8px 32px;
+  }
+
+  @include lg {
+    padding: 16px 64px;
+  }
+}
+
+.nav {
+  width: fit-content;
+  &_desktop {
+    font-family: $font-normal;
+    color: #fff;
+    display: none;
+    font-size: 16px;
+
+    @include lg {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.logo {
+  width: 67px;
+}
+
+.humburger {
+  content: " ";
+  width: 20px;
+  border-bottom: 1px solid #fff;
+  position: relative;
+
+  @include lg {
+    display: none;
+  }
+
+  &::after,
+  &::before {
+    position: absolute;
+    content: " ";
+    width: 20px;
+    border-bottom: 1px solid #fff;
+    @include lg {
+      display: none;
+    }
+  }
+
+  &::after {
+    top: 5px;
+  }
+
+  &::before {
+    bottom: 5px;
+  }
+}

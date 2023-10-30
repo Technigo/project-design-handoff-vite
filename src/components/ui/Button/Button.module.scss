@@ -1,0 +1,22 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.button {
+  background-color: $color-green;
+  padding: 7px 30px;
+  border-radius: 3px;
+  width: 100%;
+  text-align: center;
+
+  & p {
+    font-family: $font-display;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-dark;
+    text-transform: capitalize;
+
+    @include lg {
+      font-size: 32px;
+    }
+  }
+}
