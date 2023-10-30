@@ -6,10 +6,10 @@ const Navbar = () => {
         <nav>
             <img src="/logo.png" alt="logo" />
             <div className="nav-links">
-                <a href="/">Videos</a>
-                <a href="/about">Workout Plan</a>
-                <a href="/services">Tracker</a>
-                <a href="/contact">Favorites</a>
+                <a href="#">Videos</a>
+                <a href="#">Workout Plan</a>
+                <a href="#">Tracker</a>
+                <a href="#">Favorites</a>
             </div>
             <div className="search">
                 <div className="search-container">
