@@ -1,7 +1,7 @@
 import { Headings } from "../Components/Headings";
 
-export const SocialMedia = () => {
-  const sectionId = 7;
+export const Reviews = () => {
+  const sectionId = 3;
 
   return (
     <div>

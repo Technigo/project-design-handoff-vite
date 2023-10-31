@@ -1,7 +1,10 @@
 
 
-export const WorkoutPlanCard = () => {
+export const WorkoutPlanCard = ({ plan }) => {
   return (
-    <div>WorkoutPlanCard</div>
+    <>
+      <img src={plan.image} alt={plan.title} />
+      <p>{plan.title}</p>
+    </>
   )
 }

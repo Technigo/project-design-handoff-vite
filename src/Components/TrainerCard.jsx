@@ -1,7 +1,10 @@
 
 
-export const TrainerCard = () => {
+export const TrainerCard = ({ trainer }) => {
   return (
-    <div>TrainerCard</div>
+    <>
+      <img src={trainer.image} alt={trainer.name} />
+      <p>{trainer.name}</p>
+    </>
   )
 }

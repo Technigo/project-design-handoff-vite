@@ -1,0 +1,74 @@
+{
+    "workout": [
+        {
+            "image": "src/assets/images/workout-1.png",
+            "title": "HIIT",
+            "length": "10 min"
+        },
+        {
+            "image": "src/assets/images/workout-2.png",
+            "title": "Low impact cardio",
+            "length": "15 min"
+        },
+        {
+            "image": "src/assets/images/workout-3.png",
+            "title": "Band resistance",
+            "length": "7 min"
+        },
+        {
+            "image": "src/assets/images/workout-4.png",
+            "title": "Glute builder",
+            "length": "20 min"
+        }
+    ],
+    "plans": [
+        {
+            "image": "src/assets/images/workout-4.png",
+            "title": "Glute builder"
+        },
+        {
+            "image": "src/assets/images/workout-plan-2.png",
+            "title": "Flexibility"
+        },
+        {
+            "image": "src/assets/images/workout-plan-3.png",
+            "title": "Strength"
+        },
+        {
+            "image": "src/assets/images/workout-plan-4.png",
+            "title": "Glute builder"
+        }
+    ],
+    "trainers": [
+        {
+            "image": "src/assets/images/trainer-1.png",
+            "name": "Natasha"
+        },
+        {
+            "image": "src/assets/images/trainer-2.png",
+            "name": "Chloe"
+        },
+        {
+            "image": "src/assets/images/trainer-3.png",
+            "name": "Taylor"
+        },
+        {
+            "image": "src/assets/images/trainer-4.png",
+            "name": "Rich"
+        }
+    ],
+    "articles": [
+        {
+            "image": "src/assets/images/article-1.png",
+            "title": "founded by busy women"
+        },
+        {
+            "image": "src/assets/images/article-2.png",
+            "title": "who care about your health"
+        },
+        {
+            "image": "src/assets/images/article-3.png",
+            "title": "access fitness anywhere no matter the budget"
+        }
+    ]
+}

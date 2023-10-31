@@ -1,7 +1,10 @@
 
 
-export const WorkoutVideoCard = () => {
+export const WorkoutVideoCard = ({ video }) => {
   return (
-    <div>WorkoutVideoCard</div>
+    <>
+      <img src={video.image} alt={video.title} />
+      <p>{video.title}</p>
+    </>
   )
 }

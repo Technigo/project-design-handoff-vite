@@ -1,0 +1,13 @@
+/* .header-tablet-desktop {
+    display: none;
+}
+
+@media (min-width: 834px) {
+    .header-tablet-desktop {
+        display: contents;
+    }
+
+    .header-mobile {
+        display: none;
+    }
+} */

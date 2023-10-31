@@ -1,66 +1,17 @@
-import { Link } from "react-router-dom";
-import { HamburgerMenu } from "../Components/HamburgerMenu";
+import { NavBar } from "../Components/NavBar";
+// import { HeroSection } from "../Components/HeroSection";
 
 export const Header = () => {
-  const toggleMenu = () => {
-    var hamburgerMenu = document.getElementById("hamburger-menu");
-    if (hamburgerMenu.style.display === "block") {
-      hamburgerMenu.style.display = "none";
-    } else {
-      hamburgerMenu.style.display = "block";
-    }
-  }
-
   return (
-    <div className="header-mobile">
-      <div className="topnav">
-        <button 
-          type="button" 
-          className="hamburger-menu" 
-          onClick={toggleMenu}
-        >
-          <svg 
-            width="24" 
-            height="25" 
-            viewBox="0 0 24 25" 
-            fill="none" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="menu">
-              <path 
-                id="Icon" 
-                d="M4 6.5H20M4 12.5H20M4 18.5H20" 
-                stroke="#545F71" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-              />
-            </g>
-          </svg>
-        </button>
-        <Link to="/"><img className="logo" src="src/assets/images/Logo.png" alt="AFH logo" /></Link>
-        <button type="button" className="search">
-          <svg 
-            width="24" 
-            height="24" 
-            viewBox="0 0 24 24" 
-            fill="none" 
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="search">
-              <path 
-                id="Icon" 
-                d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z" 
-                stroke="#545F71" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
-                strokeLinejoin="round"
-              />
-            </g>
-          </svg>
-        </button>
-        <HamburgerMenu />
+    <>
+      <div className="header-mobile">
+        <NavBar />
       </div>
-    </div>
+      {/* <div className="header-tablet-desktop">
+        <NavBar />
+        <HeroSection />
+      </div> */}
+    </>
+    
   )
 }

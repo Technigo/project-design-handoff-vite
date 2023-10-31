@@ -2,7 +2,7 @@ import { Header } from "../Sections/Header";
 import { Workout } from "../Sections/Workout";
 import { WorkoutPlans } from "../Sections/WorkoutPlans";
 import { Membership } from "../Sections/Membership";
-import { Review } from "../Sections/Review";
+import { Reviews } from "../Sections/Reviews";
 import { Trainers } from "../Sections/Trainers";
 import { Footer } from "../Sections/Footer";
 
@@ -13,7 +13,7 @@ export const Home = () => {
         <Workout />
         <WorkoutPlans />
         <Membership />
-        <Review />
+        <Reviews />
         <Trainers />
         <Footer />
     </div>
