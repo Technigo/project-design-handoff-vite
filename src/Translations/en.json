@@ -1,0 +1,8 @@
+{
+    "welcome": "Welcome to the world of Node.js",
+    "text": "This is a sample text.",
+    "translatePage": {
+        "heading": "Hello world",
+        "subheading": "This is a subheading."
+    }
+}

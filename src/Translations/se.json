@@ -1,0 +1,8 @@
+{
+    "welcome": "Välkommen till min hemsida!",
+    "text": "Detta är en exempel text.",
+    "translatePage": {
+        "heading": "Hej världen",
+        "subheading": "Detta är en underrubrik"
+    }
+}
