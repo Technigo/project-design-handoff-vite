@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 import styles from "./Footer.module.scss";
+import { useAppStore } from "../../../store/useAppStore";
 
 export const Footer = () => {
+  const setLang = useAppStore((state) => state.setLang);
+
+  function handleChange(value) {
+    setLang(value);
+  }
+
   return (
     <footer className={styles.footer}>
-      <select name="lang">
+      <select name="lang" onChange={(e) => handleChange(e.target.value)}>
         <option>Language &emsp;🇬🇧</option>
         <option value="en">English &emsp;🇬🇧</option>
         <option value="sv">Svenska &emsp;🇸🇪</option>

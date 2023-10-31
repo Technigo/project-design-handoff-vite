@@ -28,6 +28,7 @@ export const Pagination = ({ index, sliderRef }) => {
         src="/icons/right-paw.svg"
         className={styles.left_paw}
         onClick={() => handleClickToLeft()}
+        onTouchStart={() => handleClickToLeft()}
       />
 
       <img src="/icons/cat-left.svg" className={styles.left_cat} />
@@ -48,6 +49,7 @@ export const Pagination = ({ index, sliderRef }) => {
         src="/icons/right-paw.svg"
         className={styles.right_paw}
         onClick={() => handleClickToRight()}
+        onTouchStart={() => handleClickToRight()}
       />
     </div>
   );
