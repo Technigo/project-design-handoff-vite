@@ -1,13 +1,91 @@
+/*---------- GOOGLE FONTS | METAL MANIA 400 | JETBRAINS MONO 400, 800 ----------*/
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&family=Metal+Mania&display=swap");
+
+/*---------- CSS VARIABLES ----------*/
 :root {
+  /*---------- Colors ----------*/
+  --marine: #141832;
+  --cobalt: #0021f5;
+  --popping-orange: #ec5f27;
+  --fire: #ca2b38;
+  --bg-color: #bbbcc0;
+
+  /*---------- Fonts ----------*/
+  --metal-mania: "Metal Mania", serif;
+  --jetbrains-mono: "Jetbrains Mono", sans-serif;
+
+  --font-size-title: 2.5rem;
+  --font-size-xlg: 2rem;
+  --font-size-lg: 30px;
+  --font-size-xsm: 12px;
+
+  --fw-800: 800;
+}
+/*---------- BASE ----------*/
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+html {
+  scroll-behavior: smooth;
+}
+
+button,
+input,
+textarea {
+  font-family: var(--jetbrains-mono);
+}
+
+/* Avoid text overflows */
+p,
+h1,
+h2 {
+  overflow-wrap: break-word;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background: var(--bg-color);
+}
+
+.icon {
+  color: var(--cobalt);
+  stroke: var(--cobalt);
+  width: 2rem;
+  height: 2rem;
+}
+
+/*---------- LAYOUT ----------*/
+
+/*---------- BREAKPOINTS ----------*/
+/* For extra large devices */
+@media (min-width: 1280px) {
+}
+
+/* For large devices */
+@media (min-width: 1024px) {
+}
+
+/* For medium devices */
+@media (min-width: 744px) {
+}
+
+/* From mobile and for small devices */
+@media (min-width: 576px) {
 }

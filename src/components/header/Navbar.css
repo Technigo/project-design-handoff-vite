@@ -1,0 +1,19 @@
+.top-navbar {
+  display: flex;
+  align-items: center;
+  font-family: var(--jetbrains-mono);
+  text-transform: uppercase;
+  font-weight: var(--fw-800);
+  gap: 1rem;
+}
+
+.top-navbar ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.top-navbar li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
