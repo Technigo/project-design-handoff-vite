@@ -15,6 +15,7 @@ export const App = () => {
     <WhyPlayParkour/>
     <AboutUs/>
     <Footer/>
+    <AboutUsPage/>
   </div>
   );
 };

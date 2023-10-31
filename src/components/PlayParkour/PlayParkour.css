@@ -7,7 +7,7 @@
 
 .playparkour-wrapper::before {
     content: ""; 
-    background-image: url('../../assets/image1.png');
+    background-image: url('../../../public/images/image1.png');
     background-size: cover; 
     background-repeat: no-repeat;
     opacity: 0.6; 

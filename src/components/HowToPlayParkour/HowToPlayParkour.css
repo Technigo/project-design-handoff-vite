@@ -1,0 +1,35 @@
+.howto-wrapper {
+    background-color: var(--color-blue-opacity-60);
+    padding: 20px;
+    text-align: center; 
+}
+
+.howto-wrapper h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.images-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; 
+}
+
+.image-container {
+    flex: 1; /* Distributes the space equally between the image containers */
+    margin: 10px; 
+}
+
+.image-container img {
+    width: 100%; /* Makes the image take the full width of its container */
+    height: 80px;
+    display: block; /* Removes any default margins/paddings from the image */
+   object-fit: cover;
+   object-position: center;
+   border-radius: 20px;
+}
+
+.image-container p {
+    font-weight: bold;
+}
+
