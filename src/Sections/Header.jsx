@@ -38,7 +38,6 @@ export const Header = () => {
             </g>
           </svg>
         </button>
-        <HamburgerMenu />
         <Link to="/"><img className="logo" src="src/assets/images/Logo.png" alt="AFH logo" /></Link>
         <button type="button" className="search">
           <svg 
@@ -60,6 +59,7 @@ export const Header = () => {
             </g>
           </svg>
         </button>
+        <HamburgerMenu />
       </div>
     </div>
   )
