@@ -5,6 +5,7 @@ import NavbarMobile from "./components/NavbarMobile";
 import HeroHeader from "./components/HeroHeader";
 import Workout from "./components/Workout";
 import Form from "./components/Form";
+import FormMobile from "./components/FormMobile";
 import Plans from "./components/Plans";
 import Reviews from "./components/Reviews";
 import Trainers from "./components/Trainers";
@@ -18,7 +19,7 @@ export const App = () => {
       {isMobile ? <NavbarMobile /> : <Navbar />}
       {!isMobile && <HeroHeader />}
       <Workout />
-      <Form />
+      {isMobile ? <FormMobile /> : <Form />}
       <Plans />
       <Reviews />
       <Trainers />
