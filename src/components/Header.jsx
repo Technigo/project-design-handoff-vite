@@ -1,16 +1,15 @@
 import logo from "/favicon.svg";
-import hamburger from "/icons/hamburger.svg";
 import arrowDown from "/icons/arrowDown.svg";
 
 export const Header = () => {
   return (
     <header>
-      <nav className="flex flex-row flex-1 items-center justify-between w-full h-[4rem] bg-lime-green lg:h-[16vh] md:h-[11vh]">
+      <nav className="flex flex-row flex-1 items-center justify-between w-full h-[4rem] bg-lime-green lg:h-[18vh] md:h-[11vh]">
         <a href="/">
           <img
             src={logo}
             alt="header logo"
-            className=" my-3 ml-4 text-color-blue w-[93px] h-[40px] md:w-[156px] md:h-[67px] lg:w-[231px] lg:h-[99px]"
+            className="my-3 ml-4 w-[93px] h-[40px] md:w-[156px] md:h-[67px] lg:w-[231px] lg:h-[99px]"
           />
         </a>
         <ul className="flex flex-1 flex-row justify-end items-center gap-16 text-[26px] font-bold max-lg:hidden mr-11">
@@ -42,12 +41,30 @@ export const Header = () => {
             </button>
           </li>
         </ul>
-        <div className=" mr-6 lg:hidden  ">
-          <img
+        <div className=" mr-6 lg:hidden group">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="27"
+            height="16"
+            viewBox="0 0 27 16"
+            fill="none"
+            className="w-[24px] h-[14px] md:w-[53px] md:h-[29px] cursor-pointer"
+          >
+            <path
+              d="M1 15.1852H25.715M1 8.09258H25.715M1 1H25.715"
+              stroke="#3232CD"
+              strokeWidth="1.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="group-hover:stroke-half-yellow"
+            />
+          </svg>
+
+          {/* <img
             src={hamburger}
-            alt="hamburger"
-            className="w-[24px] h-[14px] md:w-[53px] md:h-[29px]"
-          />
+            alt="hamburger image"
+            className="w-[24px] h-[14px] md:w-[53px] md:h-[29px] cursor-pointer hover:fill-currect hover:stroke-current hover:text-half-yellow"
+          /> */}
         </div>
       </nav>
     </header>
