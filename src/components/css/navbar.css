@@ -93,30 +93,34 @@ img {
 .navbar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-
-    gap: 60px;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
 }
 
-img {
-    width: 40px;
+.navbar .menu-container {
+    width: 24px;
+}
+
+.navbar img {
+    width: 32px;
+    height: 33px;
     margin: 0;
+    padding: 10px;
 }
 
 /* BurgerMenu.css */
 .bm-burger-button {
     display: none;
-    align-self: flex-start;
-    padding: 10px;
     width: 24px;
+    height: 24px;
 }
 
 .bm-menu {
     position: fixed;
     top: 0;
     right: 0;
-    width: 100%;
+    width: 30%;
     height: 20%;
     background: white;
     transition: color 0.2s;
@@ -125,4 +129,20 @@ img {
 
 .bm-menu-item {
     color: black;
+}
+
+.burger-items {
+    display: flex;
+    flex-direction: column;
+}
+
+.burger-items a {
+    color: #000;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
 }
