@@ -98,7 +98,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
+/* 
 article,
 aside,
 details,
@@ -111,7 +111,7 @@ menu,
 nav,
 section {
   display: block;
-}
+} */
 
 body {
   line-height: normal;
@@ -183,29 +183,32 @@ table {
 
 /* ------------ START Global styles ------------ */
 
-h1 {
+h1, h2, h3, p, a, li, option {
   font-family: var(--main-font);
+}
+
+h1 {
+
   font-size: var(--h1-font-size);
-  color: var(--dark-beige);
   font-weight: 600;
 }
 
 h2 {
-  font-family: var(--main-font);
   font-size: var(--h2-font-size);
-  color: var(--primary-black);
   font-weight: 400;
 }
 
+h3 {
+  font-size: var( --nav-footer-info-font-size-desktop);
+}
+
 p {
-  font-family: var(--main-font);
   font-size: var(--paragraph-font-size);
-  color: var(--primary-black);
+  /* To make the text wrap on the \n specified in the translation document */
+  white-space: pre;
 }
 
 a {
-  font-family: var(--main-font);
   font-size: var(--nav-footer-info-font-size);
-  color: var(--primary-black);
   font-weight: 300;
 }

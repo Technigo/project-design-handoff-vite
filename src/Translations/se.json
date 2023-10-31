@@ -1,8 +1,116 @@
 {
-    "welcome": "Välkommen till min hemsida!",
-    "text": "Detta är en exempel text.",
-    "translatePage": {
-        "heading": "Hej världen",
-        "subheading": "Detta är en underrubrik"
+    "landingPage": {
+        "navbar": {
+            "nav1": "Hemma",
+            "nav2": "Studio",
+            "nav3": "Möt teamet",
+            "nav4": "Om oss",
+            "nav5": "Kontakt",
+            "nav6": "Sök",
+            "nav7": "Registrera dig",
+            "button": "Logga in"
+        },
+        "hero": {
+            "h1": "Upptäck din inre styrka",
+            "heroParagraph": "Gör dig redo att utmana dig själv både mentalt och fysiskt.",
+            "heroButton": "Bli medlem"
+        },
+        "subhero": {
+            "subheroParagraph": "Vi på Align Yoga är dedikerade till att erbjuda högkvalitativ yogainstruktion genom en enastående variation av klasser både online och i vår underbara studio.",
+            "subheroButton": "Läs mer"
+        },
+        "findClass": {
+            "h2": "Hitta din perfekta klass",
+            "classesButton": "Bläddra i våra klasser",
+            "video1": {
+                "video1Heading": "Återställ balansen",
+                "instructor": "Avery Whitmore",
+                "typeOfYoga": "Vinyasa flow"
+            },
+            "video2": {
+                "video2Heading": "Kraftåterställning",
+                "instructor": "Jacy Cunningham",
+                "typeOfYoga": "Power flow"
+            },
+            "video3": {
+                "video3Heading": "Vakna upp och flöde",
+                "instructor": "Ashley Galvin",
+                "typeOfYoga": "Vinyasa flow"
+            }
+        },
+        "inPersonClasses": {
+            "h2": "Klasser på plats",
+            "inPersonClassesParagraph": "Vår ljusa studio ligger i centrala London och är en fristad för alla. Detta är en plats att andas och sträcka på sig, men framför allt är detta en plats för gemenskap.\nVi erbjuder klasser på alla nivåer med en blandning av kraftfulla flöden tillsammans med återställande poser för att dra full nytta av träningen.\nYogamattor och tillbehör finns tillgängliga i studion, men du är välkommen att ta med dina egna.",
+            "inPersonClassesButton": "Boka en klass"
+        },
+        "virtualClasses": {
+            "h2": "Virtuella klasser",
+            "virtualClassesParagraph": "Träna hemifrån och i din egen takt. Vi har ett urval av över 150 onlineklasser för alla nivåer med nya videor som läggs till varje vecka.\nVi erbjuder klasser på alla nivåer med en blandning av kraftfulla flöden tillsammans med återställande poser för att dra full nytta av träningen.",
+            "virtualClassesButton": "Bläddra i våra klasser"
+        },
+        "footer": {
+            "h2": "Prenumerera på vårt nyhetsbrev",
+            "label": "Din e-post",
+            "button": "Prenumerera",
+            "studio": {
+                "heading": "Studio",
+                "aboutUs": "Om oss",
+                "teachers": "Lärare",
+                "classes": "Klasser"
+            },
+            "support": {
+                "heading": "Support",
+                "help": "Hjälpcenter",
+                "contact": "Kontakt",
+                "faq": "Vanliga frågor",
+                "privacy": "Integritetspolicy"
+            },
+            "address": {
+                "street": "19A Cobble Lane",
+                "zip": "N1 1SF",
+                "city": "London"
+            },
+            "language": {
+                "heading": "Språk",
+                "english": "Engelska",
+                "swedish": "Svenska"
+            }
+        }
+    },
+    "aboutUs": {
+        "topContent": {
+            "h1": "Om oss",
+            "aboutUsParagraph": "Align Yoga Studio grundades 2014 med ett enda mål i åtanke, att få människor att bli fascinerade av rörelsens transformatoriska kraft för att hjälpa dem att bli friskare, lyckligare och mer energiska. Det som började som en enda yogastudio i centrala London har nu blivit ett mångfacetterat globalt hälso- och yogamärke som inte liknar något annat. Vårt passionerade team och fantastiska lärare hjälper dig att rensa ditt sinne, omvandla din kropp och ha roligt - varje gång, var du än är i världen.\nVi erbjuder klasser på alla nivåer med en blandning av kraftfulla flöden tillsammans med återställande poser för att dra full nytta av träningen. Vår Londonsstudio är en fristad för alla. Detta är en plats att andas och sträcka på sig, men framför allt är detta en plats för gemenskap. Vår onlineplattform, Align At Home, ger dig kraften att förbli stark, hålla dig frisk och bli inspirerad när som helst, var som helst.\nVår mission är att ge alla, överallt, kraften att äga sitt livs rytm. Det är därför vi finns till, och tillsammans med följande kärnvärden driver vi allt vi säger och gör."
+        },
+        "missionParagraph": "Vår mission är att inspirera, koppla samman och ge kraft åt så många människor över hela världen genom den positiva rörelsens kraft",
+        "ourPeople": {
+            "h2": "Våra människor",
+            "firstParagraph": "Vi har sökt upp några av Londons finaste lärare - passionerade, engagerade, själfulla och vänliga. Alla har sina egna unika bakgrunder, erfarenheter och yogastilar, men alla syftar till att visa sina elever glädjen och förmågan i deras unika kroppar och sinnen, och guida deras personliga upptäcktsresor för att hitta koppling och stillhet inom sig själva.",
+            "button": "Träffa teamet",
+            "teachers": {
+                "tamara": "Tamara",
+                "tamaraDescription": "Tamaras yogaklasser är en balans mellan styrka och frigörande, uppmuntrar eleverna att vara lekfulla i sin upplevelse och lyssna på vad deras kroppar behöver i stunden. Hennes passion för rörelse genomsyrar hennes undervisning, där hon guidar kreativa, jordande och energifyllda klasser för alla nivåer. Fokus på kroppsmedvetenhet, experimentation och rörelse för att guida eleverna genom en kraftfull rörelsemeditation.",
+                "becky": "Becky",
+                "beckyDescription": "Känd för sin lekfulla, kreativa men ändå intelligenta sekvensering, är Beckys undervisning inspirerad av att utforska rörelse på alla nivåer av själv. Hon hittade först vägen till mattan under en period av låg mental hälsa och är fascinerad av att dela med sig av hur något så enkelt som att medvetet rätta till våra kroppar kan öppna så många fler dörrar djupare in i själen.",
+                "roberto": "Roberto",
+                "robertoDescription": "Roberto älskar att skapa en rolig miljö samtidigt som han fokuserar på kroppsmedvetenhet, andning, sinne, hjärta och energi med utmanande och originella sekvenser. År 2019 kvalificerade Roberto sig i Japan direkt från Yu Yagami, skaparen av Jiriki Seitai, vilket gjorde honom till den första icke-japanska navigatören som undervisar i Storbritannien.",
+                "ellen": "Ellen",
+                "ellenDescription": "Ellen är en holländsk-indonesisk-britt som har lärt sig att älska nästan alla träningsklasser, särskilt yoga och kontrollerad rörelse (du ser henne oftast upp och ner). Hon handlar om att ansluta med människor och visa dem glädjen och förmågan i deras unika kroppar och sinnen genom Vinyasa, Power, Yin och meditation."
+            },
+            "contact": {
+                "h2": "Kontakta oss",
+                "contactEmail": "hello@alignyoga.co.uk",
+                "address": {
+                    "street": "19A Cobble Lane",
+                    "zip": "N1 1SF",
+                    "city": "London"
+                },
+                "firstName": "Förnamn",
+                "lastName": "Efternamn",
+                "email": "E-post",
+                "message": "Meddelande",
+                "send": "Skicka"
+            }
+        }
     }
 }

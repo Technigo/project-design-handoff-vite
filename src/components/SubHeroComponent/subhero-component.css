@@ -1,0 +1,19 @@
+.text-section {
+    background: var(--brown);
+}
+
+.article-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    padding: 31px 37px;
+    text-align: center;
+}
+
+.subheader-text {
+    color: var(--primary-white);
+    font-weight: 300;
+    font-size: var(--subheader-font-size);
+}

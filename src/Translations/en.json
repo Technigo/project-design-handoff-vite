@@ -1,8 +1,116 @@
 {
-    "welcome": "Welcome to the world of Node.js",
-    "text": "This is a sample text.",
-    "translatePage": {
-        "heading": "Hello world",
-        "subheading": "This is a subheading."
+    "landingPage": {
+        "navbar": {
+            "nav1": "At home",
+            "nav2": "Studio",
+            "nav3": "Meet the team",
+            "nav4": "About us",
+            "nav5": "Contact",
+            "nav6": "Search",
+            "nav7": "Sign up",
+            "button": "Log in"
+        },
+        "hero": {
+            "h1": "Discover your inner strength",
+            "heroParagraph": "Get ready to challenge yourself both mentally and physically.",
+            "heroButton": "Become a member"
+        },
+        "subhero": {
+            "subheroParagraph": "We at Align Yoga are dedicated to providing the highest quality yoga instruction through an exceptional variety of classes both online and in our fabulous studio.",
+            "subheroButton": "Learn more"
+        },
+        "findClass": {
+            "h2": "Find your perfect class",
+            "classesButton": "Browse our classes",
+            "video1": {
+                "video1Heading": "Restoring Balance",
+                "instructor": "Avery Whitmore",
+                "typeOfYoga": "Vinyasa flow"
+            },
+            "video2": {
+                "video2Heading": "Power reset",
+                "instructor": "Jacy Cunningham",
+                "typeOfYoga": "Power flow"
+            },
+            "video3": {
+                "video3Heading": "Wake up and flow",
+                "instructor": "Ashley Galvin",
+                "typeOfYoga": "Vinyasa flow"
+            }
+        },
+        "inPersonClasses": {
+            "h2": "In person classes",
+            "inPersonClassesParagraph": "Our bright studio is located in central London and is a sanctuary for all. This is a place to breathe and stretch, but most of all, this is a place of community.\nWe offer classes at all levels with a mix of powerful flows paired with restorative poses to the full benefit of the practice.\nYoga mats and props are available at the studio but you are welcome to bring your own.",
+            "inPersonClassesButton": "Book a class"
+        },
+        "virtualClasses": {
+            "h2": "Virtual classes",
+            "virtualClassesParagraph": "Practice from the comfort of your own home and on your own schedule. We have a selection of 150+ online classes for all levels with new videos added weekly.\nWe offer classes at all levels with a mix of powerful flows paired with restorative poses to the full benefit of the practice.",
+            "virtualClassesButton": "Browse our classes"
+        },
+        "footer": {
+            "h2": "Subscribe to our newsletter",
+            "label": "Your email",
+            "button": "Subscribe",
+            "studio": {
+                "heading": "Studio",
+                "aboutUs": "About us",
+                "teachers": "Teachers",
+                "classes": "Classes"
+            },
+            "support": {
+                "heading": "Support",
+                "help": "Help center",
+                "contact": "Contact",
+                "faq": "FAQ",
+                "privacy": "Privacy policy"
+            },
+            "address": {
+                "street": "19A Cobble Lane",
+                "zip": "N1 1SF",
+                "city": "London"
+            },
+            "language": {
+                "heading": "Language",
+                "english": "English",
+                "swedish": "Swedish"
+            }
+        }
+    },
+    "aboutUs": {
+        "topContent": {
+            "h1": "About us",
+            "aboutUsParagraph": "Align Yoga Studio was founded in 2014 with one goal in mind, to get people hooked on the transformative power of movement to help them become healthier, happier, and more energetic. What started as a single yoga studio in the centre of London has now become a multifaceted global health and yoga brand like no other. Our passionate team and amazing teachers help you clear your mind, transform your body, and have fun – every single time class, wherever you are in the world.\nWe offer classes at all levels with a mix of powerful flows paired with restorative poses to the full benefit of the practice. Our London studio is a sanctuary for all. This is a place to breathe and stretch, but most of all, this is a place of community. Our online platform, Align At Home, gives you the power to stay strong, stay healthy, and stay inspired anytime, anywhere.\nOur mission is to empower everyone, everywhere to own their life’s beat. That is why we exist, and together with the following core values drives everything we say and do."
+        },
+        "missionParagraph": "Our mission is to inspire, connect and empower as many people from all over the world through the power of positive movement",
+        "ourPeople": {
+            "h2": "Our people",
+            "firstParagraph": "We have sourced some of London’s finest teachers - passionate, dedicated, soulful and friendly. All have their own unique backgrounds, experience and styles of yoga, but all aim to show their students the joy and capability of their unique bodies and minds, guiding their personal journeys of discovery in order to find connection and stillness within themselves.",
+            "button": "Meet the team",
+            "teachers": {
+                "tamara": "Tamara",
+                "tamaraDescription": "Tamara’s yoga classes are a balance of strength and release, encouraging students to be playful in their experience, and listen to what their bodies need in the moment. Her passion for movement flows through her teaching, where she guides creative, grounding and energetic classes for all levels. Focusing on body awareness, experimentation and alignment to guide students through a powerful moving meditation.",
+                "becky": "Becky",
+                "beckyDescription": "Known for her playful, creative yet intelligent sequencing, Becky’s teachings are inspired by exploring movement across all layers of the self. She first found her way onto the mat during a period of low mental health and is fascinated by and focused on sharing how something as simple as mindfully aligning our bodies can open so many more doors deeper into the self.",
+                "roberto": "Roberto",
+                "robertoDescription": "Roberto loves creating a fun environment while focusing on body alignment, breath, mind, heart, and energy with challenging and original sequences. In 2019 Roberto qualified in Japan directly from Yu Yagami creator of Jiriki Seitai making him the first non-Japanese navigator to teach in the UK.",
+                "ellen": "Ellen",
+                "ellenDescription": "Ellen is a Dutch-Indonesian-Brit who has learned to love pretty much every fitness class, though specifically Yoga and controlled movement (you'll often see her upside down). She is all about connecting with people, and showing them the joy and capability of their unique bodies and mind through Vinyasa, Power, Yin and meditation."
+            },
+            "contact": {
+                "h2": "Contact us",
+                "contactEmail": "hello@alignyoga.co.uk",
+                "address": {
+                    "street": "19A Cobble Lane",
+                    "zip": "N1 1SF",
+                    "city": "London"
+                },
+                "firstName": "First name",
+                "lastName": "Last name",
+                "email": "Email",
+                "message": "Message",
+                "send": "Send"
+            }
+        }
     }
 }

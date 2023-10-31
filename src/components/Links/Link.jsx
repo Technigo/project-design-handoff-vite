@@ -1,6 +1,6 @@
 import "./button-links.css";
 
-export const Button = ({ className, text }) => {
+export const Link = ({ className, text }) => {
     return (
         <a className={`a-style ${className}`}>{text}</a>
     )
