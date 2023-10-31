@@ -33,7 +33,7 @@ const HeroDescription = styled(Description)`
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  white-space: wrap;
+  border: 2px soli red;
 `;
 
 const BlueLineHero = styled.div`
@@ -43,14 +43,20 @@ const BlueLineHero = styled.div`
 `;
 
 export const Header = () => {
-  const HeroText = "Find and sharpen your competitive edge.We are the gym that builds champions.";
+  const HeroTextOne = "Find and sharpen your competitive edge.";
+  const HeroTextTwo = "We are the gym that builds champions.";
+
 
   return (
     <HeroWrapper className="hero-wrapper">
       <BlueLineHero className="blue-line-hero" />
       <HeroHeading text="Edge Performance" />
       <HeroImage src="./heroImage.png" alt="Hero Image" />
-      <HeroDescription text={HeroText} />
+      {/* <HeroDescription>
+        {HeroTextOne} <br /> {HeroTextTwo}
+      </HeroDescription> */}
+      <HeroDescription text={HeroTextOne} />
+      <HeroDescription text={HeroTextTwo}/ >
     </HeroWrapper>
   );
 };
