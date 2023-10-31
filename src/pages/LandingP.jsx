@@ -1,7 +1,7 @@
 
-import { Header } from "../components/Header/Header"
+import { Navbar } from "../components/Navbar/Navbar"
 import { MainCont } from "../components/MainCont/MainCont"
-import { Footer } from "../components/Footer/Footer"
+//import { Footer } from "../components/Footer/Footer"
 import { LottieAni } from "../components/LottieAni"
 import { LottieAdv } from "../components/LottieAdv"
 import { Translation } from "../components/Translation"
@@ -9,12 +9,14 @@ import { Translation } from "../components/Translation"
 export const LandingP = () => {
     return (
         <>
-            <Header />
+            <Navbar />
             <MainCont />
             <Translation />
-            <Footer />
+
             <LottieAni />
             <LottieAdv />
         </>
     )
 }
+
+//<Footer />

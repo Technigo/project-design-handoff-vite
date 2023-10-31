@@ -1,0 +1,21 @@
+.navbar {
+    position: fixed;
+    /* Ensures navbar stays on top of other elements */
+    z-index: 1000;
+    width: 100%;
+    background-color: #1C1D23;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+.menu-toggle {
+    color: white;
+    font-size: 200%;
+    cursor: pointer;
+}
+
+.navbar img {
+    width: 30%;
+}

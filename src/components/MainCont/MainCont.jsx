@@ -1,4 +1,3 @@
-//Parent to Form.jsx, Hero.jsx. Mounted in App.jsx
 //Mounted in App.jsx
 
 import { Hero } from "./Hero.jsx"
