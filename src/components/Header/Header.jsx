@@ -1,18 +1,56 @@
-import { Heading } from "../../reusableComponents/Heading.jsx"
-import { Description } from "../../reusableComponents/Description.jsx"
-import "./Header.css"
-export default function Header() {
+import styled from 'styled-components';
+import { Heading } from '../../reusableComponents/Heading.jsx';
+import { Description } from '../../reusableComponents/Description.jsx';
 
-  const HeroText = "Find and sharpen your competitive edge.We are the gym that builds champions."
+const HeroWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  max-width: 100%;
+  padding: 48px 25px;
+`;
+
+const HeroHeading = styled(Heading)`
+  text-transform: uppercase !important;
+  color: #000;
+  text-align: center;
+  font-family: Staatliches;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  
+`;
+
+const HeroImage = styled.img`
+  max-width: 100%;
+`;
+
+const HeroDescription = styled(Description)`
+  text-align: center;
+  font-family: Arsenal;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  white-space: wrap;
+`;
+
+const BlueLineHero = styled.div`
+  width: 100%;
+  height: 20px;
+  background-color: var(--blue-color);
+`;
+
+export const Header = () => {
+  const HeroText = "Find and sharpen your competitive edge.We are the gym that builds champions.";
 
   return (
-    <>
-      <div className="hero-wrapper">
-      <div className="blue-line-hero"></div> {/* blue line */}
-      <Heading className="hero-heading" text="Edge Performance" />
-        <img src="./Rectangle.png" alt="Rectangle" className="hero-image" />
-      <Description className="hero-description" text={HeroText} /> 
-      </div>
-    </>
-  )
-}
+    <HeroWrapper className="hero-wrapper">
+      <BlueLineHero className="blue-line-hero" />
+      <HeroHeading text="Edge Performance" />
+      <HeroImage src="./heroImage.png" alt="Hero Image" />
+      <HeroDescription text={HeroText} />
+    </HeroWrapper>
+  );
+};

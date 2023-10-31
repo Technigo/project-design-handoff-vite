@@ -1,0 +1,34 @@
+{
+  "articles": [
+    {
+      "name": "Technology Edge",
+      "image": "./technologyEdge.png",
+      "description": "We take you from the rink to the lab. We offer Skatemill practice and analysis, VO2-max and VO2-peak measurements, lactate threshold or submax tests and iDXA body composition tests that will help us boost you to peak performance."
+    },
+    {
+      "name": "Competitive edge",
+      "image": "./competitiveEdge.png",
+      "description": "Hockey specific strength and mobility training to raise your performance level, no matter what the season.Hone your Hockey IQ for lightning-fast reactions with Sense Arena VR and The Hockey IntelliGym."
+    },
+    {
+      "name": "Comeback edge",
+      "image": "./comebackEdge.png",
+      "description": "Injuries are a part of the game.Get back on the ice faster and stronger with specialised physio training from some of the best names in sports medicine. Post-concusson? We can help. "
+    },
+    {
+      "name": "Coaching edge",
+      "image": "./CoachingEdge.png",
+      "description": "Coaching with over 100 years of combined NHL experience  regardless of the season. We prep you in the summer and keep you competitive on ice. We offer synthetic ice and dry-land training to build your hockey game from edges up."
+    },
+    {
+      "name": "winning edge",
+      "image": "./winningEdge.png",
+      "description": "We know that hockey is more than just 3 periods of pressure. Level-up with mental coaching from our sports psychologists and learn to power your performance with nutritional guidance from our in-house dietician. "
+    },
+    {
+      "name": "They found their edge At Edge performance:",
+      "image": "./logosEdge.png",
+      "description": "They are men and women of the NHL, NWHL, AHL, OHL, Junior World Champions, college superstars and recreational players.Meet our athletes  and hear more about what they have accomplished with Edge.  "
+    }
+  ]
+}
