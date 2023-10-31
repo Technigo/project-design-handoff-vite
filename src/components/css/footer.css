@@ -1,3 +1,24 @@
 .footer {
     background: #F3AD98;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-links {
+    list-style: none;
+    display: flex;
+    gap: 21px;
+}
+
+.footer-links a {
+    color: #000;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+    text-decoration: none;
 }

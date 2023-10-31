@@ -6,6 +6,7 @@ import Form from "./components/Form";
 import Plans from "./components/Plans";
 import Reviews from "./components/Reviews";
 import Trainers from "./components/Trainers";
+import Footer from "./components/Footer";
 
 export const App = () => {
   return <div className="main">
@@ -16,5 +17,6 @@ export const App = () => {
     <Plans />
     <Reviews />
     <Trainers />
+    <Footer />
   </div>;
 };
