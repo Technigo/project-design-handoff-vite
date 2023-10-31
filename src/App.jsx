@@ -16,7 +16,7 @@ export const App = () => {
   return (
     <div className="main">
       {isMobile ? <NavbarMobile /> : <Navbar />}
-      <HeroHeader />
+      {!isMobile && <HeroHeader />}
       <Workout />
       <Form />
       <Plans />

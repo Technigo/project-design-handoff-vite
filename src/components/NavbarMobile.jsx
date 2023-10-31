@@ -11,7 +11,7 @@ const NavbarMobile = () => {
 
     return (
         <div className="navbar">
-            <button onClick={handleMenuButtonClick}><img src="/menu.png" style={{ width: '24px', height: '24px' }} /></button>
+            <img src="/menu.png" alt="menu" style={{ width: '24px', height: '24px', cursor: 'pointer' }} onClick={handleMenuButtonClick} />
             <Menu isOpen={menuOpen} onStateChange={({ isOpen }) => setMenuOpen(isOpen)}>
                 <a id="home" className="menu-item" href="/">
                     Home
@@ -32,7 +32,7 @@ const NavbarMobile = () => {
 
             <img src="/logo.png" alt="logo" />
 
-            <img src="/search.png" alt="search" />
+            <img src="/search.png" alt="search" style={{ width: '24px', height: '24px', margin: '0', padding: '10px' }} />
         </div>
     );
 }

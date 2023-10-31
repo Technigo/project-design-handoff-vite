@@ -99,3 +99,57 @@
     top: 10px;
     right: 10px;
 }
+
+/* Mobile */
+@media (max-width: 393px) {
+    .workout {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .workout h1 {
+        font-size: 24px;
+    }
+
+    .workout h3,
+    .workout p {
+        font-size: 16px;
+    }
+
+    .workout-links {
+        gap: 23px;
+        padding: 10px;
+        overflow-x: scroll;
+    }
+
+    .workout a {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .workout img {
+        width: 135px;
+        border-radius: 10px;
+    }
+
+    .workout-images-container {
+        overflow-x: auto;
+    }
+
+    .workout-images {
+        gap: 10px;
+    }
+
+    .workout-item {
+        position: relative;
+    }
+
+    .heart-icon {
+        width: 12px;
+        height: 12px;
+        top: 5px;
+        right: 5px;
+    }
+}

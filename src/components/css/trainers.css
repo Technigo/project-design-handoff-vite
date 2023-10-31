@@ -71,3 +71,57 @@
     top: 10px;
     right: 10px;
 }
+
+/* Mobile */
+@media (max-width: 393px) {
+    .trainers {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .trainers h1 {
+        font-size: 24px;
+    }
+
+    .trainers h3,
+    .trainers p {
+        font-size: 16px;
+    }
+
+    .trainers-links {
+        gap: 23px;
+        padding: 10px;
+        overflow-x: scroll;
+    }
+
+    .trainers a {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .trainers img {
+        width: 135px;
+        border-radius: 10px;
+    }
+
+    .trainers-images-container {
+        overflow-x: auto;
+    }
+
+    .trainers-images {
+        gap: 10px;
+    }
+
+    .trainers-item {
+        position: relative;
+    }
+
+    .heart-icon {
+        width: 12px;
+        height: 12px;
+        top: 5px;
+        right: 5px;
+    }
+}

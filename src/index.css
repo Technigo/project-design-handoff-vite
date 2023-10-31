@@ -57,3 +57,11 @@ p {
   font-weight: 500;
   line-height: normal;
 }
+
+/* Mobile */
+@media (max-width: 393px) {
+  .main {
+    margin: 10px;
+  }
+
+}

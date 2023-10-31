@@ -13,7 +13,7 @@ const Plans = () => {
         <div className="plans">
             <div className="plans-top">
                 <h1>Workout Plans</h1>
-                <img src="/lock-closed.png" style={{ width: '24px', height: '24px', padding: '12px' }} />
+                <img src="/lock-closed.png" className="small-img" alt="Lock" />
             </div>
             <div className='plans-links'>
                 <a href="#" className='active'>2 days a week</a>
