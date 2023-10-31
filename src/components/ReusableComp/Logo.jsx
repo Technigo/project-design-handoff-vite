@@ -3,7 +3,7 @@
 export const Logo = () => {
     return (
         <>
-            <img src="../public/logoGF.png"
+            <img src="../logoGF.png"
                 alt="Logo"
             />
         </>

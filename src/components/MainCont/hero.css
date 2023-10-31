@@ -14,13 +14,3 @@
     justify-content: center;
     text-align: center;
 }
-
-.hero button {
-    background-color: #FFE03B;
-    display: inline-block;
-    padding: 10px 20px;
-    max-width: max-content;
-    align-self: center;
-    border-radius: 25px;
-    cursor: pointer;
-}
