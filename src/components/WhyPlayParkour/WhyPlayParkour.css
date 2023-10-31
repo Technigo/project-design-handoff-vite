@@ -1,0 +1,21 @@
+
+
+.whyplay-wrapper {
+    background-color: var(--color-green-opacity-60);
+    padding: 20px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column;  /* Changes the direction from row to column */
+    align-items: center;  
+}
+
+.whyplay-wrapper h2 {
+    margin-bottom: 20px;
+}
+
+.icons-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
