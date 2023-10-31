@@ -8,7 +8,8 @@ export const Header = () => {
   return (
     <header>
         <Navbar />
-        <p>Logo</p>
+        <img src="/glactic-logo.svg" alt="" />
+        <p>UserLogo</p>
     </header>
   )
 }

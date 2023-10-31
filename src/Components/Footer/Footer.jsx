@@ -10,7 +10,7 @@ export const Footer = () => {
 
 
         <section className="footer-logo">
-        <img className="galactic-logo" src="src/assets/glactic-logo.svg" alt="galactic fitness logo" />
+        <img className="galactic-logo" src="/glactic-logo.svg" alt="galactic fitness logo" />
         <div className="footer-text">
         <p>GALACTIC FITNESS ©2023 BY</p>
         <p>RODOPI DESIGNS</p>
