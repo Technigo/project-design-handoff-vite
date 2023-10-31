@@ -1,0 +1,48 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.text_box {
+  margin: 0 auto;
+  width: 246px;
+
+  @include md {
+    width: 300px;
+  }
+
+  @include lg {
+    width: 360px;
+  }
+}
+
+.text_wrapper {
+  padding-bottom: 43px;
+
+  @include md {
+    padding-bottom: 69px;
+  }
+  @include lg {
+    width: 80vw;
+    border-bottom: 1px solid $color-green-light;
+    padding-bottom: 69px;
+  }
+}
+
+.address_box {
+  display: flex;
+  gap: 64px;
+  @include lg {
+    padding-top: 69px;
+  }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include lg {
+    border-top: 1px solid $color-green-light;
+    width: 80vw;
+    padding-top: 69px;
+  }
+}

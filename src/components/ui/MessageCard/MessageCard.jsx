@@ -9,12 +9,14 @@ export const MessageCard = ({
   border = false,
   center = false,
   bgWhite = false,
+  alwCenter = false,
 }) => {
+  console.log(center);
   return (
     <div
-      className={`${styles.card} ${border ? styles.border : ""} ${center ? styles.center : ""} ${
-        bgWhite ? styles.white : ""
-      }`}
+      className={`${styles.card} ${border ? styles.border : ""} ${center ? styles.center : ""}  ${
+        alwCenter ? styles.alwCenter : ""
+      }  ${bgWhite ? styles.white : ""}`}
     >
       <Title>{title}</Title>
       <div className={styles.card_text}>

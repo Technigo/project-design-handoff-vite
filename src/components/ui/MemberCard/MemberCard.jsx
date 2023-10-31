@@ -1,7 +1,6 @@
 import styles from "./MemberCard.module.scss";
 
 export const MemberCard = ({ name, text, imgPath }) => {
-  console.log(imgPath);
   return (
     <div className={styles.card}>
       <div className={styles.card_inner}>

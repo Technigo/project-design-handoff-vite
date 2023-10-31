@@ -97,4 +97,14 @@ export const content = {
       },
     ],
   },
+  aboutContact: {
+    text: "We probably wont answer we need lots of Naps on Laps but you are welcome to try any time you like ",
+    title: "Would you like to contact us?",
+    button: "contact us",
+  },
 };
+
+export const address = [
+  { address: "Grand Topal Hideaway Beachside 1 Just outside Haven Southern Grahtwood Tamriel" },
+  { address: "Sanctuary Plot 37, 5th Ward Shirogane Hingashi Eorzea Twintania" },
+];
