@@ -1,4 +1,4 @@
-import { NavigationMenu } from './NavigationManu';
+import { NavigationMenu } from './NavigationMenu';
 
 export const Navigation = () => {
     return (
