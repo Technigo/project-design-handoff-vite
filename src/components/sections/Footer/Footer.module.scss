@@ -37,6 +37,11 @@
       & a {
         display: flex;
         align-items: center;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: translateX(0.5px);
+        }
       }
     }
 
@@ -50,6 +55,12 @@
         & img {
           width: 23px;
           height: 23px;
+          transition: all 0.3s ease;
+
+          &:hover {
+            filter: brightness(1.6);
+            transform: translateX(0.5px);
+          }
         }
 
         @include lg {

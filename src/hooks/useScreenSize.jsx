@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 function getWindowWidth() {
   const { innerWidth: width } = window;
   return {
@@ -16,6 +17,8 @@ function useScreenSize() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  console.log(windowWidth);
   return [windowWidth];
 }
 
