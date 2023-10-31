@@ -6,11 +6,9 @@ export const Navbar = () => {
     return (
         <div className="navbar">
             <div className="menu-toggle">☰</div>
-            <Logo />
-            <p>User</p>
+            <div className="navbar-logo"><Logo /></div>
+            <div className="navbar-profile"><img src="public/dvicon.png" alt="profile" /></div>
         </div>
     )
 }
 
-
-//<img src="https://placehold.co/25x25" alt="user" />
