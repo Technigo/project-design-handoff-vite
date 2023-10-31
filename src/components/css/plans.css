@@ -1,0 +1,89 @@
+.plans {
+    width: 90%;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.plans h1 {
+    color: #3C3C3C;
+    text-align: center;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+}
+
+.plans h3 {
+    color: #000;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.plans p {
+    color: #000;
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.plans-links {
+    display: flex;
+    flex-direction: row;
+    gap: 23px;
+}
+
+.plans a {
+    color: #000;
+    text-align: center;
+    font-family: Cormorant Garamond;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.plans a:hover {
+    text-decoration: underline;
+}
+
+.plans a.active {
+    text-decoration: underline;
+    /* Style for the active link */
+}
+
+.plans img {
+    border-radius: 20px;
+    width: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+.plans-images-container {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.plans-images {
+    display: flex;
+    gap: 32px;
+}
+
+.plans-item {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
