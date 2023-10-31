@@ -10,4 +10,13 @@
 main {
   background-image: url(/public/backroundGF.png);
   background-repeat: repeat;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
 }

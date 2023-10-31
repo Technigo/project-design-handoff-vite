@@ -1,0 +1,26 @@
+.hero h1 {
+    color: #FFE03B;
+    padding-bottom: 5vh;
+}
+
+.hero h2 {
+    padding-bottom: 30vh;
+}
+
+.hero {
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero button {
+    background-color: #FFE03B;
+    display: inline-block;
+    padding: 10px 20px;
+    max-width: max-content;
+    align-self: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
