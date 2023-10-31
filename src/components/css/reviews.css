@@ -33,3 +33,30 @@
 .italic-text {
     font-style: italic;
 }
+
+/* Mobile */
+@media (max-width: 393px) {
+    .reviews {
+        margin: 6px;
+    }
+
+    .reviews-info {
+        flex-direction: row;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .reviews-info-child {
+        width: 100%;
+    }
+
+    .reviews h1 {
+        width: 110%;
+        font-size: 25px;
+    }
+
+    .reviews h3 {
+        font-size: 15px;
+    }
+
+}
