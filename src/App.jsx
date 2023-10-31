@@ -1,12 +1,14 @@
-import { LottieComponent } from "./components/LottieComponent";
-import { TranslationComponent } from "./components/TranslationComponent";
+import { BrowserRouter, Routes } from "react-router-dom";
+import routes from "./routes/routes";
 
 export const App = () => {
   return (
     <>
-   <h1>Find me in src/app.jsx!</h1>
-   <TranslationComponent />
-   <LottieComponent />
+    <BrowserRouter>
+       <div className="wrapper">
+       <Routes>{routes}</Routes>
+      </div>
+   </BrowserRouter>
    </>
   )
 };
