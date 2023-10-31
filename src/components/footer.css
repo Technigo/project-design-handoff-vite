@@ -1,0 +1,9 @@
+.footer-wrapper {
+  display: block;
+  flex-wrap: wrap;
+  background: rgba(217, 135, 49, 0.3);
+}
+
+.footer-wrapper ul {
+  list-style: none;
+}

@@ -2,6 +2,8 @@ import { AboutMe } from "./Landing-session/AboutMe";
 import { Courses } from "./Landing-session/Courses";
 import { Intro } from "./Landing-session/Intro";
 import { Motto } from "./Landing-session/Motto";
+import { Newsletter } from "./Landing-session/Newsletter";
+import { Footer } from "./components/Footer";
 
 export const LandingPage = () => {
   return (
@@ -10,8 +12,9 @@ export const LandingPage = () => {
       <h1>Courses at MINI FLOW</h1>
       <Courses />
       <Motto />
-
       <AboutMe />
+      <Newsletter />
+      <Footer />
     </div>
   );
 };
