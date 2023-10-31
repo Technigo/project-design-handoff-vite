@@ -1,3 +1,21 @@
+/* Import the custom font */
+@font-face {
+    font-family: 'Gambarino-Regular';
+    src: url('../fonts/Gambarino-Regular.woff2') format('woff2'),
+        url('../fonts/Gambarino-Regular.woff') format('woff'),
+        url('../fonts/Gambarino-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+/* Include Tailwind CSS directives */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+    font-family: 'Gambarino-Regular', sans-serif;
+    /* Add any additional styles you want for all h1 elements */
+}

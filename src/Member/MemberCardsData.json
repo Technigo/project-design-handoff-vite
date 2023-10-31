@@ -1,0 +1,28 @@
+[
+    {
+        "title": "Bronze",
+        "subtitle": "80€/month",
+        "content1": "Limited access to 2 facilities of your choice",
+        "content2": "Open snack / soft drinks bar ",
+        "buttonText": "Read more"
+    },
+    {
+        "title": "Silver",
+        "subtitle": "100€/month",
+        "content1": "Limited access to 3 facilities of your choice",
+        "content2": "Open snack / soft drinks bar",
+        "content3": "Switch between facilities every 3rd month",
+        "content4": "Given 2 invites a month",
+        "buttonText": "Read more"
+    },
+    {
+        "title": "Gold",
+        "subtitle": "200€/month",
+        "content1": "Limited access to ALL facilities",
+        "content2": "Open snack / soft drinks bar",
+        "content3": "Private locker",
+        "content4": "Private parking space",
+        "content5": "Given 4 invites a month",
+        "buttonText": "Read more"
+    }
+]
