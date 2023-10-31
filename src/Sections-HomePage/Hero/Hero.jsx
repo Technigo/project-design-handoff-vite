@@ -1,4 +1,5 @@
 import { Button } from "../../Reusable/Buttons/button"
+
 import "./hero.css"
 export const Hero = () => {
   return (
