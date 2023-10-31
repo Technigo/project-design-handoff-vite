@@ -1,0 +1,20 @@
+{
+    "trainers": [
+        {
+            "image": "/natasha.png",
+            "name": "NATASHA"
+        },
+        {
+            "image": "/chloe.png",
+            "name": "CHLOE"
+        },
+        {
+            "image": "/taylor.png",
+            "name": "TAYLOR"
+        },
+        {
+            "image": "/rich.png",
+            "name": "RICH"
+        }
+    ]
+}

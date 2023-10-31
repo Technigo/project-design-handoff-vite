@@ -1,0 +1,20 @@
+{
+    "plans": [
+        {
+            "image": "/glute.png",
+            "name": "GLUTE BUILDER"
+        },
+        {
+            "image": "/flex.png",
+            "name": "FLEXIBILITY"
+        },
+        {
+            "image": "/strenght.png",
+            "name": "STRENGHT"
+        },
+        {
+            "image": "/glute2.png",
+            "name": "GLUTE BUILDER"
+        }
+    ]
+}
