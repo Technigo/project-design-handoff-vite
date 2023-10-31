@@ -2,6 +2,6 @@
 
 export const About = () => {
   return (
-    <div>About</div>
+    <div className="about-page-wrapper">About</div>
   )
 }
