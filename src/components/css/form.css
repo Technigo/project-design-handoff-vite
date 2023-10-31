@@ -14,6 +14,9 @@
 
 .form-info {
     width: 612px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
 }
 
 .form h2 {
@@ -33,4 +36,5 @@
     border: none;
     padding: 10px 30px;
     cursor: pointer;
+    align-self: flex-start;
 }
