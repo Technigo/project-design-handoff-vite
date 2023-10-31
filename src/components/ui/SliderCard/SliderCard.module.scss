@@ -14,6 +14,7 @@
 
   @include lg {
     padding-top: 0;
+    min-height: 100vh;
   }
 
   &:has(.orange_border) {
@@ -26,6 +27,7 @@
     @include lg {
       position: absolute;
       min-width: 100vw;
+      height: 100vh;
       top: 0;
       left: 0;
       bottom: 0;
