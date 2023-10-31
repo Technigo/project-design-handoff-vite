@@ -1,5 +1,5 @@
-import { BrowserRouter, Link, Routes, NavLink } from "react-router-dom";
-import { routes } from "./routes/routes";
+import { BrowserRouter, Link, NavLink } from "react-router-dom";
+import { AppRoutes } from "./routes/AppRoutes";
 
 // Set up the routing and display the navigation links
 export const App = () => {
@@ -25,7 +25,7 @@ export const App = () => {
 
         {/* Defining the routes for the application */}
         <main>
-          <Routes>{routes}</Routes>
+          <AppRoutes />
         </main>
       </BrowserRouter>
     </>
