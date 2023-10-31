@@ -1,13 +1,18 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&display=swap');
 :root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+font-family: 'Arsenal', sans-serif;
+--blue-color: #2AA9C0;
+--red-color:#BB0000;
+--yellow-color:#FDE829;
+--active-card-color:#E8E8E8;
+--footer-inactive-card-color:#DFDBDB;
+--heading-font-family: 'Staatliches', sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+*, *:after, *:before{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
