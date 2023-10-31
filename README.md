@@ -39,3 +39,9 @@ Every project should be deployed somewhere. Be sure to include the link to the d
 <a href="instructions.md">
    See instructions of this project
   </a>
+
+1. Check the colours hex code
+2. logo i lila om det går
+3. About us kommer man till andra sidan
+4. Spårk text header logo footer
+5. Hamburgare drop down play parkour, classes, prices, english
