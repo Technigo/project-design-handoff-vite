@@ -1,4 +1,9 @@
 {
+    "newsletter": {
+    "signup": "Sign up for our newsletter",
+    "placeholder": "Your Email",
+    "button": "Send"
+  },
     "footer": {
         "follow": "Follow us",
         "terms": "Terms & Conditions",

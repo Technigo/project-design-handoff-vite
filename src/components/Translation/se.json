@@ -1,4 +1,9 @@
 {
+  "newsletter": {
+    "signup": "Anmäl dig till vårat nyhetsbrev",
+    "placeholder": "Din e-post",
+    "button": "Skicka"
+  },
   "footer": {
     "follow": "Följ oss",
     "terms": "Villkor och bestämmelser",
