@@ -1,8 +1,9 @@
+import { LogoDark } from "../ReusableComponents/Logo/LogoDark.jsx";
+
 export const Header = () => {
   return (
     <div>
-      <p>saddle up</p>
-      <p>yoga studio</p>
+      <LogoDark />
 
       {/* <header>
       <nav class="navbar">

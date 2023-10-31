@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { LanguageButtonEN } from "./LanguageButtonEN";
-import { LanguageButtonSV } from "./LanguageButtonSV";
+import { LanguageButtonSE } from "./LanguageButtonSE";
 
 export const Translation = () => {
   const { t, i18n } = useTranslation();
@@ -13,8 +13,8 @@ export const Translation = () => {
     changeLanguage("en");
   };
 
-  const handleLanguageChangeSV = () => {
-    changeLanguage("sv");
+  const handleLanguageChangeSE = () => {
+    changeLanguage("se");
   };
 
   return (
@@ -22,7 +22,7 @@ export const Translation = () => {
       <h1>{t("welcome")}</h1>
       <p>{t("text")}</p>
       <LanguageButtonEN onClick={handleLanguageChangeEN} />
-      <LanguageButtonSV onClick={handleLanguageChangeSV} />
+      <LanguageButtonSE onClick={handleLanguageChangeSE} />
     </div>
   );
 };

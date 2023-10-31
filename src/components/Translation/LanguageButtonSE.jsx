@@ -1,7 +1,7 @@
 import SwedenFlag from "/assets/Sweden_flag_orb_icon.svg.png"; // Importera din SVG-fil
 import styled from "styled-components";
 
-const StyledLanguageButtonSV = styled.img`
+const StyledLanguageButtonSE = styled.img`
   /* Dina CSS-stilar här */
   width: 52px;
   cursor: pointer;
@@ -10,10 +10,10 @@ const StyledLanguageButtonSV = styled.img`
   //}
 `;
 
-export const LanguageButtonSV = ({ onClick }) => {
+export const LanguageButtonSE = ({ onClick }) => {
   return (
     <div>
-      <StyledLanguageButtonSV
+      <StyledLanguageButtonSE
         src={SwedenFlag}
         alt="Sweden flag"
         onClick={onClick}

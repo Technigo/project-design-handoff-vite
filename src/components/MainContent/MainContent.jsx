@@ -1,13 +1,13 @@
 import { Hero } from "./Hero.jsx";
+import { Courses } from "./Courses.jsx";
 import { Form } from "./Form.jsx";
-import { Content } from "./Content.jsx";
 
 export const MainContent = () => {
   return (
     <section>
       <Hero />
+      <Courses />
       <Form />
-      <Content />
     </section>
   );
 };

@@ -8,7 +8,7 @@ const resources = {
       text: "Yoga is universally loved, and for good reason",
     },
   },
-  sv: {
+  se: {
     translation: {
       welcome: "Välkommen till vår webbplats!",
       text: "Yoga är universiellt älskat, och av goda skäl",
