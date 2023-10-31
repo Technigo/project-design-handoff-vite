@@ -1,0 +1,10 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+        <pattern id="pattern" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M4.21633 9.36154C6.49829 9.36154 8.34819 7.40774 8.34819 4.99761C8.34819 2.58747 6.49829 0.633667 4.21633 0.633667C1.93437 0.633667 0.0844727 2.58747 0.0844727 4.99761C0.0844727 7.40774 1.93437 9.36154 4.21633 9.36154Z" fill="#808080" fill-opacity="0.1"/>
+        </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#pattern)" />
+</svg>
+
+

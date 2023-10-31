@@ -1,0 +1,31 @@
+body {
+    background-color: #F2F2F2;
+    background-image: url('./assets/backgroundpattern.svg');
+    background-repeat: repeat;
+    font-family: 'Montserrat';
+}
+
+.siteContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.logoContainer {
+    padding: 70px;
+}
+
+.heroContainer {
+    grid-column: 4 / 5;
+}
+
+@media screen and (max-width: 667px) {
+    .siteContainer {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+    .siteContainer {
+        grid-template-columns: repeat, (2, 1fr);
+    }
+}
