@@ -75,8 +75,7 @@ img {
 
 .search {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
+    align-self: flex-end;
     margin-top: 20px;
 }
 
@@ -84,5 +83,7 @@ img {
     width: 24px;
     height: 24px;
     padding: 10px;
-    margin-left: 20px;
+    padding-left: 40px;
+    padding-top: 13px;
+    margin: 0 auto;
 }
