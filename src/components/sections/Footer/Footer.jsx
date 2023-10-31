@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Footer.module.scss";
 
 export const Footer = () => {
@@ -11,14 +12,14 @@ export const Footer = () => {
       </select>
       <div className={styles.footer_under}>
         <div className={styles.footer_under_left}>
-          <a href="#">About</a>
+          <Link href="/">About</Link>
           <a href="#">Careers</a>
           <a href="#">Privacy policy</a>
           <a href="#">Terms & Conditions</a>
           <a href="#">Cookies</a>
         </div>
         <div className={styles.footer_under_right}>
-          <a href="#">Contact us</a>
+          <Link to="/contact">Contact us</Link>
           <div className={styles.icons}>
             <a href="#">
               <img src="/icons/social/facebook.svg" />

@@ -44,4 +44,57 @@ export const content = {
       button: "More",
     },
   ],
+  aboutHero: {
+    text: `The Jolly team at Legz we have a highly dedicated team of louts and layabouts, that are generally found outside the team base in Shirogane, mostly chatting or AFK with sporadic moments of highly entertaining, sometimes borderline bizarre conversation. It is a home for any sweet soul be they extrovert or shy.<br/><br> Many thanks to the whole Anti-Social squad, Namely Chavalier Noir, Aliasse Thassalia, Marcus Ax, Feira and Last but furthest from least Fyr Serra the glue that keeps things together and beloved by all. `,
+
+    memberCards: [
+      {
+        name: "Kaelana Bambridge",
+        text: "Kaelana is a long standing member of Legs pun intended, very fashionable and voted prettiest female in all of Tera she is our marketing specialist",
+        shortText: "Kaelana is a long standing member of Legs she is our marketing specialist",
+        imgPath: "/photos/team/kae.png",
+      },
+
+      {
+        name: "Marcus Ax",
+        text: "Chief Decorator Extraordinaire Thanks to Marcus’s efforts and  patience any headquarters we move to becomes a sublime resting area ",
+        shortText:
+          "Chief Decorator Thanks to Marcus any headquarters becomes a sublime resting area",
+        imgPath: "/photos/team/marc.png",
+      },
+
+      {
+        name: "Delisha Mathis",
+        text: "Most gracious helpful Craft Master General Del is always willing to give a hand",
+        imgPath: "/photos/team/deli.png",
+      },
+
+      {
+        name: "Moxxi Read",
+        text: "Sleepy Helper and Headquaters defender",
+        imgPath: "/photos/team/read.png",
+      },
+
+      {
+        name: "Chevalier Noir ",
+        text: "Chief Officer of Cheerfulness She keeps the office positive Pet her for good luck ",
+        imgPath: "/photos/team/chev.png",
+      },
+      {
+        name: "Aliasse Thassalia",
+        text: "Second in command Ali is always there to help with a smile and her spiffing looks",
+        imgPath: "/photos/team/ali.png",
+      },
+      {
+        name: "Moxxi Onefang",
+        text: "Panic cat, dizzy, dozy and forgetful so dont forget to remind her of things that need to be done",
+        imgPath: "/photos/team/onef.png",
+      },
+      {
+        name: "Feira ",
+        text: "Our Extraordinary chef and Barista, keeps us at our peak with her delicious creations.",
+        imgPath: "/photos/team/kae.png",
+      },
+    ],
+  },
 };

@@ -14,7 +14,7 @@
 
 // Large devices
 @mixin lg {
-  @media (min-width: 992px) {
+  @media (min-width: 1026px) {
     @content;
   }
 }

@@ -1,0 +1,17 @@
+@use "./../../styles/variables.scss" as *;
+@use "./../../styles/mixins.scss" as *;
+
+.about_page {
+  min-height: 100vh;
+  background-color: $color-dark;
+  padding: 70px 16px 36px;
+  color: $color-green-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 43px;
+
+  @include md {
+    gap: 69px;
+  }
+}

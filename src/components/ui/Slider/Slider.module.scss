@@ -5,9 +5,14 @@
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  width: 100vw;
 
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  @include lg {
+    overflow-x: visible;
   }
 }
 .slider {
@@ -17,5 +22,27 @@
   @include lg {
     width: 100%;
     flex-direction: column;
+  }
+}
+
+.about {
+  gap: 38px;
+  display: flex;
+  margin-right: 16px;
+
+  @include lg {
+    width: 100vw;
+    max-width: 1260px;
+    margin: 0 auto;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 32px;
+    justify-content: center;
+  }
+
+  @media (min-width: 1260px) {
+    gap: 64px;
   }
 }

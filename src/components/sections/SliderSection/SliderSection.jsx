@@ -7,7 +7,6 @@ export const SliderSection = () => {
       <div className={styles.sliders}>
         <Slider />
       </div>
-      <div className={styles.slides_desktop}></div>
     </>
   );
 };
