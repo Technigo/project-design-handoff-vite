@@ -1,0 +1,61 @@
+.trainers {
+    width: 90%;
+    margin-left: 80px;
+    margin-top: 100px;
+}
+
+.trainers h1 {
+    color: #3C3C3C;
+    text-align: center;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+}
+
+.trainers h3 {
+    color: #000;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.trainers p {
+    color: #000;
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.trainers img {
+    border-radius: 20px;
+    width: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+.trainers-images-container {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.trainers-images {
+    display: flex;
+    gap: 32px;
+}
+
+.trainers-item {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}

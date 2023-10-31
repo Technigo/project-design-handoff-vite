@@ -4,6 +4,8 @@ import HeroHeader from "./components/HeroHeader";
 import Workout from "./components/Workout";
 import Form from "./components/Form";
 import Plans from "./components/Plans";
+import Reviews from "./components/Reviews";
+import Trainers from "./components/Trainers";
 
 export const App = () => {
   return <div className="main">
@@ -12,5 +14,7 @@ export const App = () => {
     <Workout />
     <Form />
     <Plans />
+    <Reviews />
+    <Trainers />
   </div>;
 };
