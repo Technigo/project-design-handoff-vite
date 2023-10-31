@@ -1,0 +1,79 @@
+/* .membership-section {
+    border: dotted grey;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.membership-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.membership-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.membership-card img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
+.membership-card h1 {
+    position: absolute;
+}
+
+.membership-card P {
+    position: absolute;
+    align-self: baseline;
+    justify-self: end;
+} */
+.membership-section {
+    border: dotted grey;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.membership-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.membership-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    
+}
+
+.membership-card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.membership-card h1 {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Center the <h1> element */
+}
+
+.membership-card p {
+    position: absolute;
+    bottom: 0;
+    /* Align to the bottom */
+    right: 0;
+    /* Align to the right */
+    margin: 10px;
+    /* Add space from the bottom and right edges (adjust as needed) */
+}
