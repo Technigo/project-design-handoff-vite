@@ -7,7 +7,7 @@ export const ImageContent = () => {
     const { imageContent } = contentStore;
 
     return (
-        <div className="text-center">
+        <div className="text-center m-4">
             <img src={imageContent.imageUrl} alt="Image Description" />
         </div>
     );

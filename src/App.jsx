@@ -6,6 +6,7 @@ import { Info } from "./InfoComponents/Info";
 import { Member } from "./Member/Member";
 import { Footer } from "./Footer/Footer";
 import { About } from "./AboutComponents/About";
+import './index.css';
 
 export const App = () => {
   return (

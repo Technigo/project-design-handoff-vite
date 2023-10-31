@@ -2,13 +2,15 @@
     {
         "title": "Bronze",
         "subtitle": "80€/month",
+        "icon": "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Check.svg?v=1698771282254",
         "content1": "Limited access to 2 facilities of your choice",
-        "content2": "Open snack / soft drinks bar ",
+        "content2": "Open snack / soft drinks bar",
         "buttonText": "Read more"
     },
     {
         "title": "Silver",
         "subtitle": "100€/month",
+        "icon": "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Check.svg?v=1698771282254",
         "content1": "Limited access to 3 facilities of your choice",
         "content2": "Open snack / soft drinks bar",
         "content3": "Switch between facilities every 3rd month",
@@ -18,6 +20,7 @@
     {
         "title": "Gold",
         "subtitle": "200€/month",
+        "icon": "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Check.svg?v=1698771282254",
         "content1": "Limited access to ALL facilities",
         "content2": "Open snack / soft drinks bar",
         "content3": "Private locker",

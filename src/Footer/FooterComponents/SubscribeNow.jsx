@@ -42,7 +42,7 @@ export const SubscribeNow = () => {
                         />
                     </label>
                     {clickedSubscribe && !isValidEmail && <p className="text-red-500">Invalid email</p>}
-                    <button className="bg-white border-solid border-2 border-black p-2 mb-4 mt-4" onClick={handleSubscribe}>
+                    <button className="bg-white w-44 border-solid border-2 border-black p-2 mb-4 mt-4" onClick={handleSubscribe}>
                         Subscribe
                     </button>
                 </div>

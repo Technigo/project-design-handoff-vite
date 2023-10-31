@@ -1,23 +1,23 @@
-// MemberCard.js
-import React from 'react';
-
 const MemberCard = ({ cardData }) => {
-    const { title, subtitle, content1, content2, content3, content4, content5, buttonText } = cardData;
+    const { title, subtitle, icon, content1, content2, content3, content4, content5, buttonText } = cardData;
 
     return (
         <div className="text-center w-auto">
-            <h2 className="bg-white  bg-opacity-50 text-3xl lg:text-6xl rounded-t-lg">{title}</h2>
-            <p className="h-64 w-auto bg-white rounded-b-lg">
+            <h2 className="border-4 text-white border-white bg-white h-44 mx-10 bg-opacity-50 text-3xl lg:text-6xl rounded-t-lg pt-10">{title}</h2>
+            <div className="h-64 w-auto mx-10 bg-white rounded-b-lg pt-10 text-left pl-10">
                 {subtitle && <p>{subtitle}</p>}
-                <p>{content1}</p>
-                <p>{content2}</p>
+                {icon && <img src={icon} alt={title} />}
+                {content1 && <p>{content1}</p>}
+                {content2 && <p>{content2}</p>}
                 {content3 && <p>{content3}</p>}
                 {content4 && <p>{content4}</p>}
                 {content5 && <p>{content5}</p>}
-            </p>
+            </div>
             <button className="bg-white border-solid border-2 border-black p-2">{buttonText}</button>
         </div>
     );
 };
 
 export default MemberCard;
+
+
