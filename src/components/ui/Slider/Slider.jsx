@@ -7,9 +7,9 @@ import useScreenSize from "../../../hooks/useScreenSize";
 
 export const Slider = ({ type = "slider" }) => {
   const sliderRef = useRef();
-  const { width } = useScreenSize();
+  const [width] = useScreenSize();
   const sliderData = type === "aboutHero" ? data.aboutHero.memberCards : data.slider;
-
+  console.log(width);
   return (
     <div className={styles.slider_box} ref={sliderRef}>
       <ul className={`${styles.slider} ${type === "aboutHero" ? styles.about : ""}`}>
