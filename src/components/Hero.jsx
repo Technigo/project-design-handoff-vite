@@ -1,14 +1,15 @@
 import { Button } from "./Button";
 import hero from "/images/hero.png";
+
 export const Hero = () => {
   return (
-    <section className="border-2 border-solid border-red-600 w-full relative flex flex-col items-start   justify-center">
+    <section className=" w-full relative flex flex-col items-start   justify-center">
       <img
         src={hero}
         alt="hero image"
         className="w-full h-[50vh] object-cover bg-lightgray bg-no-repeat bg-center md:h-[62vh] lg:h-[100vh] "
       />
-      <div className=" border-2 border-solid  border-green-600 w-[95%] h-[95%] absolute top-3 left-3 z-10 text-primary flex flex-col justify-center gap-3 md:ml-4  lg:gap-6 lg:ml-4">
+      <div className=" w-[95%] h-[95%] absolute top-3 left-3 z-10 text-primary flex flex-col justify-center gap-3 md:ml-4  lg:gap-6 lg:ml-4">
         <h1 className="text-[26px] font-bold md:text-[40px] lg:text-[70px] z-1">
           Master the <br />
           <span>Pilates</span> <br />

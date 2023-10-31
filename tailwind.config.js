@@ -13,6 +13,15 @@ export default {
         "persian-blue": "#3232CD",
         "half-yellow": "#EBE7CD",
       },
+      animation: {
+        scroll: "scroll 10s linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translate(0)" },
+          "100%": { transform: "translate(-100%)" },
+        },
+      },
     },
   },
 
