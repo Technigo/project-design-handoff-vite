@@ -1,0 +1,9 @@
+{
+  "welcome": "Welcome to our website!",
+  "text": "Pizza is good",
+
+  "translatePage": {
+    "heading": "Hello World!",
+    "sub-heading": "This is a paragraph."
+  }
+}
