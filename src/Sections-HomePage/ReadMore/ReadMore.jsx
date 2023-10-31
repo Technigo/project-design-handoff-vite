@@ -1,4 +1,4 @@
-import { Button } from "../../Reusable/Buttons/button"
+import { Button } from "../../Components/Reusable/Buttons/Button"
 import "./readmore.css"
 
 export const ReadMore = () => {
