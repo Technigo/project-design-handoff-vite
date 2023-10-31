@@ -12,6 +12,11 @@ export default {
       "grey": "#444444",
       "blue-grey": "#9FACB9"
     },
+    fontFamily: {
+      'raleway': ['raleway', 'sans-serif'],
+      'oswald': ['oswald', 'sans-serif'],
+      'sourcesans3': ['sourcesans3', 'sans-serif']
+    },
     extend: {},
   },
   plugins: [],
