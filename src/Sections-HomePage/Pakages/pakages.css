@@ -1,0 +1,28 @@
+.pakages-section {
+    border: dotted grey;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.pakages-wrapper {
+    display: flex;
+        flex-direction: row;
+        gap: 10px;
+}
+
+.pakage-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.pakage-img-container p {
+    position: absolute;
+}
+
+.pakages-wrapper img {
+    width: 324px;
+    height: 441px;
+    object-fit: cover;
+        
+}
