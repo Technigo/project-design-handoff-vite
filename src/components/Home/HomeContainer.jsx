@@ -8,8 +8,8 @@ import { HomeCard } from "./HomeCard";
 
 
 
-export const HomeCards = () => {
-    let h2_headline_2 = "Your Instructors - About the Journey";
+export const HomeContainer = () => {
+    let h2_headline = "Your Instructors - About the Journey";
 
     const instructor_home_info = [
         {
@@ -48,7 +48,7 @@ export const HomeCards = () => {
 
     return (
         <div className="home-card-container">
-            <H2_Headline h2_headline={h2_headline_2} />
+            <H2_Headline h2_headline={h2_headline} />
             {instructor_home_info.map((instructor_home) => (
                 <div className="home-card-wrapper" key={instructor_home.id}>
                     <HomeCard
