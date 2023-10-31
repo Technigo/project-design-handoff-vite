@@ -1,9 +1,14 @@
 import React from 'react';
 import "./css/navbar.css";
 
+
 const Navbar = () => {
+
+
     return (
+
         <nav>
+
             <img src="/logo.png" alt="logo" />
             <div className="nav-links">
                 <a href="#">Videos</a>

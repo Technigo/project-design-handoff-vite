@@ -87,3 +87,37 @@ img {
     padding-top: 13px;
     margin: 0 auto;
 }
+
+/* Mobile */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 40px;
+}
+
+/* BurgerMenu.css */
+.bm-burger-button {
+    display: none;
+    /* Hide the default burger button */
+}
+
+.bm-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 20%;
+    /* Set the menu height to half the screen height */
+    background: white;
+    /* Background color */
+    transition: color 0.2s;
+}
+
+.bm-menu-item {
+    color: black;
+    /* Menu item text color */
+}

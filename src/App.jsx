@@ -1,5 +1,7 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 import Navbar from "./components/Navbar";
+import NavbarMobile from "./components/NavbarMobile";
 import HeroHeader from "./components/HeroHeader";
 import Workout from "./components/Workout";
 import Form from "./components/Form";
@@ -9,14 +11,18 @@ import Trainers from "./components/Trainers";
 import Footer from "./components/Footer";
 
 export const App = () => {
-  return <div className="main">
-    <Navbar />
-    <HeroHeader />
-    <Workout />
-    <Form />
-    <Plans />
-    <Reviews />
-    <Trainers />
-    <Footer />
-  </div>;
+  const isMobile = useMediaQuery({ maxWidth: 393 });
+
+  return (
+    <div className="main">
+      {isMobile ? <NavbarMobile /> : <Navbar />}
+      <HeroHeader />
+      <Workout />
+      <Form />
+      <Plans />
+      <Reviews />
+      <Trainers />
+      <Footer />
+    </div>
+  );
 };
