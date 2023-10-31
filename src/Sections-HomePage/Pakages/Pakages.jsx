@@ -13,7 +13,7 @@ export const Pakages = () => {
 
             <div className="pakage-img-container">
                 <p>JOIN THE DARK SIDE</p>   
-            <img className="join-darkside" src="/Images/pakage-mandelore.png" alt="" />
+            <img className="join-darkside" src="/Images/pakage-darkside.png" alt="" />
             
             </div>  
 
