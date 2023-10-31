@@ -10,7 +10,6 @@ export const App = () => {
       <Header />
       <main>
         <Outlet />
-        <MessageCard />
       </main>
       <Footer />
     </div>

@@ -1,0 +1,21 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.slider_box {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.slider {
+  display: flex;
+  width: fit-content;
+
+  @include lg {
+    width: 100%;
+    flex-direction: column;
+  }
+}

@@ -5,6 +5,7 @@ import { content as data } from "../../../statics/content";
 export const Hero = () => {
   return (
     <section className={styles.hero}>
+      <div className={styles.hero_img}> </div>
       <div className={styles.hero_text}>
         <MessageCard
           title={data.hero.title}

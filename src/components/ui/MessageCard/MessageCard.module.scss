@@ -4,6 +4,7 @@
 .card {
   padding: 16px;
   background-color: $color-dark;
+
   color: $color-green-light;
   font-size: 16px;
   font-family: $font-body;
@@ -11,6 +12,7 @@
   gap: 16px;
   width: 100%;
   border-radius: 8px;
+  position: relative;
 
   @include lg {
     padding: 32px;
@@ -26,21 +28,45 @@
   border: solid $border transparent; /* !importanté */
 
   &:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    margin: -$border; /* !importanté */
-    border-radius: inherit; /* !importanté */
-    background: linear-gradient(to bottom, $color-green, transparent);
+    @include lg {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -$border; /* !importanté */
+      border-radius: inherit; /* !importanté */
+      background: linear-gradient(to bottom, $color-green, transparent);
+    }
   }
 }
 
 .center {
   @include lg {
     text-align: center;
+  }
+}
+
+.white,
+.white > h3 {
+  @include md {
+    background-color: $color-green-light;
+    color: $color-dark;
+  }
+  @include lg {
+    background-color: $color-dark;
+    color: $color-green-light;
+  }
+}
+
+.white {
+  @include md {
+    border: 2px solid $color-dark;
+  }
+
+  @include lg {
+    border: none;
   }
 }

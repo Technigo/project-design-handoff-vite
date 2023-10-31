@@ -1,0 +1,55 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.box {
+  display: flex;
+  width: 327px;
+  height: 39px;
+  gap: 16px;
+  justify-content: space-around;
+  align-items: center;
+
+  @include md {
+    width: 347px;
+  }
+
+  @include lg {
+    display: none;
+  }
+
+  .dots {
+    content: " ";
+    width: 12px;
+    height: 12px;
+    border: $color-dark 2px solid;
+    display: inline-block;
+    border-radius: 50%;
+
+    &_box {
+      width: fit-content;
+      display: flex;
+      gap: 16px;
+    }
+  }
+}
+
+.right_paw,
+.left_paw {
+  width: 42px;
+}
+.right_cat,
+.left_cat {
+}
+
+.left_paw {
+  transform: rotate(180deg);
+}
+.left_cat {
+  width: 21px !important;
+}
+
+.right_paw {
+}
+.right_cat {
+  width: 19px !important;
+}

@@ -1,0 +1,57 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.findUs {
+  background-color: $color-dark;
+  padding: 24px;
+  position: relative;
+
+  @include md {
+    padding-bottom: 90px;
+  }
+
+  @include lg {
+    padding: 32px;
+  }
+
+  &_inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 47px;
+    margin: 0 auto;
+
+    @include lg {
+      width: 807px;
+      gap: 78px;
+    }
+  }
+
+  & img {
+    width: 307px;
+
+    @include md {
+      width: 793px;
+    }
+
+    @include lg {
+      width: 807px;
+    }
+  }
+}
+
+.text {
+  width: 290px;
+
+  @include md {
+    position: absolute;
+    width: 209px;
+    bottom: 24px;
+  }
+
+  @include lg {
+    position: unset;
+    width: 569px;
+  }
+}

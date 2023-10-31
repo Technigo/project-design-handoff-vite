@@ -9,8 +9,8 @@ export const LandingPage = () => {
     <>
       <Hero />
       <Member />
-      <SliderSection />
       <FindUs />
+      <SliderSection />
     </>
   );
 };

@@ -1,0 +1,25 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+.member {
+  background-image: url("/photos/member.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 680px;
+  padding: 24px;
+
+  @include md {
+    padding: 32px;
+  }
+
+  @include lg {
+    height: 995px;
+  }
+}
+
+.text {
+  width: 292px;
+  @include md {
+    width: 399px;
+  }
+}

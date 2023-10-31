@@ -1,0 +1,141 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.slider {
+  min-height: 725px;
+  $height: 100%;
+  width: 100vw;
+  padding-bottom: 16px;
+  position: relative;
+  z-index: -1;
+  @include md {
+    padding: 16px;
+  }
+
+  @include lg {
+    padding-top: 0;
+  }
+
+  &:has(.orange_border) {
+    @include lg {
+      padding-top: 30px;
+    }
+  }
+
+  & .bg_img {
+    @include lg {
+      position: absolute;
+      min-width: 100vw;
+      top: 0;
+      left: 0;
+      bottom: 0;
+    }
+    & ~ div {
+      @include lg {
+        position: absolute;
+        bottom: 16px;
+      }
+    }
+  }
+}
+
+.card {
+  $width: 100%;
+  min-height: 725px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+
+  & .image {
+    width: $width;
+    min-height: 360px;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-width: 460px) {
+      min-height: 430px;
+    }
+
+    @media (min-width: 540px) {
+      min-height: 500px;
+    }
+
+    @media (min-width: 610px) {
+      min-height: 560px;
+    }
+
+    @media (min-width: 700px) {
+      min-height: 600px;
+    }
+
+    @include md {
+      width: 600px;
+      margin: 0 auto;
+    }
+
+    @include lg {
+      width: 704px;
+    }
+  }
+}
+
+.text {
+  width: 327px;
+
+  @include md {
+    width: 368px;
+  }
+
+  @include lg {
+    width: 526px;
+  }
+}
+
+.orange_border {
+  @include lg {
+    border-radius: 20px;
+  }
+  &:before {
+    @include lg {
+      background: linear-gradient(to bottom left, #e46812, transparent);
+    }
+  }
+}
+
+.green_border {
+  @include lg {
+    border-radius: 0px 0px 20px 20px;
+  }
+  &:before {
+    @include lg {
+      background: linear-gradient(to top, $color-green, transparent);
+    }
+  }
+}
+
+.orange_border,
+.green_border {
+  position: relative;
+  $border: 4px;
+  @include lg {
+    display: block;
+    background-clip: padding-box; /* !importanté */
+    border: solid $border transparent; /* !importanté */
+  }
+
+  &:before {
+    @include lg {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -$border; /* !importanté */
+      border-radius: inherit; /* !importanté */
+    }
+  }
+}
