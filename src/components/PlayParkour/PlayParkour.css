@@ -1,0 +1,33 @@
+.playparkour-wrapper {
+   padding-top: 20px;
+   padding-bottom: 150px;
+   padding-left: 20px;
+    position: relative; 
+}
+
+.playparkour-wrapper::before {
+    content: ""; 
+    background-image: url('../../assets/image1.png');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    opacity: 0.6; 
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+
+
+h2 {
+    color: var(--color-purple);
+    margin-bottom: 10px; 
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+p {
+    color: var(--color-purple);
+    font-size: 0.7rem;
+}

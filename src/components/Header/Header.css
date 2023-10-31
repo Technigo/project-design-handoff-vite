@@ -1,0 +1,23 @@
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-green-opacity-60);
+    padding: 20px;
+    border-bottom: 3px solid var(--color-purple); 
+}  
+
+.logo {
+height: 35px;
+}
+
+.icons-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    height: 24px; 
+    padding-right: 20px;
+}
+
