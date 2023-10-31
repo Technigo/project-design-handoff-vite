@@ -60,8 +60,11 @@ p {
 
 /* Mobile */
 @media (max-width: 393px) {
-  .main {
-    margin: 10px;
+
+  .html,
+  body {
+    margin: 0 auto;
+    margin: 0 auto;
   }
 
 }

@@ -22,3 +22,24 @@
     padding: 10px;
     text-decoration: none;
 }
+
+/* Mobile */
+@media (max-width: 393px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .footer-links {
+        width: 100%;
+        flex-direction: row;
+        gap: 17px;
+    }
+
+    .footer-links a {
+        font-size: 10px;
+        padding: 10px;
+    }
+}
