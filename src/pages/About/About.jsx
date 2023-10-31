@@ -1,6 +1,6 @@
-import { BackButton } from "./SectionsWantMore/BackButton";
+import { BackButton } from "./SectionsAbout/BackButton";
 
-export const WantMore = () => {
+export const About = () => {
     return (
         <>
         <BackButton />
