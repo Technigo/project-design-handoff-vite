@@ -5,7 +5,6 @@ import { MidSection } from "../components/MidSection";
 import { Scroll1 } from "../components/Scroll";
 import { Scroll2 } from "../components/Scroll";
 import { Testimonials } from "../components/Testimonials";
-import { Footer } from "../components/Footer";
 export const FirstPage = () => {
   return (
     <div>
