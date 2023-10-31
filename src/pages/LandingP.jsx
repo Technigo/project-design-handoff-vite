@@ -1,6 +1,7 @@
 
 import { Navbar } from "../components/Navbar/Navbar"
 import { MainCont } from "../components/MainCont/MainCont"
+import { InfoFooter } from "../components/Footer/InfoFooter"
 //import { Footer } from "../components/Footer/Footer"
 import { LottieAni } from "../components/LottieAni"
 import { LottieAdv } from "../components/LottieAdv"
@@ -11,6 +12,7 @@ export const LandingP = () => {
         <>
             <Navbar />
             <MainCont />
+            <InfoFooter />
             <Translation />
 
             <LottieAni />
