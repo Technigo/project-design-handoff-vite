@@ -1,8 +1,13 @@
 import { LogoDark } from "../ReusableComponents/Logo/LogoDark.jsx";
+import styled from "styled-components";
+
+const StyledHeader = styled.div`
+  background: #fff6e9;
+`;
 
 export const Header = () => {
   return (
-    <div>
+    <StyledHeader>
       <LogoDark />
 
       {/* <header>
@@ -44,6 +49,6 @@ export const Header = () => {
         </ul>
       </nav>
     </header>*/}
-    </div>
+    </StyledHeader>
   );
 };

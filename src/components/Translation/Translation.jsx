@@ -1,9 +1,15 @@
 import { useTranslation } from "react-i18next";
 import { LanguageButtonEN } from "./LanguageButtonEN";
 import { LanguageButtonSE } from "./LanguageButtonSE";
+import styled from "styled-components";
+
+const StyledLanguages = styled.div`
+  display: flex;
+  gap: 16px;
+`;
 
 export const Translation = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -18,11 +24,11 @@ export const Translation = () => {
   };
 
   return (
-    <div>
-      <h1>{t("welcome")}</h1>
-      <p>{t("text")}</p>
-      <LanguageButtonEN onClick={handleLanguageChangeEN} />
-      <LanguageButtonSE onClick={handleLanguageChangeSE} />
-    </div>
+    <>
+      <StyledLanguages>
+        <LanguageButtonEN onClick={handleLanguageChangeEN} />
+        <LanguageButtonSE onClick={handleLanguageChangeSE} />
+      </StyledLanguages>
+    </>
   );
 };
