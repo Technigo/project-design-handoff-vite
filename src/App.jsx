@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Home } from "./pages/Home";
@@ -10,18 +10,13 @@ export const App = () => {
   return (
     <BrowserRouter>
       <div>
-        <Header>
-          <Link to="/">Home</Link>
-          <Link to="/about">About Us</Link>
-        </Header>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Footer>
-          <Link to="/contact">Contact Us</Link>
-        </Footer>
+        <Footer />
       </div>
     </BrowserRouter>
   );
