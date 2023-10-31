@@ -6,7 +6,7 @@ import { About } from "../Pages/About"
 export const routes = (
     <>
      <Route path="/" element={<Home />}></Route>
-     <Route path="/about" element={<About />}> </Route>
+     <Route path="/about" element={<About />}></Route>
     </>
 )
 

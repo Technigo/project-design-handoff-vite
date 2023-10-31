@@ -1,16 +1,46 @@
 footer {
-    /* position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%; */
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
 }
 
-.footer-menue {
+.footer-menu {
     background-color: rgba(28, 29, 35, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-menu-text-wrapper {
+    color: #ffffff;
+}
+
+.footer-menu-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-menu-join-container {
+display: flex;
+flex-direction: column;
+}
+
+.register-btn-container {
+    align-self: center;
+}
+
+.social-icons-wrapper {
+    margin: 20px;
+    display: flex;
+gap: 10px;
 }
 
 .footer-logo {
 background-color: rgba(28, 29, 35, 1);
+display: flex;
+flex-direction: column;
+align-items: center;
 }
 
 .footer-logo img {
@@ -18,7 +48,12 @@ background-color: rgba(28, 29, 35, 1);
     height: 106px;
 }
 
-.footer-text {
+.footer-logo-text {
     display: flex;
     flex-direction: row;
+    color: rgba(69, 68, 74, 1);
+}
+
+.rotopi-designs {
+    color:#ffffff ;
 }

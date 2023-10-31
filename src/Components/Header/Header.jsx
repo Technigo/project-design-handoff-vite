@@ -9,7 +9,9 @@ export const Header = () => {
     <header>
         <Navbar />
         <img src="/glactic-logo.svg" alt="" />
-        <p>UserLogo</p>
+        
+        <img src="/icons/dart-vader-icon-white.svg" alt="" />
+        
     </header>
   )
 }
