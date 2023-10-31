@@ -14,10 +14,14 @@ const Trainers = () => {
             <h1>Trainers</h1>
             <div className="trainers-images-container">
                 <div className='trainers-images'>
-                    {trainers.map((trainers, index) => (
+                    {trainers.map((trainer, index) => (
                         <div key={index} className="trainers-item">
-                            <img src={trainers.image} alt="pic of trainer" />
-                            <h3>{trainers.name}</h3>
+                            <div
+                                className="heart-icon"
+                                style={{ backgroundImage: `url(${trainer.heartIcon})` }}
+                            ></div>
+                            <a href="#"><img src={trainer.image} alt="pic of trainer" /></a>
+                            <h3>{trainer.name}</h3>
                         </div>
                     ))}
                 </div>

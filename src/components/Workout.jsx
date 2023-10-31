@@ -27,7 +27,11 @@ const Workout = () => {
                 <div className='workout-images'>
                     {workouts.map((workout, index) => (
                         <div key={index} className="workout-item">
-                            <img src={workout.image} alt="workout" />
+                            <div
+                                className="heart-icon"
+                                style={{ backgroundImage: `url(${workout.heartIcon})` }}
+                            ></div>
+                            <a href="#"><img src={workout.image} alt="workout" /></a>
                             <h3>{workout.name}</h3>
                             <p>{workout.minutes}</p>
                         </div>

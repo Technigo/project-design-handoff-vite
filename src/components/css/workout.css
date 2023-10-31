@@ -30,7 +30,7 @@
 
 .workout p {
     color: #000;
-    font-family: Cormorant Garamond;
+    font-family: 'Cormorant Garamond', sans-serif;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -87,4 +87,15 @@
     text-align: center;
     display: inline-block;
     vertical-align: top;
+    position: relative;
+}
+
+.heart-icon {
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
 }

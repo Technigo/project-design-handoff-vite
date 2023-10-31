@@ -2,19 +2,43 @@
     "plans": [
         {
             "image": "/glute3.png",
-            "name": "GLUTE BUILDER"
+            "name": "GLUTE BUILDER",
+            "heartIcon": "/heart.png"
         },
         {
             "image": "/flex.png",
-            "name": "FLEXIBILITY"
+            "name": "FLEXIBILITY",
+            "heartIcon": "/heart.png"
         },
         {
             "image": "/strenght.png",
-            "name": "STRENGHT"
+            "name": "STRENGHT",
+            "heartIcon": "/heart.png"
         },
         {
             "image": "/glute2.png",
-            "name": "GLUTE BUILDER"
+            "name": "GLUTE BUILDER",
+            "heartIcon": "/heart.png"
+        },
+        {
+            "image": "/glute3.png",
+            "name": "GLUTE BUILDER",
+            "heartIcon": "/heart.png"
+        },
+        {
+            "image": "/flex.png",
+            "name": "FLEXIBILITY",
+            "heartIcon": "/heart.png"
+        },
+        {
+            "image": "/strenght.png",
+            "name": "STRENGHT",
+            "heartIcon": "/heart.png"
+        },
+        {
+            "image": "/glute2.png",
+            "name": "GLUTE BUILDER",
+            "heartIcon": "/heart.png"
         }
     ]
 }

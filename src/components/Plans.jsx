@@ -11,7 +11,10 @@ const Plans = () => {
 
     return (
         <div className="plans">
-            <h1>Workout Plans</h1>
+            <div className="plans-top">
+                <h1>Workout Plans</h1>
+                <img src="/lock-closed.png" style={{ width: '24px', height: '24px', padding: '12px' }} />
+            </div>
             <div className='plans-links'>
                 <a href="#" className='active'>2 days a week</a>
                 <a href="#">3 days a week</a>
@@ -24,7 +27,11 @@ const Plans = () => {
                 <div className='plans-images'>
                     {plans.map((plan, index) => (
                         <div key={index} className="plans-item">
-                            <img src={plan.image} alt="workout plans" />
+                            <div
+                                className="heart-icon"
+                                style={{ backgroundImage: `url(${plan.heartIcon})` }}
+                            ></div>
+                            <a href="#"><img src={plan.image} alt="workout plans" /></a>
                             <h3>{plan.name}</h3>
                         </div>
                     ))}

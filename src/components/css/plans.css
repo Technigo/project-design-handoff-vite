@@ -4,6 +4,13 @@
     margin-top: 100px;
 }
 
+.plans-top {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 6px;
+}
+
 .plans h1 {
     color: #3C3C3C;
     text-align: center;
@@ -64,6 +71,10 @@
     /* Style for the active link */
 }
 
+.img-lock {
+    width: 24px;
+}
+
 .plans img {
     border-radius: 20px;
     width: 292px;
@@ -86,4 +97,15 @@
     text-align: center;
     display: inline-block;
     vertical-align: top;
+    position: relative;
+}
+
+.heart-icon {
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
 }
