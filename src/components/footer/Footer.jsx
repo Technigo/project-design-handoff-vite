@@ -43,10 +43,13 @@ export const Footer = () => {
           <p>@wave_yogastudio</p>
         </div>
       </div>
+      {/* <Link to="/about" element={ }> */}
+
       <button className="back-to-top">
         <img src={arrow} alt="arrow-pointing-down" className="footer-arrow" />
         {t("backToTop")}
       </button>
+      {/* </Link> */}
     </div>
   );
 };

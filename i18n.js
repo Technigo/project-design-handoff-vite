@@ -19,11 +19,11 @@ const resources = {
       navAbout: "About us",
       navSignUpBtn: "Sign up",
       navSignInBtn: "Sign in",
-      letsGoBtn: "Lets go!",
+      letsGoBtn: "Let's go!",
       intro: "Let's dive in to the world of",
       introYoga: "Yoga",
       introSub:
-        "At Wave Yoga Studio, we know and believe that yoga is for everyone 🤎",
+        "At Wave Yoga Studio, we know and believe that yoga is for everyone  🤎",
       classes: "Our classes",
       classRange: `We have a wide range of yoga classes suitable for all levels. 
 

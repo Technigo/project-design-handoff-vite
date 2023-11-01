@@ -17,12 +17,15 @@ h2 {
 .intro-container {
   background-color: var(--greyish);
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .title-and-image {
   display: flex;
   background-image: url(../../assets/wave-5.svg);
   background-repeat: no-repeat;
   background-position-y: center;
+  justify-content: space-between;
 }
 
 .yoga-for-everyone {

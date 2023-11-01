@@ -5,7 +5,7 @@ import wave3 from "../../assets/wave-3.svg";
 export const BenefitsOfYogaSection = () => {
   const { t } = useTranslation();
   const benefitList = t("benefitsOfYogaArray", { returnObjects: true });
-  console.log(benefitList);
+
   return (
     <div className="benefits-container">
       <h2 className="benefits-title">{t("benefitsOfYogaTitle")}</h2>

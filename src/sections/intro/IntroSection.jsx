@@ -18,7 +18,7 @@ export const IntroSection = () => {
         <p>{t("introSub")}</p>
       </div>
       <button className="lets-go">
-        Let's go!
+        {t("letsGoBtn")}
         <img src={arrowdown} alt="arrow-pointing-down" />
       </button>
 
