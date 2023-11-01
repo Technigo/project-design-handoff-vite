@@ -2,7 +2,7 @@
 
 export const Footer = () => {
     return (
-        <div className="mx-auto mt-auto flex flex-col items-center justify-center w-5/6 font-raleway text-white text-base font-medium space-y-5">
+        <div className="mx-auto mt-auto pb-16 flex flex-col items-center justify-center w-5/6 font-raleway text-white text-base font-medium space-y-5">
             <img src="icons/horizontalRule.svg" alt="horizontal rule" />
             <h4>LETS CONNECT</h4>
             <div className="flex flex-row justify-center items-center gap-4 mx-auto">
@@ -26,7 +26,7 @@ export const Footer = () => {
 
             <img src="icons/horizontalRule.svg" alt="horizontal rule" className="" />
             <h4>STUDIO VASASTAN</h4>
-            <div className="flex flex-col justify-center items-center font-sourcesans3 font-normal text-sm space-y-5">
+            <div className="mx-auto flex flex-col justify-center items-center font-sourcesans3 font-normal text-sm space-y-5">
                 <div className="adress1">
                     <h5>Hagagatan 16</h5>
                     <h5>113 48 Stockholm</h5>
