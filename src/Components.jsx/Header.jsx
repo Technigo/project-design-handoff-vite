@@ -32,6 +32,7 @@ export const Header = () => {
           stay home. We don’t.
         </p>
       </div>
+      <img className="vector" src="./src/Images/Vector-2.png" alt="Line" />
     </div>
   );
 };

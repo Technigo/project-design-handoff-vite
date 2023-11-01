@@ -34,3 +34,10 @@
   border: 3px solid #fff;
   align-items: flex-end;
 }
+
+.vector {
+  width: 65%;
+  height: 5px;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
