@@ -1,5 +1,5 @@
 import './AboutUs.css';
-import ImageAboutUs from '../../assets/images/Image19.png';
+import ImageAboutUs from '../../../public/images/image19.png';
 
 export const AboutUs = () => {
   return (
