@@ -1,0 +1,35 @@
+footer {
+    height: 111px;
+    background: #D9D9D9;
+}
+
+.footer-wrapper {
+    margin: 0 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-link {
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    color: #45321A;
+}
+
+.language-wrapper {
+    display: flex;
+    gap: 16px;
+}
+.footer-anchor {
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+    color: #45321A;
+}

@@ -1,0 +1,59 @@
+.home-page-wrapper {
+    background-color: #374F4B;
+}
+
+/* needs fixing */
+.hero-content {
+    margin: 0 24px;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 222px;
+}
+
+.headline-wrapper {
+    margin-top: 236px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero_h2 {
+    width: 127px;
+}
+
+.hero_h2 h2 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.trial-wrapper {
+    display: flex;
+    gap: 10px;
+}
+
+.trial-text {
+    width: 90px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.trial_btn_text {
+    padding: 12px 24px;
+}
+
+.trial_btn {
+    height: 44px;
+    border-radius: 20px;
+    border: 2px solid #71A59C;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+}
