@@ -17,10 +17,16 @@ main {
 /*--- Typography ---*/
 h1 {
   font-size: 30px;
+  font-weight: 500;
 }
 
 h2 {
   font-size: 20px;
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
 }
 
 /*--- Buttons ---*/
@@ -34,4 +40,48 @@ button {
   align-self: center;
   border-radius: 25px;
   cursor: pointer;
+}
+
+/* ----- Making the content responsive ----- */
+/* Tablet*/
+@media (min-width: 667px) {
+  h1 {
+    font-size: 65px;
+  }
+
+  h2 {
+    font-size: 45px;
+  }
+
+  h4 {
+    font-size: 40px;
+  }
+
+  h6 {
+    font-size: 12px;
+  }
+
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 80px;
+  }
+
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 35px;
+  }
+
+  h6 {
+    font-size: 24px;
+  }
 }

@@ -8,10 +8,19 @@
     align-items: center;
 }
 
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo-container img {
     width: 70%;
+    margin-bottom: 3%;
 }
 
 .by h6 {
     color: #949494;
+    padding-bottom: 3%;
 }

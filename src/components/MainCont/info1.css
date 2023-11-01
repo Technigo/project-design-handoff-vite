@@ -8,6 +8,10 @@
     padding: 3%;
 }
 
+.info1 h3 {
+    margin-bottom: 5%;
+}
+
 .info1 button {
     background-color: #FFE03B;
     display: inline-block;
@@ -16,4 +20,6 @@
     align-self: center;
     border-radius: 25px;
     cursor: pointer;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
