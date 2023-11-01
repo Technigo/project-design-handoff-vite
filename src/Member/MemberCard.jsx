@@ -1,4 +1,6 @@
-const MemberCard = ({ cardData }) => {
+
+
+export const MemberCard = ({ cardData }) => {
     const { title, subtitle, icon, content1, content2, content3, content4, content5, buttonText } = cardData;
 
     return (
@@ -18,6 +20,5 @@ const MemberCard = ({ cardData }) => {
     );
 };
 
-export default MemberCard;
 
 

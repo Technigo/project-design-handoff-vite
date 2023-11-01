@@ -1,7 +1,7 @@
 // Member.js
 import React from 'react';
-import MemberCard from './MemberCard';
-import memberCardsData from './memberCardsData.json';
+import { MemberCard } from './MemberCard';
+import memberCardsData from './MemberCardsData.json';
 
 export const Member = () => {
     return (
