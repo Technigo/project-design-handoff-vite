@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { Link } from "react-router-dom"
 
 const StyledHeader = styled.header` 
     position:fixed; 
@@ -22,6 +23,7 @@ export const Header = () => {
         <img/>
         <StyledNav>
             <StyledUl>
+                <Link to={"/"}>Home</Link>
                 <li href="#">Articles</li>
                 <li href="#">Events</li>
             </StyledUl>

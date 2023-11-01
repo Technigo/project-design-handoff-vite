@@ -18,7 +18,6 @@ const StyledButton = styled.button`
       opacity: 0.7; 
       cursor: pointer; 
 
-
     }
   `
    

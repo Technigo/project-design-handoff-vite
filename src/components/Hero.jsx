@@ -3,7 +3,7 @@ import { PrimaryButton } from "./PrimaryButton"
 
 
 const StyledSection = styled.section`
-    background-image: linear-gradient(180deg, rgba(92, 22, 7, 0.15) 37%, rgba(51, 13, 3, 0.74) 88.29%, #220901 100%), url("public/images/hero-image.jpeg");  
+    background-image: linear-gradient(180deg, rgba(92, 22, 7, 0.15) 37%, rgba(51, 13, 3, 0.74) 88.29%, #220901 100%), url("/images/hero-image.jpeg");  
     height: 603px;
     background-size: cover;  
     background-position: 90%; 
