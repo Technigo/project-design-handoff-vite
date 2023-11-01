@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { NavigationMenu } from "../NavigationComponents/NavigationMenu";
 import { AboutText } from "./AboutText";
 import { Footer } from "../Footer/Footer";
-import { VisitUs } from "./VisitUs";
+import { VisitUs } from "./VisitUsComponents/VisitUs";
 
 
 
