@@ -5,7 +5,9 @@
   overflow-x: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  scroll-behavior: smooth;
   width: 100vw;
+  scroll-snap-type: x mandatory;
 
   &::-webkit-scrollbar {
     display: none;
@@ -19,6 +21,7 @@
 .slider {
   display: flex;
   width: fit-content;
+  scroll-snap-type: x mandatory;
 
   @include lg {
     width: 100%;
