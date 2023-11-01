@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import './css/workout.css';
 import workoutsData from '../data/workouts.json';
 
 const Workout = () => {
     const [workouts, setWorkouts] = useState([]);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 834); // Function to hide workout-minutes based on mobile and tablet
+    const { t } = useTranslation();
 
     useEffect(() => {
         // Set the workouts data from the imported JSON
@@ -23,16 +25,16 @@ const Workout = () => {
 
     return (
         <div className="workout">
-            <h1>Workout</h1>
+            <h1>{t('Workout')}</h1>
             <div className="workout-links">
                 <a href="#" className="active">
                     Cardio
                 </a>
                 <a href="#">Hiit</a>
                 <a href="#">Yoga</a>
-                <a href="#">Glutes</a>
-                <a href="#">Back</a>
-                <a href="#">Arms</a>
+                <a href="#">{t('Glutes')}</a>
+                <a href="#">{t('Back')}</a>
+                <a href="#">{t('Arms')}</a>
                 <a href="#">Zumba</a>
                 <a href="#">Stretch</a>
             </div>
@@ -47,7 +49,7 @@ const Workout = () => {
                             <a href="#">
                                 <img src={workout.image} alt="workout" />
                             </a>
-                            <h3>{workout.name}</h3>
+                            <h3>{t('{workout.name}')}</h3>
                             {!isMobile && <p>{workout.minutes}</p>}
                         </div>
                     ))}

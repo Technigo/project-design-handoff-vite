@@ -1,6 +1,6 @@
 import React from 'react';
 import "./css/navbar.css";
-
+import LanguageSwitcher from './LanguageSwitcher';
 
 const Navbar = () => {
 
@@ -25,7 +25,7 @@ const Navbar = () => {
                         <img src="/search.png" alt="search" />
                     </button>
                 </div>
-                <img className="globe" src="/globe.png" alt="ENG/SVE" />
+                <LanguageSwitcher />
             </div>
         </nav>
     );
