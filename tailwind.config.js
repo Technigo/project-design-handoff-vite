@@ -8,9 +8,11 @@ export default {
     colors: {
       "rose": "#F1C7BF",
       "white": "#F6F6F6",
+      "white-btn": "#E7E7E7",
       "marin-blue": "#252837",
       "grey": "#444444",
-      "blue-grey": "#9FACB9"
+      "blue-grey": "#9FACB9",
+      "dark": "#120309"
     },
     fontFamily: {
       'raleway': ['raleway', 'sans-serif'],
