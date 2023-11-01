@@ -1,0 +1,20 @@
+/* .hamburger {
+  font-size: 30px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  width: 200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
