@@ -15,7 +15,7 @@ export const Hero = () => {
           <span>Pilates</span> <br />
           fundamentals
         </h1>
-        <p className="text-[16px] w-[90%] font-[600] leading-[28px] mt-4 md:text-[22px] md:w-[60%] md:leading-10 lg:text-[32px] lg:leading-[49px] z-10">
+        <p className="text-[16px] w-[90%] font-[600] leading-[22px]  md:text-[22px] md:w-[60%] md:leading-10 lg:text-[30px] lg:leading-[49px] z-10  lg:my-0">
           Sculpt, sweat and flow it out on the mat with the help of 100+ online
           classes. Available whenever you want.
         </p>
