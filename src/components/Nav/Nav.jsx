@@ -1,14 +1,18 @@
-import React from 'react'
+import { NavLink } from "react-router-dom";
+import { FiMenu } from "react-icons/fi";
+import "./Nav.css"
+import { styled } from "styled-components";
 
 import logo from "../../../public/Logotype.svg";
 
+
 export const Nav = () => {
-  return (
-    <div className='nav-bar'>
-        <img className="logo-img" src={logo} alt="Logo" />
-        YogaBalance
-        <img src="" alt="Search-icon" />
-        <img src="" alt="Menu" />
-    </div>
-  )
-}
+    return (
+        <nav>
+                <img className="logo-img " src={logo} alt="Logo" />
+                <p className="nav-logotype">YogaBalance</p>
+                {/* <img src="" alt="Search-icon" /> */}
+                <FiMenu className="menu-icon" />
+        </nav>
+    );
+};

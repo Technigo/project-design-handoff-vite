@@ -1,0 +1,23 @@
+.kindwords-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 3rem 0 2.5rem; 
+}
+
+.kind-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: center;
+    text-align: left;
+    padding: 0 3rem; 
+}
+
+.kind-image {
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover; 
+}

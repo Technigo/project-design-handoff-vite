@@ -10,9 +10,8 @@
     --purplelight: #dcd3e0;
     --yellowlight: #fde6ba;
     --yellow: #ffd075;
+    --yellowtransparent: rgba(255, 208, 117, 0.5);
 
-    --h2: ;
-    --h3: ;
     --p: "Readex Pro";
 }
 
@@ -20,59 +19,67 @@ code {
     font-family: "Courier New", monospace;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  font-size: 17px;
-  color: var(--black);
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    color: var(--black);
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
 }
 
 img {
     max-width: 100%;
 }
 
-.nav-bar {
-    background-color: var(--black);
-}
-.logo-img {
-    height: 40px;
+.oval-image {
+  border-radius: 50%;
+  height: 15rem;
 }
 
-.hero-section {
-  background-color: var(--purplebright);
-  color: var(--white)
+
+
+/*PROBABLY MOVE THIS*/
+.insta-icon {
+    fill: white;
 }
 
-.hero-section img {
-  /*MAKE IT OVAL*/
-}
+
+
 
 h1 {
-  font-size: 36px;
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    color: var(--white) ; 
 }
 
 h2 {
- font-size: 32px;
- color: var(--purplebright);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--purplebright);
 }
 
 h3 {
-  font-size: 32px;
-  font-weight: 500;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+p {
+  line-height: 1.4rem;
 }
 
 .p-bold {
-  font-weight: 600;
+    font-weight: 600;
 }
 
-
-
 .instagram-section {
-  background-color: var(--purplebright);
-  color: var(--white) 
+    background-color: var(--purplebright);
+    color: var(--white);
 }
 
 .copyright {
-  background-color: var(--purplebright);
-  color: var(--white)
+    background-color: var(--purplebright);
+    color: var(--white);
 }

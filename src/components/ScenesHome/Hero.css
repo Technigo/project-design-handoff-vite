@@ -1,0 +1,22 @@
+.hero-section {
+    background-color: var(--purplebright);
+    color: var(--black);
+    padding: 1.5rem; 
+}
+
+.hero-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 3rem 0 2.5rem; 
+}
+
+.hero-content-wrapper h3 {
+    color: var(--white);
+}
+
+.hero-btn-container {
+    display: flex;
+    gap: 1rem; 
+}
+

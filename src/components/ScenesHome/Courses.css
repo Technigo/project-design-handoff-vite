@@ -1,0 +1,79 @@
+.courses-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 3rem 1.25rem 2.5rem;
+}
+
+.courses-section p {
+    text-align: left;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+/*-------CAROUSEL-------*/
+
+.carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.carousel img {
+    height: 13rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide-hidden {
+    display: none;
+}
+
+.arrow {
+    position: absolute;
+    top: 6rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--yellow);
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.arrow-left {
+    left: 1rem;
+}
+
+.arrow-right {
+    right: 1rem;
+}
+
+.indicators {
+    display: flex;
+    position: absolute;
+    top: 11.5rem;
+}
+
+.indicator {
+    background-color: var(--yellow);
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 100%;
+    border: none;
+    outline: none;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+
+.indicator-inactive {
+    background-color: var(--yellowtransparent);
+}
