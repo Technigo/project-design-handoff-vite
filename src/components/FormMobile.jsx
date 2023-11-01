@@ -5,7 +5,7 @@ const FormMobile = () => {
 
     return (
         <div className="form">
-            <div className="form-info">
+            <div className="form-mobile">
                 <button>SIGN UP FOR MEMBERSHIP</button>
             </div>
         </div>

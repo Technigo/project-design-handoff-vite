@@ -32,7 +32,7 @@ export const App = () => {
       ) : null}
       <Workout />
       <div className="mobile-main">
-        {isMobile ? <FormMobile /> : <Form />}
+        {isMobile || isTablet ? <FormMobile /> : <Form />}
         <Plans />
       </div>
       <Reviews />

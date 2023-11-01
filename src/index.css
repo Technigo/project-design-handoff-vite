@@ -83,4 +83,9 @@ p {
     margin: 0 auto;
   }
 
+  .mobile-main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
 }
