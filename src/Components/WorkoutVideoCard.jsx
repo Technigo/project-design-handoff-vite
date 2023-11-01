@@ -25,6 +25,7 @@ export const WorkoutVideoCard = ({ video }) => {
       </button>
       <img src={video.image} alt={video.title} />
       <p>{video.title}</p>
+      <p>{video.length}</p>
     </>
   )
 }

@@ -60,15 +60,21 @@
     "articles": [
         {
             "image": "src/assets/images/article-1.png",
-            "title": "founded by busy women"
+            "imageDescription":"a woman happily holding a child sitting on a couch",
+            "title": "founded by busy women",
+            "text": "Our founders Emmy and Carina were mothers, workers, and partners. They were struggling to find time to balance everything while taking care of themselves. They tried every fitness app and were unable to find workouts short enough for their busy schedule."
         },
         {
             "image": "src/assets/images/article-2.png",
-            "title": "who care about your health"
+            "imageDescription": "a heart-shaped bowl of different berries",
+            "title": "who care about your health",
+            "text": "Moving your body  helps decrease your morbidity. When you stay consistent not matter the time, the benefits for your health are enormous. We encourage you to read some studies that we have provided. Click read more to see the articles."
         },
         {
             "image": "src/assets/images/article-3.png",
-            "title": "access fitness anywhere no matter the budget"
+            "imageDescription": "a person doing yoga at sunset",
+            "title": "access fitness anywhere no matter the budget",
+            "text": "We believe that everyone should have the opportunity to pursue their fitness goals. We had different price ranges. Ranging from $0 to $75. The health disparity is becoming greater between the poor and rich. So we want to provide a luxurious space for people coming from different economic backgrounds. You are welcome here!"
         }
     ]
 }

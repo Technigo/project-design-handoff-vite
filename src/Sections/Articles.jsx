@@ -1,7 +1,16 @@
-
+import data from "../data/data.json";
+import { ArticleCard } from "../Components/ArticleCard";
 
 export const Articles = () => {
   return (
-    <div>Articles</div>
+    <div className="article-wrapper">
+      {data.articles.map((article, index) => {
+        return (
+          <div className="article-card" key={index}>
+            <ArticleCard article={article} />
+          </div>
+        )
+      })}
+    </div>
   )
 }
