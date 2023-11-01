@@ -3,8 +3,8 @@ import NewsletterImage from "/assets/newsletterimage.jpeg";
 import { useTranslation } from "react-i18next";
 
 const StyledNewsletter = styled.div`
-  position: relative;
   display: flex;
+  position: relative;
   justify-content: center;
 
   img {

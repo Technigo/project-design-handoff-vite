@@ -1,13 +1,17 @@
 {
-    "newsletter": {
+  "hero": {
+    "mission": "Our mission",
+    "description": "We provide specialized yoga classes to enhance riders' strength, balance, and well-being. Join us in promoting a holistic approach to horsemanship and self-care."
+  },
+  "newsletter": {
     "signup": "Sign up for our newsletter",
     "placeholder": "Your Email",
     "button": "Send"
   },
-    "footer": {
-        "follow": "Follow us",
-        "terms": "Terms & Conditions",
-        "privacy": "Privacy",
-        "accessibility": "Accessibility"
-    }
+  "footer": {
+    "follow": "Follow us",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy",
+    "accessibility": "Accessibility"
+  }
 }

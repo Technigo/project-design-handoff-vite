@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 const StyledHeader = styled.div`
   background: #fff6e9;
+  display: flex;
+  justify-content: center;
 `;
 
 export const Header = () => {
