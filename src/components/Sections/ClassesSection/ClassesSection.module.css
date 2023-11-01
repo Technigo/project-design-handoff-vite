@@ -1,0 +1,15 @@
+.classesHeader {
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+
+.classesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #9eb1a8;
+}
+
+img {
+  padding: 1em;
+}

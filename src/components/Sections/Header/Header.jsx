@@ -5,7 +5,6 @@ export const Header = () => {
   return (
     <>
       <NavBar />
-      <div>Header</div>;
     </>
   );
 };

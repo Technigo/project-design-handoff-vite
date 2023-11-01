@@ -1,0 +1,10 @@
+.linkButtonContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #2c1e63;
+}
+
+.linkButtonBox {
+  padding: 3em 1em;
+  text-align: center;
+}

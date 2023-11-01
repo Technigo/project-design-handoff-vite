@@ -1,0 +1,37 @@
+/* default styling */
+
+.navbarContainer {
+  background-color: #2c1e63;
+}
+
+/* navbar */
+.navbar {
+  padding: 10px 20px;
+  display: flex;
+
+  align-items: center;
+
+  min-height: 50px;
+}
+
+/* logo  */
+.logo {
+  max-width: 100px;
+}
+
+/* ul  */
+.navMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* media queries */
