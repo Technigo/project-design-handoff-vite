@@ -48,11 +48,13 @@
   @include md {
     position: absolute;
     width: 229px;
+    max-width: 229px;
     bottom: 24px;
   }
 
   @include lg {
     position: unset;
     width: 569px;
+    max-width: 569px;
   }
 }

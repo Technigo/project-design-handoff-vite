@@ -4,7 +4,7 @@ import { Form } from "../Form/Form";
 import { Button } from "../Button/Button";
 import { useAppStore } from "../../../store/useAppStore";
 import { formQuestion as formData } from "../../../statics/formQuestion";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export const Modal = () => {
   const { closeModal, changeFormIndex, currentFormIndex, submitForm, lang } = useAppStore(
