@@ -1,6 +1,7 @@
 import { TextImageComponent } from "../components/TextImageComponent/TextImageComponent";
 import { SubHeroComponent } from "../components/SubHeroComponent/SubHeroComponent";
 import { MeetTheTeam } from "../components/MeetTheTeam/MeetTheTeam";
+import { ContactUs } from "../components/ContactUs/ContactUs";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
@@ -24,6 +25,7 @@ export const AboutUs = () => {
                 textImageParagraph={t("aboutUs.topContent.aboutUsParagraph")} />
             <SubHeroCompStyle><SubHeroComponent className="aboutUsParagraph" text={t("aboutUs.missionParagraph")} /></SubHeroCompStyle>
             <MeetTheTeam />
+            <ContactUs />
         </section>
     )
 }

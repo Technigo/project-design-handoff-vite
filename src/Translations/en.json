@@ -97,21 +97,21 @@
                 "robertoDescription": "Roberto loves creating a fun environment while focusing on body alignment, breath, mind, heart, and energy with challenging and original sequences. In 2019 Roberto qualified in Japan directly from Yu Yagami creator of Jiriki Seitai making him the first non-Japanese navigator to teach in the UK.",
                 "ellen": "Ellen",
                 "ellenDescription": "Ellen is a Dutch-Indonesian-Brit who has learned to love pretty much every fitness class, though specifically Yoga and controlled movement (you'll often see her upside down). She is all about connecting with people, and showing them the joy and capability of their unique bodies and mind through Vinyasa, Power, Yin and meditation."
-            },
-            "contact": {
-                "h2": "Contact us",
-                "contactEmail": "hello@alignyoga.co.uk",
-                "address": {
-                    "street": "19A Cobble Lane",
-                    "zip": "N1 1SF",
-                    "city": "London"
-                },
-                "firstName": "First name",
-                "lastName": "Last name",
-                "email": "Email",
-                "message": "Message",
-                "send": "Send"
             }
+        },
+        "contact": {
+            "h2": "Contact us",
+            "contactEmail": "hello@alignyoga.co.uk",
+            "address": {
+                "street": "19A Cobble Lane",
+                "zip": "N1 1SF",
+                "city": "London"
+            },
+            "firstName": "First name",
+            "lastName": "Last name",
+            "email": "Email",
+            "message": "Message",
+            "send": "Send"
         }
     }
 }

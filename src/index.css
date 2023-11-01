@@ -37,15 +37,24 @@ body {
   /* Font */
   --main-font: "Roboto", sans-serif;
   --logo-font: "Fathan", serif;
+  /* Mobile font sizes */
   --h1-font-size: 1.75rem;
   --h2-font-size: 1.25rem;
-  --subheader-font-size: 1.125rem;
+  --h3-font-size: 1.125rem;
   --paragraph-font-size: 0.875rem;
   --buttons-captions-font-size: 0.875rem;
   --nav-footer-info-font-size: 1rem;
+  /* Tablet font sizes */
+  --h1-font-size-tablet: 3rem;
+  --h2-font-size-tablet: 2rem;
+  --h3-font-size-tablet: 1.375rem;
+  --paragraph-font-size-tablet: 1.125rem;
+  --buttons-captions-font-size-tablet: 1.125rem;
+  --nav-footer-info-font-size-tablet: 1rem;
+  /* Desktop font sizes */
   --h1-font-size-desktop: 4rem;
   --h2-font-size-desktop: 2.5rem;
-  --subheader-font-size-desktop: 1.75rem;
+  --h3-font-size-desktop: 1.75rem;
   --paragraph-font-size-desktop: 1.25rem;
   --buttons-captions-font-size-desktop: 1.25rem;
   --nav-footer-info-font-size-desktop: 1.231rem;
@@ -63,24 +72,23 @@ body {
 }
 
 /* ------------ START Global styles ------------ */
-
+/* Mobile font styles */
 h1, h2, h3, p, a, li, option {
   font-family: var(--main-font);
 }
 
 h1 {
-
   font-size: var(--h1-font-size);
   font-weight: 600;
 }
 
 h2 {
   font-size: var(--h2-font-size);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: var(--subheader-font-size);
+  font-size: var(--h3-font-size);
   font-weight: 500;
 }
 
@@ -90,8 +98,6 @@ h4 {
 
 p {
   font-size: var(--paragraph-font-size);
-  /* To make the text wrap on the \n specified in the translation document */
-  /* white-space: pre; */
 }
 
 a {
@@ -99,14 +105,79 @@ a {
   font-weight: 300;
 }
 
-@media (ax-width: 1511px) and (min-width: 834px) {
-  body {
-    max-width: 834px;
+button {
+  font-size: var(--buttons-captions-font-size);
+  font-weight: 300;
+}
+
+/* Tablet styles */
+@media (max-width: 1511px) and (min-width: 834px) {
+  h1 {
+    font-size: var(--h1-font-size-tablet);
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: var(--h2-font-size-tablet);
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: var(--h3-font-size-tablet);
+    font-weight: 500;
+  }
+  
+  h4 {
+    font-size: var( --nav-footer-info-font-size-tablet);
+  }
+  
+  p {
+    font-size: var(--paragraph-font-size-tablet);
+  }
+  
+  a {
+    font-size: var(--nav-footer-info-font-size-tablet);
+    font-weight: 300;
+  }
+  
+  button {
+    font-size: var(--buttons-captions-font-size-tablet);
+    font-weight: 300;
   }
 }
 
+/* Desktop styles */
 @media (min-width: 1512px) {
-  body {
-    max-width: 1512px;
+  h1 {
+    font-size: var(--h1-font-size-desktop);
+    font-weight: 600;
+  }
+  
+  h2 {
+    font-size: var(--h2-font-size-desktop);
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: var(--h3-font-size-desktop);
+    font-weight: 500;
+  }
+  
+  h4 {
+    font-size: var( --nav-footer-info-font-size-desktop);
+  }
+  
+  p {
+    font-size: var(--paragraph-font-size-desktop);
+  }
+  
+  a {
+    font-size: var(--nav-footer-info-font-size-desktop);
+    font-weight: 300;
+  }
+  
+  button {
+    font-size: var(--buttons-captions-font-size-desktop);
+    font-weight: 300;
   }
 }

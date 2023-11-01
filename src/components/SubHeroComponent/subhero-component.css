@@ -15,5 +15,5 @@
 .subheader-text {
     color: var(--primary-white);
     font-weight: 300;
-    font-size: var(--subheader-font-size);
+    font-size: var(--h3-font-size);
 }
