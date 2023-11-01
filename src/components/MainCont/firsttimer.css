@@ -7,8 +7,12 @@
     text-align: center;
 }
 
-.firsttimer img {
-    max-width: 100%;
+.firsttimer-image {
+    width: 100%;
+}
+
+.firsttimer-image img {
+    width: 100%;
     max-height: auto;
 }
 

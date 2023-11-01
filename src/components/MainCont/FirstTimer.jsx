@@ -7,9 +7,8 @@ export const FirstTimer = () => {
     return <div className="firsttimer">
 
         <h2>FIRST-TIMER</h2>
-
-        <img src="./firsttimer.png" alt="firsttimer" />
-
+        <div className="firsttimer-image">
+            <img src="./firsttimer.png" alt="firsttimer" /></div>
         <p>-READ MORE</p>
     </div>
 }

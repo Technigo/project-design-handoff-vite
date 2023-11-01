@@ -6,9 +6,9 @@ export const Memberships = () => {
     return <div className="memberships">
 
         <h2>MEMBERSHIPS</h2>
-
-        <img src="./membership.png" alt="membership" />
-
+        <div className="membership-image">
+            <img src="./membership.png" alt="membership" />
+        </div>
         <p>-READ MORE</p>
     </div>
 }

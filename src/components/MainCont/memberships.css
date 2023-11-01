@@ -7,8 +7,12 @@
     text-align: center;
 }
 
-.memberships img {
-    max-width: 100%;
+.membership-image {
+    width: 100%;
+}
+
+.membership-image img {
+    width: 100%;
     max-height: auto;
 }
 
