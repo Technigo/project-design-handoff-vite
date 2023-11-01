@@ -49,7 +49,7 @@ const Workout = () => {
                             <a href="#">
                                 <img src={workout.image} alt="workout" />
                             </a>
-                            <h3>{t('{workout.name}')}</h3>
+                            <h3>{workout.name}</h3>
                             {!isMobile && <p>{workout.minutes}</p>}
                         </div>
                     ))}
