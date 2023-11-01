@@ -16,7 +16,7 @@ const StyledSection = styled.section`
   gap: 24px;
   justify-content: flex-end;
   padding: 0 24px;
-  text-align: center;
+  text-align: center; 
 `;
 
 const StyledForm = styled.form`
