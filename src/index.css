@@ -6,6 +6,7 @@
   --lightest-red: #f0c3bd;
   --primary: #f6aa1c;
   --white-red: #fffdfc;
+  background-color: var(--darkest-red);
 }
 
 /* Removes margin on all relevant tags. Body for an edge-to-edge look on sections, and headings/paragraphs to easier follow sketch */
@@ -74,11 +75,13 @@ p.paragraph-class-white {
 }
 
 p.paragraph-class-red {
+  color: var(--lightest-red); 
   font-size: 14px;
   line-height: 106.4%; /* 14.896px */
 }
 
 p.paragraph-teacher-name {
+  color: var(--lightest-red); 
   font-size: 14px;
   line-height: normal;
 }
@@ -89,4 +92,18 @@ p.paragraph-class-title {
   font-style: normal;
   font-weight: 600;
   line-height: 106.4%; /* 17.024px */
+}
+
+.tertiary-button {
+  color: var(--primary);
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 154.4%; /* 27.792px */
+  text-decoration-line: underline;
+}
+
+.tertiary-button-small {
+  font-size: 16px; 
 }
