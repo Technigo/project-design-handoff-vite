@@ -1,17 +1,40 @@
 import styles from "./Modal.module.scss";
+
 import { Form } from "../Form/Form";
+import { Button } from "../Button/Button";
 import { useAppStore } from "../../../store/useAppStore";
-import { formQuestion as data } from "../../../statics/formQuestion";
+import { formQuestion as formData } from "../../../statics/formQuestion";
 
 export const Modal = () => {
-  const closeModal = useAppStore((state) => state.closeModal);
+  const { closeModal, changeFormIndex, currentFormIndex, submitForm } = useAppStore((state) => ({
+    closeModal: state.closeModal,
+    changeFormIndex: state.changeFormIndex,
+    currentFormIndex: state.currentFormIndex,
+    submitForm: state.submitForm,
+  }));
 
-  function createForm() {
-    if (data[index].type === "input") return <input type="text" placeholder={placeholder} />;
-  }
+  const currentFormdata = formData[currentFormIndex];
+  const { question, type, button, placeholder, message, name, id } = currentFormdata;
+
   return (
-    <div className={styles.modal} onClick={closeModal} onTouchStart={closeModal}>
-      <Form />
-    </div>
+    <>
+      <div className={styles.modal} onClick={closeModal} onTouchStart={closeModal}></div>
+      <div className={styles.modal_inner}>
+        <div className={styles.card}>
+          {type === "submit" ? <p className={styles.thankYou}>{question}</p> : <p>{question}</p>}
+
+          <Form placeholder={placeholder} type={type} name={name} />
+
+          <Button
+            key="form"
+            type={type === "submit" ? "submit" : "button"}
+            handleClick={type === "submit" ? submitForm : changeFormIndex}
+          >
+            {button}
+          </Button>
+          {message && <p className={styles.message}>{message}</p>}
+        </div>
+      </div>
+    </>
   );
 };

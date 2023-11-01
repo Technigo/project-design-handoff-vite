@@ -1,20 +1,37 @@
-import { Button } from "../Button/Button";
+import { useAppStore } from "../../../store/useAppStore";
 import styles from "./Form.module.scss";
 
-export const Form = ({ formData }) => {
-  const { id, question, placeholder, button, type, name } = formData;
+export const Form = ({ type, placeholder, name }) => {
+  const { setFormAnswer, formAnswer } = useAppStore((state) => ({
+    setFormAnswer: state.setFormAnswer,
+    formAnswer: state.formAnswer,
+  }));
+
+  function handleChange(e) {
+    setFormAnswer(name, e.target.value);
+  }
 
   return (
-    <div className={styles.card}>
-      <p>{question}</p>
+    <>
       {type === "input" ? (
-        <input type="text" placeholder={placeholder} />
+        <input
+          className={styles.input}
+          type="text"
+          placeholder={placeholder}
+          name={name}
+          value={formAnswer[name]}
+          onChange={(e) => handleChange(e)}
+        />
       ) : type === "text" ? (
-        <textarea placeholder={placeholder} />
+        <textarea
+          placeholder={placeholder}
+          value={formAnswer[name]}
+          onChange={(e) => handleChange(e)}
+          className={styles.text}
+        />
       ) : (
         ""
       )}
-      <Button type={type === "submit" ? "submit" : "button"}>{button}</Button>
-    </div>
+    </>
   );
 };

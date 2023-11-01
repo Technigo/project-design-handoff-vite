@@ -6,6 +6,7 @@ export const formQuestion = [
     button: "Next",
     type: "input",
     name: "name",
+    message: null,
   },
   {
     id: 2,
@@ -13,16 +14,17 @@ export const formQuestion = [
     placeholder: "Gather Emails? Prawns!",
     button: "peawns!",
     message: " will exchange this info with spammers for Prawns!",
-    type: "type",
+    type: "input",
     name: "email",
   },
   {
     id: 3,
     question: "Write your Meowssage",
     placeholder: "If we could read we might just read this between naps and meal times",
-    button: "",
+    button: "peawns!",
     type: "text",
     name: "text",
+    message: null,
   },
   {
     id: 4,
@@ -30,5 +32,7 @@ export const formQuestion = [
     placeholder: null,
     button: "thank you",
     type: "submit",
+    name: null,
+    message: null,
   },
 ];

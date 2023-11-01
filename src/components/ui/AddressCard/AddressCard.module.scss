@@ -2,12 +2,21 @@
 @use "../../../styles/mixins.scss" as *;
 
 .card {
-  width: 128px;
+  width: 120px;
   color: $color-dark;
   background-color: $color-green-light;
   padding: 16px;
   border: 1px solid $color-dark;
   border-radius: 5px;
+
+  // @include md {
+  //   width: 180px;
+  // }
+
+  // @include lg {
+  //   width: 300px;
+  //   padding: 32px;
+  // }
 
   & address {
     width: 100%;
@@ -21,10 +30,24 @@
     & h6 {
       font-size: 16px;
       font-weight: 700;
+      // @include md {
+      //   font-size: 20px;
+      // }
+
+      // @include md {
+      //   font-size: 30px;
+      // }
     }
 
     & p {
       font-size: 12px;
+      // @include md {
+      //   font-size: 14px;
+      // }
+
+      // @include md {
+      //   font-size: 20px;
+      // }
     }
   }
 }

@@ -6,7 +6,9 @@
   padding: 7px 30px;
   border-radius: 3px;
   width: 100%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   & p {
     font-family: $font-display;
