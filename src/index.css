@@ -24,4 +24,32 @@ code {
 
 body {
   background-color: #f3f1ed;
+  width: 390px;
+}
+
+h1 {
+  font-family: Prompt;
+}
+
+h2 {
+  font-family: Prompt;
+}
+
+h3 {
+  font-family: Prompt;
+}
+
+p {
+  font-family: Montserrat;
+}
+
+@media (min-width: 391px) and (max-width: 744px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  /* Styles for desktop screens */
+  /* Adjust styles for desktop devices here */
 }
