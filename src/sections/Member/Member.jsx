@@ -1,5 +1,6 @@
 import "./Member.css";
 import BigBlue from "../../assets/images/bigblue.png";
+import { Buttons } from "../../components/Buttons/Buttons";
 
 export const Member = () => {
   return (
@@ -10,7 +11,13 @@ export const Member = () => {
           With us, you as a parent get time to take care of yourself and your
           body, while your child can play in a safe environment
         </p>
-        <button>Become a member</button>
+        <Buttons
+          buttonText=""
+          url="https://example.com"
+          icon="/src/assets/Button.svg"
+          hoverIcon="/src/assets/ButtonHover.svg"
+          alt="Button Icon"
+        />
       </div>
       <img src={BigBlue} className="member-image" />
     </div>

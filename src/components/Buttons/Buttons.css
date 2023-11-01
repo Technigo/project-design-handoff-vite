@@ -1,0 +1,20 @@
+.buttons {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 0;
+
+  height: 48px !important;
+  margin: 3px;
+}
+
+.buttons img {
+  display: block;
+}
+
+@media (min-width: 744px) {
+  /* .link-button img {
+      display: flex;
+      flex-direction: row;
+    } */
+}
