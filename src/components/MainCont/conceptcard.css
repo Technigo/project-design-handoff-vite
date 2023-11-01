@@ -1,19 +1,20 @@
-.conceptcard {
+.conceptcard-scroll {
     display: flex;
-    justify-content: center;
-    align-items: end;
+    flex-direction: row;
+    overflow: auto;
+    white-space: nowrap;
     margin-top: 10%;
     margin-bottom: 10%;
 }
 
-.conceptcard img {
-    max-width: 80%;
+.conceptcard-scroll img {
+    max-width: 75%;
     max-height: auto;
     border-radius: 10%;
+    padding: 5%;
 }
 
-.conceptcard h3 {
+.conceptcard-scroll h3 {
     position: absolute;
     margin-bottom: 5%;
-
 }
