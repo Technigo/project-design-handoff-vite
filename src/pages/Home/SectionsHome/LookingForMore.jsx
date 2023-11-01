@@ -4,15 +4,27 @@ import styled from "styled-components";
 const LookingForMoreSection = styled.section`
 background-color: #0021F5;
 color: white;
+display: flex;
+flex-direction: column;
+width: 390px;
+height: 232px;
+padding: 24px 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
 `
 
-const lookingForMoreNormalText = "ARE YOU LONGING FOR MORE? With a daily sacred morning practice you can connect to your inner well of creativity, energy and with that focus BUILD YOUR VISIONS!"
+const lookingForMoreLine1 = "ARE YOU LONGING FOR MORE?"
+const lookingForMoreLine2 = "With a daily sacred morning practice you can connect to your inner well of creativity, energy and with that focus"
+const lookingForMoreLine3 = "BUILD YOUR VISIONS!"
 
 export const LookingForMore = () => {
   return (
     <>
     <LookingForMoreSection>
-    <NormalText text={lookingForMoreNormalText} />
+    <NormalText text={lookingForMoreLine1} />
+    <NormalText text={lookingForMoreLine2} />
+    <NormalText text={lookingForMoreLine3} />
     </LookingForMoreSection>
     </>
   );
