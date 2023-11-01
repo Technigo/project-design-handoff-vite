@@ -8,11 +8,17 @@ import ins from "/icons/ins.png";
 import ins2 from "/icons/ins2.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { i18n } = useTranslation();
   const [youtubeImage, setYoutubeImage] = useState(youtube);
   const [facebookImage, setFacebookImage] = useState(facebook);
   const [insImage, setInsImage] = useState(ins);
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   const handleHover = (imageState, hoverImage) => {
     imageState(hoverImage);
@@ -35,9 +41,12 @@ export const Footer = () => {
           <p className="hover:underline hover:text-persian-blue">FAQ</p>
           <div className="flex flex-row hover:underline hover:text-persian-blue">
             <img src={global} alt="Golbal image" className="w-6" />
-            <select className="bg-transparent">
-              <option value="English">English</option>
-              <option value="Swedish">Swedish</option>
+            <select
+              className="bg-transparent"
+              onChange={(e) => changeLanguage(e.target.value)}
+            >
+              <option value="en">English</option>
+              <option value="se">Swedish</option>
             </select>
           </div>
         </div>

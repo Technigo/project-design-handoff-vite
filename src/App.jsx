@@ -1,6 +1,7 @@
 import { FirstPage } from "./pages/FirstPage";
 import { SecondPage } from "./pages/SecondPage";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 export const App = () => {
   return (
     <main>
