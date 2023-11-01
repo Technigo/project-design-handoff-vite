@@ -14,7 +14,7 @@ const HeroHeading = styled(Heading)`
   text-transform: uppercase !important;
   color: #000;
   text-align: center;
-  font-family: Staatliches;
+  font-family: var(--heading-font-family);
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -52,9 +52,6 @@ export const Header = () => {
       <BlueLineHero className="blue-line-hero" />
       <HeroHeading text="Edge Performance" />
       <HeroImage src="./heroImage.png" alt="Hero Image" />
-      {/* <HeroDescription>
-        {HeroTextOne} <br /> {HeroTextTwo}
-      </HeroDescription> */}
       <HeroDescription text={HeroTextOne} />
       <HeroDescription text={HeroTextTwo}/ >
     </HeroWrapper>

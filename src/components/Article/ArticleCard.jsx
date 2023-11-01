@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next"
 import { Description } from "../../reusableComponents/Description"
 import { Heading } from "../../reusableComponents/Heading"
 import styled from 'styled-components'
@@ -38,12 +39,16 @@ export const ArticleCard = (props) => {
   let imageArticle = props.articles.image;
   let titleArticle = props.articles.name;
   let descriptionArticle = props.articles.description;
+
+  // define via  destructured variable two methods from the useTranslation
+  const { t } = useTranslation();
+
   return (
     <CardWrapper className="card-wrapper">
       <ArticleImage src={imageArticle} alt="Article image " />
       <TextWrapper>
-      <ArticleHeading text={ titleArticle } />
-        < ArticleDescription text={descriptionArticle} />
+      <ArticleHeading text={ t(titleArticle) } />
+        < ArticleDescription text={ t (descriptionArticle)} />
         </TextWrapper>
     </CardWrapper>
   )

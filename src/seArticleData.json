@@ -1,0 +1,35 @@
+{
+  "articles": [
+    {
+      "name": "Teknikkanten",
+      "image": "./technologyEdge.png",
+      "description": "Vi tar dig från rinken till labbet. Vi erbjuder Skatemill-övningar och analyser, VO2-max och VO2-peak-mätningar, mjölksyratröskel- eller submax-test och iDXA-kroppssammansättningstester som hjälper oss att öka din prestanda till toppnivå."
+    },
+    {
+      "name": "Konkurrenskanten",
+      "image": "./competitiveEdge.png",
+      "description": "Hockey-specifik styrke- och rörlighetsträning för att höja din prestandanivå, oavsett säsong. Slipa din Hockey IQ för blixtrande reaktioner med Sense Arena VR och The Hockey IntelliGym."
+    },
+    {
+      "name": "Comeback-kanten",
+      "image": "./comebackEdge.png",
+      "description": "Skador är en del av spelet. Kom tillbaka på isen snabbare och starkare med specialiserad fysioterapi från några av de bästa inom idrottsmedicin. Efter en hjärnskakning? Vi kan hjälpa."
+    },
+    {
+      "name": "Träningskanten",
+      "image": "./coachingEdge.png",
+      "description": "Träning med över 100 års sammanlagd NHL-erfarenhet oavsett säsong. Vi förbereder dig på sommaren och håller dig konkurrenskraftig på isen. Vi erbjuder syntetisk is och torrträning för att bygga din hockeyspel från grunden."
+    },
+    {
+      "name": "Vinnande kanten",
+      "image": "./winningEdge.png",
+      "description": "Vi vet att hockey är mer än bara 3 perioder med press. Höj din nivå med mental coaching från våra idrottspsykologer och lär dig att driva din prestanda med näringsvägledning från vår in-house dietist."
+    },
+    {
+      "name": "De hittade sin kant på Edge Performance:",
+      "image": "./logosEdge.png",
+      "description": "De är män och kvinnor från NHL, NWHL, AHL, OHL, Juniorvärldsmästare, college-superstjärnor och fritidsspelare. Träffa våra idrottare och hör mer om vad de har åstadkommit med Edge."
+    }
+  ]
+}
+
