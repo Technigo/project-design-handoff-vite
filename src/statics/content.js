@@ -185,8 +185,7 @@ export const content = {
 
         {
           name: "Marcus Ax",
-          texto:
-            "Chief Decorator Extraordinaire Gracias al esfuerzo y la paciencia de Marcus, cualquier sede a la que nos traslademos se convierte en na sublime zona de descanso",
+          text: "Chief Decorator Extraordinaire Gracias al esfuerzo y la paciencia de Marcus, cualquier sede a la que nos traslademos se convierte en na sublime zona de descanso",
           shortText:
             "Decorador Jefe Gracias a Marcus cualquier sede se convierte en una sublime zona de descanso",
           imgPath: "/photos/team/marc.png",
