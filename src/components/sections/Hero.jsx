@@ -14,7 +14,7 @@ const StyledSection = styled.section`
   background-position: 90%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
 
   h1 {
     text-align: left;
@@ -23,6 +23,19 @@ const StyledSection = styled.section`
   h2 {
     text-align: center;
     color: white;
+  }
+
+  .hero-content{
+    display: flex; 
+    flex-direction: column; 
+    margin: 0 24px; 
+    gap: 32px; 
+  }
+
+  .button-wrapper {
+    display: flex; 
+    flex-direction: column; 
+    gap: 16px; 
   }
 `;
 
@@ -34,10 +47,14 @@ export const Hero = () => {
   return (
     <>
       <StyledSection>
+        <div className="hero-content">
         <h1>{textHeading1}</h1>
         <p>{bodyText}</p>
+        <div className="button-wrapper">
         <Button>Book</Button>
         <Button secondary>Explore</Button>
+        </div>
+        </div>
       </StyledSection>
     </>
   );
