@@ -1,0 +1,27 @@
+.firsttimer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.firsttimer img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.firsttimer h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.firsttimer p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}

@@ -4,12 +4,14 @@ import { initReactI18next } from "react-i18next"
 const resources = {
     en: {
         translation: {
-            welcome: "Welcome to Galactic Fitness!",
+            welcome: "Test: Translation",
+            text: "English"
         },
     },
     sv: {
         translation: {
-            welcome: "Välkommen till Galactic Fitness!",
+            welcome: "Test: Översättning",
+            text: "Svenska"
         },
     },
 };

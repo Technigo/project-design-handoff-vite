@@ -1,3 +1,5 @@
+//Not mounted or used since there wasn't this kind of animation in the design
+
 //Mounted in App.jsx
 
 import Lottie from "lottie-react"

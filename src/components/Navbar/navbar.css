@@ -3,7 +3,7 @@
     /* Ensures navbar stays on top of other elements */
     z-index: 1000;
     width: 100%;
-    height: 8%;
+    height: 6%;
     background-color: #1C1D23;
     display: flex;
     justify-content: space-between;
@@ -24,6 +24,5 @@
 
 .navbar-profile img {
     width: 30%;
-    height: auto;
     cursor: pointer;
 }

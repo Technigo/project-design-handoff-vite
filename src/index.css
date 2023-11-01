@@ -5,6 +5,7 @@
   padding: 0;
   color: white;
   font-family: 'Roboto';
+  text-decoration: none;
 }
 
 main {
@@ -25,7 +26,7 @@ h2 {
 /*--- Buttons ---*/
 button {
   background-color: #FFE03B;
-  color: black;
+  color: #012A61;
   font-family: 'Roboto';
   display: inline-block;
   padding: 10px 20px;

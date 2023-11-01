@@ -4,6 +4,6 @@ import "./conceptcard.css"
 
 export const ConceptCard = () => {
     return <div className="conceptcard">
-        <h1>Scrolling images here</h1>
+        <img src="./conceptcard1.png" alt="jedi" />
     </div>
 }

@@ -4,6 +4,11 @@ import "./memberships.css"
 
 export const Memberships = () => {
     return <div className="memberships">
-        <h1>Memberships image here</h1>
+
+        <h2>MEMBERSHIPS</h2>
+
+        <img src="./membership.png" alt="membership" />
+
+        <p>-READ MORE</p>
     </div>
 }
