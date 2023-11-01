@@ -1,8 +1,29 @@
 import iphone from "/images/iPhone.png";
-import appStore from "/icons/appleplay.svg";
-import googleStore from "/icons/googleplay.svg";
+import appStore2 from "/icons/applestore1.png";
+import appStore1 from "/icons/appstore2.png";
+import googleStore1 from "/icons/googlestore1.png";
+import googleStore2 from "/icons/googlestore2.png";
+import { useState } from "react";
 
 export const MidSection = () => {
+  const [appStoreImage, setAppStoreImage] = useState(appStore1);
+  const [googleStoreImage, setGoogleStoreImage] = useState(googleStore1);
+
+  const handleAppStoreMouseEnter = () => {
+    setAppStoreImage(appStore2);
+  };
+
+  const handleAppStoreMouseLeave = () => {
+    setAppStoreImage(appStore1);
+  };
+
+  const handleGoogleStoreMouseEnter = () => {
+    setGoogleStoreImage(googleStore2);
+  };
+
+  const handleGoogleStoreMouseLeave = () => {
+    setGoogleStoreImage(googleStore1);
+  };
   return (
     <section className=" w-full relative  flex flex-col gap-10 lg:flex-row lg:gap-0 lg:h-[100vh]">
       <div className="flex flex-row  z-0  lg:w-[60%]">
@@ -37,14 +58,18 @@ export const MidSection = () => {
         </div>
         <div className="flex flex-col gap-5 w-[40%] items-center lg:flex-row lg:w-full lg:justify-center lg:mt-10">
           <img
-            src={appStore}
+            src={appStoreImage}
             alt="App store"
-            className="w-[80%] lg:w-[182px]"
+            className={`w-[80%] lg:w-[182px]`}
+            onMouseEnter={handleAppStoreMouseEnter}
+            onMouseLeave={handleAppStoreMouseLeave}
           />
           <img
-            src={googleStore}
+            src={googleStoreImage}
             alt="Google store"
             className="w-[80%] lg:w-[182px]"
+            onMouseEnter={handleGoogleStoreMouseEnter}
+            onMouseLeave={handleGoogleStoreMouseLeave}
           />
         </div>
       </div>

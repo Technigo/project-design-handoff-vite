@@ -3,7 +3,7 @@ import hero from "/images/hero.png";
 
 export const Hero = () => {
   return (
-    <section className=" w-full relative flex flex-col items-start   justify-center">
+    <section className=" w-full relative flex flex-col items-start justify-center">
       <img
         src={hero}
         alt="hero image"
