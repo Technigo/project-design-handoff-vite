@@ -38,6 +38,7 @@
 @media (max-width: 393px) {
     .reviews {
         margin: 6px;
+        margin-top: 35px;
     }
 
     .reviews-info {

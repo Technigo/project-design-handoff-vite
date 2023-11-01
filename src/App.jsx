@@ -19,8 +19,10 @@ export const App = () => {
       {isMobile ? <NavbarMobile /> : <Navbar />}
       {!isMobile && <HeroHeader />}
       <Workout />
-      {isMobile ? <FormMobile /> : <Form />}
-      <Plans />
+      <div className="mobile-main">
+        {isMobile ? <FormMobile /> : <Form />}
+        <Plans />
+      </div>
       <Reviews />
       <Trainers />
       <Footer />
