@@ -1,5 +1,6 @@
 import { NormalText } from "../../../reusableComp/NormalText"
 import styled from "styled-components";
+import { SubHeading } from "../../../reusableComp/SubHeading";
 
 const ThreePointsSection = styled.section`
 color: white;
@@ -11,7 +12,6 @@ height: 232px;
 padding: 8px;
 justify-content: center;
 align-items: center;
-gap: 10px;
 `
 
 
@@ -23,9 +23,9 @@ export const ThreePoints = () => {
   return (
     <>
     <ThreePointsSection>
-    <NormalText text={Point1}/>
-    <NormalText text={Point2}/>
-    <NormalText text={Point3}/>
+    <SubHeading text={Point1}/>
+    <SubHeading text={Point2}/>
+    <SubHeading text={Point3}/>
     </ThreePointsSection>
     </>
     
@@ -33,4 +33,3 @@ export const ThreePoints = () => {
 }
 
 
-//ev ändra dessa till ul?
