@@ -156,4 +156,58 @@
 }
 
 /* Tablet */
-@media (min-width: 394px) and (max-width: 834px) {}
+@media (min-width: 394px) and (max-width: 834px) {
+
+    .workout {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+
+    .workout h1 {
+        font-size: 30px;
+    }
+
+    .workout h3,
+    .workout p {
+        font-size: 16px;
+    }
+
+    .workout-links {
+        gap: 23px;
+        padding: 10px;
+        overflow-x: scroll;
+    }
+
+    .workout a {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .workout img {
+        width: 180px;
+        border-radius: 10px;
+    }
+
+    .workout-images-container {
+        overflow-x: auto;
+    }
+
+    .workout-images {
+        gap: 10px;
+    }
+
+    .workout-item {
+        position: relative;
+    }
+
+    .heart-icon {
+        width: 24px;
+        height: 24px;
+        top: 5px;
+        right: 5px;
+    }
+
+}

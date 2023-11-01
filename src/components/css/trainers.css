@@ -129,4 +129,58 @@
 }
 
 /* Tablet */
-@media (min-width: 394px) and (max-width: 834px) {}
+@media (min-width: 394px) and (max-width: 834px) {
+
+    .trainers {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+
+    .trainers h1 {
+        font-size: 30px;
+    }
+
+    .trainers h3,
+    .trainers p {
+        font-size: 16px;
+    }
+
+    .trainers-links {
+        gap: 23px;
+        padding: 10px;
+        overflow-x: scroll;
+    }
+
+    .trainers a {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .trainers img {
+        width: 180px;
+        border-radius: 10px;
+    }
+
+    .trainers-images-container {
+        overflow-x: auto;
+    }
+
+    .trainers-images {
+        gap: 10px;
+    }
+
+    .trainers-item {
+        position: relative;
+    }
+
+    .heart-icon {
+        width: 24px;
+        height: 24px;
+        top: 5px;
+        right: 5px;
+    }
+
+}

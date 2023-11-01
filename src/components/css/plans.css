@@ -176,4 +176,59 @@
 }
 
 /* Tablet */
-@media (min-width: 394px) and (max-width: 834px) {}
+@media (min-width: 394px) and (max-width: 834px) {
+
+    .plans {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+
+    .plans h1 {
+        font-size: 30px;
+    }
+
+    .plans h3,
+    .plans p {
+        font-size: 16px;
+    }
+
+    .plans-links {
+        gap: 23px;
+        padding: 10px;
+        overflow-x: scroll;
+        white-space: nowrap;
+    }
+
+    .plans a {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .plans img {
+        width: 180px;
+        border-radius: 10px;
+    }
+
+    .plans-images-container {
+        overflow-x: auto;
+    }
+
+    .plans-images {
+        gap: 10px;
+    }
+
+    .plans-item {
+        position: relative;
+    }
+
+    .heart-icon {
+        width: 24px;
+        height: 24px;
+        top: 5px;
+        right: 5px;
+    }
+
+}

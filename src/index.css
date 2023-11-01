@@ -73,3 +73,14 @@ p {
   }
 
 }
+
+/* Tablet */
+@media (min-width: 394px) and (max-width: 834px) {
+
+  .html,
+  body {
+    margin: 0 auto;
+    margin: 0 auto;
+  }
+
+}
