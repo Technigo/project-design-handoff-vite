@@ -1,6 +1,6 @@
-import styles from "./LinkButtonSection.module.css";
+import styles from "./ButtonSection.module.css";
 
-export const LinkButtonSection = () => {
+export const ButtonSection = () => {
   return (
     <>
       <div className={styles.linkButtonContainer}>
