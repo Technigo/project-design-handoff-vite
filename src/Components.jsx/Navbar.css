@@ -1,6 +1,5 @@
 /* Navbar styles */
 .navbar {
-  border: 2px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +8,6 @@
 
 /* Button styles */
 .navbar-buttons {
-  border: 2px solid blue;
   display: flex;
   align-items: center;
 }

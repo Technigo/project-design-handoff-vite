@@ -1,0 +1,36 @@
+.header {
+  background: url("./src/Images/Header.png") no-repeat;
+  width: 1280px;
+  height: 622px;
+  flex-shrink: 0;
+}
+
+.header-text {
+  align-self: stretch;
+  display: flex;
+  width: 703.847px;
+  padding: 29px 64px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17px;
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(15, 10, 11, 0.65) 50%,
+    rgba(51, 51, 51, 0) 75.01%
+  );
+  color: #fff;
+  font-family: Gambarino;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bubbles {
+  width: 99px;
+  height: 99px;
+  border-radius: 99px;
+  border: 3px solid #fff;
+  align-items: flex-end;
+}
