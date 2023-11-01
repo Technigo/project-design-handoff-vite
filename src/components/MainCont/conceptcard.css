@@ -1,4 +1,19 @@
+.conceptcard {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 .conceptcard img {
-    max-width: 100%;
+    max-width: 80%;
     max-height: auto;
+    border-radius: 10%;
+}
+
+.conceptcard h3 {
+    position: absolute;
+    margin-bottom: 5%;
+
 }
