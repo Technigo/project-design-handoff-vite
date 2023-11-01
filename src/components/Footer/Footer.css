@@ -1,0 +1,56 @@
+.footer-wrapper {
+    border-top: solid 3px var();
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-green-opacity-60);
+    padding: 20px;
+    border-top: 3px solid var(--color-purple); 
+}
+
+.footer-logo {
+    width: 50px;  
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 8px;
+    color: black;  
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.flags-container {
+    display: flex;
+    justify-content: center;  /* Horizontally centers the flag icons */
+    align-items: center;      /* Vertically centers the flag icons */
+    margin-top: 20px;         /* Add spacing above the flags, adjust as needed */
+}
+
+.flag-icon {
+    width: 15px;              /* Or whatever size you want */
+    height: 15px;
+    border-radius: 50%;      /* Makes the image round */
+    margin: 0 10px;          /* Adds some space between the images */
+    object-fit: cover;       /* Ensures the image scales correctly */
+    cursor: pointer;         /* Makes it clear they can be interacted with */
+}
+
+.flag-icon:hover {
+    opacity: 0.8;           
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+   
+}

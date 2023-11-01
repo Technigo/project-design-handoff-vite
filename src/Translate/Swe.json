@@ -1,0 +1,52 @@
+{
+    "WhyPlayParkour": {
+      "heading": "Varför spela parkour?"
+    },
+    "PlayParkour": {
+      "heading": "Spela Parkour",
+      "description": "Behandla ditt liv som ett äventyr - hela ditt liv",
+      "button": "Spela Parkour"
+    },
+    "HowToPlayParkour": {
+      "heading": "Hur man spelar Parkour",
+      "image1Desc": "Spela med vänner",
+      "image2Desc": "Spela med dina barn",
+      "image3Desc": "Spela med träningscoach"
+    },
+    "Header": {},
+    "Footer": {
+      "link1": "Om oss",
+      "link2": "Spela Parkour",
+      "link3": "Vanliga frågor",
+      "link4": "Kontaktinformation"
+    },
+    "CarouselComponent": {
+      "quote1": "Jag får leka med mormor - Nestor 7 år",
+      "quote2": "Jag känner mig som ett barn igen - Martha 68 år",
+      "quote3": "Det är socialt och det förbättrar balansen och du blir bättre på att falla utan att skada dig - Sven 72 år",
+      "quote4": "Att hämta barnen från skolan och dagis är nu ett äventyr och träning för oss alla, inte ett stressigt ögonblick. - David 35 år (Allans pappa)",
+      "quote5": "Jag lär känna mina grannar och mitt grannskap - Alice 75 år",
+      "quote6": "För att det är roligt och gör mig starkare - Bella 35 år",
+      "quote7": "Jag får upptäcka mitt grannskap på ett nytt sätt - Ella 45 år"
+    },
+    "AboutUsPage": {
+      "visionHeader": "Vår Vision & Mål",
+      "visionDesc1": "Vår vision är att skapa en värld där alla har möjlighet att uppleva glädjen med parkour. Vi tror att parkour är mer än bara en sport; det är ett sätt att leva.",
+      "visionDesc2": "Vårt mål är att inspirera människor att pusha sina gränser, övervinna hinder och uppnå sin fulla potential genom att praktisera parkour.",
+      "storyHeader": "Vår historia",
+      "storyDesc": "Vår historia började med mormor och 9-åriga Nestor som var uttråkade på vägen hem från skolan, sedan kom Faster Parkour, och idag erbjuder Play Parkour parkourprogram och kurser för alla åldrar. Instruktörerna är erfarna och hjälper eleverna att utveckla sin styrka, smidighet, balans och koordination. Vi har också en onlineplattform där eleverna kan lära sig parkour i sin egen takt och i sitt eget hem.",
+      "contactHeader": "Kontakta oss",
+      "contactDesc": "Vi skulle älska att höra från dig!",
+      "inputName": "Namn",
+      "inputEmail": "E-post",
+      "inputMessage": "Meddelande",
+      "checkboxLabel": "Jag godkänner Sekretessvillkoren",
+      "submitButton": "Skicka in"
+    },
+    "AboutUs": {
+      "heading": "Om oss",
+      "description": "Det började med mormor och Nestor, 9 år gammal, som var uttråkade på vägen hem från skolan. Sedan kom FasterParkour, och idag erbjuder Play Parkour parkourprogram och kurser för alla åldrar.",
+      "button": "Om Play Parkour"
+    }
+  }
+  

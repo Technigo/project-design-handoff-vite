@@ -10,7 +10,8 @@
     align-items: center;  */
 }
 
-.whyplay-wrapper h2 {
+.whyplay-wrapper h1 {
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
