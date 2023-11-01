@@ -1,0 +1,18 @@
+.about-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.about-inner h3 {
+    color: #FFE03B;
+    padding-bottom: 2%;
+}
+
+.about-inner p {
+    margin: 0 5%;
+    padding-bottom: 4%;
+}

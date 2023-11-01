@@ -8,7 +8,7 @@ export const Navbar = () => {
         <div className="navbar">
             <div className="menu-toggle"><Link to="/about">☰</Link></div>
             <div className="navbar-logo"><Link to="/"><Logo /></Link></div>
-            <div className="navbar-profile"><img src="public/dvicon.png" alt="profile" /></div>
+            <div className="navbar-profile"><img src="/dvicon.png" alt="profile" /></div>
         </div>
     )
 }
