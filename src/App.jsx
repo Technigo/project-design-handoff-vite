@@ -13,10 +13,17 @@ import Footer from "./components/Footer";
 
 export const App = () => {
   const isMobile = useMediaQuery({ maxWidth: 393 });
+  const isTablet = useMediaQuery({ maxWidth: 834 });
 
   return (
     <div className="main">
-      {isMobile ? <NavbarMobile /> : <Navbar />}
+      {isMobile ? (
+        <NavbarMobile />
+      ) : isTablet ? (
+        <NavbarMobile />
+      ) : (
+        <Navbar />
+      )}
       {!isMobile && <HeroHeader />}
       <Workout />
       <div className="mobile-main">
