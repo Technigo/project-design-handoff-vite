@@ -101,6 +101,7 @@ export const content = {
     text: "We probably wont answer we need lots of Naps on Laps but you are welcome to try any time you like ",
     title: "Would you like to contact us?",
     button: "contact us",
+    onClickEvent: "openModal",
   },
 };
 

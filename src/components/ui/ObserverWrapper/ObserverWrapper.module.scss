@@ -1,3 +1,4 @@
+@use "../../../styles/mixins.scss" as *;
 .wrapper {
   transform: translateY(100px);
   opacity: 0;
@@ -6,6 +7,16 @@
   div {
     opacity: 0;
     transition: all 0.4s ease;
+
+    @include lg {
+      transition: none;
+    }
+  }
+
+  img {
+    @include lg {
+      transition: all 0.4s ease;
+    }
   }
 }
 

@@ -10,8 +10,8 @@ export const MessageCard = ({
   center = false,
   bgWhite = false,
   alwCenter = false,
+  handleClick = null,
 }) => {
-  console.log(center);
   return (
     <div
       className={`${styles.card} ${border ? styles.border : ""} ${center ? styles.center : ""}  ${
@@ -22,7 +22,7 @@ export const MessageCard = ({
       <div className={styles.card_text}>
         <p>{text}</p>
       </div>
-      <Button>{buttonText}</Button>
+      <Button handleClick={handleClick}>{buttonText}</Button>
     </div>
   );
 };
