@@ -1,10 +1,16 @@
-import { BackButton } from "./SectionsAbout/BackButton";
+//import { BackButton } from "./SectionsAbout/BackButton";
+import { Form } from "./SectionsAbout/Form";
+import { OrangeTextArea } from "./SectionsAbout/OrangeTextArea";
+import { ThreePoints } from "./SectionsAbout/ThreePoints";
+import { WhatIfYouCould } from "./SectionsAbout/WhatIfYouCould";
 
 export const About = () => {
     return (
         <>
-        <BackButton />
-        <h1>More page</h1>
+        <WhatIfYouCould />
+        <ThreePoints />
+        <OrangeTextArea />
+        <Form />
         </>
     );
 };
