@@ -1,0 +1,18 @@
+.membersSection {
+  background-color: #fef8ea;
+  color: #030303;
+  padding-left: 2em;
+}
+
+.quoteHeading {
+  color: #030303;
+}
+.membersContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.membersBox {
+  font-family: "Montserrat", sans-serif;
+  padding: 1em;
+}

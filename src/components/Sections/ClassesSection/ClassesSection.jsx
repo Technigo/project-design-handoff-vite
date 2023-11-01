@@ -8,18 +8,18 @@ export const ClassesSection = () => {
       </div>
       <div className={styles.classesContainer}>
         <div className={styles.classesBox}>
-          <img src="public\assets\classes-img1.png" />
+          <img src="\assets\classes-img1.png" />
           <p>CARDIO + STRENGTH</p>
         </div>
         <div className={styles.classesBox}>
-          <img src="public\assets\classes-img2.png" />
+          <img src="\assets\classes-img2.png" />
           <p>YOGA</p>
         </div>
         <div className={styles.classesBox}>
-          <img src="public\assets\classes-img3.png" /> <p>Slow Flow Dance</p>
+          <img src="\assets\classes-img3.png" /> <p>Slow Flow Dance</p>
         </div>
         <div className={styles.classesBox}>
-          <img src="public\assets\classes-img4.png" /> <p>Breathwork</p>
+          <img src="\assets\classes-img4.png" /> <p>Breathwork</p>
         </div>
       </div>
     </>

@@ -1,0 +1,12 @@
+.quoteContainer {
+  max-height: 624px;
+  background-color: #fef8ea;
+  padding: 3em;
+}
+
+.quoteTxt {
+  color: #030303;
+  align-content: center;
+  justify-content: left;
+  text-transform: uppercase;
+}

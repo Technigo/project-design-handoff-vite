@@ -1,0 +1,19 @@
+.coursesSection {
+  background-color: #2c1e63;
+  color: #fef8ea;
+}
+
+.coursesHeading {
+  text-align: center;
+}
+.coursesContainer {
+  background-color: #9eb1a8;
+  border-radius: 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 1em;
+}
+
+.coursesBox {
+  margin: 1em;
+}
