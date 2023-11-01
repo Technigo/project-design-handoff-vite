@@ -4,31 +4,47 @@ import { Form } from "../Form/Form";
 import { Button } from "../Button/Button";
 import { useAppStore } from "../../../store/useAppStore";
 import { formQuestion as formData } from "../../../statics/formQuestion";
+import { useEffect, useState } from "react";
 
 export const Modal = () => {
-  const { closeModal, changeFormIndex, currentFormIndex, submitForm } = useAppStore((state) => ({
-    closeModal: state.closeModal,
-    changeFormIndex: state.changeFormIndex,
-    currentFormIndex: state.currentFormIndex,
-    submitForm: state.submitForm,
-  }));
+  const { closeModal, changeFormIndex, currentFormIndex, submitForm, lang } = useAppStore(
+    (state) => ({
+      closeModal: state.closeModal,
+      changeFormIndex: state.changeFormIndex,
+      currentFormIndex: state.currentFormIndex,
+      submitForm: state.submitForm,
+      lang: state.lang,
+    })
+  );
+  const [triggerAnimation, setTiggerAnimation] = useState(0);
 
   const currentFormdata = formData[currentFormIndex];
-  const { question, type, button, placeholder, message, name } = currentFormdata;
+  const { content, type, name, id, animation } = currentFormdata;
+  const { button, message, question, placeholder } = content[lang];
 
   return (
     <>
       <div className={styles.modal} onClick={closeModal} onTouchStart={closeModal}></div>
       <div className={styles.modal_inner}>
-        <div className={styles.card}>
+        <div
+          animation={triggerAnimation} // eslint-disable-line
+          className={`${styles.card} ${id === 1 || id === 4 ? styles[animation] : ""}`}
+        >
           {type === "submit" ? <p className={styles.thankYou}>{question}</p> : <p>{question}</p>}
 
-          <Form placeholder={placeholder} type={type} name={name} />
+          <Form
+            placeholder={placeholder}
+            type={type}
+            name={name}
+            animation={id === 1 || id === 4 ? "" : animation}
+            triggerAnimation={triggerAnimation}
+          />
 
           <Button
             key="form"
             type={type === "submit" ? "submit" : "button"}
             handleClick={type === "submit" ? submitForm : changeFormIndex}
+            onTriggerAnimation={id === 4 ? setTiggerAnimation : null}
           >
             {button}
           </Button>

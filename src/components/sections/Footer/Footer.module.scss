@@ -2,6 +2,7 @@
 @use "../../../styles/mixins.scss" as *;
 
 .footer {
+  margin-top: 64px;
   padding: 16px 8px;
   font-family: $font-normal;
   font-size: 14px;

@@ -42,7 +42,8 @@
 }
 
 .text {
-  width: 290px;
+  min-width: 290px;
+  max-width: 320px;
 
   @include md {
     position: absolute;

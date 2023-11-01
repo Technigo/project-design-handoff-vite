@@ -37,6 +37,10 @@
   font-weight: 700;
   word-break: break-all;
 
+  // &:hover {
+  //   animation: fadeIn 2s linear;
+  // }
+
   @include md {
     font-size: 20px;
     width: 100%;
@@ -51,5 +55,22 @@
     @include md {
       font-size: 20px;
     }
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 3s linear;
+}
+
+.fadeOut {
+  animation: fadeOUt 3s linear;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

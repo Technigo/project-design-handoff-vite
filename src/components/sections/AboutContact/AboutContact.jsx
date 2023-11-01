@@ -29,11 +29,11 @@ export const AboutContact = () => {
             </div>
           </div>
           <div className={styles.address_box}>
-            {addressData[lang].map((address) => (
+            {addressData.map((address) => (
               <AddressCard
                 address={address}
                 key={address.address}
-                h6={lang === "en" ? "Address" : "Direccion"}
+                h6={lang !== "es" ? "Address" : "Direccion"}
               />
             ))}
           </div>

@@ -6,6 +6,11 @@ export const content = {
       button: "join",
     },
     es: { text: "mejore su regazo!", title: "Deje descansar su gato", button: "Juntate" },
+    sv: {
+      text: "genom att träna dina ben",
+      title: "Ge din katt en skön kelstund",
+      button: "Gå med",
+    },
   },
   member: {
     en: {
@@ -18,6 +23,11 @@ export const content = {
       title: "Juntate",
       button: "Juntate",
     },
+    sv: {
+      text: "Legz är mer än ett vanligt gym. Alla våra övningar har utformats med katter i åtanke och vi har även klasser som förbättrar din inre frid och godbitar som du kan ta med hem till katt.",
+      title: "Bli medlem",
+      button: "Gå med",
+    },
   },
   findus: {
     en: {
@@ -29,6 +39,11 @@ export const content = {
       text: "Localice su gimnasio de mejora del regazo más cercano y comience hoy mismo su viaje hacia el ronroneo infinito.",
       title: "Encuentranos",
       button: "Localizanos",
+    },
+    sv: {
+      text: "Hitta närmaste bengym och börja din resa mot en nöjd kattkompis.",
+      title: "Hitta till Legz",
+      button: "Hitta",
     },
   },
 
@@ -45,9 +60,14 @@ export const content = {
           button: "More",
         },
         es: {
-          text: "En Legs nos centramos en entrenar su regazo para que su gato tenga un mejor descanso.Por eso hemos definido estos ejercicios como entrenamiento de “Lappability” ",
+          text: "En Legs nos centramos en entrenar su regazo para que su gato tenga un mejor descanso.Por eso hemos definido estos ejercicios como entrenamiento de “Lappability",
           title: "Lappability",
           button: "Mas",
+        },
+        sv: {
+          text: "På Legz fokuserar vi att göra dina ben och ditt knä skönare för en kelstund. Våra gymövningar fokuserar på ”lappability” – vår term för ett bra knä att sova på. ",
+          title: "Kelbarhet",
+          button: "Mer",
         },
       },
     },
@@ -67,6 +87,11 @@ export const content = {
           title: "Relajacion",
           button: "Mas",
         },
+        sv: {
+          text: "Katter är mycket känsliga. En katt vill inte bara ha ett skönt knä att sova på, vi måste även avge rogivande vibbar, med avslappnad andning, långsamma och smidiga rörelser samt lugna ögonrörelser. Ta reda på mer on våra meditations- och yogaklasser.",
+          title: "Avslappning",
+          button: "Mer",
+        },
       },
     },
     {
@@ -84,6 +109,11 @@ export const content = {
           text: "al igual que ellos nos traen regalos nosotros debemos de hacer lo mismo, por eso en Legs les proveemos con regalitos cada semana para sus amigos felinos.",
           title: "Regalos!",
           button: "Mas",
+        },
+        sv: {
+          text: "Våra katter ger oss små presenter och vi bör återgälda gesten. Därför har vi speciellt utvalda små kattpresenter varje vecka på Legz.",
+          title: "Godis!",
+          button: "Mer",
         },
       },
     },
@@ -155,9 +185,10 @@ export const content = {
 
         {
           name: "Marcus Ax",
-          text: "Chief Decorator Extraordinaire Thanks to Marcus’s efforts and  patience any headquarters we move to becomes a sublime resting area ",
+          texto:
+            "Chief Decorator Extraordinaire Gracias al esfuerzo y la paciencia de Marcus, cualquier sede a la que nos traslademos se convierte en na sublime zona de descanso",
           shortText:
-            "Chief Decorator Thanks to Marcus any headquarters becomes a sublime resting area",
+            "Decorador Jefe Gracias a Marcus cualquier sede se convierte en una sublime zona de descanso",
           imgPath: "/photos/team/marc.png",
         },
 
@@ -175,22 +206,75 @@ export const content = {
 
         {
           name: "Chevalier Noir ",
-          text: "Chief Officer of Cheerfulness She keeps the office positive Pet her for good luck ",
+          text: "Jefa de la Alegría Mantiene la oficina positiva Acaríciala para la buena suerte",
           imgPath: "/photos/team/chev.png",
         },
         {
           name: "Aliasse Thassalia",
-          text: "Second in command Ali is always there to help with a smile and her spiffing looks",
+          text: "Ali, la segunda al mando, siempre está ahí para ayudar con una sonrisa y su aspecto encantador",
           imgPath: "/photos/team/ali.png",
         },
         {
           name: "Moxxi Onefang",
-          text: "Panic cat, dizzy, dozy and forgetful so dont forget to remind her of things that need to be done",
+          text: "Gato con pánico, mareado, adormilado y olvidadizo, así que no te olvides de recordarle las cosas que tiene que hacer",
           imgPath: "/photos/team/onef.png",
         },
         {
           name: "Feira ",
-          text: "Our Extraordinary chef and Barista, keeps us at our peak with her delicious creations.",
+          text: "Nuestra Extraordinaria Chef y Barista, nos mantiene a tope con sus deliciosas creaciones",
+          imgPath: "/photos/team/kae.png",
+        },
+      ],
+    },
+    sv: {
+      text: `Det glada teamet på Legz Vi har ett mycket dedikerat team av louts och layabouts, som vanligtvis finns utanför teamets bas i Shirogane, mestadels chattar eller AFK med sporadiska stunder av mycket underhållande, ibland gränsande bisarra konversationer. Det är ett hem för varje söt själ, vare sig de är extroverta eller blyga.<br/><br/> Stort tack till hela Anti-Social squad, nämligen Chavalier Noir, Aliasse Thassalia, Marcus Ax, Feira och sist men längst ifrån minst Fyr Serra limmet som håller saker tillsammans och älskas av alla.`,
+
+      memberCards: [
+        {
+          name: "Kaelana Bambridge",
+          text: "Kaelana är en långvarig medlem av Legs pun intended, mycket fashionabel och framröstad som den vackraste kvinnan i hela Tera hon är vår marknadsföringsspecialist",
+          shortText: "Kaelana är en långvarig medlem av Legs hon är vår marknadsföringsspecialist",
+          imgPath: "/photos/team/kae.png",
+        },
+
+        {
+          name: "Marcus Ax",
+          text: "Chief Decorator Extraordinaire Tack vare Marcus insatser och tålamod blir alla huvudkontor vi flyttar till en sublim viloplats ",
+          shortText:
+            "Chefsdekoratör Tack vare Marcus blir alla huvudkontor vi flyttar till en sublim viloplats",
+          imgPath: "/photos/team/marc.png",
+        },
+
+        {
+          name: "Delisha Mathis",
+          text: "Nådigaste hjälpsamma Craft Master General Del är alltid villig att ge en hand",
+          imgPath: "/photos/team/deli.png",
+        },
+
+        {
+          name: "Moxxi Read",
+          text: "Försvarare av Sleepy Helper och Headquaters",
+          imgPath: "/photos/team/read.png",
+        },
+
+        {
+          name: "Chevalier Noir ",
+          text: "Försvarare av Sleepy Helper och Headquaters",
+          imgPath: "/photos/team/chev.png",
+        },
+        {
+          name: "Aliasse Thassalia",
+          text: "Ali är alltid där för att hjälpa till med ett leende och sitt snygga utseende",
+          imgPath: "/photos/team/ali.png",
+        },
+        {
+          name: "Moxxi Onefang",
+          text: "Panikkatt, yr, dåsig och glömsk så glöm inte att påminna henne om saker som måste göras",
+          imgPath: "/photos/team/onef.png",
+        },
+        {
+          name: "Feira ",
+          text: "Vår extraordinära kock och barista håller oss på topp med sina utsökta kreationer.",
           imgPath: "/photos/team/kae.png",
         },
       ],
@@ -209,16 +293,16 @@ export const content = {
       button: "Contactenos",
       onClickEvent: "openModal",
     },
+    sv: {
+      text: "Vi kommer förmodligen inte att svara eftersom vi behöver massor av Naps on Laps men du är välkommen att prova när du vill ",
+      titel: "Vill du kontakta oss?",
+      button: "Kontakta oss",
+      onClickEvent: "openModal",
+    },
   },
 };
 
-export const address = {
-  en: [
-    { address: "Grand Topal Hideaway Beachside 1 Just outside Haven Southern Grahtwood Tamriel" },
-    { address: "Sanctuary Plot 37, 5th Ward Shirogane Hingashi Eorzea Twintania" },
-  ],
-  es: [
-    { address: "Grand Topal Hideaway Beachside 1 Just outside Haven Southern Grahtwood Tamriel" },
-    { address: "Sanctuary Plot 37, 5th Ward Shirogane Hingashi Eorzea Twintania" },
-  ],
-};
+export const address = [
+  { address: "Grand Topal Hideaway Beachside 1 Just outside Haven Southern Grahtwood Tamriel" },
+  { address: "Sanctuary Plot 37, 5th Ward Shirogane Hingashi Eorzea Twintania" },
+];
