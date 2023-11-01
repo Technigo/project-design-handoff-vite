@@ -39,9 +39,5 @@
     align-self: flex-start;
 }
 
-/* Mobile */
-@mobile (max-width: 393px) {
-
-    .form-info {}
-
-}
+/* Tablet */
+@media (min-width: 394px) and (max-width: 834px) {}

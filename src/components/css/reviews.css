@@ -61,3 +61,6 @@
     }
 
 }
+
+/* Tablet */
+@media (min-width: 394px) and (max-width: 834px) {}
