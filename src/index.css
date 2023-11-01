@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Josefin+Sans:wght@400;600&display=swap");
 /* :root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -7,10 +8,36 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  monospace;
 } */
+
+:root {
+  /* Font families */
+  --font-family-h1-h2: "Cormorant-Garamond";
+  --font-family-h3: "Josefin Sans SemiBold";
+  --font-family-ingress-body: "Josefin Sans Regular", sans-serif;
+
+  /* Font sizes */
+  --h2-mobile: 32px;
+  --h2-tablet: 40px;
+  --h2-desktop: 48px;
+  --h3-mobile: 20px;
+  --h3-tablet-desktop: 28px;
+  --ingress-mobile: 20px;
+  --ingress-tablet-desktop: 32px;
+  --body-mobile: 16px;
+  --body-tablet-desktop: 24px;
+
+  /* Color */
+  --offwhite: #f9f7f3;
+  --greyish: #eae7dd;
+  --dark: #4c3831;
+  --medium: #8c524d;
+  --light: #c2836c;
+}
 
 * {
   padding: 0;
