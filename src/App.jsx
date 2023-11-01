@@ -3,6 +3,7 @@ import { useMediaQuery } from "react-responsive";
 import Navbar from "./components/Navbar";
 import NavbarMobile from "./components/NavbarMobile";
 import HeroHeader from "./components/HeroHeader";
+import HeroheaderTablet from "./components/HeroheaderTablet";
 import Workout from "./components/Workout";
 import Form from "./components/Form";
 import FormMobile from "./components/FormMobile";
@@ -24,7 +25,11 @@ export const App = () => {
       ) : (
         <Navbar />
       )}
-      {!isMobile && <HeroHeader />}
+      {isTablet ? (
+        <HeroheaderTablet />
+      ) : (
+        !isMobile && <HeroHeader />
+      )}
       <Workout />
       <div className="mobile-main">
         {isMobile ? <FormMobile /> : <Form />}

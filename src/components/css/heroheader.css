@@ -49,4 +49,26 @@
 }
 
 /* Tablet */
-@media (min-width: 394px) and (max-width: 834px) {}
+@media (min-width: 394px) and (max-width: 834px) {
+
+    .header-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0px;
+        background-color: #525B64;
+        border-radius: 0px 0px 0px 0px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .heroheader h1 {
+        padding-top: 20px;
+    }
+
+    .heroheader p {
+        padding-bottom: 20px;
+    }
+
+}
