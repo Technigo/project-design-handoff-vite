@@ -1,15 +1,21 @@
 import './AboutUs.css';
 import ImageAboutUs from '../../../public/images/image19.png';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import '../../Translate/i18next';
 
 export const AboutUs = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div className="aboutUsContainer">
             <div className="leftColumn">
-                <h1>About us</h1>
-                <p>It started with grandma and Nestor, 9 years old, being bored on their way home from school. Then came AuntieParkour, and today Play Parkour offers parkour Programs and classes for all ages.</p>
+            <h1>{t('AboutUs.heading')}</h1>
+            <p>{t('AboutUs.description')}</p>
+
                 <Link to="/about">
-                <button className="yellowButton">About Play Parkour</button>
+                <button className="yellowButton">{t('AboutUs.button')}</button>
                 </Link>
             </div>
             <div className="rightColumn">

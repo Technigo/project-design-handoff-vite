@@ -11,7 +11,7 @@ export const AboutUsPage = () => {
 <img className='vision-img' src={VisionImg} alt='picture of a young girl playing parkour' />
 <div className='vision-text'>
 <h1>Our Vision & Goal</h1>
-<p>Our vision is to create a world where everyone has the opportunity to experience the joy of parkour. We believe that parkour is more than just a sport; it's a way of life. </p>
+<p>Our vision is to create a world where everyone has the opportunity to experience the joy of parkour. We believe that parkour is more than just a sport; it´s a way of life. </p>
 <p>Our goal is to inspire people to push their limits, overcome obstacles, and acheive their full potential through the practice of parkour.</p>
 </div>
 </div>

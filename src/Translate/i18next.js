@@ -1,23 +1,34 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import Eng from "./Eng.json";
+import Swe from "./Swe.json";
 
-export const resources = {
-  en: {
-    translation: require("./Eng.json")
-  },
-  sv: {
-    translation: require("./Swe.json")
-  }
-};
+let resources = {};
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: "en",
-    interpolation: {
-      escapeValue: false
-    }
-  });
+const loadResources = async () => {
+    const engTranslations = await import('./Eng.json');
+    const sweTranslations = await import('./Swe.json');
 
+    resources = {
+        Eng: {
+            translation: engTranslations.default
+        },
+        Swe: {
+            translation: sweTranslations.default
+        }
+    };
 
+    i18n
+        .use(initReactI18next)
+        .init({
+            resources,
+            lng: "Eng",
+            interpolation: {
+                escapeValue: false
+            }
+        });
+}
+
+loadResources();
+
+export default i18n;

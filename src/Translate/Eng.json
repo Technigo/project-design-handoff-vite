@@ -1,0 +1,52 @@
+{
+    "WhyPlayParkour": {
+      "heading": "Why play parkour?"
+    },
+    "PlayParkour": {
+      "heading": "Play Parkour",
+      "description": "Treat your life as an adventure - all your life",
+      "button": "Play Parkour"
+    },
+    "HowToPlayParkour": {
+      "heading": "How to Play Parkour",
+      "image1Desc": "Play with friends",
+      "image2Desc": "Play with your children",
+      "image3Desc": "Play with class coach"
+    },
+    "Header": {},
+    "Footer": {
+      "link1": "About us",
+      "link2": "Play Parkour",
+      "link3": "FAQ",
+      "link4": "Contact information"
+    },
+    "CarouselComponent": {
+      "quote1": "I get to play with grandma - Nestor 7 years",
+      "quote2": "I feel like a child again - Martha 68 years",
+      "quote3": "It is social and it improves the balance and you get better at falling without hurting yourself - Sven 72 years",
+      "quote4": "Getting the kids from school and daycare are now an adventure and exercise for all of us, not a stressful moment. - David 35 years (Allans dad)",
+      "quote5": "I get to know my neighbours and my neighbourhood - Alice 75 years",
+      "quote6": "Because its fun and makes me stronger - Bella 35 years",
+      "quote7": "I get to discover my neighbourhood in a new way - Ella 45 years"
+    },
+    "AboutUsPage": {
+      "visionHeader": "Our Vision & Goal",
+      "visionDesc1": "Our vision is to create a world where everyone has the opportunity to experience the joy of parkour. We believe that parkour is more than just a sport; it's a way of life.",
+      "visionDesc2": "Our goal is to inspire people to push their limits, overcome obstacles, and achieve their full potential through the practice of parkour.",
+      "storyHeader": "Our Story",
+      "storyDesc": "Our story It started with grandma and 9-year-old Nestor being bored on their way home from school, then came Aunt Parkour, and today Play Parkour offers parkour programs and classes for all ages. The instructors are experienced and help students develop their strength, agility, balance, and coordination. We also have an online platform where students can learn parkour at their own pace and in the comfort of their own home.",
+      "contactHeader": "Contact Us",
+      "contactDesc": "We would love to hear from you!",
+      "inputName": "Name",
+      "inputEmail": "Email",
+      "inputMessage": "Message",
+      "checkboxLabel": "I agree to the Privacy terms",
+      "submitButton": "Submit"
+    },
+    "AboutUs": {
+      "heading": "About us",
+      "description": "It started with grandma and Nestor, 9 years old, being bored on their way home from school. Then came AuntieParkour, and today Play Parkour offers parkour Programs and classes for all ages.",
+      "button": "About Play Parkour"
+    }
+  }
+  
