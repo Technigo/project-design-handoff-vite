@@ -1,0 +1,36 @@
+/* Navbar styles */
+.navbar {
+  border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Button styles */
+.navbar-buttons {
+  border: 2px solid blue;
+  display: flex;
+  align-items: center;
+}
+
+/* Style for individual buttons */
+.navbar-buttons button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* Style for the Sign-in button */
+.sign-in-button {
+  border: 2px solid rgb(245, 245, 4);
+  background-color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

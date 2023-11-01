@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 export const Navbar = () => {
   return (
@@ -22,9 +23,8 @@ export const Navbar = () => {
               Opening Hours
             </button>
           </div>
-          <div className="sign-in-button">
-            <button>Sign in</button>
-          </div>
+
+          <button className="sign-in-button">Sign in</button>
         </ul>
       </nav>
     </header>
