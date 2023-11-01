@@ -114,6 +114,7 @@ img {
     display: none;
     width: 24px;
     height: 24px;
+    overflow-x: hidden;
 }
 
 .bm-menu {
