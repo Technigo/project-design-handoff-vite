@@ -294,7 +294,7 @@ export const content = {
     },
     sv: {
       text: "Vi kommer förmodligen inte att svara eftersom vi behöver massor av Naps on Laps men du är välkommen att prova när du vill ",
-      titel: "Vill du kontakta oss?",
+      title: "Vill du kontakta oss?",
       button: "Kontakta oss",
       onClickEvent: "openModal",
     },
