@@ -1,8 +1,8 @@
+import "../Typography/typography.css"
 
-
-export const PText = ({ text }) => {
+export const PText = ({ text, className }) => {
     return (
-        <p className="paragraph-text">
+        <p className={`${className}`}>
             {text}
         </p>
     )

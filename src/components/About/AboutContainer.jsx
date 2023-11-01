@@ -1,7 +1,8 @@
-import imageAbout1 from "../../assets/images/imageAbout1.png";
-import imageAbout2 from "../../assets/images/imageAbout2.png";
-import imageAbout3 from "../../assets/images/imageAbout3.png";
-import imageAbout4 from "../../assets/images/imageAbout4.png";
+import imageAbout1 from "../../assets/images_mobile/imageAbout1.svg";
+import imageAbout2 from "../../assets/images_mobile/imageAbout2.svg";
+import imageAbout3 from "../../assets/images_mobile/imageAbout3.svg";
+import imageAbout4 from "../../assets/images_mobile/imageAbout4.svg";
+import "../css_card_styling/card.css"
 import { H2_Headline } from "../Typography/H2_Headline";
 import { AboutCard } from "./AboutCard";
 import { ClientQuotes } from "./ClientQuotes";
@@ -18,6 +19,7 @@ export const AboutContainer = () => {
             id: "1b",
             image: imageAbout1,
             headline: "Our Mission",
+            className: "aboutcard1",
             "text": [
                 "At YOMY, we're dedicated to creating a sanctuary where individuals can find strength, balance, and inner harmony.",
                 "Our online platform ensures you can embark on this transformative journey anytime, from the comfort of your own space.",
@@ -29,6 +31,7 @@ export const AboutContainer = () => {
             id: "2b",
             image: imageAbout2,
             headline: "Our Philosophy",
+            className: "aboutcard2",
             text: [
                 "We believe that true wellness encompasses the integration of mind, body, and soul.",
                 "Through the practices of yoga and meditation, we strive to empower individuals to discover their inner strength, achieve balance, and foster a deep sense of well-being.",
@@ -41,6 +44,7 @@ export const AboutContainer = () => {
             id: "3b",
             image: imageAbout3,
             headline: "Our Instructors",
+            className: "aboutcard3",
             text: [
                 "Our diverse team of experienced instructors brings a wealth of knowledge and passion to each class.",
                 "With specialized expertise in various forms of yoga and meditation, they are dedicated to creating a nurturing environment for your personal growth and transformation.",
@@ -52,6 +56,7 @@ export const AboutContainer = () => {
             id: "4b",
             image: imageAbout4,
             headline: "Our Online Studio",
+            className: "aboutcard4",
             text: [
                 "Our online studio creates flexibility to practice from any location and fits into your schedule.",
                 "Access a variety of classes and instructors and eliminate commuting time and expenses. Join a inclusive community that connecting practitioners worldwide.",
@@ -67,46 +72,55 @@ export const AboutContainer = () => {
             text:
                 `"The online platform provides flexibility, and the instructors radiate positivity and expertise. I've found a deeper sense of balance and strength in both my body and mind."`,
             name: "Emily",
+            className: "aboutclient1",
         },
         {
             id: "2c",
             text:
                 `"I've tried many yoga studios, but YOMY stands out. The instructors are truly passionate about what they do, and it shows in every class."`,
             name: "David",
+            className: "aboutclient2",
         },
         {
             id: "3c",
             text:
                 `"I can't recommend YOMY enough. The community is so welcoming, and the classes are diverse and challenging. This studio has helped me find a sense of calm and strength that I never thought possible."`,
             name: "Sarah",
+            className: "aboutclient3",
         },
     ];
 
     return (
-        <div className="about-card-container">
+        <div className="card-page-container">
             <H2_Headline h2_headline={h2_headline_1} />
-            {about_studio_info.map((about_studio) => (
-                <div className="about-card-wrapper" key={about_studio.id}>
-                    <AboutCard
-                        headline={about_studio.headline}
-                        articleImage={about_studio.image}
-                        imageAltText={about_studio.alt}
-                        studioCardText={about_studio.text}
-                        studio_employee={about_studio.studio_employee}
-                    />
-                </div>
-            ))
-            }
-            <div className="client-quote-wrapper">
-            <H2_Headline h2_headline={h2_headline_2} />
-                {client_quotes.map((client) => (
-                    <div className="quote-wrapper" key={client.id}>
-                        <ClientQuotes
-                            clientQuote={client.text}
-                            clientName={client.name}
+            <div className="card-container">
+                {about_studio_info.map((about_studio) => (
+                    <div className="about-card-wrapper" key={about_studio.id}>
+                        <AboutCard
+                            headline={about_studio.headline}
+                            articleImage={about_studio.image}
+                            imageAltText={about_studio.alt}
+                            studioCardText={about_studio.text}
+                            studio_employee={about_studio.studio_employee}
+                            className={about_studio.className}
                         />
                     </div>
-                ))}
+                ))
+                }
+            </div>
+            <div className="client-quote-wrapper">
+                <H2_Headline h2_headline={h2_headline_2} />
+                <div className="about-client-wrapper">
+                    {client_quotes.map((client) => (
+                        <div className="quote-wrapper" key={client.id}>
+                            <ClientQuotes
+                                clientQuote={client.text}
+                                clientName={client.name}
+                                className={client.className}
+                            />
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     )

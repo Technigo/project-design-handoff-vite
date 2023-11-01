@@ -1,0 +1,66 @@
+p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+}
+
+h2 {
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+}
+
+h1 {
+    font-family: Philosopher;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #FFF;
+}
+
+.brown-text {
+    color: #45321A;
+  }
+  
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+    /* Tablet H1 */
+    h1 {
+        font-family: Philosopher;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+
+    /* Desktop H2 */
+    h2 {
+        font-family: Mulish;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    /* Desktop H1 */
+    h1 {
+        font-family: Philosopher;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

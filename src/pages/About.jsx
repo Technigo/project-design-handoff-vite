@@ -10,7 +10,10 @@ export const About = () => {
   return (
     <div className="about-page-wrapper">
       <H1_Headline h1_headline={h1_headline} />
-      <PText text={text} />
+      <PText
+        className="paragraph-text"
+        text={text}
+      />
       <section className="about-card-page-wrapper">
         <AboutContainer />
       </section>

@@ -1,4 +1,4 @@
-
+import "./homePage.css"
 import { HomeContainer } from "../components/Home/HomeContainer";
 import { H1_Headline } from "../components/Typography/H1_Headline";
 import { H2_Headline } from "../components/Typography/H2_Headline";
@@ -12,13 +12,21 @@ export const HomePage = () => {
 
     return (
         <div className="home-page-wrapper">
-            <div className="headline-wrapper">
-                <H2_Headline h2_headline={h2_headline} />
-                <H1_Headline h1_headline={h1_headline} />
+            <div className="hero-text">
+                <div className="headline-wrapper">
+                    <H2_Headline className="brown-text" h2_headline={h2_headline} />
+                    <H1_Headline
+                        h1_headline={h1_headline}
+                        className="brown-text"
+                    />
+                </div>
+                <PText
+                    className="brown-text paragraph-text"
+                    text={text}
+                />
             </div>
-            <PText text={text} />
             <section className="home-card-page-wrapper">
-              <HomeContainer />
+                <HomeContainer />
             </section>
         </div>
     )

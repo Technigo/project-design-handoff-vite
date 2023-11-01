@@ -1,0 +1,112 @@
+/*card container */
+
+.card-page-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+/* cards */
+
+.card {
+    width: 345px;
+}
+
+/* -56px. the textbox should cover 56px of the image*/
+
+
+.card-text {
+    padding: 24px;
+    border-radius: 0px 0px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.card-text p {
+    text-align: left;
+}
+
+.card .card-text .right-align-text {
+    text-align: right;
+}
+
+/* card text colors */
+.aboutcard1 {
+    background: #672D01;
+}
+
+.aboutcard2 {
+    background: #412319;
+}
+
+.aboutcard3 {
+    background: #2A2E31;
+}
+
+.aboutcard4 {
+    background: #012622;
+}
+
+.homecard1 {
+    background: #1C3949;
+}
+
+.homecard2 {
+    background: #182038;
+}
+
+.homecard3 {
+    background: #573121;
+}
+
+.homecard4 {
+    background: #45321A;
+}
+
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    /* .studio-text {
+        height:160px;
+    } */
+
+    .card {
+        width: 376px;
+    }
+    
+    /* -56px. the textbox should cover 56px of the image*/
+    .curved-image {
+       width: 376px;
+    }
+    
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+    }
+
+    .card {
+        width: 310px;
+    }
+    
+    /* -56px. the textbox should cover 56px of the image*/
+    .curved-image {
+       width: 310px;
+    }
+}

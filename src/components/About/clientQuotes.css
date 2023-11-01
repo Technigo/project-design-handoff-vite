@@ -1,0 +1,66 @@
+.client-quote-wrapper {
+    display:flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.about-client-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.client-quote {
+    width: 342px;
+    height: 184px;
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    gap: 16px;
+    border-radius: 50px 50px 0px 50px;
+}
+
+.aboutclient1 {
+    background: #471007;
+}
+
+.aboutclient2 {
+    background: #713003;
+}
+
+.aboutclient3 {
+    background: #634F01;
+}
+
+.client-quote .text-right {
+    text-align: right;
+}
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+    .about-client-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .about-client-wrapper {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 16px;
+    }
+
+    .quote-wrapper {
+        width: 100%;
+        grid-column: span 4; 
+      }
+
+      .client-quote {
+        width: 420px;
+        height: 156px;
+      }
+}
