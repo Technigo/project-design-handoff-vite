@@ -1,13 +1,92 @@
 :root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+
+  --darkest-red: #220901;
+  --light-red: #bc3908;
+  --lightest-red: #f0c3bd;
+  --primary: #f6aa1c;
+  --white-red: #fffdfc;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Removes margin on all relevant tags. Body for an edge-to-edge look on sections, and headings/paragraphs to easier follow sketch */
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 40px; 
+  font-style: normal; 
+  font-weight: 400;
+  line-height: 113.4%; 
+  color: var(--white-red)
+}
+
+h2 {
+  font-size: 22px;
+  color: var(--white-red);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 35.2px */
+  letter-spacing: 0.22px;
+}
+
+h3 {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+h4 {
+  color: var(--Lightest-red);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 106.4%; /* 17.024px */
+}
+
+p {
+  color: var(--White-red, #fffdfc);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 161.4%; /* 29.052px */
+}
+
+p.paragraph-small {
+  color: var(--Lightest-red, #f0c3bd);
+  font-family: Raleway;
+  font-size: 16px;
+  line-height: 160.4%; /* 25.664px */
+}
+
+p.paragraph-class-white {
+  color: var(--White-red, #fffdfc);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 106.4%; /* 14.896px */
+}
+
+p.paragraph-class-red {
+  font-size: 14px;
+  line-height: 106.4%; /* 14.896px */
+}
+
+p.paragraph-teacher-name {
+  font-size: 14px;
+  line-height: normal;
+}
+
+p.paragraph-class-title {
+  color: var(--White-red, #fffdfc);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 106.4%; /* 17.024px */
 }
