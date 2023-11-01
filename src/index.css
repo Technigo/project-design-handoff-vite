@@ -21,6 +21,9 @@ code {
   --font-family-ingress-body: "Josefin Sans Regular", sans-serif;
 
   /* Font sizes */
+  --h1-mobile: 46px;
+  --h1-tablet: 64px;
+  --h1-desktop: 96px;
   --h2-mobile: 32px;
   --h2-tablet: 40px;
   --h2-desktop: 48px;

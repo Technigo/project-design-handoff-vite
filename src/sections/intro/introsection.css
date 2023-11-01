@@ -1,0 +1,59 @@
+.yoga-title {
+  font-family: var(--font-family-h1-h2);
+  font-size: var(--h1-mobile);
+  color: var(--dark);
+  font-weight: 500;
+}
+
+h2 {
+  font-family: var(--font-family-ingress-body);
+  font-size: var(--body-tablet-desktop);
+  font-weight: 500;
+  line-height: 102%; /* 24.48px */
+  letter-spacing: -0.528px;
+  color: var(--dark);
+}
+
+.intro-container {
+  background-color: var(--greyish);
+  position: relative;
+}
+.title-and-image {
+  display: flex;
+  background-image: url(../../assets/wave-5.svg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+}
+
+.yoga-for-everyone {
+  color: var(--dark);
+  font-family: var(--body-tablet-desktop);
+  font-size: var(--h3-mobile);
+  line-height: 131%; /* 26.2px */
+  letter-spacing: -0.44px;
+}
+
+.lets-go {
+  /* background-image: url(../../assets/ellipse.svg); */
+  background-color: #4c3831;
+  height: 96px;
+  width: 96px;
+  border: none;
+  border-radius: 50%;
+  background-repeat: none;
+  cursor: pointer;
+  font-family: var(--font-family-ingress-body);
+  font-size: var(--body-mobile);
+  color: var(--offwhite);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+}
+
+.wave7 {
+  z-index: 2;
+  position: absolute;
+  bottom: -35px;
+}

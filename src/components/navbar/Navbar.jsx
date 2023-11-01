@@ -3,9 +3,11 @@ import burgerMenu from "../../assets/burger-menu.svg";
 import "./navbar.css";
 import logo from "../../assets/logo.svg";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <nav>
@@ -22,23 +24,23 @@ export const Navbar = () => {
       <div className={isNavExpanded ? "nav-menu expanded" : "nav-menu"}>
         <ul>
           <li>
-            <a>Classes</a>
+            <a>{t("navClasses")}</a>
           </li>
           <li>
-            <a>Yoga types</a>
+            <a>{t("navYogaTypes")}</a>
           </li>
           <li>
-            <a>Benefits of yoga</a>
+            <a>{t("navBenefits")}</a>
           </li>
           <li>
-            <a>Teachers</a>
+            <a>{t("navTeachers")}</a>
           </li>
           <Link to="/about">
-            <li>About us</li>
+            <li>{t("navAbout")}</li>
           </Link>
           <li>
-            <button>Sign up</button>
-            <button>Sign in</button>
+            <button>{t("navSignUpBtn")}</button>
+            <button>{t("navSignInBtn")}</button>
           </li>
         </ul>
       </div>

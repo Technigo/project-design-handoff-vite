@@ -13,7 +13,8 @@ const resources = {
       navSignUpBtn: "Sign up",
       navSignInBtn: "Sign in",
       letsGoBtn: "Lets go!",
-      intro: "Let's dive in to the world of Yoga",
+      intro: "Let's dive in to the world of",
+      introYoga: "Yoga",
       introSub:
         "At Wave Yoga Studio, we know and believe that yoga is for everyone 🤎",
       classes: "Our classes",

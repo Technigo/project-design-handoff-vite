@@ -1,0 +1,26 @@
+.classection-container {
+  background-color: var(--offwhite);
+}
+
+.imgs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.upper-wave {
+  position: absolute;
+  z-index: 2;
+  top: -21px;
+}
+
+.yoga-stretch {
+  z-index: 1;
+  width: auto;
+}
+
+.lower-wave {
+  position: absolute;
+  z-index: 2;
+  bottom: -55px;
+}
