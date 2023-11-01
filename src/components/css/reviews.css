@@ -63,4 +63,30 @@
 }
 
 /* Tablet */
-@media (min-width: 394px) and (max-width: 834px) {}
+@media (min-width: 394px) and (max-width: 834px) {
+
+    .reviews {
+        margin: 20px;
+        margin-top: 35px;
+    }
+
+    .reviews-info {
+        flex-direction: row;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .reviews-info-child {
+        width: 100%;
+    }
+
+    .reviews h1 {
+        width: 65%;
+        font-size: 40px;
+    }
+
+    .reviews h3 {
+        font-size: 20px;
+    }
+
+}
