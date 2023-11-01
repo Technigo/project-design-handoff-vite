@@ -1,6 +1,6 @@
 // Logo and navigation burger
 import styled from "styled-components";
-import data from "../assets/images.json"
+import data from "../assets/images.json";
 import { BurgerMenu } from "./Burger";
 
 const NavBar = styled.div`

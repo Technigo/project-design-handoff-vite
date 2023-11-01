@@ -23,9 +23,9 @@ export const BurgerMenu = () => {
 
       {/* Sidebar Menu */}
       <Menu isOpen={isOpen}>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
+        <a href="/">Play Parkour</a>
+        <a href="/classes">Classes</a>
+        <a href="/prices">Prices</a>
       </Menu>
     </div>
   );

@@ -10,7 +10,7 @@ export const Translation = () => {
 
   return (
   <>
-  <h1>{t("welcome")}</h1>
+  <h1>{t("head1")}</h1>
   <button onClick={() => changeLanguage("en")}>English</button>
   <button onClick={() => changeLanguage("es")}>Spanish</button>
   <button onClick={() => changeLanguage("sv")}>Swedish</button>

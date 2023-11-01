@@ -1,6 +1,6 @@
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <div>Play Parkour</div>
   )
 }
