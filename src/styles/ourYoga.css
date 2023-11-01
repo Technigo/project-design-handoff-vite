@@ -6,80 +6,38 @@ body {
     margin: 0;
     padding: 0;
 }
-.navbar-wrapper {
-    
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
+
+.ourYoga-Welcome-wrapper {
+    background-color: #EBE7E4;
+
+}
+
+.ourYoga-Welcome-text {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color: transparent; 
-    padding: 1rem; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
 }
 
-.aboutus-image {
-    
-    width: 70%;
-    height: auto;
-    z-index: -1;
-}
-
-.aboutus-image-wrapper {
-    
-    /* display: flex;
-    justify-content: right; */
-}
-
-.aboutus-text {
+.ourYoga-Welcome-text-wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
+    width: 60%;
 }
 
-.aboutus-text-head {
-    font-family: 'Raleway', sans-serif;
-    font-size: 5rem;
-    font-weight: 700;
-    color: #38302A;
-    z-index: 1;
-}
-
-.aboutus-text-wrapper {
-    position: relative;
-    width: 70%;
-    z-index: 1;
-    top: 0;
-    left: 10%; /* Move the text to the right by 10% */
-}
-
-.aboutus-text-subhead {
+.ourYoga-Welcome-text-head {
+    margin-top: 5em;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
     font-weight: semi-bold;
     line-height: 1.5em;
     color: #38302A;
-    z-index: 1;
 }
 
-.aboutus-text-wrapper-2 {
-    width: 70%;
-}
-
-.discover-button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    background-color: #38302A;
-    color: #ffffff;
-    padding: 0.5rem 1rem;
-    margin-right: 1rem;
-    border-radius: 0.5em;
-}
-
-.login-button {
+.ourYoga-button {
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     background-color: #ffffff;
@@ -89,4 +47,26 @@ body {
     border-radius: 0.5em;
     border: 1px solid #38302A;
 
+}
+
+.ourYoga-Welcome-text-desc-wrapper-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+
+.ourYoga-Welcome-text-desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 25%;
+    margin-right: 10em;
+}
+
+.ourYoga-image {
+    margin-top: 12em;
+    margin-left: 7em;
+    margin-bottom: 12em;
 }

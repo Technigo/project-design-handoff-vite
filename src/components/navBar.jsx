@@ -56,7 +56,7 @@ export const NavBar = () => {
             
                             <div>
                                 <button className="discover-button">Discover our studios</button>
-                                <button className="log-button">Log in</button>
+                                <button className="login-button">Log in</button>
                             </div>
                         </div>
                         <img className="aboutus-image" src={aboutUsImage} alt="about us" />
