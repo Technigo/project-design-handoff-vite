@@ -5,6 +5,13 @@ const resources = {
   en: {
     translation: {
       welcome: "Welcome",
+      navList: [
+        "Classes",
+        "Yoga types",
+        "Benefits of yoga",
+        "Teachers",
+        "About us",
+      ],
       navClasses: "Classes",
       navYogaTypes: "Yoga types",
       navBenefits: "Benefits of yoga",
@@ -58,6 +65,13 @@ const resources = {
   se: {
     translation: {
       welcome: "Välkommen",
+      navList: [
+        "Pass",
+        "Yogatyper",
+        "Fördelar med yoga",
+        "Instruktörer",
+        "Om oss",
+      ],
       navClasses: "Pass",
       navYogaTypes: "Yogatyper",
       navBenefits: "Fördelar med yoga",

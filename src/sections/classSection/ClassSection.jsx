@@ -11,7 +11,7 @@ export const ClassSection = () => {
       <h2>{t("classes")}</h2>
       <p>{t("classRange")}</p>
 
-      <div className="classBtns">
+      <div className="yogaTypeBtns">
         <button className="bookClassBtn">{t("bookClassBtn")}</button>
         <button className="signUpBtn">{t("signUpBtn")}</button>
       </div>

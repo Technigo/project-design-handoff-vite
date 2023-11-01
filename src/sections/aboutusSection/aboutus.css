@@ -1,0 +1,11 @@
+.about-us-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-us-wave {
+  position: absolute;
+  bottom: -30px;
+  z-index: 3;
+}

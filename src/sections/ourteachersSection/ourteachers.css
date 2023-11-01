@@ -1,0 +1,12 @@
+.ourTeachers-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--greyish);
+}
+
+.teachers-wave {
+  position: absolute;
+  z-index: 2;
+  bottom: -55px;
+}

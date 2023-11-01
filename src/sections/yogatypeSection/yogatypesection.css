@@ -1,0 +1,19 @@
+.yoga-type-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--greyish);
+}
+.yogaTypeBtns {
+  display: flex;
+}
+
+.yoga-type-wave {
+  position: absolute;
+  bottom: -30px;
+  z-index: 3;
+}
+
+.image-sun {
+  z-index: 1;
+}

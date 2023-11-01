@@ -1,0 +1,11 @@
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.benefits-wave {
+  position: absolute;
+  bottom: -30px;
+  z-index: 3;
+}
