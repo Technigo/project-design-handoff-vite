@@ -1,21 +1,77 @@
-import styled from "styled-components"
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { SlSocialInstagram } from "react-icons/sl";
 
-const StyledFooter = styled.footer `
-    height: 500px; 
-    background-color:lightgreen; 
-    padding: 1rem; 
+const StyledFooter = styled.footer`
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  height: 381px; 
+  justify-content: flex-end; 
+  padding: 0 23px 51px 23px; 
+  gap: 10px; 
+
+  img {
+    height: 50px;
+  }
+
+  .contact-wrapper {
+    display: flex; 
+    gap: 1rem; 
+  }
+
+  .links-wrapper {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 9px; 
+    width: 50%; 
+  }
 
-        img {
-            height: 50px; 
-        }
-`
+  .icons-wrapper {
+    display: flex; 
+    width: 50%; 
+    gap: 16px; 
+  }
+
+  .link {
+    color: var(--lightest-red);
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 154.4%;
+    text-decoration: none;
+  }
+
+  .instagram-icon {
+    color: var(--lightest-red);
+    width: 22px;
+    height: 22px;
+  }
+`;
 
 export const Footer = () => {
   return (
     <StyledFooter>
-        <img src="https://scalebranding.com/wp-content/uploads/2021/03/Lotus-Yoga-Logo.jpg"/>
+      <h3>PreggoYogaStudion</h3>
+      <div className="contact-wrapper">
+        <div className="links-wrapper">
+          <Link className="link">Yoga classes</Link>
+          <Link className="link">Events</Link>
+          <Link className="link">Learn</Link>
+          <Link className="link">Contact</Link>
+          <Link
+            to="/about"
+            className="link"
+            aria-label="Click to go to about page"
+          >
+            About
+          </Link>
+        </div>
+        <div className="icons-wrapper">
+          <SlSocialInstagram className="instagram-icon" />
+          <SlSocialInstagram className="instagram-icon" />
+        </div>
+      </div>
     </StyledFooter>
-  )
-}
+  );
+};
