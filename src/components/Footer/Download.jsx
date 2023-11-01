@@ -15,8 +15,8 @@ export const Download = () => {
     <DownloadContainer className="download">
       <p>Download the PRIMA BARRE app, access classes from anywhere, anytime</p>
       <div className="download-icons">
-        <img src="/app-store.svg" alt="app-store" />
-        <img src="/google-play.svg" alt="google-play" />
+        <img src="/app-store.png" alt="app-store" />
+        <img src="/google-play.png" alt="google-play" />
       </div>
     </DownloadContainer>
   );
