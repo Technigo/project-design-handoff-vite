@@ -1,9 +1,0 @@
-.burger-bars {
-    width: 35px;
-}
-
-@media (min-width: 834px) {
-    .burger {
-        display: none; /* Hide the burger on larger screens icon */
-    }
-}
