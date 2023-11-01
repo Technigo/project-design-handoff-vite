@@ -1,0 +1,13 @@
+.fd-title {
+  text-align: center;
+}
+
+.font {
+  color: #fff;
+  font-family: var(--metal-mania);
+  font-size: 1.5rem;
+}
+
+.font2 {
+  color: #fff;
+}

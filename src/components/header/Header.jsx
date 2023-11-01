@@ -1,19 +1,18 @@
 import styled from "styled-components";
 import { Navbar } from "./Navbar";
-import { HomeLink } from "./HomeLink";
 
 const StyledHeader = styled.header`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   color: var(--cobalt);
-  margin: 2rem 4rem;
+  font-family: var(--jetbrains-mono);
+  font-weight: var(--fw-800);
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
 `;
 
 export const Header = () => {
   return (
     <StyledHeader>
-      <HomeLink />
       <Navbar />
     </StyledHeader>
   );

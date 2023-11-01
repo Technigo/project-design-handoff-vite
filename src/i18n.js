@@ -1,24 +1,20 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import enTranslations from "./translations/en.json";
+import seTranslations from "./translations/se.json";
 
 const resources = {
   en: {
-    translation: {
-      welcome: "Welcome to the page!",
-      text: "This is a website about a gym",
-    },
+    translations: enTranslations,
   },
   sv: {
-    translation: {
-      welcome: "Välkommen till hemsidan!",
-      text: "Den här sidan är om ett gym",
-    },
+    translations: seTranslations,
   },
 };
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en",
+  lng: "en", //default language
   interpolation: {
     escapeValue: false,
   },

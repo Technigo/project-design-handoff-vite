@@ -4,8 +4,6 @@ import { RiArrowLeftSLine } from "react-icons/ri";
 
 // Define the styled component for HomeLink
 const StyledHomeLink = styled(Link)`
-  font-family: var(--jetbrains-mono);
-  font-weight: var(--fw-800);
   display: flex;
   justify-content: flex-start;
   align-items: center;

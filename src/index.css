@@ -1,5 +1,5 @@
 /*---------- GOOGLE FONTS | METAL MANIA 400 | JETBRAINS MONO 400, 800 ----------*/
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;800&family=Metal+Mania&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700;800&family=Metal+Mania&display=swap");
 
 /*---------- CSS VARIABLES ----------*/
 :root {
@@ -13,11 +13,6 @@
   /*---------- Fonts ----------*/
   --metal-mania: "Metal Mania", serif;
   --jetbrains-mono: "Jetbrains Mono", sans-serif;
-
-  --font-size-title: 2.5rem;
-  --font-size-xlg: 2rem;
-  --font-size-lg: 30px;
-  --font-size-xsm: 12px;
 
   --fw-800: 800;
 }
@@ -45,6 +40,7 @@ p,
 h1,
 h2 {
   overflow-wrap: break-word;
+  color: #fff;
 }
 
 a {
@@ -64,12 +60,44 @@ body {
   background: var(--bg-color);
 }
 
+.wrapper {
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: var(--jetbrains-mono);
+  font-size: 2rem;
+  font-weight: var(--fw-800);
+}
+
+p {
+  font-family: var(--jetbrains-mono);
+  font-size: 0.875rem;
+}
+
 .icon {
   color: var(--cobalt);
   stroke: var(--cobalt);
   width: 2rem;
   height: 2rem;
 }
+
+/* .square {
+  color:white;
+  border:1px solid white;
+  width:50vw;
+  height:0;
+  padding-bottom:55%;
+  position:relative;
+}
+
+.square img {
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+
+} */
 
 /*---------- LAYOUT ----------*/
 
