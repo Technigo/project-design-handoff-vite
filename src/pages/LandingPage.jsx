@@ -18,7 +18,7 @@ export const LandingPage = () => {
                 altText={"Image of a woman in a bridge yoga pose"}
                 textImageHeading={t("landingPage.inPersonClasses.h2")}
                 textImageParagraph={t("landingPage.inPersonClasses.inPersonClassesParagraph")}
-                className={"green"}
+                className={"green thick"}
                 textImageButton={t("landingPage.inPersonClasses.inPersonClassesButton")} />
             {/* By passing the imageOnLeft prop false here, the component will render with the image on the right */}
             <TextImageComponent
@@ -27,7 +27,7 @@ export const LandingPage = () => {
                 altText={"Image of a woman meditating"}
                 textImageHeading={t("landingPage.virtualClasses.h2")}
                 textImageParagraph={t("landingPage.virtualClasses.virtualClassesParagraph")}
-                className={"brown"}
+                className={"brown-to-green thick"}
                 textImageButton={t("landingPage.virtualClasses.virtualClassesButton")} />
         </>
     )

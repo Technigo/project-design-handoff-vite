@@ -1,7 +1,111 @@
 .image-on-left {
-    float: left;
+    background-color: var(--light-green);
 }
 
 .image-on-right {
-    float: right;
+    background-color: var(--dark-beige);
+}
+
+.image-on-left img,
+.image-on-right img {
+    object-fit: cover;
+}
+.text-image-block, .text-image-block-text  {
+    display: flex;
+}
+
+.text-image-block-text h2 {
+    font-weight: 400;
+}
+
+.text-image-block-text p {
+    font-weight: 300;
+}
+
+
+/* Mobile only */
+@media (max-width: 833px) {
+    .content {
+        flex: 1;
+        order: 1; /* This will make content appear before the image when imageOnLeft is false */
+    }
+
+    .image-on-left img,
+    .image-on-right img {
+        width: 100%;
+        height: 392px;
+    }
+
+    .text-image-block {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+    }
+
+    .text-image-block-text {
+        flex-direction: column;
+        align-items: center; 
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+/* Tablet to desktop */
+@media (min-width: 834px) and (max-width: 1511px) {
+    .image-on-left img, .image-on-right img {
+        width: 345px;
+        height: 345px;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    /* .button-container {
+
+    } */
+
+    .text-image-block {
+        padding: 36px 32px;
+        gap: 79px;
+    }
+
+    .image-on-left .content {
+        gap: 79px;
+    }
+
+    .text-image-block-text {
+        flex-direction: column;
+        justify-content: center;
+        text-align: left; 
+        gap: 20px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1512px) {
+    .image-on-left img, .image-on-right img {
+        width: 615px;
+        height: 615px;
+    }
+
+    .content {
+        display: flex;
+    }
+
+    .text-image-block{
+        padding: 71px 111px;
+        gap: 79px;
+    }
+
+    .image-on-left .content {
+        gap: 79px;
+    }
+
+    .text-image-block-text {
+        flex-direction: column;
+        justify-content: center;
+        text-align: left; 
+        gap: 20px;
+    }
 }

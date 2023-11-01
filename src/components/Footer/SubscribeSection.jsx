@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import { Button } from '../Links/Button';
 
 export const SubscribeSection = () => {
     const { t } = useTranslation();
@@ -8,7 +9,7 @@ export const SubscribeSection = () => {
             <h2>{t("landingPage.footer.h2")}</h2>
             <label htmlFor="email">{t("landingPage.footer.label")}</label>
             <input type="text" id="email" />
-            <button type="submit">{t("landingPage.footer.button")}</button>
+            <Button className={"green thin"} type="submit" text={t("landingPage.footer.button")} />
         </div>
     )
 }

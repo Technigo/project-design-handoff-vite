@@ -43,7 +43,7 @@ export const Hero = () => {
                         <Button className={"green thick"} text={t("landingPage.hero.heroButton")} />
                     </article>
                 </section>
-            )};
+            )}
         </>
     )
 }

@@ -9,7 +9,7 @@ export const SubHeroComponent = ({ text }) => {
         <section className="text-section">
             <article className="article-section">
                 <p className="subheader-text">{text}</p>
-                <Button className={"grey"} text={t("landingPage.subhero.subheroButton")} />
+                <Button className={"grey thick"} text={t("landingPage.subhero.subheroButton")} />
             </article>
         </section>
     )

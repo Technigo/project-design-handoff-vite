@@ -1,13 +1,13 @@
-export const VideoCard = ({ time, title, name, type }) => {
+export const VideoCard = ({ src, altText, time, title, name, type }) => {
     return (
         <article>
             <div>
-                <img src="./assets/images/yoga-studio-image1.jpg" alt="Image of Avery doing Vinyasa Flow" />
-                <p>{time}</p>
+                <img className={"video-img"} src={src} alt={altText} />
+                <span id="time">{time}</span>
             </div>
-            <p>{title}</p>
-            <p>{name}</p>
-            <p>{type}</p>
+            <h3>{title}</h3>
+            <p id={"name"}>{name}</p>
+            <p id={"type"}>{type}</p>
         </article>
     )
 }
