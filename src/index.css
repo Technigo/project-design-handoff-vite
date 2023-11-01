@@ -29,6 +29,7 @@ body {
 
 h1 {
   font-family: Prompt;
+  font-size: 30px;
 }
 
 h2 {
@@ -47,9 +48,15 @@ p {
   body {
     width: 100%;
   }
+
+  h1 {
+    font-size: 50px;
+    line-height: 57px;
+  }
 }
 
 @media (min-width: 1024px) {
-  /* Styles for desktop screens */
-  /* Adjust styles for desktop devices here */
+  body {
+    width: 100%;
+  }
 }

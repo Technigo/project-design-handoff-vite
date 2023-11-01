@@ -40,3 +40,24 @@ p {
   left: -50px;
   z-index: 0;
 }
+
+@media (min-width: 391px) and (max-width: 744px) {
+  .member-container-main {
+    height: 596px;
+  }
+  .member-image {
+    width: 820px;
+    height: auto;
+  }
+  .member-content {
+    gap: 45px;
+    margin: 57px;
+    width: 530px;
+  }
+  p {
+    width: 317px;
+  }
+}
+
+@media (min-width: 1024px) {
+}
