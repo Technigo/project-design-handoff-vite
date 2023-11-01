@@ -8,7 +8,7 @@ const ArticleWrapper = styled.div`
   grid-template-columns: 1fr;
   gap: 10px;
   max-width: 100%;
-  padding: 38px 15px;
+  padding: 10px 25px 0 25px;
 `
 
 
