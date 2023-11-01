@@ -2,42 +2,68 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 57px 24px 27px 24px;
+  padding: 57px 24px;
   background-color: var(--primary-white);
-  /* Makes sure the HeaderContainer always sticks to the top */
-  position: sticky;
   top: 0;
   /* Makes sure the HeaderContainer is always on top of other elements */
   z-index: 1;
-  /* Makes sure the HeaderContainer is always on top of other elements */
 }
 
-p.logo {
+.logo {
   font-family: var(--logo-font);
   font-size: 1.375rem;
 }
 
 /* Custom CSS to style the menu icon */
 .bm-menu {
-  color: var(--primary-black); /* Change to your desired color */
-  font-size: 24px; /* Change to your desired font size */
-  /* Add any other CSS styles you want */
-  z-index: 3; /* Ensure the menu is above the rest of the content */
-  transform: translateY(0); /* Adjust this property based on your desired opening animation */
+  color: var(--primary-black);
+  font-size: 24px;
+  z-index: 3; /* Puts the menu the rest of the content */
+  transform: translateY(0);
+}
+
+.bm-menu-wrap{
+  top: 0;
+  position: fixed;
 }
 
 .custom-icon {
-  z-index: 2; /* Ensure the icon is below the menu */
+  z-index: 2; /* Puts the icon is below the menu */
 }
 
 .burger-bars {
   max-width: 35px;
 }
 
+/* #react-burger-menu-btn{
+  right: 0 !important;
+  max-width: 8%;
+} */
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Initially transparent */
+  z-index: 2; /* Position is above the header and content */
+  display: block;
+  cursor: pointer;
+  transition: ease-in-out 0.3s; /* Adds a transition for background-color */
+}
 
-@media (min-width: 834px) {
-p.logo  {
-  font-size: 2.5rem;
+/* Tablet */
+@media (min-width: 834px) and (max-width: 1511px) {
+  .logo  {
+    font-size: 2.5rem;
+    z-index: 2000;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1512px) {
+.site-header {
+  height: 110px;
 }
 }

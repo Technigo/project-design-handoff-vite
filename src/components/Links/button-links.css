@@ -1,13 +1,18 @@
 .btn-style, a-style {
-    font-family: var(--main-font);
-    font-weight: 300;
-    font-size: var(--buttons-captions-font-size);
-    padding: 8px 14px;
     border-radius: var(--button-border-radius);
     border: none;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
+
+/* Styling for each of the different button types */
+.thick {
+    padding: 14px 26px;
+}
+
+.thin {
+    padding: 5px 20px;
+}
 
 .brown {
     background-color: var(--brown);

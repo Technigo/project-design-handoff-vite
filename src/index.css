@@ -112,6 +112,11 @@ button {
 
 /* Tablet styles */
 @media (max-width: 1511px) and (min-width: 834px) {
+  body {
+    margin: 0 auto;
+    max-width: var(--desktop);
+  }
+
   h1 {
     font-size: var(--h1-font-size-tablet);
     font-weight: 600;
@@ -148,6 +153,11 @@ button {
 
 /* Desktop styles */
 @media (min-width: 1512px) {
+  body {
+    margin: 0 auto;
+    max-width: var(--desktop);
+  }
+
   h1 {
     font-size: var(--h1-font-size-desktop);
     font-weight: 600;

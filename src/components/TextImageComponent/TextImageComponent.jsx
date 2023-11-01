@@ -1,4 +1,5 @@
 import { Button } from "../Links/Button";
+import "./text-image-component.css";
 
 export const TextImageComponent = ({
     imageOnLeft = true, // imageOnLeft is a prop that defaults to true

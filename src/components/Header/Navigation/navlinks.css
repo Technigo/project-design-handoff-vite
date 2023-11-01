@@ -28,7 +28,7 @@
     float: right;
 }
 
-@media (min-width: 834px) {
+@media (min-width: 1512px) {
     p.logo {
         font-size: 2.5rem;
    }

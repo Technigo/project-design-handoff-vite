@@ -33,30 +33,32 @@ export const Header = () => {
 
     return (
         <header className="site-header">
-            <Link to={"/"}><Logo text={"Align"} /></Link>
-            {windowWidth < 834 ? ( // Render the Menu component and burger icon for smaller screens
-                <Menu
-                    right
-                    isOpen={menuOpen}
-                    onStateChange={({ isOpen }) => setMenuOpen(isOpen)}
-                    customBurgerIcon={
-                        !menuOpen && (
-                            <img
-                                className="burger-bars"
-                                src="./assets/icons/hamburger-menu.svg"
-                                alt="Hamburger menu icon"
-                            />
-                        )
-                    }
-                    customCrossIcon={false}
-                >
-                    <MobileNavLinks onClick={closeMenu} />
-                    <div className="close-menu" onClick={closeMenu}>
-                        <img src="./assets/icons/cross.svg" alt="Close menu icon" />
-                    </div>
-                </Menu>
+            {windowWidth < 1512 ? (
+                <>
+                    {/* Overlay for darkening background when the menu is open */}
+                    {menuOpen && <div className="overlay" onClick={closeMenu} />}
+                    {/* Render the image of the search icon first, then the logo and lastly the menu component and burger icon on smaller screens */}
+                    <img src="./assets/icons/search-icon.svg" alt="Search icon" />
+                    <Link to={"/"}><Logo text={"Align"} /></Link>
+                    <Menu
+                        right
+                        isOpen={menuOpen}
+                        onStateChange={({ isOpen }) => setMenuOpen(isOpen)}
+                        customBurgerIcon={<img className="burger-bars" src="./assets/icons/hamburger-menu.svg" alt="Hamburger menu icon" />}
+                        customCrossIcon={false}
+                    >
+                        <MobileNavLinks onClick={closeMenu} />
+                        <div className="close-menu" onClick={closeMenu}>
+                            <img src="./assets/icons/cross.svg" alt="Close menu icon" />
+                        </div>
+                    </Menu>
+                </>
             ) : (
-                <DesktopNavLinks /> // Render desktop links for larger screens
+                <>
+                    {/* Render desktop links for larger screens and Logo first in the row of elements */}
+                    <Link to={"/"}><Logo text={"Align"} /></Link>
+                    <DesktopNavLinks />
+                </>
             )}
         </header>
     )

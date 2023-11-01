@@ -18,7 +18,7 @@ export const DesktopNavLinks = () => {
                     <li><NavLink to={"#"}>{t("landingPage.navbar.nav6")}</NavLink></li>
                     <li><NavLink to={"/sign-up"}>{t("landingPage.navbar.nav7")}</NavLink></li>
                 </ul>
-                <Button className={"brown"} text={t("landingPage.navbar.button")} />
+                <Button className={"brown thin"} text={t("landingPage.navbar.button")} />
             </div>
         </nav>
     )
