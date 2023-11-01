@@ -1,6 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
 import Logo from "../../assets/logo-sm.svg?react";
 import Hamburger from "../../assets/hamburger.svg?react";
+import ArrowDown from "../../assets/arrow-down.svg?react";
+import Planet from "../../assets/planet.svg?react";
+import Facebook from "../../assets/facebook.svg?react";
+import Instagram from "../../assets/instagram.svg?react";
+import Youtube from "../../assets/youtube.svg?react";
 
 const Layout = () => {
     return (
@@ -11,17 +16,36 @@ const Layout = () => {
                         <Link to="/">
                             <Logo />
                         </Link>
-                        <Hamburger className="h-8 w-8 hover:cursor-pointer" />
+                        <Hamburger className="h-8 w-8 hover:cursor-pointer hover:text-blue-n" />
                     </div>
                 </header>
-                <main className="px-4">
+                <main>
                     <Outlet />
                 </main>
             </div>
-            <footer className="bg-green-n w-full p-4">
+            <footer className="flex justify-between bg-green-n w-full p-4 items-center">
                 <div>
-                    <Link to="/about">ABOUT US</Link>
+                    <div className="flex gap-4 items-center mb-4">
+                        <Link className="hover:text-blue-n" to="/about">ABOUT US</Link>
+                        <p className="cursor-pointer hover:text-blue-n">FAQ</p>
+                        <p className="flex items-center cursor-pointer hover:text-blue-n">
+                            <Planet />
+                            <span className="mx-2">ENGLISH</span>
+                            <ArrowDown />
+                        </p>
+                    </div>
+                    <div>
+                        <p className="mb-2">JOIN OUR COMMUNITY</p>
+                        <div className="flex gap-4">
+                            <Facebook className="cursor-pointer hover:text-blue-n" />
+                            <Instagram className="cursor-pointer hover:text-blue-n" />
+                            <Youtube className="cursor-pointer hover:text-blue-n" />
+                        </div>
+                    </div>
                 </div>
+                <Link to="/">
+                    <Logo />
+                </Link>
             </footer>
         </div>
     )
