@@ -1,7 +1,6 @@
-import { useTranslation } from "react-i18next";
 import { Header } from "../../components/Header/Header";
 import { Welcome } from "../../components/Welcome/Welcome";
-import { Footer } from "../../components/Footer/Footer";
+// import { Footer } from "../../components/Footer/Footer";
 
 export const Home = () => {
   return (

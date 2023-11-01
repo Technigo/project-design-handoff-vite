@@ -8,42 +8,49 @@
   flex-shrink: 0;
   opacity: 0.9;
   background: linear-gradient(180deg, #fcd5c6 0%, rgba(252, 213, 198, 0) 100%);
+  overflow: hidden;
 }
 
-.logo-text img {
+img.logo-text {
   display: inline-flex;
-
   gap: -5px;
   box-sizing: border-box;
-
-  top: 64px;
-  left: 18px;
+  margin-top: 64px;
+  margin-left: 18px;
 }
 
-.header-title {
+h1.header-title {
+  position: relative; /* Enables z-index */
+  z-index: 2;
   height: 74px;
   align-self: stretch;
   color: #543855;
-
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
   line-height: 32px; /* 152.381% */
   letter-spacing: -0.3px;
+  margin: 0 29px 0 24px;
 }
 
-.yoga-image img {
+img.yoga-image {
+  position: absolute;
+  z-index: 1; /* Lower than the h1 */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the image */
   width: 268px;
   height: 256px;
-  flex-shrink: 0;
 }
 
 .signup-smal-button {
-  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   width: 75px;
   height: 76px;
-  flex-direction: column;
+  display: flex;
   justify-content: center;
-  align-items: flex-end;
-  flex-shrink: 0;
+  align-items: center;
+  z-index: 3;
 }
