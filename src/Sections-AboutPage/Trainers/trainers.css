@@ -1,0 +1,18 @@
+.tranier-card-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.trainer-card-text {
+    background-color: rgba(1, 42, 97, 0.8);
+    position: absolute;
+    width: 231px;
+    
+}
+
+.trainer-card {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+        
+}
