@@ -59,8 +59,6 @@ export const ScheduleComponent = () => {
           <a className="tertiary-button tertiary-button-small">Book</a>
         </StyledDiv>
       ))}
-      <div>ScheduleComponent</div>
-      {console.log(Object.keys(scheduleInformation))}
     </>
   );
 };

@@ -1,26 +1,26 @@
 {
-    "first": {
+    "class-1": {
       "time": "17.00", 
       "length": "50 min", 
       "class": "PRENATAL YOGA", 
       "teacher": "Pernille Andersen"
     }, 
 
-    "second": {
+    "class-2": {
       "time": "17.00", 
       "length": "50 min", 
       "class": "PRENATAL YOGA", 
       "teacher": "Pernille Andersen"
     }, 
 
-    "third": {
+    "class-3": {
       "time": "17.00", 
       "length": "50 min", 
       "class": "PRENATAL YOGA", 
       "teacher": "Pernille Andersen"
     }, 
 
-    "fourth": {
+    "class-4": {
       "time": "17.00", 
       "length": "50 min", 
       "class": "PRENATAL YOGA", 
