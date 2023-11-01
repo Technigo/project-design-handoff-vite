@@ -1,6 +1,7 @@
 import "./Member.css";
 import BigBlue from "../../assets/images/bigblue.png";
 import { Buttons } from "../../components/Buttons/Buttons";
+import button from "../../assets/Button.svg";
 
 export const Member = () => {
   return (
@@ -14,7 +15,8 @@ export const Member = () => {
         <Buttons
           buttonText=""
           url="https://example.com"
-          icon="/src/assets/Button.svg"
+          icon={button}
+          //   icon="/src/assets/Button.svg"
           hoverIcon="/src/assets/ButtonHover.svg"
           alt="Button Icon"
         />
