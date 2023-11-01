@@ -7,7 +7,6 @@ import { Contact } from "../pages/Contact";
 import { MeetTheTeachers } from "../pages/MeetTheTeachers";
 // import { Search } from "../pages/Search";
 import { SignUp } from "../pages/SignUp";
-
 import { ErrorPage } from "../pages/ErrorPage";
 
 // Defining the routes, these are the pages that will be mounted when the user navigates to a specific path

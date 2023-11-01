@@ -1,0 +1,52 @@
+.mobile-links {
+    flex-flow: column nowrap;
+    background-color: var(--primary-white);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 245px;
+    padding: 2rem 1rem;
+}
+
+.mobile-links-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 119px 27px 0 27px;
+}
+
+.mobile-links li {
+    margin: 10px;
+}
+
+.close-menu {
+    position: fixed;
+    top: 62px;
+    right: 26px;
+    width: 25px;
+    float: right;
+}
+
+@media (min-width: 834px) {
+    p.logo {
+        font-size: 2.5rem;
+   }
+    .site-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+   }
+    .desktop-links {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+   }
+    .desktop-nav-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 43px;
+        align-items: center;
+   }
+}

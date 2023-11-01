@@ -8,7 +8,8 @@
             "nav5": "Contact",
             "nav6": "Search",
             "nav7": "Sign up",
-            "button": "Log in"
+            "button": "Log in",
+            "my-page": "My page"
         },
         "hero": {
             "h1": "Discover your inner strength",

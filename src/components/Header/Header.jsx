@@ -1,20 +1,26 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
-import { NavigationLinks } from "./NavigationLinks";
-import { Button } from "../Links/Button";
-import { useTranslation } from "react-i18next";
+import { MobileNavLinks } from "./Navigation/MobileNavLinks";
+import { Burger } from "./Navigation/Burger";
 import "./header.css";
+// import { DesktopNavLinks } from "./Navigation/DesktopNavLinks";
 
 export const Header = () => {
-    const { t } = useTranslation();
+    // State to control whether the menu is open or closed
+    const [isOpen, setIsOpen] = useState(false);
+    const windowWidth = window.innerWidth;
+
+    // Function to toggle the menu
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
 
     return (
-        <header>
+        <header className="site-header">
             <Link to={"/"}><Logo text={"Align"} /></Link>
-            <div className="nav-and-button">
-                <NavigationLinks />
-                <Button className={"brown"} text={t("landingPage.navbar.button")} />
-            </div>
+            {windowWidth < 834 ? <Burger onClick={toggleMenu} /> : null}
+            {windowWidth < 834 && isOpen ? <MobileNavLinks /> : null}
         </header>
     )
 }
