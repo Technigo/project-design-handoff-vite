@@ -1,19 +1,47 @@
-
 import styled from "styled-components";
+import { useState } from 'react';
 import { SubHeading } from "../../../reusableComp/SubHeading";
 import { NormalText } from "../../../reusableComp/NormalText";
 
 
-
-const letsGetInTouchP = "I believe that energy is everywhere and when you subscribe to my newsletter you will get my kind of energy in your mailbox. Every now and then. But a good music list is never a bad energy?!"
-
 export const Form = () => {
+    const [formData, setFormData] = useState({ name: '', email: ''});
+
+    const handleInput = (e) => {
+        const { name, value } = e.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Form data submitted:', formData);
+    };
+
+
   return (
-   <>
-   <SubHeading text={"LETS GET IN TOUCH:"}/>
-   <NormalText text={letsGetInTouchP}/>
-   </>
+  <form onSubmit={handleSubmit}>
+    <div>
+        <label htmlFor="name">Name:</label>
+        <input
+        type="text"
+        id="name"
+        name="name"
+        value={formData.name}
+        onChange={handleInput}
+        />
+    </div>
+
+    <div>
+    <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value={formData.email}
+          onChange={handleInput}
+        />
+    </div>
+  </form>
   );
 };
 
-//Form kanske ska få sin egen komponent och sedan en egen till let's get in touch
