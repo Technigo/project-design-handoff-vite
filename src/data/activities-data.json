@@ -1,0 +1,26 @@
+{
+    "card-1": {
+      "header": "Breath work course", 
+      "bodyText": "Learn and practice to master your own body through breathwork", 
+      "backgroundImg": "/images/events/img-event-1.jpeg"
+    }, 
+
+    "card-2": {
+        "header": "Breath work course", 
+        "bodyText": "Learn and practice to master your own body through breathwork", 
+        "backgroundImg": "/images/events/img-event-2.jpeg"
+    }, 
+
+    "card-3": {
+        "header": "Breath work course", 
+        "bodyText": "Learn and practice to master your own body through breathwork", 
+        "backgroundImg": "/images/events/img-event-3.jpg"
+    }, 
+
+    "card-4": {
+        "header": "Breath work course", 
+        "bodyText": "Learn and practice to master your own body through breathwork", 
+        "backgroundImg": "/images/events/img-event-4.jpeg"
+    }
+
+  }

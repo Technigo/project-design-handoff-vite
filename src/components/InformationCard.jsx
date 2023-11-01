@@ -36,7 +36,6 @@ export const InformationCard = () => {
           <p className="tertiary-button">Read more</p>
         </StyledDiv>
       ))}
-   { console.log(cardInformation)}
    </>
   )
 }
