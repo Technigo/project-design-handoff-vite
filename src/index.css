@@ -80,6 +80,11 @@ h2 {
 }
 
 h3 {
+  font-size: var(--subheader-font-size);
+  font-weight: 500;
+}
+
+h4 {
   font-size: var( --nav-footer-info-font-size-desktop);
 }
 

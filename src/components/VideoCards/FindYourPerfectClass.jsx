@@ -1,4 +1,4 @@
-import { CardsSectionHeader } from "../CardsSectionHeader"
+import { CardsSectionHeader } from "../Content/CardsSectionHeader"
 import { VideoCard } from "./VideoCard"
 import { useTranslation } from "react-i18next";
 

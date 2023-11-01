@@ -1,6 +1,6 @@
 import { TextImageComponent } from "../components/TextImageComponent/TextImageComponent";
 import { SubHeroComponent } from "../components/SubHeroComponent/SubHeroComponent";
-import { CardsSectionHeader } from "../components/CardsSectionHeader";
+import { MeetTheTeam } from "../components/MeetTheTeam/MeetTheTeam";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
@@ -23,7 +23,7 @@ export const AboutUs = () => {
                 textImageHeading={t("aboutUs.topContent.h1")}
                 textImageParagraph={t("aboutUs.topContent.aboutUsParagraph")} />
             <SubHeroCompStyle><SubHeroComponent className="aboutUsParagraph" text={t("aboutUs.missionParagraph")} /></SubHeroCompStyle>
-            <CardsSectionHeader heading={t("aboutUs.ourPeople.h2")} text={t("aboutUs.ourPeople.firstParagraph")} button={t("aboutUs.ourPeople.button")} />
+            <MeetTheTeam />
         </section>
     )
 }
