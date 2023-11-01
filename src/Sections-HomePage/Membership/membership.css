@@ -1,40 +1,6 @@
-/* .membership-section {
-    border: dotted grey;
-    color: #ffffff;
-    padding: 10px;
-}
-
-.membership-wrapper {
-    display: flex;
-    flex-direction: column;
-}
-
-.membership-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.membership-card img {
-    object-fit: cover;
-    height: auto;
-    width: 100%;
-}
-
-.membership-card h1 {
-    position: absolute;
-}
-
-.membership-card P {
-    position: absolute;
-    align-self: baseline;
-    justify-self: end;
-} */
 .membership-section {
-    border: dotted grey;
     color: #ffffff;
-    padding: 10px;
+    margin: 35px 0px;
 }
 
 .membership-wrapper {
@@ -49,7 +15,25 @@
     justify-content: center;
     position: relative;
     text-align: center;
-    
+}
+
+.membership-card h1 {
+    font-family: Roboto;
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 29px;
+        letter-spacing: 0.2em;
+        text-align: left;
+}
+
+.membership-card p {
+    font-family: Roboto;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 12px;
+        letter-spacing: 0.05em;
+        text-align: left;
+        padding: 10px;
 }
 
 .membership-card img {

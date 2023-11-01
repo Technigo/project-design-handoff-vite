@@ -1,3 +1,38 @@
 .readMore-section {
-    border: dotted grey;
+    background: #1C1D23;
+    margin: 0;
+    
+}
+
+.readMore-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 71px;
+    padding: 41px 20px;
+}
+
+.readMore-text-container {
+    text-align: center;
+}
+
+.readMore-text-container h1{
+    color: #FFF;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+}
+
+.readMore-text-container p {
+    color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.77px;
 }

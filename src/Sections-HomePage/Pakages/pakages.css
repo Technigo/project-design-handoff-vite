@@ -1,13 +1,21 @@
 .pakages-section {
-    border: dotted grey;
     color: #ffffff;
-    padding: 10px;
 }
 
 .pakages-wrapper {
     display: flex;
         flex-direction: row;
-        gap: 10px;
+        overflow: auto;
+        white-space: nowrap;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 100%;
+        gap: 19px;
+}
+
+.pakages-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
 .pakage-img-container {
@@ -15,15 +23,19 @@
     justify-content: center;
     align-items: end;
     text-wrap: nowrap;
+   
 }
 
 .pakage-img-container p {
     position: absolute;
+        margin-bottom: 5%;
 }
 
 .pakages-wrapper img {
     width: 324px;
     height: 441px;
-    object-fit: cover;
-        
+    flex-shrink: 0;
+    border-radius: 20px;
+    object-fit: cover;  
+         
 }

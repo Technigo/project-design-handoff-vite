@@ -4,4 +4,26 @@ button {
         color: rgba(1, 42, 97, 1);
         border: none;
         padding: 10px;
+        height: 43px;
+
+    color: #012A61;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.7px;
+}
+
+.join-button {
+    width: 125px;
+}
+
+.read-more-btn {
+    width: 125px;
+}
+
+.register-btn {
+    width: 272px;
+        height: 34px;
 }

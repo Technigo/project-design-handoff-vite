@@ -7,7 +7,7 @@ import { Footer } from "./Components/Footer/Footer";
 
 export const App = () => {
   return (
-    <>
+    <div className="app-wrapper">
      <BrowserRouter>
       <Header />
           <Routes>
@@ -15,6 +15,6 @@ export const App = () => {
           </Routes>
       <Footer />
      </BrowserRouter>
-    </>
+    </div>
   );
 };

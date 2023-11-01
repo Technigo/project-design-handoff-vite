@@ -1,9 +1,29 @@
-header {
+
+.header-content-wrapper {
     background-color: rgba(28, 29, 35, 1);
-        color: #ffffff;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        height: 63px;    
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    width: 100%;
+    position: fixed;
+    top: 35px;
+    z-index: 1000; /*Set a high z-index value to ensure the header is above other content */
 }
 
+.galactic-logo {
+width: 195px;
+    height: 41px;
+}
+
+.dart-vader-icon {
+    height: 26px;
+    width: 26px;
+}
+
+.burger-icon {
+    height: 10px;
+    width: 25px;
+}

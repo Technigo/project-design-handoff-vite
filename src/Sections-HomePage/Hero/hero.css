@@ -1,5 +1,27 @@
 .hero-section {
-    /* background-image: url(src/assets/Images/space-background.jpg); */
-    border: dotted grey;
+    background-image: url(/Images/space-background.jpg);
+    width: 100%;
+        height: 844px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
+
+.hero-heading-h1 {
+    color: #FFE03B;
+        font-family: Roboto;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+}
+.hero-heading-h2 {
+    color: #FFF;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 }
 

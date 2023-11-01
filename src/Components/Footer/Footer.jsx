@@ -1,5 +1,6 @@
 import "./footer.css"
 import { Button } from "../Reusable/Buttons/Button"
+import { Link } from "react-router-dom"
 
 export const Footer = () => {
   return (
@@ -10,8 +11,11 @@ export const Footer = () => {
           <div className="footer-menu-text-wrapper">
 
           <div className="footer-menu-text-container">
+        <Link to={"/about"}>
         <h1>ABOUT US</h1>
+        </Link>
         <h1>+</h1>
+        
         </div>
 
         <div className="footer-menu-text-container">
@@ -42,14 +46,16 @@ export const Footer = () => {
         
 
         <div className="social-icons-wrapper">
-        <img src="/icons/facebook.svg" alt="" />
-         <img src="/icons/instagram.svg" alt="" />
+        <img src="/icons/facebook.svg" alt="facebook icon" className="social-icon" />
+         <img src="/icons/instagram.svg" alt="instagram icon" className="social-icon" />
         </div>
 
       </section>
 
         <section className="footer-logo">
+          <Link to={"/"}>
         <img className="galactic-logo" src="/glactic-logo.svg" alt="galactic fitness logo" />
+        </Link>
         <div className="footer-logo-text">
         <h1>GALACTIC FITNESS ©2023 BY <span className="rotopi-designs">RODOPI DESIGNS</span></h1>
         

@@ -1,3 +1,32 @@
 .offer-section {
-    border: dotted grey;
+    background: #1C1D23;
+    padding: 41px 20px;
+}
+
+.offer-text-wrapper {
+display: flex;
+    padding: 0px 6px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-text-wrapper h1 {
+color: #FFE03B;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.offer-text-wrapper p {
+color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.77px;
 }

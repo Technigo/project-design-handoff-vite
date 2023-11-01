@@ -9,18 +9,20 @@ const ourConceptText = "Our unique concept blends fitness and fandom. We offer J
 
   return (
     <section className="readMore-section">
-<div>
+<div className="readMore-wrapper">
+  <div className="readMore-text-container">
   <h1>THIS IS OUR CLAN</h1>
-<p>{ourClanText}</p>
-</div>
+  <p>{ourClanText}</p>
+  </div>
 
 <div>
   <Button buttonText={"READ MORE"} buttonClass={"read-more-btn"} />
 </div>
 
-<div>
+<div className="readMore-text-container">
   <h1>OUR CONCEPTS</h1>
   <p>{ourConceptText}</p>
+</div>
 </div>
     </section>
   )

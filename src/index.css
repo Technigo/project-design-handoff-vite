@@ -1,8 +1,6 @@
 :root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -13,8 +11,19 @@ code {
     monospace;
 }
 
-/* body {
-  background-image: url("src/assets/Images/space-background.jpg");
+body {
+  background-image: url("/Images/space-background.jpg");
   background-repeat: repeat;
   background-size: cover;
-} */
+  margin: 0px;
+}
+
+.app-wrapper {
+  margin: 0px;
+  max-width: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
