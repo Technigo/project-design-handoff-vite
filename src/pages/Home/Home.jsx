@@ -8,10 +8,10 @@ import { LookingForMore} from "./SectionsHome/LookingForMore"
 export const Home = () => {
     return (
         <>
-        <LottieComponent />
-        <TranslationComponent />
+       {/* LottieComponent */}
         <Hero />
         <LookingForMore />
+        <TranslationComponent />
         </>
 
     );

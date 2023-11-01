@@ -27,10 +27,34 @@
     --fw-800: 800;
 }
 
-code {
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h2 {
+  font-family: var(--metal-mania);
+}
+
+p, button, a, h1 {
+  font-family: var(--jetbrains-mono);
+}
+
+h1 {
+  font-size: 40px;
+}
+/*code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+*/
 
 /*
 body {
