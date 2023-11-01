@@ -23,7 +23,7 @@ const Layout = () => {
                     <Outlet />
                 </main>
             </div>
-            <footer className="flex justify-between bg-green-n w-full p-4 items-center">
+            <footer className="flex justify-between bg-green-n w-full p-4 items-center font-semibold">
                 <div>
                     <div className="flex gap-4 items-center mb-4">
                         <Link className="hover:text-blue-n" to="/about">ABOUT US</Link>
