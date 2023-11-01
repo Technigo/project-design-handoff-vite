@@ -13,9 +13,8 @@
   /*---------- Fonts ----------*/
   --metal-mania: "Metal Mania", serif;
   --jetbrains-mono: "Jetbrains Mono", sans-serif;
-
-  --fw-800: 800;
 }
+
 /*---------- BASE ----------*/
 * {
   margin: 0;
@@ -60,19 +59,28 @@ body {
   background: var(--bg-color);
 }
 
-.wrapper {
-  margin: 0 auto;
+/*---------- LAYOUT ----------*/
+section {
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.page-wrapper {
+  padding: 8rem 1rem;
+  display: grid;
+  row-gap: 4rem;
+}
+
+/*---------- OVERALL STYLES ----------*/
 h1 {
   font-family: var(--jetbrains-mono);
   font-size: 2rem;
-  font-weight: var(--fw-800);
+  font-weight: 800;
 }
 
 p {
   font-family: var(--jetbrains-mono);
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .icon {
@@ -81,25 +89,6 @@ p {
   width: 2rem;
   height: 2rem;
 }
-
-/* .square {
-  color:white;
-  border:1px solid white;
-  width:50vw;
-  height:0;
-  padding-bottom:55%;
-  position:relative;
-}
-
-.square img {
-  position:absolute;
-  width:100%;
-  height:100%;
-  object-fit:cover;
-
-} */
-
-/*---------- LAYOUT ----------*/
 
 /*---------- BREAKPOINTS ----------*/
 /* For extra large devices */

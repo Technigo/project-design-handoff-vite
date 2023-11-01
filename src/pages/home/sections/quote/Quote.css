@@ -1,0 +1,9 @@
+#quote {
+  background-color: var(--cobalt);
+}
+
+#quote p {
+  text-align: center;
+  font-weight: 700;
+  line-height: 2rem;
+}

@@ -1,6 +1,6 @@
 import "./Hero.css";
-import { Button } from "../../../components/reusable/Button";
-import { SpeechBubble } from "../../../components/SpeechBubble";
+import { Button } from "../../../../components/reusable/Button";
+import { SpeechBubble } from "../../../../components/SpeechBubble";
 import styled from "styled-components";
 
 const HeroWrapper = styled.section`

@@ -1,28 +1,22 @@
-import { FourtyDays } from "./scenes/FourtyDays";
-import { Hero } from "./scenes/Hero";
-import { KundaliniYoga } from "./scenes/KundaliniYoga";
-import { Testimonials } from "./scenes/Testimonials";
-import { SquareImage } from "../../components/reusable/SquareImage";
-import { Quote } from "./scenes/Quote";
-import styled from "styled-components";
-
-const ImagesContainer = styled.div`
-  display: flex;
-`;
+import { Hero } from "./sections/hero/Hero";
+import { Quote } from "./sections/quote/Quote";
+import { Offering } from "./sections/offering/Offering";
+import { KundaliniYoga } from "./sections/kundaliniYoga/KundaliniYoga";
+import { Testimonials } from "./sections/testimonials/Testimonials";
 
 export const HomePage = () => {
   return (
     <>
       <Hero />
       <Quote />
-      <ImagesContainer>
+      {/* <ImagesContainer>
         <SquareImage imgUrl="./image-1.png" imgAlt="" isTwoImages={true} />
         <SquareImage imgUrl="./image-4.png" imgAlt="" isTwoImages={true} />
-      </ImagesContainer>
-      <FourtyDays />
-      <ImagesContainer>
+      </ImagesContainer> */}
+      <Offering />
+      {/* <ImagesContainer>
         <SquareImage imgUrl="./image-2.png" imgAlt="" isTwoImages={false} />
-      </ImagesContainer>
+      </ImagesContainer> */}
       <KundaliniYoga />
       <Testimonials />
     </>

@@ -1,0 +1,19 @@
+{
+  "testimonials": [
+    {
+      "id": 1,
+      "text": "Having a daily Sadhana has totally changed my life. I am in love with my sacred morning practice.",
+      "user": "Maria"
+    },
+    {
+      "id": 2,
+      "text": "I have gone from working 7 days a week all year around to working 3-4 days a week. And I am focusing on my own needs.",
+      "user": "Anna"
+    },
+    {
+      "id": 3,
+      "text": "Nothing happens and then suddenly everything changes. And now I am all into starting my day with a morning practice!",
+      "user": "Joanna"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+#kundalini-yoga {
+  background-color: var(--popping-orange);
+}
+
+#kundalini-yoga p {
+  line-height: 1.625rem;
+  font-size: 1rem;
+  color: #d9d9d9;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.changing-words {
+  color: #fff;
+  font-family: var(--metal-mania);
+  font-size: 1.5rem;
+}
+
+.single-word {
+  color: #fff;
+}
