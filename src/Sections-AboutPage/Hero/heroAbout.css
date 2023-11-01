@@ -1,3 +1,25 @@
 .hero-about-section {
-    border: dotted grey;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-about-section h1 {
+    color: #FFE03B;
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+}
+
+.hero-about-section p {
+    color: #FFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
 }

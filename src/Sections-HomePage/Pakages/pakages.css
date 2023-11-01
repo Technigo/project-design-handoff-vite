@@ -22,8 +22,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    text-wrap: nowrap;
-   
+    text-wrap: nowrap;  
 }
 
 .pakage-img-container p {

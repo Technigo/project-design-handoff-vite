@@ -1,0 +1,51 @@
+.facilities-section {
+    width: 100%;
+    background: #1C1D23;
+}
+
+.facilities-text-wrapper {
+    text-align: center;
+    margin: 30px;
+}
+
+.facilities-text-wrapper h1 {
+color: #FFE03B;
+font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.facilities-text-wrapper p {
+    color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.77px;
+}
+
+.facilities-card-wrapper {
+    display: flex;
+        flex-direction: row;
+        overflow: auto;
+        white-space: nowrap;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 100%;
+}
+
+.facilities-card-wrapper::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+
+.facilities-card-wrapper img {
+    object-fit: cover;
+    width: 358px;
+        height: 331px;
+}

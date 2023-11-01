@@ -1,7 +1,51 @@
+.trainers-section {
+    width: 100%;
+}
+
+.trainers-headline {
+    text-align: center;
+}
+
+.trainers-headline h1 {
+color: #FFE03B;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.trainers-headline p {
+    color: #FFF;
+        font-family: Roboto;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+}
+
 .tranier-card-wrapper {
     display: flex;
-    flex-direction: row;
+        flex-direction: row;
+        overflow: auto;
+        white-space: nowrap;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        width: 100%;
+        gap: 19px;
 }
+
+.trainer-card {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 362px;
+        height: 338px;
+}
+
+/* .trainer-card-img {
+object-fit:fill;
+} */
 
 .trainer-card-text {
     background-color: rgba(1, 42, 97, 0.8);
@@ -10,9 +54,3 @@
     
 }
 
-.trainer-card {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-        
-}

@@ -1,0 +1,35 @@
+.our-vision-section {
+   margin: 0;
+   padding: 0;
+    width: 100%;
+    background: #1A1E22;
+}
+
+.our-vision-text-wrapper {
+    text-align: center;
+    margin: 20px;
+}
+
+.our-vision-text-wrapper h1 {
+    color: #FFE03B;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+}
+
+.our-vision-text-wrapper p {
+    color: #FFF;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        letter-spacing: 0.77px;
+}
+
+.dart-vader-img {
+    width: 100%;
+}
