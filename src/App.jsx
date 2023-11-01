@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { HomePage } from "./pages/HomePage"
 import { AboutPage } from './pages/AboutPage'
-import { NavBar } from './sections/NavBar'
+import { Header } from './sections/Header'
 import { Footer } from './sections/Footer'
 
 import './App.css'
@@ -11,7 +11,7 @@ export const App = () => {
 
   return (
     <>
-    <NavBar />
+    <Header />
     
     <BrowserRouter>
       <Routes>

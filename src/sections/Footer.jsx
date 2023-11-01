@@ -1,7 +1,11 @@
 export const Footer = () => {
     return (
         <>
-            <p>FOOTER</p>
+        <div className="grid-parent">
+            <div className="footer section">
+                <p>FOOTER</p>
+            </div>
+        </div>
         </>
     )
 }

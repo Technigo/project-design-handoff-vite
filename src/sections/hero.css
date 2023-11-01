@@ -1,0 +1,38 @@
+.dark-blue {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    z-index: -2;
+    position: relative;
+}
+
+.dark-blue .hero {
+    grid-column: 2/span 10;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero-title {
+    font-weight: 500;
+    font-style: italic;
+    line-height: 114%;
+    margin: 0;
+}
+
+.hero-text {
+    width: 81%;
+    margin: 0;
+}
+
+.hero-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 400px;
+    width: 465px;
+    object-fit: cover;
+    object-position: 25px 0;
+    z-index: -1;
+}
