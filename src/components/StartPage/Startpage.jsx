@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from './Header';
+import NavBar from './NavBar';
 import HeroImage from './HeroImage';
 import Location from './Location';
 import Membership from './Membership';
@@ -9,11 +9,11 @@ import Footer from '../Footer';
 const StartPage = () => {
     return (
         <div>
-            <Header />
+            <NavBar/>
             <HeroImage />
-            <Location />
             <Membership />
             <Features />
+            <Location />
             <Footer />
         </div>
     );

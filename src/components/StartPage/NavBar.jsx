@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom'; // import Link
 import logo from '../../assets/LEGZ.jpg';
 
 const NavBarContainer = styled.div`
@@ -8,7 +7,7 @@ const NavBarContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: #2A3439; 
+    background-color: #2A3439; // dark background
     width: 100%;
 `;
 
@@ -48,9 +47,7 @@ const HamburgerIcon = styled.button`
 function NavBar() {
     return (
         <NavBarContainer>
-            <Link to="/"> {/* Wrap the Logo with Link component */}
-                <Logo src={logo} alt="4 Legz Logo"/>
-            </Link>
+            <Logo src={logo} alt="4 Legz Logo"/>
             <DesktopNav>
                 <a href="/join">Join</a>
             </DesktopNav>
@@ -62,7 +59,3 @@ function NavBar() {
 }
 
 export default NavBar;
-
-
-
-
