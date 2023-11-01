@@ -6,14 +6,14 @@ export const Testimonials = () => {
       <img
         src={yoga1}
         alt="Yoga image"
-        className="w-[20rem] md:w-[21rem] lg:w-[34rem] lg:h-[46rem] lg:z-10 "
+        className="w-[20rem] md:w-[21rem] md:ml-10 lg:w-[34rem] lg:ml-6 lg:h-[46rem] lg:z-10 "
       />
-      <div className="flex flex-col justify-center items-center my-10 lg:mt-16">
+      <div className="flex flex-col justify-center items-center my-10 lg:mt-10 lg:mx-3">
         <h1 className="text-[28px] font-bold md:text-[40px] lg:text-[70px]">
           Testimonials
         </h1>
 
-        <div className=" flex flex-row justify-center items-center my-5 w-[80%]">
+        <div className=" flex flex-row justify-center items-center my-5 w-[80%]lg:mb-2 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="31"
@@ -38,7 +38,7 @@ export const Testimonials = () => {
             height="22"
             viewBox="0 0 21 22"
             fill="none"
-            className="ml-3 md:w-[50px]"
+            className="ml-6 md:w-[50px]"
           >
             <path
               d="M16.6743 11.0001L7.5057 1.83146L6.07947 3.35957L13.6181 11.0001L6.07947 18.6406L7.5057 20.1687L16.6743 11.0001Z"
