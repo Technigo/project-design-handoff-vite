@@ -1,9 +1,11 @@
 import { MessageCard } from "../../ui/MessageCard/MessageCard";
 import styles from "./FindUs.module.scss";
-import { content as data } from "../../../statics/content";
+import { content } from "../../../statics/content";
 import { ObserverWrapper } from "../../ui/ObserverWrapper/ObserverWrapper";
-
+import { useAppStore } from "../../../store/useAppStore";
 export const FindUs = () => {
+  const lang = useAppStore((state) => state.lang);
+  const data = content.findus[lang];
   return (
     <section className={styles.findUs}>
       <ObserverWrapper>
@@ -11,9 +13,9 @@ export const FindUs = () => {
           <img src="/photos/Globe.svg" />
           <div className={styles.text}>
             <MessageCard
-              text={data.findus.text}
-              title={data.findus.title}
-              buttonText={data.findus.button}
+              text={data.text}
+              title={data.title}
+              buttonText={data.button}
               bgWhite={true}
             />
           </div>

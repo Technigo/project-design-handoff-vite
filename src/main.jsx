@@ -5,6 +5,7 @@ import { App } from "./App.jsx";
 import { PageNotFound } from "./pages/PageNotFound/PageNotFound.jsx";
 import { LandingPage } from "./pages/LandingPage/LandingPage.jsx";
 import { AboutPage } from "./pages/AboutPage/AboutPage.jsx";
+import { Error } from "./components/ui/Error/Error.jsx";
 
 import "./styles/index.scss";
 import "./styles/reset.css";
@@ -16,7 +17,7 @@ const router = createBrowserRouter([
     errorElement: <PageNotFound />,
     children: [
       {
-        errorElement: <PageNotFound />,
+        errorElement: <Error />,
         children: [
           { index: true, element: <LandingPage /> },
           { path: "/contact", element: <AboutPage /> },

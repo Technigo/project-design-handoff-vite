@@ -4,12 +4,13 @@ import styles from "./Slider.module.scss";
 import { content as data } from "../../../statics/content";
 import { MemberCard } from "../../ui/MemberCard";
 import useScreenSize from "../../../hooks/useScreenSize";
+import { useAppStore } from "../../../store/useAppStore";
 
 export const Slider = ({ type = "slider" }) => {
   const sliderRef = useRef();
+  const lang = useAppStore((state) => state.lang);
   const [width] = useScreenSize();
-  const sliderData = type === "aboutHero" ? data.aboutHero.memberCards : data.slider;
-  console.log(width);
+  const sliderData = type === "aboutHero" ? data.aboutHero[lang].memberCards : data.slider;
   return (
     <div className={styles.slider_box} ref={sliderRef}>
       <ul className={`${styles.slider} ${type === "aboutHero" ? styles.about : ""}`}>
@@ -17,9 +18,9 @@ export const Slider = ({ type = "slider" }) => {
           type !== "aboutHero" ? (
             <SliderCard
               key={slid.title}
-              text={slid.text}
-              title={slid.title}
-              buttonText={slid.button}
+              text={slid.content[lang].text}
+              title={slid.content[lang].title}
+              buttonText={slid.content[lang].button}
               imagePath={slid.imgPath}
               bg={slid.bgColor}
               border={slid.border}

@@ -1,0 +1,57 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+.error_page {
+  width: 100vw;
+  min-height: 80vh;
+  background: $color-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  font-family: $font-display;
+  position: relative;
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 40px;
+  }
+}
+
+.circle {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  animation: GFGSmall 3s infinite linear;
+
+  @include md {
+    animation: GFG 3s infinite linear;
+  }
+}
+
+@keyframes GFG {
+  0% {
+    transform: rotate(0deg) translateY(200px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(200px) rotate(-360deg);
+  }
+}
+
+@keyframes GFGSmall {
+  0% {
+    transform: rotate(0deg) translateY(150px) rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg) translateY(150px) rotate(-360deg);
+  }
+}

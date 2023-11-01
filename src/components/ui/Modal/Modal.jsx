@@ -14,7 +14,7 @@ export const Modal = () => {
   }));
 
   const currentFormdata = formData[currentFormIndex];
-  const { question, type, button, placeholder, message, name, id } = currentFormdata;
+  const { question, type, button, placeholder, message, name } = currentFormdata;
 
   return (
     <>
