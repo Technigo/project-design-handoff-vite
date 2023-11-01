@@ -2,11 +2,12 @@
 
 .whyplay-wrapper {
     background-color: var(--color-green-opacity-60);
-    padding: 20px;
     text-align: center; 
-    display: flex;
-    flex-direction: column;  /* Changes the direction from row to column */
-    align-items: center;  
+    padding-top: 50px;
+    padding-bottom: 50px;
+ /*   display: flex;
+  flex-direction: column;
+    align-items: center;  */
 }
 
 .whyplay-wrapper h2 {
@@ -14,8 +15,12 @@
 }
 
 .icons-wrapper {
-    display: flex;
+   /* display: flex;
     justify-content: space-between;
     flex-wrap: wrap; 
-    gap: 10px; 
+    gap: 10px; */
+    width: 100%; 
+   
+    height: auto;    /* Adjust this if necessary */
+    margin: 0 auto;   /* Centers the carousel if it's narrower than its parent */
 }

@@ -7,9 +7,9 @@ export const Header = () => {
   return (
     <div className='header-wrapper'>
       <img src={LogoIcon} alt='Logo Icon' className='logo' />
-      <div className='icons-wrapper'>
-        <img src={SearchIcon} alt='Search icon' className='icon icon-search' />
-        <img src={HamburgerIcon} alt='Menu icon' className='icon' />
+      <div className='header-icons-wrapper'>
+        <img src={SearchIcon} alt='Search icon' className='header-icon icon-search' />
+        <img src={HamburgerIcon} alt='Menu icon' className='header-icon' />
       </div>
     </div>
   )

@@ -11,12 +11,12 @@
 height: 35px;
 }
 
-.icons-wrapper {
+.header-icons-wrapper {
     display: flex;
     align-items: center;
 }
 
-.icon {
+.header-icon {
     height: 24px; 
     padding-right: 20px;
 }

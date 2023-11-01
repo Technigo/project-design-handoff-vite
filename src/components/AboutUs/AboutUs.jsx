@@ -1,7 +1,17 @@
 import './AboutUs.css';
+import ImageAboutUs from '../../assets/images/Image19.png';
 
 export const AboutUs = () => {
   return (
-    <div>AboutUs</div>
+    <div className="aboutUsContainer">
+            <div className="leftColumn">
+                <h1>About us</h1>
+                <p>It started with grandma and Nestor, 9 years old, being bored on their way home from school. Then came AuntieParkour, and today Play Parkour offers parkour Programs and classes for all ages.</p>
+                <button className="yellowButton">About Play Parkour</button>
+            </div>
+            <div className="rightColumn">
+                <img src={ImageAboutUs} alt="About Us" className="roundImage" />
+            </div>
+        </div>
   )
 }

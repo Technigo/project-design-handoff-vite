@@ -31,3 +31,18 @@ p {
     color: var(--color-purple);
     font-size: 0.7rem;
 }
+
+.playParkourButton {
+    padding: 10px 20px;
+    background-color: var(--color-yellow);
+    border: none;
+    font-size: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: var(--color-purple);
+
+    &:hover {
+        background-color: darken(var(--yellow), 10%);
+    }
+}
