@@ -2,11 +2,21 @@
     padding: 12px 24px;
 }
 
-.trial-btn {
+button {
     height: 44px;
     border-radius: 20px;
     border: 2px solid #71A59C;
     background: #FFF;
     display: flex;
     align-items: center;
+}
+
+button:hover {
+    background: #374F4B;
+    transition: background 0.3s ease-in-out;
+}
+
+.trial_btn_text:hover {
+    color: white;
+    transition: color 0.3s ease-in-out;
 }

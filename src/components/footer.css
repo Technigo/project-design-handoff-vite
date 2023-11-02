@@ -20,10 +20,19 @@ footer {
     color: #45321A;
 }
 
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-link[aria-current="true"] {
+    text-decoration: underline;
+  }
+
 .language-wrapper {
     display: flex;
     gap: 16px;
 }
+
 .footer-anchor {
     font-family: Mulish;
     font-size: 20px;
@@ -32,4 +41,8 @@ footer {
     line-height: normal;
     text-decoration: none;
     color: #45321A;
+}
+
+.footer-anchor:hover {
+    text-decoration: underline;
 }

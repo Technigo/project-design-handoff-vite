@@ -51,6 +51,10 @@ header {
     color: #45321A;
 }
 
+.link[aria-current="true"] {
+    text-decoration: underline;
+  }
+
 /* Tablet */
 @media (min-width: 667px) and (max-width: 1024px) {
     .home-icon {

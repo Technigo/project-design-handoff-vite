@@ -1,3 +1,4 @@
+
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
@@ -9,7 +10,7 @@ import { Contact } from "./pages/Contact";
 export const App = () => {
   return (
     <BrowserRouter>
-      <div>
+      <main>
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
@@ -17,7 +18,7 @@ export const App = () => {
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
-      </div>
+      </main>
     </BrowserRouter>
   );
 };
