@@ -14,3 +14,13 @@
     justify-content: center;
     text-align: center;
 }
+
+/* ----- Making the content responsive ----- */
+
+
+/* Desktops */
+@media (min-width: 1025px) {
+    .hero {
+        padding-top: 5%;
+    }
+}
