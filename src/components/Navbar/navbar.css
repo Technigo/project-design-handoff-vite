@@ -19,9 +19,16 @@
     display: flex;
 }
 
+.nabar-logo {
+    display: flex;
+}
+
 .navbar-logo img {
     width: 85%;
     height: auto;
+}
+
+.navbar-profile {
     display: flex;
 }
 
@@ -29,7 +36,6 @@
     width: 30%;
     cursor: pointer;
     padding-top: 3%;
-    display: flex;
 }
 
 /* ----- Making the content responsive ----- */
