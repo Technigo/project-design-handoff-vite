@@ -84,7 +84,7 @@ h1 {
 
 h2 {
   font-size: var(--h2-font-size);
-  font-weight: 600;
+  font-weight: 400;
 }
 
 h3 {
@@ -119,17 +119,14 @@ button {
 
   h1 {
     font-size: var(--h1-font-size-tablet);
-    font-weight: 600;
   }
   
   h2 {
     font-size: var(--h2-font-size-tablet);
-    font-weight: 600;
   }
   
   h3 {
     font-size: var(--h3-font-size-tablet);
-    font-weight: 500;
   }
   
   h4 {
@@ -142,12 +139,10 @@ button {
   
   a {
     font-size: var(--nav-footer-info-font-size-tablet);
-    font-weight: 300;
   }
   
   button {
     font-size: var(--buttons-captions-font-size-tablet);
-    font-weight: 300;
   }
 }
 
@@ -155,22 +150,21 @@ button {
 @media (min-width: 1512px) {
   body {
     margin: 0 auto;
-    max-width: var(--desktop);
+    /* max-width: var(--desktop); */
   }
 
   h1 {
     font-size: var(--h1-font-size-desktop);
-    font-weight: 600;
+
   }
   
   h2 {
     font-size: var(--h2-font-size-desktop);
-    font-weight: 600;
+
   }
   
   h3 {
     font-size: var(--h3-font-size-desktop);
-    font-weight: 500;
   }
   
   h4 {
@@ -183,11 +177,9 @@ button {
   
   a {
     font-size: var(--nav-footer-info-font-size-desktop);
-    font-weight: 300;
   }
   
   button {
     font-size: var(--buttons-captions-font-size-desktop);
-    font-weight: 300;
   }
 }

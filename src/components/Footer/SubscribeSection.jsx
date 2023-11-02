@@ -5,7 +5,7 @@ export const SubscribeSection = () => {
     const { t } = useTranslation();
 
     return (
-        <div>
+        <div className="subscribe-and-heading">
             <h2 className="footer-h2">{t("landingPage.footer.h2")}</h2>
             <div className="subscribe-input-fields">
                 {/* There was no label in the sketch so I'll leave it commented out */}

@@ -5,8 +5,11 @@ footer {
     justify-content: space-between;
     background-color: var(--dark-green);
     color: var(--primary-white);
-    padding: 59px 26px;
     text-align: center;
+}
+
+.footer-wrapper {
+    padding: 59px 26px;
 }
 
 /* Subscribe section  */
@@ -33,7 +36,7 @@ input#email {
     height: 40px;
 }
 
-button.green {
+footer button.green {
     height: 30px;
     position: absolute;
     top: 5px;
@@ -68,11 +71,107 @@ select {
 /* Footer links section */
 .footer-links {
     margin-top: 74px;
+    padding: 0 48px;
     display: flex;
+    gap: 69px;
     justify-content: center;
+}
+
+.footer-links ul {
+    gap: 10px;
 }
 
 .studio, .support {
     display: flex;
     flex-direction: column;
+}
+
+/* Adress and info section */
+.info-section {
+    margin-top: 74px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+@media (min-width: 834px) and (max-width: 1511px) {
+    .footer-wrapper {
+        padding: 150px 110px 75px 110px;
+        margin: 0 auto;
+        /* max-width: 650px; */
+    }
+
+    .language-and-social img {
+        width: 32px;
+    }
+
+    .language-selector {
+        margin-top: 121px;
+        gap: 101px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .language-select {
+        height: 33px;
+    }
+
+    .footer-links {
+        margin-top: 0;
+        padding: 0;
+        gap: 101px;
+    }
+}
+
+@media (min-width: 1511px) {
+     .footer-wrapper {
+        padding: 123px 100px;
+    }
+
+    .footer-subsection {
+        position: relative;
+    }
+
+    .subscribe-and-heading {
+        max-width: 550px;
+        /* position: relative; */
+    }
+
+    .footer-h2 {
+        text-align: left;
+    }
+
+    .language-and-social {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .language-selector {
+        display: flex;
+        justify-content: flex-end;
+        gap: 200px;
+        position: absolute;
+        top: -125px;
+        right: 0;
+    }
+
+    .language-select {
+        max-height: 33px;
+    }
+
+    .footer-links {
+        margin-top: 0;
+        padding: 0;
+        gap: 200px;
+        text-align: left;
+    }
+
+    .language-and-social img {
+        width: 32px;
+    }
+
+    .info-section {
+        margin-top: 147px;
+    }
 }

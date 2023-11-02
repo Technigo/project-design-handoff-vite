@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import { Logo } from "./Logo";
 import { MobileNavLinks } from "./Navigation/MobileNavLinks";
 // import { Burger } from "./Navigation/Burger";
@@ -39,7 +38,7 @@ export const Header = () => {
                     {menuOpen && <div className="overlay" onClick={closeMenu} />}
                     {/* Render the image of the search icon first, then the logo and lastly the menu component and burger icon on smaller screens */}
                     <img src="./assets/icons/search-icon.svg" alt="Search icon" />
-                    <Link to={"/"}><Logo text={"Align"} /></Link>
+                    <Logo text={"Align"} />
                     <Menu
                         right
                         isOpen={menuOpen}
@@ -54,11 +53,11 @@ export const Header = () => {
                     </Menu>
                 </>
             ) : (
-                <div>
+                <>
                     {/* Render desktop links for larger screens and Logo first in the row of elements */}
                     <Logo text={"Align"} />
                     <DesktopNavLinks />
-                </div>
+                </>
             )}
         </header>
     )

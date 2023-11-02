@@ -17,8 +17,8 @@ export const FooterLinks = () => {
                 <h4>{t("landingPage.footer.support.heading")}</h4>
                 <li><Link to={"/help-center"}>{t("landingPage.footer.support.help")}</Link></li>
                 <li><Link to={"/contact-us"}>{t("landingPage.footer.support.contact")}</Link></li>
-                <li><Link to={"faq"}>{t("landingPage.footer.support.faq")}</Link></li>
-                <li><Link to={"pricacy"}>{t("landingPage.footer.support.privacy")}</Link></li>
+                <li><Link to={"/faq"}>{t("landingPage.footer.support.faq")}</Link></li>
+                <li><Link to={"/privacy"}>{t("landingPage.footer.support.privacy")}</Link></li>
             </ul>
 
         </nav>
