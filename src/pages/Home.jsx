@@ -1,4 +1,5 @@
 import HeaderPhoto from "../assets/header-photo.png";
+import iPhone from "../assets/iphone-16.png";
 import styles from "./Home.module.css";
 
 const Home = () => {
@@ -28,7 +29,24 @@ const Home = () => {
                 <button className="text-white-n bg-blue-n px-8 py-3 rounded-full hover:bg-beige-n hover:text-blue-n hover:underline" >JOIN THE MOVEMENT</button>
             </div>
             <div className="py-4 border-y-4 border-green-n overflow-hidden">
-                <p className={`text-md font-bold whitespace-nowrap ${styles.scroll}`}>{`CLASSES: ${classes.join("  •  ")}`}</p>
+                <p className={`text-md font-bold whitespace-nowrap ${styles.scroll}`}>{`CLASSES: ${[...classes, ...classes].join("  •  ")}`}</p>
+            </div>
+            <section className="flex">
+                <img
+                    className="w-1/3 object-contain"
+                    src={iPhone}
+                    alt="Photo of an iPhone"
+                />
+                <div className="flex items-center">
+                    <div>
+                        <p className="text-lg -ms-16 mb-4">Different levels tailored to your needs</p>
+                        <p className="text-lg mb-4">Low impact sessions ranging from 15-45 minutes</p>
+                        <p className="text-lg ps-12">Certified instructors teaching you the fundamentals of Pilates</p>
+                    </div>
+                </div>
+            </section>
+            <div className="py-4 border-y-4 border-green-n overflow-hidden">
+                <p className={`text-md font-bold whitespace-nowrap ${styles.scroll}`}>{`BENEFITS: ${[...benefits, ...benefits].join("  •  ")}`}</p>
             </div>
         </>
     )
