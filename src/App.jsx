@@ -5,6 +5,7 @@ import { OurYoga } from "./components/ouryoga.jsx";
 import { ThreeCards } from "./components/threeCards.jsx";
 import { RecentPost } from "./components/recentPost.jsx";   // import RecentPost component
 import { StayInTouch } from "./components/stayinTouch.jsx"; // import StayInTouch component
+import { ContactFootNote } from "./components/contactFootNote.jsx"; // import ContactFootNote component
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
         <AboutUs />
         <RecentPost />   
         <StayInTouch />
+        <ContactFootNote />
       </div>
     </React.Fragment>
   )
