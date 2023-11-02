@@ -21,7 +21,6 @@ const HeroTextbox = styled.div`
   display: flex;
   position: absolute;
   width: 100%;
-  height: 175px;
   padding: 8px 24px;
   flex-direction: column;
   align-items: center;
@@ -29,7 +28,7 @@ const HeroTextbox = styled.div`
   gap: 8px;
   flex-shrink: 0;
   background: rgba(255, 255, 255, 0.7);
-  margin-bottom: 85px;
+  margin-bottom: 70px;
 
   h1 {
     color: #081957;
@@ -63,7 +62,7 @@ const HeroButton = styled.button`
   font-weight: 500;
   //line-height: normal;
   text-transform: uppercase;
-  margin-top: 40px;
+  margin-top: 25px;
 `;
 
 export const Hero = () => {

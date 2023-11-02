@@ -56,7 +56,7 @@ const Signup = styled.div`
     border: 0.5px solid #fff6e9;
     background: transparent;
     height: 32px;
-    width: 290px;
+    width: 320px;
 
     &::placeholder {
       color: #fff6e9;
