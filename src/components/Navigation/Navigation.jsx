@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {  Link  } from "react-router-dom";
+import {  NavLink  } from "react-router-dom";
 
 
 
@@ -27,25 +27,41 @@ const AppLi = styled.li`
   height: 50px;
 `;
 
+const ActiveLink = styled(NavLink)`
+  &.active {
+    img {
+      fill: yellow;
+    }
+  }
+`;
+
 
 export const Navigation = ()  =>{
   return (
-<NavigationWrapper>
-<AppUl  className="app-ul">
-  <AppLi className="app-li">
-    <Link to="/"> <img src="./home.svg" alt="Home" /></Link>
-  </AppLi>
-  <AppLi className="app-li">
-    <Link to=""><img src="./calendar.svg" alt="Home" /></Link>
-  </AppLi>
-  <AppLi className="app-li">
-    <Link to="information"><img src="./info.svg" alt="Home" /></Link>
-  </AppLi>
-  <AppLi className="app-li">
-    <Link to=""><img src="./contact.svg" alt="Home" /></Link>
-  </AppLi>
-</AppUl >
-</NavigationWrapper>
+    <NavigationWrapper>
+    <AppUl className="app-ul">
+      <AppLi className="app-li">
+        <ActiveLink to="/" exact>
+          <img src="./home.svg" alt="Home" />
+        </ActiveLink>
+      </AppLi>
+      <AppLi className="app-li">
+        <ActiveLink to="/calendar">
+          <img src="./calendar.svg" alt="Calendar" />
+        </ActiveLink>
+      </AppLi>
+      <AppLi className="app-li">
+        <ActiveLink to="/information">
+          <img src="./info.svg" alt="Information" />
+        </ActiveLink>
+      </AppLi>
+      <AppLi className="app-li">
+        <ActiveLink to="/contact">
+          <img src="./contact.svg" alt="Contact" />
+        </ActiveLink>
+      </AppLi>
+    </AppUl>
+  </NavigationWrapper>
   )
 }
 
