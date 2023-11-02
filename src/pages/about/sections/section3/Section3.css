@@ -1,0 +1,8 @@
+#section3 {
+  background-color: var(--popping-orange);
+  text-align: center;
+}
+
+#section3 img {
+  display: none;
+}
