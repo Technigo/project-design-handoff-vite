@@ -41,7 +41,7 @@ color: var(--light-green);
 @media (min-width: 834px) {
     /* CSS for the background image on larger screens (desktop) */
 .hero-background-image {
-    background-image: url("./assets/images/align-yoga-hero-image.jpg");
+    background-image: url("./align-yoga-hero-image.jpg");
     background-size: cover;
   }
   }
