@@ -25,6 +25,7 @@ export const Hero = () => {
     return (
         <>
         <HeroSection>
+
         <MainHeading text={"Sat nam, hi!"} />
         <NormalText text={heroNormalText} />
         <Link to="/about">

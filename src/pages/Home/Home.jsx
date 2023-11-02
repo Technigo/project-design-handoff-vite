@@ -11,11 +11,15 @@ import { KundaliniYoga } from "./SectionsHome/KundaliniYoga";
 import { ImgSection3 } from "./SectionsHome/ImgSection3";
 import { Love } from "./SectionsHome/Love";
 import { Footer } from "./SectionsHome/Footer";
+import { HeroPic } from "./SectionsHome/HeroPic";
+import Navbar from "./SectionsHome/NavBar";
 
 export const Home = () => {
     return (
         <>
        {/* LottieComponent */}
+        <Navbar />
+        <HeroPic />
         <Hero />
         <LookingForMore />
         <BlackAndWhiteImg />
