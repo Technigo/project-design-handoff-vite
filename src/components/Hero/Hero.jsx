@@ -34,7 +34,7 @@ export const Hero = () => {
                 </section>
             ) : (
                 <section className={"hero-section"}>
-                    <img className="hero-image" src="./align-yoga-hero-image.jpg" alt="Hero" />
+                    <img className="hero-image" src="./assets/images/align-yoga-hero-image.jpg" alt="Hero" />
                     <article className="hero-content">
                         <div className="hero-text">
                             <h1>{t("landingPage.hero.h1")}</h1>
