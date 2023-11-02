@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import HeroImage from '../images/hero-image-1440.png';
+// import HeroImage from '../images/hero-image-1440.png';
 
 export const PageWrapper = styled.div`
   display: flex;
@@ -24,10 +24,6 @@ export const Menu = styled.div`
   text-align: right;
 `;
 
-export const Icon = styled.span`
-
-`;
-
 export const Hamburger = styled.div`
   @media(min-width: 1440px) {
     display: none;
@@ -40,7 +36,7 @@ export const HeroWrapper = styled.section`
 `;
 
 export const AboutUsWrapper = styled.section`
-  background-color: #998800;
+  background-color: #ff0000;
   text-align: left;
 `;
 

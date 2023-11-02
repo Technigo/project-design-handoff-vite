@@ -1,4 +1,3 @@
-import React from 'react';
 import { AboutUsWrapper } from './StyledComponents';
 
 export const AboutUs = () => {
