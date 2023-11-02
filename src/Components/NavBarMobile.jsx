@@ -12,10 +12,10 @@ export const NavBarMobile = () => {
       }
     
       return (
-        <div className="mobile-nav">
+        <div className="flex space-x-3 w-full">
           <button 
             type="button" 
-            className="hamburger-menu" 
+            className="border-none" 
             onClick={toggleMenu}
           >
             <svg 
@@ -37,7 +37,7 @@ export const NavBarMobile = () => {
               </g>
             </svg>
           </button>
-          <Link to="/"><img className="logo" src="src/assets/images/Logo.png" alt="AFH logo" /></Link>
+          <Link to="/"><img className="w-8 h-8" src="src/assets/images/Logo.png" alt="AFH logo" /></Link>
           <button type="button" className="search">
             <svg 
               width="24" 

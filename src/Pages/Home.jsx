@@ -22,7 +22,7 @@ export const Home = () => {
   }, []) // the effect only runs once when the user resizes the screen width
 
   return (
-    <div className="main-wrapper">
+    <div className="bg-primary">
         <Header />
         {/* compare the width to the breakpoint to conditionally render the HeroSection */}
         {width < breakPointTablet ? null : (
