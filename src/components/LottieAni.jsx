@@ -1,4 +1,4 @@
-//Not mounted or used since there wasn't this kind of animation in the design
+//Not mounted or used since there wasn't this kind of animation in the design. Keeping it here in learning purpose.
 
 //Mounted in App.jsx
 

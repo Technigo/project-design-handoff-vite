@@ -2,13 +2,15 @@
 
 import "./firsttimer.css"
 
+import { useTranslation } from "react-i18next"
 
 export const FirstTimer = () => {
-    return <div className="firsttimer">
+    const { t } = useTranslation()
 
-        <h2>FIRST-TIMER</h2>
+    return <div className="firsttimer">
+        <h2>{t("FirstTimer.h2")}</h2>
         <div className="firsttimer-image">
             <img src="./firsttimer.png" alt="firsttimer" /></div>
-        <p>-READ MORE</p>
+        <p>{t("FirstTimer.p")}</p>
     </div>
 }

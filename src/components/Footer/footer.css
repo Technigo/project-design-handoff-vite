@@ -24,6 +24,7 @@
 .by h6 {
     color: #949494;
     padding-bottom: 3%;
+    font-weight: 400;
     transition: color 0.5s;
     /* Smooth transition for the color change */
 }

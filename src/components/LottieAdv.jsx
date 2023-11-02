@@ -1,4 +1,4 @@
-//Not mounted or used since there wasn't this kind of animation in the design
+//Not mounted or used since there wasn't this kind of animation in the design. Keep it her for learning purpose.
 
 import Lottie from "lottie-react"
 import bike from "../assets/animations/bike.json"

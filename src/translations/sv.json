@@ -1,6 +1,40 @@
 {
-    "Translation": {
-        "welcome": "Välkommen välkommen",
-        "text": "Text svenska"
+    "Hero": {
+        "h1": "Väck din inre Jedi",
+        "h2": "Träna med The Force!",
+        "button": "BLI MEDLEM"
+    },
+    "Info1": {
+        "h31": "VÅR KLAN",
+        "p1": "På Galactic Fitness är vi på uppdrag att skapa hjältar. Med ett varmt välkomnande till alla, inklusive nykomlingar till träning, är vi här för att hjälpa dig att uppnå ditt fulla potential. Vår inspiration kommer från den tidlösa andan i Star Wars universum. Låt oss vara din ledande kraft på vägen för att bli hjälten i din egen berättelse. Följ med oss på detta episka äventyr.",
+        "button": "Läs mer",
+        "h32": "VÅRA KONCEPT",
+        "p2": "Vår unika koncept förenar träning och fankultur. Vi erbjuder Jediträning, där du börjar som Padawan och tränar med ljussablar, kardiovaskulär träning och välmående. För de som dras till den mörka sidan är vår Sith-träning intensiv och fokuserar på sparring och självförsvar. För de som söker Mandalorianernas styrka, betonar vår träning muskelmassa och CrossFit. Oavsett om du är en Jedi, Sith eller Mandalorian till hjärtat, så tillgodoser vårt gym din inre hjältes resa."
+    },
+    "ConceptCard": {
+        "h31": "BLI EN JEDI",
+        "h32": "GÅ MED PÅ DEN MÖRKA SIDAN",
+        "h33": "MANDALORES VÄG"
+    },
+    "Info2": {
+        "h3": "VI ERBJUDER",
+        "p": "På Galactic Fitness omfamnar vi alla åldrar och träningsnivåer. Oavsett om du är en ung adept som börjar din träningsresa eller en erfaren mästare är vi här för att stödja dig. Våra speciella medlemspaket tillgodoser dina unika behov och säkerställer att alla, från Padawans till Mästare, kan låsa upp sin inre hjälte med oss."
+    },
+    "FirstTimer": {
+        "h2": "Träna med the Force!",
+        "p": "-MER INFO"
+    },
+    "Memberships": {
+        "h2": "MEDLEMSKAP",
+        "p": "-MER INFO"
+    },
+    "InfoFooter": {
+        "h31": "OM OSS",
+        "h32": "VI ERBJUDER",
+        "h33": "MER INFO",
+        "h34": "KONTAKT",
+        "h35": "GÅ MED I VÅR KLAN!",
+        "p": "Du är ännu inte medlem i Galactic Fitness, var god registrera dig för att ansluta dig till kraften!",
+        "button": "BLI MEDLEM IDAG"
     }
 }

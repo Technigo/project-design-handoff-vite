@@ -1,6 +1,40 @@
 {
-    "Translation": {
-        "welcome": "Welcome welcome",
-        "text": "Text english"
+    "Hero": {
+        "h1": "Awaken your inner Jedi",
+        "h2": "Train with the Force!",
+        "button": "JOIN NOW"
+    },
+    "Info1": {
+        "h31": "THIS IS OUR CLAN",
+        "p1": "At Galactic Fitness, we're on a mission to create hereoes. With a warm welcome to all, including newcomers to fitness, we're here to help you unleash your potential. Our inspiration comes from the timeless spirit of the Star Wars universe. Let us be your guiding force on the path to becoming the hero of your own story. Join us on this epic adventure.",
+        "button": "Read more",
+        "h32": "OUR CONCEPTS",
+        "p2": "Our unique concept blends fitness and fandom. We offer Jedi training, where you start as a Padawan and train with lightsabers, cardio, and wellness. For those drawn to the dark side, our Sith training is intense,focusing on sparring and self-defence. For those who seek the strength of the Mandalorians, our training emphasises on muscle mass and CrossFit. Whether you're a Jedi, Sith, or Mandalorian at heart, our gym caters to your inner hero's journey."
+    },
+    "ConceptCard": {
+        "h31": "BECOME A JEDI",
+        "h32": "JOIN THE DARK SIDE",
+        "h33": "THE WAY OF MANDALORE"
+    },
+    "Info2": {
+        "h3": "WHAT WE OFFER",
+        "p": "At Galactic Fitness, we embrace all ages and fitness levels. Whether you're a youngling beginning your fitness journey or a seasoned master, we're here to support you. Our special membership packages cater to your unique needs, ensuring that everyone, from Padawans to Masters, can unlock their inner hero with us."
+    },
+    "FirstTimer": {
+        "h2": "Train with the Force!",
+        "p": "-READ MORE"
+    },
+    "Memberships": {
+        "h2": "MEMBERSHIPS",
+        "p": "-READ MORE"
+    },
+    "InfoFooter": {
+        "h31": "ABOUT US",
+        "h32": "WHAT WE OFFER",
+        "h33": "READ MORE",
+        "h34": "CONTACT",
+        "h35": "JOIN OUR CLAN!",
+        "p": "You are not yet a member of Galactic Fitness, please register yourself to the force!",
+        "button": "REGISTER NOW"
     }
 }

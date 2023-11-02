@@ -19,7 +19,7 @@ The key learning-goal for this week was to collaborate with a ux-designer and to
 
 A form was prepped but as there was no form in the design I decided to comment it out.
 
-Team-mates, course material, chatGPT were used.
+Team-mates, course material, chatGPT were used. chatGPT was used for the translation as it could save time copying the endpoints and code I've written in the en.json file. Although the translation itself would had to be change in a real world scenario.
 
 Fellow team-mate Inna Kokic was developing the same design. Even though we worked individually it made us able to discuss some issues interpretting the design etc.
 

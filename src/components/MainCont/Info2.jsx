@@ -1,8 +1,14 @@
+//Mounted in MainCont.jsx
+
 import "./info2.css"
 
+import { useTranslation } from "react-i18next"
+
 export const Info2 = () => {
+    const { t } = useTranslation()
+
     return <div className="info2">
-        <h3>WHAT WE OFFER</h3>
-        <p>At Galactic Fitness, we embrace all ages and fitness levels. Whether you're a youngling beginning your fitness journey or a seasoned master, we're here to support you. Our special membership packages cater to your unique needs, ensuring that everyone, from Padawans to Masters, can unlock their inner hero with us.</p>
+        <h3>{t("Info2.h3")}</h3>
+        <p>{t("Info2.p")}</p>
     </div>
 }
