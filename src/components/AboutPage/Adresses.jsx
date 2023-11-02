@@ -1,9 +1,22 @@
 import React from 'react';
-import AddressCard from './AddressCard'; 
+import AddressCard from './AddressCard';
+import styled from 'styled-components';
+
+
+const AddressesContainer = styled.div`
+    background-color: #2A3439;
+    padding: 50px;
+    display: flex; 
+    gap: 40px; // this is to give space between address cards if you have multiple
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; // this ensures the boxes wrap to the next line if there's no space
+    color: black;
+`;
 
 function Adresses() {
     return (
-        <div>
+        <AddressesContainer>
             <AddressCard 
                 location="Grand Topal Hideaway"
                 detail1="Beachside 1"
@@ -11,7 +24,6 @@ function Adresses() {
                 region="Southern Grahtwood"
                 world="Tamriel"
             />
-            
             <AddressCard 
                 location="Sanctuary"
                 detail1="Plot 37, 5th Ward"
@@ -19,8 +31,10 @@ function Adresses() {
                 region="Eorzea"
                 world="Twintania"
             />
-        </div>
+        </AddressesContainer>
     );
 }
 
 export default Adresses;
+
+

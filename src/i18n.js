@@ -1,32 +1,24 @@
-import i18n from "i18next"
-import { initReactI18next } from "react-i18next"
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import enTranslations from "./translations/en.json";
+import seTranslations from "./translations/se.json";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 const resources = {
   en: {
-    translation: {
-      welcome: "Welcome to our website!",
-    },
+    translation: enTranslations,
   },
-  es: {
-    translation: {
-      welcome: "¡Bienvenido a nuestro sitio web!",
-    },
-  },
-  sv: {
-    translation: {
-      welcome: "Välkommen till vår webbplats!",
-    },
-  },
-  de: {
-    translation: {
-      welcome: "Willkommen auf unserer Webseite!",
-    },
+  se: {
+    translation: seTranslations,
   },
 };
 
-i18n.use(initReactI18next).init({
+i18n.use(LanguageDetector).use(initReactI18next).init({
   resources,
   lng: "en", // default language
-})
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
-export default i18n
+export default i18n;

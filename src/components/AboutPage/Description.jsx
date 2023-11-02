@@ -1,10 +1,28 @@
 import React from 'react';
+import styled from 'styled-components';
 import teamLogo from '../../assets/LEGZ.jpg';
+
+const DescriptionContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 350px;
+    font-family: 'Neuton', sans-serif;
+    color: #D2FDFF;
+    background-color: #2C3539; 
+`;
+
+const Logo = styled.img`
+    width: 234px;
+    height: 112px;
+    margin-bottom: 20px; 
+`;
 
 function TeamDescription() {
     return (
-        <div className="description-container">
-            <img src={teamLogo} alt="4 Legz Logo" className="team-logo"/>
+        <DescriptionContainer>
+            <Logo src={teamLogo} alt="4 Legz Logo" />
             <p>
                 The Jolly team at Legz we have a highly dedicated team of louts and layabouts, 
                 that are generally found outside the team base in Shirogane, mostly chatting or 
@@ -16,8 +34,9 @@ function TeamDescription() {
                 Marcus Ax, Feira and Last but furthest from least Fyr Serra the glue that keeps things 
                 together and beloved by all.
             </p>
-        </div>
+        </DescriptionContainer>
     );
 }
 
 export default TeamDescription;
+

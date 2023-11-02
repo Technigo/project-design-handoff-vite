@@ -1,4 +1,5 @@
-import React from 'react';
+import { useState } from 'react';
+import { useSpring, animated } from 'react-spring';
 import squatImage from '../../assets/Squat.jpg';
 import meditateImage from '../../assets/Meditate.jpg';
 import treatsImage from '../../assets/Treats.jpg';
@@ -6,19 +7,19 @@ import catLeftIcon from '../../assets/CatLeft.svg';
 import catRightIcon from '../../assets/CatRight.svg';
 import styled from 'styled-components';
 import Button from '../Button.jsx';
+import leftPaw from '../../assets/LeftPaw.png';
+import rightPaw from '../../assets/RightPaw.png';
 
-const FeaturesContainer = styled.div`
+const FeaturesContainer = styled(animated.div)`
     display: flex;
-    justify-content: space-between;
-    width: 360px;
-    margin: 0 auto;
-    padding: 50px 0;
+    width: 360px 
+    overflow: hidden;
+    will-change: transform;
 `;
 
 const Feature = styled.div`
-    position: relative;
-    width: 360px;
-    height: 725px;
+    position: left;
+    width: 100%;
     height: auto;
     background-size: cover;
     transition: background-image 0.3s ease-in-out;
@@ -73,8 +74,24 @@ const gradients = [
     "linear-gradient(#C09C83, #FFFFFF)", // for Relaxation
     "linear-gradient(#968772, #FFFFFF)"  // for Treats
 ];
+const Dot = styled.span`
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: ${props => props.active ? '#D2FDFF' : '#757575'};
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+`;
 
 const Features = () => {
+    const [activeFeature, setActiveFeature] = useState(1);
+
+    const transitionStyles = useSpring({
+        transform: `translateX(-${activeFeature * 360}px)`,
+    });
+
     const featuresData = [
         {
             image: squatImage,
@@ -97,26 +114,42 @@ const Features = () => {
     ];
 
     return (
-        <FeaturesContainer>
-            {featuresData.map((feature, index) => (
-             <Feature key={index} style={{ backgroundImage: gradients[index] }}>
-                    <FeatureImage src={feature.image} alt={feature.alt} />
-                    <IconsContainer>
-                        <Icon src={catLeftIcon} alt="Left Cat Paw"/>
-                        {/* Place other icons here */}
-                        <Icon src={catRightIcon} alt="Right Cat Paw"/>
-                    </IconsContainer>
-                    <FeatureContent>
-                        <FeatureTitle>{feature.title}</FeatureTitle>
-                        <FeatureText>{feature.text}</FeatureText>
-                        <Button>MORE</Button>
-                    </FeatureContent>
-                </Feature>
-            ))}
-        </FeaturesContainer>
+        <div>
+            <FeaturesContainer style={transitionStyles}>
+                {featuresData.map((feature, index) => (
+                    <Feature key={index} style={{ backgroundImage: gradients[index] }}>
+                        <FeatureImage src={feature.image} alt={feature.alt} />
+                        <IconsContainer>
+                            <Icon src={leftPaw} alt="Left Cat Paw" onClick={() => {
+                                if (activeFeature > 0) setActiveFeature(activeFeature - 1);
+                            }} />
+                            <Icon src={catLeftIcon} alt="Left Cat" />
+                            <div style={{textAlign: 'center', marginTop: '10px'}}>
+                                {featuresData.map((_, index) => (
+                                    <Dot key={index} active={index === activeFeature} onClick={() => setActiveFeature(index)} />
+                                ))}
+                            </div>
+                            <Icon src={catRightIcon} alt="Right Cat" />
+                            <Icon src={rightPaw} alt="Right Cat Paw" onClick={() => {
+                                if (activeFeature < featuresData.length - 1) setActiveFeature(activeFeature + 1);
+                            }} />
+                        </IconsContainer>
+                        <FeatureContent>
+                            <FeatureTitle>{feature.title}</FeatureTitle>
+                            <FeatureText>{feature.text}</FeatureText>
+                            <Button>MORE</Button>
+                        </FeatureContent>
+                    </Feature>
+                ))}
+            </FeaturesContainer>
+        </div>
     );
 }
 
 export default Features;
+
+
+
+
 
 

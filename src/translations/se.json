@@ -1,0 +1,162 @@
+{
+    "logo": {
+        "alt": "4 Legz logga"
+    },
+    "nav": {
+        "join": "Gå med"
+    },
+    "mobileNav": {
+        "hamburger": "☰",
+        "heroBg": {
+            "alt": "man på gym med katt i knät"
+        },
+        "heroContent": {
+            "title": "LÅT EN KATT TA SIG EN TUPPLUR",
+            "subtitle": "Genom att förbättra dina knän",
+            "button": "GÅ MED"
+        }
+    },
+    "membership": {
+        "bg": {
+            "alt": "Personer som går ut och in ur gymmet"
+        },
+        "content": {
+            "title": "BLI MEDLEM",
+            "text": "På Legz får du mycket mer än ditt genomsnittliga gym, alla våra övningar har dina kattdjur i åtanke men vi erbjuder andra tjänster för att koppla av ditt inre jag och en och annan godbit att ta med hem.",
+            "button": "GÅ MED"
+        }
+    },
+    "features": {
+        "lappability": {
+            "alt": "Lappability",
+            "title": "LAPPABILITY",
+            "text": "På Legz fokuserar vi vår träning på att göra ditt knä mer lämpat för en god tupplur. Våra träningsrutiner fokuserar på "Lappability", vår term för hur bra ditt knä är för att ta en tupplur."
+        },
+        "relaxation": {
+            "alt": "Avslappning",
+            "title": "AVSLAPPNING",
+            "text": "Cats are very perceptive, so not only do we need a good lap, but we also need to emit peaceful vibes, with relaxed breathing, slow fluid movements, and relaxing eyes. Find out about our meditation and yoga."
+        },
+        "treats": {
+            "alt": "Treats",
+            "title": "TREATS!",
+            "text": "Just like cats bring us treats, we should do the same. So at Legz, we will provide our specially curated gifts each week."
+        },
+        "icons": {
+            "leftPaw": {
+                "alt": "Vänster katt tass"
+            },
+            "leftCat": {
+                "alt": "Katt vänster"
+            },
+            "rightCat": {
+                "alt": "Katt höger"
+            },
+            "rightPaw": {
+                "alt": "Höger katt tass"
+            }
+        }
+    },
+    "featureButton": "MER",
+    "location": {
+        "globeImage": {
+            "alt": "Världskarta"
+        },
+        "content": {
+            "title": "HITTA OSS",
+            "text": "Locate your nearest lap improvement gym and start your journey to the infinite purr today.",
+            "button": "LOCATE"
+        }
+    },
+    "navigation": {
+        "logoAlt": "4 Legz Logo",
+        "join": "Join"
+    },
+    "hero": {
+        "alt": "About Us Hero"
+    },
+    "contact": {
+        "title": "WOULD YOU LIKE TO CONTACT US?",
+        "description": "We probably won't answer. We need lots of Naps on Laps, but you are welcome to try any time you like.",
+        "button": "CONTACT US"
+    },
+    "modal": {
+        "stage0": {
+            "message": "Please Provide your name",
+            "placeholder": "Name Please",
+            "button": "NEXT"
+        },
+        "stage1": {
+            "message": "We want your email.",
+            "placeholder": "Gather Emails? Prawns!",
+            "button": "PRAWNS!",
+            "description": "We will exchange this info with spammers for Prawns!"
+        },
+        "stage2": {
+            "message": "Write your Meowssage",
+            "placeholder": "If we could read, we might just read this between naps and meal times",
+            "button": "PRAWNS!"
+        },
+        "stage3": {
+            "message": "So long and thanks for all the fish.",
+            "button": "TACK"
+        }
+    },
+    "teamMembers": {
+        "kaelana": {
+            "name": "Kaelana Bambridge",
+            "description": "Kaelana is a long standing member of Legs pun intended, very fashionable and voted prettiest female in all of Tera. She is our marketing specialist."
+        },
+        "marcus": {
+            "name": "Marcus Ax",
+            "description": "Chief Decorator Extraordinaire. Thanks to Marcus's efforts and patience any headquarters we move to becomes a sublime resting area."
+        },
+        "delisha": {
+            "name": "Delisha Mathis",
+            "description": "Most gracious helpful Craft Master General. Deli is always willing to give a hand."
+        },
+        "moxxiRead": {
+            "name": "Moxxi Read",
+            "description": "Sleepy Helper and Headquarters defender."
+        },
+        "chevalier": {
+            "name": "Chevalier Noir",
+            "description": "Chief Officer of Cheerfulness. She keeps the office positive. Pet her for good luck."
+        },
+        "aliasse": {
+            "name": "Aliasse Thassalia",
+            "description": "Second in command. Ali is always there to help with a smile and her spiffing looks."
+        },
+        "moxxiOnefang": {
+            "name": "Moxxi Onefang",
+            "description": "Panic cat, dizzy, dozy and forgetful so dont forget to remind her of things that need to be done."
+        },
+        "feira": {
+            "name": "Feira",
+            "description": "Our Extraordinary chef and Barista, keeps us at our peak with her delicious creations."
+        }
+    },
+    "teamDescription": {
+        "title": "The Jolly team at Legz",
+        "description1": "we have a highly dedicated team of louts and layabouts, that are generally found outside the team base in Shirogane, mostly chatting or AFK with sporadic moments of highly entertaining, sometimes borderline bizarre conversation. It is a home for any sweet soul be they extrovert or shy.",
+        "description2": "Many thanks to the whole Anti-Social squad, Namely Chavalier Noir, Aliassee Thassila, Marcus Ax, Feira and Last but furthest from least Fyr Serra the glue that keeps things together and beloved by all."
+    },
+    "addressCard": {
+        "label": "Adress:"
+    },
+    "footerLinks": {
+        "about": "Om oss",
+        "careers": "Karriär",
+        "privacyPolicy": "Privacy Policy",
+        "termsConditions": "Terms & Conditions",
+        "cookies": "Cookies"
+    },
+    "footerRightLinks": {
+        "contactUs": "Kontakta oss:"
+    },
+    "languageSelector": {
+        "language": "Språk",
+        "english": "Engelska",
+        "swedish": "Svenska"
+    }
+}

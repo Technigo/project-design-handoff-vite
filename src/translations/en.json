@@ -1,0 +1,162 @@
+{
+    "logo": {
+        "alt": "4 Legz Logo"
+    },
+    "nav": {
+        "join": "Join"
+    },
+    "mobileNav": {
+        "hamburger": "☰",
+        "heroBg": {
+            "alt": "man at gym with cat in his lap"
+        },
+        "heroContent": {
+            "title": "LET A CAT HAVE A GOOD NAP",
+            "subtitle": "By improving your lap",
+            "button": "JOIN"
+        }
+    },
+    "membership": {
+        "bg": {
+            "alt": "Persons walking in and out of gym"
+        },
+        "content": {
+            "title": "BECOME A MEMBER",
+            "text": "At Legz you get much more than your average Gym, all our exercises have your felines in mind but we provide other services to relax your inner self and the occasional treat to take Home.",
+            "button": "JOIN"
+        }
+    },
+    "features": {
+        "lappability": {
+            "alt": "Lappability",
+            "title": "LAPPABILITY",
+            "text": "At Legz we focus our training on making your lap more eligible for a good Nap. Our exercise routines focus on 'Lappability', our term for how good your Lap is to take a nap."
+        },
+        "relaxation": {
+            "alt": "Relaxation",
+            "title": "RELAXATION",
+            "text": "Cats are very perceptive, so not only do we need a good lap, but we also need to emit peaceful vibes, with relaxed breathing, slow fluid movements, and relaxing eyes. Find out about our meditation and yoga."
+        },
+        "treats": {
+            "alt": "Treats",
+            "title": "TREATS!",
+            "text": "Just like cats bring us treats, we should do the same. So at Legz, we will provide our specially curated gifts each week."
+        },
+        "icons": {
+            "leftPaw": {
+                "alt": "Left Cat Paw"
+            },
+            "leftCat": {
+                "alt": "Left Cat"
+            },
+            "rightCat": {
+                "alt": "Right Cat"
+            },
+            "rightPaw": {
+                "alt": "Right Cat Paw"
+            }
+        }
+    },
+    "featureButton": "MORE",
+    "location": {
+        "globeImage": {
+            "alt": "World Map"
+        },
+        "content": {
+            "title": "FIND US",
+            "text": "Locate your nearest lap improvement gym and start your journey to the infinite purr today.",
+            "button": "LOCATE"
+        }
+    },
+    "navigation": {
+        "logoAlt": "4 Legz Logo",
+        "join": "Join"
+    },
+    "hero": {
+        "alt": "About Us Hero"
+    },
+    "contact": {
+        "title": "WOULD YOU LIKE TO CONTACT US?",
+        "description": "We probably won't answer. We need lots of Naps on Laps, but you are welcome to try any time you like.",
+        "button": "CONTACT US"
+    },
+    "modal": {
+        "stage0": {
+            "message": "Please Provide your name",
+            "placeholder": "Name Please",
+            "button": "NEXT"
+        },
+        "stage1": {
+            "message": "We want your email.",
+            "placeholder": "Gather Emails? Prawns!",
+            "button": "PRAWNS!",
+            "description": "We will exchange this info with spammers for Prawns!"
+        },
+        "stage2": {
+            "message": "Write your Meowssage",
+            "placeholder": "If we could read, we might just read this between naps and meal times",
+            "button": "PRAWNS!"
+        },
+        "stage3": {
+            "message": "So long and thanks for all the fish.",
+            "button": "THANK YOU"
+        }
+    },
+    "teamMembers": {
+        "kaelana": {
+            "name": "Kaelana Bambridge",
+            "description": "Kaelana is a long standing member of Legs pun intended, very fashionable and voted prettiest female in all of Tera. She is our marketing specialist."
+        },
+        "marcus": {
+            "name": "Marcus Ax",
+            "description": "Chief Decorator Extraordinaire. Thanks to Marcus's efforts and patience any headquarters we move to becomes a sublime resting area."
+        },
+        "delisha": {
+            "name": "Delisha Mathis",
+            "description": "Most gracious helpful Craft Master General. Deli is always willing to give a hand."
+        },
+        "moxxiRead": {
+            "name": "Moxxi Read",
+            "description": "Sleepy Helper and Headquarters defender."
+        },
+        "chevalier": {
+            "name": "Chevalier Noir",
+            "description": "Chief Officer of Cheerfulness. She keeps the office positive. Pet her for good luck."
+        },
+        "aliasse": {
+            "name": "Aliasse Thassalia",
+            "description": "Second in command. Ali is always there to help with a smile and her spiffing looks."
+        },
+        "moxxiOnefang": {
+            "name": "Moxxi Onefang",
+            "description": "Panic cat, dizzy, dozy and forgetful so dont forget to remind her of things that need to be done."
+        },
+        "feira": {
+            "name": "Feira",
+            "description": "Our Extraordinary chef and Barista, keeps us at our peak with her delicious creations."
+        }
+    },
+    "teamDescription": {
+        "title": "The Jolly team at Legz",
+        "description1": "we have a highly dedicated team of louts and layabouts, that are generally found outside the team base in Shirogane, mostly chatting or AFK with sporadic moments of highly entertaining, sometimes borderline bizarre conversation. It is a home for any sweet soul be they extrovert or shy.",
+        "description2": "Many thanks to the whole Anti-Social squad, Namely Chavalier Noir, Aliassee Thassila, Marcus Ax, Feira and Last but furthest from least Fyr Serra the glue that keeps things together and beloved by all."
+    },
+    "addressCard": {
+        "label": "Address:"
+    },
+    "footerLinks": {
+        "about": "About",
+        "careers": "Careers",
+        "privacyPolicy": "Privacy Policy",
+        "termsConditions": "Terms & Conditions",
+        "cookies": "Cookies"
+    },
+    "footerRightLinks": {
+        "contactUs": "Contact us:"
+    },
+    "languageSelector": {
+        "language": "Language",
+        "english": "English",
+        "swedish": "Swedish"
+    }
+}
