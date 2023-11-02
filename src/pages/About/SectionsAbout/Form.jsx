@@ -2,15 +2,18 @@ import styled from "styled-components";
 import { useState } from 'react';
 
 const FormContainer = styled.form`
-  background: var(--cobalt);
-  display: flex;
-  
-  padding: 0px 16px 16px 32px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 24px;
-  flex-shrink: 0;
+background-color: var(--cobalt);
+color: #fff;
+font-family: var(--jetbrains-mono);
+display: flex;
+width: auto;
+height: 17rem;
+padding: 0 2rem 1rem;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 1.5rem;
+margin: 2rem 0;
 `;
 
 const FormGroup = styled.div`
@@ -22,10 +25,14 @@ const Label = styled.label`
 `;
 
 const Input = styled.input`
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+color: #fff;
+font-size: 0.75rem;
+font-weight: 200;
+padding: 0 0 1rem;
+border: none;
+border-bottom: 1.5px dashed #fff;
+width: 100%;
+background-color: transparent;
 `;
 
 //const SubmitButton = styled.button``

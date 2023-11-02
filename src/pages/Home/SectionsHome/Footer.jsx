@@ -5,6 +5,8 @@ import { Links } from "../../../reusableComp/Links";
 
 const FooterSection = styled.section`
 background: var(--bg-color);
+display: flex;
+flex direction: row;
 `;
 
 const IconsContainer = styled.div`

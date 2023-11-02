@@ -7,9 +7,7 @@ color: white;
 background-color: var(--cobalt);
 display: flex;
 flex-direction: column;
-width: 390px;
 height: 232px;
-padding: 8px;
 justify-content: center;
 align-items: center;
 `
