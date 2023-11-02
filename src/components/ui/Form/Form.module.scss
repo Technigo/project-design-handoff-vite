@@ -37,9 +37,9 @@
   font-weight: 700;
   word-break: break-all;
 
-  // &:hover {
-  //   animation: fadeIn 2s linear;
-  // }
+  &[data-animation="1"] {
+    animation: fadeOut 2s linear;
+  }
 
   @include md {
     font-size: 20px;
@@ -62,15 +62,22 @@
   animation: fadeIn 3s linear;
 }
 
-.fadeOut {
-  animation: fadeOUt 3s linear;
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(36%, 80%);
   }
 }

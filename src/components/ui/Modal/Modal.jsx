@@ -17,18 +17,21 @@ export const Modal = () => {
     })
   );
   const [triggerAnimation, setTiggerAnimation] = useState(0);
+  const [triggerTextFade, setTiggerTextFade] = useState(0);
 
   const currentFormdata = formData[currentFormIndex];
   const { content, type, name, id, animation } = currentFormdata;
   const { button, message, question, placeholder } = content[lang];
-
+  console.log(id);
   return (
     <>
       <div className={styles.modal} onClick={closeModal} onTouchStart={closeModal}></div>
       <div className={styles.modal_inner}>
         <div
-          animation={triggerAnimation} // eslint-disable-line
+          key={id}
+          data-animation={id === 4 ? triggerAnimation : 0}
           className={`${styles.card} ${id === 1 || id === 4 ? styles[animation] : ""}`}
+          onAnimationEnd={() => setTiggerAnimation(0)}
         >
           {type === "submit" ? <p className={styles.thankYou}>{question}</p> : <p>{question}</p>}
 
@@ -37,14 +40,16 @@ export const Modal = () => {
             type={type}
             name={name}
             animation={id === 1 || id === 4 ? "" : animation}
-            triggerAnimation={triggerAnimation}
+            triggerAnimation={triggerTextFade}
+            key={id}
           />
 
           <Button
             key="form"
+            id={id}
             type={type === "submit" ? "submit" : "button"}
             handleClick={type === "submit" ? submitForm : changeFormIndex}
-            onTriggerAnimation={id === 4 ? setTiggerAnimation : null}
+            onTriggerAnimation={id === 4 ? setTiggerAnimation : id === 3 ? setTiggerTextFade : null}
           >
             {button}
           </Button>

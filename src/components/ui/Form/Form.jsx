@@ -23,6 +23,7 @@ export const Form = ({ type, placeholder, name, animation = null, triggerAnimati
         />
       ) : type === "text" ? (
         <textarea
+          data-animation={triggerAnimation}
           placeholder={placeholder}
           value={formAnswer[name]}
           onChange={(e) => handleChange(e)}

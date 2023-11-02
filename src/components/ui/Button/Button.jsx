@@ -5,12 +5,18 @@ export const Button = ({
   handleClick = null,
   type = "button",
   onTriggerAnimation = null,
+  id = null,
 }) => {
-  console.log(onTriggerAnimation);
   function handleEventClick() {
     onTriggerAnimation && onTriggerAnimation(1);
-    handleClick();
+    if (type === "submit" || id === 3) {
+      setTimeout(handleClick, 1000);
+      return clearTimeout(handleClick);
+    } else {
+      handleClick();
+    }
   }
+
   return (
     <button
       className={styles.button}

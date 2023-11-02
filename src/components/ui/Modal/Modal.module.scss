@@ -60,8 +60,8 @@
     width: 120%;
   }
 }
-.card[animation="1"] {
-  animation: bounceOut 2s;
+.card[data-animation="1"] {
+  animation: bounceOut 1s linear;
 }
 
 .thankYou {
@@ -79,9 +79,9 @@
   animation: bounce-1 2s linear;
 }
 
-.bouceOut {
-  animation: bounce-1 3s infinite linear;
-}
+// .bouceOut {
+//   animation: bounceOut 3s infinite linear;
+// }
 
 @keyframes bounce-1 {
   0% {
@@ -109,16 +109,16 @@
     transform: translateX(0);
   }
   45% {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
   }
   55% {
-    transform: translateX(-150%);
+    transform: translateX(-70%);
   }
   65% {
-    transform: translateX(-180%);
+    transform: translateX(-90%);
   }
   80% {
-    transform: translateX(-180%);
+    transform: translateX(-70%);
   }
 
   100% {
