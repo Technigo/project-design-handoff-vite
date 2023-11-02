@@ -8,8 +8,9 @@ const StyledHero = styled.div`
   position: relative;
 
   img {
-    width: auto;
-    height: 549px;
+    width: 100%;
+    min-height: 549px;
+    max-height: 759px;
     object-fit: cover;
     object-position: 20% 100%;
     //flex-shrink: 0;
@@ -27,11 +28,11 @@ const HeroTextbox = styled.div`
   justify-content: center;
   gap: 8px;
   flex-shrink: 0;
-  background: rgba(255, 255, 255, 0.5);
-  margin-bottom: 42px;
+  background: rgba(255, 255, 255, 0.7);
+  margin-bottom: 85px;
 
   h1 {
-    color: #000;
+    color: #081957;
     text-align: center;
     font-size: 28px;
     //font-style: normal;
@@ -40,6 +41,29 @@ const HeroTextbox = styled.div`
     letter-spacing: 1.4px;
     text-transform: uppercase;
   }
+`;
+
+const StyledHeroButton = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+const HeroButton = styled.button`
+  display: flex;
+  position: absolute;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #fff6e9;
+  color: #202537;
+  font-size: 16px;
+  //font-style: normal;
+  font-weight: 500;
+  //line-height: normal;
+  text-transform: uppercase;
+  margin-top: 40px;
 `;
 
 export const Hero = () => {
@@ -53,6 +77,9 @@ export const Hero = () => {
       <HeroTextbox>
         <h1>{t("hero.mission")}</h1>
         <p>{t("hero.description")}</p>
+        <StyledHeroButton>
+          <HeroButton>{t("hero.button")}</HeroButton>
+        </StyledHeroButton>
       </HeroTextbox>
     </StyledHero>
   );

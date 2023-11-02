@@ -6,6 +6,9 @@ const StyledNewsletter = styled.div`
   display: flex;
   position: relative;
   justify-content: center;
+  align-items: center;
+  /* flex: 1 0 0;
+  align-self: stretch; */
 
   img {
     //display: flex;
@@ -32,9 +35,10 @@ const Signup = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: absolute;
-  //right: 41.5px;
-  bottom: 104px;
+  /* right: 41.5px;
+  bottom: 104px;*/
   gap: 12px;
 
   h3 {
@@ -67,6 +71,20 @@ const Signup = styled.div`
   }
 `;
 
+const StyledForm = styled.div`
+  //flex-shrink: 0;
+  display: flex;
+  padding-left: 0px;
+  justify-content: flex-end;
+  //align-items: center;
+  gap: 120px;
+  align-self: stretch;
+  //border: 0.5px solid #fff6e9;
+  //background: transparent;
+  //height: 32px;
+  width: auto;
+`;
+
 const VisuallyHidden = styled.label`
   position: absolute;
   width: 1px;
@@ -97,7 +115,7 @@ export const Form = () => {
         <h3>{t("newsletter.signup")}</h3>
         <form onSubmit={handleSubmit}>
           {/* ------- E-mail form field -------> */}
-          <div className="form-area">
+          <StyledForm>
             {/* Visually hidden label for accessibility purposes */}
             <VisuallyHidden htmlFor="email">Email Address</VisuallyHidden>
             <input
@@ -108,7 +126,7 @@ export const Form = () => {
               required
             />
             <button>{t("newsletter.button")}</button>
-          </div>
+          </StyledForm>
         </form>
       </Signup>
     </StyledNewsletter>

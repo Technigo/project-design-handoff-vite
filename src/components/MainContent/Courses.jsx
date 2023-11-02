@@ -1,12 +1,11 @@
-import { CourseCard } from "./CourseCard.jsx";
+import { CourseCarousel } from "./CourseCarousel.jsx";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
 const StyledCourses = styled.div`
-  /* background: url(/assets/background.png); */
+  //background: url(/assets/background.png);
   display: flex;
   flex-direction: column;
-  gap: 12px;
 
   h2 {
     color: #081957;
@@ -48,7 +47,7 @@ export const Courses = () => {
     <>
       <StyledCourses>
         <h2>{t("main.upcoming")}</h2>
-        <CourseCard />
+        <CourseCarousel />
       </StyledCourses>
       <StyledButton>
         <CoursesButton>{t("main.button")}</CoursesButton>

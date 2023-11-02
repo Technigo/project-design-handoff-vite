@@ -1,7 +1,8 @@
 {
   "hero": {
     "mission": "Vårt uppdrag",
-    "description": "Vi erbjuder specialiserade yogaklasser för att förbättra ryttarnas styrka, balans och välmående. Delta i att främja en holistisk syn på hästsport och självvård."
+    "description": "Vi erbjuder specialiserade yogaklasser för att förbättra ryttarnas styrka, balans och välmående. Delta i att främja en holistisk syn på hästsport och självvård.",
+    "button":"Läs mer"
   },
   "main": {
     "upcoming": "Kommande kurser",

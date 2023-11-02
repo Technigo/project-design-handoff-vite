@@ -2,8 +2,31 @@ import enTranslation from "../Translation/en.json";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
+const CarouselContainer = styled.div`
+  width: 100%; /* Set the width of the carousel */
+  height: 100%;
+  overflow: auto;
+  display: flex; /* Display course cards side by side */
+  scroll-behavior: smooth; /* Enable smooth scrolling */
+  gap: 12px;
+  //margin: 0 24px;
+  padding: 0 24px; /* Add padding on both sides */
+  /* margin-left: -24px; /* Offset the margin on the left side */
+
+  /* & > :first-child {
+    margin-left: 24px; /* Add margin to the first card */
+  /*} */
+  /* 
+  & > :last-child {
+    margin-right: 24px; /* Add margin to the last card */
+  /*}  */
+`;
+
 const StyledCourseCard = styled.div`
-  display: inline-flex;
+  height: 100%;
+  width: 300px; /* Set a width for each course card */
+  flex-shrink: 0; /* Prevent cards from shrinking */
+  //display: inline-flex;
   padding-bottom: 0px;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +37,9 @@ const StyledCourseCard = styled.div`
   background: rgba(255, 255, 255, 0.8);
 
   img {
+    height: 360px;
+    width: 300px;
+    object-fit: cover;
     border-radius: 16px 16px 0px 0px;
     background: lightgray 50% / cover no-repeat;
   }
@@ -43,11 +69,13 @@ const CourseCardText = styled.div`
   align-items: center;
   gap: 20px;
   align-self: stretch;
+  text-align: center;
 
   h5 {
-    color: #000;
+    color: #202537;
     text-align: center;
-    font-size: 16px;
+    //position: absolute;
+    font-size: 15px; // Made it 1px smaller than the design so the text doesn't overflow to two lines on one of the cards
     //font-style: normal;
     font-weight: 600;
     //line-height: normal;
@@ -57,15 +85,15 @@ const CourseCardText = styled.div`
   }
 
   p {
-    //color: #000;
-    //text-align: justify;
-    //font-size: 20px;
-    //font-style: normal;
-    //font-weight: 700;
-    //line-height: normal;
+    //     //color: #202537;
+    //     //text-align: justify;
+    //     //font-size: 20px;
+    //     //font-style: normal;
+    //     //font-weight: 700;
+    //     //line-height: normal;
 
     //this fall och framåt:
-    color: #000;
+    color: #202537;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -83,27 +111,25 @@ const CourseCardText = styled.div`
 let courseArray = enTranslation.courses;
 console.log(courseArray);
 
-export const CourseCard = () => {
+export const CourseCarousel = () => {
   const { t, ready } = useTranslation();
 
   const courses = t("courses", { returnObjects: true });
 
   if (!ready) return "loading translations...";
   return (
-    <>
+    <CarouselContainer>
       {courses.map((course, index) => (
-        <div key={index}>
-          <StyledCourseCard>
-            <img src={course.imageUrl} alt={course.imageAlt} />
-            <CourseCardText>
-              <h5>{course.courseName}</h5>
-              <p>{course.courseBrief}</p>
-              <CourseCardButton>{course.button}</CourseCardButton>
-            </CourseCardText>
-          </StyledCourseCard>
-        </div>
+        <StyledCourseCard key={index}>
+          <img src={course.imageUrl} alt={course.imageAlt} />
+          <CourseCardText>
+            <h5>{course.courseName}</h5>
+            <p>{course.courseBrief}</p>
+            <CourseCardButton>{course.button}</CourseCardButton>
+          </CourseCardText>
+        </StyledCourseCard>
       ))}
-    </>
+    </CarouselContainer>
   );
 };
 
