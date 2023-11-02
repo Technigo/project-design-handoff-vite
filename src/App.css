@@ -17,4 +17,6 @@
 
 .section {
   grid-column: 2 / span 12;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }

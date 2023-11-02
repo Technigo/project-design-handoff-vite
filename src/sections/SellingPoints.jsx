@@ -1,4 +1,5 @@
-import { USP } from "../components/USP" 
+import { USP } from "../components/USP"
+
 import accessible from "/Wheels.svg"
 import barbell from "/Barbell.svg"
 import child from "/Small-child.svg"
@@ -7,6 +8,7 @@ import building from "/Building.svg"
 import "./selling-points.css"
 
 export const SellingPoints = () => {
+
     const sellingPointsArray = [
         {
             index: 0,
@@ -37,12 +39,20 @@ export const SellingPoints = () => {
             rotate: "neg-5432deg"
         }
     ] 
+
     return (
         <>
             <div className="grid-parent">
                 <div className="section selling-points">
-                    {sellingPointsArray.map((sellingPoint) => <USP key={sellingPoint.index} icon={sellingPoint.icon} text={sellingPoint.text} link={sellingPoint.link} rotation={sellingPoint.rotate} />)}
-                    
+                    {sellingPointsArray.map(
+                        (sellingPoint) => 
+                            <USP 
+                                key={sellingPoint.index} 
+                                icon={sellingPoint.icon} 
+                                text={sellingPoint.text} 
+                                link={sellingPoint.link} 
+                                rotation={sellingPoint.rotate}
+                            />)}
                 </div>
             </div>
         </>

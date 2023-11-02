@@ -6,7 +6,7 @@ export const Header = () => {
     return (
         <>
         <div className="grid-parent">
-            <div className="header section">
+            <div className="header">
                 <img className="header-logo" src={logo} alt="Family Fitness Logo" />
                 <img src={hamburger} alt="Menu" />
             </div>

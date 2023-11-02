@@ -1,0 +1,38 @@
+.red {
+    background-color: var(--secondary-color);
+    position: relative;
+    height: 240px;
+}
+
+.red .testimonials {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial-pic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 160px;
+    height: 240px;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.testimonial-text {
+    margin-left: 155px;
+    font-style: italic;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.testimonial-caption {
+    font-size: 12px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}

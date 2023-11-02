@@ -1,0 +1,24 @@
+.mini-fit {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    grid-column: 1/span 15;
+}
+.mini-fit h3 {
+    padding-left: 25px;
+}
+
+.mini-fit-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-left: 25px;
+}
+
+.mini-fit-caption {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
