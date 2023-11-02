@@ -6,6 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1%;
 }
 
 .logo-container {
@@ -23,6 +24,13 @@
 .by h6 {
     color: #949494;
     padding-bottom: 3%;
+    transition: color 0.5s;
+    /* Smooth transition for the color change */
+}
+
+.by a:hover {
+    color: #FFE03B;
+    text-shadow: 0 0 10px #FFE03B;
 }
 
 /* ----- Making the content responsive ----- */
@@ -39,5 +47,9 @@
     .logo-container img {
         width: 40%;
         margin-bottom: 5%;
+    }
+
+    .by h6 {
+        font-size: 18px;
     }
 }

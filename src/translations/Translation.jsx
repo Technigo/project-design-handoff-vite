@@ -1,3 +1,5 @@
+//Mounted in the page: LandingP.jsx
+
 import { useTranslation } from "react-i18next";
 
 export const Translation = () => {

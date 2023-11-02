@@ -1,18 +1,15 @@
 import i18n from "i18next"
 import { initReactI18next } from "react-i18next"
 
+import enTranslations from "./translations/en.json";
+import svTranslations from "./translations/sv.json";
+
 const resources = {
     en: {
-        translation: {
-            welcome: "Test: Translation",
-            text: "English"
-        },
+        translation: enTranslations,
     },
     sv: {
-        translation: {
-            welcome: "Test: Översättning",
-            text: "Svenska"
-        },
+        translation: svTranslations,
     },
 };
 

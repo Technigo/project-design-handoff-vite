@@ -9,7 +9,7 @@
 }
 
 main {
-  background-image: url(/public/backroundGF.png);
+  background-image: url(/backroundGF.png);
   background-repeat: repeat;
   background-size: cover;
 }

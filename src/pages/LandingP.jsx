@@ -4,7 +4,7 @@ import { MainCont } from "../components/MainCont/MainCont"
 import { InfoFooter } from "../components/Footer/InfoFooter"
 import { Footer } from "../components/Footer/Footer"
 
-import { Translation } from "../components/Translation"
+import { Translation } from "../translations/Translation"
 
 export const LandingP = () => {
     return (
