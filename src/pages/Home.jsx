@@ -14,6 +14,8 @@ import { useTranslation } from "react-i18next";
 export const Home = () => {
   //REMEMBER: to translate, every text, heading, writing in our whole page needs to be manually put INSIDE the json file to reference it!!
 
+  //when creating the en.json file, complete it and THEN copy it into ChatGPT to ask it to translate only the values but not the keys into the language.
+
   //define via destructured variable two methods from useTranslation
   const { t, i18n } = useTranslation();
 

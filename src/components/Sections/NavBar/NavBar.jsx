@@ -4,27 +4,39 @@ export const NavBar = () => {
   return (
     <div className={styles.navbarContainer}>
       <nav className={`${styles.navbar}`}>
-        <a href="#home" className={`${styles.logo}`}>
-          <img className={styles.logo} src="/assets/logo.png" />
-        </a>
-
-        <ul className={styles.navMenu}>
-          <li>
-            <a href="#home">Classes </a>
-          </li>
-          <li>
-            <a href="#home">About Us </a>
-          </li>
-          <li>
-            <a href="#home">Shop </a>
-          </li>
-          <li>
-            <a href="#home">Log in </a>
-          </li>
-          <li>
-            <a href="#home">sign up button</a>
-          </li>
-        </ul>
+        <div className={`${styles.logo}`}>
+          <a href="/">
+            <img
+              className={styles.logo}
+              src="/assets/logo.png"
+              alt="Sheness studio logo"
+            />
+          </a>
+        </div>
+        <div className={styles.navMenu}>
+          <a className={styles.navMenuOption} href="/">
+            CLASSES
+          </a>
+          <a className={styles.navMenuOption} href="/">
+            ABOUT US
+          </a>
+          <a className={styles.navMenuOption} href="/">
+            Shop
+          </a>
+          <a
+            style={{ color: "#c9694d" }}
+            className={styles.navMenuOption}
+            href="/"
+          >
+            LOG IN
+          </a>
+          <a className={styles.navMenuOption} href="/">
+            <button className={styles.signupNavButton}>SIGN UP</button>
+          </a>
+        </div>
+        <div className={styles.hamburgerMenu}>
+          <img src="/assets/hamburger.png" alt="hamburger menu" />
+        </div>
       </nav>
     </div>
   );

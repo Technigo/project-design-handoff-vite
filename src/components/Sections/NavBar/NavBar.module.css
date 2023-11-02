@@ -4,34 +4,65 @@
   background-color: #2c1e63;
 }
 
-/* navbar */
-.navbar {
-  padding: 10px 20px;
-  display: flex;
-
-  align-items: center;
-
-  min-height: 50px;
-}
-
 /* logo  */
 .logo {
-  max-width: 100px;
+  float: left;
+  max-height: 40px;
 }
 
-/* ul  */
 .navMenu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  list-style-type: none;
-  color: white;
-  text-decoration: none;
+  overflow: hidden;
+  justify-content: right;
 }
 
-a {
+.navbar a {
+  display: block;
+  float: right;
+  text-align: center;
+  padding: 2em;
   text-decoration: none;
+  font-size: 17px;
+  word-wrap: normal;
+  text-decoration: none;
+  color: #fef8ea;
+}
+
+.navbar a:hover {
+  color: #c9694d;
+}
+
+.navMenuOption {
+  margin: 0;
+}
+
+.signupNavButton {
+  background-color: #2c1e63;
+  border: 1px solid #fef8ea;
+  border-radius: 3em;
+  padding: 0.7em;
   color: white;
+}
+
+.hamburgerMenu {
+  display: none;
+}
+
+/* for mobile view */
+@media screen and (max-width: 625px) {
+  .hamburgerMenu {
+    padding-right: 1.5rem;
+    cursor: pointer;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    float: none;
+  }
 }
 
 /* media queries */

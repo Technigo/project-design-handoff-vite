@@ -1,10 +1,11 @@
-import { useState } from "react";
-import styles from "./Button.module.scss";
+import styles from "./Button.module.css";
 
+import React from "react";
 
-
-export default function button(iconPath, url="", ) => {
+export const Button = ({ buttonName }) => {
   return (
-    <div>button</div>
-  )
-}
+    <button className={styles.button} type="button">
+      <p>{buttonName}</p>
+    </button>
+  );
+};

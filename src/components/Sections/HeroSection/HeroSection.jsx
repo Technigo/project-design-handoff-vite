@@ -1,17 +1,25 @@
 import styles from "./HeroSection.module.css";
+import { Button } from "../../ui/Button/Button";
 
 export const HeroSection = () => {
   return (
     <>
-      <div>HeroSection</div>;
-      <div className={styles.HeroSectionheroContainer}>
-        <h1> Empowering pregnancy fitness</h1>
-        <p>
-          Safe, effective, and energizing training throughout the whole
-          pregnancy. Join us for a fun fitness journey for both body and soul.
-        </p>
-        <button>Sign Up</button>
-        <button>Try a Class</button>
+      <div className={styles.heroContainer}>
+        <div className={styles.heroLeft}>
+          <h1> Empowering pregnancy fitness</h1>
+          <p>
+            Safe, effective, and energizing training throughout the whole
+            pregnancy. Join us for a fun fitness journey for both body and soul.
+          </p>
+          <Button buttonName="Sign Up"></Button>
+          <Button buttonName="Try a Class"></Button>
+        </div>
+        <div className={styles.heroRight}>
+          <img
+            src="/assets/pregs-kettlebell.png"
+            alt="pregnant lady with a kettle bell"
+          />
+        </div>
       </div>
     </>
   );

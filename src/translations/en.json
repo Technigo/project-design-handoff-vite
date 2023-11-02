@@ -4,5 +4,7 @@
   "translatePage": {
     "heading": "Hello word",
     "sub-heading": "This is a test to help understand nesting"
-  }
+  },
+  "homePage": {},
+  "aboutPage": {}
 }

@@ -8,3 +8,17 @@ h1 {
   font-family: Abhaya;
   font-size: 70px;
 }
+
+.heroContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.heroLeft {
+  align-content: left;
+  padding-left: 2em;
+}
+
+.heroRight {
+  align-content: left;
+}

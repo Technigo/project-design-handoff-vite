@@ -16,10 +16,10 @@ export const ClassesSection = () => {
           <p>YOGA</p>
         </div>
         <div className={styles.classesBox}>
-          <img src="\assets\classes-img3.png" /> <p>Slow Flow Dance</p>
+          <img src="\assets\classes-img3.png" /> <p>SLOW FLOW DANCE</p>
         </div>
         <div className={styles.classesBox}>
-          <img src="\assets\classes-img4.png" /> <p>Breathwork</p>
+          <img src="\assets\classes-img4.png" /> <p>BREATHWORK</p>
         </div>
       </div>
     </>
