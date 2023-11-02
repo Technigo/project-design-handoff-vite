@@ -40,10 +40,8 @@ export const CourseCarousel = () => {
                         >
                             <img className="course-image" src={course.imageUrl} alt={course.imgageAlt} />
                             <p>{course.text}</p>
-                            <p className="p-bold">{course.shortDescription}
-                            {course.startDatePrice}</p>
-                            
-                            
+                            <p className="p-bold">{course.shortDescription}</p>
+                            <p className="p-bold">{course.startDatePrice}</p>
                             <Button>Book your spot</Button>
                         </div>
                     );

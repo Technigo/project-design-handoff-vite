@@ -1,11 +1,15 @@
 import { CourseCarousel } from "./CourseCarousel"
+import { useTranslation } from "react-i18next"
 import "./Courses.css"
 
 export const Courses = () => {
+
+  const { t } = useTranslation()
+
   return (
     <section className="courses-section">
-        <h2>Courses coming up</h2>
-        <h3>Our courses are designed for improved health during and after menopause</h3>
+        <h2>{t("home.courses.heading")}</h2>
+        <h3>{t("home.courses.subHeading")}</h3>
         <CourseCarousel />
     </section>
   )

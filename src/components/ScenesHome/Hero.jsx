@@ -1,13 +1,11 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 import heroimage from "../../../public/hero-image.png";
-import "./Hero.css";
 import { Button } from "../Button/Button";
-import styled from "styled-components";
+import "./Hero.css";
 
 export const Hero = () => {
 
-    const heading1 ="Yoga and meditation for women";
-    const subHeading3 ="We help you stay vigorous in mind & body during menopause"; 
+    const { t } = useTranslation();
 
     return (
         <section className="hero-section">
@@ -17,11 +15,11 @@ export const Hero = () => {
                     src={heroimage}
                     alt="Picture of yoga mat being rolled out."
                 />
-                <h1>{heading1}</h1>
-                <h3>{subHeading3}</h3>
+                <h1>{t("home.hero.heading")}</h1>
+                <h3>{t("home.hero.subHeading")}</h3>
                 <div className="hero-btn-container">
-                <Button>Find yoga class</Button>
-                <Button secondary="true">Become a member</Button>
+                <Button>{t("home.hero.buttons.class")}</Button>
+                <Button secondary="true">{t("home.hero.buttons.member")}</Button>
                 </div>
             </div>
         </section>

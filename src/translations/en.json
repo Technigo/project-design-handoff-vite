@@ -1,0 +1,107 @@
+{
+    "header": {
+        "navbar": {
+            "nav1": "SCHEDULE",
+            "nav2": "CLASSES",
+            "nav3": "PRICES",
+            "nav4": "ABOUT",
+            "nav5": "CONTACT",
+            "nav6": "LOG IN"
+        },
+        "search": {
+            "placeholder": "Find yoga class"
+        }
+    },
+    "footer": {
+        "heading": "Find us",
+        "address": "Address: Grycksbovägen 19A, Stockholm",
+        "contact": {
+            "heading": "Contact",
+            "mobile": "Mobile: +467000000",
+            "email": "E-mail: info@yogabalance.se"
+        },
+        "language": {
+            "heading": "Select language",
+            "se": "Swedish",
+            "en": "English"
+        },
+        "copyright": "Copyright: YogaBalance 2023"
+    },
+    "home": {
+        "hero": {
+            "heading": "Yoga and meditation for women",
+            "subHeading": "We help you stay vigorous in mind & body during menopause",
+            "buttons": {
+                "class": "Find yoga class",
+                "member": "Become a member"
+            }
+        },
+        "kindwords": {
+            "heading": "What our clients say",
+            "subHeading": "Some kind words",
+            "reviews": {
+                "review1": "I enjoy every moment at yoga balance so much. It makes me feel younger and more living. I highly recommend this for every women in menopause!",
+                "review2": "I can not live without my yoga classes at YogaBalance, it helps me find peace in mind and body."
+            }
+        },
+        "courses": {
+            "heading": "Courses coming up",
+            "subHeading": "Our courses are designed for improved health during and after menopause",
+            "coruse1": {
+                "text": "Using yoga and meditation on a daily bases to improve your body and mind. Prepare to meet new experiences with renewed strenght, with soft movements.",
+                "textBold": "8 weeks Sensing Yoga and meditation practice, includes videos and live classes, start 26/10, price 3400 SEK"
+            },
+            "course2": {
+                "text": "Meditation can help you reduce stress, sleep better and really get the recovery you need. It also helps you listen to your emotions and body to know when it’s time to slow down.",
+                "textBold": "10 weeks meditation practice, includes videos and live classes, start 23/11, price 4300 SEK"
+            },
+            "course3": {
+                "text": "Yin yoga course. Learn to relax and stretch your body with slow movement and static positions. Stress reducing and it helps you strengthen your mental health.",
+                "textBold": "8 weeks Yon Yoga, includes videos and live classes, start 6/12, proce 3400 SEK"
+            }
+        },
+        "membership": {
+            "heading": "Our memberships",
+            "subHeading": "Get the most out of your yoga practice",
+            "offers": {
+                "offer1": {
+                    "heading": "All inclusive",
+                    "text": "Go to all of our classes and courses and also participate in our retreats. You get personal help to from our instructors to plan your classes based on your goals. This is for you who will fully commit to living your full potential during menopause and beyond.",
+                    "button": "Buy now 599 sek per month"
+                },
+                "offer2": {
+                    "heading": "Yoga member",
+                    "text": "Participate in all classes. This membership also includes one hour consultation with an instructor each month.",
+                    "button": "Buy now 299 sek per month"
+                }
+            }
+        },
+        "instagram": {
+            "heading": "Follow us on Instagram",
+            "subHeading": "Connect and keep inspired",
+            "button": "Connect on Instagram"
+        }
+    },
+    "about": {
+        "welcome": {
+            "heading": "Enter our world of yoga for women",
+            "subHeading": "Welcome to our world. We are a small Yoga center in Stockholm who helps women in menopause living a vivid and healthy life.",
+            "button": "Contact us"
+        },
+        "founder": {
+            "heading": "Our founder",
+            "subHeading": "Nita Svensson",
+            "text": "As a woman in her 50th I know everything about being in meno pause. My vision is to help other women feel good through life. Yoga helped me a lot to keep stress down, reduce anxiety, sleep better and get well deserved recovery."
+        },
+        "form": {
+            "heading": "Contact us",
+            "labels": {
+                "name": "Name",
+                "email": "E-mail",
+                "terms": "I agree to terms and conditions"
+            },
+            "button": "Contact me"
+        }
+
+    }
+}

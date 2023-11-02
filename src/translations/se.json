@@ -1,0 +1,106 @@
+{
+    "header": {
+        "navbar": {
+            "nav1": "SCHEMA",
+            "nav2": "KURSER",
+            "nav3": "PRISER",
+            "nav4": "OM OSS",
+            "nav5": "KONTAKT",
+            "nav6": "LOGGA IN"
+        },
+        "search": {
+            "placeholder": "Hitta yogakurs"
+        }
+    },
+    "footer": {
+        "heading": "Hitta oss",
+        "address": "Adress: Grycksbovägen 19A, Stockholm",
+        "contact": {
+            "heading": "Kontakt",
+            "mobile": "Mobil: +467000000",
+            "email": "E-mail: info@yogabalance.se"
+        },
+        "language": {
+            "heading": "Välj språk",
+            "se": "Svenska",
+            "en": "Engelska"
+        },
+        "copyright": "Copyright: YogaBalance 2023"
+    },
+    "home": {
+        "hero": {
+            "heading": "Yoga och meditation för kvinnor",
+            "subHeading": "Vi hjälper att förbli vital i sinne och kropp under klimakteriet",
+            "buttons": {
+                "class": "Hitta yogakurs",
+                "member": "Bli medlem"
+            }
+        },
+        "kindwords": {
+            "heading": "Vad våra klienter säger",
+            "subHeading": "Några vänliga ord",
+            "reviews": {
+                "review1": "Jag njuter så mycket av varje ögonblick på YogaBalance. Det får mig att känna mig yngre och mer levande. Jag rekommenderar detta starkt för alla kvinnor i klimakteriet!",
+                "review2": "Jag kan inte leva utan mina yogaklasser på YogaBalance, det hjälper mig att hitta frid i sinne och kropp."
+            }
+        },
+        "courses": {
+            "heading": "Kommande kurser",
+            "subHeading": "Våra kurser är utformade för förbättrad hälsa under och efter klimakteriet",
+            "coruse1": {
+                "text": "Använd yoga och meditation på en daglig basis för att förbättra din kropp och ditt sinne. Förbered dig på att möta nya upplevelser med förnyad styrka, med mjuka rörelser.",
+                "textBold": "8 veckor Sensing Yoga och meditation, inkluderar videor och liveklasser, start 26/10, pris 3400 SEK"
+            },
+            "course2": {
+                "text": "Meditation kan hjälpa dig att minska stress, sova bättre och verkligen få den återhämtning du behöver. Det hjälper dig också att lyssna på dina känslor och din kropp så att du vet när det är dags att ta det lugnt.",
+                "textBold": "10 veckors meditationspraktik, inkluderar videor och livekurser, start 23/11, pris 4300 SEK"
+            },
+            "course3": {
+                "text": "Yin yoga-kurs. Lär dig att slappna av och sträcka ut kroppen med långsamma rörelser och statiska positioner. Stressreducerande och hjälper dig att stärka din mentala hälsa.",
+                "textBold": "8 veckors Yin Yoga, inkluderar videor och liveklasser, start 6/12, pris 3400 SEK"
+            }
+        },
+        "membership": {
+            "heading": "Våra medlemsskap",
+            "subHeading": "Få ut mesta möjliga av din yogapraktik",
+            "offers": {
+                "offer1": {
+                    "heading": "Allt inkluderat",
+                    "text": "Gå till alla våra klasser och kurser och delta också i våra reträtter. Du får personlig hjälp från våra instruktörer för att planera dina klasser baserat på dina mål. Detta är för dig som helt vill engagera dig i att leva ditt fulla potential under klimakteriet och bortom.",
+                    "button": "Köp nu 599 SEK per månad"
+                },
+                "offer2": {
+                    "heading": "Yoga-medlem",
+                    "text": "Delta i alla klasser. Detta medlemskap inkluderar också en timmes konsultation med en instruktör varje månad.",
+                    "button": "Köp nu 299 SEK per månad"
+                }
+            }
+        },
+        "instagram": {
+            "heading": "Följ oss på Instagram",
+            "subHeading": "Anslut och låt dig inspireras",
+            "button": "Anslut på Instagram"
+        }
+    },
+    "about": {
+        "welcome": {
+            "heading": "Gå in i vår värld av yoga för kvinnor",
+            "subHeading": "Välkommen till vår värld. Vi är ett litet yogacenter i Stockholm som hjälper kvinnor i klimakteriet att leva ett liv fullt av hälsa och livskraft.",
+            "button": "Kontakta oss"
+        },
+        "founder": {
+            "heading": "Vår grundare",
+            "subHeading": "Nita Svensson",
+            "text": "Som kvinna i sina 50-årsåldern vet jag allt om att vara i klimakteriet. Min vision är att hjälpa andra kvinnor att må bra genom livet. Yoga hjälpte mig mycket att hålla stressen nere, minska ångest, sova bättre och få den välbehövliga återhämtningen."
+        },
+        "form": {
+            "heading": "Kontakta oss",
+            "labels": {
+                "name": "Namn",
+                "email": "E-post",
+                "terms": "Jag godkänner villkoren"
+            },
+            "button": "Kontakta mig"
+        }
+    }
+}
