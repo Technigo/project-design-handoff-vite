@@ -1,40 +1,21 @@
-// import { Navbar } from "../Navbar/Navbar"
-import "./header.css"
-// import { useState } from "react"
+import { BurgerMenu } from "../Burger Menu/BurgerMenu"
 import { Link } from "react-router-dom"
+import "./header.css"
 
 export const Header = () => {
-
-// // const [showNavbar, setShowNavbar] = useState("menu hidden")
-// // const [isMenuClicked, setIsMenuClicked] = useState(false)
-
-
-
-// // const isBurgerClicked = () => {
-// // if (!isMenuClicked) {
-// //   setShowNavbar("menue visible")
-// // }
-// // else {
-// //   setShowNavbar("menu hidden")  
-// // }
-// // setIsMenuClicked(!isMenuClicked)
-// // }
-
     
   return (
     <header>
+      <div className="header-content-wrapper">
 
-      {/* <Navbar /> */}
-<div className="header-content-wrapper">
-        <Link to={"./about"}>
-          <img src="/icons/burger-icon.svg" alt="" className="burger-icon" />
-        </Link>
-
+        <BurgerMenu />
+    
         <Link to={"/"}>
-          <img src="/glactic-logo.svg" alt="" className="galactic-logo" />
+          <img src="/glactic-logo.svg" alt="galactic fitness logo" className="galactic-logo" />
         </Link>
 
-          <img src="/icons/dart-vader-icon-white.svg" alt="" className="dart-vader-icon" />
+          <img src="/icons/dart-vader-icon-white.svg" alt="user icon" className="dart-vader-icon" />
+
         </div>
     </header>
   )
