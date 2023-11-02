@@ -18,9 +18,13 @@
     font-size: var(--h3-font-size);
 }
 
+.article-section {
+    padding: 57.5px 37px;
+}
+
 @media (min-width: 834px) and (max-width: 1511px) {
     .article-section {
-        padding: 31px 59px;
+        padding: 83px 32px;
     }
 
     .subheader-text {
@@ -30,7 +34,7 @@
 
 @media (min-width: 1512px) {
     .article-section {
-        padding: 91px 384px;
+        padding: 149px 375.5px;
     }
     .subheader-text {
         font-size: var(--h3-font-size-tablet);

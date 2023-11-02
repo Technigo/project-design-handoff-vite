@@ -4,7 +4,7 @@ import { MeetTheTeam } from "../components/MeetTheTeam/MeetTheTeam";
 import { ContactUs } from "../components/ContactUs/ContactUs";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-// import "./pages.css";
+import "./pages.css";
 
 // A tiny styled component to remove the button from this component
 const SubHeroCompStyle = styled.section`
@@ -27,7 +27,7 @@ export const AboutUs = () => {
                     textImageHeading={t("aboutUs.topContent.h1")}
                     textImageParagraph={t("aboutUs.topContent.aboutUsParagraph")} />
             </div>
-            <SubHeroCompStyle><SubHeroComponent className="aboutUsParagraph" text={t("aboutUs.missionParagraph")} /></SubHeroCompStyle>
+            <SubHeroCompStyle><SubHeroComponent text={t("aboutUs.missionParagraph")} /></SubHeroCompStyle>
             <MeetTheTeam />
             <ContactUs />
         </section>
