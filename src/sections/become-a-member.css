@@ -1,3 +1,18 @@
 .become-member {
     background-color: var(--primary-color);
+    padding: 25px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+.member-text {
+    color: var(--background-color);
+    line-height: 130%;
+    font-weight: 400;
+    padding-right: 5px;
+}
+.punchline {
+    font-style: italic;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }

@@ -6,6 +6,7 @@
 }
 .mini-fit h3 {
     padding-left: 25px;
+    color: var(--font-color)
 }
 
 .mini-fit-scroll {
@@ -14,6 +15,9 @@
     overflow-x: auto;
     padding-left: 25px;
 }
+.mini-fit-scroll::-webkit-scrollbar {
+    display: none;
+  }
 
 .mini-fit-caption {
     font-size: 1rem;

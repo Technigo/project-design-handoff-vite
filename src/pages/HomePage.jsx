@@ -12,7 +12,6 @@ export const HomePage = () => {
             <Testimonials />
             <MiniFit />
             <BecomeAMember />
-            <p>HOME PAGE</p>
         </>
     )
 }

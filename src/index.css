@@ -39,14 +39,19 @@ a:hover {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Prompt', sans-serif;
+  color: var(--background-color);
 }
 
 h1 {
   font-size: 1.875rem; /* 30px*/
   line-height: 1.1;
+  font-style: italic;
 }
 h2 {
   font-size: 1.5625rem; /* 25px*/
+  line-height: 108.2%;
+  font-style: italic;
+  font-weight: 500;
 }
 h3 {
   font-size: 1.25rem; /* 20px*/
