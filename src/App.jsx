@@ -5,6 +5,7 @@ import { HeroText } from "./components/MainInfo/HeroText";
 import { Mantra } from "./components/MainInfo/Mantra";
 import { Classes } from "./components/Classes/Classes";
 import { ClassesText } from "./components/Classes/ClassesText";
+import { Articles } from "./components/Articles/Articles";
 
 export const App = () => {
   return (
@@ -12,6 +13,7 @@ export const App = () => {
       <Header />
       <HeroText />
       <Mantra />
+      <Articles />
       <ClassesText />
       <Classes />
       <SignUpForm />

@@ -5,23 +5,43 @@ const SocialMediaContainer = styled.div`
   border-left: 3px #ffffff solid;
   border-bottom: 3px #ffffff solid;
   width: 100%;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
+  height: 100px;
   position: relative;
-  overflow: hidden;
-  font-size: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+
+  img {
+    width: auto;
+    max-height: 18px;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f26631;
+  }
+
+  .social-media-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px;
+  }
 `;
 
 export const SocialMedia = () => {
   return (
-    <SocialMediaContainer className="social-media">
-      <p>FOLLOW US</p>
+    <SocialMediaContainer>
+      <p>Follow us</p>
       <div className="social-media-icons">
         <img src="./facebook.svg" alt="Facebook" />
         <img src="./instagram.svg" alt="Instagram" />
-        <img src="./twitter-x.svg" alt="Twitter-X" />
+        <img src="/twitter-x.svg" alt="Twitter-X" />
         <img src="/youtube.svg" alt="Youtube" />
+        {/* <img src="/social-media.svg" alt="Social media links" /> */}
       </div>
     </SocialMediaContainer>
   );
