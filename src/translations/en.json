@@ -5,5 +5,56 @@
         "br":"fundamentals",
         "sub-heading":"Sculpt, sweat and flow it out on the mat with the help of 100+ online classes. Available whenever you want."
     },
-    "button":"JOIN THE MOVEMENT"
+    "button":"JOIN THE MOVEMENT",
+    "nav":{
+        "classes":"CLASSES",
+        "about":"ABOUT US",
+        "login":"LOG IN",
+        "signup":"SIGN UP"
+    },
+    "tags1": [
+        "CLASSES:",
+        "CORE FLEX • ",
+        "PRE NATAL • ",
+        "POST NATAL • ",
+        "FOUNDATION • ",
+        "BREATH WORK • ",
+        "LOW, MEDIUM AND HIGH INTENSITY • "
+      ],
+      "tags2": [
+        "BENEFITS:",
+        "CORE STRENGTH • ",
+        "INCREASED ENERGY • ",
+        "IMPROVED FLEXIBILITY AND MOBILITY • ",
+        "ITY • ",
+        "IMPROVE BALANCE • ",
+        "STRONG POSTURE • "
+      ],
+      "midsection":{
+        "p":["Different levels tailored to your needs","Low impact sessions ranging from 15-45 minutes","Certified instructors teaching you the fundamentals of Pilates"],
+        "h1":"Unlock ",
+        "span":["100+","classes","and","start ","moving","on the move"]
+      },
+      "testimonials":{
+        "h1":"Testimonials",
+        "p":"I love the movements and seeing my body transform before my eyes! I didn’t realise how much my posture could improve until I tried the “Posture class”."
+      },
+      "footer":{
+        "about":"ABOUT US",
+        "FAQ":"FAQ",
+        "join":"JOIN OUR COMMUNITY"
+      },
+      "hero2":{
+        "h1":["First things first","The founder: ","Nathalie"],
+        "p":["The story","In 2020, ","Nathalie ","embarked on a new journey, founding Hundred Pilates,","an innovative online app that would bring the essence of Pilates to the digital age.","With ","Hundred Pilates", "she aimed to break down the barriers of time and place, making Pilates accessible to anyone,anywhere.","Today, it’s not just an app; it's a movement.","Nathalie’s","vision and dedication to wellness has helped countless individuals find balance, strength, and serenity in the chaos of modern life."]
+      },
+      "midsection2":{
+        "p":["Hundred Pilates","continues to evolve, introducing new features and collaborations, but its core essence remains the same – a friend, mentor, and guide in your wellness journey.","Do you want to collaborate with us or have any queries regarding our movement? Send your questions our way.","Do you want to collaborate with us or have any queries regarding our movement? Send your questions our way."]
+      },
+      "contact":{
+        "contact":"CONTACT US",
+        "name":"NAME",
+        "email":"E-MAIL",
+        "message":"MESSAGE"
+      }
 }

@@ -1,5 +1,7 @@
 import yoga3 from "/images/yoga3.png";
+import { useTranslation } from "react-i18next";
 export const MidSection2 = () => {
+  const { t } = useTranslation();
   return (
     <section className="px-3 mb-10  md:relative lg:flex lg:justify-end ">
       <div className=" flex justify-center py-3 ">
@@ -25,13 +27,10 @@ export const MidSection2 = () => {
         <div className="gap-3 flex flex-row md:flex-row-reverse">
           <div>
             <p className="leading-6 text-base h-[16rem] md:text-xl md:h-[11rem] md:leading-10 md:mt-20 lg:text-[26px]">
-              <strong>Hundred Pilates</strong> continues to evolve, introducing
-              new features and collaborations, but its core essence remains the
-              same – a friend, mentor, and guide in your wellness journey.
+              <strong>{t("midsection.p.0")}</strong> {t("midsection.p.1")}
             </p>
             <p className="text-[18px]2 font-bold leading-8 text-justify  md:text-xl  max-sm:hidden max-md:hidden lg:text-[28px] lg:leading-[3rem] lg:mt-10 lg:w-[80%]">
-              Do you want to collaborate with us or have any queries regarding
-              our movement? Send your questions our way.
+              {t("midsection.p.2")}
             </p>
           </div>
           <img
@@ -41,8 +40,7 @@ export const MidSection2 = () => {
           />
         </div>
         <p className="text-[18px]2 font-bold leading-8 text-justify  md:text-xl  md:hidden  ">
-          Do you want to collaborate with us or have any queries regarding our
-          movement? Send your questions our way.
+          {t("midsection.p.3")}
         </p>
       </div>
     </section>

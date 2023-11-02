@@ -1,13 +1,15 @@
 import yoga2 from "/images/yoga2.png";
+import { useTranslation } from "react-i18next";
 
 export const Hero2 = () => {
+  const { t } = useTranslation();
   return (
     <header className="px-4 py-8 flex flex-col justify-center">
       <div className="text-[28px] [word-spacing:5px] tracking-wider mb-6 md:text-[40px] md:ml-8 lg:text-[70px] lg:z-10">
-        <h1 className="font-bold flex items-start">First things first</h1>
+        <h1 className="font-bold flex items-start">{t("hero2.h1.0")}</h1>
         <h1 className="font-bold flex flex-row justify-end items-end md:items-start md:justify-center">
-          <span className="font-light mr-2">The founder:</span>
-          Nathalie
+          <span className="font-light mr-2">{t("hero2.h1.1")}</span>
+          {t("hero2.h1.2")}
         </h1>
       </div>
       <div className="md:flex md:flex-row-reverse md:gap-[2rem] lg:gap-[2rem]">
@@ -18,21 +20,17 @@ export const Hero2 = () => {
         />
         <p className="text-base leading-7 md:w-[17rem] md:text-xl lg:text-[26px] lg:w-[30rem] lg:leading-[3rem] lg:ml-4">
           <strong className="text-xl lg:text-[28px] lg:leading-[4rem]">
-            The story
+            {t("hero2.p.0")}
           </strong>
           <br />
-          In 2020, <strong>Nathalie</strong> embarked on a new journey, founding
-          Hundred Pilates, <br />
-          an innovative online app that would bring the essence of Pilates to
-          the digital age.
+          {t("hero2.p.1")} <strong>{t("hero2.p.2")}</strong> {t("hero2.p.3")}
           <br />
-          <br /> With <strong>Hundred Pilates</strong>, she aimed to break down
-          the barriers of time and place, making Pilates accessible to anyone,
-          anywhere. <br /> <br />
-          Today, it’s not just an app; it's a movement.
-          <strong>Nathalie’s</strong> vision and dedication to wellness has
-          helped countless individuals find balance, strength, and serenity in
-          the chaos of modern life.
+          {t("hero2.p.4")}
+          <br />
+          <br /> {t("hero2.p.5")} <strong>{t("hero2.p.6")}</strong>,{" "}
+          {t("hero2.p.7")} <br /> <br />
+          {t("hero2.p.8")}
+          <strong>{t("hero2.p.9")}</strong> {t("hero2.p.10")}
         </p>
       </div>
     </header>

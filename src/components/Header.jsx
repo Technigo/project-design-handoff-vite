@@ -1,7 +1,11 @@
 import logo from "/favicon.svg";
 import arrowDown from "/icons/arrowDown.svg";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
+  const { t } = useTranslation();
+
   return (
     <header>
       <nav className="flex flex-row flex-1 items-center justify-between w-full h-[4rem] bg-lime-green lg:h-[18vh] md:h-[11vh]">
@@ -14,7 +18,7 @@ export const Header = () => {
         </a>
         <ul className="flex flex-1 flex-row justify-end items-center gap-16 text-[26px] font-bold max-lg:hidden mr-11">
           <li className="flex flex-row items-center hover:text-persian-blue hover:underline">
-            CLASSES
+            {t("nav.classes")}
             <img
               src={arrowDown}
               alt="arrow down"
@@ -23,13 +27,17 @@ export const Header = () => {
               className="border-none"
             />
           </li>
-          <li className=" hover:text-persian-blue hover:underline">ABOUT US</li>
+          <Link to="/about">
+            <li className=" hover:text-persian-blue hover:underline">
+              {t("nav.about")}
+            </li>
+          </Link>
           <li>
             <button
               type="button"
               className="border-2 border-solid text-persian-blue border-persian-blue rounded-[30px] py-4 px-5 hover:text-primary underline"
             >
-              LOG IN
+              {t("nav.login")}
             </button>
           </li>
           <li>
@@ -37,7 +45,7 @@ export const Header = () => {
               type="button"
               className="border-2 border-solid text-half-yellow bg-persian-blue border-persian-blue rounded-[30px] py-4 px-5 hover:bg-primary hover:text-persian-blue hover:border-none hover:border-half-yellow"
             >
-              SIGN UP
+              {t("nav.signup")}
             </button>
           </li>
         </ul>
@@ -59,12 +67,6 @@ export const Header = () => {
               className="group-hover:stroke-half-yellow"
             />
           </svg>
-
-          {/* <img
-            src={hamburger}
-            alt="hamburger image"
-            className="w-[24px] h-[14px] md:w-[53px] md:h-[29px] cursor-pointer hover:fill-currect hover:stroke-current hover:text-half-yellow"
-          /> */}
         </div>
       </nav>
     </header>

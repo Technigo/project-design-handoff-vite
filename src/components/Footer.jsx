@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [youtubeImage, setYoutubeImage] = useState(youtube);
   const [facebookImage, setFacebookImage] = useState(facebook);
   const [insImage, setInsImage] = useState(ins);
@@ -36,9 +36,13 @@ export const Footer = () => {
       <div className="  md:text-xl lg:w-[40%] lg:ml-[55%] ">
         <div className="font-bold flex flex-row gap-x-10 py-6">
           <Link to="/about">
-            <p className="hover:underline hover:text-persian-blue">ABOUT US</p>
+            <p className="hover:underline hover:text-persian-blue">
+              {t("footer.about")}
+            </p>
           </Link>
-          <p className="hover:underline hover:text-persian-blue">FAQ</p>
+          <p className="hover:underline hover:text-persian-blue">
+            {t("footer.FAQ")}
+          </p>
           <div className="flex flex-row hover:underline hover:text-persian-blue">
             <img src={global} alt="Golbal image" className="w-6" />
             <select
@@ -50,7 +54,7 @@ export const Footer = () => {
             </select>
           </div>
         </div>
-        <p className="font-bold">JOIN OUR COMMUNITY</p>
+        <p className="font-bold">{t("footer.join")}</p>
       </div>
       <div className="flex flex-row justify-between items-center py-6 ">
         <div className="flex flex-row gap-5 lg:ml-[55%]">

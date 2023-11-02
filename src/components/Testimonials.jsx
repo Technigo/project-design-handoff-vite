@@ -1,6 +1,8 @@
 import yoga1 from "/images/yoga1.png";
 import { Button } from "./Button";
+import { useTranslation } from "react-i18next";
 export const Testimonials = () => {
+  const { t } = useTranslation();
   return (
     <section className="flex flex-col justify-center items-center my-10 md:flex-row lg:h-[77vh] lg:items-start">
       <img
@@ -10,7 +12,7 @@ export const Testimonials = () => {
       />
       <div className="flex flex-col justify-center items-center my-10 lg:mt-10 lg:mx-3">
         <h1 className="text-[28px] font-bold md:text-[40px] lg:text-[70px]">
-          Testimonials
+          {t("testimonials.h1")}
         </h1>
 
         <div className=" flex flex-row justify-center items-center my-5 w-[80%]lg:mb-2 ">
@@ -28,9 +30,7 @@ export const Testimonials = () => {
             />
           </svg>
           <p className="text-justify italic font-light text-base md:text-xl lg:text-[30px] lg:leading-10">
-            I love the movements and seeing my body transform before my eyes! I
-            didn’t realise how much my posture could improve until I tried the
-            “Posture class”.
+            {t("testimonials.p")}
           </p>
           <svg
             xmlns="http://www.w3.org/2000/svg"

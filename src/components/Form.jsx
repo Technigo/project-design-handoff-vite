@@ -1,6 +1,9 @@
 import rectangle from "/images/Rectangle.png";
 import yoga3 from "/images/yoga3.png";
+import { useTranslation } from "react-i18next";
+
 export const Form = () => {
+  const { t } = useTranslation();
   return (
     <section className="lg:flex lg:flex-row lg:mx-10">
       <img
@@ -18,10 +21,12 @@ export const Form = () => {
         />
 
         <form className="relative z-10 py-8 px-10  lg:text-[26px]">
-          <h2 className="text-xl font-bold mb-4 lg:text-[32px]">CONTACT US</h2>
+          <h2 className="text-xl font-bold mb-4 lg:text-[32px]">
+            {t("contact.contact")}
+          </h2>
           <div className="mb-4 ">
             <label htmlFor="name" className="block font-medium">
-              NAME
+              {t("contact.name")}
             </label>
             <input
               type="text"
@@ -33,7 +38,7 @@ export const Form = () => {
           </div>
           <div className="mb-4">
             <label htmlFor="email" className="block font-medium">
-              E-MAIL
+              {t("contact.email")}
             </label>
             <input
               type="email"
@@ -46,7 +51,7 @@ export const Form = () => {
           <div className="flex flex-row items-center">
             <div className="relative w-[80%]">
               <label htmlFor="message" className="block font-medium">
-                MESSAGE
+                {t("contact.message")}
               </label>
               <textarea
                 id="message"

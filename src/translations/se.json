@@ -5,5 +5,68 @@
         "br":"grundläggande principer",
         "sub-heading":"Skulptera, svettas och flöda på mattan med hjälp av över 100 onlineklasser. Tillgängligt när du vill."
     },
-    "button":"VAR MED I RÖRELSEN"
+    "button":"VAR MED I RÖRELSEN",
+    "nav":{
+        "classes":"KLASSER",
+        "about":"OM OSS",
+        "login":"LOGGA IN",
+        "signup":"REGISTERA DIG"
+    },
+    "tags1": [
+        "KURSER:",
+        "KÄRNSTYRKA • ",
+        "FÖR GRAVIDA • ",
+        "EFTER GRAVIDITET • ",
+        "GRUND • ",
+        "ANDEARBETE • ",
+        "LÅG, MEDEL OCH HÖG INTENSITET • "
+      ],
+      "tags2": [
+        "FÖRDELAR:",
+        "KÄRNSTYRKA • ",
+        "ÖKAD ENERGI • ",
+        "FÖRBÄTTRAD FLEXIBILITET OCH RÖRLIGHET • ",
+        "STYRKA • ",
+        "FÖRBÄTTRA BALANSEN • ",
+        "BRA HÅLLNING • "
+      ],
+      "midsection": {
+        "p": [
+          "Olika nivåer anpassade efter dina behov",
+          "Lågintensiva pass som varierar från 15-45 minuter",
+          "Certifierade instruktörer som lär dig grunderna i Pilates"
+        ],
+        "h1": "Lås upp",
+        "span": [
+          "100+",
+          "klasser",
+          "och",
+          "börja",
+          "röra på dig",
+          "på språng"
+        ]
+      },
+      "testimonials": {
+        "h1": "Vittnesmål",
+        "p": "Jag älskar rörelserna och att se min kropp förvandlas framför mina ögon! Jag insåg inte hur mycket min hållning kunde förbättras förrän jag provade 'Hållningsklassen'."
+      },
+      "footer": {
+        "about": "OM OSS",
+        "FAQ": "FAQ",
+        "join": "GÅ MED I VÅR GEMENSKAP"
+      },
+      "hero2": {
+        "h1": ["Först och främst", "Grundaren:", "Nathalie"],
+        "p": ["Historien", "År 2020 ", "påbörjade Nathalie ", "en ny resa och grundade Hundred Pilates, ", "en innovativ onlineapp som skulle föra Pilates essens in i den digitala eran.", "Med ", "Hundred Pilates", "hade hon som mål att bryta ned tid och platsens hinder, och göra Pilates tillgängligt för alla, var som helst.", "Idag är det inte bara en app; det är en rörelse.", "Nathalies", "vision och engagemang för välbefinnande har hjälpt otaliga individer att hitta balans, styrka och ro i kaoset i det moderna livet."]
+      },
+      "midsection2": {
+        "p": ["Hundred Pilates", "fortsätter att utvecklas och introducera nya funktioner och samarbeten, men dess kärna förblir densamma – en vän, mentor och guide på din välbefinnanderesa.", "Vill du samarbeta med oss eller har du några frågor om vår rörelse? Skicka dina frågor till oss.", "Vill du samarbeta med oss eller har du några frågor om vår rörelse? Skicka dina frågor till oss."]
+      },
+      "contact": {
+        "contact": "KONTAKTA OSS",
+        "name": "NAMN",
+        "email": "E-POST",
+        "message": "MEDDELANDE"
+      }
+      
 }
