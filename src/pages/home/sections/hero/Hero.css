@@ -1,5 +1,5 @@
 #hero {
-  background-image: url(./petra1.png);
+  background-image: url(../petra1.png);
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
@@ -24,9 +24,9 @@
   line-height: 1.9rem;
 }
 
-/* .overlay {
+.overlay {
   background-color: rgba(20, 24, 50, 0.3);
   height: 100%;
   width: 100%;
   position: absolute;
-} */
+}
