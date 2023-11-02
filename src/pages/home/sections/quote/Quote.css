@@ -5,5 +5,10 @@
 #quote p {
   text-align: center;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 250%;
+}
+
+.image-wrapper {
+  display: flex;
+  background-color: var(--bg-color);
 }

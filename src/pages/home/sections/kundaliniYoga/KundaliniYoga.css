@@ -1,3 +1,19 @@
 #kundalini-yoga {
   background: var(--cobalt);
+  text-align: center;
+}
+
+.kundalini-title {
+  margin-bottom: 2.5rem;
+}
+
+#kundalini-yoga p {
+  line-height: 187.5%;
+}
+
+.tell-me {
+  margin-top: 2.5rem;
+  color: #fff;
+  font-family: var(--metal-mania);
+  text-decoration-line: underline;
 }

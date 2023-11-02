@@ -1,13 +1,15 @@
 import data from "../../../../json/testimonials.json";
+import "./Testimonials.css";
+import { Slider } from "../../../../components/Slider";
 
 export const TestimonialCard = () => {
   return (
     <div className="testimonials-container">
-      {data.testimonials.map(({ id, text, user }) => {
+      {data.testimonials.map(({ id, text, customer }) => {
         return (
           <div className="single-testimonial" key={id}>
             <p>{text}</p>
-            <span className="username">{user}</span>
+            <span className="customer-name">{customer}</span>
           </div>
         );
       })}

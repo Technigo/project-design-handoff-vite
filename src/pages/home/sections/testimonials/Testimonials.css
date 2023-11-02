@@ -1,0 +1,25 @@
+#testimonials {
+  background-color: var(--marine);
+  text-align: center;
+}
+
+.testimonial-title {
+  color: var(--fire);
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#testimonials p {
+  line-height: 187.5%;
+}
+
+.customer-name {
+  color: #fff;
+  font-family: var(--jetbrains-mono);
+  font-weight: 800;
+  line-height: 187.5%;
+}

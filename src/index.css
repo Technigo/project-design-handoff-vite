@@ -66,9 +66,7 @@ section {
 }
 
 .page-wrapper {
-  padding: 8rem 1rem;
-  display: grid;
-  row-gap: 4rem;
+  padding: 3rem 1rem;
 }
 
 /*---------- OVERALL STYLES ----------*/

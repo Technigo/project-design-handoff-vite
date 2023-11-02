@@ -1,13 +1,19 @@
-#kundalini-yoga {
+#offering {
   background-color: var(--popping-orange);
+  text-align: center;
 }
 
-#kundalini-yoga p {
-  line-height: 1.625rem;
-  font-size: 1rem;
+.offering-title {
+  margin-bottom: 2.5rem;
+}
+
+.offer-info {
+  margin-bottom: 3rem;
+}
+
+#offering p {
+  line-height: 162.5%;
   color: #d9d9d9;
-  text-align: center;
-  padding-bottom: 2rem;
 }
 
 .changing-words {
