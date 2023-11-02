@@ -73,8 +73,8 @@ const ImageContent = () => {
                 </div>
             </div>
 
-            {/* Second last row with 5 columns */}
-            <div className='text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-9 gap-4 mt-1'>
+            {/* Second last row with 9 columns */}
+            <div className='text-center grid grid-cols-1 md:grid-cols-9 lg:grid-cols-9 gap-4 mt-1'>
                 <div className='col-span-1 md:col-span-3'>
                     <img className="fixed-image-height first-row-image-width pr-8" src={GridData[8].Image6} alt="Image 2" />
                 </div>
@@ -93,7 +93,7 @@ const ImageContent = () => {
             </div>
 
             {/* Last row with 3 columns */}
-            <div className='text-center grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-1 pb-36'>
+            <div className='text-center grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 mt-1 pb-36'>
                 <div className='mt-10 flex flex-col items-center justify-center p-5'>
                     <h1 className='text-2xl'>{GridData[12].title4}</h1>
                     <p>{GridData[12].content4}</p>

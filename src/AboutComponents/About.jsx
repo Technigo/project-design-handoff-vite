@@ -15,13 +15,20 @@ export const About = () => {
 
     return (
         <div className="flex flex-col">
-            <div className="m-6">
 
-                <button className="hover:shadow-yellow-box border-2 p-1 border-black flex" type="button" onClick={backButton}> <img className="pt-1" src={BackIcon} alt="" />Home </button>
-                <div className="flex justify-center">
+            <div className="flex flex-col border-2">
+
+                <div className="flex justify-center items-center h-24">
+                    <button className="hover:shadow-yellow-box absolute flex left-10" type="button" onClick={backButton}>
+                        <img className="pt-1" src={BackIcon} alt="" />
+                        Home
+                    </button>
                     <NavigationMenu />
                 </div>
             </div>
+
+
+
 
             <div className="relative bg-header bg-cover h-auto w-full lg:h-screen" style={{ backgroundImage: `url(https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Rectangle%20357.png?v=1698745283957)` }}>
                 <AboutText />

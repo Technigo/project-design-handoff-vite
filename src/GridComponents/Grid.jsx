@@ -13,6 +13,15 @@ export const Grid = () => {
     return (
         <div className="bg-white relative mt-20">
             <div className="" style={backgroundStyles}>
+                <style>
+                    {`
+                        @media (max-width: 768px) {
+                            .bg {
+                                background: none;
+                            }
+                        }
+                    `}
+                </style>
                 <ImageContent />
             </div>
         </div>

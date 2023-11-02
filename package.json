@@ -15,6 +15,7 @@
     "react-router-dom": "^6.17.0",
     "react-slideshow-image": "^4.3.0",
     "react-swipe": "^6.0.4",
+    "react-swipeable": "^7.0.1",
     "swipe-js-iso": "^2.1.5",
     "zustand": "^4.4.4"
   },
