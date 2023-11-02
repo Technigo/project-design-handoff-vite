@@ -5,91 +5,23 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-}
-.navbar-wrapper {
-    
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent; 
-    padding: 1rem; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
-    z-index: 999;
 }
 
-.aboutus-image {
-    
-    width: 70%;
-    height: auto;
-    z-index: 0;
+.recentPost-wrapper {
+    /* background-color: #7A899A;   */
 }
 
-.aboutus-image-wrapper {
-    
-    /* display: flex;
-    justify-content: right; */
-    background-color: #ffffff;
+.recentPost-title {
+    margin-top: 0;
 }
 
-.aboutus-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+.recentPost-title-head {
+    margin-top: 0;
+    text-align: center;
 }
 
-.aboutus-text-head {
-    font-family: 'Raleway', sans-serif;
-    font-size: 5rem;
-    font-weight: 700;
-    color: #38302A;
-    z-index: 1;
-}
-
-.aboutus-text-wrapper {
+.recentPost-image-wrapper {
+    width: 100%;
     position: relative;
-    width: 70%;
-    z-index: 1;
-    top: 0;
-    left: 10%; /* Move the text to the right by 10% */
 }
 
-.aboutus-text-subhead {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.5em;
-    font-weight: semi-bold;
-    line-height: 1.5em;
-    color: #38302A;
-    z-index: 1;
-}
-
-.aboutus-text-wrapper-2 {
-    width: 70%;
-}
-
-.discover-button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    background-color: #38302A;
-    color: #ffffff;
-    padding: 0.5rem 1rem;
-    margin-right: 1rem;
-    border-radius: 0.5em;
-}
-
-.login-button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    background-color: #ffffff;
-    color: #38302A;
-    padding: 0.5rem 1rem;
-    margin-right: 1rem;
-    border-radius: 0.5em;
-    border: 1px solid #38302A;
-
-}

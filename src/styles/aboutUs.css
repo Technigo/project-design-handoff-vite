@@ -5,84 +5,52 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-}
-.navbar-wrapper {
-    
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    right: 0; 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: transparent; 
-    padding: 1rem; 
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
-    z-index: 999;
 }
 
-.aboutus-image {
-    
+.ourYoga-Welcome-wrapper {
+    margin-top: 0;
+    background-color: #EBE7E4;
+
+}
+
+.ourYoga-Welcome-text {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourYoga-Welcome-text-wrapper {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 70%;
-    height: auto;
-    z-index: 0;
 }
 
-.aboutus-image-wrapper {
-    
-    /* display: flex;
-    justify-content: right; */
-    background-color: #ffffff;
-}
-
-.aboutus-text {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.aboutus-text-head {
+.aboutUs-title {
+    margin-top: 2.5em;
     font-family: 'Raleway', sans-serif;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 700;
     color: #38302A;
     z-index: 1;
 }
 
-.aboutus-text-wrapper {
-    position: relative;
-    width: 70%;
-    z-index: 1;
-    top: 0;
-    left: 10%; /* Move the text to the right by 10% */
-}
-
-.aboutus-text-subhead {
+.ourYoga-Welcome-text-head {
+    margin-top: 2.5em;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
     font-weight: semi-bold;
     line-height: 1.5em;
     color: #38302A;
-    z-index: 1;
 }
 
-.aboutus-text-wrapper-2 {
-    width: 70%;
-}
-
-.discover-button {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1em;
-    background-color: #38302A;
-    color: #ffffff;
-    padding: 0.5rem 1rem;
-    margin-right: 1rem;
-    border-radius: 0.5em;
-}
-
-.login-button {
+.ourYoga-button {
+    margin-top: 5em;
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     background-color: #ffffff;
@@ -92,4 +60,52 @@ body {
     border-radius: 0.5em;
     border: 1px solid #38302A;
 
+}
+
+.ourYoga-Welcome-text-desc-wrapper-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+
+.ourYoga-Welcome-text-desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 25%;
+    margin-right: 10em;
+}
+
+.ourYoga-image {
+    margin-top: 12em;
+    margin-left: 7em;
+    margin-bottom: 12em;
+}
+
+.ourYoga-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: semi-bold;
+    color: #38302A;
+
+}
+
+.ourYoga-title-desc {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: regular;
+    line-height: 1.5em;
+    color: #38302A;
+}
+
+.ourYoga-button-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #38302A;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5em;
 }
