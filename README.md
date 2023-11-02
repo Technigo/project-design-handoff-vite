@@ -1,41 +1,28 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
-
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The "Design Handoff Project" involves taking a design created by a UX designer and transforming it into a fully functional code. This project focuses on building a landing page for a "Yoga Studio." The chosen technology for implementing the landing page is React.
 
 ## Getting Started with the Project
+The journey of this project began with a critical step - a meeting with a talented UX designer. During this initial meeting, we immersed ourselves in a deep dive into the design, paying close attention to the intricacies of animations and the functionality of each component. This collaboration allowed us to gain a comprehensive understanding of the project's vision.
+
+As development kicked off, the process involved constant communication with the designer, ensuring that every animation and component aligned with the initial design concept. To facilitate this, we deployed the website, granting the designer access to view the ongoing progress and newly implemented features on a daily basis. This iterative approach helped us maintain a close alignment with the design's evolution.
 
 ### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
 The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
 
 ```bash
 npm i && code . && npm run dev
+npm i react-i18next i18next
+npm i react-router-dom
 ```
-
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+While this project brought immense learning opportunities, it was not without its challenges. One notable challenge was the integration of SVG images into the project. Implementing hover, active, and other interactivity effects within the context of the Tailwind CSS framework presented a unique set of hurdles.
 
+To address this issue, I undertook self-study sessions for two days to explore solutions. I experimented with different approaches, such as utilizing SVG directly in React Vite and harnessing the power of the "group-hover" utility class. Additionally, I explored the use of JavaScript to control and manipulate the desired hover effects, further enhancing the interactivity of the project.
+
+Time constraints added an additional layer of complexity to this project. With a tight schedule of only 3-4 days to complete the entire project, time management and efficient problem-solving became critical. The limited timeframe pushed me to stay focused, innovative, and resourceful in order to meet the project's goals.
+
+I embraced these difficulties as opportunities for growth and learning, which ultimately enriched our development experience.
 ### View it live
+https://hundred-pilates.netlify.app/
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
