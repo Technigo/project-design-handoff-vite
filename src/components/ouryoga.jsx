@@ -1,6 +1,5 @@
 import React from 'react';
 import ourYogaImage from '../assets/image/ourYoga.png';
-import LogoSVG from '../assets/image/logotype.svg';
 import '../styles/ouryoga.css';
 
 export const OurYoga = () => {
