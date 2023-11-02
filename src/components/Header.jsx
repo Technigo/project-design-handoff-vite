@@ -1,16 +1,26 @@
+import { useState } from "react"
+import { Navigate } from "../routes/Navigate";
 
 export const Header = () => {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     const links = [
         {
             id: 1,
             href: "#timetable",
+            onClick: "",
             style: "hover:font-bold",
             linkTitle: "TIMETABLE",
         },
         {
             id: 2,
             href: "#classes",
+            onClick: "",
             style: "hover:font-bold",
             linkTitle: "CLASSES",
         },
@@ -23,18 +33,21 @@ export const Header = () => {
         {
             id: 4,
             href: "#contact",
+            onClick: "",
             style: "hover:font-bold",
             linkTitle: "CONTACT",
         },
         {
             id: 5,
             href: "#info",
+            onClick: "handleInfoClick()",
             style: "hover:font-bold",
             linkTitle: "INFO",
         },
         {
             id: 6,
             href: "#news",
+            onClick: "handleNewsClick()",
             style: "hover:font-bold",
             linkTitle: "NEWS",
         }
@@ -44,14 +57,17 @@ export const Header = () => {
 
         <header className="bg-grey opacity-90 text-white sticky top-0 z-10">
             <section className=" mx-auto px-6 py-4 flex items-center justify-between">
+
+                {/* Desktop menu */}
+
                 <img src="icons/LogoFinal.png" alt="Nordic Pole Academy logo" />
                 <div>
-                    <button className="lg:hidden cursor-pointer relative">
+                    <button className="lg:hidden cursor-pointer relative" onClick={toggleMenu}>
                         <img src="icons/menuTopBar.png" alt="open hamburger menu" />
                     </button>
                     <nav className="hidden lg:flex justify-between items-center gap-x-4 text-lg font-raleway font-light tracking-wider" aria-label="main page navigation">
                         {links.map((link) => (
-                            <a key={link.id} href={link.href} className={link.style} target="_blank" rel="noopener noreferrer">{link.linkTitle}</a>
+                            <a key={link.id} href={link.href} onClick={link.onClick} className={link.style} target="_blank" rel="noopener noreferrer">{link.linkTitle}</a>
                         ))}
                         {/* <a href="#timetable" target="_blank" rel="noopener noreferrer" className="hover:font-bold">TIMETABLE</a>
                         <a href="#classes" target="_blank" rel="noopener noreferrer" className="hover:font-bold">CLASSES</a>
@@ -61,23 +77,26 @@ export const Header = () => {
                         <a href="#news" target="_blank" rel="noopener noreferrer" className="hover:font-bold">NEWS</a> */}
                     </nav>
                 </div>
-                <section id="mobile-menu" className="absolute top-68 bg-grey opacity-90 w-full text-5xl flex-col justify-content-center origin-top animate-open-menu hidden">
-                    <button className="lg:block cursor-pointer">
-                        <img src="icons/iconClose.svg" alt="close scrolldown menu" />
-                    </button>
-                    <nav className="flex flex-col min-h-screen items-center justify-center lg:block space-x-11 text-5xl" aria-label="main page navigation">
-                        {links.map((link) => (
-                            <a key={link.id} href={link.href} target="_blank" rel="noopener noreferrer">{link.linkTitle}</a>
-                        ))}
-                        {/* <a href="#timetable" target="_blank" rel="noopener noreferrer">TIMETABLE</a>
+
+                {/* Mobile and Tablet menu */}
+                {isMenuOpen && (
+                    <section id="mobile-menu" className="absolute top-68 bg-grey opacity-90 w-full text-5xl flex-col justify-content-center origin-top hidden z-20">
+                        <button className="lg:block cursor-pointer " onClick={toggleMenu}>
+                            <img src="icons/iconClose.svg" alt="close scrolldown menu" />
+                        </button>
+                        <nav className="flex flex-col min-h-screen items-center justify-center lg:block space-x-11 text-5xl" aria-label="main page navigation">
+                            {links.map((link) => (
+                                <a key={link.id} href={link.href} target="_blank" rel="noopener noreferrer">{link.linkTitle}</a>
+                            ))}
+                            {/* <a href="#timetable" target="_blank" rel="noopener noreferrer">TIMETABLE</a>
                         <a href="#classes" target="_blank" rel="noopener noreferrer">CLASSES</a>
                         <a href="#book" target="_blank" rel="noopener noreferrer">BOOK</a>
                         <a href="#contact" target="_blank" rel="noopener noreferrer">CONTACT</a>
                         <a href="#info" target="_blank" rel="noopener noreferrer">INFO</a>
                         <a href="#news" target="_blank" rel="noopener noreferrer">NEWS</a> */}
-                    </nav>
-                </section>
-
+                        </nav>
+                    </section>
+                )}
             </section>
         </header>
 
