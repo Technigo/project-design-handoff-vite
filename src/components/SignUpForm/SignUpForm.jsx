@@ -31,6 +31,29 @@ const FormContainer = styled.div`
     background-color: rgba(0, 0, 0, 0.56);
   }
 
+  .info-form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 45px;
+    max-width: 400px;
+    .info-text {
+      max-width: 400px;
+      /* position: relative; */
+      /* z-index: 2; */
+      color: #ffffff;
+      font-size: 10px;
+      padding: 10px;
+      text-align: left;
+    }
+  }
+
   form {
     position: relative;
     z-index: 2;
@@ -38,67 +61,45 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
+    width: 100%;
+    max-width: 400px;
   }
 
   label {
     display: block;
     margin-bottom: 10px;
+    ::placeholder {
+      color: #ffffff;
+      opacity: 1; /* Firefox */
+    }
   }
 
   input {
     width: 100%;
-    padding: 10px;
     border: none;
-    border-bottom: 1px solid #000000;
+    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
   }
-  .info-form {
-    padding: 16px 40px;
 
-    p {
-      position: relative;
-      z-index: 2;
-      color: black;
-      font-size: 10px;
-      padding: 20px;
-    }
+  button {
+    position: left;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+    padding: 4px 8px;
+    background-color: transparent;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  span {
+    font-size: 15px;
+  }
+
+  p {
+    font-size: 10px;
+    font-weight: 300;
   }
 `;
-/* .form-wrapper {
-    padding: 16px 40px;
-
-    form {
-      position: relative;
-      z-index: 1;
-      padding: 40px 20px;
-      margin-top: -100px;
-    }
-    p {
-      font-size: 10px;
-      position: relative;
-      z-index: 1;
-    }
-  }
-
-  .image-container {
-    position: relative;
-    width: 100%;
-    height: auto;
-
-    img {
-      width: 100%;
-      height: auto;
-      object-fit: cover;
-    }
-    .overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.56);
-    }
-  } 
-`;*/
 
 export const SignUpForm = () => {
   const handleSubmit = (e) => {
@@ -126,22 +127,40 @@ export const SignUpForm = () => {
           <div className="overlay"></div>
         </div>
         <div className="info-form">
-          <p>
-            <span>STAY CLOSER TO THE ACTION</span> Enter your name and email
-            address to receive email communications from Prima Barre including
-            special offers, on-sale dates, and other updates.
-          </p>
+          <div className="info-text">
+            <span>STAY CLOSER TO THE ACTION</span>
+            <p>
+              Enter your name and email address to receive email communications
+              from Prima Barre including special offers, on-sale dates, and
+              other updates.
+            </p>
+          </div>
           <form onSubmit={handleSubmit}>
             <label className="first-name">
-              <input type="text" name="firstName" required />
+              <input
+                type="text"
+                name="firstName"
+                placeholder="First name"
+                required
+              />
             </label>
             <label className="last-name">
-              <input type="text" name="lastName" required />
+              <input
+                type="text"
+                name="lastName"
+                placeholder="Last name"
+                required
+              />
             </label>
             <label className="email-address">
-              <input type="email" name="email" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
             </label>
-            {/* <Button type="submit">Sign Up</Button> */}
+            <button type="submit">Sign Up</button>
           </form>
         </div>
       </div>
