@@ -1,24 +1,43 @@
+import styled from "styled-components";
+
 import { Headings } from "../Components/Headings";
 import { Subheadings } from "../Components/Subheadings";
 import { WorkoutVideoCard } from "../Components/WorkoutVideoCard";
 import data from "../data/data.json";
 
+const WorkOutWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  padding: 0 16px;
+  gap: 9px;
+
+  width: 653px;
+  // height: 370px;
+`
+const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+
+  @media (min-width: 835px) {
+    gap: 24px;
+  }
+`
+
 export const Workout = () => {
   const sectionId = 1;
 
   return (
-    <section className="workout">
+    <WorkOutWrapper>
       <Headings sectionId={sectionId} />
       <Subheadings sectionId={sectionId} />
-      <div className="workout-wrapper">
+      <CardWrapper>
         {data.workout.map((video, index) => {
           return (
-            <div className="workout-card" key={index}>
-              <WorkoutVideoCard video={video} />
-            </div>
+            <WorkoutVideoCard key={index} video={video} />
           )
         })}
-      </div>
-    </section>
+      </CardWrapper>
+    </WorkOutWrapper>
   )
 }

@@ -23,7 +23,7 @@ export const HeroSection = () => {
       ) : (
         <>
           <div className="hero-text">
-            <h1>At home fitness</h1>
+            <h1>AT HOME FITNESS</h1>
             <h4>Helping you move in your comfort zone</h4>
           </div>
           <img src="src/assets/images/hero-image.png" alt="a woman stretching her leg" />

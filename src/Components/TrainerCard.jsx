@@ -2,7 +2,7 @@
 
 export const TrainerCard = ({ trainer }) => {
   return (
-    <>
+    <div className="flex flex-col">
       <button type="button" className="heart">
         <svg 
           width="24" 
@@ -24,7 +24,7 @@ export const TrainerCard = ({ trainer }) => {
         </svg>
       </button>
       <img src={trainer.image} alt={trainer.name} />
-      <p>{trainer.name}</p>
-    </>
+      <p>{trainer.name.toUpperCase()}</p>
+    </div>
   )
 }

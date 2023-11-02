@@ -1,4 +1,15 @@
+import styled from "styled-components";
 
+const Heading = styled.h1`
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 300;
+
+  @media (min-width: 835px) {
+    font-size: 40px;
+    font-weight: 500;
+  }
+`
 
 export const Headings = ({ sectionId }) => {
 
@@ -34,8 +45,8 @@ export const Headings = ({ sectionId }) => {
   ];
   
   return (
-    <h1 key={sectionId}>
-      {headingCollection.map((heading) => heading.text)[sectionId - 1]}
-    </h1>
+    <Heading key={sectionId}>
+      {headingCollection.map((heading) => heading.text.toUpperCase())[sectionId - 1]}
+    </Heading>
   )
 }

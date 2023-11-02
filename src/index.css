@@ -1,9 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css?family=Cormorant Garamond");
 
-@layer base {
-  html {
-    font-family: "Cormorant Garamond", system-ui, sans-serif;
-  }
+:root {
+  margin: 0;
+  --primary: "#F2ECE4";
+  --secondary: "#F3AD98";
+  --hover: "#525B64";
+  --review: "#C0AB9B";
+  --text: "#3C3C3C";
+  --font: "Cormorant Garamond", "sans-serif";
+  --large-radius: 30px;
+  --small-radius: 20px;
+
+  /* Body text */
+  --text-weight: 400;
+  --text-size: 20px;
+  --text-height: 24.22px;
 }
+
+#root {
+  font-family: var(--font);
+  background: var(--primary);
+}
+

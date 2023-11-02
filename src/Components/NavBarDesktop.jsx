@@ -2,19 +2,19 @@ import { Link } from "react-router-dom";
 
 export const NavBarDesktop = () => {
   return (
-    <div className="desktop-nav">
-          <Link to="/"><img className="logo" src="src/assets/images/Logo.png" alt="AFH logo" /></Link>
+    <div className="flex flex-row space-x-4 w-full justify-between items-center">
+          <Link to="/"><img className="w-76 h-69" src="src/assets/images/Logo.png" alt="AFH logo" /></Link>
           <nav>
-            <ul>
-                <li>Videos</li>
-                <li>Workout Plans</li>
-                <li>Tracker</li>
-                <li>Favourites</li>
+            <ul className="flex flex-row space-x-4 w-full justify-between items-center">
+                <li>VIDEOS</li>
+                <li>WORKOUT PLANS</li>
+                <li>TRACKER</li>
+                <li>FAVOURITES</li>
             </ul>
           </nav>
           
-          <button type="button" className="search">
-            Search
+          <button type="button" className="flex flex-row">
+            SEARCH
             <svg 
               width="24" 
               height="24" 

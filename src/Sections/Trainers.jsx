@@ -8,10 +8,10 @@ export const Trainers = () => {
   return (
     <section className="trainers">
       <Headings sectionId={sectionId} />
-      <div className="trainer-wrapper">
+      <div className="flex flex-row gap-x-2">
         {data.trainers.map((trainer, index) => {
           return (
-            <div className="trainer-card" key={index}>
+            <div className="flex" key={index}>
               <TrainerCard trainer={trainer} />
             </div>
           )
