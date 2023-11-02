@@ -10,12 +10,12 @@
 Week 11 of Technigo Boot camp. Collab with UX design student. A Landing page and About page with React. Browser router, reusable components and Internationalisation library (react-i18next) for translation.
 
 Reusable components in this project:
-Logo, footer, infofooter, navbar.
+Logo, footer, infofooter, navbar, burgermenu
 
 
 ### The Problem
 
-The key learning-goal for this week was to collaborate with a ux-designer and to code their design. Since we are both students not knowing that much about each other's field there were some challenges to implement photos of low quality etc. and interpretting the design. 1/3 prototypes was working (mobile) which made it a bit hard to interpret the design and sizes. With good communication mid-week we decided not to code the whole Abput page. A link to the designer's Figma was added to the About page. In that way the designer can show the link but also direct the viewer to her original work.
+The key learning-goal for this week was to collaborate with a ux-designer and to code their design. Since we are both students not knowing that much about each other's field there were some challenges to implement photos of low quality etc. and interpretting the design. 1/3 prototypes was working (mobile) which made it a bit hard to interpret the design and sizes. With good communication mid-week we decided not to code the whole Abput page (I had to change designer which gave me less time coding as I had prepared structure and code for the first design which I then had to change). A link to the designer's Figma was added to the About page. In that way the designer can show the link but also direct the viewer to her original work.
 
 A form was prepped but as there was no form in the design I decided to comment it out.
 
