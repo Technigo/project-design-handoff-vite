@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <div className="footer-wrapper">
-      <img src="/src/assets/logo/logo_phone.svg" />
+      <img src="./src/assets/logo/logo_phone.svg" />
       <ul>
         <li>
           <Link to="/">home</Link>
@@ -16,8 +16,8 @@ export const Footer = () => {
         <li>terms and conditions</li>
         <li>press</li>
       </ul>
-      <img src="/src/assets/icon/sweden.svg" alt="swedish" />
-      <img src="/src/assets/icon/uk.svg" alt="english" />
+      <img src="./src/assets/icon/sweden.svg" alt="swedish" />
+      <img src="./src/assets/icon/uk.svg" alt="english" />
     </div>
   );
 };

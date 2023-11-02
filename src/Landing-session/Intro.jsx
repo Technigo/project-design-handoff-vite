@@ -11,7 +11,7 @@ export const Intro = () => {
           joyful adventure to self-discovery!
         </p>
         <BtnLight name=" try for free!" />
-        <img src="/src/assets/icon/arrow_up_128.svg" alt="Arrow" />
+        <img src="./src/assets/icon/arrow_up_128.svg" alt="Arrow" />
       </div>
     </div>
   );

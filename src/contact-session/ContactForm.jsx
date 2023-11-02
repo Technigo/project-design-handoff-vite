@@ -19,10 +19,10 @@ export const ContactForm = () => {
       <BtnDark name="send" />
 
       <div className="map">
-        <img src="/src/assets/icon/phone_icon.svg" alt="phone" />
+        <img src="./src/assets/icon/phone_icon.svg" alt="phone" />
         <p>+46 (0)761 00 22 33</p>
         <p>Is your kid unable to attend class? Please leave us a voicemail! </p>
-        <img src="/src/assets/icon/Illustration4.svg" alt="phone" />
+        <img src="./src/assets/icon/Illustration4.svg" alt="phone" />
       </div>
     </div>
   );

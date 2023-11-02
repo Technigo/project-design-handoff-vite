@@ -14,7 +14,7 @@ export const AboutMe = () => {
         in general or have any feedback to give, let me know!
       </p>
       <BtnDark name="get in touch" />
-      <Profile url="/src/assets/img/Lisanne.png" />
+      <Profile url="./src/assets/img/Lisanne.png" />
     </div>
   );
 };

@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
     <nav className="nav">
       <Link to="/">
-        <img src="/src/assets/logo/logo_phone.svg" alt="logo" />
+        <img src="./src/assets/logo/logo_phone.svg" alt="logo" />
       </Link>
       {/* <div className={`burger-menu ${menuOpen ? "open" : ""}`}>
         <div className="burger-icon" onClick={toggleMenu}>

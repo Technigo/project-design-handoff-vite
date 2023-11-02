@@ -24,7 +24,7 @@ export const Motto = () => {
         </p>
       </div>
       <img
-        src="/src/assets/icon/Illustration4.svg"
+        src="./src/assets/icon/Illustration4.svg"
         alt="circle-divider"
         className="circle-divider"
       />

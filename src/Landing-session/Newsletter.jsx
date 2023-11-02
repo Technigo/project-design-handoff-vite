@@ -5,7 +5,7 @@ export const Newsletter = () => {
   return (
     <div className="newsletter-wrapper">
       <img
-        src="/src/assets/icon/Illustration5.svg"
+        src="./src/assets/icon/Illustration5.svg"
         alt="circle-divider"
         className="subscribe-divider"
       />
