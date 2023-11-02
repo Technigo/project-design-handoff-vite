@@ -8,6 +8,10 @@
         justify-content: center;
 }
 
+.heading-text-wrapper {
+    text-align: center;
+}
+
 .hero-heading-h1 {
     color: #FFE03B;
         font-family: Roboto;

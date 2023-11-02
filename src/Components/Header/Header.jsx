@@ -8,8 +8,10 @@ export const Header = () => {
     <header>
       <div className="header-content-wrapper">
 
+        <div>
         <BurgerMenu />
-    
+        </div>
+
         <Link to={"/"}>
           <img src="/glactic-logo.svg" alt="galactic fitness logo" className="galactic-logo" />
         </Link>

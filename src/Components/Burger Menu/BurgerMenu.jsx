@@ -36,7 +36,7 @@ export const BurgerMenu = () => {
         
       <Link to={"/"}>
       <p className="menu-item">
-        FIRST TIMER
+        FIRST-TIMER
         </p>
       </Link>
         

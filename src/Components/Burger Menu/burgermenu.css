@@ -60,31 +60,36 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-    color: #b8b7ad;
+    /* color: #b8b7ad; */
     padding: 0.8em;
 }
 
 /* Individual item */
 .bm-item {
     display: inline-block;
-    color: #FFE03B;
-        font-family: Roboto;
-        font-size: 45px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+    
 }
+
 
 /* Styling of overlay */
 .bm-overlay {
     background: rgba(0, 0, 0, 0.5)
 }
 
-
+/* ---- My own added classnames ----- */
 .lang-wrapper {
     display: flex;
     flex-direction: row;
     gap: 14px;
     font-size: 14px;
     color: #ffffff;
+}
+
+.menu-item {
+color: #FFE03B;
+    font-family: Roboto;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
