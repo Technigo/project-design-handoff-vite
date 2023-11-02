@@ -1,10 +1,17 @@
 import { useState } from "react";
-import courses from "../../data/coursesdata.json";
+import { useTranslation } from "react-i18next";
 import { Button } from "../Button/Button";
-import arrow from "../../../public/assets/Swipe.svg"
 import "./Courses.css";
 
 export const CourseCarousel = () => {
+    const { t, ready } = useTranslation();
+
+    const coursesItems = t("home.courses", {returnObjects: true})
+
+    const coursesArray = t("home.courses.coursesArray", {returnObjects: true})
+
+    if (!ready) return "loading translations...";
+
     // useState to store and keep track of what slide/course-card the user is on,
     // using id to identify them, inital state 0.
     const [slide, setSlide] = useState(0);
@@ -24,11 +31,13 @@ export const CourseCarousel = () => {
     return (
         <>
             <div className="carousel">
-                <img src={arrow} alt="Arrow button pointing left."
+                <img
+                    src={coursesItems.arrow}
+                    alt={coursesItems.leftArrowTextAlt}
                     className="arrow arrow-left"
                     onClick={prevSlide}
                 />
-                {courses.map((course, id) => {
+                {coursesArray.map((course, id) => {
                     return (
                         <div
                             key={course.id}
@@ -38,7 +47,11 @@ export const CourseCarousel = () => {
                                     : "course-card slide-hidden"
                             }
                         >
-                            <img className="course-image" src={course.imageUrl} alt={course.imgageAlt} />
+                            <img
+                                className="course-image"
+                                src={course.imageUrl}
+                                alt={course.imgageAlt}
+                            />
                             <p>{course.text}</p>
                             <p className="p-bold">{course.shortDescription}</p>
                             <p className="p-bold">{course.startDatePrice}</p>
@@ -46,12 +59,14 @@ export const CourseCarousel = () => {
                         </div>
                     );
                 })}
-                <img src={arrow} alt="Arrow button pointing right."
+                <img
+                    src={coursesItems.arrow}
+                    alt={coursesItems.rightArrowTextAlt}
                     className="arrow arrow-right"
                     onClick={nextSlide}
                 />
                 <span className="indicators">
-                    {courses.map((_, id) => {
+                    {coursesArray.map((_, id) => {
                         return (
                             <button
                                 key={id}

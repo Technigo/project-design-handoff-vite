@@ -1,11 +1,17 @@
-import memberships from "../../data/memberdata.json";
+import { useTranslation } from "react-i18next";
 import { Button } from "../Button/Button";
-import "./Membership.css"
+import "./Membership.css";
 
 export const MemberCard = () => {
+    const { t, ready } = useTranslation();
+
+    const offersArray = t("home.membership.offers", {returnObjects: true})
+
+    if (!ready) return "loading translations...";
+
     return (
         <>
-            {memberships.map((data, index) => {
+            {offersArray.map((data, index) => {
                 return (
                     <div className="membership-card" key={index}>
                         <img

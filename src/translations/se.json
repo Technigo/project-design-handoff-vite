@@ -29,6 +29,8 @@
     },
     "home": {
         "hero": {
+            "heroImage": "./hero-image.png",
+            "heroImageAlt": "Bild av en yogamatta som rullas ut",
             "heading": "Yoga och meditation för kvinnor",
             "subHeading": "Vi hjälper att förbli vital i sinne och kropp under klimakteriet",
             "buttons": {
@@ -36,58 +38,81 @@
                 "member": "Bli medlem"
             }
         },
-        "kindwords": {
+        "kindwords": 
+        {
             "heading": "Vad våra klienter säger",
             "subHeading": "Några vänliga ord",
-            "reviews": [
+            "reviews": 
+            [
                 {
-                "name": "Close-up picture of a happy client.", 
+                "name": "Närbild på en glad klient", 
                 "id": "01",
                 "imageUrl": "https://images.unsplash.com/photo-1526080652727-5b77f74eacd2?auto=format&fit=crop&q=80&w=876&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-                "text": "I enjoy every moment at yoga balance so much. It makes me feel younger and more living. I highly recomment this for every woman in menopause!"
+                "text": "Jag njuter så mycket av varje ögonblick på Yoga Balance. Det får mig att känna mig yngre och mer levande. Jag rekommenderar starkt detta för alla kvinnor i klimakteriet!"
             },
             {
-                "name": "Picture of a happy client, drinking form a cup.",
+                "name": "Bild på en glad kund som dricker ur en kopp.",
                 "id": "02",
                 "imageUrl": "https://plus.unsplash.com/premium_photo-1683133252845-5a40baada008?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
-                "text": "I can not live without my yoga classes at YogaBalance, it helps me find peace in mind and body."
+                "text": "Jag kan inte leva utan mina yogaklasser på YogaBalance, det hjälper mig att hitta lugn i sinne och kropp."
             }
             ]
         },
         "courses": {
             "heading": "Kommande kurser",
             "subHeading": "Våra kurser är utformade för förbättrad hälsa under och efter klimakteriet",
-            "coruse1": {
-                "text": "Använd yoga och meditation på en daglig basis för att förbättra din kropp och ditt sinne. Förbered dig på att möta nya upplevelser med förnyad styrka, med mjuka rörelser.",
-                "textBold": "8 veckor Sensing Yoga och meditation, inkluderar videor och liveklasser, start 26/10, pris 3400 SEK"
-            },
-            "course2": {
-                "text": "Meditation kan hjälpa dig att minska stress, sova bättre och verkligen få den återhämtning du behöver. Det hjälper dig också att lyssna på dina känslor och din kropp så att du vet när det är dags att ta det lugnt.",
-                "textBold": "10 veckors meditationspraktik, inkluderar videor och livekurser, start 23/11, pris 4300 SEK"
-            },
-            "course3": {
-                "text": "Yin yoga-kurs. Lär dig att slappna av och sträcka ut kroppen med långsamma rörelser och statiska positioner. Stressreducerande och hjälper dig att stärka din mentala hälsa.",
-                "textBold": "8 veckors Yin Yoga, inkluderar videor och liveklasser, start 6/12, pris 3400 SEK"
-            }
+            "arrow": "./assets/Swipe.svg",
+            "leftArrowTextAlt": "Pilknapp åt vänster.",
+            "rightArrowTextAlt": "Pilknapp åt höger.",
+            "coursesArray": [
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imgageAlt": "Kvinna som sitter på en matta i yogaposition.",
+                    "id": "01",
+                    "text": "Använd yoga och meditation på en daglig basis för att förbättra din kropp och ditt sinne. Förbered dig på att möta nya upplevelser med förnyad styrka, med mjuka rörelser.",
+                    "shortDescription": "8 veckor Sensing Yoga och meditation, inkluderar videor och livekurser.",
+                    "startDatePrice": "Start 26/10, pris 3400 SEK"
+                },
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=2202&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imgageAlt": "Silhuett av kvinna i en meditations position.",
+                    "id": "02", 
+                    "text": "Meditation kan hjälpa dig att minska stress, sova bättre och verkligen få den återhämtning du behöver. Det hjälper dig också att lyssna på dina känslor och din kropp så att du vet när det är dags att ta det lugnt.",
+                    "shortDescription": "10 veckors meditationspraktik, inkluderar videor och livekurser.",
+                    "startDatePrice": "Start 23/11, pris 4300 SEK"
+                },
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1613602025754-04e1b4a24156?auto=format&fit=crop&q=80&w=1022&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imgageAlt": "Bild i ovanför-perspektiv, en kvinna med knäppta händer.",
+                    "id": "03",
+                    "text": "Yin yoga-kurs. Lär dig att slappna av och sträcka ut kroppen med långsamma rörelser och statiska positioner. Stressreducerande och hjälper dig att stärka din mentala hälsa.",
+                    "shortDescription": "8 veckors Yin Yoga, inkluderar videor och livekurser.",
+                    "startDatePrice": "Start 6/12, pris 3400 SEK"
+                }
+            ]
         },
         "membership": {
             "heading": "Våra medlemsskap",
             "subHeading": "Få ut mesta möjliga av din yogapraktik",
-            "offers": {
-                "offer1": {
+            "offers": [
+                {   
+                    "icon": "assets/Star.svg",
+                    "iconAlt": "Stjärnikon.",
                     "heading": "Allt inkluderat",
-                    "text": "Gå till alla våra klasser och kurser och delta också i våra reträtter. Du får personlig hjälp från våra instruktörer för att planera dina klasser baserat på dina mål. Detta är för dig som helt vill engagera dig i att leva ditt fulla potential under klimakteriet och bortom.",
-                    "button": "Köp nu 599 SEK per månad"
+                    "description": "Gå till alla våra klasser och kurser och delta också i våra reträtter. Du får personlig hjälp från våra instruktörer för att planera dina klasser baserat på dina mål. Detta är för dig som helt vill engagera dig i att leva ditt fulla potential under klimakteriet och bortom.",
+                    "btnText": "Köp nu 599 SEK per månad"
                 },
-                "offer2": {
+                {
+                    "icon": "assets/Yoga.svg",
+                    "iconAlt": "Yogaikon.",
                     "heading": "Yoga-medlem",
-                    "text": "Delta i alla klasser. Detta medlemskap inkluderar också en timmes konsultation med en instruktör varje månad.",
-                    "button": "Köp nu 299 SEK per månad"
+                    "description": "Delta i alla klasser. Detta medlemskap inkluderar också en timmes konsultation med en instruktör varje månad.",
+                    "btnText": "Köp nu 299 SEK per månad"
                 }
-            }
+            ]
         },
         "instagram": {
-            "heading": "Följ oss på Instagram",
+         "heading": "Följ oss på Instagram",
             "subHeading": "Anslut och låt dig inspireras",
             "button": "Anslut på Instagram"
         }

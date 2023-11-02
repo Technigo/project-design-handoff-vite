@@ -30,6 +30,7 @@
     "home": {
         "hero": {
             "heroImage": "./hero-image.png",
+            "heroImageAlt": "Picture of a yoga mat being rolled out.",
             "heading": "Yoga and meditation for women",
             "subHeading": "We help you stay vigorous in mind & body during menopause",
             "buttons": {
@@ -60,34 +61,55 @@
         "courses": {
             "heading": "Courses coming up",
             "subHeading": "Our courses are designed for improved health during and after menopause",
-            "coruse1": {
-                "text": "Using yoga and meditation on a daily bases to improve your body and mind. Prepare to meet new experiences with renewed strenght, with soft movements.",
-                "textBold": "8 weeks Sensing Yoga and meditation practice, includes videos and live classes, start 26/10, price 3400 SEK"
-            },
-            "course2": {
-                "text": "Meditation can help you reduce stress, sleep better and really get the recovery you need. It also helps you listen to your emotions and body to know when it’s time to slow down.",
-                "textBold": "10 weeks meditation practice, includes videos and live classes, start 23/11, price 4300 SEK"
-            },
-            "course3": {
-                "text": "Yin yoga course. Learn to relax and stretch your body with slow movement and static positions. Stress reducing and it helps you strengthen your mental health.",
-                "textBold": "8 weeks Yon Yoga, includes videos and live classes, start 6/12, proce 3400 SEK"
-            }
+            "arrow": "./assets/Swipe.svg",
+            "leftArrowTextAlt": "Arrow button pointing left.",
+            "rightArrowTextAlt": "Arrow button pointing right.",
+            "coursesArray": [
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1510894347713-fc3ed6fdf539?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imgageAlt": "Woman sitting on a mat in a yoga position.",
+                    "id": "01",
+                    "text": "Using yoga and meditation on a daily basis to improve your body and mind. Prepare to meet new experiences with renewed strenght, with soft movements.",
+                    "shortDescription": "8 weeks Sensing Yoga and meditation practice, includes videos and live classes. ",
+                    "startDatePrice": "Start 26/10, price 3400 SEK"
+                },
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&q=80&w=2202&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imgageAlt": "Silhouette of woman in a meditaion position.",
+                    "id": "02", 
+                    "text": "Meditation can help you reduce stress, sleep better and really get the recovery you need. It also helps you listen to your emotions and body to know when it’s time to slow down.",
+                    "shortDescription": "10 weeks meditation practice, includes videos and live classes. ",
+                    "startDatePrice": "Start 23/11, price 4300 SEK"
+                },
+                {
+                    "imageUrl": "https://images.unsplash.com/photo-1613602025754-04e1b4a24156?auto=format&fit=crop&q=80&w=1022&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "imgageAlt": "Above perspective, picture of woman with locked hands.",
+                    "id": "03",
+                    "text": "Yin yoga course. Learn to relax and stretch your body with slow movement and static positions. Stress reducing and it helps you strengthen your mental health.",
+                    "shortDescription": "8 weeks Yin Yoga, includes videos and live classes. ",
+                    "startDatePrice": "Start 6/12, price 3400 SEK"
+                }
+            ]
         },
         "membership": {
             "heading": "Our memberships",
             "subHeading": "Get the most out of your yoga practice",
-            "offers": {
-                "offer1": {
+            "offers": [
+                {   
+                    "icon": "assets/Star.svg",
+                    "iconAlt": "Star-icon.",
                     "heading": "All inclusive",
-                    "text": "Go to all of our classes and courses and also participate in our retreats. You get personal help to from our instructors to plan your classes based on your goals. This is for you who will fully commit to living your full potential during menopause and beyond.",
-                    "button": "Buy now 599 sek per month"
+                    "description": "Go to all of our classes and courses and also participate in our retreats. You get personal help to from our instructors to plan your classes based on your goals. This is for you who will fully commit to living your full potential during menopause and beyond.",
+                    "btnText": "Buy now 599 sek per month"
                 },
-                "offer2": {
+                {
+                    "icon": "assets/Yoga.svg",
+                    "iconAlt": "Yoga-icon.",
                     "heading": "Yoga member",
-                    "text": "Participate in all classes. This membership also includes one hour consultation with an instructor each month.",
-                    "button": "Buy now 299 sek per month"
+                    "description": "Participate in all classes. This membership also includes one hour consultation with an instructor each month.",
+                    "btnText": "Buy now 299 sek per month"
                 }
-            }
+            ]
         },
         "instagram": {
             "heading": "Follow us on Instagram",

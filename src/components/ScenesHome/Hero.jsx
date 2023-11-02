@@ -12,7 +12,7 @@ export const Hero = () => {
                 <img
                     className="oval-image"
                     src={t("home.hero.heroImage")}
-                    alt="Picture of yoga mat being rolled out."
+                    alt={t("home.hero.heroImageAlt")}
                 />
                 <h1>{t("home.hero.heading")}</h1>
                 <h3>{t("home.hero.subHeading")}</h3>
