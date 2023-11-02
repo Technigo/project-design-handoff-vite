@@ -1,6 +1,7 @@
 import logo from "/favicon.svg";
 import global from "/icons/global.svg";
 import youtube from "/icons/youtube.png";
+// import Youtube from "../assets/youtube.svg?react";
 import youtube2 from "/icons/youtube2.png";
 import facebook from "/icons/Facebook.png";
 import facebook2 from "/icons/facebook2.png";
@@ -68,6 +69,7 @@ export const Footer = () => {
             onMouseLeave={() => handleLeave(setFacebookImage, facebook)}
             className="w-[41px] h-[39px] lg:w-[64px] lg:h-[59px]"
           />
+          {/* <Youtube className="hover:text-persian-blue" /> */}
           <img
             src={youtubeImage}
             alt="YouTube"
