@@ -22,6 +22,9 @@ code {
 body{
   font-family: 'Space Grotesk', sans-serif;
 }
+.logo{
+  cursor: pointer;
+}
 
 .header{
   height: 142px;
@@ -248,14 +251,16 @@ button{
   margin: 80px 0;
  padding: 10px;
 }
-.how h1 , .how h3{
+.how h1, .how h3{
 
 font-size: 24px;
 font-weight: 500;
-margin: 29px 0;
 letter-spacing: -0.3199999928474426px;
 text-align: left;
 
+}
+.how h1 {
+  margin: 29px 0;
 }
 .how img{
   width: 100%;
@@ -264,20 +269,25 @@ text-align: left;
   margin-bottom: 40px;
 
 }
-.back span{
-  min-width: 147px;
-  height: 24px;
-   top: 12px;
-   background-color: #FFC255;
-   position: absolute;
-   z-index: -1;
-
+.back {
+  margin: 29px 0;
 }
-.learn{
-  width: 210px;
-}
-.back{
+.back > div {
+  display: inline-block;
   position: relative;
+}
+.back > h3 {
+  display: inline-block;
+}
+.back span{
+  height: 24px;
+  top: 12px;
+  background-color: #FFC255;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  width: 120%;
+
 }
 .how p{
 
@@ -291,9 +301,8 @@ margin-bottom: 20px;
 }
 .testimonial{
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 60px 0;
+  overflow-x: scroll;
 }
 .profile{
 padding: 22px;
@@ -397,6 +406,26 @@ margin-top: 20px;
 display: inline-block;
 
 }
-.map-back{
+.menu {
+  background-color: #021837;
+  color: #F4F4EB;
+  padding: 20px;
+  width: 50%; 
+  position: fixed;
+  z-index: 3; 
+  top: 0;
+  overflow-x: hidden; 
+  transition: 0.5s; 
+  height: 100vh;
+}
 
+.menu.open {
+  right: 0;
+}
+.menu.close {
+  right: -50%;
+}
+.nav-list li{
+  margin-bottom: 15px;
+  font-size: 28px;
 }

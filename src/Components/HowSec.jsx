@@ -7,8 +7,11 @@ export const HowSec = () => {
         <div className="card">
            <img src="/image 1 copy.png" alt="img" />
            <div className="back">
-           <h3>CONTACT US</h3>
-           <span></span>
+            <div>
+                <h3>CONTACT US</h3>
+                <span></span>
+            </div>
+
            </div>
            
            <p>We want to hear from you! Reach out to ask about our schedule, prices, and if CrossFit is a good fit for you.</p>
@@ -19,8 +22,11 @@ export const HowSec = () => {
         <div className="card">
            <img src="/image 1 (1).png" alt="img" />
            <div className="back">
-            <h3>LEARN THE BASICS</h3>
-            <span className="learn"></span>
+            <div>
+                <h3>LEARN THE BASICS</h3>
+                <span></span>
+            </div>
+
 
            </div>
            
@@ -32,8 +38,11 @@ export const HowSec = () => {
         <div className="card">
            <img src="/image 1 (2).png" alt="img" />
            <div className="back">
-           <h3>TRY A CLASS</h3>
-           <span></span>
+            <div>
+                <h3>TRY A CLASS</h3>
+                <span></span>
+            </div>
+
 
            </div>
            

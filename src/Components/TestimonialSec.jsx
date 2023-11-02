@@ -64,8 +64,7 @@ export const TestimonialSec = () => {
                    <p>24 review</p>
 
                 </div>
-                <h4>CHRIS</h4>
-                <p>24 review</p>
+                
 
             </div>
             <div className="stars">

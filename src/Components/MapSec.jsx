@@ -10,8 +10,11 @@ export const MapSec = () => {
         <div className="map-card">
             <img src="/image 1.png" alt="map" />
             <div className="back">
-               <h3>STUREPLAN</h3>
-               <span className="map-back"></span>
+                <div>
+                    <h3>STUREPLAN</h3>
+                    <span className="map-back"></span>
+                </div>
+
 
            </div>
            <p><span>Brahegatan</span>
@@ -22,8 +25,11 @@ export const MapSec = () => {
         <div className="map-card">
             <img src="/Pain Image Block.png" alt="map" />
             <div className="back">
-               <h3>SOFO</h3>
-               <span className="map-back"></span>
+                <div>
+                    <h3>SOFO</h3>
+                    <span className="map-back"></span>
+                </div>
+
 
            </div>
            <p><span>Katarina Bangata</span>
@@ -34,9 +40,10 @@ export const MapSec = () => {
         <div className="map-card">
             <img src="/Pain Image Block (1).png" alt="map" />
             <div className="back">
-               <h3>SOFO</h3>
-               <span className="map-back"></span>
-
+                <div>
+                    <h3>SOLNA</h3>
+                    <span className="map-back"></span>
+                </div>
            </div>
            <p><span>Svetsarvägen</span><br />
            <span>22141 71 Solna </span><br />

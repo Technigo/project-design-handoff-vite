@@ -1,11 +1,13 @@
 
 
+import { useNavigate } from "react-router-dom"
 import { FooterSec } from "./FooterSec"
 import { Header } from "./Header"
 
 
 
 export const ContactPage = () => {
+    const nav = useNavigate()
   return (
     <div>
         <Header />
@@ -18,7 +20,10 @@ export const ContactPage = () => {
 
         </div>
         <div className="form">
-            <form action="">
+            <form action="" onSubmit={(e) => {
+                e.preventDefault()
+                nav("/")
+            }}>
                 <label htmlFor="">First Name
                     <input type="text" />
                 </label>
