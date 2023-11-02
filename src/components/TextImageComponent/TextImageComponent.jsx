@@ -12,7 +12,7 @@ export const TextImageComponent = ({
 }) => {
 
     return (
-        <section className={`text-image-block ${imageOnLeft ? 'image-on-left' : 'image-on-right'}`}>
+        <section className={`text-image-block ${className} ${imageOnLeft ? 'image-on-left' : 'image-on-right'}`}>
             {/* The image will be on the left if imageOnLeft is true, otherwise it will be on the right */}
             <div className="content">
                 {imageOnLeft && (

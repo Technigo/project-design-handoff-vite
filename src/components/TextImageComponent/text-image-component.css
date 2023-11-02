@@ -6,12 +6,20 @@
     background-color: var(--dark-beige);
 }
 
+.about-us-background   {
+    background-color: var(--light-green);
+}
+
 .image-on-left img,
 .image-on-right img {
     object-fit: cover;
 }
 .text-image-block, .text-image-block-text  {
     display: flex;
+}
+
+.text-image-block {
+    align-items: center;
 }
 
 .text-image-block-text h2 {
@@ -21,7 +29,6 @@
 .text-image-block-text p {
     font-weight: 300;
 }
-
 
 /* Mobile only */
 @media (max-width: 833px) {

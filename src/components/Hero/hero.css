@@ -37,18 +37,15 @@ color: var(--light-green);
     flex-direction: column;
 }
 
-/* CSS to remove the background image on smaller screens (tablet and below) */
-@media (min-width: 834px) {
-    /* CSS for the background image on larger screens (desktop) */
-.hero-background-image {
-    background-image: url("../assets/images/align-yoga-hero-image.jpg");
-    background-size: cover;
-  }
-  }
-
-
 /* Tablet to desktop  */
 @media (min-width: 834px) {
+    /* CSS for the background image on larger screens (desktop) */
+    .hero-background-image {
+        background-image: url("../assets/images/align-yoga-hero-image.jpg");
+        background-size: cover;
+        background-position: 50% 48%;
+    }
+
     .hero-section {
         height: 834px;
     }
@@ -67,8 +64,13 @@ color: var(--light-green);
 
 /* Desktop only */
 @media (min-width: 1512px) {
+    .hero-background-image {
+        background-image: url("../assets/images/align-yoga-hero-image.jpg");
+        background-size: cover;
+        background-position: 100% 48%;
+    }
     .hero-section {
-        height: 885px;
+        height: 930px;
         gap: 105px;
     }
 
