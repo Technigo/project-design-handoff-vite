@@ -4,7 +4,7 @@ import InstagramLogoLight from "/icons/Instagram.png";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
-const FollowContainer = styled.div`
+const FollowLightIconContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,7 @@ const FollowContainer = styled.div`
   gap: 8px;
 `;
 
-const Icons = styled.div`
+const LightIcons = styled.div`
   display: flex;
   gap: 16px;
 `;
@@ -20,13 +20,13 @@ const Icons = styled.div`
 export const FollowUsIconsLight = () => {
   const { t } = useTranslation(); // Use useTranslation to get the 't' function
   return (
-    <FollowContainer>
+    <FollowLightIconContainer>
       <p>{t("footer.follow")}</p>
-      <Icons>
+      <LightIcons>
         <img src={FacebookLogoLight} alt="Facebook Logo" />
         <img src={TwitterLogoLight} alt="Twitter Logo" />
         <img src={InstagramLogoLight} alt="Instagram Logo" />
-      </Icons>
-    </FollowContainer>
+      </LightIcons>
+    </FollowLightIconContainer>
   );
 };

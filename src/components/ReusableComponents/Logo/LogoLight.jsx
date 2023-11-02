@@ -10,7 +10,7 @@ const StyledLightLogo = styled.div`
   img {
     width: 76px;
     height: 83px;
-    //flex-shrink: 0;
+    flex-shrink: 0;
   }
   p:first-child {
     color: #fff6e9;

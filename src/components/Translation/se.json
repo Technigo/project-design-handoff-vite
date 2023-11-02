@@ -68,5 +68,13 @@
     "terms": "Villkor och bestämmelser",
     "privacy": "Integritet",
     "accessibility": "Tillgänglighet"
-  }
+  },
+  "aboutUs": {
+    "heading": "Om oss",
+    "weAre": "Vilka vi är",
+    "weAreDescription": "Vi är en yogastudio med rötter inom hästvärlden. I våra övningar kombinerar vi yogans magiska kraft med traditionell ridning.",
+    "findUs": "Var du hittar oss",
+    "location": "Studions adress\nStorängsgatan 27- 31,\n115 42 Stockholm, Sverige",
+    "contactUs": "Hur du når oss"
+}
 }

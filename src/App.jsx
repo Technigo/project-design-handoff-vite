@@ -1,13 +1,27 @@
+import { BrowserRouter, Routes } from "react-router-dom";
+import { routes } from "./Routes/Routes";
 import { Header } from "../src/components/Header/Header";
-import { MainContent } from "./components/MainContent/MainContent.jsx";
+import { Form } from "./components/Newsletter/Form";
 import { Footer } from "../src/components/Footer/Footer";
 
 export const App = () => {
   return (
-    <div className="main-wrapper">
-      <Header />
-      <MainContent />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      {/* The Routes component renders the defined routes in the application. 
+           The 'routes' variable contains the route configuration. */}
+      <div className="main-wrapper">
+        <Header />
+        <Routes>{routes}</Routes>
+        <Form />
+        <Footer />
+      </div>
+    </BrowserRouter>
+
+    //Behöver det vara main istället?
+    // <div className="main-wrapper">
+
+    //   <MainContent />
+
+    // </div>
   );
 };

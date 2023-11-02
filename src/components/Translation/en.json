@@ -68,5 +68,13 @@
     "terms": "Terms & Conditions",
     "privacy": "Privacy",
     "accessibility": "Accessibility"
+  },
+  "aboutUs": {
+    "heading": "About us",
+    "weAre": "Who we are",
+    "weAreDescription": "We are a yoga studio with roots in the equestrian world. In our practices we combine the magical power of yoga with traditional horse riding",
+    "findUs": "Where to find us",
+    "location": "Studio location\nStorängsgatan 27- 31,\n115 42 Stockholm, Sweden",
+    "contactUs": "How to contact us"
   }
 }

@@ -5,6 +5,7 @@ const StyledHeader = styled.div`
   background: #fff6e9;
   display: flex;
   justify-content: center;
+  width: 100%;
 `;
 
 export const Header = () => {

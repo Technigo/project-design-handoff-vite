@@ -10,14 +10,14 @@ const StyledDarkLogo = styled.div`
   img {
     width: 76px;
     height: 83px;
-    //flex-shrink: 0;
+    flex-shrink: 0;
   }
   p:first-child {
     color: #081957;
     font-size: 24px;
-    font-style: normal;
+    //font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    //line-height: normal;
     letter-spacing: 1.2px;
     text-transform: uppercase;
   }
