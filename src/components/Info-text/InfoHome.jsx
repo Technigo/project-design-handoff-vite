@@ -38,21 +38,21 @@ const BlueLine = styled.div`
   height: 15px;
   background-color: var(--blue-color);
 `;
-export const Info = ()  =>{
-
-  const MainText = "You have put in the hours, you have put in the sweat. You are already a relentless competitor. You have strength, explosivity, speed and balance - but we will help you gain more. Are you a serious hockey player ready to take your game to the next level?"
-
-  const Text = "Click below to see more about what we do for our athletes: "
-
+const InfoImage = styled.img`
+max-width:100%;
+`
+export const Info = ({ mainText, text, image }) => {
   return (
     <>
       <InfoWrapper>
-      <RedLine className="red-line" /> {/* blue line */}
-      <InfoDescription className="info-description" text={MainText} /> 
-      <StyledParagraph>{ Text } </StyledParagraph> 
-        <BlueLine className="blue-line" /> {/* red line */}
-        </InfoWrapper>
-      </>
-  )
+        <RedLine className="red-line" />
+        <InfoDescription className="info-description" text={mainText} />
+        <InfoImage src={image} alt="Hero Image" />
+        <StyledParagraph>{text}</StyledParagraph>
+        <BlueLine className="blue-line" />
+      </InfoWrapper>
+    </>
+  );
 }
+
 

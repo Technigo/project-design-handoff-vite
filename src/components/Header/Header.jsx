@@ -41,19 +41,16 @@ const BlueLineHero = styled.div`
   height: 20px;
   background-color: var(--blue-color);
 `;
-
-export const Header = () => {
-  const HeroTextOne = "Find and sharpen your competitive edge.";
-  const HeroTextTwo = "We are the gym that builds champions.";
-
-
+export const Header = ({ heading, textOne, textTwo, image }) => {
   return (
     <HeroWrapper className="hero-wrapper">
       <BlueLineHero className="blue-line-hero" />
-      <HeroHeading text="Edge Performance" />
-      <HeroImage src="./heroImage.png" alt="Hero Image" />
-      <HeroDescription text={HeroTextOne} />
-      <HeroDescription text={HeroTextTwo}/ >
+      <HeroHeading text={heading} />
+      <HeroImage src={image} alt="Hero Image" />
+      <HeroDescription text={textOne} />
+      <HeroDescription text={textTwo} />
     </HeroWrapper>
   );
 };
+
+
