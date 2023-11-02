@@ -9,8 +9,22 @@ import { QuoteSection } from "../components/Sections/QuoteSection/QuoteSection";
 import { MeetFounders } from "../components/Sections/MeetFounders/MeetFounders";
 import { Members } from "../components/Sections/Members/Members";
 import { UpcomingCourses } from "../components/Sections/UpcomingCourses/UpcomingCourses";
+import { useTranslation } from "react-i18next";
 
 export const Home = () => {
+  //REMEMBER: to translate, every text, heading, writing in our whole page needs to be manually put INSIDE the json file to reference it!!
+
+  //define via destructured variable two methods from useTranslation
+  const { t, i18n } = useTranslation();
+
+  //function to change the language
+  const changeLanguageFunc = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const englishFunc = () => changeLanguageFunc("en");
+  const swedishFunc = () => changeLanguageFunc("se");
+
   return (
     <>
       <Header />
@@ -22,6 +36,11 @@ export const Home = () => {
       <Members />
       <UpcomingCourses />
       <Footer />
+      <div className="internationalisation-wrapper">
+        <button onClick={englishFunc}>English</button>
+        <button onClick={swedishFunc}>Swedish</button>
+        <p>{t("translatePage.heading")}</p>
+      </div>
     </>
   );
 };
