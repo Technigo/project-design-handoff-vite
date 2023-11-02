@@ -1,6 +1,7 @@
 // Import Swiper React components
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { MiniFitSwiperCard } from "../../components/MiniFitSwiperCardFolder/MiniFitSwiperCard";
 
 // Import Swiper styles
 import "swiper/css";
@@ -8,7 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-export const MiniFitSwiper = () => {
+export const MiniFitSwiper = ({ miniCardOne }) => {
   return (
     <>
       <h3>What is MiniFit?</h3>
@@ -24,9 +25,9 @@ export const MiniFitSwiper = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log("slide change")}
       >
-        {/* <SwiperSlide>
-        <MemberSwiperCard cardOne={cardOne} />
-      </SwiperSlide> */}
+        <SwiperSlide>
+          <MiniFitSwiperCard miniCardOne={miniCardOne} />
+        </SwiperSlide>
         <SwiperSlide>Slide 2</SwiperSlide>
         <SwiperSlide>Slide 3</SwiperSlide>
         <SwiperSlide>Slide 4</SwiperSlide>

@@ -1,0 +1,81 @@
+.footer {
+  background-color: #ff7e73;
+  height: 400px;
+}
+
+.footer-logo {
+  height: 42px;
+  margin-top: 32px;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+
+.link-footer {
+  color: black;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  transition: transform 0.2s, font-size 0.2s;
+}
+.link-footer:hover {
+  font-size: 15px;
+  transform: scale(0.95);
+}
+.footer-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+  gap: 24.5px;
+  margin: 25px;
+}
+
+.fb-button {
+  height: 24px;
+}
+
+/* dropdown*/
+.footer-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown-item img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* Show the dropdown content when the button is hovered over */
+.footer-dropdown:hover .dropdown-content {
+  display: block;
+}

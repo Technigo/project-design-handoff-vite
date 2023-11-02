@@ -7,12 +7,14 @@
 //   Navigate,
 // } from "react-router-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { AboutUs } from "./sections/AboutUs";
+import { AboutUs } from "./Pages/AboutUs";
 import { Header } from "./sections/Header";
 import { Member } from "./sections/Member/Member";
 import { SectionTwo } from "./sections/SectionTwoFolder/SectionTwo";
 import { MemberSwiper } from "./sections/MemberSwiperFolder/MemberSwiper";
 import { MiniFitSwiper } from "./sections/MiniFitFolder/MiniFitSwiper";
+import { LastSection } from "./sections/LastSectionFolder/LastSection";
+import { Footer } from "./sections/FooterFolder/Footer";
 
 // import Button from "./assets/images/Button.svg";
 
@@ -31,12 +33,14 @@ export const App = () => {
                 <SectionTwo />
                 <MemberSwiper />
                 <MiniFitSwiper />
+                <LastSection />
                 <AboutUs />
               </>
             }
           />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
