@@ -1,0 +1,40 @@
+.instagram-section {
+    background-color: var(--purplebright);
+    padding: 1.5rem;
+}
+
+.instagram-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 3rem 0 2.5rem;
+    text-align: center;
+}
+
+.instagram-content-wrapper h2, h3{
+    color: white;
+}
+
+.insta-carousel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.insta-image {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 0.2rem;
+}
+
+.insta-icon {
+    fill: var(--black);
+    border: solid 1.5px; 
+    border-radius: 50%;
+    padding: 0.3rem;
+    margin: -0.5rem;
+    height: 2.5rem; 
+    width: 2.5rem;
+}

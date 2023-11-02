@@ -1,0 +1,16 @@
+[
+    {   
+        "icon": "assets/Star.svg",
+        "iconAlt": "Star-icon.",
+        "heading": "All inclusive",
+        "description": "Go to all of our classes and courses and also participate in our retreats. You get personal help to from our instructors to plan your classes based on your goals. This is for you who will fully commit to living your full potential during menopause and beyond.",
+        "btnText": "Buy now 599 sek per month"
+    },
+    {
+        "icon": "assets/Yoga.svg",
+        "iconAlt": "Yoga-icon.",
+        "heading": "Yoga member",
+        "description": "Participate in all classes. This membership also includes one hour consultation with an instructor each month.",
+        "btnText": "Buy now 299 sek per month"
+    }
+]

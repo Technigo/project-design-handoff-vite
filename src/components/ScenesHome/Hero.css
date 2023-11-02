@@ -1,6 +1,5 @@
 .hero-section {
     background-color: var(--purplebright);
-    color: var(--black);
     padding: 1.5rem; 
 }
 
@@ -17,6 +16,7 @@
 
 .hero-btn-container {
     display: flex;
-    gap: 1rem; 
+    flex-direction: column;
+    gap: 1.25rem; 
 }
 

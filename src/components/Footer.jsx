@@ -1,10 +1,13 @@
-import React from 'react'
+import "./Footer.css"
+import map from "../../public/assets/map.png"
+import mapPin from "../../public/assets/mapPin.png"
 
 export const Footer = () => {
   return (
     <footer>
         <h2>Find us</h2>
-        <p>HÄR ÄR EN KARTA</p>
+        <img src={map} alt="A map." />
+        <img src={mapPin} alt="A map pin." />
         <p>Adress: Grycksbovägen 19A, Stockholm</p>
 
         <p className='p-bold'>Contact</p>
@@ -15,7 +18,7 @@ export const Footer = () => {
         <p>DROPDOWN MENU</p>
 
         <div className='copyright'>
-            <p>Copyright: BodyBalance23</p>
+            <p>Copyright: YogaBalance23</p>
         </div>
     </footer>
   )

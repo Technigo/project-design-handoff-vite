@@ -5,7 +5,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     --black: #1d1c25;
-    --white: #ffffff;
+    --white: #fff;
     --purplebright: #612e77;
     --purplelight: #dcd3e0;
     --yellowlight: #fde6ba;
@@ -41,9 +41,7 @@ img {
 
 
 /*PROBABLY MOVE THIS*/
-.insta-icon {
-    fill: white;
-}
+
 
 
 
@@ -74,10 +72,7 @@ p {
     font-weight: 600;
 }
 
-.instagram-section {
-    background-color: var(--purplebright);
-    color: var(--white);
-}
+
 
 .copyright {
     background-color: var(--purplebright);

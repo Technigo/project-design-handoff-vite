@@ -1,0 +1,22 @@
+.membership-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 3rem 1.25rem 2.5rem; 
+}
+
+.membership-card {
+    background-color: var(--purplelight);
+    border-radius: 0.2rem;
+    padding: 1.25rem 1.25rem 2rem;
+}
+
+.membership-card-h2 {
+    color: var(--black);
+    padding: 1.25rem 0; 
+}
+
+.membership-card p {
+    padding-bottom: 1.25rem;
+}

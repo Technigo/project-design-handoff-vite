@@ -6,15 +6,17 @@
     padding: 3rem 1.25rem 2.5rem;
 }
 
-.courses-section p {
-    text-align: left;
-}
 
 .course-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
+}
+
+.course-card p {
+    
+    text-align: left;
 }
 
 /*-------CAROUSEL-------*/
@@ -27,10 +29,11 @@
     width: 100%;
 }
 
-.carousel img {
+.course-image {
     height: 13rem;
     width: 100%;
     object-fit: cover;
+    border-radius: 0.2rem;
 }
 
 .slide-hidden {
@@ -42,7 +45,6 @@
     top: 6rem;
     width: 1.5rem;
     height: 1.5rem;
-    fill: var(--yellow);
 }
 
 .arrow:hover {
@@ -51,6 +53,7 @@
 
 .arrow-left {
     left: 1rem;
+    transform: scaleX(-1);
 }
 
 .arrow-right {

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import courses from "../../data/coursesdata.json";
 import { Button } from "../Button/Button";
-import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+import arrow from "../../../public/assets/Swipe.svg"
 import "./Courses.css";
 
 export const CourseCarousel = () => {
@@ -24,7 +24,7 @@ export const CourseCarousel = () => {
     return (
         <>
             <div className="carousel">
-                <BsArrowLeftCircleFill
+                <img src={arrow} alt="Arrow button pointing left."
                     className="arrow arrow-left"
                     onClick={prevSlide}
                 />
@@ -38,15 +38,17 @@ export const CourseCarousel = () => {
                                     : "course-card slide-hidden"
                             }
                         >
-                            <img src={course.imageUrl} alt={course.imgageAlt} />
+                            <img className="course-image" src={course.imageUrl} alt={course.imgageAlt} />
                             <p>{course.text}</p>
-                            <p className="p-bold">{course.shortDescription}</p>
-                            <p className="p-bold">{course.startDatePrice}</p>
+                            <p className="p-bold">{course.shortDescription}
+                            {course.startDatePrice}</p>
+                            
+                            
                             <Button>Book your spot</Button>
                         </div>
                     );
                 })}
-                <BsArrowRightCircleFill
+                <img src={arrow} alt="Arrow button pointing right."
                     className="arrow arrow-right"
                     onClick={nextSlide}
                 />
