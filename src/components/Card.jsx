@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Rectangle30 from '../assets/Rectangle30.png';
+import { TestImageComponent } from './TestImageComponent';
 
 const CardContainer = styled.div`
   display: flex;
@@ -46,11 +47,13 @@ const Description = styled.div`
   white-space: pre-line;
 `;
 
-export const Card = ({ title, description, isLast}) => {
+export const Card = ({ title, description, isLast, image}) => {
+    console.log('Image prop:', image);
   return (
     <CardContainer>
         <InnerContainer>
-            <Image image={Rectangle30} />
+            {/* <Image image={Rectangle30} /> */}
+            <TestImageComponent />
             <TextContainer>
               <Title isLast={isLast}>{title}</Title>
               <Description dangerouslySetInnerHTML={{ __html: description }} />
