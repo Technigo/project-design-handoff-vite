@@ -2,71 +2,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,900&display=swap');
 
+
 body {
     margin: 0;
     padding: 0;
-    
 }
 
-.threeCards-wrapper {
-    width: 100%;
-    position: relative;
-}
-.threeCards-image {
-    width: 100%;
-    height: auto;
-    z-index: -1;
-    
-}
-
-.threeCards-title {
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.stayinTouch-page-wrapper {
+    background-color: #EBE7E4;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff; 
-
-    
 }
 
-.threeCards-title-card-1 {
-    width: 22em;
-    height: 25em;
-    margin-left: 1rem;
-    border: 1px solid #38302A;
-    background-color: rgba(56, 48, 42, 0.7); /* Set the background color for the cards */
-    text-align: center;
-    padding: 1rem;
-}
-
-.threeCards-title-card-2 {
-    width: 22em;
-    height: 25em;
-    margin: 0 8rem;
-    border: 1px solid #38302A;
-    background-color: rgba(56, 48, 42, 0.7); /* Set the background color for the cards */
-    text-align: center;
-    padding: 1rem;
-}
-
-.threeCards-title-card-3 {
-    width: 22em;
-    height: 25em;
-    margin-right: 1rem;
-    border: 1px solid #38302A;
-    background-color: rgba(56, 48, 42, 0.7); /* Set the background color for the cards */
-    text-align: center;
-    padding: 1rem;
-}
-
-.threeCards-title-sub {
-    padding-top: 10rem;
+.stayinTouch-page-title {
+    margin-top: 2em;
     font-family: 'Raleway', sans-serif;
-    font-size: 2.5rem;
-    font-weight: regular;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #38302A;
+    z-index: 1;
+}
+
+.stayinTouch-page-subtitle {
+    margin-top: 1em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: semi-bold;
+    line-height: 1.5em;
+    color: #38302A;
+}
+
+.stayinTouch-page-email {
+    margin-top: 2em;
+    width: 20%;
+    height: 3em;
+}
+
+.stayinTouch-page-email::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    padding: 0.5em;
+    font-weight: semi-bold;
+    color: #38302A;
+}
+
+.stayinTouch-page-button {
+    margin-top: 3.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #38302A;
     color: #ffffff;
+    padding: 0.5rem 2rem;
+    margin-right: 1rem;
+    border-radius: 0.5em;
+    border: 1px solid #38302A;
+}
+
+.stayinTouch-page-dsc {
+    margin-top: 2.5em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: semi-bold;
+    line-height: 1.5em;
+    color: #38302A;
+    margin-bottom: 5em;
+}
+
+.stayinTouch-page-dsc-wrapper {
+    width: 60%;
 }

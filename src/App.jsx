@@ -4,15 +4,19 @@ import { NavBar } from "./components/navBar.jsx";
 import { OurYoga } from "./components/ouryoga.jsx";
 import { ThreeCards } from "./components/threeCards.jsx";
 import { RecentPost } from "./components/recentPost.jsx";   // import RecentPost component
+import { StayInTouch } from "./components/stayinTouch.jsx"; // import StayInTouch component
 
 export const App = () => {
   return (
-  <div>
-    <NavBar />
-    <OurYoga />
-    <ThreeCards />
-    <AboutUs />
-    <RecentPost />   
-  </div>
+    <React.Fragment>
+      <div>
+        <NavBar />
+        <OurYoga />
+        <ThreeCards />
+        <AboutUs />
+        <RecentPost />   
+        <StayInTouch />
+      </div>
+    </React.Fragment>
   )
 };

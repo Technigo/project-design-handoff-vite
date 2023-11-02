@@ -8,7 +8,9 @@ body {
 }
 
 .recentPost-wrapper {
-    /* background-color: #7A899A;   */
+    /* background-color: rgba(122, 137, 154, 0.66);  */
+    background-color: rgba(122, 137, 154, 0.34);;
+    
 }
 
 .recentPost-title {
@@ -17,11 +19,146 @@ body {
 
 .recentPost-title-head {
     margin-top: 0;
-    text-align: center;
+    padding-top: 3em;
+    text-align: left;
+    margin-left: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: semi-bold;
+    color: #38302A;
 }
 
 .recentPost-image-wrapper {
     width: 100%;
+    height: 110vh;
     position: relative;
+   
 }
+
+.recentPost-card-wrapper {
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recentPost-card-1 {
+    margin: 2em;
+    width: 26em;
+    height: 35em;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.recentPost-card-2 {
+    margin: 2em;
+    width: 26em;
+    height: 35em;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.recentPost-card-3 {
+    margin: 2em;
+    width: 26em;
+    height: 35em;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+.recentPost-image-1 {
+    width: 100%;
+    height: auto;
+    
+    border: 1em solid #ffffff;
+    box-sizing: border-box;
+    
+   
+}
+
+.recentPost-image-2 {
+    width: 100%;
+    height: auto;
+    border: 1em solid #ffffff;  
+    box-sizing: border-box;
+    
+}
+
+.recentPost-image-3 {
+    width: 100%;
+    height: auto;
+    border: 1em solid #ffffff;
+    box-sizing: border-box;
+    
+}
+
+.recentPost-posting-dates {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: semi-bold;
+    line-height: 1.5em;
+    color: #38302A;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+.recentPost-card-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #38302A;
+    margin-top: 0;
+    margin-left: 0.6em;
+    margin-bottom: 1em;
+}
+
+.recentPost-content {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    font-weight: regular;
+    line-height: 1.5em;
+    color: #38302A;
+    margin-top: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.recentPost-readmore-button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.readmore-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #7A899A;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5em;
+}
+
+
+
+
 
