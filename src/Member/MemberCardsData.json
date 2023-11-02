@@ -1,31 +1,26 @@
 [
     {
-        "title": "Bronze",
-        "subtitle": "80€/month",
-        "icon": "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Check.svg?v=1698771282254",
-        "content1": "Limited access to 2 facilities of your choice",
-        "content2": "Open snack / soft drinks bar",
+        "icons": [
+            "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Card%201.svg?v=1698849275578",
+            "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/jlz1000_88870_a_photo-_realistic_photo_of_a_small_club_high_qua_b506bd46-026f-4073-b22c-e92e284c2623.png?v=1698783294675",
+            "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Card%201.svg?v=1698849275578"
+        ],
         "buttonText": "Read more"
     },
     {
-        "title": "Silver",
-        "subtitle": "100€/month",
-        "icon": "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Check.svg?v=1698771282254",
-        "content1": "Limited access to 3 facilities of your choice",
-        "content2": "Open snack / soft drinks bar",
-        "content3": "Switch between facilities every 3rd month",
-        "content4": "Given 2 invites a month",
+        "icons": [
+            "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Card%201.svg?v=1698849275578",
+            "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/jlz1000_88870_a_photo-_realistic_photo_of_a_small_club_high_qua_b506bd46-026f-4073-b22c-e92e284c2623.png?v=1698783294675",
+            "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Card%201.svg?v=1698849275578"
+        ],
         "buttonText": "Read more"
     },
     {
-        "title": "Gold",
-        "subtitle": "200€/month",
-        "icon": "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Check.svg?v=1698771282254",
-        "content1": "Limited access to ALL facilities",
-        "content2": "Open snack / soft drinks bar",
-        "content3": "Private locker",
-        "content4": "Private parking space",
-        "content5": "Given 4 invites a month",
+        "icons": [
+            "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Card%201.svg?v=1698849275578",
+            "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/jlz1000_88870_a_photo-_realistic_photo_of_a_small_club_high_qua_b506bd46-026f-4073-b22c-e92e284c2623.png?v=1698783294675",
+            "https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Card%201.svg?v=1698849275578"
+        ],
         "buttonText": "Read more"
     }
 ]
