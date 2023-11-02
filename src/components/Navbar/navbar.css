@@ -16,17 +16,20 @@
     color: #FFFFFF;
     font-size: 180%;
     cursor: pointer;
+    display: flex;
 }
 
 .navbar-logo img {
     width: 85%;
     height: auto;
+    display: flex;
 }
 
 .navbar-profile img {
     width: 30%;
     cursor: pointer;
     padding-top: 3%;
+    display: flex;
 }
 
 /* ----- Making the content responsive ----- */
