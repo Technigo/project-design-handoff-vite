@@ -13,6 +13,19 @@ const RedLine = styled.div`
   height: 16px;
   background-color: var(--red-color);
 `;
+const Details = styled.div`
+display: grid;
+grid-template-columns: 1fr 1fr;
+`
+const Address = styled.div`
+display: grid;
+grid-template-rows: 3fr;
+`
+const EmailParagraph = styled.p`
+color:var(--red-color);
+font-size: 14px;
+font-weight: 800;
+`
 const InfoDescription = styled(Description)`
 color: #333;
 text-align: center;
@@ -38,18 +51,26 @@ const BlueLine = styled.div`
   height: 15px;
   background-color: var(--blue-color);
 `;
-
-export const InfoHome = ({ mainText, text}) => {
+const InfoImage = styled.img`
+max-width:100%;
+`
+export const InfoInformation = ({ mainText, phone, email, image }) => {
   return (
     <>
       <InfoWrapper>
         <RedLine className="red-line" />
-        <InfoDescription className="info-description" text={mainText} />
-        <StyledParagraph>{text}</StyledParagraph>
+        <Details>
+          <InfoImage src={image} alt="Hero Image" />
+          <Address>
+            <InfoDescription className="info-description" text={mainText} />
+            <StyledParagraph> {phone}</StyledParagraph>
+            <EmailParagraph> {email}</EmailParagraph>
+          </Address>
+        </Details>
         <BlueLine className="blue-line" />
       </InfoWrapper>
     </>
   );
-}
+};
 
 

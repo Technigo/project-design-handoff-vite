@@ -1,7 +1,7 @@
 import { Article } from "../components/Article/Article";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
-import { Info } from "../components/Info-text/Info";
+import { InfoHome } from "../components/Info-text/InfoHome";
 
 export const Home = () => {
 
@@ -16,7 +16,7 @@ export const Home = () => {
   return (
     <>
       <Header textOne={textOne} textTwo={textTwo} image={heroImageHome} />
-      <Info  mainText={MainText} text={Text} image={heroImageInfo} />
+      <InfoHome  mainText={MainText} text={Text} image={heroImageInfo} />
       <Article />
       <Footer />
     </>
