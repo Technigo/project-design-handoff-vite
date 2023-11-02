@@ -27,10 +27,10 @@ export const MidSection2 = () => {
         <div className="gap-3 flex flex-row md:flex-row-reverse">
           <div>
             <p className="leading-6 text-base h-[16rem] md:text-xl md:h-[11rem] md:leading-10 md:mt-20 lg:text-[26px]">
-              <strong>{t("midsection.p.0")}</strong> {t("midsection.p.1")}
+              <strong>{t("midsection2.p.0")}</strong> {t("midsection2.p.1")}
             </p>
             <p className="text-[18px]2 font-bold leading-8 text-justify  md:text-xl  max-sm:hidden max-md:hidden lg:text-[28px] lg:leading-[3rem] lg:mt-10 lg:w-[80%]">
-              {t("midsection.p.2")}
+              {t("midsection2.p.2")}
             </p>
           </div>
           <img
@@ -40,7 +40,7 @@ export const MidSection2 = () => {
           />
         </div>
         <p className="text-[18px]2 font-bold leading-8 text-justify  md:text-xl  md:hidden  ">
-          {t("midsection.p.3")}
+          {t("midsection2.p.3")}
         </p>
       </div>
     </section>
