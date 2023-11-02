@@ -24,8 +24,27 @@ export const Menu = styled.div`
   text-align: right;
 `;
 
+export const MobileNav = styled.nav`
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffcc00;
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  gap: 15px;
+  @media (max-width: 1440px) {
+    display: ${props => (props.open ? 'flex' : 'none')};
+  }
+`;
+
 export const Hamburger = styled.div`
-  @media(min-width: 1440px) {
+  cursor: pointer;
+  z-index: 1000;
+  @media (min-width: 1440px) {
     display: none;
   }
 `;
@@ -45,6 +64,7 @@ export const BenefitsWrapper = styled.section`
   text-align: left;
 `;
 
+/* SHOULD NOT BE USED? */
 export const ContentSection = styled.section`
   background-color: #fff;
   text-align: left;
