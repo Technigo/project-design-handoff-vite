@@ -24,3 +24,20 @@
     color: #949494;
     padding-bottom: 3%;
 }
+
+/* ----- Making the content responsive ----- */
+/* Tablet*/
+@media (min-width: 667px) {
+    .logo-container img {
+        width: 50%;
+        margin-bottom: 5%;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+    .logo-container img {
+        width: 40%;
+        margin-bottom: 5%;
+    }
+}
