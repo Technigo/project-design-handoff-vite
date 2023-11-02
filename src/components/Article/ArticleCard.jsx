@@ -3,14 +3,22 @@ import { Description } from "../../reusableComponents/Description"
 import { Heading } from "../../reusableComponents/Heading"
 import styled from 'styled-components'
 
+
 const CardWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 100%;
   padding: 8px;
   border-radius: 8px;
-  background-color:#E2DFDF ;
-`
+  background-color: #E2DFDF;
+  transition: background-color 0.3s; // Add a background color change transition effect
+  cursor: pointer; 
+  &:hover {
+    border-radius: 8px;
+background: #E8E8E8;
+box-shadow: 0px 4px 4px 0px #2AA9C0;
+  }
+`;
 const TextWrapper = styled.div`
 display:grid;
 grid-template-columns: 1fr;

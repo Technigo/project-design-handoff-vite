@@ -11,12 +11,12 @@
       "description": "Hockey-specifik styrke- och rörlighetsträning för att höja din prestandanivå, oavsett säsong. Slipa din Hockey IQ för blixtrande reaktioner med Sense Arena VR och The Hockey IntelliGym."
     },
     {
-      "name": "Comeback-kanten",
+      "name": "Rehabkanten",
       "image": "./comebackEdge.png",
-      "description": "Skador är en del av spelet. Kom tillbaka på isen snabbare och starkare med specialiserad fysioterapi från några av de bästa inom idrottsmedicin. Efter en hjärnskakning? Vi kan hjälpa."
+      "description": "Skador är en del av spelet. Kom tillbaka på isen snabbare och starkare med specialiserad fysioterapi från några av de bästa inom idrottsmedicin. Är du på en hjärnskakningsprotokoll? Vi kan hjälpa."
     },
     {
-      "name": "Träningskanten",
+      "name": "Fysträning",
       "image": "./coachingEdge.png",
       "description": "Träning med över 100 års sammanlagd NHL-erfarenhet oavsett säsong. Vi förbereder dig på sommaren och håller dig konkurrenskraftig på isen. Vi erbjuder syntetisk is och torrträning för att bygga din hockeyspel från grunden."
     },
