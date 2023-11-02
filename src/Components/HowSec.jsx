@@ -5,7 +5,7 @@ export const HowSec = () => {
     <div className="how">
        <h1>HOW TO GET STARTED</h1>
         <div className="card">
-           <img src="/image 1.png" alt="img" />
+           <img src="/image 1 copy.png" alt="img" />
            <div className="back">
            <h3>CONTACT US</h3>
            <span></span>
@@ -17,10 +17,10 @@ export const HowSec = () => {
         </div>
 
         <div className="card">
-           <img src="/Pain Image Block.png" alt="img" />
+           <img src="/image 1 (1).png" alt="img" />
            <div className="back">
             <h3>LEARN THE BASICS</h3>
-            <span></span>
+            <span className="learn"></span>
 
            </div>
            
@@ -30,7 +30,7 @@ export const HowSec = () => {
         </div>
 
         <div className="card">
-           <img src="/Pain Image Block (1).png" alt="img" />
+           <img src="/image 1 (2).png" alt="img" />
            <div className="back">
            <h3>TRY A CLASS</h3>
            <span></span>
@@ -40,6 +40,16 @@ export const HowSec = () => {
            <p>In a typical one-hour CrossFit class, athletes complete modified versions of the same workout together, and the coach will guide you through step-by-step.</p>
        
 
+        </div>
+        <div className="card">
+             
+             <img src="/Video.png" alt="video" />
+       
+        </div>
+        <div className="card">
+             
+             <img src="/Get Started_Image.png" alt="img" />
+       
         </div>
        
 

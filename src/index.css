@@ -26,11 +26,13 @@ body{
 .header{
   height: 142px;
   position: sticky;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #FFFFFF;
+  z-index: 2;
   
 }
 .bar-container{
@@ -259,7 +261,7 @@ text-align: left;
   width: 100%;
 }
 .card{
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
 }
 .back span{
@@ -270,6 +272,9 @@ text-align: left;
    position: absolute;
    z-index: -1;
 
+}
+.learn{
+  width: 210px;
 }
 .back{
   position: relative;
@@ -282,5 +287,116 @@ line-height: 21px;
 letter-spacing: -0.3199999928474426px;
 text-align: left;
 margin-bottom: 20px;
+
+}
+.testimonial{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0;
+}
+.profile{
+padding: 22px;
+margin: 10px;
+box-shadow: 2px 6px 8px rgba(0, 0, 0, 0.2);
+min-width: 223px;
+min-height: 304px;
+border-radius: 4px;
+
+}
+.testimonial h2{
+font-size: 24px;
+font-weight: 500;
+margin-bottom: 29px;
+letter-spacing: -0.3199999928474426px;
+text-align: left;
+
+}
+.info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+.info h4{
+
+font-size: 24px;
+font-weight: 700;
+line-height: 31px;
+letter-spacing: 0em;
+text-align: center;
+
+
+}
+.desc h3{
+
+font-size: 24px;
+font-weight: 700;
+line-height: 31px;
+letter-spacing: 0em;
+text-align: center;
+margin: 10px 0;
+
+}
+.stars{
+  margin: 10px auto;
+  align-items: center;
+  text-align: center;
+}
+.desc p{
+ 
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.name{
+  display: flex;
+  flex-direction: column;
+}
+.name p{
+ 
+font-size: 14px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.map-container{
+  margin: 60px 0;
+  padding: 10px;
+}
+.map-container img{
+  width: 100%;
+}
+.map-container h2{
+
+font-size: 24px;
+font-weight: 500;
+line-height: 29px;
+letter-spacing: -0.3199999928474426px;
+text-align: left;
+margin-bottom: 30px;
+
+}
+.map-card{
+  margin: 30px 0;
+}
+.map-card p{
+
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: -0.3199999928474426px;
+text-align: left;
+margin-top: 20px;
+display: inline-block;
+
+}
+.map-back{
 
 }

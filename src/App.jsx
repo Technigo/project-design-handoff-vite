@@ -5,6 +5,8 @@ import { Header } from "./Components/Header";
 import { HeroSec } from "./Components/HeroSec";
 import { BrowserRouter , Route , Routes} from "react-router-dom";
 import { HowSec } from "./Components/HowSec";
+import { TestimonialSec } from "./Components/TestimonialSec";
+import { MapSec } from "./Components/MapSec";
 
 
 export const App = () => {
@@ -19,6 +21,8 @@ export const App = () => {
       <Header />
       <HeroSec />
       <HowSec />
+      <TestimonialSec />
+      <MapSec />
       <FooterSec />
         </>
      
