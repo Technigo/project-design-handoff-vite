@@ -1,4 +1,5 @@
 import styles from "./Members.module.css";
+import { Button } from "../../ui/Button/Button";
 
 export const Members = () => {
   return (
@@ -24,10 +25,10 @@ export const Members = () => {
         </div>
         <div className={styles.linkButtonContainer}>
           <div className={styles.linkButtonBox}>
-            <button>Sign Up</button>
+            <Button buttonName="SIGN UP"></Button>
           </div>
           <div className={styles.linkButtonBox}>
-            <button>Try a Class</button>
+            <Button buttonName="TRY A CLASS"></Button>
           </div>
         </div>
       </div>

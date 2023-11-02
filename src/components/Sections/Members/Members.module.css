@@ -16,3 +16,19 @@
   font-family: "Montserrat", sans-serif;
   padding: 1em;
 }
+
+.linkButtonContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  max-height: 300px;
+}
+
+.linkButtonBox {
+  padding: 3em 1em;
+  text-align: center;
+  color: #c9694d;
+}
+
+.buttonName {
+  background-color: #fef8ea;
+}

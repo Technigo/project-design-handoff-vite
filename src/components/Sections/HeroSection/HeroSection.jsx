@@ -11,8 +11,8 @@ export const HeroSection = () => {
             Safe, effective, and energizing training throughout the whole
             pregnancy. Join us for a fun fitness journey for both body and soul.
           </p>
-          <Button buttonName="Sign Up"></Button>
-          <Button buttonName="Try a Class"></Button>
+          <Button buttonName="SIGN UP"></Button>
+          <Button buttonName="TRY A CLASS"></Button>
         </div>
         <div className={styles.heroRight}>
           <img

@@ -21,7 +21,7 @@ export const NavBar = () => {
             ABOUT US
           </a>
           <a className={styles.navMenuOption} href="/">
-            Shop
+            SHOP
           </a>
           <a
             style={{ color: "#c9694d" }}

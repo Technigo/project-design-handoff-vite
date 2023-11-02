@@ -1,3 +1,16 @@
 .footerContainer {
   background-color: #fef8ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerBoxLeft {
+  flex: 2;
+}
+
+.footerBoxRight {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
 }

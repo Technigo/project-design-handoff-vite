@@ -1,11 +1,16 @@
 .linkButtonContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-color: #2c1e63;
+
   max-height: 300px;
 }
 
 .linkButtonBox {
   padding: 3em 1em;
   text-align: center;
+  color: #c9694d;
+}
+
+.buttonName {
+  background-color: #fef8ea;
 }

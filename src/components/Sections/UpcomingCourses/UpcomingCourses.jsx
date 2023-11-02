@@ -9,8 +9,16 @@ export const UpcomingCourses = () => {
           <div className={styles.coursesBox}>
             <img src="/assets/pregs-courses.png" />
           </div>
-          <div className={styles.coursesBox}>Course 1</div>
-          <div className={styles.coursesBox}>Course 2</div>
+          <div className={styles.coursesBox}>
+            Course 1
+            <p>Just want to add some text here to check the formatting, yey!</p>
+            <p>this is some info for Course One.</p>
+          </div>
+          <div className={styles.coursesBox}>
+            Course 2
+            <p>Just want to add some text here to check the formatting, yey!</p>
+            <p>this is some info for Course Two.</p>
+          </div>
         </div>
       </div>
       ;

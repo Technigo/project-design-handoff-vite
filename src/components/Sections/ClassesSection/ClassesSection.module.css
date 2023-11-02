@@ -8,6 +8,20 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background-color: #9eb1a8;
+  color: black;
+}
+
+.classesBox {
+  margin-bottom: 1em;
+  color: black;
+  text-align: center;
+  margin-top: 0;
+  font-weight: 700;
+  color: black;
+}
+
+.subHeading {
+  color: black;
 }
 
 img {

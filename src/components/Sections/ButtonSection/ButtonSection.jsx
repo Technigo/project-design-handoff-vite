@@ -1,17 +1,17 @@
 import styles from "./ButtonSection.module.css";
+import { Button } from "../../ui/Button/Button";
 
 export const ButtonSection = () => {
   return (
     <>
       <div className={styles.linkButtonContainer}>
         <div className={styles.linkButtonBox}>
-          <button>Sign Up</button>
+          <Button buttonName="SIGN UP"></Button>
         </div>
         <div className={styles.linkButtonBox}>
-          <button>Try a Class</button>
+          <Button buttonName="TRY A CLASS"></Button>
         </div>
       </div>
-      ;
     </>
   );
 };
