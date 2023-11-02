@@ -6,7 +6,7 @@
     background-color: var(--dark-beige);
 }
 
-.about-us-background   {
+.about-us-wrapper .image-on-right  {
     background-color: var(--light-green);
 }
 

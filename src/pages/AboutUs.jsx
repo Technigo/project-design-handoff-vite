@@ -18,13 +18,15 @@ export const AboutUs = () => {
 
     return (
         <section>
-            <TextImageComponent
-                className="about-us-background"
-                imageOnLeft={false}
-                src={"./assets/images/yoga-studio-image4.jpg"}
-                altText={"Image of a woman meditating"}
-                textImageHeading={t("aboutUs.topContent.h1")}
-                textImageParagraph={t("aboutUs.topContent.aboutUsParagraph")} />
+            <div className="about-us-wrapper">
+                <TextImageComponent
+                    className="about-us-background"
+                    imageOnLeft={false}
+                    src={"./assets/images/yoga-studio-image4.jpg"}
+                    altText={"Image of a woman meditating"}
+                    textImageHeading={t("aboutUs.topContent.h1")}
+                    textImageParagraph={t("aboutUs.topContent.aboutUsParagraph")} />
+            </div>
             <SubHeroCompStyle><SubHeroComponent className="aboutUsParagraph" text={t("aboutUs.missionParagraph")} /></SubHeroCompStyle>
             <MeetTheTeam />
             <ContactUs />

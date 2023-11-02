@@ -33,11 +33,19 @@
     justify-content: flex-end;
 }
 
+.meet-the-team-section .image-on-right {
+    background-color: var(--light-green);
+}
+
 @media (min-width: 834px) and (max-width: 1511px) {
     .teacher-cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         padding: 0 25px;
+    }
+
+    .teacher-card-text {
+        padding: 29px 23px 0 23px;
     }
 
     .card-section-header-texts {
