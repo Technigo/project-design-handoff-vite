@@ -1,0 +1,54 @@
+.about {
+  background: url("./public/Images/Rectangle357.png");
+  color: rgb(219, 174, 24);
+  font-family: Switzer;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.what-we-do {
+  font-family: Gambarino;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 15%;
+  padding-top: 5%;
+}
+
+.background {
+  font-family: Switzer;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-left: 23%;
+}
+
+.first-text {
+  text-align: flex;
+  padding-left: 15%;
+  padding-top: 3%;
+  font-family: Gambarino;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 30%;
+  text-align: center;
+}
+
+.about-text {
+  font-family: Switzer;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 505px;
+  height: 283px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}

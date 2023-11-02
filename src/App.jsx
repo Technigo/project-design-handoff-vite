@@ -3,6 +3,7 @@ import { Navbar } from "./Components.jsx/Navbar";
 import { About } from "./Components.jsx/About";
 import { Header } from "./Components.jsx/Header";
 import { InfoPage } from "./Components.jsx/InfoPage";
+import { Footer } from "./Components.jsx/Footer";
 
 export const App = () => {
   return (
@@ -15,14 +16,16 @@ export const App = () => {
               element={
                 <>
                   <Navbar />
+                  <Header />
+                  <InfoPage />
+                  <Footer />
                 </>
               }
             />
             <Route path="/about" element={<About />} />
           </Routes>
         </BrowserRouter>
-        <Header />
-        <InfoPage />
+        <Footer />
       </div>
     </>
   );
