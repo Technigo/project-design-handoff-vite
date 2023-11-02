@@ -5,7 +5,7 @@ import { HeaderWrapper, Logo, Menu, Icon, Hamburger, NavLink, NavList, BookButto
 export const Header = () => {
   return (
     <HeaderWrapper>
-      <Logo><Link to="/" style={{color: '#333', textDecoration: 'none'}}>Logo</Link></Logo>
+      <Logo><Link to="/">Logo</Link></Logo>
       <Menu>
         <NavList>
           <NavLink><Link to="/about">About</Link></NavLink>
@@ -13,7 +13,7 @@ export const Header = () => {
           <NavLink><Link to="/studio">Studio</Link></NavLink>
         </NavList>
         <Icon>🔍</Icon>
-        <BookButton>BOOK</BookButton>
+        <BookButton><Link to="/book">Book</Link></BookButton>
         <Hamburger>☰</Hamburger>
       </Menu>
     </HeaderWrapper>

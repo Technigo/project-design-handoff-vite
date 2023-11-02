@@ -1,4 +1,7 @@
 import React from 'react';
-import { ContentSection } from '../components/StyledComponents';
+import { AboutUs } from '../components/AboutUs'
 
-export const About = () => <ContentSection><h2>About</h2><p>This is the about page.</p></ContentSection>;
+export const About = () => 
+    <div>
+        <AboutUs />
+    </div>
