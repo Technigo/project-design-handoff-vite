@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-:root {
-  margin: 0;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -13,4 +9,6 @@ code {
 body {
   margin: 0;
   padding: 0;
+  display: block;
+  font-family: "Poppins", sans-serif;
 }

@@ -1,7 +1,7 @@
 .header-container {
   display: flex;
-  width: 390px;
-  height: 187px;
+  width: 100%;
+  height: auto;
   font-family: Poppins;
   flex-direction: column;
   align-items: flex-start;
@@ -12,45 +12,7 @@
 }
 
 img.logo-text {
-  display: inline-flex;
-  gap: -5px;
   box-sizing: border-box;
   margin-top: 64px;
   margin-left: 18px;
-}
-
-h1.header-title {
-  position: relative; /* Enables z-index */
-  z-index: 2;
-  height: 74px;
-  align-self: stretch;
-  color: #543855;
-  font-size: 21px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 32px; /* 152.381% */
-  letter-spacing: -0.3px;
-  margin: 0 29px 0 24px;
-}
-
-img.yoga-image {
-  position: absolute;
-  z-index: 1; /* Lower than the h1 */
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Center the image */
-  width: 268px;
-  height: 256px;
-}
-
-.signup-smal-button {
-  position: absolute;
-  bottom: 10px;
-  right: 10px;
-  width: 75px;
-  height: 76px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 3;
 }

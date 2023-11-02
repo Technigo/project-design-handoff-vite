@@ -1,0 +1,49 @@
+.hero-container {
+  font-family: Poppins;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1.hero-title {
+  z-index: 2;
+  width: 337px;
+  height: 74px;
+  color: #543855;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.3px;
+  margin: 0 29px 0 24px;
+}
+
+.image-container {
+  position: relative;
+}
+
+img.yoga-image {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 268px;
+  height: 256px;
+  margin-top: 90px;
+}
+
+.signup-smal-button {
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  width: 75px;
+  height: 76px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}

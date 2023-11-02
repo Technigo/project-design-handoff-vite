@@ -1,3 +1,9 @@
-import { useTranslation } from "react-i18next";
+import { Header } from "../../components/Header/Header";
 
-export const About = () => {};
+export const About = () => {
+  return (
+    <>
+      <Header />
+    </>
+  );
+};

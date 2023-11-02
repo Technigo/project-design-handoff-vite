@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Welcome.css";
+import angleImage from "../../assets/angle-right-solid.svg";
 
 export const Welcome = () => {
   return (
@@ -14,7 +15,10 @@ export const Welcome = () => {
         nature-based meditation, and themed retreats.
       </h3>
       <Link to="/about">
-        <button>About Us</button>
+        <button className="about-btn">
+          About us
+          <img src={angleImage} alt="About us icon" className="btn-icon" />
+        </button>
       </Link>
     </div>
   );
