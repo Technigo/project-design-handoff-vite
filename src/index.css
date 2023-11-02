@@ -72,11 +72,14 @@ body{
   cursor: pointer;
   border-radius: 200px;
   color: #F4F4EB;
-  margin-bottom: 16px;
+  margin-bottom: 21px;
   font-weight: 700;
-  line-height: 21px;
   text-align: center;
+  min-width: 117px;
+  height: 42px;
+
 }
+
 
 .desc-hero{
   color: #F4F4EB;
@@ -167,4 +170,117 @@ text-align: left;
 }
 .medias li a{
   font-size: 30px;
+}
+.contact h3{
+
+font-size: 24px;
+font-weight: 500;
+margin-bottom: 31px;
+letter-spacing: 0em;
+
+
+}
+.contact span{
+  font-size: 24px;
+}
+.contact p{
+
+font-size: 14px;
+font-weight: 500;
+margin-bottom: 18px;
+letter-spacing: 0em;
+
+}
+label{
+
+font-size: 14px;
+font-weight: 500;
+margin: 20px 0;
+letter-spacing: 0em;
+color: #0F0F11;
+
+}
+.contact{
+  text-align: center;
+  margin: 60px 0;
+  color: #0F0F11;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+input{
+outline: none;
+  width: 100%;
+border-left: none;
+border-top: none;
+border-right:none ;
+padding: 10px;
+}
+.submit-btn{
+
+font-size: 14px;
+font-weight: 700;
+line-height: 21px;
+letter-spacing: -0.3199999928474426px;
+text-align: center;
+padding: 16px, 14px, 16px, 14px;
+border-radius: 200px;
+margin: 8px 0 50px 0;
+color: #F4F4EB;
+background-color: #02880B;
+border: none;
+cursor: pointer;
+height: 42px;
+
+}
+button:hover{
+  background-color: #FFC255;
+  color: #0F0F11;
+}
+button{
+  transition: all .3s;
+}
+.how{
+  margin: 80px 0;
+ padding: 10px;
+}
+.how h1 , .how h3{
+
+font-size: 24px;
+font-weight: 500;
+margin: 29px 0;
+letter-spacing: -0.3199999928474426px;
+text-align: left;
+
+}
+.how img{
+  width: 100%;
+}
+.card{
+  margin-bottom: 20px;
+
+}
+.back span{
+  min-width: 147px;
+  height: 24px;
+   top: 12px;
+   background-color: #FFC255;
+   position: absolute;
+   z-index: -1;
+
+}
+.back{
+  position: relative;
+}
+.how p{
+
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: -0.3199999928474426px;
+text-align: left;
+margin-bottom: 20px;
+
 }
