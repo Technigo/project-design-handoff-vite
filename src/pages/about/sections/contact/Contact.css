@@ -1,6 +1,5 @@
 #contact {
   background-color: var(--marine);
-  text-align: center;
 }
 
 form {
@@ -9,14 +8,43 @@ form {
   font-family: var(--jetbrains-mono);
   display: flex;
   width: auto;
-  height: 17.5625rem;
-  padding: 0rem 1rem 1rem 2rem;
+  height: 17rem;
+  padding: 0 2rem 1rem;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   gap: 1.5rem;
-  flex-shrink: 0;
   margin: 2rem 0;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+label {
+  margin-left: 0.5rem;
+}
+
+.input-box {
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 200;
+  padding: 0 0 1rem;
+  border: none;
+  border-bottom: 1.5px dashed #fff;
+  width: 100%;
+  background-color: transparent;
+}
+
+.input-box:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: #fff;
 }
 
 .form-btn {

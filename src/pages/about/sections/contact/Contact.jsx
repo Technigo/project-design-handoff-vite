@@ -12,10 +12,14 @@ export const Contact = () => {
           and then. But a good music list is never a bad energy?!
         </p>
         <form action="">
-          <label htmlFor="">Name:</label>
-          <input type="text" placeholder="your name" />
-          <label htmlFor="">Email:</label>
-          <input type="text" placeholder="your email" />
+          <div className="input-wrapper">
+            <label htmlFor="">Name:</label>
+            <input class="input-box" type="text" placeholder="your name" />
+          </div>
+          <div className="input-wrapper">
+            <label htmlFor="">Email:</label>
+            <input class="input-box" type="text" placeholder="your email" />
+          </div>
         </form>
         <button className="form-btn">Good music, yes please!</button>
       </div>
