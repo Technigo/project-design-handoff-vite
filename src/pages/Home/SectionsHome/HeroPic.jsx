@@ -9,3 +9,5 @@ export const HeroPic = () => {
       </div>
   );
 };
+
+//Används ej längre

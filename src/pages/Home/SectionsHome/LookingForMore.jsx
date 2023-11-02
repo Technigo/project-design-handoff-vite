@@ -6,7 +6,6 @@ background-color: #0021F5;
 color: white;
 display: flex;
 flex-direction: column;
-width: 390px;
 height: 232px;
 padding: 24px 10px;
 justify-content: center;

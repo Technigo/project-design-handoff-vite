@@ -3,16 +3,20 @@ import { Button } from "../../../reusableComp/Button";
 import { MainHeading } from "../../../reusableComp/MainHeading";
 import { NormalText } from "../../../reusableComp/NormalText";
 import styled from "styled-components";
+import backgroundImage from "../../../../public/images/womanwinking.webp";
 
 const HeroSection = styled.section`
-background-color: #141832;
+background-image: url(${backgroundImage});
+background-size: cover; /* Adjust the size as needed */
+background-position: center; /* Adjust the position as needed */
+background-repeat: no-repeat; /* Prevent the background from repeating */
 color: white;
 display: flex;
-width: 390px;
-height: 395px;
+height: 100vh;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-end;
 align-items: center;
+padding-bottom: 15px; 
 gap: 16px;
 flex-shrink: 0
 `;
@@ -25,7 +29,6 @@ export const Hero = () => {
     return (
         <>
         <HeroSection>
-
         <MainHeading text={"Sat nam, hi!"} />
         <NormalText text={heroNormalText} />
         <Link to="/about">

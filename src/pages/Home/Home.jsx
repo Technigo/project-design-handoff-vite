@@ -19,7 +19,6 @@ export const Home = () => {
         <>
        {/* LottieComponent */}
         <Navbar />
-        <HeroPic />
         <Hero />
         <LookingForMore />
         <BlackAndWhiteImg />
