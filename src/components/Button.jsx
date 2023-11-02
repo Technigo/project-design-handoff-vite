@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
+import "./button.css"
+
 export const Button = ({ text }) => {
     return(
-        <div>{text}</div>
+        <a href="" className="a-button">{text}</a>
     )
 }
