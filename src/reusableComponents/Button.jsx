@@ -1,4 +1,3 @@
-
 export const Button = ({ label, path, className, imageSrc, imgClass }) => {
   const handleClick = () => {
     // Perform redirection upon button click
@@ -8,9 +7,10 @@ export const Button = ({ label, path, className, imageSrc, imgClass }) => {
   return (
     <button className={className} onClick={handleClick}>
       <div className="button-content">
-        <img src={imageSrc} alt={label} className={imgClass} />
+      {/* If imageSrc exists, renders the image */}
+        {imageSrc && <img src={imageSrc} alt={label} className={imgClass} />}  
         <span>{label}</span>
       </div>
-  </button>
+    </button>
   );
 };

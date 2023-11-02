@@ -1,6 +1,7 @@
 import styled from "styled-components"
 import { Description } from "../../reusableComponents/Description"
 import { Button } from "../../reusableComponents/Button"
+import { Link } from "react-router-dom";
 
 const ContactDescription = styled(Description)`
   display: grid;
@@ -11,6 +12,15 @@ const ContactDescription = styled(Description)`
 `
 const ContactButton = styled(Button)`
 background-color: var(--red-color);
+display: block;
+margin: 0 auto;
+color: #FFF;
+text-align: center;
+font-family: var(--heading-font-family);
+font-size: 32px;
+font-style: normal;
+font-weight: 400;
+line-height: 160.5%; /* 51.36px */
 `
 
 export const Contact = () => {
@@ -20,7 +30,9 @@ export const Contact = () => {
 
   return (
     <>
-    <ContactButton label="CONTACT US"/>
+    <Link to="/contact-form">
+  <ContactButton label="CONTACT US" />
+</Link>
       <ContactDescription text={ContactText} />
       </>
   )
