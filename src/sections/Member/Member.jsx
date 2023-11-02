@@ -17,7 +17,6 @@ export const Member = () => {
           buttonText=""
           url="https://example.com"
           icon={button}
-          //   icon="/src/assets/Button.svg"
           hoverIcon={buttonHover}
           alt="Button Icon"
         />
