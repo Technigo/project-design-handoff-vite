@@ -1,13 +1,15 @@
 .hero-section {
+    position: relative;
     background-color: var(--purplebright);
-    padding: 1.5rem; 
+    padding:  7rem 1.5rem;
+    
 }
 
 .hero-content-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-    padding: 3rem 0 2.5rem; 
+    padding: 2rem 0 2.5rem; 
 }
 
 .hero-content-wrapper h3 {

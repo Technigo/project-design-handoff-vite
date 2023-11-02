@@ -1,6 +1,6 @@
 import "./Footer.css"
 import map from "../../public/assets/map.png"
-import mapPin from "../../public/assets/mapPin.png"
+import mapPin from "../../public/assets/mapPin.svg"
 
 export const Footer = () => {
   return (

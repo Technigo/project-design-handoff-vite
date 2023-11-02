@@ -17,7 +17,14 @@
 
 .kind-image {
     border-radius: 50%;
-    width: 20rem;
-    height: 20rem;
-    object-fit: cover; 
+    width: 15rem;
+    height: 15rem;
+    background-size: cover; 
+}
+
+@media (min-width: 425px) {
+    .kind-image {
+        width: 20rem;
+        height: 20rem;
+    }
 }

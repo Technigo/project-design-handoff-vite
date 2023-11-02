@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import heroimage from "../../../public/hero-image.png";
 import { Button } from "../Button/Button";
 import "./Hero.css";
 
@@ -12,7 +11,7 @@ export const Hero = () => {
             <div className="hero-content-wrapper">
                 <img
                     className="oval-image"
-                    src={heroimage}
+                    src={t("home.hero.heroImage")}
                     alt="Picture of yoga mat being rolled out."
                 />
                 <h1>{t("home.hero.heading")}</h1>

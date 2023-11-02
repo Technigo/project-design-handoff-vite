@@ -35,7 +35,8 @@ img {
 
 .oval-image {
   border-radius: 50%;
-  height: 15rem;
+  height: 10%;
+  width: 100%
 }
 
 

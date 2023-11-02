@@ -29,6 +29,7 @@
     },
     "home": {
         "hero": {
+            "heroImage": "./hero-image.png",
             "heading": "Yoga and meditation for women",
             "subHeading": "We help you stay vigorous in mind & body during menopause",
             "buttons": {
@@ -36,13 +37,25 @@
                 "member": "Become a member"
             }
         },
-        "kindwords": {
+        "kindwords": 
+        {
             "heading": "What our clients say",
             "subHeading": "Some kind words",
-            "reviews": {
-                "review1": "I enjoy every moment at yoga balance so much. It makes me feel younger and more living. I highly recommend this for every women in menopause!",
-                "review2": "I can not live without my yoga classes at YogaBalance, it helps me find peace in mind and body."
-            }
+            "reviews": 
+            [
+                {
+                    "name": "Close-up picture of a happy client.", 
+                    "id": "01",
+                    "imageUrl": "https://images.unsplash.com/photo-1526080652727-5b77f74eacd2?auto=format&fit=crop&q=80&w=876&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                    "text": "I enjoy every moment at yoga balance so much. It makes me feel younger and more living. I highly recomment this for every woman in menopause!"
+                },
+                {
+                    "name": "Picture of a happy client, drinking form a cup.",
+                    "id": "02",
+                    "imageUrl": "https://plus.unsplash.com/premium_photo-1683133252845-5a40baada008?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+                    "text": "I can not live without my yoga classes at YogaBalance, it helps me find peace in mind and body."
+                }
+            ]
         },
         "courses": {
             "heading": "Courses coming up",

@@ -1,17 +1,30 @@
-import kindness from "../../data/reviewdata.json";
-import "./KindWords.css"
+import { useTranslation } from "react-i18next";
+
+import "./KindWords.css";
 
 export const KindCard = () => {
-  return (
-    <>
-    {kindness.map((review) => {
+    const { t, ready } = useTranslation();
+
+    const reviewArray = t("home.kindwords.reviews", {returnObjects: true})
+
+    if (!ready) return "loading translations...";
+
+    return (
+        <>
+            {reviewArray.map((review) => {
                 return (
                     <div className="kind-card" key={review.id}>
-                        <img className="kind-image" src={review.imageUrl} alt={review.name} />
+                        <div
+                            className="kind-image"
+                            style={{
+                                backgroundImage: `url(${review.imageUrl})`,
+                            }}
+                        ></div>
                         <p>"{review.text}"</p>
                     </div>
                 );
             })}
-    </>
-  )
-}
+        </>
+    );
+};
+

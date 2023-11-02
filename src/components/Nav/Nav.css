@@ -1,23 +1,42 @@
 nav {
-    height: 10rem; 
-    background-color: var(--black);
-    padding: 0.5rem 1rem;
+    background-image: url(../../../public/assets/navElement.svg);
+    z-index: 1000;
+    background-color: var(--purplebright);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 8rem; 
+}
+
+.nav-content-wrapper {
+    padding: 1.5rem 1.5rem 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo-img {
-    height: 4.5rem;
+    height: 3rem;
 }
 
 .nav-logotype {
     color: var(--yellow);
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+}
+
+.nav-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
 }
 
 .menu-icon {
     stroke: var(--yellow);
+    height: 1.7rem;
+    width: 1.7rem;
+}
+.search-icon {
     height: 1.5rem;
     width: 1.5rem;
 }

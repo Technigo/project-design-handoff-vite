@@ -4,7 +4,7 @@ import "./KindWords.css"
 
 export const KindWords = () => {
 
-    const { t } = useTranslation();
+    const { t, ready } = useTranslation();
 
     return (
         <section className="kindwords-section">

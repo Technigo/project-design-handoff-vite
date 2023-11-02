@@ -1,18 +1,23 @@
 import { NavLink } from "react-router-dom";
+import navElement from "../../../public/assets/navElement.svg";
 import { FiMenu } from "react-icons/fi";
-import "./Nav.css"
+import searchIcon from "../../../public/assets/searchIcon.svg";
+import "./Nav.css";
 import { styled } from "styled-components";
 
 import logo from "../../../public/Logotype.svg";
 
-
 export const Nav = () => {
     return (
         <nav>
-                <img className="logo-img " src={logo} alt="Logo" />
+            <div className="nav-content-wrapper">
+                <img className="logo-img" src={logo} alt="Logo" />
                 <p className="nav-logotype">YogaBalance</p>
-                {/* <img src="" alt="Search-icon" /> */}
-                <FiMenu className="menu-icon" />
+                <div className="nav-btn-container">
+                    <img src={searchIcon} className="search-icon" />
+                    <FiMenu className="menu-icon" />
+                </div>
+            </div>
         </nav>
     );
 };
