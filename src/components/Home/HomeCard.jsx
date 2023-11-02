@@ -3,10 +3,8 @@ import "../css_card_styling/card.css"
 
 export const HomeCard = ({ articleImage, imageAltText, instructorCardText, className }) => {
   return (
-    <div className="home-card card">
-      <div className="image-wrapper">
+    <>
         <img src={articleImage} alt={imageAltText} className="home-card-image curved-image" />
-      </div>
       <div className={`card-text ${className}`}>
         <PText
           className="paragraph-text"
@@ -17,6 +15,6 @@ export const HomeCard = ({ articleImage, imageAltText, instructorCardText, class
           className="paragraph-text right-align-text"
         />
       </div>
-    </div>
+    </>
   )
 }

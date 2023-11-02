@@ -1,7 +1,7 @@
-import imageAbout1 from "../../assets/images_mobile/imageAbout1.svg";
-import imageAbout2 from "../../assets/images_mobile/imageAbout2.svg";
-import imageAbout3 from "../../assets/images_mobile/imageAbout3.svg";
-import imageAbout4 from "../../assets/images_mobile/imageAbout4.svg";
+import imageAbout1 from "../../assets/images_mobile/imageAbout1.png";
+import imageAbout2 from "../../assets/images_mobile/imageAbout2.png";
+import imageAbout3 from "../../assets/images_mobile/imageAbout3.png";
+import imageAbout4 from "../../assets/images_mobile/imageAbout4.png";
 import "../css_card_styling/card.css"
 import "../../pages/about.css"
 import { H2_Headline } from "../Typography/H2_Headline";
@@ -92,12 +92,12 @@ export const AboutContainer = () => {
     ];
 
     return (
-        <div className="card-page-container">
+        <section className="card-page-container">
             <H2_Headline h2_headline={h2_headline_1} />
             <div className="about-card-container">
                 <div className="card-container">
                     {about_studio_info.map((about_studio) => (
-                        <div className="about-card-wrapper" key={about_studio.id}>
+                        <div className="about-card card" key={about_studio.id}>
                             <AboutCard
                                 headline={about_studio.headline}
                                 articleImage={about_studio.image}
@@ -125,6 +125,6 @@ export const AboutContainer = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

@@ -7,10 +7,13 @@
     padding-bottom: 46px;
 }
 
+.card {
+    width: 345px;
+}
 
-.home-card .image-wrapper {
-    position: relative;
-
+.home-card img,
+.about-card img {
+    width: 345px;
 }
 
 .card-container {
@@ -25,11 +28,6 @@
     gap: 60px;
 }
 
-/* cards */
-
-.card {
-    width: 345px;
-}
 
 
 .card-text {

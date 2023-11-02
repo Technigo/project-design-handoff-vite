@@ -1,7 +1,7 @@
-import imageHome1 from "../../assets/images_mobile/imageHome1.svg";
-import imageHome2 from "../../assets/images_mobile/imageHome2.svg";
-import imageHome3 from "../../assets/images_mobile/imageHome3.svg";
-import imageHome4 from "../../assets/images_mobile/imageHome4.svg";
+import imageHome1 from "../../assets/images_mobile/imageHome1.png";
+import imageHome2 from "../../assets/images_mobile/imageHome2.png";
+import imageHome3 from "../../assets/images_mobile/imageHome3.png";
+import imageHome4 from "../../assets/images_mobile/imageHome4.png";
 import "../css_card_styling/card.css"
 import { H2_Headline } from "../Typography/H2_Headline";
 import { HomeCard } from "./HomeCard";
@@ -57,12 +57,12 @@ export const HomeContainer = () => {
 
 
     return (
-        <div className="card-page-container">
+        <section className="card-page-container">
             <H2_Headline h2_headline={h2_headline} />
             <div className="card-container">
                 {instructor_home_info.map((instructor_home) => (
                     <div
-                        className="home-card-wrapper"
+                        className="home-card card"
                         key={instructor_home.id}
                     >
                         <HomeCard
@@ -75,6 +75,6 @@ export const HomeContainer = () => {
                 ))
                 }
             </div>
-        </div>
+        </section>
     )
 }

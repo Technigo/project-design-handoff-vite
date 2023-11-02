@@ -1,3 +1,4 @@
+
 import "./freeTrialBtn.css"
 import { PText } from "../Typography/PText"
 
@@ -9,7 +10,7 @@ export const FreeTrialBtn = () => {
 
     return (
         <div>
-            <button className="trial_btn">
+            <button className="trial-btn">
                 <PText
                     className="trial_btn_text brown-text"
                     text={text_button}
