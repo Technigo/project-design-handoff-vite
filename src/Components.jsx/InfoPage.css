@@ -1,0 +1,30 @@
+.info-page {
+  background: url("./public/Images/Vector-1.png");
+  margin-top: 200px;
+  width: 1280px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Dela upp i 2 kolumner */
+  grid-gap: 20px; /* Avstånd mellan grid-objekt */
+}
+
+.grid-item {
+  /* Styling för varje grid-objekt, du kan anpassa det efter dina behov */
+  padding: 30px;
+
+  text-align: center;
+  width: 300px;
+}
+
+.breakfast {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item img {
+  width: 400px;
+  height: 260px;
+}
