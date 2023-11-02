@@ -22,6 +22,32 @@ body {
     z-index: 999;
 }
 
+.navBar-list {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: Bold;
+    color: #38302A;
+    z-index: 1;
+    
+}
+
+.navBar_1 {
+    margin-right: 4em;
+}
+
+
+.navBar_2 {
+    margin-right: 4em;
+}
+
+.navBar_3 {
+    margin-right: 4em;
+}
+
+.navBar_4 {
+    margin-right: 4em;
+}
+
 .aboutus-image {
     
     width: 70%;
