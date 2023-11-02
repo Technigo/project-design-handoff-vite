@@ -15,6 +15,9 @@ export const Footer = () => {
   const [youtubeImage, setYoutubeImage] = useState(youtube);
   const [facebookImage, setFacebookImage] = useState(facebook);
   const [insImage, setInsImage] = useState(ins);
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -28,14 +31,14 @@ export const Footer = () => {
     imageState(originalImage);
   };
   const handleLogoClick = () => {
-    // Scroll to the top of the page
+    // Scroll to the top of the page, as the requirement of the UX
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
   return (
     <section className="bg-lime-green  px-5 ">
       <div className="  md:text-xl lg:w-[40%] lg:ml-[55%] ">
         <div className="font-bold flex flex-row gap-x-10 py-6">
-          <Link to="/about">
+          <Link to="/about" onClick={scrollToTop}>
             <p className="hover:underline hover:text-persian-blue">
               {t("footer.about")}
             </p>
