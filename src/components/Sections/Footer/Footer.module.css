@@ -14,3 +14,8 @@
   margin: 5px;
   padding: 10px;
 }
+
+.logo {
+  float: left;
+  max-height: 40px;
+}

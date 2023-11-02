@@ -8,7 +8,7 @@ export const NavBar = () => {
           <a href="/">
             <img
               className={styles.logo}
-              src="/assets/logo.png"
+              src="/assets/logo-white.png"
               alt="Sheness studio logo"
             />
           </a>

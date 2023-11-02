@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className={styles.footerContainer}>
           <div className={styles.footerBoxLeft}>
             <div className={styles.footerBoxLeftRow}>
-              <img src="" />
+              <img className={styles.logo} src="/assets/logo-blue.png" />
             </div>
             <div className={styles.footerBoxLeftRow}>
               LANGUAGE FAQ TERMS AND CONDITIONS CONTACT US
