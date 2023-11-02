@@ -24,3 +24,20 @@
     position: absolute;
     margin-bottom: 5%;
 }
+
+/* ----- Making the content responsive ----- */
+/* Tablet*/
+@media (min-width: 667px) {
+    .conceptcard-scroll img {
+        max-width: 60%;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+    .conceptcard-scroll img {
+        max-width: 60%;
+        border-radius: 5%;
+        padding: 1%;
+    }
+}
