@@ -1,3 +1,5 @@
+import "../components/component.css";
+
 export const Profile = ({ url }) => {
   return (
     <>

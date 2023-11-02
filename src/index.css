@@ -4,6 +4,7 @@
 
 body {
   margin: 0 1.5em 0 1.5em;
+  background-image: url("../assets/background.png");
   font-family: Open Sans;
 }
 
@@ -12,7 +13,7 @@ h1 {
   text-align: center;
 }
 
-landing {
+.landing {
   display: block;
   align-items: center;
 }
