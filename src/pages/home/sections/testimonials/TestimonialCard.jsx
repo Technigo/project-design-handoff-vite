@@ -1,6 +1,5 @@
 import data from "../../../../json/testimonials.json";
 import "./Testimonials.css";
-import { Slider } from "../../../../components/Slider";
 
 export const TestimonialCard = () => {
   return (

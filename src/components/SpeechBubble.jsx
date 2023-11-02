@@ -24,7 +24,6 @@ export const SpeechBubble = () => {
     font-size: 3rem;
     color: var(--cobalt);
     text-transform: uppercase;
-    text-shadow: 2px 2px 2px var(--popping-orange);
   `;
 
   return (
