@@ -45,12 +45,12 @@
 }
 
 .flag-icon:hover {
-    opacity: 0.8;           
+    opacity: 0.8;  
+    cursor: pointer;         
 }
 
 .footer-container {
     display: flex;
     align-items: center;
     justify-content: space-between; 
-   
 }

@@ -1,5 +1,6 @@
 import { AboutUs } from './components/AboutUs/AboutUs';
 import { AboutUsPage } from './components/AboutUsPage/AboutUsPage';
+import { useEffect } from 'react';  
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import { PlayParkour } from './components/PlayParkour/PlayParkour';
@@ -8,11 +9,17 @@ import { HowToPlayParkour } from './components/HowToPlayParkour/HowToPlayParkour
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './Translate/i18next';
 
+
 export const App = () => {
+
+  
+  
+
   return (
     <Router>
     <div>
       <Header />
+      
       <Routes>
         <Route path="/" element={
           <>
