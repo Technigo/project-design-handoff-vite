@@ -4,6 +4,7 @@ import { Header } from "./components/Header/Header";
 import { HeroText } from "./components/MainInfo/HeroText";
 import { Mantra } from "./components/MainInfo/Mantra";
 import { Classes } from "./components/Classes/Classes";
+import { ClassesText } from "./components/Classes/ClassesText";
 
 export const App = () => {
   return (
@@ -11,6 +12,7 @@ export const App = () => {
       <Header />
       <HeroText />
       <Mantra />
+      <ClassesText />
       <Classes />
       <SignUpForm />
       <Footer />
