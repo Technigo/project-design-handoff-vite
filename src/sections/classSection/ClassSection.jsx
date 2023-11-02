@@ -8,8 +8,8 @@ export const ClassSection = () => {
   const { t } = useTranslation();
   return (
     <div className="classection-container">
-      <h2>{t("classes")}</h2>
-      <p>{t("classRange")}</p>
+      <h2 className="classes-title">{t("classes")}</h2>
+      <p className="class-info">{t("classRange")}</p>
 
       <div className="yogaTypeBtns">
         <button className="bookClassBtn">{t("bookClassBtn")}</button>

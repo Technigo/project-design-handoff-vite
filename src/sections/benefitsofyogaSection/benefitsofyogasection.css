@@ -2,10 +2,22 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  gap: 32px;
+  padding: 64px 0;
+  background-color: var(--offwhite);
+}
+
+.benefits-title,
+.benefits-container p {
+  padding: 0 16px;
+}
+
+.benefitList {
+  padding-left: 32px;
 }
 
 .benefits-wave {
   position: absolute;
   bottom: -30px;
-  z-index: 3;
+  z-index: 20;
 }

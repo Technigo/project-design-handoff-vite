@@ -1,39 +1,54 @@
+.intro-container {
+  background-color: var(--greyish);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  /* padding: 32px 16px 128px 16px; */
+}
+
 .yoga-title {
   font-family: var(--font-family-h1-h2);
   font-size: var(--h1-mobile);
   color: var(--dark);
   font-weight: 500;
+  margin: 0 16px;
 }
 
-h2 {
+.dive-in {
   font-family: var(--font-family-ingress-body);
   font-size: var(--body-tablet-desktop);
   font-weight: 500;
   line-height: 102%; /* 24.48px */
   letter-spacing: -0.528px;
   color: var(--dark);
+  text-align: left;
 }
 
-.intro-container {
-  background-color: var(--greyish);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
 .title-and-image {
   display: flex;
-  background-image: url(../../assets/wave-5.svg);
+  background-image: url(../../assets/wave-4mini.svg);
   background-repeat: no-repeat;
-  background-position-y: center;
+  background-position-y: 30%;
   justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.title-and-image img {
+  padding-right: 16px;
 }
 
 .yoga-for-everyone {
   color: var(--dark);
-  font-family: var(--body-tablet-desktop);
-  font-size: var(--h3-mobile);
+  font-family: var(--font-family-ingress-body);
+  font-size: var(--ingress-mobile);
   line-height: 131%; /* 26.2px */
   letter-spacing: -0.44px;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 40px;
 }
 
 .lets-go {
@@ -53,10 +68,17 @@ h2 {
   justify-content: center;
   align-items: center;
   z-index: 5;
+  align-self: center;
+  margin-bottom: 160px;
 }
 
 .wave7 {
   z-index: 2;
   position: absolute;
   bottom: -35px;
+}
+
+.wave4 {
+  z-index: 1;
+  position: absolute;
 }

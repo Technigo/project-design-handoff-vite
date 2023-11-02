@@ -10,8 +10,8 @@
 
 .back-to-top {
   background-color: #4c3831;
-  height: 96px;
-  width: 96px;
+  min-height: 96px;
+  min-width: 96px;
   border: none;
   border-radius: 50%;
   background-repeat: none;

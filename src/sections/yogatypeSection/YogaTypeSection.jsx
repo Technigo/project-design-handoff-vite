@@ -7,9 +7,11 @@ export const YogaTypeSection = () => {
   return (
     <div className="yoga-type-container">
       <h2 className="yoga-type-title">{t("yogaTypeTitle")}</h2>
-      <p>{t("yogaTypeSubtitle")}</p>
-      <p>{t("yogaTypeInfo")}</p>
-      <div className="typeBtns">
+      <div className="yoga-type-info">
+        <p>{t("yogaTypeSubtitle")}</p>
+        <p>{t("yogaTypeInfo")}</p>
+      </div>
+      <div className="yogaTypeBtns">
         <button className="findYogaTypeBtn">{t("yogaTypeBtn")}</button>
         <button className="bookClassBtn">{t("bookClassBtn")}</button>
       </div>

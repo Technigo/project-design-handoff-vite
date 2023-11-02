@@ -1,5 +1,51 @@
 .classection-container {
   background-color: var(--offwhite);
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.classes-title {
+  font-family: var(--font-family-h1-h2);
+  font-weight: 500;
+  font-size: var(--h2-mobile);
+  justify-self: center;
+  color: var(--dark);
+  text-align: center;
+}
+
+.class-info {
+  padding: 0 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.352px;
+  font-family: var(--font-family-ingress-body);
+  color: var(--dark);
+}
+
+.yogaTypeBtns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.member p {
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: -0.396px;
+  font-family: var(--font-family-ingress-body);
+  font-size: var(--body-mobile);
 }
 
 .imgs {

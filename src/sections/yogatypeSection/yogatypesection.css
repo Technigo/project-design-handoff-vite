@@ -3,9 +3,29 @@
   display: flex;
   flex-direction: column;
   background-color: var(--greyish);
+  padding-top: 90px;
 }
-.yogaTypeBtns {
+
+.yoga-type-title {
+  margin-bottom: 36px;
+  letter-spacing: -0.704px;
+}
+
+.yoga-type-container p {
+  padding: 0 16px;
+}
+
+.yoga-type-info {
   display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.yogaTypeBtns {
+  margin-top: 36px;
+  margin-bottom: 64px;
+  display: flex;
+  gap: 18px;
 }
 
 .yoga-type-wave {
@@ -16,4 +36,7 @@
 
 .image-sun {
   z-index: 1;
+  min-width: 340px;
+  min-height: 340px;
+  margin: 0 25px 0 25px;
 }

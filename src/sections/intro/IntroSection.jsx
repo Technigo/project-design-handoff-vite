@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import wave7 from "../../assets/wave-7.svg";
+import wave4 from "../../assets/wave-4mini.svg";
 import arrowdown from "../../assets/arrowdown.svg";
 import imageDoor from "../../assets/image-door.svg";
 import "./introsection.css";
@@ -9,13 +10,20 @@ export const IntroSection = () => {
 
   return (
     <div className="intro-container">
-      <h2>{t("intro")}</h2>
+      <h2 className="dive-in">{t("intro")}</h2>
       <div className="title-and-image">
         <h1 className="yoga-title">{t("introYoga")}</h1>
         <img src={imageDoor} alt="Image of woman in yoga pose" />
       </div>
+
       <div className="yoga-for-everyone">
-        <p>{t("introSub")}</p>
+        <h3>
+          {t("introSub")}
+          {/* {t("introSub1")}{" "}
+          <div style={{ fontWeight: "bold" }} className="derp">
+            {t("introSub2")}
+          </div> */}
+        </h3>
       </div>
       <button className="lets-go">
         {t("letsGoBtn")}

@@ -24,6 +24,8 @@ const resources = {
       introYoga: "Yoga",
       introSub:
         "At Wave Yoga Studio, we know and believe that yoga is for everyone  🤎",
+      introSub1: "At Wave Yoga Studio, we know and believe that ",
+      introSub2: "yoga is for everyone  🤎",
       classes: "Our classes",
       classRange: `We have a wide range of yoga classes suitable for all levels. 
 

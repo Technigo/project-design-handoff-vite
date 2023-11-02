@@ -10,7 +10,7 @@ export const BenefitsOfYogaSection = () => {
     <div className="benefits-container">
       <h2 className="benefits-title">{t("benefitsOfYogaTitle")}</h2>
       <p>{t("benefitsOfYogaInfo")}</p>
-      <ul>
+      <ul className="benefitList">
         {benefitList.map((benefit, index) => (
           <li key={index}>{benefit}</li>
         ))}
