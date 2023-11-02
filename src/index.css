@@ -22,3 +22,7 @@ nav {
     font-family: 'Gambarino-Regular';
     /* Add any additional styles you want for all h1 elements */
 }
+
+.custom-font {
+    font-family: 'Gambarino-Regular';
+}

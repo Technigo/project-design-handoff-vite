@@ -8,8 +8,8 @@ export const Header = () => {
 
             <div className="mx-8 lg:w-1/2 mx-16 pt-28">
                 <h1 className="text-4xl text-left text-white md:text-6xl">
-                    <span className="inline-block">An elevated gym experience.</span>
-                    <span className="text-amber-400 inline-block"> Everything in one place</span>
+                    <span className="">An elevated gym experience. Everything in  <span className="text-yellow-color inline-block">one place</span></span>
+
                 </h1>
 
                 <h2 className="text-base text-left text-white pt-9 md: text-lg lg:text-2xl">Up to 67 percent of traditional gym memberships go completely unused.</h2>

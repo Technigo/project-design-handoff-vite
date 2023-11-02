@@ -25,16 +25,16 @@ export const SubscribeNow = () => {
     };
 
     return (
-        <div>
+        <div className=''>
             {subscribed ? (
                 <p>Thank you for signing up!</p>
             ) : (
-                <div className='mx-16'>
+                <div className=''>
                     <p>Subscribe to our newsletter</p>
-                    <label className="block mt-4">
+                    <label className="block mt-4 text-white">
                         Email:
                         <input
-                            className={`bg-slate-500 border-b-2 border-black ${!isValidEmail && clickedSubscribe ? 'border-red-500' : ''}`}
+                            className={`bg-footer-color border-b-2 border-white ${!isValidEmail && clickedSubscribe ? 'border-red-500' : ''}`}
                             type="text"
                             name="email"
                             value={email}
@@ -42,7 +42,7 @@ export const SubscribeNow = () => {
                         />
                     </label>
                     {clickedSubscribe && !isValidEmail && <p className="text-red-500">Invalid email</p>}
-                    <button className="bg-white w-44 border-solid border-2 border-black p-2 mb-4 mt-4" onClick={handleSubscribe}>
+                    <button className="hover:shadow-yellow-box bg-white text-black w-44 border-solid border-2 border-black p-2 mb-4 mt-4" onClick={handleSubscribe}>
                         Subscribe
                     </button>
                 </div>

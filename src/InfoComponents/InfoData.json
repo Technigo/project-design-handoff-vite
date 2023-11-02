@@ -8,7 +8,8 @@
         "content3": "Britons waste more than £4 billion a year on unused gym memberships"
     },
     {
-        "title": "So much money is being tossed away for nothing. We want to change it.",
-        "buttonText": "About us"
+        "title": "So much money is being tossed away for nothing. We want to",
+        "yellowPart": "change it.",
+        "buttonText": "Read more about us"
     }
 ]

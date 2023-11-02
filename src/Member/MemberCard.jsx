@@ -1,5 +1,3 @@
-
-
 export const MemberCard = ({ cardData }) => {
     const { title, subtitle, icon, content1, content2, content3, content4, content5, buttonText } = cardData;
 
@@ -15,7 +13,7 @@ export const MemberCard = ({ cardData }) => {
                 {content4 && <p>{content4}</p>}
                 {content5 && <p>{content5}</p>}
             </div>
-            <button className="bg-white border-solid border-2 border-black p-2">{buttonText}</button>
+            <button className="hover:shadow-yellow-box bg-white border-solid border-2 border-black p-2">{buttonText}</button>
         </div>
     );
 };
