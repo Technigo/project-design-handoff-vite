@@ -1,9 +1,11 @@
-.trial_btn_text {
+.text_btn {
     padding: 12px 24px;
+    white-space: nowrap;
 }
 
 button {
     height: 44px;
+    width: 158px;
     border-radius: 20px;
     border: 2px solid #71A59C;
     background: #FFF;
@@ -16,7 +18,7 @@ button:hover {
     transition: background 0.3s ease-in-out;
 }
 
-.trial_btn_text:hover {
+.text_btn:hover {
     color: white;
     transition: color 0.3s ease-in-out;
 }

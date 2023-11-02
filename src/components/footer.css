@@ -5,6 +5,7 @@ footer {
 
 .footer-wrapper {
     margin: 0 24px;
+    padding-top: 12px;
     display: flex;
     flex-direction: column;
     gap: 10px;

@@ -1,6 +1,6 @@
 
-import "./freeTrialBtn.css"
-import { PText } from "../Typography/PText"
+import "./button_styling.css";
+import { PText } from "../Typography/PText";
 
 
 
@@ -12,7 +12,7 @@ export const FreeTrialBtn = () => {
         <>
             <button className="trial-btn">
                 <PText
-                    className="trial_btn_text brown-text"
+                    className="text_btn brown-text"
                     text={text_button}
                 />
             </button>
