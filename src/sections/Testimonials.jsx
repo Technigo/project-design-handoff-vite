@@ -3,7 +3,7 @@ import "./testimonials.css"
 
 export const Testimonials = () => {
     return (
-        <div className="red grid-parent">
+        <div className="red red-testimonial grid-parent">
             <div className="testimonials section">
                 <img className="testimonial-pic" src={testimonial1} />
                 <div className="testimonial-text">

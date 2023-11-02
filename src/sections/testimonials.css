@@ -1,6 +1,9 @@
 .red {
     background-color: var(--secondary-color);
     position: relative;
+}
+
+.red-testimonial {
     height: 240px;
 }
 
