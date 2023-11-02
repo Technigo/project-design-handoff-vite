@@ -1,0 +1,177 @@
+{
+    "navbar": {
+        "classes": "Classes", 
+        "courses": "Courses", 
+        "events": "Events", 
+        "about": "About"
+    }, 
+
+    "form": {
+        "heading": "Want a customised yoga plan?", 
+        "text": "Get a yoga plan tailored for your pregnancy needs", 
+        "name": "name", 
+        "email-address": "email address", 
+        "button": "Send"
+    },
+
+    "footer": {
+        "classes": "Yoga classes", 
+        "events": "Events", 
+        "learn": "Learn", 
+        "contact": "Contact", 
+        "about": "About"
+    }, 
+
+    "homePage": {
+        "hero": {
+            "heading": "Elevate your pregnancy with yoga", 
+            "text": "Allow your body to be the best it can be for the growing life within it to flourish", 
+            "bookButton": "Book", 
+            "exploreButton": "Explore"
+        }, 
+
+        "scheduleInfo": {
+            "type": "SCHEDULE", 
+            "date": "Today, Wednesday 1 Nov", 
+            "link": "See weekly schedule" 
+        },
+        
+        "schedule": [
+            {
+                "id": 1, 
+                "time": "17.00", 
+                "length": "50 min", 
+                "class": "PRENATAL YOGA", 
+                "teacher": "Pernille Andersen", 
+                "book": "Book"
+            }, 
+
+            {
+                "id": 2, 
+                "time": "17.00", 
+                "length": "50 min", 
+                "class": "PRENATAL YOGA", 
+                "teacher": "Pernille Andersen", 
+                "book": "Book"
+            },
+
+            {
+                "id": 3, 
+                "time": "17.00", 
+                "length": "50 min", 
+                "class": "PRENATAL YOGA", 
+                "teacher": "Pernille Andersen", 
+                "book": "Book"
+            },
+
+            {
+                "id": 4, 
+                "time": "17.00", 
+                "length": "50 min", 
+                "class": "PRENATAL YOGA", 
+                "teacher": "Pernille Andersen", 
+                "book": "Book"
+            }
+
+         ], 
+
+        "information": [
+             {
+                "id": 1, 
+                "type": "YOGA CLASSES", 
+                "heading": "Adapted, strengthening and safe yoga practice", 
+                "bodyText": "Live through your pregnancy to the fullest, through adapted, strengthening and safe yoga practice.", 
+                "background": "linear-gradient(180deg, #BB3908 0%, #220901 100%)"
+            }, 
+
+             {
+                "id": 2, 
+                "type": "COURSES", 
+                "heading": "Movement, meditation and breath work courses", 
+                "bodyText": "Live through your pregnancy to the fullest, through adapted, strengthening and safe yoga practice.", 
+                "background": "linear-gradient(180deg, #941B0C 0%, #220901 100%)"
+            }, 
+        
+             {
+                "id": 3, 
+                "type": "EVENTS", 
+                "heading": "Get inspired at events together with likeminded women", 
+                "bodyText": "Live through your pregnancy to the fullest, through adapted, strengthening and safe yoga practice.", 
+                "background": "linear-gradient(180deg, #621708 0%, #220901 100%)"
+            }
+        ], 
+
+        "activities": [
+             {  
+                "id": 1, 
+                "header": "Breath work course", 
+                "bodyText": "Learn and practice to master your own body through breathwork", 
+                "backgroundImg": "/images/events/img-event-1.jpeg", 
+                "alt": "Pregnant yoga practicing yoga on beach"
+              }, 
+          
+               {   
+                "id": 2, 
+                "header": "Breath work course", 
+                "bodyText": "Learn and practice to master your own body through breathwork", 
+                "backgroundImg": "/images/events/img-event-2.jpeg", 
+                "alt": "Woman meditating in sunrise"
+              }, 
+          
+               { 
+                "id": 3, 
+                "header": "Breath work course", 
+                "bodyText": "Learn and practice to master your own body through breathwork", 
+                "backgroundImg": "/images/events/img-event-3.jpg", 
+                "alt": "Group of female friends enjoying each others company"
+              }, 
+          
+                {
+                "id": 4, 
+                "header": "Breath work course", 
+                "bodyText": "Learn and practice to master your own body through breathwork", 
+                "backgroundImg": "/images/events/img-event-4.jpeg", 
+                "alt": "Pregnant woman hugging her child on a yoga mat"
+              }
+        ] 
+
+    }, 
+
+    "aboutPage": {
+        "welcome": {
+            "heading": "Welcome to PREGGOYOGASTUDION", 
+            "text1": "Preggoyogastudion is a universe, a home, a safe place for pregnant and birthing women.", 
+            "text2": "We aim to be your go-to partner and guide during your most blessed and glorified yet challenged journey."
+        }, 
+
+        "founder": {
+            "heading": "WORDS FROM OUR FOUNDER", 
+            "text": "“The female body is engineered for pregnancy and birth through its entire hormonal system. It is physically as natural for us as breathing, however our modern world is not supporting it. Scientists know that, but there is simply not any finance in creating an optimal environment. Therefor I founded Preggoyogastudion, to a the home for women seeking to understand their bodies and minds.”"
+        }, 
+
+        "visionCommunity": 
+            [
+             {
+                "id": 1, 
+                "type": "VISION", 
+                "header": "We believe in the power of our female heritage", 
+                "bodyText": "Live through your pregnancy to the fullest, through adapted, strengthening and safe yoga practice. ", 
+                "image": "/images/vision-community/vision-community-img-1.jpeg", 
+                "alt": "Women practicing yoga on beach"
+              }, 
+          
+              {
+                    "id": 2, 
+                  "type": "COMMUNITY", 
+                  "header": "Women supporting women", 
+                  "bodyText": "Live through your pregnancy to the fullest, through adapted, strengthening and safe yoga practice.", 
+                  "image": "/images/vision-community/vision-community-img-2.jpeg", 
+                  "alt": "Silhouette of group of people having a good time in sunset"
+              }
+            ]
+
+        
+    }
+}
+
+

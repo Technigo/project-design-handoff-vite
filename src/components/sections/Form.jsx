@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 import { Button } from "../Button";
 
 const StyledSection = styled.section`
@@ -49,21 +50,22 @@ const StyledInput = styled.input`
 `;
 
 export const Form = () => {
+  const {t} = useTranslation()
   return (
     <>
       <StyledSection>
-        <h2>Want a customised yoga plan?</h2>
-        <p>Get a yoga plan tailored for your pregnancy needs.</p>
+        <h2>{t("form.heading")}</h2>
+        <p>{t("form.text")}</p>
         <StyledForm>
           <div className="input-fields">
-            <StyledInput type="text" id="name" value="name"></StyledInput>
+            <StyledInput type="text" id="name" value={t("form.name")}></StyledInput>
             <StyledInput
               type="text"
               id="email-address"
-              value="email address"
+              value={t("form.email-address")}
             ></StyledInput>
           </div>
-          <Button className="button">Send</Button>
+          <Button className={t("form.button")}>Send</Button>
         </StyledForm>
       </StyledSection>
     </>

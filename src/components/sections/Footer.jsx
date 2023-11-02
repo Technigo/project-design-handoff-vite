@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { SlSocialInstagram } from "react-icons/sl";
 
@@ -50,21 +51,23 @@ const StyledFooter = styled.footer`
 `;
 
 export const Footer = () => {
+  const {t} = useTranslation()
+  
   return (
     <StyledFooter>
       <h3>PreggoYogaStudion</h3>
       <div className="contact-wrapper">
         <div className="links-wrapper">
-          <Link className="link">Yoga classes</Link>
-          <Link className="link">Events</Link>
-          <Link className="link">Learn</Link>
-          <Link className="link">Contact</Link>
+          <Link className="link">{t("footer.classes")}</Link>
+          <Link className="link">{t("footer.events")}</Link>
+          <Link className="link">{t("footer.learn")}</Link>
+          <Link className="link">{t("footer.contact")}</Link>
           <Link
             to="/about"
             className="link"
             aria-label="Click to go to about page"
           >
-            About
+            {t("footer.about")}
           </Link>
         </div>
         <div className="icons-wrapper">

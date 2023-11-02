@@ -1,5 +1,9 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import enTranslation from "../translations/en.json"
+
+console.log(enTranslation.homePage.hero.heading)
 
 const StyledHeader = styled.header`
   position: fixed;
@@ -46,6 +50,7 @@ const StyledNav = styled.nav`
 `;
 
 export const Header = () => {
+  const {t} = useTranslation()
   return (
     <StyledHeader>
       <StyledNav>
@@ -56,11 +61,11 @@ export const Header = () => {
         </button>
         </div>
         <div className="links-wrapper">
-          <Link className="link">Classes</Link>
-          <Link className="link">Courses</Link>
-          <Link className="link">Events</Link>
+          <Link className="link">{t("navbar.classes")}</Link>
+          <Link className="link">{t("navbar.courses")}</Link>
+          <Link className="link">{t("navbar.events")}</Link>
           <Link className="link" to={"/about"}>
-            About
+          {t("navbar.about")}
           </Link>
         </div>
       </StyledNav>

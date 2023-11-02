@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const StyledSection = styled.section`
   display: flex;
@@ -46,11 +47,8 @@ const StyledSection = styled.section`
   }
 `;
 
-const headerText = "WORDS FROM OUR FOUNDER";
-const bodyText =
-  "“The female body is engineered for pregnancy and birth through its entire hormonal  system. It is physically as natural for us as breathing, however our modern world is not supporting it. Scientists know that, but there is simply not any finance in creating an optimal environment. Therefor I  founded Preggoyogastudion, to a the home for women seeking to understand their bodies and minds.”";
-
 export const WordsFounder = () => {
+  const {t} = useTranslation()
   return (
     <>
       <StyledSection>
@@ -62,8 +60,8 @@ export const WordsFounder = () => {
         </div>
 
         <div className="founder-text">
-          <p className="paragraph-small">{headerText}</p>
-          <p className="paragraph-small">{bodyText}</p>
+          <p className="paragraph-small">{t("aboutPage.founder.heading")}</p>
+          <p className="paragraph-small">{t("aboutPage.founder.text")}</p>
         </div>
       </StyledSection>
     </>

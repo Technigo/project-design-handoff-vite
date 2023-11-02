@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const StyledSection = styled.section`
   background-image: linear-gradient(
@@ -31,22 +32,21 @@ const StyledSection = styled.section`
 `;
 
 export const Welcome = () => {
+  const {t} = useTranslation()
   return (
     <>
       <StyledSection>
         <div className="wrapper-text">
-        <h1> Welcome to PREGGOYOGASTUDION</h1>
+        <h1>{t("aboutPage.welcome.heading")}</h1>
 
         
 
         <p>
-          Preggoyogastudion is a universe, a home, a safe place for pregnant and
-          birthing women.
+        {t("aboutPage.welcome.text1")}
         </p>
 
         <p>
-          We aim to be your go-to partner and guide during your most blessed and
-          glorified yet challenged journey.
+        {t("aboutPage.welcome.text2")}
         </p>
 
         </div>

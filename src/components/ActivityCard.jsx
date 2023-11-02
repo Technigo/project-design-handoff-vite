@@ -1,5 +1,8 @@
 import { styled } from "styled-components";
-import activityData from "../data/activities-data.json";
+import { useTranslation } from "react-i18next"
+import enTranslation from "./translations/en.json"
+import backgroundPaths from "../data/background-paths.json"
+
 
 const StyledDiv = styled.div`
   display: flex;
@@ -13,14 +16,25 @@ const StyledDiv = styled.div`
   background-size: cover;
 `;
 
+const backgroundsArray = backgroundPaths.homePage.activities
+
+let activityArray = enTranslation.homePage.activities
+
+
 export const ActivityCard = () => {
+  const { t, ready } = useTranslation();
+
+  const activities = t("homePage.activities", { returnObjects: true });
+
+  if (!ready) return "loading translations...";
   return (
     <>
-      {Object.keys(activityData).map((key) => (
-        <StyledDiv key={key} cardBackground={activityData[key].backgroundImg}>
-          <h3>{activityData[key].header}</h3>
+      {activities.map((activity) => (
+        <StyledDiv key={activity.id} cardBackground={backgroundsArray[activity.id - 1].background} aria-label={backgroundsArray[activity.id - 1].alt}
+        role="img">
+          <h3>{activity.header}</h3>
 
-          <p className="paragraph-small">{activityData[key].bodyText}</p>
+          <p className="paragraph-small">{activity.bodyText}</p>
         </StyledDiv>
       ))}
     </>

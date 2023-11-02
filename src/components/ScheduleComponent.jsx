@@ -1,5 +1,7 @@
 import { styled } from "styled-components";
-import scheduleInformation from "../data/schedule.json";
+import { useTranslation } from "react-i18next"
+import enTranslation from "./translations/en.json"
+
 
 const StyledDiv = styled.div`
   display: flex;
@@ -31,32 +33,41 @@ const StyledDiv = styled.div`
 
 `;
 
+//let scheduleArray = enTranslation.homePage.schedule //Path reference 
+
 export const ScheduleComponent = () => {
+  const { t, ready } = useTranslation()
+
+  const schedules = t("homePage.schedule", {returnObjects: true })
+
+  if(!ready) return "loading translations..."
   return (
     <>
-      {Object.keys(scheduleInformation).map((key) => (
-        <StyledDiv key={key}>
+      {schedules.map((schedule) => (
+        
+        <StyledDiv key={schedule.id}>
+          
           <div className="schedule-info">
             <div className="schedule-time">
               <p className="paragraph-class-white">
-                {scheduleInformation[key].time}
+                {schedule.time}
               </p>
               <p className="paragraph-class-red">
-                {scheduleInformation[key].length}
+                {schedule.length}
               </p>
             </div>
 
             <div className="schedule-text">
               <p className="paragraph-class-title">
-                {scheduleInformation[key].class}
+                {schedule.class}
               </p>
               <p className="paragraph-teacher-name">
-                {scheduleInformation[key].teacher}
+                {schedule.teacher}
               </p>
             </div>
           </div>
 
-          <a className="tertiary-button tertiary-button-small">Book</a>
+          <a className="tertiary-button tertiary-button-small">{schedule.book}</a>
         </StyledDiv>
       ))}
     </>

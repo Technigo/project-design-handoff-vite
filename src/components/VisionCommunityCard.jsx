@@ -1,5 +1,7 @@
-import styled from "styled-components";
-import visionCommunityData from "../data/vision-community-data.json";
+import styled from "styled-components"; 
+import { useTranslation } from "react-i18next"
+import enTranslation from "./translations/en.json";
+import backgroundPaths from "../data/background-paths.json";
 
 const StyledDiv = styled.div`
   .image-container {
@@ -17,33 +19,45 @@ const StyledDiv = styled.div`
   }
 
   .text-wrapper {
-    display: flex; 
-    flex-direction: column; 
-    gap: 16px; 
-    margin: 60px 0; 
-    padding: 0 24px; 
-
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 60px 0;
+    padding: 0 24px;
   }
 `;
+const backgroundsArray = backgroundPaths.aboutPage.visionCommunity;
+
+//let visionsArray = enTranslation.aboutPage.visionCommunity; //Kept for reference
 
 export const VisionCommunityCard = () => {
+  const { t, ready } = useTranslation();
+
+  const visions = t("aboutPage.visionCommunity", { returnObjects: true });
+
+  if (!ready) return "loading translations...";
   return (
     <>
-      {Object.keys(visionCommunityData).map((key) => (
-        <StyledDiv key={key} cardBackground={visionCommunityData[key].image}>
+      {visions.map((vision) => (
+        <StyledDiv
+          key={vision.id}
+          cardBackground={backgroundsArray[vision.id - 1].background}
+          aria-label={backgroundsArray[vision.id - 1].alt}
+          role="img"
+        >
           <div
             className="image-container"
             role="img"
             alt="{visionCommunityData[key].alt}"
           ></div>
-        <div className="text-wrapper">
-          <p className="paragraph-small">{visionCommunityData[key].type}</p>
+          <div className="text-wrapper">
+            <p className="paragraph-small">{vision.type}</p>
 
-          <h2>{visionCommunityData[key].header}</h2>
+            <h2>{vision.header}</h2>
 
-          <p>{visionCommunityData[key].bodyText}</p>
+            <p>{vision.bodyText}</p>
 
-          <p className="tertiary-button ">Read more</p>
+            <p className="tertiary-button ">Read more</p>
           </div>
         </StyledDiv>
       ))}

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 import { Button } from "../Button"
 
 const StyledSection = styled.section`
@@ -39,20 +40,20 @@ const StyledSection = styled.section`
   }
 `;
 
-const textHeading1 = "Elevate your pregnancy with yoga";
-const bodyText =
-  "Allow your body to be the best it can be for the growing life within it to flourish";
 
 export const Hero = () => {
+  const {t} = useTranslation()
+
+
   return (
     <>
       <StyledSection>
         <div className="hero-content">
-        <h1>{textHeading1}</h1>
-        <p>{bodyText}</p>
+        <h1>{t("homePage.hero.heading")}</h1>
+        <p>{t("homePage.hero.text")}</p>
         <div className="button-wrapper">
-        <Button>Book</Button>
-        <Button secondary>Explore</Button>
+        <Button>{t("homePage.hero.bookButton")}</Button>
+        <Button secondary>{t("homePage.hero.exploreButton")}</Button>
         </div>
         </div>
       </StyledSection>

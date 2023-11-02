@@ -1,6 +1,6 @@
-import { Welcome } from "../components/sections-welcome-page/Welcome";
-import { WordsFounder } from "../components/sections-welcome-page/WordsFounder";
-import { VisionCommunity } from "../components/sections-welcome-page/VisionCommunity";
+import { Welcome } from "../components/sections-about-page/Welcome";
+import { WordsFounder } from "../components/sections-about-page/WordsFounder";
+import { VisionCommunity } from "../components/sections-about-page/VisionCommunity";
 export const AboutPage = () => {
   return (
     <>

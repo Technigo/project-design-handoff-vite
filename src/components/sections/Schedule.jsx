@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 import { ScheduleComponent } from "../ScheduleComponent";
 
 export const StyledSection = styled.section`
@@ -9,14 +10,15 @@ export const StyledSection = styled.section`
 `;
 
 export const Schedule = () => {
+  const {t} = useTranslation()
   return (
     <StyledSection>
-      <p className="paragraph-teacher-name">SCHEDULE</p>
-      <h3>Today, Wednesday 1 Nov</h3>
+      <h4>{t("homePage.scheduleInfo.type")}</h4>
+      <h3>{t("homePage.scheduleInfo.date")}</h3>
       <div className="schedule-wrapper">
         <ScheduleComponent />
       </div>
-      <p className="tertiary-button">See weekly schedule</p>
+      <p className="tertiary-button">{t("homePage.scheduleInfo.link")}</p>
     </StyledSection>
   );
 };

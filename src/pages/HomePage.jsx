@@ -5,7 +5,7 @@ import { Information } from "../components/sections/Information";
 import { Activities } from "../components/sections/Activities"
 
 
-export const LandingPage = () => {
+export const HomePage = () => {
   return (
     <>
       <Hero />

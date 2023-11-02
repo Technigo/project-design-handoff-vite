@@ -1,0 +1,161 @@
+{
+    "navbar": {
+        "classes": "Klasser",
+        "courses": "Kurser",
+        "events": "Evenemang",
+        "about": "Om"
+    },
+    
+    "form": {
+        "heading": "Vill du ha en anpassad yogaplan?",
+        "text": "Få en yogaplan skräddarsydd för dina graviditetsbehov",
+        "name": "namn",
+        "email-address": "e-postadress",
+        "button": "Skicka"
+    },
+    
+    "footer": {
+        "classes": "Yogaklasser",
+        "events": "Evenemang",
+        "learn": "Lär dig",
+        "contact": "Kontakt",
+        "about": "Om"
+    },
+    
+    "homePage": {
+        "hero": {
+            "heading": "Höj din graviditet med yoga",
+            "text": "Låt din kropp vara på sitt bästa för att det växande livet inom dig ska blomstra",
+            "bookButton": "Boka",
+            "exploreButton": "Utforska"
+        },
+        
+        "scheduleInfo": {
+            "type": "SCHEMA",
+            "date": "Idag, onsdag 1 nov",
+            "link": "Se veckoschema"
+        },
+        
+        "schedule": [
+            {
+                "id": 1,
+                "time": "17.00",
+                "length": "50 min",
+                "class": "YOGA FÖR GRAVIDA",
+                "teacher": "Pernille Andersen",
+                "book": "Boka"
+            },
+            {
+                "id": 2,
+                "time": "17.00",
+                "length": "50 min",
+                "class": "YOGA FÖR GRAVIDA",
+                "teacher": "Pernille Andersen", 
+                "book": "Boka"
+            },
+            {
+                "id": 3,
+                "time": "17.00",
+                "length": "50 min",
+                "class": "YOGA FÖR GRAVIDA",
+                "teacher": "Pernille Andersen", 
+                "book": "Boka"
+            },
+            {
+                "id": 4,
+                "time": "17.00",
+                "length": "50 min",
+                "class": "YOGA FÖR GRAVIDA",
+                "teacher": "Pernille Andersen", 
+                "book": "Boka"
+            }
+        ],
+        
+        "information": [
+            {
+                "id": 1,
+                "type": "YOGAKLASSER",
+                "heading": "Anpassad, stärkande och säker yogapraxis",
+                "bodyText": "Lev din graviditet till fullo genom anpassad, stärkande och säker yogapraxis.",
+                "background": "linear-gradient(180deg, #BB3908 0%, #220901 100%)"
+            },
+            {
+                "id": 2,
+                "type": "KURSER",
+                "heading": "Rörelse, meditation och andningskurser",
+                "bodyText": "Lev din graviditet till fullo genom anpassad, stärkande och säker yogapraxis.",
+                "background": "linear-gradient(180deg, #941B0C 0%, #220901 100%)"
+            },
+            {
+                "id": 3,
+                "type": "EVENEMANG",
+                "heading": "Bli inspirerad vid evenemang tillsammans med likasinnade kvinnor",
+                "bodyText": "Lev din graviditet till fullo genom anpassad, stärkande och säker yogapraxis.",
+                "background": "linear-gradient(180deg, #621708 0%, #220901 100%)"
+            }
+        ],
+        
+        "activities": [
+            {
+                "id": 1,
+                "header": "Andningskurser",
+                "bodyText": "Lär dig och öva för att behärska din egen kropp genom andningsarbete",
+                "backgroundImg": "/images/events/img-event-1.jpeg",
+                "alt": "Gravid kvinna som praktiserar yoga på stranden"
+            },
+            {
+                "id": 2,
+                "header": "Andningskurser",
+                "bodyText": "Lär dig och öva för att behärska din egen kropp genom andningsarbete",
+                "backgroundImg": "/images/events/img-event-2.jpeg",
+                "alt": "Kvinna som mediterar i soluppgången"
+            },
+            {
+                "id": 3,
+                "header": "Andningskurser",
+                "bodyText": "Lär dig och öva för att behärska din egen kropp genom andningsarbete",
+                "backgroundImg": "/images/events/img-event-3.jpg",
+                "alt": "Grupp av kvinnliga vänner som njuter av varandras sällskap"
+            },
+            {
+                "id": 4,
+                "header": "Andningskurser",
+                "bodyText": "Lär dig och öva för att behärska din egen kropp genom andningsarbete",
+                "backgroundImg": "/images/events/img-event-4.jpeg",
+                "alt": "Gravid kvinna som kramar sitt barn på en yogamatta"
+            }
+        ]
+    },
+    
+    "aboutPage": {
+        "welcome": {
+            "heading": "Välkommen till PREGGOYOGASTUDION",
+            "text1": "Preggoyogastudion är ett universum, ett hem, en trygg plats för gravida och födande kvinnor.",
+            "text2": "Vi strävar efter att vara din främsta partner och guide under din mest välsignade och utmanande resa."
+        },
+        
+        "founder": {
+            "heading": "ORD FRÅN VÅR GRUNDARE",
+            "text": "Kvinnokroppen är konstruerad för graviditet och förlossning genom hela sitt hormonella system. Det är fysiskt lika naturligt för oss som att andas, men vår moderna värld stöder det inte. Forskare vet det, men det finns helt enkelt inte någon finansiering för att skapa en optimal miljö. Därför grundade jag Preggoyogastudion, för att vara hemmet för kvinnor som söker förstå sina kroppar och sinnen."
+        },
+        
+        "visionCommunity": [
+            {
+                "id": 1,
+                "type": "VISION",
+                "header": "Vi tror på vår kvinnliga arv",
+                "bodyText": "Lev din graviditet till fullo genom anpassad, stärkande och säker yogapraxis.",
+                "image": "/images/vision-community/vision-community-img-1.jpeg",
+                "alt": "Kvinnor som praktiserar yoga på stranden"
+            },
+            {
+                "id": 2,
+                "type": "COMMUNITY",
+                "header": "Kvinnor som stödjer kvinnor",
+                "bodyText": "Lev din graviditet till fullo genom anpassad, stärkande och säker yogapraxis.",
+                "image": "/images/vision-community/vision-community-img-2.jpeg",
+                "alt": "Silhuett av en grupp människor som har trevligt i solnedgången"
+            }
+        ]
+    }
+}
