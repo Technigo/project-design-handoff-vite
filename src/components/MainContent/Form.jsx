@@ -33,7 +33,7 @@ const Signup = styled.div`
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  right: 41.5px;
+  //right: 41.5px;
   bottom: 104px;
   gap: 12px;
 

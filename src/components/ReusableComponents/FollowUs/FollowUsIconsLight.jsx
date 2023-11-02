@@ -1,5 +1,5 @@
 import FacebookLogoLight from "/icons/Facebook.png";
-import TwitterLogoLight from "/icons/Twitter.png";
+import TwitterLogoLight from "/icons/TwitterX.png";
 import InstagramLogoLight from "/icons/Instagram.png";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";

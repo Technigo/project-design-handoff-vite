@@ -1,42 +1,42 @@
 [
   {
     "courseId": 1,
-    "courseName": "ASHTANGA VINYASA YOGA",
+    "courseName": "Ashtanga vinyasa yoga",
     "imageUrl": "/assets/ashtangayogaimage.jpeg",
     "imageAlt": "People kneeled down and bent over on a yoga mat with their arms forward",
     "courseBrief": "Ashtanga Vinyasa Yoga is perfect for the dynamic rider who strives to build strength and increase flexibility. This class teaches an energetic practice, synchronising breath with movements."
   },
  {
     "courseId": 2,
-    "courseName": "YOGA ON HORSEBACK",
+    "courseName": "Yoga on horseback",
     "imageUrl": "/assets/yogaonhorseback.webp",
     "imageAlt": "Woman with arms above her head in a yoga position while sitting on a dark brown horse",
     "courseBrief": "Horseback Yoga is an excellent class for the more experienced rider, combining seat training with traditional yoga practices. This class will deepen the bond between you and the horse, improving both trust and communication between horse and rider."
   },
   {
     "courseId": 3,
-    "courseName": "HATHA YOGA",
+    "courseName": "Hatha yoga",
     "imageUrl": "/assets/hathayogaimage.jpg",
     "imageAlt": "People sitting in a yoga position on yoga mats with their arms resting on their knees",
     "courseBrief": "Hatha Yoga is a holistic practice that seeks to improve flexibility, strength, and inner peace through the harmonization of breath and movement."
   },
   {
     "courseId": 4,
-    "courseName": "HOT YOGA",
+    "courseName": "Hot yoga",
     "imageUrl": "/assets/hotyoga.jpeg",
     "imageAlt": "Sweaty woman with sports wear standing in a yoga position",
     "courseBrief": "Hot Yoga is a style of yoga performed in a heated room, typically around 95-105°F (35-40°C). This intense heat is intended to enhance flexibility and detoxification while challenging practitioners through a series of yoga postures."
   },
   {
     "courseId": 5,
-    "courseName": "SEAT TRAINING - MARIA LIND",
+    "courseName": "Seat training - Maria Lind",
     "imageUrl": "/assets/sitstraininglongering.jpeg",
     "imageAlt": "Girl sitting on a white horse and a woman holds the horse",
     "courseBrief": "Seat Training with Maria Lind, this fall seat trainer Maria Lind is hosting a new course here at Saddle Up Yoga Studio. Take this opportunity to work on you balance and sharpen your riding skills."
   },
   {
     "courseId": 6,
-    "courseName": "MINDFULNESS COURSES",
+    "courseName": "Mindfulness courses",
     "imageUrl": "/assets/mindfulnessimage.jpeg",
     "imageAlt": "Blonde woman standing with brown horse",
     "courseBrief": "Mindfulness. In this class we are reducing stress, improving mental clarity, and fostering a greater sense of self-awareness and emotional well-being."

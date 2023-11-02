@@ -1,4 +1,4 @@
-import LogoBlue from "/assets/Logoimageblue.png";
+import LogoBlue from "/assets/Logovectorblue.png";
 import styled from "styled-components";
 
 const StyledDarkLogo = styled.div`

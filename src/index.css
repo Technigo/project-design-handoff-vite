@@ -21,5 +21,6 @@ svg {
 }
 
 body {
-  font-family: sans-serif;
+  background: url(/assets/background.png);
+  font-family: "Nunito Sans", sans-serif;
 }

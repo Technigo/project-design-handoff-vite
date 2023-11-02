@@ -1,4 +1,4 @@
-import LogoBeige from "/assets/Logoimagebeige.png";
+import LogoBeige from "/assets/Logovectorbeige.png";
 import styled from "styled-components";
 
 const StyledLightLogo = styled.div`
