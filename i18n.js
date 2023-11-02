@@ -60,6 +60,30 @@ const resources = {
       contactBtn: "Contact Wave Yoga Studio",
       selectLanguage: "Select language",
       backToTop: "Back to top",
+      aboutPageTitle: "About us",
+      aboutPageSubInfo:
+        "Wave Yoga Studio was established in 2013, and we have since then made it our mission to help people towards healthier, happier lifes through yoga 🤎 ",
+      goodToKnow: "Good to know",
+      openingHours: "Opening hours",
+      openingHoursInfo:
+        "We offer different yoga classes all day between 6.30am-7.30pm. Our studio and changing rooms are open from 6am-10pm.",
+      bookAClass: "Book a class",
+      bookAClassInfo:
+        "You find all our classes and booking schedule on our Booking page",
+      studioMembership: "Studio membership",
+      studioMembershipInfo:
+        "Sign up for our Studio membership and get a reduced price on all yoga classes and other benefits such as workshops, retreats and special events.",
+      contactUs: "Contact us",
+      contactUsInfo:
+        "If you want to explore our studio or have any questions or feedback, please reach out to us! 🤎",
+      formName: "Name *",
+      formNamePlaceholder: "Your name...",
+      formEmail: "Email",
+      formEmailPlaceholder: "Your email address",
+      formMessage: "Message",
+      formMessagePlaceholder: "Write your message...",
+      termsAndConditions: "I agree with the terms & conditions",
+      sendBtn: "Send",
     },
   },
   se: {
@@ -114,10 +138,34 @@ const resources = {
       aboutUsTitle: "Om oss",
       aboutUsInfo: `Wave Yoga Studio grundades 2013 och vi har sedan dess gjort det till vårt uppdrag att hjälpa människor till ett hälsosammare och gladare liv genom yoga. 
           
-      Om du vill utforska vår studio och yogaklasser, eller har några frågor eller feedback, vänligen kontakta oss! 🤎`,
+      Om du vill utforska vår studio och yogapass, eller har några frågor eller feedback, vänligen kontakta oss! 🤎`,
       contactBtn: "Kontakta Wave Yoga Studio",
       selectLanguage: "Välj språk",
       backToTop: "Tillbaka till toppen",
+      aboutPageTitle: "Om oss",
+      aboutPageSubInfo:
+        "Wave Yoga Studio grundades 2013 och vi har sedan dess gjort det till vårt uppdrag att hjälpa människor till ett hälsosammare och gladare liv genom yoga 🤎 ",
+      goodToKnow: "Bra att veta",
+      openingHours: "Öppettider",
+      openingHoursInfo:
+        "Vi erbjuder olika yogapass hela dagen mellan kl. 6.30-7.30. Vår studio och omklädningsrum är öppna från kl. 6.00-10.00.",
+      bookAClass: "Boka ett pass",
+      bookAClassInfo:
+        "Du hittar alla våra klasser och bokningsschema på vår bokningssida",
+      studioMembership: "Studiomedlemsskap",
+      studioMembershipInfo:
+        "Bli medlem hos oss och få ett reducerat pris på alla yogapass och andra förmåner som workshops, retreats och specialevenemang.",
+      contactUs: "Kontakta oss",
+      contactUsInfo:
+        "Om du vill utforska vår studio eller har några frågor eller synpunkter är du välkommen att kontakta oss! 🤎",
+      formName: "Namn *",
+      formNamePlaceholder: "Ditt namn...",
+      formEmail: "Email",
+      formEmailPlaceholder: "Din emailadress",
+      formMessage: "Meddelande",
+      formMessagePlaceholder: "Skriv ditt meddelande...",
+      termsAndConditions: "Jag godkänner villkoren",
+      sendBtn: "Skicka",
     },
   },
 };

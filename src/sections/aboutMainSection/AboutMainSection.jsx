@@ -7,8 +7,11 @@ export const AboutMainSection = () => {
   const { t } = useTranslation();
   return (
     <div className="about-main-container">
-      <h1></h1>
-      <img src={wave3} alt="wave pattern" />{" "}
+      <h1 className="about-main-title">{t("aboutPageTitle")}</h1>
+      <img src={wave3} alt="wave pattern" />
+      <p className="about-us-info">{t("aboutPageSubInfo")}</p>
+      <img src={imagesun} alt="yoga medidation" />
+      <img src={wave3} alt="wave pattern" />
     </div>
   );
 };

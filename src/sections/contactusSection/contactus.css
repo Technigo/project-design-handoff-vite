@@ -1,0 +1,6 @@
+.nameInput,
+.emailInput,
+.messageInput {
+  display: flex;
+  flex-direction: column;
+}
