@@ -1,8 +1,8 @@
 {
-    "welcome": "Idag firar vi Halloween",
-    "text": "",
+    "welcome": "Välkommen till vår webbplats",
+    "text": "Denna mening är till för att testa översättningen.",
     "translatePage": {
-        "heading": "",
-        "sub-heading": ""
+        "heading": "Hej ord",
+        "sub-heading": "Detta är ett test för att hjälpa till att förstå nesting."
     }
 }

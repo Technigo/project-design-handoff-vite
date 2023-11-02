@@ -1,8 +1,8 @@
 {
-    "welcome": "Today we celebrate Halloween",
-    "text": "",
+    "welcome": "Welcome to our website",
+    "text": "This sentence is here to test the translation.",
     "translatePage": {
-        "heading": "",
-        "sub-heading": ""
+        "heading": "Hello word",
+        "sub-heading": "This is a test to help understand nesting"
     }
 }
