@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
-import wave7 from "../../assets/wave-7.svg";
+import wave7mini from "../../assets/wave-7mini.svg";
+import wave7tablet from "../../assets/wave-7tablet.svg";
+
 import wave4 from "../../assets/wave-4mini.svg";
 import arrowdown from "../../assets/arrowdown.svg";
 import imageDoor from "../../assets/image-door.svg";
@@ -7,6 +9,8 @@ import "./introsection.css";
 
 export const IntroSection = () => {
   const { t } = useTranslation();
+  const windowWidth = window.innerWidth;
+  console.log(windowWidth);
 
   return (
     <div className="intro-container">
@@ -30,7 +34,9 @@ export const IntroSection = () => {
         <img src={arrowdown} alt="arrow-pointing-down" />
       </button>
 
-      <img src={wave7} alt="wave pattern" className="wave7" />
+      <img src={wave7mini} alt="wave pattern" className="wave7mini" />
+
+      <img src={wave7tablet} alt="wave pattern" className="wave7tablet" />
     </div>
   );
 };

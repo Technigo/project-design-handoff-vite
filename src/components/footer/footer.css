@@ -1,20 +1,50 @@
 .footer-container {
   background-color: var(--greyish);
+  padding: 64px 0 32px 0;
+}
+
+.footer-content-container {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.logo-language {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-language img {
+  max-width: 58px;
+  max-height: 58px;
+}
+
+.footer-contact h3 {
+  font-weight: 600;
+  font-style: normal;
+  font-family: var(--font-family-ingress-body);
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .address,
 .phone,
 .socials {
   display: flex;
+  gap: 6px;
 }
 
 .back-to-top {
   background-color: #4c3831;
-  min-height: 96px;
-  min-width: 96px;
+  height: 96px;
+  width: 96px;
   border: none;
   border-radius: 50%;
-  background-repeat: none;
   cursor: pointer;
   font-family: var(--font-family-ingress-body);
   font-size: var(--body-mobile);
@@ -24,6 +54,9 @@
   justify-content: center;
   align-items: center;
   z-index: 5;
+  gap: 10px;
+  align-self: center;
+  padding-bottom: 15px;
 }
 
 .footer-arrow {

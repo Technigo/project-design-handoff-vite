@@ -72,7 +72,7 @@
   margin-bottom: 160px;
 }
 
-.wave7 {
+.wave7mini {
   z-index: 2;
   position: absolute;
   bottom: -35px;
@@ -81,4 +81,74 @@
 .wave4 {
   z-index: 1;
   position: absolute;
+}
+
+.wave7tablet {
+  display: none;
+}
+
+@media screen and (min-width: 720px) {
+  .intro-container {
+    padding-top: 64px;
+  }
+
+  .yoga-title {
+    font-family: var(--font-family-h1-h2);
+    font-size: var(--h1-desktop);
+    color: var(--dark);
+    font-weight: 500;
+    margin-left: 131px;
+    margin-top: -20px;
+  }
+
+  .dive-in {
+    font-size: var(--h2-tablet);
+
+    margin-left: 120px;
+  }
+
+  .title-and-image {
+    background-image: url(../../assets/wave-4.svg);
+  }
+
+  .title-and-image img {
+    min-height: 464px;
+    min-width: 314px;
+    margin-right: 110px;
+  }
+
+  .yoga-for-everyone {
+    font-size: var(--h2-mobile);
+    margin: 0px 131px 40px 131px;
+  }
+
+  .lets-go {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    font-size: var(--body-tablet-desktop);
+
+    margin-bottom: 160px;
+  }
+
+  .lets-go img {
+    width: 40px;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .wave7mini {
+    display: none;
+  }
+  .wave7tablet {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    bottom: -22px;
+  }
+
+  .wave4 {
+    z-index: 1;
+    position: absolute;
+  }
 }

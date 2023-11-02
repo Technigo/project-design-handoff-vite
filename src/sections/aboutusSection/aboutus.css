@@ -2,10 +2,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  padding: 64px 0;
+}
+
+.about-us-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 0 16px;
 }
 
 .about-us-wave {
   position: absolute;
-  bottom: -30px;
+  bottom: -50px;
   z-index: 3;
 }

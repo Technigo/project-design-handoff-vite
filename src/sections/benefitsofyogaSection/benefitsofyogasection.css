@@ -16,6 +16,10 @@
   padding-left: 32px;
 }
 
+.learnMoreBtn {
+  margin-bottom: 30px;
+}
+
 .benefits-wave {
   position: absolute;
   bottom: -30px;

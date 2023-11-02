@@ -15,41 +15,43 @@ export const Footer = () => {
 
   return (
     <div className="footer-container">
-      <div className="logo-language">
-        <img src={logo} alt="logo" />
-        <select
-          name="select-a-language"
-          onChange={(e) => lngChange(e.target.value)}
-        >
-          <option default disabled>
-            Select language
-          </option>
-          <option value="en">English</option>
-          <option value="se">Swedish</option>
-        </select>
-      </div>
-      <div className="footer-contact">
-        <h3>Wave Yoga Studio</h3>
-        <div className="address">
-          <img src={mapPin} alt="map pin icon" />
-          <p>Southbeach Rd 7, Freemantle</p>
+      <div className="footer-content-container">
+        <div className="logo-language">
+          <img src={logo} alt="logo" />
+          <select
+            name="select-a-language"
+            onChange={(e) => lngChange(e.target.value)}
+          >
+            <option disabled selected hidden>
+              Select language
+            </option>
+            <option value="en">English</option>
+            <option value="se">Swedish</option>
+          </select>
         </div>
-        <div className="phone">
-          <img src={phone} alt="phone icon" />
-          <p>070 - 123 45 67</p>
+        <div className="footer-contact">
+          <h3>Wave Yoga Studio</h3>
+          <div className="address">
+            <img src={mapPin} alt="map pin icon" />
+            <p>Southbeach Rd 7, Freemantle</p>
+          </div>
+          <div className="phone">
+            <img src={phone} alt="phone icon" />
+            <p>070 - 123 45 67</p>
+          </div>
+          <div className="socials">
+            <img src={insta} alt="instagram pin" />
+            <p>@wave_yogastudio</p>
+          </div>
         </div>
-        <div className="socials">
-          <img src={insta} alt="instagram pin" />
-          <p>@wave_yogastudio</p>
-        </div>
-      </div>
-      {/* <Link to="/about" element={ }> */}
+        {/* <Link to="/about" element={ }> */}
 
-      <button className="back-to-top">
-        <img src={arrow} alt="arrow-pointing-down" className="footer-arrow" />
-        {t("backToTop")}
-      </button>
-      {/* </Link> */}
+        <button className="back-to-top">
+          <img src={arrow} alt="arrow-pointing-down" className="footer-arrow" />
+          {t("backToTop")}
+        </button>
+        {/* </Link> */}
+      </div>
     </div>
   );
 };

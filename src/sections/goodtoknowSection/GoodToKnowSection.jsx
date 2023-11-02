@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "./goodtoknow.css";
-import wave3 from "../../assets/wave-3.svg";
+import wave3mini from "../../assets/wave-3mini.svg";
 
 export const GoodToKnowSection = () => {
   const { t } = useTranslation();
@@ -25,7 +25,7 @@ export const GoodToKnowSection = () => {
         <button className="signUpAbout">{t("signUpBtn")}</button>
         <button className="signInAbout">{t("login")}</button>
       </div>
-      <img src={wave3} alt="wave pattern" />
+      <img src={wave3mini} alt="wave pattern" />
     </div>
   );
 };

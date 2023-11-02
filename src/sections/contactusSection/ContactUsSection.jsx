@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import "./contactus.css";
-import wave3 from "../../assets/wave-3.svg";
+import wave3mini from "../../assets/wave-3mini.svg";
 
 export const ContactUsSection = () => {
   const { t } = useTranslation();
@@ -36,7 +36,7 @@ export const ContactUsSection = () => {
         </div>
         <button type="submit">{t("sendBtn")}</button>
       </form>
-      <img src={wave3} alt="wave pattern" />
+      <img src={wave3mini} alt="wave pattern" />
     </div>
   );
 };
