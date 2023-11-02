@@ -12,6 +12,7 @@ import Reviews from "./components/Reviews";
 import Trainers from "./components/Trainers";
 import Footer from "./components/Footer";
 
+
 export const App = () => {
   const isMobile = useMediaQuery({ maxWidth: 393 });
   const isTablet = useMediaQuery({ minWidth: 394, maxWidth: 834 });
