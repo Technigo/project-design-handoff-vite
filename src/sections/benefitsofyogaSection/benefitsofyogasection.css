@@ -20,8 +20,44 @@
   margin-bottom: 30px;
 }
 
-.benefits-wave {
+.benefits-wave-mini {
   position: absolute;
   bottom: -30px;
   z-index: 20;
+}
+
+.benefits-wave-tablet {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-container {
+    gap: 36px;
+    padding: 84px 0;
+  }
+
+  .benefits-title,
+  .benefits-container p {
+    padding: 0 64px;
+  }
+
+  .benefitList {
+    padding-left: 95px;
+  }
+
+  .learnMoreBtn {
+    margin-bottom: 30px;
+  }
+
+  .benefits-wave-tablet {
+    display: flex;
+    position: absolute;
+    bottom: -75px;
+    z-index: 20;
+    max-width: 100%;
+  }
+
+  .benefits-wave-mini {
+    display: none;
+  }
 }

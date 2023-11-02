@@ -59,6 +59,8 @@ h2 {
 
 h3 {
   font-size: var(--h2-mobile);
+  color: var(--dark);
+  font-family: var(--font-family-ingress-body);
 }
 
 p,
@@ -71,7 +73,7 @@ li {
   letter-spacing: -0.352px;
 }
 
-/* @media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   h2 {
     font-size: var(--h2-tablet);
     color: var(--dark);
@@ -79,7 +81,7 @@ li {
   }
 
   h3 {
-    font-size: var(--h3-mobile);
+    font-size: var(--ingress-tablet-desktop);
     font-style: normal;
     font-weight: 400;
     line-height: 131%;
@@ -88,11 +90,9 @@ li {
 
   p,
   li {
-    color: var(--dark);
-    font-family: var(--font-family-ingress-body);
-    font-size: var(--body-mobile);
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: -0.352px;
+    font-size: var(--body-tablet-desktop);
+    letter-spacing: -0.528px;
+
+    line-height: 28px; /* 116.667% */
   }
-} */
+}

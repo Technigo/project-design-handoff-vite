@@ -29,8 +29,45 @@
   overflow: hidden;
 }
 
-.teachers-wave {
+.teachers-wave-mini {
   position: absolute;
   z-index: 2;
   bottom: -30px;
+}
+
+.teachers-wave-tablet {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .ourTeachers-container {
+    padding: 100px 0;
+  }
+
+  .teacher-title-and-info p {
+    padding: 0 64px;
+  }
+
+  .meetTeachersBtn {
+    margin-bottom: 30px;
+  }
+
+  .double-yoga {
+    min-width: 576px;
+    min-height: 576px;
+    overflow: hidden;
+    margin: 0 129px -110px 129px;
+  }
+
+  .teachers-wave-tablet {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+    max-width: 100%;
+  }
+
+  .teachers-wave-mini {
+    display: none;
+  }
 }

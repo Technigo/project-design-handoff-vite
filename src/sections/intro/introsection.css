@@ -43,7 +43,7 @@
 .yoga-for-everyone {
   color: var(--dark);
   font-family: var(--font-family-ingress-body);
-  font-size: var(--ingress-mobile);
+  font-size: 12px;
   line-height: 131%; /* 26.2px */
   letter-spacing: -0.44px;
   text-align: center;
@@ -87,7 +87,7 @@
   display: none;
 }
 
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .intro-container {
     padding-top: 64px;
   }
@@ -145,6 +145,7 @@
     z-index: 2;
     position: absolute;
     bottom: -22px;
+    max-width: 100%;
   }
 
   .wave4 {

@@ -2,6 +2,7 @@ import "./ourteachers.css";
 import { useTranslation } from "react-i18next";
 import doubleyoga from "../../assets/doubleyoga.svg";
 import wave3mini from "../../assets/wave-3mini.svg";
+import wave3tablet from "../../assets/wave-3tablet.svg";
 
 export const OurTeachersSection = () => {
   const { t } = useTranslation();
@@ -17,7 +18,12 @@ export const OurTeachersSection = () => {
         alt="two girls laughing during yoga"
         className="double-yoga"
       />
-      <img src={wave3mini} alt="wave pattern" className="teachers-wave" />
+      <img src={wave3mini} alt="wave pattern" className="teachers-wave-mini" />
+      <img
+        src={wave3tablet}
+        alt="wave pattern"
+        className="teachers-wave-tablet"
+      />
     </div>
   );
 };

@@ -1,6 +1,7 @@
 import "./benefitsofyogasection.css";
 import { useTranslation } from "react-i18next";
 import wave3mini from "../../assets/wave-3mini.svg";
+import wave3tablet from "../../assets/wave-3tablet.svg";
 
 export const BenefitsOfYogaSection = () => {
   const { t } = useTranslation();
@@ -17,7 +18,12 @@ export const BenefitsOfYogaSection = () => {
       </ul>
 
       <button className="learnMoreBtn">{t("learnMoreAboutYogaBtn")}</button>
-      <img src={wave3mini} alt="wave pattern" className="benefits-wave" />
+      <img src={wave3mini} alt="wave pattern" className="benefits-wave-mini" />
+      <img
+        src={wave3tablet}
+        alt="wave pattern"
+        className="benefits-wave-tablet"
+      />
     </div>
   );
 };

@@ -27,9 +27,9 @@ const resources = {
       introSub1: "At Wave Yoga Studio, we know and believe that ",
       introSub2: "yoga is for everyone  🤎",
       classes: "Our classes",
-      classRange: `We have a wide range of yoga classes suitable for all levels. 
-
-      Book a single class when you feel like it, or sign up for our Studio Membership and get a reduced price on all yoga classes and other benefits such as workshops, retreats and special events.`,
+      wideRange: `We have a wide range of yoga classes suitable for all levels.`,
+      bookOrSign:
+        "Book a single class when you feel like it, or sign up for our Studio Membership and get a reduced price on all yoga classes and other benefits such as workshops, retreats and special events.",
       bookClassBtn: "Book a class",
       signUpBtn: "Sign up",
       alreadyMember: "Already a member?",
@@ -109,9 +109,9 @@ const resources = {
       intro: "Låt oss dyka in i yogans värld",
       introSub: "På Wave Yoga Studio vet och tror vi att yoga är för alla 🤎",
       classes: "Våra pass",
-      classRange: `Vi har ett brett utbud av yogapass som passar alla nivåer. 
-    
-      Boka ett enstaka pass när du känner för det, eller teckna vårt Studio Membership och få ett reducerat pris på alla yogaklasser och andra förmåner som workshops, retreats och specialevenemang.`,
+      wideRange: `Vi har ett brett utbud av yogapass som passar alla nivåer.`,
+      bookOrSign:
+        "Boka ett enstaka pass när du känner för det, eller teckna vårt Studio Membership och få ett reducerat pris på alla yogaklasser och andra förmåner som workshops, retreats och specialevenemang.",
       bookClassBtn: "Boka ett pass",
       signUpBtn: "Bli medlem",
       alreadyMember: "Redan medlem?",
