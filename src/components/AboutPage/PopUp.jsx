@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Button from '../Button.jsx';
+import { useTranslation } from 'react-i18next';
 
 
 const PopUpContainer = styled.div`
@@ -68,49 +69,51 @@ const ModalOverlay = styled.div`
     z-index: 1000; // Ensures the modal is above all other content
 `;
 function PopUp({ onClose }) {
+    const { t } = useTranslation(); 
     const [stage, setStage] = useState(0);
 
     const handleNext = () => {
         if (stage < 3) {
             setStage(prevStage => prevStage + 1);
         } else {
-            onClose(); // Close the popup when the last stage is done
+            onClose();
         }
     };
 
     const renderStage = () => {
+        const currentStage = `modal.stage${stage}`; // Constructing the path based on the current stage value
+
         switch (stage) {
             case 0:
                 return (
                     <>
-                        <StyledParagraph>Please Provide your name</StyledParagraph>
-                        <StyledInput placeholder="Name Please" />
-                        <Button onClick={handleNext}>NEXT</Button>
+                        <StyledParagraph>{t(`${currentStage}.message`)}</StyledParagraph>
+                        <StyledInput placeholder={t(`${currentStage}.placeholder`)} />
+                        <Button onClick={handleNext}>{t(`${currentStage}.button`)}</Button>
                     </>
                 );
             case 1:
                 return (
                     <>
-                        <StyledParagraph>We want your email.</StyledParagraph>
-                        <StyledInput placeholder="Gather Emails? Prawns!" />
-                        <Button onClick={handleNext}>PRAWNS!</Button>
-                        <StyledParagraph>We will exchange this info with spammers for Prawns!</StyledParagraph>
-                    
+                        <StyledParagraph>{t(`${currentStage}.message`)}</StyledParagraph>
+                        <StyledInput placeholder={t(`${currentStage}.placeholder`)} />
+                        <Button onClick={handleNext}>{t(`${currentStage}.button`)}</Button>
+                        <StyledParagraph>{t(`${currentStage}.description`)}</StyledParagraph>
                     </>
                 );
             case 2:
                 return (
                     <>
-                    <StyledParagraph>Write your Meowssage</StyledParagraph>
-                        <StyledInput placeholder="If we could read, we might just read this between naps and meal times" as="textarea" />
-                        <Button onClick={handleNext}>PRAWNS!</Button>
+                        <StyledParagraph>{t(`${currentStage}.message`)}</StyledParagraph>
+                        <StyledInput placeholder={t(`${currentStage}.placeholder`)} as="textarea" />
+                        <Button onClick={handleNext}>{t(`${currentStage}.button`)}</Button>
                     </>
                 );
             case 3:
                 return (
                     <>
-                        <StyledParagraph1>So long and thanks for all the fish.</StyledParagraph1>
-                        <Button onClick={onClose}>THANK YOU</Button>
+                        <StyledParagraph1>{t(`${currentStage}.message`)}</StyledParagraph1>
+                        <Button onClick={onClose}>{t(`${currentStage}.button`)}</Button>
                     </>
                 );
             default:
@@ -120,7 +123,7 @@ function PopUp({ onClose }) {
 
     return (
         <ModalOverlay onClick={onClose}>
-            <PopUpContainer onClick={(e) => e.stopPropagation()}> {/* This prevents the modal from closing when clicked inside */}
+            <PopUpContainer onClick={(e) => e.stopPropagation()}>
                 {renderStage()}
             </PopUpContainer>
         </ModalOverlay>

@@ -30,17 +30,17 @@
         "lappability": {
             "alt": "Lappability",
             "title": "LAPPABILITY",
-            "text": "På Legz fokuserar vi vår träning på att göra ditt knä mer lämpat för en god tupplur. Våra träningsrutiner fokuserar på "Lappability", vår term för hur bra ditt knä är för att ta en tupplur."
+            "text": "På Legz fokuserar vi vår träning på att göra ditt knä mer lämpat för en god tupplur. Våra träningsrutiner fokuserar på Lappability, vår term för hur bra ditt knä är för att ta en tupplur."
         },
         "relaxation": {
             "alt": "Avslappning",
             "title": "AVSLAPPNING",
-            "text": "Cats are very perceptive, so not only do we need a good lap, but we also need to emit peaceful vibes, with relaxed breathing, slow fluid movements, and relaxing eyes. Find out about our meditation and yoga."
+            "text": "Katter är mycket lyhörda, så vi behöver inte bara ett bra knä, utan vi måste också utstråla fridfulla vibbar, med avslappnad andning, långsamma flytande rörelser och avslappnade ögon. Läs mer om vår meditation och yoga."
         },
         "treats": {
-            "alt": "Treats",
-            "title": "TREATS!",
-            "text": "Just like cats bring us treats, we should do the same. So at Legz, we will provide our specially curated gifts each week."
+            "alt": "Gottis",
+            "title": "GOTTIS!",
+            "text": "Precis som katter ger oss gottis, borde vi göra detsamma. Så på Legz kommer vi att ge våra speciellt utvalda gåvor varje vecka."
         },
         "icons": {
             "leftPaw": {
@@ -64,82 +64,82 @@
         },
         "content": {
             "title": "HITTA OSS",
-            "text": "Locate your nearest lap improvement gym and start your journey to the infinite purr today.",
-            "button": "LOCATE"
+            "text": "Leta upp ditt närmaste knäförbättningsgym idag och börja din resa mot det oändliga purrandet redan idag.",
+            "button": "HITTA"
         }
     },
     "navigation": {
-        "logoAlt": "4 Legz Logo",
-        "join": "Join"
+        "logoAlt": "4 Legz logga",
+        "join": "Gå med"
     },
     "hero": {
-        "alt": "About Us Hero"
+        "alt": "Om oss Hero"
     },
     "contact": {
-        "title": "WOULD YOU LIKE TO CONTACT US?",
-        "description": "We probably won't answer. We need lots of Naps on Laps, but you are welcome to try any time you like.",
-        "button": "CONTACT US"
+        "title": "VILL DU KONTAKTA OSS?",
+        "description": "Vi kommer förmodligen inte att svara. Vi behöver många tupplurar i knät, men du är välkommen att prova när du vill.",
+        "button": "KONTAKTA OSS"
     },
     "modal": {
         "stage0": {
-            "message": "Please Provide your name",
-            "placeholder": "Name Please",
-            "button": "NEXT"
+            "message": "Vänligen ange ditt namn",
+            "placeholder": "Namn tack",
+            "button": "NÄSTA"
         },
         "stage1": {
-            "message": "We want your email.",
-            "placeholder": "Gather Emails? Prawns!",
-            "button": "PRAWNS!",
-            "description": "We will exchange this info with spammers for Prawns!"
+            "message": "Vi vill ha din e-post.",
+            "placeholder": "Samla in e-post? Räkor!",
+            "button": "RÄKOR!",
+            "description": "Vi kommer att byta denna information med spammare mot räkor!"
         },
         "stage2": {
-            "message": "Write your Meowssage",
-            "placeholder": "If we could read, we might just read this between naps and meal times",
-            "button": "PRAWNS!"
+            "message": "Skriv ditt mjaudellande",
+            "placeholder": "Om vi kunde läsa, skulle vi kunna läsa det här mellan tupplurarna och måltiderna",
+            "button": "RÄKOR!"
         },
         "stage3": {
-            "message": "So long and thanks for all the fish.",
+            "message": "Tack för fisken.",
             "button": "TACK"
         }
     },
     "teamMembers": {
         "kaelana": {
             "name": "Kaelana Bambridge",
-            "description": "Kaelana is a long standing member of Legs pun intended, very fashionable and voted prettiest female in all of Tera. She is our marketing specialist."
+            "description": "Kaelana är en långvarig medlem av Legs, mycket moderiktig och utsedd till den vackraste kvinnan i hela Tera. Hon är vår marknadsföringsspecialist."
         },
         "marcus": {
             "name": "Marcus Ax",
-            "description": "Chief Decorator Extraordinaire. Thanks to Marcus's efforts and patience any headquarters we move to becomes a sublime resting area."
+            "description": "Extraordinär chefsdekoratör. Tack vare Marcus insatser och tålamod blir alla huvudkontor som vi flyttar till en sublim viloplats."
         },
         "delisha": {
             "name": "Delisha Mathis",
-            "description": "Most gracious helpful Craft Master General. Deli is always willing to give a hand."
+            "description": "Den mest älskvärda hjälpsamma generaldirektören för hantverk. Deli är alltid villig att hjälpa till."
         },
         "moxxiRead": {
             "name": "Moxxi Read",
-            "description": "Sleepy Helper and Headquarters defender."
+            "description": "Sömnig Hjälpreda och Högkvarterets försvarare."
         },
         "chevalier": {
             "name": "Chevalier Noir",
-            "description": "Chief Officer of Cheerfulness. She keeps the office positive. Pet her for good luck."
+            "description": "Chefsofficer för gladlynthet. Hon håller kontoret positivt. Klappa henne för att få tur."
         },
         "aliasse": {
             "name": "Aliasse Thassalia",
-            "description": "Second in command. Ali is always there to help with a smile and her spiffing looks."
+            "description": "Andre befälhavare. Ali finns alltid där för att hjälpa till med ett leende och sitt snygga utseende."
         },
         "moxxiOnefang": {
             "name": "Moxxi Onefang",
-            "description": "Panic cat, dizzy, dozy and forgetful so dont forget to remind her of things that need to be done."
+            "description": "Panikkatt, yr, dåsig och glömsk så glöm inte att påminna henne om saker som behöver göras."
         },
         "feira": {
             "name": "Feira",
-            "description": "Our Extraordinary chef and Barista, keeps us at our peak with her delicious creations."
+            "description": "Vår utomordentliga kock och barista håller oss på topp med sina utsökta kreationer."
         }
     },
     "teamDescription": {
-        "title": "The Jolly team at Legz",
-        "description1": "we have a highly dedicated team of louts and layabouts, that are generally found outside the team base in Shirogane, mostly chatting or AFK with sporadic moments of highly entertaining, sometimes borderline bizarre conversation. It is a home for any sweet soul be they extrovert or shy.",
-        "description2": "Many thanks to the whole Anti-Social squad, Namely Chavalier Noir, Aliassee Thassila, Marcus Ax, Feira and Last but furthest from least Fyr Serra the glue that keeps things together and beloved by all."
+        "title": "Det glada teamet på Legz",
+        "description1": "Vi har ett mycket engagerat team av pirater och arbetsskygga, som vanligtvis finns utanför teamets bas i Shirogane, mestadels chattar eller AFK med sporadiska stunder av mycket underhållande, ibland gränsande till bisarra samtal. Det är ett hem för alla söta själar, vare sig de är extroverta eller blyga.",
+        "description2": "Stort tack till hela Anti-Sociala gänget, nämligen Chavalier Noir, Aliassee Thassila, Marcus Ax, Feira och sist men inte minst Fyr Serra, limmet som håller ihop allt och älskad av alla."
     },
     "addressCard": {
         "label": "Adress:"
@@ -147,8 +147,8 @@
     "footerLinks": {
         "about": "Om oss",
         "careers": "Karriär",
-        "privacyPolicy": "Privacy Policy",
-        "termsConditions": "Terms & Conditions",
+        "privacyPolicy": "Integritetspolicy",
+        "termsConditions": "Villkor och bestämmelser",
         "cookies": "Cookies"
     },
     "footerRightLinks": {

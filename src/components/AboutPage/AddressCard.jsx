@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { useTranslation } from 'react-i18next';
 
 
 const AddressCardContainer = styled.div`
@@ -11,7 +12,7 @@ flex-direction: column;
 justify-content: space-between; 
 align-items: center; 
 min-width: 120px;
-min-height: 133px;   /* This can be adjusted to whatever minimum height you want */
+min-height: 133px;   
 overflow: hidden; 
 color: #000; 
 
@@ -35,9 +36,12 @@ color: #000;
 `;
 
 function AddressCard(props) {
+    const { t } = useTranslation();
+
     return (
         <AddressCardContainer>
-            <h2>Address:</h2>
+            {/* Use the `t` function to get translated text */}
+            <h2>{t('addressCard.label')}</h2>
             <p>{props.location}</p>
             <p>{props.detail1}</p>
             <p>{props.detail2}</p>

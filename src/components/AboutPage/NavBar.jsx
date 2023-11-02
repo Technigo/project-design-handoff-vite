@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom'; // import Link
 import logo from '../../assets/LEGZ.jpg';
+import { useTranslation } from 'react-i18next';
 
 const NavBarContainer = styled.div`
     display: flex;
@@ -46,13 +47,15 @@ const HamburgerIcon = styled.button`
 `;
 
 function NavBar() {
+    const { t } = useTranslation();  
+
     return (
         <NavBarContainer>
             <Link to="/"> {/* Wrap the Logo with Link component */}
-                <Logo src={logo} alt="4 Legz Logo"/>
+                <Logo src={logo} alt={t('navigation.logoAlt')}/>
             </Link>
             <DesktopNav>
-                <a href="/join">Join</a>
+                <a href="/join">{t('navigation.join')}</a>
             </DesktopNav>
             <MobileNav>
                 <HamburgerIcon>☰</HamburgerIcon>

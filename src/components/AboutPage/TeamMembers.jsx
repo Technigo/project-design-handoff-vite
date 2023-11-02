@@ -12,51 +12,7 @@ import aliasseImage from '../../assets/Aliasse.png';
 import moxxiOnefangImage from '../../assets/MoxxiOnefang.png';
 import feiraImage from '../../assets/Feira.png';
 import styled, { createGlobalStyle } from 'styled-components';
-
-
-
-const membersData = [
-    {
-        name: "Kaelana Bambridge",
-        description: "Kaelana is a long standing member of Legs pun intended, very fashionable and voted prettiest female in all of Tera. She is our marketing specialist.",
-        image: kaelanaImage
-    },
-    {
-        name: "Marcus Ax",
-        description: "Chief Decorator Extraordinaire. Thanks to Marcus's efforts and patience any headquarters we move to becomes a sublime resting area.",
-        image: marcusImage
-    },
-    {
-        name: "Delisha Mathis",
-        description: "Most gracious helpful Craft Master General. Deli is always willing to give a hand.",
-        image: delishaImage
-    },
-    {
-        name: "Moxxi Read",
-        description: "Sleepy Helper and Headquarters defender.",
-        image: moxxiReadImage
-    },
-    {
-        name: "Chevalier Noir",
-        description: "Chief Officer of Cheerfulness. She keeps the office positive. Pet her for good luck.",
-        image: chevalierImage
-    },
-    {
-        name: "Aliasse Thassalia",
-        description: "Second in command. Ali is always there to help with a smile and her spiffing looks.",
-        image: aliasseImage
-    },
-    {
-        name: "Moxxi Onefang",
-        description: "Panic cat, dizzy, dozy and forgetful so dont forget to remind her of things that need to be done.",
-        image: moxxiOnefangImage
-    },
-    {
-        name: "Feira",
-        description: "Our Extraordinary chef and Barista, keeps us at our peak with her delicious creations.",
-        image: feiraImage
-    },
-];
+import { useTranslation } from 'react-i18next';
 
 
 const Slide = styled.div`
@@ -83,7 +39,52 @@ const GlobalStyles = createGlobalStyle`
 `;
 
 function TeamMemberGrid() {
-    // Slider settings
+    const { t } = useTranslation();
+
+    // Translated members data using the i18next hook
+    const membersData = [
+        {
+            name: t('teamMembers.kaelana.name'),
+            description: t('teamMembers.kaelana.description'),
+            image: kaelanaImage
+        },
+        {
+            name: t('teamMembers.marcus.name'),
+            description: t('teamMembers.marcus.description'),
+            image: marcusImage
+        },
+        {
+            name: t('teamMembers.delisha.name'),
+            description: t('teamMembers.delisha.description'),
+            image: delishaImage
+        },
+        {
+            name: t('teamMembers.moxxiRead.name'),
+            description: t('teamMembers.moxxiRead.description'),
+            image: moxxiReadImage
+        },
+        {
+            name: t('teamMembers.chevalier.name'),
+            description: t('teamMembers.chevalier.description'),
+            image: chevalierImage
+        },
+        {
+            name: t('teamMembers.aliasse.name'),
+            description: t('teamMembers.aliasse.description'),
+            image: aliasseImage
+        },
+        {
+            name: t('teamMembers.moxxiOnefang.name'),
+            description: t('teamMembers.moxxiOnefang.description'),
+            image: moxxiOnefangImage
+        },
+        {
+            name: t('teamMembers.feira.name'),
+            description: t('teamMembers.feira.description'),
+            image: feiraImage
+        },
+    ];
+
     const settings = {
         dots: true,
         infinite: true,
@@ -109,4 +110,5 @@ function TeamMemberGrid() {
         </div>
     );
 }
+
 export default TeamMemberGrid;

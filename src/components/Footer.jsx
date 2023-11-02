@@ -6,6 +6,7 @@ import TwitterIcon from '../assets/Twitter.svg';
 import InstagramIcon from '../assets/Instagram.svg';
 import LinkedInIcon from '../assets/Linkedin.svg';
 import LanguageSelectorComponent from './LanguageSelector';
+import { useTranslation } from 'react-i18next';
 
 const FooterContainer = styled.div`
     display: flex;
@@ -62,6 +63,7 @@ const RightLinks = styled.div`
 `;
 
 const Footer = () => {
+    const { t } = useTranslation();
     return (
         <FooterContainer>
             <LanguageContainer>
@@ -69,16 +71,17 @@ const Footer = () => {
             </LanguageContainer>
 
             <LinksContainer>
-                <LeftLinks>
-                    <Link to="/about">About</Link>
-                    <a href="#">Careers</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Cookies</a>
-                </LeftLinks>
+            <LeftLinks>
+        <Link to="/about">{t('footerLinks.about')}</Link>
+        <a href="#">{t('footerLinks.careers')}</a>
+        <a href="#">{t('footerLinks.privacyPolicy')}</a>
+        <a href="#">{t('footerLinks.termsConditions')}</a>
+        <a href="#">{t('footerLinks.cookies')}</a>
+    </LeftLinks>
+
 
                 <RightLinks>
-                    <span>Contact us:</span>
+                <span>{t('footerRightLinks.contactUs')}</span>
                     <a href="https://facebook.com"><img src={FacebookIcon} alt="Facebook" /></a>
                     <a href="https://twitter.com"><img src={TwitterIcon} alt="Twitter" /></a>
                     <a href="https://instagram.com"><img src={InstagramIcon} alt="Instagram" /></a>

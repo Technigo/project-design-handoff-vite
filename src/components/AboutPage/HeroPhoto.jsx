@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import heroImage from '../../assets/AntiSocialSquadFC1.png';
+import { useTranslation } from 'react-i18next';
 
 const Wrapper = styled.div`
     display: flex;
@@ -11,9 +12,9 @@ const Wrapper = styled.div`
 `;
 
 const ImageContainer = styled.div`
-    position: center;
-    width: 504px;
-    height: 284px;
+    position: relative; // for potential overlay or text addition
+    width: 480px;
+    height: 280px;
 `;
 
 const StyledImage = styled.img`
@@ -23,10 +24,11 @@ const StyledImage = styled.img`
 `;
 
 const HeroPhoto = () => {
+    const { t } = useTranslation();
     return (
         <Wrapper>
             <ImageContainer>
-                <StyledImage src={heroImage} alt="About Us Hero" />
+            <StyledImage src={heroImage} alt={t('hero.alt')} />
                 {/* Add any overlay text or other elements here */}
             </ImageContainer>
         </Wrapper>
@@ -34,3 +36,4 @@ const HeroPhoto = () => {
 };
 
 export default HeroPhoto;
+

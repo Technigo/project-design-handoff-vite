@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import teamLogo from '../../assets/LEGZ.jpg';
+import { useTranslation } from 'react-i18next';
 
 const DescriptionContainer = styled.div`
     display: flex;
@@ -20,20 +21,14 @@ const Logo = styled.img`
 `;
 
 function TeamDescription() {
+    const { t } = useTranslation();
+
     return (
         <DescriptionContainer>
-            <Logo src={teamLogo} alt="4 Legz Logo" />
-            <p>
-                The Jolly team at Legz we have a highly dedicated team of louts and layabouts, 
-                that are generally found outside the team base in Shirogane, mostly chatting or 
-                AFK with sporadic moments of highly entertaining, sometimes borderline bizarre conversation. 
-                It is a home for any sweet soul be they extrovert or shy.
-            </p>
-            <p>
-                Many thanks to the whole Anti-Social squad, Namely Chavalier Noir, Aliassee Thassila, 
-                Marcus Ax, Feira and Last but furthest from least Fyr Serra the glue that keeps things 
-                together and beloved by all.
-            </p>
+            <Logo src={teamLogo} alt={t('teamDescription.title')} />
+            <h2>{t('teamDescription.title')}</h2>
+            <p>{t('teamDescription.description1')}</p>
+            <p>{t('teamDescription.description2')}</p>
         </DescriptionContainer>
     );
 }

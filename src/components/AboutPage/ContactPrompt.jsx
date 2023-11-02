@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import Button from '../Button.jsx';
 import PopUp from './PopUp';
+import { useTranslation } from 'react-i18next';
 
 const BigContainer = styled.div`
     width: 100vw; // 100% of the viewport width
@@ -40,10 +41,9 @@ const ContactContainer = styled.div`
 `;
 
 function ContactPrompt() {
-    // New state to manage modal visibility
     const [isModalVisible, setIsModalVisible] = useState(false);
+    const { t } = useTranslation(); // Initialize the translation hook
 
-    // Function to toggle modal visibility
     const toggleModal = () => {
         setIsModalVisible(prev => !prev);
     }
@@ -51,18 +51,17 @@ function ContactPrompt() {
     return (
         <BigContainer>
             <ContactContainer>
-                <h2>WOULD YOU LIKE TO CONTACT US?</h2>
-                <p>We probably won't answer. We need lots of Naps on Laps, but you are welcome to try any time you like.</p>
-                <Button onClick={toggleModal}>CONTACT US</Button>
+                {/* Use the `t` function to get translated text */}
+                <h2>{t('contact.title')}</h2>
+                <p>{t('contact.description')}</p>
+                <Button onClick={toggleModal}>{t('contact.button')}</Button>
             </ContactContainer>
-            {/* Render the PopUp modal if isModalVisible is true */}
             {isModalVisible && <PopUp onClose={toggleModal} />}
         </BigContainer>
     );
 }
 
 export default ContactPrompt;
-
 
 
 
