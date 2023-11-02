@@ -47,6 +47,7 @@
         align-items: center; 
         gap: 20px;
         text-align: center;
+        padding: 19px 14px 30px 14px;
     }
 }
 
@@ -60,10 +61,6 @@
     .content {
         display: flex;
     }
-
-    /* .button-container {
-
-    } */
 
     .text-image-block {
         padding: 36px 32px;

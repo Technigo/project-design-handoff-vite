@@ -21,12 +21,20 @@ export const Footer = () => {
         <footer>
             {/* Value={i18n.language} sets the value of the <select> element based on the current language that is being used */}
             <SubscribeSection />
+            <div className="language-and-social">
+                <div className="icon-group">
+                    <a href="http://facebook.com"><img src="./assets/icons/facebook.svg" alt="Facebook icon" /></a>
+                    <a href="http://facebook.com"><img src="./assets/icons/instagram.svg" alt="Instagram icon" /></a>
+                    <a href="http://facebook.com"><img src="./assets/icons/twitter.svg" alt="Twitter icon" /></a>
+                </div>
+                <select onChange={handleLanguageChange} value={i18n.language}>
+                    <option value="en">{t("landingPage.footer.language.heading")}</option>
+                    <option value="en">{t("landingPage.footer.language.english")}</option>
+                    <option value="se">{t("landingPage.footer.language.swedish")}</option>
+                </select>
+            </div>
             <FooterLinks />
-            <select onChange={handleLanguageChange} value={i18n.language}>
-                <option value="en">{t("landingPage.footer.language.heading")}</option>
-                <option value="en">{t("landingPage.footer.language.english")}</option>
-                <option value="se">{t("landingPage.footer.language.swedish")}</option>
-            </select>
+
             <div>
                 <Logo text={"Align Yoga Studio"} />
                 <p>{t("landingPage.footer.address.street")}</p>

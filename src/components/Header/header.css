@@ -31,8 +31,9 @@
   z-index: 2; /* Puts the icon is below the menu */
 }
 
-.burger-bars {
-  max-width: 35px;
+.bm-burger-button {
+  position: relative;
+  width: 35px;
 }
 
 /* #react-burger-menu-btn{

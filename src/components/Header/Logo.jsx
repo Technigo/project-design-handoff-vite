@@ -1,9 +1,8 @@
+import { Link } from "react-router-dom";
 import "./header.css";
 
 export const Logo = ({ text }) => {
   return (
-    <>
-      <p className="logo">{text}</p>
-    </>
+    <Link to={"/"} className="logo">{text}</Link>
   )
 }

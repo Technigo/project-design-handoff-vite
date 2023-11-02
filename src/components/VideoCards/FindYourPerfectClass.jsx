@@ -53,7 +53,7 @@ export const FindYourPerfectClass = () => {
     const visibleVideos = windowWidth >= 1512 ? videoData : videoData.slice(0, 2);
 
     return (
-        <section>
+        <section className="browse-classes-wrapper">
             <CardsSectionHeader heading={t("landingPage.findClass.h2")} button={t("landingPage.findClass.classesButton")} />
             <section className="videos-section">
                 {visibleVideos.map((video, index) => (

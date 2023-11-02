@@ -13,6 +13,11 @@
     z-index: 1;
 }
 
+// Hides the p-tag used on the About Us page through props on this page, because it destroyed the gap between the heading and link
+.browse-classes-wrapper p {
+    display: none;
+}
+
 #time {
     position: relative;
     border-radius: 8px;

@@ -54,11 +54,11 @@ export const Header = () => {
                     </Menu>
                 </>
             ) : (
-                <>
+                <div>
                     {/* Render desktop links for larger screens and Logo first in the row of elements */}
-                    <Link to={"/"}><Logo text={"Align"} /></Link>
+                    <Logo text={"Align"} />
                     <DesktopNavLinks />
-                </>
+                </div>
             )}
         </header>
     )
