@@ -6,3 +6,41 @@
 .about-content {
     margin: 0 24px;
 }
+
+.about-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-bottom: 279px;
+}
+
+.about-headline-wrapper {
+    margin-top: 300px;
+}
+
+.about-hero-content h1 {
+    text-align: center;
+}
+
+.trial-about-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.trial-about-text {
+    height: 40px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.trial-about-wrapper p {
+    text-align: center;
+}
+
+.card-page-container h2 {
+    text-align: left;
+}

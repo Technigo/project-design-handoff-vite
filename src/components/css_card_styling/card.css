@@ -4,6 +4,13 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding-bottom: 46px;
+}
+
+
+.home-card .image-wrapper {
+    position: relative;
+
 }
 
 .card-container {
@@ -11,13 +18,18 @@
     grid-template-columns: 1fr;
     gap: 16px;
 }
+
+.about-card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
 /* cards */
 
 .card {
     width: 345px;
 }
-
-/* -56px. the textbox should cover 56px of the image*/
 
 
 .card-text {
@@ -85,12 +97,12 @@
     .card {
         width: 376px;
     }
-    
+
     /* -56px. the textbox should cover 56px of the image*/
     .curved-image {
-       width: 376px;
+        width: 376px;
     }
-    
+
 }
 
 /* Desktop */
@@ -104,9 +116,9 @@
     .card {
         width: 310px;
     }
-    
+
     /* -56px. the textbox should cover 56px of the image*/
     .curved-image {
-       width: 310px;
+        width: 310px;
     }
 }

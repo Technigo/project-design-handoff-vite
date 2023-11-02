@@ -3,6 +3,7 @@ import imageAbout2 from "../../assets/images_mobile/imageAbout2.svg";
 import imageAbout3 from "../../assets/images_mobile/imageAbout3.svg";
 import imageAbout4 from "../../assets/images_mobile/imageAbout4.svg";
 import "../css_card_styling/card.css"
+import "../../pages/about.css"
 import { H2_Headline } from "../Typography/H2_Headline";
 import { AboutCard } from "./AboutCard";
 import { ClientQuotes } from "./ClientQuotes";
@@ -93,33 +94,35 @@ export const AboutContainer = () => {
     return (
         <div className="card-page-container">
             <H2_Headline h2_headline={h2_headline_1} />
-            <div className="card-container">
-                {about_studio_info.map((about_studio) => (
-                    <div className="about-card-wrapper" key={about_studio.id}>
-                        <AboutCard
-                            headline={about_studio.headline}
-                            articleImage={about_studio.image}
-                            imageAltText={about_studio.alt}
-                            studioCardText={about_studio.text}
-                            studio_employee={about_studio.studio_employee}
-                            className={about_studio.className}
-                        />
-                    </div>
-                ))
-                }
-            </div>
-            <div className="client-quote-wrapper">
-                <H2_Headline h2_headline={h2_headline_2} />
-                <div className="about-client-wrapper">
-                    {client_quotes.map((client) => (
-                        <div className="quote-wrapper" key={client.id}>
-                            <ClientQuotes
-                                clientQuote={client.text}
-                                clientName={client.name}
-                                className={client.className}
+            <div className="about-card-container">
+                <div className="card-container">
+                    {about_studio_info.map((about_studio) => (
+                        <div className="about-card-wrapper" key={about_studio.id}>
+                            <AboutCard
+                                headline={about_studio.headline}
+                                articleImage={about_studio.image}
+                                imageAltText={about_studio.alt}
+                                studioCardText={about_studio.text}
+                                studio_employee={about_studio.studio_employee}
+                                className={about_studio.className}
                             />
                         </div>
-                    ))}
+                    ))
+                    }
+                </div>
+                <div className="client-quote-wrapper">
+                    <H2_Headline h2_headline={h2_headline_2} />
+                    <div className="about-client-wrapper">
+                        {client_quotes.map((client) => (
+                            <div className="quote-wrapper" key={client.id}>
+                                <ClientQuotes
+                                    clientQuote={client.text}
+                                    clientName={client.name}
+                                    className={client.className}
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

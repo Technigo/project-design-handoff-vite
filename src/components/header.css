@@ -4,6 +4,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 50;
 }
 
 .header-wrapper {
@@ -30,7 +31,6 @@ header {
     margin-top: 49px;
     grid-column: 4 / span 1;
     display: flex;
-    align-items: center;
     text-decoration: none;
 }
 

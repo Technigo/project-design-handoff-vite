@@ -4,12 +4,12 @@ import { H1_Headline } from "../components/Typography/H1_Headline";
 import { H2_Headline } from "../components/Typography/H2_Headline";
 
 import { PText } from "../components/Typography/PText";
+import { FreeTrialBtn } from "../components/Buttons/FreeTrialBtn";
 
 export const HomePage = () => {
     let h2_headline = "Online Yoga and Meditation";
     let h1_headline = "Elevate Your Body, Mind, and Spirit";
     let text_trial = "Free trial ➤";
-    let text_button = "Join the journey";
 
     return (
         <div className="home-page-wrapper">
@@ -34,12 +34,7 @@ export const HomePage = () => {
                                 text={text_trial}
                             />
                         </div>
-                        <button className="trial_btn">
-                            <PText
-                                className="trial_btn_text brown-text"
-                                text={text_button}
-                            />
-                        </button>
+                        <FreeTrialBtn />
                     </div>
                 </div>
                 <section className="home-card-page-wrapper">
