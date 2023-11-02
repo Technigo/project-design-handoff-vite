@@ -1,7 +1,7 @@
 import { InfoFooter } from "../components/Footer/InfoFooter"
 import { AboutMain } from "../components/AboutMain"
 import { Navbar } from "../components/Navbar/Navbar"
-//import { Footer } from "../components/Footer/Footer"
+import { Footer } from "../components/Footer/Footer"
 
 
 export const AboutP = () => {
@@ -10,6 +10,7 @@ export const AboutP = () => {
             <Navbar />
             <AboutMain />
             <InfoFooter />
+            <Footer />
         </>
     )
 }

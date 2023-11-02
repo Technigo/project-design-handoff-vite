@@ -16,3 +16,16 @@
     margin: 0 5%;
     padding-bottom: 4%;
 }
+
+/* ----- Making the content responsive ----- */
+
+/* Desktops */
+@media (min-width: 1025px) {
+    .about-main {
+        padding-top: 8%;
+    }
+
+    .about-inner p {
+        font-size: 20px;
+    }
+}
