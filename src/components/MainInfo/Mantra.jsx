@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const MantraContainer = styled.div`
   max-width: 500px;
-  padding: 10px 20px;
+  padding: 10px 24px;
   border-top: 3px solid #f26631;
   border-bottom: 3px solid #f26631;
   background-color: #f1f1f1;

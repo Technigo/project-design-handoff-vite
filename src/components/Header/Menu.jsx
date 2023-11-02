@@ -9,7 +9,7 @@ const MenuContainer = styled.nav`
   }
   nav {
     position: absolute;
-    background-color: #ffffffdd;
+    background-color: #ffffff;
     font-size: 10px;
     font-weight: 600;
     padding: 15px;
@@ -43,6 +43,13 @@ const MenuContainer = styled.nav`
   }
   .logo {
     width: 50px;
+    /* padding-left: 10px; */
+    display: flex;
+    justify-content: center;
+  }
+
+  ul {
+    padding-bottom: 30px;
   }
 `;
 
@@ -59,27 +66,27 @@ export const Menu = () => {
           <ul>
             <li>
               <a href="#">
-                <span>ABOUT</span> <img src="/gt.svg"></img>
+                <span>BOOK A CLASS</span> <img src="/gt.svg"></img>
               </a>
             </li>
             <li>
               <a href="#">
-                <span>CLASSES</span> <img src="/gt.svg"></img>
+                <span>OUR CLASSES</span> <img src="/gt.svg"></img>
               </a>
             </li>
             <li>
               <a href="#">
-                <span>SCHEDULE</span> <img src="/gt.svg"></img>
+                <span>OUR INSTRUCTORS</span> <img src="/gt.svg"></img>
               </a>
             </li>
             <li>
               <a href="#">
-                <span>MEMBERSHIP</span> <img src="/gt.svg"></img>
+                <span>ABOUT US</span> <img src="/gt.svg"></img>
               </a>
             </li>
             <li>
               <a href="#">
-                <span>CONTACT</span> <img src="/gt.svg"></img>
+                <span>CONTACT US</span> <img src="/gt.svg"></img>
               </a>
             </li>
             <li>
@@ -88,7 +95,8 @@ export const Menu = () => {
               </a>
             </li>
           </ul>
-          <img src="/logo.png" className="logo" alt="Logo" />
+
+          <img src="/logo.svg" className="logo" alt="Logo" />
         </nav>
       )}
     </MenuContainer>

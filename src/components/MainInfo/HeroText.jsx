@@ -7,7 +7,7 @@ const HeroTextContainer = styled.div`
     font-weight: 600;
     font-style: italic;
     text-align: center;
-    padding: 69px 0;
+    padding: 39px 0;
   }
   span {
     padding: 0 4px;
