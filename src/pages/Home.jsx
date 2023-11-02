@@ -1,7 +1,7 @@
 import { Article } from "../components/Article/Article";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
-import { InfoHome } from "../components/Info-text/InfoHome";
+import { InfoHome } from "../components/Info/InfoHome";
 
 export const Home = () => {
 

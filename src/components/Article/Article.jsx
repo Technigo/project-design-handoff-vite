@@ -28,7 +28,7 @@
 //   )
 // }
 
-import "./Article.css";
+
 import articleData from "../../enArticleData.json";
 import { ArticleCard } from "./ArticleCard";
 import styled from "styled-components";
