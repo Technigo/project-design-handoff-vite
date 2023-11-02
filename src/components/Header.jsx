@@ -9,7 +9,7 @@ export const Header = () => {
 
   return (
     <HeaderWrapper>
-      <Logo><Link to="/">Logo</Link></Logo>
+      <Logo><Link to="/">Yoga you</Link></Logo>
       <Menu>
         <NavList>
           <NavLink><Link to="/about">About</Link></NavLink>

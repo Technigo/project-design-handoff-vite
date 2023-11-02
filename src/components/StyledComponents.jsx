@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-// import HeroImage from '../images/hero-image-1440.png';
+import HeroImage from '../images/hero-image-1440.png';
 
 export const PageWrapper = styled.div`
   display: flex;
@@ -12,6 +12,9 @@ export const HeaderWrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
   background-color: #ffcc00;
+  @media (min-width: 1440px) {
+    padding: 1.25vh 3.69vh 1.25vh 3.69vh;
+  }
 `;
 
 export const Logo = styled.div`
@@ -49,9 +52,23 @@ export const Hamburger = styled.div`
   }
 `;
 
+export const ContentWrapper = styled.div`
+  @media(min-width: 1440px) {
+    margin: 4.8vh 7vh 0 7vh;
+  }
+`;
+
 export const HeroWrapper = styled.section`
-  background-color: #FFFF00;
-  text-align: left;
+  color: red;
+  text-align: center;
+  background-image: url(${HeroImage});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media (min-width: 1440px) {
+    height: 43vh;
+    margin-bottom: 2.25vh;
+  }
 `;
 
 export const AboutUsWrapper = styled.section`
@@ -66,7 +83,7 @@ export const BenefitsWrapper = styled.section`
 
 /* SHOULD NOT BE USED? */
 export const ContentSection = styled.section`
-  background-color: #fff;
+  background-color: #446699;
   text-align: left;
 `;
 
@@ -93,4 +110,7 @@ export const FooterWrapper = styled.footer`
 background-color: #E9C9AF;
 text-align: left;
 margin-top: auto;
+@media(min-width: 1440px) {
+  padding: 2vh 7vh 0vh 7vh;
+}
 `;

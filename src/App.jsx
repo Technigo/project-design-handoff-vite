@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { PageWrapper } from './components/StyledComponents';
 import { Header } from './components/Header';
+import { ContentWrapper } from './components/StyledComponents';
 import { Footer } from './components/Footer';
 import { Home } from './pages/Home';
 import { About } from './pages/About';
@@ -14,6 +15,7 @@ export const App = () => {
       <div>
         <PageWrapper>
         <Header />
+        <ContentWrapper>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -21,6 +23,7 @@ export const App = () => {
           <Route path="/studio" element={<Studio />} />
           <Route path="/book" element={<Book />} />
         </Routes>
+        </ContentWrapper>
         <Footer />
         </PageWrapper>
       </div>
