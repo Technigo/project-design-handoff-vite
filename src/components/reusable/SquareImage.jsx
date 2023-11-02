@@ -5,14 +5,12 @@ const StyledSquareContainer = styled.div`
   width: 100vw;
   height: 0;
   padding-bottom: 100%;
-  overflow: hidden;
 
   img {
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    overflow: hidden;
   }
 `;
 

@@ -9,14 +9,7 @@ export const HomePage = () => {
     <>
       <Hero />
       <Quote />
-      {/* <ImagesContainer>
-        <SquareImage imgUrl="./image-1.png" imgAlt="" isTwoImages={true} />
-        <SquareImage imgUrl="./image-4.png" imgAlt="" isTwoImages={true} />
-      </ImagesContainer> */}
       <Offering />
-      {/* <ImagesContainer>
-        <SquareImage imgUrl="./image-2.png" imgAlt="" isTwoImages={false} />
-      </ImagesContainer> */}
       <KundaliniYoga />
       <Testimonials />
     </>

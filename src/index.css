@@ -57,6 +57,7 @@ button {
 
 body {
   background: var(--bg-color);
+  overflow-x: hidden; /* This will hide horizontal overflow */
 }
 
 /*---------- LAYOUT ----------*/
