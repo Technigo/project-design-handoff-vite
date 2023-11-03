@@ -16,7 +16,7 @@ const resources = {
 i18n.use(initReactI18next).init({
     resources,
     lng: "en", // default language
-    interpolation: {
+    interpolation: {  //swapping placeholders with real values in our text
         escapeValue: false,
     }
 })

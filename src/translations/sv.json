@@ -1,8 +1,34 @@
 {
-    "welcome": "Välkommen till vår webbplats",
-    "text": "Denna mening är till för att testa översättningen.",
-    "translatePage": {
-        "heading": "Hej ord",
-        "sub-heading": "Detta är ett test för att hjälpa till att förstå nesting."
-    }
+    "frågor": [
+        {
+            "frågaId": 1,
+            "fråga": "Är poledance nybörjarvänligt?",
+            "svar": "Ja! Vi har klasser för alla nivåer. Du kommer att bli förvånad över vad din kropp kommer att kunna åstadkomma!"
+        },
+        {
+            "frågaId": 2,
+            "fråga": "Måste man vara i form för att börja med poledancing?",
+            "svar": "Nej! Våra klasser sträcker sig från nybörjarvänlig till elit. Klasserna är strukturerade på ett sätt som ger dina muskler det bästa sättet att gradvis förbereda sig för vad som väntar. Du kommer att bli starkare varje vecka utan att ens märka det, bara genom att ha kul!"
+        },
+        {
+            "frågaId": 3,
+            "fråga": "Hur ska jag klä mig för poleclass?",
+            "svar": "Det beror på vilken klass du tar men i allmänhet bör du klä dig på ett sätt som du känner dig bekväm och kan röra dig fritt. För uppvärmningen kan du ha långärmat men för pole behöver du så mycket hudkontakt som möjligt med stången för att förhindra att du glider, vi rekommenderar en sport-bh och shorts. Om du föredrar långärmade byxor rekommenderar vi sticky pole pants. Vi tränar utan skor, förutom för exotisk stav."
+        },
+        {
+            "frågaId": 4,
+            "fråga": "Hur långa klackar behöver jag för exotisk klass?",
+            "svar": "Det beror på vad du känner dig bekväm med. Om det är första gången du har klackar rekommenderar vi att du börjar med en låg klack och arbetar dig uppåt."
+        },
+        {
+            "frågaId": 5,
+            "fråga": "Kan jag ta om en missad lektion?",
+            "svar": "Du kan ta igen en missad lektion inom kursperioden om lektionen inte är full. Vänligen meddela oss i förväg så att vi kan hjälpa dig att hitta den bästa lösningen."
+        },
+        {
+            "frågaId": 6,
+            "fråga": "Kommer jag att ha min egen stav på klassen?",
+            "svar": "Ja, en stav per elev."
+        }
+    ]
 }
