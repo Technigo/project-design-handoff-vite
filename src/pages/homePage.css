@@ -1,10 +1,10 @@
 .home-page-wrapper {
     background-color: #374F4B;
-    /* background-image: url("../assets/background-image/backgroundImage.png"); */
+    background-image: url("../assets/background-image/hero_image_mobile.png");
     background-repeat: no-repeat;
 }
 
-/* needs fixing */
+
 .hero-content {
     margin: 0 24px;
 }
@@ -60,3 +60,29 @@
     align-items: center;
 }
 
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+
+    .hero-content {
+        width: 793px;
+        margin: 0 auto;
+        gap: 16px;
+
+    }
+
+
+}
+
+
+/* Desktop */
+@media (min-width: 1025px) {
+
+    .hero-content {
+        width: 1292px;
+        margin: 0 auto;
+        gap: 40px;
+    }
+
+
+}

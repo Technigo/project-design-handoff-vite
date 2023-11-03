@@ -7,6 +7,7 @@ import "./contact.css";
 import { PText } from "../components/Typography/PText.jsx"
 import { ContactBtn } from "../components/Buttons/contactBtn.jsx";
 import { ChatBtn } from "../components/Buttons/ChatBtn.jsx";
+import { SubmitBtn } from '../components/Buttons/SubmitBtn.jsx';
 
 export const Contact = () => {
 
@@ -64,7 +65,7 @@ export const Contact = () => {
         ) : isFormVisible ? (
           <form onSubmit={handleFormSubmit}>
             <div className="form-field">
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name"><PText text="Name" /></label>
               <input
                 type="text"
                 id="name"
@@ -74,7 +75,7 @@ export const Contact = () => {
               />
             </div>
             <div className="form-field">
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email"><PText text="Email" /></label>
               <input
                 type="email"
                 id="email"
@@ -84,7 +85,7 @@ export const Contact = () => {
               />
             </div>
             <div className="form-field">
-              <label htmlFor="question">Question</label>
+              <label htmlFor="question"><PText text="How can we help?" /></label>
               <textarea
                 id="question"
                 value={question}
@@ -93,7 +94,7 @@ export const Contact = () => {
                 required
               />
             </div>
-            <button type="submit">Send</button>
+            <SubmitBtn />
           </form>
         ) : (
           <div className="question contact-info-wrapper">
@@ -119,5 +120,5 @@ export const Contact = () => {
         </div>
       </div>
     </div>
-  ); 
+  );
 }

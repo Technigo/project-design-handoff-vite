@@ -1,5 +1,7 @@
 .about-page-wrapper {
     background-color: #374F4B;
+    background-image: url("../assets/background-image/about_background_mobile.png");
+    background-repeat: no-repeat;
 }
 
 /* needs fixing */

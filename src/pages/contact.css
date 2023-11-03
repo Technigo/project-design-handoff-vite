@@ -18,6 +18,13 @@
     gap: 80px;
 }
 
+.form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+
 .contact-info-wrapper {
     display: flex;
     align-items: flex-start;
