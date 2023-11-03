@@ -5,7 +5,7 @@ import { Buttons } from "../../components/Buttons/Buttons";
 import FbLink from "../../assets/FB-link.svg";
 import IgLink from "../../assets/Ig-link.svg";
 import TikTokLink from "../../assets/TikTok-link.svg";
-import { DropDown } from "../../components/DropDown";
+import { DropDown } from "./DropDown";
 
 import { useTranslation } from "react-i18next";
 

@@ -1,0 +1,37 @@
+.card {
+  height: 262px;
+}
+
+.card img {
+  height: 243px;
+}
+
+.cardOne {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-box {
+  background-color: #ff7e73;
+}
+
+.text-box h4 {
+  color: var(--FF-Dark, #191922);
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 47px;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.text-box p {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  margin-left: 25px;
+  margin-right: 25px;
+}

@@ -1,0 +1,23 @@
+.swiper-box {
+  margin-top: 70px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  border-radius: 0;
+}
+
+.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, -3px);
+  top: var(--swiper-pagination-top, auto);
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  border-radius: 0;
+  color: #ff5344;
+  margin-top: 20px;
+}
+
+/* .SwiperSlide {
+  width: 398px;
+} */

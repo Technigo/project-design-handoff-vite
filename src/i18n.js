@@ -22,6 +22,12 @@ const resources = {
         findYourCenter: "Find your center",
       },
 
+      MemberSwiperCard: {
+        cardText:
+          "FamiliyFitness has been a game changer in our family. Finally we have time to exercise again!",
+        cardAuthor: "Helena and Marcus Brodtkorp, Members for 2 years",
+      },
+
       MiniFitSwiper: {
         heading: "What is MiniFit?",
       },
@@ -65,6 +71,12 @@ const resources = {
         exploreClasses: "Utforsk klasser",
         aboutMiniFit: "Om MiniFit",
         findYourCenter: "Finn ditt senter",
+      },
+
+      MemberSwiperCard: {
+        cardText:
+          "FamiliyFitness har vært en spillveksler for familien vår. Endelig har vi tid til å trene igjen!",
+        cardAuthor: "Helena og Marcus Brodtkorp, Medlemmer i 2 år",
       },
 
       MiniFitSwiper: {
@@ -111,6 +123,12 @@ const resources = {
         exploreClasses: "Utforska klasser",
         aboutMiniFit: "Om MiniFit",
         findYourCenter: "Hitta ditt center",
+      },
+
+      MemberSwiperCard: {
+        cardText:
+          "FamiliyFitness har varit en spelväxlare för vår familj. Äntligen har vi tid att träna igen!",
+        cardAuthor: "Helena och Marcus Brodtkorp, Medlemmar i 2 år",
       },
 
       MiniFitSwiper: {
