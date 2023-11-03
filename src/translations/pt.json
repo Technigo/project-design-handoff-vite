@@ -1,0 +1,113 @@
+{
+  "homePage": {
+    "heroSection": {
+      "button": "ENTRAR"
+    },
+    "mainSection": {
+      "primaryHeading": [
+        {
+          "firstWord": "Força.",
+          "secondWord": "Mobilidade.",
+          "thirdWord": "Atenção Plena."
+        }
+      ],
+      "secondaryHeading": "Transforma você fisicamente e mentalmente.",
+      "triraryHeading": "Treino de baixo impacto e alta intensidade que fortalece e tonifica o seu corpo.",
+      "cards": [
+        {
+          "heading": "Junte-se a um treino de corpo inteiro",
+          "paragraph": "Nosso estúdio oferece notáveis treinos de corpo inteiro focados na positividade corporal e inclusão, com instrutores especializados para orientá-lo a cada passo do caminho.",
+          "button": "AGENDE UMA AULA"
+        },
+        {
+          "heading": "Treine em casa",
+          "paragraph": "Centenas de treinos sob demanda. Comece com uma coleção de enérgicos treinos iniciais de barre para iluminar o seu corpo de forma poderosa e metódica.",
+          "button": "AGENDE UMA AULA"
+        }
+      ]
+    },
+    "aside": {
+      "heading": "Nossas Aulas de Barre",
+      "paragraph": "A Prima Barre oferece quatro aulas em grupo com treinos de corpo inteiro únicos focados em movimentos de baixo impacto e alta intensidade que tonificam os músculos e melhoram a força, agilidade e flexibilidade para todos.",
+      "cards": [
+        {
+          "heading": "Prima Barre Align",
+          "paragraph": "combina nossa técnica clássica de construção de força de barre com um foco exclusivo em flexibilidade e treinamento de equilíbrio para oferecer um treino restaurador de corpo inteiro."
+        },
+        {
+          "heading": "Prima Barre Define",
+          "paragraph": "funde conceitos de nossa técnica clássica de barre com treinamento de força baseado em peso para desenvolver força muscular e poder."
+        },
+        {
+          "heading": "Prima Barre Power",
+          "paragraph": "é nosso treino de fusão de Classic Prime Barre e treinamento de intervalo de alta intensidade projetado para elevar sua frequência cardíaca, desenvolver força e aumentar seu metabolismo."
+        },
+        {
+          "heading": "Prima Barre Classic",
+          "paragraph": "é nossa aula de barre original. Nossa técnica proprietária é o treino de corpo inteiro mais rápido e eficaz."
+        }
+      ]
+    },
+    "formSection": {
+      "heading": "FIQUE MAIS PRÓXIMO DA AÇÃO",
+      "paragraph": "Digite seu nome e endereço de e-mail para receber comunicações por e-mail da Prima Barre, incluindo ofertas especiais, datas de vendas e outras atualizações.",
+      "firstName": "Primeiro Nome",
+      "lastName": "Sobrenome",
+      "email": "Endereço de E-mail",
+      "button": "INSCREVA-SE"
+    },
+    "footer": {
+      "heading": "NOS SIGA",
+      "paragraph": "Baixe o aplicativo PRIMA BARRE, acesse aulas de qualquer lugar, a qualquer momento",
+      "appleBtn": "Baixar no",
+      "googleBtn": "PEGUE NO",
+      "contact": "CONTATE-NOS",
+      "faq": "PERGUNTAS FREQUENTES",
+      "about": "SOBRE NÓS",
+      "terms": "TERMOS E CONDIÇÕES",
+      "policy": "POLÍTICA DE PRIVACIDADE",
+      "copyright": "Todos os direitos reservados"
+    }
+  },
+  "aboutPage": {
+    "heroSection": {
+      "heading": "SOBRE NÓS",
+      "button": "ENTRAR"
+    },
+    "mainSection": {
+      "primaryHeading": "Quem Somos e o Que Fazemos",
+      "primaryParagraph": "Há mais de uma década, estamos capacitando as mulheres por meio do fitness de barre. Fornecemos uma comunidade de apoio e motivação onde mulheres de todas as idades e níveis de condicionamento físico podem se reunir. Nossos instrutores especializados guiam os clientes por uma série de movimentos focados em contrações isométricas que envolvem e desafiam os músculos.",
+      "secondaryParagraph": "Em nosso estúdio de barre, somos dedicados a oferecer aulas de barre de alta qualidade que melhoram a força, a flexibilidade e a postura. Nossas aulas se concentram em treinos de corpo inteiro de baixo impacto que tonificam e esculpem os músculos usando a barra de balé.",
+      "tertiaryParagraph": "Temos orgulho de nosso compromisso com a segurança e a forma adequada. Nossos instrutores são treinados para modificar os movimentos para todos os níveis de condicionamento físico e habilidades. Nosso objetivo é fornecer um ambiente de treinamento desafiador, mas seguro, que deixa os clientes motivados e energizados.",
+      "secondaryHeading": "CONHEÇA SEUS INSTRUTORES",
+      "cards": [
+        {
+          "heading": "ADRIENNE RABENA",
+          "paragraph": "As aulas da Adrienne são uma combinação envolvente de ritmo, fluidez e paixão. Ela é dedicada a movimentos intuitivos e fluidos, e se deleita no desafio de coreografar transições que parecem perfeitas e belas.",
+          "button": "AGENDE UMA AULA"
+        },
+        {
+          "heading": "EMILY SFERRA",
+          "paragraph": "Depois de dançar profissionalmente por vários anos após a faculdade, Emily fez a transição para o ensino de barre e rapidamente se apaixonou pelo intenso desafio físico e mental que esse tipo de treinamento proporciona.",
+          "button": "AGENDE UMA AULA"
+        }
+      ]
+    },
+    "formSection": {
+      "heading": "Cadastre-se na Prima Barre",
+      "instructions": "Crie uma conta ou faça login",
+      "emailLabel": "E-mail",
+      "username": "Nome de Usuário",
+      "password": "Senha",
+      "communication": "Desejo receber comunicações por e-mail da Prima Barre, incluindo ofertas especiais, datas de vendas e outras atualizações."
+    },
+    "footer": {
+      "heading": "NOS SIGA",
+      "contact": "CONTATE-NOS",
+      "about": "SOBRE NÓS",
+      "terms": "TERMOS E CONDIÇÕES",
+      "policy": "POLÍTICA DE PRIVACIDADE",
+      "copyright": "Todos os direitos reservados"
+    }
+  }
+}

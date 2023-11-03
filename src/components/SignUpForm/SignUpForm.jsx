@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "../Buttons/Button";
 
 const FormContainer = styled.div`
   position: relative;
@@ -40,7 +41,7 @@ const FormContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     padding: 16px 45px;
     max-width: 400px;
     .info-text {
@@ -81,14 +82,11 @@ const FormContainer = styled.div`
     background-color: transparent;
   }
 
-  button {
-    position: left;
-    border-radius: 10px;
-    border: 3px solid #ffffff;
-    padding: 4px 8px;
+  Button {
+    border: 2px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
-    text-transform: uppercase;
+    margin-left: 10px;
   }
 
   span {
@@ -114,6 +112,9 @@ export const SignUpForm = () => {
 
     // Log form data to the console
     console.log("Form Data:", data);
+
+    // Clear the form, Reset the form fields
+    e.target.reset();
   };
 
   return (
@@ -160,8 +161,8 @@ export const SignUpForm = () => {
                 required
               />
             </label>
-            <button type="submit">Sign Up</button>
           </form>
+          <Button type="submit">Sign Up</Button>
         </div>
       </div>
     </FormContainer>

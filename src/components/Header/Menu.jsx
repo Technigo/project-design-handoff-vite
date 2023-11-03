@@ -17,7 +17,7 @@ const MenuContainer = styled.nav`
   }
 
   li {
-    padding: 5px 0;
+    padding: 3px 0;
     img {
       width: 10px;
       height: 10px;
@@ -43,7 +43,6 @@ const MenuContainer = styled.nav`
   }
   .logo {
     width: 50px;
-    /* padding-left: 10px; */
     display: flex;
     justify-content: center;
   }

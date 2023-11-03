@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Button } from "../Buttons/Button";
 
 const ArticlesContainer = styled.div`
   display: flex;
@@ -27,14 +28,9 @@ const ArticlesContainer = styled.div`
     padding-bottom: 10px;
   }
 
-  button {
+  Button {
     background-color: #c00202;
     color: #ffffff;
-    border-radius: 10px;
-    border-style: none;
-    padding: 6px 14px;
-    text-transform: uppercase;
-    font-size: 14px;
     font-weight: 600;
   }
 `;
@@ -64,7 +60,7 @@ export const Articles = () => {
           beginner barre workouts to light up your body in a powerful,
           methodical way.
         </p>
-        <button>Start free trial</button>
+        <Button>Start free trial</Button>
       </div>
     </ArticlesContainer>
   );

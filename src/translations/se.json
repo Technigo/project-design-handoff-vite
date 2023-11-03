@@ -1,4 +1,113 @@
 {
-  "welcome": "Välkommen till vår sida!",
-  "text": "Pizza är gott."
+  "homePage": {
+    "heroSection": {
+      "button": "LOGGA IN"
+    },
+    "mainSection": {
+      "primaryHeading": [
+        {
+          "firstWord": "Styrka.",
+          "secondWord": "Rörlighet.",
+          "thirdWord": "Sinnesnärvaro."
+        }
+      ],
+      "secondaryHeading": "Förvandlar dig fysiskt och mentalt.",
+      "triraryHeading": "Lågintensiv, högintensiv träning som stärker och tonar din kropp.",
+      "cards": [
+        {
+          "heading": "Gå med i ett träningspass för hela kroppen",
+          "paragraph": "Vår studio ger dig enastående helkroppsträning med fokus på kroppspositivitet och inkludering, med expertinstruktörer som guidar dig varje steg på vägen.",
+          "button": "BOKA EN KLASS"
+        },
+        {
+          "heading": "Träna hemma",
+          "paragraph": "Hundratals träningspass på begäran. Börja med en samling eldiga nybörjar-barreträningspass för att lysa upp din kropp på ett kraftfullt, metodiskt sätt.",
+          "button": "BOKA EN KLASS"
+        }
+      ]
+    },
+    "aside": {
+      "heading": "Våra Barre-klasser",
+      "paragraph": "Prima Barre erbjuder fyra gruppklasser med unik helkroppsträning fokuserad på lågintensiva, högintensiva rörelser som lyfter och tonar musklerna och förbättrar styrka, smidighet och flexibilitet för alla.",
+      "cards": [
+        {
+          "heading": "Prima Barre Align",
+          "paragraph": "kombinerar vår klassiska styrkebyggande barre-teknik med en unik betoning på flexibilitet och balansträning för att leverera en återställande helkroppsträning."
+        },
+        {
+          "heading": "Prima Barre Define",
+          "paragraph": "fuserar koncept från vår klassiska barre-teknik med viktbaserad styrketräning för att utveckla muskulär styrka och kraft."
+        },
+        {
+          "heading": "Prima Barre Power",
+          "paragraph": "är vår fusionsklass av Classic Prima Barre och högintensiv intervallträning designad för att öka din puls, bygga styrka och öka din ämnesomsättning."
+        },
+        {
+          "heading": "Prima Barre Classic",
+          "paragraph": "är vår ursprungliga barre-klass. Vår egenutvecklade teknik är den snabbaste och mest effektiva helkroppsträningen."
+        }
+      ]
+    },
+    "formSection": {
+      "heading": "HÅLL DIG NÄRMARE HÄNDELSERNA",
+      "paragraph": "Ange ditt namn och din e-postadress för att ta emot e-postkommunikation från Prima Barre inklusive specialerbjudanden, försäljningsdatum och andra uppdateringar.",
+      "firstName": "Förnamn",
+      "lastName": "Efternamn",
+      "email": "E-postadress",
+      "button": "REGISTRERA DIG"
+    },
+    "footer": {
+      "heading": "FÖLJ OSS",
+      "paragraph": "Ladda ner PRIMA BARRE-appen, få tillgång till klasser var som helst, när som helst",
+      "appleBtn": "Ladda ner på",
+      "googleBtn": "HÄMTA DEN PÅ",
+      "contact": "KONTAKTA OSS",
+      "faq": "FAQ",
+      "about": "OM OSS",
+      "terms": "VILLKOR OCH BESTÄMMELSER",
+      "policy": "INTIGANSPOLICY",
+      "copyright": "Alla rättigheter förbehållna"
+    }
+  },
+  "aboutPage": {
+    "heroSection": {
+      "heading": "OM OSS",
+      "button": "LOGGA IN"
+    },
+    "mainSection": {
+      "primaryHeading": "Vem vi är och vad vi gör",
+      "primaryParagraph": "I över ett decennium har vi stärkt kvinnor genom barreträning. Vi erbjuder en stödjande och motiverande gemenskap där kvinnor i alla åldrar och fitnessnivåer kan samlas. Våra expertinstruktörer guidar klienter genom en serie rörelser med fokus på isometriska positioner som engagerar och utmanar musklerna.",
+      "secondaryParagraph": "På vår barrestudio är vi dedikerade till att erbjuda högkvalitativa barreträningsklasser som förbättrar styrka, smidighet och hållning. Våra klasser fokuserar på lågintensiv, helkroppsträning som tonar och skulpterar musklerna med hjälp av baletträcket.",
+      "tertiaryParagraph": "Vi är stolta över vårt åtagande för säkerhet och korrekt utförande. Våra instruktörer är tränade för att anpassa rörelser för alla fitnessnivåer och förmågor. Vårt mål är att erbjuda en utmanande men säker träningsmiljö som gör att klienter känner sig motiverade och energiska.",
+      "secondaryHeading": "TRÄFFA DINA INSTRUKTÖRER",
+      "cards": [
+        {
+          "heading": "ADRIENNE RABENA",
+          "paragraph": "Adriennes klasser är en förtrollande kombination av rytm, flyt och intensitet. Hon är starkt dedikerad till intuitiv och flytande rörelse, och hon gläds åt utmaningen att koreografera övergångar som känns smidiga och vackra.",
+          "button": "BOKA EN KLASS"
+        },
+        {
+          "heading": "EMILY SFERRA",
+          "paragraph": "Efter att ha dansat professionellt i flera år efter college övergick Emily till att undervisa i barre och blev snabbt förälskad i den intensiva fysiska och mentala utmaning som den här typen av träning erbjuder.",
+          "button": "BOKA EN KLASS"
+        }
+      ]
+    },
+    "formSection": {
+      "heading": "Registrera dig för Prima Barre",
+      "instructions": "Skapa ett konto eller logga in",
+      "emailLabel": "E-post",
+      "username": "Användarnamn",
+      "password": "Lösenord",
+      "communication": "Jag vill få e-postkommunikation från Prima Barre inklusive specialerbjudanden, försäljningsdatum och andra uppdateringar."
+    },
+    "footer": {
+      "heading": "FÖLJ OSS",
+      "contact": "KONTAKTA OSS",
+      "about": "OM OSS",
+      "terms": "VILLKOR OCH BESTÄMMELSER",
+      "policy": "PRIVACY POLICY",
+      "copyright": "Alla rättigheter förbehållna"
+    }
+  }
 }
