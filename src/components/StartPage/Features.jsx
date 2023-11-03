@@ -24,6 +24,7 @@ const Feature = styled.div`
     height: auto;
     background-size: cover;
     transition: background-image 0.3s ease-in-out;
+   
 `;
 
 const FeatureImage = styled.img`
@@ -33,10 +34,10 @@ const FeatureImage = styled.img`
 `;
 
 const IconsContainer = styled.div`
-    width: 329px; // The actual content width without padding
+    width: 306px; // The actual content width without padding
     display: flex;
     justify-content: space-between;
-    padding: 0px 16px; // Adding the padding for the icons
+    padding: 16px 16px; 
 `;
 
 const Icon = styled.img`
@@ -49,12 +50,13 @@ const FeatureContent = styled.div`
     color: #D2FDFF;
     width: 297px; // 329px
     height: 232px;         
-    padding: 16px;        
+    padding: 16px 16px 40px 16px;        
     border-radius: 8px;   
     display: flex;       
     flex-direction: column;
     justify-content: space-between; 
     background-size: cover;
+   
 `;
 
 const FeatureTitle = styled.h2`

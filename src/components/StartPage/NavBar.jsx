@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import logo from '../../assets/LEGZ.jpg';
+import { useTranslation } from 'react-i18next';
 
 const NavBarContainer = styled.div`
     display: flex;
@@ -44,14 +45,16 @@ const HamburgerIcon = styled.button`
 `;
 
 function NavBar() {
+    const { t } = useTranslation();
+    
     return (
         <NavBarContainer>
-            <Logo src={logo} alt="4 Legz Logo"/>
+            <Logo src={logo} alt={t('logo.alt')}/>
             <DesktopNav>
-                <a href="/join">Join</a>
+                <a href="/join">{t('nav.join')}</a>
             </DesktopNav>
             <MobileNav>
-                <HamburgerIcon>☰</HamburgerIcon>
+                <HamburgerIcon>{t('mobileNav.hamburger')}</HamburgerIcon>
             </MobileNav>
         </NavBarContainer>
     );
