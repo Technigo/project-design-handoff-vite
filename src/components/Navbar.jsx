@@ -13,7 +13,7 @@ export const Navbar = () => {
     <nav className="navbar">
       <Link to="/">
         <img
-          src="/public/assets/logo/logo_phone.svg"
+          src="../src/assets/logo/logo_phone.svg"
           alt="logo"
           className="logo"
         />

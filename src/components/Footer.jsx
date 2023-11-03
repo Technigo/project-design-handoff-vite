@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export const Footer = () => {
   return (
     <div className="footer-wrapper">
-      <img src="/public/assets/logo/logo_phone.svg" />
+      <img src="../src/assets/logo/logo_phone.svg" />
       <ul>
         <div className="footer-line-one">
           <li>
@@ -23,12 +23,12 @@ export const Footer = () => {
       </ul>
       <div className="language">
         <img
-          src="/public/assets/icon/sweden.png"
+          src="../src/assets/icon/sweden.png"
           alt="swedish"
           className="swedish"
         />
         <img
-          src="/public/assets/icon/uk.png"
+          src="../src/assets/icon/uk.png"
           alt="english"
           className="english"
         />

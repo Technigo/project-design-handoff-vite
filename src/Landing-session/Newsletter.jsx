@@ -1,11 +1,10 @@
 import "../Landing-session/newsletter.css";
-import { BtnLight } from "../components/BtnLight";
 
 export const Newsletter = () => {
   return (
     <div className="newsletter-wrapper">
       <img
-        src="/public/assets/icon/Illustration5.svg"
+        src="../src/assets/icon/Illustration5.svg"
         alt="circle-divider"
         className="subscribe-divider"
       />

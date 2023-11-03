@@ -19,7 +19,7 @@
   width: 100%;
   height: 100%;
   border-radius: 30px;
-  background: url("/public/assets/img/mon_kid_yoga.avif");
+  background: url("../src/assets/img/mon_kid_yoga.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

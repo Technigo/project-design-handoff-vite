@@ -4,7 +4,7 @@
 
 body {
   font-family: Open Sans;
-  background-image: url("/public/assets/img/background.png");
+  background-image: url("../src/assets/img/background.png");
   background-repeat: no-repeat;
   top: 0;
   left: 0;

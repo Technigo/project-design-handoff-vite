@@ -9,10 +9,7 @@ export const Contact = () => {
       <div className="contact-img">
         <div className="overlay">
           <p>get in touch</p>
-          <img
-            src="/public/assets/icon/arrow_down.svg"
-            className="arrow-down"
-          />
+          <img src="../src/assets/icon/arrow_down.svg" className="arrow-down" />
         </div>
       </div>
       <IntroContact />
