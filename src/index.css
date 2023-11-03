@@ -8,17 +8,30 @@
   --review: "#C0AB9B";
   --text: "#3C3C3C";
   --font: "Cormorant Garamond", "sans-serif";
-  --large-radius: 30px;
+  --large-radius: 50px;
+  --medium-radius: 30px;
   --small-radius: 20px;
+
+  /* Headings */ 
+  --heading-weight: 500;
+  --heading-size-mobile: 30px;
+  --heading-size-tablet: 40px;
+  --heading-height-mobile: 36.33px;
+  --heading-height-tablet: 48.44px;
 
   /* Body text */
   --text-weight: 400;
-  --text-size: 20px;
-  --text-height: 24.22px;
+  --text-size-mobile: 20px;
+  --text-height-mobile: 24.22px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 #root {
   font-family: var(--font);
-  background: var(--primary);
+  background-color: var(--primary);
+  height: 100vh;
 }
 

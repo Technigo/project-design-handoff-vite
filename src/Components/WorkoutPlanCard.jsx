@@ -24,11 +24,11 @@ const PlanCard = styled.div`
 const PlanImage = styled.img`
   width: 100%; 
   height: 210px;
+  border-radius: var(--small-radius);
 
   @media (min-width: 394px) {
     height: 220px;
   }
-  
   @media (min-width: 835px) {
     height: 386px;
   }
@@ -48,9 +48,15 @@ const HeartBtn = styled.button`
 `
 
 const PlanTitle = styled.p`
-  font-size: 20px;
-  weight: 400;
-  line-height: 24.22px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.17px;
+  text-align: center;
+
+  @media (min-width: 835px) {
+    font-size: var(--text-size-mobile);
+    font-height: var(--text-height-mobile);
+  }
 `
 
 export const WorkoutPlanCard = ({ plan }) => {

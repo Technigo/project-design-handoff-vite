@@ -4,6 +4,8 @@ const SubheadingWrapper = styled.div`
   display: flex;
   flex-direction: row;
   gap: 23px;
+  width: 100%;
+  overflow: scroll;
 `
 
 const Subheading = styled.h2`
@@ -11,6 +13,7 @@ const Subheading = styled.h2`
   font-style: italic;
   font-weight: 300;
   line-height: 24.22px;
+  white-space: nowrap;
 
   @media (min-width: 835px) {
     font-size: 30px;

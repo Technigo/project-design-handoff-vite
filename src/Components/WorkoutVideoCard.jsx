@@ -43,14 +43,27 @@ const HeartBtn = styled.button`
   background: transparent;
 `
 
+const VideoTitle = styled.p`
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18.17px;
+  text-align: center;
+
+  @media (min-width: 835px) {
+    font-size: var(--text-size-mobile);
+    font-height: var(--text-height-mobile);
+  }
+`
+
 const VideoLength = styled.p`
   display: none;
 
   @media (min-width: 835px) {
     display: block;
-    font-size: var(--text-size);
+    font-size: var(--text-size-mobile);
+    font-height: var(--text-height-mobile);
     font-weight: var(--text-weight);
-    line-height: var(--text-height);
+    text-align: center;
   }
 `
 
@@ -80,7 +93,7 @@ export const WorkoutVideoCard = ({ video }) => {
         </HeartBtn>
       </HeartWrapper>
       <VideoImage src={video.image} alt={video.title} />
-      <p>{video.title.toUpperCase()}</p>
+      <VideoTitle>{video.title.toUpperCase()}</VideoTitle>
       <VideoLength>{video.length}</VideoLength>
     </VideoCardWrapper>
   )

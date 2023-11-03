@@ -10,9 +10,6 @@ const WorkOutWrapper = styled.section`
   flex-direction: column;
   padding: 0 16px;
   gap: 9px;
-
-  width: 653px;
-  // height: 370px;
 `
 const CardWrapper = styled.div`
   display: flex;

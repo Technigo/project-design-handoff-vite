@@ -1,26 +1,89 @@
 import { NavLink } from "react-router-dom";
+import styled from "styled-components";
+
+const MenuWrapper = styled.nav`
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 16px;
+  top: 75px;
+
+  @media (min-width: 394px) {
+    left: 32px;
+    top: 90px;
+  }
+`
+
+const MenuUl = styled.ul`
+  position: absolute;
+  z-index: 2;
+  transform: translateY(-1em);
+  transition: all 0.3s ease-in-out;
+  list-style: none;
+  padding: 50px 10px;
+  width: 353px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 65px;
+  opacity: 0.9;
+  background: #FFFFFF;
+  border-radius: var(--medium-radius);
+
+  @media (min-width: 394px) {
+    width: 794px;
+  }
+}
+`
+const MenuLink = styled.a`
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  color: #000000;
+  font-size: var(--text-size-mobile);
+  font-weight: var(--text-weight-mobile);
+  line-height: var(--text-height-mobile);
+
+  @media (min-width: 393px) {
+    font-size: var(--heading-size-mobile);
+    line-height: var(--heading-height-mobile);
+  }
+}
+`
+const StyledLink = styled(NavLink)`
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  color: #000000;
+  font-size: var(--text-size-mobile);
+  font-weight: var(--text-weight-mobile);
+  line-height: var(--text-height-mobile);
+
+  @media (min-width: 393px) {
+    font-size: var(--heading-size-mobile);
+    line-height: var(--heading-height-mobile);
+  }
+`
 
 export const HamburgerMenu = () => {
   return (
-    <div>
-      <nav id="hamburger-menu">
-        <ul className="menu-ul">
-          {/* Navigation links (hidden by default) */}
-          <li className="menu-li">
-            <a href="#login">Log in</a>
-          </li>
-          <li className="menu-li">
-            {/* NavLink components for navigation to the About us and Contact us pages. They will have an "active" class when the path matches "/about" or "/contact" */}
-            <NavLink to="/about">About Us</NavLink>
-          </li>  
-          <li className="menu-li">
-            <a href="#membership-plans">Membership plans</a>
-          </li>
-          <li className="menu-li">
-            <NavLink to="/contact">Contact Us</NavLink>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <MenuWrapper>
+      <MenuUl>
+        {/* Navigation links (hidden by default) */}
+        <li className="menu-li">
+          <MenuLink href="#">LOG IN</MenuLink>
+        </li>
+        <li className="menu-li">
+          {/* NavLink components for navigation to the About us and Contact us pages. They will have an "active" class when the path matches "/about" or "/contact" */}
+          <StyledLink to="/about">ABOUT US</StyledLink>
+        </li>  
+        <li className="menu-li">
+          <MenuLink href="#">MEMBERSHIP PLANS</MenuLink>
+        </li>
+        <li className="menu-li">
+          <StyledLink to="/contact">CONTACT US</StyledLink>
+        </li>
+      </MenuUl>
+    </MenuWrapper>
   )
 }

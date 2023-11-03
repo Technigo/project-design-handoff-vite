@@ -1,6 +1,4 @@
 import styled from "styled-components";
-
-import { useState, useEffect } from "react";
 import { Header } from "../Sections/Header";
 import { Workout } from "../Sections/Workout";
 import { WorkoutPlans } from "../Sections/WorkoutPlans";
@@ -29,24 +27,14 @@ const MainWrapper = styled.div`
 
 export const Home = () => {
   {/* conditionally display hero section depending the screen size */}
-  const [width, setWidth] = useState(window.innerWidth);
-  const breakPointTablet = 394;
-
-  useEffect(() => {
-    // Set the width to the inner width of the window 
-    const handleWindowResize = () => setWidth(window.innerWidth);
-    // If the user resizes the screen, the event listener will be triggered, the function will be called to set the width to the new innerWidth of the window
-    window.addEventListener("resize", handleWindowResize);
-    return () => window.removeEventListener("resize", handleWindowResize)
-  }, []) // the effect only runs once when the user resizes the screen width
+  const isTablet = window.innerWidth > 394;
 
   return (
     <MainWrapper>
         <Header />
-        {/* compare the width to the breakpoint to conditionally render the HeroSection */}
-        {width < breakPointTablet ? null : (
+        {isTablet ? (
           <HeroSection />
-        )}      
+        ) : null}      
         <Workout />
         <WorkoutPlans />
         <Membership />

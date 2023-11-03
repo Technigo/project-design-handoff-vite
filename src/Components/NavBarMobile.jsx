@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { HamburgerMenu } from "./HamburgerMenu";
 import styled from "styled-components";
@@ -9,27 +10,28 @@ const NavBarWrapper = styled.div`
   align-items: center;
 `
 
+const Button = styled.button`
+  padding: 10px;
+  border: none;
+  background: transparent;
+`
+const Logo = styled.img`
+  width: 32px;
+  height: 33px;
+`
+
 export const NavBarMobile = () => {
-  const toggleMenu = () => {
-    const hamburgerMenu = document.getElementById("hamburger-menu");
-    if (hamburgerMenu.style.display === "block") {
-      hamburgerMenu.style.display = "none";
-    } else {
-      hamburgerMenu.style.display = "block";
-    }
-  }
-    
-    
+  const [isVisible, setIsVisible] = useState(false);
+
   return (
     <NavBarWrapper>
-      <button 
+      <Button 
         type="button" 
-        className="border-none" 
-        onClick={toggleMenu}
+        onClick={() => setIsVisible(!isVisible)}
       >
         <svg 
           width="24" 
-          height="25" 
+          height="24" 
           viewBox="0 0 24 25" 
           fill="none" 
           xmlns="http://www.w3.org/2000/svg"
@@ -45,9 +47,10 @@ export const NavBarMobile = () => {
             />
           </g>
         </svg>
-      </button>
-      <Link to="/"><img className="w-8 h-8" src="src/assets/images/Logo.png" alt="AFH logo" /></Link>
-      <button type="button" className="search">
+      </Button>
+      {isVisible && <HamburgerMenu />}
+      <Link to="/"><Logo src="src/assets/images/Logo.png" alt="At Home Fitness logo" /></Link>
+      <Button type="button">
         <svg 
           width="24" 
           height="24" 
@@ -66,8 +69,7 @@ export const NavBarMobile = () => {
             />
           </g>
         </svg>
-      </button>
-      <HamburgerMenu />
+      </Button>
     </NavBarWrapper>
   )
 }
