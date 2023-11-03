@@ -35,6 +35,20 @@ const StyledSection = styled.section`
     font-size: 32px;
   }
 
+    @media (min-width: 667px) and (max-width: 1024px) {
+      .wrapper-text{
+        width: 65%; 
+        margin: 0 0 10% 6%; 
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .wrapper-text {
+        width: 65%; 
+        margin-left: 10%; 
+      }
+    }
+
 `;
 
 export const Welcome = () => {
@@ -43,18 +57,9 @@ export const Welcome = () => {
     <>
       <StyledSection>
         <div className="wrapper-text">
-        <h1>{t("aboutPage.welcome.heading")}</h1>
-
-        
-
-        <p>
-        {t("aboutPage.welcome.text1")}
-        </p>
-
-        <p>
-        {t("aboutPage.welcome.text2")}
-        </p>
-
+          <h1>{t("aboutPage.welcome.heading")}</h1>
+          <p>{t("aboutPage.welcome.text1")}</p>
+          <p>{t("aboutPage.welcome.text2")}</p>
         </div>
      
       </StyledSection>

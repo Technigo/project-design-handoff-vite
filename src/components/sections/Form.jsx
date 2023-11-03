@@ -66,7 +66,7 @@ export const Form = () => {
               value={t("form.email-address")}
               aria-label="email input"></StyledInput>
           </div>
-          <Button className={t("form.button")} aria-label="send">Send</Button>
+          <Button className={t("form.button")} aria-label="send">{t("form.button")}</Button>
         </StyledForm>
       </StyledSection>
     </>

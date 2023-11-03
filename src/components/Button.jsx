@@ -32,9 +32,9 @@ export const Button = styled.button`
     ${props => props.navbar && css`
     height: fit-content; 
     background: transparent; 
-    color: black; 
+    color: --darkest-red; 
     padding: 10px 48px; 
-    border: 1px solid black; 
+    border: 1px solid var(--darkest-red); 
 
       &hover {
         opacity: 0.7; 
@@ -43,14 +43,3 @@ export const Button = styled.button`
     `}
   `
    
-
-// export const PrimaryButton = ({text}) => {
-
-//   return (
-//       <>
-//       <StyledButton>{text}</StyledButton>
-//       <StyledButton>{text}</StyledButton>
-//       </>
- 
-//   )
-// }

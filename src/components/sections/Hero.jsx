@@ -66,11 +66,8 @@ const StyledSection = styled.section`
 
   
 `;
-
-
 export const Hero = () => {
   const {t} = useTranslation()
-
 
   return (
     <>

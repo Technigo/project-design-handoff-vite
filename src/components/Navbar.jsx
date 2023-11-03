@@ -15,6 +15,11 @@ const StyledNav = styled.nav`
   .img-button-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .sign-up-btn {
+    display: none;
   }
 
   .hamburger {
@@ -24,6 +29,20 @@ const StyledNav = styled.nav`
     &:hover {
       cursor: pointer;
     }
+  }
+
+  @media (min-width: 1025px) {
+    .hamburger {
+      display: none;
+    }
+
+    .sign-up-btn {
+      display: flex;
+    }
+
+    .img-button-wrapper {
+    margin: 0 7%;
+  }
   }
 `;
 
@@ -50,7 +69,9 @@ export const Navbar = () => {
             <img src="/icons/preggo-logo.svg" />
           </Link>
           <LinksWrapperRow />
-          <Button navbar>{t("homePage.hero.exploreButton")}</Button>
+          <Button className="sign-up-btn" navbar>
+            {t("homePage.hero.exploreButton")}
+          </Button>
 
           <button
             className="hamburger"

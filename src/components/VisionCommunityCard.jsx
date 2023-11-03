@@ -1,9 +1,9 @@
 import styled from "styled-components"; 
 import { useTranslation } from "react-i18next"
-import enTranslation from "./translations/en.json";
 import backgroundPaths from "../data/background-paths.json";
 
 const StyledDiv = styled.div`
+  
   .image-container {
     height: 422px;
     background-image: linear-gradient(
@@ -40,6 +40,7 @@ export const VisionCommunityCard = () => {
     <>
       {visions.map((vision) => (
         <StyledDiv
+        
           key={vision.id}
           cardBackground={backgroundsArray[vision.id - 1].background}
           aria-label={backgroundsArray[vision.id - 1].alt}
@@ -52,12 +53,9 @@ export const VisionCommunityCard = () => {
           ></div>
           <div className="text-wrapper">
             <p className="paragraph-small">{vision.type}</p>
-
             <h2>{vision.header}</h2>
-
             <p>{vision.bodyText}</p>
-
-            <p className="tertiary-button ">Read more</p>
+            <p className="tertiary-button ">{vision.readMore}</p>
           </div>
         </StyledDiv>
       ))}

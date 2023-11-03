@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 const StyledDiv = styled.div`
-    display: flex;
+    display: none;
     flex-direction: row;
     list-style: none;
     gap: 24px;
 
         .link {
-            color: var(--white-red);
+            color: var(--darkest-red);
             text-decoration: none;
             font-family: Raleway;
             font-size: 18px;
@@ -19,6 +19,10 @@ const StyledDiv = styled.div`
             display: flex; 
             justify-content: flex-end; 
         }
+
+        @media (min-width: 1025px) {
+          display: flex;  
+}
 
 `
 

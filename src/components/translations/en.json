@@ -165,7 +165,8 @@
                 "header": "We believe in the power of our female heritage", 
                 "bodyText": "Live through your pregnancy to the fullest, through adapted, strengthening and safe yoga practice. ", 
                 "image": "/images/vision-community/vision-community-img-1.jpeg", 
-                "alt": "Women practicing yoga on beach"
+                "alt": "Women practicing yoga on beach", 
+                "readMore": "Read more"
               }, 
           
               {
@@ -174,7 +175,8 @@
                   "header": "Women supporting women", 
                   "bodyText": "Live through your pregnancy to the fullest, through adapted, strengthening and safe yoga practice.", 
                   "image": "/images/vision-community/vision-community-img-2.jpeg", 
-                  "alt": "Silhouette of group of people having a good time in sunset"
+                  "alt": "Silhouette of group of people having a good time in sunset", 
+                  "readMore": "Read more"
               }
             ]
 

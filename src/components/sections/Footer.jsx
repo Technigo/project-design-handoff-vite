@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { SlSocialInstagram } from "react-icons/sl";
 import { PiFacebookLogoLight } from "react-icons/pi"
+import { TranslationComponent } from "../translations/TranslationComponent";
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -75,14 +76,16 @@ const StyledFooter = styled.footer`
     margin-top: -2px; 
   }
 
+  
+
   @media (min-width: 667px) and (max-width: 1024px) {
   .contact-wrapper {
-    gap: 200px;  
+    gap: 150px;  
     justify-content: center
   } 
   .links-wrapper-container{
      flex-direction: row; 
-     gap: 200px; 
+     gap: 170px; 
   }
 }
 
@@ -128,6 +131,9 @@ export const Footer = () => {
           <PiFacebookLogoLight className="facebook-icon" />
         </div>
       </div>
+     
+      <TranslationComponent/>
+
     </StyledFooter>
   );
 };

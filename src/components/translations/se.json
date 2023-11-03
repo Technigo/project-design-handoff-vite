@@ -156,7 +156,8 @@
                 "header": "Vi tror på vår kvinnliga arv",
                 "bodyText": "Lev din graviditet till fullo genom anpassad, stärkande och säker yogapraxis.",
                 "image": "/images/vision-community/vision-community-img-1.jpeg",
-                "alt": "Kvinnor som praktiserar yoga på stranden"
+                "alt": "Kvinnor som praktiserar yoga på stranden", 
+                "readMore": "Läs mer"
             },
             {
                 "id": 2,
@@ -164,7 +165,8 @@
                 "header": "Kvinnor som stödjer kvinnor",
                 "bodyText": "Lev din graviditet till fullo genom anpassad, stärkande och säker yogapraxis.",
                 "image": "/images/vision-community/vision-community-img-2.jpeg",
-                "alt": "Silhuett av en grupp människor som har trevligt i solnedgången"
+                "alt": "Silhuett av en grupp människor som har trevligt i solnedgången", 
+                "readMore": "Läs mer"
             }
         ]
     }
