@@ -1,14 +1,16 @@
 import "./facilities.css"
+import { useTranslation } from "react-i18next"
 
 export const Facilities = () => {
+    const { t } = useTranslation()
 
-const facilitiesText = "At Galactic Fitness, our modern and cozy facilities offer the perfect environment for your fitness journey. Train in our well-equipped spaces featuring cutting-edge fitness tools. Find your inner peace in our meditation room, or engage in dynamic sparring and martial arts training in our dedicated dojo. Additionally, we have a unique 'handout' area with a cinema, complete with popcorn machines, where you can enjoy Star Wars movie nights with fellow enthusiasts. It's all here to enhance your experience as you become the hero of your story."
+
 
   return (
     <section className="facilities-section">
 <div className="facilities-text-wrapper">
-    <h1>OUR FACILITIES</h1>
-    <p>{facilitiesText}</p>
+    <h1>{t("Facilities.h1")}</h1>
+    <p>{t("Facilities.facilitiesText")}</p>
 </div>
 
 <div className="facilities-card-wrapper">

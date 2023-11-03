@@ -1,0 +1,81 @@
+{
+  "Burgermenu": {
+    "p1": "HEM",
+    "p2": "OM OSS",
+    "p3": "VAD VI ERBJUDER",
+    "p4": "NYBÖRJARE",
+    "p5": "MEDLEMSKAP",
+    "p6": "KONTAKT"
+  },
+
+  "Hero": {
+    "h1": "Väck din inre Jedi",
+    "h2": "Träna med Kraften!",
+    "button": "GÅ MED NU"
+  },
+
+  "ReadMore": {
+    "ourClanText": "På Galactic Fitness har vi som mål att skapa hjältar. Med en varm välkommnande till alla, inklusive nykomlingar inom träning, är vi här för att hjälpa dig att utnyttja din fulla potential. Vår inspiration kommer från den tidlösa andan i Star Wars-universumet. Låt oss vara din ledande kraft på vägen till att bli hjälten i din egen historia. Följ med oss på detta episka äventyr.",
+
+    "ourConceptText": "Vårt unika koncept förenar träning och fandom. Vi erbjuder Jediträning, där du börjar som Padawan och tränar med ljussablar, kondition och välmående. För de som dras till den mörka sidan är vår Sith-träning intensiv och fokuserar på sparring och självförsvar. För de som söker Mandalorianernas styrka betonar vår träning muskelmassa och CrossFit. Oavsett om du är en Jedi, Sith eller Mandalorian i hjärtat, så passar vårt gym din inre hjältes resa.",
+
+    "h1": "DET ÄR VÅR KLAN",
+    "h12": "VÅRA KONCEPT",
+    "button": "LÄS MER"
+  },
+
+  "Pakages": {
+    "p1": "BLI EN JEDI",
+    "p2": "GÅ MED PÅ DEN MÖRKA SIDAN",
+    "p3": "MANDALORENS VÄG"
+  },
+
+  "Offer": {
+    "h1": "VAD VI ERBJUDER",
+    "p": "På Galactic Fitness omfamnar vi alla åldrar och träningsnivåer. Oavsett om du är en ungling som börjar din träningsresa eller en erfaren mästare, är vi här för att stödja dig. Våra specialmedlemskapspaket tar hänsyn till dina unika behov och ser till att alla, från Padawans till Mästare, kan låsa upp sin inre hjälte med oss."
+  },
+
+  "Membership": {
+    "h1": "NYBÖRJARE",
+    "p": "- LÄS MER",
+    "h12": "MEDLEMSKAP"
+  },
+
+  "AboutHero": {
+    "h1": "Detta är vägen!",
+    "p": "Upptäck vad som driver oss"
+  },
+
+  "OurVision": {
+    "h1": "VÅR VISION",
+    "p": "Galactic Fitness föddes ur vår djupa kärlek till Star Wars och vårt åtagande att vara inkluderande. Vi välkomnar alla, särskilt de som är nya inom träning, och erbjuder en stödjande miljö där alla kan utnyttja sitt potential. Vi vill förena fans och träningsentusiaster i en gemenskap där alla känner sig inkluderade. Tillsammans utforskar vi vår potential, stödjer varandra och bygger hälsosammare liv. Galactic Fitness är mer än ett gym; det är en plats att bli hjälten du alltid beundrat. Följ med oss på detta episka äventyr där Kraften möter träning och lås upp hjälten inom dig."
+  },
+
+  "Trainers": {
+    "h1": "VÅRA TRÄNARE",
+    "p1": "3 KONCEPT, 1 STAM, GÖR DIG REDO",
+
+    "p2": "Möt vår Sith-tränare! Hon kan allt om intensiva träningspass och självdisciplin. Med erfarenhet från Taekwando och MMA kommer Dragana att hjälpa dig att bygga styrka och uthållighet genom Sith-träning.",
+
+    "p3": "Möt vår Jeditränare och Meditationsinstruktör! Apinya är kunnig inom japansk Kendo och specialiserar sig på Jediträning genom Karate. Hon kommer att guida dig till att hitta inre frid med meditation och välmående.",
+
+    "p4": "Möt vår Mandalore Hamza! Med fokus på att bygga muskelmassa och uthållighet genom högintensiv CrossFit-träning, är Hamza här för att hjälpa dig att uppnå dina träningsmål. Detta är vägen!"
+  },
+
+  "Facilities": {
+    "h1": "VÅRA FACILITETER",
+    "facilitiesText": "På Galactic Fitness erbjuder våra moderna och mysiga faciliteter den perfekta miljön för din träningsresa. Träna i våra välutrustade utrymmen med toppmoderna träningsverktyg. Hitta din inre frid i vårt meditationsrum eller engagera dig i dynamisk sparring och kampsportträning i vår dedikerade dojo. Dessutom har vi ett unikt 'handout'-område med en biograf, komplett med popcornmaskiner, där du kan njuta av Star Wars-filmkvällar med andra entusiaster. Allt är här för att förbättra din upplevelse när du blir hjälten i din egen historia."
+  },
+
+  "Footer": {
+    "h1": "OM OSS",
+    "h12": "VAD VI ERBJUDER",
+    "h13": "LÄS MER",
+    "h14": "KONTAKT",
+    "h15": "GÅ MED I VÅR KLAN!",
+    "p1": "Du är ännu inte medlem i Galactic Fitness, vänligen registrera dig till Kraften!",
+    "p2": "GALACTIC FITNESS ©2023 AV ",
+    "p3": "RODOPI DESIGNS",
+    "button": "REGISTRERA DIG NU"
+  }
+}

@@ -14,6 +14,11 @@ export const Translation = () => {
                 EN</button>
             <button className="translate-button" onClick={() => changeLanguage("sv")}>
                 SV</button>
+            <button className="translate-button" onClick={() => changeLanguage("zh")}>
+                汉字 </button>
+            <button className="translate-button" onClick={() => changeLanguage("bg")}>
+                BG</button>
+                
         </div>
     )
 }
