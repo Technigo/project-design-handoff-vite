@@ -1,13 +1,22 @@
 body {
     background-color: #F2F2F2;
-    background-image: url('./assets/backgroundpattern.svg');
+    /* background-image: url('./assets/backgroundpattern.svg'); */
     background-repeat: repeat;
     font-family: 'Montserrat';
+}
+
+h1 {
+   color: #4A205A;
+   font-size: 50px;
 }
 
 .siteContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+}
+
+.contentWrapper {
+    display: flex;
 }
 
 .logoContainer {
@@ -21,6 +30,11 @@ body {
 @media screen and (max-width: 667px) {
     .siteContainer {
         grid-template-columns: 1fr;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+        gap: 1.5em;
     }
 }
 

@@ -1,0 +1,31 @@
+h1, .p1, .p2 {
+    color: #4A205A;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.p1 {
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+}
+
+.faqButton {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    color: #4A205A;
+    background-color: #83EDD5;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding: 20px 30px 20px 30px;
+}

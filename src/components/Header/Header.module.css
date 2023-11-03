@@ -1,0 +1,56 @@
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 10px;
+}
+
+.textContainer p {
+    font-size: 19px;
+    color: #4A205A;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.tryForFree {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    color: #4A205A;
+    background-color: #83EDD5;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding: 20px 30px 20px 30px;
+}
+
+.aboutUs {
+    display: flex;
+    align-items: center;
+    width: 204px;
+    height: 60px;
+    border-radius: 50px;
+    border: 3px solid #4A205A;
+    color: #4A205A;
+    font-family: 'Montserrat';
+    font-size: 20px;
+    padding: 20px 44px 20px 44px;
+}
+
+@media screen and (max-width: 667px) {
+    .headingContainer {
+        font-size: 33px;
+    }
+
+    .textContainer p {
+        font-size: 24px;
+    }
+}
