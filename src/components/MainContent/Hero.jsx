@@ -40,6 +40,12 @@ const HeroTextbox = styled.div`
     letter-spacing: 1.4px;
     text-transform: uppercase;
   }
+
+  @media screen and (min-width: 668px) and (max-width: 1023px) {
+    p {
+      max-width: 60%;
+    }
+  }
 `;
 
 const StyledHeroButton = styled.div`

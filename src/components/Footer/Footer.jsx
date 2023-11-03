@@ -12,12 +12,34 @@ const StyledFooter = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 32px;
+
+  @media screen and (min-width: 668px) and (max-width: 1023px) {
+    height: 460px;
+    justify-content: flex-end;
+  }
+`;
+
+const LogoLinks = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 668px) and (max-width: 1023px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    //margin-top: 60px;
+    width: 100%;
+    padding: 0 64px;
+  }
 `;
 
 const SaddleUpFooter = styled.div`
   display: flex;
   gap: 52px;
-  padding-top: 72px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 668px) and (max-width: 1023px) {
+    padding-top: 0;
+  }
 `;
 
 const CompanyDetails = styled.div`
@@ -32,21 +54,28 @@ const LanguageCopySection = styled.div`
   align-items: center;
   gap: 16px;
   padding: 60px 48px 32px;
+
+  @media screen and (min-width: 668px) and (max-width: 1023px) {
+    padding: 10px 0 20px;
+    margin-top: 40px;
+  }
 `;
 
 export const Footer = () => {
   const { t } = useTranslation(); // Use useTranslation to get the 't' function
   return (
     <StyledFooter>
-      <LogoLight />
-      <SaddleUpFooter>
-        <FollowUsIconsLight />
-        <CompanyDetails>
-          <p>{t("footer.terms")}</p>
-          <p>{t("footer.privacy")}</p>
-          <p>{t("footer.accessibility")}</p>
-        </CompanyDetails>
-      </SaddleUpFooter>
+      <LogoLinks>
+        <LogoLight />
+        <SaddleUpFooter>
+          <FollowUsIconsLight />
+          <CompanyDetails>
+            <p>{t("footer.terms")}</p>
+            <p>{t("footer.privacy")}</p>
+            <p>{t("footer.accessibility")}</p>
+          </CompanyDetails>
+        </SaddleUpFooter>
+      </LogoLinks>
       <LanguageCopySection>
         <Translation />
         <Copyright />

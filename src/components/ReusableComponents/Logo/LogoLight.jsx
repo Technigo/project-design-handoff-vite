@@ -9,8 +9,8 @@ const StyledLightLogo = styled.div`
   gap: 10px; */
 
   img {
-    width: 76px;
-    height: 83px;
+    width: 152px;
+    height: 165px;
     flex-shrink: 0;
   }
   p:first-child {
@@ -32,6 +32,16 @@ const StyledLightLogo = styled.div`
     letter-spacing: 0.9px;
     text-transform: uppercase;
   }
+
+  @media screen and (min-width: 668px) and (max-width: 1023px) {
+    p:first-child {
+      font-size: 32px;
+    }
+
+    p:last-child {
+      font-size: 24px;
+    }
+  }
 `;
 
 const ButtonLink = styled(Link)`
@@ -45,11 +55,7 @@ const ButtonLink = styled(Link)`
 export const LogoLight = () => {
   return (
     <StyledLightLogo>
-      <ButtonLink
-        to="/"
-        ariaLabel="Back to the startpage"
-        label="Go back to the startpage"
-      >
+      <ButtonLink to="/" aria-label="Back to the startpage">
         <img src={LogoBeige} alt="Logo of a horse head made with beige lines" />
         <div className="logoText">
           <p>saddle up</p>

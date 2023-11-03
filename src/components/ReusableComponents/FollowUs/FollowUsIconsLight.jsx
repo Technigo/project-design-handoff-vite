@@ -10,6 +10,12 @@ const FollowLightIconContainer = styled.div`
   align-items: center;
   text-transform: uppercase;
   gap: 8px;
+
+  @media screen and (min-width: 668px) and (max-width: 1023px) {
+    p {
+      font-size: 20px;
+    }
+  }
 `;
 
 const LightIcons = styled.div`

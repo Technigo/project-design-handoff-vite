@@ -21,7 +21,9 @@ svg {
 }
 
 body {
-  background-image: url(/assets/background.png);
+  background-image: url(/assets/bigbackground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: "Nunito Sans", sans-serif;
   color: #081957;
 }
