@@ -9,7 +9,11 @@ export const Button = ({
 }) => {
   function handleEventClick() {
     onTriggerAnimation && onTriggerAnimation(1);
-    if (type === "submit" || id === 3) {
+    if (id === 3) {
+      console.log("clicked in button 3");
+      setTimeout(handleClick, 100);
+      return clearTimeout(handleClick);
+    } else if (type === "submit") {
       setTimeout(handleClick, 1000);
       return clearTimeout(handleClick);
     } else {
