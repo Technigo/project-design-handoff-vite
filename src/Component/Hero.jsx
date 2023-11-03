@@ -1,6 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 import data from "../assets/images.json";
+import { useTranslation } from 'react-i18next';
 
 const HeroBack = styled.img`
   width: 587px;
@@ -38,13 +38,13 @@ const SmallText = styled.div`
 `;
 
 export const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <HeroBack src={data.heroImage} alt="Background" />
-      <BigText>Play Parkour</BigText>
-      <SmallText>
-        Treat your life as an adventure - all your life
-      </SmallText>
+      <BigText>{t("head1")}</BigText>
+      <SmallText>{t("paragraph1")}</SmallText>
     </>
   );
 };

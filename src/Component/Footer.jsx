@@ -43,9 +43,10 @@ export const Footer = () => {
   return (
     <FootBar>
       <LogoImg src={data['logo']} alt="Logo" />
+
       <div>{t("about")}</div>
       <div>{t("head1")}</div>
-      <div>{t("head2")}</div>
+      <div>{t("faq")}</div>
       <div>{t("contact")}</div>
       <div>
       <button onClick={() => changeLanguage('en')}>
