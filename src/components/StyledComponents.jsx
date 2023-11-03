@@ -69,17 +69,19 @@ export const ContentWrapper = styled.div`
 export const HeroWrapper = styled.div``;
 
 export const HeroImage = styled.section`
-  color: red;
-  text-align: center;
   background-image: url(${HeroBg});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vw;
   margin-bottom: 2.25vh;
+  color: transparent;
 
   @media (min-width: 1440px) {
     height: 43vh;
+    color: white;
+    text-align: center;
+    font-size: 34px;
 }
 `;
 
