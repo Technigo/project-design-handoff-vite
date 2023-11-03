@@ -4,122 +4,175 @@ import { initReactI18next } from "react-i18next";
 const resources = {
     en: {
         translation: {
-            "WhyPlayParkour": {
-                "heading": "Why play parkour?"
+            Footer: {
+                link1: "About us",
+                link2: "Play Parkour",
+                link3: "FAQ",
+                link4: "Contact information"
+              },
+
+            PlayParkour: {
+                heading: "Play Parkour",
+                description: "Treat your life as an adventure - all your life",
+                buttonText: "Play Parkour"
             },
-            "PlayParkour": {
-                "heading": "Play Parkour",
-                "description": "Treat your life as an adventure - all your life",
-                "button": "Play Parkour"
+
+            HowToPlay: {
+                heading: "How to Play Parkour",
+                point1: "Play with friends",
+                point2: "Play with your children",
+                point3: "Play with class coach"
             },
-            "HowToPlayParkour": {
-                "heading": "How to Play Parkour",
-                "image1Desc": "Play with friends",
-                "image2Desc": "Play with your children",
-                "image3Desc": "Play with class coach"
+            Carousel: {
+                quote1: {
+                  alt: "quotation on yellow background",
+                  text: "I get to play with grandma - Nestor 7 years"
+                },
+                quote2: {
+                  alt: "quotation on purple background",
+                  text: "I feel like a child again - Martha 68 years"
+                },
+                quote3: {
+                  alt: "quotation on green background",
+                  text: "It is social and it improves the balance and you get better at falling without hurting yourself - Sven 72 years"
+                },
+                quote4: {
+                  alt: "quotation on blue background",
+                  text: "Getting the kids from school and daycare are now an adventure and exercise for all of us, not a stressful moment - David 35 years (Allan's dad)"
+                },
+                quote5: {
+                  alt: "quotation on purple background",
+                  text: "I get to know my neighbours and my neighbourhood - Alice 75 years"
+                },
+                quote6: {
+                  alt: "quotation on yellow background",
+                  text: "Because it's fun and makes me stronger - Bella 35 years"
+                },
+                quote7: {
+                  alt: "quotation on green background",
+                  text: "I get to discover my neighbourhood in a new way - Ella 45 years"
+                }
+              },
+
+            WhyPlay: {
+                heading: "Why play parkour?",
+                quote1: "I get to play with grandma - Nestor 7 years",
+                quote2: "I get to know my neighbours and my neighbourhood - Alice 75 years",
+                quote3: "I get to discover my neighbourhood in a new way - Ella 45 years"
             },
-            "Header": {},
-            "Footer": {
-                "link1": "About us",
-                "link2": "Play Parkour",
-                "link3": "FAQ",
-                "link4": "Contact information"
+
+            AboutUs: {
+                heading: "About us",
+                description: "It started with grandma and Nestor, 9 years old, being bored on their way home from school. Then came AuntieParkour, and today Play Parkour offers parkour Programs and classes for all ages."
             },
-            "CarouselComponent": {
-                "quote1": "I get to play with grandma - Nestor 7 years",
-                "quote2": "I feel like a child again - Martha 68 years",
-                "quote3": "It is social and it improves the balance and you get better at falling without hurting yourself - Sven 72 years",
-                "quote4": "Getting the kids from school and daycare are now an adventure and exercise for all of us, not a stressful moment. - David 35 years (Allans dad)",
-                "quote5": "I get to know my neighbours and my neighbourhood - Alice 75 years",
-                "quote6": "Because its fun and makes me stronger - Bella 35 years",
-                "quote7": "I get to discover my neighbourhood in a new way - Ella 45 years"
+
+            VisionAndGoal: {
+                heading: "About Play Parkour",
+                description: "Our Vision & Goal - Our vision is to create a world where everyone has the opportunity to experience the joy of parkour. We believe that parkour is more than just a sport; it’s a way of life. Our goal is to inspire people to push their limits, overcome obstacles, and achieve their full potential through the practice of parkour."
             },
-            "AboutUsPage": {
-                "visionHeader": "Our Vision & Goal",
-                "visionDesc1": "Our vision is to create a world where everyone has the opportunity to experience the joy of parkour. We believe that parkour is more than just a sport; it's a way of life.",
-                "visionDesc2": "Our goal is to inspire people to push their limits, overcome obstacles, and achieve their full potential through the practice of parkour.",
-                "storyHeader": "Our Story",
-                "storyDesc": "Our story It started with grandma and 9-year-old Nestor being bored on their way home from school, then came Aunt Parkour, and today Play Parkour offers parkour programs and classes for all ages. The instructors are experienced and help students develop their strength, agility, balance, and coordination. We also have an online platform where students can learn parkour at their own pace and in the comfort of their own home.",
-                "contactHeader": "Contact Us",
-                "contactDesc": "We would love to hear from you!",
-                "inputName": "Name",
-                "inputEmail": "Email",
-                "inputMessage": "Message",
-                "checkboxLabel": "I agree to the Privacy terms",
-                "submitButton": "Submit"
+
+            OurStory: {
+                description: "Our story - It started with grandma and 9-year-old Nestor being bored on their way home from school, then came Aunt Parkour, and today Play Parkour offers parkour programs and classes for all ages. The instructors are experienced and help students develop their strength, agility, balance, and coordination. We also have an online platform where students can learn parkour at their own pace and in the comfort of their own home."
             },
-            "AboutUs": {
-                "heading": "About us",
-                "description": "It started with grandma and Nestor, 9 years old, being bored on their way home from school. Then came AuntieParkour, and today Play Parkour offers parkour Programs and classes for all ages.",
-                "button": "About Play Parkour"
+
+            Contact: {
+                heading: "Treat life as an adventure",
+                description: "Thank you for your interest in Play Parkour. We welcome any questions, feedback, or inquiries you may have. Please fill out the form below, and we’ll get back to you as soon as possible."
             }
         }
     },
     sv: {
         translation: {
-            "WhyPlayParkour": {
-                "heading": "Varför spela parkour?"
+            Footer: {
+                link1: "Om oss",
+                link2: "Spela Parkour",
+                link3: "Vanliga frågor",
+                link4: "Kontaktinformation"
+              },
+
+            PlayParkour: {
+                heading: "Spela Parkour",
+                description: "Behandla ditt liv som ett äventyr - hela ditt liv",
+                buttonText: "Spela Parkour"
             },
-            "PlayParkour": {
-                "heading": "Spela Parkour",
-                "description": "Behandla ditt liv som ett äventyr - hela ditt liv",
-                "button": "Spela Parkour"
+
+            HowToPlay: {
+                heading: "Hur man spelar Parkour",
+                point1: "Spela med vänner",
+                point2: "Spela med dina barn",
+                point3: "Spela med träningscoach"
             },
-            "HowToPlayParkour": {
-                "heading": "Hur man spelar Parkour",
-                "image1Desc": "Spela med vänner",
-                "image2Desc": "Spela med dina barn",
-                "image3Desc": "Spela med träningscoach"
+            
+                Carousel: {
+                  quote1: {
+                    alt: "citat på gul bakgrund",
+                    text: "Jag får leka med mormor - Nestor 7 år"
+                  },
+                  quote2: {
+                    alt: "citat på lila bakgrund",
+                    text: "Jag känner mig som ett barn igen - Martha 68 år"
+                  },
+                  quote3: {
+                    alt: "citat på grön bakgrund",
+                    text: "Det är socialt och det förbättrar balansen och man blir bättre på att falla utan att skada sig - Sven 72 år"
+                  },
+                  quote4: {
+                    alt: "citat på blå bakgrund",
+                    text: "Att hämta barnen från skola och dagvård är nu ett äventyr och träning för oss alla, inte ett stressmoment - David 35 år (Allans pappa)"
+                  },
+                  quote5: {
+                    alt: "citat på lila bakgrund",
+                    text: "Jag lär känna mina grannar och mitt grannskap - Alice 75 år"
+                  },
+                  quote6: {
+                    alt: "citat på gul bakgrund",
+                    text: "För att det är roligt och gör mig starkare - Bella 35 år"
+                  },
+                  quote7: {
+                    alt: "citat på grön bakgrund",
+                    text: "Jag får upptäcka mitt grannskap på ett nytt sätt - Ella 45 år"
+                  }
+                },
+
+            WhyPlay: {
+                heading: "Varför spela parkour?",
+                quote1: "Jag får leka med mormor - Nestor 7 år",
+                quote2: "Jag lär känna mina grannar och mitt grannskap - Alice 75 år",
+                quote3: "Jag får upptäcka mitt grannskap på ett nytt sätt - Ella 45 år"
             },
-            "Header": {},
-            "Footer": {
-                "link1": "Om oss",
-                "link2": "Spela Parkour",
-                "link3": "Vanliga frågor",
-                "link4": "Kontaktinformation"
+
+            AboutUs: {
+                heading: "Om oss",
+                description: "Det började med mormor och Nestor, 9 år gammal, som var uttråkade på väg hem från skolan. Sedan kom Tant Parkour, och idag erbjuder Play Parkour parkour-program och lektioner för alla åldrar."
             },
-            "CarouselComponent": {
-                "quote1": "Jag får leka med mormor - Nestor 7 år",
-                "quote2": "Jag känner mig som ett barn igen - Martha 68 år",
-                "quote3": "Det är socialt och det förbättrar balansen och du blir bättre på att falla utan att skada dig - Sven 72 år",
-                "quote4": "Att hämta barnen från skolan och dagis är nu ett äventyr och träning för oss alla, inte ett stressigt ögonblick. - David 35 år (Allans pappa)",
-                "quote5": "Jag lär känna mina grannar och mitt grannskap - Alice 75 år",
-                "quote6": "För att det är roligt och gör mig starkare - Bella 35 år",
-                "quote7": "Jag får upptäcka mitt grannskap på ett nytt sätt - Ella 45 år"
+
+            VisionAndGoal: {
+                heading: "Om Play Parkour",
+                description: "Vår Vision & Mål - Vår vision är att skapa en värld där alla har möjlighet att uppleva glädjen med parkour. Vi tror att parkour är mer än bara en sport; det är ett sätt att leva. Vårt mål är att inspirera människor att pusha sina gränser, övervinna hinder och uppnå sin fulla potential genom att praktisera parkour."
             },
-            "AboutUsPage": {
-                "visionHeader": "Vår Vision & Mål",
-                "visionDesc1": "Vår vision är att skapa en värld där alla har möjlighet att uppleva glädjen med parkour. Vi tror att parkour är mer än bara en sport; det är ett sätt att leva.",
-                "visionDesc2": "Vårt mål är att inspirera människor att pusha sina gränser, övervinna hinder och uppnå sin fulla potential genom att praktisera parkour.",
-                "storyHeader": "Vår historia",
-                "storyDesc": "Vår historia började med mormor och 9-åriga Nestor som var uttråkade på vägen hem från skolan, sedan kom Faster Parkour, och idag erbjuder Play Parkour parkourprogram och kurser för alla åldrar. Instruktörerna är erfarna och hjälper eleverna att utveckla sin styrka, smidighet, balans och koordination. Vi har också en onlineplattform där eleverna kan lära sig parkour i sin egen takt och i sitt eget hem.",
-                "contactHeader": "Kontakta oss",
-                "contactDesc": "Vi skulle älska att höra från dig!",
-                "inputName": "Namn",
-                "inputEmail": "E-post",
-                "inputMessage": "Meddelande",
-                "checkboxLabel": "Jag godkänner Sekretessvillkoren",
-                "submitButton": "Skicka in"
+
+            OurStory: {
+                description: "Vår historia - Det började med mormor och 9-åriga Nestor som var uttråkade på vägen hem från skolan, sedan kom Faster Parkour, och idag erbjuder Play Parkour parkourprogram och kurser för alla åldrar. Instruktörerna är erfarna och hjälper eleverna att utveckla sin styrka, smidighet, balans och koordination. Vi har också en onlineplattform där eleverna kan lära sig parkour i sin egen takt och i bekvämligheten av sitt eget hem."
             },
-                "AboutUs": {
-                    "heading": "Om oss",
-                    "description": "Det började med mormor och Nestor, 9 år gammal, som var uttråkade på väg hem från skolan. Sedan kom Tant Parkour, och idag erbjuder Play Parkour parkour-program och lektioner för alla åldrar.",
-                    "button": "Om Play Parkour"
-                }
+
+            Contact: {
+                heading: "Behandla livet som ett äventyr",
+                description: "Tack för ditt intresse för Play Parkour. Vi välkomnar alla frågor, feedback eller förfrågningar du kan ha. Vänligen fyll i formuläret nedan, så återkommer vi till dig så snart som möjligt."
             }
         }
-    };
-    
-    i18n
-        .use(initReactI18next)
-        .init({
-            resources,
-            lng: "en",
-            keySeparator: false,
-            interpolation: {
-                escapeValue: false
-            }
-        });
-    
-    export default i18n;
+    }
+};
+
+i18n
+  .use(initReactI18next)
+  .init({
+    resources,
+    lng: "en", // default language
+    interpolation: {
+    escapeValue: false
+    }
+  })
+
+export default i18n;
+
     

@@ -1,22 +1,23 @@
 .playparkour-wrapper {
-   padding-top: 20px;
-   padding-bottom: 150px;
-   padding-left: 20px;
-    position: relative; 
+    position: relative;
+    overflow: hidden;
+    padding-top: 20px; /* Adjust as needed */
+    padding-bottom: 100px;
 }
 
 .playparkour-wrapper::before {
     content: ""; 
     background-image: url('../../../public/images/image1.png');
-    background-size: cover; 
-    background-repeat: no-repeat;
-    opacity: 0.6; 
+    background-position: center center; /* Center the image within the element */
+    background-size: cover; /* Cover the area without stretching the image */
+    position: absolute;
+    min-height: 400px;
     top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
-    position: absolute;
-    z-index: -1; 
+    bottom: 0;
+    opacity: 0.6; 
+    z-index: -1;
 }
 
 

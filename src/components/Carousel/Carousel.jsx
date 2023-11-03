@@ -9,8 +9,11 @@ import SVG4 from '../../assets/Vector-4.svg';
 import SVG5 from '../../assets/Vector-5.svg';
 import SVG6 from '../../assets/Vector-6.svg';
 import SVG7 from '../../assets/Vector-7.svg';
-
+import { useTranslation } from 'react-i18next';
 export const CarouselComponent = () => {
+
+    const { t } = useTranslation();
+
     const settings = {
         centerMode: true, // This enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.
         infinite: true,
@@ -24,34 +27,34 @@ export const CarouselComponent = () => {
     return (
         <div className='carousel-wrapper'>
         <Slider {...settings}>
+        <div className="icon-text">
+                <img src={SVG1} alt={t('Carousel.quote1.alt')} />
+                <p>{t('Carousel.quote1.text')}</p>
+            </div>
             <div className="icon-text">
-            <img src={SVG1} alt="quotation on yellow background"/>
-            <p>I get to play with grandma<br></br> - Nestor 7 years</p>
-        </div>
-        <div className="icon-text">
-            <img src={SVG7} alt="quotation on purple background"/>
-            <p>I feel like a child again - Martha 68 years </p>
-        </div>
-        <div className="icon-text">
-            <img src={SVG2} alt="quotation on green background"/>
-            <p>It is social and it improves the balance and you get better at falling without hurting  yourself - Sven 72 years</p>
-        </div>
-        <div className="icon-text">
-            <img src={SVG3} alt="quotation on yellow background"/>
-            <p>Getting the kids from school and daycare are now an adventure and exercise for all of us, not a stressful moment. - David 35 years (Allans dad)</p>
-        </div>
-        <div className="icon-text">
-            <img src={SVG6} alt="quotation on purple background"/>
-            <p>I get to know my<br></br>neighbours and my neighbourhood<br></br>- Alice 75 years</p>
-        </div>
-        <div className="icon-text">
-            <img src={SVG5} alt="quotation on yellow background"/>
-            <p>Because its fun<br></br> and makes me stronger<br></br> - Bella 35 years</p>
-        </div>
-        <div className="icon-text">
-            <img src={SVG4} alt="quotation on green background"/>
-            <p>I get to discover my neighbourhood<br></br> in a new way - Ella 45 years</p>
-    </div>
+                <img src={SVG7} alt={t('Carousel.quote2.alt')} />
+                <p>{t('Carousel.quote2.text')}</p>
+            </div>
+            <div className="icon-text">
+                <img src={SVG2} alt={t('Carousel.quote3.alt')} />
+                <p>{t('Carousel.quote3.text')}</p>
+            </div>
+            <div className="icon-text">
+                <img src={SVG3} alt={t('Carousel.quote4.alt')} />
+                <p>{t('Carousel.quote4.text')}</p>
+            </div>
+            <div className="icon-text">
+                <img src={SVG6} alt={t('Carousel.quote5.alt')} />
+                <p>{t('Carousel.quote5.text')}</p>
+            </div>
+            <div className="icon-text">
+                <img src={SVG5} alt={t('Carousel.quote6.alt')} />
+                <p>{t('Carousel.quote6.text')}</p>
+            </div>
+            <div className="icon-text">
+                <img src={SVG4} alt={t('Carousel.quote7.alt')} />
+                <p>{t('Carousel.quote7.text')}</p>
+            </div>
         </Slider>
      </div>
     );
