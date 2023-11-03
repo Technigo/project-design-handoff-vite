@@ -87,7 +87,6 @@ export const Header = () => {
                                     <Link key={link.id} to={link.pathTo}>
                                         <a href={link.href} onClick={link.onClick} className={link.style} target="_blank" rel="noopener noreferrer">{link.linkTitle}</a>
                                     </Link>
-
                                 ))}
                             </nav>
                         </section>
