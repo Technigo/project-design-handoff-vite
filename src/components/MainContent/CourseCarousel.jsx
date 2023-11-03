@@ -76,6 +76,7 @@ const CourseCardButton = styled.button`
   font-weight: 500;
   //line-height: normal;
   margin-bottom: 12px;
+  text-transform: uppercase;
 
   @media screen and (min-width: 1024px) {
     display: none;
