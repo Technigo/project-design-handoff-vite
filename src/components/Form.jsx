@@ -32,7 +32,7 @@ export const Form = () => {
               type="text"
               id="name"
               name="name"
-              placeholder="NAMEL"
+              placeholder="NAME"
               className="w-[80%] mt-3 p-2 border  border-persian-blue bg-transparent rounded-full focus:outline-none placeholder:text-bold "
             />
           </div>
