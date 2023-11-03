@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { HeroWrapper, HeroImage, HeroImageText, HeroHeader, HeroText, HeroBookButton } from './StyledComponents';
+import { HeroWrapper, HeroImage, HeroImageText, HeroHeader, HeroText, HeroBookButton, HeroBookButtonWrapper } from './StyledComponents';
 
 export const Hero = () => {
   return (
@@ -23,7 +23,9 @@ export const Hero = () => {
             Join our community of like-minded individuals, and together, let's explore the path to well-being, balance, and tranquility.
           </div>
         </HeroText>
+        <HeroBookButtonWrapper>
         <HeroBookButton><Link to="/book">Book your free class!</Link></HeroBookButton>
+        </HeroBookButtonWrapper>
       </HeroWrapper>
     </>
   );

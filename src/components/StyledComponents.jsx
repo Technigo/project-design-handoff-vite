@@ -15,7 +15,7 @@ export const HeaderWrapper = styled.nav`
   align-items: center;
   color: #602C9E;
   margin: 4.25vh 4.25vh 0vh 4.25vh;
-  background-color: #FFCC00;
+  background-color: aquamarine;
 `;
 
 export const Logo = styled.div`
@@ -117,7 +117,7 @@ export const HeroHeader = styled.section`
     span {
       display: block;
     }
-    background-color: #FFCC00;
+    background-color: darkorange;
     padding: 4.8vh 1.25vh 4.8vh 1.25vh;
   }
 `;
@@ -131,6 +131,7 @@ export const HeroText = styled.section`
     flex-direction: row;
     gap: 4.8vh;
     padding: 4.8vh 1.25vh 4.8vh 1.25vh;
+    background-color: yellow;
   }
 `;
 
@@ -141,18 +142,38 @@ export const HeroBookButton = styled.button`
   }
 `;
 
+export const HeroBookButtonWrapper = styled.section`
+  display: none;
+  @media(min-width: 1440px) {
+    display: block;
+    padding: 0vh 1.25vh 0vh 1.25vh;
+    text-align: left;
+    background-color: powderblue
+  }
+`;
+
 export const AboutUsWrapper = styled.section`
   background-color: #ff0000;
   text-align: left;
 `;
 
 export const BenefitsWrapper = styled.section`
-
+color: #602C9E;
 `;
 
 export const BenefitsHeader = styled.section`
-  text-align: center;
-  background-color: #33DD00;
+  display: none;
+  @media(min-width: 1440px) {
+    display: block;
+    font-size: 4.5rem;
+    text-align: center;
+    line-height: 7.25rem;
+    span {
+      display: block;
+    }
+    background-color: limegreen;
+    padding: 4.8vh 1.25vh 4.8vh 1.25vh;
+  }
 `;
 
 export const ContentSection = styled.section`
@@ -180,7 +201,8 @@ export const BookButton = styled.button`
 `;
 
 export const FooterWrapper = styled.footer`
-  background-color: #E9C9AF;
+  background-color: magenta;
+  font-size: 4.5rem;
   text-align: left;
   margin-top: auto;
 `;
