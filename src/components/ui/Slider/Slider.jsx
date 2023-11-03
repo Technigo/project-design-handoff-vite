@@ -32,6 +32,7 @@ export const Slider = ({ type = "slider" }) => {
           ) : (
             <div className={styles.slides_wrapper} key={slid.name}>
               <MemberCard
+                key={slid.name}
                 text={width < 992 && slid.shortText ? slid.shortText : slid.text}
                 name={slid.name}
                 imgPath={slid.imgPath}

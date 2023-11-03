@@ -20,6 +20,7 @@ export const Modal = () => {
   const [triggerTextFade, setTiggerTextFade] = useState(0);
 
   const currentFormdata = formData[currentFormIndex];
+  console.log(currentFormdata, currentFormIndex);
   const { content, type, name, id, animation } = currentFormdata;
   const { button, message, question, placeholder } = content[lang];
 
