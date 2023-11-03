@@ -1,0 +1,25 @@
+.form .input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+  margin-top: 0.5rem;
+}
+
+.submit {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.phone,
+.map {
+  margin: 2rem 0 1.5rem 0;
+}
+
+.address {
+  text-decoration: underline solid;
+  color: black;
+}

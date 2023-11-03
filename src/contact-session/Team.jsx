@@ -1,8 +1,9 @@
 import { Profile } from "../components/Profile";
+import "/src/contact-session/team.css";
 export const Team = () => {
   return (
     <>
-      <div>
+      <div className="about-us">
         <h1>We are Mini Flow</h1>
         <img src="./src/assets/icon/laughing_150.svg" alt="playful" />
         <h2>Playful</h2>
@@ -23,7 +24,7 @@ export const Team = () => {
           their bodies and thoughts.
         </p>
       </div>
-      <div>
+      <div className="team">
         <Profile url="./src/assets/img/Lisanne.png" />
         <h1>Lisanne</h1>
         <p>
@@ -42,8 +43,8 @@ export const Team = () => {
           Loves a good weird dance party. “Dancing is the best way for a child
           to express their emotions, always!”
         </p>
-        <img src="./src/assets/icon/illustration5.svg" alt="Mindful" />
       </div>
+      <img src="./src/assets/icon/illustration5.svg" alt="Mindful" />
     </>
   );
 };

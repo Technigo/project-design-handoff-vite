@@ -1,7 +1,7 @@
 .course-info {
   display: flex;
   flex-direction: column;
-  padding: 1em 0px;
+  padding: 3em;
   margin-bottom: 2em;
   align-items: center;
   text-align: center;

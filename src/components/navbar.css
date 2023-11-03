@@ -1,40 +1,40 @@
-.burger-menu {
-  display: block;
-  position: fixed;
-  top: 0;
-  right: -200px; /* Initially hide the menu off-screen */
-  width: 200px;
-  height: 100%;
-  background-color: #333;
-  transition: right 0.3s;
-}
-
-/* Burger icon styles */
-.burger-icon {
-  cursor: pointer;
-  padding: 20px;
-}
-
-.bar {
-  width: 25px;
-  height: 3px;
-  background-color: #565555;
-  margin: 5px 0;
-}
-
-/* Menu styles */
 .navbar {
-  padding: 20px;
-  display: none; /* Initially hide the menu items */
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: black;
 }
 
-.navbar ul {
-  list-style: none;
+.logo {
+  margin: 0.6rem;
+  width: 100%;
+}
+
+.navbar-links ul {
+  margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 2em;
 }
 
-.navbar li {
-  margin: 10px 0;
+.navbar-links li {
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navbar-links li:hover {
+  background-color: white;
+}
+
+.active {
+  color: #d99fb5;
 }
 
 /* Show the menu when the burger icon is clicked */
@@ -42,12 +42,15 @@
   display: block;
 }
 
-.navbar {
-  display: flex;
-  flex-direction: column; /* Change this to 'column' to make it a vertical menu */
-  align-items: center; /* Center align the items */
-}
+@media screen and (min-width: 800px) {
+  .nav-link ul {
+    display: flex;
+    float: right;
+    flex-direction: row;
+  }
 
-.navbar li {
-  list-style: none;
+  .nav-link li {
+    align-items: center;
+    justify-content: space-between;
+  }
 }

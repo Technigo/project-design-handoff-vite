@@ -15,14 +15,14 @@ export const Newsletter = () => {
         be the first to receive our latest updates, special offers and bonus
         yoga videos.
       </p>
-      <div className="subscribe-wrapper">
+      <form className="subscribe-wrapper">
         <input
           type="text"
           className="input"
           placeholder="your e-mail address"
         />
-        <BtnLight name="subscribe!" />
-      </div>
+        <button className="subscribe-btn"> subscribe! </button>
+      </form>
     </div>
   );
 };

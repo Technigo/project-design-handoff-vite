@@ -1,0 +1,19 @@
+/* Burger icon styles */
+.burger-icon {
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+
+  cursor: pointer;
+  width: 30px;
+  height: 21px;
+}
+
+.burger-icon .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+}

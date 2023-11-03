@@ -1,31 +1,31 @@
 import "../components/navbar.css";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { BurgerButton } from "./BurgerButton";
 
 export const Navbar = () => {
-  // const [menuOpen, setMenuOpen] = useState(false);
-  // const toggleMenu = () => {
-  //   setMenuOpen(!menuOpen);
-  // };
   return (
-    <nav className="nav">
+    <nav className="navbar">
       <Link to="/">
-        <img src="./src/assets/logo/logo_phone.svg" alt="logo" />
+        <img
+          src="./src/assets/logo/logo_phone.svg"
+          alt="logo"
+          className="logo"
+        />
       </Link>
-      {/* <div className={`burger-menu ${menuOpen ? "open" : ""}`}>
-        <div className="burger-icon" onClick={toggleMenu}>
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div> */}
-      <ul className="navbar">
-        <li>Courses for kids</li>
-        <li>Info for adults</li>
-        <li>
-          <NavLink to="/contact">Contact</NavLink>
-        </li>
-      </ul>
-      {/* </div> */}
+
+      <BurgerButton />
+      <div className="navbar-links">
+        <ul>
+          <li>Courses for kids</li>
+          <li>Info for adults</li>
+          <li>
+            <NavLink to="/contact" className="navLink" activeClassName="active">
+              Contact
+            </NavLink>
+          </li>
+        </ul>
+      </div>
     </nav>
   );
 };

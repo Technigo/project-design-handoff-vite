@@ -1,16 +1,40 @@
 .motto-wrapper {
   display: flex;
-  align-items: center;
   flex-direction: column;
-}
-.motto {
-  border-radius: 30px;
-  background: url(/src/assets/img/kid_back.jpg), lightgray 50% / cover no-repeat;
+  align-items: center;
 }
 
-.motto p {
-  margin: 0.5em;
+.motto-img {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
 }
+
+.motto-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: url("../src/assets/img/kid_back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+
+.motto-wrapper p {
+  margin: 0.5em;
+  text-align: left;
+}
+
+.text-yoga {
+  text-align: left;
+}
+
 .circle-divider {
   margin: 1em 0 1em 0;
   width: 60%;
