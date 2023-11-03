@@ -47,6 +47,10 @@
     width: 229px;
     max-width: 229px;
     bottom: 24px;
+    &:lang(es) {
+      width: 340px;
+      max-width: 340px;
+    }
   }
 
   @include lg {
