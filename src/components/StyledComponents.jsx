@@ -15,7 +15,7 @@ export const HeaderWrapper = styled.nav`
   align-items: center;
   color: #602C9E;
   padding: 1.25vh 21.25vh 1.25vh 1.25vh;
-  background-color: #FFCC00;
+  background-color: #FF3300;
 `;
 
 export const Logo = styled.div`
