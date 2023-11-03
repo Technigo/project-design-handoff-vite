@@ -1,16 +1,18 @@
 import { Link } from 'react-router-dom';
-import { HeroWrapper, HeroImage, HeroHeader, HeroText, HeroBookButton } from './StyledComponents';
+import { HeroWrapper, HeroImage, HeroImageText, HeroHeader, HeroText, HeroBookButton } from './StyledComponents';
 
 export const Hero = () => {
   return (
     <>
     <HeroWrapper>
     <HeroImage>
-    Your practice YOGA YOU
+    <HeroImageText>
+    <span>Your practice</span>
+    <span>YOGA YOU</span>
+  </HeroImageText>
     </HeroImage>
     <HeroHeader>
-    Your destination for yoga
-The way you choose to practise
+    Your destination for yoga he way you choose to practise
     </HeroHeader>
     <HeroText>
     Take a break from the stress of daily life and embark on a journey towards self-discovery and healing.

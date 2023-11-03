@@ -79,10 +79,32 @@ export const HeroImage = styled.section`
 
   @media (min-width: 1440px) {
     height: 43vh;
-    color: white;
+    color: #602C9E;
     text-align: center;
     font-size: 34px;
 }
+`;
+
+export const HeroImageText = styled.div`
+  color: transparent;
+
+  @media (min-width: 1440px) {
+    color: #602C9E;
+    text-align: center;
+    font-size: 4.5rem;
+    position: absolute;
+    top: 65%;
+    left: 40%;
+    transform: translate(-70%, -200%);
+    span {
+      display: block;
+      display: flex;
+      padding: 0.625rem;
+      justify-content: center;
+      align-items: center;
+      gap: 0.625rem;
+    }
+  }
 `;
 
 export const HeroHeader = styled.section``;
