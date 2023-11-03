@@ -29,7 +29,7 @@ export const Hero = () => {
                             <h1>{t("landingPage.hero.h1")}</h1>
                             <p className="hero-paragraph">{t("landingPage.hero.heroParagraph")}</p>
                         </div>
-                        <Button className={"green thick"} text={t("landingPage.hero.heroButton")} />
+                        <Button linkTo={"/sign-up"} className={"green thick"} text={t("landingPage.hero.heroButton")} />
                     </article>
                 </section>
             ) : (

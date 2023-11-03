@@ -7,6 +7,7 @@ export const TextImageComponent = ({
     altText,
     textImageHeading,
     textImageParagraph,
+    linkTo,
     className,
     textImageButton,
 }) => {
@@ -22,7 +23,7 @@ export const TextImageComponent = ({
                     <h2>{textImageHeading}</h2>
                     <p>{textImageParagraph}</p>
                     <div className="button-container">
-                        <Button className={className} text={textImageButton} />
+                        <Button linkTo={linkTo} className={className} text={textImageButton} />
                     </div>
                 </article>
             </div>

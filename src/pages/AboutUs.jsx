@@ -4,7 +4,6 @@ import { MeetTheTeam } from "../components/MeetTheTeam/MeetTheTeam";
 import { ContactUs } from "../components/ContactUs/ContactUs";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
-import "./pages.css";
 
 // A tiny styled component to remove the button from this component
 const SubHeroCompStyle = styled.section`

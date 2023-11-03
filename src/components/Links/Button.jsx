@@ -1,9 +1,12 @@
+import { Link } from "react-router-dom";
 import "./button-links.css";
 
-export const Button = ({ className, text }) => {
+export const Button = ({ linkTo, onClick, className, text }) => {
     return (
-        <button className={`btn-style ${className}`}>
-            {text}
-        </button>
+        <Link to={linkTo}>
+            <button onClick={onClick} className={`btn-style ${className}`}>
+                {text}
+            </button>
+        </Link>
     );
 }

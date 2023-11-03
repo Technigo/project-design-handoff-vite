@@ -24,7 +24,7 @@ export const MobileNavLinks = ({ onClick }) => {
             <ul className="mobile-links">
                 <img src="./assets/icons/cross.svg" alt="Close menu icon" className="close-menu" onClick={toggleClose} />
                 <div className="mobile-links-container">
-                    <li onClick={onClick}><NavLink to={"#"}>{t("landingPage.navbar.button")}</NavLink></li>
+                    <li onClick={onClick}><NavLink to={"/my-pages"}>{t("landingPage.navbar.button")}</NavLink></li>
                     <li onClick={onClick}><NavLink to={"/sign-up"}>{t("landingPage.hero.heroButton")}</NavLink></li>
                     <li onClick={onClick}><NavLink to={"/at-home"}>{t("landingPage.navbar.nav1")}</NavLink></li>
                     <li onClick={onClick}><NavLink to={"/studio"}>{t("landingPage.navbar.nav2")}</NavLink></li>

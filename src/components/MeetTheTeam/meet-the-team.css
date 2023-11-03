@@ -33,9 +33,7 @@
     justify-content: flex-end;
 }
 
-.meet-the-team-section .image-on-right {
-    background-color: var(--light-green);
-}
+
 
 @media (min-width: 834px) and (max-width: 1511px) {
     .teacher-cards {

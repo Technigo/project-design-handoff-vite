@@ -15,6 +15,7 @@ export const LandingPage = () => {
             {/* By not passing a prop here, the component reverts to the default value, which is left */}
             <TextImageComponent
                 src={"./assets/images/yoga-studio-image3.jpg"}
+                linkTo={"/classes"}
                 altText={"Image of a woman in a bridge yoga pose"}
                 textImageHeading={t("landingPage.inPersonClasses.h2")}
                 textImageParagraph={t("landingPage.inPersonClasses.inPersonClassesParagraph")}
@@ -23,6 +24,7 @@ export const LandingPage = () => {
             {/* By passing the imageOnLeft prop false here, the component will render with the image on the right */}
             <TextImageComponent
                 imageOnLeft={false}
+                linkTo={"/virtual-classes"}
                 src={"./assets/images/yoga-studio-image4.jpg"}
                 altText={"Image of a woman meditating"}
                 textImageHeading={t("landingPage.virtualClasses.h2")}

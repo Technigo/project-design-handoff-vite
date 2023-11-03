@@ -43,6 +43,10 @@ footer button.green {
     right: 5px;
 }
 
+.subscribe-form {
+    color: var(--primary-black);
+}
+
 /* Language selector */
 .language-and-social {
     margin-top: 38px;
@@ -68,6 +72,23 @@ select {
     font-family: var(--main-font)!important;
 }
 
+.language-selector {
+    position: relative;
+}
+
+.custom-select {
+    background-color: transparent; /* Make the background transparent */
+    padding-left: 25px; /* Add padding to the left for the icon */
+}
+
+.uk-flag-icon {
+    max-width: 19px;
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 9px; /* Adjust the distance from the right */
+    transform: translateY(-50%);
+}
+
 /* Footer links section */
 .footer-links {
     margin-top: 74px;
@@ -77,6 +98,10 @@ select {
     justify-content: center;
 }
 
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
 .footer-links ul {
     gap: 10px;
 }
@@ -84,6 +109,10 @@ select {
 .studio, .support {
     display: flex;
     flex-direction: column;
+}
+
+#twitter-icon {
+    margin-top: 2px;
 }
 
 /* Adress and info section */
@@ -115,12 +144,20 @@ select {
 
     .language-select {
         height: 33px;
+        postition: relative;
     }
 
     .footer-links {
         margin-top: 0;
         padding: 0;
         gap: 101px;
+    }
+
+    .uk-flag-icon {
+        position: absolute;
+        top: 12%;
+        left: 370px;
+        transform: translateY(-50%);
     }
 }
 
@@ -158,6 +195,7 @@ select {
 
     .language-select {
         max-height: 33px;
+        postition: relative;
     }
 
     .footer-links {
@@ -173,5 +211,12 @@ select {
 
     .info-section {
         margin-top: 147px;
+    }
+
+    .uk-flag-icon {
+        position: absolute;
+        top: 16%; /* Center vertically */
+        left: 607px; /* Adjust the distance from the right */
+        transform: translateY(-50%);
     }
 }

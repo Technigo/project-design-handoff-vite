@@ -23,7 +23,7 @@ export const MeetTheTeam = () => {
 
     return (
         <section>
-            <CardsSectionHeader heading={t("aboutUs.ourPeople.h2")} text={t("aboutUs.ourPeople.firstParagraph")} button={t("aboutUs.ourPeople.button")} />
+            <CardsSectionHeader linkTo={"/meet-the-teachers"} heading={t("aboutUs.ourPeople.h2")} text={t("aboutUs.ourPeople.firstParagraph")} button={t("aboutUs.ourPeople.button")} />
             <section className="teacher-cards">
                 <ImageOnTopComponent src={"./assets/images/tamara-profile.jpg"} name={t("aboutUs.ourPeople.teachers.tamara")} altText={"Image of teacher Tamara"} description={t("aboutUs.ourPeople.teachers.tamaraDescription")} />
                 <ImageOnTopComponent src={"./assets/images/becky-profile.jpg"} name={t("aboutUs.ourPeople.teachers.becky")} altText={"Image of teacher Becky"} description={t("aboutUs.ourPeople.teachers.beckyDescription")} />

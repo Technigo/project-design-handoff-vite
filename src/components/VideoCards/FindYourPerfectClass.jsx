@@ -54,7 +54,7 @@ export const FindYourPerfectClass = () => {
 
     return (
         <section className="browse-classes-wrapper">
-            <CardsSectionHeader heading={t("landingPage.findClass.h2")} button={t("landingPage.findClass.classesButton")} />
+            <CardsSectionHeader linkTo={"/classes"} heading={t("landingPage.findClass.h2")} button={t("landingPage.findClass.classesButton")} />
             <section className="videos-section">
                 {visibleVideos.map((video, index) => (
                     <VideoCard

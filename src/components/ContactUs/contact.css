@@ -15,6 +15,10 @@
     margin-bottom: 31px;
 }
 
+.contact-email:hover {
+    text-decoration: underline;
+}
+
 .contact-form {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
