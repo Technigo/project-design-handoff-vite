@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./pages.css";
 
-// Component for the At Home page
+// Placeholder-component for the At Home page
 export const AtHome = () => {
     const { t } = useTranslation();
 
