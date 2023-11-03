@@ -3,11 +3,7 @@ import "./Header.css";
 export const Header = () => {
   return (
     <div className="header">
-      <img
-        className="bubbles"
-        src="./public/Images/Gym-bubble.png"
-        alt="Gym bubble"
-      />
+      <img className="bubbles" src="./Images/Gym-bubble.png" alt="Gym bubble" />
       <img
         className="bubbles"
         src="./public/Images/Spa-1.png"
@@ -15,12 +11,12 @@ export const Header = () => {
       />
       <img
         className="bubbles"
-        src="./public/Images/Co-working.png"
+        src="./Images/Co-working.png"
         alt="Co work bubble"
       />
       <img
         className="bubbles"
-        src="./public/Images/After-hours-1.png"
+        src="./Images/After-hours-1.png"
         alt="After hours bubble"
       />
       ;
@@ -33,7 +29,7 @@ export const Header = () => {
           stay home. We don’t.
         </p>
       </div>
-      <img className="vector" src="./public/Images/Vector-2.png" alt="Line" />
+      <img className="vector" src="./Images/Vector-2.png" alt="Line" />
     </div>
   );
 };

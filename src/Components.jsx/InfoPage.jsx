@@ -5,7 +5,7 @@ export const InfoPage = () => {
     <div className="info-page">
       <div className="grid-container">
         <div className="grid-item">
-          <img src="./public/Images/Breakfast-1.png" alt="Breakfast image" />
+          <img src="./Images/Breakfast-1.png" alt="Breakfast image" />
         </div>
         <div className="grid-item">
           <h2>Breakfast</h2>
@@ -17,7 +17,7 @@ export const InfoPage = () => {
         </div>
 
         <div className="grid-item">
-          <img src="./public/Images/Gym-1.png" alt="Gym image" />
+          <img src="./Images/Gym-1.png" alt="Gym image" />
         </div>
         <div className="grid-item">
           <h2>The Gym</h2>
@@ -29,7 +29,7 @@ export const InfoPage = () => {
         </div>
 
         <div className="grid-item">
-          <img src="./public/Images/Co-working.png" alt="Co-working image" />
+          <img src="./Images/Co-working.png" alt="Co-working image" />
         </div>
         <div className="grid-item">
           <h2>Co-working</h2>
@@ -42,7 +42,7 @@ export const InfoPage = () => {
         </div>
 
         <div className="grid-item">
-          <img src="./public/Images/Spa-3.png" alt="Spa image" />
+          <img src="./Images/Spa-3.png" alt="Spa image" />
         </div>
         <div className="grid-item">
           <h2>Spa & Wellness</h2>
@@ -54,10 +54,7 @@ export const InfoPage = () => {
         </div>
 
         <div className="grid-item">
-          <img
-            src="./public/Images/After-hours-1.png"
-            alt="After hours image"
-          />
+          <img src="./Images/After-hours-1.png" alt="After hours image" />
         </div>
         <div className="grid-item">
           <h2>After Hours</h2>

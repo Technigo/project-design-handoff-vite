@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, Link, Outlet } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import { Navbar } from "./Components.jsx/Navbar";
 import { About } from "./Components.jsx/About";
 import { Header } from "./Components.jsx/Header";

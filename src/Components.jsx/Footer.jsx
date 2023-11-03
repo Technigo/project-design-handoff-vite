@@ -34,7 +34,7 @@ export const Footer = () => {
 
   return (
     <div className="footer">
-      <img src="./public/Images/Logo.png" alt="Logo image" />
+      <img src="./Images/Logo.png" alt="Logo image" />
       <Email updateFormData={updateFormData} value={formData.email} />
       <div className="footer-information">
         <p className="title-line">Information</p>
@@ -55,10 +55,10 @@ export const Footer = () => {
         <p className="title-line">Contact Us</p>
         <p>+46 001 89 89 10</p>
         <p>groundzero@support.com</p>
-        <img src="./public/Images/Facebook.png" alt="Facebook logo" />
-        <img src="./public/Images/Instagram.png" alt="Instagram logo" />
-        <img src="./public/Images/Maps.png" alt="Google map logo" />
-        <img src="./public/Images/Twitter.png" alt="Twitter logo" />
+        <img src="./Images/Facebook.png" alt="Facebook logo" />
+        <img src="./Images/Instagram.png" alt="Instagram logo" />
+        <img src="./Images/Maps.png" alt="Google map logo" />
+        <img src="./Images/Twitter.png" alt="Twitter logo" />
       </div>
     </div>
   );
