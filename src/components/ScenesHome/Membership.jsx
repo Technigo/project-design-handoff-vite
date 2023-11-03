@@ -7,7 +7,7 @@ export const Membership = () => {
   const { t } = useTranslation();
 
   return (
-    <section className='membership-section'>
+    <section id="membership-section" className='membership-section'>
         <h2>{t("home.membership.heading")}</h2>
         <h3>{t("home.membership.subHeading")}</h3>
         <MemberCard />

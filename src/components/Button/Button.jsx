@@ -16,7 +16,7 @@ color: var(--black);
 
     &:hover {
         cursor: pointer;
-        background-color: aqua;
+        background-color: var(--yellowlight);
     }
 
     ${(props) =>
@@ -27,7 +27,7 @@ color: var(--black);
     color: var(--yellow); 
 
         &:hover {
-            background-color: aqua; 
+            background-color: var(--purpledark); 
         }
     `}
 `;

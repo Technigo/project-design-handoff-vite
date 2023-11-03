@@ -5,7 +5,7 @@ import "./ContactFOrm.css";
 export const ContactForm = () => {
     const { t } = useTranslation();
     return (
-        <section className="contact-section">
+        <section id="contact-section" className="contact-section">
             <h2>{t("about.form.heading")}</h2>
             <form>
                 <label className="label-text" htmlFor="name">

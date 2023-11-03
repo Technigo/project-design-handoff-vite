@@ -48,15 +48,15 @@ export const Footer = () => {
                 <p>{t("footer.contact.email")}</p>
 
                 <p className="p-bold">{t("footer.language.heading")}</p>
-                <div class="dropdown">
-                    <button class="dropbtn"><span class={`fib ${getFlagClass(language)}`} />{t(`footer.language.${language}`)}</button>
-                    <div class="dropdown-content">
+                <div className="dropdown">
+                    <button className="dropbtn"><span className={`fib ${getFlagClass(language)}`} />{t(`footer.language.${language}`)}</button>
+                    <div className="dropdown-content">
                         <span onClick={englishFunc}>
-                            <span class="fib fi-gb" />
+                            <span className="fib fi-gb" />
                             {t("footer.language.en")}
                         </span>
                         <span onClick={swedishFunc}>
-                            <span class="fib fi-se" />
+                            <span className="fib fi-se" />
                             {t("footer.language.se")}
                         </span>
                     </div>

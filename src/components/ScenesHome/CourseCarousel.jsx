@@ -21,7 +21,7 @@ export const CourseCarousel = () => {
         //IS THIS REALLY WHAT IM DOING?!?!?!?
         //if the course-card id is the lenght of the courses array,
         //right arrow click returns the course-card with id 0, otherwise increasing id with 1.
-        setSlide(slide === courses.length - 1 ? 0 : slide + 1);
+        setSlide(slide === coursesArray.length - 1 ? 0 : slide + 1);
     };
 
     const prevSlide = () => {
