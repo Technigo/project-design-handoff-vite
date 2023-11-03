@@ -1,6 +1,7 @@
-
+import { Translate } from "../pages/Translate"
 
 export const Footer = () => {
+
     return (
         <div className="mx-auto mt-auto pb-16 flex flex-col items-center justify-center w-5/6 font-raleway text-white text-base font-medium space-y-5">
             <img src="icons/horizontalRule.svg" alt="horizontal rule" className="" />
@@ -41,11 +42,7 @@ export const Footer = () => {
 
             <img src="icons/horizontalRule.svg" alt="horizontal rule" />
             <h4>ENGLISH</h4>
-            <div className="flex flex-row justify-center items-center gap-4">
-                <img src="icons/english.png" alt="english language icon" />
-                <img src="icons/swedish.png" alt="swedish language icon" />
-            </div>
-
+            <Translate />
         </div>
     )
 }

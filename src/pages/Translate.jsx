@@ -17,10 +17,9 @@ export const Translate = () => {
 
     return (
         <>
-            <div>
-                <button onClick={englishFunc}>English</button>
-                <button onClick={swedishFunc}>Swedish</button>
-                <p>{t("translatePage.heading")}</p>
+            <div className="flex flex-row justify-center items-center gap-4">
+                <button onClick={englishFunc}><img src="icons/english.png" alt="english language icon" /></button>
+                <button onClick={swedishFunc}><img src="icons/swedish.png" alt="swedish language icon" /></button>
             </div>
         </>
     )
