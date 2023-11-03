@@ -8,6 +8,13 @@ const HeroWrapper = styled.div`
   gap: 10px;
   max-width: 100%;
   padding: 48px 25px;
+  @media (min-width: 768px) {
+    
+  }
+
+  @media (min-width: 1024px) {
+
+  }
 `;
 
 const HeroHeading = styled(Heading)`
@@ -24,6 +31,15 @@ const HeroHeading = styled(Heading)`
 
 const HeroImage = styled.img`
   max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    
+  }
+
+  @media (min-width: 1024px) {
+    
+  }
 `;
 
 const HeroDescription = styled(Description)`
@@ -42,6 +58,7 @@ const BlueLineHero = styled.div`
   background-color: var(--blue-color);
 `;
 export const Header = ({ heading, textOne, textTwo, image }) => {
+  
   return (
     <HeroWrapper className="hero-wrapper">
       <BlueLineHero className="blue-line-hero" />

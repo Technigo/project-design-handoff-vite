@@ -5,7 +5,7 @@ import { InfoHome } from "../components/Info/InfoHome";
 
 export const Home = () => {
 
-
+  const MainHeading="Edge Performance"
   const textOne = "Find and sharpen your competitive edge.";
   const textTwo = "We are the gym that builds champions.";
   const heroImageHome = "./homeHero.png"; 
@@ -15,7 +15,7 @@ export const Home = () => {
   const heroImageInfo = null;
   return (
     <>
-      <Header textOne={textOne} textTwo={textTwo} image={heroImageHome} />
+      <Header heading={MainHeading} textOne={textOne} textTwo={textTwo} image={heroImageHome} />
       <InfoHome  mainText={MainText} text={Text} image={heroImageInfo} />
       <Article />
       <Footer />

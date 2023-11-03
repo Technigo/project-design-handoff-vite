@@ -11,6 +11,10 @@ const NavigationWrapper = styled.nav`
   width: 100%;
   z-index: 100;
   border-top: 5px solid var(--red-color);
+  @media (min-width: 768px) {
+    display: none; 
+  }
+
 `;
 
 const AppUl = styled.ul`
@@ -64,4 +68,6 @@ export const Navigation = ()  =>{
   </NavigationWrapper>
   )
 }
+
+
 

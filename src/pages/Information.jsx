@@ -7,6 +7,7 @@ import { AddressInfo } from "../components/Info/AddressInfo";
 
 
 export const Information = () => {
+  const MainHeading="Information"
   const textOne = "You can have the best gear in the world, but it’s the athlete inside that gear that counts. Step one - getting here: ";
   const heroImageHome = "./infoHero.png"; 
   //Info
@@ -17,7 +18,7 @@ export const Information = () => {
 
   return (
     <>
-      <Header textOne={textOne} image={heroImageHome} />
+      <Header  heading={MainHeading} textOne={textOne} image={heroImageHome} />
       <AddressInfo address={Address} phone={Phone} email={Email} image={heroImageInfo} />
       <Contact />
       <Footer />
