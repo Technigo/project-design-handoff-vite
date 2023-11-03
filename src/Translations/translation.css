@@ -8,6 +8,10 @@
     color: rgba(255, 224, 59, 1);
 }
 
+.translate-button:hover {
+    color: rgba(255, 224, 59, 1);
+}
+
 /*---- Media query ------*/
 
 @media (min-width: 667px) and (max-width: 1024px) {
