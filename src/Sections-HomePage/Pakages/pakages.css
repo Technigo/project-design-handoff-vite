@@ -10,7 +10,7 @@
         margin-top: 10%;
         margin-bottom: 10%;
         width: 100%;
-        gap: 19px;
+        gap: 25px;
 }
 
 .pakages-wrapper::-webkit-scrollbar {
@@ -37,4 +37,13 @@
     border-radius: 20px;
     object-fit: cover;  
          
+}
+
+/*---- Media query ----*/
+
+@media (min-width: 667px) {
+    .pakages-wrapper img {
+        width: 531px;
+            height: 766px;
+    }
 }

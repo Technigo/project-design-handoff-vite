@@ -30,3 +30,20 @@ color: #FFF;
     line-height: normal;
     letter-spacing: 0.77px;
 }
+
+
+/*---- Media query ----*/
+
+@media (min-width: 667px) {
+    .offer-text-wrapper h1 {
+        font-size: 40px;
+    }
+
+    .offer-text-wrapper p {
+       font-size:30px;
+    }
+
+    .offer-section {
+        padding: 50px;
+    }
+}

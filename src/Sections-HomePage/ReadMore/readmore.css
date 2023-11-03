@@ -36,3 +36,43 @@
         line-height: normal;
         letter-spacing: 0.77px;
 }
+
+/*---- Media query -----*/
+
+@media (min-width: 667px) {
+    .readMore-text-container h1 {
+        font-size: 40px;
+        font-weight: 600;
+    
+    }
+    .readMore-text-container p {
+        font-size: 30px;
+    }
+
+    .readMore-section {
+        padding: 70px;
+       
+    }
+
+    .readMore-wrapper {
+        gap: 90px;
+    }
+}
+
+/* @media (min-width: 1025px) {
+    .readMore-text-container h1 {
+            font-size: 55px;
+        }
+    
+        .readMore-text-container p {
+            font-size: 45px;
+        }
+    
+        .readMore-section {
+            padding: 70px;
+        }
+    
+        .readMore-wrapper {
+            gap: 90px;
+        }
+} */

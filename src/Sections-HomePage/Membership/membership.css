@@ -61,3 +61,14 @@
     margin: 10px;
     /* Add space from the bottom and right edges (adjust as needed) */
 }
+
+/*---- Media query -----*/
+@media (min-width: 667px) {
+.membership-card h1 {
+    font-size: 45px;
+}
+
+.membership-card p {
+    font-size: 25px;
+}
+}

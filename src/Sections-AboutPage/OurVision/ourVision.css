@@ -3,6 +3,8 @@
    padding: 0;
     width: 100%;
     background: #1A1E22;
+    display: flex;
+    flex-direction: row;
 }
 
 .our-vision-text-wrapper {
@@ -32,4 +34,28 @@
 
 .dart-vader-img {
     width: 100%;
+}
+
+/*----- Media qury -----*/
+
+@media (min-width: 668px) {
+    .our-vision-text-wrapper h1 {
+        font-size: 30px;
+    }
+    .our-vision-text-wrapper p{
+        font-size: 20px;
+    }
+
+    .our-vision-text-wrapper {
+        position: absolute;
+        width: 400px;
+        right: 0;
+    }
+
+    .our-vision-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
 }

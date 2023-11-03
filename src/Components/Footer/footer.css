@@ -38,7 +38,7 @@ footer {
 .footer-menu-join-container {
 display: flex;
 flex-direction: column;
-width: 240px;
+width: 70%;
 }
 
 .footer-menu-join-container {
@@ -101,3 +101,40 @@ padding: 10px;
 .rotopi-designs {
     color:#ffffff ;
 }
+
+/*---- Media query -----*/
+/* @media (min-width: 667px)  {
+    .footer-menu {
+        font-size: 25px;
+        text-wrap: nowrap;
+    }
+
+    .footer-menu-join-container p {
+        font-size: 17px;
+        text-wrap: wrap;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 38px;
+    }
+
+    .footer-logo {
+        padding: 40px;
+        justify-content: space-between;
+        height: 150px;
+    }
+
+    .galactic-logo {
+        width: 378px;
+        height: 58px;
+    }
+
+    .footer-logo-text {
+        font-size: 14px;
+    }
+
+
+
+
+} */

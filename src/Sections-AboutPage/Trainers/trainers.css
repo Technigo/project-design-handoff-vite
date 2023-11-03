@@ -39,13 +39,15 @@ color: #FFE03B;
     display: flex;
     justify-content: center;
     align-items: end;
-    width: 362px;
+    width: 360px;
         height: 338px;
 }
 
 /* .trainer-card-img {
-object-fit:fill;
-} */
+height: 500px;
+object-fit: cover;
+/* width: 100%; 
+}  */
 
 .trainer-card-text {
     background-color: rgba(1, 42, 97, 0.8);
@@ -53,4 +55,19 @@ object-fit:fill;
     width: 231px;
     
 }
+
+/*----- Media qury -----*/
+ @media (min-width: 668px) {
+    .trainers-headline h1 {
+        font-size: 70px;
+    }
+    .trainers-headline p {
+        font-size: 23px;
+    }
+
+    .trainer-card {
+        width: 800px;
+        
+    }
+ }
 

@@ -1,6 +1,7 @@
 .facilities-section {
     width: 100%;
     background: #1C1D23;
+    padding-top: 40px;
 }
 
 .facilities-text-wrapper {
@@ -48,4 +49,15 @@ font-family: Roboto;
     object-fit: cover;
     width: 358px;
         height: 331px;
+}
+
+/*----- Media qury -----*/
+@media (min-width: 668px) {
+    .facilities-text-wrapper h1 {
+        font-size: 40px;
+    }
+
+    .facilities-text-wrapper p {
+        font-size: 25px;
+    }
 }

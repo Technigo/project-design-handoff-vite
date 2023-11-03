@@ -7,3 +7,11 @@
 .translate-button:active {
     color: rgba(255, 224, 59, 1);
 }
+
+/*---- Media query ------*/
+
+@media (min-width: 667px) and (max-width: 1024px) {
+    .translate-button {
+        font-size: 35px;
+    }
+}

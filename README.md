@@ -4,38 +4,20 @@
   </a>
 </h1>
 
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
+This week we were teamed up with the UX-design students and they handed over a design in figma. This was the first time we got to work togethe with a designer.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+Due to limited time my site does not follow the design all the way.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+My biggest struggle this week was time. The given design was quite detailed and I did not manage to make all the features work. I struggled alot with the hambuger menu but used npm library to manage it.
+
+One other problem was that the design in figma was not optimized for bigger viewpoints than mobile. I discussed this with the designer and we agreed that I should try to choose font sizes that look good on the screen rather than strictly following the design.
+
+If I had more time I would try to make the site follow the design more closely. I would also like to add more animation that the designer talked about.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+Here: https://galactic-fitness.netlify.app/

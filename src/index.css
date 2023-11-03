@@ -28,6 +28,7 @@ a {
   color: #ffffff;
 }
 
+
 @media (min-width: 667px) {
   .app-wrapper {
     max-width: 100%;
