@@ -113,5 +113,23 @@
             "message": "Message",
             "send": "Send"
         }
+    },
+    "errorPage": {
+        "h1": "Ooops, the page you're looking for has gone meditating",
+        "p": "Please try again or go back to the startpage.",
+        "button": "Go back to startpage"
+    },
+    "otherPages": {
+        "atHome": "At home",
+        "classes": "Classes",
+        "contact": "Contact",
+        "faq": "FAQ",
+        "helpCenter": "Help center",
+        "meetTheTeachers": "Meet the team",
+        "myPages": "My pages",
+        "privacyPolicy": "Privacy policy",
+        "signUp": "Sign up",
+        "studio": "Studio",
+        "virtualClasses": "Virtual classes"
     }
 }

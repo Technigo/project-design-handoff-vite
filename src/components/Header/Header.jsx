@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Logo } from "./Logo";
 import { MobileNavLinks } from "./Navigation/MobileNavLinks";
-// import { Burger } from "./Navigation/Burger";
 import "./header.css";
 import { slide as Menu } from "react-burger-menu"; // Import the Menu component
 import { DesktopNavLinks } from "./Navigation/DesktopNavLinks";

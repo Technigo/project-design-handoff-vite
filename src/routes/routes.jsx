@@ -20,7 +20,6 @@ export const routes = (
     <>
         <Route path="/" element={<LandingPage />} />
         <Route path="/my-pages" element={<MyPages />} />
-
         <Route path="/at-home" element={<AtHome />} />
         <Route path="/studio" element={<Studio />} />
         <Route path="/about-us" element={<AboutUs />} />

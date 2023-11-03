@@ -1,5 +1,12 @@
+import { useTranslation } from "react-i18next";
+import "./pages.css";
+
 export const SignUp = () => {
+    const { t } = useTranslation();
+
     return (
-        <div>SignUp</div>
+        <section className="main-wrapper">
+            <h1>{t("otherPages.signUp")}</h1>
+        </section>
     )
 }

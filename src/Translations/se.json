@@ -113,5 +113,23 @@
             "message": "Meddelande",
             "send": "Skicka"
         }
+    },
+    "errorPage": {
+        "h1": "Ooops, sidan du letar efter har gått för att meditera",
+        "p": "Vänligen försök igen eller gå tillbaka till startsidan",
+        "button": "Tillbaka till startsidan"
+    },
+    "otherPages": {
+        "atHome": "Hemma",
+        "classes": "Klasser",
+        "contact": "Kontakt",
+        "faq": "FAQ",
+        "helpCenter": "Hjälpcenter",
+        "meetTheTeachers": "Träffa teamet",
+        "myPages": "Mina sidor",
+        "privacyPolicy": "Integritetspolicy",
+        "signUp": "Bli medlem",
+        "studio": "Studio",
+        "virtualClasses": "Virtuella klasser"
     }
 }
