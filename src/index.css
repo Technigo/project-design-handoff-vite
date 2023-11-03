@@ -36,6 +36,7 @@ body{
   width: 100%;
   background-color: #FFFFFF;
   z-index: 2;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
   
 }
 .bar-container{
@@ -101,7 +102,7 @@ body{
 .hero{
  
   position: relative;
-  margin-top: 44px;
+
   
 }
 .hero-text{
@@ -443,15 +444,21 @@ form{
 }
 .animation{
   position: absolute;
-  bottom: 150px;
   z-index: -1;
   opacity: .4;
-  left: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .title-testi{
   margin-left: 10px;
 }
-@media screen and (min-width:928px) {
+.nav-list{
+  display: none;
+}
+.trial-btn{
+  display: none;
+}
+@media screen and (min-width:768px) {
   .card{
     display: flex;
     gap: 60px;
@@ -516,7 +523,94 @@ form{
     align-items: flex-start;
     margin-top: 0;
   }
+  .form{
+   padding: 20px;
+  }
+ .submit-btn{
+  width: 398px;
+  margin: 30px auto;
+ }
+ .nav-list{
+  display: none;
+}
+.trial-btn{
+  display: none;
+}
  
+}
+@media screen and (min-width:1016px) {
+  .bar-btn{
+    display: none;
+  }
+  .nav-list{
+    display: flex;
+    gap: 20px;
+  }
+  .fa-xmark{
+    display: none;
+  }
+  .header{
+    flex-direction: column;
+    padding: 40px;
+    justify-content: space-around;
+    gap: 10px;
+  }
+  .navbar ul li a{
+    color: rgba(15, 15, 17, 1);
+   font-size: 17px;
+font-weight: 700;
+letter-spacing: -0.3199999928474426px;
+text-align: left;
+padding: 10px;
 
- 
+
+  }
+  .navbar ul li a:hover{
+    border-bottom: 4px solid rgba(255, 195, 83, 1);
+
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+   gap: 100px;
+  }
+  .trial-btn{
+display: block;
+padding: 14px;
+border-radius: 200px;
+gap: 8px;
+background-color: rgba(2, 136, 11, 1);
+color: rgba(244, 244, 235, 1);
+border: none;
+outline: none;
+cursor: pointer;
+
+font-size: 14px;
+font-weight: 700;
+letter-spacing: -0.3199999928474426px;
+text-align: center;
+
+
+  }
+  .form{
+    width: 784px;
+    margin: 0 auto;
+  }
+  label , .contact p{
+    font-size: 17px;
+  }
+  .contact h3{
+    font-size: 34px;
+  }
+  .footer{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 60px;
+  }
+  .frame input{
+    width: 291px;
+  }
+  ul li a{
+    font-size: 17px;
+  }
 }
