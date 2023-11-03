@@ -1,8 +1,8 @@
 import { Footer } from "../components/Footer"
 import { Header } from "../components/Header"
-import { FrequentlyAskedQuestions } from "../components/reusable components/FrequentlyAskedQuestions"
-import { GoogleMaps } from "../components/reusable components/GoogleMaps"
-import { OpeningHours } from "../components/reusable components/OpeningHours"
+import { FrequentlyAskedQuestions } from "../components/reusableComponents/FrequentlyAskedQuestions"
+import { GoogleMaps } from "../components/reusableComponents/GoogleMaps"
+import { OpeningHours } from "../components/reusableComponents/OpeningHours"
 
 export const InfoPage = () => {
     return (
