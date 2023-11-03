@@ -1,6 +1,5 @@
 import { styled } from "styled-components";
 import { useTranslation } from "react-i18next"
-import enTranslation from "./translations/en.json"
 import backgroundPaths from "../data/background-paths.json"
 
 
@@ -14,11 +13,19 @@ const StyledDiv = styled.div`
   background-image: linear-gradient(#b035081a, #220901),
     url(${(props) => props.cardBackground});
   background-size: cover;
+
+    .test {
+      /* background-color: red; 
+      word-wrap: break-word;   */
+      overflow: hidden; 
+   
+    } 
+
 `;
 
 const backgroundsArray = backgroundPaths.homePage.activities
 
-let activityArray = enTranslation.homePage.activities
+// let activityArray = enTranslation.homePage.activities //Kept for reference
 
 
 export const ActivityCard = () => {
@@ -32,9 +39,10 @@ export const ActivityCard = () => {
       {activities.map((activity) => (
         <StyledDiv key={activity.id} cardBackground={backgroundsArray[activity.id - 1].background} aria-label={backgroundsArray[activity.id - 1].alt}
         role="img">
+          <div className="test">
           <h3>{activity.header}</h3>
-
           <p className="paragraph-small">{activity.bodyText}</p>
+          </div>
         </StyledDiv>
       ))}
     </>

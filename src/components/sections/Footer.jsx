@@ -7,10 +7,10 @@ const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
   background-color: transparent;
-  height: 381px; 
   justify-content: flex-end; 
   padding: 0 23px 51px 23px; 
   gap: 10px; 
+  margin-top: 146px; 
 
   img {
     height: 50px;
