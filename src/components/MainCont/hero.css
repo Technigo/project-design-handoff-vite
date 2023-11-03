@@ -16,6 +16,8 @@
 }
 
 /* ----- Making the content responsive ----- */
+/* Small phones (The text was covered by the header/navbar in small phones
+
 /* Desktops */
 @media (min-width: 1025px) {
     .hero {

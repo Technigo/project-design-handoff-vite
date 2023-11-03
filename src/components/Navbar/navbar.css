@@ -2,42 +2,37 @@
     position: fixed;
     /* Ensures navbar stays on top of other elements */
     z-index: 1000;
-    width: 100%;
+    width: 95%;
     height: 5%;
     background-color: #1C1D23;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4%;
+    padding: 4% 3%;
     margin-top: 8%;
 }
 
-.menu-toggle {
-    color: #FFFFFF;
-    cursor: pointer;
-    display: flex;
-}
+/* Had some issues with the flexbox in the navbar/header. Adjusted with pixels and padding to make it pretty */
 
-.navbar-logo {
-    display: flex;
+.menu-toggle {
+    font-size: 50px;
+    padding-bottom: 2%;
 }
 
 .navbar-logo img {
-    width: 70%;
-    height: auto;
+    height: 55px;
 }
 
 .navbar-profile {
     display: flex;
-    margin: -15%;
 }
 
 .navbar-profile img {
-    width: 30%;
+    height: 40px;
     cursor: pointer;
     padding-top: 3%;
-
 }
+
 
 /* ----- Making the content responsive ----- */
 /* Tablet*/
@@ -48,11 +43,11 @@
     }
 
     .navbar-logo img {
-        width: 60%;
+        height: 65px;
     }
 
     .navbar-profile img {
-        width: 20%;
+        height: 50px;
     }
 
 }
@@ -64,11 +59,15 @@
         margin-top: 0;
     }
 
+    .menu-toggle {
+        font-size: 70px;
+    }
+
     .navbar-logo img {
-        width: 55%;
+        height: 80px;
     }
 
     .navbar-profile img {
-        width: 20%;
+        height: 60px
     }
 }

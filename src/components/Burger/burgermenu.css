@@ -75,7 +75,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     background: rgba(0, 0, 0, 0.5)
 }
 
-/* ---- My own added classnames ----- */
+/* ---- Not predetermined ----- */
 .lang-wrapper {
     display: flex;
     flex-direction: row;
