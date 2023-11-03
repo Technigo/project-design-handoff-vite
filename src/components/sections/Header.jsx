@@ -5,7 +5,7 @@ import {Navbar} from "../Navbar"
 
 const StyledHeader = styled.header`
   width: 100%; 
-position: fixed;
+  position: absolute;
 
 `;
 

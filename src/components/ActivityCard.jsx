@@ -10,16 +10,18 @@ const StyledDiv = styled.div`
   padding: 0.5rem 1rem;
   height: 300px;
   width: 350px;
-  background-image: linear-gradient(#b035081a, #220901),
-    url(${(props) => props.cardBackground});
+  background-image: linear-gradient(#b035081a, #220901), url(${(props) => props.cardBackground});
   background-size: cover;
 
-    .test {
-      /* background-color: red; 
-      word-wrap: break-word;   */
+    .wrapper {
       overflow: hidden; 
-   
     } 
+
+    @media (min-width: 1025px) {
+      height: 349px;
+      width: 504px;
+  
+    }
 
 `;
 
@@ -39,7 +41,7 @@ export const ActivityCard = () => {
       {activities.map((activity) => (
         <StyledDiv key={activity.id} cardBackground={backgroundsArray[activity.id - 1].background} aria-label={backgroundsArray[activity.id - 1].alt}
         role="img">
-          <div className="test">
+          <div className="wrapper">
           <h3>{activity.header}</h3>
           <p className="paragraph-small">{activity.bodyText}</p>
           </div>

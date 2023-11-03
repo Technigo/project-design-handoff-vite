@@ -71,9 +71,12 @@
                 "class": "PRENATAL YOGA", 
                 "teacher": "Pernille Andersen", 
                 "book": "Book"
-            }
+            }], 
 
-         ], 
+        "informationText": {
+            "heading": "Indulge in a range of alternatives", 
+            "text": "Discover all our alternative mediums where our yoga teachings is shared."  
+            },
 
         "information": [
              {
@@ -100,6 +103,11 @@
                 "background": "linear-gradient(180deg, #621708 0%, #220901 100%)"
             }
         ], 
+
+        "activityText": {
+            "heading": "Upcoming activities", 
+            "text": "Live through your pregnancy to the fullest, through adapted, strengthening and safe yoga practice. "  
+            },
 
         "activities": [
              {  

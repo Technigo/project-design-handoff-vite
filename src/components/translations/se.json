@@ -70,6 +70,11 @@
                 "book": "Boka"
             }
         ],
+
+        "informationText": {
+            "heading": "Frossa i ett urval av alternativ",
+            "text": "Upptäck alla våra alternativa medier där vår yogalektioner delas."
+        },
         
         "information": [
             {
@@ -94,6 +99,11 @@
                 "background": "linear-gradient(180deg, #621708 0%, #220901 100%)"
             }
         ],
+
+        "activityText": {
+            "heading": "Kommande aktiviteter",
+            "text": "Upplev din graviditet till fullo genom anpassad, stärkande och säker yogapraktik."
+        },
         
         "activities": [
             {

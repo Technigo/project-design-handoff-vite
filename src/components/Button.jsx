@@ -28,6 +28,19 @@ export const Button = styled.button`
         cursor: pointer; 
       }
     `}
+
+    ${props => props.navbar && css`
+    height: fit-content; 
+    background: transparent; 
+    color: black; 
+    padding: 10px 48px; 
+    border: 1px solid black; 
+
+      &hover {
+        opacity: 0.7; 
+        cursor: pointer; 
+      }
+    `}
   `
    
 

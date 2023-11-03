@@ -9,14 +9,13 @@ import backgroundPaths from "../data/background-paths.json"
 
 //Making variables of imports 
 const informationBackgrounds = backgroundPaths.homePage.information
-let informationArray = enTranslation.homePage.information
+// let informationArray = enTranslation.homePage.information //kept for reference
 
 
 const StyledDiv = styled.div`
   display: flex; 
   flex-direction: column; 
   background: ${(props) => props.cardBackground};  
-  margin: 0 24px; 
   padding: 32px 16px; 
   gap: 16px; 
 
@@ -25,13 +24,7 @@ const StyledDiv = styled.div`
       height: 90px; 
     }
 
-  @media (min-width: 667px) and (max-width: 1024px) {
-    margin: 20%; 
-  }
-
-  @media (min-width: 1025px) {
-    margin: 20%; 
-  }
+ 
 `
 
 export const InformationCard = () => {

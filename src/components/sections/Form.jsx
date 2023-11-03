@@ -23,12 +23,13 @@ const StyledSection = styled.section`
 const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   gap: 24px;
 
   .input-fields {
     display: flex;
     flex-direction: column;
+    max-width: 381px; 
     gap: 0.5rem;
   }
 
@@ -58,14 +59,14 @@ export const Form = () => {
         <p>{t("form.text")}</p>
         <StyledForm>
           <div className="input-fields">
-            <StyledInput type="text" id="name" value={t("form.name")}></StyledInput>
+            <StyledInput type="text" name="name" value={t("form.name")} aria-label="name input"></StyledInput>
             <StyledInput
               type="text"
-              id="email-address"
+              name="email-address"
               value={t("form.email-address")}
-            ></StyledInput>
+              aria-label="email input"></StyledInput>
           </div>
-          <Button className={t("form.button")}>Send</Button>
+          <Button className={t("form.button")} aria-label="send">Send</Button>
         </StyledForm>
       </StyledSection>
     </>
