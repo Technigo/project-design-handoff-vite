@@ -17,7 +17,7 @@
 }
 
 .logo-container img {
-    width: 60%;
+    width: 70%;
     margin-bottom: 8%;
 }
 
@@ -38,19 +38,23 @@
 /* Tablet*/
 @media (min-width: 667px) {
     .logo-container img {
-        width: 50%;
+        width: 45%;
         margin-bottom: 5%;
+    }
+
+    .by h6 {
+        font-size: 14px;
     }
 }
 
 /* Desktops */
 @media (min-width: 1025px) {
     .logo-container img {
-        width: 40%;
+        width: 30%;
         margin-bottom: 5%;
     }
 
     .by h6 {
-        font-size: 18px;
+        font-size: 16px;
     }
 }

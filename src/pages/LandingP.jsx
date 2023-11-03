@@ -6,6 +6,7 @@ import { MainCont } from "../components/MainCont/MainCont"
 import { InfoFooter } from "../components/Footer/InfoFooter"
 import { Footer } from "../components/Footer/Footer"
 import { Translation } from "../translations/Translation"
+import { MoodMusic } from "../components/MoodMusic"
 
 //Export with components mounted.
 export const LandingP = () => {
@@ -13,6 +14,7 @@ export const LandingP = () => {
         <>
             <Navbar />
             <MainCont />
+            <MoodMusic />
             <InfoFooter />
             <Translation />
             <Footer />

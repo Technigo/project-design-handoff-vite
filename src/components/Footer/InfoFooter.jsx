@@ -2,7 +2,7 @@
 //"Information-menu" with translation keys to fetch translated content from the translation files. 
 
 import "./infofooter.css"
-
+import { Link } from "react-router-dom"
 import { useTranslation } from "react-i18next"
 
 
@@ -11,7 +11,7 @@ export const InfoFooter = () => {
 
     return <div className="infofooter">
         <div className="infofooter-text">
-            <h3>{t("InfoFooter.h31")}</h3>
+            <h3><Link to="/about">{t("InfoFooter.h31")}</Link></h3>
             <h3>+</h3>
         </div>
 

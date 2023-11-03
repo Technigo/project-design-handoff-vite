@@ -5,6 +5,7 @@
     align-items: center;
     height: 100vh;
     text-align: center;
+    padding-top: 10%;
 }
 
 .about-inner h3 {
@@ -18,6 +19,13 @@
 }
 
 /* ----- Making the content responsive ----- */
+/* Tablet*/
+@media (min-width: 667px) {
+    .about-main {
+        padding-top: 5%;
+    }
+}
+
 
 /* Desktops */
 @media (min-width: 1025px) {
