@@ -1,25 +1,70 @@
-import "./Footer.css"
-import map from "../../public/assets/map.png"
-import mapPin from "../../public/assets/mapPin.svg"
+import { useTranslation } from "react-i18next";
+import { useState, useEffect } from "react"
+import map from "../../public/assets/map.png";
+import mapPin from "../../public/assets/mapPin.svg";
+import "/node_modules/flag-icons/css/flag-icons.min.css";
+import "./Footer.css";
 
 export const Footer = () => {
-  return (
-    <footer>
-        <h2>Find us</h2>
-        <img src={map} alt="A map." />
-        <img src={mapPin} alt="A map pin." />
-        <p>Adress: Grycksbovägen 19A, Stockholm</p>
 
-        <p className='p-bold'>Contact</p>
-        <p>Mobile: +467000000</p>
-        <p>E-mail: info@yogabalance.se</p>
+    const [language, setLanguage] = useState("en")
+    const { t, i18n } = useTranslation();
 
-        <p className='p-bold'>Select language</p>
-        <p>DROPDOWN MENU</p>
+    // function to change the language
+    const changeLanguageFunc = (lng) => {
+        i18n.changeLanguage(lng);
+    };
 
-        <div className='copyright'>
-            <p>Copyright: YogaBalance23</p>
-        </div>
-    </footer>
-  )
-}
+    const englishFunc = () => changeLanguageFunc("en");
+    const swedishFunc = () => changeLanguageFunc("se");
+
+    useEffect(() => {
+      setLanguage(i18n.language);
+    }, [i18n.language])
+
+    const getFlagClass = (lng) => {
+      switch (lng) {
+        case "en": 
+          return "fi-gb";
+        case "se":
+          return "fi-se";
+        default:
+          return "";
+      }
+    };
+
+    return (
+        <footer>
+            <div className="footer-wrapper">
+                <h2>{t("footer.heading")}</h2>
+                <div className="map-with-pin-wrapper">
+                    <img className="map" src={map} alt="A map." />
+                    <img className="pin-icon" src={mapPin} alt="A map pin." />
+                </div>
+                <p>{t("footer.address")}</p>
+
+                <p className="p-bold">{t("footer.contact.heading")}</p>
+                <p>{t("footer.contact.mobile")}</p>
+                <p>{t("footer.contact.email")}</p>
+
+                <p className="p-bold">{t("footer.language.heading")}</p>
+                <div class="dropdown">
+                    <button class="dropbtn"><span class={`fib ${getFlagClass(language)}`} />{t(`footer.language.${language}`)}</button>
+                    <div class="dropdown-content">
+                        <span onClick={englishFunc}>
+                            <span class="fib fi-gb" />
+                            {t("footer.language.en")}
+                        </span>
+                        <span onClick={swedishFunc}>
+                            <span class="fib fi-se" />
+                            {t("footer.language.se")}
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div className="copyright">
+                <p>{t("footer.copyright")}</p>
+            </div>
+        </footer>
+    );
+};

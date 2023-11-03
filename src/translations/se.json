@@ -119,6 +119,8 @@
     },
     "about": {
         "welcome": {
+            "welcomeImage": "https://plus.unsplash.com/premium_photo-1661308240023-01db31be661f?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "welcomeImageAlt": "Bild av en kvinna som öppnar ett fönster, utanför är vacker natur",
             "heading": "Gå in i vår värld av yoga för kvinnor",
             "subHeading": "Välkommen till vår värld. Vi är ett litet yogacenter i Stockholm som hjälper kvinnor i klimakteriet att leva ett liv fullt av hälsa och livskraft.",
             "button": "Kontakta oss"
@@ -126,6 +128,8 @@
         "founder": {
             "heading": "Vår grundare",
             "subHeading": "Nita Svensson",
+            "founderImage": "https://images.unsplash.com/photo-1490195117352-aa267f47f2d9?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "founderImageAlt": "Bild på Nita Svensson.",
             "text": "Som kvinna i sina 50-årsåldern vet jag allt om att vara i klimakteriet. Min vision är att hjälpa andra kvinnor att må bra genom livet. Yoga hjälpte mig mycket att hålla stressen nere, minska ångest, sova bättre och få den välbehövliga återhämtningen."
         },
         "form": {
@@ -134,6 +138,10 @@
                 "name": "Namn",
                 "email": "E-post",
                 "terms": "Jag godkänner villkoren"
+            },
+            "placeholders": {
+                "name": "Skriv ditt namn här...",
+                "email": "Skriv din mail här..."
             },
             "button": "Kontakta mig"
         }

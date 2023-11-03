@@ -1,4 +1,88 @@
 footer {
+}
+
+.footer-wrapper {
     display: flex;
     flex-direction: column;
+    gap: 1.25rem;
+    padding: 3rem 1.25rem 2.5rem;
+}
+
+.footer-wrapper h2 {
+    text-align: center;
+}
+
+.map-with-pin-wrapper {
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    height: auto;
+}
+
+.pin-icon {
+    height: 2rem;
+    width: 2rem;
+    position: absolute;
+    top: 55%;
+    left: 35%;
+    z-index: 1;
+}
+
+/*LANGUAGE DROPDOWN*/
+.dropbtn {
+    background-color: var(--white);
+    text-align: left;
+    padding: 0.5rem;
+    color: var(--black);
+    width: 12.5rem;
+    height: 2.5rem;
+    border: 2px solid var(--yellow);
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--white);
+    min-width: 160px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content span {
+    color: var(--black);
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/*THE FLAG ICONS!*/
+.fib {
+    margin-right: 0.5rem;
+    font-size: 0.5rem !important;
+}
+
+.dropdown-content span:hover {
+    background-color: var(--yellow);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.copyright {
+    background-color: var(--purplebright);
+    display: flex;
+    justify-content: center;
+}
+
+.copyright p {
+    color: var(--white);
+    padding: 1.5rem;
 }

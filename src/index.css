@@ -1,9 +1,10 @@
 :root {
-    /*colours!*/
     margin: 0;
     font-family: "Nunito Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    
+    /*COLOURS!*/
     --black: #1d1c25;
     --white: #fff;
     --purplebright: #612e77;
@@ -29,6 +30,7 @@ code {
     box-sizing: border-box;
 }
 
+/*IMAGES*/
 img {
     max-width: 100%;
 }
@@ -40,12 +42,7 @@ img {
 }
 
 
-
-/*PROBABLY MOVE THIS*/
-
-
-
-
+/*TYPOGRAPHY*/
 
 h1 {
     font-size: 2.25rem;
@@ -74,8 +71,3 @@ p {
 }
 
 
-
-.copyright {
-    background-color: var(--purplebright);
-    color: var(--white);
-}

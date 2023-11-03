@@ -1,0 +1,17 @@
+.welcome-section {
+    position: relative;
+    background-color: var(--purplebright);
+    padding: 3rem 0 2.5rem;
+}
+
+.welcome-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.welcome-content-wrapper h2, .welcome-content-wrapper h3 {
+    color: var(--white);
+}
+

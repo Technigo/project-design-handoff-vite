@@ -1,0 +1,14 @@
+.founder-section{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.5rem 2.5rem;
+    align-items: center;
+    gap:1.25rem;
+}
+
+.founder-section img {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+}

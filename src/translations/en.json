@@ -119,6 +119,8 @@
     },
     "about": {
         "welcome": {
+            "welcomeImage": "https://plus.unsplash.com/premium_photo-1661308240023-01db31be661f?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "welcomeImageAlt": "Picture of woman opening up a window, outside there's beatiful nature",
             "heading": "Enter our world of yoga for women",
             "subHeading": "Welcome to our world. We are a small Yoga center in Stockholm who helps women in menopause living a vivid and healthy life.",
             "button": "Contact us"
@@ -126,7 +128,9 @@
         "founder": {
             "heading": "Our founder",
             "subHeading": "Nita Svensson",
-            "text": "As a woman in her 50th I know everything about being in meno pause. My vision is to help other women feel good through life. Yoga helped me a lot to keep stress down, reduce anxiety, sleep better and get well deserved recovery."
+            "founderImage": "https://images.unsplash.com/photo-1490195117352-aa267f47f2d9?auto=format&fit=crop&q=80&w=1170&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "founderImageAlt": "Picture of Nita Svensson.",
+            "text": "As a woman in her 50's I know everything about being in meno pause. My vision is to help other women feel good through life. Yoga helped me a lot to keep stress down, reduce anxiety, sleep better and get well deserved recovery."
         },
         "form": {
             "heading": "Contact us",
@@ -134,6 +138,10 @@
                 "name": "Name",
                 "email": "E-mail",
                 "terms": "I agree to terms and conditions"
+            },
+            "placeholders": {
+                "name": "Type your name here...",
+                "email": "Type your email here..."
             },
             "button": "Contact me"
         }
