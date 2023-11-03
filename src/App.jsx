@@ -5,6 +5,7 @@ import { Footer } from "./components/Footer/Footer";
 import { BackArrow } from "./components/Header/BackArrow";
 import { ScrollToTop } from "./components/Header/ScrollToTop";
 
+// The App component is the root component of the application
 export const App = () => {
 
   return (

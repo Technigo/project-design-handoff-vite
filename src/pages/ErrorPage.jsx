@@ -2,6 +2,7 @@ import { Button } from "../components/Links/Button";
 import { useTranslation } from "react-i18next";
 import "./pages.css";
 
+// Component for the Error (404) page
 export const ErrorPage = () => {
     const { t } = useTranslation();
 

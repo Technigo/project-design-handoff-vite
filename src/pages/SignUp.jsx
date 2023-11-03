@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./pages.css";
 
+// Placeholder-component for the Sign Up page
 export const SignUp = () => {
     const { t } = useTranslation();
 

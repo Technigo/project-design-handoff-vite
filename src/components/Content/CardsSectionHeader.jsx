@@ -2,6 +2,7 @@ import { Button } from "../Links/Button";
 import { HiOutlineArrowSmRight } from "react-icons/hi";
 import "./cards-section-header.css";
 
+// Component for the header of the cards-sections
 export const CardsSectionHeader = ({ heading, text, linkTo, className, button }) => {
 
     return (

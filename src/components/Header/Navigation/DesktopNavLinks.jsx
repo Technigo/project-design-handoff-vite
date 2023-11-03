@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Button } from "../../Links/Button";
 import "./navlinks.css";
 
+// Component for the navigation links in the header on desktop, the menus have different links in them
 export const DesktopNavLinks = () => {
     const { t } = useTranslation();
 

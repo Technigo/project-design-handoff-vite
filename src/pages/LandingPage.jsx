@@ -4,6 +4,7 @@ import { FindYourPerfectClass } from "../components/VideoCards/FindYourPerfectCl
 import { TextImageComponent } from "../components/TextImageComponent/TextImageComponent";
 import { useTranslation } from "react-i18next";
 
+// Component for the Landing page/Startpgae
 export const LandingPage = () => {
     const { t } = useTranslation();
 

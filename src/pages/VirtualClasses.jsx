@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 
+// Placeholder-component for the Virtual Classes page
 export const VirtualClasses = () => {
     const { t } = useTranslation();
 

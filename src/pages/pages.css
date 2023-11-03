@@ -1,3 +1,4 @@
+/* Some basic applicable on the "pages"-level */
 .main-wrapper {
     display: flex;
     gap: 30px;
@@ -12,8 +13,8 @@
     .main-wrapper {
         padding: 150px 110px 75px 110px;
     }
-
 }
+
 /* Desktop only */
 @media (min-width: 1512px) {
     .main-wrapper {

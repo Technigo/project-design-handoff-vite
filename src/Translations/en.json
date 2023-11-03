@@ -1,7 +1,7 @@
 {
     "landingPage": {
         "navbar": {
-            "nav1": "At home",
+            "nav1": "Align At Home",
             "nav2": "Studio",
             "nav3": "Meet the team",
             "nav4": "About us",
@@ -120,7 +120,7 @@
         "button": "Go back to startpage"
     },
     "otherPages": {
-        "atHome": "At home",
+        "atHome": "Align At Home",
         "classes": "Classes",
         "contact": "Contact",
         "faq": "FAQ",

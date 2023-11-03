@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./pages.css";
 
+// Placeholder-component for the My Pages page
 export const MyPages = () => {
     const { t } = useTranslation();
 

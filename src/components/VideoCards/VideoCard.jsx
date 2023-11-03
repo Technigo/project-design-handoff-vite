@@ -1,3 +1,4 @@
+// This file contains the VideoCard component
 export const VideoCard = ({ src, altText, time, title, name, type }) => {
     return (
         <article>

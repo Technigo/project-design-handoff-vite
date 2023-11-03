@@ -11,7 +11,7 @@ const SubHeroCompStyle = styled.section`
         display: none;
     }
 `
-
+// Component for the About Us page
 export const AboutUs = () => {
     const { t } = useTranslation();
 
@@ -26,6 +26,7 @@ export const AboutUs = () => {
                     textImageHeading={t("aboutUs.topContent.h1")}
                     textImageParagraph={t("aboutUs.topContent.aboutUsParagraph")} />
             </div>
+            {/* Taking in the styled component, to hide the button from SubHeroComponent */}
             <SubHeroCompStyle><SubHeroComponent text={t("aboutUs.missionParagraph")} /></SubHeroCompStyle>
             <MeetTheTeam />
             <ContactUs />

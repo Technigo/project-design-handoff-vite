@@ -1,3 +1,4 @@
+// Component for the actual image/text combo that is mounted inside the MeetTheTeam component
 export const ImageOnTopComponent = ({ src, name, altText, description }) => {
     return (
         <section className="individual-teacher-card">

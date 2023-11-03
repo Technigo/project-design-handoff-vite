@@ -5,9 +5,13 @@ import { SubscribeSection } from "./SubscribeSection";
 import { useTranslation } from "react-i18next";
 import ukFlagIcon from '/assets/icons/united-kingdom.png';
 
+// Component for the footer
 export const Footer = () => {
+    // Get the translation function from the i18next hook
     const { t, i18n } = useTranslation();
+    // State to store the width of the window
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    // State to control whether the flag icon should be shown or not
     const [showFlagIcon, setShowFlagIcon] = useState(true);
 
     // Function to change the language of the website
@@ -28,9 +32,8 @@ export const Footer = () => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
         };
-
         window.addEventListener("resize", handleResize);
-
+        // Remove event listener when component is unmounted
         return () => {
             window.removeEventListener("resize", handleResize);
         };
@@ -40,8 +43,9 @@ export const Footer = () => {
 
         <footer>
             <section className="footer-wrapper">
-                {/* Value={i18n.language} sets the value of the <select> element based on the current language that is being used */}
+                {/* Mounts the subscribe section  */}
                 <SubscribeSection />
+                {/* Renders one layout on smaller screens and an other on larger screens. I wanted to change the way I render content here, and do it differently, but time ran out. I had to use a little absolute positioning in the CSS because desktop was hard to style, which I regret. NExt time I will layout the footer in an other way */}
                 {windowWidth < 834 ? (
                     <>
                         <div className="language-and-social">

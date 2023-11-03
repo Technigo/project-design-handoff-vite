@@ -4,7 +4,9 @@ import { ImageOnTopComponent } from "../MeetTheTeam/ImageOnTopComponent";
 import { useTranslation } from "react-i18next";
 import "./meet-the-team.css";
 
+// Component for the MeetTheTeam section of the AboutUs page
 export const MeetTheTeam = () => {
+    // State for the window width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const { t } = useTranslation();
 
@@ -13,9 +15,8 @@ export const MeetTheTeam = () => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
         };
-
         window.addEventListener("resize", handleResize);
-
+        // Remove event listener when component is unmounted
         return () => {
             window.removeEventListener("resize", handleResize);
         };
@@ -33,7 +34,6 @@ export const MeetTheTeam = () => {
                         <ImageOnTopComponent src={"./assets/images/roberto-profile.jpg"} name={t("aboutUs.ourPeople.teachers.roberto")} altText={"Image of teacher Roberto"} description={t("aboutUs.ourPeople.teachers.robertoDescription")} />
                         <ImageOnTopComponent src={"./assets/images/ellen-profile.jpg"} name={t("aboutUs.ourPeople.teachers.ellen")} altText={"Image of teacher Ellen"} description={t("aboutUs.ourPeople.teachers.ellenDescription")} />
                     </> : null
-
                 }
             </section>
         </section>

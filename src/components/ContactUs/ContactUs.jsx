@@ -3,6 +3,7 @@ import { ContactForm } from "./ContactForm";
 import { useTranslation } from "react-i18next";
 import "./contact.css";
 
+// Component for the contactUs page that mounts the Headings and ContactForm components
 export const ContactUs = () => {
     const { t } = useTranslation();
     return (

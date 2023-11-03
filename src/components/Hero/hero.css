@@ -37,7 +37,7 @@ color: var(--light-green);
     flex-direction: column;
 }
 
-/* Tablet to desktop  */
+/* Tablet */
 @media (min-width: 834px) {
     /* CSS for the background image on larger screens (desktop) */
     .hero-background-image {

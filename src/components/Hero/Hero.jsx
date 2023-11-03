@@ -3,7 +3,9 @@ import { Button } from "../Links/Button";
 import { useTranslation } from "react-i18next";
 import "./hero.css";
 
+// Component that renders the hero-section on the landing page
 export const Hero = () => {
+    // State for the window width
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const { t } = useTranslation();
 
@@ -12,9 +14,8 @@ export const Hero = () => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
         };
-
         window.addEventListener("resize", handleResize);
-
+        // Remove event listener when component is unmounted
         return () => {
             window.removeEventListener("resize", handleResize);
         };
@@ -22,6 +23,7 @@ export const Hero = () => {
 
     return (
         <>
+            {/* If window with is larger than the specified tablet width the hero image is inserted as a background-image via css instead for nicer styling */}
             {windowWidth >= 834 ? (
                 <section className={"hero-section hero-background-image"}>
                     <article className="hero-content">

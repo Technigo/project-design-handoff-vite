@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./navlinks.css";
 
+// Component for the navigation links in the header on mobile, the menus have different links in them
 export const MobileNavLinks = ({ onClick }) => {
     // State to control whether the menu is open or closed
     const [isOpen, setIsOpen] = useState(true);
@@ -14,7 +15,7 @@ export const MobileNavLinks = ({ onClick }) => {
 
     const { t } = useTranslation();
 
-    // If the mobile menu is closed (isOpen is false), return null
+    // If the mobile menu is closed (i.e. isOpen is false), return nothing
     if (!isOpen) {
         return null;
     }

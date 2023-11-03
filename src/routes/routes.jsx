@@ -6,7 +6,6 @@ import { Studio } from "../pages/Studio";
 import { AboutUs } from "../pages/AboutUs";
 import { Contact } from "../pages/Contact";
 import { MeetTheTeachers } from "../pages/MeetTheTeachers";
-// import { Search } from "../pages/Search";
 import { SignUp } from "../pages/SignUp";
 import { Classes } from "../pages/Classes";
 import { VirtualClasses } from "../pages/VirtualClasses";
@@ -25,7 +24,6 @@ export const routes = (
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/meet-the-teachers" element={<MeetTheTeachers />} />
-        {/* <Route path="/search" element={<Search />} /> */}
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/classes" element={<Classes />} />
         <Route path="/help-center" element={<HelpCenter />} />

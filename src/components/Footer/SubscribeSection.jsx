@@ -2,6 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { Button } from '../Links/Button';
 import { useEffect, useState } from 'react';
 
+// Component for the Subscribe section in the footer, here I have used a lot of code to manually create the subscribe input field. This could perhaps be made shorter by implementing the same React Forms as on the Contact page.
 export const SubscribeSection = () => {
     const { t } = useTranslation();
 
@@ -11,6 +12,7 @@ export const SubscribeSection = () => {
     const [submittedEmail, setSubmittedEmail] = useState(""); // Captures the email on form submission
     const [emailValid, setEmailValid] = useState(true); // Validates the email on input change
 
+    // Function to handle form submission
     const handleSubmitClick = () => {
         if (emailValid) {
             setSubmit(true); // Triggers useEffect

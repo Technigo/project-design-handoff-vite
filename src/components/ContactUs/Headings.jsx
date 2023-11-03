@@ -1,3 +1,4 @@
+// This component renders the heading and contact information
 export const Headings = ({ heading, contactEmail, street, zip, city }) => {
     return (
         <article>

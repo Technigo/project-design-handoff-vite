@@ -5,9 +5,11 @@ import "./header.css";
 import { slide as Menu } from "react-burger-menu"; // Import the Menu component
 import { DesktopNavLinks } from "./Navigation/DesktopNavLinks";
 
+// Component for the header
 export const Header = () => {
     // State to control whether the menu is open or closed
     const [menuOpen, setMenuOpen] = useState(false);
+    // State to control the width of the window
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     // Function to close the menu
@@ -21,9 +23,8 @@ export const Header = () => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);
         };
-
         window.addEventListener("resize", handleResize);
-
+        // Remove event listener when component is unmounted
         return () => {
             window.removeEventListener("resize", handleResize);
         };

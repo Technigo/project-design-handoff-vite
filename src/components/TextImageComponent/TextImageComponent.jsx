@@ -1,8 +1,9 @@
 import { Button } from "../Links/Button";
 import "./text-image-component.css";
 
+// Component for the section that shows an image on one side and text on the other
 export const TextImageComponent = ({
-    imageOnLeft = true, // imageOnLeft is a prop that defaults to true
+    imageOnLeft = true, // imageOnLeft is a prop that defaults to true, by setting this to false when it mouts, the section renders different looks
     src,
     altText,
     textImageHeading,

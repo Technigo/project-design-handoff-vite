@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./pages.css";
 
+// Placeholder-component for the Meet the Team page
 export const MeetTheTeachers = () => {
     const { t } = useTranslation();
 
