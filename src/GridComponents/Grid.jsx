@@ -2,6 +2,7 @@ import React from 'react';
 import ImageContent from './ImageContent';
 import BlackLine from '../assets/BlackLine.svg';
 
+
 export const Grid = () => {
     const backgroundStyles = {
         backgroundImage: `url(${BlackLine})`,
@@ -9,6 +10,7 @@ export const Grid = () => {
         backgroundSize: '100% auto', // Adjust width and maintain aspect ratio
         backgroundRepeat: 'no-repeat', // Prevent background image from repeating
     };
+
 
     return (
         <div className="bg-white relative mt-20">
@@ -23,6 +25,7 @@ export const Grid = () => {
                     `}
                 </style>
                 <ImageContent />
+
             </div>
         </div>
     );

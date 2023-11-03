@@ -1,6 +1,21 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next'; // Import the useTranslation hook
+import "../Translation";
 
 export const SubscribeNow = () => {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (language) => {
+        i18n.changeLanguage(language);
+    };
+
+    const toggleLanguage = () => {
+        const currentLanguage = i18n.language;
+        const newLanguage = currentLanguage === "en" ? "sv" : "en";
+        changeLanguage(newLanguage);
+    };
+
+    //function to check if the email is valid
     const [subscribed, setSubscribed] = useState(false);
     const [email, setEmail] = useState('');
     const [isValidEmail, setIsValidEmail] = useState(true);
@@ -28,10 +43,10 @@ export const SubscribeNow = () => {
     return (
         <div className="">
             {subscribed ? (
-                <p>Thank you for signing up!</p>
+                <p>{t("thankYou")}</p>
             ) : (
                 <div className="">
-                    <p>Subscribe to our newsletter</p>
+                    <p>{t("subscribeNews")}</p>
                     <label className="block mt-4 text-white">
                         Email:
                         <input
@@ -51,7 +66,7 @@ export const SubscribeNow = () => {
                         className="hover:shadow-yellow-box bg-white text-black w-44 border-solid border-2 border-black p-2 mb-4 mt-4"
                         onClick={handleSubscribe}
                     >
-                        Subscribe
+                        {t("subscribeButton")}
                     </button>
                 </div>
             )}

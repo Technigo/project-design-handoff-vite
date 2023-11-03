@@ -2,7 +2,7 @@ import { InfoCard } from "./InfoCard";
 import data from './InfoData.json';
 
 export const Info = () => {
-    const isIPhone = window.innerWidth < 1024; // Define iPad screen size range
+    const isIPhone = window.innerWidth < 1024; // Define iPhone screen size range
 
     return (
         <div className="flex">

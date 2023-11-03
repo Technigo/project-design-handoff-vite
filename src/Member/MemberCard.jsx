@@ -1,6 +1,20 @@
 import React, { useState } from 'react';
+import "../Translation";
+import { useTranslation } from "react-i18next";
 
 export const MemberCard = ({ cardData }) => {
+    const { t, i18n } = useTranslation();
+
+    const changeLanguage = (language) => {
+        i18n.changeLanguage(language);
+    };
+
+    const toggleLanguage = () => {
+        const currentLanguage = i18n.language;
+        const newLanguage = currentLanguage === "en" ? "sv" : "en";
+        changeLanguage(newLanguage);
+    };
+
     const { buttonText, icons } = cardData;
     const [currentIconIndex, setCurrentIconIndex] = useState(0);
 
@@ -44,7 +58,7 @@ export const MemberCard = ({ cardData }) => {
                         Previous
                     </button>
                     <button className="hover:shadow-yellow-box bg-white border-solid border-2 border-black p-2 mr-5 ml-5">
-                        {buttonText}
+                        {t("gridButton")}
                     </button>
                     <button
                         className="hover:shadow-yellow-box bg-white border-solid border-2 border-black p-2 lg:hidden"

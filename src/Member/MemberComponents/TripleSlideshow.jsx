@@ -1,5 +1,5 @@
 import React from 'react';
-import { MemberCard } from './MemberCard';
+import { MemberCard } from '../MemberCard';
 
 export const TripleSlideshow = ({ data }) => {
     const isMobile = window.innerWidth <= 768; // Assuming 768px as the threshold for mobile devices
