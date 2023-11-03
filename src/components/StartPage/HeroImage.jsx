@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import React from 'react';
 import heroImage from '../../assets/HeroImage.png';
 import Button from '../Button.jsx';
+import { useTranslation } from 'react-i18next';
 
 const HeroImageSection = styled.div`
     position: relative;
@@ -47,13 +48,15 @@ const HeroSubtitle = styled.p`
 `;
 
 function HeroImage() {
+    const { t } = useTranslation();
+
     return (
         <HeroImageSection>
-            <HeroBg src={heroImage} alt="man at gym with cat in his lap"/>
+            <HeroBg src={heroImage} alt={t('mobileNav.heroBg.alt')} />
             <HeroContent>
-                <HeroTitle>LET A CAT HAVE A GOOD NAP</HeroTitle>
-                <HeroSubtitle>By improving your lap</HeroSubtitle>
-                <Button>JOIN</Button>
+                <HeroTitle>{t('mobileNav.heroContent.title')}</HeroTitle>
+                <HeroSubtitle>{t('mobileNav.heroContent.subtitle')}</HeroSubtitle>
+                <Button>{t('mobileNav.heroContent.button')}</Button>
             </HeroContent>
         </HeroImageSection>
     );

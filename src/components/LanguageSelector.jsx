@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { useTranslation } from 'react-i18next'; // Import this
 import styled from 'styled-components';
 import UKFlag from '../assets/Country=UK.svg';
 import SEFlag from '../assets/Country=SE.svg';
+import { useTranslation } from 'react-i18next';
 
 const LanguageDropdown = styled.div`
     position: relative;
@@ -54,16 +54,16 @@ const FlagImage = styled.img`
 
 
 const LanguageSelectorComponent = () => {
-    const { i18n } = useTranslation(); // Destructure i18n from the hook
+    const { t, i18n } = useTranslation(); // Destructure t and i18n from the hook
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedLanguage, setSelectedLanguage] = useState({name: 'Language', flag: null});
+    const [selectedLanguage, setSelectedLanguage] = useState({name: t('languageSelector.language'), flag: null});
 
     const toggleDropdown = () => {
         setIsOpen(!isOpen);
     };
 
-    const handleLanguageSelect = (language, flag, languageCode) => {
-        setSelectedLanguage({name: language, flag: flag});
+    const handleLanguageSelect = (languageKey, flag, languageCode) => {
+        setSelectedLanguage({name: t(`languageSelector.${languageKey}`), flag: flag});
         i18n.changeLanguage(languageCode); // Change the active language
         setIsOpen(false);
     }
@@ -75,13 +75,13 @@ const LanguageSelectorComponent = () => {
                 {selectedLanguage.flag && <FlagImage src={selectedLanguage.flag} alt={`${selectedLanguage.name} Flag`} />}
             </LanguageSelector>
             <DropdownContent $isOpen={isOpen}>
-                <LanguageItem onClick={() => handleLanguageSelect('English', UKFlag, 'en')}>
-                    English
-                    <FlagImage src={UKFlag} alt="UK Flag" />
+                <LanguageItem onClick={() => handleLanguageSelect('english', UKFlag, 'en')}>
+                    {t('languageSelector.english')}
+                    <FlagImage src={UKFlag} alt={t('languageSelector.english') + " Flag"} />
                 </LanguageItem>
-                <LanguageItem onClick={() => handleLanguageSelect('Swedish', SEFlag, 'se')}>
-                    Swedish
-                    <FlagImage src={SEFlag} alt="SE Flag" />
+                <LanguageItem onClick={() => handleLanguageSelect('swedish', SEFlag, 'se')}>
+                    {t('languageSelector.swedish')}
+                    <FlagImage src={SEFlag} alt={t('languageSelector.swedish') + " Flag"} />
                 </LanguageItem>
                 {/* Add more language items with flags here */}
             </DropdownContent>
@@ -90,4 +90,3 @@ const LanguageSelectorComponent = () => {
 };
 
 export default LanguageSelectorComponent;
-

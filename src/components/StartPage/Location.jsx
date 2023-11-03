@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import globeImage from '../../assets/Globe.png';
 import Button from '../Button.jsx';
+import { useTranslation } from 'react-i18next';
 
 const LocationSection = styled.div`
     background-color: #2A3439;
@@ -45,15 +46,15 @@ const LocationText = styled.p`
 `;
 
 function Location() {
+    const { t } = useTranslation();
+
     return (
         <LocationSection>
-            <GlobeImage src={globeImage} alt="World Map" />
+            <GlobeImage src={globeImage} alt={t('location.globeImage.alt')} />
             <LocationContent>
-                <LocationTitle>FIND US</LocationTitle>
-                <LocationText>
-                    Locate your nearest lap improvement gym and start your journey to the infinite purr today.
-                </LocationText>
-                <Button>LOCATE</Button>
+                <LocationTitle>{t('location.content.title')}</LocationTitle>
+                <LocationText>{t('location.content.text')}</LocationText>
+                <Button>{t('location.content.button')}</Button>
             </LocationContent>
         </LocationSection>
     );

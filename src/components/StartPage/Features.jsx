@@ -9,6 +9,7 @@ import styled from 'styled-components';
 import Button from '../Button.jsx';
 import leftPaw from '../../assets/LeftPaw.png';
 import rightPaw from '../../assets/RightPaw.png';
+import { useTranslation } from 'react-i18next';
 
 const FeaturesContainer = styled(animated.div)`
     display: flex;
@@ -87,6 +88,7 @@ const Dot = styled.span`
 
 const Features = () => {
     const [activeFeature, setActiveFeature] = useState(1);
+    const { t } = useTranslation();
 
     const transitionStyles = useSpring({
         transform: `translateX(-${activeFeature * 360}px)`,
@@ -95,21 +97,21 @@ const Features = () => {
     const featuresData = [
         {
             image: squatImage,
-            alt: "Lappability",
-            title: "LAPPABILITY",
-            text: "At Legz we focus our training on making your lap more eligible for a good Nap. Our exercise routines focus on 'Lappability' our term for how good your Lap is to take a nap."
+            alt: t('features.lappability.alt'),
+            title: t('features.lappability.title'),
+            text: t('features.lappability.text')
         },
         {
             image: meditateImage,
-            alt: "Relaxation",
-            title: "RELAXATION",
-            text: "Cats are very perceptive so not only do we need a good lap we also need to emit peaceful vibes, with relaxed breathing, slow fluid movements and relaxing eyes. Find out about our meditation and yoga."
+            alt: t('features.relaxation.alt'),
+            title: t('features.relaxation.title'),
+            text: t('features.relaxation.text')
         },
         {
             image: treatsImage,
-            alt: "Treats",
-            title: "TREATS!",
-            text: "Just like cats bring us treats we should do the same, so at Legz we will provide our specially curated gifts each week."
+            alt: t('features.treats.alt'),
+            title: t('features.treats.title'),
+            text: t('features.treats.text')
         }
     ];
 
@@ -120,17 +122,17 @@ const Features = () => {
                     <Feature key={index} style={{ backgroundImage: gradients[index] }}>
                         <FeatureImage src={feature.image} alt={feature.alt} />
                         <IconsContainer>
-                            <Icon src={leftPaw} alt="Left Cat Paw" onClick={() => {
+                            <Icon src={leftPaw} alt={t('features.icons.leftPaw.alt')} onClick={() => {
                                 if (activeFeature > 0) setActiveFeature(activeFeature - 1);
                             }} />
-                            <Icon src={catLeftIcon} alt="Left Cat" />
+                            <Icon src={catLeftIcon} alt={t('features.icons.leftCat.alt')} />
                             <div style={{textAlign: 'center', marginTop: '10px'}}>
                                 {featuresData.map((_, index) => (
-                                    <Dot key={index} active={index === activeFeature} onClick={() => setActiveFeature(index)} />
+                                    <Dot key={index} $active={index === activeFeature} onClick={() => setActiveFeature(index)} />
                                 ))}
                             </div>
-                            <Icon src={catRightIcon} alt="Right Cat" />
-                            <Icon src={rightPaw} alt="Right Cat Paw" onClick={() => {
+                            <Icon src={catRightIcon} alt={t('features.icons.rightCat.alt')} />
+                            <Icon src={rightPaw} alt={t('features.icons.rightPaw.alt')} onClick={() => {
                                 if (activeFeature < featuresData.length - 1) setActiveFeature(activeFeature + 1);
                             }} />
                         </IconsContainer>

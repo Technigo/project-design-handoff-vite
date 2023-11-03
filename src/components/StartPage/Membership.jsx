@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import becomeMemberImage from '../../assets/BecomeMember.jpg';
 import Button from '../Button.jsx';
-
+import { useTranslation } from 'react-i18next';
 
 const MembershipSection = styled.div`
     position: relative;
@@ -51,21 +51,19 @@ const MembershipText = styled.p`
 
 
 function Membership() {
+    const { t } = useTranslation();
+
     return (
         <MembershipSection>
-            <MembershipBg src={becomeMemberImage} alt="Persons walking in and out of gym"/>
+            <MembershipBg src={becomeMemberImage} alt={t('membership.bg.alt')} />
             <MembershipContent>
-                <MembershipTitle>BECOME A MEMBER</MembershipTitle>
-                <MembershipText>
-                    At Legz you get much more than your average Gym, all our exercises have your felines in mind but 
-                    we provide other services to relax your inner self and the occasional treat to take Home.
-                </MembershipText>
-                <Button>JOIN</Button>
+                <MembershipTitle>{t('membership.content.title')}</MembershipTitle>
+                <MembershipText>{t('membership.content.text')}</MembershipText>
+                <Button>{t('membership.content.button')}</Button>
             </MembershipContent>
         </MembershipSection>
     );
 }
-
 
 export default Membership;
 
