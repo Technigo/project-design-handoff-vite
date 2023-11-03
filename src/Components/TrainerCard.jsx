@@ -6,8 +6,7 @@ const IndividCard = styled.div`
   gap: 4px;
 
   width: 133px;
-  height: 249px;
-
+  
   position: relative;
 
   @media (min-width: 394px) {

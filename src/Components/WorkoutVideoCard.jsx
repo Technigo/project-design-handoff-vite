@@ -6,7 +6,6 @@ const VideoCardWrapper = styled.div`
   gap: 4px;
 
   width: 139.5px;
-  height: 259px;
 
   position: relative;
 
@@ -64,6 +63,8 @@ const VideoLength = styled.p`
     font-height: var(--text-height-mobile);
     font-weight: var(--text-weight);
     text-align: center;
+    margin-block-start: 0;
+    margin-block-end: 0;
   }
 `
 

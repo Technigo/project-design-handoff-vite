@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const MembershipWrapper = styled.section`
+  margin: 35px 0;
   display: flex;
   flex-direction: row;
   gap: 55px;
@@ -14,6 +15,7 @@ const ButtonWrapper = styled.div`
 
 const SignUpBtn = styled.button`
   border-radius: var(--large-radius);
+  border: none;
   padding: 10px 20px;
   background-color: var(--secondary);
   font-family: var(--font);
@@ -21,6 +23,13 @@ const SignUpBtn = styled.button`
   font-weight: var(--text-weight);
   line-height: var(--text-height-mobile);
   width: fit-content;
+
+  @media (min-width: 835px) {
+    &:hover {
+    background-color: var(--hover);
+    color: #FFFFFF;
+    }
+  }
 `
 
 const MembershipText = styled.div`
@@ -63,7 +72,7 @@ export const Membership = () => {
             <MembershipSmallerText>access to live trainers</MembershipSmallerText>
             <SignUpBtn type="button">SIGN UP FOR MEMBERSHIP</SignUpBtn>
           </MembershipText>
-          <MembershipImage src="src/assets/images/membership.png" alt="a woman tying her shoe" />
+          <MembershipImage src="./images/membership.png" alt="a woman tying her shoe" />
         </MembershipWrapper>
         ) : (
         <ButtonWrapper>

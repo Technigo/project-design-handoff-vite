@@ -15,6 +15,7 @@ const Button = styled.button`
   border: none;
   background: transparent;
 `
+
 const Logo = styled.img`
   width: 32px;
   height: 33px;
@@ -49,7 +50,7 @@ export const NavBarMobile = () => {
         </svg>
       </Button>
       {isVisible && <HamburgerMenu />}
-      <Link to="/"><Logo src="src/assets/images/Logo.png" alt="At Home Fitness logo" /></Link>
+      <Link to="/"><Logo src="./images/Logo.png" alt="At Home Fitness logo" /></Link>
       <Button type="button">
         <svg 
           width="24" 

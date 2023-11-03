@@ -5,13 +5,13 @@ const FooterWrapper = styled.footer`
   display: flex;
   justify-content: center;
   width: 100%;
+  background-color: var(--secondary);
 `
 
 const FooterUl = styled.ul`
   display: flex;
   flex-direction: row;
   gap: 17px;
-  background-color: var(--secondary);
   list-style: none;
 
   @media (min-width: 394px) {
@@ -37,7 +37,6 @@ const FooterLink = styled.a`
     font-size: var(--text-size-mobile);
     line-height: var(--text-height-mobile);
   }
-}
 `
 const StyledLink = styled(NavLink)`
   display: block;

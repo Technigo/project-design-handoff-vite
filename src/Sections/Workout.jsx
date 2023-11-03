@@ -6,16 +6,20 @@ import { WorkoutVideoCard } from "../Components/WorkoutVideoCard";
 import data from "../data/data.json";
 
 const WorkOutWrapper = styled.section`
+  margin: 35px 0;
   display: flex;
   flex-direction: column;
-  padding: 0 16px;
   gap: 9px;
 `
 const CardWrapper = styled.div`
   display: flex;
   flex-direction: row;
   gap: 16px;
-
+  width: 100%;
+ 
+  @media (max-width: 393px) {
+     overflow-x: auto;
+  }
   @media (min-width: 835px) {
     gap: 24px;
   }

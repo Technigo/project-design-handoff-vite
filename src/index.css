@@ -2,11 +2,11 @@
 
 :root {
   margin: 0;
-  --primary: "#F2ECE4";
-  --secondary: "#F3AD98";
-  --hover: "#525B64";
-  --review: "#C0AB9B";
-  --text: "#3C3C3C";
+  --primary: #F2ECE4;
+  --secondary: #F3AD98;
+  --hover: #525B64;
+  --review: #C0AB9B;
+  --text: #3C3C3C;
   --font: "Cormorant Garamond", "sans-serif";
   --large-radius: 50px;
   --medium-radius: 30px;
@@ -14,7 +14,7 @@
 
   /* Headings */ 
   --heading-weight: 500;
-  --heading-size-mobile: 30px;
+  --heading-size-mobile: 25px;
   --heading-size-tablet: 40px;
   --heading-height-mobile: 36.33px;
   --heading-height-tablet: 48.44px;
@@ -32,6 +32,5 @@
 #root {
   font-family: var(--font);
   background-color: var(--primary);
-  height: 100vh;
 }
 

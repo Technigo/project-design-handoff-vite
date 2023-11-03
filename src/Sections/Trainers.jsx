@@ -5,9 +5,9 @@ import { TrainerCard } from "../Components/TrainerCard";
 import data from "../data/data.json";
 
 const TrainerWrapper = styled.section`
+  margin: 35px 0;
   display: flex;
   flex-direction: column;
-  padding: 0 16px;
   gap: 9px;
 `
 
@@ -16,6 +16,7 @@ const TrainerCardWrapper = styled.div`
   flex-direction: row;
   gap: 32px;
   padding: 0px 10px 0px 5px;
+  overflow-x: auto;
 `
 
 export const Trainers = () => {

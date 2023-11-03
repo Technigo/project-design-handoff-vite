@@ -6,7 +6,6 @@ const PlanCard = styled.div`
   gap: 4px;
 
   width: 137.25px;
-  height: 252px;
 
   position: relative;
 

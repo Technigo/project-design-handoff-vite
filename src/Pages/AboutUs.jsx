@@ -21,6 +21,9 @@ const MainWrapper = styled.div`
     padding: 64px;
   }
 `
+const HeadingWrapper = styled.div`
+  text-align: center;
+`
 
 export const AboutUs = () => {
   const sectionId = 5;
@@ -29,7 +32,9 @@ export const AboutUs = () => {
     <MainWrapper>
         <Header />
         <LeftButton />
-        <Headings sectionId={sectionId}/>
+        <HeadingWrapper>
+          <Headings sectionId={sectionId}/>
+        </HeadingWrapper>
         <Articles />
         <Footer />
     </MainWrapper>

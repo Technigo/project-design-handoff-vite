@@ -6,22 +6,22 @@ import { Membership } from "../Sections/Membership";
 import { Reviews } from "../Sections/Reviews";
 import { Trainers } from "../Sections/Trainers";
 import { Footer } from "../Sections/Footer";
-import { HeroSection } from "../Components/HeroSection";
+import { HeroSection } from "../Sections/HeroSection";
 
 const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 23px;
-  padding: 16px;
+  padding: 0 16px;
 
   @media (min-width: 394px) {
     gap: 49px;
-    padding: 32px;
+    padding: 0 32px;
   }
 
   @media (min-width: 835px) {
     gap: 64px;
-    padding: 64px;
+    padding: 0 64px;
   }
 `
 
@@ -31,16 +31,16 @@ export const Home = () => {
 
   return (
     <MainWrapper>
-        <Header />
-        {isTablet ? (
-          <HeroSection />
-        ) : null}      
-        <Workout />
-        <WorkoutPlans />
-        <Membership />
-        <Reviews />
-        <Trainers />
-        <Footer />
+      <Header />
+      {isTablet ? (
+        <HeroSection />
+      ) : null}      
+      <Workout />
+      <WorkoutPlans />
+      <Membership />
+      <Reviews />
+      <Trainers />
+      <Footer />
     </MainWrapper>
   )
 }

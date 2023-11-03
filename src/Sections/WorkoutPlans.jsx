@@ -6,9 +6,9 @@ import { WorkoutPlanCard } from "../Components/WorkoutPlanCard";
 import data from "../data/data.json";
 
 const WorkOutPlansWrapper = styled.section`
+  margin: 35px 0;  
   display: flex;
   flex-direction: column;
-  padding: 0 16px;
   gap: 9px;
 `
 const HeadingWithLock = styled.div`
@@ -22,6 +22,7 @@ const PlanCardWrapper = styled.div`
   display: flex;
   flex-direction: row;
   gap: 9px;
+  overflow-x: auto;
 `
 
 export const WorkoutPlans = () => {

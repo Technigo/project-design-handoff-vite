@@ -23,6 +23,9 @@ const MainWrapper = styled.div`
     padding: 64px;
   }
 `
+const HeadingWrapper = styled.div`
+  text-align: center;
+`
 
 export const ContactUs = () => {
   const sectionId = 6;
@@ -31,7 +34,9 @@ export const ContactUs = () => {
     <MainWrapper>
         <Header />
         <LeftButton />
-        <Headings sectionId={sectionId}/>
+        <HeadingWrapper>
+          <Headings sectionId={sectionId}/>
+        </HeadingWrapper>
         <ContactForm />
         <SocialMedia />
         <Footer />

@@ -1,9 +1,16 @@
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+const LeftIcon = styled.svg`
+    @media (min-width: 835px) {
+        width: 66px;
+        height: 66px;
+    }
+`
 export const LeftButton = () => {
     return (
         <Link to="/" className="left-icon">
-            <svg 
+            <LeftIcon 
                 width="24" 
                 height="24" 
                 viewBox="0 0 24 24" 
@@ -20,7 +27,7 @@ export const LeftButton = () => {
                         strokeLinejoin="round"
                     />
                 </g>
-            </svg>
+            </LeftIcon>
         </Link>
     )
 }

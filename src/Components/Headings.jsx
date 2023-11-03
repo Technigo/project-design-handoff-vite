@@ -4,6 +4,10 @@ const Heading = styled.h1`
   font-size: var(--heading-size-mobile);
   font-style: italic;
   font-weight: 300;
+  padding: 0;
+
+  margin-block-start: 0;
+  margin-block-end: 0;
 
   @media (min-width: 835px) {
     font-size: var(--heading-size-tablet);

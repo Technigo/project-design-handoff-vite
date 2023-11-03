@@ -1,3 +1,4 @@
+import styled from "styled-components";
 import data from "../data/data.json";
 import { ArticleCard } from "../Components/ArticleCard";
 
