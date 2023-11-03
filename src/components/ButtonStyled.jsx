@@ -13,6 +13,10 @@ const StyledButton = styled.button`
         color: var(--font-color);
         background: linear-gradient(180deg, var(--secondary-color), var(--tertiary-color));
     }
+
+    &:active{
+        background: var(--tertiary-color);
+    }
 `
 
 export const ButtonStyled = ({ text }) => {

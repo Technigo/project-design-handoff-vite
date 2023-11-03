@@ -11,16 +11,14 @@ export const App = () => {
 
   return (
     <>
-    <Header />
-    
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
-
-    <Footer />
     </>
   )
 }

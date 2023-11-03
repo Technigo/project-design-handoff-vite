@@ -1,4 +1,4 @@
-.mini-fit {
+.grid-parent .mini-fit {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -14,10 +14,18 @@
     gap: 20px;
     overflow-x: auto;
     padding-left: 25px;
+    padding-right: 25px;
 }
 .mini-fit-scroll::-webkit-scrollbar {
     display: none;
-  }
+}
+
+.mini-fit-pic {
+    width: 144px;
+    height: 144px;
+    object-fit: cover;
+
+}
 
 .mini-fit-caption {
     font-size: 1rem;

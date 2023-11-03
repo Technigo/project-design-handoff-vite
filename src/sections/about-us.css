@@ -1,0 +1,47 @@
+.grid-parent .about-us {
+    margin-top: 0px;
+    grid-column: 1 / span 15;
+}
+
+.about-us-header {
+    margin-left: 25px;
+    font-weight: 500;
+    line-height: 160%;
+    font-style: normal;
+    color: var(--primary-color);
+    display: inline-block;
+}
+
+.italic-red {
+    margin-left: 0;
+    font-style: italic;
+    color: var(--secondary-color);
+    display: inline-block;
+}
+
+.about-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.about-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.about-pic {
+    width: 148px;
+    height: 220px;
+    object-fit: cover;
+}
+
+.quotation {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 160%;
+    margin: 70px 25px 0 25px;
+}

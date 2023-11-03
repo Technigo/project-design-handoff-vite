@@ -1,7 +1,11 @@
+import { AboutUs } from "../sections/AboutUs"
+import { WhoWhatWhy } from "../sections/WhoWhatWhy"
+
 export const AboutPage = () => {
     return (
         <>
-            <p>ABOUT US</p>
+            <AboutUs />
+            <WhoWhatWhy />
         </>
     )
 }
