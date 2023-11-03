@@ -29,7 +29,7 @@ I struggled the most with creating a form animation that needed to be triggered 
 
 ### View it live
 
-Link to a deployed version:
+Link to a deployed version:legz.netlify.app/
 
 ## Instructions
 
