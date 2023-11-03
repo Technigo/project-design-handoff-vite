@@ -34,7 +34,6 @@ export const App = () => {
                 <MemberSwiper />
                 <MiniFitSwiper />
                 <LastSection />
-                <AboutUs />
               </>
             }
           />
