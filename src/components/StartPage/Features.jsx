@@ -16,6 +16,7 @@ const FeaturesContainer = styled(animated.div)`
     width: 360px
     overflow: hidden;
     will-change: transform;
+
 `;
 
 const Feature = styled.div`
@@ -50,7 +51,7 @@ const FeatureContent = styled.div`
     color: #D2FDFF;
     width: 297px; // 329px
     height: 232px;         
-    padding: 16px 16px 40px 16px;        
+    padding: 16px 5px 40px 5px;        
     border-radius: 8px;   
     display: flex;       
     flex-direction: column;
