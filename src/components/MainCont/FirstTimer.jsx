@@ -1,4 +1,5 @@
 //Mounted in MainCont.jsx
+//Contains translation keys to fetch translated content from the translation files.
 
 import "./firsttimer.css"
 

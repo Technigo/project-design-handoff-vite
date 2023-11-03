@@ -1,7 +1,7 @@
 //Mounted in MainCont.jsx
+//Includes import/export translation keys to fetch translated content from the translation files.
 
 import "./info1.css"
-
 import { useTranslation } from "react-i18next"
 
 export const Info1 = () => {

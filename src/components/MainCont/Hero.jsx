@@ -1,4 +1,5 @@
 //This component is mounted in MainCont.jsx
+//Includes import/export translation keys to fetch translated content from the translation files.
 import "./hero.css"
 
 import { useTranslation } from "react-i18next"

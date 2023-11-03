@@ -6,7 +6,7 @@ import { ConceptCard } from "./ConceptCard.jsx"
 import { Info2 } from "./Info2.jsx"
 import { FirstTimer } from "./FirstTimer.jsx"
 import { Memberships } from "./Memberships.jsx"
-//import { Form } from "./Form.jsx" Comment this out since there is no form in the design
+//import { Form } from "./Form.jsx" Commented this out since there is no form in the design.
 
 
 

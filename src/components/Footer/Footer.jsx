@@ -1,8 +1,9 @@
-//Mounted in App.jsx
+//Mounted in pages: LandingP and AboutP with the logo as reusable component.
 
-import { Logo } from "../ReusableComp/Logo"
+import { Logo } from "../Logo"
 import "./footer.css"
 
+//Link to designer's Figma was added as a "treat".
 export const Footer = () => {
   return (
     <div className="footer">

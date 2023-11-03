@@ -1,7 +1,10 @@
+//Prepped but not used all out. Decision was made with designer since time was running out.
+
 import { slide as Menu } from "react-burger-menu"
 import { Link } from "react-router-dom"
 import "./burgermenu.css"
 
+//Burger menu with links.
 export const BurgerMenu = () => {
 
     return (

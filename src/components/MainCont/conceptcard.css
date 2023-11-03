@@ -21,8 +21,7 @@
 }
 
 .conceptcard-scroll h3 {
-    position: absolute;
-    margin-bottom: 5%;
+    text-align: center;
 }
 
 /* ----- Making the content responsive ----- */

@@ -1,4 +1,4 @@
-//This component was prepped but never used since there was no form in the design
+//This component was prepped but never used since there was no form in the design. Kept in learning purpose.
 
 //This component was mounted in MainCont.jsx
 

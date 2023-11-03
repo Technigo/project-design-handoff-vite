@@ -1,4 +1,5 @@
 //Mounted in pages: AboutP.jsx and LandingP.jsx
+//"Information-menu" with translation keys to fetch translated content from the translation files. 
 
 import "./infofooter.css"
 

@@ -1,9 +1,10 @@
+//Defines and set up routes using React Router.
 
-//import { ErrorP } from "src/pages/ErrorP"
 import { Route } from "react-router-dom"
-
 import { LandingP } from "../pages/LandingP"
 import { AboutP } from "../pages/AboutP"
+//import { ErrorP } from "src/pages/ErrorP" This is commented but left in learning purpuses.
+
 
 // Defining routes
 export const routes = (
@@ -14,5 +15,5 @@ export const routes = (
 )
 
 
-//<Route path="*" element={<ErrorP />} />
+//<Route path="*" element={<ErrorP />} /> Left in learning purposes.
 
