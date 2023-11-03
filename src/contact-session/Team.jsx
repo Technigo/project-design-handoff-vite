@@ -11,13 +11,13 @@ export const Team = () => {
           Feel the joy of movement when laughter and learning intertwine in a
           our world of imagination and fun!
         </p>
-        <img src="./src/assets/icon/team_150.svg" alt="adaptable" />
+        <img src="/public/assets/icon/team_150.svg" alt="adaptable" />
         <h2>Adaptable</h2>
         <p>
           We adapt all of our yoga sessions to suit every kid’s uniqueness,
           ensuring an inclusive experience for all.
         </p>
-        <img src="./src/assets/icon/namaste_150.svg" alt="Mindful" />
+        <img src="/public/assets/icon/namaste_150.svg" alt="Mindful" />
         <h2>Mindful</h2>
         <p>
           Experience the magic of mindful-ness, as kids learn to connect with
@@ -25,26 +25,26 @@ export const Team = () => {
         </p>
       </div>
       <div className="team">
-        <Profile url="./src/assets/img/Lisanne.png" />
+        <Profile url="/public/assets/img/Lisanne.png" />
         <h1>Lisanne</h1>
         <p>
           Truely believes that all kids should try yoga. That’s why she started
           MINI FLOW. Oh, and loves rhyming too!
         </p>
-        <Profile url="./src/assets/img/ted.avif" />
+        <Profile url="/public/assets/img/ted.avif" />
         <h1>Ted</h1>
         <p>
           Is crazy about dinosaurs. That’s why you shouldn’t be surprised if
           your kid comes home roaring like one!
         </p>
-        <Profile url="./src/assets/img/kaya.avif" />
+        <Profile url="/public/assets/img/kaya.avif" />
         <h1>Kaya</h1>
         <p>
           Loves a good weird dance party. “Dancing is the best way for a child
           to express their emotions, always!”
         </p>
       </div>
-      <img src="./src/assets/icon/illustration5.svg" alt="Mindful" />
+      <img src="/public/assets/icon/Illustration5.svg" alt="Mindful" />
     </>
   );
 };

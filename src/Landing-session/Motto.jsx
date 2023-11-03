@@ -27,7 +27,7 @@ export const Motto = () => {
       <p>Yoga is for all.</p>
 
       <img
-        src="./src/assets/icon/Illustration4.svg"
+        src="/public/assets/icon/Illustration4.svg"
         alt="circle-divider"
         className="circle-divider"
       />

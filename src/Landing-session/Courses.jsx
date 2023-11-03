@@ -1,5 +1,5 @@
 import { CourseCard } from "./CourseCard";
-import courses from "../assets/courses.json";
+import courses from "../../public/assets/courses.json";
 
 export const Courses = () => {
   console.log(courses);

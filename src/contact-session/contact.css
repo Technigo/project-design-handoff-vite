@@ -21,7 +21,7 @@
   height: 100%;
   border-radius: 30px;
   transform: scale(1.2);
-  background: url("../src/assets/img/contact.avif");
+  background: url("/public/assets/img/contact.avif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

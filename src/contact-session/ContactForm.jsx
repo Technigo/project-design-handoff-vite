@@ -39,7 +39,7 @@ export const ContactForm = () => {
         <p>Read our Privacy Policy on how we protect your data</p>
         <BtnDark name="send" />
         <img
-          src="./src/assets/icon/phone_icon.svg"
+          src="/public/assets/icon/phone_icon.svg"
           alt="phone"
           className="phone"
         />
@@ -48,7 +48,7 @@ export const ContactForm = () => {
           Is your kid unable to attend class? <br />
           Please leave us a voicemail!{" "}
         </p>
-        <img src="./src/assets/img/location.svg" alt="map" className="map" />
+        <img src="/public/assets/img/location.svg" alt="map" className="map" />
         <p>
           Stortorget 8 <br />
           211 34 Malmö
@@ -57,7 +57,7 @@ export const ContactForm = () => {
           Get Directions
         </a>
         <img
-          src="./src/assets/icon/Illustration4.svg"
+          src="/public/assets/icon/Illustration4.svg"
           alt="phone"
           className="phone"
         />

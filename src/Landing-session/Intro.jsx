@@ -12,7 +12,7 @@ export const Intro = () => {
       </p>
       <BtnLight name=" try for free!" />
       <img
-        src="./src/assets/icon/arrow_up_128.svg"
+        src="/public/assets/icon/arrow_up_128.svg"
         alt="Arrow"
         className="arrow-up"
       />
