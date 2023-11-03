@@ -14,6 +14,7 @@ const LocationSection = styled.div`
     background-repeat: no-repeat;
     padding: 16px;
     box-sizing: border-box;
+    width: 100%;
 `;
 
 const GlobeImage = styled.img`

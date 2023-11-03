@@ -5,7 +5,7 @@ import PopUp from './PopUp';
 import { useTranslation } from 'react-i18next';
 
 const BigContainer = styled.div`
-    width: 100vw; // 100% of the viewport width
+    width: 100%
     height: 50vh; // 
     background-color: #2C3539; // The gunmetal color
     display: flex;

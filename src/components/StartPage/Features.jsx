@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next';
 
 const FeaturesContainer = styled(animated.div)`
     display: flex;
-    width: 360px 
+    width: 360px
     overflow: hidden;
     will-change: transform;
 `;
@@ -115,7 +115,7 @@ const Features = () => {
         }
     ];
 
-    return (
+  return (
         <div>
             <FeaturesContainer style={transitionStyles}>
                 {featuresData.map((feature, index) => (

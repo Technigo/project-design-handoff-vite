@@ -9,8 +9,7 @@ const NavBarContainer = styled.div`
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    background-color: #2A3439; 
-    width: 100%;
+    background-color: #2A3439; // dark background
 `;
 
 const Logo = styled.img`

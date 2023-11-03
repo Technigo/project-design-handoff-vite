@@ -8,7 +8,6 @@ const NavBarContainer = styled.div`
     align-items: center;
     padding: 16px;
     background-color: #2A3439; // dark background
-    width: 100%;
 `;
 
 const Logo = styled.img`
