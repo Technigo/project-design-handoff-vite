@@ -1,9 +1,9 @@
-import { BenefitsWrapper } from './StyledComponents';
+import { BenefitsWrapper, BenefitsHeader } from './StyledComponents';
 
 export const Benefits = () => {
   return (
     <BenefitsWrapper>
-      Benefits
+      <BenefitsHeader>Benefits of yoga</BenefitsHeader>
     </BenefitsWrapper>
   );
 }

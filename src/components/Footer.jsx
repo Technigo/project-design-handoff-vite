@@ -3,7 +3,7 @@ import { FooterWrapper } from './StyledComponents';
 export const Footer = () => {
   return (
     <FooterWrapper>
-      Footer
+      Yoga You
     </FooterWrapper>
   );
 }

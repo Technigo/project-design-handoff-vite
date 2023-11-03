@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import HeroImage from '../images/hero-image-1440.png';
+import { Link as RouterLink } from 'react-router-dom';
+import HeroBg from '../images/hero-image-1440.png';
+import HamburgerIcon from './HamburgerIcon';
 
 export const PageWrapper = styled.div`
   display: flex;
@@ -11,27 +13,31 @@ export const HeaderWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffcc00;
-  @media (min-width: 1440px) {
-    padding: 1.25vh 3.69vh 1.25vh 3.69vh;
-  }
+  color: #602C9E;
+  padding: 1.25vh 3.69vh 1.25vh 3.69vh;
 `;
 
 export const Logo = styled.div`
-
+  font-size: 1.375rem;
+  font-weight: 700;
+  letter-spacing: 0.00625rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
 `;
 
 export const Menu = styled.div`
   display: flex;
   align-items: center;
-  text-align: right;
 `;
 
 export const MobileNav = styled.nav`
   display: none;
   flex-direction: column;
   align-items: center;
-  background-color: #ffcc00;
+  justify-content: center;
+  background-color: #602C9E;
+  color: white;
   position: fixed;
   top: 0px;
   left: 0;
@@ -44,7 +50,7 @@ export const MobileNav = styled.nav`
   }
 `;
 
-export const Hamburger = styled.div`
+export const Hamburger = styled(HamburgerIcon)`
   cursor: pointer;
   z-index: 1000;
   @media (min-width: 1440px) {
@@ -53,21 +59,38 @@ export const Hamburger = styled.div`
 `;
 
 export const ContentWrapper = styled.div`
-  @media(min-width: 1440px) {
+  margin: 4.8vh 0 0 0;
+
+  @media (min-width: 1440px) {
     margin: 4.8vh 7vh 0 7vh;
-  }
+}
 `;
 
-export const HeroWrapper = styled.section`
+export const HeroWrapper = styled.div``;
+
+export const HeroImage = styled.section`
   color: red;
   text-align: center;
-  background-image: url(${HeroImage});
+  background-image: url(${HeroBg});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  height: 100vw;
+  margin-bottom: 2.25vh;
+
   @media (min-width: 1440px) {
     height: 43vh;
-    margin-bottom: 2.25vh;
+}
+`;
+
+export const HeroHeader = styled.section``;
+
+export const HeroText = styled.section``;
+
+export const HeroBookButton = styled.button`
+  display: none;
+  @media(min-width: 1440px) {
+    display: block;
   }
 `;
 
@@ -81,7 +104,10 @@ export const BenefitsWrapper = styled.section`
   text-align: left;
 `;
 
-/* SHOULD NOT BE USED? */
+export const BenefitsHeader = styled.section`
+  text-align: center;
+`;
+
 export const ContentSection = styled.section`
   background-color: #446699;
   text-align: left;
@@ -107,10 +133,19 @@ export const BookButton = styled.button`
 `;
 
 export const FooterWrapper = styled.footer`
-background-color: #E9C9AF;
-text-align: left;
-margin-top: auto;
-@media(min-width: 1440px) {
-  padding: 2vh 7vh 0vh 7vh;
-}
+  background-color: #E9C9AF;
+  text-align: left;
+  margin-top: auto;
+`;
+
+export const Link = styled(RouterLink)`
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+    color: inherit;
+  }
 `;

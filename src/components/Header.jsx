@@ -1,10 +1,8 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { HeaderWrapper, Logo, Menu, Hamburger, NavLink, NavList, BookButton, MobileNav } from './StyledComponents';
+import { HeaderWrapper, Logo, Menu, Hamburger, NavLink, NavList, BookButton, MobileNav, Link } from './StyledComponents';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -17,7 +15,7 @@ export const Header = () => {
           <NavLink><Link to="/studio">Studio</Link></NavLink>
         </NavList>
         <BookButton><Link to="/book">Book</Link></BookButton>
-        <Hamburger onClick={toggleMenu}>☰</Hamburger>
+        <Hamburger onClick={toggleMenu} />
       </Menu>
       <MobileNav open={isOpen}>
         <NavLink onClick={toggleMenu}><Link to="/about">About</Link></NavLink>
