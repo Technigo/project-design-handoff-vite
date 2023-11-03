@@ -1,5 +1,8 @@
+//Mounted in the pages LandingP and AboutP
+
 import "./moodmusic.css"
 
+//Export of a embedded player within an ifram from Spotify
 export const MoodMusic = () => {
     return (
         <div className="mood-music">
