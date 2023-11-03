@@ -81,7 +81,7 @@ body{
   font-weight: 700;
   text-align: center;
   min-width: 117px;
-  height: 42px;
+  
 
 }
 
@@ -222,7 +222,10 @@ border-left: none;
 border-top: none;
 border-right:none ;
 padding: 10px;
-background-color: transparent;
+
+}
+form input{
+  background-color: transparent;
 }
 .submit-btn{
 
@@ -304,6 +307,7 @@ margin-bottom: 20px;
   display: flex;
   margin: 60px 0;
   overflow-x: scroll;
+ 
 }
 .profile{
 padding: 22px;
@@ -443,4 +447,76 @@ form{
   z-index: -1;
   opacity: .4;
   left: 30px;
+}
+.title-testi{
+  margin-left: 10px;
+}
+@media screen and (min-width:928px) {
+  .card{
+    display: flex;
+    gap: 60px;
+  }
+ .description{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+ }
+ .back{
+  margin: 0;
+ }
+ .card img{
+  width: 398px;
+ }
+ .description p{
+  margin-top: 26px;
+ }
+ .how{
+  padding: 20px;
+ }
+ .card .video-card{
+  width: 100%;
+ }
+ .title-testi{
+  margin-left: 40px;
+ }
+ .testimonial{
+  padding: 30px;
+ }
+  .community-img{
+    width: 100%;
+  }
+  .map-container{
+    padding: 40px;
+  }
+  .map-card{
+    display: flex;
+    gap: 60px;
+  }
+  .map-card img{
+    width: 398px;
+  }
+  .footer{
+    padding: 50px;
+  }
+  .frame input{
+    width: 355px;
+  }
+  .pro-med{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+  }
+  .media{
+    display: grid;
+  }
+  .properties{
+    gap: 20px;
+  }
+  .medias{
+    align-items: flex-start;
+    margin-top: 0;
+  }
+ 
+
+ 
 }

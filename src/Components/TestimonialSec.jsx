@@ -3,8 +3,10 @@
 export const TestimonialSec = () => {
   return (
     <>
-    <h2>WHAT OUR MEMBERS SAY ABOUT US </h2>
+    <h2 className="title-testi">WHAT OUR MEMBERS SAY ABOUT US </h2>
+    
     <div className="testimonial">
+    
         
         <div className="profile">
             <div className="info">
@@ -83,7 +85,7 @@ export const TestimonialSec = () => {
         
 
     </div>
-    <img src="/Community Image.png" alt="image" />
+    <img className="community-img"src="/Community Image.png" alt="image" />
     </>
   )
 }

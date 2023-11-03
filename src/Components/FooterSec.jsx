@@ -12,6 +12,7 @@ export const FooterSec = () => {
         <Button label={"JOIN NOW"}  size="small" />
 
         </div>
+        <div className="pro-med">
         <ul className="properties">
             <li><a href="">GET STARTED</a></li>
             <li><a href="">MEMBERSHIP</a></li>
@@ -32,6 +33,9 @@ export const FooterSec = () => {
 
         </ul>
 
+            
+        </div>
+       
     </div>
   )
 }
