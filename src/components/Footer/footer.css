@@ -85,7 +85,7 @@ select {
     max-width: 19px;
     position: absolute;
     top: 50%; /* Center vertically */
-    left: 9px; /* Adjust the distance from the right */
+    left: 9px;
     transform: translateY(-50%);
 }
 
@@ -143,7 +143,7 @@ select {
 
     .language-select {
         height: 33px;
-        postition: relative;
+        position: relative;
     }
 
     .footer-links {
@@ -194,7 +194,7 @@ select {
 
     .language-select {
         max-height: 33px;
-        postition: relative;
+        position: relative;
     }
 
     .footer-links {
@@ -214,7 +214,7 @@ select {
 
     .uk-flag-icon {
         position: absolute;
-        top: 16%; /* Center vertically */
+        top: 11%; /* Center vertically */
         left: 607px; /* Adjust the distance from the right */
         transform: translateY(-50%);
     }
