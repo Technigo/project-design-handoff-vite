@@ -15,6 +15,12 @@
   margin: 0 16px;
 }
 
+.yoga-subtitle {
+  font-size: var(--h3-mobile);
+  line-height: 131%; /* 26.2px */
+  letter-spacing: -0.44px;
+}
+
 .dive-in {
   font-family: var(--font-family-ingress-body);
   font-size: var(--body-tablet-desktop);
@@ -72,7 +78,7 @@
   margin-bottom: 160px;
 }
 
-.wave7mini {
+.intro-wave-mini {
   z-index: 2;
   position: absolute;
   bottom: -35px;
@@ -83,7 +89,7 @@
   position: absolute;
 }
 
-.wave7tablet {
+.intro-wave-tablet {
   display: none;
 }
 
@@ -137,10 +143,10 @@
     margin-top: 10px;
   }
 
-  .wave7mini {
+  .intro-wave-mini {
     display: none;
   }
-  .wave7tablet {
+  .intro-wave-tablet {
     display: flex;
     z-index: 2;
     position: absolute;

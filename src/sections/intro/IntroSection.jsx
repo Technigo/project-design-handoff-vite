@@ -21,7 +21,7 @@ export const IntroSection = () => {
       </div>
 
       <div className="yoga-for-everyone">
-        <h3>
+        <h3 className="yoga-subtitle">
           {t("introSub")}
           {/* {t("introSub1")}{" "}
           <div style={{ fontWeight: "bold" }} className="derp">
@@ -34,9 +34,9 @@ export const IntroSection = () => {
         <img src={arrowdown} alt="arrow-pointing-down" />
       </button>
 
-      <img src={wave7mini} alt="wave pattern" className="wave7mini" />
+      <img src={wave7mini} alt="wave pattern" className="intro-wave-mini" />
 
-      <img src={wave7tablet} alt="wave pattern" className="wave7tablet" />
+      <img src={wave7tablet} alt="wave pattern" className="intro-wave-tablet" />
     </div>
   );
 };

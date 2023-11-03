@@ -24,7 +24,7 @@
   color: var(--dark);
 }
 
-.yogaTypeBtns {
+.classBtns {
   display: flex;
   justify-content: center;
   gap: 16px;

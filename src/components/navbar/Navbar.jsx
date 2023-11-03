@@ -4,6 +4,9 @@ import "./navbar.css";
 import logo from "../../assets/logo.svg";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { PrimaryBtn } from "../buttons/primary/PrimaryBtn";
+import { SecondaryBtn } from "../buttons/secondary/SecondaryBtn";
 
 export const Navbar = () => {
   const [isNavExpanded, setIsNavExpanded] = useState(false);
@@ -23,10 +26,28 @@ export const Navbar = () => {
         <img src={burgerMenu} alt="hamburger-icon" />
       </button>
       <div className={isNavExpanded ? "nav-menu expanded" : "nav-menu"}>
-        <ul>
+        {/* <ul>
           {navList.map((benefit, index) => (
             <li key={index}>{benefit}</li>
           ))}
+        </ul> */}
+
+        <ul>
+          {navList.map((benefit, index) => {
+            if (benefit === "About us") {
+              return (
+                <Link to="/about" key={index}>
+                  <li>{benefit}</li>
+                </Link>
+              );
+            } else {
+              return <li key={index}>{benefit}</li>;
+            }
+          })}
+          <div className="navBtns">
+            <PrimaryBtn btnName={t("signUpBtn")} />
+            <SecondaryBtn btnName={t("login")} />
+          </div>
         </ul>
 
         {/* <ul>

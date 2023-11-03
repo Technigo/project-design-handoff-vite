@@ -1,0 +1,28 @@
+.primaryBtn {
+  border-radius: 50px;
+  background: var(--medium);
+  display: inline-flex;
+  min-width: 150px;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  color: var(--offwhite);
+  font-family: var(--font-family-ingress-body);
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  background-color: var(--light);
+}
+
+@media screen and (min-width: 768px) {
+  .primaryBtn {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 131%; /* 31.44px */
+    letter-spacing: -0.528px;
+  }
+}

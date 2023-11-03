@@ -2,7 +2,9 @@ import "./classsection.css";
 import { useTranslation } from "react-i18next";
 import wave3mini from "../../assets/wave-3mini.svg";
 import wave3tablet from "../../assets/wave-3tablet.svg";
-
+import { PrimaryBtn } from "../../components/buttons/primary/PrimaryBtn";
+import { SecondaryBtn } from "../../components/buttons/secondary/SecondaryBtn";
+import { InvertedBtn } from "../../components/buttons/inverted/InvertedBtn";
 import yogagrey from "../../assets/yogagrey.svg";
 
 export const ClassSection = () => {
@@ -13,14 +15,19 @@ export const ClassSection = () => {
       <p className="class-info">{t("wideRange")}</p>
       <p className="class-info">{t("bookOrSign")}</p>
 
-      <div className="yogaTypeBtns">
-        <button className="bookClassBtn">{t("bookClassBtn")}</button>
-        <button className="signUpBtn">{t("signUpBtn")}</button>
+      <div className="classBtns">
+        <PrimaryBtn btnName={t("bookClassBtn")} />
+        <SecondaryBtn btnName={t("signUpBtn")} />
+        {/* <button className="bookClassBtn">{t("bookClassBtn")}</button>
+        <button className="signUpBtn">{t("signUpBtn")}</button> */}
       </div>
 
       <div className="member">
         <p>{t("alreadyMember")}</p>
-        <button className="signInBtnTransparent">{t("login")}</button>
+        <div className="login" style={{ maxWidth: "50%", alignSelf: "center" }}>
+          <InvertedBtn btnName={t("login")} />
+        </div>
+        {/* <button className="signInBtnTransparent">{t("login")}</button> */}
       </div>
       <div className="imgs">
         <img src={wave3mini} alt="wave-pattern" className="upper-wave-mini" />

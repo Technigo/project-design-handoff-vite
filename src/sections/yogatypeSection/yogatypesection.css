@@ -26,19 +26,20 @@
   margin-bottom: 64px;
   display: flex;
   gap: 18px;
+  display: flex;
+  justify-content: center;
 }
 
-.yoga-type-wave {
+.yoga-type-wave-mini {
   position: absolute;
-  bottom: -30px;
+  bottom: -40px;
   z-index: 3;
 }
 
 .image-sun {
-  z-index: 1;
   min-width: 340px;
   min-height: 340px;
-  margin: 0 25px 0 25px;
+  margin: 0 25px 0px 25px;
 }
 
 .yoga-type-wave-tablet {

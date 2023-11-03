@@ -13,6 +13,10 @@ export const Footer = () => {
     return i18n.changeLanguage(`${lang}`);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="footer-container">
       <div className="footer-content-container">
@@ -46,7 +50,7 @@ export const Footer = () => {
         </div>
         {/* <Link to="/about" element={ }> */}
 
-        <button className="back-to-top">
+        <button className="back-to-top" onClick={scrollToTop}>
           <img src={arrow} alt="arrow-pointing-down" className="footer-arrow" />
           {t("backToTop")}
         </button>
