@@ -16,12 +16,5 @@ export const App = () => {
         <Footer />
       </div>
     </BrowserRouter>
-
-    //Behöver det vara main istället?
-    // <div className="main-wrapper">
-
-    //   <MainContent />
-
-    // </div>
   );
 };
