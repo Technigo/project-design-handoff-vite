@@ -11,11 +11,17 @@ const StyledSection = styled.section`
     ),
     url("/images/hero-image.jpeg");
   height: 603px;
-  background-size: cover;
-  background-position: 90%;
+  background-size: cover; 
+  background-position: 90%; 
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+
+  //Manipulating background image position in wide viewports
+  @media (min-width: 1100px) {
+  background-position: 90% 0%;  
+  }
 
   h1 {
     text-align: left;
@@ -38,6 +44,27 @@ const StyledSection = styled.section`
     flex-direction: column; 
     gap: 16px; 
   }
+  @media (min-width: 667px) and (max-width: 1024px) {
+    .hero-content{
+      margin: 135px 264px 115px 130px;  
+    }
+    .button-wrapper {
+      flex-direction: row; 
+    }
+  }
+
+  @media (min-width: 1025px) {
+      .hero-content {
+        margin-bottom: 10%;  
+        margin-left: 10%; 
+        margin-right: 50%; 
+      }
+      .button-wrapper {
+        flex-direction: row; 
+    }
+  }
+
+  
 `;
 
 

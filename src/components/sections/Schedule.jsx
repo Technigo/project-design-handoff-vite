@@ -7,6 +7,14 @@ export const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+    margin: 132px 20%; 
+  }
+
+  @media (min-width: 1025px) {
+     margin: 132px 30%; 
+}
 `;
 
 export const Schedule = () => {

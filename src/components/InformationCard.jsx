@@ -24,6 +24,14 @@ const StyledDiv = styled.div`
       width: 90px; 
       height: 90px; 
     }
+
+  @media (min-width: 667px) and (max-width: 1024px) {
+    margin: 20%; 
+  }
+
+  @media (min-width: 1025px) {
+    margin: 20%; 
+  }
 `
 
 export const InformationCard = () => {

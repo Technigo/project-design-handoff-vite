@@ -16,11 +16,17 @@ const StyledSection = styled.section`
   flex-direction: column; 
   justify-content: flex-end; 
 
+  //Manipulating background image position in wide viewports
+  @media (min-width: 950px) {
+  background-position: 50% 0%;  
+  }
+
   .wrapper-text {
     display: flex; 
     flex-direction: column; 
     gap: 32px; 
     padding: 24px; 
+    overflow-wrap: break-word; 
   }
 
 

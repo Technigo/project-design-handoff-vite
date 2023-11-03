@@ -66,8 +66,11 @@ export const Navbar = () => {
     <>
      <StyledNav>
         <div className="img-button-wrapper">
-        <img src="/icons/preggo-logo.svg" />
-        <button className="hamburger" onClick={toggleButton}>
+        <Link to={"/"}>
+          <img src="/icons/preggo-logo.svg" />  
+        </Link>
+       
+        <button className="hamburger" onClick={toggleButton} aria-label="links">
           <img src="/icons/hamburger.svg" />
         </button>
         </div>
