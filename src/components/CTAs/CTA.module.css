@@ -23,6 +23,12 @@ p {
     color: white;
 }
 
+img:hover {
+    transform: scaleX(1.25) scaleY(1.25);
+    transition: ease 0.5s;
+
+}
+
 @media screen and (max-width: 667px) {
     p {
         font-size: 20px;

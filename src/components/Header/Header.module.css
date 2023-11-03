@@ -1,20 +1,37 @@
+.mainContainer {
+    background-image: url('src/assets/heroImage.svg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: right top;
+    display: flex;
+    align-items: flex-end;
+}
+
+.mainContainer img {
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 212px;
+}
+
 .infoContainer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 25px;
     padding: 10px;
 }
 
-.textContainer p {
+.infoContainer p {
     font-size: 19px;
     color: #4A205A;
+    font-weight: 500;
 }
 
 .buttonContainer {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 5px;
 }
 
@@ -29,7 +46,14 @@
     background-color: #83EDD5;
     font-family: 'Montserrat';
     font-size: 20px;
+    font-weight: 600;
     padding: 20px 30px 20px 30px;
+}
+
+.tryForFree:hover, .aboutUs:hover {
+    background-color: white;
+    color: #8600A5;
+    border: 3px solid #8600A5;
 }
 
 .aboutUs {
@@ -42,15 +66,26 @@
     color: #4A205A;
     font-family: 'Montserrat';
     font-size: 20px;
+    font-weight: 600;
     padding: 20px 44px 20px 44px;
 }
 
+img:hover {
+    transform: scaleX(1.25) scaleY(1.25);
+    transition: ease 0.5s;
+}
+
 @media screen and (max-width: 667px) {
-    .headingContainer {
-        font-size: 33px;
+    .mainContainer {
+        height: 47em;
     }
 
-    .textContainer p {
-        font-size: 24px;
+    .infoContainer h1 {
+        font-size: 43px;
+        gap: 31px;
+    }
+
+    .infoContainer p {
+        font-size: 19px;
     }
 }
