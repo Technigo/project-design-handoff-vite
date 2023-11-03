@@ -1,5 +1,5 @@
 import styles from "./Pagination.module.scss";
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import useScreenSize from "../../../hooks/useScreenSize";
 
 export const Pagination = ({ index, sliderRef }) => {

@@ -18,3 +18,17 @@
     @content;
   }
 }
+
+@mixin full-screen-fixed {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+@mixin flex-middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

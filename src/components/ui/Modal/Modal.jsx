@@ -22,7 +22,7 @@ export const Modal = () => {
   const currentFormdata = formData[currentFormIndex];
   const { content, type, name, id, animation } = currentFormdata;
   const { button, message, question, placeholder } = content[lang];
-  console.log(id);
+
   return (
     <>
       <div className={styles.modal} onClick={closeModal} onTouchStart={closeModal}></div>

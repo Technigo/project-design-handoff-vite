@@ -11,17 +11,14 @@
   }
 
   @include lg {
-    padding: 32px;
+    padding: $padding-lg;
   }
 
   &_inner {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
     gap: 47px;
     margin: 0 auto;
 
+    @include flex-middle;
     @include lg {
       width: 807px;
       gap: 78px;

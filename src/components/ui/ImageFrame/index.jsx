@@ -1,1 +1,0 @@
-export { ImageFrame } from "./ImageFrame";

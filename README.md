@@ -10,11 +10,7 @@ rm -rf .git
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
+This is a project that I worked with one of students from UI/UX class at Technigo. This beautiful design was designed by Thomas Fredrik Read.
 
 ### Dependency Installation & Startup Development Server
 
@@ -28,11 +24,12 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I quickly realised that it is not easy to follow a designer's design, as they look great, but to code them was very tricky. Some parts had a completely different structure for mobile and desktop, so I had to play around to find a solution.
+I struggled the most with creating a form animation that needed to be triggered when a button was clicked. This was a trial and error process that took me hours to finally find a solution. It also helped to know that a passionate designer would check all the details. So I tried to communicate well with him to know what he wanted. It was so much fun to work with a designer who is really passionate about design. I really appreciate him and am happy to work with such a talented designer.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Link to a deployed version:
 
 ## Instructions
 

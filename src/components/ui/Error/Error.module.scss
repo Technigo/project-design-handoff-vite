@@ -4,14 +4,11 @@
   width: 100vw;
   min-height: 80vh;
   background: $color-dark;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   gap: 20px;
   color: #fff;
   font-family: $font-display;
   position: relative;
+  @include flex-middle;
 
   h3 {
     font-size: 30px;

@@ -5,13 +5,13 @@
   min-height: 725px;
   $height: 100%;
   width: 100vw;
-  padding-bottom: 16px;
+  padding-bottom: $padding-sm;
   position: relative;
   scroll-snap-align: start;
   list-style: none;
 
   @include md {
-    padding: 16px;
+    padding: $padding-sm;
   }
 
   @include lg {
@@ -102,7 +102,7 @@
 
 .orange_border {
   @include lg {
-    border-radius: 20px;
+    border-radius: $border-radius-md;
   }
   &:before {
     @include lg {
@@ -113,7 +113,8 @@
 
 .green_border {
   @include lg {
-    border-radius: 0px 0px 20px 20px;
+    border-bottom-left-radius: $border-radius-md;
+    border-bottom-right-radius: $border-radius-md;
   }
   &:before {
     @include lg {

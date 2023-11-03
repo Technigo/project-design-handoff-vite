@@ -3,7 +3,7 @@
 
 .card {
   border: 2px solid $color-dark;
-  border-radius: 8px;
+  border-radius: $border-radius-xsm;
   padding: 16px 8px;
   width: 140px;
   height: 238px;
@@ -18,8 +18,8 @@
   @include lg {
     width: 330px;
     height: 401px;
-    padding: 16px;
-    gap: 24px;
+    padding: $padding-sm;
+    gap: $gap-md;
     display: grid;
     grid-template-rows: 1.5fr 1fr;
   }
@@ -52,7 +52,7 @@
     width: 100%;
 
     @include lg {
-      font-size: 32px;
+      font-size: $font-xlg;
     }
   }
 

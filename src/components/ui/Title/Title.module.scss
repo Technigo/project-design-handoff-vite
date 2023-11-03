@@ -3,11 +3,11 @@
 
 .h3 {
   font-family: $font-display;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: $font-xlg;
+  font-weight: $weight-bold;
   color: $color-green-light;
 
   @include lg {
-    font-size: 40px;
+    font-size: $font-xxlg;
   }
 }

@@ -11,6 +11,7 @@ export const Slider = ({ type = "slider" }) => {
   const lang = useAppStore((state) => state.lang);
   const [width] = useScreenSize();
   const sliderData = type === "aboutHero" ? data.aboutHero[lang].memberCards : data.slider;
+
   return (
     <div className={styles.slider_box} ref={sliderRef}>
       <ul className={`${styles.slider} ${type === "aboutHero" ? styles.about : ""}`}>

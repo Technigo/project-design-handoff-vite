@@ -32,7 +32,7 @@ export const formQuestion = [
       en: {
         question: "We want your email.",
         placeholder: "Gather Emails? Prawns!",
-        button: "peawns!",
+        button: "prawns!",
         message: "We will exchange this info with spammers for Prawns!",
       },
       es: {
@@ -59,7 +59,7 @@ export const formQuestion = [
       en: {
         question: "Write your Meowssage",
         placeholder: "If we could read we might just read this between naps and meal times",
-        button: "peawns!",
+        button: "prawns!",
         message: null,
       },
       es: {

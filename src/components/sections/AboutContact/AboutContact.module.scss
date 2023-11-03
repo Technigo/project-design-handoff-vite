@@ -3,7 +3,7 @@
 
 .text_box {
   margin: 0 auto;
-  width: 246px;
+  width: 280px;
 
   @include md {
     width: 300px;
@@ -29,7 +29,7 @@
 
 .address_box {
   display: flex;
-  gap: 64px;
+  gap: $gap-lg;
   @include lg {
     padding-top: 69px;
   }

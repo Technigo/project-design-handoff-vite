@@ -5,8 +5,8 @@
   background-color: #fff;
   color: $color-dark;
   font-family: $font-normal;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: $font-sm;
+  font-weight: $weight-bold;
   padding: 2px 3px;
   width: 170px;
   height: 23px;
@@ -14,7 +14,7 @@
   margin-bottom: 10px;
 
   @include md {
-    font-size: 20px;
+    font-size: $font-md;
     padding: 4px 6px;
     width: 100%;
     height: 40px;
@@ -33,8 +33,8 @@
   align-items: center;
   width: 207px;
   min-height: 124px;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: $font-sm;
+  font-weight: $weight-bold;
   word-break: break-all;
 
   &[data-animation="1"] {
@@ -42,18 +42,18 @@
   }
 
   @include md {
-    font-size: 20px;
+    font-size: $font-md;
     width: 100%;
     min-height: 30%;
   }
 
   &::placeholder {
     font-family: $font-normal;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: $font-sm;
+    font-weight: $weight-bold;
 
     @include md {
-      font-size: 20px;
+      font-size: $font-md;
     }
   }
 }

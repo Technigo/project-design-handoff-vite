@@ -13,12 +13,12 @@
   & p {
     font-family: $font-display;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: $weight-bold;
     color: $color-dark;
     text-transform: capitalize;
 
     @include lg {
-      font-size: 32px;
+      font-size: $font-xlg;
     }
   }
 }

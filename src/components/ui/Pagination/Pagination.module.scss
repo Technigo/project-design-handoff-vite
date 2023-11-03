@@ -5,7 +5,7 @@
   display: flex;
   width: 327px;
   height: 39px;
-  gap: 16px;
+  gap: $gap-xsm;
   justify-content: space-around;
   align-items: center;
   cursor: pointer;
@@ -39,19 +39,15 @@
 .left_paw {
   width: 42px;
 }
-.right_cat,
-.left_cat {
-}
 
 .left_paw {
   transform: rotate(180deg);
 }
+
 .left_cat {
   width: 21px !important;
 }
 
-.right_paw {
-}
 .right_cat {
   width: 19px !important;
 }

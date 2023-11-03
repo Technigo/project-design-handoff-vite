@@ -10,6 +10,7 @@ export const Form = ({ type, placeholder, name, animation = null, triggerAnimati
   function handleChange(e) {
     setFormAnswer(name, e.target.value);
   }
+
   return (
     <>
       {type === "input" ? (

@@ -7,6 +7,7 @@
   position: relative;
   background: radial-gradient(220.53% 278.26% at 50% 0%, #2a3439 0%, rgba(42, 52, 57, 0.64) 100%);
   z-index: -1;
+
   @include lg {
     padding-bottom: 32px;
   }
@@ -32,8 +33,8 @@
     @include lg {
       height: 924px;
       width: 924px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: $border-radius-md;
+      border-bottom-right-radius: $border-radius-md;
       position: relative;
       $border: 2px;
       background-clip: padding-box; /* !importanté */
@@ -42,14 +43,11 @@
       &:after {
         content: "";
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
         z-index: -1;
         margin: -$border; /* !importanté */
         border-radius: inherit; /* !importanté */
         background: linear-gradient(to top, $color-green, transparent);
+        @include full-screen-fixed;
       }
     }
 

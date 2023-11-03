@@ -9,7 +9,7 @@
   padding: 24px;
 
   @include md {
-    padding: 32px;
+    padding: $padding-lg;
   }
 
   @include lg {

@@ -18,7 +18,7 @@ export const AboutContact = () => {
       <ObserverWrapper>
         <section className={styles.contact}>
           <div className={styles.text_wrapper}>
-            <div className={styles.text_box}>
+            <div className={styles.text_box} style={{ width: lang === "es" && "330px" }}>
               <MessageCard
                 title={data.title}
                 text={data.text}

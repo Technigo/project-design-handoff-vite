@@ -37,16 +37,16 @@
   @include lg {
     width: 100vw;
     max-width: 1260px;
-    margin: 0 auto;
+    margin: $margin-center;
     flex-direction: row;
     display: flex;
     flex-wrap: wrap;
-    gap: 12px;
-    padding: 32px;
+    gap: $gap-xsm;
+    padding: $padding-lg;
     justify-content: center;
   }
 
   @media (min-width: 1260px) {
-    gap: 64px;
+    gap: $gap-lg;
   }
 }

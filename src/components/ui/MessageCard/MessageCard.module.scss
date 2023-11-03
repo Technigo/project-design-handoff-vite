@@ -2,22 +2,22 @@
 @use "../../../styles/mixins.scss" as *;
 
 .card {
-  padding: 16px;
+  padding: $padding-sm;
   background-color: $color-dark;
 
   color: $color-green-light;
-  font-size: 16px;
+  font-size: $font-sm;
   font-family: $font-body;
   display: grid;
   gap: 16px;
   width: 100%;
-  border-radius: 8px;
+  border-radius: $border-radius-xsm;
   position: relative;
 
   @include lg {
-    padding: 32px;
-    font-size: 32px;
-    gap: 24px;
+    padding: $padding-lg;
+    font-size: $font-xlg;
+    gap: $gap-md;
   }
 }
 
@@ -31,14 +31,11 @@
     @include lg {
       content: "";
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
       z-index: -1;
       margin: -$border; /* !importanté */
       border-radius: inherit; /* !importanté */
       background: linear-gradient(to bottom, $color-green, transparent);
+      @include full-screen-fixed;
     }
   }
 }

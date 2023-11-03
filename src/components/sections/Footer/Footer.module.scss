@@ -5,13 +5,13 @@
   margin-top: 64px;
   padding: 16px 8px;
   font-family: $font-normal;
-  font-size: 14px;
+  font-size: $font-sm;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @include md {
-    padding: 32px;
+    padding: padding-lg;
   }
 
   @include lg {
@@ -52,7 +52,7 @@
       & .icons {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: $gap-sm;
         align-items: end;
 
         & img {
