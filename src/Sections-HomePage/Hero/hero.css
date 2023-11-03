@@ -41,4 +41,17 @@
     .hero-heading-h1 {
         font-size: 65px;
     }
+    .hero-heading-h2 {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .hero-heading-h1 {
+            font-size: 110px;
+        }
+    
+        .hero-heading-h2 {
+            font-size: 90px;
+        }
 }

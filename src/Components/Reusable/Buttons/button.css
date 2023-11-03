@@ -4,7 +4,9 @@ button {
         color: rgba(1, 42, 97, 1);
         border: none;
         padding: 10px;
-        height: 43px;
+        text-wrap: nowrap;
+       
+        height: 43px; 
 
     color: #012A61;
         font-family: Roboto;
@@ -28,6 +30,23 @@ button {
         height: 34px;
 }
 
-@media (min-width: 668) and (max-width: 1024) {
-    
+@media (min-width: 668px) and (max-width: 1024px) {
+    button {
+        height: 96px;
+    }
+
+    .join-button {
+    font-size: 32px; 
+    width: 295px;
+    }
+}
+
+@media (min-width: 1025px) {
+    button {
+        height: 140px;
+    }
+    .join-button {
+        font-size: 45px;
+        width: 470px;
+    }
 }

@@ -1,0 +1,9 @@
+.translate-button {
+    background: none;
+    font-size: 14px;
+        color: #ffffff;
+}
+
+.translate-button:active {
+    color: rgba(255, 224, 59, 1);
+}

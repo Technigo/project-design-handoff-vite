@@ -1,8 +1,10 @@
 import "./footer.css"
 import { Button } from "../Reusable/Buttons/Button"
 import { Link } from "react-router-dom"
+import { useTranslation } from "react-i18next"
 
 export const Footer = () => {
+  const { t } = useTranslation()
   return (
     <footer className="footer-wrapper">
 
@@ -12,36 +14,36 @@ export const Footer = () => {
 
           <div className="footer-menu-text-container">
         <Link to={"/about"}>
-        <h1>ABOUT US</h1>
+        <h1>{t("Footer.h1")}</h1>
         </Link>
         <h1>+</h1>
         
         </div>
 
         <div className="footer-menu-text-container">
-        <h1>WHAT WE OFFER</h1>
+        <h1>{t("Footer.h12")}</h1>
         <h1>+</h1>
         </div>
 
         <div className="footer-menu-text-container">
-        <h1>READ MORE</h1>
+        <h1>{t("Footer.h13")}</h1>
         <h1>+</h1>
         </div>
 
         <div className="footer-menu-text-container">
-        <h1>CONTACT</h1>
+        <h1>{t("Footer.h14")}</h1>
         <h1>+</h1>
         </div>
 
         <div className="footer-menu-join-container">
-        <h1>JOIN OUR CLAN!</h1>
-        <p>You are not yet a member of Galactic Fitness, please register yourself to the force!</p>
+        <h1>{t("Footer.h15")}</h1>
+        <p>{t("Footer.p1")}</p>
         </div>
 
         </div>
 
         <div className="register-btn-container">
-        <Button buttonText={"REGISTER NOW"} buttonClass={"register-btn"}/>
+        <Button buttonText={t("Footer.button")} buttonClass={"register-btn"}/>
         </div>  
         
 
@@ -57,10 +59,10 @@ export const Footer = () => {
         <img className="galactic-logo" src="/glactic-logo.svg" alt="galactic fitness logo" />
         </Link>
         <div className="footer-logo-text">
-        <h1>GALACTIC FITNESS ©2023 BY 
+        <h1>{t("Footer.p2")}
           <span className="rotopi-designs"> 
               <a href="https://www.figma.com/file/sV17gc9PG4pSotLdU9CtLt/Esra-Designer-Developer-Handover?type=design&node-id=0-1&mode=design&t=d7V4ZpKx9Gx5845a-0">
-                RODOPI DESIGNS
+                {t("Footer.p3")}
               </a>
           </span>
          </h1>

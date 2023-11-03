@@ -14,18 +14,50 @@
 }
 
 .galactic-logo {
-width: 195px;
+    width: 195px;
     height: 41px;
     
 }
 
 .dart-vader-icon {
     height: 26px;
-    width: 26px;
-    
+    width: 26px;  
 }
 
-.burger-icon {
+/* .burger-icon {
     height: 10px;
     width: 25px;
+} */
+
+@media (min-width: 667px) and (max-width: 1024px) {
+    .header-content-wrapper {
+        height: 148px;
+    }
+
+    .galactic-logo {
+        width: 378px;
+        height: 58px;
+    }
+
+    .dart-vader-icon {
+        height: 80px;
+        width: 80px;
+    }
+
+}
+@media (min-width: 1025px) {
+.header-content-wrapper {
+        height: 221px;
+        top: 0;
+    }
+
+    .galactic-logo {
+        width: 628px;
+        height: 109px;
+    }
+
+    .dart-vader-icon {
+        height: 90px;
+        width: 90px;
+    }
 }
