@@ -8,14 +8,6 @@ const HeroBack = styled.img`
   position: relative;
 `;
 
-const SecondBack = styled.div`
-  background: rgba(25, 130, 196, 0.40);
-  width: 587px;
-  height: 405px;
-  position: relative;
-  z-index: 1;
-`;
-
 const BigText = styled.div`
   width: 346px;
   height: 36px;
@@ -45,22 +37,6 @@ const SmallText = styled.div`
   z-index: 2;
 `;
 
-const Pictures = styled.div`
-  display: flex;
-  gap: 3px 35px;
-  flex-wrap: wrap;
-  position: absolute;
-  top: 30em;
-  left: 1em;
-  z-index: 2;
-`;
-
-
-const Picture = styled.img`
-  width: 169px;
-  height: 150px;
-`;
-
 export const Hero = () => {
   return (
     <>
@@ -69,17 +45,6 @@ export const Hero = () => {
       <SmallText>
         Treat your life as an adventure - all your life
       </SmallText>
-
-      <SecondBack alt="Background 2" />
-      <Pictures>
-        {[
-          data.image1,
-          data.image2,
-          data.image3
-        ].map((image, index) => (
-          <Picture key={index} src={image} alt={`Image ${index + 1}`} />
-        ))}
-      </Pictures>
     </>
   );
 };

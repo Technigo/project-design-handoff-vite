@@ -1,7 +1,7 @@
 // Logo and navigation burger
 import styled from "styled-components";
 import data from "../assets/images.json";
-import { BurgerMenu } from "./Burger";
+// import { BurgerMenu } from "./Burger";
 
 const NavBar = styled.div`
 display: flex;
@@ -24,9 +24,10 @@ return (
     <>
     <NavBar>
     <LogoImg src={data['logo']} alt="Logo" />
-    <BurgerMenu/>
+    {/* <BurgerMenu/> */}
     </NavBar>
     </>
 
 )
 }
+

@@ -28,6 +28,12 @@ const resources = {
         
         head6: "Treat life as an adventure",
         paragraph8: "Thank you for your interest in Play Parkour. We welcome any questions, feedback, or inquiries you may have. Please fill out the form below, and we’ll get back to you as soon as possible.",
+
+        about:"About us",
+
+        faq: "FAQ",
+
+        contact: "Contact informataion",
       },
     },
     es: {
@@ -57,6 +63,13 @@ const resources = {
 
         head6: "Trata la vida como una aventura",
         paragraph8: "Gracias por su interés en Play Parkour. Agradecemos cualquier pregunta, comentario o consulta que pueda tener. Rellene el siguiente formulario y nos pondremos en contacto con usted lo antes posible.",
+
+        about:"Sobre nosotros",
+
+        faq: "FAQ",
+
+        contact: "Información de contacto",
+
       },
     },
     sv: {
@@ -86,6 +99,13 @@ const resources = {
 
         head6: "Se livet som ett äventyr",
         paragraph8: "Tack för ditt intresse för Play Parkour. Vi välkomnar alla frågor, feedback eller förfrågningar som du kan ha. Fyll i formuläret nedan så återkommer vi till dig så snart som möjligt.",
+
+        about:"Om oss",
+
+        faq: "FAQ",
+
+        contact: "Kontaktinformation",
+
       },
     },
   };
