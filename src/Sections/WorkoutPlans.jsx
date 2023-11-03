@@ -54,7 +54,9 @@ export const WorkoutPlans = () => {
       <PlanCardWrapper>
         {data.plans.map((plan, index) => {
         return (
-          <WorkoutPlanCard key={index} plan={plan} />
+          <div key={index}>
+            <WorkoutPlanCard plan={plan} />
+          </div>
         )
       })}
       </PlanCardWrapper>

@@ -28,7 +28,7 @@ export const Trainers = () => {
       <TrainerCardWrapper>
         {data.trainers.map((trainer, index) => {
           return (
-            <div className="flex" key={index}>
+            <div key={index}>
               <TrainerCard trainer={trainer} />
             </div>
           )

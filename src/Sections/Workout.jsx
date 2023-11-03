@@ -15,11 +15,8 @@ const CardWrapper = styled.div`
   display: flex;
   flex-direction: row;
   gap: 16px;
-  width: 100%;
- 
-  @media (max-width: 393px) {
-     overflow-x: auto;
-  }
+  overflow-x: auto;
+
   @media (min-width: 835px) {
     gap: 24px;
   }
@@ -35,7 +32,9 @@ export const Workout = () => {
       <CardWrapper>
         {data.workout.map((video, index) => {
           return (
-            <WorkoutVideoCard key={index} video={video} />
+            <div key={index}>
+              <WorkoutVideoCard video={video} />
+            </div>
           )
         })}
       </CardWrapper>

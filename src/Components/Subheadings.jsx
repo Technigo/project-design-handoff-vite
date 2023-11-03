@@ -14,6 +14,12 @@ const Subheading = styled.h2`
   font-weight: 300;
   line-height: 24.22px;
   white-space: nowrap;
+  color: #000000;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underlined;
+  }
 
   @media (min-width: 835px) {
     font-size: 30px;
@@ -52,7 +58,7 @@ export const Subheadings = ({ sectionId }) => {
     <SubheadingWrapper key={sectionId}>
         {subheadingCollection.map((subheadingGroup) => subheadingGroup.subheadingTexts.map((subheading, index) => {
           return (
-            <Subheading key={index}>{subheading.toUpperCase()}</Subheading>
+              <Subheading as="a" href="#" key={index}>{subheading.toUpperCase()}</Subheading>
           )
         }))[sectionId - 1]}
     </SubheadingWrapper>
