@@ -20,6 +20,19 @@ const CarouselContainer = styled.div`
   & > :last-child {
     margin-right: 24px; /* Add margin to the last card */
   /*}  */
+
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    //overflow: hidden;
+    //flex-wrap: wrap;
+    width: 100%;
+    //height: 380px;
+    gap: 16px;
+    padding: 0 65px;
+    //position: relative;
+  }
 `;
 
 const StyledCourseCard = styled.div`
@@ -43,6 +56,10 @@ const StyledCourseCard = styled.div`
     border-radius: 16px 16px 0px 0px;
     background: lightgray 50% / cover no-repeat;
   }
+
+  @media screen and (min-width: 1024px) {
+    //position: absolute;
+  }
 `;
 
 const CourseCardButton = styled.button`
@@ -59,6 +76,10 @@ const CourseCardButton = styled.button`
   font-weight: 500;
   //line-height: normal;
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
 `;
 
 const CourseCardText = styled.div`
@@ -102,6 +123,11 @@ const CourseCardText = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
+    h5 {
+      //position: absolute;
+      // color: #fff;
+    }
+
     p {
       display: block;
     }

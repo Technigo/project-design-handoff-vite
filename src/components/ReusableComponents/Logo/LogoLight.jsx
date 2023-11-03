@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import LogoBeige from "/assets/Logovectorbeige.png";
 import styled from "styled-components";
 
 const StyledLightLogo = styled.div`
-  display: flex;
+  /* display: flex;
   align-items: center;
   padding: 10px;
-  gap: 10px;
+  gap: 10px; */
 
   img {
     width: 76px;
@@ -33,14 +34,28 @@ const StyledLightLogo = styled.div`
   }
 `;
 
+const ButtonLink = styled(Link)`
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+`;
+
 export const LogoLight = () => {
   return (
     <StyledLightLogo>
-      <img src={LogoBeige} alt="Logo of a horse head made with beige lines" />
-      <div className="logoText">
-        <p>saddle up</p>
-        <p>Yoga studio</p>
-      </div>
+      <ButtonLink
+        to="/"
+        ariaLabel="Back to the startpage"
+        label="Go back to the startpage"
+      >
+        <img src={LogoBeige} alt="Logo of a horse head made with beige lines" />
+        <div className="logoText">
+          <p>saddle up</p>
+          <p>Yoga studio</p>
+        </div>
+      </ButtonLink>
     </StyledLightLogo>
   );
 };

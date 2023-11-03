@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom";
 import LogoBlue from "/assets/Logovectorblue.png";
 import styled from "styled-components";
 
 const StyledDarkLogo = styled.div`
-  display: flex;
+  /* display: flex;
   align-items: center;
   padding: 10px;
-  gap: 10px;
+  gap: 10px; */
 
   img {
     width: 76px;
@@ -33,14 +34,28 @@ const StyledDarkLogo = styled.div`
   }
 `;
 
+const ButtonLink = styled(Link)`
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+`;
+
 export const LogoDark = () => {
   return (
     <StyledDarkLogo>
-      <img src={LogoBlue} alt="Logo of a horse head made with blue lines" />
-      <div className="logoText">
-        <p>saddle up</p>
-        <p>Yoga studio</p>
-      </div>
+      <ButtonLink
+        to="/"
+        ariaLabel="Back to the startpage"
+        label="Go back to the startpage"
+      >
+        <img src={LogoBlue} alt="Logo of a horse head made with blue lines" />
+        <div className="logoText">
+          <p>saddle up</p>
+          <p>Yoga studio</p>
+        </div>
+      </ButtonLink>
     </StyledDarkLogo>
   );
 };
