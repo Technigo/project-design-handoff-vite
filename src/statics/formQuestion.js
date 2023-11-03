@@ -72,7 +72,7 @@ export const formQuestion = [
         question: "Skriv ditt Meowssage",
         placeholder:
           "Om vi kunde läsa skulle vi kanske läsa det här mellan tupplurarna och måltiderna",
-        button: "peawns!",
+        button: "prawns!",
         message: null,
       },
     },
