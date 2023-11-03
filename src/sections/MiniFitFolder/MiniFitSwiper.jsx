@@ -28,11 +28,46 @@ export const MiniFitSwiper = ({ miniCardOne }) => {
         <SwiperSlide>
           <MiniFitSwiperCard miniCardOne={miniCardOne} />
         </SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        ...
+        <SwiperSlide>
+          <MiniFitSwiperCard miniCardOne={miniCardOne} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MiniFitSwiperCard miniCardOne={miniCardOne} />
+        </SwiperSlide>
+        <SwiperSlide>
+          <MiniFitSwiperCard miniCardOne={miniCardOne} />
+        </SwiperSlide>
       </Swiper>
     </>
   );
 };
+
+// import { useTranslation } from "react-i18next";
+// import { MiniFitSwiperCard } from "../../components/MiniFitSwiperCardFolder/MiniFitSwiperCard";
+
+// export const MiniFitSwiper = ({ miniCardOne }) => {
+//   const { t } = useTranslation();
+
+//   return (
+//     <>
+//       <h3>{t("MiniFitSwiper.heading")}</h3>
+
+//       <Swiper
+//         // ... (other configuration options)
+//       >
+//         <SwiperSlide>
+//           <MiniFitSwiperCard miniCardOne={miniCardOne} />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <MiniFitSwiperCard miniCardOne={miniCardOne} />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <MiniFitSwiperCard miniCardOne={miniCardOne} />
+//         </SwiperSlide>
+//         <SwiperSlide>
+//           <MiniFitSwiperCard miniCardOne={miniCardOne} />
+//         </SwiperSlide>
+//       </Swiper>
+//     </>
+//   );
+// };

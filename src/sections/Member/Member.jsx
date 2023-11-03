@@ -3,16 +3,16 @@ import BigBlue from "../../assets/images/bigblue.png";
 import { Buttons } from "../../components/Buttons/Buttons";
 import button from "../../assets/Button.svg";
 import buttonHover from "../../assets/ButtonHover.svg";
+import { useTranslation } from "react-i18next";
 
 export const Member = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="member-container-main">
       <div className="member-content">
-        <h1>A fitnessstudio that fits the whole family</h1>
-        <p>
-          With us, you as a parent get time to take care of yourself and your
-          body, while your child can play in a safe environment
-        </p>
+        <h1>{t("Member.heading")}</h1>
+        <p>{t("Member.text")}</p>
         <Buttons
           buttonText=""
           url="https://example.com"

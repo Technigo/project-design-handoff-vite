@@ -1,4 +1,5 @@
 import MiniCardOne from "../../assets/images/miniCard1.png";
+import "./MiniFitSwiperCard.css";
 
 export const MiniFitSwiperCard = ({ miniCardOne }) => {
   return (

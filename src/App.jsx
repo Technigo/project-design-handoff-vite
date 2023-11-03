@@ -6,6 +6,7 @@
 //   NavLink,
 //   Navigate,
 // } from "react-router-dom";
+
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { AboutUs } from "./Pages/AboutUs";
 import { Header } from "./sections/Header";
