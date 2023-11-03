@@ -12,7 +12,7 @@ const NavigationWrapper = styled.nav`
   z-index: 100;
   border-top: 5px solid var(--red-color);
   @media (min-width: 768px) {
-    display: none; 
+    
   }
 
 `;
@@ -60,7 +60,7 @@ export const Navigation = ()  =>{
         </ActiveLink>
       </AppLi>
       <AppLi className="app-li">
-        <ActiveLink to="/contact">
+        <ActiveLink to="/contact-form">
           <img src="./contact.svg" alt="Contact" />
         </ActiveLink>
       </AppLi>
