@@ -39,11 +39,19 @@ font-family: Roboto;
         width: 100%;
 }
 
+
 .facilities-card-wrapper::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    width: 10px;
 }
 
+.facilities-card-wrapper::-webkit-scrollbar-thumb {
+    background-color: #292929;
+    border-radius: 5px;
+}
+
+.facilities-card-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #333;
+}
 
 .facilities-card-wrapper img {
     object-fit: cover;
