@@ -4,13 +4,16 @@ const BubbleContainer = styled.div`
   position: relative;
   width: 100%;
   height: 100%;
-  display: ${(props) => (props.hideOnBiggerScreens ? "none" : "block")};
 
   img {
     position: absolute;
     top: 4.3rem;
     left: 1rem;
     width: 240px;
+  }
+
+  @media (min-width: 834px) {
+    display: none;
   }
 `;
 
@@ -28,7 +31,7 @@ const BubbleText = styled.span`
 
 export const SpeechBubble = ({ hideOnBiggerScreens }) => {
   return (
-    <BubbleContainer hideOnBiggerScreens={hideOnBiggerScreens}>
+    <BubbleContainer>
       <img src="./speech-bubble.svg" alt="Speech bubble" />
       <BubbleText>sat nam</BubbleText>
     </BubbleContainer>

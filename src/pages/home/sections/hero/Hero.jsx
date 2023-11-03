@@ -7,7 +7,7 @@ export const Hero = () => {
     <section id="hero">
       <div className="imageOnBiggerScreens"><img src="./petra1.png" alt="" /></div>
       <div className="overlay"></div>
-      <SpeechBubble hideOnBiggerScreens={true}/>
+      <SpeechBubble />
       <div className="hero-wrapper">
         <h1 className="title">Sat nam, hi!</h1>
         <p>
