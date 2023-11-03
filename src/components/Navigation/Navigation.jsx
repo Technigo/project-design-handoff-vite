@@ -50,7 +50,7 @@ export const Navigation = ()  =>{
         </ActiveLink>
       </AppLi>
       <AppLi className="app-li">
-        <ActiveLink to="/contact-form">
+        <ActiveLink to="/">
           <img src="./calendar.svg" alt="Calendar" />
         </ActiveLink>
       </AppLi>
@@ -60,7 +60,7 @@ export const Navigation = ()  =>{
         </ActiveLink>
       </AppLi>
       <AppLi className="app-li">
-        <ActiveLink to="/contact-form">
+        <ActiveLink to="/">
           <img src="./contact.svg" alt="Contact" />
         </ActiveLink>
       </AppLi>
