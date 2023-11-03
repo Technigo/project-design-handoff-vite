@@ -1,7 +1,12 @@
+import { useTranslation } from "react-i18next"
 import { MiddleSectionGetHeadings } from "./MiddleSectionGetHeadings"
 
 export const GetBendy = () => {
-    const heading = "Get Bendy"
+    const { t } = useTranslation();
+    const middleSection = t("middleSection", { returnObjects: true })
+
+    const heading = t(middleSection.bendy)
+
     return (
         <div>
             <MiddleSectionGetHeadings middleSectionGetHeading={heading} />

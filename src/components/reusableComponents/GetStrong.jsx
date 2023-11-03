@@ -1,7 +1,12 @@
 import { MiddleSectionGetHeadings } from "./MiddleSectionGetHeadings"
+import { useTranslation } from "react-i18next";
 
 export const GetStrong = () => {
-    const heading = "Get Strong"
+
+    const { t } = useTranslation();
+    const middleSection = t("middleSection", { returnObjects: true })
+
+    const heading = t(middleSection.strong)
     return (
         <>
             <MiddleSectionGetHeadings middleSectionGetHeading={heading} />

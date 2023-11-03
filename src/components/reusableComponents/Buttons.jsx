@@ -1,4 +1,10 @@
+import { useTranslation } from "react-i18next"
+
 export const Buttons = () => {
+
+    const { t } = useTranslation();
+    const button = t("button", { returnObjects: true })
+
     const styledButtons = [
         {
             buttonId: 1,
@@ -13,8 +19,8 @@ export const Buttons = () => {
     ]
     return (
         <div className="flex flex-row justify-around items-center my-16 mx-auto gap-10">
-            {styledButtons.map((styledButton) => (
-                <button key={styledButton.buttonId} className={styledButton.style}>{styledButton.title}</button>
+            {styledButtons.map((styledButton, index) => (
+                <button key={styledButton.buttonId} className={styledButton.style}>{button[index].textfree}</button>
             ))}
         </div>
     )
