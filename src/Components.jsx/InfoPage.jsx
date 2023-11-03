@@ -5,9 +5,6 @@ export const InfoPage = () => {
     <div className="info-page">
       <div className="grid-container">
         <div className="grid-item">
-          <img src="./Images/Breakfast-1.png" alt="Breakfast image" />
-        </div>
-        <div className="grid-item">
           <h2>Breakfast</h2>
           <p>
             Start your day with our breakfast buffet starting from 5:00 AM,
@@ -15,10 +12,20 @@ export const InfoPage = () => {
           </p>
           <button className="read-more-button">Read more</button>
         </div>
+        <div className="grid-item">
+          <img src="./Images/Breakfast-1.png" alt="Breakfast image" />
+        </div>
+        <div className="grid-item">
+          <img src="./Images/Breakfast-2.png" alt="Breakfast image" />
+        </div>
 
         <div className="grid-item">
           <img src="./Images/Gym-1.png" alt="Gym image" />
         </div>
+        <div className="grid-item">
+          <img src="./Images/Gym-2.png" alt="Gym image" />
+        </div>
+
         <div className="grid-item">
           <h2>The Gym</h2>
           <p>
@@ -29,9 +36,6 @@ export const InfoPage = () => {
         </div>
 
         <div className="grid-item">
-          <img src="./Images/Co-working.png" alt="Co-working image" />
-        </div>
-        <div className="grid-item">
           <h2>Co-working</h2>
           <p>
             Elevate your productivity at our cutting-edge co-working space, an
@@ -39,6 +43,9 @@ export const InfoPage = () => {
             much more.
           </p>
           <button className="read-more-button">Read more</button>
+        </div>
+        <div className="grid-item">
+          <img src="./Images/Co-working.png" alt="Co-working image" />
         </div>
 
         <div className="grid-item">
@@ -52,10 +59,10 @@ export const InfoPage = () => {
           </p>
           <button className="read-more-button">Read more</button>
         </div>
-
         <div className="grid-item">
-          <img src="./Images/After-hours-1.png" alt="After hours image" />
+          <img src="./Images/Spa-2.png" alt="Spa image" />
         </div>
+
         <div className="grid-item">
           <h2>After Hours</h2>
           <p>
@@ -64,6 +71,11 @@ export const InfoPage = () => {
             only.
           </p>
           <button className="read-more-button">Read more</button>
+        </div>
+        <div className="grid-item">
+          <img src="./Images/After-hours-1.png" alt="After hours image" />
+          <div className="grid-item"></div>
+          <img src="./Images/After-hours-2.png" alt="After hours image" />
         </div>
       </div>
     </div>

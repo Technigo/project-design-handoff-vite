@@ -5,17 +5,20 @@
 }
 
 .grid-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Dela upp i 2 kolumner */
-  grid-gap: 20px; /* Avstånd mellan grid-objekt */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .grid-item {
-  /* Styling för varje grid-objekt, du kan anpassa det efter dina behov */
-  padding: 30px;
+  flex-basis: calc(33.33% - 10px);
+  margin-bottom: 60px;
+}
 
-  text-align: center;
-  width: 300px;
+/* Specific styling for the Co-working section */
+.grid-item:nth-child(7),
+.grid-item:nth-child(8) {
+  flex-basis: calc(50% - 10px);
 }
 
 .breakfast {
