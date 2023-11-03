@@ -1,11 +1,15 @@
-import { ClassesPictures } from "./reusable components/ClassesPictures"
-import { HeadingBottom } from "./reusable components/HeadingBottom"
-import { NewsPictures } from "./reusable components/NewsPictures"
+import { useTranslation } from "react-i18next"
+import { ClassesPictures } from "./reusableComponents/ClassesPictures"
+import { HeadingBottom } from "./reusableComponents/HeadingBottom"
+import { NewsPictures } from "./reusableComponents/NewsPictures"
 
 export const ExploreFurther = () => {
 
-    const classesTitle = "discover our classes";
-    const newsTitle = "sign up for our latest news";
+    const { t } = useTranslation();
+    const explore = t("explore", { returnObjects: true });
+
+    const classesTitle = t(explore.discover);
+    const newsTitle = t(explore.signUp);
 
     return (
         <>
