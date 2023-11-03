@@ -1,17 +1,17 @@
 .playparkour-wrapper {
     position: relative;
     overflow: hidden;
-    padding-top: 20px; /* Adjust as needed */
-    padding-bottom: 100px;
+    padding-top: 20px; 
+    padding-left: 20px;
+    padding-bottom: 150px;
 }
 
 .playparkour-wrapper::before {
     content: ""; 
     background-image: url('../../../public/images/image1.png');
-    background-position: center center; /* Center the image within the element */
-    background-size: cover; /* Cover the area without stretching the image */
+
+    background-size: cover; 
     position: absolute;
-    min-height: 400px;
     top: 0;
     left: 0;
     right: 0;
@@ -46,4 +46,63 @@ p {
     &:hover {
         background-color: darken(var(--yellow), 10%);
     }
+
+   
+
+/* Media query for screens between 600px and 900px */
+
+@media (min-width: 601px) and (max-width: 900px) {
+.playparkour-wrapper {
+    padding-bottom: 250px;
+}
+}
+
+/* Media query for screens between 900px and 1200px */
+
+@media (min-width: 901px) and (max-width: 1200px) {
+    .playparkour-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* Align content to the left */
+        background-color: green; /* Set the background to green */
+        padding: 40px; /* Add padding around */
+        gap: 40px; /* Space between your text column and the image */
+    }
+
+    .playparkour-wrapper::before {
+        content: "";
+        background-image: url('../../../public/images/image1.png');
+        background-size: contain; /* Show the full image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        position: absolute;
+        top: 50%;
+        right: 50px; /* Adjust the right position to give space */
+        width: 40%; /* Set image width */
+        height: calc(100% - 100px); /* Subtract top and bottom space */
+        transform: translateY(-50%); /* Center vertically with the space */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add shadow */
+        opacity: 1; /* Adjust opacity if needed */
+        z-index: -1;
+    }
+
+    h2 {
+        font-size: 2rem; /* Increase size for larger screens */
+    }
+
+    p {
+        font-size: 1rem; /* Increase size for larger screens */
+    }
+
+    .playParkourButton {
+        padding: 15px 30px; /* Increase padding */
+        font-size: 1rem; /* Increase font size */
+    }
+}
+
+/* Media query for screens above 1200px */
+
+@media (min-width: 1201px) {
+   
+
+}
 }

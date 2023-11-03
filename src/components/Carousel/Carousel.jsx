@@ -18,7 +18,7 @@ export const CarouselComponent = () => {
         centerMode: true, // This enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.
         infinite: true,
         centerPadding: "0px", // You might need to adjust this padding to get the desired effect.
-        slidesToShow: 1, // This would show 3 slides at a time. The one in the center will be the main focused slide.
+        slidesToShow: 2, // This would show 3 slides at a time. The one in the center will be the main focused slide.
         speed: 500,
         swipeToSlide: true,
         focusOnSelect: true 

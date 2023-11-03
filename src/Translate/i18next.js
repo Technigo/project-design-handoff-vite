@@ -72,6 +72,7 @@ const resources = {
             },
 
             OurStory: {
+                heading: "Our Story",
                 description: "Our story - It started with grandma and 9-year-old Nestor being bored on their way home from school, then came Aunt Parkour, and today Play Parkour offers parkour programs and classes for all ages. The instructors are experienced and help students develop their strength, agility, balance, and coordination. We also have an online platform where students can learn parkour at their own pace and in the comfort of their own home."
             },
 
@@ -152,6 +153,7 @@ const resources = {
             },
 
             OurStory: {
+                heading: "Våran Historia",
                 description: "Vår historia - Det började med mormor och 9-åriga Nestor som var uttråkade på vägen hem från skolan, sedan kom Faster Parkour, och idag erbjuder Play Parkour parkourprogram och kurser för alla åldrar. Instruktörerna är erfarna och hjälper eleverna att utveckla sin styrka, smidighet, balans och koordination. Vi har också en onlineplattform där eleverna kan lära sig parkour i sin egen takt och i bekvämligheten av sitt eget hem."
             },
 

@@ -87,3 +87,28 @@ input[type="checkbox"] {
 .grey-text {
     color: grey;
 }
+
+  /* Media query for screens up to 600px */
+
+  @media (max-width: 600px) {
+   
+  }
+  
+  /* Media query for screens between 600px and 900px */
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+      
+  }
+  
+  /* Media query for screens between 900px and 1200px */
+  
+  @media (min-width: 901px) and (max-width: 1200px) {
+     
+  }
+  
+  /* Media query for screens above 1200px */
+  
+  @media (min-width: 1201px) {
+     
+  
+  }

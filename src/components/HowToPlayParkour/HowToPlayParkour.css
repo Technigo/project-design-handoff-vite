@@ -15,8 +15,10 @@
 .images-wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
    gap: 10px;
    height: 150px;
+   max-width: 580px;
 }
 
 .image-container {
