@@ -1,6 +1,6 @@
 import { GetBendy } from "./reusableComponents/GetBendy"
 import { GetStrong } from "./reusableComponents/GetStrong"
-import { CircleGetVertical } from "./reusableComponents/circleGetVertical"
+import { CircleGetVertical } from "./reusableComponents/CircleGetVertical"
 
 export const MiddleSectionGet = () => {
     return (
