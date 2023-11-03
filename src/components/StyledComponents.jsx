@@ -71,17 +71,18 @@ export const HeroWrapper = styled.div``;
 export const HeroImage = styled.section`
   background-image: url(${HeroBg});
   background-size: cover;
-  background-position: center;
+  background-position: 50% 40%;
   background-repeat: no-repeat;
   height: 100vw;
   margin-bottom: 2.25vh;
   color: transparent;
 
   @media (min-width: 1440px) {
-    height: 43vh;
+    background-position: 50% 50%;
+    height: 75vh;
     color: #602C9E;
     text-align: center;
-    font-size: 34px;
+    font-size: 4.5rem;
 }
 `;
 
@@ -95,7 +96,7 @@ export const HeroImageText = styled.div`
     position: absolute;
     top: 65%;
     left: 40%;
-    transform: translate(-70%, -200%);
+    transform: translate(-60%, -90%);
     span {
       display: block;
       display: flex;
