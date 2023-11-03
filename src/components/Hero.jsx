@@ -16,7 +16,7 @@ export const Hero = () => {
     </HeroHeader>
     <HeroText>
     Take a break from the stress of daily life and embark on a journey towards self-discovery and healing.
-    Join our community of like-minded individuals, and together, let's explore the path to well-being, balance, and tranquility.
+    Join our community of like-minded individuals, and together, lets explore the path to well-being, balance, and tranquility.
     </HeroText>
     <HeroBookButton><Link to="/book">Book your free class!</Link></HeroBookButton>
     </HeroWrapper>
