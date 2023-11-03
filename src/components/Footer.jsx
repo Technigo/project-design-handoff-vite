@@ -14,6 +14,7 @@ const FooterContainer = styled.div`
     padding: 25px;
     background-color: white;
     color: #2A3439;
+    font-family: 'Inter';
 `;
 
 const LanguageContainer = styled.div`

@@ -27,14 +27,14 @@ const ContactContainer = styled.div`
     h2 {
         font-size: 32px;
         margin-bottom: 0.5rem;
-        font: 'Montserrat Subrayada';
+        font-family: 'Montserrat Subrayada';
         text-decoration: underline;
         margin-bottom:0px; 
     }
 
 
     p {
-        font: 'Electrolize';
+        font-family: 'Electrolize';
         margin-bottom:5px; 
         font-size: 16px;
     }

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
     display: flex;
+    flex-direction: column; // Stacks cards vertically on mobile
     justify-content: center;
     align-items: center;
     background-color: #2A3439;
@@ -11,7 +12,7 @@ const Container = styled.div`
 `;
 
 const Card = styled.div`
-    width: 140px; 
+    width: 140px;
     height: 238px;
     background-color: #D2FDFF;
     border: 1px solid #2A3439;
@@ -20,6 +21,8 @@ const Card = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
+    margin-bottom: 20px; // Spacing between cards on mobile
+
 `;
 
 const CardImage = styled.img`

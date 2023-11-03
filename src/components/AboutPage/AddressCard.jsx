@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 const AddressCardContainer = styled.div`
 background-color: #D2FDFF; /* Mint Green */
 border: 1px solid #2A3439; /* Gunmetal */
+font-family: 'Neuton', sans-serif;  /* Neuton font */
 border-radius: 5px;
 padding: 16px;
 display: flex; 

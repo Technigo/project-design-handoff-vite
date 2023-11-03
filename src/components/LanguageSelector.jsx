@@ -30,7 +30,7 @@ const DropdownContent = styled.div`
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     display: ${props => (props.$isOpen ? 'block' : 'none')}; // Note the change here
-    font: 'Electrolize';
+    font-family: 'Electrolize';
 `;
 
 

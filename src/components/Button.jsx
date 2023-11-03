@@ -6,7 +6,7 @@ const StyledButton = styled.button`
     border: none;
     color: #2A3439;
     font-size: 16px;
-    font: 'Montserrat Subrayada';
+    font-family: 'Montserrat Subrayada';
     cursor: pointer;
     border-radius: 10px;
 `;

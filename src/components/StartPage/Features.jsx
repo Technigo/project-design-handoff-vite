@@ -63,13 +63,13 @@ const FeatureContent = styled.div`
 const FeatureTitle = styled.h2`
 font-size: 32px;
 margin-bottom: 0.5rem;
-font: 'Montserrat Subrayada';
+font-family: 'Montserrat Subrayada';
 `;
 
 const FeatureText = styled.p`
 font-size: 16px;
 margin-bottom: 1rem;
-font: 'Electrolize';
+font-family: 'Electrolize';
 text-align: left;
 `;
 

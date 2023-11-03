@@ -4,6 +4,8 @@ import heroImage from '../../assets/HeroImage.png';
 import Button from '../Button.jsx';
 import { useTranslation } from 'react-i18next';
 
+const tablet = `(min-width: 768px)`;
+
 const HeroImageSection = styled.div`
     position: relative;
     width: 100%;
@@ -31,19 +33,25 @@ const HeroContent = styled.div`
     align-items: flex-start;
     padding: 20px;
     border-radius: 10px;
-`;
+
+    @media ${tablet} {
+        bottom: 20%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    `;
 
 const HeroTitle = styled.h1`
     font-size: 32px;
     margin-bottom: 0.5rem;
-    font: 'Montserrat Subrayada';
+    font-family: 'Montserrat Subrayada';
     text-decoration: underline;
 `;
 
 const HeroSubtitle = styled.p`
     font-size: 16px;
     margin-bottom: 1rem;
-    font: 'Electrolize';
+    font-family: 'Electrolize';
     text-align: left; 
 `;
 

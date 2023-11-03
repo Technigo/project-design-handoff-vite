@@ -15,11 +15,23 @@ const LocationSection = styled.div`
     padding: 16px;
     box-sizing: border-box;
     width: 100%;
+    position: relative; 
+
+    @media (min-width: 768px) { /* Tablet size */
+        background-size: contain;
+    }
 `;
 
 const GlobeImage = styled.img`
-width: 307px;
-height: 137px;
+    width: 307px;
+    height: 137px;
+
+    @media (min-width: 768px) { /* Tablet size */
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        z-index: 1; // Ensure the image is behind the content
+    }
 `;
 
 const LocationContent = styled.div`
@@ -32,18 +44,40 @@ const LocationContent = styled.div`
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    @media (min-width: 768px) { /* Tablet size */
+        position: absolute;
+        width: 174px;
+        height: 250px;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2; // Ensure the content is on top of the image
+        background-color: #D2FDFF; // Mint Green as per your request
+        color: #2A3439; // Gunmetal colored text
+    }
 `;
 
 const LocationTitle = styled.h1`
-    color: white;
+    color: #D2FDFF;
     text-align: center;
     margin: 0;
+
+    @media (min-width: 768px) { /* Tablet size */
+        color: #2A3439;  /* Gunmetal */
+    }
 `;
 
 const LocationText = styled.p`
-    color: white;
+    color: #D2FDFF;
     text-align: center;
     margin: 0;
+    font-family: 'Electrolize';
+
+    @media (min-width: 768px) { /* Tablet size */
+        color: #2A3439;  /* Gunmetal */
+        font-size: 16px;
+    }
 `;
 
 function Location() {
