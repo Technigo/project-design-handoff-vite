@@ -14,8 +14,8 @@ export const HeaderWrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
   color: #602C9E;
-  padding: 1.25vh 1.25vh 1.25vh 1.25vh;
-  background-color: #0033ff;
+  margin: 4.25vh 4.25vh 0vh 4.25vh;
+  background-color: #FFCC00;
 `;
 
 export const Logo = styled.div`
@@ -60,14 +60,14 @@ export const Hamburger = styled(HamburgerIcon)`
 `;
 
 export const ContentWrapper = styled.div`
-  margin: 4.8vh 0 0 0;
-
   @media (min-width: 1440px) {
-    margin: 4.8vh 7vh 0 7vh;
+    margin: 4.8vh 7vh 0vh 7vh;
 }
 `;
 
-export const HeroWrapper = styled.div``;
+export const HeroWrapper = styled.div`
+    color: #602C9E;
+`;
 
 export const HeroImage = styled.section`
   background-image: url(${HeroBg});
@@ -75,7 +75,6 @@ export const HeroImage = styled.section`
   background-position: 50% 40%;
   background-repeat: no-repeat;
   height: 100vw;
-  margin-bottom: 2.25vh;
   color: transparent;
 
   @media (min-width: 1440px) {
@@ -109,9 +108,31 @@ export const HeroImageText = styled.div`
   }
 `;
 
-export const HeroHeader = styled.section``;
+export const HeroHeader = styled.section`
+  display: none;
+  @media(min-width: 1440px) {
+    display: block;
+    font-size: 4.5rem;
+    line-height: 7.25rem;
+    span {
+      display: block;
+    }
+    background-color: #FFCC00;
+    padding: 4.8vh 1.25vh 4.8vh 1.25vh;
+  }
+`;
 
-export const HeroText = styled.section``;
+export const HeroText = styled.section`
+  display: none;
+  @media(min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.25rem;
+    flex-direction: row;
+    gap: 4.8vh;
+    padding: 4.8vh 1.25vh 4.8vh 1.25vh;
+  }
+`;
 
 export const HeroBookButton = styled.button`
   display: none;
@@ -126,12 +147,12 @@ export const AboutUsWrapper = styled.section`
 `;
 
 export const BenefitsWrapper = styled.section`
-  background-color: #33DD00;
-  text-align: left;
+
 `;
 
 export const BenefitsHeader = styled.section`
   text-align: center;
+  background-color: #33DD00;
 `;
 
 export const ContentSection = styled.section`
