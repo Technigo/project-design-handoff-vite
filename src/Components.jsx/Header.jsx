@@ -4,11 +4,7 @@ export const Header = () => {
   return (
     <div className="header">
       <img className="bubbles" src="./Images/Gym-bubble.png" alt="Gym bubble" />
-      <img
-        className="bubbles"
-        src="./public/Images/Spa-1.png"
-        alt="Spa bubble"
-      />
+      <img className="bubbles" src="./Images/Spa-1.png" alt="Spa bubble" />
       <img
         className="bubbles"
         src="./Images/Co-working.png"

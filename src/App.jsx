@@ -18,7 +18,6 @@ export const App = () => {
                   <Navbar />
                   <Header />
                   <InfoPage />
-                  <Footer />
                 </>
               }
             />

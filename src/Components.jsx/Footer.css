@@ -1,0 +1,83 @@
+/* CSS for the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+}
+
+.footer img {
+  height: 10%;
+}
+
+.subscribe {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.subscribe label {
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.subscribe input {
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #333;
+  border-bottom: solid 2px #fff;
+  color: white;
+  font-size: 20px;
+}
+
+.subscribe button {
+  background-color: #eef1f4;
+  color: rgb(59, 56, 56);
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+}
+
+.subscription-message {
+  color: rgb(188, 234, 188);
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.error-message {
+  color: rgb(237, 129, 129);
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* CSS for the columns using Flexbox */
+.footer-information {
+  display: flex;
+}
+/* CSS for each column */
+.column {
+  flex: 1; /* Distribute available space equally among columns */
+  padding: 20px;
+}
+
+/* CSS for the title lines */
+.title-line {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* CSS for the text under each title */
+.column p {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.white-line {
+  width: 90%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+}
