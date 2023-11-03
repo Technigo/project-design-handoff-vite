@@ -14,7 +14,7 @@ export const HeaderWrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
   color: #602C9E;
-  padding: 1.25vh 3.69vh 1.25vh 3.69vh;
+  padding: 1.25vh 1.25vh 1.25vh 1.25vh;
 `;
 
 export const Logo = styled.div`
