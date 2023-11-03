@@ -222,6 +222,7 @@ border-left: none;
 border-top: none;
 border-right:none ;
 padding: 10px;
+background-color: transparent;
 }
 .submit-btn{
 
@@ -428,4 +429,18 @@ display: inline-block;
 .nav-list li{
   margin-bottom: 15px;
   font-size: 28px;
+}
+.fa-xmark{
+  font-weight: bold;
+  font-size: 32px;
+}
+form{
+  position: relative;
+}
+.animation{
+  position: absolute;
+  bottom: 150px;
+  z-index: -1;
+  opacity: .4;
+  left: 30px;
 }

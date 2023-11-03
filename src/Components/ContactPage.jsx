@@ -3,11 +3,28 @@
 import { useNavigate } from "react-router-dom"
 import { FooterSec } from "./FooterSec"
 import { Header } from "./Header"
+import Lottie from "lottie-react"
+import AnimationData from "./xBUg6Dlowr.json"
+import { useEffect, useRef } from "react"
 
 
 
 export const ContactPage = () => {
     const nav = useNavigate()
+    const lottieRef = useRef()
+
+    useEffect(() => {
+
+        if(lottieRef.current){
+            lottieRef.current.play()
+            setTimeout(()=>{
+                lottieRef.current.destroy()
+
+            },3000)
+        }
+
+    }, [])
+
   return (
     <div>
         <Header />
@@ -17,9 +34,13 @@ export const ContactPage = () => {
            <p>08-66 00 444</p>
            <span><i className="fa-solid fa-envelope"></i></span>
           <p>info@f4lcrossfit.com</p>
-
+         
+          
         </div>
         <div className="form">
+        <div className="animation">
+          <Lottie animationData={AnimationData} lottieRef={lottieRef} />
+          </div>
             <form action="" onSubmit={(e) => {
                 e.preventDefault()
                 nav("/")
