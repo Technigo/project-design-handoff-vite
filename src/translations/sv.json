@@ -1,34 +1,73 @@
 {
-    "frågor": [
+    "FAQ": "Vanliga frågor",
+    "questions": [
         {
-            "frågaId": 1,
-            "fråga": "Är poledance nybörjarvänligt?",
-            "svar": "Ja! Vi har klasser för alla nivåer. Du kommer att bli förvånad över vad din kropp kommer att kunna åstadkomma!"
+            "questionId": 1,
+            "question": "Är poledance nybörjarvänligt?",
+            "answer": "Ja! Vi har klasser för alla nivåer. Du kommer att bli förvånad över vad din kropp kommer att kunna åstadkomma!"
         },
         {
-            "frågaId": 2,
-            "fråga": "Måste man vara i form för att börja med poledancing?",
-            "svar": "Nej! Våra klasser sträcker sig från nybörjarvänlig till elit. Klasserna är strukturerade på ett sätt som ger dina muskler det bästa sättet att gradvis förbereda sig för vad som väntar. Du kommer att bli starkare varje vecka utan att ens märka det, bara genom att ha kul!"
+            "questionId": 2,
+            "question": "Måste man vara i form för att börja med poledancing?",
+            "answer": "Nej! Våra klasser sträcker sig från nybörjarvänlig till elit. Klasserna är strukturerade på ett sätt som ger dina muskler det bästa sättet att gradvis förbereda sig för vad som väntar. Du kommer att bli starkare varje vecka utan att ens märka det, bara genom att ha kul!"
         },
         {
-            "frågaId": 3,
-            "fråga": "Hur ska jag klä mig för poleclass?",
-            "svar": "Det beror på vilken klass du tar men i allmänhet bör du klä dig på ett sätt som du känner dig bekväm och kan röra dig fritt. För uppvärmningen kan du ha långärmat men för pole behöver du så mycket hudkontakt som möjligt med stången för att förhindra att du glider, vi rekommenderar en sport-bh och shorts. Om du föredrar långärmade byxor rekommenderar vi sticky pole pants. Vi tränar utan skor, förutom för exotisk stav."
+            "questionId": 3,
+            "question": "Hur ska jag klä mig för poleclass?",
+            "answer": "Det beror på vilken klass du tar men i allmänhet bör du klä dig på ett sätt som du känner dig bekväm och kan röra dig fritt. För uppvärmningen kan du ha långärmat men för pole behöver du så mycket hudkontakt som möjligt med stången för att förhindra att du glider, vi rekommenderar en sport-bh och shorts. Om du föredrar långärmade byxor rekommenderar vi sticky pole pants. Vi tränar utan skor, förutom för exotisk stav."
         },
         {
-            "frågaId": 4,
-            "fråga": "Hur långa klackar behöver jag för exotisk klass?",
-            "svar": "Det beror på vad du känner dig bekväm med. Om det är första gången du har klackar rekommenderar vi att du börjar med en låg klack och arbetar dig uppåt."
+            "questionId": 4,
+            "question": "Hur långa klackar behöver jag för exotisk klass?",
+            "answer": "Det beror på vad du känner dig bekväm med. Om det är första gången du har klackar rekommenderar vi att du börjar med en låg klack och arbetar dig uppåt."
         },
         {
-            "frågaId": 5,
-            "fråga": "Kan jag ta om en missad lektion?",
-            "svar": "Du kan ta igen en missad lektion inom kursperioden om lektionen inte är full. Vänligen meddela oss i förväg så att vi kan hjälpa dig att hitta den bästa lösningen."
+            "questionId": 5,
+            "question": "Kan jag ta om en missad lektion?",
+            "answer": "Du kan ta igen en missad lektion inom kursperioden om lektionen inte är full. Vänligen meddela oss i förväg så att vi kan hjälpa dig att hitta den bästa lösningen."
         },
         {
-            "frågaId": 6,
-            "fråga": "Kommer jag att ha min egen stav på klassen?",
-            "svar": "Ja, en stav per elev."
+            "questionId": 6,
+            "question": "Kommer jag att ha min egen stav på klassen?",
+            "answer": "Ja, en stav per elev."
         }
-    ]
+    ],
+    "infoPage": {
+        "openingHours": "OPENING HOURS",
+        "opening_hours_text": "Studions öppettider är i enlighet med tidtabellen.",
+        "mail": "Mail besvaras inom 24 timmar.",
+        "subway": "TUNNELBANA/TÅG",
+        "car": "BIL"
+    },
+    "newsPage": {
+        "text": "Håll dig uppdaterad om våra senaste nyheter, workshops, happenings, erbjudanden och mycket mer genom att prenumerera på vårt nyhetsbrev!",
+        "name": "Namn",
+        "email": "E-post",
+        "message": "Meddelande",
+        "send": "Skicka"
+    },
+    "article": {
+        "welcome": "Välkommen till Nordic Pole Academy",
+        "join": "Gå med i vårt stockholmsbaserade pole-community för att frigöra din potential oavsett vilken ambition du har!"
+    },
+    "button": [
+        {
+            "textfree": "Prova på!"
+        },
+        {
+            "textfree": "Våra klasser"
+        }
+    ],
+    "middleSection": {
+        "strong": "Bli stark",
+        "bendy": "Bli böjlig",
+        "vertical": "Bli Vertikal"
+    },
+    "explore": {
+        "discover": "upptäck våra kurser",
+        "signUp": "prenumerera på våra senaste nyheter"
+    },
+    "test": "för att testa",
+    "connect": "LÅT OSS ANSLUTA",
+    "language-button": "SVENSKA"
 }

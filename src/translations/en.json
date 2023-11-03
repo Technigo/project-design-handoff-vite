@@ -1,4 +1,5 @@
 {
+    "FAQ": "Frequently asked questions",
     "questions": [
         {
             "questionId": 1,
@@ -30,5 +31,43 @@
             "question": "Will I have my own pole on class?",
             "answer": "Yes, one pole per student."
         }
-    ]
+    ],
+    "infoPage": {
+        "openingHours": "OPENING HOURS",
+        "opening_hours_text": "The studios openings hours are in accordance with the timetable.",
+        "mail": "Mail will be answered within 24 h.",
+        "subway": "SUBWAY/TRAIN",
+        "car": "CAR"
+    },
+    "newsPage": {
+        "text": "Keep yourself updated with our latest news, workshops, happenings, offers and plenty more by signing up for our Newsletter!",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send"
+    },
+    "article": {
+        "welcome": "Welcome to Nordic Pole Academy",
+        "join": "Join our stockholm based pole community to unlock your potential no matter what your ambition!"
+    },
+    "button": [
+        {
+            "textfree": "Free Class!"
+        },
+        {
+            "textfree": "Our Classes"
+        }
+    ],
+    "middleSection": {
+        "strong": "Get Strong",
+        "bendy": "Get Bendy",
+        "vertical": "Get Vertical"
+    },
+    "explore": {
+        "discover": "discover our classes",
+        "signUp": "sign up for our latest news"
+    },
+    "test": "this is a test",
+    "connect": "LET'S CONNECT",
+    "language-button": "ENGLISH"
 }

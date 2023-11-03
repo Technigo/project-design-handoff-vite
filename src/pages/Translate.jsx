@@ -13,7 +13,7 @@ export const Translate = () => {
     };
 
     const englishFunc = () => changeLanguageFunc("en");
-    const swedishFunc = () => changeLanguageFunc("se");
+    const swedishFunc = () => changeLanguageFunc("sv");
 
     return (
         <>
