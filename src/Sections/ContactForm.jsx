@@ -6,12 +6,14 @@ const SectionWrapper = styled.div`
   flex-direction: row;
   gap: 32px;
 `
+
 const FormWrapper = styled.form`
   display: flex;
   flex-direction: column;
   gap: 32px;
   width: 100%;
 `
+
 const FormContent = styled.form`
   display: flex;
   flex-direction: column;
