@@ -5,7 +5,10 @@ import { SquareImage } from "../../../../components/reusable/SquareImage";
 export const KundaliniYoga = () => {
   return (
     <section id="kundalini-yoga">
-      <SquareImage imgUrl="./prayingwoman.png" imgAlt="" isTwoImages={false} />
+      <div className="square-image-container">
+        <img className="praying" src="./prayingwoman.png" alt="" />
+      </div>
+      {/* <SquareImage imgUrl="./prayingwoman.png" imgAlt="" isTwoImages={false} /> */}
       <div className="page-wrapper">
         <SectionTitle className="kundalini-title" title="Kundalini Yoga" />
         <div className="kundalini-info">
@@ -23,7 +26,10 @@ export const KundaliniYoga = () => {
           <span>Tell me EVERYTHING</span>
         </div>
       </div>
-      <SquareImage imgUrl="./incense.png" imgAlt="" isTwoImages={false} />
+      <div className="square-image-container">
+        <img className="incense" src="./incense.png" alt="" />
+      </div>
+      {/* <SquareImage imgUrl="./incense.png" imgAlt="" isTwoImages={false} /> */}
     </section>
   );
 };

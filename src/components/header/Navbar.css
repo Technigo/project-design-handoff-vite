@@ -72,6 +72,13 @@
   }
 }
 
+
+@media (min-width: 834px) {
+  .nav-container {
+    padding: 0 1rem;
+  }
+}
+
 /* .top-navbar {
   display: flex;
   align-items: center;

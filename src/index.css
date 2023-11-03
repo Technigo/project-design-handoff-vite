@@ -96,10 +96,14 @@ p {
 
 /* For large devices */
 @media (min-width: 1024px) {
+
 }
 
 /* For medium devices */
-@media (min-width: 744px) {
+@media (min-width: 834px) {
+  section {
+    margin: 0 1rem;
+  }
 }
 
 /* From mobile and for small devices */

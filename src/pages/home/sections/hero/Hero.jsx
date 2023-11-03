@@ -5,8 +5,9 @@ import { SpeechBubble } from "../../../../components/SpeechBubble";
 export const Hero = () => {
   return (
     <section id="hero">
+      <div className="imageOnBiggerScreens"><img src="./petra1.png" alt="" /></div>
       <div className="overlay"></div>
-      <SpeechBubble />
+      <SpeechBubble hideOnBiggerScreens={true}/>
       <div className="hero-wrapper">
         <h1 className="title">Sat nam, hi!</h1>
         <p>

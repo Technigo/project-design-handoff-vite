@@ -8,6 +8,10 @@ const StyledHeader = styled.header`
   position: absolute;
   width: 100%;
   z-index: 1000;
+
+  @media (min-width: 834px) {
+    position: static;
+  }
 `;
 
 export const Header = () => {

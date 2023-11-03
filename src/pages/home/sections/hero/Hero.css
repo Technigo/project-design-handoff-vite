@@ -7,6 +7,10 @@
   height: 100vh;
 }
 
+.imageOnBiggerScreens {
+  display: none;
+}
+
 .hero-wrapper {
   position: absolute;
   bottom: 0;
@@ -29,4 +33,31 @@
   height: 100%;
   width: 100%;
   position: absolute;
+}
+
+
+/* For medium devices */
+@media (min-width: 834px) {
+
+  #hero {
+    background-image: none;
+    position: static;
+    height: 100%;
+    display: flex;
+  }
+
+  .imageOnBiggerScreens {
+    display: block;
+  }
+  
+  .hero-wrapper {
+    position: static;
+    bottom: 0;
+    padding: 2rem;
+    width: 100%;
+    background-color: var(--marine);
+  }
+  .overlay {
+    display: none;
+  }
 }

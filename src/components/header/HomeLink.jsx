@@ -18,7 +18,7 @@ export const HomeLink = () => {
   // Check the pathname to determine the page
   if (location.pathname === "/") {
     linkText = "HOME";
-  } else if (location.pathname === "/want-more") {
+  } else if (location.pathname === "/about") {
     linkText = "Back";
     icon = <RiArrowLeftSLine className="icon" />;
   } else {
