@@ -1,11 +1,12 @@
 import { Translate } from "../pages/Translate"
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
-
+    const { t } = useTranslation(); // Add useTranslation() function to access 't' function
     return (
         <div className="mx-auto mt-auto pb-16 flex flex-col items-center justify-center w-5/6 font-raleway text-white text-base font-medium space-y-5">
             <img src="icons/horizontalRule.svg" alt="horizontal rule" className="" />
-            <h4>LETS CONNECT</h4>
+            <h4>{t('connect')}</h4>
             <div className="flex flex-row justify-center items-center gap-4 mx-auto">
 
                 <button aria-label="link to facebook">
@@ -41,7 +42,7 @@ export const Footer = () => {
             </div>
 
             <img src="icons/horizontalRule.svg" alt="horizontal rule" />
-            <h4>ENGLISH</h4>
+            <h4>{t("language-button")}</h4>
             <Translate />
         </div>
     )
