@@ -1,0 +1,48 @@
+header {
+    background-image: url(../../../public/assets/navElement.svg);
+    z-index: 1000;
+    background-color: var(--purplebright);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 8rem; 
+}
+
+.header-content-wrapper {
+    padding: 1.5rem 1.5rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logotype-logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo-img {
+    height: 3rem;
+}
+
+.header-logotype {
+    color: var(--yellow);
+    font-size: 1.5rem;
+}
+
+.header-search-nav-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.menu-icon {
+    stroke: var(--yellow);
+    height: 1.7rem;
+    width: 1.7rem;
+}
+.search-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}

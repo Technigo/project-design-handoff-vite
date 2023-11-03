@@ -1,23 +1,42 @@
+import { useState } from "react"
 import { NavLink } from "react-router-dom";
-import navElement from "../../../public/assets/navElement.svg";
 import { FiMenu } from "react-icons/fi";
-import searchIcon from "../../../public/assets/searchIcon.svg";
+import { useTranslation } from "react-i18next";
 import "./Nav.css";
-import { styled } from "styled-components";
 
-import logo from "../../../public/Logotype.svg";
 
 export const Nav = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    };
+
+    const { t } = useTranslation();
     return (
         <nav>
-            <div className="nav-content-wrapper">
-                <img className="logo-img" src={logo} alt="Logo" />
-                <p className="nav-logotype">YogaBalance</p>
-                <div className="nav-btn-container">
-                    <img src={searchIcon} className="search-icon" />
-                    <FiMenu className="menu-icon" />
-                </div>
-            </div>
+            <FiMenu className={`menu-icon ${menuOpen ? "open" : ""}`} onClick={toggleMenu}/>
+            <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+                <li>
+                    <NavLink to="/">{t("header.navbar.nav1")}</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/">{t("header.navbar.nav2")}</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/">{t("header.navbar.nav3")}</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/about">{t("header.navbar.nav4")}</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/about">{t("header.navbar.nav5")}</NavLink>
+                </li>
+                <li>
+                    <NavLink to="/">{t("header.navbar.nav6")}</NavLink>
+                </li>
+            </ul>
         </nav>
     );
 };
