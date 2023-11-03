@@ -6,7 +6,7 @@
     height: 5%;
     background-color: #1C1D23;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     padding: 4%;
     margin-top: 8%;
@@ -14,7 +14,6 @@
 
 .menu-toggle {
     color: #FFFFFF;
-    font-size: 180%;
     cursor: pointer;
     display: flex;
 }
@@ -24,21 +23,21 @@
 }
 
 .navbar-logo img {
-    width: 85%;
+    width: 70%;
     height: auto;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .navbar-profile {
     display: flex;
+    margin: -15%;
 }
 
 .navbar-profile img {
     width: 30%;
     cursor: pointer;
     padding-top: 3%;
+
 }
 
 /* ----- Making the content responsive ----- */

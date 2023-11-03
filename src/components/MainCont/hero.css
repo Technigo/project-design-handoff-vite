@@ -16,8 +16,6 @@
 }
 
 /* ----- Making the content responsive ----- */
-
-
 /* Desktops */
 @media (min-width: 1025px) {
     .hero {

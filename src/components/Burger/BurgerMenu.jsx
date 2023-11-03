@@ -8,10 +8,8 @@ export const BurgerMenu = () => {
         <div>
             <Menu
                 customBurgerIcon={<img src="/burger-icon.svg" />}
-                customCrossIcon={<img src="/exit-icon.svg" className="bm-cross" />}
-                className="menu-wrapper"
-                isOpen={true}
-                width={"626px"}
+                customCrossIcon={<img src="/exit-icon.svg" />}
+                width={"100%"}
                 left>
 
                 <ul className="menu-list">
@@ -60,5 +58,5 @@ export const BurgerMenu = () => {
                 </ul>
             </Menu>
         </div>
-    )
-}
+    );
+};
