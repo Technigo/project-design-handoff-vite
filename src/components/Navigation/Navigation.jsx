@@ -41,12 +41,12 @@ export const Navigation = ()  =>{
     <NavigationWrapper>
     <AppUl className="app-ul">
       <AppLi className="app-li">
-        <ActiveLink to="/" exact>
+        <ActiveLink to="/">
           <img src="./home.svg" alt="Home" />
         </ActiveLink>
       </AppLi>
       <AppLi className="app-li">
-        <ActiveLink to="/calendar">
+        <ActiveLink to="/contact-form">
           <img src="./calendar.svg" alt="Calendar" />
         </ActiveLink>
       </AppLi>

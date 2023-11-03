@@ -4,6 +4,8 @@ import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { AddressInfo } from "../components/Info/AddressInfo";
 
+
+
 export const Information = () => {
   const textOne = "You can have the best gear in the world, but it’s the athlete inside that gear that counts. Step one - getting here: ";
   const heroImageHome = "./infoHero.png"; 
