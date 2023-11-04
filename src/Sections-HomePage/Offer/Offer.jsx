@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next"
 export const Offer = () => {
   const { t } = useTranslation()
 
-    
   return (
     <section className="offer-section">
       <div className="offer-text-wrapper">

@@ -6,8 +6,8 @@ export const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <div className="hero-section">
-      {/* <div className="hero-content-wrapper"> */}
+    <section className="hero-section">
+
       <div className="heading-text-wrapper">
         <h1 className="hero-heading-h1">{t("Hero.h1")}</h1>
         <h2 className="hero-heading-h2">{t("Hero.h2")}</h2>
@@ -15,7 +15,7 @@ export const Hero = () => {
         <div className="join-button-container">
         <Button buttonText={t("Hero.button")} buttonClass={"join-button"}/>
         </div>
-        {/* </div> */}
-    </div>
+       
+    </section>
   )
 }

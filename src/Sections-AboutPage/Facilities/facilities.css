@@ -1,15 +1,30 @@
 .facilities-section {
     width: 100%;
+    
+    background-image: url("/Images/space-background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        /*Needed for stacking */
+        padding-bottom: 35px;
+}
+
+.facilities-text-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
     background: #1C1D23;
-    padding-top: 40px;
+    
 }
 
-.facilities-text-wrapper {
-    text-align: center;
-    margin: 30px;
+.facilities-headline {
+text-align: center;
 }
 
-.facilities-text-wrapper h1 {
+.facilities-headline h1 {
 color: #FFE03B;
 font-family: Roboto;
     font-size: 20px;
@@ -18,7 +33,7 @@ font-family: Roboto;
     line-height: normal;
 }
 
-.facilities-text-wrapper p {
+.facilities-headline p {
     color: #FFF;
         text-align: center;
         font-family: Roboto;
@@ -34,8 +49,6 @@ font-family: Roboto;
         flex-direction: row;
         overflow: auto;
         white-space: nowrap;
-        margin-top: 10%;
-        margin-bottom: 10%;
         width: 100%;
 }
 
@@ -61,11 +74,17 @@ font-family: Roboto;
 
 /*----- Media qury -----*/
 @media (min-width: 668px) {
-    .facilities-text-wrapper h1 {
+    .facilities-headline h1 {
         font-size: 40px;
     }
 
-    .facilities-text-wrapper p {
+    .facilities-headline p {
         font-size: 25px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .facilities-headline {
+        width: 600px;
     }
 }

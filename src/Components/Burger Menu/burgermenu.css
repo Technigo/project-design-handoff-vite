@@ -6,15 +6,12 @@ and can be found here: https: //www.npmjs.com/package/react-burger-menu. There i
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-    position: fixed;
-    width: 30px;
+    position:relative;
+    /* width: 30px;
     height: 30px;
     left: 0;
-    top: 8%;
+    top: 8%; */
 }
-
-
-
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
@@ -104,9 +101,6 @@ color: #FFE03B;
         top: 12%;
     }
 
-    /* .menu-item {
-        font-size: 45px;
-    } */
 }
 
 @media (min-width: 1025px) {

@@ -1,7 +1,6 @@
 .readMore-section {
     background: #1C1D23;
     margin: 0;
-    
 }
 
 .readMore-wrapper {
@@ -58,21 +57,3 @@
         gap: 90px;
     }
 }
-
-/* @media (min-width: 1025px) {
-    .readMore-text-container h1 {
-            font-size: 55px;
-        }
-    
-        .readMore-text-container p {
-            font-size: 45px;
-        }
-    
-        .readMore-section {
-            padding: 70px;
-        }
-    
-        .readMore-wrapper {
-            gap: 90px;
-        }
-} */

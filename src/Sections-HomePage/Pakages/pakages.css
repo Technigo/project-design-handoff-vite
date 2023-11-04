@@ -1,71 +1,10 @@
-/* .pakages-section {
-    color: #ffffff;
-}
-
-.pakages-wrapper {
-    /* display: flex;
-        flex-direction: row;
-        overflow: auto;
-        white-space: nowrap;
-        margin-top: 10%;
-        margin-bottom: 10%;
-        width: 100%;
-        gap: 25px; 
-
-        width: 100%;
-            /* Set the width of the carousel 
-            height: 100%;
-            overflow: auto;
-            display: flex;
-            /* Display course cards side by side 
-            scroll-behavior: smooth;
-            /* Enable smooth scrolling 
-            gap: 12px;
-}
-
-.pakage-text {
-    /* position: absolute; 
-}
-
-.pakages-wrapper::-webkit-scrollbar {
-    width: 0;
-    height: 0;
-}
-
-.pakage-img-container {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    text-wrap: nowrap;  
-}
-
-.pakage-img-container p {
-    /* position: absolute; 
-        margin-bottom: 5%;
-        align-self: center;
-        z-index: 1000;
-}
-
-.pakages-wrapper img {
-    width: 324px;
-    height: 441px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    object-fit: cover;  
-         
-}
-
-/*---- Media query ----
-
-@media (min-width: 667px) {
-    .pakages-wrapper img {
-        width: 531px;
-            height: 766px;
-    }
-} */
-
 .pakages-section {
     color: #ffffff;
+    background-image: url("/Images/space-background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative; 
 }
 
 .pakages-wrapper {
@@ -75,6 +14,7 @@
     display: flex;
     scroll-behavior: smooth;
     gap: 12px;
+    margin-top: 20px;
 }
 
 .pakages-wrapper::-webkit-scrollbar {
@@ -118,10 +58,18 @@
     object-fit: cover;
 }
 
-/* Media query for larger screens */
+/* ------ Media query ---------- */
+
 @media (min-width: 667px) {
     .pakage-image {
-        width: 531px;
-        height: 766px;
+        width: 400px;
+            height: 500px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .pakages-wrapper {
+        justify-content: space-evenly;
+        width: 100%;
     }
 }

@@ -7,7 +7,7 @@ const { t } = useTranslation()
 
 
   return (
-    <section className="readMore-section">
+ <section className="readMore-section">
   <div className="readMore-wrapper">
   <div className="readMore-text-container">
   <h1>{t("ReadMore.h1")}</h1>

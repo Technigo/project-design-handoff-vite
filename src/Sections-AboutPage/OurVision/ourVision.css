@@ -41,6 +41,7 @@
 @media (min-width: 668px) {
     .our-vision-text-wrapper h1 {
         font-size: 30px;
+        color: #ffffff;
     }
     .our-vision-text-wrapper p{
         font-size: 20px;
@@ -50,6 +51,7 @@
         position: absolute;
         width: 400px;
         right: 0;
+        margin: 50px;
     }
 
     .our-vision-wrapper {

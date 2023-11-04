@@ -1,11 +1,18 @@
 .membership-section {
     color: #ffffff;
-    margin: 35px 0px;
+    margin: 0px;
+    background-image: url("/Images/space-background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        /*Needed for stacking */
 }
 
 .membership-wrapper {
     display: flex;
     flex-direction: column;
+    margin: 35px 0px;
 }
 
 .membership-card {
@@ -50,6 +57,7 @@
     /* Center horizontally */
     transform: translate(-50%, -50%);
     /* Center the <h1> element */
+    text-wrap: nowrap;
 }
 
 .membership-card p {

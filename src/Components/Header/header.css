@@ -4,13 +4,14 @@
     color: #ffffff;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 65px;
     width: 100%;
     position: fixed;
     top: 35px;
     z-index: 1000; /*Set a high z-index value to ensure the header is above other content */
+    
 }
 
 .galactic-logo {
@@ -24,10 +25,13 @@
     width: 26px;  
 }
 
-/* .burger-icon {
-    height: 10px;
-    width: 25px;
-} */
+.burgermenu-container {
+width: fit-content;
+}
+
+
+/*--- Burgermenu styling ------ */
+
 
 /*------- Media query --------*/
 
@@ -40,7 +44,7 @@
     .galactic-logo {
         width: 378px;
         height: 58px;
-        margin-left: 50px;
+       
     }
 
     .dart-vader-icon {

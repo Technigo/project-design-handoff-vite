@@ -3,7 +3,13 @@ footer {
    flex-direction: column;
    gap: 35px;
    width: 100%;
-   margin-bottom: 35px;
+  
+background-image: url("/Images/space-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    /*Needed for stacking */
 }
 
 .footer-menu {
@@ -83,6 +89,7 @@ align-items: center;
 height: 106px;
 justify-content: space-between;
 padding: 10px;
+margin-bottom: 35px;
 }
 
 

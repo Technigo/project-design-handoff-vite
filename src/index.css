@@ -12,9 +12,6 @@ code {
 }
 
 body {
-  background-image: url("/Images/space-background.jpg");
-  background-repeat: repeat;
-  background-size: cover;
   margin: 0px;
 }
 
@@ -22,6 +19,7 @@ body {
   margin: 0px;
   max-width: 100vh;
 }
+
 
 a {
   text-decoration: none;

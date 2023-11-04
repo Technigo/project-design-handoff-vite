@@ -8,9 +8,11 @@ export const Facilities = () => {
 
   return (
     <section className="facilities-section">
-<div className="facilities-text-wrapper">
+<div className="facilities-text-section">
+    <div className="facilities-headline">
     <h1>{t("Facilities.h1")}</h1>
     <p>{t("Facilities.facilitiesText")}</p>
+    </div>
 </div>
 
 <div className="facilities-card-wrapper">
