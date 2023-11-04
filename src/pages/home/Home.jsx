@@ -2,7 +2,7 @@ import { Navbar } from "../../components/navbar/Navbar";
 import { IntroSection } from "../../sections/intro/IntroSection";
 import { ClassSection } from "../../sections/classSection/ClassSection";
 import "./home.css";
-import { YogaTypeSection } from "../../sections/yogatypesection/YogaTypeSection";
+import { YogaTypeSection } from "../../sections/sectionYogaType/YogaTypeSection.jsx";
 import { BenefitsOfYogaSection } from "../../sections/benefitsofyogaSection/BenefitsOfYogaSection";
 import { OurTeachersSection } from "../../sections/ourteachersSection/OurTeachersSection";
 import { AboutUsSection } from "../../sections/aboutusSection/AboutUsSection";
