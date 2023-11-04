@@ -40,9 +40,9 @@ const resources = {
     sv: {
         translation: {
             heading: "Bemästra grunderna i Pilates",
-            subheading: "Skulptera, svettas och flöda på mattan med hjälp av över 100 onlineklasser. Tillgängligt när du vill.",
+            subheading: "Skulptera, svettas och flowa på mattan med hjälp av över 100 onlineklasser. Tillgängligt när du vill.",
             joinTheMovement: "VAR MED I RÖRELSEN",
-            coreFlex: "KÄRNA OCH FLEXIBILITET",
+            coreFlex: "CORE OCH FLEXIBILITET",
             preNatal: "GRAVID",
             postNatal: "EFTER GRAVIDITET",
             foundation: "GRUND",
