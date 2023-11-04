@@ -49,13 +49,15 @@ export const Footer = () => {
 
   return (
     <div className="footer">
-      <img
-        className="white-logo"
-        src="./Images/whitelogo.png"
-        alt="Logo image"
-      />
-      <div className="subscribe">
-        <Email updateFormData={updateFormData} value={formData.email} />
+      <div className="first-box">
+        <img
+          className="white-logo"
+          src="./Images/whitelogo.png"
+          alt="Logo image"
+        />
+        <div className="subscribe">
+          <Email updateFormData={updateFormData} value={formData.email} />
+        </div>
       </div>
       <div className="footer-information">
         <div className="column">

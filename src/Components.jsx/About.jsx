@@ -1,15 +1,18 @@
 import "./About.css";
 import { VisitUs } from "./VisitUs";
+import { Link } from "react-router-dom";
 
 export const About = () => {
+  //When the home button is clicked, this function kicks in
+  const handleBack = () => {
+    navigate(-1);
+  };
+
   return (
     <div>
       <ul>
-        <button className="home-button"></button>
+        <Link to="/" className="home-button"></Link>
         <div className="navbar-buttons">
-          <button onClick={() => (window.location.href = "/about")}>
-            About us
-          </button>
           <button onClick={() => (window.location.href = "/membership")}>
             Membership
           </button>
