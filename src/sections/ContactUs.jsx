@@ -22,6 +22,9 @@ export const ContactUs = () => {
     const submitHandler = (event) => {
         event.preventDefault()
         console.log("Name: ", name, "Email: ", email, "Message: ", message)
+        setName("")
+        setEmail("")
+        setMessage("")
     }
 
     return(
