@@ -26,7 +26,6 @@ p {
 img:hover {
     transform: scaleX(1.25) scaleY(1.25);
     transition: ease 0.5s;
-
 }
 
 @media screen and (max-width: 667px) {
@@ -36,5 +35,15 @@ img:hover {
 
     .contentWrapper {
         max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+    .mainContainer {
+        /* margin: 1.5em; */
+    }
+
+    .contentWrapper {
+        max-width: 80%;
     }
 }

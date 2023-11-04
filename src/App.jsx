@@ -1,9 +1,10 @@
 import styles from './App.module.css'
-import { NavBar } from './components/NavBar/NavBar.jsx'
 import { Header } from './components/Header/Header.jsx'
 import { BeginnerCTA } from './components/CTAs/BeginnerCTA.jsx'
 import { SafetyCTA } from './components/CTAs/SafetyCTA.jsx'
 import { Questions } from './components/Questions/Questions.jsx'
+import { Benefits } from './components/Benefits/Benefits.jsx'
+import { Footer } from './components/Footer/Footer.jsx'
 
 export const App = () => {
   return (
@@ -14,7 +15,8 @@ export const App = () => {
           <BeginnerCTA />
           <SafetyCTA />
           <Questions />
-          {/* <NavBar /> */}
+          <Benefits />
+          <Footer />
         </div>
       </div>
     </>

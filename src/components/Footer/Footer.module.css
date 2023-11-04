@@ -1,0 +1,49 @@
+.mainContainer {
+    display: flex;
+    background-color: #40205A;
+}
+
+p {
+    color: white;
+    font-size: 17px;
+}
+
+.row1 {
+    display: flex;
+}
+
+.row2 {
+    display: flex;
+}
+
+.row3 {
+    display: flex;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+@media screen and (max-width: 667px) {
+    .mainContainer {
+        height: 18em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+   /*  .contentWrapper {
+        max-width: 95%;
+    } */
+
+    .row1, .row2, .row3 {
+        flex-direction: row;
+        gap: 3em;
+    }
+
+    .row1 img {
+        width: 212px;
+    }
+}

@@ -1,6 +1,5 @@
 body {
     background-color: #F2F2F2;
-    /* background-image: url('./assets/backgroundpattern.svg'); */
     background-repeat: repeat;
     font-family: 'Montserrat';
 }
@@ -11,20 +10,15 @@ h1 {
 }
 
 .siteContainer {
+    grid-column: 1 / 5;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .contentWrapper {
     display: flex;
-}
-
-.logoContainer {
-    padding: 70px;
-}
-
-.heroContainer {
-    grid-column: 4 / 5;
+    flex-direction: column;
+    max-width: 100%;
 }
 
 @media screen and (max-width: 667px) {
@@ -34,12 +28,18 @@ h1 {
 
     .contentWrapper {
         flex-direction: column;
-        gap: 1.5em;
+        gap: 3.5em;
     }
 }
 
 @media screen and (min-width: 668px) and (max-width: 1024px) {
     .siteContainer {
-        grid-template-columns: repeat, (2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    .contentWrapper {
+        flex-direction: column;
+        gap: 3.5em;
+        margin: 1.5em;
     }
 }
