@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const SubheadingWrapper = styled.div`
   display: flex;
@@ -27,29 +28,30 @@ const Subheading = styled.h2`
 `
 
 export const Subheadings = ({ sectionId }) => {
+  const { t } = useTranslation();
 
   const subheadingCollection = [
     {
       sectionId: 1,
       subheadingTexts: [
-        "Cardio", 
-        "HIIT", 
-        "Yoga", 
-        "Glutes", 
-        "Back", 
-        "Arms", 
-        "Zumba", 
-        "Stretch"
+        t("workout.subHeadings.cardio"), 
+        t("workout.subHeadings.hiit"), 
+        t("workout.subHeadings.yoga"), 
+        t("workout.subHeadings.glutes"), 
+        t("workout.subHeadings.back"), 
+        t("workout.subHeadings.arms"), 
+        t("workout.subHeadings.zumba"), 
+        t("workout.subHeadings.stretch")
       ]
     },
     { 
       sectionId: 2,
       subheadingTexts: [
-        "2 days a week", 
-        "3 days a week", 
-        "4 days a week", 
-        "Arms", 
-        "Back"
+        t("workoutPlans.subHeadings.one"), 
+        t("workoutPlans.subHeadings.two"), 
+        t("workoutPlans.subHeadings.three"), 
+        t("workoutPlans.subHeadings.four"), 
+        t("workoutPlans.subHeadings.five")
       ]
     }
   ]

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { HamburgerMenu } from "./HamburgerMenu";
 import styled from "styled-components";
+import { useTranslation } from 'react-i18next';
 
 const NavBarWrapper = styled.div`
   display: flex;
@@ -23,6 +24,7 @@ const Logo = styled.img`
 
 export const NavBarMobile = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <NavBarWrapper>
@@ -50,7 +52,7 @@ export const NavBarMobile = () => {
         </svg>
       </Button>
       {isVisible && <HamburgerMenu />}
-      <Link to="/"><Logo src="./images/Logo.png" alt="At Home Fitness logo" /></Link>
+      <Link to="/"><Logo src="./images/Logo.png" alt={t("mobileNav.logo.alt")} /></Link>
       <Button type="button">
         <svg 
           width="24" 

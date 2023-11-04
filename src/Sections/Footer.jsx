@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { LanguageSelector } from "../Components/LanguageSelector";
 
 const FooterWrapper = styled.footer`
   display: flex;
@@ -59,6 +61,8 @@ const StyledLink = styled(NavLink)`
 `
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <FooterWrapper>
       <FooterUl>
@@ -72,7 +76,7 @@ export const Footer = () => {
           <StyledLink to="/about">About Us</StyledLink>
         </li>
         <li>
-          <FooterLink href="#">Language</FooterLink>
+          <FooterLink href="#"><LanguageSelector /></FooterLink>
         </li>
       </FooterUl>
     </FooterWrapper>

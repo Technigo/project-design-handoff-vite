@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const Heading = styled.h1`
   font-size: var(--heading-size-mobile);
@@ -16,35 +17,36 @@ const Heading = styled.h1`
 `
 
 export const Headings = ({ sectionId }) => {
+  const { t } = useTranslation();
 
   const headingCollection = [
     {
       sectionId: 1,
-      text: "Workout"
+      text: t("workout.heading")
     },
     {
       sectionId: 2,
-      text: "Workout plans"
+      text: t("workoutPlans.heading")
     },
     {
       sectionId: 3,
-      text: "Reviews"
+      text: t("reviews.heading")
     },
     {
       sectionId: 4,
-      text: "Trainers"
+      text: t("trainers.heading")
     },
     {
       sectionId: 5,
-      text: "About us"
+      text: t("about.heading")
     },
     {
       sectionId: 6,
-      text: "Contact us"
+      text: t("contact.heading")
     },
     {
       sectionId: 7,
-      text: "Social media"
+      text: t("soMe.heading")
     }
   ];
   

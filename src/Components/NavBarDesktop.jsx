@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const NavBarWrapper = styled.div`
   display: flex;
@@ -45,20 +46,22 @@ const TranslateBtn = styled.button`
 `
 
 export const NavBarDesktop = () => {
+  const { t } = useTranslation();
+
   return (
     <NavBarWrapper>
-      <Link to="/"><Logo src="./images/Logo.png" alt="AFH logo" /></Link>
+      <Link to="/"><Logo src="./images/Logo.png" alt={t("desktopNav.logo.alt")} /></Link>
       <nav>
-        <MenuUl className="flex flex-row space-x-4 w-full justify-between items-center">
-            <MenuLi>VIDEOS</MenuLi>
-            <MenuLi>WORKOUT PLANS</MenuLi>
-            <MenuLi>TRACKER</MenuLi>
-            <MenuLi>FAVOURITES</MenuLi>
+        <MenuUl>
+            <MenuLi>{t("desktopNav.videos")}</MenuLi>
+            <MenuLi>{t("desktopNav.plans")}</MenuLi>
+            <MenuLi>{t("desktopNav.tracker")}</MenuLi>
+            <MenuLi>{t("desktopNav.fav")}</MenuLi>
         </MenuUl>
       </nav>
       
       <SearchBtn type="button" className="flex flex-row">
-        SEARCH
+        {t("desktopNav.search")}
         <svg 
           width="24" 
           height="24" 
@@ -79,7 +82,7 @@ export const NavBarDesktop = () => {
         </svg>
       </SearchBtn>
 
-      <TranslateBtn type="button" className="language">
+      <TranslateBtn type="button">
         <svg 
             width="24" 
             height="24" 

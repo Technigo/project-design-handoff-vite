@@ -1,0 +1,116 @@
+{
+    "mobileNav": {
+        "logo": {
+            "alt": "Logotypen för At Home Fitness"
+        },
+        "hamburgerMenu": {
+            "login": "LOGGA IN",
+            "about": "OM OSS",
+            "membershipPlans": "MEDLEMSKAPSPLANER",
+            "contact": "KONTAKTA OSS"
+        }
+    },
+    "desktopNav": {
+        "logo": {
+            "alt": "Logotypen för At Home Fitness"
+        },
+        "videos": "VIDEOR",
+        "plans": "TRÄNINGSPROGRAM",
+        "tracker": "SPÅRARE",
+        "fav": "FAVORITER",
+        "search": "SÖK"
+    },
+    "heroSection": {
+        "image": {
+            "alt": "en kvinna sträcker sitt ben"
+        },
+        "title": "AT HOME FITNESS",
+        "motto": "Hjälper dig att röra dig i din komfortzon"
+    },
+    "workout": {
+        "heading": "TRÄNING",
+        "subHeadings": {
+            "cardio": "Kardio",
+            "hiit": "HIIT",
+            "yoga": "Yoga",
+            "glutes": "Glutes",
+            "back": "Rygg",
+            "arms": "Armar",
+            "zumba": "Zumba",
+            "stretch": "Stretch"
+        },
+        "videoTexts": [
+            {
+                "title": "HIIT",
+                "length": "10 min"
+            },
+            {
+                "title": "Lågintensiv kardio",
+                "length": "15 min"
+            },
+            {
+                "title": "Bandmotstånd",
+                "length": "7 min"
+            },
+            {
+                "title": "Glutebyggare",
+                "length": "20 min"
+            }
+        ]
+    },
+    "workoutPlans": {
+        "heading": "TRÄNINGSPROGRAM",
+        "subHeadings": {
+            "one": "2 dagar i veckan",
+            "two": "3 dagar i veckan",
+            "three": "4 dagar i veckan",
+            "four": "Armar",
+            "five": "Rygg"
+        },
+        "planTexts": [
+            "Glutebyggare",
+            "Flexibilitet",
+            "Styrka",
+            "Glutebyggare"
+        ]
+    },
+    "membership": {
+        "title": "Registrera dig för ett medlemskap för att låsa upp din fulla potential",
+        "text-1": "få träningsprogram anpassade för dig",
+        "text-2": "obegränsad tillgång till biblioteket",
+        "text-3": "tillgång till live-tränare",
+        "button": "REGISTRERA DIG FÖR MEDLEMSKAP"
+    },
+    "reviews": {
+        "heading": "RECENSIONER",
+        "info-1": {
+            "content": "Jag älskar att se spåraren och min framsteg!",
+            "name": "Cole",
+            "city": "Kansas City"
+        },
+        "info-2": {
+            "content": "Jag är svag för gratis saker, så att få en gratis video varje 5 dagar i rad jag avslutar har varit fantastiskt! Det motiverar mig att röra på kroppen :)",
+            "name": "Hannah",
+            "city": "Pennsylvania"
+        }
+    },
+    "trainers": {
+        "heading": "Trainers",
+        "names": [
+            "Natasha",
+            "Chloe",
+            "Taylor",
+            "Rich"
+        ]
+    },
+    "footer": {
+        "contact": "Kontakta oss",
+        "privacy": "Integritet & Kakor Inställning",
+        "about": "Om oss",
+        "languageSelector": {
+            "language": "Språk",
+            "english": "Engelska",
+            "swedish": "Svenska"
+        }
+    }
+}

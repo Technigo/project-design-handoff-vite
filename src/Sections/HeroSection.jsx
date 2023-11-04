@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const HeroWrapper = styled.section`
   margin: 35px 0;
@@ -54,22 +55,23 @@ const HeroMotto = styled.h4`
 
 export const HeroSection = () => {
   const isDesktop = window.innerWidth > 834;
+  const { t } = useTranslation();
 
   return (
     // conditionally display either text or both image and text depending on the screen size
     <>
       {isDesktop ? ( 
         <HeroWrapper>
-          <HeroImage src="./images/hero-image.png" alt="a woman stretching her leg" />
+          <HeroImage src="./images/hero-image.png" alt={t("heroSection.image.alt")} />
           <HeroTextDesktop className="hero-text">
-            <HeroTitle>AT HOME FITNESS</HeroTitle>
-            <HeroMotto>Helping you move in your comfort zone</HeroMotto>
+            <HeroTitle>{t("heroSection.title")}</HeroTitle>
+            <HeroMotto>{t("heroSection.motto")}</HeroMotto>
           </HeroTextDesktop>
         </HeroWrapper> 
       ) : (
         <HeroTextTablet className="hero-text">
-          <HeroTitle>AT HOME FITNESS</HeroTitle>
-          <HeroMotto>Helping you move in your comfort zone</HeroMotto>
+          <HeroTitle>{t("heroSection.title")}</HeroTitle>
+          <HeroMotto>{t("heroSection.motto")}</HeroMotto>
         </HeroTextTablet>
       )}      
     </>

@@ -1,0 +1,129 @@
+{
+    "mobileNav": {
+        "logo": {
+            "alt": "At Home Fitness logo"
+        },
+        "hamburgerMenu": {
+            "login": "LOG IN",
+            "about": "ABOUT US",
+            "membershipPlans": "MEMBERSHIP PLANS",
+            "contact": "CONTACT US"
+        }
+    },
+    "desktopNav": {
+        "logo": {
+            "alt": "At Home Fitness logo"
+        },
+        "videos": "VIDEOS",
+        "plans":"WORKOUT PLANS",
+        "tracker": "TRACKER",
+        "fav": "FAVOURITES",
+        "search": "SEARCH"
+    },
+    "heroSection": {
+        "image": {
+            "alt": "a woman stretching her leg"
+        },
+        "title": "AT HOME FITNESS",
+        "motto": "Helping you move in your comfort zone"
+    },
+    "workout": {
+        "heading": "workout",
+        "subHeadings": {
+            "cardio": "Cardio", 
+            "hiit": "HIIT", 
+            "yoga": "Yoga", 
+            "glutes": "Glutes", 
+            "back": "Back", 
+            "arms": "Arms", 
+            "zumba": "Zumba", 
+            "stretch": "Stretch"
+        }
+            
+       ,
+        "videoTexts": {
+            "one": {
+                "title": "HIIT",
+                "length": "10 min"
+            },
+            "two": {
+                "title": "Low impact cardio",
+                "length": "15 min"
+            },
+            "three": {
+                "title": "Band resistance",
+                "length": "7 min"
+            },
+            "four": {
+                "title": "Glute builder",
+                "length": "20 min"
+            }
+        }             
+    },
+    "workoutPlans": {
+        "heading": "Workout plans",
+        "subHeadings": {
+            "one": "2 days a week", 
+            "two": "3 days a week", 
+            "three": "4 days a week", 
+            "four": "Arms", 
+            "five": "Back"
+        },
+        "planTexts": {
+            "one": "Glute builder", 
+            "two": "Flexibility", 
+            "three": "Strength", 
+            "four": "Glute builder"
+        }
+            
+    },
+    "membership": {
+        "title": "Sign up for a membership to unlock your full potential",
+        "text-1": "get workout plans tailored to you",
+        "text-2": "unlimited access to library",
+        "text-3": "access to live trainers",
+        "button": "SIGN UP FOR MEMBERSHIP"
+    },
+    "reviews": {
+        "heading": "Reviews",
+        "info-1": {
+            "content": "I love seeing the tracker and my progress!",
+            "name": "Cole",
+            "city": "Kansas City"
+        },
+        "info-2": {
+            "content": "I am a sucker for free things so getting a free video every 5 days in a row I complete has been awesome! It motivates me to move my body :)",
+            "name": "Hannah",
+            "city": "Pennsylvania"
+        }
+    },
+    "trainers": {
+        "heading": "Trainers",
+        "names": [
+            "Natasha",
+            "Chloe",
+            "Taylor",
+            "Rich"
+        ]
+    },
+    "footer": {
+        "contact": "Contact us",
+        "privacy": "Privacy & Cookies Setting",
+        "about": "About us",
+        "languageSelector": {
+            "language": "Language",
+            "english": "English",
+            "swedish": "Swedish"
+        }
+    },
+    "about": {
+        "heading": "About us"
+    },
+    "contact": {
+        "heading": "Contact us"
+    }, 
+    "soMe": {
+        "heading": "Social media"
+    }
+       
+}

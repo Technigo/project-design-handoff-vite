@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const MenuWrapper = styled.nav`
   position: absolute;
@@ -66,22 +67,24 @@ const StyledLink = styled(NavLink)`
 `
 
 export const HamburgerMenu = () => {
+  const { t } = useTranslation();
+
   return (
     <MenuWrapper>
       <MenuUl>
         {/* Navigation links (hidden by default) */}
         <li className="menu-li">
-          <MenuLink href="#">LOG IN</MenuLink>
+          <MenuLink href="#">{t("mobileNav.hamburgerMenu.login")}</MenuLink>
         </li>
         <li className="menu-li">
           {/* NavLink components for navigation to the About us and Contact us pages. They will have an "active" class when the path matches "/about" or "/contact" */}
-          <StyledLink to="/about">ABOUT US</StyledLink>
+          <StyledLink to="/about">{t("mobileNav.hamburgerMenu.about")}</StyledLink>
         </li>  
         <li className="menu-li">
-          <MenuLink href="#">MEMBERSHIP PLANS</MenuLink>
+          <MenuLink href="#">{t("mobileNav.hamburgerMenu.membershipPlans")}</MenuLink>
         </li>
         <li className="menu-li">
-          <StyledLink to="/contact">CONTACT US</StyledLink>
+          <StyledLink to="/contact">{t("mobileNav.hamburgerMenu.contact")}</StyledLink>
         </li>
       </MenuUl>
     </MenuWrapper>
