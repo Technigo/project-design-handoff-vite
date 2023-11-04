@@ -16,13 +16,13 @@ const Layout = () => {
                         <Link to="/">
                             <Logo />
                         </Link>
-                        <div className="hidden md:flex gap-4">
+                        <div className="hidden md:flex items-center gap-4">
                             <Link to="/" className="font-bold py-3 px-2 rounded-full hover:text-blue-n hover:underline underline-offset-2 transition-all ease-out duration-300 flex gap-1">
                                 <span>CLASSES</span>
                                 <ArrowDown />
                             </Link>
                             <Link to="/about" className="font-bold px-2 py-3 rounded-full hover:text-blue-n hover:underline underline-offset-2 transition-all ease-out duration-300">ABOUT US</Link>
-                            <Link to="/" className="font-bold text-white-n border-2 text-blue-n border-blue-n px-8 py-3 rounded-full  hover:text-white-n hover:underline underline-offset-2 transition-all ease-out duration-300">LOG IN</Link>
+                            <Link to="/" className="font-bold border-2 text-blue-n border-blue-n px-8 py-3 rounded-full  hover:text-white-n hover:underline underline-offset-2 transition-all ease-out duration-300">LOG IN</Link>
                             <Link to="/" className="font-bold text-white-n bg-blue-n px-8 py-3 rounded-full hover:bg-beige-n hover:text-blue-n hover:underline underline-offset-2 transition-all ease-out duration-300">SIGN UP</Link>
                         </div>
                         <div className="md:hidden">
