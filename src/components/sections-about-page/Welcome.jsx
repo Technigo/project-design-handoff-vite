@@ -29,7 +29,6 @@ const StyledSection = styled.section`
     overflow-wrap: break-word; 
   }
 
-
   h1 {
     color: var(--white-red);
     font-size: 32px;
@@ -61,7 +60,6 @@ export const Welcome = () => {
           <p>{t("aboutPage.welcome.text1")}</p>
           <p>{t("aboutPage.welcome.text2")}</p>
         </div>
-     
       </StyledSection>
     </>
   );

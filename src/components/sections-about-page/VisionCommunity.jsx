@@ -1,9 +1,7 @@
 import styled from "styled-components"; 
-
 import { VisionCommunityCard } from "../VisionCommunityCard";
 
 const StyledSection = styled.section`
-
   @media (min-width: 667px) and (max-width: 1024px) {
       margin: 10% 22% 30% 22%; 
     }
@@ -13,13 +11,10 @@ const StyledSection = styled.section`
     }
 `
 
-
 export const VisionCommunity = () => {
   return (
   <StyledSection>
-   
     <VisionCommunityCard/>
- 
   </StyledSection>
   )
 }

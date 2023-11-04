@@ -18,7 +18,7 @@ const StyledSection = styled.section`
   justify-content: flex-end;
 
 
-  //Manipulating background image position in wide viewports
+  //Manipulating background image position in wide viewports. Since the background-size is set to "cover", it moves up when changing viewport, which upsets readability of the header. 
   @media (min-width: 1100px) {
   background-position: 90% 0%;  
   }
@@ -44,6 +44,7 @@ const StyledSection = styled.section`
     flex-direction: column; 
     gap: 16px; 
   }
+
   @media (min-width: 667px) and (max-width: 1024px) {
     .hero-content{
       margin: 135px 264px 115px 130px;  
@@ -63,8 +64,6 @@ const StyledSection = styled.section`
         flex-direction: row; 
     }
   }
-
-  
 `;
 export const Hero = () => {
   const {t} = useTranslation()

@@ -23,7 +23,6 @@ const StyledDiv = styled.div`
         @media (min-width: 1025px) {
           display: flex;  
 }
-
 `
 
 export const LinksWrapperRow = ({handleLinkClick}) => {

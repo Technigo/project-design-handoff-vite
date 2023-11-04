@@ -5,7 +5,6 @@ import { useTranslation } from "react-i18next";
 const StyledSection = styled.section`
   margin: 0 24px;
 
-
   .bigger {
     font-size: 18px;
   }
@@ -31,9 +30,7 @@ const StyledSection = styled.section`
     margin: 0 10%;
       .cards-wrapper {
       flex-direction: row; 
- 
   }
-  
   }
 `;
 

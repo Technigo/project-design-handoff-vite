@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { ScheduleComponent } from "../ScheduleComponent";
-import { DateDisplay } from "../DateDisplay";
+import { DateDisplay } from "../DateDisplay"; //Importing the dynamic date
 
 export const StyledSection = styled.section`
   margin: 132px 24px;
@@ -22,7 +22,6 @@ export const Schedule = () => {
   const {t} = useTranslation()
   return (
     <StyledSection>
-     
       <h4>{t("homePage.scheduleInfo.type")}</h4>
       <DateDisplay/>
       <div className="schedule-wrapper">

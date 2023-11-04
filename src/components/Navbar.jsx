@@ -2,7 +2,6 @@ import { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
 import { LinksWrapperColumn } from "./LinksWrapperColumn";
 import { LinksWrapperRow } from "./LinksWrapperRow";
 import { Button } from "./Button";
@@ -48,6 +47,8 @@ const StyledNav = styled.nav`
 
 export const Navbar = () => {
   const { t } = useTranslation();
+  
+  //State for showing/hiding links
   const [showLinks, setShowLinks] = useState(false);
 
   //Function to show/hide link-wrapper

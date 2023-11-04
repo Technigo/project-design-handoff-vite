@@ -1,7 +1,5 @@
 import { styled } from "styled-components";
 import { useTranslation } from "react-i18next"
-import enTranslation from "./translations/en.json"
-
 
 const StyledDiv = styled.div`
   display: flex;
@@ -30,10 +28,7 @@ const StyledDiv = styled.div`
   .tertiary-button {
    display: flex; 
   }
-
 `;
-
-//let scheduleArray = enTranslation.homePage.schedule //Path reference 
 
 export const ScheduleComponent = () => {
   const { t, ready } = useTranslation()
@@ -46,7 +41,6 @@ export const ScheduleComponent = () => {
       {schedules.map((schedule) => (
         
         <StyledDiv key={schedule.id}>
-          
           <div className="schedule-info">
             <div className="schedule-time">
               <p className="paragraph-class-white">
@@ -66,7 +60,6 @@ export const ScheduleComponent = () => {
               </p>
             </div>
           </div>
-
           <a className="tertiary-button tertiary-button-small">{schedule.book}</a>
         </StyledDiv>
       ))}

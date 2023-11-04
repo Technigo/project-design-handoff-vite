@@ -12,7 +12,6 @@ export const HomePage = () => {
       <Schedule/> 
       <Information />
       <Activities /> 
-     
     </>
   )
 }

@@ -1,9 +1,6 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next"
-
 import { ActivityCard } from "../ActivityCard";
-
-
 
 const StyledSection = styled.section`
   display: flex; 
@@ -27,14 +24,12 @@ const StyledSection = styled.section`
       .text-wrapper {
         margin-left: 12%; 
       }
-      
     }
 
     @media (min-width: 1025px) {
       .text-wrapper {
         margin-left: 12%; 
       }
-  
     }
   
   `

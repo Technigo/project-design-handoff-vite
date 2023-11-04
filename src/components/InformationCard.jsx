@@ -1,21 +1,12 @@
 import {styled} from "styled-components"
 import { useTranslation } from "react-i18next"
 
-// importing translations 
-import enTranslation from "./translations/en.json"
-
-//importing background images
-import backgroundPaths from "../data/background-paths.json"
-
-//Making variables of imports 
-const informationBackgrounds = backgroundPaths.homePage.information
-// let informationArray = enTranslation.homePage.information //kept for reference
-
+import backgroundPaths from "../data/background-paths.json" //importing background images
 
 const StyledDiv = styled.div`
   display: flex; 
   flex-direction: column; 
-  background: ${(props) => props.cardBackground};  
+  background: ${(props) => props.cardBackground};  //Receiving the background img as prop
   padding: 32px 16px; 
   gap: 16px; 
 
@@ -23,9 +14,9 @@ const StyledDiv = styled.div`
       width: 90px; 
       height: 90px; 
     }
-
- 
 `
+//Making variables of imports 
+const informationBackgrounds = backgroundPaths.homePage.information
 
 export const InformationCard = () => {
   const { t, ready } = useTranslation();
@@ -46,27 +37,5 @@ export const InformationCard = () => {
           </StyledDiv>
         ))}
       </>
-  //   <>
-  //   {Object.keys(cardInformation).map((key) => (
-  //       <StyledDiv key={key}>
-  //         <img src="/icons/prenatal-yoga-item.svg" alt="item showing a pregnant person doing yoga"/>
-  //         <h4>
-  //         {(cardInformation[key].type)}
-  //         </h4>
-          
-  //         <h2>
-  //         {cardInformation[key].heading}
-  //         </h2>
-
-  //         <p>
-  //         {cardInformation[key].bodyText}
-  //         </p>
-
-  //         <p className="tertiary-button">Read more</p>
-  //       </StyledDiv>
-  //     ))}
-  //  </>
   )
 }
-
-{/* <StyledDiv key={key} cardBackground={informationBackgrounds[key].background}> */} //Kept code

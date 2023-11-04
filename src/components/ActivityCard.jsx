@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { useTranslation } from "react-i18next"
-import backgroundPaths from "../data/background-paths.json"
+import backgroundPaths from "../data/background-paths.json" //importing the paths for the background images
 
 
 const StyledDiv = styled.div`
@@ -10,7 +10,7 @@ const StyledDiv = styled.div`
   padding: 0.5rem 1rem;
   height: 300px;
   width: 350px;
-  background-image: linear-gradient(#b035081a, #220901), url(${(props) => props.cardBackground});
+  background-image: linear-gradient(#b035081a, #220901), url(${(props) => props.cardBackground});//Receiving the background img as prop
   background-size: cover;
 
     .wrapper {
@@ -24,15 +24,10 @@ const StyledDiv = styled.div`
     }
 
 `;
-
-const backgroundsArray = backgroundPaths.homePage.activities
-
-// let activityArray = enTranslation.homePage.activities //Kept for reference
-
+const backgroundsArray = backgroundPaths.homePage.activities 
 
 export const ActivityCard = () => {
   const { t, ready } = useTranslation();
-
   const activities = t("homePage.activities", { returnObjects: true });
 
   if (!ready) return "loading translations...";

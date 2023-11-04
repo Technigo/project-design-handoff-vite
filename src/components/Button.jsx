@@ -18,6 +18,7 @@ export const Button = styled.button`
       cursor: pointer; 
     }
 
+    //Styling for the secondary button
     ${props => props.secondary && css`
     background: transparent; 
     color: var(--primary); 
@@ -29,6 +30,7 @@ export const Button = styled.button`
       }
     `}
 
+    //Styling for the button in navbar
     ${props => props.navbar && css`
     height: fit-content; 
     background: transparent; 

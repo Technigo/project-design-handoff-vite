@@ -13,7 +13,7 @@ const StyledDiv = styled.div`
         rgba(34, 9, 1, 0.6) 75.52%,
         #220901 97.4%
       ),
-      url(${(props) => props.cardBackground});
+      url(${(props) => props.cardBackground}); //Receiving the background img as prop
     background-size: cover;
     background-position: 50%;
   }
@@ -28,8 +28,6 @@ const StyledDiv = styled.div`
 `;
 const backgroundsArray = backgroundPaths.aboutPage.visionCommunity;
 
-//let visionsArray = enTranslation.aboutPage.visionCommunity; //Kept for reference
-
 export const VisionCommunityCard = () => {
   const { t, ready } = useTranslation();
 
@@ -40,12 +38,11 @@ export const VisionCommunityCard = () => {
     <>
       {visions.map((vision) => (
         <StyledDiv
-        
           key={vision.id}
-          cardBackground={backgroundsArray[vision.id - 1].background}
+          cardBackground={backgroundsArray[vision.id - 1].background} 
           aria-label={backgroundsArray[vision.id - 1].alt}
           role="img"
-        >
+        >{/*Sending the img path as prop */}
           <div
             className="image-container"
             role="img"

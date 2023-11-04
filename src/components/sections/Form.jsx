@@ -17,7 +17,7 @@ const StyledSection = styled.section`
   gap: 24px;
   justify-content: flex-end;
   padding: 0 24px;
-  text-align: center; 
+  text-align: center;
 `;
 
 const StyledForm = styled.form`
@@ -29,10 +29,9 @@ const StyledForm = styled.form`
   .input-fields {
     display: flex;
     flex-direction: column;
-    max-width: 381px; 
+    max-width: 381px;
     gap: 0.5rem;
   }
-
 `;
 
 const StyledInput = styled.input`
@@ -51,7 +50,7 @@ const StyledInput = styled.input`
 `;
 
 export const Form = () => {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   return (
     <>
       <StyledSection>
@@ -59,14 +58,22 @@ export const Form = () => {
         <p>{t("form.text")}</p>
         <StyledForm>
           <div className="input-fields">
-            <StyledInput type="text" name="name" value={t("form.name")} aria-label="name input"></StyledInput>
+            <StyledInput
+              type="text"
+              name="name"
+              value={t("form.name")}
+              aria-label="name input"
+            ></StyledInput>
             <StyledInput
               type="text"
               name="email-address"
               value={t("form.email-address")}
-              aria-label="email input"></StyledInput>
+              aria-label="email input"
+            ></StyledInput>
           </div>
-          <Button className={t("form.button")} aria-label="send">{t("form.button")}</Button>
+          <Button className={t("form.button")} aria-label="send">
+            {t("form.button")}
+          </Button>
         </StyledForm>
       </StyledSection>
     </>
