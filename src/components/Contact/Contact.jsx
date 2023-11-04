@@ -26,27 +26,27 @@ line-height: 160.5%; /* 51.36px */
 `
 
 export const Contact = () => {
-const [isContactModalOpen, setContactModalOpen] = useState(false);
+  const [showContactForm, setShowContactForm] = useState(false);
 
-const openContactModal = () => {
-setContactModalOpen(true);
-}
+  const openContactForm = () => {
+    setShowContactForm(true);
+  };
 
-const closeContactModal = () => {
-setContactModalOpen(false);
-}
+  const closeContactForm = () => {
+    setShowContactForm(false);
+  };
 
 const ContactText = "Just north of central Stockholm a few meters from the Roslagsbana train and E18, you will find EdgePerformance. We have ample parking as well as short-term living accommodations nearby at Scandic Täby. Täby Centrum with restaurants and entertainment are within a short walk.Join us as an individual or ask about team memberships. Individual Membership: 650:- / monthTeam Memberships: contact for more information"
 
 return (
-<>
-  <Link to="/contact-form">
-  <ContactButton label="CONTACT US" onClick={openContactModal} />
+  <>
+  <Link to="/contact-form"onClick={openContactForm} >
+    <ContactButton label="CONTACT US" />
   </Link>
-
+  {showContactForm && (
+    <ContactForm isOpen={showContactForm} onClose={closeContactForm} />
+  )}
   <ContactDescription text={ContactText} />
-  {isContactModalOpen &&
-  <ContactForm isOpen={isContactModalOpen} onClose={closeContactModal} />}
 </>
 )
 }
