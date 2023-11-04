@@ -22,9 +22,9 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem: This week was a fanastic experience and a good challenge. I really enjoyed the real-life aspect of taking a design and following specs to create it. Unfortunetly, my designer had some heath and scheduling issues that meant I have been coding with an incomplete design and was only give then hand-off on Wednesday morning. My designer did not attend our demos on Friday.
+Describe how you approached to problem: This week was a fanastic experience and a good challenge. I really enjoyed the real-life aspect of taking a design and following specs to create it. Unfortunetly, my designer had some heath and scheduling issues that meant I have been coding with an incomplete design, and was only given a hand-off on Wednesday morning. My designer did not attend our demos on Friday.
 
-As of Saturday, I have a complete homepage of desktop and tablet design to work from. I have no mobile design and no form/about me page. Therefore, my requirements as a coder cannot be met and I have informed Technigo of the situation. When my designer is complete I will continue to work on the project.
+As of Saturday, I have a complete homepage of desktop and tablet design to work from. I have no mobile design and no form/about me page. Therefore, my requirements as a developer cannot be met, and I have informed Technigo of the situation. When my designer is complete I will continue to work on the project.
 
 I had some styling issues this week: 
 1) There is a background image that covers both hero section and navbar section, I think I need to move my navbar component into the hero section?
@@ -32,11 +32,11 @@ I had some styling issues this week:
 3) The footer has also give me issues, trying to use grid box to aline the items as specified
 4) At this stage all language functionality is in the program and it is tested with a button at the bottom, I need to link this button to the rest of the components and fill out the .json files. I have started with the "About Us" section and once the button is working I will do the rest.
 
-What tools and techniques you used to solve it: I used React Router (Route, Routes, Link, NavLink) and ????? to handle language translation.
+What tools and techniques you used to solve it: I used React Router (Route, Routes, Link, NavLink) and i18next to handle language translation.
 
 What technologies did you use?: HTML5, CSS3, React, React Router, with Editor: VS Code
 
-If you had more time, what would be next?: I would have loved more time with the designer and a more complete design, but value the experience as this will no doubt happen in the real world. The designer made some difficult design choices that I found very hard to acheive as the developer.
+If you had more time, what would be next?: I would have loved more time with the designer and a more complete (and more simple!) design. I do value the experience as this will no doubt happen in the real world. The designer made some difficult design choices that I found very hard to acheive as the developer.
 
 ### View it live
 
