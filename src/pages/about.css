@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
 }
 
-/* needs fixing */
+
 .about-content {
     margin: 0 24px;
 }
@@ -15,11 +15,11 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    margin-bottom: 279px;
+    margin-bottom: 85%;
 }
 
 .about-headline-wrapper {
-    margin-top: 300px;
+    margin-top: 65%;
     width: 275px;
 }
 
@@ -45,5 +45,113 @@
 }
 
 .card-page-container h2 {
-    text-align: left;
+    margin-left: 10%;
+}
+
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+    .about-page-wrapper {
+        background-color: #374F4B;
+        background-image: url("../assets/background-image/about_background_desktop.png");
+        background-repeat: no-repeat;
+        background-size: auto 1066px;
+        background-position: -500px 110px;
+    }
+
+    .about-content {
+        width: 766px;
+        /*might have to change */
+        margin: 0 auto;
+    }
+
+    .about-hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 40px;
+        margin-bottom: 35%;
+    }
+
+    .about-headline-wrapper {
+        margin-top: 35%;
+        width: 50%
+    }
+
+    .about-hero-content h1 {
+        text-align: left;
+    }
+
+    .trial-about-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .trial-about-text {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .card-page-container h2 {
+        text-align: left;
+        margin: 0;
+    }
+}
+
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .about-page-wrapper {
+        background-color: #374F4B;
+        background-image: url("../assets/background-image/about_background_desktop.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0 30px;
+    }
+
+    .about-content {
+        width: 1288px;
+        margin: 0 auto;
+    }
+
+    .about-hero-content {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 224px, 24px, 49px;
+        gap: 16px;
+        margin-bottom: 35%;
+    }
+
+    .about-headline-wrapper {
+        margin-top: 40%;
+        grid-column: 5 / span 5;
+        width: 100%;
+    }
+
+    .about-hero-content h1 {
+        text-align: left;
+    }
+
+    .trial-about-wrapper {
+        grid-column: 5 / span 6;
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    .trial-about-text {
+        height: 40px; 
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .card-page-container h2 {
+        text-align: left;
+        margin: 0;
+    }
 }

@@ -15,11 +15,11 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    margin-bottom: 200px;
+    margin-bottom: 85%;
 }
 
 .headline-wrapper {
-    margin-top: 236px;
+    margin-top: 65%;
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -77,11 +77,11 @@
 
     .hero-text {
         gap: 40px;
-        margin-bottom: 222px;
+        margin-bottom: 35%;
     }
 
     .headline-wrapper {
-        margin-top: 204px;
+        margin-top: 30%;
         gap: 16px;
     }
 

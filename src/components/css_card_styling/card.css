@@ -110,7 +110,7 @@
         width: 374px;
     }
 
-    .card-text {
+    .card-text .home-card {
         justify-content: space-between;
         height: 192px;
     }
@@ -119,10 +119,13 @@
     .about-card-container {
         display: flex;
         flex-direction: column;
-        gap: 60px;
+        gap: 66px;
     }
 
-
+    .studio-text {
+        height: 296px;
+        justify-content: space-between;
+    }
 
 }
 
@@ -131,6 +134,10 @@
     .card-page-container {
         gap: 16px;
         padding-bottom: 60px;
+    }
+    .card-page-container {
+        gap: 20px;
+        padding-bottom: 40px;
     }
 
     .card-container {
@@ -160,4 +167,16 @@
         flex-direction: column;
         gap: 60px;
     }
+
+    .about-card-container {
+        display: flex;
+        flex-direction: column;
+        gap: 66px;
+    }
+
+    .studio-text {
+        height: 354px;
+        gap: 24px;
+    }
+
 }

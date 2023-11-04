@@ -5,12 +5,12 @@ export const AboutCard = ({ articleImage, imageAltText, studioCardText, headline
   return (
     <>
       <img src={articleImage} alt={imageAltText} className="about-card-image curved-image" />
-      <div className={`card-text ${className}`}>
+      <div className={`card-text studio-text ${className}`}>
         <PText
           className="paragraph-text"
           text={headline}
         />
-        <div className="studio-text">
+        <div>
           {studioCardText.map((text, index) => (
             <div key={index}>
               <PText
@@ -19,7 +19,6 @@ export const AboutCard = ({ articleImage, imageAltText, studioCardText, headline
               />
               {index < studioCardText.length - 1 && (
                 <>
-                  <br />
                   <br />
                 </>
               )}

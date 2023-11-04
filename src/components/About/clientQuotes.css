@@ -1,5 +1,5 @@
 .client-quote-wrapper {
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 24px;
 }
@@ -7,16 +7,16 @@
 .about-client-wrapper {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 16px;
 }
 
 .client-quote {
-    width: 342px;
-    height: 184px;
     display: flex;
+    height: 100%;
     padding: 24px;
     flex-direction: column;
-    gap: 16px;
+    justify-content: space-between;
     border-radius: 50px 50px 0px 50px;
 }
 
@@ -43,6 +43,14 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
     }
+
+    .client-quote {
+        height: 184px;
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 }
 
 
@@ -51,16 +59,22 @@
     .about-client-wrapper {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
         gap: 16px;
     }
 
     .quote-wrapper {
         width: 100%;
-        grid-column: span 4; 
-      }
+        grid-column: span 4;
+    }
 
-      .client-quote {
-        width: 420px;
-        height: 156px;
-      }
+    .client-quote {
+        height: 100%;
+        display: flex;
+        padding: 24px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+
 }

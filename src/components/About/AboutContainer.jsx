@@ -96,7 +96,10 @@ export const AboutContainer = () => {
             <div className="about-card-container">
                 <div className="card-container">
                     {about_studio_info.map((about_studio) => (
-                        <div className="about-card card" key={about_studio.id}>
+                        <div
+                            className="about-card card"
+                            key={about_studio.id}
+                        >
                             <AboutCard
                                 headline={about_studio.headline}
                                 articleImage={about_studio.image}
@@ -113,7 +116,10 @@ export const AboutContainer = () => {
                     <H2_Headline h2_headline={h2_headline_2} />
                     <div className="about-client-wrapper">
                         {client_quotes.map((client) => (
-                            <div className="quote-wrapper" key={client.id}>
+                            <div
+                                className="quote-wrapper"
+                                key={client.id}
+                            >
                                 <ClientQuotes
                                     clientQuote={client.text}
                                     clientName={client.name}
