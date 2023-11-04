@@ -10,20 +10,23 @@ export const App = () => {
     <>
       <div className="App">
         <BrowserRouter>
-          <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Navbar />
-                  <Header />
-                  <InfoPage />
-                </>
-              }
-            />
-            <Route path="/about" element={<About />} />
-          </Routes>
+          <main>
+            <Routes>
+              <Route
+                path="/"
+                element={
+                  <>
+                    <Navbar />
+                    <Header />
+                    <InfoPage />
+                  </>
+                }
+              />
+              <Route path="about/" element={<About />} />
+            </Routes>
+          </main>
         </BrowserRouter>
+
         <Footer />
       </div>
     </>

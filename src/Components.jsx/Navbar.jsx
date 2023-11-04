@@ -10,7 +10,7 @@ export const Navbar = () => {
 
         <ul>
           <div className="navbar-buttons">
-            <button onClick={() => (window.location.href = "/about")}>
+            <button onClick={() => (window.location.href = "about/")}>
               About us
             </button>
             <button onClick={() => (window.location.href = "/membership")}>
@@ -22,9 +22,10 @@ export const Navbar = () => {
             <button onClick={() => (window.location.href = "/opening-hours")}>
               Opening Hours
             </button>
-          </div>
 
-          <button className="sign-in-button">Sign in</button>
+            <button className="sign-in-button">Sign in</button>
+            <button>Swedish/English</button>
+          </div>
         </ul>
       </nav>
     </header>
