@@ -9,6 +9,6 @@ code {
 body {
   margin: 0;
   padding: 0;
-  display: block;
+  /* display: block; */
   font-family: "Poppins", sans-serif;
 }

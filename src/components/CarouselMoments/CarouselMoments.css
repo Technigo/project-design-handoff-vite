@@ -1,22 +1,40 @@
-.swiper-wrapper {
-  top: 100px;
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  top: 220px;
 }
 
-img.swiper-wrapper {
-  width: auto;
-  height: 297px;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  /* position: absolute; */
-  top: var(--swiper-navigation-top-offset, 50%);
-  width: calc(var(--swiper-navigation-size) / 44 * 27);
-  height: var(--swiper-navigation-size);
-  margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
-  z-index: 10;
-  cursor: pointer;
+.carousel-inner {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  width: 100%; /* Set width to 100% of the container */
+  margin-right: 24px; /* This should be the same as slideMarginRight in JSX */
+  /* flex: 0 0 auto;  */
+}
+
+.carousel-item:last-child {
+  margin-right: 0; /* No margin for the last item */
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
 }
