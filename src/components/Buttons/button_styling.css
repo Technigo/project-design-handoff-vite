@@ -13,6 +13,10 @@ button {
     align-items: center;
 }
 
+.new-question-btn {
+    width: 194px;
+}
+
 button:hover {
     background: #374F4B;
     transition: background 0.3s ease-in-out;

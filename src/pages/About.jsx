@@ -4,13 +4,13 @@ import { AboutContainer } from "../components/About/AboutContainer";
 import { H1_Headline } from "../components/Typography/H1_Headline";
 import { PText } from "../components/Typography/PText";
 import { FreeTrialBtn } from "../components/Buttons/FreeTrialBtn";
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
 
-
-  let h1_headline = "Discover Strength, Balance, and Inner Harmony Anywhere, Anytime";
-  let text = "Start a Free trial ▾";
-
+  const { t } = useTranslation();
+  let h1_headline = t("about.h1");
+  let text = t("about.text");
 
   return (
     <div className="about-page-wrapper">
@@ -29,7 +29,7 @@ export const About = () => {
             <FreeTrialBtn />
           </div>
         </div>
-          <AboutContainer />
+        <AboutContainer />
       </div>
     </div>
   )

@@ -6,14 +6,18 @@ import { H2_Headline } from "../components/Typography/H2_Headline";
 
 import { PText } from "../components/Typography/PText";
 import { FreeTrialBtn } from "../components/Buttons/FreeTrialBtn";
+import { useTranslation } from "react-i18next";
 
 export const HomePage = () => {
 
-    let h2_headline = "Online Yoga and Meditation";
-    let h1_headline = "Elevate Your Body, Mind, and Spirit";
-    let text_trial = "Free trial ➤";
+    const { t } = useTranslation();
 
-    
+    let h2_headline = t("homepage.hero1");
+    let h1_headline = t("homepage.hero2");
+    let text_trial = t("homepage.hero3");
+
+
+
     return (
         <div className="home-page-wrapper">
             <div className="hero-content">
@@ -40,7 +44,7 @@ export const HomePage = () => {
                         <FreeTrialBtn />
                     </div>
                 </div>
-                    <HomeContainer />
+                <HomeContainer />
             </div>
         </div>
     )

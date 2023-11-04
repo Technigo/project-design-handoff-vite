@@ -11,6 +11,12 @@
     gap: 24px;
 }
 
+.ask-new-question-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+}
 
 .form-content {
     display: flex;
@@ -25,14 +31,39 @@
     gap: 3px;
 }
 
+.ask-new-question-wrapper img {
+    width: 165px;
+}
+
 .contact-info-wrapper {
     display: flex;
     align-items: flex-start;
     gap: 21px;
 }
 
+.contact-info-wrapper img {
+    width: 62px;
+    height: 62px;
+}
+
 .contact-info {
     display: flex;
     flex-direction: column;
     gap: 16px;
+    width: 259px;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid #71A59C;
+    background: #FFF;
+    height: 40px;
+    width: 100%;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid #71A59C;
+    background: #FFF;
+    width: 100%;
 }

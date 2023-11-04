@@ -1,0 +1,23 @@
+{
+    "header": {
+        "link1": "Klasser",
+        "link2": "Instruktörer",
+        "link3": "Om oss",
+        "link4": "Logga in"
+    },
+    "homepage": {
+        "hero1": "Online Yoga och Meditation",
+        "hero2": "Lyft din kropp, sinne och själ",
+        "hero3": "Gratis provperiod ➤"
+    },
+    "about": {
+        "h1": "Upptäck styrka, balans och inre harmoni var som helst, när som helst",
+        "text": "Börja en gratis provperiod"
+      },
+    "footer": {
+        "footerLink1": "Kontakta oss",
+        "footerLink2": "FAQ",
+        "footerLink3": "Engelska",
+        "footerLink4": "Svenska"
+    }
+}
