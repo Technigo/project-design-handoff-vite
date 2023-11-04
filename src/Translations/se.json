@@ -41,12 +41,15 @@
         },
         "inPersonClasses": {
             "h2": "Pass på plats",
-            "inPersonClassesParagraph": "Vår ljusa studio ligger i centrala London och är en fristad för alla. Detta är en plats att andas och sträcka på sig, men framför allt är detta en plats för gemenskap.\nVi erbjuder pass på alla nivåer med en blandning av kraftfulla flöden tillsammans med återställande poser för att dra full nytta av träningen.\nYogamattor och tillbehör finns tillgängliga i studion, men du är välkommen att ta med dina egna.",
+            "inPersonClassesParagraph1": "Vår ljusa studio ligger i centrala London och är en fristad för alla. Detta är en plats att andas och sträcka på sig, men framför allt är detta en plats för gemenskap.",
+            "inPersonClassesParagraph2": "Vi erbjuder pass på alla nivåer med en blandning av kraftfulla flöden tillsammans med återställande poser för att dra full nytta av träningen.",
+            "inPersonClassesParagraph3": "Yogamattor och tillbehör finns tillgängliga i studion, men du är välkommen att ta med dina egna.",
             "inPersonClassesButton": "Boka ett pass"
         },
         "virtualClasses": {
             "h2": "Virtuella pass",
-            "virtualClassesParagraph": "Träna hemifrån och i din egen takt. Vi har ett urval av över 150 onlinepass för alla nivåer med nya videor som läggs till varje vecka.\nVi erbjuder pass på alla nivåer med en blandning av kraftfulla flöden tillsammans med återställande poser för att dra full nytta av träningen.",
+            "virtualClassesParagraph1": "Träna hemifrån och i din egen takt. Vi har ett urval av över 150 onlinepass för alla nivåer med nya videor som läggs till varje vecka.",
+            "virtualClassesParagraph2": "Vi erbjuder pass på alla nivåer med en blandning av kraftfulla flöden tillsammans med återställande poser för att dra full nytta av träningen.",
             "virtualClassesButton": "Bläddra bland våra pass"
         },
         "footer": {
@@ -81,7 +84,9 @@
     "aboutUs": {
         "topContent": {
             "h1": "Om oss",
-            "aboutUsParagraph": "Align Yoga Studio grundades 2014 med ett enda mål i åtanke, att få människor att bli fascinerade av rörelsens transformatoriska kraft för att hjälpa dem att bli friskare, lyckligare och mer energiska. Det som började som en enda yogastudio i centrala London har nu blivit ett mångfacetterat globalt hälso- och yogamärke som inte liknar något annat. Vårt passionerade team och fantastiska lärare hjälper dig att rensa ditt sinne, omvandla din kropp och ha roligt - varje gång, var du än är i världen.\nVi erbjuder pass på alla nivåer med en blandning av kraftfulla flöden tillsammans med återställande poser för att dra full nytta av träningen. Vår Londonsstudio är en fristad för alla. Detta är en plats att andas och sträcka på sig, men framför allt är detta en plats för gemenskap. Vår onlineplattform, Align At Home, ger dig kraften att förbli stark, hålla dig frisk och bli inspirerad när som helst, var som helst.\nVår mission är att ge alla, överallt, kraften att äga sitt livs rytm. Det är därför vi finns till, och tillsammans med följande kärnvärden driver vi allt vi säger och gör."
+            "aboutUsParagraph1": "Align Yoga Studio grundades 2014 med ett enda mål i åtanke, att få människor att bli fascinerade av rörelsens transformatoriska kraft för att hjälpa dem att bli friskare, lyckligare och mer energiska. Det som började som en enda yogastudio i centrala London har nu blivit ett mångfacetterat globalt hälso- och yogamärke som inte liknar något annat. Vårt passionerade team och fantastiska lärare hjälper dig att rensa ditt sinne, omvandla din kropp och ha roligt - varje gång, var du än är i världen.",
+            "aboutUsParagraph2": "Vi erbjuder pass på alla nivåer med en blandning av kraftfulla flöden tillsammans med återställande poser för att dra full nytta av träningen. Vår Londonsstudio är en fristad för alla. Detta är en plats att andas och sträcka på sig, men framför allt är detta en plats för gemenskap. Vår onlineplattform, Align At Home, ger dig kraften att förbli stark, hålla dig frisk och bli inspirerad när som helst, var som helst.",
+            "aboutUsParagraph3": "Vår mission är att ge alla, överallt, kraften att äga sitt livs rytm. Det är därför vi finns till, och tillsammans med följande kärnvärden driver vi allt vi säger och gör."
         },
         "missionParagraph": "Vår mission är att inspirera, koppla samman och ge kraft åt så många människor som möjligt över hela världen genom den positiva rörelsens kraft",
         "ourPeople": {

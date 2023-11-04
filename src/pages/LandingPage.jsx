@@ -19,7 +19,9 @@ export const LandingPage = () => {
                 linkTo={"/classes"}
                 altText={"Image of a woman in a bridge yoga pose"}
                 textImageHeading={t("landingPage.inPersonClasses.h2")}
-                textImageParagraph={t("landingPage.inPersonClasses.inPersonClassesParagraph")}
+                textImageParagraph1={t("landingPage.inPersonClasses.inPersonClassesParagraph1")}
+                textImageParagraph2={t("landingPage.inPersonClasses.inPersonClassesParagraph2")}
+                textImageParagraph3={t("landingPage.inPersonClasses.inPersonClassesParagraph3")}
                 className={"green thick"}
                 textImageButton={t("landingPage.inPersonClasses.inPersonClassesButton")} />
             {/* By passing the imageOnLeft prop false here, the component will render with the image on the right */}
@@ -29,7 +31,8 @@ export const LandingPage = () => {
                 src={"./assets/images/yoga-studio-image4.jpg"}
                 altText={"Image of a woman meditating"}
                 textImageHeading={t("landingPage.virtualClasses.h2")}
-                textImageParagraph={t("landingPage.virtualClasses.virtualClassesParagraph")}
+                textImageParagraph1={t("landingPage.virtualClasses.virtualClassesParagraph1")}
+                textImageParagraph2={t("landingPage.virtualClasses.virtualClassesParagraph2")}
                 className={"brown-to-green thick"}
                 textImageButton={t("landingPage.virtualClasses.virtualClassesButton")} />
         </>

@@ -41,12 +41,15 @@
         },
         "inPersonClasses": {
             "h2": "In person classes",
-            "inPersonClassesParagraph": "Our bright studio is located in central London and is a sanctuary for all. This is a place to breathe and stretch, but most of all, this is a place of community.\nWe offer classes at all levels with a mix of powerful flows paired with restorative poses to the full benefit of the practice.\nYoga mats and props are available at the studio but you are welcome to bring your own.",
+            "inPersonClassesParagraph1": "Our bright studio is located in central London and is a sanctuary for all. This is a place to breathe and stretch, but most of all, this is a place of community.",
+            "inPersonClassesParagraph2": "We offer classes at all levels with a mix of powerful flows paired with restorative poses to the full benefit of the practice.",
+            "inPersonClassesParagraph3": "Yoga mats and props are available at the studio but you are welcome to bring your own.",
             "inPersonClassesButton": "Book a class"
         },
         "virtualClasses": {
             "h2": "Virtual classes",
-            "virtualClassesParagraph": "Practice from the comfort of your own home and on your own schedule. We have a selection of 150+ online classes for all levels with new videos added weekly.\nWe offer classes at all levels with a mix of powerful flows paired with restorative poses to the full benefit of the practice.",
+            "virtualClassesParagraph1": "Practice from the comfort of your own home and on your own schedule. We have a selection of 150+ online classes for all levels with new videos added weekly.",
+            "virtualClassesParagraph2": "We offer classes at all levels with a mix of powerful flows paired with restorative poses to the full benefit of the practice.",
             "virtualClassesButton": "Browse our classes"
         },
         "footer": {
@@ -81,7 +84,9 @@
     "aboutUs": {
         "topContent": {
             "h1": "About us",
-            "aboutUsParagraph": "Align Yoga Studio was founded in 2014 with one goal in mind, to get people hooked on the transformative power of movement to help them become healthier, happier, and more energetic. What started as a single yoga studio in the centre of London has now become a multifaceted global health and yoga brand like no other. Our passionate team and amazing teachers help you clear your mind, transform your body, and have fun – every single time class, wherever you are in the world.\nWe offer classes at all levels with a mix of powerful flows paired with restorative poses to the full benefit of the practice. Our London studio is a sanctuary for all. This is a place to breathe and stretch, but most of all, this is a place of community. Our online platform, Align At Home, gives you the power to stay strong, stay healthy, and stay inspired anytime, anywhere.\nOur mission is to empower everyone, everywhere to own their life’s beat. That is why we exist, and together with the following core values drives everything we say and do."
+            "aboutUsParagraph1": "Align Yoga Studio was founded in 2014 with one goal in mind, to get people hooked on the transformative power of movement to help them become healthier, happier, and more energetic. What started as a single yoga studio in the centre of London has now become a multifaceted global health and yoga brand like no other. Our passionate team and amazing teachers help you clear your mind, transform your body, and have fun – every single time class, wherever you are in the world.",
+            "aboutUsParagraph2": "We offer classes at all levels with a mix of powerful flows paired with restorative poses to the full benefit of the practice. Our London studio is a sanctuary for all. This is a place to breathe and stretch, but most of all, this is a place of community. Our online platform, Align At Home, gives you the power to stay strong, stay healthy, and stay inspired anytime, anywhere.",
+            "aboutUsParagraph3": "Our mission is to empower everyone, everywhere to own their life’s beat. That is why we exist, and together with the following core values drives everything we say and do."
         },
         "missionParagraph": "Our mission is to inspire, connect and empower as many people from all over the world through the power of positive movement",
         "ourPeople": {

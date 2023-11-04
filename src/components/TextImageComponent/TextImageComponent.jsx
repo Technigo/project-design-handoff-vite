@@ -7,7 +7,9 @@ export const TextImageComponent = ({
     src,
     altText,
     textImageHeading,
-    textImageParagraph,
+    textImageParagraph1,
+    textImageParagraph2,
+    textImageParagraph3,
     linkTo,
     className,
     textImageButton,
@@ -22,7 +24,9 @@ export const TextImageComponent = ({
                 )}
                 <article className="text-image-block-text">
                     <h2>{textImageHeading}</h2>
-                    <p>{textImageParagraph}</p>
+                    <p>{textImageParagraph1}</p>
+                    <p>{textImageParagraph2}</p>
+                    <p>{textImageParagraph3}</p>
                     <div className="button-container">
                         <Button linkTo={linkTo} className={className} text={textImageButton} />
                     </div>
