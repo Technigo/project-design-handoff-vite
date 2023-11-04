@@ -38,9 +38,15 @@
     "aboutcontainer": {
         "h2": [
             "Om YOMY",
-            "Våra Klienter - Om Resan"
+            "Våra klienter - om resan"
         ],
         "about_studio": {
+            "headline": [
+                "Vår mission",
+                "Vår filosofi",
+                "Våra instruktörer",
+                "Vår Online Studio"
+            ],
             "about1": [
                 "På YOMY är vi hängivna att skapa en fristad där individer kan hitta styrka, balans och inre harmoni.",
                 "Vår online plattform säkerställer att du kan påbörja denna transformerande resa när som helst, från bekvämligheten av ditt eget utrymme."
@@ -68,14 +74,30 @@
         "client_quotes": {
             "text": {
                 "emily": "Den online plattformen ger flexibilitet, och instruktörerna utstrålar positivitet och expertis. Jag har funnit en djupare känsla av balans och styrka i både kropp och sinne.",
-                "David": "Jag har provat många yogastudior, men YOMY utmärker sig. Instruktörerna brinner verkligen för det de gör, och det märks i varje klass.",
-                "Sarah": "Jag kan inte rekommendera YOMY tillräckligt. Gemenskapen är mycket välkomnande, och klasserna är mångsidiga och utmanande. Denna studio har hjälpt mig att hitta en känsla av lugn och styrka som jag aldrig trodde var möjlig."
+                "david": "Jag har provat många yogastudior, men YOMY utmärker sig. Instruktörerna brinner verkligen för det de gör, och det märks i varje klass.",
+                "sarah": "Jag kan inte rekommendera YOMY tillräckligt. Gemenskapen är mycket välkomnande, och klasserna är mångsidiga och utmanande. Denna studio har hjälpt mig att hitta en känsla av lugn och styrka som jag aldrig trodde var möjlig."
             },
             "name": {
                 "name1": "Emily",
                 "name2": "David",
                 "name3": "Sarah"
             }
+        }
+    },
+    "contact": {
+        "headline_contact": "Välkommen att kontakta oss",
+        "info_contact": {
+            "emailText": "Fyll i vårt formulär, och vi återkommer inom 24 timmar",
+            "chatText": "Chatta med oss\nVarje dag\n21:00 - 10:00 CET",
+            "callText": "Ring oss +46 771 793 336\nMåndag - Fredag\n09:00 - 17:00 CET"
+        },
+        "form_contact": {
+            "confirmationText": "Tack för din fråga! Vi återkommer inom 24 timmar",
+            "label": [
+                "Namn",
+                "E-post",
+                "Hur kan vi hjälpa dig?"
+            ]
         }
     },    
     "footer": {

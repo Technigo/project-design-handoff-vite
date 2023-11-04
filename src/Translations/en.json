@@ -41,6 +41,12 @@
             "Our Clients - About the Journey"
         ],
         "about_studio": {
+            "headline": [
+                "Our Mission",
+                "Our Philosophy",
+                "Our Instructors",
+                "Our Online Studio"
+            ],
             "about1": [
                 "At YOMY, we're dedicated to creating a sanctuary where individuals can find strength, balance, and inner harmony.",
                 "Our online platform ensures you can embark on this transformative journey anytime, from the comfort of your own space."
@@ -68,14 +74,30 @@
         "client_quotes": {
             "text": {
                 "emily": "The online platform provides flexibility, and the instructors radiate positivity and expertise. I've found a deeper sense of balance and strength in both my body and mind.",
-                "David": "I've tried many yoga studios, but YOMY stands out. The instructors are truly passionate about what they do, and it shows in every class.",
-                "Sarah": "I can't recommend YOMY enough. The community is so welcoming, and the classes are diverse and challenging. This studio has helped me find a sense of calm and strength that I never thought possible."
+                "david": "I've tried many yoga studios, but YOMY stands out. The instructors are truly passionate about what they do, and it shows in every class.",
+                "sarah": "I can't recommend YOMY enough. The community is so welcoming, and the classes are diverse and challenging. This studio has helped me find a sense of calm and strength that I never thought possible."
             },
             "name": {
                 "name1": "Emily",
                 "name2": "David",
                 "name3": "Sarah"
             }
+        }
+    },
+    "contact": {
+        "headline_contact": "Welcome to contact us",
+        "info_contact": {
+            "emailText": "Fill in our form and we'll get back to you in 24 hours",
+            "chatText": "Chat with us \nEveryday \n9PM - 10AM CET",
+            "callText": "Call us +46 771 793 336\nMonday - Friday \n9PM - 5AM CET"
+        },
+        "form_contact": {
+            "confirmationText": "Thanks for your question! We’ll get back to you within 24 hours",
+            "label": [
+                "Name",
+                "Email",
+                "How can we help?"
+            ]
         }
     },
     "footer": {

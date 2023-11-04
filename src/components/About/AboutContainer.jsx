@@ -22,50 +22,49 @@ export const AboutContainer = () => {
         {
             id: "1b",
             image: imageAbout1,
-            headline: "Our Mission",
+            headline: t("aboutcontainer.about_studio.headline.0"),
             className: "aboutcard1",
-            "text": [
-                "At YOMY, we're dedicated to creating a sanctuary where individuals can find strength, balance, and inner harmony.",
-                "Our online platform ensures you can embark on this transformative journey anytime, from the comfort of your own space.",
+            text: [
+                t("aboutcontainer.about_studio.about1.0"),
+                t("aboutcontainer.about_studio.about1.1"),
             ],
-            studio_employee: "Agnes・Co-Founder",
+            studio_employee: t("aboutcontainer.studio_employee.0"),
             alt: "Joyful woman sitting cross-legged on lush grass beside a lake, framed by majestic mountains in the background.",
         },
         {
             id: "2b",
             image: imageAbout2,
-            headline: "Our Philosophy",
+            headline: t("aboutcontainer.about_studio.headline.1"),
             className: "aboutcard2",
             text: [
-                "We believe that true wellness encompasses the integration of mind, body, and soul.",
-                "Through the practices of yoga and meditation, we strive to empower individuals to discover their inner strength, achieve balance, and foster a deep sense of well-being.",
-                "Your journey starts here, and it continues with you, wherever you are.",
+                t("aboutcontainer.about_studio.about2.0"),
+                t("aboutcontainer.about_studio.about2.1"),
             ],
-            studio_employee: "Cecilia・Co-Founder",
+            studio_employee: t("aboutcontainer.studio_employee.1"),
             alt: "Woman outdoors, eyes closed, left hand placed on her heart",
         },
         {
             id: "3b",
             image: imageAbout3,
-            headline: "Our Instructors",
+            headline: t("aboutcontainer.about_studio.headline.2"),
             className: "aboutcard3",
             text: [
-                "Our diverse team of experienced instructors brings a wealth of knowledge and passion to each class.",
-                "With specialized expertise in various forms of yoga and meditation, they are dedicated to creating a nurturing environment for your personal growth and transformation.",
+                t("aboutcontainer.about_studio.about3.0"),
+                t("aboutcontainer.about_studio.about3.1"),
             ],
-            studio_employee: "Linn・Team leader",
+            studio_employee: t("aboutcontainer.studio_employee.2"),
             alt: "Woman standing in a tree pose outdoors.",
         },
         {
             id: "4b",
             image: imageAbout4,
-            headline: "Our Online Studio",
+            headline: t("aboutcontainer.about_studio.headline.3"),
             className: "aboutcard4",
             text: [
-                "Our online studio creates flexibility to practice from any location and fits into your schedule.",
-                "Access a variety of classes and instructors and eliminate commuting time and expenses. Join a inclusive community that connecting practitioners worldwide.",
+                t("aboutcontainer.about_studio.about4.0"),
+                t("aboutcontainer.about_studio.about4.1"),
             ],
-            studio_employee: "Lora Site・Manager",
+            studio_employee: t("aboutcontainer.studio_employee.3"),
             alt: "Woman seated by a lake, with her eyes closed and her hands in her lap.",
         }
     ];
@@ -73,23 +72,20 @@ export const AboutContainer = () => {
     const client_quotes = [
         {
             id: "1c",
-            text:
-                `"The online platform provides flexibility, and the instructors radiate positivity and expertise. I've found a deeper sense of balance and strength in both my body and mind."`,
-            name: "Emily",
+            text: t("aboutcontainer.client_quotes.text.emily"),
+            name: t("aboutcontainer.client_quotes.name.name1"),
             className: "aboutclient1",
         },
         {
             id: "2c",
-            text:
-                `"I've tried many yoga studios, but YOMY stands out. The instructors are truly passionate about what they do, and it shows in every class."`,
-            name: "David",
+            text: t("aboutcontainer.client_quotes.text.david"),
+            name: t("aboutcontainer.client_quotes.name.name2"),
             className: "aboutclient2",
         },
         {
             id: "3c",
-            text:
-                `"I can't recommend YOMY enough. The community is so welcoming, and the classes are diverse and challenging. This studio has helped me find a sense of calm and strength that I never thought possible."`,
-            name: "Sarah",
+            text: t("aboutcontainer.client_quotes.text.sarah"),
+            name: t("aboutcontainer.client_quotes.name.name3"),
             className: "aboutclient3",
         },
     ];

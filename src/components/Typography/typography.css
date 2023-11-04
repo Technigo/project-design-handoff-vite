@@ -27,8 +27,11 @@ h1 {
 
 .brown-text {
     color: #45321A;
-  }
-  
+}
+
+.new_line {
+    white-space: pre-line;
+}
 
 /* Tablet */
 @media (min-width: 667px) and (max-width: 1024px) {
