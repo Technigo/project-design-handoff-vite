@@ -1,5 +1,6 @@
 .grid-parent .about-us {
-    margin-top: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
     grid-column: 1 / span 15;
 }
 
@@ -44,4 +45,34 @@
     font-weight: 500;
     line-height: 160%;
     margin: 70px 25px 0 25px;
+}
+
+.who-what-why {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+.who-what-why h3{
+    color: var(--font-color);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.www-card {
+    display: flex;
+    gap: 27px;
+}
+
+.www-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.www-pic{
+    width: 128px;
+    height: 155px;
+    object-fit: cover;
 }
