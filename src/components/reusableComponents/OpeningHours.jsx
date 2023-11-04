@@ -31,7 +31,7 @@ export const OpeningHours = () => {
             <p className="text-xs text-grey text-sourcesans3 font-normal">Odenplan</p>
             <br />
             <InfoPageHeadings InfoPageHeading={thirdHeading} />
-            <p className="text-xs text-grey text-sourcesans3 font-normal">Parking spaces are limited.</p>
+            <p className="text-xs text-grey text-sourcesans3 font-normal">{t('infoPage.parking')}</p>
 
         </div>
     )
