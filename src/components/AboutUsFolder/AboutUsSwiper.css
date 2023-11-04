@@ -1,0 +1,14 @@
+.swiper {
+  margin-top: 70px;
+  margin-left: 25px;
+  margin-bottom: 70px;
+}
+
+.swiper-wrapper {
+  gap: 20px;
+}
+
+.swiper-slide img {
+  width: 147.543px;
+  height: 219.398px;
+}

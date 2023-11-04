@@ -1,4 +1,50 @@
 .last-section-wrapper {
   background-color: #004174;
   color: #f3f1ed;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.last-section-wrapper img {
+  margin: 25px;
+  width: 289px;
+  height: 208px;
+}
+
+.last-section-wrapper h2 {
+  font-family: Prompt;
+  font-size: 25px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 108.2%;
+  margin: 25px;
+}
+
+.info-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  margin: 25px;
+}
+
+.welcome-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 400;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.last-button img {
+  height: 43px;
+}
+.last-button {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
 }

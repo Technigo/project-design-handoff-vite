@@ -15,9 +15,16 @@ export const Footer = () => {
   return (
     <>
       <div className="footer">
-        <img src={logoFooter} alt="logo" className="footer-logo" />
-        <DropDown />{" "}
-        {/* The dropdown component should handle language change internally. Don't call changeLanguage here. */}
+        <div className="first-row">
+          <Link to="/">
+            <img
+              className="footer-logo"
+              src={logoFooter}
+              alt="Family Fitness Logo"
+            />
+          </Link>
+          <DropDown className="footer-dropdown" />
+        </div>
         <div className="links">
           <Link to="/about" className="link-footer">
             {t("Footer.link1")}
@@ -30,6 +37,9 @@ export const Footer = () => {
           </Link>
           <Link to="/membership" className="link-footer">
             {t("Footer.link4")}
+          </Link>
+          <Link to="/cookies" className="link-footer">
+            {t("Footer.link5")}
           </Link>
           {/* ... Other links */}
         </div>

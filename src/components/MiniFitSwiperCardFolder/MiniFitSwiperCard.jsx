@@ -1,14 +1,17 @@
-import MiniCardOne from "../../assets/images/miniCard1.png";
 import "./MiniFitSwiperCard.css";
+import { Link } from "react-router-dom";
 
-export const MiniFitSwiperCard = ({ miniCardOne }) => {
+export const MiniFitSwiperCard = ({ img, cardTitle, cardText, buttonText }) => {
   return (
     <div className="miniCard">
-      <div className="miniCardOne">
-        {miniCardOne}
-        <img src={MiniCardOne} alt="slide card one" />
-        <p>Friends</p>
+      <div className="img-container">
+        <img src={img} alt="slide card" />
       </div>
+      <h4>{cardTitle}</h4>
+      <p>{cardText}</p>
+      <Link to="/" className="minifit-link">
+        {buttonText}
+      </Link>
     </div>
   );
 };

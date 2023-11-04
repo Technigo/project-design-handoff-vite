@@ -3,11 +3,19 @@
   height: 400px;
 }
 
-.footer-logo {
-  height: 42px;
-  margin-top: 32px;
+.first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 25px;
+
   margin-left: 25px;
   margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+.footer-logo {
+  height: 42px;
 }
 
 .link-footer {
@@ -38,6 +46,7 @@
 
 /* dropdown*/
 .footer-dropdown {
-  position: relative;
-  display: inline-block;
+  margin-top: 32px;
+  margin-right: 25px;
+  margin-bottom: 25px;
 }

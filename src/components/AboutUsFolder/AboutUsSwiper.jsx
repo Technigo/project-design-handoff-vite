@@ -2,6 +2,7 @@
 // Import Swiper React components
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./AboutUsSwiper.css";
 
 import scrollOne from "../../assets/images/scroll1.png";
 import scrollTwo from "../../assets/images/scroll2.png";

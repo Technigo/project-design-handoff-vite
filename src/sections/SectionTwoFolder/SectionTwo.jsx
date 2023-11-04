@@ -4,6 +4,7 @@ import iconThree from "../../assets/icons/icon3.svg";
 import iconFour from "../../assets/icons/icon4.svg";
 import "./SectionTwo.css";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const SectionTwo = () => {
   const { t } = useTranslation();
@@ -14,25 +15,34 @@ export const SectionTwo = () => {
         <div className="mini-frame">
           <img src={iconOne} alt="Icon 1" />
           <p>{t("SectionTwo.accessible")}</p>
-          <p>{t("SectionTwo.ourVision")}</p>
+          <Link to="/about">
+            <p>{t("SectionTwo.ourVision")}</p>
+          </Link>
         </div>
 
         <div className="mini-frame">
           <img src={iconTwo} alt="Icon 2" />
+
           <p>{t("SectionTwo.thousandsOfClasses")}</p>
-          <p>{t("SectionTwo.exploreClasses")}</p>
+          <Link to="/about">
+            <p>{t("SectionTwo.exploreClasses")}</p>
+          </Link>
         </div>
 
         <div className="mini-frame">
           <img src={iconThree} alt="Icon 3" />
           <p>{t("SectionTwo.safeAndEducational")}</p>
-          <p>{t("SectionTwo.aboutMiniFit")}</p>
+          <Link to="/miniFit">
+            <p>{t("SectionTwo.aboutMiniFit")}</p>
+          </Link>
         </div>
 
         <div className="mini-frame">
           <img src={iconFour} alt="Icon 4" />
           <p>{t("SectionTwo.hundredsOfCenters")}</p>
-          <p>{t("SectionTwo.findYourCenter")}</p>
+          <Link to="/center">
+            <p>{t("SectionTwo.findYourCenter")}</p>
+          </Link>
         </div>
       </div>
     </>

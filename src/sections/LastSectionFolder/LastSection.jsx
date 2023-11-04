@@ -1,4 +1,5 @@
 import { Buttons } from "../../components/Buttons/Buttons";
+
 import LastSectionPic from "../../assets/images/lastSectionPic.png";
 import button from "../../assets/Button.svg";
 import buttonHover from "../../assets/ButtonHover.svg";
@@ -13,16 +14,19 @@ export const LastSection = () => {
       <div className="last-section-wrapper">
         <img src={LastSectionPic} alt="image" />
         <h2>{t("LastSection.heading")}</h2>
-        <p>{t("LastSection.text")}</p>
+        <p className="info-text">{t("LastSection.text")}</p>
 
-        <p>{t("LastSection.welcomeText")}</p>
-        <Buttons
-          buttonText={t("Buttons.buttonText")}
-          url="https://example.com"
-          icon={button}
-          hoverIcon={buttonHover}
-          alt="LogIn"
-        />
+        <p className="welcome-text">{t("LastSection.welcomeText")}</p>
+
+        <div className="last-button">
+          <Buttons
+            buttonText=""
+            url="https://example.com"
+            icon={button}
+            hoverIcon={buttonHover}
+            alt="Button Icon"
+          />
+        </div>
       </div>
     </>
   );

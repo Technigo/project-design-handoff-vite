@@ -27,9 +27,9 @@ export const MemberSwiper = ({ cardOne, cardTwo }) => {
         <SwiperSlide>
           <MemberSwiperCard cardOne={cardOne} />
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <MemberSwiperCard cardTwo={cardTwo} />
-        </SwiperSlide> */}
+        </SwiperSlide>
       </Swiper>
     </div>
   );

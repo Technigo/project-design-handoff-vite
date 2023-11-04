@@ -3,6 +3,8 @@ import {
   SwiperText,
 } from "../components/AboutUsFolder/AboutUsSwiper";
 import "./AboutUs.css";
+import { SectionTwo } from "../sections/SectionTwoFolder/SectionTwo";
+import { AboutUsCard } from "../components/AboutUsFolder/AboutUsCardFolder/AboutUsCard";
 
 export const AboutUs = () => {
   return (
@@ -11,6 +13,8 @@ export const AboutUs = () => {
 
       <AboutUsSwiper />
       <SwiperText />
+      <AboutUsCard />
+      <SectionTwo />
     </>
   );
 };
