@@ -1,0 +1,50 @@
+.background {
+    background-color: #FFF;
+    height: 1093px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+        "H2"
+        "H2slim"
+        "AllInclusive"
+        "MemberYoga"
+    ;
+    text-align: center;
+    gap: 20px;
+}
+
+
+.gridItem1 {
+    grid-area: H2;
+    padding: 50px 41px 0 41px;
+}
+
+.gridItem2 {
+    grid-area: H2slim;
+    padding: 0 41px;
+}
+
+.membershipBoxInclusive {
+    grid-area: AllInclusive;
+    background-color: rgba(187, 165, 197, 0.50);
+    padding-bottom: 20px;
+    margin: 20px 20px 0 20px;
+}
+
+.membershipBoxYoga {
+    grid-area: MemberYoga;
+    background-color: rgba(187, 165, 197, 0.50);
+    padding-bottom: 20px;
+    margin: 0 20px 20px 20px;
+}
+
+.boxInclusive3,
+.boxYoga3,
+.boxInclusive2,
+.boxInclusive1,
+.boxYoga2,
+.boxYoga1 {
+    padding-bottom: 19px;
+}

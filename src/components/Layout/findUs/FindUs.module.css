@@ -1,0 +1,9 @@
+.background {
+    background-color: #FFF;
+    height: 657px;
+    /*subtracted footer*/
+}
+
+.wrapper {
+    margin: 0 20px 0 20px;
+}

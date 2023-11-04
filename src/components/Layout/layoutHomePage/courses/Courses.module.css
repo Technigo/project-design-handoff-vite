@@ -1,0 +1,34 @@
+.background {
+    background-color: #FFF;
+    height: 704px;
+    border-top: 2px solid #612E77;
+    border-bottom: 2px solid #612E77;
+}
+
+.wrapper {
+    padding: 20px;
+    display: grid;
+    grid-template-areas:
+        "H2"
+        "H2slim"
+        "carouselCard";
+    text-align: center;
+    gap: 20px;
+}
+
+.carouselcard1,
+.carouselcard2,
+.carouselcard3 {
+    grid-area: carouselCard;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+    text-align: left;
+    place-items: center;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}

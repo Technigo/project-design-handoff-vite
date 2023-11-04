@@ -1,0 +1,82 @@
+.carouselContainer {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    transition: transform 0.5s ease-out;
+}
+
+.carouselSlide {
+    display: none;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+.active {
+    display: block;
+}
+
+.carouselButton {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carouselButton.left {
+    left: 0;
+}
+
+.carouselButton.right {
+    right: 0;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 5px;
+    top: 50%;
+    z-index: 10;
+    transform: translateX(-50%);
+    left: 50%;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 208, 117, 0.50);
+}
+
+.dot.active {
+    background-color: #FFD075;
+}
+
+
+/* MacBook Air */
+@media (min-width: 1024px) {
+
+    .carouselContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .carouselSlide {
+        display: block;
+        width: 100%;
+    }
+
+    .carouselButton {
+        display: none;
+    }
+
+    .dots {
+        display: none;
+    }
+}

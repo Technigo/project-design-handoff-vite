@@ -1,0 +1,33 @@
+.background {
+    background-color: #612E77;
+    height: 553px;
+}
+
+.wrapper {
+    padding: 50px 41px 40px 41px;
+    display: grid;
+    grid-template-areas:
+        "H2"
+        "H2slim"
+        "carousel"
+        "button";
+    text-align: center;
+    gap: 20px;
+}
+
+
+.gridItem1 {
+    grid-area: H2
+}
+
+.gridItem2 {
+    grid-area: H2slim
+}
+
+.gridItem3 {
+    grid-area: carousel;
+}
+
+.gridItem4 {
+    grid-area: button;
+}

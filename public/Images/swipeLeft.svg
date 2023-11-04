@@ -1,0 +1,16 @@
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Swipe">
+<ellipse id="Ellipse 4" cx="13" cy="13" rx="13" ry="13" transform="rotate(-180 13 13)" fill="#FFD075"/>
+<g id="Chevron right">
+<path id="Mask" fill-rule="evenodd" clip-rule="evenodd" d="M14.125 17.3019C14.4415 17.6184 14.9547 17.6184 15.2712 17.3019C15.5875 16.9856 15.5878 16.4729 15.2719 16.1563L12.1225 13L15.2719 9.84375C15.5878 9.52712 15.5875 9.01441 15.2713 8.69813C14.9547 8.3816 14.4415 8.3816 14.125 8.69813L9.82312 13L14.125 17.3019Z" fill="#612E77"/>
+<mask id="mask0_1517_988" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="9" y="8" width="7" height="10">
+<path id="Mask_2" fill-rule="evenodd" clip-rule="evenodd" d="M14.125 17.3019C14.4415 17.6184 14.9547 17.6184 15.2712 17.3019C15.5875 16.9856 15.5878 16.4729 15.2719 16.1563L12.1225 13L15.2719 9.84375C15.5878 9.52712 15.5875 9.01441 15.2713 8.69813C14.9547 8.3816 14.4415 8.3816 14.125 8.69813L9.82312 13L14.125 17.3019Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_1517_988)">
+<g id="&#226;&#134;&#170;&#240;&#159;&#142;&#168;">
+<rect id="Atoms / Colors / Black" x="22.3438" y="22.75" width="19.5" height="19.5" transform="rotate(-180 22.3438 22.75)" fill="#612E77"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
