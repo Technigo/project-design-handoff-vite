@@ -3,6 +3,19 @@
   overflow: hidden;
   width: 100%;
   top: 220px;
+  grid-column: 1 / 5;
+  margin-top: 40px;
+}
+
+h1.carousel-title {
+  color: #543855;
+  font-family: Poppins;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.5px; /* 159.524% */
+  align-self: stretch;
+  margin-left: 24px;
 }
 
 .carousel-inner {
@@ -11,17 +24,17 @@
 }
 
 .carousel-item {
-  width: 100%; /* Set width to 100% of the container */
-  margin-right: 24px; /* This should be the same as slideMarginRight in JSX */
+  width: 100%;
+  margin-right: 24px;
 }
 
-/* .carousel-item:last-child {
-  margin-right: 0; 
-} */
+.carousel-item:last-child {
+  margin-right: 0;
+}
 
 .carousel-control {
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   background-color: transparent;
   border: none;

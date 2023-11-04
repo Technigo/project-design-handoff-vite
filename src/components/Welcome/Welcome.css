@@ -17,6 +17,7 @@
   font-family: Poppins;
   position: relative;
   top: 220px;
+  grid-column: 1 / 5;
 }
 
 h2.welcome-title {

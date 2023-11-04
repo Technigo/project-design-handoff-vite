@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./CarouselMoments.css"; // Assume we have a separate CSS file for styles
+import "./CarouselMoments.css";
 import prevImage from "../../assets/prev-btn.svg";
 import nextImage from "../../assets/next-btn.svg";
 // Importing the images
@@ -32,12 +32,11 @@ const images = [
 export const CarouselMoments = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const slideWidth = 100; // Assuming each slide should take close to full width of the container
-  const slideMarginRight = 24; // This should match the CSS margin-right value for .carousel-item
+  const slideWidth = 100;
+  const slideMarginRight = 24;
 
   const updateIndex = (newIndex) => {
     if (newIndex < 0 || newIndex >= images.length) {
-      // Do nothing if it's out of bounds
       return;
     }
     setActiveIndex(newIndex);
@@ -54,6 +53,9 @@ export const CarouselMoments = () => {
 
   return (
     <div className="carousel">
+      <div>
+        <h1 className="carousel-title">Captured Moments</h1>
+      </div>
       <div className="carousel-inner" style={{ transform: getTransform() }}>
         {images.map((image, index) => (
           <img
