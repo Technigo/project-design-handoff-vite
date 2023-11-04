@@ -5,7 +5,7 @@ import { MiniFitSwiperCard } from "../../components/MiniFitSwiperCardFolder/Mini
 import "./MiniFitSwiper.css";
 import MiniCardOne from "../../assets/images/miniCard1.png";
 import MiniCardTwo from "../../assets/images/miniCard2.png";
-import MiniCardThree from "../../assets/images/minicard3.png";
+import MiniCardThree from "../../assets/images/miniCard3.png";
 import MiniCardFour from "../../assets/images/minicard4.png";
 import MiniCardFive from "../../assets/images/minicard5.png";
 
