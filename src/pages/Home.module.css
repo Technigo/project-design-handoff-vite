@@ -1,3 +1,15 @@
+.light {
+    display: none;
+}
+
+.downloads:hover .light {
+    display: block;
+}
+
+.downloads:hover .dark {
+    display: none;
+}
+
 .scroll {
     animation: scroll 10s linear infinite;
 }
