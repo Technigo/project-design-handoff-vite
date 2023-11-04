@@ -41,7 +41,8 @@ If you had more time, what would be next?: I would have loved more time with the
 ### View it live
 
 Deployed site: https://wk11-project-design-handoff-sb.netlify.app/
-Designers Figma design: https://www.figma.com/file/yYvBgyKopMZecZXNv4akgx/Week-9-11---Sophia?type=design&node-id=1455%3A1713&mode=design&t=c4wLjtegJ35CVb5g-1
+
+Designer's Figma design: https://www.figma.com/file/yYvBgyKopMZecZXNv4akgx/Week-9-11---Sophia?type=design&node-id=1455%3A1713&mode=design&t=c4wLjtegJ35CVb5g-1
 
 ## Instructions
 
