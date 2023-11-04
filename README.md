@@ -4,38 +4,22 @@
   </a>
 </h1>
 
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
+This week the main goal was to experience a design handoff from a UX-design student and work on transforming that design into code.
+Additionally it's been a good opportunity to explore different react libraries and implementing them in the project.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+## The Problem
 
-## Getting Started with the Project
+By following a design in Figma I have built a website using react components. Planning is key when using components, to give the code good structure. This I did, but as the project evolved, I could see that it would have benefitted from a different structure. It's been great fun to collaborate with a designer and it's rewarding that we come with different skills to the table. Some things that would be considered easy at first sight can actually be hard to implement as code. A great challenge for me has also been to interpret a design where measurements and distances not always are explicit.
 
-### Dependency Installation & Startup Development Server
+Implementing gradients on images was harder than expected and therefor I have used divs with background images instead, as implementing gradients on those are a lot easier. Although, this has made me worried about accessability instead, but I think I have made the images as accesible as possible by using aria-labels.
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
+The libraries I've used are moment.js for a dynamic date, react-i18next for translation and Styled Components for making CSS implementation smoother.
 
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
-
-### The Problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+If I had more time I would of course make the website resemble the design even more exact. I would try to figure out how to translate the date implemented by moment.js. Also I would make more components as I can see that there is far too much code in many components right now. I would restructure the organisation of the components completely to make the structure easier to understand. I would like to spend more time understanding styled components and take more advantage of the possibility of using props when styling.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+View the deployed site here:
+https://preggo-yoga-studio.netlify.app/

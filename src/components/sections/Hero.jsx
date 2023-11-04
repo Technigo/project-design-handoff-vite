@@ -55,9 +55,9 @@ const StyledSection = styled.section`
 
   @media (min-width: 1025px) {
       .hero-content {
-        margin-bottom: 10%;  
+        margin-bottom: 5%;  
         margin-left: 10%; 
-        margin-right: 50%; 
+        margin-right: 60%; 
       }
       .button-wrapper {
         flex-direction: row; 
