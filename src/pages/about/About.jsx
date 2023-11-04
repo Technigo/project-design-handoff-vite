@@ -1,5 +1,5 @@
 import "./about.css";
-import { AboutMainSection } from "../../sections/aboutMainSection/aboutMainSection";
+import { AboutMainSection } from "../../sections/aboutMainSection/AboutMainSection";
 import { GoodToKnowSection } from "../../sections/goodtoknowSection/GoodToKnowSection";
 import { ContactUsSection } from "../../sections/contactusSection/ContactUsSection";
 import { Navbar } from "../../components/navbar/Navbar";
