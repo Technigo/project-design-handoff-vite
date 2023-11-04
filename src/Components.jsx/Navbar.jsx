@@ -10,7 +10,7 @@ export const Navbar = () => {
 
         <ul>
           <div className="navbar-buttons">
-            <button onClick={() => (window.location.href = "about/")}>
+            <button onClick={() => (window.location.href = "/about")}>
               About us
             </button>
             <button onClick={() => (window.location.href = "/membership")}>

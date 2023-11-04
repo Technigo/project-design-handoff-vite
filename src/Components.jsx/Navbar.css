@@ -14,7 +14,7 @@
 
 /* Style for individual buttons */
 .navbar-buttons button {
-  background-color: black;
+  background-color: #312d2e;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -31,4 +31,8 @@
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+
+.navbar-buttons button:hover {
+  box-shadow: 0px 4px 4px 0px #ffc700;
 }

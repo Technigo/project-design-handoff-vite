@@ -22,7 +22,7 @@ export const App = () => {
                   </>
                 }
               />
-              <Route path="about/" element={<About />} />
+              <Route path="/about" element={<About />} />
             </Routes>
           </main>
         </BrowserRouter>

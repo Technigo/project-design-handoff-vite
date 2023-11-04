@@ -1,0 +1,25 @@
+.visit-us {
+  background-color: black;
+  color: white;
+  align-items: start;
+  justify-items: center;
+  position: relative;
+  padding: 5%;
+}
+
+.cities p,
+.contact-us p {
+  padding: 10px;
+  border: 1px solid white;
+  width: 30%;
+}
+
+.visit-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  padding: 5%;
+}

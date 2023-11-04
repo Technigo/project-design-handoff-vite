@@ -1,10 +1,29 @@
-import { Navbar } from "./Navbar";
 import "./About.css";
+import { VisitUs } from "./VisitUs";
 
 export const About = () => {
   return (
     <div>
-      <Navbar />
+      <ul>
+        <button className="home-button"></button>
+        <div className="navbar-buttons">
+          <button onClick={() => (window.location.href = "/about")}>
+            About us
+          </button>
+          <button onClick={() => (window.location.href = "/membership")}>
+            Membership
+          </button>
+          <button onClick={() => (window.location.href = "/facilities")}>
+            Facilities
+          </button>
+          <button onClick={() => (window.location.href = "/opening-hours")}>
+            Opening Hours
+          </button>
+
+          <button className="sign-in-button">Sign in</button>
+          <button>Swedish/English</button>
+        </div>
+      </ul>
       <div className="about">
         <h1 className="what-we-do">What we do</h1>
         <h2 className="background">BACKGROUND </h2>
@@ -36,6 +55,9 @@ export const About = () => {
             </p>
           </div>
         </div>
+      </div>
+      <div>
+        <VisitUs />
       </div>
     </div>
   );

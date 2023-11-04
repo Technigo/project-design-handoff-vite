@@ -1,3 +1,24 @@
+.home-button {
+  background-image: url("./Images/Back.png");
+  display: flex;
+  width: 86px;
+  height: 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+  padding: 1%;
+}
+
+.home-button:hover {
+  box-shadow: 0px 4px 4px 0px #ffc700;
+}
+
+.navbar-buttons {
+  display: flex;
+  align-items: center;
+}
+
 .about {
   background: url("./Images/Rectangle357.png");
   color: rgb(219, 174, 24);
