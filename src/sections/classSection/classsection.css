@@ -210,7 +210,7 @@
     position: absolute;
     z-index: 2;
     top: -35px;
-    width: 100vw;
+    width: min(100vw, 1600px);
   }
 
   .yoga-stretch {
@@ -223,7 +223,7 @@
     position: absolute;
     z-index: 2;
     bottom: -50px;
-    width: 100vw;
+    width: min(100vw, 1600px);
   }
 
   .lower-wave-mini,
