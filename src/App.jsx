@@ -1,23 +1,21 @@
 import { BrowserRouter, Routes } from "react-router-dom";
 import { routes } from "./routes/routes";
 import { Header } from "./components/sections/Header";
-import { Form } from "./components/sections/Form"
+import { Form } from "./components/sections/Form";
 import { Footer } from "./components/sections/Footer";
+import { ScrollToTop } from "./components/ScrollToTop";
 
 export const App = () => {
   return (
     <>
       <BrowserRouter>
-     
+        <Header />
+        <ScrollToTop/>
         <main className="main-wrapper">
-         
-          <Header />
           <Routes>{routes}</Routes>
-          <Form/>
-          <Footer />
         </main>
-        
-       
+        <Form />
+        <Footer />
       </BrowserRouter>
     </>
   );

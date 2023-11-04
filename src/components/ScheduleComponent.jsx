@@ -6,7 +6,7 @@ import enTranslation from "./translations/en.json"
 const StyledDiv = styled.div`
   display: flex;
   justify-content: space-between; 
-  padding: 16px;
+  padding: 16px 0;
   background-color: transparent;
   border-top: 0.5px solid var(--light-red);
 
