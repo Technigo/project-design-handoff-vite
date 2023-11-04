@@ -4,6 +4,7 @@ import { Button } from "../../reusableComponents/Button"
 import { Link } from "react-router-dom";
 import { ContactForm } from "../../pages/ContactForm";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const ContactDescription = styled(Description)`
 display: grid;
@@ -27,6 +28,7 @@ line-height: 160.5%; /* 51.36px */
 
 export const Contact = () => {
   const [showContactForm, setShowContactForm] = useState(false);
+  const { t } = useTranslation("contact");
 
   const openContactForm = () => {
     setShowContactForm(true);
@@ -35,18 +37,18 @@ export const Contact = () => {
   const closeContactForm = () => {
     setShowContactForm(false);
   };
+  const contactText = t("contactText");
+  const contactButtonLabel = t("contactButtonLabel");
 
-const ContactText = "Just north of central Stockholm a few meters from the Roslagsbana train and E18, you will find EdgePerformance. We have ample parking as well as short-term living accommodations nearby at Scandic Täby. Täby Centrum with restaurants and entertainment are within a short walk.Join us as an individual or ask about team memberships. Individual Membership: 650:- / monthTeam Memberships: contact for more information"
+
 
 return (
   <>
-  <Link to="/contact-form"onClick={openContactForm} >
-    <ContactButton label="CONTACT US" />
-  </Link>
-  {showContactForm && (
-    <ContactForm isOpen={showContactForm} onClose={closeContactForm} />
-  )}
-  <ContactDescription text={ContactText} />
-</>
+      <Link to="/contact-form" onClick={openContactForm}>
+        <ContactButton label={contactButtonLabel} />
+      </Link>
+      {showContactForm && <ContactForm isOpen={showContactForm} onClose={closeContactForm} />}
+      <ContactDescription text={contactText} />
+    </>
 )
 }

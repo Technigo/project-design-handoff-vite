@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next"
+
 import { Description } from "../../reusableComponents/Description"
 import { Heading } from "../../reusableComponents/Heading"
 import styled from 'styled-components'
@@ -18,6 +18,15 @@ const CardWrapper = styled.div`
 background: #E8E8E8;
 box-shadow: 0px 4px 4px 0px #2AA9C0;
   }
+
+  @media (min-width: 768px) {
+    
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr ;
+  } 
+
 `;
 const TextWrapper = styled.div`
 display:grid;
@@ -48,15 +57,14 @@ export const ArticleCard = (props) => {
   let titleArticle = props.articles.name;
   let descriptionArticle = props.articles.description;
 
-  // define via  destructured variable two methods from the useTranslation
-  const { t } = useTranslation();
+
 
   return (
     <CardWrapper className="card-wrapper">
       <ArticleImage src={imageArticle} alt="Article image " />
       <TextWrapper>
-      <ArticleHeading text={ t(titleArticle) } />
-        < ArticleDescription text={ t (descriptionArticle)} />
+      <ArticleHeading text={titleArticle } />
+        < ArticleDescription text={ descriptionArticle} />
         </TextWrapper>
     </CardWrapper>
   )

@@ -3,18 +3,20 @@ import { Contact } from "../components/Contact/Contact";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { AddressInfo } from "../components/Info/AddressInfo";
+import { useTranslation } from "react-i18next";
 
 
 
 export const Information = () => {
-  const MainHeading="Information"
-  const textOne = "You can have the best gear in the world, but it’s the athlete inside that gear that counts. Step one - getting here: ";
-  const heroImageHome = "./infoHero.png"; 
-  //Info
-  const Address = "156 Marknadsvägen • Täby, Stockholm 12345, Sweden"
-  const Phone = "+ 46 08 534 2364"
-  const Email = "info @edgeperformance.com"
-  const heroImageInfo ="./map.png"
+  const { t } = useTranslation("information");
+
+ const MainHeading = t("header.title");
+  const textOne = t("header.textOne");
+  const heroImageHome = "./infoHero.png";
+  const Address = t("address");
+  const Phone = t("phone");
+  const Email = t("email");
+  const heroImageInfo = "./map.png";
 
   return (
     <>
