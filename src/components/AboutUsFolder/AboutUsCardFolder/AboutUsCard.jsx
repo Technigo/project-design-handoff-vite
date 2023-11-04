@@ -44,3 +44,4 @@ export const AboutUsCard = () => {
     </div>
   );
 };
+// jajaa
