@@ -1,0 +1,66 @@
+button {
+    border-radius: 50px;
+        background: #FFE03B;
+        color: rgba(1, 42, 97, 1);
+        border: none;
+        padding: 10px;
+        text-wrap: nowrap;
+       
+        height: 43px; 
+
+    color: #012A61;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.7px;
+}
+
+.join-button {
+    width: 125px;
+}
+
+.read-more-btn {
+    width: 125px;
+}
+
+.register-btn {
+    width: 272px;
+        height: 34px;
+}
+
+@media (min-width: 668px) {
+    button {
+        height: 96px;
+        font-size: 30px;
+    }
+
+    .join-button {
+    width: 295px;
+    }
+
+    .read-more-btn {
+        width: 295px;
+    }
+
+    .register-btn {
+        width: 663px;
+        height: 95px;
+    }
+}
+
+/* @media (min-width: 1025px) {
+    button {
+        height: 120px;
+    }
+    .join-button {
+        font-size: 45px;
+        width: 470px;
+    }
+
+    .read-more-btn {
+        width: 450px;
+        font-size: 45px;
+    } 
+}/*

@@ -1,0 +1,147 @@
+footer {
+   display: flex;
+   flex-direction: column;
+   gap: 35px;
+   width: 100%;
+  
+background-image: url("/Images/space-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    /*Needed for stacking */
+}
+
+.footer-menu {
+    background-color: rgba(28, 29, 35, 1);
+    display: flex;
+    flex-direction: column;
+    
+    color: #FFF;
+    
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.96px;
+}
+
+.footer-menu-text-wrapper {
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 40px;
+}
+
+.footer-menu-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-menu-join-container {
+display: flex;
+flex-direction: column;
+width: 70%;
+}
+
+.footer-menu-join-container {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-menu-join-container p {
+    margin: 0;
+    padding: 0;
+    color: #949494;
+        font-family: Roboto;
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        
+}
+
+.register-btn-container {
+    align-self: center;
+}
+
+.social-icons-wrapper {
+    margin: 20px;
+    display: flex;
+    gap: 10px;
+    align-self: center;
+}
+
+.social-icon {
+    width: 13.58px;
+    height: 13px;
+}
+
+.footer-logo {
+background-color: rgba(28, 29, 35, 1);
+display: flex;
+flex-direction: column;
+align-items: center;
+height: 106px;
+justify-content: space-between;
+padding: 10px;
+margin-bottom: 35px;
+}
+
+
+.footer-logo-text {
+    display: flex;
+    flex-direction: row;
+    color: rgba(69, 68, 74, 1);
+    
+        font-size: 6px;
+        font-weight: 500;
+        line-height: 7px;
+        letter-spacing: 0.05em;
+        text-align: left;
+}
+
+.rotopi-designs {
+    color:#ffffff ;
+}
+
+/*---- Media query -----*/
+/* @media (min-width: 667px)  {
+    .footer-menu {
+        font-size: 25px;
+        text-wrap: nowrap;
+    }
+
+    .footer-menu-join-container p {
+        font-size: 17px;
+        text-wrap: wrap;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 38px;
+    }
+
+    .footer-logo {
+        padding: 40px;
+        justify-content: space-between;
+        height: 150px;
+    }
+
+    .galactic-logo {
+        width: 378px;
+        height: 58px;
+    }
+
+    .footer-logo-text {
+        font-size: 14px;
+    }
+
+
+
+
+} */

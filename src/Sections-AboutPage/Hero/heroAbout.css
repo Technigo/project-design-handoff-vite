@@ -1,0 +1,64 @@
+.hero-about-section {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    background-image: url("/Images/space-background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: relative;
+        /*Needed for stacking */
+}
+
+.hero-about-section h1 {
+    color: #FFE03B;
+        font-family: Roboto;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+}
+
+.hero-text-wrapper {
+    text-align: center;
+}
+
+.hero-about-section p {
+    color: #FFF;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+
+/*----- Media qury -----*/
+
+@media (min-width: 668px)  {
+
+    .hero-about-section {
+       justify-content: flex-end;
+       padding: 40px;
+       /* height: 50vh; */
+    }
+
+    .hero-about-section h1 {
+        font-size:100px ;
+        margin: 0;
+    }
+
+    .hero-about-section p {
+        font-size: 45px;
+        margin: 0;
+    }
+
+    .hero-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-wrap: nowrap;
+    }
+
+} 
