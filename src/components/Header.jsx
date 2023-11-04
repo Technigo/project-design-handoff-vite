@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HeaderWrapper, Logo, Menu, Hamburger, NavLink, NavList, BookButton, MobileNav, Link } from './StyledComponents';
+import { HeaderWrapper, Logo, Menu, Hamburger, NavLink, NavList, BookButton, MobileNav, StyledLink } from './StyledComponents';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -7,21 +7,21 @@ export const Header = () => {
 
   return (
     <HeaderWrapper>
-      <Logo><Link to="/">Yoga you</Link></Logo>
+      <Logo><StyledLink to="/">Yoga you</StyledLink></Logo>
       <Menu>
         <NavList>
-          <NavLink><Link to="/about">About</Link></NavLink>
-          <NavLink><Link to="/classes">Classes</Link></NavLink>
-          <NavLink><Link to="/studio">Studio</Link></NavLink>
+          <NavLink><StyledLink to="/about">About</StyledLink></NavLink>
+          <NavLink><StyledLink to="/classes">Classes</StyledLink></NavLink>
+          <NavLink><StyledLink to="/studio">Studio</StyledLink></NavLink>
+          <BookButton><StyledLink to="/book">Book</StyledLink></BookButton>
         </NavList>
-        <BookButton><Link to="/book">Book</Link></BookButton>
         <Hamburger onClick={toggleMenu} />
       </Menu>
       <MobileNav open={isOpen}>
-        <NavLink onClick={toggleMenu}><Link to="/about">About</Link></NavLink>
-        <NavLink onClick={toggleMenu}><Link to="/classes">Classes</Link></NavLink>
-        <NavLink onClick={toggleMenu}><Link to="/studio">Studio</Link></NavLink>
-        <BookButton onClick={toggleMenu} style={{display: 'block'}}><Link to="/book">Book</Link></BookButton>
+        <NavLink onClick={toggleMenu}><StyledLink to="/about">About</StyledLink></NavLink>
+        <NavLink onClick={toggleMenu}><StyledLink to="/classes">Classes</StyledLink></NavLink>
+        <NavLink onClick={toggleMenu}><StyledLink to="/studio">Studio</StyledLink></NavLink>
+        <BookButton onClick={toggleMenu} style={{display: 'block'}}><StyledLink to="/book">Book</StyledLink></BookButton>
       </MobileNav>
     </HeaderWrapper>
   );

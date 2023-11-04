@@ -4,6 +4,7 @@ import HeroBg from '../images/hero-image-1440.png';
 import HamburgerIcon from './HamburgerIcon';
 
 export const PageWrapper = styled.div`
+  font-family:
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -30,6 +31,13 @@ export const Logo = styled.div`
 export const Menu = styled.div`
   display: flex;
   align-items: center;
+  text-align: right;
+  font-family:
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
 `;
 
 export const MobileNav = styled.nav`
@@ -60,10 +68,10 @@ export const Hamburger = styled(HamburgerIcon)`
 `;
 
 export const ContentWrapper = styled.div`
-  padding-top: 1vh;
+  padding: 1vh 0vh 1vh 0vh;
 
   @media (min-width: 1440px) {
-    padding: 4.8vh 7vh 0vh 7vh;
+    padding: 4.8vh 7vh 4.8vh 7vh;
   }
 `;
 
@@ -145,23 +153,6 @@ export const HeroText = styled.section`
     gap: 4.8vh;
     padding: 4.8vh 1.25vh 4.8vh 1.25vh;
     background-color: yellow;
-  }
-`;
-
-export const HeroBookButton = styled.button`
-  display: none;
-  @media(min-width: 1440px) {
-    display: block;
-  }
-`;
-
-export const HeroBookButtonWrapper = styled.section`
-  display: none;
-  @media(min-width: 1440px) {
-    display: block;
-    padding: 0vh 1.25vh 0vh 1.25vh;
-    text-align: left;
-    background-color: powderblue;
   }
 `;
 
@@ -290,7 +281,7 @@ export const ClassesWrapper = styled.section`
   font-style: normal;
   line-height: 1.5rem;
   letter-spacing: 0.00625rem;
-  background-color: orange;
+  background-color: pink;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;
@@ -308,7 +299,7 @@ export const StudioWrapper = styled.section`
   font-style: normal;
   line-height: 1.5rem;
   letter-spacing: 0.00625rem;
-  background-color: orange;
+  background-color: lime;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;
@@ -326,7 +317,7 @@ export const BookWrapper = styled.section`
   font-style: normal;
   line-height: 1.5rem;
   letter-spacing: 0.00625rem;
-  background-color: orange;
+  background-color: yellow;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;
@@ -338,9 +329,22 @@ export const BookWrapper = styled.section`
   }
 `;
 
+export const ButtonWrapper = styled.section`
+    color: #602C9E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    @media(min-width: 834px) {
+      padding-top: 2.75vh;
+  }
+`;
+
 export const NavLink = styled.li`
   list-style-type: none;
   margin: 0 30px;
+  display: flex;
+  align-items: center;
 `;
 
 export const NavList = styled.ul`
@@ -351,14 +355,23 @@ export const NavList = styled.ul`
 `;
 
 export const BookButton = styled.button`
-  display: none;
-  @media(min-width: 1440px) {
-    display: block;
-  }
+  display: inline-block;
+  border-radius: 1.25rem;
+  padding: 1rem 3rem;
+  font-size: 1.125rem;
+  font-style: normal;s
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: -0.01238rem;
+  color: #F4E4D7;
+  background-color: #865025;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
 `;
 
 export const FooterWrapper = styled.footer`
-  background-color: magenta;
+  background-color: #E9C9AF;
   font-size: 1.375rem;
   font-style: normal;
   font-weight: 700;
@@ -367,13 +380,28 @@ export const FooterWrapper = styled.footer`
   text-align: left;
   margin-top: auto;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
   color: #602C9E;
   padding: 2vh;
+  span {
+    display: block;
+    display: flex;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 1rem;
+    letter-spacing: 0.00625rem;
+    margin: 0.6rem 0rem 0.6rem 0rem;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 4.8vh 7vh 4.8vh 7vh;
+    font-weight: 400;
+  }
 `;
 
-export const Link = styled(RouterLink)`
+export const StyledLink = styled(RouterLink)`
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
@@ -401,4 +429,8 @@ export const NextArrow = styled.div`
   z-index: 2;
   cursor: pointer;
   padding: 2%;
+`;
+
+export const SocialIconLink = styled.div`
+  
 `;
