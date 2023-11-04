@@ -17,6 +17,7 @@
   position: absolute;
   bottom: -50px;
   z-index: 3;
+  width: 100vw;
 }
 
 .about-us-wave-tablet {
@@ -38,7 +39,7 @@
     position: absolute;
     bottom: -65px;
     z-index: 3;
-    max-width: 100%;
+    width: 100vw;
   }
 
   .about-us-wave-mini {

@@ -58,6 +58,7 @@
   position: absolute;
   z-index: 2;
   top: -21px;
+  width: 100vw;
 }
 
 .yoga-stretch {
@@ -69,6 +70,7 @@
   position: absolute;
   z-index: 2;
   bottom: -55px;
+  width: 100vw;
 }
 
 .upper-wave-tablet,
@@ -131,7 +133,7 @@
     position: absolute;
     z-index: 2;
     top: -21px;
-    max-width: 100%;
+    width: 100vw;
   }
 
   .yoga-stretch {
@@ -144,7 +146,7 @@
     position: absolute;
     z-index: 2;
     bottom: -50px;
-    max-width: 100%;
+    width: 100vw;
   }
 
   .lower-wave-mini,
@@ -208,7 +210,7 @@
     position: absolute;
     z-index: 2;
     top: -35px;
-    max-width: 100%;
+    width: 100vw;
   }
 
   .yoga-stretch {
@@ -221,7 +223,7 @@
     position: absolute;
     z-index: 2;
     bottom: -50px;
-    max-width: 100%;
+    width: 100vw;
   }
 
   .lower-wave-mini,

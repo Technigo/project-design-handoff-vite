@@ -33,6 +33,7 @@
   position: absolute;
   z-index: 2;
   bottom: -30px;
+  width: 100vw;
 }
 
 .teachers-wave-tablet {
@@ -64,7 +65,7 @@
     position: absolute;
     z-index: 2;
     bottom: -30px;
-    max-width: 100%;
+    width: 100vw;
   }
 
   .teachers-wave-mini {
