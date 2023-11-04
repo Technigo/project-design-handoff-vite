@@ -1,23 +1,15 @@
-import { Footer } from "./components/Footer/Footer";
-import { SignUpForm } from "./components/SignUpForm/SignUpForm";
-import { Header } from "./components/Header/Header";
-import { HeroText } from "./components/MainInfo/HeroText";
-import { Mantra } from "./components/MainInfo/Mantra";
-import { Classes } from "./components/Classes/Classes";
-import { ClassesText } from "./components/Classes/ClassesText";
-import { Articles } from "./components/Articles/Articles";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+
+import { HomePage } from "./pages/HomePage";
+import { AboutPage } from "./pages/AboutPage";
 
 export const App = () => {
   return (
-    <>
-      <Header />
-      <HeroText />
-      <Mantra />
-      <Articles />
-      <ClassesText />
-      <Classes />
-      <SignUpForm />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 };

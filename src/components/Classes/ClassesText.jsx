@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const ClassesTextContainer = styled.div`
   max-width: 500px;
@@ -20,9 +21,11 @@ const ClassesTextContainer = styled.div`
 `;
 
 export const ClassesText = () => {
+  const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
   return (
     <ClassesTextContainer>
-      <h2>Our Barre Classes</h2>
+      {/* <h2>Our Barre Classes</h2> */}
+      <h2>{t("aside.heading")}</h2>
       <p>
         Prima Barre offers four group classes with unique full-body workouts
         focused on low-impact, high-intensity movements that lift and tone

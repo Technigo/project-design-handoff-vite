@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const SocialMediaContainer = styled.div`
   border-radius: 20px;
@@ -33,9 +34,12 @@ const SocialMediaContainer = styled.div`
 `;
 
 export const SocialMedia = () => {
+  const { t, i18n } = useTranslation(); // Use useTranslation to get the 't' function from i18next
+
   return (
     <SocialMediaContainer>
-      <p>Follow us</p>
+      {/* <p>Follow us</p> */}
+      <p>{t("footer.header")}</p>
       <div className="social-media-icons">
         <img src="./facebook.svg" alt="Facebook" />
         <img src="./instagram.svg" alt="Instagram" />

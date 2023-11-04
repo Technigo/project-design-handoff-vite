@@ -13,7 +13,7 @@
       ],
       "secondaryHeading": "Transforms you physically and mentally.",
       "triraryHeading": "Low impact, high intensity workout that strengthen & tone your body.",
-      "cards": [
+      "articles": [
         {
           "heading": "Join a full-body workout",
           "paragraph": "Our studio bringing you remarkable full-body workouts focused on body positivity and inclusivity, with expert instructors to guide you every step of the way.",
@@ -102,7 +102,7 @@
       "communication": "I want to receive email communications from Prima Barre including special offers, on-sale dates, and other updates."
     },
     "footer": {
-      "heading": "FOLLOW US",
+      "header": "FOLLOW US",
       "contact": "CONTACT US",
       "about": "ABOUT US",
       "terms": "TERMS AND CONDITIONS",

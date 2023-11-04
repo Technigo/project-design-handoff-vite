@@ -41,7 +41,7 @@ export const Download = () => {
         anytime
       </p>
       <div className="download-icons">
-        <img src="public/apple-small.svg" alt="Download from app-store" />
+        <img src="/apple-small.svg" alt="Download from app-store" />
         <img src="/google-play-small.png" alt="Download from google-play" />
       </div>
     </DownloadContainer>

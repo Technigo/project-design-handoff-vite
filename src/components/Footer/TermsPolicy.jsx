@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { LanguageButton } from "../Buttons/LanguageBtn";
 
 const TermsPolicyContainer = styled.div`
   border-radius: 20px;
@@ -43,7 +44,7 @@ export const TermsPolicy = () => {
       <p>
         ©️2023 <span>Prima barre</span>, All Rights Reserved
       </p>
-      <img src="/language-orange.svg" alt="Change to another language" />
+      <LanguageButton />
     </TermsPolicyContainer>
   );
 };
