@@ -7,28 +7,46 @@
 
 .wrapper {
     padding: 20px;
-    display: grid;
-    grid-template-areas:
-        "H2"
-        "H2slim"
-        "carouselCard";
+    flex-direction: column;
     text-align: center;
     gap: 20px;
+    display: flex;
+    min-height: 480px;
 }
 
-.carouselcard1,
-.carouselcard2,
-.carouselcard3 {
-    grid-area: carouselCard;
-    display: grid;
-    grid-template-rows: auto auto auto auto;
-    gap: 20px;
-    text-align: left;
-    place-items: center;
+.carouselContainer {
+
+    min-height: 480px;
 }
 
 .img {
     width: 100%;
     height: auto;
     object-fit: contain;
+    margin-bottom: 20px;
+}
+
+
+.cardTextWrapper {
+    margin-bottom: 20px;
+}
+
+.styledBtn {
+    margin-top: 16px;
+}
+
+/* MacBook Air */
+@media (min-width: 1024px) {
+    .background {
+        height: 851px;
+        padding: 80px 0 60px 0;
+    }
+}
+
+
+/* iPad Pro 11" */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /*padding only works in .carouselSlide in carousel css */
+
 }
