@@ -4,10 +4,6 @@
   </a>
 </h1>
 
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
 
 This wee we transformed a UX student's design into a React-based landing page for a gym/fitness club. This project bridges the gap between design and development, showcasing the art of bringing visuals to life with code.
