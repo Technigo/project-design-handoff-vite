@@ -2,8 +2,11 @@ import { Button } from "./Button"
 
 export const HowSec = () => {
   return (
+    <>
+    
+    <h1 className="how-title">HOW TO GET STARTED</h1>
     <div className="how">
-       <h1>HOW TO GET STARTED</h1>
+       
         <div className="card">
            <img src="/image 1 copy.png" alt="img" />
            <div className="description">
@@ -62,12 +65,12 @@ export const HowSec = () => {
            
 
         </div>
-        <div className="card">
+        <div className="card vc">
              
              <img className="video-card" src="/Video.png" alt="video" />
        
         </div>
-        <div className="card">
+        <div className="card vc">
              
              <img className="video-card" src="/Get Started_Image.png" alt="img" />
        
@@ -75,5 +78,11 @@ export const HowSec = () => {
        
 
     </div>
+    <div className="vid">
+          <img className="first" src="/Video.png" alt="video" />
+          <img className="second" src="/Get Started_Image.png" alt="img" />
+
+    </div>
+    </>
   )
 }

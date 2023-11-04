@@ -256,7 +256,7 @@ button{
   margin: 80px 0;
  padding: 10px;
 }
-.how h1, .how h3{
+.how-title, .how h3{
 
 font-size: 24px;
 font-weight: 500;
@@ -264,7 +264,7 @@ letter-spacing: -0.3199999928474426px;
 text-align: left;
 
 }
-.how h1 {
+.how-title {
   margin: 29px 0;
 }
 .how img{
@@ -319,7 +319,7 @@ min-height: 304px;
 border-radius: 4px;
 
 }
-.testimonial h2{
+.title-testi{
 font-size: 24px;
 font-weight: 500;
 margin-bottom: 29px;
@@ -388,7 +388,7 @@ text-align: center;
 .map-container img{
   width: 100%;
 }
-.map-container h2{
+.map-desk{
 
 font-size: 24px;
 font-weight: 500;
@@ -452,10 +452,19 @@ form{
 .title-testi{
   margin-left: 10px;
 }
-.nav-list{
+.nav-list.desktop{
   display: none;
 }
 .trial-btn{
+  display: none;
+}
+.hero-desk{
+  display: none;
+}
+.vid{
+  display: none;
+}
+.community-desk{
   display: none;
 }
 @media screen and (min-width:768px) {
@@ -530,10 +539,19 @@ form{
   width: 398px;
   margin: 30px auto;
  }
- .nav-list{
+ .nav-list.desktop{
   display: none;
 }
 .trial-btn{
+  display: none;
+}
+.hero-desk{
+  display: none;
+}
+.vid{
+  display: none;
+}
+.community-desk{
   display: none;
 }
  
@@ -542,7 +560,7 @@ form{
   .bar-btn{
     display: none;
   }
-  .nav-list{
+  .nav-list.desktop{
     display: flex;
     gap: 20px;
   }
@@ -613,4 +631,110 @@ text-align: center;
   ul li a{
     font-size: 17px;
   }
+  .hero-img{
+    display: none;
+  }
+  .desc-hero{
+    display: none;
+  }
+  .hero-desk{
+    display: block;
+    width: 100%;
+  }
+  .card{
+    flex-direction: column;
+    width: 398px;
+   
+  }
+  .how{
+    display: flex;
+    padding: 0;
+   margin: 0 auto;
+   justify-content: space-around;
+   padding: 0 30px;
+ 
+  }
+  .how-title{
+   
+font-size: 34px;
+font-weight: 500;
+line-height: 41px;
+letter-spacing: -0.3199999928474426px;
+text-align: left;
+margin-left: 40px;
+margin-top: 90px;
+margin-bottom: 30px;
+
+  }
+  .card img{
+    width: 398px;
+  
+  
+  }
+  .video-card{
+    display: none;
+    width: 0;
+   
+  }
+  .vc{
+    display: none;
+    width: 0;
+
+
+  }
+  .vid{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 90px
+    
+  }
+  .vid .first{
+    width: 1193px;
+    padding: 60px;
+    margin: 0 auto;
+  }
+  .testimonial{
+    padding: 0 60px;
+    margin: 20px auto;
+    justify-content: center;
+  }
+  .title-testi{
+    margin-left: 60px;
+  }
+  .community-img{
+    display: none;
+
+  }
+  .community-desk{
+    display: block;
+    margin: 60px 0;
+    width: 100%;
+  }
+  .map-card{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .map-container{
+    display: flex;
+   gap: 20px;
+   padding: 0;
+   margin: 0;
+   justify-content: space-around;
+  }
+  .map-desk{
+    margin-left: 20px;
+  }
+  .title-testi{
+   
+font-size: 34px;
+font-weight: 500;
+line-height: 41px;
+letter-spacing: -0.3199999928474426px;
+text-align: left;
+
+  }
+  .footer{
+    margin-top: 90px;
+  }
+
 }

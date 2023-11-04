@@ -4,9 +4,9 @@ export const MapSec = () => {
   return (
    <>
   
-   
+  <h2 className="map-desk">OUR LOCATIONS</h2>
     <div className="map-container">
-    <h2>OUR LOCATIONS</h2>
+   
         <div className="map-card">
             <img src="/image 1.png" alt="map" />
             <div className="map-description">

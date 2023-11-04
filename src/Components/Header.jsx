@@ -13,7 +13,7 @@ export const Header = () => {
 
         </div>
        <nav className="navbar">
-       <ul className='nav-list'>
+       <ul className='nav-list desktop'>
 
             <li><a href="">GET STARTED</a></li>
             <li><a href="">MEMBERSHIP</a></li>

@@ -86,6 +86,7 @@ export const TestimonialSec = () => {
 
     </div>
     <img className="community-img"src="/Community Image.png" alt="image" />
+    <img className="community-desk" src="/Community Image copy.png" alt="img" />
     </>
   )
 }
