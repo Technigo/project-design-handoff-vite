@@ -31,7 +31,7 @@ export const HomePage = () => {
                         </div>
                         <H1_Headline
                             h1_headline={h1_headline}
-                            className="brown-text"
+                            className="brown-text new_line"
                         />
                     </div>
                     <div className={`trial-wrapper`}>

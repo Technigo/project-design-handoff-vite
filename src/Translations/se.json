@@ -7,7 +7,7 @@
     },
     "homepage": {
         "hero1": "Online Yoga och Meditation",
-        "hero2": "Lyft din kropp, sinne och själ",
+        "hero2": "Lyft din \nkropp, sinne och själ",
         "hero3": "Gratis provperiod ➤"
     },
     "homecontainer": {
@@ -33,7 +33,7 @@
     },
     "about": {
         "h1": "Upptäck styrka, balans och inre harmoni var som helst, när som helst",
-        "text": "Börja en gratis provperiod"
+        "text": "Börja en gratis provperiod ▾"
     },
     "aboutcontainer": {
         "h2": [
