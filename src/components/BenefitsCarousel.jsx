@@ -12,7 +12,7 @@ import healthImg from '../images/health.png';
 
 const BenefitsCarousel = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 2,

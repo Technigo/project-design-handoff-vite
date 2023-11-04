@@ -197,6 +197,10 @@ export const BenefitsCarouselCardContent = styled.p`
   background-color: lime;
 `;
 
+export const TestimoniesWrapper = styled.section`
+  background-color: chocolate;
+`;
+
 export const AboutWrapper = styled.section`
   background-color: lime;
 `;
