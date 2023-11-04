@@ -1,7 +1,8 @@
 .mainContainer {
     background-image: url('src/assets/heroImage.svg');
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 40%;
+    height: 65em;
     background-position: right top;
     display: flex;
     align-items: flex-end;
@@ -9,9 +10,9 @@
 
 .mainContainer img {
     position: absolute;
-    top: 1em;
-    left: 1em;
-    width: 212px;
+    top: 4em;
+    left: 4em;
+    width: 350px;
 }
 
 .infoContainer {
@@ -46,14 +47,8 @@
     background-color: #83EDD5;
     font-family: 'Montserrat';
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 20px 30px 20px 30px;
-}
-
-.tryForFree:hover, .aboutUs:hover {
-    background-color: white;
-    color: #8600A5;
-    border: 3px solid #8600A5;
 }
 
 .aboutUs {
@@ -63,10 +58,11 @@
     height: 60px;
     border-radius: 50px;
     border: 3px solid #4A205A;
+    background-color: transparent;
     color: #4A205A;
     font-family: 'Montserrat';
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     padding: 20px 44px 20px 44px;
 }
 
@@ -78,6 +74,13 @@ img:hover {
 @media screen and (max-width: 667px) {
     .mainContainer {
         height: 47em;
+        background-size: 80%;
+    }
+
+    .mainContainer img {
+        top: 1em;
+        left: 1em;
+        width: 212px;
     }
 
     .infoContainer h1 {

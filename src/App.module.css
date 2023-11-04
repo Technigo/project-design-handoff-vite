@@ -10,15 +10,28 @@ h1 {
 }
 
 .siteContainer {
-    grid-column: 1 / 5;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
 .contentWrapper {
+    grid-column: 1 / 5;
     display: flex;
     flex-direction: column;
     max-width: 100%;
+}
+
+button:hover {
+    background-color: white;
+    color: #8600A5;
+    border: 3px solid #8600A5;
+    font-weight: 700;
+}
+
+.wrapCTA {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
 }
 
 @media screen and (max-width: 667px) {
@@ -30,16 +43,27 @@ h1 {
         flex-direction: column;
         gap: 3.5em;
     }
+
+    .wrapCTA {
+        flex-direction: column;
+        gap: 1em;
+    }
 }
 
 @media screen and (min-width: 668px) and (max-width: 1024px) {
     .siteContainer {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .contentWrapper {
+        grid-column: 1 / 3;
         flex-direction: column;
         gap: 3.5em;
         margin: 1.5em;
+    }
+
+    .wrapCTA {
+        flex-direction: column;
+        gap: 1em;
     }
 }

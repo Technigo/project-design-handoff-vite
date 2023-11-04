@@ -12,8 +12,10 @@ export const App = () => {
       <div className={styles.siteContainer}>
         <div className={styles.contentWrapper}>
           <Header />
-          <BeginnerCTA />
-          <SafetyCTA />
+          <div className={styles.wrapCTA}>
+            <BeginnerCTA />
+            <SafetyCTA />
+          </div>
           <Questions />
           <Benefits />
           <Footer />

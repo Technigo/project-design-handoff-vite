@@ -2,6 +2,7 @@
     background-color: #4A205A;
     display: flex;
     justify-content: center;
+    max-width: 50%;
 }
 
 .contentWrapper {
@@ -9,6 +10,7 @@
     flex-direction: column;
     gap: 20px;
     align-items: center;
+    max-width: 80%;
     color: white;
     text-align: center;
     padding: 40px 0px 40px 0px;
@@ -29,6 +31,10 @@ img:hover {
 }
 
 @media screen and (max-width: 667px) {
+    .mainContainer {
+        max-width: 100%;
+    }
+
     p {
         font-size: 20px;
     }
@@ -40,7 +46,7 @@ img:hover {
 
 @media screen and (min-width: 668px) and (max-width: 1024px) {
     .mainContainer {
-        /* margin: 1.5em; */
+        max-width: 100%;
     }
 
     .contentWrapper {
