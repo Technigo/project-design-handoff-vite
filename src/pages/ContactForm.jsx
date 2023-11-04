@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styled from 'styled-components';
 import { Heading } from '../reusableComponents/Heading';
 import { Description } from '../reusableComponents/Description';
+import { useTranslation } from 'react-i18next';
 
 const ModalContainer = styled.div`
 position: fixed;
@@ -85,14 +86,21 @@ line-height: 160.5%; /* 28.89px */
 
 
 export const ContactForm = ({ isOpen, onClose }) => {
-  
+  const { t } = useTranslation('contactForm');
+
 const [name, setName] = useState('');
 const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [phone, setPhone] = useState('');
 
-  const MainHeading = "I' m interested in gaining my edge!";
-  const Subheading = " You will get a response within 24 hours."
+
+  const MainHeading = t('mainHeading');
+  const Subheading = t('subheading');
+  const NamePlaceholder = t('namePlaceholder');
+  const EmailPlaceholder = t('emailPlaceholder');
+  const PhonePlaceholder = t('phonePlaceholder');
+  const GoalsPlaceholder = t('goalsPlaceholder');
+  const SubmitButtonLabel = t('submitButtonLabel');
 
 
 const handleSubmit = (e) => {
@@ -101,17 +109,38 @@ e.preventDefault();
 }
 
 return (
-<ModalContainer isOpen={isOpen}>
+  <ModalContainer isOpen={isOpen}>
   <ModalContent>
-    <span className="close-button" onClick={onClose}>X</span>
-      <FormHeading  text={MainHeading}/>
-      <FormParagraph text={Subheading} />
+    <span className="close-button" onClick={onClose}>
+      X
+    </span>
+    <FormHeading text={MainHeading} />
+    <FormParagraph text={Subheading} />
     <FormAria onSubmit={handleSubmit}>
-      <InputField type="text" placeholder="Name" value={name} onChange={(e)=> setName(e.target.value)} />
-        <InputField type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <InputField type="tel" placeholder="Phone" value={phone} onChange={(e) => setPhone(e.target.value)} />
-      <TextField placeholder="Goals" value={message} onChange={(e)=> setMessage(e.target.value)} />
-    <ButtonForm type="submit">Send My Inquiry</ButtonForm>
+      <InputField
+        type="text"
+        placeholder={NamePlaceholder}
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <InputField
+        type="email"
+        placeholder={EmailPlaceholder}
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
+      />
+      <InputField
+        type="tel"
+        placeholder={PhonePlaceholder}
+        value={phone}
+        onChange={(e) => setPhone(e.target.value)}
+      />
+      <TextField
+        placeholder={GoalsPlaceholder}
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
+      />
+      <ButtonForm type="submit">{SubmitButtonLabel}</ButtonForm>
     </FormAria>
   </ModalContent>
 </ModalContainer>

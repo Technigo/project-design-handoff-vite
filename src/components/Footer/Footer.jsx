@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../../reusableComponents/Button";
-import { useTranslation } from 'react-i18next'
+
 
 const FooterWrapper = styled.div`
   display: grid;
@@ -52,26 +52,34 @@ const ContactInfo = styled.div`
   }
 `;
 const SocialMedia = styled.p`
+font-family: var(--heading-font-family);
+color:   #777b88;
+margin-top: 25px;
+`
+const SocialWrapper = styled.div`
+display: flex;
+flex-direction: row;
 
 `
 
 export const Footer = () => {
-  const { i18n } = useTranslation()
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
+
   return (
     <>
       <FooterWrapper>
         <FooterImage src="./logo.png" alt="Logo" />
         <ButtonWrapper>
-          <TranslateButton onClick={() => changeLanguage('se')} imageSrc="./SwedishLanguage.png">
+          <TranslateButton  imageSrc="./SwedishLanguage.png">
           </TranslateButton>
-          <TranslateButton onClick={() => changeLanguage('en')} imageSrc="./EnglishLanguage.png">
+          <TranslateButton imageSrc="./EnglishLanguage.png">
           </TranslateButton>
         </ButtonWrapper>
 
         <ContactInfo>
+          <img src="./Icons/pinMap.png" />
+          <img src="./Icons/facebook.svg" />
+          <img src="./Icons/facebook.svg" />
+         <SocialWrapper>
           <SocialMedia>SOCIAL MEDIA</SocialMedia>
           <img src="./Icons/facebook.svg" />
           <img src="./Icons/twitter.svg" />
@@ -80,7 +88,8 @@ export const Footer = () => {
           <img src="./Icons/instagram.svg" />
           <img src="./Icons/googleplus.svg" />
           <img src="./Icons/pinterest.svg" />
-          <img src="./Icons/rss.svg" />
+            <img src="./Icons/rss.svg" />
+         </SocialWrapper>
         </ContactInfo>
       </FooterWrapper>
     </>
