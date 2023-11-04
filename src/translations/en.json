@@ -37,7 +37,8 @@
         "opening_hours_text": "The studios openings hours are in accordance with the timetable.",
         "mail": "Mail will be answered within 24 h.",
         "subway": "SUBWAY/TRAIN",
-        "car": "CAR"
+        "car": "CAR",
+        "parking": "Parking spaces are limited."
     },
     "newsPage": {
         "text": "Keep yourself updated with our latest news, workshops, happenings, offers and plenty more by signing up for our Newsletter!",

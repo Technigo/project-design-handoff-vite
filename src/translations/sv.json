@@ -33,17 +33,18 @@
         }
     ],
     "infoPage": {
-        "openingHours": "OPENING HOURS",
+        "openingHours": "ÖPPETTIDER",
         "opening_hours_text": "Studions öppettider är i enlighet med tidtabellen.",
         "mail": "Mail besvaras inom 24 timmar.",
         "subway": "TUNNELBANA/TÅG",
-        "car": "BIL"
+        "car": "BIL",
+        "parking": "Antalet parkeringsplatser är begränsat."
     },
     "newsPage": {
         "text": "Håll dig uppdaterad om våra senaste nyheter, workshops, happenings, erbjudanden och mycket mer genom att prenumerera på vårt nyhetsbrev!",
-        "name": "Namn",
-        "email": "E-post",
-        "message": "Meddelande",
+        "name": "Namn:",
+        "email": "E-post:",
+        "message": "Meddelande:",
         "send": "Skicka"
     },
     "article": {
