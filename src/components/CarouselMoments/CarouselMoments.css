@@ -13,18 +13,17 @@
 .carousel-item {
   width: 100%; /* Set width to 100% of the container */
   margin-right: 24px; /* This should be the same as slideMarginRight in JSX */
-  /* flex: 0 0 auto;  */
 }
 
-.carousel-item:last-child {
-  margin-right: 0; /* No margin for the last item */
-}
+/* .carousel-item:last-child {
+  margin-right: 0; 
+} */
 
 .carousel-control {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: #fff;
+  background-color: transparent;
   border: none;
   padding: 10px;
   cursor: pointer;
