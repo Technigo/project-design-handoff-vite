@@ -5,6 +5,7 @@ import wave3mini from "../../assets/wave-3mini.svg";
 import wave3tablet from "../../assets/wave-3tablet.svg";
 import { PrimaryBtn } from "../../components/buttons/primary/PrimaryBtn";
 import { SecondaryBtn } from "../../components/buttons/secondary/SecondaryBtn";
+
 export const YogaTypeSection = () => {
   const { t } = useTranslation();
   return (
