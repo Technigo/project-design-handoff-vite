@@ -1,0 +1,17 @@
+{
+    "about": "Tietoa",
+    "classes": "Luokat",
+    "studio": "Studio",
+    "book": "Varaa",
+    "hero": {
+      "yourPractice": "Sinun harjoituksesi",
+      "destination": "Sinun kohde joogalle",
+      "wayToPractice": "Tapa, jolla valitset harjoittaa",
+      "breakFromStress": "Ota tauko päivittäisestä stressistä ja lähde matkalle kohti itsetutkiskelua ja paranemista.",
+      "joinCommunity": "Liity yhteisöömme samanmielisiä ihmisiä ja tutkikaamme yhdessä polkua hyvinvointiin, tasapainoon ja rauhaan."
+    },
+    "benefits": {
+      "header": "Joogan hyödyt"
+    }
+  }
+  

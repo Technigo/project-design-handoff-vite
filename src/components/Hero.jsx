@@ -1,32 +1,35 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { HeroWrapper, HeroImage, HeroImageText, HeroHeader, HeroText, BookButton, StyledLink, ButtonWrapper } from './StyledComponents';
 
 export const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <HeroWrapper>
         <HeroImage>
           <HeroImageText>
-            <span>Your practice</span>
-            <span>YOGA YOU</span>
+            <span>{t('hero.yourPractice')}</span>
+            <span>Yoga you</span> {/* Keeping it static */}
           </HeroImageText>
         </HeroImage>
         <HeroHeader>
-          <span>Your destination for yoga</span>
-          <span>The way you choose to practice</span>
+          <span>{t('hero.destination')}</span>
+          <span>{t('hero.wayToPractice')}</span>
         </HeroHeader>
         <HeroText>
           <div>
-            Take a break from the stress of daily life and embark on a journey towards self-discovery and healing.
+            {t('hero.breakFromStress')}
           </div>
           <div>
-            Join our community of like-minded individuals, and together, let's explore the path to well-being, balance, and tranquility.
+            {t('hero.joinCommunity')}
           </div>
         </HeroText>
         <ButtonWrapper>
-        <BookButton><StyledLink to="/book">Book</StyledLink></BookButton>
+          <BookButton><StyledLink to="/book">{t('book')}</StyledLink></BookButton>
         </ButtonWrapper>
       </HeroWrapper>
     </>
   );
 };
-

@@ -1,0 +1,17 @@
+{
+    "about": "About",
+    "classes": "Classes",
+    "studio": "Studio",
+    "book": "Book",
+    "hero": {
+      "yourPractice": "Your practice",
+      "destination": "Your destination for yoga",
+      "wayToPractice": "The way you choose to practice",
+      "breakFromStress": "Take a break from the stress of daily life and embark on a journey towards self-discovery and healing.",
+      "joinCommunity": "Join our community of like-minded individuals, and together, let's explore the path to well-being, balance, and tranquility."
+    },
+    "benefits": {
+      "header": "Benefits of Yoga"
+    }
+  }
+  
