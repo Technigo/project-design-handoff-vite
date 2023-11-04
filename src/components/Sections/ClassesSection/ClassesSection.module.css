@@ -9,10 +9,12 @@
   grid-template-columns: repeat(4, 1fr);
   background-color: #9eb1a8;
   color: black;
+  overflow: auto;
+  max-height: fit-content;
 }
 
 .classesBox {
-  margin-bottom: 1em;
+  margin-bottom: 4em;
   color: black;
   text-align: center;
   margin-top: 0;
@@ -20,10 +22,18 @@
   color: black;
 }
 
+.classesBox img {
+  max-width: 80%;
+  padding: 1em;
+}
+
 .subHeading {
   color: black;
 }
 
-img {
-  padding: 1em;
+.subHeading:hover {
+  background-color: #fef8ea;
+  opacity: 0.5;
+  border-radius: 20px;
+  padding: 0.3em;
 }

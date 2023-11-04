@@ -5,9 +5,13 @@ export const Members = () => {
   return (
     <>
       <div className={styles.membersSection}>
-        <h2 className={styles.quoteHeading}>
-          What our members think <img src="/assets/grey-heart.svg" />
-        </h2>
+        <div className={styles.quoteBox}>
+          <h2 className={styles.quoteHeading}>
+            What our members think
+            <img src="/assets/grey-heart.svg" />
+          </h2>
+        </div>
+
         <div className={styles.membersContainer}>
           <div className={styles.membersBox}>
             ‘’The trainers are the best I have ever met. Attentive and

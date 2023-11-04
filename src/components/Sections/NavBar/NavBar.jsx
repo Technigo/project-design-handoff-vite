@@ -1,4 +1,5 @@
 import styles from "./NavBar.module.css";
+import { Button } from "../../ui/Button/Button";
 
 export const NavBar = () => {
   return (
@@ -31,7 +32,7 @@ export const NavBar = () => {
             LOG IN
           </a>
           <a className={styles.navMenuOption} href="/">
-            <button className={styles.signupNavButton}>SIGN UP</button>
+            <Button buttonName="SIGN UP"></Button>
           </a>
         </div>
         <div className={styles.hamburgerMenu}>

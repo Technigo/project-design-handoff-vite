@@ -27,6 +27,8 @@ export const Home = () => {
   const englishFunc = () => changeLanguageFunc("en");
   const swedishFunc = () => changeLanguageFunc("se");
 
+  const [language, setLanguage] = useState("en"); // Default language is English
+
   return (
     <>
       <Header />
@@ -39,9 +41,9 @@ export const Home = () => {
       <UpcomingCourses />
       <Footer />
       <div className="internationalisation-wrapper">
-        <button onClick={englishFunc}>English</button>
-        <button onClick={swedishFunc}>Swedish</button>
-        <p>{t("translatePage.heading")}</p>
+        <button onClick={englishFunc}>En</button>
+        <button onClick={swedishFunc}>Sw</button>
+        <p>{t("homePage.upcomingCourses.header")}</p>
       </div>
     </>
   );

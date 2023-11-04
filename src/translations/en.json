@@ -5,6 +5,19 @@
     "heading": "Hello word",
     "sub-heading": "This is a test to help understand nesting"
   },
-  "homePage": {},
+  "homePage": {
+    "header": {},
+    "heroSection": {},
+    "classesSection": {},
+    "quoteSection": {},
+    "founders": {},
+    "members": {},
+    "upcomingCourses": {
+      "header": "Upcoming Courses",
+      "courseHeader": "Course One",
+      "courseDetails": "Just want to add some text here to check the formatting, yey! this is some info for a Course."
+    },
+    "footer": {}
+  },
   "aboutPage": {}
 }

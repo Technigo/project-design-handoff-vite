@@ -12,11 +12,16 @@ h1 {
 .heroContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  background-image: url("/assets/background-corner.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
 }
 
 .heroLeft {
   align-content: left;
-  padding-left: 2em;
+  margin-left: 5em;
+  max-width: 50%;
 }
 
 .heroRight {

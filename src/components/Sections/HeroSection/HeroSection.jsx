@@ -1,5 +1,6 @@
 import styles from "./HeroSection.module.css";
 import { Button } from "../../ui/Button/Button";
+import { NavBar } from "../NavBar/NavBar";
 
 export const HeroSection = () => {
   return (

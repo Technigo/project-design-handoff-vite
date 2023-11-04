@@ -7,6 +7,12 @@
 .quoteHeading {
   color: #030303;
 }
+
+.quoteBox {
+  vertical-align: middle;
+  display: inline;
+}
+
 .membersContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

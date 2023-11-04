@@ -4,5 +4,13 @@
   "translatePage": {
     "heading": "Hej ord",
     "sub-heading": "Detta är ett test för att hjälpa till att förstå nesting."
-  }
+  },
+  "homePage": {
+    "upcomingCourses": {
+      "header": "Kommande kurser",
+      "courseHeader": "Kurs Ett",
+      "courseDetails": "Vill bara lägga till lite text här för att kontrollera formateringen, jey! Detta är information om en kurs."
+    }
+  },
+  "aboutPage": {}
 }

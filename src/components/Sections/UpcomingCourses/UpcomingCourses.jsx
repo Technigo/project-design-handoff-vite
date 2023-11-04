@@ -1,4 +1,6 @@
 import styles from "./UpcomingCourses.module.css";
+import { useTranslation } from "react-i18next";
+import i18n from "i18next";
 
 export const UpcomingCourses = () => {
   return (

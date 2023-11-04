@@ -1,5 +1,7 @@
 .meetSection {
   background-color: #2c1e63;
+  /* -webkit-clip-path: polygon(100% 0, 100% 65%, 54% 100%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 65%, 54% 100%, 0 100%, 0 0); */
 }
 
 h2 {
@@ -34,4 +36,13 @@ p {
   flex: 1;
   margin: 5px;
   padding: 10px;
+}
+
+/* trying to get the angle divide between here and the next section */
+.top {
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 77px), 0 100%);
+}
+.bottom {
+  clip-path: polygon(0 77px, 100% 0, 100% 100%, 0 100%);
+  margin-top: -77px;
 }
