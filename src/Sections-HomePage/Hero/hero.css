@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-background-image: url("/Images/space-background.jpg");
+    background-image: url("/Images/space-background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -29,36 +29,29 @@ background-image: url("/Images/space-background.jpg");
 
 .hero-heading-h1 {
     color: #FFE03B;
-        font-family: Roboto;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-}
-.hero-heading-h2 {
-    color: #FFF;
-        font-family: Roboto;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+    font-family: Roboto;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
-@media (min-width: 667px){
+.hero-heading-h2 {
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media (min-width: 667px) {
     .hero-heading-h1 {
         font-size: 65px;
     }
+
     .hero-heading-h2 {
         font-size: 45px;
     }
 }
 
-/* @media (min-width: 1025px) {
-    .hero-heading-h1 {
-            font-size: 110px;
-        }
-    
-        .hero-heading-h2 {
-            font-size: 90px;
-        }
-} */

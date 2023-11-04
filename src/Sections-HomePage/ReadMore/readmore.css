@@ -16,24 +16,24 @@
     text-align: center;
 }
 
-.readMore-text-container h1{
+.readMore-text-container h1 {
     color: #FFF;
-        font-family: Roboto;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
 
 .readMore-text-container p {
     color: #FFF;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        letter-spacing: 0.77px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.77px;
 }
 
 /*---- Media query -----*/
@@ -42,15 +42,16 @@
     .readMore-text-container h1 {
         font-size: 40px;
         font-weight: 600;
-    
+
     }
+
     .readMore-text-container p {
         font-size: 30px;
     }
 
     .readMore-section {
         padding: 70px;
-       
+
     }
 
     .readMore-wrapper {
