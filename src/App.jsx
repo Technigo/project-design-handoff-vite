@@ -3,6 +3,8 @@ import { Navbar } from "./Components.jsx/Navbar";
 import { About } from "./Components.jsx/About";
 import { Header } from "./Components.jsx/Header";
 import { InfoPage } from "./Components.jsx/InfoPage";
+import { Cards } from "./Components.jsx/Cards";
+import { Member } from "./Components.jsx/Member";
 import { Footer } from "./Components.jsx/Footer";
 
 export const App = () => {
@@ -19,6 +21,8 @@ export const App = () => {
                     <Navbar />
                     <Header />
                     <InfoPage />
+                    <Cards />
+                    <Member />
                   </>
                 }
               />
