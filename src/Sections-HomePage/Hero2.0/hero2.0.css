@@ -11,9 +11,7 @@
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-
 }
-
 
 .hero-content-wrapper {
     display: flex;
@@ -25,7 +23,6 @@
 .heading-text-wrapper {
     text-align: center;
 }
-
 
 .hero-heading-h1 {
     color: #FFE03B;
