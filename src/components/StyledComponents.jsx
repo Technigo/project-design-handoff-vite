@@ -153,7 +153,7 @@ export const HeroBookButtonWrapper = styled.section`
 `;
 
 export const BenefitsWrapper = styled.section`
-color: #602C9E;
+  color: #602C9E;
 `;
 
 export const BenefitsHeader = styled.section`
@@ -169,6 +169,32 @@ export const BenefitsHeader = styled.section`
     background-color: limegreen;
     padding: 4.8vh 1.25vh 4.8vh 1.25vh;
   }
+`;
+
+export const BenefitsCarouselCardContainer = styled.div`
+  padding: 0px;
+`;
+
+export const BenefitsCarouselCard = styled.div`
+  background-color: darkgreen;
+  padding: 20px;
+`;
+
+export const BenefitsCarouselCardImage = styled.img`
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+`;
+
+export const BenefitsCarouselCardTitle = styled.h3`
+  margin: 0;
+  background-color: plum;
+`;
+
+export const BenefitsCarouselCardContent = styled.p`
+  margin: 0;
+  background-color: lime;
 `;
 
 export const AboutWrapper = styled.section`
