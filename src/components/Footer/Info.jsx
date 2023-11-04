@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const InfoContainer = styled.div`
   border-radius: 20px;
@@ -25,11 +26,13 @@ const InfoContainer = styled.div`
 `;
 
 export const Info = () => {
+  const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
+
   return (
     <InfoContainer className="info">
-      <span>About us</span>
-      <p>Faq</p>
-      <span>Contact us</span>
+      <span>{t("homePage.footer.about")}</span>
+      <p>{t("homePage.footer.faq")}</p>
+      <span>{t("homePage.footer.contact")}</span>
     </InfoContainer>
   );
 };

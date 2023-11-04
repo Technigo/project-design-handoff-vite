@@ -34,12 +34,11 @@ const SocialMediaContainer = styled.div`
 `;
 
 export const SocialMedia = () => {
-  const { t, i18n } = useTranslation(); // Use useTranslation to get the 't' function from i18next
+  const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
 
   return (
     <SocialMediaContainer>
-      {/* <p>Follow us</p> */}
-      <p>{t("footer.header")}</p>
+      <p>{t("homePage.footer.heading")}</p>
       <div className="social-media-icons">
         <img src="./facebook.svg" alt="Facebook" />
         <img src="./instagram.svg" alt="Instagram" />

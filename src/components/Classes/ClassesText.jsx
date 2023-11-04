@@ -24,13 +24,8 @@ export const ClassesText = () => {
   const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
   return (
     <ClassesTextContainer>
-      {/* <h2>Our Barre Classes</h2> */}
-      <h2>{t("aside.heading")}</h2>
-      <p>
-        Prima Barre offers four group classes with unique full-body workouts
-        focused on low-impact, high-intensity movements that lift and tone
-        muscles and improve strength, agility, and flexibility for everybody.
-      </p>
+      <h2>{t("homePage.aside.heading")}</h2>
+      <p>{t("homePage.aside.paragraph")}</p>
     </ClassesTextContainer>
   );
 };

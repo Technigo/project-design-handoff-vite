@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const DropdownContainer = styled.div`
   position: relative;
@@ -25,9 +26,14 @@ const DropdownContent = styled.div`
 
 export const LanguageButton = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const { t, i18n } = useTranslation();
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
+  };
+
+  const handleLanguageSelect = (language) => {
+    i18n.changeLanguage(language);
   };
 
   return (
@@ -36,19 +42,22 @@ export const LanguageButton = () => {
         <img src="/language-orange.svg" alt="Change to another language" />
 
         <DropdownContent open={dropdownOpen}>
-          <a href="#">
+          <a href="#" onClick={() => handleLanguageSelect("en")}>
+            <img src="/flag-en.png" alt="English" />
+          </a>
+          <a href="#" onClick={() => handleLanguageSelect("no")}>
             <img src="/flag-no.png" alt="Norwegian" />
           </a>
-          <a href="#">
+          <a href="#" onClick={() => handleLanguageSelect("se")}>
             <img src="/flag-se.png" alt="Swedish" />
           </a>
-          <a href="#">
+          <a href="#" onClick={() => handleLanguageSelect("da")}>
             <img src="/flag-da.png" alt="Danish" />
           </a>
-          <a href="#">
+          <a href="#" onClick={() => handleLanguageSelect("pt")}>
             <img src="/flag-pt.png" alt="Portuguese" />
           </a>
-          <a href="#">
+          <a href="#" onClick={() => handleLanguageSelect("mk")}>
             <img src="/flag-mk.png" alt="Macedonian" />
           </a>
         </DropdownContent>
