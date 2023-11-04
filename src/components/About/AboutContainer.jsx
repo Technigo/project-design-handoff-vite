@@ -7,13 +7,16 @@ import "../../pages/about.css"
 import { H2_Headline } from "../Typography/H2_Headline";
 import { AboutCard } from "./AboutCard";
 import { ClientQuotes } from "./ClientQuotes";
+import { useTranslation } from "react-i18next";
 
 
 
 
 export const AboutContainer = () => {
-    let h2_headline_1 = "About YOMY";
-    let h2_headline_2 = "Our Clients - About the Journey";
+
+    const { t } = useTranslation();
+    let h2_headline_1 = t("aboutcontainer.h2.0");
+    let h2_headline_2 = t("aboutcontainer.h2.1");
 
     const about_studio_info = [
         {

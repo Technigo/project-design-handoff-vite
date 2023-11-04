@@ -10,9 +10,73 @@
         "hero2": "Elevate Your Body, Mind, and Spirit",
         "hero3": "Free trial ➤"
     },
+    "homecontainer": {
+        "h2": "Your Instructors - About the Journey",
+        "instructors": {
+            "instructor1": [
+                "The dance of breath and movement is where magic happens. In each pose, I discovered a piece of my soul. Join me, let's move, let's breathe, and let's find our own unique rhythm.",
+                "Lisa ・Ashtanga"
+            ],
+            "instructor2": [
+                "Meditation is the art of unveiling our true selves. Through the chaos of life, I found stillness. Through stillness, I found strength. Join me, and let's embark on this sacred journey together.",
+                "Arlette ・Meditation"
+            ],
+            "instructor3": [
+                "Life's greatest gift is the present moment. Through meditation, I found the gateway to inner peace. Join me, and let's embrace the beauty of now, together.",
+                "Kori ・Meditation"
+            ],
+            "instructor4": [
+                "Yoga is a mirror reflecting our inner world. Through years of practice, I've learned that strength arises from vulnerability. Come, let's discover the power within you.",
+                "Anna・Yin"
+            ]
+        }
+    },
     "about": {
         "h1": "Discover Strength, Balance, and Inner Harmony Anywhere, Anytime",
         "text": "Start a Free trial"
+    },
+    "aboutcontainer": {
+        "h2": [
+            "About YOMY",
+            "Our Clients - About the Journey"
+        ],
+        "about_studio": {
+            "about1": [
+                "At YOMY, we're dedicated to creating a sanctuary where individuals can find strength, balance, and inner harmony.",
+                "Our online platform ensures you can embark on this transformative journey anytime, from the comfort of your own space."
+            ],
+            "about2": [
+                "We believe that true wellness encompasses the integration of mind, body, and soul.",
+                "Through the practices of yoga and meditation, we strive to empower individuals to discover their inner strength, achieve balance, and foster a deep sense of well-being.",
+                "Your journey starts here, and it continues with you, wherever you are."
+            ],
+            "about3": [
+                "Our diverse team of experienced instructors brings a wealth of knowledge and passion to each class.",
+                "With specialized expertise in various forms of yoga and meditation, they are dedicated to creating a nurturing environment for your personal growth and transformation."
+            ],
+            "about4": [
+                "Our online studio creates flexibility to practice from any location and fits into your schedule.",
+                "Access a variety of classes and instructors and eliminate commuting time and expenses. Join a inclusive community that connecting practitioners worldwide."
+            ]
+        },
+        "studio_employee": [
+            "Agnes・Co-Founder",
+            "Cecilia・Co-Founder",
+            "Linn・Team leader",
+            "Lora Site・Manager"
+        ],
+        "client_quotes": {
+            "text": {
+                "emily": "The online platform provides flexibility, and the instructors radiate positivity and expertise. I've found a deeper sense of balance and strength in both my body and mind.",
+                "David": "I've tried many yoga studios, but YOMY stands out. The instructors are truly passionate about what they do, and it shows in every class.",
+                "Sarah": "I can't recommend YOMY enough. The community is so welcoming, and the classes are diverse and challenging. This studio has helped me find a sense of calm and strength that I never thought possible."
+            },
+            "name": {
+                "name1": "Emily",
+                "name2": "David",
+                "name3": "Sarah"
+            }
+        }
     },
     "footer": {
         "footerLink1": "Contact Us",

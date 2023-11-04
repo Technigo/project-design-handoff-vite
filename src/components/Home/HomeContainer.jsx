@@ -1,16 +1,15 @@
+import { useTranslation } from "react-i18next";
 import imageHome1 from "../../assets/images_mobile/imageHome1.png";
 import imageHome2 from "../../assets/images_mobile/imageHome2.png";
 import imageHome3 from "../../assets/images_mobile/imageHome3.png";
 import imageHome4 from "../../assets/images_mobile/imageHome4.png";
-import "../css_card_styling/card.css"
+import "../css_card_styling/card.css";
 import { H2_Headline } from "../Typography/H2_Headline";
 import { HomeCard } from "./HomeCard";
 
-
-
-
 export const HomeContainer = () => {
-    let h2_headline = "Your Instructors - About the Journey";
+    const { t } = useTranslation();
+    let h2_headline = t("homecontainer.h2");
 
     const instructor_home_info = [
         {
@@ -18,8 +17,8 @@ export const HomeContainer = () => {
             image: imageHome1,
             className: "homecard1",
             text: [
-                `"The dance of breath and movement is where magic happens. In each pose, I discovered a piece of my soul. Join me, let's move, let's breathe, and let's find our own unique rhythm."`,
-                "Lisa ・Ashtanga"
+                t("homecontainer.instructors.instructor1.0"),
+                t("homecontainer.instructors.instructor1.1")
             ],
             alt: 'Woman in a one-legged bridge yoga pose',
         },
@@ -28,8 +27,8 @@ export const HomeContainer = () => {
             image: imageHome2,
             className: "homecard2",
             text: [
-                `"Meditation is the art of unveiling our true selves. Through the chaos of life, I found stillness. Through stillness, I found strength. Join me, and let's embark on this sacred journey together."`,
-                "Arlette ・Meditation"
+                t("homecontainer.instructors.instructor2.0"),
+                t("homecontainer.instructors.instructor2.1")
             ],
             alt: 'Close-up of a woman in a pose with her palms together and eyes closed',
         },
@@ -38,8 +37,8 @@ export const HomeContainer = () => {
             image: imageHome3,
             className: "homecard3",
             text: [
-                `"Life's greatest gift is the present moment. Through meditation, I found the gateway to inner peace. Join me, and let's embrace the beauty of now, together."`,
-                "Kori ・Meditation"
+                t("homecontainer.instructors.instructor3.0"),
+                t("homecontainer.instructors.instructor3.1")
             ],
             alt: 'Woman stretching her arms with her hands together and leaning her upper body backward',
         },
@@ -48,13 +47,12 @@ export const HomeContainer = () => {
             image: imageHome4,
             className: "homecard4",
             text: [
-                `"Yoga is a mirror reflecting our inner world. Through years of practice, I've learned that strength arises from vulnerability. Come, let's discover the power within you."`,
-                "Anna・Yin"
+                t("homecontainer.instructors.instructor4.0"),
+                t("homecontainer.instructors.instructor4.1")
             ],
             alt: 'Woman in a modified Warrior II yoga pose, one arm resting on a bent knee and the other arm extended to the side',
         }
     ];
-
 
     return (
         <section className="card-page-container">

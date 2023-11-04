@@ -10,10 +10,74 @@
         "hero2": "Lyft din kropp, sinne och själ",
         "hero3": "Gratis provperiod ➤"
     },
+    "homecontainer": {
+        "h2": "Dina Instruktörer - Om Resan",
+        "instructors": {
+            "instructor1": [
+                "Dansen av andning och rörelse är där magin händer. I varje ställning upptäckte jag en del av min själ. Följ med mig, låt oss röra oss, låt oss andas och låt oss hitta vår egen unika rytm.",
+                "Lisa ・Ashtanga"
+            ],
+            "instructor2": [
+                "Meditation är konsten att avslöja vår sanna natur. Genom livets kaos fann jag stillhet. Genom stillheten fann jag styrka. Följ med mig, och låt oss påbörja denna heliga resa tillsammans.",
+                "Arlette ・Meditation"
+            ],
+            "instructor3": [
+                "Livets största gåva är nuets ögonblick. Genom meditation fann jag porten till inre frid. Följ med mig, och låt oss omfamna skönheten i nuet, tillsammans.",
+                "Kori ・Meditation"
+            ],
+            "instructor4": [
+                "Yoga är en spegel som reflekterar vår inre värld. Genom års praktik har jag lärt mig att styrka uppstår från sårbarhet. Kom, låt oss upptäcka kraften inom dig.",
+                "Anna・Yin"
+            ]
+        }
+    },
     "about": {
         "h1": "Upptäck styrka, balans och inre harmoni var som helst, när som helst",
         "text": "Börja en gratis provperiod"
-      },
+    },
+    "aboutcontainer": {
+        "h2": [
+            "Om YOMY",
+            "Våra Klienter - Om Resan"
+        ],
+        "about_studio": {
+            "about1": [
+                "På YOMY är vi hängivna att skapa en fristad där individer kan hitta styrka, balans och inre harmoni.",
+                "Vår online plattform säkerställer att du kan påbörja denna transformerande resa när som helst, från bekvämligheten av ditt eget utrymme."
+            ],
+            "about2": [
+                "Vi tror att sann välmående innefattar integration av sinnet, kroppen och själen.",
+                "Genom yoga och meditation strävar vi efter att ge individer möjlighet att upptäcka sin inre styrka, uppnå balans och främja en djup känsla av välbefinnande.",
+                "Din resa börjar här och fortsätter med dig, var du än är."
+            ],
+            "about3": [
+                "Vårt mångsidiga team av erfarna instruktörer för med sig en rikedom av kunskap och passion till varje klass.",
+                "Med specialiserad expertis inom olika former av yoga och meditation är de hängivna att skapa en omsorgsfull miljö för din personliga tillväxt och transformation."
+            ],
+            "about4": [
+                "Vår online studio ger flexibilitet att praktisera från valfri plats och passar in i din tidtabell.",
+                "Få tillgång till olika klasser och instruktörer och eliminera pendlingstid och utgifter. Gå med i en inkluderande gemenskap som förenar utövare över hela världen."
+            ]
+        },
+        "studio_employee": [
+            "Agnes・Medgrundare",
+            "Cecilia・Medgrundare",
+            "Linn・Teamledare",
+            "Lora Site・Manager"
+        ],
+        "client_quotes": {
+            "text": {
+                "emily": "Den online plattformen ger flexibilitet, och instruktörerna utstrålar positivitet och expertis. Jag har funnit en djupare känsla av balans och styrka i både kropp och sinne.",
+                "David": "Jag har provat många yogastudior, men YOMY utmärker sig. Instruktörerna brinner verkligen för det de gör, och det märks i varje klass.",
+                "Sarah": "Jag kan inte rekommendera YOMY tillräckligt. Gemenskapen är mycket välkomnande, och klasserna är mångsidiga och utmanande. Denna studio har hjälpt mig att hitta en känsla av lugn och styrka som jag aldrig trodde var möjlig."
+            },
+            "name": {
+                "name1": "Emily",
+                "name2": "David",
+                "name3": "Sarah"
+            }
+        }
+    },    
     "footer": {
         "footerLink1": "Kontakta oss",
         "footerLink2": "FAQ",
