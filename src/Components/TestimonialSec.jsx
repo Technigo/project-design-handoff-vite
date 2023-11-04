@@ -20,11 +20,11 @@ export const TestimonialSec = () => {
 
             </div>
             <div className="stars">
-                <img src="public/star.png" alt="star" />
-                <img src="public/star.png" alt="star" />
-                <img src="public/star.png" alt="star" />
-                <img src="public/star.png" alt="star" />
-                <img src="public/star.png" alt="star" />
+                <img src="/star.png" alt="star" />
+                <img src="/star.png" alt="star" />
+                <img src="/star.png" alt="star" />
+                <img src="/star.png" alt="star" />
+                <img src="/star.png" alt="star" />
             </div>
             <div className="desc">
                <h3>Like a second family!</h3>
@@ -45,11 +45,11 @@ export const TestimonialSec = () => {
 
             </div>
             <div className="stars">
-                <img src="public/star.png" alt="star" />
-                <img src="public/star.png" alt="star" />
-                <img src="public/star.png" alt="star" />
-                <img src="public/star.png" alt="star" />
-                <img src="public/star.png" alt="star" />
+                <img src="/star.png" alt="star" />
+                <img src="/star.png" alt="star" />
+                <img src="/star.png" alt="star" />
+                <img src="/star.png" alt="star" />
+                <img src="/star.png" alt="star" />
             </div>
             <div className="desc">
                <h3>It was a very good experience.</h3>
