@@ -1,7 +1,8 @@
 import { Button } from "../../Components/Reusable/Buttons/Button";
 import { useTranslation } from "react-i18next";
 
-import "./hero.css"
+import "./hero2.css"
+
 export const Hero = () => {
   const { t } = useTranslation()
 
