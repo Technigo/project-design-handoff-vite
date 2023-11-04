@@ -3,7 +3,7 @@ import style from './Courses.module.css';
 import { Text } from '../../../UI/textAndTypography/Text';
 import { CardCourseCarousel } from '../../../UI/carousels/ImageCarousel';
 import { StyledButton } from '../../../UI/buttons/StyledButtons';
-import { coursesData } from '../../../../data/courses';
+import { dataCarousel } from '../../../../data/dataCarousel';
 
 
 export const Courses = () => {
@@ -25,7 +25,7 @@ export const Courses = () => {
                     className={style.gridItem2}
                 />
                 <CardCourseCarousel className={style.carouselContainer}>
-                    {coursesData.map((course) => (
+                    {dataCarousel.map((course) => (
                         <div className={style.carouselcard} key={course.id}>
                             <img src={course.imgSrc} alt={course.altText} className={style.img} />
                             <div className={style.cardTextWrapper}>
@@ -34,11 +34,11 @@ export const Courses = () => {
                                         key={index}
                                         header={text.header}
                                         type={text.type}
-                                        style={text.style}
+                                        style={{ ...text.style, marginBottom: '16px' }}
                                     />
                                 ))}
                             </div>
-                            <StyledButton>
+                            <StyledButton className={style.styledBtn}>
                                 {course.buttonText}
                             </StyledButton>
                         </div>

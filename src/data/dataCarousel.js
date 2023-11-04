@@ -1,4 +1,4 @@
-export const coursesData = [
+export const dataCarousel = [
     {
         id: 1,
         imgSrc: "/Images/carouselSensing.svg",
