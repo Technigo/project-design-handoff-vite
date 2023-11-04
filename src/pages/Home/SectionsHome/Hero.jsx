@@ -34,9 +34,6 @@ export const Hero = () => {
         <Link to="/about">
         <Button
         className={"iwant-more-btn"} 
-        //btnURL={article.link} 
-        //imgAlt={"Web icon"} 
-        //iconURL={`/icons/Doc.svg`} 
         btnText={"SAT NAM, I WANT MORE"}
          />
          </Link>

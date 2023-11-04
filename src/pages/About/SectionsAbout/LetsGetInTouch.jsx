@@ -1,13 +1,16 @@
 import styled from "styled-components";
-import { SubHeading } from "../../../reusableComp/SubHeading";
 import { NormalText } from "../../../reusableComp/NormalText";
-import { Button } from "../../../reusableComp/Button";
 import { Form } from "./Form";
+import { OrangeButton } from "../../../reusableComp/OrangeButton";
 
 const LetsGetInTouchSection = styled.section`
 background-color: var(--marine);
 color: white;
-
+display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 `;
 
 const LetsGetInTouchSubHeading = styled.div`
@@ -21,6 +24,20 @@ line-height: 35px;
 
 `;
 
+const FormContainer = styled.div`
+  background-color: var(--cobalt);
+  color: #fff;
+  font-family: var(--jetbrains-mono);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px; /* Set a maximum width for the form container */
+`;
+
 
 const letsGetInTouchP = "I believe that energy is everywhere and when you subscribe to my newsletter you will get my kind of energy in your mailbox. Every now and then. But a good music list is never a bad energy?!"
 
@@ -32,13 +49,15 @@ export const LetsGetInTouch = () => {
     LETS GET IN TOUCH:
    </LetsGetInTouchSubHeading>
    <NormalText text={letsGetInTouchP}/>
+   <FormContainer>
    <Form />
-   <Button
+   </FormContainer>
+   <OrangeButton 
    className={"orange-btn"}
    btnText={"Good music, yes please!"} />
+   
    </LetsGetInTouchSection>
    </>
   );
 };
 
-//byt namn på orange-btn

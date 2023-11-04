@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const ButtonStyle = styled.button`
+const OrangeButtonStyle = styled.button`
 border-radius: 8px;
-background: #0021F5;
+background: var(--popping-orange);
 color: white;
 display: flex;
 width: 277px;
@@ -12,20 +12,22 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 10px;
-
-&:hover {
-    background-color: var(--popping-orange);
 `
 
-export const Button = ({ className, btnURL, iconURL, imgAlt, btnText }) => {
+
+export const OrangeButton = ({ className, btnURL, iconURL, imgAlt, btnText }) => {
     return (
-        <ButtonStyle>
+        <OrangeButtonStyle>
         <a 
         className={`button ${className}`} 
         href={btnURL}>
         <img src={iconURL} alt={imgAlt} />
         {btnText}
         </a>
-        </ButtonStyle>
+        </OrangeButtonStyle>
     );
 };
+
+
+
+

@@ -1,5 +1,34 @@
 import React, { useState, useEffect } from 'react';
-import loveData from './love.json';
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import loveData from './love.json'; 
+import styled from 'styled-components';
+
+const LoveCarouselContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
+
+const IconWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* Example background color */
+  border-radius: 50%; /* Make it round for a button-like appearance */
+  width: 40px; /* Adjust the width */
+  height: 40px; /* Adjust the height */
+  cursor: pointer; /* Add pointer cursor for interactivity */
+`;
+
+const LeftIcon = styled(AiOutlineArrowLeft)`
+  color: #FF0000; /* Customize the color */
+  font-size: 24px; /* Customize the font size */
+`;
+
+const RightIcon = styled(AiOutlineArrowRight)`
+  color: #FF0000; /* Customize the color */
+  font-size: 24px; /* Customize the font size */
+`;
 
 const LoveCarousel = () => {
   const [reviews, setReviews] = useState([]);
@@ -20,17 +49,23 @@ const LoveCarousel = () => {
     );
   };
 
+  if (reviews.length === 0) {
+    return null; // Handle the case when reviews are not loaded yet
+  }
+
   return (
-    <div className="love-carousel">
+    <LoveCarouselContainer>
+      <IconWrapper onClick={prevReview}>
+        <LeftIcon />
+      </IconWrapper>
       <div className="review">
         <p>{reviews[currentReviewIndex].text}</p>
         <p>- {reviews[currentReviewIndex].author}</p>
       </div>
-      <div className="navigation">
-        <button onClick={prevReview}>Previous</button>
-        <button onClick={nextReview}>Next</button>
-      </div>
-    </div>
+      <IconWrapper onClick={nextReview}>
+        <RightIcon />
+      </IconWrapper>
+    </LoveCarouselContainer>
   );
 };
 

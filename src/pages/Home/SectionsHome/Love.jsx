@@ -1,6 +1,8 @@
 import { NormalText } from "../../../reusableComp/NormalText";
 import { SubHeading } from "../../../reusableComp/SubHeading";
+
 import styled from "styled-components";
+import LoveCarousel from "./LoveCarousel";
 
 const LoveSection = styled.section`
 background: var(--Marine, #141832);
@@ -38,10 +40,7 @@ export const Love = () => {
     <LoveSubheading>
       LOVE
     </LoveSubheading>
-    <NormalText text={LoveNormalText}/>
-    <LoveName>
-      Maria
-    </LoveName>
+    <LoveCarousel />
     </LoveSection>
     </>
   );

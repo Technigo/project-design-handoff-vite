@@ -9,7 +9,9 @@ flex-direction: column;
 align-items: center;
 gap: 40px;
 background: var(--cobalt, #0021F5);
-color: white`;
+color: white;
+`;
+
 
 
 const kundaliniYogaNormalText = `Kundalini Yoga is all about
