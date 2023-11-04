@@ -152,11 +152,6 @@ export const HeroBookButtonWrapper = styled.section`
   }
 `;
 
-export const AboutUsWrapper = styled.section`
-  background-color: #ff0000;
-  text-align: left;
-`;
-
 export const BenefitsWrapper = styled.section`
 color: #602C9E;
 `;
@@ -176,9 +171,20 @@ export const BenefitsHeader = styled.section`
   }
 `;
 
-export const ContentSection = styled.section`
-  background-color: #446699;
-  text-align: left;
+export const AboutWrapper = styled.section`
+  background-color: lime;
+`;
+
+export const ClassesWrapper = styled.section`
+  background-color: plum;
+`;
+
+export const StudioWrapper = styled.section`
+  background-color: snow;
+`;
+
+export const BookWrapper = styled.section`
+  background-color: teal;
 `;
 
 export const NavLink = styled.li`

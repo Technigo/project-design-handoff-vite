@@ -1,3 +1,9 @@
-import { ContentSection } from '../components/StyledComponents';
+import { BookWrapper } from '../components/StyledComponents';
 
-export const Book = () => <ContentSection>Book</ContentSection>;
+export const Book = () => {
+  return (
+    <BookWrapper>
+      Book 
+    </BookWrapper>
+  );
+}

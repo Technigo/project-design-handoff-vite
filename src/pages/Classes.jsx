@@ -1,4 +1,10 @@
-import { ContentSection } from '../components/StyledComponents';
+import { ClassesWrapper } from '../components/StyledComponents';
 
-export const Classes = () => <ContentSection>Classes</ContentSection>;
+export const Classes = () => {
+    return (
+      <ClassesWrapper>
+        Classes
+      </ClassesWrapper>
+    );
+  }
 

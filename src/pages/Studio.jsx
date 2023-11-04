@@ -1,3 +1,9 @@
-import { ContentSection } from '../components/StyledComponents';
+import { StudioWrapper } from '../components/StyledComponents';
 
-export const Studio = () => <ContentSection>Studio</ContentSection>;
+export const Studio = () => {
+  return (
+    <StudioWrapper>
+      Studio
+    </StudioWrapper>
+  );
+}

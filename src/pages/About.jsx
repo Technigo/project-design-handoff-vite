@@ -1,6 +1,9 @@
-import { AboutUs } from '../components/AboutUs'
+import { AboutWrapper } from '../components/StyledComponents';
 
-export const About = () => 
-    <div>
-        <AboutUs />
-    </div>
+export const About = () => {
+  return (
+    <AboutWrapper>
+      About Us 
+    </AboutWrapper>
+  );
+}
