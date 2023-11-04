@@ -7,11 +7,6 @@ const resources = {
             welcome: "Welcome to our website!",
         },
     },
-    es: {
-        translation: {
-            welcome: "¡Bienvenido a nuestro sitio web!",
-        },
-    },
     sv: {
         translation: {
             welcome: "Välkommen till vår webbplats!",
@@ -24,4 +19,4 @@ i18n.use(initReactI18next).init({
     lng: "en", // default language
 })
 
-export default i18n
+export default i18n;
