@@ -6,7 +6,7 @@ import "./hero2.css"
 export const Hero = () => {
   const { t } = useTranslation()
 
-  return (
+  return ( 
     <section className="hero-section">
 
       <div className="heading-text-wrapper">
