@@ -14,17 +14,17 @@ export const HeaderWrapper = styled.nav`
   justify-content: space-between;
   align-items: center;
   color: #602C9E;
-  margin: 4.25vh 4.25vh 0vh 4.25vh;
+  padding: 2vh;
   background-color: aquamarine;
 `;
 
 export const Logo = styled.div`
+  text-align: justify;
   font-size: 1.375rem;
+  font-style: normal;
   font-weight: 700;
+  line-height: 1.5rem;
   letter-spacing: 0.00625rem;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
 `;
 
 export const Menu = styled.div`
@@ -60,13 +60,15 @@ export const Hamburger = styled(HamburgerIcon)`
 `;
 
 export const ContentWrapper = styled.div`
+  padding-top: 1vh;
+
   @media (min-width: 1440px) {
-    margin: 4.8vh 7vh 0vh 7vh;
-}
+    padding: 4.8vh 7vh 0vh 7vh;
+  }
 `;
 
 export const HeroWrapper = styled.div`
-    color: #602C9E;
+  color: #602C9E;
 `;
 
 export const HeroImage = styled.section`
@@ -76,19 +78,17 @@ export const HeroImage = styled.section`
   background-repeat: no-repeat;
   height: 100vw;
   color: transparent;
-
   @media (min-width: 1440px) {
     background-position: 50% 50%;
     height: 75vh;
     color: #602C9E;
     text-align: center;
     font-size: 4.5rem;
-}
+  }
 `;
 
 export const HeroImageText = styled.div`
   color: transparent;
-
   @media (min-width: 1440px) {
     color: #602C9E;
     text-align: center;
@@ -109,18 +109,31 @@ export const HeroImageText = styled.div`
 `;
 
 export const HeroHeader = styled.section`
-  display: none;
-  @media(min-width: 1440px) {
+
+  display: block;
+  text-align: center;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
+  span {
     display: block;
-    font-size: 4.5rem;
-    line-height: 7.25rem;
-    span {
-      display: block;
-    }
-    background-color: darkorange;
-    padding: 4.8vh 1.25vh 4.8vh 1.25vh;
   }
-`;
+  background-color: darkorange;
+    
+    @media(min-width: 834px) {
+      font-size: 3rem;
+      line-height: 4.75rem;
+      letter-spacing: 0.00625rem;
+    }
+    
+    @media(min-width: 1440px) {
+      font-size: 4.5rem;
+      line-height: 7.25rem;
+      padding: 4.8vh 1.25vh 4.8vh 1.25vh;
+    }
+  `;
 
 export const HeroText = styled.section`
   display: none;
@@ -148,26 +161,48 @@ export const HeroBookButtonWrapper = styled.section`
     display: block;
     padding: 0vh 1.25vh 0vh 1.25vh;
     text-align: left;
-    background-color: powderblue
+    background-color: powderblue;
   }
 `;
 
 export const BenefitsWrapper = styled.section`
   color: #602C9E;
+  
+  @media(min-width: 834px) {
+    padding-top: 2.75vh;
+  }
 `;
 
 export const BenefitsHeader = styled.section`
-  display: none;
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
+  background-color: orange;
+
+  @media(min-width: 834px) {
+    font-size: 2.0625rem;
+  }
+  
   @media(min-width: 1440px) {
-    display: block;
     font-size: 4.5rem;
-    text-align: center;
-    line-height: 7.25rem;
-    span {
-      display: block;
-    }
-    background-color: limegreen;
-    padding: 4.8vh 1.25vh 4.8vh 1.25vh;
+    line-height: normal;
+  }
+`;
+
+export const BenefitsCarouselWrapper = styled.div`
+  @media(max-width: 833px) {
+    display: none;
+  }
+`;
+
+export const BenefitsCardsWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  @media(min-width: 834px) {
+    display: none;
   }
 `;
 
@@ -177,7 +212,7 @@ export const BenefitsCarouselCardContainer = styled.div`
 
 export const BenefitsCarouselCard = styled.div`
   background-color: darkgreen;
-  padding: 20px;
+  padding: 0;
 `;
 
 export const BenefitsCarouselCardImage = styled.img`
@@ -198,23 +233,109 @@ export const BenefitsCarouselCardContent = styled.p`
 `;
 
 export const TestimoniesWrapper = styled.section`
-  background-color: chocolate;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: yellow;
+
+  @media(min-width: 834px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 2.75vh;
+  }
+`;
+
+export const TestimonyCard = styled.div`
+  padding: 2.3rem;
+  order: ${props => props.order || 0};
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.625rem;
+  color: #865025;
+
+  @media(min-width: 834px) {
+    padding: 4rem;
+    font-size: 1.5rem;
+  }
 `;
 
 export const AboutWrapper = styled.section`
-  background-color: lime;
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
+  background-color: orange;
+
+  @media(min-width: 834px) {
+    font-size: 2.0625rem;
+  }
+
+  @media(min-width: 1440px) {
+    font-size: 4.5rem;
+    line-height: normal;
+  }
 `;
 
 export const ClassesWrapper = styled.section`
-  background-color: plum;
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
+  background-color: orange;
+
+  @media(min-width: 834px) {
+    font-size: 2.0625rem;
+  }
+
+  @media(min-width: 1440px) {
+    font-size: 4.5rem;
+    line-height: normal;
+  }
 `;
 
 export const StudioWrapper = styled.section`
-  background-color: snow;
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
+  background-color: orange;
+
+  @media(min-width: 834px) {
+    font-size: 2.0625rem;
+  }
+
+  @media(min-width: 1440px) {
+    font-size: 4.5rem;
+    line-height: normal;
+  }
 `;
 
 export const BookWrapper = styled.section`
-  background-color: teal;
+  text-align: center;
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
+  background-color: orange;
+
+  @media(min-width: 834px) {
+    font-size: 2.0625rem;
+  }
+
+  @media(min-width: 1440px) {
+    font-size: 4.5rem;
+    line-height: normal;
+  }
 `;
 
 export const NavLink = styled.li`
@@ -238,19 +359,46 @@ export const BookButton = styled.button`
 
 export const FooterWrapper = styled.footer`
   background-color: magenta;
-  font-size: 4.5rem;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.00625rem;
   text-align: left;
   margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #602C9E;
+  padding: 2vh;
 `;
 
 export const Link = styled(RouterLink)`
   text-decoration: none;
   text-transform: uppercase;
   color: inherit;
-  &:visited,
-  &:hover,
-  &:active {
+  &:visited, &:hover, &:active {
     text-decoration: none;
     color: inherit;
   }
+`;
+
+export const PrevArrow = styled.div`
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  padding: 2%;
+`;
+
+export const NextArrow = styled.div`
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  padding: 2%;
 `;
