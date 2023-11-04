@@ -6,8 +6,10 @@ import Planet from "../../assets/planet.svg?react";
 import Facebook from "../../assets/facebook.svg?react";
 import Instagram from "../../assets/instagram.svg?react";
 import Youtube from "../../assets/youtube.svg?react";
+import { useTranslation } from "react-i18next";
 
 const Layout = () => {
+    const { t, i18n } = useTranslation();
     return (
         <>
             <div>
@@ -18,12 +20,12 @@ const Layout = () => {
                         </Link>
                         <div className="hidden md:flex items-center gap-4">
                             <Link to="/" className="font-bold py-3 px-2 rounded-full hover:text-blue-n hover:underline underline-offset-2 transition-all ease-out duration-300 flex gap-1">
-                                <span>CLASSES</span>
+                                <span>{t("classes")}</span>
                                 <ArrowDown />
                             </Link>
-                            <Link to="/about" className="font-bold px-2 py-3 rounded-full hover:text-blue-n hover:underline underline-offset-2 transition-all ease-out duration-300">ABOUT US</Link>
-                            <Link to="/" className="font-bold border-2 text-blue-n border-blue-n px-8 py-3 rounded-full  hover:text-white-n hover:underline underline-offset-2 transition-all ease-out duration-300">LOG IN</Link>
-                            <Link to="/" className="font-bold text-white-n bg-blue-n px-8 py-3 rounded-full hover:bg-beige-n hover:text-blue-n hover:underline underline-offset-2 transition-all ease-out duration-300">SIGN UP</Link>
+                            <Link to="/about" className="font-bold px-2 py-3 rounded-full hover:text-blue-n hover:underline underline-offset-2 transition-all ease-out duration-300">{t("about")}</Link>
+                            <Link to="/" className="font-bold border-2 text-blue-n border-blue-n px-8 py-3 rounded-full  hover:text-white-n hover:underline underline-offset-2 transition-all ease-out duration-300">{t("logIn")}</Link>
+                            <Link to="/" className="font-bold text-white-n bg-blue-n px-8 py-3 rounded-full hover:bg-beige-n hover:text-blue-n hover:underline underline-offset-2 transition-all ease-out duration-300">{t("signUp")}</Link>
                         </div>
                         <div className="md:hidden">
                             <Hamburger className="h-8 w-8 hover:cursor-pointer hover:text-blue-n transition-all ease-out duration-300" />
@@ -37,16 +39,22 @@ const Layout = () => {
             <footer className="flex justify-between bg-green-n w-full p-4 items-center font-semibold sticky">
                 <div>
                     <div className="flex gap-4 items-center mb-4">
-                        <Link className="hover:text-blue-n transition-all ease-out duration-300" to="/about">ABOUT US</Link>
+                        <Link className="hover:text-blue-n transition-all ease-out duration-300" to="/about">{t("about")}</Link>
                         <p className="cursor-pointer hover:text-blue-n transition-all ease-out duration-300">FAQ</p>
-                        <p className="flex items-center cursor-pointer hover:text-blue-n transition-all ease-out duration-300">
+                        <div className="flex items-center gap-1 cursor-pointer hover:text-blue-n transition-all ease-out duration-300">
                             <Planet />
-                            <span className="mx-2">ENGLISH</span>
-                            <ArrowDown />
-                        </p>
+                            <select
+                                value={i18n.language}
+                                onChange={(e) => i18n.changeLanguage(e.target.value)}
+                                className="bg-transparent cursor-pointer focus:outline-none"
+                            >
+                                <option value="en">{t("english")}</option>
+                                <option value="sv">{t("swedish")}</option>
+                            </select>
+                        </div>
                     </div>
                     <div>
-                        <p className="mb-2">JOIN OUR COMMUNITY</p>
+                        <p className="mb-2">{t("joinOurCommunity")}</p>
                         <div className="flex gap-4">
                             <Facebook className="cursor-pointer hover:text-blue-n transition-all ease-out duration-300" />
                             <Instagram className="cursor-pointer hover:text-blue-n transition-all ease-out duration-300" />
