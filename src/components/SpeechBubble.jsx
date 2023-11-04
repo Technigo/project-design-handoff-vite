@@ -12,7 +12,7 @@ const BubbleContainer = styled.div`
     width: 240px;
   }
 
-  @media (min-width: 834px) {
+  @media (min-width: 744px) {
     display: none;
   }
 `;

@@ -6,3 +6,22 @@
 #section3 img {
   display: none;
 }
+
+@media (min-width: 744px) {
+  #section3 {
+    text-align: left;
+  }
+
+  #section3 .page-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #section3 img {
+    display: block;
+    width: 20rem;
+    margin: auto;
+  }
+}

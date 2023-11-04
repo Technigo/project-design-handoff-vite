@@ -19,10 +19,11 @@
 }
 
 /* For medium devices */
-@media (min-width: 834px) {
+@media (min-width: 744px) {
   #kundalini-yoga {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: left;
   }
 
   #kundalini-yoga .page-wrapper {
@@ -31,14 +32,4 @@
   }
 }
 
-/* Responsive square image container */
-.square-image-container {
-  width: 100%;
-  aspect-ratio: 1/1; /* Maintain a square aspect ratio */
-}
 
-#kundalini-yoga img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}

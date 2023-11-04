@@ -9,7 +9,7 @@ const StyledHeader = styled.header`
   width: 100%;
   z-index: 1000;
 
-  @media (min-width: 834px) {
+  @media (min-width: 744px) {
     position: static;
   }
 `;

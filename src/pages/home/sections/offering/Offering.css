@@ -25,3 +25,10 @@
 .single-word {
   color: #fff;
 }
+
+/* For medium devices */
+@media (min-width: 744px) {
+  #offering {
+    text-align: left;
+  }
+}

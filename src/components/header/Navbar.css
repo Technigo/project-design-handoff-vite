@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  padding: 0 4rem;
+  padding: 0 1rem;
 }
 
 .menu-icon {
@@ -69,13 +69,6 @@
   .nav-menu ul {
     flex-direction: column;
     align-items: flex-end;
-  }
-}
-
-
-@media (min-width: 834px) {
-  .nav-container {
-    padding: 0 1rem;
   }
 }
 

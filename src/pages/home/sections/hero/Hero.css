@@ -26,6 +26,7 @@
 #hero p {
   margin: 1rem 0;
   line-height: 1.9rem;
+  max-width: 20rem;
 }
 
 .overlay {
@@ -35,27 +36,35 @@
   position: absolute;
 }
 
-
 /* For medium devices */
-@media (min-width: 834px) {
-
+@media (min-width: 744px) {
   #hero {
     background-image: none;
     position: static;
     height: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .imageOnBiggerScreens {
     display: block;
   }
-  
+
+  .imageOnBiggerScreens img {
+    height: 100%;
+    object-fit: cover;
+  }
+
   .hero-wrapper {
     position: static;
     bottom: 0;
     padding: 2rem;
     width: 100%;
     background-color: var(--marine);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
   }
   .overlay {
     display: none;

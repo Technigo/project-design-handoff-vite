@@ -1,6 +1,5 @@
 import { SectionTitle } from "../../../../components/reusable/SectionTitle";
 import "./KundaliniYoga.css";
-import { SquareImage } from "../../../../components/reusable/SquareImage";
 
 export const KundaliniYoga = () => {
   return (
@@ -8,7 +7,6 @@ export const KundaliniYoga = () => {
       <div className="square-image-container">
         <img className="praying" src="./prayingwoman.png" alt="" />
       </div>
-      {/* <SquareImage imgUrl="./prayingwoman.png" imgAlt="" isTwoImages={false} /> */}
       <div className="page-wrapper">
         <SectionTitle className="kundalini-title" title="Kundalini Yoga" />
         <div className="kundalini-info">
@@ -29,7 +27,6 @@ export const KundaliniYoga = () => {
       <div className="square-image-container">
         <img className="incense" src="./incense.png" alt="" />
       </div>
-      {/* <SquareImage imgUrl="./incense.png" imgAlt="" isTwoImages={false} /> */}
     </section>
   );
 };
