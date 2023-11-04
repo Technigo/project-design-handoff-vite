@@ -14,15 +14,19 @@ const StyledButton = styled.button`
         background: linear-gradient(180deg, var(--secondary-color), var(--tertiary-color));
     }
 
-    &:active{
+    &:active {
         background: var(--tertiary-color);
+    }
+
+    &:disabled {
+        background: var(--background-color);
     }
 `
 
-export const ButtonStyled = ({ text }) => {
+export const ButtonStyled = ({ text, disabled }) => {
     return(
         <>
-            <StyledButton>{text}</StyledButton>
+            <StyledButton disabled={disabled}>{text}</StyledButton>
         </>
     )
 }
