@@ -6,11 +6,11 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
- background-image: url("/Images/space-background.jpg");
+    background-image: url("/Images/space-background.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-        position: relative; /*Needed for stacking */
+        position: relative;
        
 }
 
