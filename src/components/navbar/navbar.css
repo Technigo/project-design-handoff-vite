@@ -21,14 +21,16 @@ nav {
 .nav-menu ul {
   display: flex;
   padding: 0;
+  align-items: center;
 }
 
 .navBtns {
   display: flex;
   gap: 10px;
-  margin-top: 32px;
+  /* margin-top: 32px; */
   justify-content: flex-end;
   padding-right: 30px;
+  align-items: center;
 }
 
 .navBtns:first-child {
@@ -88,6 +90,7 @@ a {
 
   .nav-menu.expanded ul {
     display: block;
+    align-items: center;
   }
 
   .nav-menu li {
@@ -103,5 +106,12 @@ a {
 
   .nav-menu li a:hover {
     background-color: azure;
+  }
+
+  .navBtns {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+    padding-right: 30px;
   }
 }

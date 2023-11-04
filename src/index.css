@@ -96,3 +96,26 @@ li {
     line-height: 28px; /* 116.667% */
   }
 }
+
+@media screen and (min-width: 1280px) {
+  h2 {
+    font-size: var(--h2-desktop);
+    padding: 0 16px;
+  }
+
+  h3 {
+    font-size: var(--ingress-tablet-desktop);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 131%;
+    letter-spacing: -0.44px;
+  }
+
+  p,
+  li {
+    font-size: var(--body-tablet-desktop);
+    letter-spacing: -0.528px;
+
+    line-height: 28px; /* 116.667% */
+  }
+}

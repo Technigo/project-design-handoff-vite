@@ -82,6 +82,7 @@
   z-index: 2;
   position: absolute;
   bottom: -35px;
+  width: 100vw;
 }
 
 .wave4 {
@@ -89,7 +90,8 @@
   position: absolute;
 }
 
-.intro-wave-tablet {
+.intro-wave-tablet,
+.intro-wave-desktop {
   display: none;
 }
 
@@ -143,7 +145,8 @@
     margin-top: 10px;
   }
 
-  .intro-wave-mini {
+  .intro-wave-mini,
+  .intro-wave-desktop {
     display: none;
   }
   .intro-wave-tablet {
@@ -157,5 +160,91 @@
   .wave4 {
     z-index: 1;
     position: absolute;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .intro-container {
+    padding-top: 120px;
+    /* padding: 32px 16px 128px 16px; */
+  }
+
+  .yoga-title {
+    font-size: var(--h1-desktop);
+    font-weight: 500;
+    margin-left: 260px;
+  }
+
+  .yoga-subtitle {
+    font-size: var(--ingress-tablet-desktop);
+    max-width: 40%;
+    position: absolute;
+    top: 520px;
+    left: 123px;
+  }
+
+  .dive-in {
+    font-size: var(--h2-desktop);
+    margin-left: 244px;
+  }
+
+  .title-and-image {
+    display: flex;
+    background-image: url(../../assets/wave-4desktop.svg);
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    width: 100%;
+  }
+
+  .title-and-image img {
+    padding-right: 180px;
+    max-height: 496px;
+    max-width: 334px;
+  }
+
+  /* .yoga-for-everyone {
+    color: var(--dark);
+    font-family: var(--font-family-ingress-body);
+    font-size: 12px;
+    line-height: 131%;
+    letter-spacing: -0.44px;
+    text-align: center;
+    padding: 0 20px;
+    margin-bottom: 40px;
+  } */
+
+  .lets-go {
+    background-color: #4c3831;
+    height: 150px;
+    width: 150px;
+    font-size: var(--body-mobile);
+    color: var(--offwhite);
+
+    margin-bottom: 280px;
+  }
+
+  .intro-wave-mini,
+  .intro-wave-tablet {
+    display: none;
+  }
+
+  .intro-wave-desktop {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    bottom: -22px;
+    width: 100vw;
+  }
+
+  .wave4 {
+    z-index: 1;
+    position: absolute;
+  }
+
+  .intro-wave-tablet {
+    display: none;
   }
 }

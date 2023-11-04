@@ -2,6 +2,8 @@ import "./classsection.css";
 import { useTranslation } from "react-i18next";
 import wave3mini from "../../assets/wave-3mini.svg";
 import wave3tablet from "../../assets/wave-3tablet.svg";
+import wave3desktop from "../../assets/wave-3desktop.svg";
+
 import { PrimaryBtn } from "../../components/buttons/primary/PrimaryBtn";
 import { SecondaryBtn } from "../../components/buttons/secondary/SecondaryBtn";
 import { InvertedBtn } from "../../components/buttons/inverted/InvertedBtn";
@@ -11,9 +13,11 @@ export const ClassSection = () => {
   const { t } = useTranslation();
   return (
     <div className="classection-container">
+      {/* <div className="classsection-info"> */}
       <h2 className="classes-title">{t("classes")}</h2>
       <p className="class-info">{t("wideRange")}</p>
       <p className="class-info">{t("bookOrSign")}</p>
+      {/* </div> */}
 
       <div className="classBtns">
         <PrimaryBtn btnName={t("bookClassBtn")} />
@@ -36,12 +40,31 @@ export const ClassSection = () => {
           alt="wave-pattern"
           className="upper-wave-tablet"
         />
+        <img
+          src={wave3desktop}
+          alt="wave-pattern"
+          className="upper-wave-desktop"
+        />
         <img src={yogagrey} alt="yoga-pose-image" className="yoga-stretch" />
         <img src={wave3mini} alt="wave-pattern" className="lower-wave-mini" />
+        <div className="yoga-type-info-box">
+          <h3>{t("yogaTypeTitle")}</h3>
+          <p>{t("yogaTypeSubtitle")}</p>
+          <p>{t("yogaTypeInfo")}</p>
+          <div className="yogaTypeBtns">
+            <PrimaryBtn btnName={t("yogaTypeBtn")} />
+            <SecondaryBtn btnName={t("bookClassBtn")} />
+          </div>
+        </div>
         <img
           src={wave3tablet}
           alt="wave-pattern"
           className="lower-wave-tablet"
+        />
+        <img
+          src={wave3desktop}
+          alt="wave-pattern"
+          className="lower-wave-desktop"
         />
       </div>
     </div>
