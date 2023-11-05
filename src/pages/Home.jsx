@@ -10,8 +10,8 @@ import LeftArrow from "../assets/left-arrow.svg?react";
 import styles from "./Home.module.css";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import Banner from "../components/banner/banner";
-import Button from "../components/button/button";
+import Banner from "../components/banner/Banner";
+import Button from "../components/button/Button";
 
 const Home = () => {
     // Importing translation functions from a library called react-i18next.
