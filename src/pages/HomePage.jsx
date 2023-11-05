@@ -10,7 +10,7 @@ import { Articles } from "../components/Articles/Articles";
 export const HomePage = () => {
   return (
     <>
-      <Header />
+      <Header contentType="video" />
       <HeroText />
       <Mantra />
       <Articles />

@@ -1,7 +1,7 @@
 import { Footer } from "../components/Footer/Footer";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import { Menu } from "../components/Header/Menu";
+import { Header } from "../components/Header/Header";
 
 const AboutPageContainer = styled.div`
   .hero-section {
@@ -36,8 +36,8 @@ export const AboutPage = () => {
 
   return (
     <>
+      <Header contentType="image" />
       <AboutPageContainer>
-        <Menu />
         <div className="hero-section">
           <h1>{t("aboutPage.mainSection.primaryHeading")}</h1>
           <p>{t("aboutPage.mainSection.primaryParagraph")}</p>

@@ -21,7 +21,7 @@ const HeaderContainer = styled.div`
   }
 `;
 
-export const Header = () => {
+export const Header = ({ contentType }) => {
   return (
     <HeaderContainer>
       <div className="top-buttons">
@@ -29,11 +29,14 @@ export const Header = () => {
         <SignInButton />
       </div>
       <div>
-        <video
-          src="/video-mobile.mp4"
-          onClick={(e) => e.target.play()}
-          //muted
-        ></video>
+        {contentType === "video" ? (
+          <video
+            src="/video-mobile.mp4"
+            onClick={(e) => e.target.play()}
+          ></video>
+        ) : (
+          <img src="/about-us-header.svg" alt="About Us Header" />
+        )}
       </div>
     </HeaderContainer>
   );

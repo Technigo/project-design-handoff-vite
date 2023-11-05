@@ -70,36 +70,43 @@ export const Menu = () => {
             <li>
               <Link to={"/"}>
                 <span>{t("homePage.heroSection.menu.home")}</span>
+                <img src="/gt.svg"></img>
               </Link>
             </li>
             <li>
               <Link to={"#"}>
                 <span>{t("homePage.heroSection.menu.book")}</span>
+                <img src="/gt.svg"></img>
               </Link>
             </li>
             <li>
               <Link to={"#"}>
                 <span>{t("homePage.heroSection.menu.classes")}</span>
+                <img src="/gt.svg"></img>
               </Link>
             </li>
             <li>
               <Link to={"#"}>
                 <span>{t("homePage.heroSection.menu.instructors")}</span>
+                <img src="/gt.svg"></img>
               </Link>
             </li>
             <li>
               <Link to={"/about"}>
                 <span>{t("homePage.heroSection.menu.about")}</span>
+                <img src="/gt.svg"></img>
               </Link>
             </li>
             <li>
               <Link to={"#"}>
                 <span>{t("homePage.heroSection.menu.contact")}</span>
+                <img src="/gt.svg"></img>
               </Link>
             </li>
             <li>
               <Link to={"#"}>
                 <span>{t("homePage.heroSection.menu.faq")}</span>
+                <img src="/gt.svg"></img>
               </Link>
             </li>
           </ul>
