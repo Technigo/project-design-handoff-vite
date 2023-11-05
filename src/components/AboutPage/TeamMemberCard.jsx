@@ -18,7 +18,7 @@ const Container = styled.div`
 `;
 
 const Card = styled.div`
-    width: 90%; // Allows for some space on the sides on mobile
+    width: 90%; 
     height: 238px;
     background-color: #D2FDFF;
     border: 1px solid #2A3439;
