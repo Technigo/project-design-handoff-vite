@@ -1,8 +1,106 @@
 {
-  "welcome": "hej",
-  "text": "hej hej",
-  "translatePage": {
-    "heading": "hello world",
-    "subheading": "hejhej"
+  "navbar": {
+    "homeLink": "HEM",
+    "BackLink": "Tillbaka",
+    "nav1": "Börja med Sadhana",
+    "nav2": "Kundalini Yoga"
+  },
+  "footer": {
+    "translation": {
+      "eng": "ENG",
+      "sve": "SVE"
+    },
+    "nav1": "HEM",
+    "nav2": "Nyhetsbrev",
+    "nav3": "40 dagar av Sadhana"
+  },
+  "homePage": {
+    "hero": {
+      "h1": "Sat nam, hej!",
+      "p": "Jag heter Petra och jag lär dig att koppla samman alla aspekter av dig själv med ditt högre jag och det gudomliga genom att använda Kundaliniyoga på en daglig basis. Vi kallar det Sadhana.",
+      "heroBtn": "Sat nam, jag vill ha mer"
+    },
+    "quote": {
+      "text": {
+        "one": "LÄNGTAR DU EFTER MER?",
+        "two": "Med en daglig helig morgonpraktik kan du ansluta till din inre källa av kreativitet, energi och med det fokuset",
+        "three": "BYGGA DINA VISIONER!"
+      },
+      "imgAlt": {
+        "1": "",
+        "2": ""
+      }
+    },
+    "offering": {
+      "title": "40 dagar med mig",
+      "text": {
+        "p1": "Att göra livsstilsförändringar på egen hand kräver mycket mer av dig än vad det behöver göra. Med en daglig morgonpraktik med Kundalini Yoga anpassar du dig till all den magiska energin från en gyllene linje av lärare, utövare och det gudomliga.",
+        "p2": {
+          "one": "Jag kallar det ",
+          "span": "ansvarstagande Deluxe."
+        },
+        "p3": "Vi börjar tillsammans med ett klarhetssamtal för att ta reda på om jag är läraren för dig. Vår energi behöver vara en perfekt matchning! Om det är ett FULLBODIGT JA förbereder jag en unik, skräddarsydd Sadhana för dig.",
+        "p4": "Meditation, andningsövningar och yoga i en perfekt blandning för din transformation.",
+        "p5": {
+          "one": "Och sedan börjar du bygga ditt liv. Inifrån, från din ",
+          "two": ". Varje morgon frigör du ",
+          "three": " med ",
+          "four": " till din Sadhana.",
+          "span": {
+            "one": "KLARHET",
+            "two": "ENERGI",
+            "three": "HÄNGIVENHET"
+          }
+        }
+      },
+      "btn": "Jag är redo, nu börjar vi"
+    },
+    "kundaliniYoga": {
+      "title": "Kundalini Yoga",
+      "text": {
+        "p1": "Kundalini Yoga handlar om att omvandla energi inom dig själv.",
+        "p2": "När du regelbundet utövar Kundalini Yoga har du ett effektivt sätt att aktivera din livskraft och bygga upp uthållighet för att omvandla denna mängd energi i ditt dagliga liv.",
+        "span": "Berätta ALLT för mig"
+      }
+    },
+    "testimonials": {
+      "title": "Kärlek"
+    }
+  },
+  "aboutPage": {
+    "section1": {
+      "title": "Tänk om du kunde:",
+      "text": {
+        "p1": "Jag är Petra och betydelsen av Petra är klippa eller sten.",
+        "p2": "Jag är en 2/4 Triple split Emotional Generator, vilket innebär att jag alltid letar efter energi som kan tända och matcha min passion för att bygga bättre versioner."
+      }
+    },
+    "quoteAboutPage": {
+      "text": {
+        "one": "Självledarskap",
+        "two": "Samarbete",
+        "three": "Gör mer av det du älskar"
+      }
+    },
+    "section3": {
+      "text": {
+        "p1": "Produkter, tjänster och människor. Jag tror att vi ständigt utvecklas och varför inte bestämma ditt eget nästa steg!",
+        "p2": "Under det senaste decenniet har jag arbetat i den mystiska världen av andligt kreativt entreprenörskap och har mer än 1000 timmar av att vägleda människor till sin intuition med meditation, privata mentorskap, cyklisk medvetenhet, Akashic Records och Kundalini Yoga.",
+        "p3": "Jag har också byggt olika feminina kreativa projekt, Pop Up-butiker, webbshoppar, webbplatser, dekorerat skyltfönster och så mycket mer roligt."
+      }
+    },
+    "contact": {
+      "title": "Låt oss komma i kontakt:",
+      "p": "Jag tror att energi finns överallt och när du prenumererar på mitt nyhetsbrev kommer du att få min typ av energi i din brevlåda. Då och då. Men en bra musiklista är aldrig en dålig energi?!",
+      "form": {
+        "name": "Namn:",
+        "email": "E-post:",
+        "btn": "Bra musik, ja tack!",
+        "placeholder": {
+          "one": "ditt namn",
+          "two": "din e-post"
+        }
+      }
+    }
   }
 }

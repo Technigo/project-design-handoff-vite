@@ -1,8 +1,106 @@
 {
-  "welcome": "hej",
-  "text": "hej hej",
-  "translatePage": {
-    "heading": "hello world",
-    "subheading": "hejhej"
+  "navbar": {
+    "homeLink": "HOME",
+    "BackLink": "Back",
+    "nav1": "Start with Sadhana",
+    "nav2": "Kundalini Yoga"
+  },
+  "footer": {
+    "translation": {
+      "eng": "ENG",
+      "sve": "SVE"
+    },
+    "nav1": "HOME",
+    "nav2": "Newsletter",
+    "nav3": "40 Days of Sadhana"
+  },
+  "homePage": {
+    "hero": {
+      "h1": "Sat nam, hi!",
+      "p": "My name is Petra and I am teaching you to connect all aspects of yourself with your higher self and the Divine by using Kundalini Yoga on a daily basis. We call it Sadhana.",
+      "heroBtn": "Sat nam, I want more"
+    },
+    "quote": {
+      "text": {
+        "one": "ARE YOU LONGING FOR MORE?",
+        "two": "With a daily sacred morning practice you can connect to your inner well of creativity, energy and with that focus",
+        "three": "BUILD YOUR VISIONS!"
+      },
+      "imgAlt": {
+        "1": "",
+        "2": ""
+      }
+    },
+    "offering": {
+      "title": "40 days with me",
+      "text": {
+        "p1": "Doing lifestyle changes on your own takes a lot more of you than it needs to do. With a daily morning practice with Kundalini Yoga you are aligning yourself with all of the magical energy from a golden lineage of teachers, practitioners and the Divine.",
+        "p2": {
+          "one": "I call it ",
+          "span": "accountability Deluxe."
+        },
+        "p3": "We start together with a clarity call to find out if I am the teacher for you. Our energy need to be a perfect match! If it is a FULLBODY YES I am preparing a unique, tailor made Sadhana for you.",
+        "p4": "Meditation, Breath work and Yoga in a perfect blend for your transformation.",
+        "p5": {
+          "one": "And then you start building your life. From within, from your ",
+          "two": ". Every morning you are releasing ",
+          "three": " with ",
+          "four": " to your Sadhana.",
+          "span": {
+            "one": "CLARITY",
+            "two": "ENERGY",
+            "three": "DEVOTION"
+          }
+        }
+      },
+      "btn": "I am ready, let's start"
+    },
+    "kundaliniYoga": {
+      "title": "Kundalini Yoga",
+      "text": {
+        "p1": "Kundalini Yoga is all about transforming energy within yourself.",
+        "p2": "When being a regular practitioner of Kundalini Yoga you have an efficient way of activating your life force and building up stamina to transform that amount of energy in your daily life.",
+        "span": "Tell me EVERYTHING"
+      }
+    },
+    "testimonials": {
+      "title": "Love"
+    }
+  },
+  "aboutPage": {
+    "section1": {
+      "title": "What if you could:",
+      "text": {
+        "p1": "I am Petra and the meaning of Petra is rock or stone.",
+        "p2": "I am a 2/4 Triple split Emotional Generator which means that I am always looking for energy that could ignite and match my passion for building better versions."
+      }
+    },
+    "quoteAboutPage": {
+      "text": {
+        "one": "Self Leadership",
+        "two": "Collaboration",
+        "three": "Do more of what you love"
+      }
+    },
+    "section3": {
+      "text": {
+        "p1": "Products, services and humans. I believe that we are constantly evolving and why not decide your own next step!",
+        "p2": "During the last decade I have worked in the mystical realm of spiritual creative entrepreneurship and have more than 1000 hrs of guiding humans to their intuition with meditation, private mentorships, cyclic awareness, Akashic Records and Kundalini Yoga.",
+        "p3": "I have also built different feminine creative projects, Pop Up shops, webshops, websites, decorated shop windows and so much more fun."
+      }
+    },
+    "contact": {
+      "title": "Let's get in touch:",
+      "p": "I believe that energy is everywhere and when you subscribe to my newsletter you will get my kind of energy in your mailbox. Every now and then. But a good music list is never a bad energy?!",
+      "form": {
+        "name": "Name:",
+        "email": "Email:",
+        "btn": "Good music, yes please!",
+        "placeholder": {
+          "one": "your name",
+          "two": "your email"
+        }
+      }
+    }
   }
 }

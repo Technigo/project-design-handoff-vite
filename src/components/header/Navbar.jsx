@@ -8,8 +8,10 @@ import { HiMenu } from "react-icons/hi";
 import "./Navbar.css";
 import { useState } from "react";
 import { HomeLink } from "./HomeLink";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
+  const { t } = useTranslation();
   const [showNavbar, setShowNavbar] = useState(false);
 
   const handleShowNavbar = () => {
@@ -17,12 +19,12 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="top-navbar">
+    <nav className={`top-navbar ${showNavbar ? "fixed" : ""}`}>
       <div className="nav-container">
         <HomeLink />
         <div className="menu-icon" onClick={handleShowNavbar}>
           {showNavbar ? (
-            <RiCloseFill className="icon" />
+            <RiCloseFill className="icon close-icon" />
           ) : (
             <HiMenu className="icon" />
           )}
@@ -30,10 +32,10 @@ export const Navbar = () => {
         <div className={`nav-menu ${showNavbar && "active"}`}>
           <ul>
             <li>
-              Start with Sadhana <RiArrowDownSLine className="icon" />
+              {t("navbar.nav1")} <RiArrowDownSLine className="icon" />
             </li>
             <li>
-              Kundalini Yoga <RiArrowDownSLine className="icon" />
+              {t("navbar.nav2")} <RiArrowDownSLine className="icon" />
             </li>
           </ul>
           <div className="social-icons">

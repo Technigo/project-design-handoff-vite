@@ -1,20 +1,21 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+
 import enTranslations from "./translations/en.json";
 import seTranslations from "./translations/se.json";
 
 const resources = {
   en: {
-    translations: enTranslations,
+    translation: enTranslations,
   },
-  sv: {
-    translations: seTranslations,
+  se: {
+    translation: seTranslations,
   },
 };
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: "en", //default language
+  lng: "en",
   interpolation: {
     escapeValue: false,
   },

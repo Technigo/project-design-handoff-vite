@@ -1,20 +1,24 @@
 import { SectionTitle } from "../../../../components/reusable/SectionTitle";
 import "./Section1.css";
+import { useTranslation } from "react-i18next";
 
 export const Section1 = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="section1">
       <div className="image-wrapper">
         <img src="./petra2.png" alt="" />
       </div>
       <div className="page-wrapper">
-        <SectionTitle className="what-if-title" title="What if you could:" />
+        <SectionTitle
+          className="what-if-title"
+          title={t("aboutPage.section1.title")}
+        />
         <div className="section1-info">
           <p>
-            I am Petra and the meaning of Petra is rock or stone. <br />
-            <br /> I am a 2/4 Triple split Emotional Generator which means that
-            I am always looking for energy that could ignite and match my
-            passion for building better versions.
+            {t("aboutPage.section1.text.p1")} <br />
+            <br /> {t("aboutPage.section1.text.p2")}
           </p>
         </div>
       </div>

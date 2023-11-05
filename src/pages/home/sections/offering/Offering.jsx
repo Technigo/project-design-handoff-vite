@@ -1,44 +1,49 @@
 import { Button } from "../../../../components/reusable/Button";
 import "./Offering.css";
 import { SectionTitle } from "../../../../components/reusable/SectionTitle";
+import { useTranslation } from "react-i18next";
 
 export const Offering = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="offering">
       <div className="page-wrapper">
-        <SectionTitle className="offering-title" title="40 days with me" />
+        <SectionTitle
+          className="offering-title"
+          title={t("homePage.offering.title")}
+        />
         <div className="offer-info">
-          <p>
-            Doing lifestyle changes on your own takes a lot more of you than it
-            needs to do. With a daily morning practice with Kundalini Yoga you are
-            aligning yourself with all of the magical energy from a golden lineage
-            of teachers, practitioners and the Divine.
-          </p>
+          <p>{t("homePage.offering.text.p1")}</p>
           <br />
           <p>
-            I call it{" "}
-            <span className="changing-words">accountability Deluxe.</span>
+            {t("homePage.offering.text.p2.one")}{" "}
+            <span className="changing-words">
+              {t("homePage.offering.text.p2.span")}
+            </span>
           </p>
           <br />
-          <p>
-            We start together with a clarity call to find out if I am the teacher
-            for you. Our energy need to be a perfect match! If it is a FULLBODY
-            YES I am preparing a unique, tailor made Sadhana for you.
-          </p>
+          <p>{t("homePage.offering.text.p3")}</p>
+          <br />
+          <p>{t("homePage.offering.text.p4")}</p>
           <br />
           <p>
-            Meditation, Breath work and Yoga in a perfect blend for your
-            transformation.
-          </p>
-          <br />
-          <p>
-            And then you start building your life. From within, from your{" "}
-            <span className="single-word">CLARITY</span>. Every morning you are
-            releasing <span className="single-word">ENERGY</span> with{" "}
-            <span className="single-word">DEVOTION</span> to your Sadhana.
+            {t("homePage.offering.text.p5.one")}
+            <span className="single-word">
+              {t("homePage.offering.text.p5.span.one")}
+            </span>
+            {t("homePage.offering.text.p5.two")}
+            <span className="single-word">
+              {t("homePage.offering.text.p5.span.two")}
+            </span>
+            {t("homePage.offering.text.p5.three")}
+            <span className="single-word">
+              {t("homePage.offering.text.p5.span.three")}
+            </span>
+            {t("homePage.offering.text.p5.four")}
           </p>
         </div>
-        <Button textContent="I am ready, let's start" />
+        <Button textContent={t("homePage.offering.btn")} />
       </div>
     </section>
   );

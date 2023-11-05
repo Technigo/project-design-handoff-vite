@@ -4,18 +4,20 @@ import {
   RiSpotifyFill,
 } from "react-icons/ri";
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
+import { LanguageSwitcher } from "../LanguageSwitcher";
 
 export const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer>
       <nav className="navbar-footer">
-        <span>
-          ENG <RiArrowDownSLine className="icon" />
-        </span>
+        <LanguageSwitcher />
         <ul>
-          <li>HOME</li>
-          <li>Newsletter</li>
-          <li>40 Days of Sadhana</li>
+          <li>{t("footer.nav1")}</li>
+          <li>{t("footer.nav2")}</li>
+          <li>{t("footer.nav3")}</li>
         </ul>
       </nav>
       <div className="social-icons">

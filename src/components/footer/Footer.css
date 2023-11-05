@@ -14,12 +14,6 @@ footer {
   align-items: center;
 }
 
-.navbar-footer span {
-  display: flex;
-  align-items: center;
-  margin-right: 1.5rem;
-}
-
 .navbar-footer ul {
   display: flex;
   align-items: center;

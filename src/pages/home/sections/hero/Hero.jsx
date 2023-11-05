@@ -1,8 +1,12 @@
 import "./Hero.css";
 import { Button } from "../../../../components/reusable/Button";
 import { SpeechBubble } from "../../../../components/SpeechBubble";
+// the hook
+import { useTranslation } from "react-i18next";
 
 export const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section id="hero">
       <div className="imageOnBiggerScreens">
@@ -11,16 +15,12 @@ export const Hero = () => {
       <div className="overlay"></div>
       <SpeechBubble />
       <div className="hero-wrapper">
-        <h1 className="title">Sat nam, hi!</h1>
-        <p>
-          My name is Petra and I am teaching you to connect all
-          aspects of yourself with your higher self and the Divine by
-          using Kundalini Yoga on a daily basis. We call it Sadhana.
-        </p>
+        <h1 className="title">{t("homePage.hero.h1")}</h1>
+        <p>{t("homePage.hero.p")}</p>
         <Button
           path="/about"
           classNameContainer="satnam-btn-wrapper"
-          textContent="Sat nam, I want more"
+          textContent={t("homePage.hero.heroBtn")}
           ariaLabel="Click to learn more"
         />
       </div>
