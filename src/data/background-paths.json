@@ -1,0 +1,61 @@
+{
+    "homePage": {
+        "information": [
+             {  
+                "id": 1, 
+                "background": "linear-gradient(180deg, #BB3908 0%, #220901 100%)"
+            }, 
+             {  "id": 2, 
+                "background": "linear-gradient(180deg, #941B0C 0%, #220901 100%)"
+            }, 
+             {  "id": 3, 
+                "background": "linear-gradient(180deg, #621708 0%, #220901 100%)"
+            }
+            ], 
+
+        "activities": [
+            {
+                   "id": 1, 
+                   "background": "/images/events/img-event-1.jpeg", 
+                   "alt": "Pregnant yoga practicing yoga on beach"
+               }, 
+                {
+                   "id": 2, 
+                   "background": "/images/events/img-event-2.jpeg", 
+                   "alt": "Woman meditating in sunrise"
+               }, 
+                {
+                   "id": 3, 
+                   "background": "/images/events/img-event-3.jpg", 
+                   "alt": "Group of female friends enjoying each others company"
+               }, 
+                {
+                   "id": 4, 
+                   "background": "/images/events/img-event-4.jpeg", 
+                   "alt": "Pregnant woman hugging her child on a yoga mat"
+               }
+           ]
+        },
+
+       
+        
+ 
+
+    "aboutPage": {
+        "visionCommunity": [
+             {
+                "id": 1, 
+                "background": "/images/vision-community/vision-community-img-1.jpeg", 
+                "alt": "Women practicing yoga on beach"
+            }, 
+
+             {
+                "id": 2, 
+                "background": "/images/vision-community/vision-community-img-2.jpeg", 
+                "alt": "Silhouette of group of people having a good time in sunset"
+            }
+        ]
+    }
+
+
+}
