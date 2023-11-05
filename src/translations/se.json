@@ -64,7 +64,19 @@
       }
     },
     "testimonials": {
-      "title": "Kärlek"
+      "title": "Kärlek",
+      "testimonial1": {
+        "text": "Att ha en daglig Sadhana har förändrat mitt liv totalt. Jag är förälskad i min heliga morgonpraktik.",
+        "customer": "Maria"
+      },
+      "testimonial2": {
+        "text": "Jag har gått från att arbeta 7 dagar i veckan året runt till att arbeta 3-4 dagar i veckan. Och jag fokuserar på mina egna behov.",
+        "customer": "Anna"
+      },
+      "testimonial3": {
+        "text": "Ingenting händer och sedan plötsligt förändras allt. Och nu är jag helt inne på att börja dagen med en morgonträning!",
+        "customer": "Joanna"
+      }
     }
   },
   "aboutPage": {

@@ -1,8 +1,8 @@
-import { Hero } from "./sections/hero/Hero";
-import { Quote } from "./sections/quote/Quote";
-import { Offering } from "./sections/offering/Offering";
-import { KundaliniYoga } from "./sections/kundaliniYoga/KundaliniYoga";
-import { Testimonials } from "./sections/testimonials/Testimonials";
+import { Hero } from "./scenes/hero/Hero";
+import { Quote } from "./scenes/quote/Quote";
+import { Offering } from "./scenes/offering/Offering";
+import { KundaliniYoga } from "./scenes/kundaliniYoga/KundaliniYoga";
+import { Testimonials } from "./scenes/testimonials/Testimonials";
 
 export const HomePage = () => {
   return (
