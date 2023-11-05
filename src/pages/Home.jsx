@@ -9,6 +9,8 @@ import RightArrow from "../assets/right-arrow.svg?react";
 import LeftArrow from "../assets/left-arrow.svg?react";
 import styles from "./Home.module.css";
 import { useTranslation } from "react-i18next";
+import Banner from "../components/banner/banner";
+import Button from "../components/button/button";
 
 const Home = () => {
     const { t } = useTranslation();
@@ -43,13 +45,14 @@ const Home = () => {
                     <div className="w-2/3 md:w-1/3">
                         <h1 className="font-bold text-white-n text-2xl w-32 mb-4">{t("heading")}</h1>
                         <h2 className="semi-bold text-white-n text-lg mb-6">{t("subheading")}</h2>
-                        <button className="font-bold text-white-n bg-blue-n px-8 py-3 rounded-full hover:bg-beige-n hover:text-blue-n hover:underline underline-offset-2 transition-all ease-out duration-300">{t("joinTheMovement")}</button>
+                        <Button>{t("joinTheMovement")}</Button>
                     </div>
                 </div>
             </section>
-            <section className="py-4 border-y-4 border-green-n overflow-hidden">
-                <p className={`text-md font-bold whitespace-nowrap ${styles.scroll}`}>{`${t("classes")}: ${[...classes, ...classes].join("  •  ")}`}</p>
-            </section>
+            <Banner
+                label={t("classes")}
+                items={classes}
+            />
             <section className="flex flex-col md:flex-row px-4 py-8 gap-4">
                 <div className="flex mb-4 md:mb-0">
                     <img
@@ -84,9 +87,10 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="py-4 border-y-4 border-green-n overflow-hidden">
-                <p className={`text-md font-bold whitespace-nowrap ${styles.scroll}`}>{`${t("benefits")}: ${[...benefits, ...benefits].join("  •  ")}`}</p>
-            </section>
+            <Banner
+                label={t("benefits")}
+                items={benefits}
+            />
             <section className="px-8 py-12 flex items-center flex-col md:flex-row gap-8">
                 <img className="max-w-[317px] md:max-w-[337px] lg:max-w-[550px] mb-8" src={Yoga} alt="Doing yoga" />
                 <div className="flex items-center">
@@ -97,7 +101,7 @@ const Home = () => {
                             <p className="italic font-thin text-xl">{t("quote")}</p>
                             <RightArrow className="cursor-pointer h-16 w-16 hover:text-blue-n" />
                         </div>
-                        <button className="font-bold text-white-n bg-blue-n px-8 py-3 rounded-full hover:bg-beige-n hover:text-blue-n hover:underline underline-offset-2 transition-all ease-out duration-300">{t("joinTheMovement")}</button>
+                        <Button>{t("joinTheMovement")}</Button>
                     </div>
                 </div>
             </section>

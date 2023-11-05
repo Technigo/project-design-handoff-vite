@@ -2,6 +2,7 @@ import Pilates from "../assets/pilates.png";
 import YogaMat from "../assets/yoga-mat.png";
 import Send from "../assets/send.svg?react";
 import { useTranslation } from "react-i18next";
+import Input from "../components/input/input";
 
 const About = () => {
     const { t } = useTranslation();
@@ -52,14 +53,21 @@ const About = () => {
                         <p className="text-blue-n font-bold mb-4">{t("contact")}</p>
                         <div className="flex gap-4">
                             <form className="w-3/4" action="">
-                                <label htmlFor="name" className="block pl-4 mb-2 text-blue-n">{t("name")}</label>
-                                <input id="name" className="mb-2 py-2 px-4 rounded-full border-2 border-blue-n bg-transparent w-full text-blue-n" placeholder={t("name")} />
-
-                                <label htmlFor="email" className="block pl-4 mb-2 text-blue-n">{t("email")}</label>
-                                <input id="email" className="mb-2 py-2 px-4 rounded-full border-2 border-blue-n bg-transparent w-full text-blue-n" placeholder={t("email")} />
-
-                                <label htmlFor="message" className="block pl-4 mb-2 text-blue-n">{t("message")}</label>
-                                <input id="message" className="mb-2 py-2 px-4 rounded-full border-2 border-blue-n bg-transparent w-full text-blue-n" placeholder={t("message")} />
+                                <Input
+                                    id="name"
+                                    placeholder={t("name")}
+                                    label={t("name")}
+                                />
+                                <Input
+                                    id="email"
+                                    placeholder={t("email")}
+                                    label={t("email")}
+                                />
+                                <Input
+                                    id="message"
+                                    placeholder={t("message")}
+                                    label={t("message")}
+                                />
                             </form>
                             <Send className="cursor-pointer self-end text-blue-n hover:text-black transition-all ease-out duration-300" />
                         </div>
