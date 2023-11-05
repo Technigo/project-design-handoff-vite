@@ -60,4 +60,36 @@ p {
 }
 
 @media (min-width: 1024px) {
+  .member-container-main {
+    width: 1440px;
+    height: 717px;
+  }
+
+  .member-image {
+    width: 1440px;
+    height: auto;
+    margin-left: 100px;
+  }
+  .member-content {
+    gap: 45px;
+    margin: 57px;
+    width: 643px;
+  }
+  .member-content h1 {
+    font-size: 55px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 115%;
+  }
+  .member-content p {
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    margin-right: 60px;
+  }
+
+  .member-button {
+    height: 70px;
+  }
 }

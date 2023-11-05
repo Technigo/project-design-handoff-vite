@@ -1,6 +1,13 @@
 import { useState } from "react";
 
-export const Buttons = ({ buttonText, url, icon, hoverIcon, alt }) => {
+export const Buttons = ({
+  buttonText,
+  url,
+  icon,
+  hoverIcon,
+  alt,
+  className,
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -20,6 +27,7 @@ export const Buttons = ({ buttonText, url, icon, hoverIcon, alt }) => {
       >
         <img src={isHovered ? hoverIcon : icon} alt={alt} className="icon" />
         {buttonText}
+        {className}
       </div>
     </a>
   );

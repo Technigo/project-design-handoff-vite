@@ -45,6 +45,7 @@ export const Header = () => {
           icon={logout}
           hoverIcon={logoutHover}
           alt="Button Icon"
+          tabletHidden={true}
         />
 
         <Buttons

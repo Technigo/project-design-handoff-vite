@@ -13,13 +13,16 @@ export const Member = () => {
       <div className="member-content">
         <h1>{t("Member.heading")}</h1>
         <p>{t("Member.text")}</p>
-        <Buttons
-          buttonText=""
-          url="https://example.com"
-          icon={button}
-          hoverIcon={buttonHover}
-          alt="Button Icon"
-        />
+        <div className="member-button">
+          <Buttons
+            buttonText=""
+            url="https://example.com"
+            icon={button}
+            hoverIcon={buttonHover}
+            alt="Button Icon"
+            className="custom-button"
+          />
+        </div>
       </div>
       <img src={BigBlue} className="member-image" />
     </div>

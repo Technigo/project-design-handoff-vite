@@ -16,13 +16,14 @@ import { MemberSwiper } from "./sections/MemberSwiperFolder/MemberSwiper";
 import { MiniFitSwiper } from "./sections/MiniFitFolder/MiniFitSwiper";
 import { LastSection } from "./sections/LastSectionFolder/LastSection";
 import { Footer } from "./sections/FooterFolder/Footer";
+import "./App.css";
 
 // import Button from "./assets/images/Button.svg";
 
 export const App = () => {
   return (
     <Router>
-      <div>
+      <div className="main-container">
         <Header />
 
         <Routes>
