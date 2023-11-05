@@ -4,13 +4,10 @@ import chatIcon from "../assets/icons/chat.svg"
 import emailIcon from "../assets/icons/email.svg"
 import { H2_Headline } from "../components/Typography/H2_Headline";
 import "./contact.css";
-import { PText } from "../components/Typography/PText.jsx"
-import { ContactBtn } from "../components/Buttons/contactBtn.jsx";
-import { ChatBtn } from "../components/Buttons/ChatBtn.jsx";
-import { SubmitBtn } from '../components/Buttons/SubmitBtn.jsx';
-import { NewQuestionBtn } from '../components/Buttons/NewQuestionBTN.jsx';
+import { PText } from "../components/Typography/PText.jsx";
+import Button from "../components/Buttons/Button.jsx"; 
 import coffeImg from "../assets/images_mobile/Coffee_img.png";
-import contact_image from "../assets/images_mobile/contact_image2.png"
+import contact_image from "../assets/images_mobile/contact_image2.png";
 import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
@@ -32,18 +29,17 @@ export const Contact = () => {
     {
       id: "2d",
       image: chatIcon,
-      alt: "char icon",
+      alt: "chat icon",
       text: t("contact.info_contact.chatText")
-
     },
     {
       id: "3d",
       image: callIcon,
       alt: "call icon",
       text: t("contact.info_contact.callText")
-
     }
   ];
+
   const handleAskQuestionClick = () => {
     setIsFormVisible(true);
     setIsQuestionSubmitted(false);
@@ -63,34 +59,26 @@ export const Contact = () => {
       <div className="contact-content">
         <H2_Headline h2_headline={headline_contact} />
         <div className="contact-image-content-wrapper">
-          {isQuestionSubmitted ?
-            <img className="coffeeimg" src={coffeImg} alt="Coffee cup with the text Thanks" /> :
-            <img
-              src={contact_image}
-              alt="woman doing a tree pose."
-              className="contact-image"
-            />
-          }
+          {isQuestionSubmitted ? (
+            <img className="coffeeimg" src={coffeImg} alt="Coffee cup with the text Thanks" />
+          ) : (
+            <img src={contact_image} alt="woman doing a tree pose." className="contact-image" />
+          )}
           <div className="contact-page-content-wrapper">
             {isQuestionSubmitted ? (
-              <>
-                <div className="contact-info-wrapper question-asked-wrapper">
-                  <img src={contact_info[0].image} alt={contact_info[0].alt} />
-                  <div className="contact-info question-asked">
-                    <PText text={t("contact.form_contact.confirmationText")} />
-                    <NewQuestionBtn onClick={handleAskQuestionClick} />
-                  </div>
+              <div className="contact-info-wrapper question-asked-wrapper">
+                <img src={contact_info[0].image} alt={contact_info[0].alt} />
+                <div className="contact-info question-asked">
+                  <PText text={t("contact.form_contact.confirmationText")} />
+                  <Button text="Ask a new question" onClick={handleAskQuestionClick} />
                 </div>
-              </>
+              </div>
             ) : isFormVisible ? (
               <div className="contact-page-form">
                 <div className="contact-info-wrapper">
                   <img src={contact_info[0].image} alt={contact_info[0].alt} />
                   <form onSubmit={handleFormSubmit} className="contact-info">
-                    <PText
-                      className="new_line"
-                      text={contact_info[0].text}
-                    />
+                    <PText className="new_line" text={contact_info[0].text} />
                     <div className="form-field">
                       <label htmlFor="name">
                         <PText text={t("contact.form_contact.label.0")} />
@@ -105,8 +93,7 @@ export const Contact = () => {
                     </div>
                     <div className="form-field">
                       <label htmlFor="email">
-                        <PText text={t("contact.form_contact.label.1")}
-                        />
+                        <PText text={t("contact.form_contact.label.1")} />
                       </label>
                       <input
                         type="email"
@@ -128,7 +115,7 @@ export const Contact = () => {
                         required
                       />
                     </div>
-                    <SubmitBtn />
+                    <Button text="Submit" />
                   </form>
                 </div>
               </div>
@@ -136,10 +123,8 @@ export const Contact = () => {
               <div className="ask-question-first contact-info-wrapper">
                 <img src={contact_info[0].image} alt={contact_info[0].alt} />
                 <div className="contact-info">
-                  <PText
-                    text={contact_info[0].text}
-                  />
-                  <ContactBtn onClick={handleAskQuestionClick} />
+                  <PText text={contact_info[0].text} />
+                  <Button text="Ask a new question" onClick={handleAskQuestionClick} />
                 </div>
               </div>
             )}
@@ -147,20 +132,14 @@ export const Contact = () => {
               <div className="contact-info-wrapper">
                 <img src={contact_info[1].image} alt={contact_info[1].alt} />
                 <div className="contact-info">
-                  <PText
-                    className="new_line"
-                    text={contact_info[1].text}
-                  />
-                  <ChatBtn />
+                  <PText className="new_line" text={contact_info[1].text} />
+                  <Button text="Chat now" />
                 </div>
               </div>
               <div className="contact-info-wrapper">
                 <img src={contact_info[2].image} alt={contact_info[2].alt} />
                 <div className="contact-info">
-                  <PText
-                    className="new_line"
-                    text={contact_info[2].text}
-                  />
+                  <PText className="new_line" text={contact_info[2].text} />
                 </div>
               </div>
             </div>
@@ -169,4 +148,4 @@ export const Contact = () => {
       </div>
     </section>
   );
-}
+};
