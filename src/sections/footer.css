@@ -1,5 +1,7 @@
 .red .footer {
-    margin-top: 30px;   
+    margin-top: 30px;  
+    position: relative; 
+    margin-bottom: 51.5px;
 }
 
 .footer-logo {
@@ -8,6 +10,7 @@
 
 .footer ul {
     padding: 0;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -19,4 +22,15 @@
     color: var(--font-color);
     font-weight: 500;
     padding-bottom: 5px;
+}
+.social-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    gap: 24.5px;
+}
+.social-media {
+    height: 24.5px;
+    width: 24.5px;
 }

@@ -1,5 +1,8 @@
 import { Link } from "react-router-dom"
-import logo from "/ff-logo-footer.png"
+import logo from "/footer/ff-logo-footer.png"
+import fb from "/footer/fb-link.svg"
+import insta from "/footer/insta-link.svg"
+import tiktok from "/footer/tiktok-link.svg"
 import "./footer.css"
 
 
@@ -24,6 +27,8 @@ export const Footer = () => {
         name: "Cookies, privacy and security",
         to: "/"
     }]
+    const socialArray = [ fb, insta, tiktok ]
+
 
     return (
         <>
@@ -37,6 +42,9 @@ export const Footer = () => {
                         </li>
                     ))}
                 </ul>
+                <div className="social-container">
+                    {socialArray.map((item) => <img key={toString(item)} className="social-media" src={item} />)}
+                </div>
             </div>
         </div>
         </>
