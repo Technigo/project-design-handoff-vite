@@ -12,7 +12,7 @@ const Articles = () => {
 
     return (
         <div className="article">
-            <Link to="/"><img src="chevron-left.png" alt="go back" /></Link>
+            <Link to="/"><img src="chevron-left.png" alt="go back" className="goback" /></Link>
             <div className="article-top">
                 <h1>About Us</h1>
             </div>

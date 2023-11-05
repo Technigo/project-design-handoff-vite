@@ -82,5 +82,37 @@
     padding: 10px;
 }
 
+.goback {
+    width: 70px;
+}
+
 /* Tablet */
-@media (min-width: 394px) and (max-width: 834px) {}
+@media (min-width: 394px) and (max-width: 834px) {
+
+    .goback {
+        width: 24px;
+        height: 24px;
+        margin: 0;
+    }
+
+    .article p {
+        display: none;
+    }
+
+    .article-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .article-item img {
+        width: 740px;
+        height: 310px;
+        background-size: cover;
+        background-position: center center;
+    }
+}

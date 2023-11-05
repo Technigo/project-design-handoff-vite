@@ -115,7 +115,9 @@
     padding: 10px;
 }
 
-.goback {}
+.goback {
+    width: 70px;
+}
 
 /* Mobile */
 @media (max-width: 393px) {
@@ -206,5 +208,11 @@
 
     .form-parent {
         margin-left: 0px;
+    }
+
+    .goback {
+        width: 24px;
+        height: 24px;
+        margin: 0;
     }
 }
