@@ -32,7 +32,7 @@ const Layout = () => {
                         </div>
                     </div>
                 </header>
-                <main>
+                <main className="max-w-[1000px] mx-auto">
                     <Outlet />
                 </main>
             </div>

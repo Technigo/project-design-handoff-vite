@@ -7,8 +7,8 @@ import Input from "../components/input/input";
 const About = () => {
     const { t } = useTranslation();
     return (
-        <div className="p-4 max-w-[800px] mx-auto">
-            <h1 className="text-3xl mb-4 w-full px-4">
+        <div className="p-4">
+            <h1 className="text-3xl mb-4 w-full px-4 py-8">
                 <span className="block font-bold mb-2">{t("aboutHeading1")}</span>
                 <span className="block ml-32">{t("aboutHeading2")} <b>Nathalie</b></span>
             </h1>
@@ -34,7 +34,7 @@ const About = () => {
 
             <div className="mb-8 w-32 h-32 bg-green-n rounded-full mx-auto"></div>
 
-            <div className="grid grid-cols-4 gap-8 p-4 lg:max-w-[800px] lg:mx-auto">
+            <div className="grid grid-cols-4 gap-8 p-4">
                 <div className="row-span-2 col-span-2 md:order-2 flex items-center lg:col-span-4 md:row-span-1">
                     <p>
                         <b>Hundred Pilates </b>{t("continues")}
