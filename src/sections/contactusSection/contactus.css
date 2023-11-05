@@ -1,3 +1,12 @@
+.contact-us-container {
+  padding: 50px 16px 50px 16px;
+  background-color: var(--offwhite);
+}
+
+.contact-us-info {
+  text-align: center;
+}
+
 .nameInput,
 .emailInput,
 .messageInput {
@@ -6,14 +15,32 @@
 }
 
 form {
+  padding-top: 15px;
   display: inline-flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
+  width: 100%;
   gap: 20px;
+  font-family: var(--font-family-ingress-body);
+  color: var(--dark);
+}
+
+form label {
+  font-size: var(--ingress-mobile);
+  padding: 5px;
+}
+
+input,
+textarea {
+  font-size: var(--body-mobile);
+  font-family: var(--font-family-ingress-body);
+  padding: 15px;
+  border-radius: 5px;
+  border-color: var(--dark);
+  outline-color: var(--dark);
+  border: 2px solid var(--dark);
 }
 
 .terms-and-conditions {
   display: flex;
+  gap: 10px;
 }

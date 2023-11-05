@@ -1,0 +1,29 @@
+.good-to-know-container {
+  padding-top: 50px;
+}
+
+.good-to-know-container h3 {
+  font-size: var(--h3-mobile);
+}
+
+.good-to-know-info {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding: 35px 16px 35px 16px;
+}
+
+.openingHours,
+.bookAClass,
+.studioMembership {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.signUpInBtns {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 35px;
+}

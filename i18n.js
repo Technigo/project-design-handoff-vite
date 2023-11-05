@@ -56,9 +56,11 @@ const resources = {
         "All our teachers are certified yoga instructors and have long experience in teaching yoga to people with different levels of experience. You are always welcome to our studio, regardless of your previous experience with yoga.",
       meetOurTeachersBtn: "Meet our teachers",
       aboutUsTitle: "About us",
-      aboutUsInfo: `Wave Yoga Studio was established in 2013, and we have since then made it our mission to help people towards healthier, happier lifes through yoga. 
-      
-          If you want to explore our studio and yoga classes, or have any questions or feedback, please reach out to us! 🤎`,
+      aboutUsInfo:
+        "Wave Yoga Studio was established in 2013, and we have since then made it our mission to help people towards healthier, happier lifes through yoga.",
+
+      aboutUsExplore:
+        "If you want to explore our studio and yoga classes, or have any questions or feedback, please reach out to us! 🤎",
       contactBtn: "Contact Wave Yoga Studio",
       selectLanguage: "Select language",
       backToTop: "Back to top",
@@ -80,12 +82,14 @@ const resources = {
         "If you want to explore our studio or have any questions or feedback, please reach out to us! 🤎",
       formName: "Name *",
       formNamePlaceholder: "Your name...",
-      formEmail: "Email",
+      formEmail: "Email *",
       formEmailPlaceholder: "Your email address",
-      formMessage: "Message",
+      formMessage: "Message *",
       formMessagePlaceholder: "Write your message...",
       termsAndConditions: "I agree with the terms & conditions",
       sendBtn: "Send",
+      swedish: "Swedish",
+      english: "English",
     },
   },
   se: {
@@ -107,6 +111,7 @@ const resources = {
       navSignInBtn: "Logga in",
       letsGoBtn: "Nu kör vi!",
       intro: "Låt oss dyka in i yogans värld",
+      introYoga: "Yoga",
       introSub: "På Wave Yoga Studio vet och tror vi att yoga är för alla 🤎",
       classes: "Våra pass",
       wideRange: `Vi har ett brett utbud av yogapass som passar alla nivåer.`,
@@ -138,9 +143,11 @@ const resources = {
         "Alla våra lärare är certifierade yogainstruktörer och har lång erfarenhet av att lära ut yoga till människor med olika nivåer av erfarenhet. Du är alltid välkommen till vår studio, oavsett din tidigare erfarenhet av yoga.",
       meetOurTeachersBtn: "Möt våra instruktörer",
       aboutUsTitle: "Om oss",
-      aboutUsInfo: `Wave Yoga Studio grundades 2013 och vi har sedan dess gjort det till vårt uppdrag att hjälpa människor till ett hälsosammare och gladare liv genom yoga. 
-          
-      Om du vill utforska vår studio och yogapass, eller har några frågor eller feedback, vänligen kontakta oss! 🤎`,
+      aboutUsInfo:
+        "Wave Yoga Studio grundades 2013 och vi har sedan dess gjort det till vårt uppdrag att hjälpa människor till ett hälsosammare och gladare liv genom yoga.",
+
+      aboutUsExplore:
+        "Om du vill utforska vår studio och yogapass, eller har några frågor eller feedback, vänligen kontakta oss! 🤎",
       contactBtn: "Kontakta Wave Yoga Studio",
       selectLanguage: "Välj språk",
       backToTop: "Tillbaka till toppen",
@@ -162,12 +169,14 @@ const resources = {
         "Om du vill utforska vår studio eller har några frågor eller synpunkter är du välkommen att kontakta oss! 🤎",
       formName: "Namn *",
       formNamePlaceholder: "Ditt namn...",
-      formEmail: "Email",
+      formEmail: "Email *",
       formEmailPlaceholder: "Din emailadress",
-      formMessage: "Meddelande",
+      formMessage: "Meddelande *",
       formMessagePlaceholder: "Skriv ditt meddelande...",
       termsAndConditions: "Jag godkänner villkoren",
       sendBtn: "Skicka",
+      swedish: "Svenska",
+      english: "Engelska",
     },
   },
 };

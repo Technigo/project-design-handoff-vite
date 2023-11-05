@@ -24,8 +24,8 @@ export const ContactUsSection = () => {
         </div>
         <div className="messageInput">
           <label>{t("formMessage")}</label>
-          <input
-            type="text"
+          <textarea
+            rows={4}
             required
             placeholder={t("formMessagePlaceholder")}
           />

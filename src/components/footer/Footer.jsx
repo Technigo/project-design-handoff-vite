@@ -24,13 +24,14 @@ export const Footer = () => {
           <img src={logo} alt="logo" />
           <select
             name="select-a-language"
+            className="language-select"
             onChange={(e) => lngChange(e.target.value)}
           >
             <option disabled selected hidden>
               Select language
             </option>
-            <option value="en">English</option>
-            <option value="se">Swedish</option>
+            <option value="en">{t("english")}</option>
+            <option value="se">{t("swedish")}</option>
           </select>
         </div>
         <div className="footer-contact">

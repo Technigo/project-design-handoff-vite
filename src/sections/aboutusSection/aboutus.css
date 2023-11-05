@@ -13,15 +13,12 @@
   padding: 0 16px;
 }
 
-.about-us-wave-mini {
+.about-us-wave {
+  content: url(../../assets/wave-3mini.svg);
   position: absolute;
   bottom: -50px;
   z-index: 3;
   width: 100vw;
-}
-
-.about-us-wave-tablet {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -34,15 +31,27 @@
     padding: 0 64px;
   }
 
-  .about-us-wave-tablet {
-    display: flex;
-    position: absolute;
+  .about-us-wave {
+    content: url(../../assets/wave-3tablet.svg);
     bottom: -65px;
-    z-index: 3;
-    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us-container {
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
   }
 
-  .about-us-wave-mini {
-    display: none;
+  .about-us-content-container {
+    gap: 36px;
+    padding: 0;
+    width: 50%;
+  }
+
+  .about-us-wave {
+    content: url(../../assets/wave-3desktop.svg);
+    bottom: -140px;
   }
 }
