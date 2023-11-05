@@ -4,6 +4,9 @@ import globeImage from '../../assets/Globe.png';
 import Button from '../Button.jsx';
 import { useTranslation } from 'react-i18next';
 
+const tablet = `(min-width: 768px)`;
+const desktop = `(min-width: 1024px)`;
+
 const LocationSection = styled.div`
     background-color: #2A3439;
     display: flex;
@@ -17,7 +20,7 @@ const LocationSection = styled.div`
     width: 100%;
     position: relative; 
 
-    @media (min-width: 768px) { /* Tablet size */
+    @media ${tablet} {
         background-size: contain;
     }
 `;
@@ -26,7 +29,7 @@ const GlobeImage = styled.img`
     width: 307px;
     height: 137px;
 
-    @media (min-width: 768px) { /* Tablet size */
+    @media ${tablet} {
         width: 100%;
         height: auto;
         object-fit: contain;
@@ -45,7 +48,7 @@ const LocationContent = styled.div`
     flex-direction: column;
     gap: 16px;
 
-    @media (min-width: 768px) { /* Tablet size */
+    @media ${tablet} {
         position: absolute;
         width: 174px;
         height: 250px;
@@ -55,6 +58,13 @@ const LocationContent = styled.div`
         z-index: 2; // Ensure the content is on top of the image
         background-color: #D2FDFF; // Mint Green as per your request
         color: #2A3439; // Gunmetal colored text
+        @media ${desktop} {
+            background-color: #2A3439;  /* Gunmetal */
+            color: #D2FDFF;
+            width: 400px;
+            height: 200px;
+            gap: 24px;
+         
     }
 `;
 
@@ -63,8 +73,12 @@ const LocationTitle = styled.h1`
     text-align: center;
     margin: 0;
 
-    @media (min-width: 768px) { /* Tablet size */
+    @media ${tablet} {
         color: #2A3439;  /* Gunmetal */
+    }
+    @media ${desktop} {
+        color: #D2FDFF;
+        text-align: center;
     }
 `;
 
@@ -73,10 +87,13 @@ const LocationText = styled.p`
     text-align: center;
     margin: 0;
     font-family: 'Electrolize';
-
-    @media (min-width: 768px) { /* Tablet size */
+    @media ${tablet} {
         color: #2A3439;  /* Gunmetal */
         font-size: 16px;
+    }
+    @media ${desktop} {
+        color: #D2FDFF;
+        text-align: center;
     }
 `;
 

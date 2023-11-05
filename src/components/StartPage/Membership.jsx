@@ -5,18 +5,19 @@ import Button from '../Button.jsx';
 import { useTranslation } from 'react-i18next';
 
 const tablet = `(min-width: 768px)`;
+const desktop = `(min-width: 1024px)`;
 
 const MembershipSection = styled.div`
     position: relative;
     width: 100%;
-    height: 100vh; /* Take the full viewport height */
-    overflow: hidden; /* Optional, to ensure nothing spills out */
+    height: 100vh; 
+    overflow: hidden; 
 `;
 
 const MembershipBg = styled.img`
     width: 100%;
-    height: 100%; /* Ensures image covers the entire container */
-    object-fit: cover; /* Keeps image aspect ratio and covers the area */
+    height: 100%; 
+    object-fit: cover; 
     display: block;
 `;
 
@@ -41,6 +42,12 @@ border-radius: 10px;
     bottom: auto;
     width: 440px; 
 height: 200px;
+}
+@media ${desktop} {
+    top: 8%;
+    left: 3%;
+    width: 200px;
+    height: 350px;
 }
 `;
 

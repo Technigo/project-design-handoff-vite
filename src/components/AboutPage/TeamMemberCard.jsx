@@ -1,18 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const desktop = `(min-width: 1024px)`;
+
 const Container = styled.div`
     display: flex;
-    flex-direction: column; // Stacks cards vertically on mobile
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #2A3439;
     padding: 2rem;
-    padding-bottom: 10px;
+    @media ${desktop} {
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
 `;
 
 const Card = styled.div`
-    width: 140px;
+    width: 90%; // Allows for some space on the sides on mobile
     height: 238px;
     background-color: #D2FDFF;
     border: 1px solid #2A3439;
@@ -21,8 +27,7 @@ const Card = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
-    margin-bottom: 20px; // Spacing between cards on mobile
-
+    margin-bottom: 20px;
 `;
 
 const CardImage = styled.img`

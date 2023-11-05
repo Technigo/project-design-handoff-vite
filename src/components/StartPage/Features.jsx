@@ -11,12 +11,20 @@ import leftPaw from '../../assets/LeftPaw.png';
 import rightPaw from '../../assets/RightPaw.png';
 import { useTranslation } from 'react-i18next';
 
+const desktop = `(min-width: 1024px)`;
+
 const FeaturesContainer = styled(animated.div)`
     display: flex;
     width: 360px
     overflow: hidden;
     will-change: transform;
-
+    @media ${desktop} {
+        flex-direction: column;
+        width: auto; 
+        transform: none !important; 
+        background-size: cover; // Ensure the background covers the div
+    transition: background-image 0.3s ease-in-out;
+    }
 `;
 
 const Feature = styled.div`
@@ -25,13 +33,24 @@ const Feature = styled.div`
     height: auto;
     background-size: cover;
     transition: background-image 0.3s ease-in-out;
-   
+    @media ${desktop} {
+        width: 100%;
+        height: auto;
+        display: flex; 
+        flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
+    }
 `;
 
 const FeatureImage = styled.img`
-    width: 100%;
+    width: 100%; // Take the full width of its parent
     height: auto;
-    object-fit: cover;
+    object-fit: cover; // Ensure the image covers the area
+
+    @media ${desktop} {
+        width: ${props => props.fullWidth ? '100%' : '50%'}; // On desktop, 100% for treats, otherwise 50%
+    }
 `;
 
 const IconsContainer = styled.div`
@@ -39,11 +58,16 @@ const IconsContainer = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 16px 16px; 
+    @media ${desktop} {
+        display: none; 
+    }
 `;
 
 const Icon = styled.img`
     width: 24px;
     height: 24px;
+    @media ${desktop} {
+        width: 60%;
 `;
 
 const FeatureContent = styled.div`
@@ -121,9 +145,13 @@ const Features = () => {
   return (
         <div>
             <FeaturesContainer style={transitionStyles}>
-                {featuresData.map((feature, index) => (
-                    <Feature key={index} style={{ backgroundImage: gradients[index] }}>
-                        <FeatureImage src={feature.image} alt={feature.alt} />
+    {featuresData.map((feature, index) => (
+        <Feature key={index} style={{ backgroundImage: gradients[index] }}>
+            <FeatureImage 
+                src={feature.image} 
+                alt={feature.alt} 
+                fullWidth={feature.alt === t('features.treats.alt')} // Assuming 'alt' is unique for treats
+            />
                         <IconsContainer>
                             <Icon src={leftPaw} alt={t('features.icons.leftPaw.alt')} onClick={() => {
                                 if (activeFeature > 0) setActiveFeature(activeFeature - 1);
