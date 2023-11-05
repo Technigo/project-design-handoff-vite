@@ -3,8 +3,8 @@ import "./about.css"
 import { AboutContainer } from "../components/About/AboutContainer";
 import { H1_Headline } from "../components/Typography/H1_Headline";
 import { PText } from "../components/Typography/PText";
-import { FreeTrialBtn } from "../components/Buttons/FreeTrialBtn";
 import { useTranslation } from "react-i18next";
+import { Button } from "../components/Buttons/Button";
 
 export const About = () => {
 
@@ -31,7 +31,7 @@ export const About = () => {
                 text={text}
               />
             </div>
-            <FreeTrialBtn />
+            <Button text={t("about.button")} />
           </div>
         </div>
         <AboutContainer />

@@ -9,7 +9,8 @@
     "homepage": {
         "hero1": "Online Yoga och Meditation",
         "hero2": "Lyft din \nkropp, sinne och själ",
-        "hero3": "Gratis provperiod ➤"
+        "hero3": "Gratis provperiod ➤",
+        "button": "Följ med oss"
     },
     "homecontainer": {
         "h2": "Dina Instruktörer - Om Resan",
@@ -34,7 +35,8 @@
     },
     "about": {
         "h1": "Upptäck \nstyrka, balans och inre harmoni \nvar som helst, när som helst",
-        "text": "Börja en gratis provperiod ▾"
+        "text": "Börja en gratis provperiod ▾",
+        "button": "Följ med oss"
     },
     "aboutcontainer": {
         "h2": [
@@ -99,6 +101,12 @@
                 "E-post",
                 "Hur kan vi hjälpa dig?"
             ]
+        },
+        "buttons" : {
+            "askQ" : "Ställ en fråga",
+            "submit" : "Skicka",
+            "newQ" : "Ställ en ny fråga",
+            "chat" : "Chatta"
         }
     },    
     "footer": {

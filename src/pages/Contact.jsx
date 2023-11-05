@@ -5,7 +5,7 @@ import emailIcon from "../assets/icons/email.svg"
 import { H2_Headline } from "../components/Typography/H2_Headline";
 import "./contact.css";
 import { PText } from "../components/Typography/PText.jsx";
-import Button from "../components/Buttons/Button.jsx"; 
+import { Button } from "../components/Buttons/Button.jsx";
 import coffeImg from "../assets/images_mobile/Coffee_img.png";
 import contact_image from "../assets/images_mobile/contact_image2.png";
 import { useTranslation } from "react-i18next";
@@ -70,7 +70,7 @@ export const Contact = () => {
                 <img src={contact_info[0].image} alt={contact_info[0].alt} />
                 <div className="contact-info question-asked">
                   <PText text={t("contact.form_contact.confirmationText")} />
-                  <Button text="Ask a new question" onClick={handleAskQuestionClick} />
+                  <Button text={t("contact.buttons.newQ")} onClick={handleAskQuestionClick} />
                 </div>
               </div>
             ) : isFormVisible ? (
@@ -115,7 +115,7 @@ export const Contact = () => {
                         required
                       />
                     </div>
-                    <Button text="Submit" />
+                    <Button text={t("contact.buttons.submit")} type="submit" />
                   </form>
                 </div>
               </div>
@@ -124,7 +124,7 @@ export const Contact = () => {
                 <img src={contact_info[0].image} alt={contact_info[0].alt} />
                 <div className="contact-info">
                   <PText text={contact_info[0].text} />
-                  <Button text="Ask a new question" onClick={handleAskQuestionClick} />
+                  <Button text={t("contact.buttons.askQ")} onClick={handleAskQuestionClick} />
                 </div>
               </div>
             )}
@@ -133,7 +133,7 @@ export const Contact = () => {
                 <img src={contact_info[1].image} alt={contact_info[1].alt} />
                 <div className="contact-info">
                   <PText className="new_line" text={contact_info[1].text} />
-                  <Button text="Chat now" />
+                  <Button text={t("contact.buttons.chat")} />
                 </div>
               </div>
               <div className="contact-info-wrapper">

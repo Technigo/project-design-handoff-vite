@@ -9,7 +9,8 @@
     "homepage": {
         "hero1": "Online Yoga and Meditation",
         "hero2": "Elevate Your \nBody, Mind, and Spirit",
-        "hero3": "Free trial ➤"
+        "hero3": "Free trial ➤",
+        "button": "Join the journey"
     },
     "homecontainer": {
         "h2": "Your Instructors - About the Journey",
@@ -34,7 +35,8 @@
     },
     "about": {
         "h1": "Discover \nStrength, Balance, and Inner Harmony \nAnywhere, Anytime",
-        "text": "Start a Free trial ▾"
+        "text": "Start a Free trial ▾",
+        "button": "Join the journey"
     },
     "aboutcontainer": {
         "h2": [
@@ -99,6 +101,12 @@
                 "Email",
                 "How can we help?"
             ]
+        },
+        "buttons" : {
+            "askQ" : "Ask a question",
+            "submit" : "Send",
+            "newQ" : "Ask a new question",
+            "chat" : "Chat now"
         }
     },
     "footer": {

@@ -20,7 +20,7 @@ export const Footer = () => {
           <PText className="brown-text" text={t("footer.footerLink2")} />
         </a>
         <div className="language-wrapper">
-          <button onClick={() => changeLanguage("en")}>{t("footer.footerLink3")}</button>
+          <button onClick={() => changeLanguage("en")}><PText text={t("footer.footerLink3")} /></button>
           <button onClick={() => changeLanguage("se")}><PText text={t("footer.footerLink4")} /></button>
         </div>
       </div>

@@ -5,8 +5,8 @@ import { H1_Headline } from "../components/Typography/H1_Headline";
 import { H2_Headline } from "../components/Typography/H2_Headline";
 
 import { PText } from "../components/Typography/PText";
-import { FreeTrialBtn } from "../components/Buttons/FreeTrialBtn";
 import { useTranslation } from "react-i18next";
+import { Button } from "../components/Buttons/Button";
 
 export const HomePage = () => {
 
@@ -41,7 +41,7 @@ export const HomePage = () => {
                                 text={text_trial}
                             />
                         </div>
-                        <FreeTrialBtn />
+                        <Button text={t("homepage.button")} />
                     </div>
                 </div>
                 <HomeContainer />

@@ -36,6 +36,18 @@ footer {
     gap: 16px;
 }
 
+.language-wrapper button {
+    border: none;
+    background: none;
+    padding: 0;
+  }
+
+  .language-wrapper button:hover {
+    text-decoration: underline;
+    text-decoration-color: #45321A;
+  }
+  
+
 .footer-anchor {
     font-family: Mulish;
     font-size: 20px;
