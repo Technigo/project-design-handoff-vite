@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Button } from "../Buttons/Button";
 //import jsonData from "../../Translations/en.json";
 import { useTranslation } from "react-i18next";
-import enTranslations from "../../Translations/en.json";
+//import enTranslations from "../../Translations/en.json";
 
 const ArticlesContainer = styled.div`
   display: flex;
