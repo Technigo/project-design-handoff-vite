@@ -1,6 +1,6 @@
 import React from 'react';
-import "./css/aboutus.css";
-import Navbar from "./components/Navbar.jsx";
+import "./aboutus.css";
+import Navbar from "../components/Navbar.jsx";
 
 const AboutUs = () => {
 
