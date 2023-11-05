@@ -55,7 +55,7 @@ const resources = {
         head4: "Sobre nosotros",
         paragraph5: "Todo empezó cuando la abuela y Néstor, de 9 años, se aburrían al volver del colegio. Luego vino AuntieParkour, y hoy Play Parkour ofrece programas y clases de parkour para todas las edades",
 
-        head5: "Sobre Play Parkour",
+        head5: "Sobre Jugar al Parkour",
 
         paragraph6: "Nuestra visión y objetivo Nuestra visión es crear un mundo en el que todos tengan la oportunidad de experimentar la alegría del parkour. Creemos que el parkour es más que un deporte: es una forma de vida. Nuestro objetivo es inspirar a la gente para que supere sus límites, supere obstáculos y alcance todo su potencial a través de la práctica del parkour",
 
@@ -91,7 +91,7 @@ const resources = {
         head4: "Om oss",
         paragraph5: "Det började med att mormor och Nestor, 9 år gamla, hade tråkigt på väg hem från skolan. Sedan kom TantParkour, och idag erbjuder Play Parkour parkourprogram och klasser för alla åldrar.",
 
-        head5: "Om Play Parkour",
+        head5: "Om Spela Parkour",
 
         paragraph6: "Vår vision & målsättning Vår vision är att skapa en värld där alla har möjlighet att uppleva glädjen med parkour. Vi tror att parkour är mer än bara en sport; det är ett sätt att leva. Vårt mål är att inspirera människor att tänja på sina gränser, övervinna hinder och uppnå sin fulla potential genom att utöva parkour.",
 

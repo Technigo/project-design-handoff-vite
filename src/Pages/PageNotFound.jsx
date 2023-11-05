@@ -1,6 +1,7 @@
 
 export const PageNotFound = () => {
   return (
-    <div>PageNotFound</div>
+    // eslint-disable-next-line react/no-unescaped-entities
+    <div>Sorry the page you are looking for doesn't exist.</div>
   )
 }

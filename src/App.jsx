@@ -1,6 +1,6 @@
-import { Header } from "./Component/Header";
+import { Header } from "./Component/ReusableComponents/Header";
 import { Hero } from "./Component/Hero";
-import { Footer } from "./Component/Footer";
+import { Footer } from "./Component/ReusableComponents/Footer";
 import { CarouselComponent } from "./Component/Carousel";
 import { AboutUs } from "./Component/AboutUs";
 

@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import data from "../assets/images.json";
+import data from "../../assets/images.json";
 import { useTranslation } from 'react-i18next';
-import SWE from "../../public/images/SwedishFlag.png";
-import ENG from "../../public/images/EnglishFlag.png";
-import SPA from "../../public/images/SpanishFlag.png";
+import SWE from "../../../public/images/SwedishFlag.png";
+import ENG from "../../../public/images/EnglishFlag.png";
+import SPA from "../../../public/images/SpanishFlag.png";
 
 const FootBar = styled.div`
   display: flex;
