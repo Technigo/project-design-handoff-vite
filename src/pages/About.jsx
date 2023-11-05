@@ -10,7 +10,7 @@ const About = () => {
         <div className="p-4">
             <h1 className="text-3xl mb-4 w-full px-4 py-8">
                 <span className="block font-bold mb-2">{t("aboutHeading1")}</span>
-                <span className="block ml-32">{t("aboutHeading2")} <b>Nathalie</b></span>
+                <span className="block ml-20">{t("aboutHeading2")} <b>Nathalie</b></span>
             </h1>
             <section className="p-4 flex flex-col md:flex-row gap-8">
                 <img className="w-full mb-8 md:order-2" src={Pilates} alt="Girl performing pilates" />
