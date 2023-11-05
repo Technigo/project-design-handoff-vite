@@ -15,18 +15,17 @@ const StyledButton = styled.button`
 
 const DropdownContent = styled.div`
   display: ${(props) => (props.open ? "block" : "none")};
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 60px;
-  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  position: relative;
+  background-color: transparent;
   z-index: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 2px;
 `;
 
 export const LanguageButton = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);

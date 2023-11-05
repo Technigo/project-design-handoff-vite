@@ -32,7 +32,7 @@ export const Header = () => {
         <video
           src="/video-mobile.mp4"
           onClick={(e) => e.target.play()}
-          muted
+          //muted
         ></video>
       </div>
     </HeaderContainer>

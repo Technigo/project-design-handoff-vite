@@ -31,7 +31,7 @@ const TermsPolicyContainer = styled.div`
 
   img {
     max-width: 20px;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
   }
 `;
 
