@@ -23,10 +23,12 @@ footer {
 
 .footer-link:hover {
     text-decoration: underline;
+    text-decoration-color: #45321A;
 }
 
 .footer-link[aria-current="true"] {
     text-decoration: underline;
+    text-decoration-color: #45321A;
   }
 
 .language-wrapper {
@@ -46,6 +48,7 @@ footer {
 
 .footer-anchor:hover {
     text-decoration: underline;
+    text-decoration-color: #45321A;
 }
 
 /* Tablet */

@@ -48,7 +48,7 @@
 
 
 .contact-info-wrapper {
-    width: 100%;    
+    width: 100%;
     display: flex;
     align-items: flex-start;
     gap: 21px;
@@ -102,6 +102,7 @@ textarea {
         flex-direction: row-reverse;
         gap: 16px
     }
+
     .contact-content {
         margin: 0 32px;
         padding-top: 144px;
@@ -119,9 +120,11 @@ textarea {
         display: block;
         width: 50%;
     }
-.form-field {
-    width: 100%;
-}
+
+    .form-field {
+        width: 100%;
+    }
+
     .contact-info-wrapper {
         width: 50%;
         display: flex;
@@ -170,7 +173,7 @@ textarea {
         padding-bottom: 80px;
         /*create space between that adds up to 80px*/
     }
-    
+
 
 }
 
