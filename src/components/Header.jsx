@@ -64,9 +64,9 @@ export const Header = () => {
 
                 {/* Desktop menu */}
                 <div>
-                    <button id="hamburger-button" className="lg:hidden cursor-pointer" onClick={toggleMenu}>
+                    {!isMenuOpen && (<button id="hamburger-button" className="lg:hidden cursor-pointer" onClick={toggleMenu}>
                         <img src="icons/menuTopBar.png" alt="open hamburger menu" />
-                    </button>
+                    </button>)}
                     <nav className="hidden lg:flex justify-between items-center gap-x-4 text-lg font-raleway font-light tracking-wider" aria-label="main page navigation">
                         {links.map((link) => (
                             <Link key={link.id} to={link.pathTo}>
@@ -79,7 +79,7 @@ export const Header = () => {
                     {isMenuOpen && (
                         <section id="mobile-menu" className=" bg-grey opacity-90 w-screen text-5xl flex-col justify-center z-20 lg:hidden">
                             {/* absolute top-68 bg-grey opacity-90 w-screen text-5xl flex-col justify-center origin-top z-20 */}
-                            <button className="cursor-pointer">
+                            <button className="cursor-pointer absolute top-0 right-0 h-16 w-16">
                                 <img src="icons/iconClose.svg" alt="close scrolldown menu" onClick={toggleMenu} />
                             </button>
                             <nav className="flex flex-col min-h-screen items-center justify-center space-y-11 text-5xl font-light" aria-label="main page navigation">
