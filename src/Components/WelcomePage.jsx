@@ -69,6 +69,9 @@ const WelcomePage = () => {
           </div>        
         </div>  
       </section>
+      <section className="recent-posts">
+        <h1>RECENT POSTS</h1>
+      </section>
     </div>
   );
 };
