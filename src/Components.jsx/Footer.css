@@ -1,0 +1,107 @@
+/* CSS for the footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  display: flex;
+  position: relative;
+}
+
+.footer img {
+  height: 10%;
+}
+
+.first-box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  padding-left: 20px;
+}
+
+.subscribe {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.subscribe label {
+  margin-bottom: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.subscribe input {
+  padding: 8px;
+  margin-bottom: 10px;
+  background-color: #333;
+  border-bottom: solid 2px #fff;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.subscribe button {
+  background-color: #eef1f4;
+  color: rgb(59, 56, 56);
+  padding: 10px 20px;
+  border: none;
+  font-size: 20px;
+  display: inline-flex;
+  padding: 10px 38px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe button:hover {
+  background: #fff;
+
+  box-shadow: 0px 4px 4px 0px #ffc700;
+}
+
+.subscription-message {
+  color: rgb(188, 234, 188);
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.error-message {
+  color: rgb(237, 129, 129);
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.footer-information {
+  display: flex;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+  padding-bottom: 10%;
+}
+
+.title-line {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.column p {
+  margin: 5px 0;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.white-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 1px;
+  margin-bottom: 2%;
+}
