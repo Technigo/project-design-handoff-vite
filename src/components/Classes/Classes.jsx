@@ -15,12 +15,6 @@ const ClassesContainer = styled.div`
     height: auto;
     object-fit: cover;
   }
-  /* .align:hover {
-    background-image: url("/pb-allign.png");
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  } */
 `;
 
 export const Classes = () => {

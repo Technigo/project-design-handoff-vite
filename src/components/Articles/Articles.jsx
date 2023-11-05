@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import { Button } from "../Buttons/Button";
-//import jsonData from "../../Translations/en.json";
+import jsonData from "../../Translations/en.json";
 import { useTranslation } from "react-i18next";
-import enTranslations from "../../Translations/en.json";
+//import enTranslations from "../../Translations/en.json";
 
 const ArticlesContainer = styled.div`
   display: flex;
@@ -43,7 +43,7 @@ export const Articles = () => {
 
   const articles = t("homePage.mainSection.articles", { returnObjects: true }); // Accessing the 'cards' section of the JSON data
 
-  const { mainSection } = enTranslations.homePage;
+  const { mainSection } = jsonData.homePage;
 
   // const { mainSection } = jsonData.homePage; // Accessing the 'articles' section of the JSON data
 
