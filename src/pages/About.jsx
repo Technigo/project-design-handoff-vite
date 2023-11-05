@@ -3,7 +3,7 @@ import YogaMat from "../assets/yoga-mat.png";
 import Send from "../assets/send.svg?react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import Input from "../components/input/input";
+import Input from "../components/input/Input";
 
 const About = () => {
     const { t } = useTranslation(); // Importing translation functions from a library, possibly react-i18next.
