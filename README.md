@@ -10,9 +10,7 @@ rm -rf .git
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+The task was to, in cooperation with a UX Design Student, transform a design for a fitness club into code using React and at least one third-party librarie of our choice. The site also needed to be translated into at least one other language.
 
 ## Getting Started with the Project
 
@@ -28,11 +26,24 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The biggest problem with this week's project has been the extremely short time frame we've had to deal with, which was 6 days. Not everything is entirely in line with the original design, but through contact with the UX design, I have been allowed to tweak the design in order to keep up.
+
+The second most challenging aspect has been getting the layout right and making it responsive. I've had to do a lot of searching on Stack Overflow and experimented using Tailwind's search function to get the right appearance.
+
+The design sketches contain a variety of icons in different sizes that need to be adjusted according to screen size, and the same goes for pretty much everything else. There have been different pixel sizes, margins, padding, etc. everywhere, which has made the project very time-consuming, on top of the short time frame we've had to complete it.
+
+If I had more time I would've liked to follow the design exactly as the UX designer's original sketch.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Here is the deployed link:
+https://hundred-pilates-amanda.netlify.app/about
+
+You can find the Figma sketch here:
+https://www.figma.com/file/GUmcjzQgGGQz7PUNkQD9uN/Designer-Developer-Handover-Nathalie?node-id=1%3A3&mode=dev
+
+Figma file live here:
+https://www.figma.com/proto/GUmcjzQgGGQz7PUNkQD9uN/Designer-Developer-Handover-Nathalie?type=design&node-id=1759-3803&t=9ky1Kd5DZL3chHUX-0&scaling=min-zoom&page-id=1%3A3
 
 ## Instructions
 
