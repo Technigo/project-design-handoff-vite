@@ -1,29 +1,31 @@
 import Pilates from "../assets/pilates.png";
 import YogaMat from "../assets/yoga-mat.png";
 import Send from "../assets/send.svg?react";
+import { useTranslation } from "react-i18next";
 
 const About = () => {
+    const { t } = useTranslation();
     return (
         <div className="p-4 max-w-[800px] mx-auto">
             <h1 className="text-3xl mb-4 w-full px-4">
-                <span className="block font-bold mb-2">First things first</span>
-                <span className="block ml-32">The founder: <b>Nathalie</b></span>
+                <span className="block font-bold mb-2">{t("aboutHeading1")}</span>
+                <span className="block ml-32">{t("aboutHeading2")} <b>Nathalie</b></span>
             </h1>
             <section className="p-4 flex flex-col md:flex-row gap-8">
                 <img className="w-full mb-8 md:order-2" src={Pilates} alt="Girl performing pilates" />
                 <div className="flex items-center">
                     <div>
                         <h3 className="font-bold text-l mb-4">
-                            The story
+                            {t("story")}
                         </h3>
                         <p className="mb-4">
-                            In 2020, <b>Nathalie</b> embarked on a new journey, founding <b>Hundred Pilates</b>, an innovative online app that would bring the essence of Pilates to the digital age.
+                            {t("year")} <b>Nathalie</b> {t("embarked")} <b>Hundred Pilates</b>, {t("innovative")}
                         </p>
 
-                        <p className="mb-4">With <b>Hundred Pilates</b>, she aimed to break down the barriers of time and place, making Pilates accessible to anyone, anywhere.
+                        <p className="mb-4">{t("with")} <b>Hundred Pilates</b>, {t("aimed")}
                         </p>
 
-                        <p>Today, it’s not just an app; it's a movement. <b>Nathalie’s</b> vision and dedication to wellness has helped countless individuals find balance, strength, and serenity in the chaos of modern life.
+                        <p>{t("today")} <b>Nathalie’s</b> {t("vision")}
                         </p>
                     </div>
                 </div>
@@ -34,7 +36,7 @@ const About = () => {
             <div className="grid grid-cols-4 gap-8 p-4 lg:max-w-[800px] lg:mx-auto">
                 <div className="row-span-2 col-span-2 md:order-2 flex items-center lg:col-span-4 md:row-span-1">
                     <p>
-                        <b>Hundred Pilates </b>continues to evolve, introducing new features and collaborations, but its core essence remains the same – a friend, mentor, and guide in your wellness journey.
+                        <b>Hundred Pilates </b>{t("continues")}
                     </p>
                 </div>
                 <img
@@ -43,21 +45,21 @@ const About = () => {
                     alt="Rolling up a yoga mat"
                 />
                 <div className="font-bold col-span-4 md:order-3 lg:order-2 md:col-span-2 lg:col-span-4">
-                    <p className="lg:text-xl">Do you want to collaborate with us or have any queries regarding our movement? Send your questions our way.</p>
+                    <p className="lg:text-xl">{t("collaborate")}</p>
                 </div>
                 <div className="bg-beige-n py-8 px-4 col-span-4 md:order-4 lg:col-span-3 rounded-tr-[40px] rounded-bl-[40px] flex items-center">
                     <div className="w-full">
-                        <p className="text-blue-n font-bold mb-4">CONTACT US</p>
+                        <p className="text-blue-n font-bold mb-4">{t("contact")}</p>
                         <div className="flex gap-4">
                             <form className="w-3/4" action="">
-                                <label htmlFor="name" className="block pl-4 mb-2 text-blue-n">NAME</label>
-                                <input id="name" className="mb-2 py-2 px-4 rounded-full border-2 border-blue-n bg-transparent w-full text-blue-n" placeholder="NAME" />
+                                <label htmlFor="name" className="block pl-4 mb-2 text-blue-n">{t("name")}</label>
+                                <input id="name" className="mb-2 py-2 px-4 rounded-full border-2 border-blue-n bg-transparent w-full text-blue-n" placeholder={t("name")} />
 
-                                <label htmlFor="email" className="block pl-4 mb-2 text-blue-n">E-MAIL</label>
-                                <input id="email" className="mb-2 py-2 px-4 rounded-full border-2 border-blue-n bg-transparent w-full text-blue-n" placeholder="E-MAIL" />
+                                <label htmlFor="email" className="block pl-4 mb-2 text-blue-n">{t("email")}</label>
+                                <input id="email" className="mb-2 py-2 px-4 rounded-full border-2 border-blue-n bg-transparent w-full text-blue-n" placeholder={t("email")} />
 
-                                <label htmlFor="message" className="block pl-4 mb-2 text-blue-n">MESSAGE</label>
-                                <input id="message" className="mb-2 py-2 px-4 rounded-full border-2 border-blue-n bg-transparent w-full text-blue-n" placeholder="MESSAGE" />
+                                <label htmlFor="message" className="block pl-4 mb-2 text-blue-n">{t("message")}</label>
+                                <input id="message" className="mb-2 py-2 px-4 rounded-full border-2 border-blue-n bg-transparent w-full text-blue-n" placeholder={t("message")} />
                             </form>
                             <Send className="cursor-pointer self-end text-blue-n hover:text-black transition-all ease-out duration-300" />
                         </div>
