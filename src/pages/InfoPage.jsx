@@ -9,9 +9,19 @@ export const InfoPage = () => {
         <div>
             <div className="min-h-screen relative bg-gradient-to-b from-blue-grey to-grey">
                 <Header />
-                <OpeningHours />
-                <GoogleMaps />
-                <FrequentlyAskedQuestions />
+                <div className="grid grid-cols-1 md:grid-cols-2">
+                    <div>
+                        <OpeningHours />
+                    </div>
+                    <div>
+                        <GoogleMaps />
+                    </div>
+                    <div>
+                        <FrequentlyAskedQuestions />
+                    </div>
+
+                </div>
+
                 <Footer />
             </div>
         </div>

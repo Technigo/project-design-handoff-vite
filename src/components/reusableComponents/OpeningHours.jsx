@@ -13,8 +13,9 @@ export const OpeningHours = () => {
 
     return (
         <div className="bg-white flex flex-col items-start justify-center p-4 mx-8 my-8">
-            <InfoPageHeadings InfoPageHeading={firstHeading} />
             <div className="text-xs text-grey text-sourcesans3 font-normal">
+                <InfoPageHeadings InfoPageHeading={firstHeading} />
+
                 <p>{t('infoPage.opening_hours_text')}</p>
                 <br />
                 <p>{t("infoPage.mail")}</p>
@@ -26,12 +27,13 @@ export const OpeningHours = () => {
                 <br />
                 <p>info@nordicpoleacademy.com</p>
                 <br />
+
+                <InfoPageHeadings InfoPageHeading={secondHeading} />
+                <p>Odenplan</p>
+                <br />
+                <InfoPageHeadings InfoPageHeading={thirdHeading} />
+                <p>{t('infoPage.parking')}</p>
             </div>
-            <InfoPageHeadings InfoPageHeading={secondHeading} />
-            <p className="text-xs text-grey text-sourcesans3 font-normal">Odenplan</p>
-            <br />
-            <InfoPageHeadings InfoPageHeading={thirdHeading} />
-            <p className="text-xs text-grey text-sourcesans3 font-normal">{t('infoPage.parking')}</p>
 
         </div>
     )
