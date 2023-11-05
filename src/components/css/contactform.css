@@ -34,6 +34,16 @@
     margin-left: 40px;
 }
 
+.contact h3 {
+    color: #000;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 20px;
+}
+
 .contacts-child {
     display: flex;
     flex-direction: column;
@@ -103,4 +113,98 @@
 .contact-img {
     width: 500px;
     padding: 10px;
+}
+
+.goback {}
+
+/* Mobile */
+@media (max-width: 393px) {
+
+    .contact {
+        margin-left: 0;
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .contacts {
+        gap: 60px;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .contact h2 {
+        font-size: 28px;
+        margin-left: 0;
+    }
+
+    .contact h3 {
+        display: none;
+    }
+
+    .contact p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .contact form input,
+    .contact form textarea {
+        font-size: 24px;
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    .contacts-child {
+        width: 30px;
+    }
+
+    .small-img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact form button {
+        font-size: 18px;
+        margin-left: 0;
+    }
+
+    .form-parent {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 10px;
+    }
+
+    .contact-img {
+        display: none;
+    }
+
+    .goback {
+        width: 24px;
+        margin: 10px;
+    }
+}
+
+
+/* Tablet */
+@media (min-width: 394px) and (max-width: 834px) {
+
+
+    .contact h2 {
+        font-size: 30px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .form-parent h2 {
+        font-size: 30px;
+    }
+
+    .contact-img {
+        display: none;
+        /* Hide the image on tablet screens */
+    }
+
+    .form-parent {
+        margin-left: 0px;
+    }
 }

@@ -7,10 +7,11 @@ const ContactForm = () => {
 
     return (
         <div className="contact">
-            <Link to="/"><img src="chevron-left.png" alt="go back" /></Link>
+            <Link to="/"><img src="chevron-left.png" alt="go back" className="goback" /></Link>
             <div className="form-parent">
                 <div className="form-container"> {/* Container to align to the left */}
                     <h2>Contact Us</h2>
+                    <h3>Have more questions or feedback? Message us! </h3>
                     <form>
                         <div className="form-group">
                             <input type="text" id="name" name="name" placeholder="name" />
