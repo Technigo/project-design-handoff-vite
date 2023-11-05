@@ -46,6 +46,7 @@ button {
   align-self: center;
   border-radius: 25px;
   cursor: pointer;
+  border: none;
 }
 
 /* ----- Making the content responsive ----- */
