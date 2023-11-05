@@ -7,6 +7,7 @@ import Facebook from "../../assets/facebook.svg?react";
 import Instagram from "../../assets/instagram.svg?react";
 import Youtube from "../../assets/youtube.svg?react";
 import { useTranslation } from "react-i18next";
+import { AnimatePresence } from "framer-motion"
 
 const Layout = () => {
     const { t, i18n } = useTranslation(); // Importing translation functions from a library, possibly react-i18next.
@@ -39,7 +40,9 @@ const Layout = () => {
 
                 {/* Main content section */}
                 <main className="max-w-[1000px] mx-auto">
-                    <Outlet /> {/* Placeholder for nested routes/components */}
+                    <AnimatePresence>
+                        <Outlet /> {/* Placeholder for nested routes/components */}
+                    </AnimatePresence>
                 </main>
             </div>
 

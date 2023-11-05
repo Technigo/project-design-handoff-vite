@@ -8,6 +8,7 @@ import GooglePlayLight from "../assets/google-play-light.svg?react";
 import RightArrow from "../assets/right-arrow.svg?react";
 import LeftArrow from "../assets/left-arrow.svg?react";
 import styles from "./Home.module.css";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Banner from "../components/banner/banner";
 import Button from "../components/button/button";
@@ -34,9 +35,14 @@ const Home = () => {
         t("posture"),
     ];
 
+    // JSX markup representing the home page content.
     return (
-        // JSX markup representing the home page content.
-        <>
+        //Animation that makes the side slide from left to right.
+        <motion.div
+            initial={{ x: "-100%" }}
+            animate={{ x: "0" }}
+            transition={{ duration: 0.3 }}
+        >
             <section className="relative">
                 <img
                     className="w-full object-cover min-h-[400px]"
@@ -107,7 +113,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-        </>
+        </motion.div>
     );
 }
 
