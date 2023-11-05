@@ -6,9 +6,7 @@
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A week of collaboration togheter with the UX design students at Technigo boot camp. I got to transform Petra Karp Gidlöf's figma design into a React-based landing page for a yoga website.
 
 ## The Problem
 
@@ -16,4 +14,4 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://kundalini-yoga-ux-project.netlify.app/
