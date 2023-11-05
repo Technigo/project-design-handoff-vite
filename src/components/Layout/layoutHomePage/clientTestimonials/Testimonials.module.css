@@ -59,28 +59,18 @@
         padding: 0px 100px 30px 100px;
     }
 
-    .imgFirst {
-        width: 328px;
-        height: 328px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .imgFirst,
     .imgSecond {
         width: 328px;
         height: 328px;
-        justify-self: center;
     }
 
-    .imgSecond {
-        width: 328px;
-        height: 328px;
+    .imgWrap {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 18px;
+        flex-shrink: 0;
+        padding-bottom: 20px;
     }
 }
 
@@ -103,6 +93,7 @@
             "textFirstTestimonial textSecondTestimonial";
         gap: 20px;
 
+
     }
 
 
@@ -110,7 +101,13 @@
     .imgSecond {
         width: 328px;
         height: 328px;
-        margin-left: 85px;
+    }
+
+    .imgWrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
     }
 
     .textSecondTestimonial,

@@ -17,8 +17,9 @@ export const Testimonials = () => {
                     style={{ color: '#1D1C25', fontWeight: 500 }}
                     className={style.testimonialsKindWords}
                 />
-                <div className={style.firstTestimonialWrap}>
+                <div className={style.firstTestimonialWrap}> <div className={style.imgWrap}>
                     <img src="/Images/testimonialCloseup.png" alt="Client smiling" className={style.imgFirst} />
+                </div>
                     <Text
                         header="“I enjoy every moment at yoga balance so much. It makes me feel younger and more living. I highly recommend this for every women in menopause!”"
                         type="bodyText"
@@ -27,7 +28,9 @@ export const Testimonials = () => {
                     />
                 </div>
                 <div className={style.secondTestimonialWrap}>
-                    <img src="/Images/testimonial.png" alt="Client drinking tea and smiling" className={style.imgSecond} />
+                    <div className={style.imgWrap}>
+                        <img src="/Images/testimonial.png" alt="Client drinking tea and smiling" className={style.imgSecond} />
+                    </div>
                     <Text
                         header="“I can not live without my yoga classes at YogaBalance, it helps me find peace in mind and body.”"
                         type="bodyText"
