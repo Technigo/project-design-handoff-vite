@@ -9,10 +9,7 @@ const StyledAboutUs = styled.div`
   align-items: center;
   //width: 100%;
   margin-top: 103px;
-
-  @media screen and (min-width: 1024px) {
-    padding: 20px 0px 80px;
-  }
+  padding: 20px 0px 80px;
 `;
 
 const StyledHeading = styled.h3`
