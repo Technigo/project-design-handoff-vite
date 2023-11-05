@@ -10,9 +10,7 @@ rm -rf .git
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A project in which a design was provided by a ux/ui student. Focus on learning how to implement an existing design while establishing, and improving, communication and cooperation with a designer.
 
 ## Getting Started with the Project
 
@@ -30,9 +28,13 @@ npm i && code . && npm run dev
 
 Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
+A very interesting project meant to showcase real life working conditions. The project started off with a brief from the designer and then an opportunity to ask questions regarding the design. I asked my questions and then got started.
+Tools and frameworks used: HTML, CSS, React, React Hooks, Figma, React Router.
+I really feel like I have learned a lot from this project and I enjoyed the process.
+
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://fluffy-dieffenbachia-7c4edb.netlify.app/
 
 ## Instructions
 
