@@ -45,8 +45,7 @@ export const MobileNav = styled.nav`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #602C9E;
-  color: white;
+  background-color: #E9C9AF;
   position: fixed;
   top: 0px;
   left: 0;
@@ -87,7 +86,7 @@ export const HeroImage = styled.section`
   height: 100vw;
   color: transparent;
   @media (min-width: 1440px) {
-    background-position: 50% 50%;
+    background-position: 50% 60%;
     height: 75vh;
     color: #602C9E;
     text-align: center;
@@ -129,6 +128,7 @@ export const HeroHeader = styled.section`
     display: block;
   }
   background-color: darkorange;
+  padding: 4.8vh 1.25vh 4.8vh 1.25vh;
     
     @media(min-width: 834px) {
       font-size: 3rem;
@@ -139,7 +139,6 @@ export const HeroHeader = styled.section`
     @media(min-width: 1440px) {
       font-size: 4.5rem;
       line-height: 7.25rem;
-      padding: 4.8vh 1.25vh 4.8vh 1.25vh;
     }
   `;
 
@@ -158,10 +157,6 @@ export const HeroText = styled.section`
 
 export const BenefitsWrapper = styled.section`
   color: #602C9E;
-  
-  @media(min-width: 834px) {
-    padding-top: 2.75vh;
-  }
 `;
 
 export const BenefitsHeader = styled.section`
@@ -171,6 +166,7 @@ export const BenefitsHeader = styled.section`
   line-height: 1.5rem;
   letter-spacing: 0.00625rem;
   background-color: orange;
+  padding: 4.8vh 1.25vh 4.8vh 1.25vh;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;
@@ -198,12 +194,12 @@ export const BenefitsCardsWrapper = styled.div`
 `;
 
 export const BenefitsCarouselCardContainer = styled.div`
-  padding: 0px;
+  
 `;
 
 export const BenefitsCarouselCard = styled.div`
   background-color: darkgreen;
-  padding: 0;
+  padding: 2vh;
 `;
 
 export const BenefitsCarouselCardImage = styled.img`
@@ -214,12 +210,12 @@ export const BenefitsCarouselCardImage = styled.img`
 `;
 
 export const BenefitsCarouselCardTitle = styled.h3`
-  margin: 0;
+  padding: 1.5vh;
   background-color: plum;
 `;
 
 export const BenefitsCarouselCardContent = styled.p`
-  margin: 0;
+  padding: 1.5vh;
   background-color: lime;
 `;
 
@@ -334,10 +330,7 @@ export const ButtonWrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    @media(min-width: 834px) {
-      padding-top: 2.75vh;
-  }
+    padding: 2.75vh;
 `;
 
 export const NavLink = styled.li`
@@ -380,8 +373,8 @@ export const FooterWrapper = styled.footer`
   text-align: left;
   margin-top: auto;
   display: flex;
-  flex-direction: column;
-  justify-content: left;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: left;
   color: #602C9E;
   padding: 2vh;
@@ -434,3 +427,15 @@ export const NextArrow = styled.div`
 export const SocialIconLink = styled.div`
   
 `;
+
+export const LanguageButton = styled.button`
+  background-color: transparent;
+  border-radius: 0.3125rem;
+  border: 2px solid #602C9E;
+  color: #602C9E;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+`;
+

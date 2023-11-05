@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { HeroWrapper, HeroImage, HeroImageText, HeroHeader, HeroText, BookButton, StyledLink, ButtonWrapper } from './StyledComponents';
 

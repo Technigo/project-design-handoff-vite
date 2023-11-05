@@ -1,4 +1,3 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BenefitsWrapper, BenefitsHeader } from './StyledComponents';
 import BenefitsCarousel from './BenefitsCarousel';

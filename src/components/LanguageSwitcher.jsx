@@ -1,17 +1,13 @@
-import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { LanguageButton } from './StyledComponents';
 
 export const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
-  const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
+  const changeLanguage = () => {
+    const newLang = i18n.language === 'en' ? 'fi' : 'en';
+    i18n.changeLanguage(newLang);
   };
 
-  return (
-    <div>
-      <button onClick={() => changeLanguage('en')}>English</button>
-      <button onClick={() => changeLanguage('fi')}>Suomi</button>
-    </div>
-  );
+  return <LanguageButton onClick={changeLanguage}>{i18n.language.toUpperCase()}</LanguageButton>;
 };
