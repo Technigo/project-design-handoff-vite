@@ -53,5 +53,6 @@
   .about-us-wave {
     content: url(../../assets/wave-3desktop.svg);
     bottom: -140px;
+    width: min(100vw, 1600px);
   }
 }

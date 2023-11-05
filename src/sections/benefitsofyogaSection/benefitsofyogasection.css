@@ -78,6 +78,7 @@
   .benefits-wave {
     content: url(../../assets/wave-3desktop.svg);
     position: absolute;
-    bottom: -110px;
+    bottom: -140px;
+    width: min(100vw, 1600px);
   }
 }

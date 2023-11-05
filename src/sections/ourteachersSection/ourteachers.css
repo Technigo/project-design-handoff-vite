@@ -57,7 +57,7 @@
     margin: 0 129px -110px 129px;
   }
 
-  .teachers-wave-tablet {
+  .teachers-wave {
     content: url(../../assets/wave-3tablet.svg);
     bottom: -30px;
     width: 100vw;
@@ -89,6 +89,6 @@
   .teachers-wave {
     content: url(../../assets/wave-3desktop.svg);
     bottom: -30px;
-    width: 100vw;
+    width: min(100vw, 1600px);
   }
 }

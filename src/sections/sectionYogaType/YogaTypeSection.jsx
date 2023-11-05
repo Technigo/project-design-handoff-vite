@@ -1,8 +1,6 @@
 import "./yogatypesection.css";
 import { useTranslation } from "react-i18next";
 import imagesun from "../../assets/imagesun.svg";
-import wave3mini from "../../assets/wave-3mini.svg";
-import wave3tablet from "../../assets/wave-3tablet.svg";
 import { PrimaryBtn } from "../../components/buttons/primary/PrimaryBtn";
 import { SecondaryBtn } from "../../components/buttons/secondary/SecondaryBtn";
 
