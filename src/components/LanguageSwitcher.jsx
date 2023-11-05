@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import "./css/navbar.css";
 
 const LanguageSwitcher = () => {
     const { i18n } = useTranslation();
@@ -15,15 +16,13 @@ const LanguageSwitcher = () => {
 
     return (
         <div>
-            <button onClick={toggleLanguage}>
-                {i18n.language === 'en' ? 'SVE' : 'ENG'}
+            <button onClick={toggleLanguage} className="globe-button">
+                <img
+                    src="/globe.png"
+                    alt={i18n.language === 'en' ? 'SVE' : 'ENG'}
+                    style={{ width: '24px', height: '24px' }}
+                />
             </button>
-            <img
-                className="globe"
-                src="/globe.png"
-                alt="ENG/SVE"
-                style={{ width: '24px', height: '24px' }}
-            />
         </div>
     );
 };

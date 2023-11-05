@@ -88,6 +88,13 @@ img {
     margin: 0 auto;
 }
 
+
+.globe-button {
+    background: none;
+    border: none;
+    margin-top: 13px;
+}
+
 /* Mobile */
 
 .navbar {
