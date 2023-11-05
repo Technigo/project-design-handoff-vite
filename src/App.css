@@ -1,7 +1,7 @@
 .header {
   position: relative;
   top: 0;
-  height: 25px;
+  min-height: 25px;
 }
 
 .footer {
