@@ -6,6 +6,7 @@ const resources = {
     {
         "translation": {
             "Workout": "Träning",
+            "Cardio": "Kondition",
             "Glutes": "Rumpa",
             "Arms": "Armar",
             "Back": "Rygg",

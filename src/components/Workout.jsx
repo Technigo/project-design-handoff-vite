@@ -28,7 +28,7 @@ const Workout = () => {
             <h1>{t('Workout')}</h1>
             <div className="workout-links">
                 <a href="#" className="active">
-                    Cardio
+                    {t('Cardio')}
                 </a>
                 <a href="#">Hiit</a>
                 <a href="#">Yoga</a>
