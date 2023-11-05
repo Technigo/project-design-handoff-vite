@@ -9,5 +9,7 @@ export const LanguageSwitcher = () => {
     i18n.changeLanguage(newLang);
   };
 
-  return <LanguageButton onClick={changeLanguage}>{i18n.language.toUpperCase()}</LanguageButton>;
+  const oppositeLang = i18n.language === 'en' ? 'FI' : 'EN';
+
+  return <LanguageButton onClick={changeLanguage}>{oppositeLang}</LanguageButton>;
 };

@@ -1,4 +1,5 @@
 import Slider from 'react-slick';
+import { useTranslation } from 'react-i18next';
 import {
   BenefitsCarouselCardContainer,
   BenefitsCarouselCard,
@@ -15,11 +16,12 @@ import balanceImg from '../images/balance.png';
 import healthImg from '../images/health.png';
 
 const BenefitsCarousel = () => {
-
+  const { t } = useTranslation();
+  
   const data = [
-    { id: 1, title: "Well-being", content: "Yoga can help improve mood, reduce symptoms of depression, and increase feelings of well-being.", image: wellBeingImg },
-    { id: 2, title: "Balance", content: "Yoga is known for its ability to soothe tension and anxiety in the mind and body.", image: balanceImg },
-    { id: 3, title: "Health", content: "Yoga can help improve flexibility, strength, and cardiovascular fitness.", image: healthImg },
+    { id: 1, title: t('benefits.cards.0.title'), content: t('benefits.cards.0.content'), image: wellBeingImg },
+    { id: 2, title: t('benefits.cards.1.title'), content: t('benefits.cards.1.content'), image: balanceImg },
+    { id: 3, title: t('benefits.cards.2.title'), content: t('benefits.cards.2.content'), image: healthImg },
   ];
 
   const PrevArrowWrapper = (props) => {

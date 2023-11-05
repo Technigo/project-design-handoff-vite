@@ -16,7 +16,6 @@ export const HeaderWrapper = styled.nav`
   align-items: center;
   color: #602C9E;
   padding: 2vh;
-  background-color: aquamarine;
 `;
 
 export const Logo = styled.div`
@@ -127,7 +126,6 @@ export const HeroHeader = styled.section`
   span {
     display: block;
   }
-  background-color: darkorange;
   padding: 4.8vh 1.25vh 4.8vh 1.25vh;
     
     @media(min-width: 834px) {
@@ -151,7 +149,6 @@ export const HeroText = styled.section`
     flex-direction: row;
     gap: 4.8vh;
     padding: 4.8vh 1.25vh 4.8vh 1.25vh;
-    background-color: yellow;
   }
 `;
 
@@ -165,7 +162,6 @@ export const BenefitsHeader = styled.section`
   font-style: normal;
   line-height: 1.5rem;
   letter-spacing: 0.00625rem;
-  background-color: orange;
   padding: 4.8vh 1.25vh 4.8vh 1.25vh;
 
   @media(min-width: 834px) {
@@ -198,8 +194,9 @@ export const BenefitsCarouselCardContainer = styled.div`
 `;
 
 export const BenefitsCarouselCard = styled.div`
-  background-color: darkgreen;
   padding: 2vh;
+  background-color: #E9C9AF;
+  margin: 2vh;
 `;
 
 export const BenefitsCarouselCardImage = styled.img`
@@ -211,18 +208,15 @@ export const BenefitsCarouselCardImage = styled.img`
 
 export const BenefitsCarouselCardTitle = styled.h3`
   padding: 1.5vh;
-  background-color: plum;
 `;
 
 export const BenefitsCarouselCardContent = styled.p`
   padding: 1.5vh;
-  background-color: lime;
 `;
 
 export const TestimoniesWrapper = styled.section`
   display: grid;
   grid-template-columns: 1fr;
-  background-color: yellow;
 
   @media(min-width: 834px) {
     grid-template-columns: 1fr 1fr;
@@ -259,7 +253,6 @@ export const AboutWrapper = styled.section`
   font-style: normal;
   line-height: 1.5rem;
   letter-spacing: 0.00625rem;
-  background-color: orange;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;
@@ -277,7 +270,6 @@ export const ClassesWrapper = styled.section`
   font-style: normal;
   line-height: 1.5rem;
   letter-spacing: 0.00625rem;
-  background-color: pink;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;
@@ -295,7 +287,6 @@ export const StudioWrapper = styled.section`
   font-style: normal;
   line-height: 1.5rem;
   letter-spacing: 0.00625rem;
-  background-color: lime;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;
@@ -313,7 +304,6 @@ export const BookWrapper = styled.section`
   font-style: normal;
   line-height: 1.5rem;
   letter-spacing: 0.00625rem;
-  background-color: yellow;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;

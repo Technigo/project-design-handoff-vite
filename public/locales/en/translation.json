@@ -1,17 +1,34 @@
 {
-    "about": "About",
-    "classes": "Classes",
-    "studio": "Studio",
-    "book": "Book",
-    "hero": {
-      "yourPractice": "Your practice",
-      "destination": "Your destination for yoga",
-      "wayToPractice": "The way you choose to practice",
-      "breakFromStress": "Take a break from the stress of daily life and embark on a journey towards self-discovery and healing.",
-      "joinCommunity": "Join our community of like-minded individuals, and together, let's explore the path to well-being, balance, and tranquility."
-    },
-    "benefits": {
-      "header": "Benefits of Yoga"
-    }
+  "about": "About",
+  "classes": "Classes",
+  "studio": "Studio",
+  "book": "Book",
+  "hero": {
+    "yourPractice": "Your practice",
+    "destination": "Your destination for yoga",
+    "wayToPractice": "The way you choose to practice",
+    "breakFromStress": "Take a break from the stress of daily life and embark on a journey towards self-discovery and healing.",
+    "joinCommunity": "Join our community of like-minded individuals, and together, let's explore the path to well-being, balance, and tranquility."
+  },
+  "benefits": {
+    "header": "Benefits of Yoga",
+    "cards": [
+      {
+        "title": "Well-being",
+        "content": "Yoga can help improve mood, reduce symptoms of depression, and increase feelings of well-being."
+      },
+      {
+        "title": "Balance",
+        "content": "Yoga is known for its ability to soothe tension and anxiety in the mind and body."
+      },
+      {
+        "title": "Health",
+        "content": "Yoga can help improve flexibility, strength, and cardiovascular fitness."
+      }
+    ]
+  },
+  "testimonies": {
+    "testimony1": "YOGA YOU has been a game-changer in my wellness journey. The instructors' expertise and personalised attention have helped me grow in my practice. I've never felt more at home in a yoga studio.",
+    "testimony2": "YOGA YOU is my urban escape. The variety of classes and the supportive community keep me coming back. This studio truly empowers both my body and mind."
   }
-  
+}

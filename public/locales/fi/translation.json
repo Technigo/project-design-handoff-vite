@@ -1,17 +1,34 @@
 {
-    "about": "Tietoa",
-    "classes": "Luokat",
-    "studio": "Studio",
-    "book": "Varaa",
-    "hero": {
-      "yourPractice": "Sinun harjoituksesi",
-      "destination": "Sinun kohde joogalle",
-      "wayToPractice": "Tapa, jolla valitset harjoittaa",
-      "breakFromStress": "Ota tauko päivittäisestä stressistä ja lähde matkalle kohti itsetutkiskelua ja paranemista.",
-      "joinCommunity": "Liity yhteisöömme samanmielisiä ihmisiä ja tutkikaamme yhdessä polkua hyvinvointiin, tasapainoon ja rauhaan."
-    },
-    "benefits": {
-      "header": "Joogan hyödyt"
-    }
+  "about": "Tietoa",
+  "classes": "Luokat",
+  "studio": "Studio",
+  "book": "Varaa",
+  "hero": {
+    "yourPractice": "Sinun harjoituksesi",
+    "destination": "Sinun kohde joogalle",
+    "wayToPractice": "Tapa, jolla valitset harjoittaa",
+    "breakFromStress": "Ota tauko päivittäisestä stressistä ja lähde matkalle kohti itsetutkiskelua ja paranemista.",
+    "joinCommunity": "Liity yhteisöömme samanmielisiä ihmisiä ja tutkikaamme yhdessä polkua hyvinvointiin, tasapainoon ja rauhaan."
+  },
+  "benefits": {
+    "header": "Joogan hyödyt",
+    "cards": [
+      {
+        "title": "Hyvinvointi",
+        "content": "Jooga voi parantaa mielialaa, vähentää masennuksen oireita ja lisätä hyvinvoinnin tunnetta."
+      },
+      {
+        "title": "Tasapaino",
+        "content": "Joogan tunnetaan kyvystään rauhoittaa jännitystä ja ahdistusta sekä mielessä että kehossa."
+      },
+      {
+        "title": "Terveys",
+        "content": "Jooga voi auttaa parantamaan joustavuutta, voimaa ja sydän- ja verisuoniterveyttä."
+      }
+    ]
+  },
+  "testimonies": {
+    "testimony1": "YOGA YOU on ollut pelinvaihtaja hyvinvointimatkallani. Ohjaajien asiantuntemus ja henkilökohtainen huomio ovat auttaneet minua kehittymään harjoituksessani. En ole koskaan tuntenut oloani enemmän kotonani joogastudiossa.",
+    "testimony2": "YOGA YOU on minun kaupunkipakoni. Luokkien monimuotoisuus ja tukeva yhteisö saavat minut palaamaan yhä uudelleen. Tämä studio todella vahvistaa sekä kehoani että mieltäni."
   }
-  
+}
