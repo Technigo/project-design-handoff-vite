@@ -1,11 +1,7 @@
-export const Button = ({ label, path, className, imageSrc, imgClass }) => {
-  const handleClick = () => {
-    // Perform redirection upon button click
-    window.location.href = path; // Use the path provided as a property
-  };
+export const Button = ({ label, className, imageSrc, imgClass }) => {
 
   return (
-    <button className={className} onClick={handleClick}>
+    <button className={className} >
       <div className="button-content">
       {/* If imageSrc exists, renders the image */}
         {imageSrc && <img src={imageSrc} alt={label} className={imgClass} />}  

@@ -13,7 +13,7 @@ const HeroWrapper = styled.div`
   }
 
   @media (min-width: 1024px) {
-
+    padding: 48px 100px;
   }
 `;
 

@@ -6,6 +6,9 @@ const InfoWrapper = styled.div`
   gap: 10px; 
   max-width: 100%;
   padding: 5px 25px;
+  @media (min-width: 1024px) {
+    padding: 48px 100px;
+  }
 `;
 const RedLine = styled.div`
   width: 100%; /* Line width to the entire width of the wrapper */

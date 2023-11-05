@@ -15,6 +15,8 @@ const ArticleWrapper = styled.div`
 
   @media (min-width: 1024px) {
     grid-template-columns: 1fr 1fr 1fr;
+   width: 1283px;
+   margin: 0 auto;
   }
 `;
 
@@ -30,6 +32,7 @@ export const Article = () => {
   return (
     <>
       <ArticleWrapper className="article-wrapper">
+
         {articles.map((article, index) => (
           <ArticleCard key={index} articles={article} />
         ))}

@@ -52,17 +52,24 @@ outline: none;
 width: 100%;
 height: 100px;
 padding: 5px 0;
+margin-bottom: 25px;
+`
+
+const SpanClose = styled.span`
+cursor: pointer;
+
 `
 const ButtonForm = styled.button`
 background-color: var(--red-color);
 color: white;
 border: none;
 padding: 15px;
-margin-top: 20px;
+margin: 0 auto;
 width: 283px;
 justify-content: center;
 align-items: flex-end;
 gap: 10px;
+cursor: pointer;
 
 `
 const FormHeading = styled(Heading)`
@@ -85,7 +92,7 @@ line-height: 160.5%; /* 28.89px */
 
 
 
-export const ContactForm = ({ isOpen, onClose }) => {
+export const ContactForm = ({ isOpen }) => {
   const { t } = useTranslation('contactForm');
 
 const [name, setName] = useState('');
@@ -101,19 +108,26 @@ const [email, setEmail] = useState('');
   const PhonePlaceholder = t('phonePlaceholder');
   const GoalsPlaceholder = t('goalsPlaceholder');
   const SubmitButtonLabel = t('submitButtonLabel');
+  const SubmitAlert = t('submitAlert');
 
 
-const handleSubmit = (e) => {
-e.preventDefault();
-// Handle form submission, e.g., sending data to a server.
+  const handleClick = () => {
+    history.go(-1);
 }
+  
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  
+    window.alert(SubmitAlert);
+  };
 
 return (
   <ModalContainer isOpen={isOpen}>
   <ModalContent>
-    <span className="close-button" onClick={onClose}>
+    <SpanClose  className="close-button" onClick={handleClick}>
       X
-    </span>
+    </SpanClose >
     <FormHeading text={MainHeading} />
     <FormParagraph text={Subheading} />
     <FormAria onSubmit={handleSubmit}>
@@ -141,7 +155,8 @@ return (
         onChange={(e) => setMessage(e.target.value)}
       />
       <ButtonForm type="submit">{SubmitButtonLabel}</ButtonForm>
-    </FormAria>
+      </FormAria>
+     
   </ModalContent>
 </ModalContainer>
 );

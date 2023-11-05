@@ -4,6 +4,7 @@ import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { AddressInfo } from "../components/Info/AddressInfo";
 import { useTranslation } from "react-i18next";
+import { Navigation } from "../components/Navigation/Navigation";
 
 
 
@@ -24,6 +25,7 @@ export const Information = () => {
       <AddressInfo address={Address} phone={Phone} email={Email} image={heroImageInfo} />
       <Contact />
       <Footer />
+      <Navigation />
     
     </>
 

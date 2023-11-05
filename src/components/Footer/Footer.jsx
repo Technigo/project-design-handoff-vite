@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Button } from "../../reusableComponents/Button";
+// import { Button } from "../../reusableComponents/Button";
+import { useTranslation } from 'react-i18next'
 
 
 const FooterWrapper = styled.div`
@@ -37,7 +38,7 @@ gap: 20px;
 justify-content: center;
 `;
 
-const TranslateButton = styled(Button)`
+const TranslateButton = styled.button`
   background: transparent;
   border: none;
   padding: 0;
@@ -61,24 +62,93 @@ display: flex;
 flex-direction: row;
 
 `
+const Place = styled.div`
+display: flex;
+flex-direction: row;
+`
+const InfoParagraph = styled.p`
+font-family: Assistant;
+font-size: 18px;
+`
+const ContactFooter =styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+margin-top: 20px;
+margin-bottom: 20px;
+`
+// const MenuFooter = styled.div`
+// display: none;
+//   @media (min-width: 768px) {
+//     display: block;
+//   }
+// `
+
+// const MenuParagraph = styled.p`
+// font-family: var(--heading-font-family);
+// font-size: 18px;
+// `
 
 export const Footer = () => {
+
+  const { i18n } = useTranslation();
+ 
+
+  const changeLanguageFunc = (lng) => {
+    i18n.changeLanguage(lng);
+    console.log(`Changed language to: ${lng}`);
+
+}
+const englishFunc = () => {
+  changeLanguageFunc("en");
+  console.log("Clicked on English button");
+}
+
+  const swedishFunc = () => {
+  console.log("Clicked on Swedish button");
+  changeLanguageFunc("se");
+  
+}
+console.log(`Current language: ${i18n.language}`);
 
   return (
     <>
       <FooterWrapper>
         <FooterImage src="./logo.png" alt="Logo" />
         <ButtonWrapper>
-          <TranslateButton  imageSrc="./SwedishLanguage.png">
+          <TranslateButton onClick={swedishFunc} >
+            <img src="./SwedishLanguage.png" />
           </TranslateButton>
-          <TranslateButton imageSrc="./EnglishLanguage.png">
+          <TranslateButton onClick={englishFunc}>
+            <img src="./EnglishLanguage.png" />
           </TranslateButton>
+     
         </ButtonWrapper>
 
+
+        {/* <MenuFooter>
+          <MenuParagraph>About us </MenuParagraph>
+          <MenuParagraph>Contact us </MenuParagraph>
+          <MenuParagraph>Help </MenuParagraph>
+          <MenuParagraph>Privacy Policy</MenuParagraph>
+          <MenuParagraph>Disclaimer </MenuParagraph>
+        </MenuFooter> */}
+        
         <ContactInfo>
-          <img src="./Icons/pinMap.png" />
-          <img src="./Icons/facebook.svg" />
-          <img src="./Icons/facebook.svg" />
+         <Place>
+          <img src="./round-place.svg" />
+          <InfoParagraph>156 Marknadsvägen • Täby, Stockholm 12345, Sweden</InfoParagraph>
+          </Place>
+          <ContactFooter>
+          <Place>
+          <img src="./round-phone.svg" />  
+          <InfoParagraph>+46 08 534 2364</InfoParagraph>
+          </Place>
+          <Place> 
+          <img src="./icon-mail.svg" />
+          <InfoParagraph>info@edgeperformance.com</InfoParagraph>
+            </Place>
+            </ContactFooter>
          <SocialWrapper>
           <SocialMedia>SOCIAL MEDIA</SocialMedia>
           <img src="./Icons/facebook.svg" />

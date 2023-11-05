@@ -2,6 +2,7 @@ import { Article } from "../components/Article/Article";
 import { Footer } from "../components/Footer/Footer";
 import { Header } from "../components/Header/Header";
 import { InfoHome } from "../components/Info/InfoHome";
+import { Navigation } from "../components/Navigation/Navigation";
 import { useTranslation } from "react-i18next";
 
 export const Home = () => {
@@ -22,6 +23,7 @@ export const Home = () => {
       <InfoHome  mainText={MainText} text={Text} image={heroImageInfo} />
       <Article />
       <Footer />
+      <Navigation />
     </>
   );
   

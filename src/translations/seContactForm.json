@@ -5,5 +5,6 @@
   "emailPlaceholder": "E-post",
   "phonePlaceholder": "Telefon",
   "goalsPlaceholder": "Mål",
-  "submitButtonLabel": "Skicka min förfrågan"
+  "submitButtonLabel": "Skicka min förfrågan",
+  "submitAlert":" Grattis! Ditt formulär har skickats."
 }

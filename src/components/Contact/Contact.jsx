@@ -12,6 +12,9 @@ grid-template-columns: 1fr;
 gap: 10px;
 max-width: 100%;
 padding: 48px 25px;
+@media (min-width: 1024px) {
+    padding: 48px 100px;
+  }
 `
 const ContactButton = styled(Button)`
 background-color: var(--red-color);
@@ -24,6 +27,10 @@ font-size: 32px;
 font-style: normal;
 font-weight: 400;
 line-height: 160.5%; /* 51.36px */
+`
+const ContactLink = styled(Link)`
+text-decoration: none;
+
 `
 
 export const Contact = () => {
@@ -44,9 +51,9 @@ export const Contact = () => {
 
 return (
   <>
-      <Link to="/contact-form" onClick={openContactForm}>
+      <ContactLink to="/contact-form" onClick={openContactForm}>
         <ContactButton label={contactButtonLabel} />
-      </Link>
+      </ContactLink>
       {showContactForm && <ContactForm isOpen={showContactForm} onClose={closeContactForm} />}
       <ContactDescription text={contactText} />
     </>
