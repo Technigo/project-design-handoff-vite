@@ -9,9 +9,11 @@
 }
 
 main {
-  background-image: url(/backroundGF.png);
+  background-image: url(/background.png);
   background-repeat: repeat;
   background-size: cover;
+  background-position: center;
+  position: relative;
 }
 
 /*--- Typography ---*/
@@ -49,12 +51,20 @@ button {
 /* ----- Making the content responsive ----- */
 /* Tablet*/
 @media (min-width: 667px) {
+  button {
+    font-size: 20px;
+  }
+
   h1 {
     font-size: 65px;
   }
 
   h2 {
     font-size: 45px;
+  }
+
+  h3 {
+    font-size: 35px;
   }
 
   h4 {
@@ -65,16 +75,26 @@ button {
     font-size: 12px;
   }
 
+  p {
+    font-size: 20px;
+  }
+
 }
 
 /* Desktops */
 @media (min-width: 1025px) {
+  button {
+    font-size: 20px;
+  }
+
   h1 {
     font-size: 80px;
+    font-weight: 450;
   }
 
   h2 {
     font-size: 60px;
+    font-weight: 300;
   }
 
   h3 {

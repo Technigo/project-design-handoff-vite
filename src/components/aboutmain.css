@@ -3,13 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
     text-align: center;
     padding-top: 10%;
+    background-color: #1C1D23;
 }
 
 .about-inner h3 {
-    color: #FFE03B;
     padding-bottom: 2%;
 }
 
@@ -23,6 +23,7 @@
 @media (min-width: 667px) {
     .about-main {
         padding-top: 5%;
+        height: 50vh;
     }
 }
 
@@ -30,7 +31,8 @@
 /* Desktops */
 @media (min-width: 1025px) {
     .about-main {
-        padding-top: 8%;
+        height: 65vh;
+        padding-top: 5%;
     }
 
     .about-inner p {

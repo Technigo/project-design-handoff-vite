@@ -1,0 +1,36 @@
+.about-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    text-align: center;
+    padding-top: 10%;
+    background-image: url("/background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.about-hero h1 {
+    color: #FFE03B;
+    padding-bottom: 2vh;
+}
+
+
+/* ----- Making the content responsive ----- */
+/* Tablet*/
+@media (min-width: 667px) {
+    .about-hero {
+        height: 50vh;
+        padding-top: 5%;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+    .about-hero {
+        padding-top: 8%;
+    }
+}

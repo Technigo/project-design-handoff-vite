@@ -10,17 +10,20 @@ export const ConceptCard = () => {
     const { t } = useTranslation()
 
     return <div className="conceptcard-scroll">
-        <img src="./conceptcard1.png" alt="jedi" />
+        <div className="concept-inner"><img src="./conceptcard1.png" alt="jedi" /><h3>{t("ConceptCard.h31")}</h3></div>
 
-        <img src="./conceptcard2.png" alt="image" />
+        <div className="concept-inner">
+            <img src="./conceptcard2.png" alt="image" /><h3>{t("ConceptCard.h32")}</h3>
+        </div>
 
-        <img src="./conceptcard3.png" alt="image" />
+        <div className="concept-inner">
+            <img src="./conceptcard3.png" alt="image" /><h3>{t("ConceptCard.h33")}</h3></div>
 
     </div>
 }
 
 //Commented out this since I wasn't sure of the design.
 {/* 
-<h3>{t("ConceptCard.h31")}</h3>
-<h3>{t("ConceptCard.h32")}</h3>
-<h3>{t("ConceptCard.h33")}</h3> */}
+
+
+ */}

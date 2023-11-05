@@ -13,7 +13,7 @@
     },
     "ConceptCard": {
         "h31": "BLI EN JEDI",
-        "h32": "GÅ MED PÅ DEN MÖRKA SIDAN",
+        "h32": "FÖLJ DEN MÖRKA SIDAN",
         "h33": "MANDALORES VÄG"
     },
     "Info2": {
@@ -21,7 +21,7 @@
         "p": "På Galactic Fitness omfamnar vi alla åldrar och träningsnivåer. Oavsett om du är en ung adept som börjar din träningsresa eller en erfaren mästare är vi här för att stödja dig. Våra speciella medlemspaket tillgodoser dina unika behov och säkerställer att alla, från Padawans till Mästare, kan låsa upp sin inre hjälte med oss."
     },
     "FirstTimer": {
-        "h2": "Träna med the Force!",
+        "h2": "NYBÖRJARE",
         "p": "-MER INFO"
     },
     "Memberships": {
@@ -37,11 +37,22 @@
         "p": "Du är ännu inte medlem i Galactic Fitness, var god registrera dig för att ansluta dig till kraften!",
         "button": "BLI MEDLEM IDAG"
     },
+    "AboutHero": {
+        "h1": "Detta är vägen!",
+        "h2": "Upptäck vad som driver oss"
+    },
     "AboutMain": {
         "h31": "VÅR VISION",
         "p1": "Galactic Fitness föddes ur vår djupa kärlek till Star Wars och vårt engagemang för inkludering. Vi välkomnar alla, särskilt de som är nya inom fitness, och erbjuder en stödjande miljö där alla kan låsa upp sitt potential. Vi vill förena fans och fitnessentusiaster i en gemenskap där alla känner sig inkluderade. Tillsammans utforskar vi vår potential, stöttar varandra och skapar hälsosammare liv. Galactic Fitness är mer än en gym; det är en plats att bli hjälten du alltid beundrat. Följ med oss på detta episka äventyr där Kraften möter fitness och lås upp hjälten inom dig.",
         "h32": "VI ERBJUDER",
         "p2": "På Galactic Fitness omfamnar vi alla åldrar och fitnessnivåer. Oavsett om du är en ung novis som börjar din fitnessresa eller en erfaren mästare är vi här för att stödja dig. Våra speciella medlemskapspaket tillgodoser dina unika behov och säkerställer att alla, från Padawans till Mästare, kan låsa upp sin inre hjälte med oss.",
         "p3": ".:Denna sida har mer innehåll i den ursprungliga designen från UX-designern, följ länk nederst på sidan för att se den i sin helhet:."
+    },
+    "AboutTrainers": {
+        "h3": "VÅRA INSTRUKTÖRER",
+        "p1": "3 KONCEPT, 1 STAM, VAR REDO!",
+        "p2": "Träffa vår Sith-tränare! Hon fokuserar på intensiva träningspass och självdisciplin. Med erfarenhet från Taekwondo och MMA kommer Dragana att hjälpa dig att bygga styrka och motståndskraft genom Sith-träning.",
+        "p3": "Träffa vår Jedi- och meditationsinstruktör! Apinya är väl bevandrad inom japansk Kendo och är specialiserad på Jedi-träning genom Karate. Hon kommer att guida dig till inre frid med meditation och välmående.",
+        "p4": "Träffa vår Mandalore Hamza! Med fokus på att bygga muskelmassa och uthållighet genom högintensiva CrossFit-träningspass är Hamza här för att hjälpa dig att uppnå dina träningsmål. Detta är vägen!"
     }
 }

@@ -2,7 +2,9 @@
 
 //Imports
 import { Navbar } from "../components/Navbar/Navbar"
+import { AboutHero } from "../components/AboutHero/AboutHero"
 import { AboutMain } from "../components/AboutMain"
+import { AboutTrainers } from "../components/AboutTrainers/AboutTrainers"
 import { MoodMusic } from "../components/MoodMusic"
 import { InfoFooter } from "../components/Footer/InfoFooter"
 import { Translation } from "../translations/Translation"
@@ -13,7 +15,9 @@ export const AboutP = () => {
     return (
         <>
             <Navbar />
+            <AboutHero />
             <AboutMain />
+            <AboutTrainers />
             <MoodMusic />
             <InfoFooter />
             <Translation />

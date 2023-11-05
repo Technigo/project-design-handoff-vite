@@ -5,6 +5,7 @@
     white-space: nowrap;
     margin-top: 10%;
     margin-bottom: 10%;
+    gap: 5%;
 }
 
 .conceptcard-scroll::-webkit-scrollbar {
@@ -12,33 +13,51 @@
     height: 0;
 }
 
+.concept-inner {
+    position: relative;
+
+}
+
 .conceptcard-scroll img {
-    max-width: 75%;
-    max-height: auto;
+    width: 324px;
+    height: 500px;
     border-radius: 10%;
     padding: 5%;
     object-fit: cover;
+    object-position: 25%;
 }
+
 
 .conceptcard-scroll h3 {
     text-align: center;
+    position: absolute;
+    left: 55%;
+    top: 83%;
+    transform: translateX(-50%);
+    width: 100%;
 }
 
 /* ----- Making the content responsive ----- */
 /* Tablet*/
 @media (min-width: 667px) {
     .conceptcard-scroll img {
-        max-width: 60%;
+        width: 400px;
         border-radius: 7%;
-        padding: 3%;
+        padding: 6%;
+        object-position: 15%;
     }
 }
 
 /* Desktops */
 @media (min-width: 1025px) {
     .conceptcard-scroll img {
-        max-width: 60%;
-        border-radius: 5%;
-        padding: 1%;
+        width: 550px;
+        height: 650px;
+        border-radius: 6%;
+        padding: 5%;
+    }
+
+    .conceptcard-scroll h3 {
+        top: 80%;
     }
 }

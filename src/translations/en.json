@@ -37,11 +37,22 @@
         "p": "You are not yet a member of Galactic Fitness, please register yourself to the force!",
         "button": "REGISTER NOW"
     },
+    "AboutHero": {
+        "h1": "This is the way!",
+        "h2": "Discover what drives us"
+    },
     "AboutMain": {
         "h31": "OUR VISION",
         "p1": "Galactic Fitness was born from our deep love for Star Wars and our commitment to inclusivity. We welcome all, especially those new to fitness, and offer a supportive environment where everyone can unlock their potential. We want to unite fans and fitness enthusiasts in a community where everyone feels included. Together, we explore our potential, support one another, and build healthier lives. Galactic Fitness is more than a gym; it's a place to become the hero you've always admired. Join us on this epic adventure where the Force meets fitness, and unlock the hero within you.",
         "h32": "WHAT WE OFFER",
         "p2": "At Galactic Fitness, we embrace all ages and fitness levels. Whether you're a youngling beginning your fitness journey or a seasoned master, we're here to support you. Our special membership packages cater to your unique needs, ensuring that everyone, from Padawans to Masters, can unlock their inner hero with us.",
         "p3": ".:This page has more content in the UX-designer's original design:."
+    },
+    "AboutTrainers": {
+        "h3": "OUR TRAINERS",
+        "p1": "3 CONCEPTS, 1 TRIBE, GET READY!",
+        "p2": "Meet our Sith Trainer! She's all about intense workouts and self-discipline. With a background in Taekwando and MMA, Dragana will help you build strength and resilience through Sith training.",
+        "p3": "Meet our Jedi and Meditation Instructor! Apinya is well-versed in Japanese Kendo and specialises in Jedi training through Karate. She will guide you to find inner peace with meditation and wellness.",
+        "p4": "Meet our Mandalore Hamza! With a focus on building muscle mass and endurance through high-intensity CrossFit workouts, Hamza is here to help you achieve your fitness goals. This is the way!"
     }
 }
