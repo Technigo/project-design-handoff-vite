@@ -45,36 +45,3 @@ export const Classes = () => {
     </ClassesContainer>
   );
 };
-
-{
-  /* <div className="align">
-<p>
-  Prima Barre Align combines our classic strength-building barre
-  technique with a unique emphasis on flexibility and balance training
-  to deliver a restorative full body workout.
-</p>
-</div>
-
-<div className="define">
-<p>
-  Prima Barre Define fuses concepts from our classic barre technique
-  with weight-based strength training to develop muscular strength and
-  power.
-</p>
-</div>
-
-<div className="power">
-<p>
-  Prima Barre Power is our fusion workout of Classic Prime Barre and
-  high-intensity interval training designed to elevate your heart rate,
-  build strength, and increase your metabolism.
-</p>
-</div>
-
-<div className="classic">
-<p>
-  Prima Barre Classic is our original barre class. Our proprietary
-  technique is the fastest, most effective full-body workout.{" "}
-</p>
-</div> */
-}
