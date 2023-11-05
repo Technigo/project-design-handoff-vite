@@ -15,10 +15,15 @@ const StyledHero = styled.div`
     object-fit: cover;
     object-position: 20% 100%;
     //flex-shrink: 0;
+
+    @media screen and (min-width: 1024px) {
+      gap: 50px;
+      object-position: 20% 30%;
+    }
   }
 `;
 
-const HeroTextbox = styled.div`
+const HeroTextWrapper = styled.div`
   display: flex;
   position: absolute;
   width: 100%;
@@ -31,6 +36,12 @@ const HeroTextbox = styled.div`
   background: rgba(255, 255, 255, 0.7);
   margin-bottom: 70px;
 
+  @media screen and (min-width: 1024px) {
+    //height: 200px;
+    padding: 24px;
+    gap: 12px;
+  }
+
   h1 {
     color: #081957;
     text-align: center;
@@ -42,9 +53,15 @@ const HeroTextbox = styled.div`
     text-transform: uppercase;
   }
 
-  @media screen and (min-width: 668px) and (max-width: 1023px) {
+  @media screen and (min-width: 668px) and (max-width: 1024px) {
     p {
       max-width: 60%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    p {
+      width: 45%;
     }
   }
 `;
@@ -70,6 +87,10 @@ const HeroButton = styled.button`
   //line-height: normal;
   text-transform: uppercase;
   margin-top: 25px;
+
+  @media screen and (min-width: 1024px) {
+    margin-top: 40px;
+  }
 `;
 
 export const Hero = () => {
@@ -80,13 +101,13 @@ export const Hero = () => {
         src={HeroImage}
         alt="Picture of woman with her face next to a dark brown horse's face"
       />
-      <HeroTextbox>
+      <HeroTextWrapper>
         <h1>{t("hero.mission")}</h1>
         <p>{t("hero.description")}</p>
         <StyledHeroButton>
           <HeroButton>{t("hero.button")}</HeroButton>
         </StyledHeroButton>
-      </HeroTextbox>
+      </HeroTextWrapper>
     </StyledHero>
   );
 };
