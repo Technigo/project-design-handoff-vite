@@ -1,8 +1,12 @@
 import React, { useState, useEffect } from "react";
 import "./css/trainers.css";
 import trainersData from "../data/trainers.json";
+import { useTranslation } from 'react-i18next';
 
 const Trainers = () => {
+
+    const { t } = useTranslation();
+
     const [trainers, setTrainers] = useState([]);
 
     useEffect(() => {
@@ -11,7 +15,7 @@ const Trainers = () => {
 
     return (
         <div className="trainers">
-            <h1>Trainers</h1>
+            <h1>{t('Trainers')}</h1>
             <div className="trainers-images-container">
                 <div className='trainers-images'>
                     {trainers.map((trainer, index) => (

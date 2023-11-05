@@ -2,8 +2,12 @@ import React, { useState, useEffect } from "react";
 import { Link } from 'react-router-dom';
 import "./css/articles.css";
 import articlesData from "../data/articles.json";
+import { useTranslation } from 'react-i18next';
 
 const Articles = () => {
+
+    const { t } = useTranslation();
+
     const [articles, setArticles] = useState([]);
 
     useEffect(() => {
@@ -14,7 +18,7 @@ const Articles = () => {
         <div className="article">
             <Link to="/"><img src="chevron-left.png" alt="go back" className="goback" /></Link>
             <div className="article-top">
-                <h1>About Us</h1>
+                <h1>{t('About Us')}</h1>
             </div>
             <div className="article-container">
                 {articles.map((article, index) => (
@@ -24,7 +28,7 @@ const Articles = () => {
                             <div className="text-content">
                                 <h3>{article.name}</h3>
                                 <p>{article.info}</p>
-                                <button>read more</button>
+                                <button>{t('read more')}</button>
                             </div>
                         </div>
                     </div>
