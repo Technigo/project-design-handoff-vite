@@ -7,11 +7,11 @@ import { BecomeAMember } from "../sections/BecomeAMember"
 export const HomePage = () => {
     return (
         <>
-            <Hero />
-            <SellingPoints />
-            <Testimonials />
-            <MiniFit />
-            <BecomeAMember />
+                <Hero />
+                <SellingPoints />
+                <Testimonials />
+                <MiniFit />
+                <BecomeAMember />
         </>
     )
 }
