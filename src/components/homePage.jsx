@@ -38,7 +38,6 @@ export const HomePage = () => {
           </div>
         </div>
       </div>
-      <OurYoga />
     </div>
     
   );
