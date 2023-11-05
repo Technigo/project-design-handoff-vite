@@ -11,11 +11,11 @@ const StyledHeader = styled.div`
   width: 100%;
 `;
 
-const BurgerWrapper = styled.div`
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-`;
+// const BurgerWrapper = styled.div`
+//   display: flex;
+//   align-items: flex-end;
+//   justify-content: flex-end;
+// `;
 
 // const BurgerMenuStyles = styled.div`
 //   .bm-burger-button {
@@ -73,9 +73,9 @@ const BurgerWrapper = styled.div`
 export const Header = () => {
   return (
     <StyledHeader>
-      <BurgerWrapper>
-        <BurgerMenu />
-      </BurgerWrapper>
+      {/*<BurgerWrapper>*/}
+      <BurgerMenu />
+      {/*</BurgerWrapper>*/}
       <LogoDark />
     </StyledHeader>
   );

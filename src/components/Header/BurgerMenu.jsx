@@ -1,61 +1,137 @@
 //import { useState } from "react";
-import { slide as Menu } from "react-burger-menu";
-//import BurgerMenuIcon from "/icons/BurgerMenuIcon.png";
-//import Search from "/icons/Search.png";
-//import Exit from "/icons/Multiply.png";
-
-//import styled from "styled-components";
+import { fallDown as Menu } from "react-burger-menu";
+import { Link } from "react-router-dom";
+import BurgerMenuIcon from "/icons/BurgerMenuIcon.png";
+import Search from "/icons/Search.png";
+import Exit from "/icons/Multiply.png";
+import { useTranslation } from "react-i18next";
+import styled from "styled-components";
 
 // const MenuButton = styled.button`
 //   background: transparent;
 // `;
 
-const customStyles = {
-  bmBurgerButton: {
-    position: "fixed",
-    width: "36px",
-    height: "30px",
-    left: "36px",
-    top: "36px",
-  },
-  bmBurgerBars: {
-    background: "#202537",
-  },
-  bmBurgerBarsHover: {
-    background: "#a90000",
-  },
-  bmCrossButton: {
-    height: "42px",
-    width: "42px",
-  },
-  bmCross: {
-    background: "#bdc3c7",
-  },
-  bmMenuWrap: {
-    position: "fixed",
-    height: "100%",
-  },
-  bmMenu: {
-    background: "#373a47",
-    padding: "2.5em 1.5em 0",
-    fontSize: "1.15em",
-  },
-  bmMorphShape: {
-    fill: "#373a47",
-  },
-  bmItemList: {
-    color: "#b8b7ad",
-    padding: "0.8em",
-  },
-  bmItem: {
-    display: "inline-block",
-  },
-  bmOverlay: {
-    background: "rgba(0, 0, 0, 0.3",
-  },
-};
+const CustomStyles = styled.div`
+  width: 100%;
+
+  .burgermenu-wrapper {
+    width: 100%;
+    height: 55px;
+  }
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 42px;
+    height: 42px;
+    right: 18px;
+    top: 20px;
+  }
+
+  /* Color/shape of burger icon bars */
+  /* .bm-burger-bars {
+    background: #373a47;
+  } */
+
+  /* Color/shape of burger icon bars on hover*/
+  /* .bm-burger-bars-hover {
+    background: #a90000;
+  } */
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button,
+  #exit-icon {
+    position: fixed;
+    width: 42px;
+    height: 42px;
+    right: 18px;
+    top: 20px;
+  }
+
+  /* Color/shape of close button cross */
+  /* .bm-cross {
+    //background: #bdc3c7;
+  } */
+
+  /*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+  .bm-menu-wrap {
+    position: fixed;
+    height: 100%;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #202537;
+    padding: 2.5em 1.5em 0;
+    //font-size: 1.15em;
+    max-height: 400px; /* Set the maximum height */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  /* .bm-morph-shape {
+    fill: #373a47;
+  } */
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    //color: #b8b7ad;
+    //padding: 50px 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    // padding-left: 125px;
+    text-align: left;
+    max-width: 300px;
+    //align-items: center;
+  }
+
+  /* Individual item */
+  .bm-item {
+    display: flex;
+    color: #fff6e9;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .search-wrapper {
+    display: flex;
+  }
+
+  .search-wrapper img {
+    width: 20px;
+    height: 20px;
+    display: flex;
+  }
+
+  #search {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff6e9;
+  }
+`;
+// const SearchWrapper = styled.div`
+//   display: flex;
+//   flex-direction: row;
+// `;
 
 export const BurgerMenu = () => {
+  const { t } = useTranslation();
+  // showSettings(event) {
+  //   event.preventDefault();
+  // };
   // State to control whether the menu is open or closed
   // const [isOpen, setIsOpen] = useState(false);
 
@@ -64,22 +140,59 @@ export const BurgerMenu = () => {
   //   setIsOpen(!isOpen);
   // };>
 
-  return (
-    <div>
-      {/*Button to toggle the sidebar menu*/}
-      {/* <MenuButton onClick={toggleMenu}>
+  {
+    /*Button to toggle the sidebar menu*/
+  }
+  {
+    /* <MenuButton onClick={toggleMenu}>
         <img src={BurgerMenuIcon} alt="Toggle Menu" />
-      </MenuButton> */}
-      {/* isOpen={isOpen} */}
-      {/* Sidebar Menu */}
-      <Menu styles={customStyles}>
-        <a href="#">Search</a>
-        <a href="/">Home</a>
-        <a href="/aboutus-page">About us</a>
-        <a href="#">Our courses</a>
-        <a href="#">Resources</a>
-        <a href="#">Shop</a>
-      </Menu>
-    </div>
+      </MenuButton> */
+  }
+  {
+    /* isOpen={isOpen} */
+  }
+
+  return (
+    /* Sidebar Menu */
+    <CustomStyles>
+      <div id="outer-container" className="burgermenu-wrapper">
+        <Menu
+          // pageWrapId={"page-wrap"}
+          // outerContainerId={"outer-container"}
+          styles={CustomStyles}
+          width={"100%"}
+          customBurgerIcon={<img src={BurgerMenuIcon} />}
+          customCrossIcon={
+            <div style={{ width: "42px", height: "42px" }}>
+              <img src={Exit} id="exit-icon" />
+            </div>
+          }
+        >
+          {/* <main id="page-wrap"> */}
+          <div className="search-wrapper">
+            <Link to={"#"} id="search">
+              <img src={Search} />
+              <p className="menu-item">{t("burgerMenu.search")}</p>
+            </Link>
+          </div>
+          <Link to={"/"}>
+            <p className="menu-item">{t("burgerMenu.home")}</p>
+          </Link>
+          <Link to={"/aboutus-page"}>
+            <p className="menu-item">{t("burgerMenu.about")}</p>
+          </Link>
+          <Link to={"#"}>
+            <p className="menu-item">{t("burgerMenu.course")}</p>
+          </Link>
+          <Link to={"#"}>
+            <p className="menu-item">{t("burgerMenu.resources")}</p>
+          </Link>
+          <Link to={"#"}>
+            <p className="menu-item">{t("burgerMenu.shop")}</p>
+          </Link>
+          {/* </main> */}
+        </Menu>
+      </div>
+    </CustomStyles>
   );
 };

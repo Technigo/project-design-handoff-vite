@@ -1,4 +1,12 @@
 {
+  "burgerMenu": {
+  "search": "Sök",
+  "home": "Hem",
+  "about": "Om oss",
+  "course": "Våra kurser",
+  "resources": "Resurser",
+  "shop": "Butik"
+},
   "hero": {
     "mission": "Vårt uppdrag",
     "description": "På vår yogastudio har vi ett uppdrag att hjälpa ryttare. Vi erbjuder specialiserade yogaklasser för att förbättra ryttarnas styrka, balans och välmående, vilket främjar en djupare kontakt mellan häst och ryttare. Delta i att främja ett holistiskt synsätt på hästhållning och egenvård.",
