@@ -1,6 +1,10 @@
 .background {
     background-color: #612E77;
     height: 803px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
 }
 
 .wrapper {

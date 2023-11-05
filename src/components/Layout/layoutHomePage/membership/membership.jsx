@@ -19,7 +19,7 @@ export const Membership = () => {
                     className={style.gridItem2}
                 />
                 <div className={style.membershipBoxInclusive}>
-                    <p className={style.boxInclusive1}>ikon stjerne</p>
+                    <img src="/Images/Star.png" alt="Purple star icon" className={style.img} />
                     <Text
                         header="All inclusive"
                         type="H2"
@@ -43,7 +43,7 @@ export const Membership = () => {
                 </div>
 
                 <div className={style.membershipBoxYoga}>
-                    <p className={style.boxYoga1}>ikon yoga</p>
+                    <img src="/Images/Yoga.png" alt="Purple yogapose icon" className={style.img} />
                     <Text
                         header="Yoga member"
                         type="H2"

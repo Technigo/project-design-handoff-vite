@@ -1,8 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+
 .background {
     background-color: #FFF;
-    height: 1106px;
+    height: fit-content;
 }
 
 .wrapper {
-    margin: 0 20px 0 20px;
+    padding: 50px 50px 40px 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "Header"
+        "KindWords"
+        "FirstTestimonialImage"
+        "textFirstTestimonial"
+        "SecondTestimonialImage"
+        "textSecondTestimonial";
+    gap: 20px;
+}
+
+.testimonialsHeader {
+    grid-area: Header;
+    text-align: center;
+}
+
+.testimonialsKindWords {
+    grid-area: KindWords;
+    text-align: center;
+}
+
+.imgFirst {
+    grid-area: FirstTestimonialImage;
+    width: 100%;
+}
+
+.textFirstTestimonial {
+    grid-area: textFirstTestimonial;
+}
+
+.imgSecond {
+    grid-area: SecondTestimonialImage;
+    width: 100%;
+}
+
+.textSecondTestimonial {
+    grid-area: textSecondTestimonial;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .background {
+        padding: 50px 50px 40px 50px;
+    }
+
+    .wrapper {
+        padding: 0px 100px 30px 100px;
+    }
+
+    .imgFirst {
+        width: 328px;
+        height: 328px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imgFirst,
+    .imgSecond {
+        width: 328px;
+        height: 328px;
+        justify-self: center;
+    }
+
+    .imgSecond {
+        width: 328px;
+        height: 328px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .background {
+        padding: 80px 41px 60px 41px;
+        width: 1284px;
+        height: 849px;
+        margin: 0;
+    }
+
+    .wrapper {
+        padding: 50px 50px 40px 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "Header Header"
+            "KindWords KindWords"
+            "FirstTestimonialImage SecondTestimonialImage "
+            "textFirstTestimonial textSecondTestimonial";
+        gap: 20px;
+
+    }
+
+
+    .imgFirst,
+    .imgSecond {
+        width: 328px;
+        height: 328px;
+        margin-left: 85px;
+    }
+
+    .textSecondTestimonial,
+    .textFirstTestimonial {
+        padding: 20px 50px;
+    }
+
+
 }
