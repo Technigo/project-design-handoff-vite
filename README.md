@@ -4,7 +4,7 @@
 Week 11 of Technigo Boot camp. Collab with UX design student. A Landing page and About page with React. Browser router, reusable components and Internationalisation library (react-i18next) for translation.
 
 Reusable components in this project:
-Logo, footer, infofooter, navbar, burgermenu
+Logo, footer, infofooter, navbar, burgermenu, moodmusic
 
 
 ### The Problem
