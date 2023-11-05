@@ -1,5 +1,6 @@
 import style from './Membership.module.css';
 import { Text } from "../../../UI/textAndTypography/Text";
+import { StyledButton } from '../../../UI/buttons/StyledButtons';
 
 export const Membership = () => {
     return (
@@ -31,12 +32,14 @@ export const Membership = () => {
                         style={{ color: '#1D1C25' }}
                         className={style.boxInclusive3}
                     />
-                    <button><Text
-                        header="1 KNAPP"
-                        type="H2"
-                        style={{ color: 'HOTPINK' }}
-                        className={style.boxInclusive4}
-                    /></button>
+                    <StyledButton
+                        width="277px"
+                        height="53px"
+                        color="#000000"
+                        hoverColor="#000000"
+                    >
+                        Buy now 599 sek per month
+                    </StyledButton>
                 </div>
 
                 <div className={style.membershipBoxYoga}>
@@ -53,12 +56,14 @@ export const Membership = () => {
                         style={{ color: '#1D1C25' }}
                         className={style.boxYoga3}
                     />
-                    <button><Text
-                        header="1 KNAPP"
-                        type="H2"
-                        style={{ color: 'HOTPINK' }}
-                        className={style.boxYoga4}
-                    /></button>
+                    <StyledButton
+                        width="277px"
+                        height="53px"
+                        color="#000000"
+                        hoverColor="#000000"
+                    >
+                        Buy now 299 sek per month
+                    </StyledButton>
                 </div>
             </section >
         </div >

@@ -1,5 +1,6 @@
 import style from './Header.module.css';
 import { Text } from "../../../UI/textAndTypography/Text";
+import { StyledButton } from '../../../UI/buttons/StyledButtons';
 
 export const Header = () => {
     return (
@@ -15,12 +16,21 @@ export const Header = () => {
                     type="H2"
                     style={{ color: '#FFF', fontWeight: 500 }}
                 />
-                <button><Text
-                    header="2 KNAPPER HER"
-                    type="H2"
-                    style={{ color: 'HOTPINK' }}
-                /></button>
+                <StyledButton className={style.styledBtn}>
+                    Find yoga class
+                </StyledButton>
+                <StyledButton
+                    className={style.styledBtn}
+                    border="1px solid #FFD075"
+                    backgroundColor="transparent"
+                    color="#FFD075"
+                    hoverBackgroundColor="#FFF"
+                    hoverColor="#FFD075"
+                >
+                    Become a member
+                </StyledButton>
+
             </section>
-        </div>
+        </div >
     );
 };

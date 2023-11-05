@@ -1,5 +1,6 @@
 import style from './Instagram.module.css';
 import { Text } from "../../../UI/textAndTypography/Text";
+import { StyledButton } from '../../../UI/buttons/StyledButtons';
 
 export const Instagram = () => {
     return (
@@ -18,12 +19,32 @@ export const Instagram = () => {
                     className={style.gridItem2}
                 />
                 <p>Bildekarusell insta</p>
-                <button><Text
-                    header="1 KNAPP"
-                    type="H2"
-                    style={{ color: 'HOTPINK' }}
-                    className={style.gridItem4}
-                /></button>
+                <StyledButton style={{
+                    display: 'flex',
+                    width: "275px",
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    padding: '10px 10px',
+                }}>
+                    <img
+                        src="/Images/instagramLogo.png"
+                        alt="Instagram"
+                        style={{
+                            width: '61.851px',
+                            height: '65px',
+                            marginLeft: '-30px',
+                            marginRight: '0px',
+                        }}
+                    />
+                    <span style={{
+                        whiteSpace: 'nowrap',
+
+                    }}>
+                        Connect on Instagram
+                    </span>
+                </StyledButton>
+
+
             </section>
         </div>
     );

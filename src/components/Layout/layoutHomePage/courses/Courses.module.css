@@ -15,7 +15,6 @@
 }
 
 .carouselContainer {
-
     min-height: 480px;
 }
 
@@ -48,5 +47,15 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
     /*padding only works in .carouselSlide in carousel css */
+    .wrapper {
+        min-height: 482px;
+    }
 
+    .carouselContainer {
+        min-height: 482px;
+    }
+
+    .styledBtn {
+        margin-top: 20px;
+    }
 }
