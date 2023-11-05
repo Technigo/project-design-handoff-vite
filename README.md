@@ -1,41 +1,27 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
-### Remove git
-
-rm -rf .git
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
+Week 11 of Technigo Boot camp. Collab with UX design student. A Landing page and About page with React. Browser router, reusable components and Internationalisation library (react-i18next) for translation.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Reusable components in this project:
+Logo, footer, infofooter, navbar, burgermenu, moodmusic
 
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The key learning-goal for this week was to collaborate with a Ux-designer and to implement their design. Since we are both students not knowing that much about each other's field there were some challenges to implement photos of low quality, waiting for info and interpretting the design. 1/3 prototypes was working (mobile) which made it a bit hard to interpret design and sizes. With good communication mid-week we decided not to code in detail and to shorten the About page (I had to change designer which gave me less time as I had prepared for the first one). A link to the designer's Figma was added to the About page with a hover effect (click the "GALACTIC FITNESS 2023 BY RODOPI DESIGNS" in the footer). In that way the designer can show the link but also direct the viewer to her original work. 
+
+Squoosh.app was used to reduce file-size to load the site faster as it was a bit slow at first.
+
+A burger menu is prepped with styling etc.. Decision was made with designer to click the burger icon to go to the About page, and click the logo to go to the Landing page. And instead of spending time on hamburger to try to input music from Star-wars. After a while I ended up getting a link with code from Spotify due to property rights.  Buttons were added for translation. 
+
+A form was prepped but as there was no form in the design I decided to comment it out. As one of the learning goals was to try out animations they are left in this project in learning purposes. I have attentionally left files from animation in learning purposes as well.
+
+Team-mates, course material, chatGPT were used. chatGPT was used for the translation as it could save time copying the endpoints and code I've written in the en.json file. Although the translation itself would had to be change in a real world scenario.
+
+With more time I would have changed the components and added the backround another way as it gets blurry on some parts. I would also add the hamburger and add more content to the About page. I would also have re-arranged some of the components to make the structure better and easier to understand.
+
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://galactic-project.netlify.app/

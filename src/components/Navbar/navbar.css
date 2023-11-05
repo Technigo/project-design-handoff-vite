@@ -1,0 +1,73 @@
+.navbar {
+    position: fixed;
+    /* Ensures navbar stays on top of other elements */
+    z-index: 1000;
+    width: 95%;
+    height: 5%;
+    background-color: #1C1D23;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4% 3%;
+    margin-top: 8%;
+}
+
+/* Had some issues with the flexbox in the navbar/header. Adjusted with pixels and padding to make it pretty */
+
+.menu-toggle {
+    font-size: 50px;
+    padding-bottom: 2%;
+}
+
+.navbar-logo img {
+    height: 55px;
+}
+
+.navbar-profile {
+    display: flex;
+}
+
+.navbar-profile img {
+    height: 40px;
+    cursor: pointer;
+    padding-top: 3%;
+}
+
+
+/* ----- Making the content responsive ----- */
+/* Tablet*/
+@media (min-width: 667px) {
+    .navbar {
+        height: 1%;
+        margin-top: 4%;
+    }
+
+    .navbar-logo img {
+        height: 65px;
+    }
+
+    .navbar-profile img {
+        height: 50px;
+    }
+
+}
+
+/* Desktops */
+@media (min-width: 1025px) {
+    .navbar {
+        height: 0%;
+        margin-top: 0;
+    }
+
+    .menu-toggle {
+        font-size: 70px;
+    }
+
+    .navbar-logo img {
+        height: 80px;
+    }
+
+    .navbar-profile img {
+        height: 60px
+    }
+}

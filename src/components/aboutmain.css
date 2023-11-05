@@ -1,0 +1,41 @@
+.about-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    text-align: center;
+    padding-top: 10%;
+    background-color: #1C1D23;
+}
+
+.about-inner h3 {
+    padding-bottom: 2%;
+}
+
+.about-inner p {
+    margin: 0 5%;
+    padding-bottom: 4%;
+}
+
+/* ----- Making the content responsive ----- */
+/* Tablet*/
+@media (min-width: 667px) {
+    .about-main {
+        padding-top: 5%;
+        height: 50vh;
+    }
+}
+
+
+/* Desktops */
+@media (min-width: 1025px) {
+    .about-main {
+        height: 65vh;
+        padding-top: 5%;
+    }
+
+    .about-inner p {
+        font-size: 20px;
+    }
+}

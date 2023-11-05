@@ -1,0 +1,7 @@
+.translation-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    margin-bottom: 8%;
+}

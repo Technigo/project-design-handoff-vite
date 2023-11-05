@@ -1,0 +1,31 @@
+.memberships {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+.membership-image {
+    width: 100%;
+}
+
+.membership-image img {
+    width: 100%;
+}
+
+.memberships h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.memberships p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}

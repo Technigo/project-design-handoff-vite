@@ -1,0 +1,32 @@
+.hero {
+    height: 108vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url("/backgroundsquoosh.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.hero h1 {
+    color: #FFE03B;
+    padding-bottom: 5vh;
+}
+
+.hero h2 {
+    padding-bottom: 30vh;
+}
+
+
+/* ----- Making the content responsive ----- */
+/* Small phones (The text was covered by the header/navbar in small phones
+
+/* Desktops */
+@media (min-width: 1025px) {
+    .hero {
+        padding-top: 5%;
+    }
+}
