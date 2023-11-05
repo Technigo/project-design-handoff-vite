@@ -58,7 +58,12 @@ const StyledCourseCard = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    //position: absolute;
+    width: 420px;
+
+    img {
+      height: 220px;
+      width: 420px;
+    }
   }
 `;
 
