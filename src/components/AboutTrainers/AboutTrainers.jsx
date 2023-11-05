@@ -1,9 +1,14 @@
+//Mounted in page AboutP
+
 import "./abouttrainers.css"
 import { useTranslation } from "react-i18next"
 
 export const AboutTrainers = () => {
+
+    // Using the useTranslation hook to get the 't' function for translation
     const { t } = useTranslation();
 
+    //Rendering component with translated content using "t" function
     return (
         <section className="trainers-section">
 
@@ -13,7 +18,6 @@ export const AboutTrainers = () => {
             </div>
 
             <div className="trainers-wrapper">
-
                 <div className="trainer-card">
                     <div className="trainer-card-content">
                         <img src="/dragana.png" alt="Image of dragana" />
@@ -45,5 +49,5 @@ export const AboutTrainers = () => {
                 </div>
             </div>
         </section>
-    );
-};
+    )
+}
