@@ -29,15 +29,12 @@
   overflow: hidden;
 }
 
-.teachers-wave-mini {
+.teachers-wave {
+  content: url(../../assets/wave-3mini.svg);
   position: absolute;
   z-index: 2;
   bottom: -30px;
   width: 100vw;
-}
-
-.teachers-wave-tablet {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -56,19 +53,42 @@
   .double-yoga {
     min-width: 576px;
     min-height: 576px;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0 129px -110px 129px;
   }
 
   .teachers-wave-tablet {
-    display: flex;
-    position: absolute;
-    z-index: 2;
+    content: url(../../assets/wave-3tablet.svg);
     bottom: -30px;
     width: 100vw;
   }
+}
 
-  .teachers-wave-mini {
-    display: none;
+@media screen and (min-width: 1280px) {
+  .ourTeachers-container {
+    padding: 100px 0;
+  }
+
+  .teacher-title-and-info {
+    padding: 84px 64px;
+    margin: 0 auto;
+
+    max-width: 60%;
+  }
+
+  .meetTeachersBtn {
+    margin-bottom: 30px;
+  }
+
+  .double-yoga {
+    min-width: 650px;
+    min-height: 650px;
+    margin: 34px auto -50px auto;
+  }
+
+  .teachers-wave {
+    content: url(../../assets/wave-3desktop.svg);
+    bottom: -30px;
+    width: 100vw;
   }
 }

@@ -1,7 +1,5 @@
 import "./benefitsofyogasection.css";
 import { useTranslation } from "react-i18next";
-import wave3mini from "../../assets/wave-3mini.svg";
-import wave3tablet from "../../assets/wave-3tablet.svg";
 import { PrimaryBtn } from "../../components/buttons/primary/PrimaryBtn";
 
 export const BenefitsOfYogaSection = () => {
@@ -20,12 +18,7 @@ export const BenefitsOfYogaSection = () => {
       <div style={{ maxWidth: "70%", alignSelf: "center" }}>
         <PrimaryBtn btnName={t("learnMoreAboutYogaBtn")} />
       </div>
-      <img src={wave3mini} alt="wave pattern" className="benefits-wave-mini" />
-      <img
-        src={wave3tablet}
-        alt="wave pattern"
-        className="benefits-wave-tablet"
-      />
+      <img alt="wave pattern" className="benefits-wave" />
     </div>
   );
 };

@@ -78,7 +78,9 @@
   margin-bottom: 160px;
 }
 
-.intro-wave-mini {
+.intro-wave {
+  content: url(../../assets/wave-7mini.svg);
+
   z-index: 2;
   position: absolute;
   bottom: -35px;
@@ -88,11 +90,6 @@
 .wave4 {
   z-index: 1;
   position: absolute;
-}
-
-.intro-wave-tablet,
-.intro-wave-desktop {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -147,14 +144,8 @@
     margin-top: 10px;
   }
 
-  .intro-wave-mini,
-  .intro-wave-desktop {
-    display: none;
-  }
-  .intro-wave-tablet {
-    display: flex;
-    z-index: 2;
-    position: absolute;
+  .intro-wave {
+    content: url(../../assets/wave-7tablet.svg);
     bottom: -22px;
     width: 100vw;
   }
@@ -229,26 +220,25 @@
     margin-bottom: 280px;
   }
 
-  .intro-wave-mini,
+  /* .intro-wave-mini,
   .intro-wave-tablet {
     display: none;
-  }
+  } */
 
-  .intro-wave-desktop {
-    display: flex;
-    z-index: 2;
-    position: absolute;
+  .intro-wave {
+    content: url(../../assets/wave-7desktop.svg);
+
     bottom: -22px;
     /* width: 100vw; */
     width: min(100vw, 1600px);
   }
 
-  .wave4 {
+  /* .wave4 {
     z-index: 1;
     position: absolute;
-  }
-
+  } */
+  /* 
   .intro-wave-tablet {
     display: none;
-  }
+  } */
 }

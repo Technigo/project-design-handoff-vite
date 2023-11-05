@@ -34,19 +34,9 @@ export const ClassSection = () => {
         {/* <button className="signInBtnTransparent">{t("login")}</button> */}
       </div>
       <div className="imgs">
-        <img src={wave3mini} alt="wave-pattern" className="upper-wave-mini" />
-        <img
-          src={wave3tablet}
-          alt="wave-pattern"
-          className="upper-wave-tablet"
-        />
-        <img
-          src={wave3desktop}
-          alt="wave-pattern"
-          className="upper-wave-desktop"
-        />
+        <img alt="wave-pattern" className="upper-wave" />
         <img src={yogagrey} alt="yoga-pose-image" className="yoga-stretch" />
-        <img src={wave3mini} alt="wave-pattern" className="lower-wave-mini" />
+        <img alt="wave-pattern" className="lower-wave" />
         <div className="yoga-type-info-box">
           <h3>{t("yogaTypeTitle")}</h3>
           <p>{t("yogaTypeSubtitle")}</p>
@@ -56,16 +46,8 @@ export const ClassSection = () => {
             <SecondaryBtn btnName={t("bookClassBtn")} />
           </div>
         </div>
-        <img
-          src={wave3tablet}
-          alt="wave-pattern"
-          className="lower-wave-tablet"
-        />
-        <img
-          src={wave3desktop}
-          alt="wave-pattern"
-          className="lower-wave-desktop"
-        />
+
+        {/* <img alt="wave-pattern" className="lower-wave" /> */}
       </div>
     </div>
   );

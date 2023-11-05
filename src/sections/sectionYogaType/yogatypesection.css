@@ -30,7 +30,9 @@
   justify-content: center;
 }
 
-.yoga-type-wave-mini {
+.yoga-type-wave {
+  content: url(../../assets/wave-3mini.svg);
+
   position: absolute;
   bottom: -40px;
   z-index: 3;
@@ -76,10 +78,8 @@
   }
 
   .yoga-type-wave-tablet {
-    display: flex;
-    position: absolute;
+    content: url(../../assets/wave-3tablet.svg);
     bottom: -30px;
-    z-index: 3;
     width: 100vw;
   }
 
@@ -89,8 +89,22 @@
     min-height: 576px;
     margin: 0 129px 0 129px;
   }
+}
 
-  .yoga-type-wave-mini {
+@media screen and (min-width: 1280px) {
+  .yoga-type-wave {
+    content: url(../../assets/wave-3desktop.svg);
+    bottom: -30px;
+    width: 100vw;
+  }
+
+  .image-sun {
+    width: 650px;
+    height: 650px;
+    margin: 0 auto;
+  }
+
+  .yoga-info-buttons {
     display: none;
   }
 }

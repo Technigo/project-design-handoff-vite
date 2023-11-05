@@ -23,12 +23,7 @@ export const OurTeachersSection = () => {
         alt="two girls laughing during yoga"
         className="double-yoga"
       />
-      <img src={wave3mini} alt="wave pattern" className="teachers-wave-mini" />
-      <img
-        src={wave3tablet}
-        alt="wave pattern"
-        className="teachers-wave-tablet"
-      />
+      <img alt="wave pattern" className="teachers-wave" />
     </div>
   );
 };
