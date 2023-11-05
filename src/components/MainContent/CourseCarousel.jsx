@@ -1,5 +1,6 @@
 import enTranslation from "../Translation/en.json";
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 
 const CarouselContainer = styled.div`
@@ -25,11 +26,13 @@ const CarouselContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
+    //overflow: visible;
+    align-items: center;
+    justify-content: center;
     //overflow: hidden;
     //flex-wrap: wrap;
-    width: 100%;
     //height: 380px;
-    gap: 16px;
+    gap: 24px;
     padding: 0 65px;
     //position: relative;
   }
@@ -57,12 +60,23 @@ const StyledCourseCard = styled.div`
     background: lightgray 50% / cover no-repeat;
   }
 
-  @media screen and (min-width: 1024px) {
-    width: 420px;
+  @media screen and (min-width: 1024px) and (max-width: 1360px) {
+    width: 100%;
+    height: 100%;
 
     img {
       height: 220px;
-      width: 420px;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1360px) {
+    width: 100%;
+    height: 380px;
+
+    img {
+      height: 220px;
+      width: 100%;
     }
   }
 `;
@@ -129,13 +143,22 @@ const CourseCardText = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
+    position: relative;
+
     h5 {
-      //position: absolute;
-      // color: #fff;
+      display: flex;
+      position: absolute;
+      margin-bottom: 300px;
+      /* right: 27px;
+      top: 110px; */
+      color: #fff;
+      font-size: 32px;
     }
 
     p {
       display: block;
+      text-align: left;
+      padding: 10px 12px;
     }
   }
 `;
@@ -147,15 +170,16 @@ export const CourseCarousel = () => {
   const { t, ready } = useTranslation();
 
   const courses = t("courses", { returnObjects: true });
+  const isWideScreen = useMediaQuery({ query: "(min-width: 1024px)" });
 
-  if (!ready) return "loading translations...";
+  if (!ready) return "Loading translations...";
   return (
     <CarouselContainer>
       {courses.map((course, index) => (
         <StyledCourseCard key={index}>
           <img src={course.imageUrl} alt={course.imageAlt} />
           <CourseCardText>
-            <h5>{course.courseName}</h5>
+            <h5>{isWideScreen ? course.courseNameShort : course.courseName}</h5>
             <p>{course.courseBrief}</p>
             <CourseCardButton>{course.button}</CourseCardButton>
           </CourseCardText>
@@ -164,112 +188,3 @@ export const CourseCarousel = () => {
     </CarouselContainer>
   );
 };
-
-// import courseData from "./enCourses.json";
-// import { useTranslation } from "react-i18next";
-// import styled from "styled-components";
-
-// const StyledCourseCard = styled.div`
-//   display: inline-flex;
-//   padding-bottom: 0px;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 16px;
-//   border-radius: 20px;
-//   border: 0.5px solid rgba(255, 163, 134, 0.5);
-//   background: rgba(255, 255, 255, 0.8);
-
-//   img {
-//     border-radius: 16px 16px 0px 0px;
-//     background: lightgray 50% / cover no-repeat;
-//   }
-// `;
-
-// const CourseCardButton = styled.button`
-//   display: flex;
-//   padding: 8px 12px;
-//   justify-content: center;
-//   align-items: flex-end;
-//   gap: 10px;
-//   border-radius: 8px;
-//   background: #ffa386;
-//   color: #fff;
-//   font-size: 16px;
-//   //font-style: normal;
-//   font-weight: 500;
-//   //line-height: normal;
-//   margin-bottom: 12px;
-// `;
-
-// const CourseCardText = styled.div`
-//   display: flex;
-//   padding: 0px 4px;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 20px;
-//   align-self: stretch;
-
-//   h5 {
-//     color: #000;
-//     text-align: center;
-//     font-size: 16px;
-//     //font-style: normal;
-//     font-weight: 600;
-//     //line-height: normal;
-//     letter-spacing: 0.8px;
-//     text-transform: uppercase;
-//     margin-top: 16px;
-//   }
-
-//   p {
-//     //color: #000;
-//     //text-align: justify;
-//     //font-size: 20px;
-//     //font-style: normal;
-//     //font-weight: 700;
-//     //line-height: normal;
-
-//     //this fall och framåt:
-//     color: #000;
-//     font-size: 16px;
-//     font-style: normal;
-//     font-weight: 400;
-//     line-height: normal;
-//     display: none;
-//   }
-
-//   @media screen and (min-width: 1024px) {
-//     p {
-//       display: block;
-//     }
-//   }
-// `;
-
-// let courseArray = courseData.courses;
-// console.log(courseArray);
-
-// export const CourseCard = () => {
-//   const { t, ready } = useTranslation();
-
-//   const courses = t("courses", { returnObjects: true });
-
-//   if (!ready) return "loading translations...";
-//   return (
-//     <>
-//       {courses.map((course, index) => (
-//         <div key={index} courses={course}>
-//           <StyledCourseCard>
-//             <img src={course.imageUrl} alt={course.imageAlt} />
-//             <CourseCardText>
-//               <h5>{course.courseName}</h5>
-//               <p>{course.courseBrief}</p>
-//               <CourseCardButton>Read more</CourseCardButton>
-//             </CourseCardText>
-//           </StyledCourseCard>
-//         </div>
-//       ))}
-//     </>
-//   );
-// };

@@ -20,6 +20,7 @@
   {
     "courseId": 1,
     "courseName": "Ashtanga vinyasa yoga",
+    "courseNameShort": "Ashtanga Vinyasa",
     "imageUrl": "/assets/ashtangayogaimage.jpeg",
     "imageAlt": "Personer knäsittandes och framåtböjda på en yogamatta med armarna framåt",
     "courseBrief": "Ashtanga Vinyasa Yoga är perfekt för den dynamiska ryttaren som strävar efter att bygga styrka och öka flexibiliteten. Den här klassen lär ut en energisk praxis som synkroniserar andningen med rörelserna.",
@@ -28,6 +29,7 @@
   {
     "courseId": 2,
     "courseName": "Yoga på hästryggen",
+    "courseNameShort": "Yoga på hästryggen",
     "imageUrl": "/assets/yogaonhorseback.webp",
     "imageAlt": "Kvinna med armarna över huvudet i en yogaposition medan hon sitter på en mörkbrun häst",
     "courseBrief": "Hästyoga är en utmärkt klass för den mer erfarna ryttaren och kombinerar sitsutbildning med traditionella yogapraktiker. Den här klassen fördjupar bandet mellan dig och hästen och förbättrar både förtroendet och kommunikationen mellan häst och ryttare.",
@@ -36,6 +38,7 @@
   {
     "courseId": 3,
     "courseName": "Hatha yoga",
+    "courseNameShort": "Hatha yoga",
     "imageUrl": "/assets/hathayogaimage.jpg",
     "imageAlt": "Personer sitter i en yogaposition på yogamattor med armarna vilande på knäna",
     "courseBrief": "Hatha Yoga är en holistisk praxis som syftar till att förbättra flexibilitet, styrka och inre frid genom harmonisering av andning och rörelse.",
@@ -44,6 +47,7 @@
   {
     "courseId": 4,
     "courseName": "Hot yoga",
+    "courseNameShort": "Hot yoga",
     "imageUrl": "/assets/hotyoga.jpeg",
     "imageAlt": "Svettig kvinna med träningskläder står i en yogaposition",
     "courseBrief": "Hot Yoga är en yogastil som utförs i ett uppvärmt rum, vanligtvis runt 35-40°C. Den intensiva värmen är avsedd att förbättra flexibiliteten och avgiftningen samtidigt som den utmanar utövarna genom en serie yogapositioner.",
@@ -52,6 +56,7 @@
   {
     "courseId": 5,
     "courseName": "Sitsutbildning med Maria Lind",
+    "courseNameShort": "Sitsträning",
     "imageUrl": "/assets/sitstraininglongering.jpeg",
     "imageAlt": "Flicka sitter på en vit häst och en kvinna håller hästen",
     "courseBrief": "Sitsutbildning med Maria Lind, i höst är sitsutbildaren Maria Lind värd för en ny kurs här på Saddle Up Yoga Studio. Ta tillfället i akt att arbeta med din balans och skärpa dina ridfärdigheter.",
@@ -59,10 +64,11 @@
   },
   {
     "courseId": 6,
-    "courseName": "Kurser i medvetenhet",
+    "courseName": "Kurser i mindfulness",
+    "courseNameShort": "Mindfulness",
     "imageUrl": "/assets/mindfulnessimage.jpeg",
     "imageAlt": "Blond kvinna står bredvid brun häst",
-    "courseBrief": "Medvetenhet. I den här klassen minskar vi stress, förbättrar mental klarhet och främjar en större självmedvetenhet och känslomässigt välbefinnande.",
+    "courseBrief": "Mindfulness. I den här klassen minskar vi stress, förbättrar mental klarhet och främjar en större självmedvetenhet och känslomässigt välbefinnande.",
     "button": "Läs mer"
   }
 ],

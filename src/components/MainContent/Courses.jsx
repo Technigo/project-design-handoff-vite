@@ -38,7 +38,7 @@ const CoursesButton = styled.button`
   font-weight: 500;
   //line-height: normal;
   text-transform: uppercase;
-  margin: 30px 0 60px;
+  margin: 45px 0;
 `;
 
 export const Courses = () => {
