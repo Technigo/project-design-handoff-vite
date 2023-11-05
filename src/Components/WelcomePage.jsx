@@ -37,8 +37,37 @@ const WelcomePage = () => {
           <div className="offerings-text">
             <h1>OUR YOGA</h1>
             <h2>No matter which class you choose, we stress breath, muscle support, and focus to ensure a safe yoga practice. We tailor our classes to your individual needs, whether you require modifications due to injuries or want to challenge yourself. We love sharing our passion for yoga and are always available to answer your questions after the class. We are here for you!</h2>
+            <div className="buttons">
+            <button className="discoverclasses-button">Discover Our Classes</button>
+            </div>  
           </div>
         </div>
+      </section>
+      <section className="boxes">
+        <div className="overlay">
+          <div className="box">CLASSES</div>
+          <div className="box">STUDIO</div>
+          <div className="box">SCHEDULE</div>
+        </div>
+      </section>  
+      <section className="new-yoga">
+        <div className="new-yoga-content">
+          <h1>NEW TO YOGA?</h1>
+          <h2>Start with a free trial session, and we´ll help you begin your journey with confidence.</h2>
+          <div className="buttons">
+            <button className="book-button">Book Now</button>
+          </div>
+          </div>
+          <div className="about">
+            <img src="Image section 5.png" alt="Image Section 5" />
+            <div className="about-text">
+              <h1>ABOUT US</h1>
+              <h2>Serenity Yoga embarked on its journey at Mariatorget, Södermalm in Stockholm in the summer of 2022. In the autumn of 2023, we expanded our presence with a second studio at Hornstull´s strand. </h2>
+              <div className="buttons">
+              <button className="discoverstory-button">Discover Our Story</button>
+            </div>
+          </div>        
+        </div>  
       </section>
     </div>
   );
