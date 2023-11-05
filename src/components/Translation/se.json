@@ -1,4 +1,11 @@
 {
+  "header": {
+    "about": "Om oss",
+    "course": "Våra kurser",
+    "resources": "Resurser",
+    "shop": "Butik",
+    "searchbar": "Sök"
+},
   "burgerMenu": {
   "search": "Sök",
   "home": "Hem",

@@ -1,4 +1,11 @@
 {
+  "header": {
+    "about": "About us",
+    "course": "Our courses",
+    "resources": "Resources",
+    "shop": "Shop",
+    "searchbar": "Search"
+  },
   "burgerMenu": {
     "search": "Search",
     "home": "Home",

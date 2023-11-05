@@ -29,18 +29,6 @@ const CustomStyles = styled.div`
     z-index: 1000;
   }
 
-  /* Color/shape of burger icon bars */
-  /* .bm-burger-bars {
-    background: #373a47;
-  } */
-
-  /* Color/shape of burger icon bars on hover*/
-  /* .bm-burger-bars-hover {
-    background: #a90000;
-  } */
-
-  /* , .bm-cross-button .bm-cross,#react-burger-cross-btn#exit-icon 
-  */
   /* Position and sizing of clickable cross button */
   .bm-cross-button {
     position: fixed;
@@ -49,11 +37,6 @@ const CustomStyles = styled.div`
     right: 18px;
     top: 20px;
   }
-
-  /* Color/shape of close button cross */
-  /* .bm-cross {
-    //background: #bdc3c7;
-  } */
 
   /*
 Sidebar wrapper styles
@@ -68,16 +51,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .bm-menu {
     background: #202537;
     padding: 2.5em 1.5em 0;
-    //font-size: 1.15em;
     max-height: 400px; /* Set the maximum height */
     display: flex;
     justify-content: center;
   }
-
-  /* Morph shape necessary with bubble or elastic */
-  /* .bm-morph-shape {
-    fill: #373a47;
-  } */
 
   /* Wrapper for item list */
   .bm-item-list {
@@ -86,10 +63,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
     display: flex;
     flex-direction: column;
     gap: 32px;
-    // padding-left: 125px;
     text-align: left;
     max-width: 300px;
-    //align-items: center;
   }
 
   /* Individual item */

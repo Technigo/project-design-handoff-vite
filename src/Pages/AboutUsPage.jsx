@@ -8,16 +8,17 @@ const StyledAboutUs = styled.div`
   flex-direction: column;
   align-items: center;
   //width: 100%;
-  padding: 20px 150px 80px;
+  margin-top: 103px;
+
+  @media screen and (min-width: 1024px) {
+    padding: 20px 0px 80px;
+  }
 `;
 
 const StyledHeading = styled.h3`
-  //color: #081957;
   text-align: center;
   font-size: 28px;
-  //font-style: normal;
   font-weight: 600;
-  //line-height: normal;
   margin: 20px 0 40px;
   text-transform: uppercase;
 `;
@@ -39,9 +40,7 @@ const StyledSubHeading = styled.h4`
   flex-shrink: 0;
   text-align: center;
   font-size: 20px;
-  //font-style: normal;
   font-weight: 600;
-  //line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 `;
@@ -73,9 +72,7 @@ const WhoWeAreText = styled.p`
   text-align: center;
   white-space: pre-line;
   font-size: 16px;
-  //font-style: normal;
   font-weight: 400;
-  //line-height: normal;
 
   /* @media screen and (min-width: 1024px) {
     text-align: left;
@@ -86,9 +83,7 @@ const FindUsText = styled.p`
   text-align: center;
   white-space: pre-line;
   font-size: 16px;
-  //font-style: normal;
   font-weight: 400;
-  //line-height: normal;
 
   /* @media screen and (min-width: 1024px) {
     text-align: left;
@@ -107,9 +102,7 @@ const ContactTextWrapper = styled.div`
 const ContactText = styled.p`
   text-align: center;
   font-size: 16px;
-  //font-style: normal;
   font-weight: 400;
-  //line-height: normal;
 
   /* @media screen and (min-width: 1024px) {
     text-align: left; 
