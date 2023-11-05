@@ -1,5 +1,6 @@
 .good-to-know-container {
   padding-top: 50px;
+  background-color: var(--offwhite);
 }
 
 .good-to-know-container h3 {

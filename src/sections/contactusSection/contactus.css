@@ -1,6 +1,7 @@
 .contact-us-container {
   padding: 50px 16px 50px 16px;
   background-color: var(--offwhite);
+  position: relative;
 }
 
 .contact-us-info {
@@ -41,6 +42,81 @@ textarea {
 }
 
 .terms-and-conditions {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: var(--body-mobile);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.terms-and-conditions input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: var(--offwhite);
+  border-radius: 5px;
+  border: 2px solid var(--dark);
+}
+
+/* When the checkbox is checked, add a blue background */
+.terms-and-conditions input:checked ~ .checkmark {
+  background-color: var(--medium);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.terms-and-conditions input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.terms-and-conditions .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+form > button {
+  width: 30%;
   display: flex;
-  gap: 10px;
+  align-self: center;
+  margin-bottom: 32px;
+}
+
+.contact-wave {
+  position: absolute;
+  z-index: 25;
+  content: url(../../assets/wave-3mini.svg);
+  width: 100vw;
+  bottom: -30px;
+  left: 0;
 }

@@ -2,6 +2,8 @@ import { useTranslation } from "react-i18next";
 import "./contactus.css";
 import wave3mini from "../../assets/wave-3mini.svg";
 
+import { PrimaryBtn } from "../../components/buttons/primary/PrimaryBtn";
+
 export const ContactUsSection = () => {
   const { t } = useTranslation();
   return (
@@ -30,13 +32,25 @@ export const ContactUsSection = () => {
             placeholder={t("formMessagePlaceholder")}
           />
         </div>
-        <div className="terms-and-conditions">
+        {/* <div className="terms-and-conditions">
           <input type="checkbox" />
+          <span className="checkmark"></span>
           <p className="terms-and-conditions-info">{t("termsAndConditions")}</p>
-        </div>
-        <button type="submit">{t("sendBtn")}</button>
+        </div> */}
+
+        <label className="terms-and-conditions">
+          {t("termsAndConditions")}
+          <input type="checkbox" />
+          <span className="checkmark"></span>
+        </label>
+
+        <PrimaryBtn
+          type="submit"
+          btnName={t("sendBtn")}
+          className="contact-submitBtn"
+        />
       </form>
-      <img src={wave3mini} alt="wave pattern" />
+      <img alt="wave pattern" className="contact-wave" />
     </div>
   );
 };
