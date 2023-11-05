@@ -1,0 +1,16 @@
+{
+    "articlesMobile": [
+        {
+            "image": "/articlem1.png",
+            "name": "founded by busy women"
+        },
+        {
+            "image": "/article2m.png",
+            "name": "who care about your health"
+        },
+        {
+            "image": "/article3m.png",
+            "name": "access fitness no matter the budget"
+        }
+    ]
+}

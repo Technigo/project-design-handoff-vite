@@ -2,6 +2,7 @@ import React from 'react';
 import { useMediaQuery } from "react-responsive";
 import Navbar from "../components/Navbar.jsx";
 import Articles from "../components/Articles.jsx";
+import ArticlesMobile from "../components/ArticlesMobile.jsx";
 import Footer from "../components/Footer.jsx";
 import NavbarMobile from "../components/NavbarMobile";
 
@@ -11,21 +12,22 @@ const AboutUs = () => {
     const isTablet = useMediaQuery({ minWidth: 394, maxWidth: 834 });
 
     return (
-
         <div className="main">
-            {isMobile ? (
-                <NavbarMobile />
-            ) : isTablet ? (
+            {isMobile || isTablet ? (
                 <NavbarMobile />
             ) : (
                 <Navbar />
             )}
-            <Articles />
+
+            {isMobile || isTablet ? (
+                <ArticlesMobile />
+            ) : (
+                <Articles />
+            )}
+
             <Footer />
         </div>
-
     )
-
 }
 
-export default AboutUs; 
+export default AboutUs;
