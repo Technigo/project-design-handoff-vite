@@ -16,19 +16,19 @@
         "h2": "Dina Instruktörer - Om Resan",
         "instructors": {
             "instructor1": [
-                "Dansen av andning och rörelse är där magin händer. I varje ställning upptäckte jag en del av min själ. Följ med mig, låt oss röra oss, låt oss andas och låt oss hitta vår egen unika rytm.",
+                "\"Dansen av andning och rörelse är där magin händer. I varje ställning upptäckte jag en del av min själ. Följ med mig, låt oss röra oss, låt oss andas och låt oss hitta vår egen unika rytm.\"",
                 "Lisa ・Ashtanga"
             ],
             "instructor2": [
-                "Meditation är konsten att avslöja vår sanna natur. Genom livets kaos fann jag stillhet. Genom stillheten fann jag styrka. Följ med mig, och låt oss påbörja denna heliga resa tillsammans.",
+                "\"Meditation är konsten att avslöja vår sanna natur. Genom livets kaos fann jag stillhet. Genom stillheten fann jag styrka. Följ med mig, och låt oss påbörja denna heliga resa tillsammans.\"",
                 "Arlette ・Meditation"
             ],
             "instructor3": [
-                "Livets största gåva är nuets ögonblick. Genom meditation fann jag porten till inre frid. Följ med mig, och låt oss omfamna skönheten i nuet, tillsammans.",
+                "\"Livets största gåva är nuets ögonblick. Genom meditation fann jag porten till inre frid. Följ med mig, och låt oss omfamna skönheten i nuet, tillsammans.\"",
                 "Kori ・Meditation"
             ],
             "instructor4": [
-                "Yoga är en spegel som reflekterar vår inre värld. Genom års praktik har jag lärt mig att styrka uppstår från sårbarhet. Kom, låt oss upptäcka kraften inom dig.",
+                "\"Yoga är en spegel som reflekterar vår inre värld. Genom års praktik har jag lärt mig att styrka uppstår från sårbarhet. Kom, låt oss upptäcka kraften inom dig.\"",
                 "Anna・Yin"
             ]
         }
@@ -76,9 +76,9 @@
         ],
         "client_quotes": {
             "text": {
-                "emily": "Den online plattformen ger flexibilitet, och instruktörerna utstrålar positivitet och expertis. Jag har funnit en djupare känsla av balans och styrka i både kropp och sinne.",
-                "david": "Jag har provat många yogastudior, men YOMY utmärker sig. Instruktörerna brinner verkligen för det de gör, och det märks i varje klass.",
-                "sarah": "Jag kan inte rekommendera YOMY tillräckligt. Gemenskapen är mycket välkomnande, och klasserna är mångsidiga och utmanande. Denna studio har hjälpt mig att hitta en känsla av lugn och styrka som jag aldrig trodde var möjlig."
+                "emily": "\"Den online plattformen ger flexibilitet, och instruktörerna utstrålar positivitet och expertis. Jag har funnit en djupare känsla av balans och styrka i både kropp och sinne.\"",
+                "david": "\"Jag har provat många yogastudior, men YOMY utmärker sig. Instruktörerna brinner verkligen för det de gör, och det märks i varje klass.\"",
+                "sarah": "\"Jag kan inte rekommendera YOMY tillräckligt. Gemenskapen är mycket välkomnande, och klasserna är mångsidiga och utmanande. Denna studio har hjälpt mig att hitta en känsla av lugn och styrka som jag aldrig trodde var möjlig.\""
             },
             "name": {
                 "name1": "Emily",

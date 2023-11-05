@@ -16,19 +16,19 @@
         "h2": "Your Instructors - About the Journey",
         "instructors": {
             "instructor1": [
-                "The dance of breath and movement is where magic happens. In each pose, I discovered a piece of my soul. Join me, let's move, let's breathe, and let's find our own unique rhythm.",
+                "\"The dance of breath and movement is where magic happens. In each pose, I discovered a piece of my soul. Join me, let's move, let's breathe, and let's find our own unique rhythm.\"",
                 "Lisa ・Ashtanga"
             ],
             "instructor2": [
-                "Meditation is the art of unveiling our true selves. Through the chaos of life, I found stillness. Through stillness, I found strength. Join me, and let's embark on this sacred journey together.",
+                "\"Meditation is the art of unveiling our true selves. Through the chaos of life, I found stillness. Through stillness, I found strength. Join me, and let's embark on this sacred journey together.\"",
                 "Arlette ・Meditation"
             ],
             "instructor3": [
-                "Life's greatest gift is the present moment. Through meditation, I found the gateway to inner peace. Join me, and let's embrace the beauty of now, together.",
+                "\"Life's greatest gift is the present moment. Through meditation, I found the gateway to inner peace. Join me, and let's embrace the beauty of now, together.\"",
                 "Kori ・Meditation"
             ],
             "instructor4": [
-                "Yoga is a mirror reflecting our inner world. Through years of practice, I've learned that strength arises from vulnerability. Come, let's discover the power within you.",
+                "\"Yoga is a mirror reflecting our inner world. Through years of practice, I've learned that strength arises from vulnerability. Come, let's discover the power within you.\"",
                 "Anna・Yin"
             ]
         }
@@ -76,9 +76,9 @@
         ],
         "client_quotes": {
             "text": {
-                "emily": "The online platform provides flexibility, and the instructors radiate positivity and expertise. I've found a deeper sense of balance and strength in both my body and mind.",
-                "david": "I've tried many yoga studios, but YOMY stands out. The instructors are truly passionate about what they do, and it shows in every class.",
-                "sarah": "I can't recommend YOMY enough. The community is so welcoming, and the classes are diverse and challenging. This studio has helped me find a sense of calm and strength that I never thought possible."
+                "emily": "\"The online platform provides flexibility, and the instructors radiate positivity and expertise. I've found a deeper sense of balance and strength in both my body and mind.\"",
+                "david": "\"I've tried many yoga studios, but YOMY stands out. The instructors are truly passionate about what they do, and it shows in every class.\"",
+                "sarah": "\"I can't recommend YOMY enough. The community is so welcoming, and the classes are diverse and challenging. This studio has helped me find a sense of calm and strength that I never thought possible.\""
             },
             "name": {
                 "name1": "Emily",
