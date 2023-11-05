@@ -70,7 +70,11 @@ export const Contact = () => {
                 <img src={contact_info[0].image} alt={contact_info[0].alt} />
                 <div className="contact-info question-asked">
                   <PText text={t("contact.form_contact.confirmationText")} />
-                  <Button text={t("contact.buttons.newQ")} onClick={handleAskQuestionClick} />
+                  <Button
+                    className="new-question-btn"
+                    text={t("contact.buttons.newQ")}
+                    onClick={handleAskQuestionClick}
+                  />
                 </div>
               </div>
             ) : isFormVisible ? (

@@ -11,7 +11,9 @@ button {
     background: #FFF;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
+
 
 .new-question-btn {
     width: 194px;

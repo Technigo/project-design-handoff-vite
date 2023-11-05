@@ -29,7 +29,7 @@ footer {
 .footer-link[aria-current="true"] {
     text-decoration: underline;
     text-decoration-color: #45321A;
-  }
+}
 
 .language-wrapper {
     display: flex;
@@ -37,16 +37,23 @@ footer {
 }
 
 .language-wrapper button {
+    width: 100px;
     border: none;
     background: none;
     padding: 0;
-  }
+    justify-content: start;
+}
 
-  .language-wrapper button:hover {
+.language-wrapper button p {
+    color: #45321A;
+}
+
+.language-wrapper button:hover {
     text-decoration: underline;
     text-decoration-color: #45321A;
-  }
-  
+    background: none;
+}
+
 
 .footer-anchor {
     font-family: Mulish;
@@ -64,7 +71,7 @@ footer {
 }
 
 /* Tablet */
-@media (min-width: 667px) and (max-width: 1024px) { }
+@media (min-width: 667px) and (max-width: 1024px) {}
 
 
 
