@@ -1,3 +1,15 @@
-h1 {
-  margin: 25px;
+.about-us-header {
+  margin-left: 25px;
+  font-weight: 500;
+  line-height: 160%;
+  font-style: normal;
+  color: var(--primary-color);
+  display: inline-block;
+}
+
+.italic-red {
+  margin-left: 0;
+  font-style: italic;
+  color: var(--secondary-color);
+  display: inline-block;
 }

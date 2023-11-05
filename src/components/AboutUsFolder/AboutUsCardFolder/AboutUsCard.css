@@ -8,12 +8,21 @@
   flex-direction: row;
   overflow: hidden;
   margin-bottom: 40px;
+  gap: 27px;
+}
+
+.about-card h3 {
+  color: var(--font-color);
+  font-weight: 500;
 }
 
 .about-card img {
-  width: 50%;
+  width: 128px;
+  height: 155px;
   background-size: cover;
   background-position: center;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .text-frame {

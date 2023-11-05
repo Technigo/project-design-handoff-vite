@@ -29,9 +29,9 @@ export const AboutUsSwiper = () => {
       modules={[Navigation, Pagination, Scrollbar, A11y]}
       spaceBetween={50}
       slidesPerView={3}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
+      // navigation
+      // pagination={{ clickable: true }}
+      // scrollbar={{ draggable: true }}
       onSwiper={(swiper) => console.log(swiper)}
       onSlideChange={() => console.log("slide change")}
     >
@@ -74,7 +74,7 @@ export const AboutUsSwiper = () => {
 
 export const SwiperText = () => {
   return (
-    <div className="swiper-text">
+    <div className="swiper-textbox">
       <p>
         “It's amazing to think that a fitness center can be so much more than
         just exercise.”

@@ -1,15 +1,19 @@
 .swiper-box {
   margin-top: 70px;
+  height: 262px;
+  margin-bottom: 30px;
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
   border-radius: 0;
+  color: #ff5344;
 }
 
 .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: var(--swiper-pagination-bottom, -3px);
+  bottom: var(--swiper-pagination-bottom, -10px);
   top: var(--swiper-pagination-top, auto);
+  margin-bottom: 25px;
 }
 
 .swiper-pagination .swiper-pagination-bullet {

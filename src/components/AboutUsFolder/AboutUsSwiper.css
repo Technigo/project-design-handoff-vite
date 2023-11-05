@@ -1,5 +1,5 @@
 .swiper {
-  margin-top: 70px;
+  margin-top: 10px;
   margin-left: 25px;
   margin-bottom: 70px;
 }
@@ -11,4 +11,20 @@
 .swiper-slide img {
   width: 147.543px;
   height: 219.398px;
+}
+
+.swiper-textbox {
+  margin-bottom: 70px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.swiper-textbox p {
+  color: var(--FF-Blue, #004174);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 160%;
 }
