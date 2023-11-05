@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import jsonData from "../../Translations/en.json";
+//import jsonData from "../../Translations/en.json";
 
 const ClassesContainer = styled.div`
   display: flex;
