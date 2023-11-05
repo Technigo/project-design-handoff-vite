@@ -13,8 +13,9 @@ import Banner from "../components/banner/banner";
 import Button from "../components/button/button";
 
 const Home = () => {
+    // Importing translation functions from a library called react-i18next.
     const { t } = useTranslation();
-
+    // Arrays of classes and benefits, used for display.
     const classes = [
         t("coreFlex"),
         t("preNatal"),
@@ -34,6 +35,7 @@ const Home = () => {
     ];
 
     return (
+        // JSX markup representing the home page content.
         <>
             <section className="relative">
                 <img
