@@ -1,0 +1,106 @@
+.contact {
+    margin-left: 60px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    margin: 0;
+}
+
+.small-img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.contact p {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.contact h2 {
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.contacts-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ContactForm.css */
+.contact form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact form-parent {
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.form-parent h2 {
+    text-align: center;
+}
+
+.contact form-group {
+    margin: 0;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px 30px;
+    border: none;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: normal;
+    background: #C0AB9B;
+    border-radius: 20px;
+    width: 590px;
+    margin: 20px;
+}
+
+.contact form button {
+    border-radius: 50px;
+    background: #525B64;
+    color: #fff;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    align-self: flex-start;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.form-parent {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 40px;
+}
+
+.contact-img {
+    width: 500px;
+    padding: 10px;
+}

@@ -76,3 +76,8 @@
     align-self: flex-start;
     margin: 10px;
 }
+
+.form img {
+    width: 520px;
+    padding: 10px;
+}

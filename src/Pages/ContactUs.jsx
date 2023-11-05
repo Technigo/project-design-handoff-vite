@@ -1,15 +1,15 @@
 import React from 'react';
 import Navbar from "../components/Navbar.jsx";
-import Articles from "../components/Articles.jsx";
+import ContactForm from "../components/ContactForm.jsx";
 import Footer from "../components/Footer.jsx";
 
-const AboutUs = () => {
+const ContactUs = () => {
 
     return (
 
         <div>
             <Navbar />
-            <Articles />
+            <ContactForm />
             <Footer />
         </div>
 
@@ -17,4 +17,4 @@ const AboutUs = () => {
 
 }
 
-export default AboutUs; 
+export default ContactUs; 
