@@ -1,0 +1,31 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--secondary-color);
+}
+
+.img-box {
+  width: 157px;
+  height: 234px;
+  overflow: hidden;
+}
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.textbox {
+  margin: 28px;
+  width: 188px;
+}
+
+.textbox h4 {
+  color: var(--font-color);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 8px;
+}

@@ -1,0 +1,52 @@
+.footer {
+  background-color: #ff7e73;
+  height: 400px;
+}
+
+.first-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 25px;
+
+  margin-left: 25px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+}
+
+.footer-logo {
+  height: 42px;
+}
+
+.link-footer {
+  color: black;
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 14px;
+  transition: transform 0.2s, font-size 0.2s;
+}
+.link-footer:hover {
+  font-size: 15px;
+  transform: scale(0.95);
+}
+.footer-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+  gap: 24.5px;
+  margin: 25px;
+}
+
+.fb-button {
+  height: 24px;
+}
+
+/* dropdown*/
+.footer-dropdown {
+  margin-top: 32px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}

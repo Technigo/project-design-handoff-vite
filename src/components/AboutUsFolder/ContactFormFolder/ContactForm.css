@@ -1,0 +1,72 @@
+.grid-parent {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+
+.grid-parent .contact-us {
+  background-color: #004174;
+  color: #f3f1ed;
+  margin: 25px;
+}
+
+.contact-us {
+  background-color: var(--primary-color);
+}
+
+.contact-form {
+  margin: 30px;
+  margin-right: 70px;
+  padding: 25px;
+}
+
+.contact-form h2 {
+  margin-bottom: 25px;
+}
+
+.contact-form p {
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.contact-text {
+  color: var(--background-color);
+}
+
+.the-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.an-input {
+  display: flex;
+  flex-direction: column;
+  gap: 6.1px;
+}
+.an-input input[type="text"],
+.an-input textarea {
+  border-radius: 3.054px;
+  border: none;
+  padding: 8px 10px 7px 8.5px;
+  color: (--font-color);
+  font-family: Montserrat, sans-serif;
+  font-size: 11px;
+  line-height: 110%;
+}
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #9a9a9a;
+}
+.an-input textarea {
+  margin-bottom: 5px;
+}
+
+.required-star {
+  color: var(--secondary-color);
+  display: inline-block;
+}

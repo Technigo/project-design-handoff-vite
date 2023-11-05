@@ -1,0 +1,36 @@
+.about-card-container {
+  margin-top: 70px;
+  margin: 25px;
+}
+
+.about-card {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin-bottom: 40px;
+  gap: 27px;
+}
+
+.about-card h3 {
+  color: var(--font-color);
+  font-weight: 500;
+}
+
+.about-card img {
+  width: 128px;
+  height: 155px;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.text-frame {
+  display: flex;
+  width: 183px;
+  padding-bottom: 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
