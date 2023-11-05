@@ -1,6 +1,7 @@
 import data from "../assets/images.json";
 import styled from "styled-components";
 import { useTranslation } from 'react-i18next';
+import { Form } from "./Form";
 
 const VisionBack = styled.img`
 width: 587px;
@@ -47,6 +48,7 @@ export const Vision = () => {
         <VisionText>{t("paragraph6")}</VisionText>
     </VisionBlue>
 <VisionBack src={data.oldwoman} alt="Background"/>
+<Form></Form>
 </>
   )
 }
