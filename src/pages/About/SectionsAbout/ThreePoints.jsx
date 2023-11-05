@@ -1,4 +1,3 @@
-import { NormalText } from "../../../reusableComp/NormalText"
 import styled from "styled-components";
 import { SubHeading } from "../../../reusableComp/SubHeading";
 
@@ -11,8 +10,7 @@ height: 232px;
 justify-content: center;
 align-items: center;
 `
-
-
+//Define the subheadings
 const Point1 = "Self Leadership"
 const Point2 = "Collaboration"
 const Point3 = "Do more of what you love"
@@ -26,8 +24,7 @@ export const ThreePoints = () => {
     <SubHeading text={Point3}/>
     </ThreePointsSection>
     </>
-    
-  )
-}
+  );
+};
 
 

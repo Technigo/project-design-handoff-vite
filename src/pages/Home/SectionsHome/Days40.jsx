@@ -13,16 +13,6 @@ const Days40Section = styled.section`
   align-items: center;
 `;
 
-const SpecialSpan1 = styled.span`
-  font-weight: bold;
-  color: red;
-`;
-
-const SpecialSpan2 = styled.span`
-  font-weight: bold;
-  color: blue;
-`;
-
 export const Days40 = () => {
   return (
     <>

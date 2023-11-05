@@ -6,8 +6,6 @@ color: white;
 text-align: center;
 background-color: var(--popping-orange);
 display: flex;
-
-
 flex-direction: column;
 justify-content: center;
 align-items: center;

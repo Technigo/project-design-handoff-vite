@@ -13,6 +13,7 @@ align-items: center;
 gap: 10px;
 `
 
+//Create different sections for the text blocks
 const lookingForMoreLine1 = "ARE YOU LONGING FOR MORE?"
 const lookingForMoreLine2 = "With a daily sacred morning practice you can connect to your inner well of creativity, energy and with that focus"
 const lookingForMoreLine3 = "BUILD YOUR VISIONS!"

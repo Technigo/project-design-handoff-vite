@@ -1,8 +1,9 @@
 {
-    "welcome": "hej",
-    "text": "hej hej",
-    "translatePage": {
-        "heading": "hello world",
-        "subheading": "hejhej"
+    "hero": {
+      "mainHeading": "Sat nam, hej!",
+      "heroNormalText": "Jag heter Petra och jag lär dig att koppla samman alla aspekter av dig själv med din högre jag och det Gudomliga genom att använda Kundaliniyoga dagligen. Vi kallar det Sadhana.",
+      "btnText": "SAT NAM, JAG VILL HA MER"
     }
-}
+  }
+  
+  

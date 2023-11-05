@@ -1,3 +1,4 @@
+//Styling for the orange button
 import styled from "styled-components";
 
 const OrangeButtonStyle = styled.button`

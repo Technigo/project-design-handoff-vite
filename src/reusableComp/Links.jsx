@@ -1,9 +1,10 @@
+//Reusable component for links in the footer
 import styled from 'styled-components';
 
 const LinksContainer = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 10px; /* Adjust the gap as needed */
+  gap: 10px; 
 `;
 
 const StyledLink = styled.a`

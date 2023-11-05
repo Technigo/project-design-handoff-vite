@@ -1,8 +1,9 @@
 {
-    "welcome": "hej",
-    "text": "hej hej",
-    "translatePage": {
-        "heading": "hello world",
-        "subheading": "hejhej"
+    "hero": {
+      "mainHeading": "Sat nam, hi!",
+      "heroNormalText": "My name is Petra and I am teaching you to connect all aspects of yourself with your higher self and the Divine by using Kundalini Yoga on a daily basis. We call it Sadhana.",
+      "btnText": "SAT NAM, I WANT MORE"
     }
-}
+  }
+  
+  

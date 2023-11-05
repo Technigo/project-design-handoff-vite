@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const Container = styled.div`
   width: 100vw; /* Set the width to 100% of the viewport width */
-   /* Set the height to 100% of the viewport height */
   display: grid;
   grid-template-columns: 1fr 1fr; /* Create two equal columns for the images */
   gap: 0; /* Remove any gap between the images */

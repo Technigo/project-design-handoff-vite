@@ -7,9 +7,9 @@ import backgroundImage from "../../../../public/images/womanwinking.webp";
 
 const HeroSection = styled.section`
 background-image: url(${backgroundImage});
-background-size: cover; /* Adjust the size as needed */
-background-position: center; /* Adjust the position as needed */
-background-repeat: no-repeat; /* Prevent the background from repeating */
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat; 
 color: white;
 display: flex;
 height: 100vh;
@@ -21,8 +21,6 @@ gap: 16px;
 flex-shrink: 0
 `;
 
-//LÄGG IN STYLING FÖR BUTTON HÄR KANSKE?
-
 const heroNormalText = "My name is Petra and I am teaching you to connect all aspects of yourself with your higher self and the Divine by using Kundalini Yoga on a daily basis. We call it Sadhana."
 
 export const Hero = () => {
@@ -31,7 +29,7 @@ export const Hero = () => {
         <HeroSection>
         <MainHeading text={"Sat nam, hi!"} />
         <NormalText text={heroNormalText} />
-        <Link to="/about">
+        <Link to="/about"> {/* When you click on the btn you will go to the about page */}
         <Button
         className={"iwant-more-btn"} 
         btnText={"SAT NAM, I WANT MORE"}
@@ -39,5 +37,7 @@ export const Hero = () => {
          </Link>
          </HeroSection>
         </>
-    )
-}
+    );
+};
+
+export default Hero;

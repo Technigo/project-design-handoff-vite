@@ -55,7 +55,6 @@ export const LetsGetInTouch = () => {
    <OrangeButton 
    className={"orange-btn"}
    btnText={"Good music, yes please!"} />
-   
    </LetsGetInTouchSection>
    </>
   );

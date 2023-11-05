@@ -1,3 +1,4 @@
+//Not found page if the user tries to navigate somewhere that does not exist. Has no styling, could be added in the future
 import { Link } from "react-router-dom";
 
 export const NotFound = () => {

@@ -1,3 +1,5 @@
+//Currently build so functions could easily be added to submit the form somewhere
+//Imported into LetsGetInTouch section
 import styled from "styled-components";
 import { useState } from 'react';
 
@@ -35,7 +37,6 @@ width: 100%;
 background-color: transparent;
 `;
 
-//const SubmitButton = styled.button``
 
 export const Form = () => {
     const [formData, setFormData] = useState({ name: '', email: ''});
@@ -79,5 +80,3 @@ export const Form = () => {
   </FormContainer>
   );
 };
-
-//HANDLE SUMBIT BEHÖVS EJ om jag inte gör en till knapp...

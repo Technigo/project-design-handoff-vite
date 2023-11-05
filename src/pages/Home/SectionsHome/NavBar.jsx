@@ -10,7 +10,7 @@ const NavbarContainer = styled.nav`
   align-items: center;
   padding: 1rem 2rem;
   background-color: transparent; /* Set background to transparent */
-  color: var(--cobalt); /* Set text color to var(--cobalt) */
+  color: var(--cobalt); 
 
   /* Media query for tablets */
   @media (max-width: 768px) {
@@ -26,6 +26,7 @@ const NavbarContainer = styled.nav`
   }
 `;
 
+// Define a styled component for the "NavMenu," which represents the navigation menu.
 const NavMenu = styled.ul`
   list-style: none;
   display: flex;
@@ -50,6 +51,7 @@ const NavMenu = styled.ul`
   }
 `;
 
+// Define a styled component for a "NavItem," which represents a navigation item.
 const NavItem = styled.li``;
 
 
@@ -91,6 +93,7 @@ cursor: pointer;
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
+    // Function to toggle the mobile menu open or closed.
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -119,5 +122,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-//HAMBURGARMENYN ÄR KAOS och visas i lite olika storlekar just nu + kundalini menyn är till vänster och inte höger

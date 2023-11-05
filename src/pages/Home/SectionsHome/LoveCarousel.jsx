@@ -13,7 +13,7 @@ const IconWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff; /* Example background color */
+  background-color: #ffffff; 
   border-radius: 50%; /* Make it round for a button-like appearance */
   width: 40px; /* Adjust the width */
   height: 40px; /* Adjust the height */
@@ -21,13 +21,13 @@ const IconWrapper = styled.div`
 `;
 
 const LeftIcon = styled(AiOutlineArrowLeft)`
-  color: #FF0000; /* Customize the color */
-  font-size: 24px; /* Customize the font size */
+  color: #FF0000;
+  font-size: 24px; 
 `;
 
 const RightIcon = styled(AiOutlineArrowRight)`
-  color: #FF0000; /* Customize the color */
-  font-size: 24px; /* Customize the font size */
+  color: #FF0000; 
+  font-size: 24px;
 `;
 
 const LoveCarousel = () => {

@@ -3,12 +3,14 @@ import { TranslationComponent } from "../../../components/TranslationComponent";
 import { ImgComp } from "../../../reusableComp/ImgComp";
 import { Links } from "../../../reusableComp/Links";
 
+// Define a styled component for the "FooterSection" section.
 const FooterSection = styled.section`
   background: var(--bg-color);
   display: flex;
   flex-direction: column; /* Stack children vertically */
 `;
 
+// Define a styled component for the "IconsContainer" container.
 const IconsContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -20,6 +22,7 @@ const IconsContainer = styled.div`
   
 `;
 
+// Define a styled component for the "TranslationAndLinksContainer" container.
 const TranslationAndLinksContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -28,6 +31,7 @@ const TranslationAndLinksContainer = styled.div`
   width: 390px;
 `;
 
+//Set random urls for now, so you are able to change them in the future to something.
 export const Footer = () => {
   const linksData = [
     { text: 'HOME', url: 'https://www.google.com/?hl=sv' },
@@ -39,7 +43,7 @@ export const Footer = () => {
     <>
       <FooterSection>
         <TranslationAndLinksContainer className="lang-and-links">
-          <TranslationComponent />
+          <TranslationComponent /> {/* Render the TranslationComponent. */}
           <Links links={linksData} />
         </TranslationAndLinksContainer>
         <IconsContainer className="icons">

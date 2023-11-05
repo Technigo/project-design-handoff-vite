@@ -1,9 +1,7 @@
-import { NormalText } from "../../../reusableComp/NormalText";
-import { SubHeading } from "../../../reusableComp/SubHeading";
-
 import styled from "styled-components";
 import LoveCarousel from "./LoveCarousel";
 
+//Styling for the entire section
 const LoveSection = styled.section`
 background: var(--Marine, #141832);
 color: white;
@@ -11,6 +9,7 @@ padding-top: 24px;
 padding-bottom: 52px;
 `;
 
+//Styling for "Love"
 const LoveSubheading = styled.div`
 color: var(--fire);
 text-align: center;
@@ -20,18 +19,6 @@ font-style: normal;
 font-weight: 400;
 line-height: 30px; /* 100% */`
 
-const LoveName = styled.div`
-color: #FFF;
-font-family: JetBrains Mono;
-font-size: 16px;
-font-style: normal;
-font-weight: 800;
-line-height: 30px;
-text-align: center;
-`
-
-
-const LoveNormalText = "Having a daily Sadhana has totally changed my life. I am in love with my sacred morning practice."
 
 export const Love = () => {
   return (
@@ -46,5 +33,3 @@ export const Love = () => {
   );
 };
 
-
-//OBS LOVE ska vara i rött, lös även namnet i Bold.jsx
