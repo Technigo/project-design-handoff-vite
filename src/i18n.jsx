@@ -8,7 +8,8 @@ const resources = {
             glutes: "Rumpa",
             arms: "Armar",
             back: "Rygg",
-
+            tracker: "spårare",
+            favorites: "favoriter"
         },
     },
 };

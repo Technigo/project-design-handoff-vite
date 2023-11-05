@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "./css/navbar.css";
 import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
+
 
 const Navbar = () => {
+    const { t, i18n } = useTranslation();
+    const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
 
+    useEffect(() => {
+        setCurrentLanguage(i18n.language);
+    }, [i18n.language]);
+
+    console.log('Current language in Navbar:', currentLanguage);
 
     return (
 
@@ -12,9 +21,9 @@ const Navbar = () => {
             <img src="/logo.png" alt="logo" />
             <div className="nav-links">
                 <a href="#">Videos</a>
-                <a href="#">Workout Plan</a>
-                <a href="#">Tracker</a>
-                <a href="#">Favorites</a>
+                <a href="#">{t('Workout Plan')}</a>
+                <a href="#">{t('Tracker')}</a>
+                <a href="#">{t('Favorites')}</a>
             </div>
             <div className="search">
                 <div className="search-container">

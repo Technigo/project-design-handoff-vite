@@ -10,6 +10,7 @@ const LanguageSwitcher = () => {
         } else {
             i18n.changeLanguage('en');
         }
+        console.log('Current language:', i18n.language);
     };
 
     return (
@@ -21,7 +22,7 @@ const LanguageSwitcher = () => {
                 className="globe"
                 src="/globe.png"
                 alt="ENG/SVE"
-                style={{ width: '24px', height: '24px' }} // Justera storleken efter behov
+                style={{ width: '24px', height: '24px' }}
             />
         </div>
     );
