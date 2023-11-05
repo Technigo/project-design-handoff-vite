@@ -6,11 +6,11 @@
   padding-bottom: 0px;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+
   flex-shrink: 0;
   border-radius: 100px 0px 0px 100px;
   background: linear-gradient(180deg, #ffece4 0%, rgba(255, 236, 228, 0) 100%);
-  top: 220px;
+
   grid-column: 1 / 5;
 }
 
@@ -33,5 +33,5 @@ h1.signup-text {
   flex-shrink: 0;
   background-color: transparent;
   border: none;
-  margin-left: 10px;
+  margin-right: 24px;
 }
