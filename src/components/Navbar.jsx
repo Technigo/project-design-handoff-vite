@@ -28,7 +28,7 @@ const Navbar = () => {
             <div className="search">
                 <div className="search-container">
                     <div className="search-bar">
-                        <input type="text" placeholder="Search" />
+                        <input type="text" placeholder={t('searchPlaceholder')} />
                     </div>
                     <button className="search-button">
                         <img src="/search.png" alt="search" />

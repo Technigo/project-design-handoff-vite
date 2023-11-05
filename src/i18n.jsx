@@ -14,7 +14,7 @@ const resources = {
             "Favorites": "favoriter",
             "Workout Plan": "Träningsplan",
             "Workout Plans": "Träningsplaner",
-            "Search": "Sök",
+            "searchPlaceholder": "Sök",
             "At Home Fitness": "Hemmaträning",
             "Helping you move in your comfort zone": "Hjälper dig att komma ur din komfortzon",
             "Contact Us": "Kontakta Oss",
@@ -40,7 +40,9 @@ const resources = {
             article3_info: "Vi anser att alla ska ha möjlighet att nå sina träningsmål. Vi har olika prisklasser. Allt från 0 kr till 800 kr. Skillnaderna i hälsa blir allt större mellan fattiga och rika. Så vi vill erbjuda ett lyxigt utrymme för människor från olika ekonomiska bakgrunder. Du är välkommen här!",
             article1_name: "grundat av upptagna kvinnor",
             article2_name: "vem bryr sig om din hälsa",
-            article3_name: "ha tillgång till träning oavsett budget"
+            article3_name: "ha tillgång till träning oavsett budget",
+            namePlaceholder: "namn",
+            messagePlaceholder: "meddelande"
         }
     },
 
@@ -52,7 +54,10 @@ const resources = {
             article3_info: "We believe that everyone should have the opportunity to pursue their fitness goals. We had different price ranges. Ranging from $0 to $75. The health disparity is becoming greater between the poor and rich. So we want to provide a luxurious space for people coming from different economic backgrounds. You are welcome here!",
             article1_name: "founded by busy women",
             article2_name: "who care about your health",
-            article3_name: "access fitness no matter the budget"
+            article3_name: "access fitness no matter the budget",
+            searchPlaceholder: "Search",
+            namePlaceholder: "name",
+            messagePlaceholder: "message"
         },
     },
 };

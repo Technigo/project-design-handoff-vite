@@ -16,13 +16,13 @@ const ContactForm = () => {
                     <h3>{t('Have more questions or feedback? Message us!')}</h3>
                     <form>
                         <div className="form-group">
-                            <input type="text" id="name" name="name" placeholder="name" />
+                            <input type="text" id="name" name="name" placeholder={t('namePlaceholder')} />
                         </div>
                         <div className="form-group">
                             <input type="email" id="email" name="email" placeholder="email" />
                         </div>
                         <div className="form-group">
-                            <textarea id="message" name="message" rows="8" placeholder="message" />
+                            <textarea id="message" name="message" rows="8" placeholder={t('messagePlaceholder')} />
                         </div>
                         <div className="form-group">
                             <button type="button">{t('Send')}</button>
