@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.about-image-wrapper {
+    background-color: #EBE7E4;
+}
+
+#aboutUsImage {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #EBE7E4; 
+}
+
+/* Tablet is 834 x 1194 (UX designer set up) */
+@media (max-width: 834px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #EBE7E4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hide any overflow from the sides */
+    }
+    #aboutUsImage {
+        min-width: 834px; 
+        width: 100%;
+        height: auto;
+        background-size: contain; 
+        background-repeat: no-repeat;
+        /* left: -10%; 
+        right: -10%;  */
+        top: 0;
+        bottom: 0;
+        width: 125%; /* Make the image 1.25 times its container's width */
+        height: 100%;
+        background-color: #EBE7E4;
+    }
+}
+
+/* Tablet is 390 x 844 (UX designer set up) */
+@media (max-width: 390px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #EBE7E4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden; /* Hide any overflow from the sides */
+    }
+
+    #aboutUsImage {
+        min-width: 390px; 
+        width: 100%;
+        height: auto;
+        background-size: contain; 
+        background-repeat: no-repeat;
+        left: -25%; /* Cut 25% from the left side */
+        right: -25%; /* Cut 25% from the right side */
+        top: 0;
+        bottom: 0;
+        width: 150%; /* Make the image 1.55 times its container's width */
+        height: 100%;
+        background-color: #EBE7E4;
+    }
+}

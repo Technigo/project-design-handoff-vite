@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    
 }
 .navbar-wrapper {
     
@@ -118,4 +118,140 @@ body {
     border-radius: 0.5em;
     border: 1px solid #38302A;
 
+}
+
+.hamburger {
+    display: none; /* Initially hide the hamburger icon */
+    cursor: pointer;
+    top: 1rem;
+    right: 5rem;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #38302A;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Mobile menu styles */
+
+.mobile-menu-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1em;
+    margin-right: 1em;
+    
+}
+
+.mobile-menu {
+    display: none; /* Initially hide the mobile menu */
+    background-color: #EBE7E4;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    top: 10rem;
+    left:75rem;
+    width: 20%;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: solid 1px #38302A;
+    z-index: 1000;
+}
+
+/* Media query for tablet screens */
+@media (max-width: 834px) {
+    .navBar-list {
+        display: none; /* Hide the desktop navigation */
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger icon */
+        top: 1rem;
+        right: 5rem;
+        
+    }
+
+    .hamburger-search {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .bar { 
+        margin-left: 3em;
+        width: 40px;
+        height: 6px;
+    }
+
+    .serenity-logo {
+        transform: scale(0.7);
+    }
+
+    /* Hide the mobile menu by default on tablet screens */
+    .mobile-menu {
+        display: none;
+    }
+
+    .show-mobile-menu {
+        display: block; /* Display the mobile menu */
+    }
+    .show-mobile-menu .mobile-menu {
+        transform: translateY(0);
+       
+    }
+
+    
+}
+
+/* Media query for mobile screens */
+@media (max-width: 390px) {
+    .navBar-list {
+        display: none; /* Hide the desktop navigation */
+    }
+
+    .hamburger {
+        display: block;
+        top: 1rem;
+        right: 5rem;
+        
+    }
+
+    .hamburger-search {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+    .bar { 
+        margin-left: 3em;
+        width: 40px;
+        height: 6px;
+    }
+
+    .serenity-logo {
+        transform: scale(0.7);
+    }
+
+
+    /* Hide the mobile menu by default on mobile screens */
+    .mobile-menu {
+        display: none;
+    }
+
+    .show-mobile-menu {
+        display: block; /* Display the mobile menu */
+    }
+
+    .show-mobile-menu .mobile-menu {
+        transform: translateY(0);
+       
+    }
 }
