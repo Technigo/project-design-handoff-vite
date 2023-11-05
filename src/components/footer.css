@@ -47,3 +47,15 @@ footer {
 .footer-anchor:hover {
     text-decoration: underline;
 }
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) { }
+
+
+
+/* Desktop */
+@media (min-width: 1025px) {
+    footer {
+        height: 141px;
+    }
+}
