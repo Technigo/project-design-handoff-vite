@@ -10,9 +10,15 @@ export const Footer = () => {
               <img className={styles.logo} src="/assets/logo-blue-sml.png" />
             </div>
             <div className={styles.footerNavs}>
-              <a className={styles.footerNav} href="/">
-                LANGUAGE
-              </a>
+              <div className={styles.langDropdown}>
+                <a className={styles.droppDownToggle} href="/">
+                  LANGUAGE
+                </a>
+                <div className={styles.langDropdownMenu}>
+                  <a href="#">EN</a>
+                  <a href="#">SE</a>
+                </div>
+              </div>
               <a className={styles.footerNav} href="/">
                 FAQ
               </a>
