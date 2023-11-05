@@ -12,7 +12,7 @@ const ArticlesMobile = () => {
 
     return (
         <div className="article-mobile">
-            <Link to="/"><img src="chevron-left.png" alt="go back" className="goback" /></Link>
+            <Link to="/"><img src="chevron-left.png" alt="go back" className="goback-articles" /></Link>
             <div className="article-mobile-top">
                 <h1>About Us</h1>
             </div>
