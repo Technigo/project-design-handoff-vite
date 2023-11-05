@@ -1,6 +1,7 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import ptTranslations from "./Translations/pt.json";
+
+//import ptTranslations from "./Translations/pt.json";
 import mkTranslations from "./Translations/mk.json";
 import noTranslations from "./Translations/no.json";
 import seTranslations from "./Translations/se.json";
@@ -20,9 +21,9 @@ const resources = {
   da: {
     translation: daTranslations,
   },
-  pt: {
-    translation: ptTranslations,
-  },
+  // pt: {
+  //   translation: ptTranslations,
+  // },
   mk: {
     translation: mkTranslations,
   },
