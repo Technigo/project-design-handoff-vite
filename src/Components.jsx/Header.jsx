@@ -18,7 +18,9 @@ export const Header = () => {
       ;
       <div className="header-text">
         <h1>An elevated gym experience.</h1>
-        <h1>Everything in one place. </h1>
+        <h1>
+          Everything in <span class="yellow">one place.</span>
+        </h1>
         <p>Up to 67 % of traditional gym memberships go completely unused.</p>
         <p>
           Many gyms build their business model on the bet that most people will

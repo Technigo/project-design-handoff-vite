@@ -50,11 +50,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="first-box">
-        <img
-          className="white-logo"
-          src="./Images/whitelogo.png"
-          alt="Logo image"
-        />
+        <img className="white-logo" src="./Images/MAGNW.png" alt="Logo image" />
         <div className="subscribe">
           <Email updateFormData={updateFormData} value={formData.email} />
         </div>
@@ -84,7 +80,7 @@ export const Footer = () => {
         <div className="column">
           <p className="title-line">Contact Us</p>
           <p>+46 001 89 89 10</p>
-          <p>groundzero@support.com</p>
+          <p>magnitude@support.com</p>
           <img src="./Images/facebook.png" alt="Facebook icon"></img>
 
           <img src="./Images/Instagram.png" alt="Instagram icon"></img>

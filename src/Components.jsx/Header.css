@@ -4,6 +4,10 @@
   height: 622px;
 }
 
+.yellow {
+  color: #ffc700;
+}
+
 .header-text {
   align-self: stretch;
   display: flex;

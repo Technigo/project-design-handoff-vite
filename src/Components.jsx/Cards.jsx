@@ -21,7 +21,7 @@ export const Cards = () => {
           </p>
           <h2>£4 billion</h2>
           <p>
-            Britons waste more than £4 billion <br /> a year on unused gym{" "}
+            Britons waste more than £4 billion <br /> a year on unused gym
             <br />
             memberships
           </p>
@@ -31,7 +31,9 @@ export const Cards = () => {
             So much money is being tossed <br />
             away for nothing.
           </h2>
-          <h2>We want to change it.</h2>
+          <h2>
+            We want to <span className="yellow">change it.</span>
+          </h2>
           <img src="./Images/Line5.png" alt="White line" />
           <button className="read-more-button">Read more</button>
         </div>

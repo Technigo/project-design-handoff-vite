@@ -6,7 +6,7 @@ export const Navbar = () => {
   return (
     <header>
       <nav className="navbar">
-        <img src="./Images/Logo.png" alt="Company Logo" />
+        <img src="./Images/MAGNB.png" alt="Company Logo" />
 
         <ul>
           <div className="navbar-buttons">
