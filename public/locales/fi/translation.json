@@ -1,5 +1,5 @@
 {
-  "about": "Tietoa",
+  "about": "Tietoa meistä",
   "classes": "Luokat",
   "studio": "Studio",
   "book": "Varaa",
@@ -8,7 +8,7 @@
     "destination": "Sinun kohde joogalle",
     "wayToPractice": "Tapa, jolla valitset harjoittaa",
     "breakFromStress": "Ota tauko päivittäisestä stressistä ja lähde matkalle kohti itsetutkiskelua ja paranemista.",
-    "joinCommunity": "Liity yhteisöömme samanmielisiä ihmisiä ja tutkikaamme yhdessä polkua hyvinvointiin, tasapainoon ja rauhaan."
+    "joinCommunity": "Liity yhteisöömme samanmielisten ihmisten kanssa, ja yhdessä tutkimme tietä hyvinvointiin, tasapainoon ja rauhaan löytämiseen."
   },
   "benefits": {
     "header": "Joogan hyödyt",
@@ -28,7 +28,16 @@
     ]
   },
   "testimonies": {
-    "testimony1": "YOGA YOU on ollut pelinvaihtaja hyvinvointimatkallani. Ohjaajien asiantuntemus ja henkilökohtainen huomio ovat auttaneet minua kehittymään harjoituksessani. En ole koskaan tuntenut oloani enemmän kotonani joogastudiossa.",
-    "testimony2": "YOGA YOU on minun kaupunkipakoni. Luokkien monimuotoisuus ja tukeva yhteisö saavat minut palaamaan yhä uudelleen. Tämä studio todella vahvistaa sekä kehoani että mieltäni."
+    "testimony1": "YOGA YOU on ollut pelin vaihtaja hyvinvointimatkallani. Ohjaajien asiantuntemus ja henkilökohtainen huomio ovat auttaneet minua kehittymään harjoituksessani. En ole koskaan tuntenut oloani enemmän kotonani joogastudiossa.",
+    "testimony2": "YOGA YOU on minun kaupunkipakoni. Luokkien monimuotoisuus ja tuki yhteisössä pitävät minut palaamassa yhä uudelleen. Tämä studio todella vahvistaa sekä kehoani että mieltäni."
+  },
+  "aboutPage": {
+    "aboutUsTitle": "Tietoa meistä",
+    "whoWeAreTitle": "Kuka olemme",
+    "whoWeAreDescription": "Kuvittele Yoga You rauhallisena keitaana sydämessä Helsinkiä. Olemme vakaana tukenasi auttamassa sinua löytämään sisäisen rauhasi, omaksumaan inklusiivisuuden ja tukemaan tietoista läsnäoloa jokaisessa elämäsi hetkessä.",
+    "whatWeDoTitle": "Mitä teemme",
+    "whatWeDoDescription": "Tarjoamme tieteellisesti perusteltua joogaa ja mindfulness-harjoituksia, jotka voimaannuttavat sinua kohti tietoista elämää. Tavoitteenamme on tarjota työkalut ja ohjausta auttamaan sinua luomaan kestäviä, positiivisia hyvinvointitapoja ja löytämään onnellisemman ja terveemmän version itsestäsi.",
+    "whyWeDoItTitle": "Miksi teemme tätä",
+    "whyWeDoItDescription": "Harjoituksemme eivät ainoastaan ole osoittautuneet rauhoittavan mieltäsi, vaan ne myös edistävät keskittyneempää, läsnäolevaa ja iloista elämää. Liity joukkoomme ja anna meidän auttaa sinua vähentämään stressiä, löytämään sisäinen rauhasi ja kokemaan hyvinvointi sen puhtaimmassa muodossa."
   }
 }

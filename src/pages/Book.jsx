@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next';
-import { BookWrapper } from '../components/StyledComponents';
+import { BookWrapper, BookHeader } from '../components/StyledComponents';
 
 export const Book = () => {
   const { t } = useTranslation();
   
   return (
     <BookWrapper>
-      {t('book')}
+      <BookHeader>{t('book')}</BookHeader>
     </BookWrapper>
   );
 }

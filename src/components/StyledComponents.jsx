@@ -195,7 +195,6 @@ export const BenefitsCarouselCardContainer = styled.div`
 
 export const BenefitsCarouselCard = styled.div`
   padding: 2vh;
-  background-color: #E9C9AF;
   margin: 2vh;
 `;
 
@@ -211,17 +210,17 @@ export const BenefitsCarouselCardTitle = styled.h3`
 `;
 
 export const BenefitsCarouselCardContent = styled.p`
-  padding: 1.5vh;
+  padding: 0 1.5vh 0 1.5vh;
 `;
 
 export const TestimoniesWrapper = styled.section`
   display: grid;
   grid-template-columns: 1fr;
+  margin-top: 8vh;
 
   @media(min-width: 834px) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    padding-top: 2.75vh;
   }
 `;
 
@@ -248,33 +247,115 @@ export const TestimonyCard = styled.div`
 `;
 
 export const AboutWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media(min-width: 834px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2vh;
+  }
+`;
+
+export const AboutHeader = styled.h2`
+  color: #602C9E;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-style: normal;
-  line-height: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5rem; /* 109.091% */
   letter-spacing: 0.00625rem;
+  grid-column: span 2;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;
   }
-
+  
   @media(min-width: 1440px) {
     font-size: 4.5rem;
     line-height: normal;
   }
 `;
 
-export const ClassesWrapper = styled.section`
-  text-align: center;
-  font-size: 1.25rem;
+export const AboutCard = styled.div`
+  padding: 1.5vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
   font-style: normal;
+  font-weight: 400;
   line-height: 1.5rem;
+  text-align: center;
+  color: #865025;
+
+  img {
+    width: 100%;
+  }  
+
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 3vh;
+  }
+
+  @media (min-width: 834px) {
+    padding: 4rem;
+    font-size: 1.5rem;
+    h3 {
+      line-height: normal;
+    }
+  }
+
+  @media (min-width: 1440px) {
+
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4375rem;
+    letter-spacing: -0.033rem;
+
+    h3 {
+      font-size: 4.5rem;
+    }
+  }
+`;
+
+export const ClassesWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media(min-width: 834px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2vh;
+  }
+`;
+
+export const ClassesHeader = styled.h2`
+  color: #602C9E;
+  text-align: center;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.5rem; /* 109.091% */
   letter-spacing: 0.00625rem;
+  grid-column: span 2;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;
   }
-
+  
   @media(min-width: 1440px) {
     font-size: 4.5rem;
     line-height: normal;
@@ -282,16 +363,33 @@ export const ClassesWrapper = styled.section`
 `;
 
 export const StudioWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media(min-width: 834px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2vh;
+  }
+`;
+
+export const StudioHeader = styled.h2`
+  color: #602C9E;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-style: normal;
-  line-height: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5rem; /* 109.091% */
   letter-spacing: 0.00625rem;
+  grid-column: span 2;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;
   }
-
+  
   @media(min-width: 1440px) {
     font-size: 4.5rem;
     line-height: normal;
@@ -299,16 +397,33 @@ export const StudioWrapper = styled.section`
 `;
 
 export const BookWrapper = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media(min-width: 834px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2vh;
+  }
+`;
+
+export const BookHeader = styled.h2`
+  color: #602C9E;
   text-align: center;
-  font-size: 1.25rem;
+  font-size: 1.375rem;
   font-style: normal;
-  line-height: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5rem; /* 109.091% */
   letter-spacing: 0.00625rem;
+  grid-column: span 2;
 
   @media(min-width: 834px) {
     font-size: 2.0625rem;
   }
-
+  
   @media(min-width: 1440px) {
     font-size: 4.5rem;
     line-height: normal;

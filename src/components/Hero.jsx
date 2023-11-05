@@ -10,7 +10,7 @@ export const Hero = () => {
         <HeroImage>
           <HeroImageText>
             <span>{t('hero.yourPractice')}</span>
-            <span>Yoga you</span> {/* Keeping it static */}
+            <span>Yoga you</span>
           </HeroImageText>
         </HeroImage>
         <HeroHeader>

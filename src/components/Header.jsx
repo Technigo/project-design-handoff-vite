@@ -4,7 +4,7 @@ import { HeaderWrapper, Logo, Menu, Hamburger, NavLink, NavList, BookButton, Mob
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { t } = useTranslation(); // <-- Import the translation function
+  const { t } = useTranslation();
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
@@ -12,18 +12,18 @@ export const Header = () => {
       <Logo><StyledLink to="/">Yoga you</StyledLink></Logo>
       <Menu>
         <NavList>
-          <NavLink><StyledLink to="/about">{t('about')}</StyledLink></NavLink> {/* <-- Use translations */}
-          <NavLink><StyledLink to="/classes">{t('classes')}</StyledLink></NavLink> {/* <-- Use translations */}
-          <NavLink><StyledLink to="/studio">{t('studio')}</StyledLink></NavLink> {/* <-- Use translations */}
-          <BookButton><StyledLink to="/book">{t('book')}</StyledLink></BookButton> {/* <-- Use translations */}
+          <NavLink><StyledLink to="/about">{t('about')}</StyledLink></NavLink>
+          <NavLink><StyledLink to="/classes">{t('classes')}</StyledLink></NavLink>
+          <NavLink><StyledLink to="/studio">{t('studio')}</StyledLink></NavLink>
+          <BookButton><StyledLink to="/book">{t('book')}</StyledLink></BookButton>
         </NavList>
         <Hamburger onClick={toggleMenu} />
       </Menu>
       <MobileNav open={isOpen}>
-        <NavLink onClick={toggleMenu}><StyledLink to="/about">{t('about')}</StyledLink></NavLink> {/* <-- Use translations */}
-        <NavLink onClick={toggleMenu}><StyledLink to="/classes">{t('classes')}</StyledLink></NavLink> {/* <-- Use translations */}
-        <NavLink onClick={toggleMenu}><StyledLink to="/studio">{t('studio')}</StyledLink></NavLink> {/* <-- Use translations */}
-        <BookButton onClick={toggleMenu} style={{display: 'block'}}><StyledLink to="/book">{t('book')}</StyledLink></BookButton> {/* <-- Use translations */}
+        <NavLink onClick={toggleMenu}><StyledLink to="/about">{t('about')}</StyledLink></NavLink>
+        <NavLink onClick={toggleMenu}><StyledLink to="/classes">{t('classes')}</StyledLink></NavLink>
+        <NavLink onClick={toggleMenu}><StyledLink to="/studio">{t('studio')}</StyledLink></NavLink>
+        <BookButton onClick={toggleMenu} style={{display: 'block'}}><StyledLink to="/book">{t('book')}</StyledLink></BookButton>
       </MobileNav>
     </HeaderWrapper>
   );
