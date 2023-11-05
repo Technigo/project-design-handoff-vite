@@ -17,12 +17,16 @@
         {
           "heading": "Join a full-body workout",
           "paragraph": "Our studio bringing you remarkable full-body workouts focused on body positivity and inclusivity, with expert instructors to guide you every step of the way.",
-          "button": "BOOK A CLASS"
+          "button": "book a class",
+          "imageurl": "/article1.png",
+          "imagealt": "Two women and a man doing barre workout"
         },
         {
           "heading": "Workout at home",
           "paragraph": "Hundreds of on-demand workouts. Start with a collection of fiery beginner barre workouts to light up your body in a powerful, methodical way. ",
-          "button": "BOOK A CLASS"
+          "button": "start free trial",
+          "imageurl": "/article2.png",
+          "imagealt": "A woman doing a workout at home"
         }
       ]
     },

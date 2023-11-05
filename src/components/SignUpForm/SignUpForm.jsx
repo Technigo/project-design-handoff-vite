@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../Buttons/Button";
+import { useTranslation } from "react-i18next";
 
 const FormContainer = styled.div`
   position: relative;
@@ -100,6 +101,8 @@ const FormContainer = styled.div`
 `;
 
 export const SignUpForm = () => {
+  const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -129,19 +132,15 @@ export const SignUpForm = () => {
         </div>
         <div className="info-form">
           <div className="info-text">
-            <span>STAY CLOSER TO THE ACTION</span>
-            <p>
-              Enter your name and email address to receive email communications
-              from Prima Barre including special offers, on-sale dates, and
-              other updates.
-            </p>
+            <span>{t("homePage.formSection.heading")}</span>
+            <p>{t("homePage.formSection.paragraph")}</p>
           </div>
           <form onSubmit={handleSubmit}>
             <label className="first-name">
               <input
                 type="text"
                 name="firstName"
-                placeholder="First name"
+                placeholder={t("homePage.formSection.firstName")}
                 required
               />
             </label>
@@ -149,7 +148,7 @@ export const SignUpForm = () => {
               <input
                 type="text"
                 name="lastName"
-                placeholder="Last name"
+                placeholder={t("homePage.formSection.lastName")}
                 required
               />
             </label>
@@ -157,12 +156,12 @@ export const SignUpForm = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="Email address"
+                placeholder={t("homePage.formSection.email")}
                 required
               />
             </label>
           </form>
-          <Button type="submit">Sign Up</Button>
+          <Button type="submit">{t("homePage.formSection.button")}</Button>
         </div>
       </div>
     </FormContainer>

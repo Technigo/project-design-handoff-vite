@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { Button } from "../Buttons/Button";
+//import jsonData from "../../Translations/en.json";
+import { useTranslation } from "react-i18next";
+import enTranslations from "../../Translations/en.json";
 
 const ArticlesContainer = styled.div`
   display: flex;
@@ -36,32 +39,30 @@ const ArticlesContainer = styled.div`
 `;
 
 export const Articles = () => {
+  const { t, ready } = useTranslation(); // Use useTranslation to get the 't' function from i18next
+
+  const articles = t("homePage.mainSection.articles", { returnObjects: true }); // Accessing the 'cards' section of the JSON data
+
+  const { mainSection } = enTranslations.homePage;
+
+  // const { mainSection } = jsonData.homePage; // Accessing the 'articles' section of the JSON data
+
+  if (!ready) return "Loading articles"; // If the translations are not ready, return "Loading articles..."
+
   return (
     <ArticlesContainer>
-      <div className="join-workout">
-        <img src="/article1.png" className="join-workout" alt="Join Workout" />
-        <h2>Join a full-body workout</h2>
-        <p>
-          Our studio bringing you remarkable full-body workouts focused on body
-          positivity and inclusivity, with expert instructors to guide you every
-          step of the way.
-        </p>
-        <button>book a class</button>
+      <div className="articles">
+        {mainSection.articles.map((article, index) => (
+          <div key={index} className={`article-${index}`}>
+            <img src={article.imageurl} alt={article.imagealt} />
+            <h2>{article.heading}</h2>
+            <p>{article.paragraph}</p>
+            <Button>{article.button}</Button>
+          </div>
+        ))}
       </div>
-      <div className="home-workout">
-        <img
-          src="public/article2.png"
-          className="home-workout"
-          alt="Workout at home"
-        />
-        <h2>Workout at home</h2>
-        <p>
-          Hundreds of on-demand workouts. Start with a collection of fiery
-          beginner barre workouts to light up your body in a powerful,
-          methodical way.
-        </p>
-        <Button>Start free trial</Button>
-      </div>
+
+      {/* <Button>Start free trial</Button> */}
     </ArticlesContainer>
   );
 };

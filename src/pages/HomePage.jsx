@@ -24,7 +24,7 @@ import { useTranslation } from "react-i18next";
 export const HomePage = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <HeroText />
       <Mantra />
       <Articles />

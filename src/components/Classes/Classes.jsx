@@ -26,7 +26,7 @@ const ClassesContainer = styled.div`
 export const Classes = () => {
   const { t, ready } = useTranslation(); // Use useTranslation to get the 't' function from i18next
 
-  const courses = t("courses", { returnObjects: true }); // Accessing the 'cards' section of the JSON data
+  const cards = t("cards", { returnObjects: true }); // Accessing the 'cards' section of the JSON data
 
   const { aside } = jsonData.homePage; // Accessing the 'aside' section of the JSON data
 
