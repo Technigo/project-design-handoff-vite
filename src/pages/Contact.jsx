@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import callIcon from "../assets/icons/call.svg"
-import chatIcon from "../assets/icons/chat.svg"
-import emailIcon from "../assets/icons/email.svg"
+import callIcon from "../assets/icons/call.svg";
+import chatIcon from "../assets/icons/chat.svg";
+import emailIcon from "../assets/icons/email.svg";
 import { H2_Headline } from "../components/Typography/H2_Headline";
 import "./contact.css";
 import { PText } from "../components/Typography/PText.jsx";

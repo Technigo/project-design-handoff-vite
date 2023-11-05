@@ -102,11 +102,11 @@
                 "How can we help?"
             ]
         },
-        "buttons" : {
-            "askQ" : "Ask a question",
-            "submit" : "Send",
-            "newQ" : "Ask a new question",
-            "chat" : "Chat now"
+        "buttons": {
+            "askQ": "Ask a question",
+            "submit": "Send",
+            "newQ": "Ask a new question",
+            "chat": "Chat now"
         }
     },
     "footer": {
