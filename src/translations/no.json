@@ -1,7 +1,16 @@
 {
   "homePage": {
     "heroSection": {
-      "button": "LOGG INN"
+      "button": "logg inn",
+      "menu": {
+        "home": "hjem",
+        "book": "bestill en time",
+        "classes": "klasser",
+        "instructors": "våre instruktører",
+        "about": "om oss",
+        "contact": "kontakt oss",
+        "faq": "ofte stilte spørsmål"
+      }
     },
     "mainSection": {
       "primaryHeading": {
@@ -73,8 +82,8 @@
   },
   "aboutPage": {
     "heroSection": {
-      "heading": "OM OSS",
-      "button": "LOGG INN"
+      "heading": "om oss",
+      "button": "logg inn"
     },
     "mainSection": {
       "primaryHeading": "Hvem Vi Er og Hva Vi Gjør",

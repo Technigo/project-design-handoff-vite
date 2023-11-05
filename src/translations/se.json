@@ -1,7 +1,16 @@
 {
   "homePage": {
     "heroSection": {
-      "button": "loga in"
+      "button": "logga in",
+      "menu": {
+        "home": "hem",
+        "book": "boka en klass",
+        "classes": "klasser",
+        "instructors": "våra instruktörer",
+        "about": "om oss",
+        "contact": "kontakta oss",
+        "faq": "vanliga frågor"
+      }
     },
     "mainSection": {
       "primaryHeading": {

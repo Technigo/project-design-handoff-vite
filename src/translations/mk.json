@@ -1,7 +1,16 @@
 {
   "homePage": {
     "heroSection": {
-      "button": "НАЈАВИ СЕ"
+      "button": "НАЈАВИ СЕ",
+      "menu": {
+        "home": "дома",
+        "book": "закажи час",
+        "classes": "часови",
+        "instructors": "наши инструктори",
+        "about": "за нас",
+        "contact": "контактирајте не",
+        "faq": "најчести прашања"
+      }
     },
     "mainSection": {
       "primaryHeading": {

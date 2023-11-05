@@ -1,7 +1,16 @@
 {
   "homePage": {
     "heroSection": {
-      "button": "entrar"
+      "button": "entrar",
+      "menu": {
+        "home": "início",
+        "book": "agende uma aula",
+        "classes": "aulas",
+        "instructors": "nossos instrutores",
+        "about": "sobre nós",
+        "contact": "contate-nos",
+        "faq": "perguntas frequentes"
+      }
     },
     "mainSection": {
       "primaryHeading": {

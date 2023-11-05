@@ -1,7 +1,16 @@
 {
   "homePage": {
     "heroSection": {
-      "button": "sign in"
+      "button": "sign in",
+      "menu": {
+        "home": "home",
+        "book": "book a class",
+        "classes": "classes",
+        "instructors": "our instructors",
+        "about": "about us",
+        "contact": "contact us",
+        "faq": "faq"
+      }
     },
     "mainSection": {
       "primaryHeading": {

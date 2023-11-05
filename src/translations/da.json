@@ -1,7 +1,16 @@
 {
   "homePage": {
     "heroSection": {
-      "button": "LOG IND"
+      "button": "log ind",
+      "menu": {
+        "home": "hjem",
+        "book": "book en klasse",
+        "classes": "klasser",
+        "instructors": "vores instruktører",
+        "about": "om os",
+        "contact": "kontakt os",
+        "faq": "ofte stillede spørgsmål"
+      }
     },
     "mainSection": {
       "primaryHeading": {
@@ -73,8 +82,8 @@
   },
   "aboutPage": {
     "heroSection": {
-      "heading": "OM OS",
-      "button": "LOG IND"
+      "heading": "om os",
+      "button": "log ind"
     },
     "mainSection": {
       "primaryHeading": "Hvem Vi Er og Hvad Vi Gør",

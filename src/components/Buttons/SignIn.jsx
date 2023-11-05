@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const SignInButtonContainer = styled.button`
   background-color: #ffffff;
@@ -8,14 +9,16 @@ const SignInButtonContainer = styled.button`
   font-weight: 800;
   padding: 0 6px;
   text-align: center;
-  /* word-wrap: break-word; */
+  text-transform: uppercase;
   border: none;
 `;
 
 export const SignInButton = () => {
+  const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
+
   return (
     <SignInButtonContainer>
-      <span>SIGN IN</span>
+      <span>{t("homePage.heroSection.button")} </span>
     </SignInButtonContainer>
   );
 };
