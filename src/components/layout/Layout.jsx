@@ -62,9 +62,7 @@ const Layout = () => {
                         </div>
                     </div>
                 </div>
-                <Link to="/">
-                    <Logo />
-                </Link>
+                <Logo onClick={() => window.scrollTo(0, 0)} />
             </footer>
         </>
     )
