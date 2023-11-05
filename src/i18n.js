@@ -24,6 +24,8 @@ const resources = {
 
         paragraph6: "Our Vision & Goal Our vision is to create a world where everyone has the opportunity to experience the joy of parkour. We believe that parkour is more than just a sport; it’s a way of life. Our goal is to inspire people to push their limits, overcome obstacles, and achieve their full potential through the practice of parkour.",
 
+        head7: "Our Vision & Goal",
+
         paragraph7: "Our story It started with grandma and 9-year-old Nestor being bored on their way home from school, then came Aunt Parkour, and today Play Parkour offers parkour programs and classes for all ages. The instructors are experienced and help students develop their strength, agility, balance, and coordination. We also have an online platform where students can learn parkour at their own pace and in the comfort of their own home.",
         
         head6: "Treat life as an adventure",
@@ -58,6 +60,8 @@ const resources = {
         head5: "Sobre Jugar al Parkour",
 
         paragraph6: "Nuestra visión y objetivo Nuestra visión es crear un mundo en el que todos tengan la oportunidad de experimentar la alegría del parkour. Creemos que el parkour es más que un deporte: es una forma de vida. Nuestro objetivo es inspirar a la gente para que supere sus límites, supere obstáculos y alcance todo su potencial a través de la práctica del parkour",
+
+        head7: "Nuestra visión y objetivo",
 
         paragraph7: "Nuestra historia Empezó cuando la abuela y Néstor, de 9 años, se aburrían de camino a casa desde el colegio, luego vino la tía Parkour, y hoy Play Parkour ofrece programas y clases de parkour para todas las edades. Los instructores tienen experiencia y ayudan a los alumnos a desarrollar su fuerza, agilidad, equilibrio y coordinación. También tenemos una plataforma en línea donde los alumnos pueden aprender parkour a su propio ritmo y en la comodidad de su casa",
 
@@ -94,6 +98,8 @@ const resources = {
         head5: "Om Spela Parkour",
 
         paragraph6: "Vår vision & målsättning Vår vision är att skapa en värld där alla har möjlighet att uppleva glädjen med parkour. Vi tror att parkour är mer än bara en sport; det är ett sätt att leva. Vårt mål är att inspirera människor att tänja på sina gränser, övervinna hinder och uppnå sin fulla potential genom att utöva parkour.",
+
+        head7: "Vår vision och vårt mål",
 
         paragraph7: "Vår historia Det började med att mormor och 9-årige Nestor hade tråkigt på väg hem från skolan, sedan kom Aunt Parkour, och idag erbjuder Play Parkour parkourprogram och klasser för alla åldrar. Instruktörerna är erfarna och hjälper eleverna att utveckla sin styrka, smidighet, balans och koordination. Vi har också en onlineplattform där eleverna kan lära sig parkour i sin egen takt och i bekvämligheten av sitt eget hem.",
 

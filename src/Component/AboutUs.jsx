@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import data from "../assets/images.json";
 import { useTranslation } from 'react-i18next';
+import { Link } from "react-router-dom";
 
 const BlueBack = styled.div`
   background: rgba(25, 130, 196, 0.40);
@@ -41,7 +42,7 @@ const Boy = styled.img`
   height: 170px;
 `
 
-const PPBtn = styled.button`
+const PPBtn = styled(Link)` /* Use Link component instead of button */
   border-radius: 32px;
   background: #FFCA3A;
   display: flex;
@@ -49,9 +50,10 @@ const PPBtn = styled.button`
   height: 41px;
   justify-content: center;
   cursor: pointer;
-  color: #6A4093; 
+  color: #6A4093;
   font-size: 16px;
   font-style: normal;
+  text-decoration: none; /* Remove underline from the link */
 `
 
 export const AboutUs = () => {
@@ -62,9 +64,10 @@ export const AboutUs = () => {
       <TextContainer>
         <About>{t("head4")}</About>
         <AboutText>{t("paragraph5")}</AboutText>
-        <PPBtn href="/"> {t("head5")}</PPBtn>
+        <PPBtn to="/classes"> {t("head5")}</PPBtn> {/* Set the "to" prop to the target page URL */}
       </TextContainer>
       <Boy src={data.boy} alt="Boy playing" />
     </BlueBack>
   )
 }
+
