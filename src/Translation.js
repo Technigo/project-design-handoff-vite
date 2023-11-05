@@ -12,7 +12,8 @@ const resources = {
             signIn: "Sign In",
 
             //header
-            title: "An elevated gym experience. Everything in one place",
+            title: "An elevated gym experience. Everything in",
+            title2: "one place.",
             description: "Up to 67 percent of traditional gym memberships go completely unused.",
             description2: "Many gyms build their business model on the bet that most people will stay home. We don’t.",
 
@@ -41,7 +42,7 @@ const resources = {
             infoTitle3: "£4 billion",
             infoText3: "Britons waste more than £4 billion a year on unused gym memberships.",
 
-            rightText: "So much money is being tossed away for nothing. We want to",
+            rightText: "So much money is being tossed away for nothing. We want to ",
             rightTextYellow: "change it.",
             rightButton: "Read more about us",
 
@@ -101,7 +102,8 @@ const resources = {
             signIn: "Logga in",
 
             //header
-            title: "En förhöjd gymupplevelse. Allt på ett ställe",
+            title: "En förhöjd gymupplevelse. Allt på",
+            title2: "ett ställe.",
             description: "Upp to 67 procent av traditionella gymmedlemskap används aldrig.",
             description2: "Många gym bygger sin affärsmodell på att de flesta människor kommer att stanna hemma. Det gör inte vi.",
 
@@ -131,7 +133,7 @@ const resources = {
             infoTitle3: "$1.13 milioner",
             infoText3: "Britter slösar mer än 4 miljarder pund per år på oanvända gymmedlemskap.",
 
-            rightText: "Så mycket pengar slösas bort i onödan. Vi vill ändra",
+            rightText: "Så mycket pengar slösas bort i onödan. Vi vill ändra ",
             rightTextYellow: "på det.",
             rightButton: "Läs mer om oss",
 

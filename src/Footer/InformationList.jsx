@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next'; // Import the useTranslation hook
 import "../Translation";
+import { LanguageButton } from './LanguageButton';
 
 export const InformationList = () => {
     const { t, i18n } = useTranslation();
@@ -38,6 +39,7 @@ export const InformationList = () => {
                 <li>{t("brandsList")}</li>
                 <li>{t("facilities")}</li>
                 <li>{t("openingHours")}</li>
+                <LanguageButton toggleLanguage={toggleLanguage} />
             </ul>
 
             <ul>
@@ -47,6 +49,7 @@ export const InformationList = () => {
                 <li>groundzero@support.com</li>
                 <li><img className="h-9 invert" src="https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Footer%20buttons%20icons.svg?v=1698752738569" alt="Social Media Icons" />
                 </li>
+
             </ul>
         </div>
     );

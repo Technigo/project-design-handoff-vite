@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "../Translation";
 import { useTranslation } from "react-i18next";
 
+
 export const MemberCard = ({ cardData }) => {
     const { t, i18n } = useTranslation();
 
@@ -15,6 +16,7 @@ export const MemberCard = ({ cardData }) => {
         changeLanguage(newLanguage);
     };
 
+    //Slide show
     const { buttonText, icons } = cardData;
     const [currentIconIndex, setCurrentIconIndex] = useState(0);
 
@@ -41,7 +43,7 @@ export const MemberCard = ({ cardData }) => {
 
                 <div className=''>
                     <button
-                        className="hover:shadow-yellow-box bg-white border-solid border-2 border-black p-2 lg:hidden"
+                        className="hover:shadow-yellow-box bg-white border-solid border-2 border-black p-2 mr-5 ml-5 relative top-[-200px] lg:hidden"
                         onClick={() => {
                             previousIcon();
                             // Add a delay before fading in the new image
@@ -55,13 +57,15 @@ export const MemberCard = ({ cardData }) => {
                             }, 5); // A small delay before the transition starts
                         }}
                     >
-                        Previous
+                        <img src="https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Back.svg?v=1699111562601" alt="" />
                     </button>
-                    <button className="hover:shadow-yellow-box bg-white border-solid border-2 border-black p-2 mr-5 ml-5">
+                    <button className="hover:shadow-yellow-box bg-white border-solid border-2 border-black p-1 pl-11 pr-11 mr-5 ml-5 relative top-[-15px]">
                         {t("gridButton")}
                     </button>
+
+
                     <button
-                        className="hover:shadow-yellow-box bg-white border-solid border-2 border-black p-2 lg:hidden"
+                        className="hover:shadow-yellow-box bg-white border-solid border-2 border-black p-2 mr-5 ml-5 relative top-[-200px] lg:hidden"
                         onClick={() => {
                             // Add a delay before fading in the new image
                             const img = document.querySelector('.h-96');
@@ -73,7 +77,11 @@ export const MemberCard = ({ cardData }) => {
                             // Adjust this time to match your transition duration
                         }}
                     >
-                        Next
+                        <img
+                            src="https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Back.svg?v=1699111562601"
+                            alt=""
+                            style={{ transform: 'scaleX(-1)' }}
+                        />
                     </button>
                 </div>
             </div>
