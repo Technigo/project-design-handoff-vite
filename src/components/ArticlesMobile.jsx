@@ -7,7 +7,7 @@ const ArticlesMobile = () => {
     const [articlesMobile, setArticlesMobile] = useState([]);
 
     useEffect(() => {
-        setArticlesMobile(articlesMobileData.articles);
+        setArticlesMobile(articlesMobileData.articlesMobile);
     }, []);
 
     return (
@@ -19,18 +19,18 @@ const ArticlesMobile = () => {
             <div className="article-mobile-container">
                 {articlesMobile.map((article, index) => (
                     <div key={index} className="article-item">
-                        <div className="article-item-content">
-                            <img src={article.image} alt="article picture" /> {/* Fix this line */}
-                            <div className="text-content">
-                                <h3>{article.name}</h3>
-                                <button>read more</button>
+                        <div className="article-mobile-content">
+                            <h3>{article.name}</h3>
+                            <div className="image-container">
+                                <img src={article.image} alt="article picture" />
+                                <button className="read-more">read more</button>
                             </div>
                         </div>
                     </div>
                 ))}
             </div>
         </div>
-    );
-};
+    )
+}
 
 export default ArticlesMobile;

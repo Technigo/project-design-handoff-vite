@@ -1,4 +1,92 @@
 .article-mobile {
+    margin: 20px;
+    margin-bottom: 50px;
+}
+
+.article-mobile-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    gap: 40px;
+}
+
+.goback {
+    width: 24px;
+    height: 24px;
+    margin: 0;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    background-color: #F3AD98;
+    color: #000;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+.article-mobile-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-mobile-content h3 {
+    font-size: 30px;
+    background-color: white;
+    border-radius: 20px 20px 0px 0px;
+    padding: 20px;
+    margin: 0;
+    width: 700px;
+    text-align: center;
+    font-style: italic;
+}
+
+.article-mobile-content img {
+    width: 740px;
+    margin: 0;
+}
+
+.article-mobile h1 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+}
+
+@media (max-width: 393px) {
+
+    .article-mobile {
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .article-mobile-container {
+        margin-left: 0px;
+    }
+
+
+
+    .article-mobile-content h3 {
+        font-size: 20px;
+        padding: 10px;
+        width: auto;
+    }
+
+    .article-mobile-content img {
+        width: 100%;
+    }
+
+    .article-mobile h1 {
+        font-size: 30px;
+    }
 }
