@@ -43,9 +43,7 @@ export const Articles = () => {
 
   const articles = t("homePage.mainSection.articles", { returnObjects: true }); // Accessing the 'cards' section of the JSON data
 
-  const { mainSection } = jsonData.homePage;
-
-  // const { mainSection } = jsonData.homePage; // Accessing the 'articles' section of the JSON data
+  const { mainSection } = jsonData.homePage; // Accessing the 'articles' section of the JSON data
 
   if (!ready) return "Loading articles"; // If the translations are not ready, return "Loading articles..."
 

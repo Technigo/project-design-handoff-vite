@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LanguageButton } from "../Buttons/LanguageBtn";
+import { useTranslation } from "react-i18next";
 
 const TermsPolicyContainer = styled.div`
   border-radius: 20px;
@@ -35,14 +36,16 @@ const TermsPolicyContainer = styled.div`
 `;
 
 export const TermsPolicy = () => {
+  const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
+
   return (
     <TermsPolicyContainer>
       <div className="terms-policy">
-        <p>Terms and conditions</p>
-        <p className="policy">Privacy policy</p>
+        <p> {t("homePage.footer.terms")}</p>
+        <p className="policy">{t("homePage.footer.policy")}</p>
       </div>
       <p>
-        ©️2023 <span>Prima barre</span>, All Rights Reserved
+        ©️2023 <span>Prima barre</span>, {t("homePage.footer.copyright")}
       </p>
       <LanguageButton />
     </TermsPolicyContainer>

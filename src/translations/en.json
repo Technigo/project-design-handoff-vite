@@ -4,13 +4,11 @@
       "button": "SIGN IN"
     },
     "mainSection": {
-      "primaryHeading": [
-        {
-          "firstWord": "Strength.",
-          "secondWord": "Mobility.",
-          "thirdWord": "Mindfulness."
-        }
-      ],
+      "primaryHeading": {
+        "firstWord": "Strength.",
+        "secondWord": "Mobility.",
+        "thirdWord": "Mindfulness."
+      },
       "secondaryHeading": "Transforms you physically and mentally.",
       "triraryHeading": "Low impact, high intensity workout that strengthen & tone your body.",
       "articles": [

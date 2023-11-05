@@ -24,10 +24,6 @@ export const Mantra = () => {
       {t("homePage.mainSection.secondaryHeading")}
       <br />
       {t("homePage.mainSection.triraryHeading")}
-
-      {/* Transforms you <span>physically</span> and <span>mentally</span>. Low
-      impact, <span>high intensity</span> workout that strengthen & tone your
-      body. */}
     </MantraContainer>
   );
 };

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const DownloadContainer = styled.div`
   border-radius: 20px;
@@ -34,11 +35,13 @@ const DownloadContainer = styled.div`
 `;
 
 export const Download = () => {
+  const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
   return (
     <DownloadContainer className="download">
       <p>
-        Download the <span>prima barre</span> app, access classes from anywhere,
-        anytime
+        {t("homePage.footer.paragraph")}
+        {/* Download the <span>prima barre</span> app, access classes from anywhere,
+        anytime */}
       </p>
       <div className="download-icons">
         <img src="/apple-small.svg" alt="Download from app-store" />

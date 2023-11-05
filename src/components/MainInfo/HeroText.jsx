@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const HeroTextContainer = styled.div`
   div {
@@ -15,12 +16,14 @@ const HeroTextContainer = styled.div`
 `;
 
 export const HeroText = () => {
+  const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
+
   return (
     <HeroTextContainer>
       <div>
-        <span>Strength.</span>
-        <span>Mobility.</span>
-        <span>Mindfulness.</span>
+        <span> {t("homePage.mainSection.primaryHeading.firstWord")}</span>
+        <span>{t("homePage.mainSection.primaryHeading.secondWord")}</span>
+        <span>{t("homePage.mainSection.primaryHeading.thirdWord")}</span>
       </div>
     </HeroTextContainer>
   );
