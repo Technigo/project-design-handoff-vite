@@ -6,6 +6,7 @@ const StyledHero = styled.div`
   display: flex;
   align-items: flex-end;
   position: relative;
+  //margin-top: 158px;
 
   img {
     width: 100%;

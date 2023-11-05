@@ -14,18 +14,19 @@ import styled from "styled-components";
 const CustomStyles = styled.div`
   width: 100%;
 
-  .burgermenu-wrapper {
+  /* .burgermenu-wrapper {
     width: 100%;
     height: 55px;
-  }
+  } */
 
   /* Position and sizing of burger button */
   .bm-burger-button {
-    position: fixed;
+    position: absolute;
     width: 42px;
     height: 42px;
     right: 18px;
     top: 20px;
+    z-index: 1000;
   }
 
   /* Color/shape of burger icon bars */
@@ -38,12 +39,13 @@ const CustomStyles = styled.div`
     background: #a90000;
   } */
 
+  /* , .bm-cross-button .bm-cross,#react-burger-cross-btn#exit-icon 
+  */
   /* Position and sizing of clickable cross button */
-  .bm-cross-button,
-  #exit-icon {
+  .bm-cross-button {
     position: fixed;
-    width: 42px;
-    height: 42px;
+    min-width: 42px;
+    min-height: 42px;
     right: 18px;
     top: 20px;
   }
@@ -121,11 +123,20 @@ Note: Beware of modifying this element as it can break the animations - you shou
     gap: 8px;
     color: #fff6e9;
   }
+
+  #react-burger-cross-btn {
+    width: 42px;
+    height: 42px;
+  }
 `;
-// const SearchWrapper = styled.div`
-//   display: flex;
-//   flex-direction: row;
-// `;
+const ExitButton = styled.button`
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+`;
 
 export const BurgerMenu = () => {
   const { t } = useTranslation();
@@ -155,44 +166,44 @@ export const BurgerMenu = () => {
   return (
     /* Sidebar Menu */
     <CustomStyles>
-      <div id="outer-container" className="burgermenu-wrapper">
-        <Menu
-          // pageWrapId={"page-wrap"}
-          // outerContainerId={"outer-container"}
-          styles={CustomStyles}
-          width={"100%"}
-          customBurgerIcon={<img src={BurgerMenuIcon} />}
-          customCrossIcon={
-            <div style={{ width: "42px", height: "42px" }}>
-              <img src={Exit} id="exit-icon" />
-            </div>
-          }
-        >
-          {/* <main id="page-wrap"> */}
-          <div className="search-wrapper">
-            <Link to={"#"} id="search">
-              <img src={Search} />
-              <p className="menu-item">{t("burgerMenu.search")}</p>
-            </Link>
-          </div>
-          <Link to={"/"}>
-            <p className="menu-item">{t("burgerMenu.home")}</p>
+      {/* <div id="outer-container" className="burgermenu-wrapper"> */}
+      <Menu
+        // pageWrapId={"page-wrap"}
+        // outerContainerId={"outer-container"}
+        styles={CustomStyles}
+        width={"100%"}
+        customBurgerIcon={<img src={BurgerMenuIcon} />}
+        customCrossIcon={
+          <ExitButton>
+            <img src={Exit} alt="Close Menu" />
+          </ExitButton>
+        }
+      >
+        {/* <main id="page-wrap"> */}
+        <div className="search-wrapper">
+          <Link to={"#"} id="search">
+            <img src={Search} />
+            <p className="menu-item">{t("burgerMenu.search")}</p>
           </Link>
-          <Link to={"/aboutus-page"}>
-            <p className="menu-item">{t("burgerMenu.about")}</p>
-          </Link>
-          <Link to={"#"}>
-            <p className="menu-item">{t("burgerMenu.course")}</p>
-          </Link>
-          <Link to={"#"}>
-            <p className="menu-item">{t("burgerMenu.resources")}</p>
-          </Link>
-          <Link to={"#"}>
-            <p className="menu-item">{t("burgerMenu.shop")}</p>
-          </Link>
-          {/* </main> */}
-        </Menu>
-      </div>
+        </div>
+        <Link to={"/"}>
+          <p className="menu-item">{t("burgerMenu.home")}</p>
+        </Link>
+        <Link to={"/aboutus-page"}>
+          <p className="menu-item">{t("burgerMenu.about")}</p>
+        </Link>
+        <Link to={"#"}>
+          <p className="menu-item">{t("burgerMenu.course")}</p>
+        </Link>
+        <Link to={"#"}>
+          <p className="menu-item">{t("burgerMenu.resources")}</p>
+        </Link>
+        <Link to={"#"}>
+          <p className="menu-item">{t("burgerMenu.shop")}</p>
+        </Link>
+        {/* </main> */}
+      </Menu>
+      {/* </div> */}
     </CustomStyles>
   );
 };

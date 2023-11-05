@@ -13,7 +13,11 @@ const StyledFooter = styled.div`
   align-items: center;
   padding-top: 32px;
 
-  @media screen and (min-width: 668px) and (max-width: 1023px) {
+  /* @media screen and (min-width: 668px) and (max-width: 1023px) {
+    height: 460px;
+    justify-content: flex-end;
+  } */
+  @media screen and (min-width: 1024px) {
     height: 460px;
     justify-content: flex-end;
   }
@@ -22,7 +26,16 @@ const StyledFooter = styled.div`
 const LogoLinks = styled.div`
   display: flex;
   flex-direction: column;
-  @media screen and (min-width: 668px) and (max-width: 1023px) {
+
+  /* @media screen and (min-width: 668px) and (max-width: 1023px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    //margin-top: 60px;
+    width: 100%;
+    padding: 0 64px;
+  } */
+  @media screen and (min-width: 1024px) {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -37,7 +50,10 @@ const SaddleUpFooter = styled.div`
   gap: 52px;
   padding-top: 60px;
 
-  @media screen and (min-width: 668px) and (max-width: 1023px) {
+  /* @media screen and (min-width: 668px) and (max-width: 1023px) {
+    padding-top: 0;
+  } */
+  @media screen and (min-width: 1024px) {
     padding-top: 0;
   }
 `;
@@ -55,7 +71,11 @@ const LanguageCopySection = styled.div`
   gap: 16px;
   padding: 60px 48px 32px;
 
-  @media screen and (min-width: 668px) and (max-width: 1023px) {
+  /* @media screen and (min-width: 668px) and (max-width: 1023px) {
+    padding: 10px 0 20px;
+    margin-top: 40px;
+  } */
+  @media screen and (min-width: 1024px) {
     padding: 10px 0 20px;
     margin-top: 40px;
   }
