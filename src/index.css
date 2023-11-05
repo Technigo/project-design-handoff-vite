@@ -11,3 +11,100 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+body {
+  background-color: #f9fafa;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 100px; 
+  margin-right: 500px;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+.nav-list li {
+  margin-right: 70px; 
+}
+.nav-list li:last-child {
+  margin-right: 0; 
+}
+.nav-list li a {
+  text-decoration: none; 
+  font-size: 18px;
+  font-weight: bold;
+  color: #38302A; 
+}
+
+/*welcome page text*/
+.welcome-page {
+  text-align: left;
+}
+.welcome-text {
+  text-align: left;
+}
+h1 {
+  font-size: 24px; 
+}
+h2 {
+  font-size: 18px; 
+  color: #38302A; 
+}
+
+/* welcome text buttons*/
+.buttons {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  margin-top: 20px; /* Add margin for spacing */
+}
+
+.discover-button,
+.login-button {
+  padding: 10px 20px;
+  margin-right: 10px; /* Add margin between buttons */
+  font-size: 16px; /* Adjust the font size as needed */
+  background-color: #38302A; /* Button background color */
+  color: #fff; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-button {
+  background-color: #333; /* Different background color for the "Log in" button */
+}
+
+/* Style the content and its children */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px; /* Add padding for spacing */
+  width: 100%;
+}
+
+.text {
+  flex: 1;
+}
+
+.image {
+  flex: 1;
+  text-align: right;
+}
+
+/* Style the image */
+.image img {
+  width: 100%; /* Cover half the page */
+  max-height: 100vh; /* Cover up to the viewport height */
+}
+
+
+
+

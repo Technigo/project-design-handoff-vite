@@ -1,3 +1,12 @@
+import React from 'react';
+import WelcomePage from './Components/WelcomePage';
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <div>
+      <WelcomePage />
+    </div>
+  );
 };
+
+
