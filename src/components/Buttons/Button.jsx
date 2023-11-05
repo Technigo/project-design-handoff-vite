@@ -11,5 +11,5 @@ const StyledButton = styled.button`
 `;
 
 export const Button = ({ children, onclick }) => {
-  return <StyledButton onclick={onclick}>{children}</StyledButton>;
+  return <StyledButton onclick={onclick}>{children}</StyledButton>; // The 'children' prop is the text inside the button
 };

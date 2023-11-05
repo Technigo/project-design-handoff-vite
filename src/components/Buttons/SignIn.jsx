@@ -18,7 +18,8 @@ export const SignInButton = () => {
 
   return (
     <SignInButtonContainer>
-      <span>{t("homePage.heroSection.button")} </span>
+      <span>{t("homePage.heroSection.button")} </span>{" "}
+      {/* Accessing the 'button' section of the JSON data */}
     </SignInButtonContainer>
   );
 };

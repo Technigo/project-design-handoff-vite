@@ -10,6 +10,7 @@ import { Articles } from "../components/Articles/Articles";
 export const HomePage = () => {
   return (
     <>
+      {/* Pass the contentType prop to the Header component */}
       <Header contentType="video" />
       <HeroText />
       <Mantra />

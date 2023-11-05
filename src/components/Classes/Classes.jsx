@@ -26,13 +26,20 @@ export const Classes = () => {
   return (
     <ClassesContainer>
       <div className="cards">
-        {cards.map((card, index) => (
-          <div key={index} className={`card-${index}`}>
-            <img src={card.imageurl} alt={card.imagealt} />
-            <h3>{card.heading}</h3>
-            <p>{card.paragraph}</p>
-          </div>
-        ))}
+        {cards.map(
+          (
+            card,
+            index // Map over the 'cards' array
+          ) => (
+            <div key={index} className={`card-${index}`}>
+              {" "}
+              {/* Add a key prop to each card */}
+              <img src={card.imageurl} alt={card.imagealt} />
+              <h3>{card.heading}</h3>
+              <p>{card.paragraph}</p>
+            </div>
+          )
+        )}
       </div>
     </ClassesContainer>
   );

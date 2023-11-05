@@ -29,13 +29,13 @@ export const Header = ({ contentType }) => {
         <SignInButton />
       </div>
       <div>
-        {contentType === "video" ? (
+        {contentType === "video" ? ( // If the contentType is 'video', render the video, otherwise render the image
           <video
             src="/video-mobile.mp4"
-            onClick={(e) => e.target.play()}
+            onClick={(e) => e.target.play()} // When the video is clicked, play the video
           ></video>
         ) : (
-          <img src="/about-us-header.svg" alt="About Us Header" />
+          <img src="/about-us-header.svg" alt="About Us Header" /> // If the contentType is not 'video', render the image
         )}
       </div>
     </HeaderContainer>

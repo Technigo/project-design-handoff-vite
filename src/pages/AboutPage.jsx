@@ -37,14 +37,19 @@ export const AboutPage = () => {
   return (
     <>
       <div className="hero-section">
-        <Header contentType="image" />
+        <Header contentType="image" />{" "}
+        {/* Pass the contentType prop to the Header component */}
       </div>
       <AboutPageContainer>
         <div className="hero-section">
-          <h1>{t("aboutPage.mainSection.primaryHeading")}</h1>
-          <p>{t("aboutPage.mainSection.primaryParagraph")}</p>
+          <h1>{t("aboutPage.mainSection.primaryHeading")}</h1>{" "}
+          {/* Access the 'primaryHeading' section of the JSON data */}
+          <p>{t("aboutPage.mainSection.primaryParagraph")}</p>{" "}
+          {/* Access the 'primaryParagraph' section of the JSON data */}
           <p>{t("aboutPage.mainSection.secondaryParagraph")}</p>
           <div className="award-section">
+            {" "}
+            {/* Access the 'secondaryParagraph' section of the JSON data */}
             <img
               src="/award1.svg"
               alt="Best fitness awards, Good Housekeeping"
@@ -55,7 +60,8 @@ export const AboutPage = () => {
             />
             <img src="/award3.svg" alt="Women's Health fitness awards 2023" />
           </div>
-          <p>{t("aboutPage.mainSection.tertiaryParagraph")}</p>
+          <p>{t("aboutPage.mainSection.tertiaryParagraph")}</p>{" "}
+          {/* Access the 'tertiaryParagraph' section of the JSON data */}
         </div>
 
         <Footer />

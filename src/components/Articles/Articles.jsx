@@ -54,14 +54,21 @@ export const Articles = () => {
   return (
     <ArticlesContainer>
       <div className="articles">
-        {articles.map((article, index) => (
-          <div key={index} className={`article-${index}`}>
-            <img src={article.imageurl} alt={article.imagealt} />
-            <h2>{article.heading}</h2>
-            <p>{article.paragraph}</p>
-            <Button>{article.button}</Button>
-          </div>
-        ))}
+        {articles.map(
+          (
+            article,
+            index // Loop through the 'articles' array
+          ) => (
+            <div key={index} className={`article-${index}`}>
+              {/* Add a class to each article */}
+              <img src={article.imageurl} alt={article.imagealt} />
+              {/* Accessing the 'imageurl' and 'imagealt' sections of the JSON data */}
+              <h2>{article.heading}</h2>
+              <p>{article.paragraph}</p>
+              <Button>{article.button}</Button>
+            </div>
+          )
+        )}
       </div>
     </ArticlesContainer>
   );

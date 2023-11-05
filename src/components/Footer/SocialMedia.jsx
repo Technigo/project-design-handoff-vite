@@ -38,13 +38,13 @@ export const SocialMedia = () => {
 
   return (
     <SocialMediaContainer>
-      <p>{t("homePage.footer.heading")}</p>
+      <p>{t("homePage.footer.heading")}</p>{" "}
+      {/* Accessing the 'heading' section of the JSON data */}
       <div className="social-media-icons">
         <img src="./facebook.svg" alt="Facebook" />
         <img src="./instagram.svg" alt="Instagram" />
         <img src="/twitter-x.svg" alt="Twitter-X" />
         <img src="/youtube.svg" alt="Youtube" />
-        {/* <img src="/social-media.svg" alt="Social media links" /> */}
       </div>
     </SocialMediaContainer>
   );

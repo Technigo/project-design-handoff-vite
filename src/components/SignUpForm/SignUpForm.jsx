@@ -104,13 +104,14 @@ export const SignUpForm = () => {
   const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent the default behaviour of the form
 
     // Get form data
     const formData = new FormData(e.target);
     const data = {};
     formData.forEach((value, key) => {
-      data[key] = value;
+      // Convert FormData to object
+      data[key] = value; // Form data is stored as key/value pairs
     });
 
     // Log form data to the console
@@ -132,10 +133,14 @@ export const SignUpForm = () => {
         </div>
         <div className="info-form">
           <div className="info-text">
-            <span>{t("homePage.formSection.heading")}</span>
-            <p>{t("homePage.formSection.paragraph")}</p>
+            <span>{t("homePage.formSection.heading")}</span>{" "}
+            {/*Access the 'heading' section of the JSON data  */}
+            <p>{t("homePage.formSection.paragraph")}</p>{" "}
+            {/*Access the 'paragraph' section of the JSON data  */}
           </div>
           <form onSubmit={handleSubmit}>
+            {" "}
+            {/* Call the handleSubmit function when the form is submitted */}
             <label className="first-name">
               <input
                 type="text"

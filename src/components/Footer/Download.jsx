@@ -38,11 +38,7 @@ export const Download = () => {
   const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
   return (
     <DownloadContainer className="download">
-      <p>
-        {t("homePage.footer.paragraph")}
-        {/* Download the <span>prima barre</span> app, access classes from anywhere,
-        anytime */}
-      </p>
+      <p>{t("homePage.footer.paragraph")}</p>
       <div className="download-icons">
         <img src="/apple-small.svg" alt="Download from app-store" />
         <img src="/google-play-small.png" alt="Download from google-play" />

@@ -57,18 +57,22 @@ const MenuContainer = styled.nav`
 export const Menu = () => {
   const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
 
-  const [menuVisible, setMenuVisible] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false); // Create a state variable to track whether the menu is visible or not
   return (
     <MenuContainer>
       <button onClick={() => setMenuVisible(!menuVisible)}>
+        {" "}
+        {/* Toggle the menuVisible state variable when the button is clicked */}
         <img src="/menu-duo.svg" className="menu-icon" alt="Menu" />
       </button>
 
-      {menuVisible && (
+      {menuVisible && ( // Only render the menu if the menuVisible state variable is true
         <nav>
           <ul>
             <li>
               <Link to={"/"}>
+                {" "}
+                {/* Use the Link component from react-router-dom to link to the home page */}
                 <span>{t("homePage.heroSection.menu.home")}</span>
                 <img src="/gt.svg"></img>
               </Link>
@@ -93,6 +97,8 @@ export const Menu = () => {
             </li>
             <li>
               <Link to={"/about"}>
+                {" "}
+                {/* Use the Link component from react-router-dom to link to the about page */}
                 <span>{t("homePage.heroSection.menu.about")}</span>
                 <img src="/gt.svg"></img>
               </Link>

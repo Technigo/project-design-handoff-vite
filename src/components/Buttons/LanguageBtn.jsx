@@ -24,14 +24,15 @@ const DropdownContent = styled.div`
 `;
 
 export const LanguageButton = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false); // Set the initial state of the dropdown to false
   const { i18n } = useTranslation();
 
   const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
+    setDropdownOpen(!dropdownOpen); // Toggle the dropdown state
   };
 
   const handleLanguageSelect = (language) => {
+    // Handle the language selection
     i18n.changeLanguage(language);
   };
 
@@ -41,6 +42,7 @@ export const LanguageButton = () => {
         <img src="/language-orange.svg" alt="Change to another language" />
 
         <DropdownContent open={dropdownOpen}>
+          {/* Pass the dropdownOpen state to the DropdownContent component */}
           <a href="#" onClick={() => handleLanguageSelect("en")}>
             <img src="/flag-en.png" alt="English" />
           </a>

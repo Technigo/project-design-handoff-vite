@@ -24,8 +24,10 @@ export const ClassesText = () => {
   const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
   return (
     <ClassesTextContainer>
-      <h2>{t("homePage.aside.heading")}</h2>
-      <p>{t("homePage.aside.paragraph")}</p>
+      <h2>{t("homePage.aside.heading")}</h2>{" "}
+      {/* Accessing the 'heading' section of the JSON data */}
+      <p>{t("homePage.aside.paragraph")}</p>{" "}
+      {/* Accessing the 'paragraph' section of the JSON data */}
     </ClassesTextContainer>
   );
 };
