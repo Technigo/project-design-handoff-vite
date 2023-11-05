@@ -4,25 +4,27 @@
       "button": "LOG IND"
     },
     "mainSection": {
-      "primaryHeading": [
-        {
-          "firstWord": "Styrke.",
-          "secondWord": "Mobilitet.",
-          "thirdWord": "Mental balance."
-        }
-      ],
+      "primaryHeading": {
+        "firstWord": "Styrke.",
+        "secondWord": "Mobilitet.",
+        "thirdWord": "Mental balance."
+      },
       "secondaryHeading": "Transformerer dig fysisk og mentalt.",
       "triraryHeading": "Lav påvirkning, høj intensitetstræning, der styrker og toner din krop.",
       "articles": [
         {
           "heading": "Deltag i en helkrops træning",
           "paragraph": "Vores studio bringer dig bemærkelsesværdige helkrops træninger fokuseret på kropspositivitet og inklusivitet, med eksperterinstruktører til at guide dig hvert skridt på vejen.",
-          "button": "BOOK EN TIME"
+          "button": "book en klasse",
+          "imageurl": "./article1.png",
+          "imagealt": "To kvinder og en mand laver barretræning"
         },
         {
           "heading": "Træning derhjemme",
           "paragraph": "Hundredevis af on-demand træninger. Start med en samling af sprudlende begynder barre træninger for at styrke din krop på en kraftfuld, metodic måde.",
-          "button": "BOOK EN TIME"
+          "button": "book en klasse",
+          "imageurl": "/article2.png",
+          "imagealt": "En kvinde, der træner derhjemme"
         }
       ]
     },
@@ -80,7 +82,7 @@
       "secondaryParagraph": "I vores barre-studio er vi dedikerede til at levere barre-træningsklasser af høj kvalitet, der forbedrer styrke, fleksibilitet og holdning. Vores klasser fokuserer på lav påvirkning, helkrops træninger, der toner og skulpturerer muskler ved hjælp af balletbarren.",
       "tertiaryParagraph": "Vi er stolte af vores forpligtelse til sikkerhed og korrekt form. Vores instruktører er trænet til at modificere bevægelser for alle fitnessniveauer og evner. Vores mål er at give en udfordrende, men sikker træningsmiljø, der efterlader klienter følelse motiverede og fyldt med energi.",
       "secondaryHeading": "MØD DINE INSTRUKTØRER",
-      "cards": [
+      "testimonial": [
         {
           "heading": "ADRIENNE RABENA",
           "paragraph": "Adriennes klasser er en fortryllende kombination af rytme, flydende bevægelser og intensitet. Hun er stærkt dedikeret til intuitiv og flydende bevægelse, og hun glæder sig over udfordringen med at koreografere overgange, der føles sømløse og smukke.",

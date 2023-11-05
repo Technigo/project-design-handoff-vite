@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
-import jsonData from "../../translations/en.json";
 
 const ClassesContainer = styled.div`
   display: flex;
@@ -20,16 +19,16 @@ const ClassesContainer = styled.div`
 export const Classes = () => {
   const { t, ready } = useTranslation(); // Use useTranslation to get the 't' function from i18next
 
-  const cards = t("cards", { returnObjects: true }); // Accessing the 'cards' section of the JSON data
+  const cards = t("homePage.aside.cards", { returnObjects: true }); // Accessing the 'cards' section of the JSON data
 
-  const { aside } = jsonData.homePage; // Accessing the 'aside' section of the JSON data
+  // const { aside } = jsonData.homePage; // Accessing the 'aside' section of the JSON data
 
   if (!ready) return "Loading classes"; // If the translations are not ready, return "Loading classes..."
 
   return (
     <ClassesContainer>
       <div className="cards">
-        {aside.cards.map((card, index) => (
+        {cards.map((card, index) => (
           <div key={index} className={`card-${index}`}>
             <h3>{card.heading}</h3>
             <p>{card.paragraph}</p>

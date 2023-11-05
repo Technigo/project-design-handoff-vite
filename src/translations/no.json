@@ -4,25 +4,27 @@
       "button": "LOGG INN"
     },
     "mainSection": {
-      "primaryHeading": [
-        {
-          "firstWord": "Styrke.",
-          "secondWord": "Mobilitet.",
-          "thirdWord": "Meditasjon."
-        }
-      ],
+      "primaryHeading": {
+        "firstWord": "Styrke.",
+        "secondWord": "Mobilitet.",
+        "thirdWord": "Meditasjon."
+      },
       "secondaryHeading": "Transformerer deg fysisk og mentalt.",
       "triraryHeading": "Lav påvirkning, høy intensitetstrening som styrker og toner kroppen din.",
       "articles": [
         {
           "heading": "Bli med på helkroppstrening",
           "paragraph": "Vårt studio tilbyr bemerkelsesverdige helkroppstreninger fokusert på kroppspositivitet og inkludering, med eksperter som veileder deg hvert eneste steg på veien.",
-          "button": "BOOK EN TIME"
+          "button": "book en time",
+          "imageurl": "./article1.png",
+          "imagealt": "To kvinner og en mann som trener Barre"
         },
         {
           "heading": "Trening hjemmefra",
           "paragraph": "Hundrevis av on-demand treninger. Begynn med en samling av energiske nybegynner barre-treninger for å styrke kroppen din på en kraftig og metodisk måte.",
-          "button": "BOOK EN TIME"
+          "button": "book en time",
+          "imageurl": "./article2.png",
+          "imagealt": "En kvinne som trener hjemme"
         }
       ]
     },
@@ -80,7 +82,7 @@
       "secondaryParagraph": "I vårt barre-studio er vi dedikert til å tilby høykvalitets barre treningstimer som forbedrer styrke, fleksibilitet og holdning. Våre klasser fokuserer på lav påvirkning, helkropps treninger som toner og skulpturerer musklene ved hjelp av ballettstangen.",
       "tertiaryParagraph": "Vi er stolte av vårt engasjement for sikkerhet og riktig utførelse. Våre instruktører er opplært til å tilpasse bevegelser for alle fitnessnivåer og evner. Målet vårt er å tilby en utfordrende, men trygg treningsmiljø som gir klientene motivasjon og energi.",
       "secondaryHeading": "MØT DINE INSTRUKTØRER",
-      "cards": [
+      "testimonial": [
         {
           "heading": "ADRIENNE RABENA",
           "paragraph": "Adriennes timer er en fengslende kombinasjon av rytme, flyt, og lidenskap. Hun er sterkt dedikert til intuitiv og flytende bevegelse, og hun gleder seg over utfordringen med å koreografere overganger som føles sømløse og vakre.",

@@ -1,8 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../Buttons/Button";
-import jsonData from "../../translations/en.json";
 import { useTranslation } from "react-i18next";
-//import enTranslations from "../../Translations/en.json";
 
 const ArticlesContainer = styled.div`
   display: flex;
@@ -43,14 +41,14 @@ export const Articles = () => {
 
   const articles = t("homePage.mainSection.articles", { returnObjects: true }); // Accessing the 'cards' section of the JSON data
 
-  const { mainSection } = jsonData.homePage; // Accessing the 'articles' section of the JSON data
+  // const { mainSection } = jsonData.homePage; // Accessing the 'articles' section of the JSON data
 
   if (!ready) return "Loading articles"; // If the translations are not ready, return "Loading articles..."
 
   return (
     <ArticlesContainer>
       <div className="articles">
-        {mainSection.articles.map((article, index) => (
+        {articles.map((article, index) => (
           <div key={index} className={`article-${index}`}>
             <img src={article.imageurl} alt={article.imagealt} />
             <h2>{article.heading}</h2>

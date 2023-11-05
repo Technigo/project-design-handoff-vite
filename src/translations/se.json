@@ -1,28 +1,30 @@
 {
   "homePage": {
     "heroSection": {
-      "button": "LOGGA IN"
+      "button": "loga in"
     },
     "mainSection": {
-      "primaryHeading": [
-        {
-          "firstWord": "Styrka.",
-          "secondWord": "Rörlighet.",
-          "thirdWord": "Sinnesnärvaro."
-        }
-      ],
+      "primaryHeading": {
+        "firstWord": "Styrka.",
+        "secondWord": "Rörlighet.",
+        "thirdWord": "Mindfulness."
+      },
       "secondaryHeading": "Förvandlar dig fysiskt och mentalt.",
       "triraryHeading": "Lågintensiv, högintensiv träning som stärker och tonar din kropp.",
       "articles": [
         {
           "heading": "Gå med i ett träningspass för hela kroppen",
           "paragraph": "Vår studio ger dig enastående helkroppsträning med fokus på kroppspositivitet och inkludering, med expertinstruktörer som guidar dig varje steg på vägen.",
-          "button": "BOKA EN KLASS"
+          "button": "boka en lektion",
+          "imageurl": "./article1.png",
+          "imagealt": "Två kvinnor och en man gör barre träning"
         },
         {
           "heading": "Träna hemma",
           "paragraph": "Hundratals träningspass på begäran. Börja med en samling eldiga nybörjar-barreträningspass för att lysa upp din kropp på ett kraftfullt, metodiskt sätt.",
-          "button": "BOKA EN KLASS"
+          "button": "boka en lektion",
+          "imageurl": "/article2.png",
+          "imagealt": "En kvinna som tränar hemma"
         }
       ]
     },
@@ -80,7 +82,7 @@
       "secondaryParagraph": "På vår barrestudio är vi dedikerade till att erbjuda högkvalitativa barreträningsklasser som förbättrar styrka, smidighet och hållning. Våra klasser fokuserar på lågintensiv, helkroppsträning som tonar och skulpterar musklerna med hjälp av baletträcket.",
       "tertiaryParagraph": "Vi är stolta över vårt åtagande för säkerhet och korrekt utförande. Våra instruktörer är tränade för att anpassa rörelser för alla fitnessnivåer och förmågor. Vårt mål är att erbjuda en utmanande men säker träningsmiljö som gör att klienter känner sig motiverade och energiska.",
       "secondaryHeading": "TRÄFFA DINA INSTRUKTÖRER",
-      "cards": [
+      "testimonial": [
         {
           "heading": "ADRIENNE RABENA",
           "paragraph": "Adriennes klasser är en förtrollande kombination av rytm, flyt och intensitet. Hon är starkt dedikerad till intuitiv och flytande rörelse, och hon gläds åt utmaningen att koreografera övergångar som känns smidiga och vackra.",

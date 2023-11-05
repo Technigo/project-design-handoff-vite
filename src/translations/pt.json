@@ -1,28 +1,30 @@
 {
   "homePage": {
     "heroSection": {
-      "button": "ENTRAR"
+      "button": "entrar"
     },
     "mainSection": {
-      "primaryHeading": [
-        {
-          "firstWord": "Força.",
-          "secondWord": "Mobilidade.",
-          "thirdWord": "Atenção Plena."
-        }
-      ],
+      "primaryHeading": {
+        "firstWord": "Força.",
+        "secondWord": "Mobilidade.",
+        "thirdWord": "Atenção Plena."
+      },
       "secondaryHeading": "Transforma você fisicamente e mentalmente.",
       "triraryHeading": "Treino de baixo impacto e alta intensidade que fortalece e tonifica o seu corpo.",
       "articles": [
         {
           "heading": "Junte-se a um treino de corpo inteiro",
           "paragraph": "Nosso estúdio oferece notáveis treinos de corpo inteiro focados na positividade corporal e inclusão, com instrutores especializados para orientá-lo a cada passo do caminho.",
-          "button": "AGENDE UMA AULA"
+          "button": "agende uma aula",
+          "imageurl": "./article1.png",
+          "imagealt": "Duas mulheres e um homem a fazer exercício de barre"
         },
         {
           "heading": "Treine em casa",
           "paragraph": "Centenas de treinos sob demanda. Comece com uma coleção de enérgicos treinos iniciais de barre para iluminar o seu corpo de forma poderosa e metódica.",
-          "button": "AGENDE UMA AULA"
+          "button": "agende uma aula",
+          "imageurl": "/article2.png",
+          "imagealt": "Uma mulher a fazer exercício em casa"
         }
       ]
     },
@@ -80,7 +82,7 @@
       "secondaryParagraph": "Em nosso estúdio de barre, somos dedicados a oferecer aulas de barre de alta qualidade que melhoram a força, a flexibilidade e a postura. Nossas aulas se concentram em treinos de corpo inteiro de baixo impacto que tonificam e esculpem os músculos usando a barra de balé.",
       "tertiaryParagraph": "Temos orgulho de nosso compromisso com a segurança e a forma adequada. Nossos instrutores são treinados para modificar os movimentos para todos os níveis de condicionamento físico e habilidades. Nosso objetivo é fornecer um ambiente de treinamento desafiador, mas seguro, que deixa os clientes motivados e energizados.",
       "secondaryHeading": "CONHEÇA SEUS INSTRUTORES",
-      "cards": [
+      "testimonial": [
         {
           "heading": "ADRIENNE RABENA",
           "paragraph": "As aulas da Adrienne são uma combinação envolvente de ritmo, fluidez e paixão. Ela é dedicada a movimentos intuitivos e fluidos, e se deleita no desafio de coreografar transições que parecem perfeitas e belas.",

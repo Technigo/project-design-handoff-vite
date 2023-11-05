@@ -1,7 +1,7 @@
 {
   "homePage": {
     "heroSection": {
-      "button": "SIGN IN"
+      "button": "sign in"
     },
     "mainSection": {
       "primaryHeading": {
@@ -16,7 +16,7 @@
           "heading": "Join a full-body workout",
           "paragraph": "Our studio bringing you remarkable full-body workouts focused on body positivity and inclusivity, with expert instructors to guide you every step of the way.",
           "button": "book a class",
-          "imageurl": "/article1.png",
+          "imageurl": "./article1.png",
           "imagealt": "Two women and a man doing barre workout"
         },
         {
@@ -73,8 +73,8 @@
   },
   "aboutPage": {
     "heroSection": {
-      "heading": "ABOUT US",
-      "button": "SIGN IN"
+      "heading": "about us",
+      "button": "sign in"
     },
     "mainSection": {
       "primaryHeading": "Who We Are and What We Do",

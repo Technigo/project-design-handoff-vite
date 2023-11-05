@@ -1,20 +1,20 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-//import mkTranslations from "./Translations/mk.json";
+//import mkTranslations from "./translations/mk.json";
 import noTranslations from "./translations/no.json";
-//import seTranslations from "./Translations/se.json";
-//import daTranslations from "./Translations/da.json";
+import seTranslations from "./translations/se.json";
+//import daTranslations from "./translations/da.json";
 import enTranslations from "./translations/en.json";
-//import ptTranslations from "./Translations/pt.json";
+//import ptTranslations from "./translations/pt.json";
 
 const resources = {
   en: {
     translation: enTranslations,
   },
-  // se: {
-  //   translation: seTranslations,
-  // },
+  se: {
+    translation: seTranslations,
+  },
   no: {
     translation: noTranslations,
   },
