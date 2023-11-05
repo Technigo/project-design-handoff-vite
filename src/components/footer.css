@@ -37,6 +37,7 @@ footer {
 }
 
 .language-wrapper button {
+    height: 20px;
     width: 100px;
     border: none;
     background: none;

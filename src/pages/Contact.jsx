@@ -60,11 +60,21 @@ export const Contact = () => {
         <H2_Headline h2_headline={headline_contact} />
         <div className="contact-image-content-wrapper">
           {isQuestionSubmitted ? (
-            <img className="coffeeimg" src={coffeImg} alt="Coffee cup with the text Thanks" />
+            <img
+              className="coffeeimg"
+              src={coffeImg}
+              alt="Coffee cup with the text Thanks"
+            />
           ) : (
-            <img src={contact_image} alt="woman doing a tree pose." className="contact-image" />
+            <img
+              src={contact_image}
+              alt="woman doing a tree pose."
+              className="contact-image"
+            />
           )}
           <div className="contact-page-content-wrapper">
+
+            {/* Ask a new question: icon, text and button */}
             {isQuestionSubmitted ? (
               <div className="contact-info-wrapper question-asked-wrapper">
                 <img src={contact_info[0].image} alt={contact_info[0].alt} />
@@ -77,62 +87,70 @@ export const Contact = () => {
                   />
                 </div>
               </div>
-            ) : isFormVisible ? (
-              <div className="contact-page-form">
-                <div className="contact-info-wrapper">
+            ) :
+              // Form: 
+              isFormVisible ? (
+                <div className="contact-page-form">
+                  <div className="contact-info-wrapper">
+                    {/* IntroText from before + email icon */}
+                    <img src={contact_info[0].image} alt={contact_info[0].alt} />
+                    <form onSubmit={handleFormSubmit} className="contact-info">
+                      <PText className="new_line" text={contact_info[0].text} />
+                      {/* Name input */}
+                      <div className="form-field">
+                        <label htmlFor="name">
+                          <PText text={t("contact.form_contact.label.0")} />
+                        </label>
+                        <input
+                          type="text"
+                          id="name"
+                          value={name}
+                          onChange={(e) => setName(e.target.value)}
+                          required
+                        />
+                      </div>
+                      {/* Email input */}
+                      <div className="form-field">
+                        <label htmlFor="email">
+                          <PText text={t("contact.form_contact.label.1")} />
+                        </label>
+                        <input
+                          type="email"
+                          id="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          required
+                        />
+                      </div>
+                      {/* Textarea Input */}
+                      <div className="form-field">
+                        <label htmlFor="question">
+                          <PText text={t("contact.form_contact.label.2")} />
+                        </label>
+                        <textarea
+                          id="question"
+                          value={question}
+                          onChange={(e) => setQuestion(e.target.value)}
+                          rows="5"
+                          required
+                        />
+                      </div>
+                      <Button text={t("contact.buttons.submit")} type="submit" />
+                    </form>
+                  </div>
+                </div>
+              ) : (
+                <div className="ask-question-first contact-info-wrapper">
                   <img src={contact_info[0].image} alt={contact_info[0].alt} />
-                  <form onSubmit={handleFormSubmit} className="contact-info">
-                    <PText className="new_line" text={contact_info[0].text} />
-                    <div className="form-field">
-                      <label htmlFor="name">
-                        <PText text={t("contact.form_contact.label.0")} />
-                      </label>
-                      <input
-                        type="text"
-                        id="name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        required
-                      />
-                    </div>
-                    <div className="form-field">
-                      <label htmlFor="email">
-                        <PText text={t("contact.form_contact.label.1")} />
-                      </label>
-                      <input
-                        type="email"
-                        id="email"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                      />
-                    </div>
-                    <div className="form-field">
-                      <label htmlFor="question">
-                        <PText text={t("contact.form_contact.label.2")} />
-                      </label>
-                      <textarea
-                        id="question"
-                        value={question}
-                        onChange={(e) => setQuestion(e.target.value)}
-                        rows="5"
-                        required
-                      />
-                    </div>
-                    <Button text={t("contact.buttons.submit")} type="submit" />
-                  </form>
+                  <div className="contact-info">
+                    <PText text={contact_info[0].text} />
+                    <Button text={t("contact.buttons.askQ")} onClick={handleAskQuestionClick} />
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <div className="ask-question-first contact-info-wrapper">
-                <img src={contact_info[0].image} alt={contact_info[0].alt} />
-                <div className="contact-info">
-                  <PText text={contact_info[0].text} />
-                  <Button text={t("contact.buttons.askQ")} onClick={handleAskQuestionClick} />
-                </div>
-              </div>
-            )}
+              )}
+            {/* This part is always visible */}
             <div className="contact-content-wrapper">
+              {/* Chat */}
               <div className="contact-info-wrapper">
                 <img src={contact_info[1].image} alt={contact_info[1].alt} />
                 <div className="contact-info">
@@ -140,6 +158,7 @@ export const Contact = () => {
                   <Button text={t("contact.buttons.chat")} />
                 </div>
               </div>
+              {/* Phone */}
               <div className="contact-info-wrapper">
                 <img src={contact_info[2].image} alt={contact_info[2].alt} />
                 <div className="contact-info">
