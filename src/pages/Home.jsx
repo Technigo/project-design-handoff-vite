@@ -43,7 +43,7 @@ const Home = () => {
                 <div className="absolute inset-0 bg-gray-700 opacity-50 rounded-md" />
                 <div className="absolute inset-0 flex items-center px-4 lg:px-32">
                     <div className="w-2/3 md:w-1/3">
-                        <h1 className="font-bold text-white-n text-2xl w-32 mb-4">{t("heading")}</h1>
+                        <h1 className="font-bold text-white-n text-3xl w-32 mb-4">{t("heading")}</h1>
                         <h2 className="semi-bold text-white-n text-lg mb-6">{t("subheading")}</h2>
                         <Button>{t("joinTheMovement")}</Button>
                     </div>
