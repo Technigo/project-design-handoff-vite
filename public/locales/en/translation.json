@@ -1,0 +1,43 @@
+{
+  "about": "About us",
+  "classes": "Classes",
+  "studio": "Studio",
+  "book": "Book",
+  "hero": {
+    "yourPractice": "Your practice",
+    "destination": "Your destination for yoga",
+    "wayToPractice": "The way you choose to practice",
+    "breakFromStress": "Take a break from the stress of daily life and embark on a journey towards self-discovery and healing.",
+    "joinCommunity": "Join our community of like-minded individuals, and together, let's explore the path to well-being, balance, and tranquility."
+  },
+  "benefits": {
+    "header": "Benefits of Yoga",
+    "cards": [
+      {
+        "title": "Well-being",
+        "content": "Yoga can help improve mood, reduce symptoms of depression, and increase feelings of well-being."
+      },
+      {
+        "title": "Balance",
+        "content": "Yoga is known for its ability to soothe tension and anxiety in the mind and body."
+      },
+      {
+        "title": "Health",
+        "content": "Yoga can help improve flexibility, strength, and cardiovascular fitness."
+      }
+    ]
+  },
+  "testimonies": {
+    "testimony1": "YOGA YOU has been a game-changer in my wellness journey. The instructors' expertise and personalized attention have helped me grow in my practice. I've never felt more at home in a yoga studio.",
+    "testimony2": "YOGA YOU is my urban escape. The variety of classes and the supportive community keep me coming back. This studio truly empowers both my body and mind."
+  },
+  "aboutPage": {
+    "aboutUsTitle": "About us",
+    "whoWeAreTitle": "Who we are",
+    "whoWeAreDescription": "Imagine Yoga You as your serene sanctuary in the heart of Helsinki. We're your steady support system, ready to help you find your inner calm, embrace inclusivity, and foster intentional presence in every moment of your life.",
+    "whatWeDoTitle": "What We Do",
+    "whatWeDoDescription": "We offer a blend of science-backed yoga and mindfulness practices to empower you in your journey towards a more mindful life. Our goal is to provide the tools and guidance to help you create lasting, positive well-being habits and discover a happier, healthier version of yourself.",
+    "whyWeDoItTitle": "Why We Do It",
+    "whyWeDoItDescription": "Our practices are not only proven to enhance your sense of calm, but they also promote a more focused, present, and joyful existence. Join us, and let us help you reduce stress, find your inner peace, and experience well-being in its truest form."
+  }
+}
