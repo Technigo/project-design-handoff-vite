@@ -26,8 +26,8 @@ const Articles = () => {
                         <div className={`article-item-content ${article.isReverse ? "reverse" : ""}`}>
                             <img src={article.image} alt="article picture" />
                             <div className="text-content">
-                                <h3>{article.name}</h3>
-                                <p>{article.info}</p>
+                                <h3>{t(article.name)}</h3>
+                                <p>{t(article.info)}</p>
                                 <button>{t('read more')}</button>
                             </div>
                         </div>

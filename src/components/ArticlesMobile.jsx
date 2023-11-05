@@ -24,7 +24,7 @@ const ArticlesMobile = () => {
                 {articlesMobile.map((article, index) => (
                     <div key={index} className="article-item">
                         <div className="article-mobile-content">
-                            <h3>{article.name}</h3>
+                            <h3>{t(article.name)}</h3>
                             <div className="image-container">
                                 <img src={article.image} alt="article picture" />
                                 <button className="read-more">{t('read more')}</button>
