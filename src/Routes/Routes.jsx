@@ -4,7 +4,7 @@ import { AboutUsPage } from "../Pages/AboutUsPage";
 
 export const routes = (
   <>
-    {/* Page Routes */}
+    {/* ------- Page Routes ------- */}
     <Route path="/" element={<StartPage />} />
     <Route path="/aboutus-page" element={<AboutUsPage />} />
   </>

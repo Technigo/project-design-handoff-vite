@@ -8,33 +8,18 @@ const CarouselContainer = styled.div`
   height: 100%;
   overflow: auto;
   display: flex; /* Display course cards side by side */
-  scroll-behavior: smooth; /* Enable smooth scrolling */
+  scroll-behavior: smooth;
   gap: 12px;
-  //margin: 0 24px;
-  padding: 0 24px; /* Add padding on both sides */
-  /* margin-left: -24px; /* Offset the margin on the left side */
-
-  /* & > :first-child {
-    margin-left: 24px; /* Add margin to the first card */
-  /*} */
-  /* 
-  & > :last-child {
-    margin-right: 24px; /* Add margin to the last card */
-  /*}  */
+  padding: 0 24px;
 
   @media screen and (min-width: 1024px) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto auto;
-    //overflow: visible;
     align-items: center;
     justify-content: center;
-    //overflow: hidden;
-    //flex-wrap: wrap;
-    //height: 380px;
     gap: 24px;
     padding: 0 65px;
-    //position: relative;
   }
 `;
 
@@ -42,7 +27,6 @@ const StyledCourseCard = styled.div`
   height: 100%;
   width: 300px; /* Set a width for each course card */
   flex-shrink: 0; /* Prevent cards from shrinking */
-  //display: inline-flex;
   padding-bottom: 0px;
   flex-direction: column;
   justify-content: center;
@@ -61,6 +45,7 @@ const StyledCourseCard = styled.div`
   }
 
   @media screen and (min-width: 1024px) and (max-width: 1360px) {
+    position: relative;
     width: 100%;
     height: 100%;
 
@@ -91,9 +76,7 @@ const CourseCardButton = styled.button`
   background: #ffa386;
   color: #fff;
   font-size: 16px;
-  //font-style: normal;
   font-weight: 500;
-  //line-height: normal;
   margin-bottom: 12px;
   text-transform: uppercase;
 
@@ -101,6 +84,15 @@ const CourseCardButton = styled.button`
     display: none;
   }
 `;
+
+// const CourseBrief = styled.div`
+//   @media screen and (min-width: 1024px) {
+//      p {
+//       height: 100%;
+//       flex: 1; /* Fill out the remaining vertical space */
+//     //}
+//   }
+// `;
 
 const CourseCardText = styled.div`
   display: flex;
@@ -115,17 +107,15 @@ const CourseCardText = styled.div`
   h5 {
     color: #202537;
     text-align: center;
-    //position: absolute;
     font-size: 15px; // Made it 1px smaller than the design so the text doesn't overflow to two lines on one of the cards
-    //font-style: normal;
     font-weight: 600;
-    //line-height: normal;
     letter-spacing: 0.8px;
     text-transform: uppercase;
-    margin-top: 16px;
+    width: 100%;
   }
 
   p {
+    // Styling for the first bolder words
     //     //color: #202537;
     //     //text-align: justify;
     //     //font-size: 20px;
@@ -133,7 +123,7 @@ const CourseCardText = styled.div`
     //     //font-weight: 700;
     //     //line-height: normal;
 
-    //this fall och framåt:
+    // Styling for the rest of the text
     color: #202537;
     font-size: 16px;
     font-style: normal;
@@ -146,19 +136,27 @@ const CourseCardText = styled.div`
     position: relative;
 
     h5 {
-      display: flex;
+      display: block; /* Display h5 on larger screens */
       position: absolute;
-      margin-bottom: 300px;
+      //margin-bottom: 300px;
       /* right: 27px;
       top: 110px; */
       color: #fff;
       font-size: 32px;
+      top: -70%; /* Move to the vertical center of the parent */
+      left: 50%; /* Move to the horizontal center of the parent */
+      transform: translate(
+        -50%,
+        -50%
+      ); /* Center the h5 both horizontally and vertically */
     }
 
     p {
       display: block;
       text-align: left;
       padding: 10px 12px;
+      height: 100%;
+      //flex: 1; /* Fill out the remaining vertical space */
     }
   }
 `;
@@ -180,7 +178,9 @@ export const CourseCarousel = () => {
           <img src={course.imageUrl} alt={course.imageAlt} />
           <CourseCardText>
             <h5>{isWideScreen ? course.courseNameShort : course.courseName}</h5>
+            {/* <CourseBrief> */}
             <p>{course.courseBrief}</p>
+            {/* </CourseBrief> */}
             <CourseCardButton>{course.button}</CourseCardButton>
           </CourseCardText>
         </StyledCourseCard>

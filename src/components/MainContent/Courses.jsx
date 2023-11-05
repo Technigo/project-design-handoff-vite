@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
 const StyledCourses = styled.div`
-  //background: url(/assets/background.png);
   display: flex;
   flex-direction: column;
 
@@ -11,9 +10,7 @@ const StyledCourses = styled.div`
     color: #081957;
     text-align: center;
     font-size: 20px;
-    //font-style: normal;
     font-weight: 600;
-    //line-height: normal;
     text-transform: uppercase;
     margin: 60px 0 30px;
   }
@@ -34,15 +31,13 @@ const CoursesButton = styled.button`
   background: #202537;
   color: #fff6e9;
   font-size: 16px;
-  //font-style: normal;
   font-weight: 500;
-  //line-height: normal;
   text-transform: uppercase;
   margin: 45px 0;
 `;
 
 export const Courses = () => {
-  const { t } = useTranslation(); // Use useTranslation to get the 't' function
+  const { t } = useTranslation();
   return (
     <>
       <StyledCourses>

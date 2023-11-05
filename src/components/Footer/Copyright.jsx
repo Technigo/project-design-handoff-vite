@@ -3,9 +3,7 @@ import styled from "styled-components";
 const CopyrightText = styled.p`
   text-align: center;
   font-size: 12px;
-  //font-style: normal;
   font-weight: 400;
-  //line-height: normal;
   letter-spacing: 0.6px;
   text-transform: uppercase;
 

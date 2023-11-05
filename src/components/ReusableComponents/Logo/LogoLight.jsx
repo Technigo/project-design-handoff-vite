@@ -3,11 +3,6 @@ import LogoBeige from "/assets/Logovectorbeige.png";
 import styled from "styled-components";
 
 const StyledLightLogo = styled.div`
-  /* display: flex;
-  align-items: center;
-  padding: 10px;
-  gap: 10px; */
-
   img {
     width: 152px;
     height: 165px;
@@ -16,9 +11,7 @@ const StyledLightLogo = styled.div`
   p:first-child {
     color: #fff6e9;
     font-size: 24px;
-    //font-style: normal;
     font-weight: 700;
-    //line-height: normal;
     letter-spacing: 1.2px;
     text-transform: uppercase;
   }
@@ -26,9 +19,7 @@ const StyledLightLogo = styled.div`
   p:last-child {
     color: #fff6e9;
     font-size: 18px;
-    //font-style: normal;
     font-weight: 400;
-    //line-height: normal;
     letter-spacing: 0.9px;
     text-transform: uppercase;
   }

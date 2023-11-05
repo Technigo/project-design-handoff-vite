@@ -24,7 +24,7 @@ const LightIcons = styled.div`
 `;
 
 export const FollowUsIconsLight = () => {
-  const { t } = useTranslation(); // Use useTranslation to get the 't' function
+  const { t } = useTranslation();
   return (
     <FollowLightIconContainer>
       <p>{t("footer.follow")}</p>

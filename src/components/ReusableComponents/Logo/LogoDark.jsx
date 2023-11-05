@@ -3,11 +3,6 @@ import LogoBlue from "/assets/Logovectorblue.png";
 import styled from "styled-components";
 
 const StyledDarkLogo = styled.div`
-  /* display: flex;
-  align-items: center;
-  padding: 10px;
-  gap: 10px; */
-
   img {
     width: 76px;
     height: 83px;
@@ -16,9 +11,7 @@ const StyledDarkLogo = styled.div`
   p:first-child {
     color: #081957;
     font-size: 24px;
-    //font-style: normal;
     font-weight: 700;
-    //line-height: normal;
     letter-spacing: 1.2px;
     text-transform: uppercase;
   }

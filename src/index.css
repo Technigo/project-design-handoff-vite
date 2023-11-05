@@ -20,6 +20,7 @@ svg {
   max-width: 100%;
 }
 
+/*------- Body styling -------*/
 body {
   background-image: url(/assets/bigbackground.png);
   background-size: cover;

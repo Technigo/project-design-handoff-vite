@@ -21,5 +21,4 @@ i18n.use(initReactI18next).init({
   fallbackLng: "en",
 });
 
-//Kan jag göra export på annat sätt?
 export default i18n;

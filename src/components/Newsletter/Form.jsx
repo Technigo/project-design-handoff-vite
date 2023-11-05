@@ -7,14 +7,10 @@ const StyledNewsletter = styled.div`
   position: relative;
   justify-content: center;
   align-items: center;
-  /* flex: 1 0 0;
-  align-self: stretch; */
 
   img {
-    //display: flex;
     width: 100%; /* Ensure the image covers the entire container */
     height: auto;
-    //color: #fff6e9;
   }
 
   button {
@@ -24,9 +20,7 @@ const StyledNewsletter = styled.div`
     color: #081957;
     background: #fff6e9;
     font-size: 16px;
-    //font-style: normal;
     font-weight: 500;
-    //line-height: normal;
     position: absolute;
   }
 `;
@@ -37,17 +31,13 @@ const Signup = styled.div`
   justify-content: center;
   align-items: center;
   position: absolute;
-  /* right: 41.5px;
-  bottom: 104px;*/
   gap: 12px;
 
   h3 {
     text-align: center;
     font-size: 20px;
     color: #fff6e9;
-    //font-style: normal;
     font-weight: 400;
-    //line-height: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
   }
@@ -61,9 +51,7 @@ const Signup = styled.div`
     &::placeholder {
       color: #fff6e9;
       font-size: 16px;
-      //font-style: normal;
       font-weight: 500;
-      //line-height: normal;
       position: absolute;
       left: 10px;
       top: 5px;
@@ -72,16 +60,11 @@ const Signup = styled.div`
 `;
 
 const StyledForm = styled.div`
-  //flex-shrink: 0;
   display: flex;
   padding-left: 0px;
   justify-content: flex-end;
-  //align-items: center;
   gap: 120px;
   align-self: stretch;
-  //border: 0.5px solid #fff6e9;
-  //background: transparent;
-  //height: 32px;
   width: auto;
 `;
 
@@ -97,7 +80,7 @@ const VisuallyHidden = styled.label`
 `;
 
 export const Form = () => {
-  const { t } = useTranslation(); // Use useTranslation to get the 't' function
+  const { t } = useTranslation();
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent the form from submitting and refreshing the page

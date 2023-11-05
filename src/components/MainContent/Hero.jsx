@@ -6,7 +6,6 @@ const StyledHero = styled.div`
   display: flex;
   align-items: flex-end;
   position: relative;
-  //margin-top: 158px;
 
   img {
     width: 100%;
@@ -14,7 +13,6 @@ const StyledHero = styled.div`
     max-height: 759px;
     object-fit: cover;
     object-position: 20% 100%;
-    //flex-shrink: 0;
 
     @media screen and (min-width: 1024px) {
       gap: 50px;
@@ -37,7 +35,6 @@ const HeroTextWrapper = styled.div`
   margin-bottom: 70px;
 
   @media screen and (min-width: 1024px) {
-    //height: 200px;
     padding: 24px;
     gap: 12px;
   }
@@ -46,9 +43,7 @@ const HeroTextWrapper = styled.div`
     color: #081957;
     text-align: center;
     font-size: 28px;
-    //font-style: normal;
     font-weight: 600;
-    //line-height: normal;
     letter-spacing: 1.4px;
     text-transform: uppercase;
   }
@@ -82,9 +77,7 @@ const HeroButton = styled.button`
   background: #fff6e9;
   color: #202537;
   font-size: 16px;
-  //font-style: normal;
   font-weight: 500;
-  //line-height: normal;
   text-transform: uppercase;
   margin-top: 25px;
 
@@ -94,7 +87,7 @@ const HeroButton = styled.button`
 `;
 
 export const Hero = () => {
-  const { t } = useTranslation(); // Use useTranslation to get the 't' function
+  const { t } = useTranslation();
   return (
     <StyledHero>
       <img
