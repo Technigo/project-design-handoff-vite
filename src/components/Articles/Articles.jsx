@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Button } from "../Buttons/Button";
-import jsonData from "../../Translations/en.json";
+import jsonData from "../../translations/en.json";
 import { useTranslation } from "react-i18next";
 //import enTranslations from "../../Translations/en.json";
 
