@@ -7,8 +7,8 @@ import { initReactI18next } from "react-i18next";
 // import ptTranslations from "./Translations/pt.json";
 // import mkTranslations from "./Translations/mk.json";
 
-import enTranslations from "./Translations/en.json";
 import noTranslations from "./Translations/no.json";
+import enTranslations from "./Translations/en.json";
 
 const resources = {
   en: {
