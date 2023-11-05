@@ -43,19 +43,27 @@
       "cards": [
         {
           "heading": "Prima Barre Align",
-          "paragraph": "combina nossa técnica clássica de construção de força de barre com um foco exclusivo em flexibilidade e treinamento de equilíbrio para oferecer um treino restaurador de corpo inteiro."
+          "paragraph": "combina nossa técnica clássica de construção de força de barre com um foco exclusivo em flexibilidade e treinamento de equilíbrio para oferecer um treino restaurador de corpo inteiro.",
+          "imageurl": "/pb-align.svg",
+          "imagealt": "Uma mulher a fazer um treino restaurador de corpo inteiro"
         },
         {
           "heading": "Prima Barre Define",
-          "paragraph": "funde conceitos de nossa técnica clássica de barre com treinamento de força baseado em peso para desenvolver força muscular e poder."
+          "paragraph": "funde conceitos de nossa técnica clássica de barre com treinamento de força baseado em peso para desenvolver força muscular e poder.",
+          "imageurl": "/pb-define.svg",
+          "imagealt": "Uma mulher a fazer exercício com halteres"
         },
         {
           "heading": "Prima Barre Power",
-          "paragraph": "é nosso treino de fusão de Classic Prime Barre e treinamento de intervalo de alta intensidade projetado para elevar sua frequência cardíaca, desenvolver força e aumentar seu metabolismo."
+          "paragraph": "é nosso treino de fusão de Classic Prime Barre e treinamento de intervalo de alta intensidade projetado para elevar sua frequência cardíaca, desenvolver força e aumentar seu metabolismo.",
+          "imageurl": "/pb-power.svg",
+          "imagealt": "Uma mulher a fazer exercício para ganhar força e aumentar o metabolismo"
         },
         {
           "heading": "Prima Barre Classic",
-          "paragraph": "é nossa aula de barre original. Nossa técnica proprietária é o treino de corpo inteiro mais rápido e eficaz."
+          "paragraph": "é nossa aula de barre original. Nossa técnica proprietária é o treino de corpo inteiro mais rápido e eficaz.",
+          "imageurl": "/pb-classic.svg",
+          "imagealt": "Uma mulher a fazer uma aula clássica de barre, um exercício de corpo inteiro"
         }
       ]
     },

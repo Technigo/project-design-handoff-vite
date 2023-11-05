@@ -43,19 +43,27 @@
       "cards": [
         {
           "heading": "Prima Barre Align",
-          "paragraph": "combines our classic strength-building barre technique with a unique emphasis on flexibility and balance training to deliver a restorative full body workout."
+          "paragraph": "combines our classic strength-building barre technique with a unique emphasis on flexibility and balance training to deliver a restorative full body workout.",
+          "imageurl": "/pb-align.svg",
+          "imagealt": "A woman doing a restorative full body workout"
         },
         {
           "heading": "Prima Barre Define",
-          "paragraph": "fuses concepts from our classic barre technique with weight-based strength training to develop muscular strength and power. "
+          "paragraph": "fuses concepts from our classic barre technique with weight-based strength training to develop muscular strength and power.",
+          "imageurl": "/pb-define.svg",
+          "imagealt": "A woman doing a workout with barbells"
         },
         {
           "heading": "Prima Barre Power",
-          "paragraph": "is our fusion workout of Classic Prime Barre and high-intensity interval training designed to elevate your heart rate, build strength, and increase your metabolism. "
+          "paragraph": "is our fusion workout of Classic Prime Barre and high-intensity interval training designed to elevate your heart rate, build strength, and increase your metabolism.",
+          "imageurl": "/pb-power.svg",
+          "imagealt": "A woman doing a workout to build strength and increase metabolism"
         },
         {
           "heading": "Prima Barre Classic",
-          "paragraph": "is our original barre class. Our proprietary technique is the fastest, most effective full-body workout."
+          "paragraph": "is our original barre class. Our proprietary technique is the fastest, most effective full-body workout.",
+          "imageurl": "/pb-classic.svg",
+          "imagealt": "A woman doing a classic barre class, a full-body workout."
         }
       ]
     },

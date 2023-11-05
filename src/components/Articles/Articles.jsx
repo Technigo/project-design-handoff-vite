@@ -7,10 +7,16 @@ const ArticlesContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-items: center;
-  padding: 60px 52px;
-  gap: 64px;
-  max-width: 400px;
+  padding: 60px auto 52px auto;
+  max-width: 500px;
+
+  .article-0 {
+    margin-bottom: 50px;
+  }
+
+  .articles {
+    margin-bottom: 50px;
+  }
   img {
     width: 100%;
     height: auto;
@@ -57,8 +63,6 @@ export const Articles = () => {
           </div>
         ))}
       </div>
-
-      {/* <Button>Start free trial</Button> */}
     </ArticlesContainer>
   );
 };

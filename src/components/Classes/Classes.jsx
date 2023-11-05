@@ -21,8 +21,6 @@ export const Classes = () => {
 
   const cards = t("homePage.aside.cards", { returnObjects: true }); // Accessing the 'cards' section of the JSON data
 
-  // const { aside } = jsonData.homePage; // Accessing the 'aside' section of the JSON data
-
   if (!ready) return "Loading classes"; // If the translations are not ready, return "Loading classes..."
 
   return (
@@ -30,6 +28,7 @@ export const Classes = () => {
       <div className="cards">
         {cards.map((card, index) => (
           <div key={index} className={`card-${index}`}>
+            <img src={card.imageurl} alt={card.imagealt} />
             <h3>{card.heading}</h3>
             <p>{card.paragraph}</p>
           </div>

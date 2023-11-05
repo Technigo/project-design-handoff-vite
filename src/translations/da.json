@@ -43,19 +43,27 @@
       "cards": [
         {
           "heading": "Prima Barre Align",
-          "paragraph": "kombinerer vores klassiske styrkeopbyggende barreteknik med en unik vægt på fleksibilitet og balancetræning for at levere en restaurativ helkropstræning."
+          "paragraph": "kombinerer vores klassiske styrkeopbyggende barreteknik med en unik vægt på fleksibilitet og balancetræning for at levere en restaurativ helkropstræning.",
+          "imageurl": "/pb-align.svg",
+          "imagealt": "En kvinde laver en genopbyggende helkropstræning"
         },
         {
           "heading": "Prima Barre Define",
-          "paragraph": "fusionerer koncepter fra vores klassiske barreteknik med styrketræning med vægte for at udvikle muskelstyrke og kraft."
+          "paragraph": "fusionerer koncepter fra vores klassiske barreteknik med styrketræning med vægte for at udvikle muskelstyrke og kraft.",
+          "imageurl": "/pb-define.svg",
+          "imagealt": "En kvinde træner med vægtstænger"
         },
         {
           "heading": "Prima Barre Power",
-          "paragraph": "er vores fusionstræning af Classic Prime Barre og højintensitetsintervaltræning designet til at øge din puls, opbygge styrke og øge din stofskifte."
+          "paragraph": "er vores fusionstræning af Classic Prime Barre og højintensitetsintervaltræning designet til at øge din puls, opbygge styrke og øge din stofskifte.",
+          "imageurl": "/pb-power.svg",
+          "imagealt": "En kvinde træner for at opbygge styrke og øge stofskiftet"
         },
         {
           "heading": "Prima Barre Classic",
-          "paragraph": "er vores originale barreklasse. Vores proprietære teknik er den hurtigste, mest effektive helkropstræning."
+          "paragraph": "er vores originale barreklasse. Vores proprietære teknik er den hurtigste, mest effektive helkropstræning.",
+          "imageurl": "/pb-classic.svg",
+          "imagealt": "En kvinde, der laver klassisk barre-træning for hele kroppen."
         }
       ]
     },

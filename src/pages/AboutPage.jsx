@@ -36,7 +36,9 @@ export const AboutPage = () => {
 
   return (
     <>
-      <Header contentType="image" />
+      <div className="hero-section">
+        <Header contentType="image" />
+      </div>
       <AboutPageContainer>
         <div className="hero-section">
           <h1>{t("aboutPage.mainSection.primaryHeading")}</h1>

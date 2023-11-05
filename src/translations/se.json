@@ -43,19 +43,27 @@
       "cards": [
         {
           "heading": "Prima Barre Align",
-          "paragraph": "kombinerar vår klassiska styrkebyggande barre-teknik med en unik betoning på flexibilitet och balansträning för att leverera en återställande helkroppsträning."
+          "paragraph": "kombinerar vår klassiska styrkebyggande barre-teknik med en unik betoning på flexibilitet och balansträning för att leverera en återställande helkroppsträning.",
+          "imageurl": "/pb-align.svg",
+          "imagealt": "En kvinna gör en restorativ helkroppsövning"
         },
         {
           "heading": "Prima Barre Define",
-          "paragraph": "fuserar koncept från vår klassiska barre-teknik med viktbaserad styrketräning för att utveckla muskulär styrka och kraft."
+          "paragraph": "fuserar koncept från vår klassiska barre-teknik med viktbaserad styrketräning för att utveckla muskulär styrka och kraft.",
+          "imageurl": "/pb-define.svg",
+          "imagealt": "En kvinna som tränar med barbells"
         },
         {
           "heading": "Prima Barre Power",
-          "paragraph": "är vår fusionsklass av Classic Prima Barre och högintensiv intervallträning designad för att öka din puls, bygga styrka och öka din ämnesomsättning."
+          "paragraph": "är vår fusionsklass av Classic Prima Barre och högintensiv intervallträning designad för att öka din puls, bygga styrka och öka din ämnesomsättning.",
+          "imageurl": "/pb-power.svg",
+          "imagealt": "En kvinna utför ett träningspass för att bygga upp styrka och öka ämnesomsättningen"
         },
         {
           "heading": "Prima Barre Classic",
-          "paragraph": "är vår ursprungliga barre-klass. Vår egenutvecklade teknik är den snabbaste och mest effektiva helkroppsträningen."
+          "paragraph": "är vår ursprungliga barre-klass. Vår egenutvecklade teknik är den snabbaste och mest effektiva helkroppsträningen.",
+          "imageurl": "/pb-classic.svg",
+          "imagealt": "En kvinna som gör en klassisk barre-klass, en helkroppsträning."
         }
       ]
     },

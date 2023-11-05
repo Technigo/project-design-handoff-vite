@@ -43,19 +43,27 @@
       "cards": [
         {
           "heading": "Prima Barre Align",
-          "paragraph": "kombinerer vår klassiske styrkeoppbyggende barre-teknikk med unikt fokus på fleksibilitet og balansetrening for å levere en restorativ helkroppstreningsøkt."
+          "paragraph": "kombinerer vår klassiske styrkeoppbyggende barre-teknikk med unikt fokus på fleksibilitet og balansetrening for å levere en restorativ helkroppstreningsøkt.",
+          "imageurl": "/pb-align.svg",
+          "imagealt": "En kvinne som utförer en restituerende helkroppstrening."
         },
         {
           "heading": "Prima Barre Define",
-          "paragraph": "fuserer konsepter fra vår klassiske barre-teknikk med vektbasert styrketrening for å utvikle muskelstyrke og kraft."
+          "paragraph": "fuserer konsepter fra vår klassiske barre-teknikk med vektbasert styrketrening for å utvikle muskelstyrke og kraft.",
+          "imageurl": "/pb-define.svg",
+          "imagealt": "En kvinne som trener med barbells."
         },
         {
           "heading": "Prima Barre Power",
-          "paragraph": "er vår fusjonstrening av Classic Prime Barre og høyintensitets intervalltrening designet for å øke pulsen, bygge styrke, og øke stoffskiftet."
+          "paragraph": "er vår fusjonstrening av Classic Prime Barre og høyintensitets intervalltrening designet for å øke pulsen, bygge styrke, og øke stoffskiftet.",
+          "imageurl": "/pb-power.svg",
+          "imagealt": "En kvinne som trener for å bygge styrke og øke forbrenningen."
         },
         {
           "heading": "Prima Barre Classic",
-          "paragraph": "er vår opprinnelige barre klasse. Vår proprietære teknikk er den raskeste, mest effektive treningsøkten for hele kroppen."
+          "paragraph": "er vår opprinnelige barre klasse. Vår proprietære teknikk er den raskeste, mest effektive treningsøkten for hele kroppen.",
+          "imageurl": "/pb-classic.svg",
+          "imagealt": "En kvinne som tar en klassisk barretime, en treningsøkt for hele kroppen."
         }
       ]
     },
