@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const MenuContainer = styled.nav`
   ul {
@@ -67,46 +68,39 @@ export const Menu = () => {
         <nav>
           <ul>
             <li>
-              <a href="#">
-                <span>{t("homePage.heroSection.menu.home")}</span>{" "}
-                <img src="/gt.svg"></img>
-              </a>
+              <Link to={"/"}>
+                <span>{t("homePage.heroSection.menu.home")}</span>
+              </Link>
             </li>
             <li>
-              <a href="#">
-                <span>{t("homePage.heroSection.menu.book")} </span>
-                <img src="/gt.svg"></img>
-              </a>
+              <Link to={"#"}>
+                <span>{t("homePage.heroSection.menu.book")}</span>
+              </Link>
             </li>
             <li>
-              <a href="#">
-                <span>{t("homePage.heroSection.menu.classes")}</span>{" "}
-                <img src="/gt.svg"></img>
-              </a>
+              <Link to={"#"}>
+                <span>{t("homePage.heroSection.menu.classes")}</span>
+              </Link>
             </li>
             <li>
-              <a href="#">
-                <span>{t("homePage.heroSection.menu.instructors")}</span>{" "}
-                <img src="/gt.svg"></img>
-              </a>
+              <Link to={"#"}>
+                <span>{t("homePage.heroSection.menu.instructors")}</span>
+              </Link>
             </li>
             <li>
-              <a href="#">
-                <span>{t("homePage.heroSection.menu.about")}</span>{" "}
-                <img src="/gt.svg"></img>
-              </a>
+              <Link to={"/about"}>
+                <span>{t("homePage.heroSection.menu.about")}</span>
+              </Link>
             </li>
             <li>
-              <a href="#">
-                <span>{t("homePage.heroSection.menu.contact")}</span>{" "}
-                <img src="/gt.svg"></img>
-              </a>
+              <Link to={"#"}>
+                <span>{t("homePage.heroSection.menu.contact")}</span>
+              </Link>
             </li>
             <li>
-              <a href="#">
-                <span>{t("homePage.heroSection.menu.faq")}</span>{" "}
-                <img src="/gt.svg"></img>
-              </a>
+              <Link to={"#"}>
+                <span>{t("homePage.heroSection.menu.faq")}</span>
+              </Link>
             </li>
           </ul>
 

@@ -1,6 +1,7 @@
 import { Footer } from "../components/Footer/Footer";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import { Menu } from "../components/Header/Menu";
 
 const AboutPageContainer = styled.div`
   .hero-section {
@@ -34,23 +35,29 @@ export const AboutPage = () => {
   const { t } = useTranslation(); // Use useTranslation to get the 't' function from i18next
 
   return (
-    <AboutPageContainer>
-      <div className="hero-section">
-        <h1>
-          {t("aboutPage.mainSection.primaryHeading")}
-          {/* About <span>Prima Barre:</span> Who We Are and What We Do */}
-        </h1>
-        <p>{t("aboutPage.mainSection.primaryParagraph")}</p>
-        <p>{t("aboutPage.mainSection.secondaryParagraph")}</p>
-        <div className="award-section">
-          <img src="/award1.svg" alt="Best fitness awards, Good Housekeeping" />
-          <img src="/award2.svg" alt="Award for Best in fitness, Shape 2023" />
-          <img src="/award3.svg" alt="Women's Health fitness awards 2023" />
+    <>
+      <AboutPageContainer>
+        <Menu />
+        <div className="hero-section">
+          <h1>{t("aboutPage.mainSection.primaryHeading")}</h1>
+          <p>{t("aboutPage.mainSection.primaryParagraph")}</p>
+          <p>{t("aboutPage.mainSection.secondaryParagraph")}</p>
+          <div className="award-section">
+            <img
+              src="/award1.svg"
+              alt="Best fitness awards, Good Housekeeping"
+            />
+            <img
+              src="/award2.svg"
+              alt="Award for Best in fitness, Shape 2023"
+            />
+            <img src="/award3.svg" alt="Women's Health fitness awards 2023" />
+          </div>
+          <p>{t("aboutPage.mainSection.tertiaryParagraph")}</p>
         </div>
-        <p>{t("aboutPage.mainSection.tertiaryParagraph")}</p>
-      </div>
 
-      <Footer />
-    </AboutPageContainer>
+        <Footer />
+      </AboutPageContainer>
+    </>
   );
 };
