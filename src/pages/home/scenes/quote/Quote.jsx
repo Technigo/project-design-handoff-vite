@@ -1,5 +1,10 @@
-import "./Quote.css";
+import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import "./Quote.css";
+
+const DisplayFlex = styled.div`
+  display: flex;
+`;
 
 export const Quote = () => {
   const { t } = useTranslation();
@@ -15,16 +20,14 @@ export const Quote = () => {
           {t("homePage.quote.text.three")}
         </p>
       </div>
-      <div className="image-wrapper">
-        <div className="flex-image">
-          <div className="square-image-container">
-            <img src="./shakti.png" alt="" />
-          </div>
-          <div className="square-image-container">
-            <img src="./eyehands.png" alt="" />
-          </div>
+      <DisplayFlex>
+        <div className="square-container">
+          <img src="./shakti.png" alt={t("imageAlts.shakti")} />
         </div>
-      </div>
+        <div className="square-container">
+          <img src="./eyehands.png" alt={t("imageAlts.eyehands")} />
+        </div>
+      </DisplayFlex>
     </section>
   );
 };

@@ -20,3 +20,12 @@ footer {
   gap: 1.5rem;
   text-decoration-line: underline;
 }
+
+
+/*----- For medium devices -----*/
+@media (min-width: 744px) {
+ footer {
+  padding: 6rem 1rem;
+ }
+  
+}

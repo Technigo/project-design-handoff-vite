@@ -8,14 +8,14 @@
   background-color: var(--marine);
 }
 
-#section1 .image-wrapper img {
+.petra2-img {
   height: 20rem;
   width: 100%;
   object-fit: cover;
   object-position: 0 -5rem;
 }
 
-.what-if-title {
+.section1-title {
   margin-bottom: 2rem;
 }
 
@@ -33,6 +33,4 @@
   #section1 .page-wrapper {
     padding: 2rem 2rem 0;
   }
-
-
 }

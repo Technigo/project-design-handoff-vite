@@ -7,14 +7,14 @@ export const Section3 = () => {
   return (
     <section id="section3">
       <div className="page-wrapper">
-        <div className="text-info">
+        <div className="section3-info">
           <p>{t("aboutPage.section3.text.p1")}</p>
           <br />
           <p>{t("aboutPage.section3.text.p2")}</p>
           <br />
           <p>{t("aboutPage.section3.text.p3")}</p>
         </div>
-        <img src="./onlythebrave.png" alt="" />
+        <img src="./onlythebrave.png" alt={t("imageAlts.onlythebrave")} />
       </div>
     </section>
   );

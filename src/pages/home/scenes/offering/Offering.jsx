@@ -13,12 +13,12 @@ export const Offering = () => {
           className="offering-title"
           title={t("homePage.offering.title")}
         />
-        <div className="offer-info">
+        <div className="offering-info">
           <p>{t("homePage.offering.text.p1")}</p>
           <br />
           <p>
             {t("homePage.offering.text.p2.one")}{" "}
-            <span className="changing-words">
+            <span className="metal-mania-font">
               {t("homePage.offering.text.p2.span")}
             </span>
           </p>

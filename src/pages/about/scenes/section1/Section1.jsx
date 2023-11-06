@@ -8,11 +8,15 @@ export const Section1 = () => {
   return (
     <section id="section1">
       <div className="image-wrapper">
-        <img src="./petra2.png" alt="" />
+        <img
+          className="petra2-img"
+          src="./petra2.png"
+          alt={t("imageAlts.petra2")}
+        />
       </div>
       <div className="page-wrapper">
         <SectionTitle
-          className="what-if-title"
+          className="section1-title"
           title={t("aboutPage.section1.title")}
         />
         <div className="section1-info">

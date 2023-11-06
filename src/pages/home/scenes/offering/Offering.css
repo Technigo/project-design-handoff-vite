@@ -7,16 +7,13 @@
   margin-bottom: 2.5rem;
 }
 
-.offer-info {
+.offering-info {
   margin-bottom: 3rem;
-}
-
-#offering p {
   line-height: 162.5%;
   color: #d9d9d9;
 }
 
-.changing-words {
+.metal-mania-font {
   color: #fff;
   font-family: var(--metal-mania);
   font-size: 1.5rem;

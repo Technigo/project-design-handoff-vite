@@ -1,7 +1,7 @@
 import { SectionTitle } from "../../../../components/reusable/SectionTitle";
-import "./Testimonials.css";
 import { useTranslation } from "react-i18next";
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
+import "./Testimonials.css";
 
 export const Testimonials = () => {
   const { t } = useTranslation();
