@@ -7,14 +7,14 @@ import { AboutUs } from './components/AboutUs/AboutUs.jsx'
 export const App = () => {
   return (
     <>
-    <BrowserRouter>  
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/aboutus" element={<AboutUs />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+        </Routes>
+      </BrowserRouter>
     </>
-    )
-  }
+  )
+}
 
 export default App

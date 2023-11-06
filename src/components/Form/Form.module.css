@@ -2,14 +2,28 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    padding: 1.5em;
+    padding: 4em 2em 4em 2em;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    max-width: 70%;
+    align-self: center;
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    max-width: 100%;
 }
 
 .formInput {
@@ -40,4 +54,21 @@ textarea {
 }
 
 @media screen and (max-width: 667px) {
+    .mainContainer {
+        padding: 2em 1em 2em 1em;
+    }
+
+    .contentWrapper {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+    .mainContainer {
+        padding: 4em 2em 4em 2em;
+    }
+
+    .contentWrapper {
+        max-width: 90%;
+    }
 }

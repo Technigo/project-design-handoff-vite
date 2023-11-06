@@ -4,7 +4,7 @@
     color: #4A205A;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 667px) {
     .p2 {
         font-size: 17px;
     }

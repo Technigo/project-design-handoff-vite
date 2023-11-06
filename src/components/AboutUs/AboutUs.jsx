@@ -7,14 +7,14 @@ import styles from './AboutUs.module.css'
 export const AboutUs = () => {
     return (
         <>
-        <div className={styles.aboutUs}>
-            <div className={styles.mainContainer}>
-                <AboutUsHome />
-                <Form />
-                <FAQ />
-                {/* <Footer /> */}
+            <div className={styles.aboutUs}>
+                <div className={styles.mainContainer}>
+                    <AboutUsHome />
+                    <Form />
+                    <FAQ />
+                    <Footer />
+                </div>
             </div>
-        </div>
         </>
     )
 }

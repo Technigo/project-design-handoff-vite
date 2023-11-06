@@ -20,4 +20,12 @@ button:hover {
     color: #8600A5;
     border: 3px solid #8600A5;
     font-weight: 700;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+    .borderButton {
+        font-size: 16px;
+        height: 60px;
+    }
 }

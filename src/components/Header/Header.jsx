@@ -11,8 +11,8 @@ import menuButton from '../../assets/menuButton.svg'
 import chalkyLogo from '../../assets/chalkyLogo.svg'
 
 export const Header = () => {
-    
-const [openMenu, setOpenMenu] = useState(false);
+
+    const [openMenu, setOpenMenu] = useState(false);
 
     return (
         <>
@@ -43,7 +43,7 @@ const [openMenu, setOpenMenu] = useState(false);
                         text="Whether you're a curious first-timer or a seasoned climber seeking new challenges, our dedicated team of experts is here to guide you every grip of the way." />
                     <div className={styles.buttonContainer}>
                         <FilledButton buttonText="TRY FOR FREE" />
-                        <BorderButton buttonText="ABOUT US" />
+                        <Link to={`/aboutus`} className={styles.link}><BorderButton buttonText="ABOUT US" /></Link>
                     </div>
                 </div>
             </div>

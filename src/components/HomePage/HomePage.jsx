@@ -3,7 +3,6 @@ import { Header } from '../Header/Header.jsx'
 import { BeginnerCTA } from '../CTAs/BeginnerCTA.jsx'
 import { SafetyCTA } from '../CTAs/SafetyCTA.jsx'
 import { Questions } from '../Questions/Questions.jsx'
-import { Benefits } from '../Benefits/Benefits.jsx'
 import { Footer } from '../Footer/Footer.jsx'
 
 export const HomePage = () => {
@@ -17,7 +16,6 @@ export const HomePage = () => {
                         <SafetyCTA />
                     </div>
                     <Questions />
-                    <Benefits />
                     <Footer />
                 </div>
             </div>

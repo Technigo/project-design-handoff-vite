@@ -1,9 +1,63 @@
+.mainContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .textContainer {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-bottom: 4em;
+}
+
+.componentWrapper {
+    grid-column: 2 /3;
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
 }
 
 img {
     max-width: 100%;
+    padding: 1em;
+}
+
+.benefits {
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    list-style-image: url('src/assets/benefitsTick.svg');
+    color: #4A205A;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1024px) {
+    .benefits {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .componentWrapper {
+        display: flex;
+        flex-direction: column;
+    }
 }
