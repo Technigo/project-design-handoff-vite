@@ -24,7 +24,7 @@ export const Header = () => {
 
             <div className="flex justify-center pt-2 flex-wrap sm:flex-nowrap items-center sm:justify-center md:justify-end">
                 <img className="h-16 pr-3 lg:pr-7 lg:h-24" src={Gym} alt="" />
-                <img className="h-16 lg:pr-9 lg:h-24" src={SpaWellness} alt="" />
+                <img className="h-16 pr-3 lg:pr-9 lg:h-24" src={SpaWellness} alt="" />
                 <img className="h-16 pr-3 lg:pr-7 lg:h-24" src={CoWorking} alt="" />
                 <img className="h-16 pr-3 lg:pr-7 lg:h-24" src={AfterHours} alt="" />
 

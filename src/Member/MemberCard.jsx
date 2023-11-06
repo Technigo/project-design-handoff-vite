@@ -29,8 +29,10 @@ export const MemberCard = ({ cardData }) => {
     };
 
     return (
+        //These pictures are placeholders
         <div className="text-center">
             <div className="flex flex-col items-center justify-center">
+
                 <img
                     className="h-96 rounded-2xl"
                     src={icons[currentIconIndex]}
