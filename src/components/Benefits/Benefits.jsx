@@ -1,10 +1,12 @@
 import styles from './Benefits.module.css'
+import { H1 } from '../../reusableComponents/H1/H1.jsx'
+import { BorderButton } from '../../reusableComponents/BorderButton/BorderButton.jsx'
 
 export const Benefits = () => {
     return (
         <>
         <div className={styles.mainContainer}>
-            <h1>Benefits of climbing</h1>
+            <H1 heading="Benefits of climbing" />
             <div className={styles.benefitsList}>
                 <ul>
                     <li> Improves overall body stregth</li>
@@ -13,7 +15,7 @@ export const Benefits = () => {
                     <li> Mindfulness and stress relief</li>
                 </ul>
             </div>
-            <button className={styles.ourPrograms}>OUR PROGRAMS</button>
+            <BorderButton buttonText="OUR PROGRAMS" />
             </div>
         </>
     )

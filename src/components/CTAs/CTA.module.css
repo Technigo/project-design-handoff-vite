@@ -11,18 +11,8 @@
     gap: 20px;
     align-items: center;
     max-width: 80%;
-    color: white;
     text-align: center;
     padding: 40px 0px 40px 0px;
-}
-
-h2 {
-    font-size: 36px;
-}
-
-p {
-    font-size: 24px;
-    color: white;
 }
 
 img:hover {
@@ -35,10 +25,6 @@ img:hover {
         max-width: 100%;
     }
 
-    p {
-        font-size: 20px;
-    }
-
     .contentWrapper {
         max-width: 70%;
     }
@@ -47,6 +33,7 @@ img:hover {
 @media screen and (min-width: 668px) and (max-width: 1024px) {
     .mainContainer {
         max-width: 100%;
+        margin: 0em 1.5em 0em 1.5em;
     }
 
     .contentWrapper {

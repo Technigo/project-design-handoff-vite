@@ -12,6 +12,7 @@ code {
     monospace;
 }
 
-h1, h2, p {
+body, html {
   margin: 0;
+  padding: 0;
 }

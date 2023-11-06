@@ -1,35 +1,47 @@
 import styles from './Footer.module.css'
+import chalkyLogoWhite from '../../assets/chalkyLogoWhite.svg'
+import instagramIcon from '../../assets/instagramIcon.svg'
+import facebookIcon from '../../assets/facebookIcon.svg'
+import { P2 } from '../../reusableComponents/P2/P2.jsx'
+
+const bodyText = {
+    color: 'white',
+    fontSize: '17px'
+}
+
+const boldText = {
+    color: 'white',
+    fontWeight: '600'
+}
+
+const color = {
+    color: 'white'
+}
 
 export const Footer = () => {
     return (
         <>
             <div className={styles.mainContainer}>
                 <div className={styles.contentWrapper}>
-                    <div className={styles.row1}>
-                        <img src="src/assets/chalkyLogoWhite.svg" alt="Chalky logo" />
-                        <p>Language</p>
+                    <img src={chalkyLogoWhite} alt="Chalky logo" />
+                    <P2 text="Languages" style={color} />
+                    <div>
+                    <P2 text="Bäckvägen" style={bodyText} />
+                    <P2 text="(T-Bana) Örnsberg" style={bodyText} />
                     </div>
-                    <div className={styles.row2}>
-                        <div>
-                            <p>Bäckvägen 34</p>
-                            <p>(T-bana) Örnsberg</p>
-                        </div>
-                        <div>
-                            <p>Opening hours</p>
-                            <p>Mon-Fri 7:30-22:00</p>
-                            <p>Sat-Sun 10:00-20:00</p>
-                        </div>
+                    <div>
+                    <P2 text="Opening hours" style={boldText} />
+                    <P2 text="Mon-Fri 7:30-22:00" style={bodyText} />
+                    <P2 text="Sat-Sun 10:00-20:00" style={bodyText} />
                     </div>
-                    <div className={styles.row3}>
-                        <div>
-                            <p>Contact us</p>
-                            <p>hello@chalky.com</p>
-                            <p>(+46) 70-99 29 29</p>
-                        </div>
-                        <div className={styles.icons}>
-                            <img src="src/assets/facebookIcon.svg" alt="Facebook" />
-                            <img src="src/assets/instagramIcon.svg" alt="Instagram" />
-                        </div>
+                    <div>
+                    <P2 text="Contact us" style={boldText} />
+                    <P2 text="hello@chalky.com" style={bodyText} />
+                    <P2 text="(+46) 70-99 29 29" style={bodyText} />
+                    </div>
+                    <div className={styles.icons}>
+                        <img src={facebookIcon} alt="Facebook" />
+                        <img src={instagramIcon} alt="Instagram" />
                     </div>
                 </div>
             </div>

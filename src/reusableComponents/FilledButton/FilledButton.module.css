@@ -1,0 +1,22 @@
+.filledButton {
+    display: flex;
+    width: fit-content;
+    height: 76px;
+    padding: 4px 34px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: none;
+    color: #4A205A;
+    background-color: #83EDD5;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: white;
+    color: #8600A5;
+    border: 3px solid #8600A5;
+    font-weight: 700;
+}

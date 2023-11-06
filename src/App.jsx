@@ -1,28 +1,20 @@
-import styles from './App.module.css'
-import { Header } from './components/Header/Header.jsx'
-import { BeginnerCTA } from './components/CTAs/BeginnerCTA.jsx'
-import { SafetyCTA } from './components/CTAs/SafetyCTA.jsx'
-import { Questions } from './components/Questions/Questions.jsx'
-import { Benefits } from './components/Benefits/Benefits.jsx'
-import { Footer } from './components/Footer/Footer.jsx'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HomePage } from './components/HomePage/HomePage.jsx'
+import { AboutUs } from './components/AboutUs/AboutUs.jsx'
+
 
 export const App = () => {
   return (
     <>
-      <div className={styles.siteContainer}>
-        <div className={styles.contentWrapper}>
-          <Header />
-          <div className={styles.wrapCTA}>
-            <BeginnerCTA />
-            <SafetyCTA />
-          </div>
-          <Questions />
-          <Benefits />
-          <Footer />
-        </div>
-      </div>
+    <BrowserRouter>  
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+      </Routes>
+    </BrowserRouter>
     </>
-  );
-};
+    )
+  }
 
 export default App

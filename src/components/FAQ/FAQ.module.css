@@ -1,0 +1,11 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+@media screen and (max-width: 667px) {
+    .mainContainer {
+        margin: 1em;
+    }
+}

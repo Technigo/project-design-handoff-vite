@@ -1,0 +1,12 @@
+.p1 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    color: #4A205A;
+}
+
+@media screen and (max-width: 1024px) {
+    .p1 {
+        font-size: 19px;
+    }
+}
