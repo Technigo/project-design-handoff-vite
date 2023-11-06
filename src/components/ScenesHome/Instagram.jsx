@@ -15,9 +15,11 @@ export const Instagram = () => {
             <h2>{t("home.instagram.heading")}</h2>
             <h3>{t("home.instagram.subHeading")}</h3>
             <InstagramCarousel />
+            <div className="insta-btn-container">
             <Button>
                 <AiFillInstagram className="insta-icon" alt="instagram"/> Connect on instagram
             </Button>
+            </div>
             </div>
         </section>
     );

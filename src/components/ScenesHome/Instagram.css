@@ -6,19 +6,38 @@
 .instagram-content-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.25rem;
     padding: 3rem 0 2.5rem;
     text-align: center;
 }
 
-.instagram-content-wrapper h2, .instagram-content-wrapper h3{
+.instagram-content-wrapper h2,
+.instagram-content-wrapper h3 {
     color: white;
 }
 
+.insta-btn-container {
+    width: 17rem;
+}
+
+.insta-icon {
+    fill: var(--black);
+    border: solid 1.5px var(--black);
+    border-radius: 50%;
+    padding: 0.3rem;
+    margin: -0.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+/*SCROLL CAROUSEL*/
 .insta-carousel {
+    scroll-snap-type: x mandatory;
     position: relative;
     display: flex;
-    justify-content: center;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
     gap: 1rem;
 }
 
@@ -29,12 +48,9 @@
     border-radius: 0.2rem;
 }
 
-.insta-icon {
-    fill: var(--black);
-    border: solid 1.5px; 
-    border-radius: 50%;
-    padding: 0.3rem;
-    margin: -0.5rem;
-    height: 2.5rem; 
-    width: 2.5rem;
+@media (min-width: 700px) {
+    .insta-image {
+        width: 16rem;
+        height: 16rem;
+    }
 }

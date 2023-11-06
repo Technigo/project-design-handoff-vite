@@ -1,13 +1,12 @@
 .welcome-section {
     position: relative;
     background-color: var(--purplebright);
-    padding: 3rem 0 2.5rem;
 }
 
 .welcome-content-wrapper {
     display: flex;
     flex-direction: column;
-    padding: 1.5rem;
+    padding: 2rem 1.25rem 2.5rem;
     gap: 1.5rem;
 }
 
@@ -15,3 +14,31 @@
     color: var(--white);
 }
 
+.welcome-section img {
+    width: 100%
+}
+
+.contact-btn-container {
+    width: 11rem; 
+    align-self: center;
+}
+
+@media (min-width: 700px) {
+    .welcome-content-wrapper{
+        padding: 2rem 4.5rem 2.5rem;
+    }
+    .contact-btn-container {
+        align-self: flex-start;
+    }   
+}
+
+@media (min-width: 1020px) {
+    .welcome-section {
+        background-color: transparent;
+    }
+    
+    .welcome-content-wrapper {
+        position: absolute;
+        top: 50%; 
+    }
+}

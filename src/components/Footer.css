@@ -1,6 +1,3 @@
-footer {
-}
-
 .footer-wrapper {
     display: flex;
     flex-direction: column;
@@ -85,4 +82,16 @@ footer {
 .copyright p {
     color: var(--white);
     padding: 1.5rem;
+}
+
+@media (min-width: 700px) {
+    .footer-wrapper {
+        padding: 3rem 4rem 2.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer-wrapper {
+        padding: 3rem 6rem 2.5rem;
+    }
 }

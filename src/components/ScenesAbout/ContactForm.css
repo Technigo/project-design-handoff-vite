@@ -61,9 +61,23 @@ form input[type="email"]:focus {
 form input[type="checkbox"]:checked {
     background-color: var(--purplebright);
     border-color: var(--purplebright);
-  }
+}
   
-  /* Style the focused state (when the label is clicked) */
-  .checkbox-container:hover {
+/* Styling of focused state (when the label is clicked) */
+.checkbox-container:hover {
     cursor: pointer;
-  }
+}
+
+@media (min-width: 700px) {
+    .contact-section {
+        padding: 3rem 4rem 2.5rem;
+    }
+}
+
+@media (min-width: 1020px) {
+    .contact-section {
+        padding: 3rem 6rem 2.5rem;
+    }
+}
+
+

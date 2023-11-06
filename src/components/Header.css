@@ -1,16 +1,26 @@
+/*NOTE! 
+The header does not really look like the design. 
+This is due to a desicion me and the designer made
+about changing the typeface to a free one, so I could get
+it from google fonts. This did not oly effect the typeface, 
+but also the size of the hamburger-menu, we decided it would look
+nicer if the height of the menu would match the x-height of the new font.
+*/
+
+
+/*using the designers graphic element as a background to header*/
 header {
     background-image: url(../../../public/assets/navElement.svg);
     z-index: 1000;
-    background-color: var(--purplebright);
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     width: 100%;
-    height: 8rem; 
+    height: 8rem;
+    padding: 1.5rem 1.5rem 1rem;
 }
 
 .header-content-wrapper {
-    padding: 1.5rem 1.5rem 0.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -42,18 +52,18 @@ header {
     height: 1.7rem;
     width: 1.7rem;
 }
-.search-icon {
-    height: 1.5rem;
-    width: 1.5rem;
-}
 
 .search-container {
     display: flex;
     align-items: center;
     background-color: var(--black);
     border: none;
-    border-radius: 0.3rem;
-    
+    border-radius: 0.3rem; 
+}
+
+.search-icon {
+    height: 1.5rem;
+    width: 1.5rem;
 }
 
 .search-bar {
@@ -70,7 +80,22 @@ header {
     padding-left: 0.2rem;
 }
 
+/*-----------MEDIA-----------*/
+
+@media (min-width: 460px) {
+    header {
+        background-image: none;
+        background-color: var(--black);
+        border-radius: 0 0 0 40% ;
+    }
+}
+
 @media (min-width: 800px) {
+    header {
+        padding: 2rem; 
+        height: 8rem;
+    }
+
     .search-container {
         border: var(--yellow) solid 1px;
     }
@@ -82,6 +107,11 @@ header {
 }
 
 @media (min-width: 1020px) {
+    header {
+        height: 10rem;
+        padding: 1.5rem 1rem 2rem;
+    }
+
     .header-content-wrapper {
         padding-bottom: 2rem;
         align-items: flex-start;

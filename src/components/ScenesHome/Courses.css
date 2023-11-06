@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     gap: 1.25rem;
     padding: 3rem 1.25rem 2.5rem;
 }
-
 
 .course-card {
     display: flex;
@@ -17,6 +17,11 @@
     text-align: left;
 }
 
+.btn-container {
+    width: 14rem;
+    align-self: center;
+}
+
 /*-------CAROUSEL-------*/
 
 .carousel {
@@ -25,6 +30,7 @@
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .course-image {
@@ -38,6 +44,7 @@
     display: none;
 }
 
+/*ARROWS*/
 .arrow {
     position: absolute;
     top: 6rem;
@@ -58,6 +65,7 @@
     right: 1rem;
 }
 
+/*DOT INDICATORS*/
 .indicators {
     display: flex;
     position: absolute;
@@ -77,4 +85,25 @@
 
 .indicator-inactive {
     background-color: var(--yellowtransparent);
+}
+
+@media (min-width: 700px) {
+    .courses-section {
+        padding: 3rem 4rem 2.5rem;
+    }
+    .carousel {
+        gap: 1.25rem;
+    }
+    .course-card {
+        width: calc(50% - 1.25rem);
+    }
+    .indicators {
+        display: none;
+    }
+}
+
+@media (min-width: 1080px) {
+    .course-card {
+        width: calc(33.33% - 1.25rem); /* Three cards per row with some spacing */
+    }
 }

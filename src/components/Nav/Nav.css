@@ -6,74 +6,65 @@ nav {
 
 a {
     color: var(--yellow);
-    text-align: left;
 }
 
 .menu-icon {
     fill: var(--yellow);
 }
 
-/*HERE IS WHERE A GRAPHIC ELEMENT CAN BE USED FOR MENU*/
-ul.nav-links.active {
-    background-color: var(--purplebright);
-    padding: 3rem 0 4rem;
-    border-radius: 0 0 0 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+/*hide hamburger-menu-icon if clicked/menu is open*/
 .menu-icon.open {
     display: none;
 }
 
-.nav-links {
-    list-style: none;
-    display: none;
-}
-
-.line {
-    width: 4rem;
-    height: 2px; 
-}
-
-.nav-links li {
-    margin-right: 1rem;
-   
-}
-
+/*-----------HAMBURGER MENU-----------*/
+/*HERE IS WHERE A GRAPHIC ELEMENT CAN BE USED FOR MENU*/
 .nav-links.active {
+    background-color: var(--purplebright);
+    padding: 3rem 0 4rem;
+    border-radius: 0 0 0 50%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.5rem;
     position: absolute;
     top: 0;
     right: 0;
-    width: 80%
+    width: 80%;
 }
 
 .nav-links.active li {
-    text-align: center;
+    text-align: left;
     color: var(--yellow);
 }
 
+.line {
+    width: 4rem;
+    height: 2px;
+}
+
+/*-----------REGULAR NAV!-----------*/
+
+.nav-links {
+    list-style: none;
+    display: none;
+    align-items: center;
+    gap: 1rem; 
+}
 
 
 @media (min-width: 1020px) {
+
     .nav-links {
         display: flex;
-        align-items: center; 
     }
 
     .line {
         transform: rotate(90deg);
         width: 1rem;
-        padding: 1rem; 
     }
 
     .menu-icon {
         display: none;
     }
-} 
-
-
+}

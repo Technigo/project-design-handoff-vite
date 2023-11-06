@@ -7,12 +7,14 @@
             "about": "ABOUT",
             "contact": "CONTACT",
             "logIn": "LOG IN",
-            "line": "./assets/menuLine.svg",
-            "lineAlt": "line-devider." 
+            "line": "assets/menuLine.svg",
+            "lineAlt": "line-divider." 
 
         },
         "search": {
-            "placeholder": "Find yoga class"
+            "placeholder": "Find yoga class",
+            "searchIcon": "assets/searchIcon.svg",
+            "searchIconAlt": "Search-icon."
         }
     },
     "footer": {

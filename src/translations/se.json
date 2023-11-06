@@ -7,11 +7,13 @@
             "about": "OM OSS",
             "contact": "KONTAKT",
             "logIn": "LOGGA IN",
-            "line": "./assets/menuLine.svg",
-            "lineAlt": "line-devider."
+            "line": "assets/menuLine.svg",
+            "lineAlt": "Uppdelande linje"
         },
         "search": {
-            "placeholder": "Hitta yogakurs"
+            "placeholder": "Hitta yogakurs",
+            "searchIcon": "assets/searchIcon.svg",
+            "searchIconAlt": "Sök-ikon."
         }
     },
     "footer": {

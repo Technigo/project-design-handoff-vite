@@ -21,11 +21,13 @@ export const Hero = () => {
                     src={t("home.hero.heroImage")}
                     alt={t("home.hero.heroImageAlt")}
                 />
+                <div className="hero-text-and-buttons-wrapper">
                 <h1>{t("home.hero.heading")}</h1>
                 <h3>{t("home.hero.subHeading")}</h3>
                 <div className="hero-btn-container">
                 <Button>{t("home.hero.buttons.class")}</Button>
                 <Button secondary onClick={scrollToMembershipSection}>{t("home.hero.buttons.member")}</Button>
+                </div>
                 </div>
             </div>
         </section>

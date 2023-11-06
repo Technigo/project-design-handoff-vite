@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "../Button/Button";
 import "./Courses.css";
@@ -16,17 +16,34 @@ export const CourseCarousel = () => {
     // using id to identify them, inital state 0.
     const [slide, setSlide] = useState(0);
 
+
     //declaring function to handle click of right arrow
     const nextSlide = () => {
         //IS THIS REALLY WHAT IM DOING?!?!?!?
         //if the course-card id is the lenght of the courses array,
         //right arrow click returns the course-card with id 0, otherwise increasing id with 1.
         setSlide(slide === coursesArray.length - 1 ? 0 : slide + 1);
+        
     };
 
     const prevSlide = () => {
         setSlide(slide === 0 ? courses.length - 1 : slide - 1);
+        
     };
+    
+    //Function to get the right amount of cards for each media query.
+    const getVisibleCards = () => {
+        if (window.innerWidth >= 1080) {
+            return 3;
+        } else if (window.innerWidth >= 700) {
+            return 2; 
+        }
+        return 1; 
+    };
+
+    const visibleCards = getVisibleCards();
+
+    const visibleCourses = coursesArray.slice(slide, slide + visibleCards);
 
     return (
         <>
@@ -37,15 +54,16 @@ export const CourseCarousel = () => {
                     className="arrow arrow-left"
                     onClick={prevSlide}
                 />
-                {coursesArray.map((course, id) => {
+                {visibleCourses.map((course, id) => {
                     return (
                         <div
                             key={course.id}
-                            className={
-                                slide === id
-                                    ? "course-card"
-                                    : "course-card slide-hidden"
-                            }
+                            className="course-card"
+                            // className={
+                            //     slide === id
+                            //         ? "course-card"
+                            //         : "course-card slide-hidden"
+                            // }
                         >
                             <img
                                 className="course-image"
@@ -55,7 +73,9 @@ export const CourseCarousel = () => {
                             <p>{course.text}</p>
                             <p className="p-bold">{course.shortDescription}</p>
                             <p className="p-bold">{course.startDatePrice}</p>
+                            <div className="btn-container">
                             <Button>Book your spot</Button>
+                            </div>
                         </div>
                     );
                 })}

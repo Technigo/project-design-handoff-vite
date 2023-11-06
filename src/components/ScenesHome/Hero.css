@@ -1,15 +1,28 @@
 .hero-section {
     position: relative;
-    background-color: var(--purplebright);
-    padding:  7rem 1.5rem;
-    
+    background-color: var(--purplebright);   
 }
+
+/*standard top padding: 3.75rem */
 
 .hero-content-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 1.25rem;
-    padding: 2rem 0 2.5rem; 
+    padding:  9rem 1.25rem 2.5rem;
+}
+
+.oval-image {
+    border-radius: 50%;
+    height: 10%;
+    max-width: 100%;
+}
+
+.hero-text-and-buttons-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
 .hero-content-wrapper h3 {
@@ -22,3 +35,54 @@
     gap: 1.25rem; 
 }
 
+/*NOTE! the design i got have the smallest width on about 420px, 
+which didn't work with the design/layout of the buttons, so we decided to add a media query for smaller screens.*/
+@media (min-width: 420px) {
+    .hero-btn-container {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 699px) {
+    .oval-image {
+        max-width: 400px;
+    }
+}
+
+/*NOTE! I changes the media query for tablet from 837px to 700 to work on more screens.*/
+@media (min-width: 700px) {
+    .hero-section{
+        overflow: hidden;
+    }
+    .hero-content-wrapper {
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-left: 4rem;
+    }
+
+    .oval-image {
+        margin-right: -40vw;
+        width: 30rem; 
+    }
+}
+
+/*NOTE! had to add more media queries between sizes to make it look ok*/
+
+@media (min-width: 900px) {
+    .oval-image {
+        margin-right: -20vh;
+    }
+}
+
+@media (min-width: 1020px) {
+    .hero-content-wrapper {
+        padding-top: 13rem;
+        padding-left: 6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .oval-image {
+        width: 41rem; 
+    }
+}

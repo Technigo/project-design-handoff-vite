@@ -1,9 +1,16 @@
 .kindwords-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
     gap: 1.25rem;
-    padding: 3rem 0 2.5rem; 
+    padding: 3rem 1.25rem 2.5rem;
+}
+
+.kind-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; 
 }
 
 .kind-card {
@@ -12,7 +19,7 @@
     gap: 1.25rem;
     align-items: center;
     text-align: left;
-    padding: 0 3rem; 
+    max-width: 30rem; 
 }
 
 .kind-image {
@@ -26,5 +33,17 @@
     .kind-image {
         width: 20rem;
         height: 20rem;
+    }
+}
+
+/*using 1080 for desktop instead of 1284*/
+@media (min-width: 1080px) {
+    .kind-card-wrapper{
+        width: 90%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .kind-card {
+        max-width: 20rem; 
     }
 }
