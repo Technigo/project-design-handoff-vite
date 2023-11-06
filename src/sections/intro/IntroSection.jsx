@@ -6,6 +6,14 @@ import "./introsection.css";
 export const IntroSection = () => {
   const { t } = useTranslation();
 
+  //Function that scrolls to the next section
+  const handleClick = () => {
+    const element = document.getElementById("class-section");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="intro-container">
       <h2 className="dive-in">{t("intro")}</h2>
@@ -23,7 +31,7 @@ export const IntroSection = () => {
           </div> */}
         </h3>
       </div>
-      <button className="lets-go">
+      <button className="lets-go" onClick={handleClick}>
         {t("letsGoBtn")}
         <img src={arrowdown} alt="arrow-pointing-down" />
       </button>

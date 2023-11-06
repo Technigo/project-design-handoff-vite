@@ -232,5 +232,6 @@ form > button {
 
   .contact-wave {
     content: url(../../assets/wave-3tablet.svg);
+    width: min(100vw, 1400px);
   }
 }

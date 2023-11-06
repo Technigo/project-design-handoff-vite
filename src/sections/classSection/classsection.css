@@ -208,7 +208,7 @@
   .upper-wave {
     content: url(../../assets/wave-3desktop.svg);
     top: -35px;
-    width: min(100vw, 1600px);
+    width: min(100vw, 1400px);
   }
 
   .yoga-stretch {
@@ -219,7 +219,7 @@
   .lower-wave {
     content: url(../../assets/wave-3desktop.svg);
     bottom: -50px;
-    width: min(100vw, 1600px);
+    width: min(100vw, 1400px);
   }
 
   /* .lower-wave-mini,

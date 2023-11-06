@@ -199,17 +199,6 @@
     max-width: 334px;
   }
 
-  /* .yoga-for-everyone {
-    color: var(--dark);
-    font-family: var(--font-family-ingress-body);
-    font-size: 12px;
-    line-height: 131%;
-    letter-spacing: -0.44px;
-    text-align: center;
-    padding: 0 20px;
-    margin-bottom: 40px;
-  } */
-
   .lets-go {
     background-color: #4c3831;
     height: 150px;
@@ -220,25 +209,11 @@
     margin-bottom: 280px;
   }
 
-  /* .intro-wave-mini,
-  .intro-wave-tablet {
-    display: none;
-  } */
-
   .intro-wave {
     content: url(../../assets/wave-7desktop.svg);
 
     bottom: -22px;
     /* width: 100vw; */
-    width: min(100vw, 1600px);
+    width: min(100vw, 1400px);
   }
-
-  /* .wave4 {
-    z-index: 1;
-    position: absolute;
-  } */
-  /* 
-  .intro-wave-tablet {
-    display: none;
-  } */
 }

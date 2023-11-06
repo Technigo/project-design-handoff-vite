@@ -19,7 +19,8 @@
   position: absolute;
   z-index: 3;
   content: url(../../assets/wave-3mini.svg);
-  bottom: -20px;
+  bottom: -50px;
+  width: 100vw;
 }
 
 .openingHours,
@@ -100,7 +101,7 @@
 
   .good-to-know-wave {
     content: url(../../assets/wave-3desktop.svg);
-    width: 100vw;
+    width: min(100vw, 1400px);
     bottom: -150px;
   }
 }

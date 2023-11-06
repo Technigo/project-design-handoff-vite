@@ -91,7 +91,7 @@
   .yoga-type-wave {
     content: url(../../assets/wave-3desktop.svg);
     bottom: -30px;
-    width: min(100vw, 1600px);
+    width: min(100vw, 1400px);
   }
 
   .image-sun {

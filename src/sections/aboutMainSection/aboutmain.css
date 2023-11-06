@@ -95,7 +95,7 @@
   .about-main-top-wave {
     content: url(../../assets/wave-3desktop.svg);
     margin-bottom: 35px;
-    width: 100vw;
+    width: min(100vw, 1400px);
     top: 250px;
   }
 
@@ -109,7 +109,7 @@
     position: absolute;
     z-index: 2;
     bottom: -20px;
-    width: 100vw;
+    width: min(100vw, 1400px);
   }
 
   .image-sun-about {

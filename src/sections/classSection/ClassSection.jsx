@@ -12,7 +12,7 @@ import yogagrey from "../../assets/yogagrey.svg";
 export const ClassSection = () => {
   const { t } = useTranslation();
   return (
-    <div className="classection-container">
+    <div className="classection-container" id="class-section">
       {/* <div className="classsection-info"> */}
       <h2 className="classes-title">{t("classes")}</h2>
       <p className="class-info">{t("wideRange")}</p>
