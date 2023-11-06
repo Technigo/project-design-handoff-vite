@@ -1,0 +1,42 @@
+.mainContainer {
+    background-color: #4A205A;
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 80%;
+    text-align: center;
+    padding: 40px 0px 40px 0px;
+}
+
+img:hover {
+    transform: scaleX(1.25) scaleY(1.25);
+    transition: ease 0.5s;
+}
+
+@media screen and (max-width: 667px) {
+    .mainContainer {
+        max-width: 100%;
+    }
+
+    .contentWrapper {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+    .mainContainer {
+        max-width: 100%;
+        margin: 0em 1.5em 0em 1.5em;
+    }
+
+    .contentWrapper {
+        max-width: 80%;
+    }
+}
