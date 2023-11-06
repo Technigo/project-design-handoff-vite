@@ -83,7 +83,7 @@ const resources = {
 
             longAboutFirst: "Many business models that profit from unused gym memberships often rely on the concept of 'over-subscription.' These businesses understand that a significant portion of their members won't use the gym regularly or at all. They can offer lower prices or attractive signup deals “to get more people through the door.” Or not. This strategy allows them to generate more revenue than they would if everyone used the gym frequently. It's essentially a gamble on people's intentions and motivation.",
             longAboutSecond:
-                "At GroundZero, we're breaking the mold of the 'unused gym membership' business model. We believe in delivering real value for your money. While wanting to offer you a place to workout, relax, socialize, and network. Besides The Gym, we offer Breakfast, Co-working, Spa/ Wellness, and After-hours access. And since we know life isn’t black and white, you can tailor your membership to your preferences. Access them all or mix and match. Our goal is to make sure your time with us is productive and enjoyable.",
+                "At Magnitude, we're breaking the mold of the 'unused gym membership' business model. We believe in delivering real value for your money. While wanting to offer you a place to workout, relax, socialize, and network. Besides The Gym, we offer Breakfast, Co-working, Spa/ Wellness, and After-hours access. And since we know life isn’t black and white, you can tailor your membership to your preferences. Access them all or mix and match. Our goal is to make sure your time with us is productive and enjoyable.",
 
             //Contact
             visitUs: "Visit Us",
@@ -174,7 +174,7 @@ const resources = {
 
             longAboutFirst: "Många affärsmodeller som tjänar pengar på oanvända gymmedlemskap förlitar sig ofta på konceptet 'överanmälan'. Dessa företag förstår att en betydande del av deras medlemmar inte kommer att använda gymmet regelbundet eller alls. De kan erbjuda lägre priser eller attraktiva registreringsavtal 'för att få fler människor genom dörren'. Eller inte. Denna strategi gör det möjligt för dem att generera mer intäkter än om alla använde gymmet regelbundet. Det är i grunden ett vad på människors avsikter och motivation.",
             longAboutSecond:
-                "På GroundZero bryter vi mönstret för affärsmodellen med 'oanvända gymmedlemskap'. Vi tror på att leverera verkligt värde för dina pengar. Samtidigt som vi vill erbjuda dig en plats att träna, koppla av, socialisera och nätverka. Förutom gymmet erbjuder vi frukost, co-working, spa/wellness och tillträde efter stängning. Och eftersom vi vet att livet inte är svart eller vitt kan du anpassa ditt medlemskap efter dina preferenser. Få tillgång till dem alla eller kombinera dem som du vill. Vårt mål är att se till att din tid med oss är produktiv och njutbar.",
+                "På Magnitude bryter vi mönstret för affärsmodellen med 'oanvända gymmedlemskap'. Vi tror på att leverera verkligt värde för dina pengar. Samtidigt som vi vill erbjuda dig en plats att träna, koppla av, socialisera och nätverka. Förutom gymmet erbjuder vi frukost, co-working, spa/wellness och tillträde efter stängning. Och eftersom vi vet att livet inte är svart eller vitt kan du anpassa ditt medlemskap efter dina preferenser. Få tillgång till dem alla eller kombinera dem som du vill. Vårt mål är att se till att din tid med oss är produktiv och njutbar.",
 
             //Contact
             visitUs: "Besök oss",

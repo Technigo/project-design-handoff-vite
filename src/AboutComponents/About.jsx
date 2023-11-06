@@ -41,7 +41,7 @@ export const About = () => {
                 </div>
             </div>
 
-            <div className="relative bg-header bg-cover h-auto w-full lg:h-screen" style={{ backgroundImage: `url(https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Rectangle%20357.png?v=1698745283957)` }}>
+            <div className="relative bg-header bg-cover h-auto w-full lg:h-screen" style={{ backgroundImage: `url(https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/Rectangle%20357-2.svg?v=1699303875421)` }}>
                 <AboutText />
                 <VisitUs />
                 <div className="h-1 bg-white"></div>

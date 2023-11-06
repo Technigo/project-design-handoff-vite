@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import "../Translation";
 import { VisitUsImage } from "./VisitUsComponents/VisitUsImage";
+import Copy from "./Copy.png";
 
 export const VisitUs = () => {
     const { t, i18n } = useTranslation();
@@ -39,10 +40,16 @@ export const VisitUs = () => {
                     </div>
                 </div>
 
-                <div className="text-center pt-2 mb-10 mt-5"> {/* Reduced top padding */}
-                    <h1 className="text-6xl pb-2">{t("contactUs")}</h1> {/* Reduced bottom padding */}
-                    <p className="custom-font">Email: support@groundzero.com</p>
-                    <p className="custom-font">Phone: +46 001 89 89 10</p>
+                <div className="text-center pt-2 mb-10 mt-5">
+                    <h1 className="text-6xl pb-2">{t("contactUs")}</h1>
+                    <div className="flex items-center justify-center">
+                        <p className="custom-font pr-3">Email: magnitude@support.com</p>
+                        <img src={Copy} alt="" />
+                    </div>
+                    <div className="flex items-center justify-center">
+                        <p className="custom-font pr-3">Phone: +46 001 89 89 10</p>
+                        <img src={Copy} alt="" />
+                    </div>
                 </div>
             </div>
             <VisitUsImage />
