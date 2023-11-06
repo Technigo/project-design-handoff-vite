@@ -39,6 +39,7 @@ textarea {
   border-color: var(--dark);
   outline-color: var(--dark);
   border: 2px solid var(--dark);
+  background-color: var(--offwhite);
 }
 
 .terms-and-conditions {
@@ -119,4 +120,116 @@ form > button {
   width: 100vw;
   bottom: -30px;
   left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-us-container {
+    padding: 150px 34px 50px 34px;
+    background-color: var(--offwhite);
+    position: relative;
+  }
+
+  .contact-us-info {
+    text-align: center;
+    padding-top: 34px;
+  }
+
+  .nameInput,
+  .emailInput,
+  .messageInput {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--body-tablet-desktop);
+  }
+
+  form {
+    padding-top: 15px;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    font-family: var(--font-family-ingress-body);
+    color: var(--dark);
+  }
+
+  form label {
+    font-size: var(--body-tablet-desktop);
+    padding: 5px;
+  }
+
+  input,
+  textarea {
+    padding: 20px;
+    font-size: var(--body-tablet-desktop);
+  }
+
+  .terms-and-conditions {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: var(--body-tablet-desktop);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  form > button {
+    margin-bottom: 150px;
+  }
+
+  .contact-wave {
+    content: url(../../assets/wave-3tablet.svg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact-us-container {
+    padding: 150px 300px 50px 300px;
+  }
+
+  .contact-us-info {
+    padding-top: 34px;
+  }
+
+  .nameInput,
+  .emailInput,
+  .messageInput {
+    font-size: var(--body-tablet-desktop);
+  }
+
+  form {
+    padding-top: 15px;
+    width: 100%;
+    gap: 20px;
+    font-family: var(--font-family-ingress-body);
+    color: var(--dark);
+  }
+
+  form label {
+    font-size: var(--body-tablet-desktop);
+    padding: 5px;
+  }
+
+  input,
+  textarea {
+    padding: 20px;
+    font-size: var(--body-tablet-desktop);
+  }
+
+  .terms-and-conditions {
+    font-weight: 600;
+  }
+
+  form > button {
+    margin-top: 40px;
+    margin-bottom: 250px;
+    width: 20%;
+  }
+
+  .contact-wave {
+    content: url(../../assets/wave-3tablet.svg);
+  }
 }

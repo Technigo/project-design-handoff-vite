@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import "./goodtoknow.css";
-import wave3mini from "../../assets/wave-3mini.svg";
 import { PrimaryBtn } from "../../components/buttons/primary/PrimaryBtn";
 import { SecondaryBtn } from "../../components/buttons/secondary/SecondaryBtn";
 
@@ -27,7 +26,7 @@ export const GoodToKnowSection = () => {
         <PrimaryBtn btnName={t("signUpBtn")} />
         <SecondaryBtn btnName={t("login")} />
       </div>
-      <img src={wave3mini} alt="wave pattern" />
+      <img alt="wave pattern" className="good-to-know-wave" />
     </div>
   );
 };

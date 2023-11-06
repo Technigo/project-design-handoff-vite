@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import "./contactus.css";
-import wave3mini from "../../assets/wave-3mini.svg";
 
 import { PrimaryBtn } from "../../components/buttons/primary/PrimaryBtn";
 
