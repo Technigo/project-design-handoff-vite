@@ -53,6 +53,7 @@ export const dataCarousel = [
         ],
         buttonText: "Book your spot",
     },
+
 ];
 
 

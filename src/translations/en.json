@@ -12,5 +12,68 @@
     "translatePage": {
         "heading": "Welcome to YogaBalance",
         "sub-heading": "Join our classes and find your inner peace"
+    },
+    "membership": {
+        "header": "Our memberships",
+        "subHeader": "Get the most out of your yoga practice",
+        "allInclusive": {
+            "title": "All inclusive",
+            "description": "Go to all of our classes and courses and also participate in our retreats. You get personal help from our instructors to plan your classes based on your goals. This is for you who will fully commit to living your full potential during menopause and beyond.",
+            "buttonText": "Buy now 599 sek per month"
+        },
+        "yogaMember": {
+            "title": "Yoga member",
+            "description": "Participate in all classes. This membership also includes one hour consultation with an instructor each month.",
+            "buttonText": "Buy now 299 sek per month"
+        }
+    },
+    "header": {
+        "title": "Yoga and meditation for women",
+        "subtitle": "We help you stay vigorous in mind & body during menopause",
+        "findYogaClass": "Find yoga class",
+        "becomeMember": "Become a member"
+    },
+    "findUs": {
+        "header": "Find us",
+        "mapTitle": "YogaBalance Location",
+        "mapSrc": "https://www.google.com/maps/d/embed?mid=10s8TZ9K7aTypybxq4Mm6vhewLKsIjyI&ehbc=2E312F",
+        "address": "Address: Grycksbovägen 19A, Stockholm",
+        "contactHeader": "Contact",
+        "mobile": "Mobile: +467000000",
+        "email": "E-mail: info@yogabalance.se",
+        "languages": {
+            "en": "English",
+            "se": "Svenska"
+        }
+    },
+    "courses": {
+        "header": "Courses coming up",
+        "subHeader": "Our courses are designed for improved health during and after menopause"
+    },
+    "carousel": {
+        "course1": {
+            "id": 1,
+            "imgSrc": "/Images/carouselSensing.svg",
+            "description": "Using yoga and meditation on a daily basis to improve your body and mind. Prepare to meet new experiences with renewed strength, with soft movements.",
+            "details": "8 weeks Sensing Yoga and meditation practice, includes videos and live classes, starting on 26/10, price 3400 SEK",
+            "buttonText": "Book your spot",
+            "altText": "Woman sitting on a mat in a yoga position."
+        },
+        "course2": {
+            "id": 2,
+            "imgSrc": "/Images/carouselMeditation.svg",
+            "description": "Meditation can help you reduce stress, sleep better, and really get the recovery you need. It also helps you listen to your emotions and body to know when it’s time to slow down.",
+            "details": "10 weeks of meditation practice, includes videos and live classes, starting on 23/11, price 4300 SEK",
+            "buttonText": "Book your spot",
+            "altText": "Closeup of woman in a meditation position."
+        },
+        "course3": {
+            "id": 3,
+            "imgSrc": "/Images/carouselYin.svg",
+            "description": "Yin yoga course. Learn to relax and stretch your body with slow movements and static positions. Stress reducing and it helps you strengthen your mental health.",
+            "details": "8 weeks of Yin Yoga, includes videos and live classes, starting on 6/12, price 3400 SEK",
+            "buttonText": "Book your spot",
+            "altText": "Above perspective picture of a woman with locked hands."
+        }
     }
 }

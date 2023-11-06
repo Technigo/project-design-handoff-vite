@@ -1,33 +1,37 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 import style from './Membership.module.css';
 import { Text } from "../../../UI/textAndTypography/Text";
 import { StyledButton } from '../../../UI/buttons/StyledButtons';
 
 export const Membership = () => {
+    const { t } = useTranslation();
+
     return (
         <div className={style.background}>
             <section className={style.wrapper}>
                 <Text
-                    header="Our memberships"
+                    header={t('membership.header')}
                     type="H2"
                     style={{ color: '#612E77' }}
                     className={style.gridItem1}
                 />
                 <Text
-                    header="Get the most out of your yoga practice"
+                    header={t('membership.subHeader')}
                     type="H2"
                     style={{ color: '#1D1C25', fontWeight: 500 }}
                     className={style.gridItem2}
                 />
                 <div className={style.membershipBoxInclusive}>
-                    <img src="/Images/Star.png" alt="Purple star icon" className={style.img} />
+                    <img src="/Images/Star.png" alt={t('membership.allInclusive.alt')} className={style.img} />
                     <Text
-                        header="All inclusive"
+                        header={t('membership.allInclusive.title')}
                         type="H2"
                         style={{ color: '#1D1C25' }}
                         className={style.boxInclusive2}
                     />
                     <Text
-                        header="Go to all of our classes and courses and also participate in our retreats. You get personal help to from our instructors to plan your classes based on your goals. This is for you who will fully commit to living your full potential during menopause and beyond."
+                        header={t('membership.allInclusive.description')}
                         type="bodyText"
                         style={{ color: '#1D1C25' }}
                         className={style.boxInclusive3}
@@ -38,20 +42,20 @@ export const Membership = () => {
                         color="#000000"
                         hoverColor="#000000"
                     >
-                        Buy now 599 sek per month
+                        {t('membership.allInclusive.buttonText')}
                     </StyledButton>
                 </div>
 
                 <div className={style.membershipBoxYoga}>
-                    <img src="/Images/Yoga.png" alt="Purple yogapose icon" className={style.img} />
+                    <img src="/Images/Yoga.png" alt={t('membership.yogaMember.alt')} className={style.img} />
                     <Text
-                        header="Yoga member"
+                        header={t('membership.yogaMember.title')}
                         type="H2"
                         style={{ color: '#1D1C25' }}
                         className={style.boxYoga2}
                     />
                     <Text
-                        header="Participate in all classes. This membership also includes one hour consultation with an instructor each month."
+                        header={t('membership.yogaMember.description')}
                         type="bodyText"
                         style={{ color: '#1D1C25' }}
                         className={style.boxYoga3}
@@ -62,7 +66,7 @@ export const Membership = () => {
                         color="#000000"
                         hoverColor="#000000"
                     >
-                        Buy now 299 sek per month
+                        {t('membership.yogaMember.buttonText')}
                     </StyledButton>
                 </div>
             </section >

@@ -12,5 +12,74 @@
     "translatePage": {
         "heading": "Välkommen till YogaBalance",
         "sub-heading": "Gå med i våra klasser och hitta din inre frid"
+    },
+    "instagram": {
+        "followUs": "Follow us on Instagram",
+        "connectInspired": "Connect and keep inspired",
+        "imageCarousel": "Instagram image carousel",
+        "connectButton": "Connect on Instagram"
+    },
+    "membership": {
+        "header": "Våra medlemskap",
+        "subHeader": "Få ut mesta möjliga av din yogapraktik",
+        "allInclusive": {
+            "title": "All inclusive",
+            "description": "Gå på alla våra klasser och kurser samt delta i våra retreater. Du får personlig hjälp av våra instruktörer att planera dina klasser baserat på dina mål. Detta är för dig som vill förbinda dig helt till att leva din fulla potential under klimakteriet och därefter.",
+            "buttonText": "Köp nu 599 sek per månad"
+        },
+        "yogaMember": {
+            "title": "Yogamedlem",
+            "description": "Delta i alla klasser. Detta medlemskap inkluderar även en timmes konsultation med en instruktör varje månad.",
+            "buttonText": "Köp nu 299 sek per månad"
+        }
+    },
+    "header": {
+        "title": "Yoga och meditation för kvinnor",
+        "subtitle": "Vi hjälper dig att hålla dig kraftfull i sinne & kropp under klimakteriet",
+        "findYogaClass": "Hitta yogaklass",
+        "becomeMember": "Bli medlem"
+    },
+    "findUs": {
+        "header": "Hitta oss",
+        "mapTitle": "YogaBalances Plats",
+        "mapSrc": "https://www.google.com/maps/d/embed?mid=10s8TZ9K7aTypybxq4Mm6vhewLKsIjyI&ehbc=2E312F",
+        "address": "Adress: Grycksbovägen 19A, Stockholm",
+        "contactHeader": "Kontakt",
+        "mobile": "Mobil: +46700000000",
+        "email": "E-post: info@yogabalance.se",
+        "languages": {
+            "en": "Engelska",
+            "se": "Svenska"
+        }
+    },
+    "courses": {
+        "header": "Kommande kurser",
+        "subHeader": "Våra kurser är utformade för förbättrad hälsa under och efter klimakteriet"
+    },
+    "carousel": {
+        "course1": {
+            "id": 1,
+            "imgSrc": "/Images/carouselSensing.svg",
+            "description": "Använd yoga och meditation dagligen för att förbättra din kropp och ditt sinne. Förbered dig på att möta nya upplevelser med förnyad styrka, med mjuka rörelser.",
+            "details": "8 veckors Sensing Yoga och meditationspraxis, inkluderar videor och liveklasser, startar 26/10, pris 3400 SEK",
+            "buttonText": "Boka din plats",
+            "altText": "Kvinna sittande på en matta i yogaposition."
+        },
+        "course2": {
+            "id": 2,
+            "imgSrc": "/Images/carouselMeditation.svg",
+            "description": "Meditation kan hjälpa dig att minska stress, sova bättre och verkligen få den återhämtning du behöver. Det hjälper dig också att lyssna på dina känslor och kropp för att veta när det är dags att sakta ner.",
+            "details": "10 veckors meditationspraxis, inkluderar videor och liveklasser, startar 23/11, pris 4300 SEK",
+            "buttonText": "Boka din plats",
+            "altText": "Närbild på kvinna i meditationsposition."
+        },
+        "course3": {
+            "id": 3,
+            "imgSrc": "/Images/carouselYin.svg",
+            "description": "Yin yoga kurs. Lär dig att slappna av och sträcka ut din kropp med långsamma rörelser och statiska positioner. Stressreducerande och det hjälper dig att stärka din mentala hälsa.",
+            "details": "8 veckors Yin Yoga, inkluderar videor och liveklasser, startar 6/12, pris 3400 SEK",
+            "buttonText": "Boka din plats",
+            "altText": "Bild från ovan på kvinna med låsta händer."
+        }
     }
 }
