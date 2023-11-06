@@ -1,0 +1,250 @@
+.classection-container {
+  background-color: var(--offwhite);
+  padding-top: 75px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.classes-title {
+  /* font-family: var(--font-family-h1-h2); */
+  font-weight: 500;
+  /* font-size: var(--h2-mobile); */
+  justify-self: center;
+  color: var(--dark);
+  text-align: center;
+}
+
+.class-info {
+  padding: 0 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.352px;
+  font-family: var(--font-family-ingress-body);
+  color: var(--dark);
+}
+
+.classBtns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.member p {
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+  letter-spacing: -0.396px;
+  font-family: var(--font-family-ingress-body);
+  font-size: var(--body-mobile);
+}
+
+.imgs {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.upper-wave {
+  content: url(../../assets/wave-3mini.svg);
+  position: absolute;
+  z-index: 2;
+  top: -21px;
+  width: 100vw;
+}
+
+.yoga-stretch {
+  z-index: 1;
+  width: auto;
+}
+
+.lower-wave {
+  content: url(../../assets/wave-3mini.svg);
+  position: absolute;
+  z-index: 2;
+  bottom: -55px;
+  width: 100vw;
+}
+
+/* .upper-wave-tablet,
+.lower-wave-tablet,
+.lower-wave-desktop,
+.upper-wave-desktop {
+  display: none;
+} */
+
+.yoga-type-info-box {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .classection-container {
+    padding-top: 84px;
+  }
+
+  .class-info {
+    padding: 0 64px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.352px;
+    font-family: var(--font-family-ingress-body);
+    color: var(--dark);
+  }
+
+  .yogaTypeBtns {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+    margin-bottom: 50px;
+  }
+
+  .member p {
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.396px;
+    font-family: var(--font-family-ingress-body);
+    font-size: var(--body-mobile);
+  }
+
+  .imgs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .upper-wave {
+    content: url(../../assets/wave-3tablet.svg);
+
+    top: -21px;
+    width: 100vw;
+  }
+
+  .yoga-stretch {
+    z-index: 1;
+    width: auto;
+  }
+
+  .lower-wave {
+    content: url(../../assets/wave-3tablet.svg);
+
+    bottom: -50px;
+    width: 100vw;
+  }
+
+  /* .lower-wave-mini,
+  .upper-wave-mini,
+  .lower-wave-desktop,
+  .upper-wave-desktop {
+    display: none;
+  } */
+
+  .yoga-type-info-box {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .classection-container {
+    padding-top: 84px;
+  }
+
+  .class-info {
+    padding: 0 292px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.352px;
+    font-family: var(--font-family-ingress-body);
+    color: var(--dark);
+  }
+
+  .yogaTypeBtns {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .member {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+    margin-bottom: 50px;
+  }
+
+  .member p {
+    font-style: italic;
+    font-weight: 400;
+    line-height: 24px; /* 133.333% */
+    letter-spacing: -0.396px;
+    font-family: var(--font-family-ingress-body);
+    font-size: var(--body-tablet-desktop);
+  }
+
+  .imgs {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .upper-wave {
+    content: url(../../assets/wave-3desktop.svg);
+    top: -35px;
+    width: min(100vw, 1400px);
+  }
+
+  .yoga-stretch {
+    z-index: 1;
+    width: auto;
+  }
+
+  .lower-wave {
+    content: url(../../assets/wave-3desktop.svg);
+    bottom: -50px;
+    width: min(100vw, 1400px);
+  }
+
+  /* .lower-wave-mini,
+  .upper-wave-mini,
+  .lower-wave-tablet,
+  .upper-wave-tablet {
+    display: none;
+  } */
+
+  .yoga-type-info-box {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 10;
+    top: 200px;
+    background-color: var(--offwhite);
+    opacity: 80%;
+    max-width: 50%;
+    margin-left: 64px;
+    padding: 50px 50px 0 50px;
+    gap: 32px;
+    background: rgba(249, 247, 243, 0.5);
+  }
+
+  .yoga-type-info-box h3 {
+    font-size: var(--h2-desktop);
+  }
+}

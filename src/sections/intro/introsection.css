@@ -1,0 +1,219 @@
+.intro-container {
+  background-color: var(--greyish);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  /* padding: 32px 16px 128px 16px; */
+}
+
+.yoga-title {
+  font-family: var(--font-family-h1-h2);
+  font-size: var(--h1-mobile);
+  color: var(--dark);
+  font-weight: 500;
+  margin: 0 16px;
+}
+
+.yoga-subtitle {
+  font-size: var(--h3-mobile);
+  line-height: 131%; /* 26.2px */
+  letter-spacing: -0.44px;
+}
+
+.dive-in {
+  font-family: var(--font-family-ingress-body);
+  font-size: var(--body-tablet-desktop);
+  font-weight: 500;
+  line-height: 102%; /* 24.48px */
+  letter-spacing: -0.528px;
+  color: var(--dark);
+  text-align: left;
+}
+
+.title-and-image {
+  display: flex;
+  background-image: url(../../assets/wave-4mini.svg);
+  background-repeat: no-repeat;
+  background-position-y: 30%;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  width: 100%;
+}
+
+.title-and-image img {
+  padding-right: 16px;
+}
+
+.yoga-for-everyone {
+  color: var(--dark);
+  font-family: var(--font-family-ingress-body);
+  font-size: 12px;
+  line-height: 131%; /* 26.2px */
+  letter-spacing: -0.44px;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 40px;
+}
+
+.lets-go {
+  /* background-image: url(../../assets/ellipse.svg); */
+  background-color: #4c3831;
+  height: 96px;
+  width: 96px;
+  border: none;
+  border-radius: 50%;
+  background-repeat: none;
+  cursor: pointer;
+  font-family: var(--font-family-ingress-body);
+  font-size: var(--body-mobile);
+  color: var(--offwhite);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  align-self: center;
+  margin-bottom: 160px;
+}
+
+.intro-wave {
+  content: url(../../assets/wave-7mini.svg);
+
+  z-index: 2;
+  position: absolute;
+  bottom: -35px;
+  width: 100vw;
+}
+
+.wave4 {
+  z-index: 1;
+  position: absolute;
+}
+
+@media screen and (min-width: 768px) {
+  .intro-container {
+    padding-top: 64px;
+  }
+
+  .yoga-title {
+    font-family: var(--font-family-h1-h2);
+    font-size: var(--h1-desktop);
+    color: var(--dark);
+    font-weight: 500;
+    margin-left: 131px;
+    margin-top: -20px;
+  }
+
+  .dive-in {
+    font-size: var(--h2-tablet);
+
+    margin-left: 120px;
+  }
+
+  .title-and-image {
+    background-image: url(../../assets/wave-4.svg);
+
+    background-size: contain;
+  }
+
+  .title-and-image img {
+    min-height: 464px;
+    min-width: 314px;
+    margin-right: 110px;
+  }
+
+  .yoga-for-everyone {
+    font-size: var(--h2-mobile);
+    margin: 0px 131px 40px 131px;
+  }
+
+  .lets-go {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    font-size: var(--body-tablet-desktop);
+
+    margin-bottom: 160px;
+  }
+
+  .lets-go img {
+    width: 40px;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .intro-wave {
+    content: url(../../assets/wave-7tablet.svg);
+    bottom: -22px;
+    width: 100vw;
+  }
+
+  .wave4 {
+    z-index: 1;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .intro-container {
+    padding-top: 120px;
+    /* padding: 32px 16px 128px 16px; */
+  }
+
+  .yoga-title {
+    font-size: var(--h1-desktop);
+    font-weight: 500;
+    margin-left: 260px;
+  }
+
+  .yoga-subtitle {
+    font-size: var(--ingress-tablet-desktop);
+    max-width: 40%;
+    position: absolute;
+    top: 520px;
+    left: 123px;
+  }
+
+  .dive-in {
+    font-size: var(--h2-desktop);
+    margin-left: 244px;
+  }
+
+  .title-and-image {
+    display: flex;
+    background-image: url(../../assets/wave-4desktop.svg);
+    background-repeat: no-repeat;
+    background-position-y: 30%;
+    background-size: contain;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    width: 100%;
+  }
+
+  .title-and-image img {
+    padding-right: 180px;
+    max-height: 496px;
+    max-width: 334px;
+  }
+
+  .lets-go {
+    background-color: #4c3831;
+    height: 150px;
+    width: 150px;
+    font-size: var(--body-mobile);
+    color: var(--offwhite);
+
+    margin-bottom: 280px;
+  }
+
+  .intro-wave {
+    content: url(../../assets/wave-7desktop.svg);
+
+    bottom: -22px;
+    /* width: 100vw; */
+    width: min(100vw, 1400px);
+  }
+}

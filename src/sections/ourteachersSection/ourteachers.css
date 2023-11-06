@@ -1,0 +1,94 @@
+.ourTeachers-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--greyish);
+  padding: 64px 0;
+}
+
+.teacher-title-and-info {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-bottom: 36px;
+}
+
+.teacher-title-and-info p {
+  padding: 0 16px;
+}
+
+.meetTeachersBtn {
+  margin-bottom: 30px;
+}
+
+.double-yoga {
+  max-width: 340px;
+  max-height: 340px;
+  align-self: center;
+  margin-bottom: -90px;
+  overflow: hidden;
+}
+
+.teachers-wave {
+  content: url(../../assets/wave-3mini.svg);
+  position: absolute;
+  z-index: 2;
+  bottom: -30px;
+  width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+  .ourTeachers-container {
+    padding: 100px 0;
+  }
+
+  .teacher-title-and-info p {
+    padding: 0 64px;
+  }
+
+  .meetTeachersBtn {
+    margin-bottom: 30px;
+  }
+
+  .double-yoga {
+    min-width: 576px;
+    min-height: 576px;
+    /* overflow: hidden; */
+    margin: 0 129px -110px 129px;
+  }
+
+  .teachers-wave {
+    content: url(../../assets/wave-3tablet.svg);
+    bottom: -30px;
+    width: 100vw;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .ourTeachers-container {
+    padding: 100px 0;
+  }
+
+  .teacher-title-and-info {
+    padding: 84px 64px;
+    margin: 0 auto;
+
+    max-width: 60%;
+  }
+
+  .meetTeachersBtn {
+    margin-bottom: 30px;
+  }
+
+  .double-yoga {
+    min-width: 650px;
+    min-height: 650px;
+    margin: 34px auto -50px auto;
+  }
+
+  .teachers-wave {
+    content: url(../../assets/wave-3desktop.svg);
+    bottom: -30px;
+    width: min(100vw, 1400px);
+  }
+}

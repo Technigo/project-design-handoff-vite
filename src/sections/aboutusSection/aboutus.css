@@ -1,0 +1,58 @@
+.about-us-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 64px 0;
+  background-color: var(--offwhite);
+}
+
+.about-us-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 0 16px;
+}
+
+.about-us-wave {
+  content: url(../../assets/wave-3mini.svg);
+  position: absolute;
+  bottom: -50px;
+  z-index: 3;
+  width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+  .about-us-container {
+    padding: 100px 0;
+  }
+
+  .about-us-content-container {
+    gap: 36px;
+    padding: 0 64px;
+  }
+
+  .about-us-wave {
+    content: url(../../assets/wave-3tablet.svg);
+    bottom: -65px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .about-us-container {
+    padding: 100px 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-content-container {
+    gap: 36px;
+    padding: 0;
+    width: 50%;
+  }
+
+  .about-us-wave {
+    content: url(../../assets/wave-3desktop.svg);
+    bottom: -140px;
+    width: min(100vw, 1400px);
+  }
+}

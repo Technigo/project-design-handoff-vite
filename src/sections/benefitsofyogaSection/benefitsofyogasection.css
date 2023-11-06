@@ -1,0 +1,84 @@
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 32px;
+  padding: 64px 0;
+  background-color: var(--offwhite);
+}
+
+.benefits-title,
+.benefits-container p {
+  padding: 0 16px;
+}
+
+.benefitList {
+  padding-left: 32px;
+}
+
+.learnMoreBtn {
+  margin-bottom: 30px;
+}
+
+.benefits-wave {
+  content: url(../../assets/wave-3mini.svg);
+  position: absolute;
+  bottom: -30px;
+  z-index: 20;
+  width: 100vw;
+}
+
+@media screen and (min-width: 768px) {
+  .benefits-container {
+    gap: 36px;
+    padding: 84px 0;
+  }
+
+  .benefits-title,
+  .benefits-container p {
+    padding: 0 64px;
+  }
+
+  .benefitList {
+    padding-left: 95px;
+  }
+
+  .learnMoreBtn {
+    margin-bottom: 30px;
+  }
+
+  .benefits-wave {
+    content: url(../../assets/wave-3tablet.svg);
+    position: absolute;
+    bottom: -75px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .benefits-container {
+    gap: 36px;
+    padding: 84px 0;
+  }
+
+  .benefits-title,
+  .benefits-container p {
+    padding: 0 287px;
+  }
+
+  .benefitList {
+    padding-left: 320px;
+  }
+
+  .learnMoreBtn {
+    margin-bottom: 30px;
+    display: flex;
+    align-self: center;
+  }
+
+  .benefits-wave {
+    content: url(../../assets/wave-3desktop.svg);
+    position: absolute;
+    bottom: -140px;
+    width: min(100vw, 1400px);
+  }
+}

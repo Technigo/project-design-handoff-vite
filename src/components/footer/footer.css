@@ -1,0 +1,146 @@
+.footer-container {
+  background-color: var(--greyish);
+  padding: 64px 0 32px 0;
+}
+
+.footer-content-container {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.logo-language {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-language img {
+  max-width: 58px;
+  max-height: 58px;
+}
+
+.footer-contact h3 {
+  font-size: var(--h3-mobile);
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.address,
+.phone,
+.socials {
+  display: flex;
+  gap: 6px;
+}
+
+.back-to-top {
+  background-color: #4c3831;
+  height: 96px;
+  width: 96px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: var(--font-family-ingress-body);
+  font-size: var(--body-mobile);
+  color: var(--offwhite);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  gap: 10px;
+  align-self: center;
+  padding-bottom: 15px;
+}
+
+.footer-arrow {
+  transform: rotate(180deg);
+}
+
+.language-select {
+  background: transparent;
+  border: none;
+  font-family: var(--font-family-ingress-body);
+  font-size: var(--body-mobile);
+  color: var(--dark);
+  padding: 15px;
+  text-decoration: underline;
+}
+
+.language-select > select {
+  font-size: var(--body-mobile);
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    padding: 100px 0 32px 0;
+  }
+
+  .footer-content-container {
+    padding: 0 32px;
+    gap: 32px;
+  }
+
+  .footer-contact h3 {
+    font-size: var(--body-tablet-desktop);
+  }
+
+  .logo-language img {
+    min-width: 90px;
+    min-height: 90px;
+  }
+
+  .footer-contact p {
+    font-size: var(--ingress-mobile);
+  }
+
+  .address,
+  .phone,
+  .socials {
+    display: flex;
+    gap: 6px;
+  }
+
+  .back-to-top {
+    min-height: 150px;
+    min-width: 150px;
+    font-size: var(--body-tablet-desktop);
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-container {
+    padding: 150px 0 50px 0;
+  }
+
+  .footer-contact p {
+    font-size: var(--body-tablet-desktop);
+  }
+
+  .footer-content-container {
+    padding: 0 64px;
+  }
+
+  .back-to-top {
+    padding-bottom: 15px;
+    font-size: var(--body-tablet-desktop);
+  }
+
+  .language-select {
+    font-size: var(--body-tablet-desktop);
+  }
+
+  .footer-contact h3 {
+    font-size: var(--h2-mobile);
+  }
+
+  .language-select > option {
+    font-size: var(--body-mobile);
+  }
+}

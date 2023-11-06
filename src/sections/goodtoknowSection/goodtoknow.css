@@ -1,0 +1,107 @@
+.good-to-know-container {
+  padding-top: 50px;
+  background-color: var(--offwhite);
+  position: relative;
+}
+
+.good-to-know-container h3 {
+  font-size: var(--h3-mobile);
+}
+
+.good-to-know-info {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+  padding: 35px 16px 35px 16px;
+}
+
+.good-to-know-wave {
+  position: absolute;
+  z-index: 3;
+  content: url(../../assets/wave-3mini.svg);
+  bottom: -50px;
+  width: 100vw;
+}
+
+.openingHours,
+.bookAClass,
+.studioMembership {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.signUpInBtns {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .good-to-know-container {
+    padding-top: 84px;
+    background-color: var(--offwhite);
+  }
+
+  .good-to-know-title {
+    font-size: var(--h2-desktop);
+  }
+
+  .good-to-know-container h3 {
+    font-size: var(--h3-tablet-desktop);
+  }
+
+  .good-to-know-info {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    padding: 50px 81px 35px 64px;
+  }
+
+  .signUpInBtns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 80px;
+    margin-top: 35px;
+  }
+
+  .good-to-know-wave {
+    content: url(../../assets/wave-3tablet.svg);
+    width: 100vw;
+    bottom: -50px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .good-to-know-container {
+    padding-top: 84px;
+    background-color: var(--offwhite);
+  }
+
+  .good-to-know-title {
+    font-size: var(--h2-desktop);
+  }
+
+  .good-to-know-info {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    padding: 50px 341px 35px 321px;
+  }
+
+  .signUpInBtns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding-bottom: 80px;
+    margin-top: 35px;
+  }
+
+  .good-to-know-wave {
+    content: url(../../assets/wave-3desktop.svg);
+    width: min(100vw, 1400px);
+    bottom: -150px;
+  }
+}

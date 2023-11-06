@@ -1,0 +1,106 @@
+.yoga-type-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--greyish);
+  padding-top: 90px;
+}
+
+.yoga-type-title {
+  margin-bottom: 36px;
+  letter-spacing: -0.704px;
+}
+
+.yoga-type-container p {
+  padding: 0 16px;
+}
+
+.yoga-type-info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.yogaTypeBtns {
+  margin-top: 36px;
+  margin-bottom: 64px;
+  display: flex;
+  gap: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.yoga-type-wave {
+  content: url(../../assets/wave-3mini.svg);
+
+  position: absolute;
+  bottom: -40px;
+  z-index: 3;
+  width: 100vw;
+}
+
+.image-sun {
+  min-width: 340px;
+  min-height: 340px;
+  margin: 0 25px 0px 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .yoga-type-container {
+    background-color: var(--greyish);
+    padding-top: 84px;
+  }
+
+  .yoga-type-title {
+    margin-bottom: 36px;
+    letter-spacing: -0.704px;
+  }
+
+  .yoga-type-container p {
+    padding: 0 64px;
+  }
+
+  .yoga-type-info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .yogaTypeBtns {
+    margin-top: 36px;
+    margin-bottom: 64px;
+    display: flex;
+    gap: 18px;
+  }
+
+  .yoga-type-wave {
+    content: url(../../assets/wave-3tablet.svg);
+    bottom: -30px;
+    width: 100vw;
+  }
+
+  .image-sun {
+    z-index: 1;
+    min-width: 576px;
+    min-height: 576px;
+    margin: 0 129px 0 129px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .yoga-type-wave {
+    content: url(../../assets/wave-3desktop.svg);
+    bottom: -30px;
+    width: min(100vw, 1400px);
+  }
+
+  .image-sun {
+    width: 650px;
+    height: 650px;
+    margin: 0 auto;
+  }
+
+  .yoga-info-buttons {
+    display: none;
+  }
+}

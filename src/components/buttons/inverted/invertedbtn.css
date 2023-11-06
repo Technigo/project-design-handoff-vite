@@ -1,0 +1,32 @@
+.invertedBtn {
+  display: inline-flex;
+  min-width: 150px;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  border: 2px solid var(--dark);
+  background-color: var(--offwhite);
+
+  color: #4c3831;
+  cursor: pointer;
+
+  text-align: center;
+  font-family: var(--font-family-ingress-body);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 131%; /* 23.58px */
+  letter-spacing: -0.396px;
+}
+
+.invertedBtn:hover {
+  background-color: var(--dark);
+  color: var(--offwhite);
+}
+
+@media screen and (min-width: 768px) {
+  .invertedBtn {
+    font-size: var(--body-tablet-desktop);
+  }
+}
