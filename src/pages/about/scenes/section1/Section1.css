@@ -1,0 +1,40 @@
+#section1 {
+  background-color: var(--marine);
+  text-align: center;
+}
+
+#section1 .image-wrapper {
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  background-color: var(--marine);
+}
+
+.petra2-img {
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0 -5rem;
+}
+
+.section1-title {
+  margin-bottom: 2rem;
+}
+
+/* For medium devices */
+@media (min-width: 744px) {
+  #section1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #section1 .image-wrapper {
+    padding: 0rem;
+    grid-column: 2/2;
+    grid-row: 1/1;
+  }
+
+  #section1 .page-wrapper {
+    padding: 2rem 2rem 0;
+    grid-column: 1/2;
+    grid-row: 1/1;
+  }
+}

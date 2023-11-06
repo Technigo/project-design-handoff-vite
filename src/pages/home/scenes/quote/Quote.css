@@ -1,0 +1,15 @@
+#quote {
+  background-color: var(--cobalt);
+}
+
+#quote p {
+  text-align: center;
+  font-weight: 700;
+  line-height: 250%;
+  max-width: 20rem;
+  margin: auto;
+}
+
+.image-wrapper {
+  background-color: var(--bg-color);
+}

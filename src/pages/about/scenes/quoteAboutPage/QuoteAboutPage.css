@@ -1,0 +1,18 @@
+#quote-about-page {
+  background-color: var(--cobalt);
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.quote-text {
+  color: #fff;
+  font-family: var(--metal-mania);
+  font-size: 2rem;
+  line-height: 109.375%;
+}
+
+@media (min-width: 744px) {
+  #quote-about-page {
+    padding: 0;
+  }
+}

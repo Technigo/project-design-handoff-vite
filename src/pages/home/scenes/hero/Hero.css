@@ -1,0 +1,117 @@
+#hero {
+  background-image: url(../petra1.png);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 25%;
+  height: 100vh;
+}
+
+.hero-image {
+  display: none;
+}
+
+/* For smaller devices */
+.overlay {
+  background-color: rgba(20, 24, 50, 0.3);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.hero-wrapper {
+  position: absolute;
+  bottom: 0;
+  padding: 2rem;
+  width: 100%;
+}
+
+#hero p {
+  margin: 1rem 0;
+  line-height: 1.9rem;
+  max-width: 20rem;
+}
+
+.satnam-btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* For medium devices */
+@media (min-width: 744px) {
+  #hero {
+    background-image: none;
+    position: static;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-image {
+    display: block;
+  }
+
+  .hero-image img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  .hero-wrapper {
+    position: static;
+    bottom: 0;
+    padding: 2rem;
+    width: 100%;
+    background-color: var(--marine);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero p {
+    margin: 2rem 0 1.6rem;
+    max-width: 19rem;
+  }
+}
+
+/* @media (min-width: 1050px) {
+  #hero {
+    position: relative;
+    display: block;
+  }
+
+  .hero-large-wrapper {
+    display: flex;
+    background-color: var(--marine);
+    height: 550px;
+  }
+
+  .images-wrapper {
+
+  }
+
+  .petra-img {
+    width: 34rem;
+    height: 35rem;
+    transform: rotate(-13.522deg);
+    border: 5px solid var(--cobalt);
+  }
+
+  .shakti-img {
+    width: 18rem;
+    height: 19rem;
+    transform: rotate(0.345deg);
+    border: 5px solid var(--popping-orange);
+  }
+
+  .eyehands-img {
+    width: 26rem;
+    height: 17rem;
+    transform: rotate(8.428deg);
+    border: 5px solid var(--fire)
+  }
+} */

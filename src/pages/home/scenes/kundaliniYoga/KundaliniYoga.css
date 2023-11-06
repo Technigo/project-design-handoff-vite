@@ -1,0 +1,35 @@
+#kundalini-yoga {
+  background: var(--cobalt);
+  text-align: center;
+}
+
+.kundalini-title {
+  margin-bottom: 2.5rem;
+}
+
+.kundalini-info {
+  line-height: 187.5%;
+}
+
+.tell-me {
+  margin-top: 2.5rem;
+  color: #fff;
+  font-family: var(--metal-mania);
+  text-decoration-line: underline;
+}
+
+/* For medium devices */
+@media (min-width: 744px) {
+  #kundalini-yoga {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+
+  #kundalini-yoga .page-wrapper {
+    grid-column: 1/3;
+    grid-row: 2/2;
+  }
+}
+
+
