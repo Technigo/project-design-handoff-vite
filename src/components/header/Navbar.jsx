@@ -39,8 +39,18 @@ export const Navbar = () => {
             </li>
           </ul>
           <div className="social-icons">
-            <RiInstagramFill className="icon" />
-            <RiSpotifyFill className="icon" />
+            <a
+              href="https://www.instagram.com/inkapetrarebecca/"
+              target="_blank"
+            >
+              <RiInstagramFill className="icon" />
+            </a>
+            <a
+              href="https://open.spotify.com/user/eer0ds8nf29bby3op5iil4rxn?si=f4e01785b6b84794&nd=1"
+              target="_blank"
+            >
+              <RiSpotifyFill className="icon" />
+            </a>
           </div>
         </div>
       </div>
