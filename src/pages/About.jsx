@@ -27,7 +27,7 @@ export const About = () => {
           <div className={`trial-about-wrapper`}>
             <div className="trial-about-text">
               <PText
-                className={isTabletOrDesktop ? "paragraph-text brown-text" : "paragraph-text"}
+                className={isTabletOrDesktop ? "paragraph-text brown-text" : "paragraph-text white"}
                 text={text}
               />
             </div>

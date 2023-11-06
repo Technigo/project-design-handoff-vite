@@ -2,7 +2,10 @@
     background-color: #374F4B;
     background-image: url("../assets/background-image/About_background_mobile.png");
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 10px;
 }
+
 
 
 .about-content {
@@ -15,7 +18,7 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    margin-bottom: 85%;
+    margin-bottom: 105%;
 }
 
 .about-headline-wrapper {
@@ -25,6 +28,7 @@
 
 .about-hero-content h1 {
     text-align: center;
+    color: white;
 }
 
 .trial-about-wrapper {
@@ -42,6 +46,10 @@
 
 .trial-about-wrapper p {
     text-align: center;
+}
+
+.white {
+    color: white;
 }
 
 .card-page-container h2 {
@@ -144,7 +152,7 @@
     }
 
     .trial-about-text {
-        height: 40px; 
+        height: 40px;
         display: flex;
         align-items: center;
         justify-content: start;
