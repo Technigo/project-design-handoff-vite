@@ -10,9 +10,7 @@ rm -rf .git
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Ill try to write the read me asap
 
 ## Getting Started with the Project
 
@@ -32,7 +30,7 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://yoga-balance.netlify.app/
 
 ## Instructions
 
