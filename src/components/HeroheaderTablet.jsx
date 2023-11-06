@@ -1,13 +1,16 @@
 import React from 'react';
 import "./css/heroheader.css";
+import { useTranslation } from 'react-i18next';
 
 const HeroHeader = () => {
+
+    const { t } = useTranslation();
 
     return (
         <div className='heroheader'>
             <div className="header-info">
-                <h1>At Home Fitness</h1>
-                <p>Helping you move in your comfort zone</p>
+                <h1>{t('At Home Fitness')}</h1>
+                <p>{t('Helping you move in your comfort zone')}</p>
             </div>
         </div>
     );

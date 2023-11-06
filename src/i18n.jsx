@@ -39,7 +39,7 @@ const resources = {
             article2_info: "Att röra på din kropp hjälper till att minska din sjuklighet. När du håller dig konsekvent, oavsett tid, är fördelarna för din hälsa enorma. Vi uppmuntrar dig att läsa några studier som vi har tillhandahållit. Klicka på läs mer för att se artiklarna.",
             article3_info: "Vi anser att alla ska ha möjlighet att nå sina träningsmål. Vi har olika prisklasser. Allt från 0 kr till 800 kr. Skillnaderna i hälsa blir allt större mellan fattiga och rika. Så vi vill erbjuda ett lyxigt utrymme för människor från olika ekonomiska bakgrunder. Du är välkommen här!",
             article1_name: "grundat av upptagna kvinnor",
-            article2_name: "vem bryr sig om din hälsa",
+            article2_name: "vem tar hand om din hälsa",
             article3_name: "ha tillgång till träning oavsett budget",
             namePlaceholder: "namn",
             messagePlaceholder: "meddelande"
