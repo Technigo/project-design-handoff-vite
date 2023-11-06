@@ -15,7 +15,8 @@
 }
 
 .welcome-section img {
-    width: 100%
+    width: 100%;
+    padding-top: 3rem;
 }
 
 .contact-btn-container {

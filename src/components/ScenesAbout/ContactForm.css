@@ -34,14 +34,15 @@ form input[type="email"] {
     border: solid 1px var(--yellow);
     border-radius: 0.3rem;
     background-color: var(--purplelight);
-    color: var(--black);
+    color: var(--white);
     font-family: "Readex", sans-serif;
 }
 
 form input[type="text"]:focus,
 form input[type="email"]:focus {
-    border-color: var(--purplebright) !important;
-    background-color: var(--white);
+    border-color: var(--purplebright);
+    outline: var(--purplebright);
+    background-color: var(--purplelight);
 }
 
 .checkbox-container {
@@ -56,11 +57,15 @@ form input[type="email"]:focus {
     height: 1.5rem;
     border: 1px solid var(--yellow);
     border-radius: 0.3rem;
+    
 }
 
 form input[type="checkbox"]:checked {
-    background-color: var(--purplebright);
+    background-color: var(--yellow);
     border-color: var(--purplebright);
+    background-image: url("assets/checkMark.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
   
 /* Styling of focused state (when the label is clicked) */
@@ -68,9 +73,17 @@ form input[type="checkbox"]:checked {
     cursor: pointer;
 }
 
+.submit-btn-container {
+    width: 10rem;
+    align-self: center;
+} 
+
 @media (min-width: 700px) {
     .contact-section {
         padding: 3rem 4rem 2.5rem;
+    }
+    .submit-btn-container {
+        width: 100%;
     }
 }
 

@@ -141,7 +141,7 @@
             "heading": "Contact us",
             "labels": {
                 "name": "Name",
-                "email": "E-mail",
+                "email": "Email",
                 "terms": "I agree to terms and conditions"
             },
             "placeholders": {

@@ -1,9 +1,32 @@
 import { useTranslation } from "react-i18next";
+import { useState } from "react"
 import { Button } from "../Button/Button";
 import "./ContactForm.css";
 
 export const ContactForm = () => {
     const { t } = useTranslation();
+
+
+    //FUNCTIONS TO SAVE AND PRINT FORM DATA TO CONSOLE
+
+    //declaring a useState hook to save user data. 
+    const [formData, setFormData] = useState({
+        name: "",
+        email: "",
+        agreeToTerms: false,
+    });
+
+   
+    //takes the input event as argument, 
+    const name = (e) => setFormData({...formData, name: e.target.value});
+    const email = (e) => setFormData({...formData, email: e.target.value});
+    const agreeToTerms = (e) => setFormData({...formData, agreeToTerms: e.target.value});
+
+    const logData = () => {
+        console.log("Form Data:", formData)
+    }
+    
+
     return (
         <section id="contact-section" className="contact-section">
             <h2>{t("about.form.heading")}</h2>
@@ -14,7 +37,9 @@ export const ContactForm = () => {
                         type="text"
                         name="name"
                         id="name"
-                        placeholder={t("about.form.placeholders.name")}
+                        value={formData.name}
+                        onChange={name}
+                        //placeholder={t("about.form.placeholders.name")}
                         required
                     />
                 </label>
@@ -24,7 +49,9 @@ export const ContactForm = () => {
                         type="email"
                         name="email"
                         id="email"
-                        placeholder={t("about.form.placeholders.email")}
+                        value={formData.email}
+                        onChange={email}
+                        //placeholder={t("about.form.placeholders.email")}
                         required
                     />
                 </label>
@@ -34,13 +61,15 @@ export const ContactForm = () => {
                         type="checkbox"
                         name="terms"
                         id="terms"
-                        value="false"
+                        checked={formData.agreeToTerms}
+                        onChange={agreeToTerms}
                         required
                     />
                     Terms and conditions
                 </label>
-
-                <Button type="submit">{t("about.form.button")}</Button>
+                <div className="submit-btn-container">
+                <Button onClick={logData} type="submit">{t("about.form.button")}</Button>
+                </div>
             </form>
         </section>
     );
