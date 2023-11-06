@@ -12,7 +12,7 @@ export const AboutUs = () => {
                 <AboutUsHome />
                 <Form />
                 <FAQ />
-                <Footer />
+                {/* <Footer /> */}
             </div>
         </div>
         </>

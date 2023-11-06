@@ -1,0 +1,57 @@
+.hamburgerNav {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .hamburgerNav {
+        display: flex;
+        position: absolute;
+        top: 1em;
+        right: 5em;
+    }
+
+    .hamburgerNav img {
+        width: 50px;
+    }
+
+    .open {
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .open:hover {
+        background-color: transparent;
+        border: none;
+    }
+
+    .menuContent {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 10px;
+        font-weight: 700;
+    }
+
+    .close {
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        color: #4A205A;
+        font-family: 'Montserrat';
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 667px) {
+    .hamburgerNav {
+        display: flex;
+        position: absolute;
+        top: 1em;
+        right: 2em;
+    }
+}

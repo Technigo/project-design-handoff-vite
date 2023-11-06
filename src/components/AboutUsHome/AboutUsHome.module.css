@@ -24,12 +24,16 @@
     max-width: 25%;
 }
 
+.link {
+    text-decoration: none;
+}
+
 @media screen and (max-width: 667px) {
     .mainContainer {
         height: 75em;
         background-size: 80%;
         align-items: flex-end;
-        margin-left: 0em;
+        max-width: 100%;
     }
 
     .mainContainer img {

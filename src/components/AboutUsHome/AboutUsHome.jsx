@@ -1,15 +1,34 @@
 import styles from './AboutUsHome.module.css'
+import menuStyles from '../Header/HamburgerMenu.module.css'
 import chalkyLogo from "../../assets/chalkyLogo.svg"
+import menuButton from '../../assets/menuButton.svg'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import { H1 } from '../../reusableComponents/H1/H1.jsx'
 import { H2 } from '../../reusableComponents/H2/H2.jsx'
 import { P1 } from '../../reusableComponents/P1/P1.jsx'
 import { P2 } from '../../reusableComponents/P2/P2.jsx'
 
 export const AboutUsHome = () => {
+
+const [openMenu, setOpenMenu] = useState(false)
+
     return (
         <>
             <div className={styles.mainContainer}>
-                    <img src={chalkyLogo} alt="Chalky logo" />
+                    <Link to={`/`}><img src={chalkyLogo} alt="Chalky logo" /></Link>
+                    <div className={menuStyles.hamburgerNav}>
+                    {!openMenu && <button className={menuStyles.open} onClick={() => setOpenMenu(true)}><img src={menuButton} alt="Menu" /></button>}
+                    {openMenu && (
+                        <div className={menuStyles.menuContent}>
+                            <P2 text="Memberships" />
+                            <Link to={`/aboutus/`} className={styles.link}><P2 text="About Us" /></Link>
+                            <P2 text="Programs" />
+                            <P2 text="FAQ" />
+                            <button className={menuStyles.close} onClick={() => setOpenMenu(false)}>CLOSE</button>
+                        </div>
+                    )}
+                    </div>
                     <div className={styles.infoContainer}>
                         <H1 heading="We just love to climb together" />
                         <P2 
