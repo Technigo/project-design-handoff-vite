@@ -10,8 +10,8 @@
 }
 
 .H2 {
-    /*font was changed but not prototype and therefore I had to change the size to make it look more like the prototype*/
-    font-size: 28px;
+    /*font was changed but not prototype and therefore I "had" to change the size to make it look more like the prototype*/
+    font-size: 30px;
     font-weight: 800;
     line-height: 104%;
     /* 37.44px */

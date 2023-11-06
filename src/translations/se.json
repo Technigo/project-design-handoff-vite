@@ -13,12 +13,6 @@
         "heading": "Välkommen till YogaBalance",
         "sub-heading": "Gå med i våra klasser och hitta din inre frid"
     },
-    "instagram": {
-        "followUs": "Follow us on Instagram",
-        "connectInspired": "Connect and keep inspired",
-        "imageCarousel": "Instagram image carousel",
-        "connectButton": "Connect on Instagram"
-    },
     "membership": {
         "header": "Våra medlemskap",
         "subHeader": "Få ut mesta möjliga av din yogapraktik",
@@ -81,5 +75,12 @@
             "buttonText": "Boka din plats",
             "altText": "Bild från ovan på kvinna med låsta händer."
         }
+    },
+    "instagram": {
+        "followUs": "Följ oss på Instagram",
+        "connect": "Anslut och håll dig inspirerad",
+        "carousel": "Bildkarusell insta",
+        "logoAlt": "Instagram",
+        "connectButton": "Anslut på Instagram"
     }
 }

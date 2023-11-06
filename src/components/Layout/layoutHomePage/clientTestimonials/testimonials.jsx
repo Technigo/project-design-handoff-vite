@@ -4,7 +4,7 @@ import style from './Testimonials.module.css';
 import { Text } from '../../../UI/textAndTypography/Text';
 
 export const Testimonials = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
 
     return (
