@@ -1,13 +1,89 @@
 :root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    /*COLOURS!*/
+    --black: #1d1c25;
+    --white: #fff;
+    --purplebright: #612e77;
+    --purplelight: #dcd3e0;
+    --purpledark: #4C225F;
+    --yellowlight: #fde6ba;
+    --yellow: #ffd075;
+    --yellowtransparent: rgba(255, 208, 117, 0.5);
+
+    --p: "Readex Pro";
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: "Courier New", monospace;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    color: var(--black);
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*IMAGES*/
+img {
+    max-width: 100%;
+}
+
+/*TYPOGRAPHY*/
+
+h1 {
+    font-size: 2.25rem;
+    line-height: 2.75rem;
+    color: var(--white) ; 
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: var(--purplebright);
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+}
+
+p {
+  line-height: 1.4rem;
+}
+
+.p-bold {
+    font-weight: 600;
+}
+
+/*Changing the font-sizes for the headers
+Not exactly sure i got i right, but I think it looks ok.*/
+@media (min-width: 837px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 104%;
+    }
+}
+
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 4rem;
+        line-height: 104%;
+    }
+    h2 {
+        font-size: 3rem;
+        line-height: 104%;
+    }
+    h3 {
+        font-size: 3rem;
+        line-height: 104%;
+    }
 }

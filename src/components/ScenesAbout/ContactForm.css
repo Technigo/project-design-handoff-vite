@@ -1,0 +1,96 @@
+.contact-section {
+    background-color: var(--purplebright);
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1.5rem 2.5rem;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.contact-section h2 {
+    color: var(--white);
+}
+
+form {
+    background-color: var(--purplelight);
+    display: flex;
+    flex-direction: column;
+    padding: 1.25rem;
+    gap: 1.25rem;
+    width: 100%;
+    border-radius: 0.3rem;
+    box-shadow: 0.25rem 0.25rem 0.1rem 0 var(--black);
+}
+
+.label-text {
+    display: flex;
+    flex-direction: column;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 0.25rem;
+    border: solid 1px var(--yellow);
+    border-radius: 0.3rem;
+    background-color: var(--purplelight);
+    color: var(--white);
+    font-family: "Readex", sans-serif;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    border-color: var(--purplebright);
+    outline: var(--purplebright);
+    background-color: var(--purplelight);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.checkbox-container input {
+    appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid var(--yellow);
+    border-radius: 0.3rem;
+    
+}
+
+form input[type="checkbox"]:checked {
+    background-color: var(--yellow);
+    border-color: var(--purplebright);
+    background-image: url("assets/checkMark.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+  
+/* Styling of focused state (when the label is clicked) */
+.checkbox-container:hover {
+    cursor: pointer;
+}
+
+.submit-btn-container {
+    width: 10rem;
+    align-self: center;
+} 
+
+@media (min-width: 700px) {
+    .contact-section {
+        padding: 3rem 4rem 2.5rem;
+    }
+    .submit-btn-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 1020px) {
+    .contact-section {
+        padding: 3rem 6rem 2.5rem;
+    }
+}
+
+
