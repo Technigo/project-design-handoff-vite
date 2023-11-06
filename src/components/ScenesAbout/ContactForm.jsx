@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Button } from "../Button/Button";
-import "./ContactFOrm.css";
+import "./ContactForm.css";
 
 export const ContactForm = () => {
     const { t } = useTranslation();
