@@ -1,0 +1,16 @@
+{
+    "testimonials": {
+        "header": "Vad våra kunder säger",
+        "subHeader": "Några vänliga ord",
+        "firstTestimonial": "“Jag njuter av varje stund på yoga balance så mycket. Det får mig att känna mig yngre och mer levande. Jag rekommenderar detta för varje kvinna i klimakteriet!”",
+        "firstTestimonialAlt": "Kund som praktiserar yoga",
+        "secondTestimonial": "“Jag kan inte leva utan mina yogaklasser på YogaBalance, det hjälper mig att finna frid i sinne och kropp.”",
+        "secondTestimonialAlt": "Kund som slappnar av efter yogaklassen"
+    },
+    "welcome": "Välkommen till vårt samhälle",
+    "text": "Här på YogaBalance erbjuder vi en lugn miljö för din yogaresa.",
+    "translatePage": {
+        "heading": "Välkommen till YogaBalance",
+        "sub-heading": "Gå med i våra klasser och hitta din inre frid"
+    }
+}

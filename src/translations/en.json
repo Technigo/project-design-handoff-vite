@@ -1,0 +1,16 @@
+{
+    "testimonials": {
+        "header": "What our clients say",
+        "subHeader": "Some kind words",
+        "firstTestimonial": "“I enjoy every moment at yoga balance so much. It makes me feel younger and more living. I highly recommend this for every woman in menopause!”",
+        "firstTestimonialAlt": "Client practicing yoga",
+        "secondTestimonial": "“I cannot live without my yoga classes at YogaBalance, it helps me find peace in mind and body.”",
+        "secondTestimonialAlt": "Client relaxing after yoga class"
+    },
+    "welcome": "Welcome to our community",
+    "text": "Here at YogaBalance, we provide a tranquil environment for your yoga journey.",
+    "translatePage": {
+        "heading": "Welcome to YogaBalance",
+        "sub-heading": "Join our classes and find your inner peace"
+    }
+}
