@@ -16,8 +16,6 @@ export const HomePage = () => {
     let h1_headline = t("homepage.hero2");
     let text_trial = t("homepage.hero3");
 
-
-
     return (
         <div className="home-page-wrapper">
             <div className="hero-content">
@@ -41,7 +39,9 @@ export const HomePage = () => {
                                 text={text_trial}
                             />
                         </div>
-                        <Button text={t("homepage.button")} />
+                        <Button
+                            text={t("homepage.button")}
+                        />
                     </div>
                 </div>
                 <HomeContainer />
