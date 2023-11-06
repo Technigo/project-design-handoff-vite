@@ -10,3 +10,9 @@
   font-size: 2rem;
   line-height: 109.375%;
 }
+
+@media (min-width: 744px) {
+  #quote-about-page {
+    padding: 0;
+  }
+}

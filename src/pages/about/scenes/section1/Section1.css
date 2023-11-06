@@ -28,9 +28,13 @@
 
   #section1 .image-wrapper {
     padding: 0rem;
+    grid-column: 2/2;
+    grid-row: 1/1;
   }
 
   #section1 .page-wrapper {
     padding: 2rem 2rem 0;
+    grid-column: 1/2;
+    grid-row: 1/1;
   }
 }

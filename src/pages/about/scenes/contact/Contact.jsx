@@ -8,7 +8,7 @@ export const Contact = () => {
   return (
     <section id="contact">
       <div className="page-wrapper">
-        <div className="text-info">
+        <div className="contact-info">
           <SectionTitle
             className="contact-title"
             title={t("aboutPage.contact.title")}
