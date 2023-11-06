@@ -89,3 +89,13 @@ p {
   }
 
 }
+
+@media (min-width: 835px) and (max-width: 1200px) {
+
+  .html,
+  body {
+    margin: 0 auto;
+    margin: 0 auto;
+  }
+
+}

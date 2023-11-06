@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./css/navbar.css";
+import { Link } from 'react-router-dom';
 import BurgerMenu from "./BurgerMenu"; // Import BurgerMenu without curly braces
 
 const NavbarMobile = () => {
@@ -24,7 +25,7 @@ const NavbarMobile = () => {
                 onClick={toggleMenu} // Toggle the menu when the menu icon is clicked
             />
 
-            <img src="/logo.png" alt="logo" />
+            <Link to="/"><img src="/logo.png" alt="logo" /></Link>
 
             <img
                 src="/search.png"

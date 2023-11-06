@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./css/navbar.css";
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 
 const Navbar = () => {
@@ -18,7 +19,7 @@ const Navbar = () => {
 
         <nav>
 
-            <img src="/logo.png" alt="logo" />
+            <Link to="/"><img src="/logo.png" alt="logo" /></Link>
             <div className="nav-links">
                 <a href="#">Videos</a>
                 <a href="#">{t('Workout Plan')}</a>

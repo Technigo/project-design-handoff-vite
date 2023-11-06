@@ -142,43 +142,4 @@ img {
         padding: 10px;
     }
 
-    /* BurgerMenu.css */
-    .bm-burger-button {
-        display: none;
-        width: 24px;
-        height: 24px;
-        overflow-x: hidden;
-    }
-
-    .bm-menu {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 30%;
-        height: 20%;
-        background: white;
-        transition: color 0.2s;
-        margin: 0;
-    }
-
-    .bm-menu-item {
-        color: black;
-    }
-
-    .burger-items {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .burger-items a {
-        color: #000;
-        font-family: 'Cormorant Garamond', sans-serif;
-        font-size: 10px;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 400;
-        line-height: normal;
-        padding: 10px;
-
-    }
 }
