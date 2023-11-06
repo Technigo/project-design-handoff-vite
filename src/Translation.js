@@ -36,7 +36,7 @@ const resources = {
 
             //Info
             infoTitle1: "$1.13 milioner",
-            infoText1: "Amerikaner spenderar 1,13 miljoner dollar årligen på oanvända gymmedlemskap.",
+            infoText1: "Americans spend $1.13 million on unused gym memberships annually.",
             infoTitle2: "$1.9 billion",
             infoText2: "Australians are wasting $1.9 billion per year on unused gym memberships.",
             infoTitle3: "£4 billion",

@@ -47,11 +47,11 @@ const ImageContent = () => {
             }
 
             {/* First two rows with 3 columns */}
-            <div className="text-center grid grid-cols-1 bg-white md:grid-cols-2 lg:grid-cols-3 gap-4 border-t-4 border-black pt-1 lg:bg-transparent">
+            <div className="text-center grid grid-cols-1 bg-white md:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 pt-1 lg:bg-transparent">
                 <div className='p-12 flex flex-col items-center justify-center '>
                     <h1 className='text-2xl'> {t("gridTitle1")}</h1>
                     <p>{t("gridText1")}</p>
-                    <button className='hover:shadow-yellow-box g-white w-44 border-solid border-2 border-black p-2 mb-4 mt-4'>{t("gridButton")}</button>
+                    <button className='shadow-md shadow-black hover:shadow-yellow-box g-white border-solid border-2 border-black pl-1 pr-1 mb-4 mt-4'>{t("gridButton")}</button>
                 </div>
                 <div className=''>
                     <img className="sm:pl-0 lg:fixed-image-height first-row-image-width lg:pl-3" src={GridData[1].Image1} alt="Image 1" />
@@ -68,7 +68,7 @@ const ImageContent = () => {
                 <div className='p-12 flex flex-col items-center justify-center bg-white lg:bg-transparent'>
                     <h1 className='text-2xl'>{t("gridTitle2")}</h1>
                     <p>{t("gridText2")}</p>
-                    <button className='hover:shadow-yellow-box g-white w-44 border-solid border-2 border-black p-2 mb-4 mt-4'>{t("gridButton")}</button>
+                    <button className='shadow-md shadow-black hover:shadow-yellow-box g-white pl-1 pr-1 border-solid border-2 border-black mb-4 mt-4'>{t("gridButton")}</button>
                 </div>
             </div>
 
@@ -78,7 +78,7 @@ const ImageContent = () => {
                 <div className="p-12 col-span-2 md:col-span-1 flex flex-col items-center justify-center p-5">
                     <h1 className="text-2xl">{t("gridTitle3")}</h1>
                     <p>{t("gridText3")}</p>
-                    <button className="hover:shadow-yellow-box bg-white w-44 border-solid border-2 border-black p-2 mb-4 mt-4">
+                    <button className="shadow-md shadow-black hover:shadow-yellow-box bg-white border-solid border-2 border-black pl-1 pr-1 mb-4 mt-4">
                         {t("gridButton")}
                     </button>
                 </div>
@@ -99,7 +99,7 @@ const ImageContent = () => {
                 <div className='flex flex-col items-center justify-center col-span-1 md:col-span-1 lg:p-12'>
                     <h1 className='text-2xl'>{t("gridTitle4")}</h1>
                     <p>{t("gridText3")}</p>
-                    <button className='hover:shadow-yellow-box g-white w-44 border-solid border-2 border-black p-2 mb-4 mt-4'>{t("gridButton")}</button>
+                    <button className='shadow-md shadow-black hover:shadow-yellow-box g-white border-solid border-2 border-black pl-1 pr-1 mb-4 mt-4'>{t("gridButton")}</button>
                 </div>
 
             </div>
@@ -109,7 +109,8 @@ const ImageContent = () => {
                 <div className='md:p-0 lg:p-12 mt-10 flex flex-col items-center justify-center p-5'>
                     <h1 className='text-2xl'>{t("gridTitle5")}</h1>
                     <p>{t("gridText5")}</p>
-                    <button className='hover:shadow-yellow-box g-white w-44 border-solid border-2 border-black p-2 mb-4 mt-4'>{t("gridButton")}</button>
+                    <button className="shadow-md shadow-black black-shadow hover:shadow-yellow-box bg-white border-solid border-2 border-black pl-1 pr-1 mb-4 mt-4">{t("gridButton")}</button>
+
                 </div>
                 <div className='lg:pl-3'>
                     <img className="" src={GridData[13].Image9} alt="Image 2" />

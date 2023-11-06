@@ -63,7 +63,7 @@ export const InfoCard = ({ data }) => {
 
 
                 <button
-                    className="hover:shadow-yellow-box bg-white text-black w-44 border-solid border-2 border-black p-2 mt-0 md:mb-4 mt-4 ml-20 mr-20 lg:mt-10 ml-36 mr-36"
+                    className="hover:shadow-yellow-box bg-white text-black w-44 border-solid border-2 border-black p-1 pr-5 pl-5 mt-0 md:mb-4 mt-4 ml-20 mr-20 lg:mt-10 ml-36 mr-36"
                     onClick={navigateToAbout}
                 >
                     {t("rightButton")}

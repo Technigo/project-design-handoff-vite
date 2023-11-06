@@ -16,7 +16,7 @@ export const InformationList = () => {
         changeLanguage(newLanguage);
     };
     return (
-        <div className="grid grid-cols-2 place-content-evenly text-sm md:grid-cols-4 lg:pl-10 text-lg">
+        <div className="grid grid-cols-2 place-content-evenly text-sm md:grid-cols-4 lg:pl-10 text-lg ml-auto">
             <ul>
                 <li><h2 className="font-bold">{t("information")}</h2></li>
                 <li>{t("aboutUs")}</li>

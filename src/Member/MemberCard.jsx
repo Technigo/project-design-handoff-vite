@@ -32,7 +32,7 @@ export const MemberCard = ({ cardData }) => {
         <div className="text-center">
             <div className="flex flex-col items-center justify-center">
                 <img
-                    className="h-96"
+                    className="h-96 rounded-2xl"
                     src={icons[currentIconIndex]}
                     alt={`Icon ${currentIconIndex + 1}`}
                     style={{

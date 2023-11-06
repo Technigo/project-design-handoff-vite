@@ -14,6 +14,7 @@ export const Grid = () => {
 
     return (
         <div className="relative mt-20 bg-white lg:bg-transparent">
+            <div className="w-11/12 h-1 bg-black"></div>
             <div className="" style={backgroundStyles}>
 
                 <ImageContent />

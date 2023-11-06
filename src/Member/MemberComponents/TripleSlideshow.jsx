@@ -3,7 +3,7 @@ import { MemberCard } from '../MemberCard';
 
 
 
-//Show one card on mobile and ipad, 3
+//Show one card on mobile and ipad,
 export const TripleSlideshow = ({ data }) => {
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 1024);
 

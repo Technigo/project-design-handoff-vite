@@ -16,6 +16,7 @@ export default {
         'yellow-color': '#FFC700',
       }, boxShadow: {
         'yellow-box': '0 3px 3px 2px rgba(255, 199, 0)',
+        'black-shadow': '0 3px 3px 10px rgba(0, 0, 0, 0.2)',
       }
     },
   },
