@@ -24,24 +24,36 @@ export const Footer = () => {
             placeholder="Email"
             required
           />
-          <button type="submit">Subscribe</button>
+          <button type="submit" className="subscribe-button">
+            Subscribe
+          </button>
         </form>
       </div>
       <div className="footer-contact">
         <div className="footer-address">
-          <div className="address">
+          <div className="address-item">
             <img
               src={addressImage}
               alt="address icon"
               className="address-icon"
             />
-            <p>Österlenvägen 55 </p>
-            <p>272 22 St Olof, Sweden</p>
+            <div>
+              <p>Österlenvägen 55</p>
+              <p>272 22 St Olof, Sweden</p>
+            </div>
           </div>
-          <img src={phoneImage} alt="phone icon" className="phone-icon" />
-          <p>+46 (0) 70 707 61 20</p>
-          <img src={envelopeImage} alt="email icon" className="envelope-icon" />
-          <p>info@arnyogastudio.com</p>
+          <div className="address-item">
+            <img src={phoneImage} alt="phone icon" className="phone-icon" />
+            <p>+46 (0) 70 707 61 20</p>
+          </div>
+          <div className="address-item">
+            <img
+              src={envelopeImage}
+              alt="email icon"
+              className="envelope-icon"
+            />
+            <p>info@arnyogastudio.com</p>
+          </div>
         </div>
         <div className="footer-logo">
           <img src={logoImage} alt="ARN logo" />
@@ -58,7 +70,10 @@ export const Footer = () => {
               className="footer-globe"
             />
             <label htmlFor="language-select" className="sr-only"></label>
-            <select id="language-select" name="languages">
+            <select
+              id="language-select"
+              name="languages"
+              className="language-dropdown">
               <option value="English">Eng</option>
               <option value="Swedish">Sve</option>
             </select>

@@ -37,14 +37,6 @@ p.newsletter-text {
   margin: 10px 18px;
 }
 
-address {
-  color: #ffece4;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
 input {
   display: flex;
   width: 318px;
@@ -67,15 +59,53 @@ input {
   line-height: 21px;
 }
 
-/* .footer-address {
+.subscribe-button {
   display: flex;
-  justify-content: center;
+  width: 129px;
+  height: 28px;
+  padding: 4px 20px;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fbb574;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+  margin-left: 18px;
+  color: #543855;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px; /* 150% */
+}
 
-  align-self: stretch;
-  padding: 0px 10px;
+.footer-address {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
-} */
+  color: #ffece4;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 20px;
+}
+
+.address-item {
+  display: flex;
+  align-items: center;
+}
+
+.address-item img {
+  margin-right: 8px;
+}
+
+.address-icon,
+.phone-icon,
+.envelope-icon {
+  width: 24px;
+  height: 24px;
+}
 
 .footer-logo {
   display: flex;
@@ -116,8 +146,30 @@ input {
   height: 45px;
 }
 
-#language-select {
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid #ccc;
+.language-dropdown {
+  display: flex;
+  width: 55px;
+  padding: 4px 11px;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  margin-left: 3px;
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ffece4;
+  color: #543855;
+  appearance: none; /* Disable native styling */
+  -webkit-appearance: none; /* Disable native styling for Safari */
+  -moz-appearance: none; /* Disable native styling for Firefox */
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2212%22%20height%3D%228%22%20viewBox%3D%220%200%2012%208%22%20fill%3D%22none%22%3E%20%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M0.910402%202.41043C0.520828%202.02086%200.520828%201.38923%200.910401%200.99966C1.29967%200.610387%201.9307%200.610043%202.3204%200.998891L6.20502%204.87504L10.0896%200.998891C10.4793%200.610043%2011.1104%200.610387%2011.4996%200.99966C11.8892%201.38923%2011.8892%202.02086%2011.4996%202.41043L6.20502%207.70504L0.910402%202.41043Z%22%20fill%3D%22%23C2D1D9%22%2F%3E%20%3C%2Fsvg%3E");
+
+  background-repeat: no-repeat; /* No repeat for background image */
+  background-position: calc(100% - 5px) center;
+  background-size: 14px; /* Size of the arrow icon */
+  cursor: pointer;
 }
