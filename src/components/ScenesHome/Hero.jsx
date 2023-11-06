@@ -26,7 +26,10 @@ export const Hero = () => {
                 <h3>{t("home.hero.subHeading")}</h3>
                 <div className="hero-btn-container">
                 <Button>{t("home.hero.buttons.class")}</Button>
-                <Button secondary onClick={scrollToMembershipSection}>{t("home.hero.buttons.member")}</Button>
+                {/* Something's up with this secondary prop, i get an error if i dont pu equal to "true",
+                 otherwise i get a warning saying it shouldn't be sent through the DOM.
+                 I don't know. It works as expected though.  */}
+                <Button secondary="true" onClick={scrollToMembershipSection}>{t("home.hero.buttons.member")}</Button>
                 </div>
                 </div>
             </div>

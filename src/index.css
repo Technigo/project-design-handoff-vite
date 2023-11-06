@@ -64,4 +64,26 @@ p {
     font-weight: 600;
 }
 
+/*Changing the font-sizes for the headers
+Not exactly sure i got i right, but I think it looks ok.*/
+@media (min-width: 837px) {
+    h1 {
+        font-size: 3rem;
+        line-height: 104%;
+    }
+}
 
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 4rem;
+        line-height: 104%;
+    }
+    h2 {
+        font-size: 3rem;
+        line-height: 104%;
+    }
+    h3 {
+        font-size: 3rem;
+        line-height: 104%;
+    }
+}
