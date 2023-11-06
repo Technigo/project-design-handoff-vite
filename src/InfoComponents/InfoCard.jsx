@@ -52,12 +52,12 @@ export const InfoCard = ({ data }) => {
                     </div>
                 </div>
                 <h1 className="pr-0 text-4xl md:pt-1 mt-0 md:text-6xl lg:pt-0 md:pt-16">{t("infoTitle3")}</h1>
-                <p className="pr-10 pl-10 pb-5 md:mt-0 text-lg pt-0 md:text-lg md:pr-48 md:pl-48 md:pt-10 lg:pt-5 lg:px-32 text-white">{t("infoText3")}</p>
+                <p className="pr-10 pl-10 pb-2 md:mt-0 text-lg pt-0 md:text-lg md:pr-48 md:pl-48 md:pt-10 lg:pt-5 lg:px-32 text-white">{t("infoText3")}</p>
             </div>
 
 
             <div className="flex flex-col justify-center items-center text-white lg:mr-11 ml-0">
-                <div className="lg:mt-0 pt-0 mr-0 sm:pr-0 md:px-20 lg:border-b-4 border-white lg:pr-10 pb-10 md:pt-16">
+                <div className="pb-3 lg:mt-0 pt-0 mr-0 sm:pr-0 md:px-20 lg:border-b-4 border-white lg:pr-10 md:pb-10 md:pt-16">
                     <span className="px-3 md:mt-0 text-4xl md:text-6xl lg:pt-10 text-white">{t("rightText")}<span className="text-yellow-color">{t("rightTextYellow")}</span></span>
                 </div>
 

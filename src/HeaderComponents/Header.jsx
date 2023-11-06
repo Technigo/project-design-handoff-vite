@@ -1,6 +1,9 @@
 import "../Translation";
 import { useTranslation } from "react-i18next";
-
+import AfterHours from "../assets/AfterHours.svg"
+import CoWorking from "../assets/CoWorking.svg"
+import Gym from "../assets/Gym.svg"
+import SpaWellness from "../assets/SpaWelness.svg"
 
 export const Header = () => {
     const { t, i18n } = useTranslation();
@@ -18,7 +21,15 @@ export const Header = () => {
     return (
         <div className="md:h-fit lg:bg-header relative bg-cover lg:h-screen sm:bg-header relative bg-cover h-screen" style={{ backgroundImage: `url(https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/jlz1000_88870_photo-realistic_image_of_a_gym_with_a_lounge_area_ec9e24eb-e19b-46e7-8449-97ca3e3d8892_upscayl_4x_realesrgan-x4plus-anime.png?v=1698691615805)` }}>
 
-            <img className="sm:mx-auto block h-14 top-4 lg:h-28 absolute top-10 right-6 mx-16 text-center" src="https://cdn.glitch.me/be758d61-a981-49f2-a7a6-72216e478708/Insta%20story%20cirkles.svg?v=1698689442566" alt="Story Circles" />
+
+            <div className="flex justify-center pt-2 flex-wrap sm:flex-nowrap items-center sm:justify-center md:justify-end">
+                <img className="h-16 pr-3 lg:pr-7 lg:h-24" src={Gym} alt="" />
+                <img className="h-16 lg:pr-9 lg:h-24" src={SpaWellness} alt="" />
+                <img className="h-16 pr-3 lg:pr-7 lg:h-24" src={CoWorking} alt="" />
+                <img className="h-16 pr-3 lg:pr-7 lg:h-24" src={AfterHours} alt="" />
+
+
+            </div>
 
             <div className="ml-8 md:pr-44 lg:pr-0 lg:w-1/2 mx-16 pt-28">
                 <h1 className="text-4xl text-left text-white md:text-6xl">
