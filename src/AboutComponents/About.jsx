@@ -30,7 +30,8 @@ export const About = () => {
         <div className="flex flex-col">
             <div className="flex flex-col border-2">
                 <div className="flex items-center justify-between h-24 relative">
-                    <button className="hover:shadow-yellow-box hover:border-2 border-black absolute p-2 flex left-10" type="button" onClick={backButton}>
+
+                    <button className="hover:shadow-yellow-box hover:border-2 border-black absolute pl-3 pr-3 flex left-10" type="button" onClick={backButton}>
                         <img className="pt-1" src={BackIcon} alt="" />
                         {t("homeButton")}
                     </button>

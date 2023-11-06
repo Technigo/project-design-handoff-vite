@@ -20,7 +20,7 @@ export const AboutText = () => {
             <div className="m-8 text-center flex flex-col">
                 <h1 className="hidden lg:block text-6xl">{t("aboutTitle")}</h1>
                 <h2 className="pt-5">{t("aboutSubTitle")}</h2>
-                <p className="text-lg custom-font pt-20 pr-6 pl-6">{t("aboutText")}</p>
+                <p className="text-lg custom-font pt-20 pr-6 pl-6 md:pr-44 md:pl-44">{t("aboutText")}</p>
             </div>
             <div className="flex flex-col justify-center pb-0">
                 <div className="text-sm ml-3 pl-2 lg:text-lg m-20 pl-10 border-l-4 border-yellow-color">
