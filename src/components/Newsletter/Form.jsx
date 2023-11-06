@@ -2,6 +2,7 @@ import styled from "styled-components";
 import NewsletterImage from "/assets/newsletterimage.jpeg";
 import { useTranslation } from "react-i18next";
 
+// Create a styled component for the newsletter container
 const StyledNewsletter = styled.div`
   display: flex;
   position: relative;
@@ -25,6 +26,7 @@ const StyledNewsletter = styled.div`
   }
 `;
 
+// Create a styled component for the signup section
 const Signup = styled.div`
   display: flex;
   flex-direction: column;
@@ -59,6 +61,7 @@ const Signup = styled.div`
   }
 `;
 
+// Create a styled component for the form container
 const StyledForm = styled.div`
   display: flex;
   padding-left: 0px;
@@ -68,6 +71,7 @@ const StyledForm = styled.div`
   width: auto;
 `;
 
+// Create a styled component for a visually hidden label for accessibility purposes
 const VisuallyHidden = styled.label`
   position: absolute;
   width: 1px;
@@ -82,6 +86,7 @@ const VisuallyHidden = styled.label`
 export const Form = () => {
   const { t } = useTranslation();
 
+  // Define a function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent the form from submitting and refreshing the page
     const email = e.target.email.value; // Get the value of the email input field

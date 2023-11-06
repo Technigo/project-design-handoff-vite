@@ -2,6 +2,7 @@ import { CourseCarousel } from "./CourseCarousel.jsx";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
+// Create a styled component for the Courses section
 const StyledCourses = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,6 +17,7 @@ const StyledCourses = styled.div`
   }
 `;
 
+// Create a styled component for the Courses button
 const StyledButton = styled.div`
   display: flex;
   justify-content: center;

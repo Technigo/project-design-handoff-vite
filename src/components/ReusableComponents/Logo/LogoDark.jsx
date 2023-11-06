@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import LogoBlue from "/assets/Logovectorblue.png";
 import styled from "styled-components";
 
+// Create a styled component for the container of the dark-themed logo
 const StyledDarkLogo = styled.div`
   img {
     width: 76px;
@@ -27,6 +28,7 @@ const StyledDarkLogo = styled.div`
   }
 `;
 
+// Create a styled component for the Link component (ButtonLink)
 const ButtonLink = styled(Link)`
   cursor: pointer;
   display: flex;

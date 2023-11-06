@@ -2,6 +2,7 @@ import HeroImage from "/assets/heroimage.jpg";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
+// Create a styled component for the hero section
 const StyledHero = styled.div`
   display: flex;
   align-items: flex-end;
@@ -21,6 +22,7 @@ const StyledHero = styled.div`
   }
 `;
 
+// Create a styled component for the hero text and button wrapper
 const HeroTextWrapper = styled.div`
   display: flex;
   position: absolute;
@@ -61,6 +63,7 @@ const HeroTextWrapper = styled.div`
   }
 `;
 
+// Create a styled component for the hero button
 const StyledHeroButton = styled.div`
   display: flex;
   justify-content: center;

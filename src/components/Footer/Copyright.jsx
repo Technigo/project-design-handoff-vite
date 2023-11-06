@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Styled component for the copyright text.
 const CopyrightText = styled.p`
   text-align: center;
   font-size: 12px;

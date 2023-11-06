@@ -7,10 +7,13 @@ import Exit from "/icons/Multiply.png";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
+// ------- Lots of commented out text, saved for using later on if needed -------
+
 // const MenuButton = styled.button`
 //   background: transparent;
 // `;
 
+// Customized styling to the pre-named classes provided in the React Burger Menu
 const CustomStyles = styled.div`
   width: 100%;
 

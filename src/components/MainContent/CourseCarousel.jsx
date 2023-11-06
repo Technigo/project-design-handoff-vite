@@ -1,8 +1,11 @@
 import enTranslation from "../Translation/en.json";
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from "react-responsive"; // Import the media query hook from react-responsive for responsive design
 import styled from "styled-components";
 
+// ------- Contains some commented out code that may be used later for desktop styling -------
+
+// Create a styled component for the carousel container
 const CarouselContainer = styled.div`
   width: 100%; /* Set the width of the carousel */
   height: 100%;
@@ -23,6 +26,7 @@ const CarouselContainer = styled.div`
   }
 `;
 
+// Create a styled component for the course card
 const StyledCourseCard = styled.div`
   height: 100%;
   width: 300px; /* Set a width for each course card */
@@ -66,6 +70,7 @@ const StyledCourseCard = styled.div`
   }
 `;
 
+// Create a styled component for the course card button
 const CourseCardButton = styled.button`
   display: flex;
   padding: 8px 12px;
@@ -94,6 +99,7 @@ const CourseCardButton = styled.button`
 //   }
 // `;
 
+// Create a styled component for the course card text
 const CourseCardText = styled.div`
   display: flex;
   padding: 0px 4px;
@@ -161,16 +167,16 @@ const CourseCardText = styled.div`
   }
 `;
 
-let courseArray = enTranslation.courses;
+let courseArray = enTranslation.courses; // Retrieve course data from English translations
 console.log(courseArray);
 
 export const CourseCarousel = () => {
   const { t, ready } = useTranslation();
 
-  const courses = t("courses", { returnObjects: true });
-  const isWideScreen = useMediaQuery({ query: "(min-width: 1024px)" });
+  const courses = t("courses", { returnObjects: true }); // Translate and retrieve course data
+  const isWideScreen = useMediaQuery({ query: "(min-width: 1024px)" }); // Check if the screen is wide
 
-  if (!ready) return "Loading translations...";
+  if (!ready) return "Loading translations..."; // Display loading message if translations are not ready
   return (
     <CarouselContainer>
       {courses.map((course, index) => (

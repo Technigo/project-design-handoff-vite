@@ -3,6 +3,7 @@ import TwitterLogoDark from "/icons/TwitterX(1).png";
 import InstagramLogoDark from "/icons/Instagram(1).png";
 import styled from "styled-components";
 
+// Create a styled component for the container of dark follow icons
 const FollowDarkIconContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -11,6 +12,7 @@ const FollowDarkIconContainer = styled.div`
   gap: 8px;
 `;
 
+// Create a styled component for the container of dark icons
 const DarkIcons = styled.div`
   display: flex;
   gap: 16px;

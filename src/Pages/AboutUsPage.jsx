@@ -3,6 +3,9 @@ import { useTranslation } from "react-i18next";
 //import { useMediaQuery } from "react-responsive"; // Import the media query hook
 import styled from "styled-components";
 
+// ------- Some code is commented out but saved if it's needed later on -------
+
+// Create a styled component for the main container of the About Us page
 const StyledAboutUs = styled.div`
   display: flex;
   flex-direction: column;
@@ -12,6 +15,7 @@ const StyledAboutUs = styled.div`
   padding: 20px 0px 80px;
 `;
 
+// Create a styled component for the main heading of the About Us page
 const StyledHeading = styled.h3`
   text-align: center;
   font-size: 28px;
@@ -20,6 +24,7 @@ const StyledHeading = styled.h3`
   text-transform: uppercase;
 `;
 
+// Create a styled component for the container that holds different sections
 const AboutUsContainer = styled.div`
   @media screen and (min-width: 1024px) {
     display: flex;
@@ -28,6 +33,7 @@ const AboutUsContainer = styled.div`
   }
 `;
 
+// Create a styled component for subheadings in each section
 const StyledSubHeading = styled.h4`
   display: flex;
   //width: 230px;
@@ -42,6 +48,7 @@ const StyledSubHeading = styled.h4`
   text-transform: uppercase;
 `;
 
+// Create a styled component for the wrapper that contains text in each section
 const Wrapper = styled.div`
   display: flex;
   //width: 387px;
@@ -56,6 +63,7 @@ const Wrapper = styled.div`
   }
 `;
 
+// Create a styled component for the text wrapper within each section
 const TextWrapper = styled.div`
   //max-width: 100%;
   height: 125px;
@@ -65,6 +73,7 @@ const TextWrapper = styled.div`
   } */
 `;
 
+// Create a styled component for the "Who We Are" section text
 const WhoWeAreText = styled.p`
   text-align: center;
   white-space: pre-line;
@@ -76,6 +85,7 @@ const WhoWeAreText = styled.p`
   } */
 `;
 
+// Create a styled component for the "Find Us" section text
 const FindUsText = styled.p`
   text-align: center;
   white-space: pre-line;
@@ -86,6 +96,8 @@ const FindUsText = styled.p`
     text-align: left;
   } */
 `;
+
+// Create a styled component for the container of contact information
 const ContactTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -96,6 +108,7 @@ const ContactTextWrapper = styled.div`
   }
 `;
 
+// Create a styled component for contact information text
 const ContactText = styled.p`
   text-align: center;
   font-size: 16px;
@@ -106,10 +119,12 @@ const ContactText = styled.p`
   }*/
 `;
 
+// Create a styled component for the "Studio Location" to highlight
 const StudioLocation = styled.span`
   font-weight: 600; // Set the desired font weight
 `;
 
+// Function to format the "Who We Are" description by splitting on newlines
 const parseWhoWeAre = (description) => {
   const parts = description.split("\n");
   return (
@@ -121,6 +136,7 @@ const parseWhoWeAre = (description) => {
   );
 };
 
+// Function to format the studio location address by splitting on newlines
 const parseAddress = (address) => {
   const parts = address.split("\n");
   return (
@@ -133,7 +149,8 @@ const parseAddress = (address) => {
 };
 
 export const AboutUsPage = () => {
-  const { t } = useTranslation(); // Use useTranslation to get the 't' function
+  const { t } = useTranslation();
+  // Parse the "Who We Are" description and studio location address
   const descriptionText = parseWhoWeAre(t("aboutUs.weAreDescription"));
   const locationText = parseAddress(t("aboutUs.location"));
 

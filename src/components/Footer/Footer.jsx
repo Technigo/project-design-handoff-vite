@@ -5,6 +5,7 @@ import { Copyright } from "./Copyright";
 import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
+// Styled component for the entire footer section.
 const StyledFooter = styled.div`
   background: #202537;
   color: #fff6e9;
@@ -19,6 +20,7 @@ const StyledFooter = styled.div`
   }
 `;
 
+// Styled component for arranging the logo, social icons, and company details.
 const LogoLinks = styled.div`
   display: flex;
   flex-direction: column;
@@ -33,6 +35,7 @@ const LogoLinks = styled.div`
   }
 `;
 
+// Styled component for arranging the social icons and company details.
 const SaddleUpFooter = styled.div`
   display: flex;
   gap: 52px;
@@ -43,12 +46,14 @@ const SaddleUpFooter = styled.div`
   }
 `;
 
+// Styled component for the company details.
 const CompanyDetails = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
 `;
 
+// Styled component for arranging language selection and copyright information.
 const LanguageCopySection = styled.div`
   display: flex;
   flex-direction: column;
@@ -63,7 +68,7 @@ const LanguageCopySection = styled.div`
 `;
 
 export const Footer = () => {
-  const { t } = useTranslation(); // Use useTranslation to get the 't' function
+  const { t } = useTranslation(); // Use useTranslation to get the 't' function for translation.
   return (
     <StyledFooter>
       <LogoLinks>

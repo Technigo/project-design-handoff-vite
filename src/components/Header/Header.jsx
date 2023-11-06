@@ -4,6 +4,7 @@ import { BurgerMenu } from "./BurgerMenu.jsx";
 //import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
+// Styled component for the header, including commented out styling for the navlinks.
 const StyledHeader = styled.div`
   background: #fff6e9;
   display: flex;
@@ -11,7 +12,7 @@ const StyledHeader = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  position: fixed; /* Add this line */
+  position: fixed;
   top: 0; /* Stick it to the top of the viewport */
   z-index: 1000; /* Ensure it appears above other content */
 `;
@@ -91,22 +92,10 @@ const StyledHeader = styled.div`
 //   border: 0;
 // `;
 
-// const BurgerWrapper = styled.div`
-//   display: flex;
-//   align-items: flex-end;
-//   justify-content: flex-end;
-// `;
-
+// The Header component that also contain the beginning of a group of nav-links that should display in desktop, not finished and working and therefore commented out at the moment.
 export const Header = () => {
   // const { t } = useTranslation();
   return (
-    // <StyledHeader>
-    //   {/*<BurgerWrapper>*/}
-    //   <BurgerMenu />
-    //   {/*</BurgerWrapper>*/}
-    //   <LogoDark />
-    // </StyledHeader>
-
     <StyledHeader>
       {/* <div className="logo">*/}
       <LogoDark />
@@ -146,6 +135,7 @@ export const Header = () => {
   );
 };
 
+// Header without translation, saved for now in case I need it
 {
   /* <StyledHeader>
         <div class="logo">
