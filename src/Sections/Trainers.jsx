@@ -1,8 +1,7 @@
 import styled from "styled-components";
-
 import { Headings } from "../Components/Headings";
 import { TrainerCard } from "../Components/TrainerCard";
-import data from "../data/data.json";
+
 
 const TrainerWrapper = styled.section`
   margin: 35px 0;
@@ -21,12 +20,31 @@ const TrainerCardWrapper = styled.div`
 
 export const Trainers = () => {
   const sectionId = 4;
+  
+  const trainerData = [
+    {
+      "image": "./images/trainer-1.png",
+      "name": "Natasha"
+    },
+    {
+      "image": "./images/trainer-2.png",
+      "name": "Chloe"
+    },
+    {
+      "image": "./images/trainer-3.png",
+      "name": "Taylor"
+    },
+    {
+      "image": "./images/trainer-4.png",
+      "name": "Rich"
+    }
+  ]
 
   return (
     <TrainerWrapper>
       <Headings sectionId={sectionId} />
       <TrainerCardWrapper>
-        {data.trainers.map((trainer, index) => {
+        {trainerData.map((trainer, index) => {
           return (
             <div key={index}>
               <TrainerCard trainer={trainer} />

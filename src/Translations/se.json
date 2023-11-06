@@ -39,24 +39,24 @@
             "zumba": "Zumba",
             "stretch": "Stretch"
         },
-        "videoTexts": [
-            {
+        "videoTexts": {
+            "one": {
                 "title": "HIIT",
                 "length": "10 min"
             },
-            {
+            "two": {
                 "title": "Lågintensiv kardio",
                 "length": "15 min"
             },
-            {
+            "three": {
                 "title": "Bandmotstånd",
                 "length": "7 min"
             },
-            {
+            "four": {
                 "title": "Glutebyggare",
                 "length": "20 min"
             }
-        ]
+        }
     },
     "workoutPlans": {
         "heading": "TRÄNINGSPROGRAM",
@@ -67,19 +67,20 @@
             "four": "Armar",
             "five": "Rygg"
         },
-        "planTexts": [
-            "Glutebyggare",
-            "Flexibilitet",
-            "Styrka",
-            "Glutebyggare"
-        ]
+        "planTexts": {
+            "one": "Glutebyggare",
+            "two": "Flexibilitet",
+            "three": "Styrka",
+            "four": "Glutebyggare"
+        }
     },
     "membership": {
         "title": "Registrera dig för ett medlemskap för att låsa upp din fulla potential",
         "text-1": "få träningsprogram anpassade för dig",
         "text-2": "obegränsad tillgång till biblioteket",
         "text-3": "tillgång till live-tränare",
-        "button": "REGISTRERA DIG FÖR MEDLEMSKAP"
+        "button": "REGISTRERA DIG FÖR MEDLEMSKAP",
+        "image-alt": "en kvinna knyter sin sko"
     },
     "reviews": {
         "heading": "RECENSIONER",
@@ -95,7 +96,7 @@
         }
     },
     "trainers": {
-        "heading": "Trainers",
+        "heading": "Tränare",
         "names": [
             "Natasha",
             "Chloe",
@@ -112,5 +113,36 @@
             "english": "Engelska",
             "swedish": "Svenska"
         }
+    },
+    "about": {
+        "heading": "Om oss",
+        "article-1": {
+            "subHeading": "Grundat av upptagna kvinnor",
+            "image-alt": "en kvinna som glad håller ett barn som sitter på en soffa",
+            "text": "Våra grundare Emmy och Carina var mödrar, arbetare och partners. De kämpade med att hitta tid för att balansera allt medan de tog hand om sig själva. De testade varje träningsapp men kunde inte hitta träningspass tillräckligt korta för deras upptagna schema."
+        },
+        "article-2": {
+            "subHeading": "som bryr sig om din hälsa",
+            "image-alt": "en hjärtformad skål med olika bär",
+            "text": "Att röra på din kropp minskar risken för sjukdom. När du håller dig konsekvent, oavsett tidpunkt, är hälsofördelarna enorma. Vi uppmanar dig att läsa några av de studier som vi har tillhandahållit. Klicka på 'läs mer' för att se artiklarna."
+        },
+        "article-3": {
+            "subHeading": "åtkomst till träning oavsett budget",
+            "image-alt": "en person som gör yoga vid solnedgången",
+            "text": "Vi tror att alla borde ha möjlighet att följa sina träningsmål. Vi erbjuder olika prisnivåer, varierande från 0 till 75 USD. Hälsoklyftan blir större mellan de fattiga och de rika. Så vi vill erbjuda en lyxig plats för människor från olika ekonomiska bakgrunder. Du är välkommen här!"
+        },        
+        "read": "läs mer"
+    },
+    "contact": {
+        "heading": "Kontakta oss",
+        "intro": "Har du fler frågor eller feedback? Skicka oss ett meddelande!",
+        "name": "namn",
+        "email": "e-post",
+        "message": "meddelande",
+        "send": "skicka",
+        "image-alt": "en person som arbetar på en bärbar dator"
+    }, 
+    "soMe": {
+        "heading": "Sociala medier"
     }
 }

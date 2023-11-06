@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const MembershipWrapper = styled.section`
   margin: 35px 0;
@@ -60,23 +61,25 @@ const MembershipSmallerText = styled.h2`
 export const Membership = () => {
   const isDesktop = window.innerWidth > 834;
 
+  const { t } = useTranslation();
+
   return (
     <>
       {/* check if the screen size is larger than 834px to conditionally render the relevant content */}
       {isDesktop ? (
         <MembershipWrapper>
           <MembershipText>
-            <MembershipTitle>Sign up for a membership to unlock your full potential</MembershipTitle>
-            <MembershipSmallerText>get workout plans tailored to you</MembershipSmallerText>
-            <MembershipSmallerText>unlimited access to library</MembershipSmallerText>
-            <MembershipSmallerText>access to live trainers</MembershipSmallerText>
-            <SignUpBtn type="button">SIGN UP FOR MEMBERSHIP</SignUpBtn>
+            <MembershipTitle>{t("membership.title")}</MembershipTitle>
+            <MembershipSmallerText>{t("membership.text-1")}</MembershipSmallerText>
+            <MembershipSmallerText>{t("membership.text-2")}</MembershipSmallerText>
+            <MembershipSmallerText>{t("membership.text-3")}</MembershipSmallerText>
+            <SignUpBtn type="button">{t("membership.button")}</SignUpBtn>
           </MembershipText>
-          <MembershipImage src="./images/membership.png" alt="a woman tying her shoe" />
+          <MembershipImage src="./images/membership.png" alt={t("membership.image-alt")} />
         </MembershipWrapper>
         ) : (
         <ButtonWrapper>
-          <SignUpBtn type="button">SIGN UP FOR MEMBERSHIP</SignUpBtn>
+          <SignUpBtn type="button">{t("membership.button")}</SignUpBtn>
         </ButtonWrapper>
         )
       }

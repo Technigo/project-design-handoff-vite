@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 
 const ReadMoreBtn = styled.button`
   border-radius: var(--large-radius);
@@ -26,7 +27,9 @@ const ReadMoreBtn = styled.button`
 `
 
 export const ReadMoreButton = () => {
+  const { t } = useTranslation();
+
   return (
-    <ReadMoreBtn type="button">read more</ReadMoreBtn>
+    <ReadMoreBtn type="button">{t("about.read")}</ReadMoreBtn>
   )
 }

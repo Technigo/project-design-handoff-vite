@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import data from "../data/data.json";
+import { useTranslation } from "react-i18next";
 import { ArticleCard } from "../Components/ArticleCard";
 
 const SectionWrapper = styled.div`
@@ -25,9 +25,32 @@ const CardWrapper = styled.div`
 `
 
 export const Articles = () => {
+  const { t } = useTranslation();
+
+  const articleData = [
+    {
+      "image": "./images/article-1.png",
+      "imageDescription": t("about.article-1.image-alt"),
+      "title": t("about.article-1.subHeading"),
+      "text": t("about.article-1.text")
+    },
+    {
+      "image": "./images/article-2.png",
+      "imageDescription": t("about.article-2.image-alt"),
+      "title": t("about.article-2.subHeading"),
+      "text": t("about.article-2.text")
+    },
+    {
+      "image": "./images/article-3.png",
+      "imageDescription": t("about.article-3.image-alt"),
+      "title": t("about.article-3.subHeading"),
+      "text": t("about.article-3.text")
+    }
+  ]
+
   return (
     <SectionWrapper>
-      {data.articles.map((article, index) => {
+      {articleData.map((article, index) => {
         return (
           <CardWrapper key={index}>
             <ArticleCard article={article} />

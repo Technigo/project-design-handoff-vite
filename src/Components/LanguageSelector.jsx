@@ -3,8 +3,13 @@ import { useTranslation } from "react-i18next";
 
 export const LanguageSelector = () => {
     const { t, i18n } = useTranslation();
+    // const [isOpen, setIsOpen] = useState(false);
     const [selectedLanguage, setSelectedLanguage] = useState({name: t("footer.languageSelector.language")});
 
+    // const toggleDropdown = () => {
+    //   setIsOpen(!isOpen);
+    // };
+    
     const handleLanguageSelect = (languageKey, languageCode) => {
         setSelectedLanguage({name: t(`footer.languageSelector.${languageKey}`)});
         i18n.changeLanguage(languageCode);

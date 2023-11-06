@@ -67,13 +67,13 @@ export const Footer = () => {
     <FooterWrapper>
       <FooterUl>
         <li>
-          <StyledLink to="/contact">Contact Us</StyledLink>
+          <StyledLink to="/contact">{t("footer.contact")}</StyledLink>
         </li>
         <li>
-          <FooterLink href="#">Privacy & Cookie Settings</FooterLink>
+          <FooterLink href="#">{t("footer.privacy")}</FooterLink>
         </li>
         <li>
-          <StyledLink to="/about">About Us</StyledLink>
+          <StyledLink to="/about">{t("footer.about")}</StyledLink>
         </li>
         <li>
           <FooterLink href="#"><LanguageSelector /></FooterLink>

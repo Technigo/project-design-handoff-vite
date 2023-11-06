@@ -1,9 +1,8 @@
 import styled from "styled-components";
-
+import { useTranslation } from "react-i18next";
 import { Headings } from "../Components/Headings";
 import { Subheadings } from "../Components/Subheadings";
 import { WorkoutPlanCard } from "../Components/WorkoutPlanCard";
-import data from "../data/data.json";
 
 const WorkOutPlansWrapper = styled.section`
   margin: 35px 0;  
@@ -27,6 +26,27 @@ const PlanCardWrapper = styled.div`
 
 export const WorkoutPlans = () => {
   const sectionId = 2;
+
+  const { t } = useTranslation();
+
+  const workoutPlansData = [
+    {
+      "image": "./images/workout-4.png",
+      "title": t("workoutPlans.planTexts.one")
+    },
+    {
+      "image": "./images/workout-plan-2.png",
+      "title": t("workoutPlans.planTexts.two")
+    },
+    {
+      "image": "./images/workout-plan-3.png",
+      "title": t("workoutPlans.planTexts.three")
+    },
+    {
+      "image": "./images/workout-plan-4.png",
+      "title": t("workoutPlans.planTexts.four")
+    }
+  ]
 
   return (
     <WorkOutPlansWrapper>
@@ -52,13 +72,13 @@ export const WorkoutPlans = () => {
       </HeadingWithLock>
       <Subheadings sectionId={sectionId} />
       <PlanCardWrapper>
-        {data.plans.map((plan, index) => {
-        return (
-          <div key={index}>
-            <WorkoutPlanCard plan={plan} />
-          </div>
-        )
-      })}
+        {workoutPlansData.map((plan, index) => {
+          return (
+            <div key={index}>
+              <WorkoutPlanCard plan={plan} />
+            </div>
+          )
+        })}
       </PlanCardWrapper>
     </WorkOutPlansWrapper>
   )

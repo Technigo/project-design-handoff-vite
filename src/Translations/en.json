@@ -38,8 +38,7 @@
             "arms": "Arms", 
             "zumba": "Zumba", 
             "stretch": "Stretch"
-        }
-            
+        }   
        ,
         "videoTexts": {
             "one": {
@@ -82,7 +81,8 @@
         "text-1": "get workout plans tailored to you",
         "text-2": "unlimited access to library",
         "text-3": "access to live trainers",
-        "button": "SIGN UP FOR MEMBERSHIP"
+        "button": "SIGN UP FOR MEMBERSHIP", 
+        "image-alt": "a woman tying her shoe"
     },
     "reviews": {
         "heading": "Reviews",
@@ -99,12 +99,12 @@
     },
     "trainers": {
         "heading": "Trainers",
-        "names": [
-            "Natasha",
-            "Chloe",
-            "Taylor",
-            "Rich"
-        ]
+        "names": {
+            "one": "Natasha",
+            "two": "Chloe",
+            "three": "Taylor",
+            "four": "Rich"
+        }
     },
     "footer": {
         "contact": "Contact us",
@@ -117,13 +117,34 @@
         }
     },
     "about": {
-        "heading": "About us"
+        "heading": "About us",
+        "article-1": {
+            "subHeading": "founded by busy women",
+            "image-alt": "a woman happily holding a child sitting on a couch",
+            "text": "Our founders Emmy and Carina were mothers, workers, and partners. They were struggling to find time to balance everything while taking care of themselves. They tried every fitness app and were unable to find workouts short enough for their busy schedule."
+        },
+        "article-2": {
+            "subHeading": "who care about your health",
+            "image-alt": "a heart-shaped bowl of different berries",
+            "text": "Moving your body  helps decrease your morbidity. When you stay consistent not matter the time, the benefits for your health are enormous. We encourage you to read some studies that we have provided. Click read more to see the articles."
+        },
+        "article-3": {
+            "subHeading": "access fitness no matter the budget",
+            "image-alt": "a person doing yoga at sunset",
+            "text": "We believe that everyone should have the opportunity to pursue their fitness goals. We had different price ranges. Ranging from $0 to $75. The health disparity is becoming greater between the poor and rich. So we want to provide a luxurious space for people coming from different economic backgrounds. You are welcome here!"
+        },
+        "read": "read more"
     },
     "contact": {
-        "heading": "Contact us"
+        "heading": "Contact us",
+        "intro": "Have more questions or feedback? Message us!",
+        "name": "name",
+        "email": "email",
+        "message": "message",
+        "send": "send",
+        "image-alt": "a person working on a laptop"
     }, 
     "soMe": {
         "heading": "Social media"
-    }
-       
+    }      
 }

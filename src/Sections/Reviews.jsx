@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useTranslation } from "react-i18next";
 import { Headings } from "../Components/Headings";
 
 const ReviewWrapper = styled.section`
@@ -62,6 +63,8 @@ const ReviewText = styled.p`
 export const Reviews = () => {
   const sectionId = 3;
 
+  const { t } = useTranslation();
+
   return (
     <ReviewWrapper>
       <HeadingWrapper>
@@ -69,15 +72,14 @@ export const Reviews = () => {
       </HeadingWrapper>
       <ReviewInfo>
         <IndividualReview>
-          <ReviewText>I love seeing the tracker and my progress!</ReviewText>
-          <ReviewText>Cole <i>Kansas City</i></ReviewText>
+          <ReviewText>{t("reviews.info-1.content")}</ReviewText>
+          <ReviewText>{t("reviews.info-1.name")} <i>{t("reviews.info-1.city")}</i></ReviewText>
         </IndividualReview>
         <IndividualReview>
-          <ReviewText>I am a sucker for free things so getting a free video every 5 days in a row I complete has been awesome! It motivates me to move my body :&#41;</ReviewText>
-          <ReviewText>Hannah <i>Pennsylvania</i></ReviewText>
+          <ReviewText>{t("reviews.info-2.content")}</ReviewText>
+          <ReviewText>{t("reviews.info-2.name")} <i>{t("reviews.info-2.city")}</i></ReviewText>
         </IndividualReview>
       </ReviewInfo>
-      
     </ReviewWrapper>
   )
 }

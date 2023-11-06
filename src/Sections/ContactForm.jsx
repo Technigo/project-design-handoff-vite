@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
 const SectionWrapper = styled.div`
@@ -42,25 +43,27 @@ const FormInput = styled.input`
   border-radius: 10px;
   padding: 10px 30px;
   height: 56px;
+  color: rgba(0, 0, 0, 50%);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36.33px;
+  font-family: var(--font);
 
   @media (min-width: 394px) and (max-width: 834px) {
     width: 60%;
   }
 `
-
-const FormLabel = styled.label`
-  color: rgba(0, 0, 0, 50%);
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 36.33px;
-`
-
 const FormTextArea = styled.textarea`
   width: 100%;
   background: var(--review);
   border-radius: 10px;
   padding: 10px 30px;
   height: 339px;
+  color: rgba(0, 0, 0, 50%);
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36.33px;
+  font-family: var(--font);
 `
 
 const SendBtn = styled.button`
@@ -100,6 +103,7 @@ export const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState(""); 
   const [message, setMessage] = useState("");
+  const { t } = useTranslation();
 
   const handleAnswers = () => {
     if (!name || !email || !message) {
@@ -132,25 +136,22 @@ export const ContactForm = () => {
     <SectionWrapper>
       <FormWrapper>
         <FormContent>
-          <Intro>Have more questions or feedback? Message us!</Intro>
+          <Intro>{t("contact.intro")}</Intro>
           <InputWrapper>
-            <FormLabel htmlFor="name">name</FormLabel>
-            <FormInput type="text" name="name" value={name} onChange={handleInputNameChange}></FormInput>
+            <FormInput type="text" name="name" value={name} placeholder={t("contact.name")} onChange={handleInputNameChange}></FormInput>
           </InputWrapper>
 
           <InputWrapper>
-            <FormLabel htmlFor="email">email</FormLabel>
-            <FormInput type="text" name="email" value={email} onChange={handleInputEmailChange}></FormInput>
+            <FormInput type="text" name="email" value={email} placeholder={t("contact.email")} onChange={handleInputEmailChange}></FormInput>
           </InputWrapper>
 
           <InputWrapper className="full-message">
-            <FormLabel htmlFor="message">message</FormLabel>
-            <FormTextArea name="message" value={message} onChange={updateTextarea}></FormTextArea>
+            <FormTextArea name="message" value={message} placeholder={t("contact.message")} onChange={updateTextarea}></FormTextArea>
           </InputWrapper>
         </FormContent>
-        <SendBtn type="submit" onClick={handleAnswers}>Send</SendBtn>
+        <SendBtn type="submit" onClick={handleAnswers}>{t("contact.send")}</SendBtn>
       </FormWrapper>
-      <ContactImage src="./images/contact.png" alt="person working on a laptop" />
+      <ContactImage src="./images/contact.png" alt={t("contact.image-alt")} />
     </SectionWrapper>
   )
 }
