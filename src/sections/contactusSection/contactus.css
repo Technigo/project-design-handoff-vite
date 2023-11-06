@@ -187,11 +187,12 @@ form > button {
 
 @media screen and (min-width: 1280px) {
   .contact-us-container {
-    padding: 150px 300px 50px 300px;
+    padding: 300px 350px 0px 350px;
   }
 
   .contact-us-info {
-    padding-top: 34px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 
   .nameInput,
@@ -203,7 +204,7 @@ form > button {
   form {
     padding-top: 15px;
     width: 100%;
-    gap: 20px;
+    gap: 40px;
     font-family: var(--font-family-ingress-body);
     color: var(--dark);
   }
