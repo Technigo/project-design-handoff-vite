@@ -1,13 +1,77 @@
-:root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+code,
+img,
+strong,
+center,
+ol,
+ul,
+li,
+form,
+label,
+legend,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* For tablets and above */
+@media (min-width: 768px) {
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* For desktops and above */
+@media (min-width: 1024px) {
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
 }

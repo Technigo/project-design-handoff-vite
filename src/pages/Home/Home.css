@@ -1,0 +1,20 @@
+.grid-parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* For tablets and above */
+@media (min-width: 768px) {
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+/* For desktops and above */
+@media (min-width: 1024px) {
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}

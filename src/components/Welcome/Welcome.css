@@ -1,0 +1,72 @@
+.welcome-container {
+  display: flex;
+  width: auto;
+  height: 100%;
+  padding: 36px 0 38px 22px;
+  flex-direction: column;
+
+  align-items: flex-end;
+  gap: 10px;
+  margin: 17px 26px 10px 0;
+  border-radius: 0px 44px 44px 44px;
+  background: linear-gradient(
+    180deg,
+    #ffece4 13.21%,
+    rgba(255, 236, 228, 0) 100%
+  );
+  font-family: Poppins;
+  position: relative;
+  top: 220px;
+  grid-column: 1 / 5;
+}
+
+h2.welcome-title {
+  margin-bottom: 0;
+  color: #543855;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  align-self: stretch;
+}
+
+h3.welcome-text {
+  margin-right: 12px;
+  color: #543855;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  align-self: stretch;
+  text-align: left;
+}
+
+button.about-btn {
+  display: flex;
+  align-items: center;
+  width: 129px;
+  height: a;
+  padding: 4px 14px;
+  border-radius: 10px;
+  justify-content: flex-end;
+  gap: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  animation-duration: 0ms;
+  color: #543855;
+  background-color: #fbb574;
+  border: none;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button.btn-icon {
+  height: 24px;
+  width: 24px;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  text-decoration: none;
+}

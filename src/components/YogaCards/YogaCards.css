@@ -1,0 +1,132 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 17px;
+  margin-top: 200px;
+  width: 392px;
+}
+
+.card-title {
+  text-align: left;
+  font-family: Poppins;
+  color: #543855;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.5px;
+  align-self: stretch;
+  margin-left: 28px;
+}
+
+a.card-link {
+  display: flex;
+  width: 129px;
+  height: 28px;
+  padding: 4px 11px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: -5px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #ffece4;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #543855;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  z-index: 4;
+}
+
+/* Additional styling specific to odd-numbered cards */
+.card-odd {
+  background: #543855;
+  border-radius: 30px 0px 0px 30px;
+  display: flex;
+  width: 341px;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+
+  flex-direction: row;
+  margin-right: 24px;
+  margin-left: 24px;
+  z-index: 1;
+}
+
+.card-odd .card-image img {
+  border-radius: 30px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  width: 195px;
+  height: 200px;
+  gap: 10px;
+  z-index: 2;
+}
+
+.card-odd .card-content {
+  width: 341px;
+  height: 200px;
+  align-content: space-between;
+}
+
+.card-odd .card-content h2 {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 6.405px;
+  font-size: 21px;
+  font-family: Poppins;
+  color: #ffece4;
+  z-index: 3;
+}
+
+/* Additional styling specific to even-numbered cards */
+.card-even {
+  background: #543855;
+  border-radius: 30px 0px 0px 30px;
+  display: flex;
+  width: 341px;
+  height: 200px;
+
+  flex-direction: row;
+  margin-right: 24px;
+  margin-left: 24px;
+  z-index: 1;
+}
+
+.card-even .card-content {
+  display: flex;
+  flex: 1;
+  width: 341px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.card-even .card-image img {
+  width: 146px;
+  height: 200px;
+
+  flex-direction: row;
+  float: left;
+  gap: 94px;
+  z-index: 2;
+}
+
+.card-even .card-content h2 {
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 6.405px;
+  font-size: 21px;
+  font-family: Poppins;
+  color: #ffece4;
+  z-index: 3;
+}
