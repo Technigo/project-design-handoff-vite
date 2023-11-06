@@ -1,12 +1,15 @@
 {
     "header": {
         "navbar": {
-            "nav1": "SCHEDULE",
-            "nav2": "CLASSES",
-            "nav3": "PRICES",
-            "nav4": "ABOUT",
-            "nav5": "CONTACT",
-            "nav6": "LOG IN"
+            "schedule": "SCHEDULE",
+            "classes": "CLASSES",
+            "prices": "PRICES",
+            "about": "ABOUT",
+            "contact": "CONTACT",
+            "logIn": "LOG IN",
+            "line": "./assets/menuLine.svg",
+            "lineAlt": "line-devider." 
+
         },
         "search": {
             "placeholder": "Find yoga class"

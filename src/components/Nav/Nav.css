@@ -4,8 +4,23 @@ nav {
     align-items: center;
 }
 
+a {
+    color: var(--yellow);
+    text-align: left;
+}
+
 .menu-icon {
     fill: var(--yellow);
+}
+
+/*HERE IS WHERE A GRAPHIC ELEMENT CAN BE USED FOR MENU*/
+ul.nav-links.active {
+    background-color: var(--purplebright);
+    padding: 3rem 0 4rem;
+    border-radius: 0 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-icon.open {
@@ -15,22 +30,26 @@ nav {
 .nav-links {
     list-style: none;
     display: none;
-    background-color: aqua;
+}
+
+.line {
+    width: 4rem;
+    height: 2px; 
 }
 
 .nav-links li {
     margin-right: 1rem;
-    color: var(--yellow);
+   
 }
 
 .nav-links.active {
     display: flex;
     flex-direction: column;
-    background-color: var(--black);
+    gap: 1.5rem;
     position: absolute;
-    top: 100%;
-    left: 0;
-    width: 50%
+    top: 0;
+    right: 0;
+    width: 80%
 }
 
 .nav-links.active li {
@@ -43,6 +62,13 @@ nav {
 @media (min-width: 1020px) {
     .nav-links {
         display: flex;
+        align-items: center; 
+    }
+
+    .line {
+        transform: rotate(90deg);
+        width: 1rem;
+        padding: 1rem; 
     }
 
     .menu-icon {

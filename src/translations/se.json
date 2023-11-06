@@ -1,12 +1,14 @@
 {
     "header": {
         "navbar": {
-            "nav1": "SCHEMA",
-            "nav2": "KURSER",
-            "nav3": "PRISER",
-            "nav4": "OM OSS",
-            "nav5": "KONTAKT",
-            "nav6": "LOGGA IN"
+            "schedule": "SCHEMA",
+            "classes": "KURSER",
+            "prices": "PRISER",
+            "about": "OM OSS",
+            "contact": "KONTAKT",
+            "logIn": "LOGGA IN",
+            "line": "./assets/menuLine.svg",
+            "lineAlt": "line-devider."
         },
         "search": {
             "placeholder": "Hitta yogakurs"
