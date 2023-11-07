@@ -38,25 +38,3 @@ export const LandingPage = () => {
         </>
     )
 }
-
-// imageOnLeft = true, // imageOnLeft is a prop that defaults to true
-//      src,
-// altText,
-// h2,
-// inPersonClassesParagraph,
-// className,
-// inPersonClassesButton,
-
-
-// {imageOnLeft && (
-//     <img src="./assets/images/yoga-studio-image3.jpg" alt="Image of a woman in a bridge yoga pose" />
-// )}
-// <article>
-//     <h2>{t("landingPage.inPersonClasses.h2")}</h2>
-//     <p>{t("landingPage.inPersonClasses.inPersonClassesParagraph")}</p>
-//     <Button className={"green"} text={t("landingPage.inPersonClasses.inPersonClassesButton")} />
-// </article>
-// {/* Image will be to the right, when left "isn't true" */}
-// {!imageOnLeft && (
-//     <img src="./assets/images/yoga-studio-image3.jpg" alt="Image of a woman in a bridge yoga pose" />
-// )}

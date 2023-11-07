@@ -31,4 +31,4 @@ I implemented a lot of code to make my subscribe section work as intended. And t
 
 ## View it live
 
-https://align-studio-yoga.netlify.app/about-us
+https://align-studio-yoga.netlify.app/
