@@ -1,0 +1,259 @@
+.contact-page-wrapper {
+    background-color: #374F4B;
+    min-height: calc(100vh - 111px);
+}
+
+.contact-content {
+    margin: 0 24px;
+    padding-top: 144px;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.contact-image-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px
+}
+
+.coffeeimg {
+    width: 165px;
+
+}
+
+.contact-image {
+    display: none;
+}
+
+/* New Question section */
+.question-asked-wrapper {
+    align-self: start;
+}
+
+.question-asked {
+    padding-bottom: 80px;
+    /*create space between that adds up to 80px*/
+}
+
+/* contact information */
+.contact-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+/*Form */
+.contact-page-form {
+    padding-bottom: 80px;
+}
+
+.contact-info-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 21px;
+}
+
+
+.contact-info-wrapper img {
+    width: 62px;
+    height: 62px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+}
+
+
+input {
+    border-radius: 5px;
+    border: 1px solid #71A59C;
+    background: #FFF;
+    height: 40px;
+    width: 100%;
+    padding: 12px;
+}
+
+textarea {
+    border-radius: 5px;
+    border: 1px solid #71A59C;
+    background: #FFF;
+    width: 100%;
+    padding: 12px;
+}
+
+/* First question section */
+
+.ask-question-first {
+    padding-bottom: 80px;
+    /*create space between that adds up to 80px*/
+}
+
+
+/* Tablet */
+@media (min-width: 667px) and (max-width: 1024px) {
+    .contact-page-wrapper {
+        min-height: calc(100vh - 111px);
+    }
+
+    .contact-content {
+        width: 766px;
+        margin: 0 auto;
+        padding-top: 144px;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+
+    .contact-image-content-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: start;
+        gap: 16px
+    }
+
+    .coffeeimg {
+        display: block;
+        width: 50%;
+    }
+
+    .contact-image {
+        display: block;
+        width: 50%;
+    }
+
+    /* New Question section */
+    .question-asked-wrapper {
+        width: 50%;
+        justify-content: start;
+    }
+
+    .question-asked {
+        padding-bottom: 80px;
+    }
+
+    /* Form */
+
+    .contact-page-form {
+        padding-bottom: 80px;
+    }
+   
+    .contact-info-wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 21px;
+    }
+
+    .contact-info-wrapper img {
+        width: 62px;
+        height: 62px;
+    }
+
+    .contact-info {
+        display: flex;
+        gap: 16px;
+    }
+
+
+    .form-field {
+        width: 100%;
+    }
+
+    .form-content {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .form-field {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+    }
+
+
+    /* First question section */
+    .ask-question-first {
+        padding-bottom: 80px;
+        /*create space between that adds up to 80px*/
+    }
+
+
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+    .contact-page-wrapper {
+        background-color: #374F4B;
+
+    }
+
+    .contact-content {
+        width: 1288px;
+        margin: 0 auto;
+        padding-top: 192px;
+        display: flex;
+        flex-direction: column;
+        gap: 89px;
+    }
+
+    .contact-image-content-wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 16px;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .coffeeimg {
+        display: block;
+        width: 460px;
+        margin-left: 15%;
+    }
+
+    .contact-image {
+        display: block;
+        width: 460px;
+        margin-left: 15%;
+    }
+
+    .contact-page-content-wrapper {
+        width: 526px;
+    }
+    
+    /* New Question section */
+    .question-asked-wrapper {
+        height: 100%;
+        width: 50%;
+        justify-content: start;
+    }
+
+    .question-asked {
+        padding-bottom: 80px;
+        align-items: start;
+    }
+
+
+    /* First question section */
+    .ask-question-first {
+        padding-bottom: 80px;
+        /*create space between that adds up to 80px*/
+    }
+
+}

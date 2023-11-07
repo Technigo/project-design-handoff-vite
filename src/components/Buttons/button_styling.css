@@ -1,0 +1,30 @@
+.text_btn {
+    padding: 12px 24px;
+    white-space: nowrap;
+}
+
+button {
+    height: 44px;
+    width: 158px;
+    border-radius: 20px;
+    border: 2px solid #71A59C;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.new-question-btn {
+    width: 194px;
+}
+
+button:hover {
+    background: #374F4B;
+    transition: background 0.3s ease-in-out;
+}
+
+.text_btn:hover {
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
