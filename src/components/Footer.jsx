@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 export const Footer = () => {
     const { t } = useTranslation(); // Add useTranslation() function to access 't' function
     return (
-        <div className="mx-auto mt-auto pb-16 flex flex-col items-center justify-center w-5/6 font-raleway text-white text-base font-medium space-y-5">
+        <div className="mx-auto mt-auto pb-16 flex flex-col items-center justify-center font-raleway text-white text-base font-medium space-y-5">
             <img src="icons/horizontalRule.svg" alt="horizontal rule" className="" />
             <h4>{t('connect')}</h4>
             <div className="flex flex-row justify-center items-center gap-4 mx-auto">
@@ -34,10 +34,18 @@ export const Footer = () => {
                 <h5>113 48 Stockholm</h5>
                 <br />
 
-                <h5>073-7624047</h5>
+                <h5>
+                    <a href="tel:073-7624047">
+                        073-7624047
+                    </a>
+                </h5>
                 <br />
 
-                <h5>info@nordicpoleacademy.com</h5>
+                <h5>
+                    <a href="mailto:info@nordicpoleacademy.com">
+                        info@nordicpoleacademy.com
+                    </a>
+                </h5>
 
             </div>
 
