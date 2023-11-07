@@ -1,18 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { Link } from 'react-router-dom';
 import './css/burgermenu.css';
 
-const BurgerMenu = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  const handleMenuToggle = () => {
-    setMenuOpen(!menuOpen);
-  };
-
+const BurgerMenu = ({ menuOpen, toggleMenu }) => {
   return (
-    <div>
-      <Menu isOpen={menuOpen} onStateChange={({ isOpen }) => setMenuOpen(isOpen)}>
+    <div className='bm-menu'>
+      <Menu isOpen={menuOpen} onStateChange={({ isOpen }) => toggleMenu(isOpen)}>
         <div className="menu-content">
           <a className="menu-item" href="/">Login</a>
           <Link to="/about" className="menu-item">About Us</Link>

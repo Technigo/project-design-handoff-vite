@@ -118,6 +118,11 @@ img {
         padding: 10px;
     }
 
+    .burger-menu-container {
+        width: 25px;
+        margin-left: -160px;
+    }
+
 }
 
 /* Tablet */
@@ -136,6 +141,11 @@ img {
         height: 33px;
         margin: 0;
         padding: 10px;
+    }
+
+    .burger-menu-container {
+        width: 25px;
+        margin-left: -350px;
     }
 
 }

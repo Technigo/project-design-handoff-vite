@@ -16,17 +16,16 @@ const NavbarMobile = () => {
 
     return (
         <div className="navbar">
+            <div className="burger-menu-container">
+                {menuOpen && <BurgerMenu menuOpen={menuOpen} toggleMenu={toggleMenu} />}
+            </div>
             <img
                 src="/menu.png"
                 alt="menu"
                 style={{ width: '24px', height: '24px', cursor: 'pointer' }}
                 onClick={toggleMenu}
             />
-
-            {menuOpen && <div onClick={preventPropagation}><BurgerMenu /></div>}
-
             <Link to="/"><img src="/logo.png" alt="logo" /></Link>
-
             <img
                 src="/search.png"
                 alt="search"
