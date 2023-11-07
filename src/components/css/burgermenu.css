@@ -1,19 +1,12 @@
-.menu-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-}
-
 .bm-menu {
     background-color: rgba(255, 255, 255, 0.9);
+    /* height: 60vh; <- with this it dublicates, even tho this is the height I want */
     position: fixed;
     transition: top 0.3s;
     top: 50px;
     right: 0;
+    left: 0;
     width: 100%;
-    height: 60vh;
     border-radius: 30px;
     z-index: 1001;
 }
@@ -48,7 +41,7 @@
     flex-direction: column;
     text-align: left;
     margin-left: -100px;
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 .menu-item {

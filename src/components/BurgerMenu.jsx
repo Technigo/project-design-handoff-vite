@@ -8,13 +8,13 @@ const BurgerMenu = ({ menuOpen, toggleMenu }) => {
     <div className="bm-menu">
       <Menu isOpen={menuOpen} onStateChange={({ isOpen }) => toggleMenu(isOpen)}>
         <div className="menu-content">
-          <a className="menu-item" href="/">Login</a>
+          <a className="menu-item" href="#">Login</a>
           <Link to="/about" className="menu-item">About Us</Link>
-          <a className="menu-item" href="/membership">Membership Plans</a>
+          <a className="menu-item" href="#">Membership Plans</a>
           <Link to="/contact" className="menu-item">Contact Us</Link>
         </div>
       </Menu>
-    </div>
+    </div >
   );
 };
 
