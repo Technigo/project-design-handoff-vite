@@ -2,7 +2,7 @@
   "courses": [
     {
       "id": "1",
-      "image": "/public/assets/icon/Illustration1.svg",
+      "image": "../src/assets/icon/Illustration1.svg",
       "alt": "preschool",
       "course": "PreSchool",
       "age": "age 3-5 (with adult)",
@@ -11,7 +11,7 @@
     },
     {
       "id": "2",
-      "image": "/public/assets/icon/Illustration2.svg",
+      "image": "../src/assets/icon/Illustration2.svg",
       "alt": "junior-elementary",
       "course": "Elementary class F-2",
       "age": "age 5-8",
@@ -20,7 +20,7 @@
     },
     {
       "id": "3",
-      "image": "/public/assets/icon/Illustration3.svg",
+      "image": "../src/assets/icon/Illustration3.svg",
       "alt": "elementary",
       "course": "Elementary class 3-5",
       "age": "age 8-11",

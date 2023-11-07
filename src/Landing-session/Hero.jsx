@@ -1,7 +1,7 @@
-import "/src/Landing-session/intro.css";
+import "/src/Landing-session/hero.css";
 import { BtnLight } from "../components/BtnLight";
 
-export const Intro = () => {
+export const Hero = () => {
   return (
     <div className="intro-wrapper">
       <div className="intro-img"></div>

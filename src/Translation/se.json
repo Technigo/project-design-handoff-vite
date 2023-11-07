@@ -1,0 +1,76 @@
+{
+  "navbar": {
+    "course": "Kurser för barn",
+    "info": "Information för vuxna",
+    "contact": "Kontakt"
+  },
+
+  "landing": {
+    "hero": {
+      "heading": "Yoga, Inte bara för lugna och tysta barn",
+      "subHeading": "Yoga är för alla barn som gillar att leka. Låter det roligt? Gå med oss på ett glädjefyllt äventyr till självupptäckt!",
+      "btn": "Prova gratis!"
+    },
+    "courses": {
+      "heading": "Kurser på MINI FLOW"
+    },
+    "motto": {
+      "heading": "Ett glädjefyllt äventyr till självupptäckt. Det är vårt motto på MINI FLOW",
+      "div1": "Vi kombinerar åldersanpassade positioner, andningsövningar och medvetenhet för att uppmuntra barn att utforska sina växande kroppar och sinnen. Genom att praktisera yoga tror vi att barn kommer att utveckla en viktig självmedvetenhet som de kommer att ha nytta av hela sitt liv.",
+      "div2": "Vi kombinerar kreativitet och lekfullhet i varje session, använder berättelser, spel och fantasi för att göra yoga roligt och livligt. Vårt mål är att anpassa alla våra sessioner till barnens energi som deltar den dagen. Bara för att vi förstår att barn kan ha bra eller dåliga dagar, att de ibland är tysta och ibland gör oväsen, att vissa dagar kan de sitta stilla och vissa dagar gillar de att hoppa runt.",
+      "div3": "Yoga är för alla."
+    },
+    "aboutMe": {
+      "heading": "Hej alla! Jag är Lisanne, grundaren av MINI FLOW",
+      "aboutMsg": "För mig handlar barnyoga om att hitta en balans mellan skoj, lek och medvetenhet. Min största glädje i livet är att se barn utvecklas och växa genom att använda yoga som ett verktyg. Jag skulle älska att hjälpa dig att hitta den bästa MINI FLOW yogakursen för ditt barn. Om du har några frågor om barnyoga i allmänhet eller har någon feedback att ge, låt mig veta!",
+      "aboutBtn": "Kontakta oss"
+    },
+    "newsletter": {
+      "heading": "Gå med i flödet!",
+      "text": "Vi är alltid i rörelse på MINI FLOW. Prenumerera på vårt nyhetsbrev för att vara den första att få våra senaste uppdateringar, specialerbjudanden och bonusyogavideor.",
+      "btn": "Prenumerera!",
+      "placeholder": "din e-postadress"
+    }
+  },
+  "contact": {
+    "intro": {
+      "heading": "Säg hej",
+      "text": "Vi älskar att prata om barnyoga. Om du har några frågor, tankar att dela eller feedback att ge oss, skicka oss ett meddelande så svarar vi så snabbt vi kan. Om du föredrar att ringa oss kan du nå oss från måndag till fredag mellan 09.00-16.00."
+    },
+    "form": {
+      "name": "Namn",
+      "namePlaceholder": "Ditt namn",
+      "email": "E-post",
+      "email2": "Vi kommer att svara på ditt meddelande via e-post",
+      "emailPlaceholder": "namn@domän.se",
+      "phone": "Telefon (valfritt)",
+      "phone2": "Bara om du vill att vi ska ringa dig",
+      "phonePlaceholder": "+00 000 00 00 00",
+      "message": "Meddelande",
+      "messagePlaceholder": "Skriv ditt meddelande här",
+      "tnc": "Läs vår integritetspolicy om hur vi skyddar dina data",
+      "btn": "Skicka",
+      "phoneNumber": "+46 (0)761 00 22 33",
+      "text1": "Kan ditt barn inte delta i klassen?",
+      "text2": "Lämna oss ett röstmeddelande!",
+      "address": "Stortorget 8",
+      "address2": "211 34 Malmö",
+      "direction": "Få vägbeskrivning"
+    },
+    "team": {
+      "heading": "Vi är Mini Flow",
+      "subtitle1": "Lekfulla",
+      "text1": "Känn glädjen i rörelse när skratt och lärande flätas samman i vår värld av fantasi och kul!",
+      "subtitle2": "Anpassningsbara",
+      "text2": "Vi anpassar alla våra yogasessioner för att passa varje barns unikhet, vilket säkerställer en inkluderande upplevelse för alla.",
+      "subtitle3": "Medvetna",
+      "text3": "Upplev magin av medvetenhet när barn lär sig att ansluta till sina kroppar och tankar.",
+      "lisanne": "Lisanne",
+      "lisanneText": "Tror verkligen att alla barn borde prova yoga. Det är därför hon startade MINI FLOW. Åh, och älskar rim också!",
+      "ted": "Ted",
+      "tedText": "Är galen i dinosaurier. Så bli inte förvånad om ditt barn kommer hem och låter som en!",
+      "kaya": "Kaya",
+      "kayaText": "Älskar en bra konstig dansfest. 'Att dansa är det bästa sättet för ett barn att uttrycka sina känslor, alltid!'"
+    }
+  }
+}

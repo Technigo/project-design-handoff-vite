@@ -1,4 +1,4 @@
-import { LandingPage } from "./LandingPage";
+import { LandingPage } from "./Landing-session/LandingPage";
 import { Navbar } from "./components/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Contact } from "./contact-session/Contact";

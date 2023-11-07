@@ -1,0 +1,76 @@
+{
+  "navbar": {
+    "course": "Courses for kids",
+    "info": "Info for adults",
+    "contact": "Contact"
+  },
+
+  "landing": {
+    "hero": {
+      "heading": "Yoga, Not just for the calm and quiet kids",
+      "subHeading": "Yoga is for all kids that like to play. Sounds fun? Join us on a joyful adventure to self-discovery!",
+      "btn": "try for free!"
+    },
+    "courses": {
+      "heading": "Courses at MINI FLOW"
+    },
+    "motto": {
+      "heading": "A joyful adventure to self-discovery. That's our motto at MINI FLOW",
+      "div1": "We combine age-appropriate poses, breathing exercises and mindfulness to encourage kids to explore their growing bodies and minds. By practicing yoga, we believe that kids will develop an important sense of self-awareness that they will benefit from their entire life.",
+      "div2": "We combine creativity and playfulness in every session, using stories, games, and imagination to make yoga fun and lively. Our goal is to adapt all of our sessions to the energy of the kids that join us that day. Simply because we understand that kids can have good or bad days, that they sometimes are quiet and sometimes make noise, that some days they can sit still and some days like to jump around.",
+      "div3": "Yoga is for all."
+    },
+    "aboutMe": {
+      "heading": "Hi everyone! I'm Lisanne, the founder of MINI FLOW",
+      "aboutMsg": "For me, kids yoga is about finding a balance between fun, play and mindfullness. My greatest joy in life is to see children develop and grow by using yoga as a tool. I'd love to help you find the best MINI FLOW yoga course for your kid. If you have any questions about kids yoga in general or have any feedback to give, let me know!",
+      "aboutBtn": "get in touch"
+    },
+    "newsletter": {
+      "heading": "Join the flow!",
+      "text": "We are always in movement at MINI FLOW. Subscribe to our newsletter to be the first to receive our latest updates, special offers and bonus yoga videos.",
+      "btn": "subscribe!",
+      "placeholder": "your e-mail address"
+    }
+  },
+  "contact": {
+    "intro": {
+      "heading": "Say Hello",
+      "text": "We love talking about kids yoga. If you have any questions, thoughts to share or feedback to give us, please send us a message and we will reply to you as fast as we can. If you would rather give us a call you can reach us from Monday to Friday between 09.00-16.00."
+    },
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your Name",
+      "email": "E-mail",
+      "email2": "We're going to reply to your message by e-mail",
+      "emailPlaceholder": "name@domain.com",
+      "phone": "Phone (optional)",
+      "phone2": "Only if you want us to call you",
+      "phonePlaceholder": "+00 000 00 00 00",
+      "message": "Message",
+      "messagePlaceholder": "Enter your message here",
+      "tnc": "Read our Privacy Policy on how we protect your data",
+      "btn": "send",
+      "phoneNumber": "+46 (0)761 00 22 33",
+      "text1": "Is your kid unable to attend class?",
+      "text2": "Please leave us a voicemail!",
+      "address": "Stortorget 8",
+      "address2": "211 34 Malmö",
+      "direction": "Get Directions"
+    },
+    "team": {
+      "heading": "We are Mini Flow",
+      "subtitle1": "Playful",
+      "text1": "Feel the joy of movement when laughter and learning intertwine in a our world of imagination and fun!",
+      "subtitle2": "Adaptable",
+      "text2": "We adapt all of our yoga sessions to suit every kid's uniqueness, ensuring an inclusive experience for all.",
+      "subtitle3": "Mindful",
+      "text3": "Experience the magic of mindful-ness, as kids learn to connect with their bodies and thoughts.",
+      "lisanne": "Lisanne",
+      "lisanneText": "Truely believes that all kids should try yoga. That's why she started MINI FLOW. Oh, and loves rhyming too!",
+      "ted": "Ted",
+      "tedText": "Is crazy about dinosaurs. That's why you shouldn't be surprised if your kid comes home roaring like one!",
+      "kaya": "Kaya",
+      "kayaText": "Loves a good weird dance party. “Dancing is the best way for a child to express their emotions, always!”"
+    }
+  }
+}

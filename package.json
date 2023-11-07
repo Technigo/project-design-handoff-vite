@@ -10,11 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "i18": "^0.0.6",
     "i18next": "^23.6.0",
+    "next": "^14.0.1",
     "react": "^18.2.0",
     "react-burger-menu": "^3.0.9",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.17.0"
+    "react-router-dom": "^6.17.0",
+    "save": "^2.9.0",
+    "styled-components": "^6.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
