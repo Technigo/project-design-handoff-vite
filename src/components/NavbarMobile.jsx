@@ -1,17 +1,15 @@
 import React, { useState } from "react";
 import "./css/navbar.css";
 import { Link } from 'react-router-dom';
-import BurgerMenu from "./BurgerMenu"; // Import BurgerMenu without curly braces
+import BurgerMenu from "./BurgerMenu";
 
 const NavbarMobile = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    // Toggle the menuOpen state when the menu icon is clicked
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // Prevent the click event from propagating to the parent element
     const preventPropagation = (e) => {
         e.stopPropagation();
     };
@@ -22,8 +20,10 @@ const NavbarMobile = () => {
                 src="/menu.png"
                 alt="menu"
                 style={{ width: '24px', height: '24px', cursor: 'pointer' }}
-                onClick={toggleMenu} // Toggle the menu when the menu icon is clicked
+                onClick={toggleMenu}
             />
+
+            {menuOpen && <div onClick={preventPropagation}><BurgerMenu /></div>}
 
             <Link to="/"><img src="/logo.png" alt="logo" /></Link>
 
@@ -32,8 +32,6 @@ const NavbarMobile = () => {
                 alt="search"
                 style={{ width: '24px', height: '24px', margin: '0', padding: '10px' }}
             />
-
-            {menuOpen && <div onClick={preventPropagation}><BurgerMenu /></div>} {/* Render BurgerMenu when menuOpen is true */}
         </div>
     );
 }

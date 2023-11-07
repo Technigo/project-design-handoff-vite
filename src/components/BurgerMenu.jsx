@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { slide as Menu } from 'react-burger-menu';
+import { Link } from 'react-router-dom';
 import './css/burgermenu.css';
 
 const BurgerMenu = () => {
@@ -11,18 +12,12 @@ const BurgerMenu = () => {
 
   return (
     <div>
-      <img
-        src="/menu.png" // Replace with the actual path to your menu.png image
-        alt="Menu"
-        className="menu-button"
-        onClick={handleMenuToggle}
-      />
       <Menu isOpen={menuOpen} onStateChange={({ isOpen }) => setMenuOpen(isOpen)}>
         <div className="menu-content">
           <a className="menu-item" href="/">Login</a>
-          <a className="menu-item" href="/about">About Us</a>
+          <Link to="/about" className="menu-item">About Us</Link>
           <a className="menu-item" href="/membership">Membership Plans</a>
-          <a className="menu-item" href="/contact">Contact Us</a>
+          <Link to="/contact" className="menu-item">Contact Us</Link>
         </div>
       </Menu>
     </div>

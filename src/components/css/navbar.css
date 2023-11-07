@@ -100,24 +100,24 @@ img {
 
 
 /* Mobile */
+@media (max-width: 393px) {
 
-.navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-}
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
 
-.navbar .menu-container {
-    width: 24px;
-}
 
-.navbar img {
-    width: 32px;
-    height: 33px;
-    margin: 0;
-    padding: 10px;
+    .navbar img {
+        width: 32px;
+        height: 33px;
+        margin: 0;
+        padding: 10px;
+    }
+
 }
 
 /* Tablet */
@@ -129,10 +129,6 @@ img {
         justify-content: space-between;
         align-items: center;
         padding: 0;
-    }
-
-    .navbar .menu-container {
-        width: 24px;
     }
 
     .navbar img {
