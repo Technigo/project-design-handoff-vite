@@ -5,7 +5,7 @@ import './css/burgermenu.css';
 
 const BurgerMenu = ({ menuOpen, toggleMenu }) => {
   return (
-    <div className='bm-menu'>
+    <div className="bm-menu">
       <Menu isOpen={menuOpen} onStateChange={({ isOpen }) => toggleMenu(isOpen)}>
         <div className="menu-content">
           <a className="menu-item" href="/">Login</a>
