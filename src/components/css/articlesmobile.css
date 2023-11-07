@@ -29,11 +29,13 @@
     border-radius: 50px;
     padding: 10px 30px;
     cursor: pointer;
+    z-index: 999;
 }
 
 .article-mobile-content {
     display: flex;
     flex-direction: column;
+    z-index: 1000;
 }
 
 .article-mobile-content h3 {
