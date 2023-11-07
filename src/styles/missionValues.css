@@ -9,10 +9,9 @@ body {
 
 .missionValues-wrapper {
     background-color: #EBE7E4;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 .missionValues-title {
@@ -26,7 +25,6 @@ body {
 
 .missionValues-subtitle {
     margin-top: 1em;
-    text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 1.5em;
     font-weight: semi-bold;
@@ -34,6 +32,31 @@ body {
     color: #38302A;
     width: 50%;
     margin-bottom: 5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+
 }
+
+@media (max-width: 834px) {
+    .missionValues-title {
+        text-align: center;
+        margin: auto; 
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 390px) {
+    .missionValues-title {
+        text-align: center;
+        margin: auto; 
+    }
+
+
+}
+
+
+  
+
 
 
