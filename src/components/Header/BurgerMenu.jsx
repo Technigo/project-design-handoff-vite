@@ -24,7 +24,7 @@ const CustomStyles = styled.div`
 
   /* Position and sizing of burger button */
   .bm-burger-button {
-    position: absolute;
+    position: fixed;
     width: 42px;
     height: 42px;
     right: 18px;
@@ -48,13 +48,14 @@ Note: Beware of modifying this element as it can break the animations - you shou
   .bm-menu-wrap {
     position: fixed;
     height: 100%;
+    z-index: 1001;
   }
 
   /* General sidebar styles */
   .bm-menu {
     background: #202537;
     padding: 2.5em 1.5em 0;
-    max-height: 400px; /* Set the maximum height */
+    //max-height: 400px; /* Set the maximum height */
     display: flex;
     justify-content: center;
   }
@@ -144,11 +145,11 @@ export const BurgerMenu = () => {
   return (
     /* Sidebar Menu */
     <CustomStyles>
-      {/* <div id="outer-container" className="burgermenu-wrapper"> */}
       <Menu
-        // pageWrapId={"page-wrap"}
-        // outerContainerId={"outer-container"}
+        pageWrapId={"page-wrap"}
+        outerContainerId={"outer-container"}
         styles={CustomStyles}
+        right
         width={"100%"}
         customBurgerIcon={<img src={BurgerMenuIcon} />}
         customCrossIcon={
@@ -157,7 +158,6 @@ export const BurgerMenu = () => {
           </ExitButton>
         }
       >
-        {/* <main id="page-wrap"> */}
         <div className="search-wrapper">
           <Link to={"#"} id="search">
             <img src={Search} />
@@ -179,9 +179,7 @@ export const BurgerMenu = () => {
         <Link to={"#"}>
           <p className="menu-item">{t("burgerMenu.shop")}</p>
         </Link>
-        {/* </main> */}
       </Menu>
-      {/* </div> */}
     </CustomStyles>
   );
 };

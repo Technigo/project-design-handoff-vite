@@ -1,5 +1,5 @@
 import { LogoDark } from "../ReusableComponents/Logo/LogoDark.jsx";
-import { BurgerMenu } from "./BurgerMenu.jsx";
+//import { BurgerMenu } from "./BurgerMenu.jsx";
 //import Search from "/icons/Search.png";
 //import { useTranslation } from "react-i18next";
 import styled from "styled-components";
@@ -14,7 +14,7 @@ const StyledHeader = styled.div`
   width: 100%;
   position: fixed;
   top: 0; /* Stick it to the top of the viewport */
-  z-index: 1000; /* Ensure it appears above other content */
+  z-index: 900; /* Ensure it appears above other content */
 `;
 
 // const Navlinks = styled.ul`
@@ -130,7 +130,7 @@ export const Header = () => {
           <SearchIcon />
         </SearchBar> */}
       {/*</StyledSearch> */}
-      <BurgerMenu />
+      {/* <BurgerMenu /> */}
     </StyledHeader>
   );
 };
