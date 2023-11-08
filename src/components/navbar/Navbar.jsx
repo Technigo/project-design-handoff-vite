@@ -46,7 +46,7 @@ export const Navbar = () => {
             </div>
             <div className={`${styles.navLinks} ${isNavExpanded ? styles.active : ''}`}>
                 <svg className={styles.navSvgBackground} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 532" preserveAspectRatio="none">
-                    <path d="M0 0C236.904 17.8123 -128.96 532 305 532V0H0Z" stroke="#FFD075" stroke-width="1" fill="#612E77" />
+                    <path d="M0 0C236.904 17.8123 -128.96 532 305 532V0H0Z" stroke="#FFD075" stroke-width="0.3" fill="#612E77" />
                 </svg>
                 <NavLink to="/" className={styles.navLink} onClick={() => setIsNavExpanded(false)}>SCHEDULE</NavLink>
                 <NavLink to="/classes" className={styles.navLink} onClick={() => setIsNavExpanded(false)}>CLASSES</NavLink>

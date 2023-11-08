@@ -15,17 +15,19 @@ export const Header = () => {
                     header="Yoga and meditation for women"
                     type="H1"
                     style={{ color: '#FFFFFF' }}
+                    className={style.Texth1}
                 />
                 <Text
                     header="We help you stay vigorous in mind & body during menopause"
                     type="H2"
                     style={{ color: '#FFF', fontWeight: 300 }}
+                    className={style.Texth2}
                 />
-                <StyledButton className={style.styledBtn}>
+                <StyledButton className={style.styledBtn1}>
                     Find yoga class
                 </StyledButton>
                 <StyledButton
-                    className={style.styledBtn}
+                    className={style.styledBtn2}
                     border="1px solid #FFD075"
                     backgroundColor="transparent"
                     color="#FFD075"

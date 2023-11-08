@@ -1,6 +1,6 @@
 .background {
     background-color: #612E77;
-    height: 803px;
+    height: 853px;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -8,5 +8,39 @@
 }
 
 .wrapper {
-    margin: 0 20px 0 20px;
+    margin-top: 90px;
+    width: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "heroimage heroimage"
+        "Texth1 Texth1"
+        "Texth2 Texth2"
+        "Btn1 Btn2";
+    gap: 20px;
+}
+
+.heroimage {
+    grid-area: heroimage;
+    height: 237px;
+    align-self: stretch;
+}
+
+.Texth1 {
+    grid-area: Texth1;
+}
+
+
+.Texth2 {
+    grid-area: Texth2;
+}
+
+.styledBtn1 {
+    grid-area: Btn1;
+}
+
+.styledBtn2 {
+    grid-area: Btn2;
 }
