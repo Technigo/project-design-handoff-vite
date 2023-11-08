@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.ourYoga-Welcome-wrapper {
+    background-color: #EBE7E4;
+
+}
+
+.ourYoga-Welcome-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ourYoga-Welcome-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.ourYoga-Welcome-text-head {
+    margin-top: 5em;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: semi-bold;
+    line-height: 1.5em;
+    color: #38302A;
+}
+
+.ourYoga-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #38302A;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5em;
+    border: 1px solid #38302A;
+
+}
+
+.ourYoga-Welcome-text-desc-wrapper-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ 
+}
+
+.ourYoga-Welcome-text-desc-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 25%;
+    margin-right: 10em;
+}
+
+.ourYoga-image {
+    margin-top: 12em;
+    margin-left: 7em;
+    margin-bottom: 12em;
+}
+
+.ourYoga-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.5rem;
+    font-weight: semi-bold;
+    color: #38302A;
+
+}
+
+.ourYoga-title-desc {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: regular;
+    line-height: 1.5em;
+    color: #38302A;
+}
+
+.ourYoga-button-2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #38302A;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5em;
+}

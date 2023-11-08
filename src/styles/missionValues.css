@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.missionValues-wrapper {
+    background-color: #EBE7E4;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.missionValues-title {
+    margin-top: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #38302A;
+    
+}
+
+.missionValues-subtitle {
+    margin-top: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: semi-bold;
+    line-height: 1.5em;
+    color: #38302A;
+    width: 50%;
+    margin-bottom: 5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right:auto;
+
+}
+
+@media (max-width: 834px) {
+    .missionValues-title {
+        text-align: center;
+        margin: auto; 
+    }
+}
+
+/* Media query for mobile screens */
+@media (max-width: 390px) {
+    .missionValues-title {
+        text-align: center;
+        margin: auto; 
+    }
+
+
+}
+
+
+  
+
+
+

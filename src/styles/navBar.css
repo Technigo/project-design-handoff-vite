@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+.navbar-wrapper {
+    
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent; 
+    padding: 1rem; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    z-index: 999;
+}
+
+.navBar-list {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: Bold;
+    color: #38302A;
+    z-index: 1;
+    
+}
+
+.navBar_1 {
+    margin-right: 4em;
+}
+
+
+.navBar_2 {
+    margin-right: 4em;
+}
+
+.navBar_3 {
+    margin-right: 4em;
+}
+
+.navBar_4 {
+    margin-right: 4em;
+}
+
+.aboutus-image {
+    
+    width: 70%;
+    height: auto;
+    z-index: 0;
+    
+}
+
+.aboutus-image-wrapper {
+    
+    /* display: flex;
+    justify-content: right; */
+    background-color: #ffffff;
+}
+
+.aboutus-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.aboutus-text-head {
+    font-family: 'Raleway', sans-serif;
+    font-size: 5rem;
+    font-weight: 700;
+    color: #38302A;
+    z-index: 1;
+}
+
+.aboutus-text-wrapper {
+    position: relative;
+    width: 70%;
+    z-index: 1;
+    top: 0;
+    left: 10%; /* Move the text to the right by 10% */
+}
+
+.aboutus-text-subhead {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: semi-bold;
+    line-height: 1.5em;
+    color: #38302A;
+    z-index: 1;
+}
+
+.aboutus-text-wrapper-2 {
+    width: 70%;
+}
+
+.discover-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #38302A;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5em;
+}
+
+.login-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #38302A;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 0.5em;
+    border: 1px solid #38302A;
+
+}
+
+.hamburger {
+    display: none; /* Initially hide the hamburger icon */
+    cursor: pointer;
+    top: 1rem;
+    right: 5rem;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #38302A;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Mobile menu styles */
+
+.mobile-menu-item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 1em;
+    margin-right: 1em;
+    
+}
+
+.mobile-menu {
+    display: none; /* Initially hide the mobile menu */
+    background-color: #EBE7E4;
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    top: 10rem;
+    left:75rem;
+    width: 20%;
+    padding: 1.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border: solid 1px #38302A;
+    z-index: 1000;
+}
+
+/* Media query for tablet screens */
+@media (max-width: 834px) {
+    .navBar-list {
+        display: none; /* Hide the desktop navigation */
+    }
+
+    .hamburger {
+        display: block; /* Show the hamburger icon */
+        top: 1rem;
+        right: 5rem;
+        
+    }
+
+    .hamburger-search {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .bar { 
+        margin-left: 3em;
+        width: 40px;
+        height: 6px;
+    }
+
+    .serenity-logo {
+        transform: scale(0.7);
+    }
+
+    /* Hide the mobile menu by default on tablet screens */
+    .mobile-menu {
+        display: none;
+    }
+
+    .show-mobile-menu {
+        display: block; /* Display the mobile menu */
+    }
+    .show-mobile-menu .mobile-menu {
+        transform: translateY(0);
+       
+    }
+
+    
+}
+
+/* Media query for mobile screens */
+@media (max-width: 390px) {
+    .navBar-list {
+        display: none; /* Hide the desktop navigation */
+    }
+
+    .hamburger {
+        display: block;
+        top: 1rem;
+        right: 5rem;
+        
+    }
+
+    .hamburger-search {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+
+    .bar { 
+        margin-left: 3em;
+        width: 40px;
+        height: 6px;
+    }
+
+    .serenity-logo {
+        transform: scale(0.7);
+    }
+
+
+    /* Hide the mobile menu by default on mobile screens */
+    .mobile-menu {
+        display: none;
+    }
+
+    .show-mobile-menu {
+        display: block; /* Display the mobile menu */
+    }
+
+    .show-mobile-menu .mobile-menu {
+        transform: translateY(0);
+       
+    }
+}
