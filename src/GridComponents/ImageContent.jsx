@@ -5,17 +5,7 @@ import { useTranslation } from "react-i18next";
 
 
 const ImageContent = () => {
-    const { t, i18n } = useTranslation();
-
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language);
-    };
-
-    const toggleLanguage = () => {
-        const currentLanguage = i18n.language;
-        const newLanguage = currentLanguage === "en" ? "sv" : "en";
-        changeLanguage(newLanguage);
-    };
+    const { t } = useTranslation();
     return (
         <div>
             {/* Add a custom class for consistent image heights */

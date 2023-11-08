@@ -2,18 +2,7 @@ import { useTranslation } from 'react-i18next'; // Import the useTranslation hoo
 import "../Translation";
 
 export const AboutText = () => {
-
-    const { t, i18n } = useTranslation();
-
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language);
-    };
-
-    const toggleLanguage = () => {
-        const currentLanguage = i18n.language;
-        const newLanguage = currentLanguage === "en" ? "sv" : "en";
-        changeLanguage(newLanguage);
-    };
+    const { t } = useTranslation();
 
     return (
         <div className="text-yellow-color grid grid-cols-1 md:grid-cols-1 gap-4 lg:grid-cols-2">

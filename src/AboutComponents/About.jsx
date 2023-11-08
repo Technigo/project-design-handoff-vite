@@ -9,18 +9,10 @@ import { useTranslation } from 'react-i18next';
 import "../Translation";
 
 export const About = () => {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     const navigate = useNavigate();
 
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language);
-    };
 
-    const toggleLanguage = () => {
-        const currentLanguage = i18n.language;
-        const newLanguage = currentLanguage === "en" ? "sv" : "en";
-        changeLanguage(newLanguage);
-    };
 
     const backButton = () => {
         navigate("/");

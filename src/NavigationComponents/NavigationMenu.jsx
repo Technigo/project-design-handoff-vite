@@ -5,18 +5,8 @@ import { useTranslation } from 'react-i18next';
 import "../Translation";
 
 export const NavigationMenu = () => {
-    const { t, i18n } = useTranslation();
-
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language);
-    };
-
-    const toggleLanguage = () => {
-        const currentLanguage = i18n.language;
-        const newLanguage = currentLanguage === "en" ? "sv" : "en";
-        changeLanguage(newLanguage);
-    };
-
+    const { t } = useTranslation();
+    //The hamburger menu is a placeholder
     return (
         <nav className="text-white text-base">
             <ul className="flex items-center justify-end">
@@ -36,6 +26,7 @@ export const NavigationMenu = () => {
 
                     <Link to="/sign-in">{t("signIn")}</Link>
                 </li>
+
                 <div className="">
                     <img className="lg:hidden" src={HamburgerMenu} alt="Hamburger menu" />
                 </div>

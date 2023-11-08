@@ -4,40 +4,18 @@ import { useTranslation } from 'react-i18next'; // Import the useTranslation hoo
 
 import "../Translation";
 
-export const InfoCard = ({ data }) => {
-    const { t, i18n } = useTranslation();
-
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language);
-    };
-
-    const toggleLanguage = () => {
-        const currentLanguage = i18n.language;
-        const newLanguage = currentLanguage === "en" ? "sv" : "en";
-        changeLanguage(newLanguage);
-    };
+export const InfoCard = () => {
+    const { t } = useTranslation();
 
     const navigate = useNavigate();
 
     const navigateToAbout = () => {
         navigate('/about'); // Navigate to the "/about" route
 
-        const { t, i18n } = useTranslation();
-
-        const changeLanguage = (language) => {
-            i18n.changeLanguage(language);
-        };
-
-        const toggleLanguage = () => {
-            const currentLanguage = i18n.language;
-            const newLanguage = currentLanguage === "en" ? "sv" : "en";
-            changeLanguage(newLanguage);
-        };
-
     };
 
     return (
-        <div className="text-center absolute lg:pt-12 grid grid-cols-1 md:pt-40 grid-cols-1 lg:grid-cols-2 gap-2">
+        <div className="text-center absolute lg:pt-12 grid grid-cols-1 md:pt-20 grid-cols-1 lg:grid-cols-2 gap-2">
             <div className="text-white pl-0 p-0 pt-0 lg:mr-36">
                 <div className="sm:grid grid-cols-1 md:grid grid-cols-2 lg:grid-cols-1">
                     <div>

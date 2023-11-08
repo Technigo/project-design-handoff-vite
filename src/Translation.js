@@ -35,7 +35,7 @@ const resources = {
             gridText5: "Join us for after-hours in our cocktail bar with DJ or live sessions. Open every Friday for everyone and Saturday’s for members only.",
 
             //Info
-            infoTitle1: "$1.13 milioner",
+            infoTitle1: "$1.13 million",
             infoText1: "Americans spend $1.13 million on unused gym memberships annually.",
             infoTitle2: "$1.9 billion",
             infoText2: "Australians are wasting $1.9 billion per year on unused gym memberships.",

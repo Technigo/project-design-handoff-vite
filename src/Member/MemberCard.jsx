@@ -29,7 +29,7 @@ export const MemberCard = ({ cardData }) => {
     };
 
     return (
-        //These pictures are placeholders
+        //These pictures are placeholders 
         <div className="text-center">
             <div className="flex flex-col items-center justify-center">
 

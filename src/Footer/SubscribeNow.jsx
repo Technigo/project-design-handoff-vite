@@ -3,18 +3,7 @@ import { useTranslation } from 'react-i18next'; // Import the useTranslation hoo
 import "../Translation";
 
 export const SubscribeNow = () => {
-    const { t, i18n } = useTranslation();
-
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language);
-    };
-
-    const toggleLanguage = () => {
-        const currentLanguage = i18n.language;
-        const newLanguage = currentLanguage === "en" ? "sv" : "en";
-        changeLanguage(newLanguage);
-    };
-
+    const { t } = useTranslation();
     //function to check if the email is valid
     const [subscribed, setSubscribed] = useState(false);
     const [email, setEmail] = useState('');

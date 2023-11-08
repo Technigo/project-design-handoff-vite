@@ -4,17 +4,7 @@ import { VisitUsImage } from "./VisitUsComponents/VisitUsImage";
 import Copy from "./Copy.png";
 
 export const VisitUs = () => {
-    const { t, i18n } = useTranslation();
-
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language);
-    };
-
-    const toggleLanguage = () => {
-        const currentLanguage = i18n.language;
-        const newLanguage = currentLanguage === "en" ? "sv" : "en";
-        changeLanguage(newLanguage);
-    };
+    const { t } = useTranslation();
 
     return (
         <div className="bg-black text-white grid grid-cols-1 md:grid-cols-2 gap-0 lg:text-lg">

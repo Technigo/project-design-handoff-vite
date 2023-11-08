@@ -6,17 +6,7 @@ import Gym from "../assets/Gym.svg"
 import SpaWellness from "../assets/SpaWelness.svg"
 
 export const Header = () => {
-    const { t, i18n } = useTranslation();
-
-    const changeLanguage = (language) => {
-        i18n.changeLanguage(language);
-    };
-
-    const toggleLanguage = () => {
-        const currentLanguage = i18n.language;
-        const newLanguage = currentLanguage === "en" ? "sv" : "en";
-        changeLanguage(newLanguage);
-    };
+    const { t } = useTranslation();
 
     return (
         <div className="md:h-fit lg:bg-header relative bg-cover lg:h-screen sm:bg-header relative bg-cover h-screen" style={{ backgroundImage: `url(https://cdn.glitch.global/be758d61-a981-49f2-a7a6-72216e478708/jlz1000_88870_photo-realistic_image_of_a_gym_with_a_lounge_area_ec9e24eb-e19b-46e7-8449-97ca3e3d8892_upscayl_4x_realesrgan-x4plus-anime.png?v=1698691615805)` }}>
