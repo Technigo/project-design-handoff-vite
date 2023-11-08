@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #612e77;
+    ;
+    padding: 0 1rem;
+    height: 110px;
+
+}
+
+.navBlackSvgBackground {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.navLinks {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: transparent;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+
+.navSvgBackground {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85%;
+    height: auto;
+    z-index: 0;
+}
+
+.logoText {
+    width: 193px;
+    height: 38px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+
+.logo {
+    cursor: pointer;
+    width: 50px;
+    height: 65px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.menuIcon {
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #FFD075;
+    transition: all 0.3s ease;
+}
+
+
+
+.navLinks.active {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.navLink {
+    color: #FFD075;
+    padding: 0.5rem 1rem;
+    display: block;
+    width: fit-content;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 131%;
+    letter-spacing: -0.44px;
+    text-align: left;
+}
+
+.navLink::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #FFD075;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+.navLink:hover {
+    background-color: #c5a25d;
+}
+
+@media (min-width: 1025px) {
+    .menuIcon {
+        display: none;
+    }
+
+    .navLinks {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+
+    }
+
+    .navLink {
+        padding: 0 1rem;
+        border-bottom: none;
+    }
+
+    .navLink:hover {
+        background-color: transparent;
+    }
+
+    .navSvgBackground {
+        display: none;
+    }
+
+    .dropdownMenu {
+        display: none;
+    }
+
+    .navLink.dropdown {
+        pointer-events: none;
+
+    }
+}

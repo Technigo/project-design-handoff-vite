@@ -8,8 +8,8 @@ import { StyledButton } from '../../../UI/buttons/StyledButtons';
 export const Courses = () => {
     const { t } = useTranslation();
 
-    // Antar at dataCarousel er en del av din oversettelsesfil og inneholder oversettelser for hvert kurs.
     const dataCarousel = t("carousel", { returnObjects: true });
+    console.log(dataCarousel);
 
     return (
         <div className={style.background}>
@@ -26,7 +26,7 @@ export const Courses = () => {
                     style={{ color: '#1D1C25', fontWeight: 500 }}
                     className={style.gridItem2}
                 />
-                <CardCourseCarousel className={style.carouselContainer}>
+                <CardCourseCarousel>
                     {Object.entries(dataCarousel).map(([courseId, course]) => (
                         <div className={style.carouselcard} key={courseId}>
                             <img src={course.imgSrc} alt={t(course.altText)} className={style.img} />

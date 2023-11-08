@@ -6,69 +6,74 @@ export const CardCourseCarousel = ({ children }) => {
     const childrenCount = React.Children.count(children);
     const [slidesToShow, setSlidesToShow] = useState(1);
 
-    // slides to show updtaed based on screen size
     useEffect(() => {
-        function handleResize() {
+        const handleResize = () => {
             if (window.innerWidth >= 1024) {
-                setSlidesToShow(3); // For desktop
+                setSlidesToShow(3);
             } else if (window.innerWidth >= 768) {
-                setSlidesToShow(2); // For tablet
+                setSlidesToShow(2);
             } else {
-                setSlidesToShow(1); // For mobil
+                setSlidesToShow(1);
             }
-        }
+        };
 
+        handleResize();
         window.addEventListener('resize', handleResize);
-        handleResize(); // Kjør ved montering for å sette riktig initiell verdi
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     const nextSlide = () => {
         setCurrentIndex((prevIndex) => {
-            let newIndex = prevIndex + 1;
-            if (newIndex + slidesToShow - 1 >= childrenCount) {
-                newIndex = 0;
-            }
+            const newIndex = (prevIndex + 1) % childrenCount;
+            console.log(`Next Slide Clicked: currentIndex=${currentIndex}, newIndex=${newIndex}`);
             return newIndex;
         });
     };
 
-    //Design does not have a back btn in tablet, should I remove it?
     const prevSlide = () => {
         setCurrentIndex((prevIndex) => {
-            let newIndex = prevIndex - 1;
-            if (newIndex < 0) {
-                newIndex = childrenCount - slidesToShow;
-            }
+            const newIndex = (prevIndex - 1 + childrenCount) % childrenCount;
+            console.log(`Previous Slide Clicked: currentIndex=${currentIndex}, newIndex=${newIndex}`);
             return newIndex;
         });
     };
+
+    const isSlideVisible = index => {
+        return index >= currentIndex && index < currentIndex + slidesToShow;
+    };
+
+    const dotCount = Math.ceil(childrenCount / slidesToShow);
 
     return (
         <div className={styles.carouselContainer}>
-            <button onClick={prevSlide} className={`${styles.carouselButton} ${styles.left}`}>
-                <img src="/Images/swipeLeft.svg" alt="Previous" />
-            </button>
+            {(slidesToShow < 3) && (
+                <button onClick={prevSlide} className={`${styles.carouselButton} ${styles.left}`}>
+                    <img src="/Images/swipeLeft.svg" alt="Previous" />
+                </button>
+            )}
             {React.Children.map(children, (child, index) => (
                 <div
-                    className={`${styles.carouselSlide} ${index >= currentIndex && index < currentIndex + slidesToShow ? styles.active : ''}`}
+                    className={`${styles.carouselSlide} ${isSlideVisible(index) ? styles.active : ''}`}
                     key={index}
+                    style={{ display: isSlideVisible(index) ? 'block' : 'none' }}
                 >
                     {child}
                 </div>
             ))}
             <div className={styles.dots}>
-                {Array.from({ length: childrenCount }, (_, idx) => (
+                {Array.from({ length: dotCount }, (_, idx) => (
                     <span
                         key={idx}
-                        onClick={() => setCurrentIndex(idx)}
-                        className={`${styles.dot} ${currentIndex === idx ? styles.active : ''}`}
+                        onClick={() => setCurrentIndex(idx * slidesToShow)}
+                        className={`${styles.dot} ${Math.floor(currentIndex / slidesToShow) === idx ? styles.active : ''}`}
                     />
                 ))}
             </div>
-            <button onClick={nextSlide} className={`${styles.carouselButton} ${styles.right}`}>
-                <img src="/Images/swipeRight.svg" alt="Next" />
-            </button>
+            {(slidesToShow < 3) && (
+                <button onClick={nextSlide} className={`${styles.carouselButton} ${styles.right}`}>
+                    <img src="/Images/swipeRight.svg" alt="Next" />
+                </button>
+            )}
         </div>
     );
 };

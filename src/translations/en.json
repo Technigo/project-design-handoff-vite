@@ -74,13 +74,13 @@
             "details": "8 weeks of Yin Yoga, includes videos and live classes, starting on 6/12, price 3400 SEK",
             "buttonText": "Book your spot",
             "altText": "Above perspective picture of a woman with locked hands."
-        },
-        "instagram": {
-            "followUs": "Follow us on Instagram",
-            "connect": "Connect and keep inspired",
-            "carousel": "Image carousel insta",
-            "logoAlt": "Instagram",
-            "connectButton": "Connect on Instagram"
         }
+    },
+    "instagram": {
+        "followUs": "Follow us on Instagram",
+        "connect": "Connect and keep inspired",
+        "carousel": "Image carousel insta",
+        "logoAlt": "Instagram",
+        "connectButton": "Connect on Instagram"
     }
 }
