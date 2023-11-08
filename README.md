@@ -28,11 +28,11 @@ npm i && code . && npm run dev
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+I started looking at the project and then laid a structure and went on doing it component by component mobile first and then tablet and desktop. I used modals for tge pop up, a carousel for the membercards and the features which I never used before and that was a bit tricky. If i Had more time I would try to understand why I can't get the featurs to be a 100% and also why I can't get the membercards to display differently in tablet and desktop.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://cocofnaslegz.netlify.app/
 
 ## Instructions
 
