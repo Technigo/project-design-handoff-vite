@@ -14,7 +14,7 @@
     background-color: #612e77;
     ;
     padding: 0 1rem;
-    height: 110px;
+    height: fit-content;
 
 }
 
@@ -40,7 +40,6 @@
     z-index: 1;
 }
 
-
 .navSvgBackground {
     position: absolute;
     top: 0;
@@ -56,7 +55,6 @@
     flex-shrink: 0;
     z-index: 1;
 }
-
 
 .logo {
     cursor: pointer;
@@ -80,8 +78,6 @@
     background-color: #FFD075;
     transition: all 0.3s ease;
 }
-
-
 
 .navLinks.active {
     display: flex;
@@ -121,6 +117,18 @@
 
 .navLink:hover {
     background-color: #c5a25d;
+}
+
+/* iPad Pro 11" */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navSvgBackground {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: auto;
+        z-index: 0;
+    }
 }
 
 @media (min-width: 1025px) {

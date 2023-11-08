@@ -6,6 +6,11 @@ export const Header = () => {
     return (
         <div className={style.background}>
             <section className={style.wrapper}>
+                <img
+                    className={style.heroimage}
+                    src="/Images/heroimage.png"
+                    alt="Person rolling a purple yogamat."
+                />
                 <Text
                     header="Yoga and meditation for women"
                     type="H1"
@@ -14,7 +19,7 @@ export const Header = () => {
                 <Text
                     header="We help you stay vigorous in mind & body during menopause"
                     type="H2"
-                    style={{ color: '#FFF', fontWeight: 500 }}
+                    style={{ color: '#FFF', fontWeight: 300 }}
                 />
                 <StyledButton className={style.styledBtn}>
                     Find yoga class
