@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useMediaQuery } from "react-responsive";
 import { Header } from "../Sections/Header";
 import { Workout } from "../Sections/Workout";
 import { WorkoutPlans } from "../Sections/WorkoutPlans";
@@ -27,7 +28,7 @@ const MainWrapper = styled.div`
 
 export const Home = () => {
   {/* conditionally display hero section depending the screen size */}
-  const isTablet = window.innerWidth > 394;
+  const isTablet = useMediaQuery({minWidth: 394});
 
   return (
     <MainWrapper>

@@ -9,6 +9,7 @@ const NavBarWrapper = styled.div`
   flex-direction: flex-row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 `
 
 const Button = styled.button`

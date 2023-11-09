@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useMediaQuery } from "react-responsive";
 import { useTranslation } from "react-i18next";
 
 const ArticleCardItem = styled.div`
@@ -83,7 +84,7 @@ const ArticleImage = styled.img`
 `
 
 export const ArticleCard = ({ article }) => {
-  const isDesktop = window.innerWidth > 835;
+  const isDesktop = useMediaQuery({minWidth: 835});
 
   const { t } = useTranslation();
 

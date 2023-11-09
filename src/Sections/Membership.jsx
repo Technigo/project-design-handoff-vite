@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "react-responsive";
 
 const MembershipWrapper = styled.section`
   margin: 35px 0;
@@ -59,7 +60,7 @@ const MembershipSmallerText = styled.h2`
 `
 
 export const Membership = () => {
-  const isDesktop = window.innerWidth > 834;
+  const isDesktop = useMediaQuery({minWidth: 835});
 
   const { t } = useTranslation();
 

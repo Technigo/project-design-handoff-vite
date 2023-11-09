@@ -45,7 +45,7 @@ const MenuLink = styled.a`
   font-weight: var(--text-weight-mobile);
   line-height: var(--text-height-mobile);
 
-  @media (min-width: 393px) {
+  @media (min-width: 394px) {
     font-size: var(--heading-size-mobile);
     line-height: var(--heading-height-mobile);
   }
@@ -60,7 +60,7 @@ const StyledLink = styled(NavLink)`
   font-weight: var(--text-weight-mobile);
   line-height: var(--text-height-mobile);
 
-  @media (min-width: 393px) {
+  @media (min-width: 394px) {
     font-size: var(--heading-size-mobile);
     line-height: var(--heading-height-mobile);
   }

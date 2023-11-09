@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { LanguageSelector } from "../Components/LanguageSelector";
+import { LanguageSelector } from "../Components/Language/LanguageSelector";
 
 const FooterWrapper = styled.footer`
   display: flex;

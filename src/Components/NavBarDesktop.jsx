@@ -1,12 +1,16 @@
+import { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { LanguageDropdown } from "./Language/LanguageDropdown";
 
 const NavBarWrapper = styled.div`
   display: flex;
   flex-direction: flex-row;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  flex-shrink: 1;
 `
 
 const Logo = styled.img`
@@ -20,6 +24,7 @@ const MenuUl = styled.ul`
   flex-direction: row;
   gap: 40px;
 `
+
 const MenuLi = styled.li`
   font-size: var(--text-size-mobile);
   font-weight: var(--text-weight);
@@ -43,10 +48,17 @@ const SearchBtn = styled.button`
 const TranslateBtn = styled.button`
   border: none;
   background: transparent;
+  cursor: pointer;
 `
 
 export const NavBarDesktop = () => {
   const { t } = useTranslation();
+
+  const [isVisible, setIsVisible] = useState(false);
+  
+  const toggleDropdown = () => {
+    setIsVisible(!isVisible);
+  };
 
   return (
     <NavBarWrapper>
@@ -60,7 +72,7 @@ export const NavBarDesktop = () => {
         </MenuUl>
       </nav>
       
-      <SearchBtn type="button" className="flex flex-row">
+      <SearchBtn type="button">
         {t("desktopNav.search")}
         <svg 
           width="24" 
@@ -82,7 +94,7 @@ export const NavBarDesktop = () => {
         </svg>
       </SearchBtn>
 
-      <TranslateBtn type="button">
+      <TranslateBtn type="button" onClick={toggleDropdown}>
         <svg 
             width="24" 
             height="24" 
@@ -102,6 +114,7 @@ export const NavBarDesktop = () => {
             </g>
         </svg>
       </TranslateBtn>
+      {isVisible && <LanguageDropdown />}
     </NavBarWrapper>
       
   )

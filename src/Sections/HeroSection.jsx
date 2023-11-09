@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useMediaQuery } from "react-responsive";
 import { useTranslation } from "react-i18next";
 
 const HeroWrapper = styled.section`
@@ -54,7 +55,7 @@ const HeroMotto = styled.h4`
 `
 
 export const HeroSection = () => {
-  const isDesktop = window.innerWidth > 834;
+  const isDesktop = useMediaQuery({minWidth: 834});
   const { t } = useTranslation();
 
   return (
