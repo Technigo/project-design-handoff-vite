@@ -1,0 +1,101 @@
+{
+  "header": {
+    "about": "About us",
+    "course": "Our courses",
+    "resources": "Resources",
+    "shop": "Shop",
+    "searchbar": "Search"
+  },
+  "burgerMenu": {
+    "search": "Search",
+    "home": "Home",
+    "about": "About us",
+    "course": "Our courses",
+    "resources": "Resources",
+    "shop": "Shop"
+  },
+  "hero": {
+    "mission": "Our mission",
+    "description": "At our yoga studio, we're on a mission to support equestrians. We provide specialized yoga classes to enhance riders' strength, balance, and well-being, fostering a deeper connection between horse and rider. Join us in promoting a holistic approach to horsemanship and self-care.",
+    "button":"Read more"
+  },
+  "main": {
+    "upcoming": "Upcoming courses",
+    "button": "View all courses"
+  },
+  "courses": [
+  {
+    "courseId": 1,
+    "courseName": "Ashtanga vinyasa yoga",
+    "courseNameShort": "Ashtanga Vinyasa",
+    "imageUrl": "/assets/ashtangayogaimage.jpeg",
+    "imageAlt": "People kneeled down and bent over on a yoga mat with their arms forward",
+    "courseBrief": "Ashtanga Vinyasa Yoga is perfect for the dynamic rider who strives to build strength and increase flexibility. This class teaches an energetic practice, synchronising breath with movements.",
+    "button": "Read more"
+  },
+ {
+    "courseId": 2,
+    "courseName": "Yoga on horseback",
+    "courseNameShort": "Yoga on horseback",
+    "imageUrl": "/assets/yogaonhorseback.webp",
+    "imageAlt": "Woman with arms above her head in a yoga position while sitting on a dark brown horse",
+    "courseBrief": "Horseback Yoga is an excellent class for the more experienced rider, combining seat training with traditional yoga practices. This class will deepen the bond between you and the horse, improving both trust and communication between horse and rider.",
+    "button": "Read more"
+  },
+  {
+    "courseId": 3,
+    "courseName": "Hatha yoga",
+    "courseNameShort": "Hatha yoga",
+    "imageUrl": "/assets/hathayogaimage.jpg",
+    "imageAlt": "People sitting in a yoga position on yoga mats with their arms resting on their knees",
+    "courseBrief": "Hatha Yoga is a holistic practice that seeks to improve flexibility, strength, and inner peace through the harmonization of breath and movement.",
+    "button": "Read more"
+  },
+  {
+    "courseId": 4,
+    "courseName": "Hot yoga",
+    "courseNameShort": "Hot yoga",
+    "imageUrl": "/assets/hotyoga.jpeg",
+    "imageAlt": "Sweaty woman with sports wear standing in a yoga position",
+    "courseBrief": "Hot Yoga is a style of yoga performed in a heated room, typically around 95-105°F (35-40°C). This intense heat is intended to enhance flexibility and detoxification while challenging practitioners through a series of yoga postures.",
+    "button": "Read more"
+  },
+  {
+    "courseId": 5,
+    "courseName": "Seat training with Maria Lind",
+    "courseNameShort": "Seat training",
+    "imageUrl": "/assets/sitstraininglongering.jpeg",
+    "imageAlt": "Girl sitting on a white horse and a woman holds the horse",
+    "courseBrief": "Seat Training with Maria Lind, this fall seat trainer Maria Lind is hosting a new course here at Saddle Up Yoga Studio. Take this opportunity to work on you balance and sharpen your riding skills.",
+    "button": "Read more"
+  },
+  {
+    "courseId": 6,
+    "courseName": "Mindfulness courses",
+    "courseNameShort": "Mindfulness",
+    "imageUrl": "/assets/mindfulnessimage.jpeg",
+    "imageAlt": "Blonde woman standing with brown horse",
+    "courseBrief": "Mindfulness. In this class we are reducing stress, improving mental clarity, and fostering a greater sense of self-awareness and emotional well-being.",
+    "button": "Read more"
+  }
+],
+  "newsletter": {
+    "signup": "Sign up for our newsletter",
+    "placeholder": "Your Email",
+    "button": "Send"
+  },
+  "footer": {
+    "follow": "Follow us",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy",
+    "accessibility": "Accessibility"
+  },
+  "aboutUs": {
+    "heading": "About us",
+    "weAre": "Who we are",
+    "weAreDescription": "We are a yoga studio with roots in the equestrian world.\nIn our practices we combine the magical power of yoga with traditional horse riding.",
+    "findUs": "Where to find us",
+    "location": "Studio location\nStorängsgatan 27- 31,\n115 42 Stockholm, Sweden",
+    "contactUs": "How to contact us"
+  }
+}
