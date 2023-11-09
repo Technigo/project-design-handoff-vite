@@ -17,7 +17,7 @@ const NavbarMobile = () => {
     return (
         <div className="navbar">
             <div className="burger-menu-container">
-                {menuOpen && <BurgerMenu menuOpen={menuOpen} toggleMenu={toggleMenu} />}
+                {menuOpen && <BurgerMenu menuOpen={menuOpen} toggleMenu={toggleMenu} style={{ height: '60vh' }} />}
             </div>
             <img
                 src="/menu.png"

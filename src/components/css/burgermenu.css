@@ -1,6 +1,7 @@
 .bm-menu {
     background-color: rgba(255, 255, 255, 0.9);
-    /* height: 60vh; <- with this it dublicates, even tho this is the height I want */
+    height: 60vh;
+    /*  with this it dublicates, even tho this is the height I want */
     position: fixed;
     transition: top 0.3s;
     top: 50px;
