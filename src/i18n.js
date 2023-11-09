@@ -10,6 +10,8 @@ import enContact from "./translations/enContact.json"
 import seContact from "./translations/seContact.json"
 import enContactForm from "./translations/enContactForm.json"
 import seContactForm from "./translations/seContactForm.json"
+import enMenu from "./translations/enMenu.json"
+import seMenu from "./translations/seMenu.json"
 
  export const resources = {
   en: {
@@ -18,6 +20,7 @@ import seContactForm from "./translations/seContactForm.json"
      home: enHome,
      contact: enContact,
      contactForm: enContactForm,
+     menu: enMenu,
 
   },
   se: {
@@ -26,12 +29,13 @@ import seContactForm from "./translations/seContactForm.json"
     home: seHome,
     contact: seContact,
     contactForm: seContactForm,
+    menu: seMenu,
   },
 };
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: "se", // default language
+  lng: "en", // default language
   interpolation: {
     escapeValue: false,
   },

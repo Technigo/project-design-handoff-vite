@@ -7,8 +7,8 @@ import { ContactForm } from "../pages/ContactForm"
 const routes = (
   <>
     <Route path="/" element={<Home />} />
-    <Route path="/information" element={<Information />} />
-    <Route path="/contact-form" element={<ContactForm />} /> 
+    <Route path="/information/*" element={<Information />} />
+    <Route path="contact-form" element={<ContactForm />} /> 
 
   </>
 );
