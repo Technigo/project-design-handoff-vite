@@ -1,7 +1,7 @@
 import './HowToPlayParkour.css';
-import Image1 from '../../../public/images/Rectangle9.png';
-import Image2 from '../../../public/images/Rectangle10.png';
-import Image3 from '../../../public/images/Rectangle11.png';
+import Image1 from '/images/Rectangle9.png';
+import Image2 from '/images/Rectangle10.png';
+import Image3 from '/images/Rectangle11.png';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 

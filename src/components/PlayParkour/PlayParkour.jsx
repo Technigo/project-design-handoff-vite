@@ -8,7 +8,7 @@ export const PlayParkour = () => {
 
   return (
     <div className='playparkour-wrapper'>
-      <h2>{t('PlayParkour.heading')}</h2>
+      <h1>{t('PlayParkour.heading')}</h1>
       <p>{t('PlayParkour.description')}</p>
       <Link to="/about">
         <button className="playParkourButton">{t('PlayParkour.buttonText')}</button>

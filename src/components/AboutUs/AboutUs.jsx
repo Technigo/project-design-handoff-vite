@@ -1,5 +1,5 @@
 import './AboutUs.css';
-import ImageAboutUs from '../../../public/images/image19.png';
+import ImageAboutUs from '/images/image19.png';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
