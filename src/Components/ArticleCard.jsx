@@ -1,27 +1,29 @@
 import styled from "styled-components";
-import { ReadMoreButton } from "./ReadMoreButton";
+import { useTranslation } from "react-i18next";
 
 const ArticleCardItem = styled.div`
   display: flex;
   flex-direction: column;
   gap: 19px;
   padding-top: 10px;
+  position: relative;
 
-  @media (max-width: 834px) {
-    position: relative;
+  @media (min-width: 835px) {
+    position: static;
   }
 `
 
-const StyledButtonContainer = styled.div`
+const InnerWrapper = styled.div<{ $reverse? : boolean; }>`
+  flex-direction: ${props => props.$reverse ? "row-reverse": "row"};
+
   display: flex;
-  position: absolute;
-  width: 100%;
-  justify-content: right;
+  gap: 19px;
 `
 
-const ArticleText = styled.div`
+const ArticleContent = styled.div`
   display: flex;
   flex-direction: column;
+  gap: 30px;
 `
 
 const ArticleTitle = styled.h2`
@@ -33,6 +35,43 @@ const ArticleTitle = styled.h2`
   margin: 0;
 `
 
+const ArticleText = styled.p`
+  text-align: left;
+  font-weight: 500;
+  font-size: var(--heading-size-mobile);
+  line-height: var(--heading-height-mobile);
+`
+
+const ReadMoreBtn = styled.button`
+  border-radius: var(--large-radius);
+  border: none;
+  padding: 10px 20px;
+  background-color: var(--secondary);
+  font-family: var(--font);
+  font-size: var(--text-size-mobile);
+  font-weight: var(--text-weight);
+  line-height: var(--text-height-mobile);
+  width: fit-content;
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  
+  @media (min-width: 394px) {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36.33px;
+  }
+  
+  @media (min-width: 835px) {
+    position: static;
+
+    &:hover {
+    background-color: var(--hover);
+    color: #FFFFFF;
+    }
+  } 
+`
+
 const ArticleImage = styled.img`
   width: 100%;
 `
@@ -40,25 +79,24 @@ const ArticleImage = styled.img`
 export const ArticleCard = ({ article }) => {
   const isDesktop = window.innerWidth > 835;
 
+  const { t } = useTranslation();
+
   return (
     <ArticleCardItem>
       {isDesktop ? (
-        <>
+        <InnerWrapper $reverse={article.isReverse}>
           <img src={article.image} alt={article.imageDescription} />
-          <ArticleText>
+          <ArticleContent>
             <ArticleTitle>{article.title}</ArticleTitle>
-            <p>{article.text}</p>
-            <StyledButtonContainer>
-              <ReadMoreButton />
-            </StyledButtonContainer>
-          </ArticleText>
-          
-        </>
+            <ArticleText>{article.text}</ArticleText>
+            <ReadMoreBtn type="button">{t("about.read")}</ReadMoreBtn>
+          </ArticleContent>
+        </InnerWrapper>
       ) : (
         <>
           <ArticleTitle>{article.title}</ArticleTitle>
           <ArticleImage src={article.image} alt={article.imageDescription} />
-          <ReadMoreButton />
+          <ReadMoreBtn type="button">{t("about.read")}</ReadMoreBtn>
         </>
       )}
     </ArticleCardItem>

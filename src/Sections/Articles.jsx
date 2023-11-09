@@ -22,6 +22,10 @@ const CardWrapper = styled.div`
   background: #FFFFFF;
   border-top-left-radius: var(--medium-radius);
   border-top-right-radius: var(--medium-radius);
+
+  @media (min-width: 835px) {
+    background: none;
+  }
 `
 
 export const Articles = () => {
@@ -32,19 +36,22 @@ export const Articles = () => {
       "image": "./images/article-1.png",
       "imageDescription": t("about.article-1.image-alt"),
       "title": t("about.article-1.subHeading"),
-      "text": t("about.article-1.text")
+      "text": t("about.article-1.text"),
+      "isReverse": "false"
     },
     {
       "image": "./images/article-2.png",
       "imageDescription": t("about.article-2.image-alt"),
       "title": t("about.article-2.subHeading"),
-      "text": t("about.article-2.text")
+      "text": t("about.article-2.text"),
+      "isReverse": "true"
     },
     {
       "image": "./images/article-3.png",
       "imageDescription": t("about.article-3.image-alt"),
       "title": t("about.article-3.subHeading"),
-      "text": t("about.article-3.text")
+      "text": t("about.article-3.text"),
+      "isReverse": "false"
     }
   ]
 

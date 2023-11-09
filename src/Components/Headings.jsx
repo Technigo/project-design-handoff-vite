@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 
 const Heading = styled.h1`
-  font-size: var(--heading-size-mobile);
+  font-size: 30px;
   font-style: italic;
   font-weight: 300;
   padding: 0;
