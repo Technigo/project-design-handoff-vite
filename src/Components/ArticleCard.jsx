@@ -13,10 +13,16 @@ const ArticleCardItem = styled.div`
   }
 `
 
-const InnerWrapper = styled.div<{ $reverse? : boolean; }>`
-  flex-direction: ${props => props.$reverse ? "row-reverse": "row"};
+// const InnerWrapper = styled.div<{ $reverse? : boolean; }>`
+//   flex-direction: ${props => props.$reverse ? "row-reverse": "row"};
 
+//   display: flex;
+//   gap: 19px;
+// `
+
+const InnerWrapper = styled.div`
   display: flex;
+  flex-direction: row;
   gap: 19px;
 `
 
