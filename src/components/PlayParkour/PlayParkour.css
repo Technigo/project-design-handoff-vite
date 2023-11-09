@@ -55,6 +55,9 @@ p {
 .playparkour-wrapper {
     padding-bottom: 250px;
 }
+h2 {
+    font-size: 3rem;
+}
 }
 
 /* Media query for screens between 900px and 1200px */
@@ -85,17 +88,18 @@ p {
         z-index: -1;
     }
 
-    h2 {
-        font-size: 2rem; /* Increase size for larger screens */
+    .playparkour-wrapper h2 {
+        font-size: 50px !important; 
+        font-weight: 600;
     }
 
     p {
-        font-size: 1rem; /* Increase size for larger screens */
+        font-size: 2rem;
     }
 
     .playParkourButton {
-        padding: 15px 30px; /* Increase padding */
-        font-size: 1rem; /* Increase font size */
+        padding: 15px 30px; 
+        font-size: 1rem; 
     }
 }
 
