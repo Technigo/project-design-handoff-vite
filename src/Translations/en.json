@@ -56,6 +56,14 @@
             "four": {
                 "title": "Glute builder",
                 "length": "20 min"
+            },
+            "five": {
+                "title": "HIIT",
+                "length": "10 min"
+            },
+            "six": {
+                "title": "Low impact cardio",
+                "length": "15 min"
             }
         }             
     },
@@ -72,7 +80,9 @@
             "one": "Glute builder", 
             "two": "Flexibility", 
             "three": "Strength", 
-            "four": "Glute builder"
+            "four": "Glute builder",
+            "five": "Strength",
+            "six": "Flexibility"
         }
             
     },
@@ -103,7 +113,9 @@
             "one": "Natasha",
             "two": "Chloe",
             "three": "Taylor",
-            "four": "Rich"
+            "four": "Rich",
+            "five": "Natasha",
+            "six": "Chloe"
         }
     },
     "footer": {

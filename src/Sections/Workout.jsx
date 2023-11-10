@@ -43,6 +43,16 @@ export const Workout = () => {
         "image": "./images/workout-4.png",
         "title": t("workout.videoTexts.four.title"),
         "length": t("workout.videoTexts.four.length")
+    },
+    {
+      "image": "./images/workout-1.png",
+      "title": t("workout.videoTexts.five.title"),
+      "length": t("workout.videoTexts.five.length")
+    },
+    {
+      "image": "./images/workout-2.png",
+      "title": t("workout.videoTexts.six.title"),
+      "length": t("workout.videoTexts.six.length")
     }
   ];
   
@@ -56,9 +66,9 @@ export const Workout = () => {
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 1440,
+        breakpoint: 2000,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 3,
           initialSlide: 3
         }

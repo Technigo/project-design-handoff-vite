@@ -55,6 +55,14 @@
             "four": {
                 "title": "Glutebyggare",
                 "length": "20 min"
+            },
+            "five": {
+                "title": "HIIT",
+                "length": "10 min"
+            },
+            "six": {
+                "title": "Lågintensiv kardio",
+                "length": "15 min"
             }
         }
     },
@@ -71,7 +79,9 @@
             "one": "Glutebyggare",
             "two": "Flexibilitet",
             "three": "Styrka",
-            "four": "Glutebyggare"
+            "four": "Glutebyggare",
+            "five": "Styrka",
+            "six": "Flexibilitet"
         }
     },
     "membership": {
@@ -97,12 +107,14 @@
     },
     "trainers": {
         "heading": "Tränare",
-        "names": [
-            "Natasha",
-            "Chloe",
-            "Taylor",
-            "Rich"
-        ]
+        "names": {
+            "one": "Natasha",
+            "two": "Chloe",
+            "three": "Taylor",
+            "four": "Rich",
+            "five": "Natasha",
+            "six": "Chloe"
+        }
     },
     "footer": {
         "contact": "Kontakta oss",

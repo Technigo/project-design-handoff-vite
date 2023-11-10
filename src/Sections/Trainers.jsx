@@ -37,6 +37,14 @@ export const Trainers = () => {
     {
       "image": "./images/trainer-4.png",
       "name": "Rich"
+    },
+    {
+      "image": "./images/trainer-1.png",
+      "name": "Natasha"
+    },
+    {
+      "image": "./images/trainer-2.png",
+      "name": "Chloe"
     }
   ]
 
@@ -50,9 +58,9 @@ export const Trainers = () => {
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 1440,
+        breakpoint: 2000,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 3,
           initialSlide: 3
         }

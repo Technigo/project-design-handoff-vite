@@ -46,6 +46,14 @@ export const WorkoutPlans = () => {
     {
       "image": "./images/workout-plan-4.png",
       "title": t("workoutPlans.planTexts.four")
+    },
+    {
+      "image": "./images/workout-4.png",
+      "title": t("workoutPlans.planTexts.five")
+    },
+    {
+      "image": "./images/workout-plan-2.png",
+      "title": t("workoutPlans.planTexts.six")
     }
   ]
 
@@ -59,9 +67,9 @@ export const WorkoutPlans = () => {
     autoplaySpeed: 2000,
     responsive: [
       {
-        breakpoint: 1440,
+        breakpoint: 2000,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 3,
           initialSlide: 3
         }
