@@ -74,6 +74,14 @@ export const Workout = () => {
         }
       },
       {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3.2,
+          slidesToScroll: 3,
+          initialSlide: 3
+        }
+      },
+      {
         breakpoint: 834,
         settings: {
           slidesToShow: 3,
