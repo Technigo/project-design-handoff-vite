@@ -63,9 +63,9 @@ export const ArticleCard = (props) => {
     <CardWrapper className="card-wrapper">
       <ArticleImage src={imageArticle} alt="Article image " />
       <TextWrapper>
-      <ArticleHeading text={titleArticle } />
-        < ArticleDescription text={ descriptionArticle} />
-        </TextWrapper>
+        <ArticleHeading text={titleArticle} />
+        < ArticleDescription text={descriptionArticle} />
+      </TextWrapper>
     </CardWrapper>
   )
 }
