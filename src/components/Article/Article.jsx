@@ -31,6 +31,7 @@ const TabletAndSmaller = styled.div`
 display: none;
  @media (min-width: 667px) and (max-width: 1024px){
   display: block;
+  height: 400px;
 }
 
 @media (min-width: 1024px) {
