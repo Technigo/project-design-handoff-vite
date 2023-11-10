@@ -37,21 +37,21 @@ export const Articles = () => {
       "imageDescription": t("about.article-1.image-alt"),
       "title": t("about.article-1.subHeading"),
       "text": t("about.article-1.text"),
-      "isReverse": "false"
+      "isReverse": false
     },
     {
       "image": "./images/article-2.png",
       "imageDescription": t("about.article-2.image-alt"),
       "title": t("about.article-2.subHeading"),
       "text": t("about.article-2.text"),
-      "isReverse": "true"
+      "isReverse": true
     },
     {
       "image": "./images/article-3.png",
       "imageDescription": t("about.article-3.image-alt"),
       "title": t("about.article-3.subHeading"),
       "text": t("about.article-3.text"),
-      "isReverse": "false"
+      "isReverse": false
     }
   ]
 

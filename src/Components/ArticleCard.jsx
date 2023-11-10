@@ -13,8 +13,8 @@ const ArticleCardItem = styled.div`
     position: static;
   }
 `
-
-// const InnerWrapper = styled.div<{ $reverse? : boolean; }>`
+// Boolean prop in styled components does not work
+// const InnerWrapper = styled.div`
 //   flex-direction: ${props => props.$reverse ? "row-reverse": "row"};
 
 //   display: flex;
@@ -30,7 +30,9 @@ const InnerWrapper = styled.div`
 const ArticleContent = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 20px 10px;
   gap: 30px;
+  flex: 1 1 0;
 `
 
 const ArticleTitle = styled.h2`
@@ -80,7 +82,7 @@ const ReadMoreBtn = styled.button`
 `
 
 const ArticleImage = styled.img`
-  width: 100%;
+  flex: 1 1 0;
 `
 
 export const ArticleCard = ({ article }) => {
@@ -91,14 +93,25 @@ export const ArticleCard = ({ article }) => {
   return (
     <ArticleCardItem>
       {isDesktop ? (
-        <InnerWrapper $reverse={article.isReverse}>
-          <img src={article.image} alt={article.imageDescription} />
-          <ArticleContent>
-            <ArticleTitle>{article.title}</ArticleTitle>
-            <ArticleText>{article.text}</ArticleText>
-            <ReadMoreBtn type="button">{t("about.read")}</ReadMoreBtn>
-          </ArticleContent>
-        </InnerWrapper>
+        article.isReverse ? (
+          <InnerWrapper>
+            <ArticleContent>
+              <ArticleTitle>{article.title}</ArticleTitle>
+              <ArticleText>{article.text}</ArticleText>
+              <ReadMoreBtn type="button">{t("about.read")}</ReadMoreBtn>
+            </ArticleContent>
+            <ArticleImage src={article.image} alt={article.imageDescription} />
+          </InnerWrapper>
+        ) : (
+          <InnerWrapper>
+            <ArticleImage src={article.image} alt={article.imageDescription} />
+            <ArticleContent>
+              <ArticleTitle>{article.title}</ArticleTitle>
+              <ArticleText>{article.text}</ArticleText>
+              <ReadMoreBtn type="button">{t("about.read")}</ReadMoreBtn>
+            </ArticleContent>
+          </InnerWrapper>
+        )
       ) : (
         <>
           <ArticleTitle>{article.title}</ArticleTitle>

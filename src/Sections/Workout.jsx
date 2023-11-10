@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Headings } from "../Components/Headings";
 import { Subheadings } from "../Components/Subheadings";
 import { WorkoutVideoCard } from "../Components/WorkoutVideoCard";
-
 
 const WorkOutWrapper = styled.section`
   margin: 35px 0;
@@ -11,15 +13,9 @@ const WorkOutWrapper = styled.section`
   flex-direction: column;
   gap: 9px;
 `
-const CardWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-  overflow-x: auto;
-
-  @media (min-width: 835px) {
-    gap: 24px;
-  }
+const Container = styled.div`
+  margin: 0 auto;
+  width: 100%;
 `
 
 export const Workout = () => {
@@ -48,21 +44,58 @@ export const Workout = () => {
         "title": t("workout.videoTexts.four.title"),
         "length": t("workout.videoTexts.four.length")
     }
-  ]
+  ];
   
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 3
+        }
+      },
+      {
+        breakpoint: 834,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 393,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
     <WorkOutWrapper>
       <Headings sectionId={sectionId} />
       <Subheadings sectionId={sectionId} />
-      <CardWrapper>
-        {workoutData.map((video, index) => {
-          return (
-            <div key={index}>
-              <WorkoutVideoCard video={video} />
-            </div>
-          )
-        })}
-      </CardWrapper>
+      <Container>
+        <Slider {...settings}>
+          {workoutData.map((video, index) => {
+            return (
+              <div key={index}>
+                <WorkoutVideoCard video={video} />
+              </div>
+            )
+          })}
+        </Slider>
+      </Container>
     </WorkOutWrapper>
   )
 }

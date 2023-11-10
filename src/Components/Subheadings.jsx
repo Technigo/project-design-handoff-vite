@@ -7,19 +7,30 @@ const SubheadingWrapper = styled.div`
   gap: 23px;
   width: 100%;
   overflow: scroll;
+  margin: 10px 0;
 `
 
 const Subheading = styled.h2`
   font-size: 20px;
   font-style: italic;
   font-weight: 300;
-  line-height: 24.22px;
   white-space: nowrap;
   color: #000000;
   text-decoration: none;
+  width: 100%;
+  animation: 3s slide-right ease-in-out;
 
   &:hover {
     text-decoration: underlined;
+  }
+
+  @keyframes slide-right {
+    from {
+      margin-left: -800%;
+    }
+    to {
+      margin-left: 40%;
+    }
   }
 
   @media (min-width: 835px) {

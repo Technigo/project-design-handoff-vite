@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Headings } from "../Components/Headings";
 import { TrainerCard } from "../Components/TrainerCard";
 
@@ -11,11 +14,8 @@ const TrainerWrapper = styled.section`
 `
 
 const TrainerCardWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 32px;
-  padding: 0px 10px 0px 5px;
-  overflow-x: auto;
+  margin: 0 auto;
+  width: 100%;
 `
 
 export const Trainers = () => {
@@ -40,17 +40,54 @@ export const Trainers = () => {
     }
   ]
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 3
+        }
+      },
+      {
+        breakpoint: 834,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 393,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
     <TrainerWrapper>
       <Headings sectionId={sectionId} />
       <TrainerCardWrapper>
-        {trainerData.map((trainer, index) => {
-          return (
-            <div key={index}>
-              <TrainerCard trainer={trainer} />
-            </div>
-          )
-        })}
+        <Slider {...settings}>
+          {trainerData.map((trainer, index) => {
+            return (
+              <div key={index}>
+                <TrainerCard trainer={trainer} />
+              </div>
+            )
+          })}
+        </Slider>
       </TrainerCardWrapper>
     </TrainerWrapper>
   )

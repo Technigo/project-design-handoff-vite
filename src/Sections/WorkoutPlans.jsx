@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { Headings } from "../Components/Headings";
 import { Subheadings } from "../Components/Subheadings";
 import { WorkoutPlanCard } from "../Components/WorkoutPlanCard";
@@ -18,10 +21,8 @@ const HeadingWithLock = styled.div`
 `
 
 const PlanCardWrapper = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 9px;
-  overflow-x: auto;
+  margin: 0 auto;
+  width: 100%;
 `
 
 export const WorkoutPlans = () => {
@@ -48,6 +49,41 @@ export const WorkoutPlans = () => {
     }
   ]
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          initialSlide: 3
+        }
+      },
+      {
+        breakpoint: 834,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 393,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+
   return (
     <WorkOutPlansWrapper>
       <HeadingWithLock>
@@ -72,13 +108,15 @@ export const WorkoutPlans = () => {
       </HeadingWithLock>
       <Subheadings sectionId={sectionId} />
       <PlanCardWrapper>
-        {workoutPlansData.map((plan, index) => {
-          return (
-            <div key={index}>
-              <WorkoutPlanCard plan={plan} />
-            </div>
-          )
-        })}
+        <Slider {...settings}>
+          {workoutPlansData.map((plan, index) => {
+            return (
+              <div key={index}>
+                <WorkoutPlanCard plan={plan} />
+              </div>
+            )
+          })}
+        </Slider>
       </PlanCardWrapper>
     </WorkOutPlansWrapper>
   )
