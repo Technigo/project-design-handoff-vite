@@ -12,18 +12,32 @@ const ArticleWrapper = styled.div`
   gap: 10px;
   max-width: 100%;
   padding: 38px 15px;
-  @media (min-width: 768px) {
-    
+  margin-bottom: 20px;
+ 
+
+@media (min-width: 667px) and (max-width: 1024px){
+  display: none;
+}
+
+@media (min-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1283px;
+    margin: 0 auto;
   }
 
-  @media (min-width: 1024px) {
-    grid-template-columns: 1fr 1fr 1fr;
-   width: 1283px;
-   margin: 0 auto;
-  }
 `;
 
+const TabletAndSmaller = styled.div`
+display: none;
+ @media (min-width: 667px) and (max-width: 1024px){
+  display: block;
+}
 
+@media (min-width: 1024px) {
+  display: none;
+  }
+
+`;
 
 let articleArray = articleData.articles;
 console.log(articleArray);
@@ -35,7 +49,6 @@ export const Article = () => {
 
   if (!ready) return "loading translations...";
 
-
   const settings = {
     dots: true,
     infinite: true,
@@ -45,14 +58,22 @@ export const Article = () => {
   };
   return (
     <>
+
       <ArticleWrapper className="article-wrapper">
+        {articles.map((article, index) => (
+          <ArticleCard key={index} articles={article} />
+        ))}
+      </ArticleWrapper>
+
+      <TabletAndSmaller>
         <Slider {...settings}>
           {articles.map((article, index) => (
             <ArticleCard key={index} articles={article} />
           ))}
         </Slider>
-      </ArticleWrapper>
+      </TabletAndSmaller >
     </>
   );
-};
 
+
+};
