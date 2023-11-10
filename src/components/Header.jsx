@@ -16,7 +16,7 @@ export const Header = () => {
             className="my-3 ml-4 w-[93px] h-[40px] md:w-[156px] md:h-[67px] lg:w-[231px] lg:h-[99px]"
           />
         </a>
-        <ul className="flex flex-1 flex-row justify-end items-center gap-16 text-[26px] font-bold max-lg:hidden mr-11">
+        <ul className="flex flex-1 flex-row justify-end items-center gap-16 text-[26px] font-bold max-lg:hidden mr-11 lg:text-[20px]">
           <li className="flex flex-row items-center hover:text-persian-blue hover:underline">
             {t("nav.classes")}
             <img
@@ -28,7 +28,7 @@ export const Header = () => {
             />
           </li>
           <Link to="/about">
-            <li className=" hover:text-persian-blue hover:underline">
+            <li className=" hover:text-persian-blue hover:underline ">
               {t("nav.about")}
             </li>
           </Link>
