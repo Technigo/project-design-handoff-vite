@@ -23,6 +23,17 @@ const InfoContainer = styled.div`
   p {
     padding: 5px 0;
   }
+
+  @media screen and (min-width: 768px) {
+    border-left: 3px #fff solid;
+    border-bottom: 3px #fff solid;
+    height: 120px;
+    font-size: 14px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
 `;
 
 export const Info = () => {

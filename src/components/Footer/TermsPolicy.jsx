@@ -12,14 +12,15 @@ const TermsPolicyContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: space-between;
   position: relative;
   font-size: 10px;
 
   .terms-policy {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     text-transform: uppercase;
     gap: 20px;
     padding-top: 10px;
@@ -29,9 +30,21 @@ const TermsPolicyContainer = styled.div`
     text-transform: uppercase;
   }
 
+  p {
+    text-align: center;
+    font-weight: 600;
+  }
+
   img {
     max-width: 20px;
     margin: 10px 0 0 0;
+  }
+
+  @media screen and (min-width: 768px) {
+    border-left: 3px #f26631 solid;
+    border-bottom: 3px #f26631 solid;
+    height: 120px;
+    font-size: 13px;
   }
 `;
 
@@ -45,7 +58,7 @@ export const TermsPolicy = () => {
         <p className="policy">{t("homePage.footer.policy")}</p>
       </div>
       <p>
-        ©️2023 <span>Prima barre</span>, {t("homePage.footer.copyright")}
+        ©️ 2023 <span>Prima barre</span>, {t("homePage.footer.copyright")}
       </p>
       <LanguageButton />
     </TermsPolicyContainer>

@@ -13,7 +13,7 @@ const SocialMediaContainer = styled.div`
 
   img {
     width: auto;
-    max-height: 18px;
+    height: 18px;
   }
 
   p {
@@ -22,14 +22,45 @@ const SocialMediaContainer = styled.div`
     text-align: center;
     text-transform: uppercase;
     color: #f26631;
+    padding-bottom: 20px;
   }
 
   .social-media-icons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    max-width: 400px;
     gap: 10px;
-    padding: 15px;
+    padding: 0 15px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 120px;
+    .social-media-icons {
+      justify-content: center;
+      gap: 50px;
+      padding: 0 30px;
+    }
+    img {
+      height: 20px;
+    }
+
+    p {
+      padding-bottom: 30px;
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .social-media-icons {
+      max-width: 600px;
+    }
+    img {
+      height: 24px;
+    }
+    p {
+      padding-bottom: 25px;
+      font-size: 18px;
+    }
   }
 `;
 

@@ -32,6 +32,18 @@ const DownloadContainer = styled.div`
     color: #f26631;
     text-transform: uppercase;
   }
+
+  @media screen and (min-width: 768px) {
+    height: 120px;
+
+    .download-icons {
+      gap: 20px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
 `;
 
 export const Download = () => {
