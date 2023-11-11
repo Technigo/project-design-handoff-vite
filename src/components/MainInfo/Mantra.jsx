@@ -2,7 +2,8 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 
 const MantraContainer = styled.div`
-  max-width: 500px;
+  /* max-width: 500px; */
+  width: 100%;
   padding: 10px 24px;
   border-top: 3px solid #f26631;
   border-bottom: 3px solid #f26631;
@@ -14,6 +15,11 @@ const MantraContainer = styled.div`
   /* span {
     color: #c00202;
   } */
+
+  @media screen and (min-width: 768px) {
+    font-size: 25px;
+    padding: 20px 30px;
+  }
 `;
 
 export const Mantra = () => {

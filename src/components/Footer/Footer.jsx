@@ -11,7 +11,7 @@ const FooterContainer = styled.div`
   background-color: #1f1f1f;
   color: #fff;
   overflow: hidden;
-  min-width: 340px;
+  min-width: 310px;
   .boxes {
     display: flex;
     flex-direction: column;

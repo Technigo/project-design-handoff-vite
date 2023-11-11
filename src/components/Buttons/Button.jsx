@@ -10,6 +10,6 @@ const StyledButton = styled.button`
   font-size: 10px;
 `;
 
-export const Button = ({ children, onclick }) => {
-  return <StyledButton onclick={onclick}>{children}</StyledButton>; // The 'children' prop is the text inside the button
+export const Button = ({ children, onClick }) => {
+  return <StyledButton onClick={onClick}>{children}</StyledButton>; // The 'children' prop is the text inside the button
 };

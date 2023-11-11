@@ -13,6 +13,18 @@ const HeroTextContainer = styled.div`
   span {
     padding: 0 4px;
   }
+
+  @media screen and (min-width: 768px) {
+    span {
+      font-size: 32px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    span {
+      font-size: 40px;
+    }
+  }
 `;
 
 export const HeroText = () => {

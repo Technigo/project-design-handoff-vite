@@ -4,23 +4,26 @@ import { useTranslation } from "react-i18next";
 
 const FormContainer = styled.div`
   position: relative;
-  max-width: 100%;
-  height: auto;
+  width: 100%;
+  min-width: 310px;
+  height: 400px;
+  position: relative;
+  z-index: 1;
 
-  .form-wrapper {
+  /* .form-wrapper {
     position: relative;
     z-index: 1;
-  }
+  } */
 
   .image-container {
     position: relative;
     max-width: 100%;
-    height: auto;
+    height: 400px;
   }
 
   img {
     width: 100%;
-    height: auto;
+    height: 400px;
     object-fit: cover;
   }
 
@@ -30,36 +33,37 @@ const FormContainer = styled.div`
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.56);
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .info-form {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: auto;
+    width: auto;
+    max-width: 310px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 16px 45px;
-    max-width: 400px;
+    padding: 40px;
+
     .info-text {
       max-width: 400px;
       /* position: relative; */
       /* z-index: 2; */
       color: #ffffff;
       font-size: 10px;
-      padding: 10px;
       text-align: left;
+      line-height: 2.5;
     }
   }
 
   form {
     position: relative;
     z-index: 2;
-    padding: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -81,22 +85,32 @@ const FormContainer = styled.div`
     border: none;
     border-bottom: 1px solid #ffffff;
     background-color: transparent;
+    color: #ffffff;
   }
 
   Button {
     border: 2px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
-    margin-left: 10px;
   }
 
   span {
     font-size: 15px;
+    font-weight: 300;
   }
 
   p {
     font-size: 10px;
-    font-weight: 300;
+    padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .info-form {
+      padding: 64px;
+      max-width: 700px;
+      top: 5px;
+      left: 140px;
+    }
   }
 `;
 
@@ -105,6 +119,7 @@ export const SignUpForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent the default behaviour of the form
+    console.log("Form submitted!"); // Log a message to the console
 
     // Get form data
     const formData = new FormData(e.target);
