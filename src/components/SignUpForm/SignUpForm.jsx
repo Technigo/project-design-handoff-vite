@@ -4,20 +4,12 @@ import { useTranslation } from "react-i18next";
 
 const FormContainer = styled.div`
   position: relative;
-  width: 100%;
-  min-width: 310px;
-  height: 400px;
-  position: relative;
   z-index: 1;
-
-  /* .form-wrapper {
-    position: relative;
-    z-index: 1;
-  } */
+  color: #fff;
 
   .image-container {
     position: relative;
-    max-width: 100%;
+    width: 100%;
     height: 400px;
   }
 
@@ -38,78 +30,97 @@ const FormContainer = styled.div`
 
   .info-form {
     position: absolute;
-    top: 0;
     left: 0;
-    width: auto;
-    max-width: 310px;
-    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-width: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 40px;
+  }
 
-    .info-text {
-      max-width: 400px;
-      /* position: relative; */
-      /* z-index: 2; */
-      color: #ffffff;
-      font-size: 10px;
-      text-align: left;
-      line-height: 2.5;
-    }
+  .info-text {
+    line-height: 160%;
   }
 
   form {
     position: relative;
     z-index: 2;
-    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     width: 100%;
-    max-width: 400px;
   }
 
   label {
-    display: block;
-    margin-bottom: 10px;
+    line-height: 160%;
     ::placeholder {
       color: #ffffff;
+      font-size: 16px;
       opacity: 1; /* Firefox */
+      font-weight: 700;
     }
   }
 
   input {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
     background-color: transparent;
     color: #ffffff;
   }
 
   Button {
-    border: 2px solid #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 160%; /* 22.4px */
+    border-radius: 10px;
+    border: 3px solid #fff;
     background-color: transparent;
     color: #ffffff;
+    padding: 8px 16px;
+    margin-top: 20px;
   }
 
   span {
-    font-size: 15px;
-    font-weight: 300;
+    /* h2 mobile */
+    font-size: 20px;
+    font-weight: 600;
   }
 
   p {
-    font-size: 10px;
+    /* body mobile */
+    font-size: 16px;
+    font-weight: 300;
     padding-bottom: 20px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
+    height: auto;
+
+    .names {
+      display: flex;
+      flex-direction: row; /* Make the labels appear side by side */
+      gap: 10px;
+
+      label.first-name,
+      label.last-name {
+        width: 50%; /* Make each label take 50% of the width */
+      }
+    }
+    label.email-address {
+      width: 100%; /* Make email label take 100% of the width */
+    }
+
     .info-form {
-      padding: 64px;
       max-width: 700px;
-      top: 5px;
-      left: 140px;
+    }
+
+    .info-text {
+      margin-bottom: 40px;
     }
   }
 `;
@@ -156,22 +167,24 @@ export const SignUpForm = () => {
           <form onSubmit={handleSubmit}>
             {" "}
             {/* Call the handleSubmit function when the form is submitted */}
-            <label className="first-name">
-              <input
-                type="text"
-                name="firstName"
-                placeholder={t("homePage.formSection.firstName")}
-                required
-              />
-            </label>
-            <label className="last-name">
-              <input
-                type="text"
-                name="lastName"
-                placeholder={t("homePage.formSection.lastName")}
-                required
-              />
-            </label>
+            <div className="names">
+              <label className="first-name">
+                <input
+                  type="text"
+                  name="firstName"
+                  placeholder={t("homePage.formSection.firstName")}
+                  required
+                />
+              </label>
+              <label className="last-name">
+                <input
+                  type="text"
+                  name="lastName"
+                  placeholder={t("homePage.formSection.lastName")}
+                  required
+                />
+              </label>
+            </div>
             <label className="email-address">
               <input
                 type="email"
