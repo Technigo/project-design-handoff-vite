@@ -95,6 +95,24 @@ const WelcomePage = () => {
         </div>
         <h2>By signing up for our email list, you consent to the handling of your personal information in accordance with our terms and conditions.</h2>
       </section>
+      <footer className="footer">
+        <div className="footer-left">
+          <p>CONTACT</p>
+          <p>TERMS</p>
+          <p>FAQ</p>
+        </div>
+        <img src="Logotype.png" alt="Logo" className="footer-logo" />
+        <div className="footer-right">
+          <div>
+            <p><strong>Serenity Yoga Mariatorget</strong></p>
+            <p>Address: Wollmar Yxtullsgatan 4, Stockholm</p>
+          </div>
+          <div>
+            <p><strong>Serenity Yoga Hornstull</strong></p>
+            <p>Address: Hornstulls Strand 6, Stockholm</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };

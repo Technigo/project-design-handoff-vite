@@ -275,3 +275,38 @@ h2 {
   padding: 10px 20px;
   font-size: 16px; 
 }
+
+
+/* Footer */
+.footer {
+  background-color: #f9fafa;
+  color: #38302A;
+  padding: 20px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Space items evenly */
+}
+.footer-left {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start;
+}
+.footer-left p {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  cursor: pointer; /*The cursor: pointer property is added to give a visual indication that these are clickable links.*/
+  text-align: left;
+}
+.footer-logo {
+  width: 100px; /* Adjust the width as needed */
+}
+.footer-right {
+  text-align: right;
+}
+.footer-right div {
+  margin-bottom: 20px; /* Space between each block of information */
+}
+.footer-right p {
+  margin: 0; /* Reset default margin for paragraphs */
+}
