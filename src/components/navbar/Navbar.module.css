@@ -12,10 +12,8 @@
     align-items: center;
     position: relative;
     background-color: #612e77;
-    ;
     padding: 0 1rem;
     height: fit-content;
-
 }
 
 .navBlackSvgBackground {
@@ -117,13 +115,13 @@
     width: 70%;
     position: absolute;
     bottom: -3px;
-    /* Adjust this value to move the line further down. */
     left: 0;
 }
 
-.navLink:hover {
-    background-color: #c5a25d;
+.navLink:hover::after {
+    background-color: hotpink;
 }
+
 
 /* iPad Pro 11" */
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -138,6 +136,32 @@
 }
 
 @media (min-width: 1025px) {
+    .imgsWrapper {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        z-index: 10;
+        color: #fff;
+        margin-top: 75px;
+        width: fit-content;
+        background-color: transparent;
+        margin-left: 90px;
+    }
+
+    .logo img {}
+
+    .logoText {
+        position: absolute;
+        bottom: 0;
+        margin: 0 40px;
+    }
+
+    .navLink:first-of-type {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+
     .menuIcon {
         display: none;
     }
@@ -146,33 +170,75 @@
         display: flex;
         position: static;
         flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 0;
+        z-index: 10;
+        color: #fff;
+        margin: 106px 90px 0 0;
+        width: fit-content;
         background-color: transparent;
-        border-radius: 0;
-
+        bottom: 0;
     }
 
     .navLink {
-        padding: 0 1rem;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: initial;
+        left: initial;
+        padding: 0 5px;
+        margin: 0;
+        width: fit-content;
+        flex-basis: auto;
         border-bottom: none;
+        transform: none;
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding: 0 18px;
+    }
+
+    .navLink:last-of-type {
+        padding: 0 18px;
+        margin-right: 0;
+    }
+
+    .navLink:last-of-type::after {
+        content: '';
+        display: block;
+        height: 1px;
+        background-color: #FFD075;
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        transform: translateX(-8%);
+
     }
 
     .navLink:hover {
-        background-color: transparent;
+        color: #c5a25c;
     }
+
 
     .navSvgBackground {
         display: none;
     }
 
-    .dropdownMenu {
-        display: none;
-    }
 
     .navLink.dropdown {
         pointer-events: none;
 
+    }
+
+    /*first four lines*/
+    .navLink:not(:last-of-type)::after {
+        content: '';
+        display: block;
+        width: 1px;
+        background-color: #FFD075;
+        height: 20px;
+        position: absolute;
+        top: 45%;
+        left: 100%;
+        right: -1px;
+        transform: translateY(-50%);
     }
 }
