@@ -198,6 +198,17 @@ h2 {
 
 
 /* About */
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+.about-text h1 {
+  font-size: 24px; 
+}
+.about-text h2 {
+  font-size: 18px; 
+  color: #38302A; 
+}
 .discoverstory-button {
   background-color: #38302A;
   color: #fff;
@@ -206,9 +217,61 @@ h2 {
 }
 
 
-/* Recent posts*/
+/* Recent posts */
 .recent-posts {
   background-color: #7A899A;
   padding: 20px;
 }
+.post-boxes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.post-box {
+  background-color: #f9fafa;
+  padding: 10px;
+  border-radius: 8px;
+}
+.post-box img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+.post-box p {
+  font-size: 14px;
+  color: #38302A;
+}
 
+
+/* In touch */
+.in-touch {
+  background-color: #EBE7E4;
+  padding: 20px;
+  text-align: center;
+}
+.in-touch h1 {
+  font-size: 24px;
+  color: #38302A;
+}
+.in-touch h2 {
+  font-size: 18px;
+  color: #38302A;
+  margin-top: 10px;
+}
+.subscribe-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribe-form input {
+  padding: 10px;
+  width: 60%;
+  margin-right: 10px;
+}
+.subscribe-button {
+  background-color: #38302A;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px; 
+}

@@ -71,13 +71,35 @@ const WelcomePage = () => {
       </section>
       <section className="recent-posts">
         <h1>RECENT POSTS</h1>
+        <div className="post-boxes">
+          <div className="post-box">
+            <img src="Rectangle 15.png" alt="Post 1" />
+            <p>Text for Post 1</p>
+          </div>
+          <div className="post-box">
+            <img src="Rectangle 16.png" alt="Post 2" />
+            <p>Text for Post 2</p>
+          </div>
+          <div className="post-box">
+            <img src="Rectangle 17.png" alt="Post 3" />
+            <p>Text for Post 3</p>
+          </div>
+        </div>
+      </section>
+      <section className="in-touch">
+        <h1>Stay in touch with us</h1>
+        <h2>Register your email address for news and updates from Serenity Yoga.</h2>
+        <div className="subscribe-form">
+          <input type="email" placeholder="Email address" />
+          <button className="subscribe-button">Subscribe</button>
+        </div>
+        <h2>By signing up for our email list, you consent to the handling of your personal information in accordance with our terms and conditions.</h2>
       </section>
     </div>
   );
 };
 
 export default WelcomePage;
-
 
 
 
