@@ -6,34 +6,34 @@ const FormContainer = styled.div`
   position: relative;
   z-index: 1;
   color: #fff;
+  height: fit-content;
 
   .image-container {
     position: relative;
-    width: 100%;
-    height: 400px;
   }
 
   img {
     width: 100%;
     height: 400px;
     object-fit: cover;
+    object-position: center;
+    display: block;
+  }
+  @media screen and (min-width: 700px) {
+    img {
+      height: 100%;
+    }
   }
 
   .overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0; /* Position the overlay on all four sides of the container */
     background-color: rgba(0, 0, 0, 0.8);
   }
 
   .info-form {
     position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    inset: 0;
     margin: auto;
     max-width: 300px;
     display: flex;
@@ -117,10 +117,26 @@ const FormContainer = styled.div`
 
     .info-form {
       max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 80px;
+      padding: 64px 0;
     }
 
     .info-text {
       margin-bottom: 40px;
+    }
+    p {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 160%;
+    }
+
+    Button {
+      width: fit-content;
+      font-size: 24px;
+      font-weight: 600;
     }
   }
 `;
@@ -155,46 +171,49 @@ export const SignUpForm = () => {
             src="/form-background.png"
             alt="Background image of a ballerina stretching"
           />
-          <div className="overlay"></div>
-        </div>
-        <div className="info-form">
-          <div className="info-text">
-            <span>{t("homePage.formSection.heading")}</span>{" "}
-            {/*Access the 'heading' section of the JSON data  */}
-            <p>{t("homePage.formSection.paragraph")}</p>{" "}
-            {/*Access the 'paragraph' section of the JSON data  */}
-          </div>
-          <form onSubmit={handleSubmit}>
-            {" "}
-            {/* Call the handleSubmit function when the form is submitted */}
-            <div className="names">
-              <label className="first-name">
-                <input
-                  type="text"
-                  name="firstName"
-                  placeholder={t("homePage.formSection.firstName")}
-                  required
-                />
-              </label>
-              <label className="last-name">
-                <input
-                  type="text"
-                  name="lastName"
-                  placeholder={t("homePage.formSection.lastName")}
-                  required
-                />
-              </label>
+          <div className="overlay">
+            <div className="info-form">
+              <div className="info-text">
+                <span>{t("homePage.formSection.heading")}</span>{" "}
+                {/*Access the 'heading' section of the JSON data  */}
+                <p>{t("homePage.formSection.paragraph")}</p>{" "}
+                {/*Access the 'paragraph' section of the JSON data  */}
+              </div>
+              <form onSubmit={handleSubmit}>
+                {" "}
+                {/* Call the handleSubmit function when the form is submitted */}
+                <div className="names">
+                  <label className="first-name">
+                    <input
+                      type="text"
+                      name="firstName"
+                      placeholder={t("homePage.formSection.firstName")}
+                      required
+                    />
+                  </label>
+                  <label className="last-name">
+                    <input
+                      type="text"
+                      name="lastName"
+                      placeholder={t("homePage.formSection.lastName")}
+                      required
+                    />
+                  </label>
+                </div>
+                <label className="email-address">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder={t("homePage.formSection.email")}
+                    required
+                  />
+                </label>
+                <Button type="submit">
+                  {t("homePage.formSection.button")}
+                </Button>
+              </form>
             </div>
-            <label className="email-address">
-              <input
-                type="email"
-                name="email"
-                placeholder={t("homePage.formSection.email")}
-                required
-              />
-            </label>
-          </form>
-          <Button type="submit">{t("homePage.formSection.button")}</Button>
+          </div>
         </div>
       </div>
     </FormContainer>

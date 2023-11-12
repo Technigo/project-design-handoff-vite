@@ -67,24 +67,40 @@ const ArticlesContainer = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
+    max-width: 900px;
+
     .article-0 {
-      display: flex;
-      flex-direction: row-reverse;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 70px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        grid-column: 2 / 2;
+        grid-row: 1 / 1;
+
+        .article-details {
+          grid-column: 1 / 2;
+          grid-row: 1 / 1;
+        }
+      }
     }
 
     .article-1 {
-      display: flex;
-      flex-direction: row;
-    }
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 70px;
 
-    img {
-      width: 400px;
-      height: auto;
-      object-fit: cover;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
     }
-
-    .article-details {
-      width: 100%;
+    p {
+      line-height: 160%;
     }
   }
 `;
