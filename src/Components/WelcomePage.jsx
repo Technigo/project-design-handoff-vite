@@ -75,14 +75,17 @@ const WelcomePage = () => {
           <div className="post-box">
             <img src="Rectangle 15.png" alt="Post 1" />
             <p>Text for Post 1</p>
+            <button className="read-more-button">Read more</button>
           </div>
           <div className="post-box">
             <img src="Rectangle 16.png" alt="Post 2" />
             <p>Text for Post 2</p>
+            <button className="read-more-button">Read more</button>
           </div>
           <div className="post-box">
             <img src="Rectangle 17.png" alt="Post 3" />
             <p>Text for Post 3</p>
+            <button className="read-more-button">Read more</button>
           </div>
         </div>
       </section>
