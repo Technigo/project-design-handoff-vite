@@ -6,6 +6,24 @@
     box-sizing: border-box;
 }
 
+.imgsWrapper {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    z-index: 10;
+    color: #fff;
+    margin-top: 10px;
+    width: fit-content;
+    background-color: transparent;
+    margin-left: 20px;
+}
+
+.logoText {
+    position: absolute;
+    bottom: 0;
+    margin: 0 40px;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
@@ -133,6 +151,12 @@
         height: auto;
         z-index: 0;
     }
+
+    .navLink {
+
+        left: 75%;
+
+    }
 }
 
 @media (min-width: 1025px) {
@@ -147,8 +171,6 @@
         background-color: transparent;
         margin-left: 90px;
     }
-
-    .logo img {}
 
     .logoText {
         position: absolute;
