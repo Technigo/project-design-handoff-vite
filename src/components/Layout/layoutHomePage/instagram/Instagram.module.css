@@ -1,0 +1,68 @@
+.background {
+    background-color: #612E77;
+    height: 553px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    padding: 50px 41px 40px 41px;
+    display: grid;
+    grid-template-areas:
+        "H2"
+        "H2slim"
+        "carousel"
+        "button";
+    text-align: center;
+    gap: 20px;
+
+}
+
+
+.gridItem1 {
+    grid-area: H2
+}
+
+.gridItem2 {
+    grid-area: H2slim
+}
+
+.gridItem3 {
+    grid-area: carousel;
+}
+
+.gridItem4 {
+    grid-area: button;
+}
+
+/* iPad Pro 11" */
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .wrapper {
+        padding: 50px 41px 40px 41px;
+        align-items: center;
+        display: flex;
+        padding: 55px 0px;
+        flex-direction: column;
+        justify-content: center;
+        gap: 19px;
+        flex-shrink: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    .background {
+        height: fit-content;
+    }
+
+    .wrapper {
+        display: flex;
+        padding: 80px 41px 60px 41px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        flex-shrink: 0;
+    }
+}

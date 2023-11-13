@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.imgsWrapper {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    z-index: 10;
+    color: #fff;
+    margin-top: 10px;
+    width: fit-content;
+    background-color: transparent;
+    margin-left: 20px;
+}
+
+.logoText {
+    position: absolute;
+    bottom: 0;
+    margin: 0 40px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #612e77;
+    padding: 0 1rem;
+    height: fit-content;
+}
+
+.navBlackSvgBackground {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+}
+
+.navLinks {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: transparent;
+    box-sizing: border-box;
+    z-index: 1;
+    margin-top: 40px;
+}
+
+.navLink:first-of-type {
+    margin-top: 30px;
+}
+
+
+
+.navSvgBackground {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 85%;
+    height: auto;
+    z-index: 0;
+}
+
+.logoText {
+    width: 193px;
+    height: 38px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.logo {
+    cursor: pointer;
+    width: 50px;
+    height: 65px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+
+.menuIcon {
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #FFD075;
+    transition: all 0.3s ease;
+}
+
+.navLinks.active {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.navLink {
+    color: #FFD075;
+    padding: 20px 0;
+    display: block;
+    background-color: transparent;
+    z-index: 2;
+    position: relative;
+    font-family: 'Avenir Next', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 131%;
+    letter-spacing: -0.44px;
+    left: 65vw;
+    width: 100px;
+    bottom: 10px;
+    transform: translateX(-50%);
+}
+
+.navLink::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background-color: #FFD075;
+    width: 70%;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+}
+
+.navLink:hover::after {
+    background-color: hotpink;
+}
+
+
+/* iPad Pro 11" */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navSvgBackground {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 55%;
+        height: auto;
+        z-index: 0;
+    }
+
+    .navLink {
+
+        left: 75%;
+
+    }
+}
+
+@media (min-width: 1025px) {
+    .imgsWrapper {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        z-index: 10;
+        color: #fff;
+        margin-top: 75px;
+        width: fit-content;
+        background-color: transparent;
+        margin-left: 90px;
+    }
+
+    .logoText {
+        position: absolute;
+        bottom: 0;
+        margin: 0 40px;
+    }
+
+    .navLink:first-of-type {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+
+    .menuIcon {
+        display: none;
+    }
+
+    .navLinks {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        z-index: 10;
+        color: #fff;
+        margin: 106px 90px 0 0;
+        width: fit-content;
+        background-color: transparent;
+        bottom: 0;
+    }
+
+    .navLink {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        bottom: initial;
+        left: initial;
+        padding: 0 5px;
+        margin: 0;
+        width: fit-content;
+        flex-basis: auto;
+        border-bottom: none;
+        transform: none;
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding: 0 18px;
+    }
+
+    .navLink:last-of-type {
+        padding: 0 18px;
+        margin-right: 0;
+    }
+
+    .navLink:last-of-type::after {
+        content: '';
+        display: block;
+        height: 1px;
+        background-color: #FFD075;
+        width: 70%;
+        position: absolute;
+        bottom: 0;
+        left: 20px;
+        transform: translateX(-8%);
+
+    }
+
+    .navLink:hover {
+        color: #c5a25c;
+    }
+
+
+    .navSvgBackground {
+        display: none;
+    }
+
+
+    .navLink.dropdown {
+        pointer-events: none;
+
+    }
+
+    /*first four lines*/
+    .navLink:not(:last-of-type)::after {
+        content: '';
+        display: block;
+        width: 1px;
+        background-color: #FFD075;
+        height: 20px;
+        position: absolute;
+        top: 45%;
+        left: 100%;
+        right: -1px;
+        transform: translateY(-50%);
+    }
+}
