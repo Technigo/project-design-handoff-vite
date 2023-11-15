@@ -22,6 +22,7 @@ box-shadow: 0px 4px 4px 0px #2AA9C0;
 
   @media (min-width: 667px) and (max-width: 1024px){
    height: 250px;
+   
   
   }
 

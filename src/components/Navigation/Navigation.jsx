@@ -1,11 +1,10 @@
-
-
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import HamburgerIcon from "./HamburgerIcon";
 import { useTranslation } from "react-i18next";
 import { useState } from 'react';
 
+// Mobile navigation styles
 const MobileNav = styled.nav`
   background: rgba(85, 75, 61, 0.95);
   position: fixed;
@@ -14,13 +13,12 @@ const MobileNav = styled.nav`
   width: 100%;
   z-index: 100;
   border-top: 5px solid var(--red-color);
-
-
   @media (min-width: 768px) {
     display: none;
   }
 `;
 
+// Mobile navigation list styles
 const AppUl = styled.ul`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -28,6 +26,7 @@ const AppUl = styled.ul`
   padding: 0;
 `;
 
+// Mobile navigation list item styles
 const AppLi = styled.li`
   display: flex;
   justify-content: center;
@@ -35,6 +34,7 @@ const AppLi = styled.li`
   height: 50px;
 `;
 
+// Active link styles for mobile navigation
 const ActiveLink = styled(Link)`
   svg {
     fill: white;
@@ -49,6 +49,7 @@ const ActiveLink = styled(Link)`
   }
 `;
 
+// Image icons styles for mobile navigation
 const ImgIcons = styled.div`
   color: white;
 
@@ -57,36 +58,72 @@ const ImgIcons = styled.div`
   }
 `;
 
+// Hamburger menu icon styles
 const HamburgerMenu = styled(HamburgerIcon)`
   display: none;
 
   @media (min-width: 768px) {
     display: block;
     padding: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
     cursor: pointer;
   }
 `;
 
-const DesktopNav = styled.div`
-  display: none;
-
+// Desktop navigation styles
+const DesktopNav = styled.nav`
   @media (min-width: 768px) {
-    display: ${(props) => (props.open ? "block" : "none")};
+    background: #E5E5E5;
     position: fixed;
     top: 0;
-    right: 0;
-    width: 100%;
-    background: #E5E5E5;
-    z-index: 99;
-    padding-top: 50px;
-    box-sizing: border-box;
-    
+   right: 0;
+    width: 350px; 
+    z-index: 100;
   }
 `;
+
+// Desktop navigation list styles
+const AppUlDesktop = styled.ul`
+  display: grid;
+  grid-template-columns: 1fr;
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0; 
+  font-family:var(--heading-font-family);/* Add margin: 0 to remove the default margin for ul */
+  text-align: center;
+  `;
+
+// Desktop navigation list item styles
 const AppLiDesktop = styled.li`
-display: flex;
-flex-direction: column;
-`
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px 16px 20px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 18px;
+  cursor: pointer;
+  background-color: #fff; /* Default background color */
+  box-shadow: 0px 4px 4px 0px #2aa9c0; /* Default box shadow */
+
+  &:not(:last-child) {
+    margin-bottom: 10px; /* Add margin-bottom only for elements that are not the last child */
+  }
+
+  &:hover {
+    background-color: #eff4f8; /* Background color on hover */
+  }
+
+  a {
+    text-decoration: none;
+    color: #000; 
+  }
+  &:active{
+    color: red;
+  }
+`;
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -94,8 +131,10 @@ export const Navigation = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
   return (
     <>
+      {/* Mobile navigation */}
       <MobileNav>
         <AppUl className="app-ul">
           <AppLi className="app-li">
@@ -134,22 +173,27 @@ export const Navigation = () => {
               <img src="./contact.svg" alt="Contact" />
             </ImgIcons>
           </AppLi>
-
         </AppUl>
       </MobileNav>
+
+      {/* Desktop navigation */}
       <DesktopNav open={isMenuOpen}>
         <HamburgerMenu onClick={toggleMenu} />
-        <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('home')}</ActiveLink> </AppLiDesktop>
-        <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('my account')}</ActiveLink></AppLiDesktop>
-        <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/information">{t('information')} </ActiveLink> </AppLiDesktop>
-        <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('technology edge')}</ActiveLink></AppLiDesktop>
-        <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('competitive edge')}</ActiveLink></AppLiDesktop>
-        <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('comeback edge')}</ActiveLink></AppLiDesktop>
-        <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('coaching edge')}</ActiveLink></AppLiDesktop>
-        <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('winning edge')}</ActiveLink></AppLiDesktop>
-        <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('our athletes')}</ActiveLink></AppLiDesktop>
-        <AppLiDesktop onClick={toggleMenu}> </AppLiDesktop>
-
+        {isMenuOpen && (
+          <>
+            <AppUlDesktop>
+              <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('home')}</ActiveLink> </AppLiDesktop>
+              <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('my account')}</ActiveLink></AppLiDesktop>
+              <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/information">{t('information')} </ActiveLink> </AppLiDesktop>
+              <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('technology edge')}</ActiveLink></AppLiDesktop>
+              <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('competitive edge')}</ActiveLink></AppLiDesktop>
+              <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('comeback edge')}</ActiveLink></AppLiDesktop>
+              <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('coaching edge')}</ActiveLink></AppLiDesktop>
+              <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('winning edge')}</ActiveLink></AppLiDesktop>
+              <AppLiDesktop onClick={toggleMenu}><ActiveLink to="/"> {t('our athletes')}</ActiveLink></AppLiDesktop>
+            </AppUlDesktop>
+          </>
+        )}
       </DesktopNav>
     </>
   );
