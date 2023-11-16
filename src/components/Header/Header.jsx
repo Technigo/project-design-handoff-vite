@@ -7,14 +7,8 @@ const HeroWrapper = styled.div`
   grid-template-columns: 1fr;
   gap: 10px;
   max-width: 100%;
-  padding: 48px 25px;
-  @media (min-width: 768px) {
-    
-  }
 
-  @media (min-width: 1024px) {
-    padding: 48px 100px;
-  }
+
 `;
 
 const HeroHeading = styled(Heading)`
@@ -58,7 +52,7 @@ const BlueLineHero = styled.div`
   background-color: var(--blue-color);
 `;
 export const Header = ({ heading, textOne, textTwo, image }) => {
-  
+
   return (
     <HeroWrapper className="hero-wrapper">
       <BlueLineHero className="blue-line-hero" />

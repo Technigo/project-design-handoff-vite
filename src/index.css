@@ -1,18 +1,22 @@
-@import
-url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=Staatliches&display=swap');
 :root {
-font-family: 'Arsenal', sans-serif;
---blue-color: #2AA9C0;
---red-color:#BB0000;
---yellow-color:#FDE829;
---active-card-color:#E8E8E8;
---footer-inactive-card-color:#DFDBDB;
---heading-font-family: 'Staatliches', sans-serif;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  font-family: 'Arsenal', sans-serif;
+  --blue-color: #2aa9c0;
+  --red-color: #bb0000;
+  --yellow-color: #fde829;
+  --active-card-color: #e8e8e8;
+  --footer-inactive-card-color: #dfdbdb;
+  --heading-font-family: 'Staatliches', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-*, *:after, *:before{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#root {
+  padding: 48px 100px;
 }

@@ -13,7 +13,7 @@ const MobileNav = styled.nav`
   width: 100%;
   z-index: 100;
   border-top: 5px solid var(--red-color);
-  @media (min-width: 768px) {
+  @media (min-width: 667px) {
     display: none;
   }
 `;
@@ -53,7 +53,7 @@ const ActiveLink = styled(Link)`
 const ImgIcons = styled.div`
   color: white;
 
-  @media (min-width: 768px) {
+  @media (min-width: 667px) {
     display: none;
   }
 `;
@@ -62,7 +62,7 @@ const ImgIcons = styled.div`
 const HamburgerMenu = styled(HamburgerIcon)`
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 667px) {
     display: block;
     padding: 10px;
     position: absolute;
@@ -74,7 +74,7 @@ const HamburgerMenu = styled(HamburgerIcon)`
 
 // Desktop navigation styles
 const DesktopNav = styled.nav`
-  @media (min-width: 768px) {
+  @media (min-width:667px) {
     background: #E5E5E5;
     position: fixed;
     top: 0;
