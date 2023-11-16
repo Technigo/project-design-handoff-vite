@@ -8,10 +8,8 @@ const HeroWrapper = styled.div`
   gap: 10px;
   max-width: 100%;
   padding: 48px 25px;
-  @media (min-width: 768px) {
-    
+  @media (min-width: 768px) { 
   }
-
   @media (min-width: 1024px) {
     padding: 48px 100px;
   }
@@ -59,7 +57,10 @@ const HeroDescription = styled(Description)`
   font-weight: 700;
   line-height: normal;
   border: 2px soli red;
-  @media (min-width:667px){
+  @media (min-width: 667px) and (max-width: 1024px){
+    font-size: 10px;
+  }
+  @media (min-width:1100px){
     font-size: 32px;
   }
 `;
