@@ -18,5 +18,7 @@
   box-sizing: border-box;
 }
 #root {
-  padding: 48px 100px;
+  @media (min-width: 667px) {
+    padding: 48px 100px;
+  }
 }

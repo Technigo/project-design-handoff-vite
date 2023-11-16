@@ -7,9 +7,22 @@ const HeroWrapper = styled.div`
   grid-template-columns: 1fr;
   gap: 10px;
   max-width: 100%;
+  padding: 48px 25px;
+  @media (min-width: 768px) {
+    
+  }
 
-
+  @media (min-width: 1024px) {
+    padding: 48px 100px;
+  }
 `;
+const HeroDescriptionWrapper = styled.div`
+
+@media (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+  }
+`
 
 const HeroHeading = styled(Heading)`
   text-transform: uppercase !important;
@@ -46,16 +59,6 @@ const HeroDescription = styled(Description)`
   border: 2px soli red;
 `;
 
-const HeroDescriptionWrapper = styled.div`
-  display: flex;
-flex-direction: column;
-@media (min-width:1024px){
-flex-direction: row;
-justify-content: center;
-}
-
-`
-
 const BlueLineHero = styled.div`
   width: 100%;
   height: 20px;
@@ -72,6 +75,7 @@ export const Header = ({ heading, textOne, textTwo, image }) => {
         <HeroDescription text={textOne} />
         <HeroDescription text={textTwo} />
       </HeroDescriptionWrapper>
+
     </HeroWrapper>
   );
 };
