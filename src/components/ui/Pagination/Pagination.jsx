@@ -18,7 +18,6 @@ export const Pagination = ({ index, sliderRef }) => {
   }
 
   function handleClickToRight() {
-    console.log("clicked right");
     sliderRef.current.scrollLeft += currenImageWidth;
   }
 
