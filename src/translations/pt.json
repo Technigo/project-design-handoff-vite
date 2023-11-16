@@ -103,12 +103,16 @@
         {
           "heading": "ADRIENNE RABENA",
           "paragraph": "As aulas da Adrienne são uma combinação envolvente de ritmo, fluidez e paixão. Ela é dedicada a movimentos intuitivos e fluidos, e se deleita no desafio de coreografar transições que parecem perfeitas e belas.",
-          "button": "AGENDE UMA AULA"
+          "button": "AGENDE UMA AULA",
+          "imageurl": "/adrianne.svg",
+          "imagealt": "Uma imagem de perfil de uma mulher loira fazendo exercícios no chão"
         },
         {
           "heading": "EMILY SFERRA",
           "paragraph": "Depois de dançar profissionalmente por vários anos após a faculdade, Emily fez a transição para o ensino de barre e rapidamente se apaixonou pelo intenso desafio físico e mental que esse tipo de treinamento proporciona.",
-          "button": "AGENDE UMA AULA"
+          "button": "AGENDE UMA AULA",
+          "imageurl": "/emily.svg",
+          "imagealt": "Uma imagem de perfil de uma mulher com cabelo escuro"
         }
       ]
     },

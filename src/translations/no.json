@@ -103,12 +103,16 @@
         {
           "heading": "ADRIENNE RABENA",
           "paragraph": "Adriennes timer er en fengslende kombinasjon av rytme, flyt, og lidenskap. Hun er sterkt dedikert til intuitiv og flytende bevegelse, og hun gleder seg over utfordringen med å koreografere overganger som føles sømløse og vakre.",
-          "button": "BOOK EN TIME"
+          "button": "BOOK EN TIME",
+          "imageurl": "/adrianne.svg",
+          "imagealt": "Et profilbilde av en blond kvinne som trener på gulvet"
         },
         {
           "heading": "EMILY SFERRA",
           "paragraph": "Etter å ha danset profesjonelt i flere år etter college, gikk Emily over til å undervise i barre og forelsket seg raskt i den intense fysiske og mentale utfordringen denne typen trening gir.",
-          "button": "BOOK EN TIME"
+          "button": "BOOK EN TIME",
+          "imageurl": "/emily.svg",
+          "imagealt": "Et profilbilde av en kvinne med mørkt hår"
         }
       ]
     },

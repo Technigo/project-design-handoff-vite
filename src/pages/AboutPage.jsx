@@ -2,8 +2,15 @@ import { Footer } from "../components/Footer/Footer";
 import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Header } from "../components/Header/Header";
+import { ArticlesAboutMe } from "../components/Articles/ArticlesAboutMe";
+import { SignUpForm } from "../components/SignUpForm/SignUpForm";
 
 const AboutPageContainer = styled.div`
+  /* header {
+    width: 100%;
+    height: auto;
+  } */
+
   .hero-section {
     max-width: 500px;
     padding: 16px;
@@ -37,7 +44,7 @@ export const AboutPage = () => {
   return (
     <>
       <div className="hero-section">
-        <Header contentType="image" />{" "}
+        <Header className="header" contentType="image" />{" "}
         {/* Pass the contentType prop to the Header component */}
       </div>
       <AboutPageContainer>
@@ -63,7 +70,8 @@ export const AboutPage = () => {
           <p>{t("aboutPage.mainSection.tertiaryParagraph")}</p>{" "}
           {/* Access the 'tertiaryParagraph' section of the JSON data */}
         </div>
-
+        <ArticlesAboutMe />
+        <SignUpForm />
         <Footer />
       </AboutPageContainer>
     </>

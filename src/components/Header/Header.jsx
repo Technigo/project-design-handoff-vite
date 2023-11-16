@@ -33,6 +33,7 @@ export const Header = ({ contentType }) => {
           <video
             src="/video-mobile.mp4"
             onClick={(e) => e.target.play()} // When the video is clicked, play the video
+            controls // Show the video controls
           ></video>
         ) : (
           <img src="/about-us-header.svg" alt="About Us Header" /> // If the contentType is not 'video', render the image

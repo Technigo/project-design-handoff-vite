@@ -98,17 +98,21 @@
       "primaryParagraph": "For over a decade, we have been empowering women through barre fitness. We provide a supportive and motivating community where women of all ages and fitness levels can come together. Our expert instructors guide clients through a series of movements focusing on isometric holds that engage and challenge the muscles.",
       "secondaryParagraph": "At our barre studio, we are dedicated to providing high quality barre workout classes that improve strength, flexibility, and posture. Our classes focus on low impact, full body workouts that tone and sculpt muscles using the ballet barre.",
       "tertiaryParagraph": "We take pride in our commitment to safety and proper form. Our instructors are trained to modify movements for all fitness levels and abilities. Our goal is to provide a challenging yet safe workout environment that leaves clients feeling motivated and energized.",
-      "secondaryHeading": "MEET YOUR INSTRUCTORS",
+      "secondaryHeading": "meet your instructors",
       "testimonial": [
         {
           "heading": "ADRIENNE RABENA",
           "paragraph": "Adrienne's classes are an enrapturing combination of rhythm, fluidity, and fire. She is fiercely dedicated to intuitive and flowing movement, and she delights in the challenge to choreograph transitions that feel seamless and beautiful.",
-          "button": "BOOK A CLASS"
+          "button": "BOOK A CLASS",
+          "imageurl": "/adrianne.svg",
+          "imagealt": "A profile imange of a blond woman doing a workout on the floor"
         },
         {
           "heading": "EMILY SFERRA",
           "paragraph": "After dancing professionally for several years post college, Emily transitioned into teaching barre and quickly fell in love with the intense physical and mental challenge this type of workout provides.",
-          "button": "BOOK A CLASS"
+          "button": "BOOK A CLASS",
+          "imageurl": "/emily.svg",
+          "imagealt": "A profile image of a woman with dark hair"
         }
       ]
     },

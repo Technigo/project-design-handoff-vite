@@ -103,12 +103,16 @@
         {
           "heading": "ADRIENNE RABENA",
           "paragraph": "Adriennes klasser er en fortryllende kombination af rytme, flydende bevægelser og intensitet. Hun er stærkt dedikeret til intuitiv og flydende bevægelse, og hun glæder sig over udfordringen med at koreografere overgange, der føles sømløse og smukke.",
-          "button": "BOOK EN TIME"
+          "button": "BOOK EN TIME",
+          "imageurl": "/adrianne.svg",
+          "imagealt": "Et profilbillede af en blond kvinde, der træner på gulvet"
         },
         {
           "heading": "EMILY SFERRA",
           "paragraph": "Efter at have danset professionelt i flere år efter college, skiftede Emily til at undervise i barre og blev hurtigt forelsket i den intense fysiske og mentale udfordring, denne type træning giver.",
-          "button": "BOOK EN TIME"
+          "button": "BOOK EN TIME",
+          "imageurl": "/emily.svg",
+          "imagealt": "Et profilbillede af en kvinde med mørkt hår"
         }
       ]
     },

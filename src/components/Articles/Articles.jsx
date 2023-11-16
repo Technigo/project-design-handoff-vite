@@ -22,13 +22,13 @@ const ArticlesContainer = styled.div`
     object-fit: cover;
   }
   h2 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 600;
     width: 100%;
     padding-bottom: 30px;
   }
   p {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 300;
     line-height: 18px;
     padding-bottom: 10px;
@@ -122,7 +122,7 @@ export const Articles = () => {
           ) => (
             <div key={index} className={`article-${index}`}>
               {/* Add a class to each article */}
-              <img src={article.imageurl} alt={article.imagealt} />
+              <img src={article.imageurl} alt={t("article.imagealt")} />
               {/* Accessing the 'imageurl' and 'imagealt' sections of the JSON data */}
               <div className="article-details">
                 <h2>{article.heading}</h2>
