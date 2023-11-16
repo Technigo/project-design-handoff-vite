@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useLayoutEffect } from "react";
 
 function getWindowWidth() {
   const { innerWidth: width } = window;
@@ -10,7 +10,7 @@ function getWindowWidth() {
 function useScreenSize() {
   const [{ width: windowWidth }, setWindowWidth] = useState(getWindowWidth());
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     function handleResize() {
       setWindowWidth(getWindowWidth());
     }
@@ -18,7 +18,6 @@ function useScreenSize() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  console.log(windowWidth);
   return [windowWidth];
 }
 
