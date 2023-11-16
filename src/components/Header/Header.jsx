@@ -46,6 +46,16 @@ const HeroDescription = styled(Description)`
   border: 2px soli red;
 `;
 
+const HeroDescriptionWrapper = styled.div`
+  display: flex;
+flex-direction: column;
+@media (min-width:1024px){
+flex-direction: row;
+justify-content: center;
+}
+
+`
+
 const BlueLineHero = styled.div`
   width: 100%;
   height: 20px;
@@ -58,8 +68,10 @@ export const Header = ({ heading, textOne, textTwo, image }) => {
       <BlueLineHero className="blue-line-hero" />
       <HeroHeading text={heading} />
       <HeroImage src={image} alt="Hero Image" />
-      <HeroDescription text={textOne} />
-      <HeroDescription text={textTwo} />
+      <HeroDescriptionWrapper>
+        <HeroDescription text={textOne} />
+        <HeroDescription text={textTwo} />
+      </HeroDescriptionWrapper>
     </HeroWrapper>
   );
 };

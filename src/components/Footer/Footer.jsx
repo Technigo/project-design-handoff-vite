@@ -107,11 +107,11 @@ font-size: 18px;
 const FooterWrapperDesktop = styled.div`
 display: none;
 
-@media (min-width:667px){
+@media (min-width:770px){
   display: flex;
-  flex-direction: column;
+flex-direction: column;
  background-color: var(--footer-inactive-card-color); 
- padding: 48px 100px;
+ padding: 10px;
  overflow: hidden;
 }
 `

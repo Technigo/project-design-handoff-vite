@@ -20,8 +20,9 @@ display: grid;
 grid-template-columns: 1fr 1fr;
 `
 const InfoDescription = styled.div`
-display: grid;
-grid-template-rows: 3fr;
+display: flex;
+flex-direction: column;
+border: 2px solid red;
 `
 const EmailParagraph = styled.p`
 color:var(--red-color);
@@ -30,7 +31,7 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 `
-const  AddressParagraph = styled.p`
+const AddressParagraph = styled.p`
 color: #333;
 text-align: center;
 font-family: Inter;
