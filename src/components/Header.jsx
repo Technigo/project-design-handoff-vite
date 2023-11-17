@@ -1,102 +1,133 @@
-import { Link } from "react-router-dom"
-import { useState } from 'react';
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export const Header = () => {
+  const [isMenuOpen, setMenuOpen] = useState(false);
 
-    const [isMenuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+  const links = [
+    {
+      id: 1,
+      href: "#timetable",
+      pathTo: "",
+      style: "hover:font-bold",
+      linkTitle: "TIMETABLE",
+    },
+    {
+      id: 2,
+      href: "#classes",
+      pathTo: "",
+      style: "hover:font-bold",
+      linkTitle: "CLASSES",
+    },
+    {
+      id: 3,
+      href: "#book",
+      pathTo: "",
+      style: "hover:font-bold",
+      linkTitle: "BOOK",
+    },
+    {
+      id: 4,
+      href: "#contact",
+      pathTo: "",
+      style: "hover:font-bold",
+      linkTitle: "CONTACT",
+    },
+    {
+      id: 5,
+      href: "#info",
+      pathTo: "/info",
+      style: "hover:font-bold",
+      linkTitle: "INFO",
+    },
+    {
+      id: 6,
+      href: "#news",
+      pathTo: "/news",
+      style: "hover:font-bold",
+      linkTitle: "NEWS",
+    },
+  ];
 
-    const toggleMenu = () => {
-        setMenuOpen(!isMenuOpen);
-    };
-    const links = [
-        {
-            id: 1,
-            href: "#timetable",
-            pathTo: "",
-            style: "hover:font-bold",
-            linkTitle: "TIMETABLE",
-        },
-        {
-            id: 2,
-            href: "#classes",
-            pathTo: "",
-            style: "hover:font-bold",
-            linkTitle: "CLASSES",
-        },
-        {
-            id: 3,
-            href: "#book",
-            pathTo: "",
-            style: "hover:font-bold",
-            linkTitle: "BOOK",
-        },
-        {
-            id: 4,
-            href: "#contact",
-            pathTo: "",
-            style: "hover:font-bold",
-            linkTitle: "CONTACT",
-        },
-        {
-            id: 5,
-            href: "#info",
-            pathTo: "/info",
-            style: "hover:font-bold",
-            linkTitle: "INFO",
-        },
-        {
-            id: 6,
-            href: "#news",
-            pathTo: "/news",
-            style: "hover:font-bold",
-            linkTitle: "NEWS",
-        }
-    ]
+  return (
+    <header className="bg-grey opacity-90 text-white sticky top-0 z-25">
+      <section className=" mx-auto px-6 py-4 flex items-center justify-between">
+        <Link to="/">
+          <img src="icons/LogoFinal.png" alt="Nordic Pole Academy logo" />
+        </Link>
 
-    return (
+        {/* Desktop menu */}
+        <div>
+          {!isMenuOpen && (
+            <button
+              id="hamburger-button"
+              className="lg:hidden cursor-pointer"
+              onClick={toggleMenu}
+            >
+              <img src="icons/menuTopBar.png" alt="open hamburger menu" />
+            </button>
+          )}
+          <nav
+            className="hidden lg:flex justify-between items-center gap-x-4 text-lg font-raleway font-light tracking-wider"
+            aria-label="main page navigation"
+          >
+            {links.map((link) => (
+              <Link key={link.id} to={link.pathTo}>
+                <a
+                  href={link.href}
+                  onClick={link.onClick}
+                  className={link.style}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {link.linkTitle}
+                </a>
+              </Link>
+            ))}
+          </nav>
 
-        <header className="bg-grey opacity-90 text-white sticky top-0 z-10">
-            <section className=" mx-auto px-6 py-4 flex items-center justify-between">
-
-                <Link to="/">
-                    <img src="icons/LogoFinal.png" alt="Nordic Pole Academy logo" />
-                </Link>
-
-                {/* Desktop menu */}
-                <div>
-                    {!isMenuOpen && (<button id="hamburger-button" className="lg:hidden cursor-pointer" onClick={toggleMenu}>
-                        <img src="icons/menuTopBar.png" alt="open hamburger menu" />
-                    </button>)}
-                    <nav className="hidden lg:flex justify-between items-center gap-x-4 text-lg font-raleway font-light tracking-wider" aria-label="main page navigation">
-                        {links.map((link) => (
-                            <Link key={link.id} to={link.pathTo}>
-                                <a href={link.href} onClick={link.onClick} className={link.style} target="_blank" rel="noopener noreferrer">{link.linkTitle}</a>
-                            </Link>
-                        ))}
-                    </nav>
-
-                    {/* Mobile and Tablet menu */}
-                    {isMenuOpen && (
-                        <section id="mobile-menu" className=" bg-grey opacity-90 w-screen text-5xl flex-col justify-center z-20 lg:hidden">
-                            {/* absolute top-68 bg-grey opacity-90 w-screen text-5xl flex-col justify-center origin-top z-20 */}
-                            <button className="cursor-pointer absolute top-0 right-0 h-16 w-16">
-                                <img src="icons/iconClose.svg" alt="close scrolldown menu" onClick={toggleMenu} />
-                            </button>
-                            <nav className="flex flex-col min-h-screen items-center justify-center space-y-11 text-5xl font-light" aria-label="main page navigation">
-                                {links.map((link) => (
-                                    <Link key={link.id} to={link.pathTo}>
-                                        <a href={link.href} onClick={link.onClick} className={link.style} target="_blank" rel="noopener noreferrer">{link.linkTitle}</a>
-                                    </Link>
-                                ))}
-                            </nav>
-                        </section>
-                    )}
-                </div>
+          {/* Mobile and Tablet menu */}
+          {isMenuOpen && (
+            <section
+              id="mobile-menu"
+              className=" bg-grey opacity-90 w-screen text-5xl flex-col justify-center z-20 lg:hidden"
+            >
+              {/* absolute top-68 bg-grey opacity-90 w-screen text-5xl flex-col justify-center origin-top z-20 */}
+              <button className="cursor-pointer absolute top-0 right-0 h-16 w-16">
+                <img
+                  src="icons/iconClose.svg"
+                  alt="close scrolldown menu"
+                  onClick={toggleMenu}
+                />
+              </button>
+              <nav
+                className="flex flex-col min-h-screen items-center justify-center space-y-11 text-5xl font-light"
+                aria-label="main page navigation"
+              >
+                {links.map((link) => (
+                  <Link key={link.id} to={link.pathTo}>
+                    <a
+                      href={link.href}
+                      onClick={link.onClick}
+                      className={link.style}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.linkTitle}
+                    </a>
+                  </Link>
+                ))}
+              </nav>
             </section>
-        </header>
-    )
-}
-
+          )}
+        </div>
+      </section>
+    </header>
+  );
+};
 
 // <nav class="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700">
 //   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
