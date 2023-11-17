@@ -18,7 +18,7 @@ export const Buttons = () => {
         },
     ]
     return (
-        <div className="flex flex-row justify-around items-center my-16 mx-auto gap-10">
+        <div className="flex flex-row justify-around items-center md:flex-col md:min-width-max my-16 md:my-0 mx-auto gap-10">
             {styledButtons.map((styledButton, index) => (
                 <button key={styledButton.buttonId} className={styledButton.style}>{button[index].textfree}</button>
             ))}
