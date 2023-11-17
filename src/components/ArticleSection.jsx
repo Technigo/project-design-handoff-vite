@@ -14,8 +14,12 @@ export const ArticleSection = () => {
     return (
         <div className="mx-4 flex flex-col justify-center items-center">
             <HeadingArticle articleHeading={heading} />
-            <Buttons />
-            <SubHeadingArticle articleSubHeading={subHeading} />
+            <div className="flex flex-col md:flex-row-reverse">
+                <Buttons />
+                <SubHeadingArticle articleSubHeading={subHeading} />
+
+            </div>
+
         </div>
     )
 }
