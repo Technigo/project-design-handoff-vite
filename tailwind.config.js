@@ -20,10 +20,15 @@ export default {
       'oswald': ['oswald', 'sans-serif'],
       'sourcesans3': ['sourcesans3', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'get-strong': "url('/images/polePoel.png')",
+        'get-bendy': "url('/images/bendy.jpg')",
+        'get-vertical': "url('/images/circle31.png')"
+    },
   },
   plugins: [
     require('flowbite/plugin')
   ]
 }
-
+}
