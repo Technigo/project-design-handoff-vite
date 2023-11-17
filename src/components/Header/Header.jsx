@@ -10,14 +10,12 @@ const HeroWrapper = styled.div`
   padding: 48px 25px;
   @media (min-width: 768px) { 
   }
-  @media (min-width: 1024px) {
-    padding: 48px 100px;
-  }
+ 
 `;
 const HeroDescriptionWrapper = styled.div`
     display: flex;
     flex-direction: column;
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -57,10 +55,10 @@ const HeroDescription = styled(Description)`
   font-weight: 700;
   line-height: normal;
   border: 2px soli red;
-  @media (min-width: 667px) and (max-width: 1024px){
-    font-size: 10px;
-  }
-  @media (min-width:1100px){
+   @media (min-width: 667px) and (max-width: 1024px){
+    font-size: 16px;
+  } 
+  @media (min-width:1025px){
     font-size: 32px;
   }
 `;

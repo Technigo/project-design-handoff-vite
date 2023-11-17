@@ -35,7 +35,7 @@ display: none;
   
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   display: none;
   }
 

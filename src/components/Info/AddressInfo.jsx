@@ -6,8 +6,12 @@ const InfoWrapper = styled.div`
   gap: 10px; 
   max-width: 100%;
   padding: 5px 25px;
-  @media (min-width: 1024px) {
-    padding: 48px 100px;
+
+  @media (min-width: 667px) and (max-width: 1024px){
+    
+  }
+  @media (min-width: 1025px) {
+
   }
 `;
 const RedLine = styled.div`
@@ -18,11 +22,21 @@ const RedLine = styled.div`
 const Details = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr;
+gap: 20px;
+@media (min-width: 667px) and (max-width: 1024px){
+  padding: 0 150px;
+}
+
+@media (min-width: 1025px){
+  padding: 0 150px;
+}
 `
 const InfoDescription = styled.div`
 display: flex;
 flex-direction: column;
-border: 2px solid red;
+text-align:left;
+gap:20px;
+
 `
 const EmailParagraph = styled.p`
 color:var(--red-color);
@@ -30,6 +44,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
+text-align:left;
 `
 const AddressParagraph = styled.p`
 color: #333;
@@ -39,6 +54,7 @@ font-size: 14px;
 font-style: normal;
 font-weight: 500;
 line-height: 150%; /* 21px */
+text-align:left;
 
 `;
 const PhoneParagraph = styled.p`
@@ -49,6 +65,7 @@ const PhoneParagraph = styled.p`
   font-style: normal;
   font-weight: 500;
   line-height: 150%; /* 21px */
+  text-align:left;
 `;
 const BlueLine = styled.div`
    width: 100%; /* Line width to the entire width of the wrapper */
@@ -58,6 +75,15 @@ const BlueLine = styled.div`
 const InfoImage = styled.img`
 width: 149px;
 height: 137.5px;
+@media (min-width: 667px) and (max-width: 1024px){
+  width: 264px;
+height: 217px;
+}
+
+@media (min-width: 1025px){
+  width: 321px;
+height: 241px;
+}
 `
 export const AddressInfo = ({ address, phone, email, image }) => {
   return (

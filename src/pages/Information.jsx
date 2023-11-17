@@ -11,7 +11,7 @@ import { Navigation } from "../components/Navigation/Navigation";
 export const Information = () => {
   const { t } = useTranslation("information");
 
- const MainHeading = t("header.title");
+  const MainHeading = t("header.title");
   const textOne = t("header.textOne");
   const heroImageHome = "./infoHero.png";
   const Address = t("address");
@@ -21,16 +21,16 @@ export const Information = () => {
 
   return (
     <>
-      <Header  heading={MainHeading} textOne={textOne} image={heroImageHome} />
+      <Header heading={MainHeading} textOne={textOne} image={heroImageHome} />
       <AddressInfo address={Address} phone={Phone} email={Email} image={heroImageInfo} />
       <Contact />
       <Footer />
       <Navigation />
-    
+
     </>
 
   )
-  
 
- 
+
+
 };
