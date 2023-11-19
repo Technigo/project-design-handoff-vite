@@ -4,6 +4,7 @@ import { Menu } from "./Menu";
 
 const HeaderContainer = styled.div`
   position: relative;
+  height: 100%;
 
   video {
     width: 100%;
@@ -13,11 +14,32 @@ const HeaderContainer = styled.div`
   .top-buttons {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
-    margin-top: 5px;
-    padding: 0 10px 0 10px;
+    padding: 17px 24px 0;
     position: absolute;
     z-index: 1;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-wrapper {
+    background-color: #ffffff;
+    opacity: 0.4;
+  }
+
+  @media screen and (min-width: 768px) {
+    /* .top-buttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 5px;
+      position: absolute;
+      z-index: 1;
+    } */
   }
 `;
 
@@ -36,7 +58,9 @@ export const Header = ({ contentType }) => {
             controls // Show the video controls
           ></video>
         ) : (
-          <img src="/about-us-header.svg" alt="About Us Header" /> // If the contentType is not 'video', render the image
+          <div className="image-wrapper">
+            <img src="/about-us-header.svg" alt="About Us Header" />
+          </div> // If the contentType is not 'video', render the image
         )}
       </div>
     </HeaderContainer>

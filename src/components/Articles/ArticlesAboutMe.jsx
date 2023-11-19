@@ -7,14 +7,14 @@ const ArticlesAboutMeContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 60px;
+  margin: 1rem;
   max-width: 650px;
 
   .testimonial-0 {
     margin-bottom: 50px;
   }
 
-  .testimonial {
+  .testimonial-1 {
     margin-bottom: 50px;
   }
   img {
@@ -24,60 +24,72 @@ const ArticlesAboutMeContainer = styled.div`
   }
 
   h2 {
-    font-size: 16px;
+    font-size: 19px;
     font-weight: 600;
-    width: 100%;
-    padding-bottom: 30px;
+    text-align: center;
+    padding: 80px 0;
     text-transform: uppercase;
   }
 
+  h3 {
+    font-size: 19px;
+    margin: 50px 0 25px;
+  }
+
   p {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 300;
-    line-height: 18px;
+    line-height: 160%;
     padding-bottom: 10px;
   }
 
   Button {
     background-color: #c00202;
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 8px 25px;
+    border-radius: 12px;
+    line-height: 160%;
   }
 
   @media screen and (min-width: 768px) {
     margin: auto;
-  }
 
-  h2 {
-    font-size: 30px;
-  }
+    h2,
+    h3 {
+      font-size: 30px;
+    }
 
-  p {
-    font-size: 18px;
-  }
+    img {
+      max-width: 500px;
+      height: 343px;
+    }
+    p {
+      font-size: 24px;
+      line-height: 160%;
+    }
+    Button {
+      font-size: 24px;
+      margin-top: 20px;
+    }
 
-  Button {
-    font-size: 18px;
-    padding: 8px 25px;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
+    .testimonial-0 {
+      margin-top: 100px;
+    }
 
-  .testimonial-0 {
-    margin-top: 100px;
-  }
-
-  .testimonial-1 {
-    margin-bottom: 50px;
+    .testimonial-1 {
+      margin-bottom: 50px;
+    }
   }
 
   @media screen and (min-width: 1024px) {
-    max-width: 900px;
+    max-width: 1000px;
 
     .testimonial-0 {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 70px;
+      grid-template-columns: 60% 40%;
+      column-gap: 56px;
 
       img {
         width: 100%;
@@ -85,18 +97,13 @@ const ArticlesAboutMeContainer = styled.div`
         object-fit: cover;
         grid-column: 2 / 2;
         grid-row: 1 / 1;
-
-        /* .testimonial-details {
-          grid-column: 1 / 2;
-          grid-row: 1 / 1;
-        } */
       }
     }
 
     .testimonial-1 {
       display: grid;
-      grid-template-columns: 1fr 1fr;
-      column-gap: 70px;
+      grid-template-columns: 40% 60%;
+      column-gap: 56px;
 
       img {
         width: 100%;
@@ -104,8 +111,9 @@ const ArticlesAboutMeContainer = styled.div`
         object-fit: cover;
       }
     }
-    p {
-      line-height: 160%;
+
+    h2 {
+      font-size: 36px;
     }
   }
 `;
@@ -128,7 +136,7 @@ export const ArticlesAboutMe = () => {
             <div key={index} className={`testimonial-${index}`}>
               <img src={testimonial.imageurl} alt={t("testimonial.imagealt")} />
               <div className="testimonial-details">
-                <h2>{testimonial.heading}</h2>
+                <h3>{testimonial.heading}</h3>
                 <p>{testimonial.paragraph}</p>
                 <Button>{testimonial.button}</Button>
               </div>

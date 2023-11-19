@@ -6,18 +6,21 @@ import { ArticlesAboutMe } from "../components/Articles/ArticlesAboutMe";
 import { SignUpForm } from "../components/SignUpForm/SignUpForm";
 
 const AboutPageContainer = styled.div`
-  /* header {
-    width: 100%;
-    height: auto;
-  } */
+  width: 100%;
 
-  .hero-section {
-    max-width: 500px;
-    padding: 16px;
+  .main-section {
+    max-width: 600px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 16px;
     font-size: 16px;
+    margin: 0 auto;
+    padding: 16px;
+    p {
+      font-weight: 300;
+      line-height: 160%;
+    }
   }
 
   h1 {
@@ -26,14 +29,53 @@ const AboutPageContainer = styled.div`
     color: #c00202;
     font-style: italic;
   }
+
   .award-section {
     display: flex;
-    gap: 16px;
-    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 20px;
     img {
-      width: 100%;
       height: auto;
-      object-fit: cover;
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    h1 {
+      font-size: 24px;
+      margin: 2rem 0;
+    }
+    .award-section {
+      gap: 2.5rem;
+    }
+
+    .main-section {
+      margin-bottom: 5rem;
+      p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 160%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .main-section {
+      max-width: 1000px;
+      p {
+        font-size: 24px;
+      }
+    }
+
+    span {
+      width: 180px;
+      height: auto;
+    }
+
+    h1 {
+      font-size: 36px;
     }
   }
 `;
@@ -48,7 +90,7 @@ export const AboutPage = () => {
         {/* Pass the contentType prop to the Header component */}
       </div>
       <AboutPageContainer>
-        <div className="hero-section">
+        <div className="main-section">
           <h1>{t("aboutPage.mainSection.primaryHeading")}</h1>{" "}
           {/* Access the 'primaryHeading' section of the JSON data */}
           <p>{t("aboutPage.mainSection.primaryParagraph")}</p>{" "}
@@ -57,15 +99,21 @@ export const AboutPage = () => {
           <div className="award-section">
             {" "}
             {/* Access the 'secondaryParagraph' section of the JSON data */}
-            <img
-              src="/award1.svg"
-              alt="Best fitness awards, Good Housekeeping"
-            />
-            <img
-              src="/award2.svg"
-              alt="Award for Best in fitness, Shape 2023"
-            />
-            <img src="/award3.svg" alt="Women's Health fitness awards 2023" />
+            <span>
+              <img
+                src="/award1.svg"
+                alt="Best fitness awards, Good Housekeeping"
+              />
+            </span>
+            <span>
+              <img
+                src="/award2.svg"
+                alt="Award for Best in fitness, Shape 2023"
+              />
+            </span>
+            <span>
+              <img src="/award3.svg" alt="Women's Health fitness awards 2023" />
+            </span>
           </div>
           <p>{t("aboutPage.mainSection.tertiaryParagraph")}</p>{" "}
           {/* Access the 'tertiaryParagraph' section of the JSON data */}

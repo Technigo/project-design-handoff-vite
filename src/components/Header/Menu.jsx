@@ -4,6 +4,8 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 const MenuContainer = styled.nav`
+  height: 100%;
+
   ul {
     list-style: none;
     padding: 0;
@@ -40,17 +42,28 @@ const MenuContainer = styled.nav`
   }
 
   .menu-icon {
-    width: 20px;
-    height: 20px;
+    width: 32px;
+    height: 32px;
   }
   .logo {
     width: 50px;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
   }
 
-  ul {
-    padding-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    .menu-icon {
+      width: 48px;
+      height: 48px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .menu-icon {
+      width: 64px;
+      height: 64px;
+    }
   }
 `;
 

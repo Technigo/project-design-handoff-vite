@@ -8,6 +8,7 @@ const StyledButton = styled.button`
   text-transform: uppercase;
   padding: 6px 10px;
   font-size: 10px;
+  width: fit-content;
 `;
 
 export const Button = ({ children, onClick }) => {
