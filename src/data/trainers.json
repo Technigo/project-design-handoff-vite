@@ -1,0 +1,24 @@
+{
+    "trainers": [
+        {
+            "image": "/natasha.png",
+            "name": "NATASHA",
+            "heartIcon": "/heart.png"
+        },
+        {
+            "image": "/chloe.png",
+            "name": "CHLOE",
+            "heartIcon": "/heart.png"
+        },
+        {
+            "image": "/taylor.png",
+            "name": "TAYLOR",
+            "heartIcon": "/heart.png"
+        },
+        {
+            "image": "/rich.png",
+            "name": "RICH",
+            "heartIcon": "/heart.png"
+        }
+    ]
+}

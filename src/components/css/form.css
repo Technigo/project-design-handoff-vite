@@ -1,0 +1,96 @@
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0px;
+    padding: 0;
+    width: 100%;
+}
+
+.form img {
+    width: 612px;
+}
+
+.form-info {
+    width: 612px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    margin-left: 80px;
+}
+
+.form h2 {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.form button {
+    border-radius: 50px;
+    background: #F3AD98;
+    color: #000;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    padding: 10px 30px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+/* Mobile */
+@media (max-width: 393px) {
+
+    .form {
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        padding: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 394px) and (max-width: 834px) {
+
+    .form {
+        display: flex;
+        justify-content: center;
+        gap: 0;
+        padding: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .form-mobile {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .form button {
+        border-radius: 50px;
+        background: #F3AD98;
+        color: #000;
+        font-family: 'Cormorant Garamond', sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        padding: 10px 30px;
+        cursor: pointer;
+    }
+
+}

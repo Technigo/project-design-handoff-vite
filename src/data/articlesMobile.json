@@ -1,0 +1,16 @@
+{
+    "articlesMobile": [
+        {
+            "image": "/articlem1.png",
+            "name": "article1_name"
+        },
+        {
+            "image": "/articlem2.png",
+            "name": "article2_name"
+        },
+        {
+            "image": "/articlem3.png",
+            "name": "article3_name"
+        }
+    ]
+}

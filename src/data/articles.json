@@ -1,0 +1,22 @@
+{
+    "articles": [
+        {
+            "image": "/article1.png",
+            "name": "article1_name",
+            "info": "article1_info",
+            "isReverse": false
+        },
+        {
+            "image": "/article2.png",
+            "name": "article2_name",
+            "info": "article2_info",
+            "isReverse": true
+        },
+        {
+            "image": "/article3.png",
+            "name": "article3_name",
+            "info": "article3_info",
+            "isReverse": false
+        }
+    ]
+}

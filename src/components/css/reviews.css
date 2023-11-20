@@ -1,0 +1,92 @@
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background: #C0AB9B;
+    margin: 30px 70px;
+}
+
+.reviews-info {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    gap: 300px;
+}
+
+.reviews-info-child {
+    width: 400px;
+}
+
+.reviews h1 {
+    text-transform: uppercase;
+    background-image: url('/bookmark1.png'), url('/bookmark2.png');
+    background-position: left center, right center;
+    background-repeat: no-repeat;
+    background-size: 250px 50px;
+    width: 500px;
+    text-align: center;
+    margin: 0;
+    font-style: italic;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+/* Mobile */
+@media (max-width: 393px) {
+    .reviews {
+        margin: 6px;
+        margin-top: 35px;
+    }
+
+    .reviews-info {
+        flex-direction: row;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .reviews-info-child {
+        width: 100%;
+    }
+
+    .reviews h1 {
+        width: 110%;
+        font-size: 25px;
+    }
+
+    .reviews h3 {
+        font-size: 15px;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 394px) and (max-width: 834px) {
+
+    .reviews {
+        margin: 20px;
+        margin-top: 35px;
+    }
+
+    .reviews-info {
+        flex-direction: row;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .reviews-info-child {
+        width: 100%;
+    }
+
+    .reviews h1 {
+        width: 60%;
+        font-size: 40px;
+    }
+
+    .reviews h3 {
+        font-size: 20px;
+    }
+
+}

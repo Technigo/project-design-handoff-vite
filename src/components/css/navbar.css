@@ -1,0 +1,151 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+img {
+    width: 76px;
+    margin-left: 40px;
+    margin-right: 100px;
+}
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-top: 26px;
+    margin-right: 130px;
+}
+
+.nav-links a {
+    color: #000;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 0px 30px;
+    border-radius: 50px;
+    height: 50px;
+}
+
+.search-bar {
+    flex: 1;
+}
+
+.search-bar input {
+    width: 115px;
+    border: none;
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: #545F71;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+.search-button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.search-button img {
+    max-width: 24px;
+    height: auto;
+    width: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.search {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+
+.globe {
+    width: 24px;
+    height: 24px;
+    padding: 10px;
+    padding-left: 40px;
+    padding-top: 13px;
+    margin: 0 auto;
+}
+
+
+.globe-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+/* Mobile */
+@media (max-width: 393px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+
+    .navbar img {
+        width: 32px;
+        height: 33px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .burger-menu-container {
+        width: 25px;
+        margin-left: -160px;
+    }
+
+}
+
+/* Tablet */
+@media (min-width: 394px) and (max-width: 834px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar img {
+        width: 32px;
+        height: 33px;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .burger-menu-container {
+        width: 25px;
+        margin-left: -350px;
+    }
+
+}

@@ -11,3 +11,91 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+html,
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #F2ECE4;
+  overflow-x: hidden;
+}
+
+.main {}
+
+h1 {
+  color: #000;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h2 {
+  color: #000;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h3 {
+  color: #000;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+p {
+  color: #000;
+  font-family: 'Cormorant Garamond', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Mobile */
+@media (max-width: 393px) {
+
+  .html,
+  body {
+    margin: 0 auto;
+    margin: 0 auto;
+  }
+
+  .mobile-main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
+
+/* Tablet */
+@media (min-width: 394px) and (max-width: 834px) {
+
+  .html,
+  body {
+    margin: 0 auto;
+    margin: 0 auto;
+  }
+
+  .mobile-main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+}
+
+@media (min-width: 835px) and (max-width: 1200px) {
+
+  .html,
+  body {
+    margin: 0 auto;
+    margin: 0 auto;
+  }
+
+}

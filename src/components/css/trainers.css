@@ -1,0 +1,186 @@
+.trainers {
+    width: 90%;
+    margin-left: 80px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.trainers h1 {
+    color: #3C3C3C;
+    text-align: center;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+}
+
+.trainers h3 {
+    color: #000;
+    font-family: 'Cormorant Garamond', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.trainers p {
+    color: #000;
+    font-family: Cormorant Garamond;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.trainers img {
+    border-radius: 20px;
+    width: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+.trainers-images-container {
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.trainers-images {
+    display: flex;
+    gap: 32px;
+}
+
+.trainers-item {
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.heart-icon {
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+}
+
+/* Mobile */
+@media (max-width: 393px) {
+    .trainers {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .trainers h1 {
+        font-size: 24px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .trainers h3,
+    .trainers p {
+        font-size: 16px;
+    }
+
+    .trainers-links {
+        gap: 23px;
+        padding: 10px;
+        overflow-x: scroll;
+    }
+
+    .trainers a {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .trainers img {
+        width: 135px;
+        border-radius: 10px;
+    }
+
+    .trainers-images-container {
+        overflow-x: auto;
+    }
+
+    .trainers-images {
+        gap: 10px;
+    }
+
+    .trainers-item {
+        position: relative;
+    }
+
+    .heart-icon {
+        width: 12px;
+        height: 12px;
+        top: 5px;
+        right: 5px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 394px) and (max-width: 834px) {
+
+    .trainers {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        padding: 10px;
+    }
+
+    .trainers h1 {
+        font-size: 30px;
+    }
+
+    .trainers h3,
+    .trainers p {
+        font-size: 16px;
+    }
+
+    .trainers-links {
+        gap: 23px;
+        padding: 10px;
+        overflow-x: scroll;
+    }
+
+    .trainers a {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .trainers img {
+        width: 180px;
+        border-radius: 10px;
+    }
+
+    .trainers-images-container {
+        overflow-x: auto;
+    }
+
+    .trainers-images {
+        gap: 10px;
+    }
+
+    .trainers-item {
+        position: relative;
+    }
+
+    .heart-icon {
+        width: 24px;
+        height: 24px;
+        top: 5px;
+        right: 5px;
+    }
+
+}
