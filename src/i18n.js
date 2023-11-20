@@ -1,15 +1,15 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import enTranlations from "./Translation/en.json";
-import seTranlations from "./Translation/se.json";
+import enTranslations from "./Translation/en.json";
+import seTranslations from "./Translation/sv.json";
 
 const resources = {
   en: {
-    tranlations: enTranlations,
+    translations: enTranslations, // Corrected from tranlations to translations
   },
 
   sv: {
-    tranlations: seTranlations,
+    translations: seTranslations, // Corrected from tranlations to translations
   },
 };
 

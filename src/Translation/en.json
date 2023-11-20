@@ -4,6 +4,14 @@
     "info": "Info for adults",
     "contact": "Contact"
   },
+  "footer": {
+    "home": "home",
+    "contact": "contact",
+    "studio": "studio guidlines",
+    "tnc": "terms and conditions",
+    "jobs": "jobs",
+    "press": "press"
+  },
 
   "landing": {
     "hero": {

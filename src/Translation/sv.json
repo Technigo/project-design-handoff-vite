@@ -5,6 +5,15 @@
     "contact": "Kontakt"
   },
 
+  "footer": {
+    "home": "hem",
+    "contact": "kontakt",
+    "studio": "studioriktlinjer",
+    "tnc": "villkor och bestämmelser",
+    "jobs": "jobb",
+    "press": "press"
+  },
+
   "landing": {
     "hero": {
       "heading": "Yoga, Inte bara för lugna och tysta barn",
