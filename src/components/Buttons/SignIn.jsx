@@ -18,9 +18,6 @@ const SignInButtonContainer = styled.button`
     font-size: 16px;
     padding: 0 16px;
     margin: 15px;
-
-    @media screen and (min-width: 1024px) {
-    }
   }
 `;
 

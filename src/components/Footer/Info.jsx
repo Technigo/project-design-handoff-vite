@@ -42,8 +42,11 @@ export const Info = () => {
   return (
     <InfoContainer className="info">
       <span>{t("homePage.footer.about")}</span>
-      <p>{t("homePage.footer.faq")}</p>
-      <span>{t("homePage.footer.contact")}</span>
+      {/*Accessing the 'about' section of the JSON data */}
+      <p>{t("homePage.footer.faq")}</p>{" "}
+      {/*Accessing the 'faq' section of the JSON data */}
+      <span>{t("homePage.footer.contact")}</span>{" "}
+      {/*Accessing the 'contact' section of the JSON data */}
     </InfoContainer>
   );
 };

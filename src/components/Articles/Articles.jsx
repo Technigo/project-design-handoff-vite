@@ -13,63 +13,67 @@ const ArticlesContainer = styled.div`
     margin-bottom: 50px;
   }
 
-  .articles {
-    margin-bottom: 50px;
-  }
   img {
     width: 100%;
     height: auto;
     object-fit: cover;
   }
+
   h2 {
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 600;
     width: 100%;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
+    line-height: 160%;
   }
+
   p {
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 300;
-    line-height: 18px;
-    padding-bottom: 10px;
+    line-height: 160%;
   }
 
   Button {
     background-color: #c00202;
     color: #ffffff;
     font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 160%;
   }
 
   @media screen and (min-width: 768px) {
     margin: auto;
-  }
-  h2 {
-    font-size: 30px;
-  }
 
-  p {
-    font-size: 18px;
-  }
+    Button {
+      font-size: 18px;
+      padding: 8px 16px;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
 
-  Button {
-    font-size: 18px;
-    padding: 8px 25px;
-    border-radius: 10px;
-    margin-top: 20px;
-  }
+    .article-0 {
+      margin-top: 50px;
+    }
 
-  .article-0 {
-    margin-top: 100px;
-  }
+    .article-1 {
+      margin-bottom: 50px;
+    }
 
-  .article-1 {
-    margin-bottom: 50px;
+    h2 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 18px;
+    }
   }
 
   @media screen and (min-width: 1024px) {
     max-width: 900px;
 
     .article-0 {
+      // Add a class to each article
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 70px;
@@ -78,19 +82,20 @@ const ArticlesContainer = styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
-        grid-column: 2 / 2;
-        grid-row: 1 / 1;
+        grid-column: 2 / 2; // Position the image on the right
+        grid-row: 1 / 1; // Position the image on the top
 
         .article-details {
-          grid-column: 1 / 2;
-          grid-row: 1 / 1;
+          grid-column: 1 / 2; // Position the article details on the left
+          grid-row: 1 / 1; // Position the article details on the top
         }
       }
     }
 
     .article-1 {
+      // Add a class to each article
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; // Create a grid with two columns
       column-gap: 70px;
 
       img {
@@ -101,6 +106,10 @@ const ArticlesContainer = styled.div`
     }
     p {
       line-height: 160%;
+    }
+
+    Button {
+      padding: 8px 32px;
     }
   }
 `;

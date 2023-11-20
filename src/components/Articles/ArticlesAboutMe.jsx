@@ -7,7 +7,7 @@ const ArticlesAboutMeContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1rem;
+  margin: 2.5rem;
   max-width: 650px;
 
   .testimonial-0 {
@@ -132,16 +132,27 @@ export const ArticlesAboutMe = () => {
       <div className="instructors-container">
         <h2>{t("aboutPage.mainSection.secondaryHeading")}</h2>
         <div className="instructors">
-          {testimonial.map((testimonial, index) => (
-            <div key={index} className={`testimonial-${index}`}>
-              <img src={testimonial.imageurl} alt={t("testimonial.imagealt")} />
-              <div className="testimonial-details">
-                <h3>{testimonial.heading}</h3>
-                <p>{testimonial.paragraph}</p>
-                <Button>{testimonial.button}</Button>
+          {testimonial.map(
+            (
+              testimonial,
+              index // Accessing the 'cards' section of the JSON data
+            ) => (
+              <div key={index} className={`testimonial-${index}`}>
+                {/*Add a class to each article*/}
+                <img
+                  src={testimonial.imageurl} // Accessing the 'imageurl' section of the JSON data
+                  alt={t("testimonial.imagealt")} // Accessing the 'imagealt' section of the JSON data
+                />
+                <div className="testimonial-details">
+                  <h3>{testimonial.heading}</h3>{" "}
+                  {/* Accessing the 'heading' section of the JSON data */}
+                  <p>{testimonial.paragraph}</p>{" "}
+                  {/* Accessing the 'paragraph' section of the JSON data */}
+                  <Button>{testimonial.button}</Button>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </ArticlesAboutMeContainer>

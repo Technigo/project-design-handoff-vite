@@ -12,7 +12,6 @@ const TermsPolicyContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   justify-content: space-between;
   position: relative;
   font-size: 10px;
@@ -20,7 +19,6 @@ const TermsPolicyContainer = styled.div`
   .terms-policy {
     display: flex;
     flex-direction: row;
-    /* justify-content: space-between; */
     text-transform: uppercase;
     gap: 20px;
     padding-top: 10px;
@@ -54,8 +52,10 @@ export const TermsPolicy = () => {
   return (
     <TermsPolicyContainer>
       <div className="terms-policy">
-        <p> {t("homePage.footer.terms")}</p>
-        <p className="policy">{t("homePage.footer.policy")}</p>
+        <p> {t("homePage.footer.terms")}</p>{" "}
+        {/*Accessing the 'terms' section of the JSON data */}
+        <p className="policy">{t("homePage.footer.policy")}</p>{" "}
+        {/*Accessing the 'policy' section of the JSON data */}
       </div>
       <p>
         ©️ 2023 <span>Prima barre</span>, {t("homePage.footer.copyright")}

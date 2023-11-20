@@ -23,7 +23,7 @@ const ClassesContainer = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    inset: 0;
+    inset: 0; // top, right, bottom, left
     border-radius: 12px;
     padding: 7.5px;
     line-height: 160%;
@@ -38,7 +38,7 @@ const ClassesContainer = styled.div`
   }
   @media screen and (min-width: 768px) {
     .overlay {
-      gap: 48px;
+      gap: 42px;
       padding: 1rem;
     }
     h3 {

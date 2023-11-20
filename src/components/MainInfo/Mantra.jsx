@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 
 const MantraContainer = styled.div`
-  /* max-width: 500px; */
   width: 100%;
   padding: 10px 24px;
   border-top: 3px solid #f26631;
@@ -11,10 +10,6 @@ const MantraContainer = styled.div`
   font-weight: 600;
   font-size: 16px;
   text-align: center;
-
-  /* span {
-    color: #c00202;
-  } */
 
   @media screen and (min-width: 768px) {
     font-size: 25px;

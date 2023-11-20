@@ -86,18 +86,17 @@ export const AboutPage = () => {
   return (
     <>
       <div className="hero-section">
-        <Header className="header" contentType="image" />{" "}
+        <Header contentType="image" />
         {/* Pass the contentType prop to the Header component */}
       </div>
       <AboutPageContainer>
         <div className="main-section">
-          <h1>{t("aboutPage.mainSection.primaryHeading")}</h1>{" "}
+          <h1>{t("aboutPage.mainSection.primaryHeading")}</h1>
           {/* Access the 'primaryHeading' section of the JSON data */}
-          <p>{t("aboutPage.mainSection.primaryParagraph")}</p>{" "}
+          <p>{t("aboutPage.mainSection.primaryParagraph")}</p>
           {/* Access the 'primaryParagraph' section of the JSON data */}
           <p>{t("aboutPage.mainSection.secondaryParagraph")}</p>
           <div className="award-section">
-            {" "}
             {/* Access the 'secondaryParagraph' section of the JSON data */}
             <span>
               <img

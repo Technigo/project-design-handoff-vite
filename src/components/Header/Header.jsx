@@ -30,17 +30,6 @@ const HeaderContainer = styled.div`
     background-color: #ffffff;
     opacity: 0.4;
   }
-
-  @media screen and (min-width: 768px) {
-    /* .top-buttons {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-      margin-top: 5px;
-      position: absolute;
-      z-index: 1;
-    } */
-  }
 `;
 
 export const Header = ({ contentType }) => {

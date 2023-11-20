@@ -19,11 +19,6 @@ const FormContainer = styled.div`
     object-position: center;
     display: block;
   }
-  @media screen and (min-width: 700px) {
-    img {
-      height: 100%;
-    }
-  }
 
   .overlay {
     position: absolute;
@@ -46,6 +41,12 @@ const FormContainer = styled.div`
     line-height: 160%;
   }
 
+  .names {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
   form {
     position: relative;
     z-index: 2;
@@ -60,7 +61,7 @@ const FormContainer = styled.div`
     ::placeholder {
       color: #ffffff;
       font-size: 16px;
-      opacity: 1; /* Firefox */
+      opacity: 1; /* Adapted for Firefox */
       font-weight: 700;
     }
   }
@@ -76,7 +77,7 @@ const FormContainer = styled.div`
   Button {
     font-size: 14px;
     font-weight: 800;
-    line-height: 160%; /* 22.4px */
+    line-height: 160%;
     border-radius: 10px;
     border: 3px solid #fff;
     background-color: transparent;
@@ -85,58 +86,51 @@ const FormContainer = styled.div`
     margin-top: 20px;
   }
 
-  span {
-    /* h2 mobile */
+  h2 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
   }
 
   p {
-    /* body mobile */
     font-size: 16px;
     font-weight: 300;
     padding-bottom: 20px;
   }
 
+  @media screen and (min-width: 700px) {
+    img {
+      height: 100%;
+    }
+  }
+
   @media screen and (min-width: 1024px) {
     height: auto;
 
+    .info-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 70px;
+      max-width: 900px;
+      align-items: center;
+    }
+
+    .info-text {
+      order: 1;
+    }
+
+    .form {
+      order: 2;
+    }
+
     .names {
       display: flex;
-      flex-direction: row; /* Make the labels appear side by side */
+      flex-direction: row; //Make the labels appear side by side
       gap: 10px;
 
       label.first-name,
       label.last-name {
-        width: 50%; /* Make each label take 50% of the width */
+        width: 50%; //Make each label take 50% of the width
       }
-    }
-    label.email-address {
-      width: 100%; /* Make email label take 100% of the width */
-    }
-
-    .info-form {
-      max-width: 700px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 80px;
-      padding: 64px 0;
-    }
-
-    .info-text {
-      margin-bottom: 40px;
-    }
-    p {
-      font-size: 20px;
-      font-weight: 600;
-      line-height: 160%;
-    }
-
-    Button {
-      width: fit-content;
-      font-size: 24px;
-      font-weight: 600;
     }
   }
 `;
@@ -174,12 +168,12 @@ export const SignUpForm = () => {
           <div className="overlay">
             <div className="info-form">
               <div className="info-text">
-                <span>{t("homePage.formSection.heading")}</span>{" "}
+                <h2>{t("homePage.formSection.heading")}</h2>{" "}
                 {/*Access the 'heading' section of the JSON data  */}
                 <p>{t("homePage.formSection.paragraph")}</p>{" "}
                 {/*Access the 'paragraph' section of the JSON data  */}
               </div>
-              <form onSubmit={handleSubmit}>
+              <form className="form" onSubmit={handleSubmit}>
                 {" "}
                 {/* Call the handleSubmit function when the form is submitted */}
                 <div className="names">
