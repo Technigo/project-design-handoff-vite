@@ -1,8 +1,3 @@
-/* 
-background: #ffecea
-text: #202020
- */
-
 :root {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -13,6 +8,7 @@ text: #202020
 
 body {
   font-weight: 400;
+  min-height: 100vh;
   padding: 3em 2em 6rem 2em;
   margin-top: 3rem;
 }
