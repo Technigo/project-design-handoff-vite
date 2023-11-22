@@ -5,15 +5,6 @@ export const NavBar = () => {
   return (
     <div className={styles.navbarContainer}>
       <nav className={`${styles.navbar}`}>
-        <div className={`${styles.logo}`}>
-          <a href="/">
-            <img
-              className={styles.logo}
-              src="/assets/logo-white.png"
-              alt="Sheness studio logo"
-            />
-          </a>
-        </div>
         <div className={styles.navMenu}>
           <a className={styles.navMenuOption} href="/">
             <Button buttonName="Flow Yoga"></Button>

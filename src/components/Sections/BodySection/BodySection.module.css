@@ -1,25 +1,19 @@
 .classesHeader {
   font-weight: 700;
   text-align: center;
-  color: #fef8ea;
 }
 
 .classesContainer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background-color: #9eb1a8;
-  color: black;
+  grid-template-columns: repeat(1, 1fr);
   overflow: auto;
   max-height: fit-content;
 }
 
 .classesBox {
   margin-bottom: 4em;
-  color: black;
   text-align: center;
   margin-top: 0;
-  font-weight: 700;
-  color: black;
 }
 
 .classesBox img {
@@ -27,13 +21,19 @@
   padding: 1em;
 }
 
-.subHeading {
-  color: black;
-}
-
 .subHeading:hover {
-  background-color: #fef8ea;
   opacity: 0.5;
   border-radius: 20px;
   padding: 0.3em;
+}
+
+/*media query for tablet - 1 row */
+@media (min-width: 668px) and (max-width: 1024px) {
+}
+
+/*media query for desktop - 2 rows */
+@media (min-width: 1025px) {
+  .classesContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

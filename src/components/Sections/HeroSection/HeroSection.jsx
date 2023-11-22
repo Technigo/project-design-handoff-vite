@@ -1,25 +1,24 @@
 import styles from "./HeroSection.module.css";
 import { Button } from "../../ui/Button/Button";
-import { NavBar } from "../NavBar/NavBar";
 
 export const HeroSection = () => {
   return (
     <>
       <div className={styles.heroContainer}>
         <div className={styles.heroLeft}>
-          <h1> Empowering pregnancy fitness</h1>
+          <h1>Where Serenity Meets Stretch</h1>
           <p>
-            Safe, effective, and energizing training throughout the whole
-            pregnancy. Join us for a fun fitness journey for both body and soul.
+            At our yoga studio, we're not your typical pretzel-twisting,
+            'Om'-chanting bunch. We're all about infusing your yoga journey with
+            a big dose of FUN, a sprinkle of QUIRKY, and a heap of ZEN.
           </p>
-          <Button buttonName="SIGN UP"></Button>
-          <Button buttonName="TRY A CLASS"></Button>
+          <p>
+            <Button /> <Button />
+          </p>
         </div>
         <div className={styles.heroRight}>
-          <img
-            src="/assets/pregs-kettlebell.png"
-            alt="pregnant lady with a kettle bell"
-          />
+          {" "}
+          <img src="/assets/hero-img.png" />
         </div>
       </div>
     </>

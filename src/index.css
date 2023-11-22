@@ -1,28 +1,29 @@
-/* blue #2C1E63 
-brown #C9694D
-cream #FEF8EA
-grey #9EB1A8
+/* 
+background: #ffecea
+text: #202020
  */
 
 :root {
   margin: 0;
-  font-family: "Abhaya Libre", serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #ffecea;
 }
 
 h1 {
-  font-family: "Abhaya Libre", serif;
-  color: #fef8ea;
+  font-family: "Poppins", sans-serif;
+  color: #202020;
 }
 
 h2 {
-  font-family: "Montserrat", sans-serif;
-  color: #fef8ea;
+  font-family: "Poppins", sans-serif;
+  color: #202020;
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  color: #202020;
 }
 
 html,

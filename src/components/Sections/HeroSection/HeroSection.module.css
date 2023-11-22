@@ -1,21 +1,6 @@
-body {
-  background-color: #2c1e63;
-  max-height: 1134px;
-}
-
-h1 {
-  color: #fef8ea;
-  font-family: Abhaya;
-  font-size: 70px;
-}
-
 .heroContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  background-image: url("/assets/background-corner.png");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
 }
 
 .heroLeft {

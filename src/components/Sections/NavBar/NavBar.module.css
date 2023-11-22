@@ -1,8 +1,4 @@
-
 .navbarContainer {
-  background-color: #2c1e63;
-  font-family: "Montserrat", sans-serif;
-  font-size: 5px;
 }
 
 .logo {
@@ -26,11 +22,9 @@
   font-size: 17px;
   word-wrap: normal;
   text-decoration: none;
-  color: #fef8ea;
 }
 
 .navbar a:hover {
-  color: #c9694d;
 }
 
 .navMenuOption {
@@ -38,8 +32,6 @@
 }
 
 .signupNavButton {
-  background-color: #2c1e63;
-  border: 1px solid #fef8ea;
   border-radius: 3em;
   padding: 0.7em;
   color: white;
@@ -64,5 +56,3 @@
     float: none;
   }
 }
-
-/* media queries */
