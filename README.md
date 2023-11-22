@@ -4,6 +4,9 @@
   </a>
 </h1>
 
+# NOTE - UPDATE - 21st Nov 2023
+Unfortunetly, my designer was not able to supply a finished product. Therefore, my initial project has been moved to another branch so I can begin again as I cannot fork the repo twice.
+
 # Design Handoff Project
 
 This wee we transformed a UX student's design into a React-based landing page for a gym/fitness club. This project bridges the gap between design and development, showcasing the art of bringing visuals to life with code.
