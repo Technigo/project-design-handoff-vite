@@ -5,7 +5,7 @@
 </h1>
 
 # NOTE - UPDATE - 21st Nov 2023
-Unfortunetly, my designer was not able to supply a finished product. Therefore, my initial project has been moved to another branch so I can begin again as I cannot fork the repo twice.
+Unfortunetly, my designer was not able to supply a finished product. My code coaches have connected me with the UX Design teachers who have given me a new design to start again. My initial project has been moved to another branch so I can begin again on main as I cannot fork the repo twice.
 
 # Design Handoff Project
 
