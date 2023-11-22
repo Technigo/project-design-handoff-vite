@@ -28,6 +28,11 @@ const Card = styled.div`
     align-items: center;
     border-radius: 8px;
     margin-bottom: 20px;
+    @media ${desktop} {
+        width: 100%; // Adjust width as needed for desktop
+        height: 400px; // Increase height for desktop
+        margin: 20px; // Adjust spacing between cards for desktop
+    }
 `;
 
 const CardImage = styled.img`
@@ -35,6 +40,7 @@ const CardImage = styled.img`
     height: 70px;
     border-radius: 2px;
     margin-bottom: -12px; // Added reduced margin for less space
+    margin-top: 12px;
 `;
 
 const CardName = styled.h2`
@@ -43,6 +49,9 @@ const CardName = styled.h2`
     text-align: center;
     font-family: 'Electrolize';
     margin-bottom: 5px; 
+    @media ${desktop} {
+        font-size: 28px; // Larger font size for desktop
+    }
 `;
 
 const CardDescription = styled.p`
@@ -51,6 +60,9 @@ const CardDescription = styled.p`
     text-align: center;
     font-family: 'Neuton'; 
     margin-top: 0; 
+    @media ${desktop} {
+        font-size: 24px; // Larger font size for desktop
+    }
 `;
 
 function TeamMemberCard(props) {

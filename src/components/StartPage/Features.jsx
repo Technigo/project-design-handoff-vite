@@ -11,13 +11,20 @@ import leftPaw from '../../assets/LeftPaw.png';
 import rightPaw from '../../assets/RightPaw.png';
 import { useTranslation } from 'react-i18next';
 
+
 const desktop = `(min-width: 1024px)`;
+const mobileAndTablet = `(max-width: 1023px)`;
 
 const FeaturesContainer = styled(animated.div)`
     display: flex;
-    width: 360px
     overflow: hidden;
     will-change: transform;
+
+    @media ${mobileAndTablet} {
+        width: 100vw; // Full viewport width on mobile/tablet
+        height: 100vh; // Full viewport height on mobile/tablet
+    }
+    
     @media ${desktop} {
         flex-direction: column;
         width: auto; 
@@ -33,6 +40,7 @@ const Feature = styled.div`
     height: auto;
     background-size: cover;
     transition: background-image 0.3s ease-in-out;
+    
     @media ${desktop} {
         width: 100%;
         height: auto;
