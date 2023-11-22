@@ -16,23 +16,25 @@ export const NavBar = () => {
         </div>
         <div className={styles.navMenu}>
           <a className={styles.navMenuOption} href="/">
-            CLASSES
+            <Button buttonName="Flow Yoga"></Button>
           </a>
           <a className={styles.navMenuOption} href="/">
-            ABOUT US
+            Our Classes
           </a>
           <a className={styles.navMenuOption} href="/">
-            SHOP
-          </a>
-          <a
-            style={{ color: "#c9694d" }}
-            className={styles.navMenuOption}
-            href="/"
-          >
-            LOG IN
+            Schedule
           </a>
           <a className={styles.navMenuOption} href="/">
-            <Button buttonName="SIGN UP"></Button>
+            Events
+          </a>
+          <a className={styles.navMenuOption} href="/">
+            Blog
+          </a>
+          <a className={styles.navMenuOption} href="/">
+            <Button buttonName="Join!"></Button>
+          </a>
+          <a className={styles.navMenuOption} href="/">
+            <Button buttonName="Log in"></Button>
           </a>
         </div>
         <div className={styles.hamburgerMenu}>

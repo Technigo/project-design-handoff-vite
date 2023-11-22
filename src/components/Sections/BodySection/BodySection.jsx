@@ -1,6 +1,6 @@
-import styles from "./ClassesSection.module.css";
+import styles from "./BodySection.module.css";
 
-export const ClassesSection = () => {
+export const BodySection = () => {
   return (
     <>
       <div>

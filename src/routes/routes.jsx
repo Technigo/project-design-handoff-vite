@@ -1,11 +1,11 @@
 import { Route } from "react-router-dom";
 import { Home } from "../pages/Home";
-import { AboutUs } from "../pages/AboutUs";
+import { Events } from "../pages/Events";
 
 const routes = (
   <>
     <Route path="/" element={<Home />} />
-    <Route path="/AboutUs" element={<AboutUs />} />
+    <Route path="/Events" element={<Events />} />
   </>
 );
 
