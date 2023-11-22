@@ -1,14 +1,26 @@
 .heroContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
+  padding: 3em 2em 6rem 2em;
+  margin-top: 3rem;
+  text-align: center;
+  vertical-align: middle;
+  height: 100px;
+  width: 100px;
 }
 
-.heroLeft {
+.heroBox {
   align-content: left;
   margin-left: 5em;
-  max-width: 50%;
 }
 
-.heroRight {
-  align-content: left;
+/*media query for tablet - 1 row */
+@media (min-width: 668px) and (max-width: 1024px) {
+}
+
+/*media query for desktop - 2 rows */
+@media (min-width: 1025px) {
+  .heroContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

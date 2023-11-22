@@ -5,7 +5,7 @@ export const HeroSection = () => {
   return (
     <>
       <div className={styles.heroContainer}>
-        <div className={styles.heroLeft}>
+        <div className={styles.heroBox}>
           <h1>Where Serenity Meets Stretch</h1>
           <p>
             At our yoga studio, we're not your typical pretzel-twisting,
@@ -16,8 +16,7 @@ export const HeroSection = () => {
             <Button /> <Button />
           </p>
         </div>
-        <div className={styles.heroRight}>
-          {" "}
+        <div className={styles.heroBox}>
           <img src="/assets/hero-img.png" />
         </div>
       </div>

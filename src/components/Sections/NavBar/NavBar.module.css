@@ -1,40 +1,19 @@
 .navbarContainer {
-}
-
-.logo {
-  float: left;
-  max-height: 40px;
-}
-
-.navMenu {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  overflow: hidden;
-  justify-content: right;
 }
 
-.navbar a {
-  display: block;
-  float: right;
-  text-align: center;
-  padding: 2em;
-  text-decoration: none;
+.navBar {
+  display: flex;
+}
+
+.navBar li {
+  padding: 0.3em;
+  align-items: flex-end;
+  background-color: transparent;
   font-size: 17px;
-  word-wrap: normal;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-}
-
-.navMenuOption {
-  margin: 0;
-}
-
-.signupNavButton {
-  border-radius: 3em;
-  padding: 0.7em;
-  color: white;
+  list-style: none;
 }
 
 .hamburgerMenu {
@@ -48,11 +27,7 @@
     cursor: pointer;
   }
 
-  .navbar {
+  .navBar {
     display: none;
-  }
-
-  .logo {
-    float: none;
   }
 }

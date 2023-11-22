@@ -11,6 +11,12 @@ text: #202020
   background-color: #ffecea;
 }
 
+body {
+  font-weight: 400;
+  padding: 3em 2em 6rem 2em;
+  margin-top: 3rem;
+}
+
 h1 {
   font-family: "Poppins", sans-serif;
   color: #202020;
@@ -24,21 +30,4 @@ h2 {
 p {
   font-family: "Poppins", sans-serif;
   color: #202020;
-}
-
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.app-ul {
-  text-align: center;
-  list-style-type: none;
-  display: none;
-}
-
-.app-ul:hover {
-  text-decoration: none;
 }
