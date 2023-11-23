@@ -115,10 +115,10 @@ const Dot = styled.span`
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: ${props => props.active ? '#D2FDFF' : '#757575'};
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    background-color: ${props => props.$active ? '#D2FDFF' : '#757575'}; // Active dot is a different color
 `;
 
 const Features = () => {
@@ -175,11 +175,15 @@ const Features = () => {
                                 if (activeFeature > 0) setActiveFeature(activeFeature - 1);
                             }} />
                             <Icon src={catLeftIcon} alt={t('features.icons.leftCat.alt')} />
-                            <div style={{textAlign: 'center', marginTop: '10px'}}>
-                                {featuresData.map((_, index) => (
-                                    <Dot key={index} $active={index === activeFeature} onClick={() => setActiveFeature(index)} />
-                                ))}
-                            </div>
+                            <div style={{ textAlign: 'center', marginTop: '10px' }}>
+    {featuresData.map((_, idx) => (
+        <Dot 
+            key={idx} 
+            $active={idx === activeFeature} 
+            onClick={() => setActiveFeature(idx)} // Update the active feature on dot click
+        />
+    ))}
+</div>
                             <Icon src={catRightIcon} alt={t('features.icons.rightCat.alt')} />
                             <Icon src={rightPaw} alt={t('features.icons.rightPaw.alt')} onClick={() => {
                                 if (activeFeature < featuresData.length - 1) setActiveFeature(activeFeature + 1);
