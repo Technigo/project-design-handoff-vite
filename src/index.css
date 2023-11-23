@@ -8,9 +8,9 @@
 
 body {
   font-weight: 400;
-  min-height: 100vh;
-  padding: 3em 2em 6rem 2em;
-  margin-top: 3rem;
+  padding: 1em 0em;
+  margin-top: 1rem;
+  max-width: 100%;
 }
 
 h1 {
