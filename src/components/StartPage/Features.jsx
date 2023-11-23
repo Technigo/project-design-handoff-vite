@@ -17,14 +17,10 @@ const mobileAndTablet = `(max-width: 1023px)`;
 
 const FeaturesContainer = styled(animated.div)`
     display: flex;
-    overflow: hidden;
-    will-change: transform;
+    flex-direction: row;
+    width: ${props => props.featuresLength * 100}vw; // Set the width based on the number of features
+    height: 100vh;
 
-    @media ${mobileAndTablet} {
-        width: 100vw; // Full viewport width on mobile/tablet
-        height: 100vh; // Full viewport height on mobile/tablet
-    }
-    
     @media ${desktop} {
         flex-direction: column;
         width: auto; 
@@ -35,11 +31,14 @@ const FeaturesContainer = styled(animated.div)`
 `;
 
 const Feature = styled.div`
-    position: left;
-    width: 100%;
-    height: auto;
+    width: 100vw; // Full width of the viewport
+    height: 100vh; // Full height of the viewport
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-size: cover;
-    transition: background-image 0.3s ease-in-out;
+    scroll-snap-align: start;
     
     @media ${desktop} {
         width: 100%;
@@ -57,9 +56,10 @@ const FeatureImage = styled.img`
     object-fit: cover; // Ensure the image covers the area
 
     @media ${desktop} {
-        width: ${props => props.fullWidth ? '100%' : '50%'}; // On desktop, 100% for treats, otherwise 50%
+        width: ${props => props.$fullWidth ? '100%' : '50%'}; // On desktop, 100% for treats, otherwise 50%
     }
 `;
+
 
 const IconsContainer = styled.div`
     width: 306px; // The actual content width without padding
@@ -126,7 +126,9 @@ const Features = () => {
     const { t } = useTranslation();
 
     const transitionStyles = useSpring({
-        transform: `translateX(-${activeFeature * 360}px)`,
+        to: { transform: `translateX(-${activeFeature * 100}vw)` },
+        from: { transform: 'translateX(0vw)' },
+        config: { tension: 250, friction: 20 },
     });
 
     const featuresData = [
@@ -149,17 +151,25 @@ const Features = () => {
             text: t('features.treats.text')
         }
     ];
-
+  
+    const handleIconClick = (direction) => {
+        setActiveFeature(prev => {
+            return direction === 'left'
+                ? Math.max(prev - 1, 0)
+                : Math.min(prev + 1, featuresData.length - 1);
+        });
+    };
+    
   return (
         <div>
-            <FeaturesContainer style={transitionStyles}>
+            <FeaturesContainer style={transitionStyles} featuresLength={featuresData.length}>
     {featuresData.map((feature, index) => (
         <Feature key={index} style={{ backgroundImage: gradients[index] }}>
-            <FeatureImage 
-                src={feature.image} 
-                alt={feature.alt} 
-                fullWidth={feature.alt === t('features.treats.alt')} // Assuming 'alt' is unique for treats
-            />
+          <FeatureImage 
+        src={feature.image} 
+        alt={feature.alt} 
+        $fullWidth={feature.alt === t('features.treats.alt')}
+        />
                         <IconsContainer>
                             <Icon src={leftPaw} alt={t('features.icons.leftPaw.alt')} onClick={() => {
                                 if (activeFeature > 0) setActiveFeature(activeFeature - 1);
