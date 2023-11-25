@@ -1,46 +1,57 @@
-.navbarContainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.navBar {
-  width: 100%;
-  float: left;
-  margin: 0 0 1em 0;
-  padding: 0;
-}
-
-.navBar ul {
-  list-style: none;
-  width: 800px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-.navBar li {
-  float: left;
-}
-
-.navBar a {
+.burgerMenu {
   display: block;
-  padding: 8px 15px;
-  text-decoration: none;
+  padding-right: 1.5rem;
+  cursor: pointer;
 }
 
-.hamburgerMenu {
+.burgerMenu img {
+  object-fit: contain;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.navigation {
   display: none;
 }
 
-/* for mobile view */
-@media screen and (max-width: 625px) {
-  .hamburgerMenu {
-    padding-right: 1.5rem;
-    cursor: pointer;
+/*media query for tablet */
+@media (min-width: 668px) and (max-width: 1024px) {
+}
+
+/*media query for desktop */
+@media (min-width: 1025px) {
+  .navbarContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navigation {
+    display: block;
   }
 
   .navBar {
-    display: none;
+    width: 100%;
+    float: left;
+    margin: 0 0 1em 0;
+    padding: 0;
+  }
+
+  .navBar ul {
+    list-style: none;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .navBar li {
+    float: left;
+  }
+
+  .navBar a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
   }
 }

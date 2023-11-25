@@ -1,23 +1,35 @@
 .heroContainer {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  padding: 3em 2em 6rem 2em;
-  margin-top: 3rem;
-  text-align: center;
-  vertical-align: middle;
-  height: 100vh;
-  width: 100vw;
+  box-sizing: border-box;
 }
 
 .heroBox {
-  align-content: left;
-  margin-left: 5em;
-  height: 100vh;
-  width: 100vw;
+  max-width: 100%;
+}
+
+.heroBox h1 {
+  text-align: center;
+  padding: 0;
+}
+
+.heroBox p {
+  text-align: left;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.heroBox img {
+  object-fit: contain;
+  width: 100%;
 }
 
 h1 {
   font-size: 40px;
+  font-weight: 400;
+}
+
+.h1Bold {
+  font-weight: 600;
 }
 
 /*media query for tablet - 1 row */
@@ -34,10 +46,7 @@ h1 {
   }
 
   .heroBox {
-    align-content: left;
-    margin-left: 5em;
-    height: 100vh;
-    width: 100vw;
+    margin-left: 0;
   }
 }
 
@@ -49,17 +58,11 @@ h1 {
     padding: 3em 2em 6rem 2em;
     margin-top: 3rem;
     text-align: center;
-    vertical-align: middle;
-    width: 100vw;
   }
 
   .heroBox {
     align-content: left;
-    margin-left: 5em;
-    width: 100vw;
-  }
-
-  h1 {
-    font-size: 40px;
+    box-sizing: border-box;
+    padding: 20px;
   }
 }
