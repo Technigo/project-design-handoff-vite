@@ -1,30 +1,37 @@
-.classesHeader {
-  font-weight: 700;
-  text-align: center;
-}
-
-.classesContainer {
+.bodyContainer {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   overflow: auto;
   max-height: fit-content;
 }
 
-.classesBox {
-  margin-bottom: 4em;
+.bodyBox {
   text-align: center;
   margin-top: 0;
 }
 
-.classesBox img {
-  max-width: 80%;
-  padding: 1em;
+.bodyContainer p {
+  font-size: 26px;
+  padding: 0 0.6em 0 0.6em;
 }
 
-.subHeading:hover {
-  opacity: 0.5;
-  border-radius: 20px;
-  padding: 0.3em;
+.pBold {
+  font-weight: 600;
+}
+
+.bodyBox img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.bodyButton {
+  background-color: #ffecea;
+  color: #202020;
+  border-radius: 30px;
+  padding: 8px 115px 8px 115px;
+  text-align: center;
+  margin-bottom: 10em;
+  font-family: "Poppins", sans-serif;
 }
 
 /*media query for tablet - 1 row */
@@ -33,7 +40,4 @@
 
 /*media query for desktop - 2 rows */
 @media (min-width: 1025px) {
-  .classesContainer {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }

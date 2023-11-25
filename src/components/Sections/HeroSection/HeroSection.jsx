@@ -8,7 +8,7 @@ export const HeroSection = () => {
         <div className={styles.heroBox}>
           <h1>
             Where <span className={styles.h1Bold}>Serenity</span> Meets
-            <span className={styles.h1Bold}>Stretch</span>
+            <span className={styles.h1Bold}> Stretch</span>
           </h1>
           <p>
             At our yoga studio, we're not your typical pretzel-twisting,
@@ -18,8 +18,15 @@ export const HeroSection = () => {
         </div>
         <div className={styles.heroBox}>
           <p>
-            <Button buttonName="Join today!" />
-            <Button buttonName="Read more" />
+            <button
+              className={styles.heroButton}
+              style={{ color: "white", backgroundColor: "black" }}
+            >
+              Join today!"
+            </button>
+          </p>
+          <p>
+            <button className={styles.heroButton}>Read More</button>
           </p>
           <div className={styles.heroBox}>
             <img src="/assets/hero-img.png" />
