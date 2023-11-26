@@ -107,7 +107,7 @@ font-size: 18px;
 const FooterWrapperDesktop = styled.div`
 display: none;
 
-@media (min-width:770px){
+@media (min-width:769px){
   display: flex;
 flex-direction: column;
  background-color: var(--footer-inactive-card-color); 
