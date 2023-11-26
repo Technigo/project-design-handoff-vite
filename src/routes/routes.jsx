@@ -5,7 +5,7 @@ import { Events } from "../pages/Events";
 const routes = (
   <>
     <Route path="/" element={<Home />} />
-    <Route path="/Events" element={<Events />} />
+    <Route path="/events" element={<Events />} />
   </>
 );
 

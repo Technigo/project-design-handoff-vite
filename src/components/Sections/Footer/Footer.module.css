@@ -1,7 +1,46 @@
 .footerContainer {
   background-color: white;
   display: grid;
-  grid-template-columns: 80% 20%;
-  grid-template-rows: 1fr 1fr;
-  max-height: 180px;
+}
+
+.footerButton {
+  align-items: center;
+  align-content: center;
+  background-color: #ffecea;
+  color: #202020;
+  border-radius: 50px;
+  margin: 10px;
+  gap: 10px;
+  padding: 10px 24px 10px 24px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.footerBox h2 {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 1em;
+  padding-right: 1em;
+  line-height: 0.5;
+}
+
+.footerBox p {
+  line-height: 0.8;
+  padding-left: 1em;
+}
+
+.pBold {
+  font-weight: 600;
+}
+
+/*media query for desktop - 2 rows */
+@media (min-width: 1025px) {
+  .footerContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3em 2em 6rem 2em;
+    margin-top: 3rem;
+    text-align: center;
+  }
 }

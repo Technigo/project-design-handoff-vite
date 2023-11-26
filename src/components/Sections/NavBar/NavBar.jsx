@@ -1,5 +1,6 @@
 import styles from "./NavBar.module.css";
 import { Button } from "../../ui/Button/Button";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
@@ -17,7 +18,9 @@ export const NavBar = () => {
               <a>Schedule</a>
             </li>
             <li>
-              <a>Events</a>
+              <Link to={`/events`}>
+                <a>Events</a>
+              </Link>
             </li>
             <li>
               <a>Blog</a>
