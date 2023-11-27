@@ -20,9 +20,9 @@ export const Home = () => {
   };
 
   const englishFunc = () => changeLanguageFunc("en");
-  const swedishFunc = () => changeLanguageFunc("se");
+  const deutschFunc = () => changeLanguageFunc("de");
 
-  const [language, setLanguage] = useState("en"); // Default language is English
+  const [language, setLanguage] = useState("dn"); // Default language is English
 
   return (
     <>
@@ -32,7 +32,7 @@ export const Home = () => {
       <Footer />
       <div className="internationalisation-wrapper">
         <button onClick={englishFunc}>En</button>
-        <button onClick={swedishFunc}>Sw</button>
+        <button onClick={deutschFunc}>De</button>
         <p>{t("homePage.upcomingCourses.header")}</p>
       </div>
     </>
