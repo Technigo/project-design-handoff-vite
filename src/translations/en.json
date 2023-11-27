@@ -29,7 +29,18 @@
       "bodyButtonSchedule": "Schedule",
       "bodyButtonExplore": "Explore"
     },
-    "footer": {}
+    "footer": {
+      "header1": "Where Serenity",
+      "header2": "Meets Stretch",
+      "ourClasses": "Our Classes",
+      "schedule": "Schedule",
+      "events": "Events",
+      "blog": "Blog",
+      "terms": "Terms",
+      "conditions": "Conditions",
+      "signUp": "Sign Up",
+      "logIn": "Log in"
+    }
   },
   "Events": {}
 }

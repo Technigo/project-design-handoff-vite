@@ -29,7 +29,18 @@
       "bodyButtonSchedule": "Zeitplan",
       "bodyButtonExplore": "Erkunden"
     },
-    "footer": {}
+    "footer": {
+      "header1": "Wo Ruhe",
+      "header2": "auf Dehnung trifft",
+      "ourClasses": "Unsere Kurse",
+      "schedule": "Zeitplan",
+      "events": "Veranstaltungen",
+      "blog": "Blog",
+      "terms": "Geschäftsbedingungen",
+      "conditions": "Bedingungen",
+      "signUp": "Anmelden",
+      "logIn": "Einloggen"
+    }
   },
   "Events": {}
 }

@@ -1,6 +1,20 @@
 import styles from "./Footer.module.css";
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 export const Footer = () => {
+  const { t, i18n } = useTranslation();
+
+  //function to change the language
+  const changeLanguageFunc = (lng) => {
+    i18n.changeLanguage(lng);
+  };
+
+  const englishFunc = () => changeLanguageFunc("en");
+  const deutschFunc = () => changeLanguageFunc("de");
+
+  const [language, setLanguage] = useState("dn"); // Default language is English
+
   return (
     <>
       <div className={styles.footerContainer}>
@@ -13,41 +27,42 @@ export const Footer = () => {
           </button>
         </div>
         <div className={styles.footerBox}>
-          <h2>
-            Where
-            <span className={styles.pBold}> Serenity</span>
-          </h2>
-          <h2>
-            Meets
-            <span className={styles.pBold}> Stretch</span>!
-          </h2>
+          <h2>{t("homePage.footer.header1")}</h2>
+          <h2>{t("homePage.footer.header2")}</h2>
         </div>
         <div className={styles.footerBox}>
-          <p>Our Classes</p>
+          <p> {t("homePage.footer.ourClasses")}</p>
         </div>
         <div className={styles.footerBox}>
-          <p>Schedule</p>
+          <p> {t("homePage.footer.schedule")}</p>
         </div>
         <div className={styles.footerBox}>
-          <p>Events</p>
+          <p> {t("homePage.footer.events")}</p>
         </div>
         <div className={styles.footerBox}>
-          <p>Blog</p>
+          <p> {t("homePage.footer.blog")}</p>
         </div>
         <div className={styles.footerBox}>
-          <p>Terms</p>
+          <p> {t("homePage.footer.terms")}</p>
         </div>
         <div className={styles.footerBox}>
-          <p>Conditions</p>
+          <p> {t("homePage.footer.conditions")}</p>
         </div>
         <div className={styles.footerBox}>
-          <p>Sign Up</p>
+          <p> {t("homePage.footer.signUp")}</p>
         </div>
         <div className={styles.footerBox}>
-          <p>Log in</p>
+          <p> {t("homePage.footer.logIn")}</p>
         </div>
         <div className={styles.footerBox}>
-          <p>EN | DE</p>
+          <div className={styles.internationalisationWwrapper}>
+            <button onClick={englishFunc}>
+              <img src="./assets/en-icon.png" />
+            </button>
+            <button onClick={deutschFunc}>
+              <img src="./assets/de-icon.png" />
+            </button>
+          </div>
         </div>
         <div className={styles.footerBox}>
           <p>
