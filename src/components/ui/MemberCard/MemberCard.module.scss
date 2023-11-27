@@ -1,0 +1,68 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.card {
+  border: 2px solid $color-dark;
+  border-radius: $border-radius-xsm;
+  padding: 16px 8px;
+  width: 140px;
+  height: 238px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6px;
+  background-color: $color-green-light;
+  color: $color-dark;
+  text-align: center;
+
+  @include lg {
+    width: 330px;
+    height: 401px;
+    padding: $padding-sm;
+    gap: $gap-md;
+    display: grid;
+    grid-template-rows: 1.5fr 1fr;
+  }
+
+  &_inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  & img {
+    width: 65px;
+    height: 70px;
+
+    @include lg {
+      width: 110px;
+      height: 120px;
+    }
+  }
+
+  & h3 {
+    height: 100%;
+    font-size: 24px;
+    font-family: $font-body;
+    padding-bottom: 2px;
+    border-bottom: 1px solid $color-dark;
+    width: 100%;
+
+    @include lg {
+      font-size: $font-xlg;
+    }
+  }
+
+  & p {
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+
+    @include lg {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+.modal {
+  position: fixed;
+  background: rgba($color-dark, 0.5);
+  z-index: 999;
+  @include full-screen-fixed;
+
+  &_inner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+  }
+}
+
+.card {
+  width: 270px;
+  height: 270px;
+  padding: 20px 50px;
+  gap: 15px;
+  background-color: $color-dark;
+  border: 5px solid $color-green;
+  border-radius: $border-radius-lg;
+  box-shadow: 10px 20px 4px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  position: relative;
+  transition: all 0.2s ease;
+
+  @include flex-middle;
+  @include md {
+    width: 540px;
+    height: 540px;
+    padding: 50px 80px;
+    gap: 25px;
+  }
+
+  p {
+    width: 80%;
+    font-family: $font-normal;
+    font-size: $font-sm;
+    text-align: center;
+    font-weight: 700;
+
+    @include md {
+      font-size: $font-lg;
+    }
+  }
+
+  & .message {
+    width: 120%;
+  }
+}
+.card[data-animation="1"] {
+  animation: bounceOut 1s linear;
+}
+
+.thankYou {
+  font-size: 24px !important;
+  width: 100% !important;
+  margin-bottom: 30px;
+
+  @include md {
+    font-size: $font-xlg !important;
+    margin-bottom: 60px;
+  }
+}
+
+.bounceIn {
+  animation: bounce-1 2s linear;
+}
+
+@keyframes bounce-1 {
+  0% {
+    transform: translateX(-1000px);
+  }
+  65% {
+    transform: translateX(20%);
+  }
+  75% {
+    transform: translateX(-15%);
+  }
+  85% {
+    transform: translateX(15%);
+  }
+  95% {
+    transform: translateX(-3%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceOut {
+  0% {
+    transform: translateX(0);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+  55% {
+    transform: translateX(-70%);
+  }
+  65% {
+    transform: translateX(-90%);
+  }
+  80% {
+    transform: translateX(-70%);
+  }
+
+  100% {
+    transform: translatex(-10000px);
+  }
+}

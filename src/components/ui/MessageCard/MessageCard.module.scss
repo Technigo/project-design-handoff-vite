@@ -1,0 +1,73 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.card {
+  padding: $padding-sm;
+  background-color: $color-dark;
+
+  color: $color-green-light;
+  font-size: $font-sm;
+  font-family: $font-body;
+  display: grid;
+  gap: 16px;
+  width: 100%;
+  border-radius: $border-radius-xsm;
+  position: relative;
+
+  @include lg {
+    padding: $padding-lg;
+    font-size: $font-xlg;
+    gap: $gap-md;
+  }
+}
+
+.border {
+  position: relative;
+  $border: 2px;
+  background-clip: padding-box; /* !importanté */
+  border: solid $border transparent; /* !importanté */
+
+  &:before {
+    @include lg {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      margin: -$border; /* !importanté */
+      border-radius: inherit; /* !importanté */
+      background: linear-gradient(to bottom, $color-green, transparent);
+      @include full-screen-fixed;
+    }
+  }
+}
+
+.center {
+  @include lg {
+    text-align: center;
+  }
+}
+
+.alwCenter {
+  text-align: center;
+}
+
+.white,
+.white > h3 {
+  @include md {
+    background-color: $color-green-light;
+    color: $color-dark;
+  }
+  @include lg {
+    background-color: $color-dark;
+    color: $color-green-light;
+  }
+}
+
+.white {
+  @include md {
+    border: 2px solid $color-dark;
+  }
+
+  @include lg {
+    border: none;
+  }
+}

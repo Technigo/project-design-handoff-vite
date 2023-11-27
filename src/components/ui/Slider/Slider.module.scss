@@ -1,0 +1,52 @@
+@use "../../../styles/variables.scss" as *;
+@use "../../../styles/mixins.scss" as *;
+
+.slider_box {
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  width: 100vw;
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  @include lg {
+    overflow-x: visible;
+  }
+}
+
+.slider {
+  display: flex;
+  width: fit-content;
+  scroll-snap-type: x mandatory;
+
+  @include lg {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+.about {
+  gap: 38px;
+  display: flex;
+  margin-right: 16px;
+
+  @include lg {
+    width: 100vw;
+    max-width: 1260px;
+    margin: $margin-center;
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    gap: $gap-xsm;
+    padding: $padding-lg;
+    justify-content: center;
+  }
+
+  @media (min-width: 1260px) {
+    gap: $gap-lg;
+  }
+}
