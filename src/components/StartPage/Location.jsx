@@ -19,9 +19,14 @@ const LocationSection = styled.div`
     box-sizing: border-box;
     width: 100%;
     position: relative; 
+    height: 100vh;
+   margin-top: 90px;
 
     @media ${tablet} {
         background-size: contain;
+         width: 100%;
+    position: relative; 
+    padding: 20px;
     }
 `;
 
@@ -48,6 +53,7 @@ const LocationContent = styled.div`
     flex-direction: column;
     gap: 16px;
 
+
     @media ${tablet} {
         position: absolute;
         width: 174px;
@@ -58,13 +64,14 @@ const LocationContent = styled.div`
         z-index: 2; // Ensure the content is on top of the image
         background-color: #D2FDFF; // Mint Green as per your request
         color: #2A3439; // Gunmetal colored text
-        @media ${desktop} {
+    }
+
+    @media ${desktop} {
             background-color: #2A3439;  /* Gunmetal */
             color: #D2FDFF;
             width: 400px;
             height: 200px;
             gap: 24px;
-         
     }
 `;
 
@@ -87,6 +94,7 @@ const LocationText = styled.p`
     text-align: center;
     margin: 0;
     font-family: 'Electrolize';
+
     @media ${tablet} {
         color: #2A3439;  /* Gunmetal */
         font-size: 16px;

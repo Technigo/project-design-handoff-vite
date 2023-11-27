@@ -13,13 +13,23 @@ import { useTranslation } from 'react-i18next';
 
 
 const desktop = `(min-width: 1024px)`;
-const mobileAndTablet = `(max-width: 1023px)`;
+const tablet = `(min-width: 768px)`;
 
 const FeaturesContainer = styled(animated.div)`
     display: flex;
     flex-direction: row;
     width: ${props => props.featuresLength * 100}vw; // Set the width based on the number of features
     height: 100vh;
+    
+    @media ${tablet} {
+        flex-direction: column;
+        width: auto; 
+        transform: none !important; 
+        background-size: cover; // Ensure the background covers the div
+        transition: background-image 0.3s ease-in-out;
+        height: 100vh;
+        padding: 10px;
+        }
 
     @media ${desktop} {
         flex-direction: column;
@@ -27,6 +37,8 @@ const FeaturesContainer = styled(animated.div)`
         transform: none !important; 
         background-size: cover; // Ensure the background covers the div
     transition: background-image 0.3s ease-in-out;
+    height: 30%;
+    padding: 10px;
     }
 `;
 
@@ -76,6 +88,7 @@ const Icon = styled.img`
     height: 24px;
     @media ${desktop} {
         width: 60%;
+    }
 `;
 
 const FeatureContent = styled.div`
@@ -89,13 +102,14 @@ const FeatureContent = styled.div`
     flex-direction: column;
     justify-content: space-between; 
     background-size: cover;
-   
+}
 `;
 
 const FeatureTitle = styled.h2`
 font-size: 32px;
 margin-bottom: 0.5rem;
 font-family: 'Montserrat Subrayada';
+}
 `;
 
 const FeatureText = styled.p`
@@ -103,6 +117,7 @@ font-size: 16px;
 margin-bottom: 1rem;
 font-family: 'Electrolize';
 text-align: left;
+}
 `;
 
 const gradients = [
@@ -119,6 +134,7 @@ const Dot = styled.span`
     cursor: pointer;
     transition: background-color 0.3s;
     background-color: ${props => props.$active ? '#D2FDFF' : '#757575'}; // Active dot is a different color
+}
 `;
 
 const Features = () => {
