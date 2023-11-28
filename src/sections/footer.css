@@ -23,6 +23,15 @@
     font-weight: 500;
     padding-bottom: 5px;
 }
+.footer a:hover {
+    font-weight: 600;
+    color: var(--font-color);
+}
+.footer a:visited {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
 .social-container {
     position: absolute;
     right: 0;
@@ -33,4 +42,7 @@
 .social-media {
     height: 24.5px;
     width: 24.5px;
+}
+.social-media:hover {
+    filter: invert(18%) sepia(28%) saturate(4991%) hue-rotate(187deg) brightness(93%) contrast(101%);
 }

@@ -5,9 +5,9 @@ const StyledButton = styled.button`
     background: var(--secondary-color);
     color: var(--font-color);
     width: fit-content;
-    padding: 0.625rem;
+    padding: 10px;
     border: none;
-    border-radius: 0.375rem;
+    border-radius: 6px;
     
     &:hover {
         color: var(--font-color);
@@ -20,6 +20,13 @@ const StyledButton = styled.button`
 
     &:disabled {
         background: var(--background-color);
+    }
+
+    @media (min-width: 740px) {
+        padding: 11px 17px;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 160%;
     }
 `
 

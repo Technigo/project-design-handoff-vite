@@ -13,19 +13,19 @@ export const Footer = () => {
     }, 
     {
         name: "Find your center", 
-        to: "/"
+        to: "/find-your-center"
     }, 
     {
         name: "Customer Support",
-        to: "/"
+        to: "/customer-support"
     }, 
     {
         name: "Membership", 
-        to: "/"
+        to: "/membership"
     }, 
     {
         name: "Cookies, privacy and security",
-        to: "/"
+        to: "/cookies"
     }]
     const socialArray = [ fb, insta, tiktok ]
 
@@ -37,13 +37,13 @@ export const Footer = () => {
                 <Link to="/"><img className="footer-logo" src={logo} alt="Family Fitness Logo" /></Link>
                 <ul>
                     {linkArray.map(item => (
-                        <li key={item.name}>
+                        <li key={item.to}>
                                 <Link to={item.to}>{item.name}</Link>
                         </li>
                     ))}
                 </ul>
                 <div className="social-container">
-                    {socialArray.map((item) => <img key={toString(item)} className="social-media" src={item} />)}
+                    {socialArray.map((item) => <img key={item} className="social-media" src={item} />)}
                 </div>
             </div>
         </div>

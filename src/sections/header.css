@@ -3,7 +3,7 @@
     padding-top: 30px;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: flex-start;
 }
 
 .header-logo {
@@ -13,6 +13,10 @@
 .grid-parent-header {
     display: flex;
     flex-direction: column;
+}
+
+.become-member-header {
+  display: none;
 }
 
 #burger-menu {
@@ -93,4 +97,40 @@
   .log-out-link {
     font-size: 16px;
     padding: 20px 0;
+  }
+
+  @media (min-width: 740px) {
+    .header-logo {
+      height: 53px;
+    }
+
+    .header {
+      padding-top: 35px;
+    }
+
+    #burger-menu span {
+      top: 0;
+      width: 54px;
+      height: 5px;
+      border-radius: 3px;
+    }
+    #burger-menu span:before {
+      width: 54px;
+      top: -23px;
+      height: 5px;
+      border-radius: 3px;
+
+    }
+    #burger-menu span:after {
+      width: 54px;
+      top: 23px;
+      height: 5px;
+      border-radius: 3px;
+
+    }
+
+    .become-member-header {
+      display: block;
+      margin-top: 5px;
+    }
   }

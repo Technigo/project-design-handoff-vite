@@ -20,3 +20,9 @@
   margin-top: 70px;
   margin-bottom: 70px;
 }
+
+@media (min-width: 740px) {
+  .grid-parent {
+    grid-template-columns: 57px repeat(12, 1fr) 57px;
+  }
+}

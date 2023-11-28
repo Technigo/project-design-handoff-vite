@@ -40,7 +40,6 @@ export const Testimonials = () => {
         }
     ]
     return (
-        // <SimpleSlider />
         <div className="red red-testimonial grid-parent">
              <div className="testimonials section">
                  {/*testimonialArray.map((item, index) => {*/

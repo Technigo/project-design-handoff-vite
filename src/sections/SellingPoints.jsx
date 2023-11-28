@@ -11,32 +11,32 @@ export const SellingPoints = () => {
 
     const sellingPointsArray = [
         {
-            index: 0,
             icon: accessible,
             text: "Accessible for everyone",
             link: "Our vision", 
-            rotate: "neg-6137deg"
+            rotate: "neg-6137deg",
+            key: "accessible"
         },
         {
-            index: 1,
             icon: barbell,
             text: "Thousands of classes",
             link: "Explore classes",
-            rotate: "pos-4623deg"
+            rotate: "pos-4623deg",
+            key: "barbell"
         },
         {
-            index: 2,
             icon: child,
             text: "Safe and educational",
             link: "About Minifit",
-            rotate: "pos-5999deg"
+            rotate: "pos-5999deg",
+            key: "child"
         }, 
         {
-            index: 3,
             icon: building,
             text: "Hundreds of centers",
             link: "Find your center",
-            rotate: "neg-5432deg"
+            rotate: "neg-5432deg",
+            key: "building"
         }
     ] 
 
@@ -47,7 +47,7 @@ export const SellingPoints = () => {
                     {sellingPointsArray.map(
                         (sellingPoint) => 
                             <USP 
-                                key={sellingPoint.index} 
+                                key={sellingPoint.key} 
                                 icon={sellingPoint.icon} 
                                 text={sellingPoint.text} 
                                 link={sellingPoint.link} 
