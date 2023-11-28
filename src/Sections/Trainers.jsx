@@ -54,8 +54,7 @@ export const Trainers = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 2000,

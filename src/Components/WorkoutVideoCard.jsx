@@ -31,6 +31,7 @@ const VideoImage = styled.img`
   width: 100%; 
   height: 217px;
   border-radius: var(--small-radius);
+  object-fit: contain;
 
   @media (min-width: 835px) {
     height: 338px;
@@ -40,8 +41,12 @@ const VideoImage = styled.img`
 const HeartWrapper = styled.div`
   display: flex;
   position: absolute;
-  width: 100%;
+  width: 90%;
   justify-content: right;
+
+  @media (min-width: 835px) {
+    width: 85%;
+  }
 `
 
 const HeartBtn = styled.button`
@@ -79,33 +84,33 @@ const VideoLength = styled.p`
 export const WorkoutVideoCard = ({ video }) => {
   return (
     <VideoCardWrapper>
+      <HeartWrapper>
+        <HeartBtn type="button">
+          <svg 
+            width="24" 
+            height="24" 
+            viewBox="0 0 24 24" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="heart">
+              <path 
+                id="Icon" 
+                d="M4.31802 6.31802C2.56066 8.07538 2.56066 10.9246 4.31802 12.682L12.0001 20.364L19.682 12.682C21.4393 10.9246 21.4393 8.07538 19.682 6.31802C17.9246 4.56066 15.0754 4.56066 13.318 6.31802L12.0001 7.63609L10.682 6.31802C8.92462 4.56066 6.07538 4.56066 4.31802 6.31802Z"
+                stroke="#545F71" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+              />
+            </g>
+          </svg>
+        </HeartBtn>
+      </HeartWrapper>
       <StyledLink href="#">
-        <HeartWrapper>
-          <HeartBtn type="button">
-            <svg 
-              width="24" 
-              height="24" 
-              viewBox="0 0 24 24" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g id="heart">
-                <path 
-                  id="Icon" 
-                  d="M4.31802 6.31802C2.56066 8.07538 2.56066 10.9246 4.31802 12.682L12.0001 20.364L19.682 12.682C21.4393 10.9246 21.4393 8.07538 19.682 6.31802C17.9246 4.56066 15.0754 4.56066 13.318 6.31802L12.0001 7.63609L10.682 6.31802C8.92462 4.56066 6.07538 4.56066 4.31802 6.31802Z"
-                  stroke="#545F71" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                />
-              </g>
-            </svg>
-          </HeartBtn>
-        </HeartWrapper>
         <VideoImage src={video.image} alt={video.title} />
-        <VideoTitle>{video.title.toUpperCase()}</VideoTitle>
-        <VideoLength>{video.length}</VideoLength>
       </StyledLink>
+      <VideoTitle>{video.title.toUpperCase()}</VideoTitle>
+      <VideoLength>{video.length}</VideoLength>
     </VideoCardWrapper>
   )
 }

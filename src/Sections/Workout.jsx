@@ -13,6 +13,7 @@ const WorkOutWrapper = styled.section`
   flex-direction: column;
   gap: 9px;
 `
+
 const Container = styled.div`
   margin: 0 auto;
   width: 100%;
@@ -62,8 +63,7 @@ export const Workout = () => {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
+    autoplay: false,
     responsive: [
       {
         breakpoint: 2000,
