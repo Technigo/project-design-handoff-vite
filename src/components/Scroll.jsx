@@ -5,7 +5,7 @@ export const Scroll1 = () => {
   const { t } = useTranslation();
 
   return (
-    <section className=" border-[6px]  border-y-lime-green border-x-0">
+    <section className=" border-[6px]  border-y-lime-green border-x-0 overflow-hidden">
       <p className="w-full h-16 text-[22px] font-bold tracking-widest whitespace-nowrap  flex flex-row items-center  animate-scroll [word-spacing:16px]">
         {t("tags1.0")}
         {t("tags1.1")}
@@ -25,8 +25,8 @@ export const Scroll2 = () => {
   // const firstWord2 = tags2[0];
   // const remainingWords2 = tags2.slice(1).join(" • ");
   return (
-    <section className=" border-[6px]  border-y-lime-green border-x-0 mt-10 lg:mt-0">
-      <p className="w-full h-16 text-[22px] font-bold tracking-widest whitespace-nowrap  flex flex-row items-center  animate-scroll [word-spacing:16px]">
+    <section className=" border-[6px]  border-y-lime-green border-x-0 mt-10 lg:mt-0 overflow-hidden">
+      <p className="w-full h-16 text-[22px] font-bold tracking-widest whitespace-nowrap  flex flex-row items-center  animate-scroll scroll-auto [word-spacing:16px] ">
         {t("tags2.0")}
         {t("tags2.1")}
         {t("tags2.2")}
