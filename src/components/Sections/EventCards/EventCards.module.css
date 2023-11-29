@@ -6,8 +6,12 @@
   gap: 16px;
 }
 
+.eventsCard img {
+  width: 100%;
+}
+
 .eventsCard {
-  border: 2px solid red;
+  padding: 3em;
 }
 
 /* media query for mobile */
