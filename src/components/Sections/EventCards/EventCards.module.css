@@ -1,0 +1,32 @@
+.eventsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  overflow: auto;
+  max-height: fit-content;
+  gap: 16px;
+}
+
+.eventsCard {
+  border: 2px solid red;
+}
+
+/* media query for mobile */
+@media (max-width: 667px) {
+  .eventsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*media query for tablet- 2 columns .*/
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+  .eventsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+  }
+}
+
+/*media query for desktop - 3 columns */
+@media (min-width: 1025px) {
+  .eventsContainer {
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  }
+}
