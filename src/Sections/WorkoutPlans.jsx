@@ -13,6 +13,7 @@ const WorkOutPlansWrapper = styled.section`
   flex-direction: column;
   gap: 9px;
 `
+
 const HeadingWithLock = styled.div`
   display: flex;
   flex-direction: row;
@@ -61,8 +62,8 @@ export const WorkoutPlans = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 2,
     autoplay: false,
     responsive: [
       {
@@ -76,7 +77,7 @@ export const WorkoutPlans = () => {
       {
         breakpoint: 1440,
         settings: {
-          slidesToShow: 3.2,
+          slidesToShow: 4,
           slidesToScroll: 3,
           initialSlide: 3
         }

@@ -4,19 +4,7 @@ const VideoCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
-
-  width: 139.5px;
-
   position: relative;
-
-  @media (min-width: 394px) {
-    width: 179.75px;
-  }
-
-  @media (min-width: 835px) {
-    width: 310px;
-    height: 414px;
-  }
 `
 const StyledLink = styled.a`
   color: #000000;
@@ -41,11 +29,19 @@ const VideoImage = styled.img`
 const HeartWrapper = styled.div`
   display: flex;
   position: absolute;
-  width: 90%;
+  width: 100%;
   justify-content: right;
+
+  @media (min-width: 394px) {
+    width: 80%;
+  }
 
   @media (min-width: 835px) {
     width: 85%;
+  }
+
+  @media (min-width: 1100px) {
+    width: 78%;
   }
 `
 
@@ -53,6 +49,11 @@ const HeartBtn = styled.button`
   padding: 10px;
   border: none;
   background: transparent;
+  flex-grow: 0.25;
+
+  @media (min-width: 835px) {
+    flex-grow: 0;
+  }
 `
 
 const VideoTitle = styled.p`

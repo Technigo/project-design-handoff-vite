@@ -36,8 +36,9 @@ const SignUpBtn = styled.button`
 
 const MembershipText = styled.div`
   display: grid;
-  grid-template-column: repeat(2, 1fr);
-  //need to make sure that the columns always have equal width???
+  // to make the text and the image have same width  
+  width: 100%; 
+
 `
 
 const MembershipImage = styled.img`

@@ -4,21 +4,9 @@ const CardInnerWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
-
-  width: 137.25px;
-
   position: relative;
-
-  @media (min-width: 394px) {
-    width: 175.25px;
-    height: 262px;
-  }
-
-  @media (min-width: 835px) {
-    width: 309.25px;
-    height: 430px;
-  }
 `
+
 const StyledLink = styled.a`
   color: #000000;
   text-decoration: none;
@@ -32,6 +20,7 @@ const PlanImage = styled.img`
   width: 100%; 
   height: 210px;
   border-radius: var(--small-radius);
+  object-fit: contain;
 
   @media (min-width: 394px) {
     height: 220px;
@@ -47,12 +36,29 @@ const HeartWrapper = styled.div`
   position: absolute;
   width: 100%;
   justify-content: right;
+
+  @media (min-width: 394px) {
+    width: 80%;
+  }
+
+  @media (min-width: 835px) {
+    width: 85%;
+  }
+
+  @media (min-width: 1100px) {
+    width: 78%;
+  }
 `
 
 const HeartBtn = styled.button`
   padding: 10px;
   border: none;
   background: transparent;
+  flex-grow: 0.25;
+  
+  @media (min-width: 835px) {
+    flex-grow: 0;
+  }
 `
 
 const PlanTitle = styled.p`

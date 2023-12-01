@@ -4,26 +4,14 @@ const CardItem = styled.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
-
-  width: 133px;
-  
   position: relative;
-
-  @media (min-width: 394px) {
-    width: 186.49px;
-    height: 255px;
-  }
-
-  @media (min-width: 835px) {
-    width: 300.25px;
-    height: 422px;
-  }
 `
 
 const TrainerImage = styled.img`
   width: 100%; 
   height: 204px;
   border-radius: var(--small-radius);
+  object-fit: contain;
 
   @media (min-width: 394px) {
     height: 213px;
@@ -48,12 +36,29 @@ const HeartWrapper = styled.div`
   position: absolute;
   width: 100%;
   justify-content: right;
+
+  @media (min-width: 394px) {
+    width: 80%;
+  }
+
+  @media (min-width: 835px) {
+    width: 85%;
+  }
+
+  @media (min-width: 1100px) {
+    width: 78%;
+  }
 `
 
 const HeartBtn = styled.button`
   padding: 10px;
   border: none;
   background: transparent;
+  flex-grow: 0.25;
+  
+  @media (min-width: 835px) {
+    flex-grow: 0;
+  }
 `
 
 const TrainerName = styled.p`
