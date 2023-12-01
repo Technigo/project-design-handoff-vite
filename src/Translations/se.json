@@ -1,0 +1,160 @@
+{
+    "mobileNav": {
+        "logo": {
+            "alt": "Logotypen för At Home Fitness"
+        },
+        "hamburgerMenu": {
+            "login": "LOGGA IN",
+            "about": "OM OSS",
+            "membershipPlans": "MEDLEMSKAPSPLANER",
+            "contact": "KONTAKTA OSS"
+        }
+    },
+    "desktopNav": {
+        "logo": {
+            "alt": "Logotypen för At Home Fitness"
+        },
+        "videos": "VIDEOR",
+        "plans": "TRÄNINGSPROGRAM",
+        "tracker": "SPÅRARE",
+        "fav": "FAVORITER",
+        "search": "SÖK"
+    },
+    "heroSection": {
+        "image": {
+            "alt": "en kvinna sträcker sitt ben"
+        },
+        "title": "AT HOME FITNESS",
+        "motto": "Hjälper dig att röra dig i din komfortzon"
+    },
+    "workout": {
+        "heading": "TRÄNING",
+        "subHeadings": {
+            "cardio": "Kardio",
+            "hiit": "HIIT",
+            "yoga": "Yoga",
+            "glutes": "Glutes",
+            "back": "Rygg",
+            "arms": "Armar",
+            "zumba": "Zumba",
+            "stretch": "Stretch"
+        },
+        "videoTexts": {
+            "one": {
+                "title": "HIIT",
+                "length": "10 min"
+            },
+            "two": {
+                "title": "Lågintensiv kardio",
+                "length": "15 min"
+            },
+            "three": {
+                "title": "Bandmotstånd",
+                "length": "7 min"
+            },
+            "four": {
+                "title": "Glutebyggare",
+                "length": "20 min"
+            },
+            "five": {
+                "title": "HIIT",
+                "length": "10 min"
+            },
+            "six": {
+                "title": "Lågintensiv kardio",
+                "length": "15 min"
+            }
+        }
+    },
+    "workoutPlans": {
+        "heading": "TRÄNINGSPROGRAM",
+        "subHeadings": {
+            "one": "2 dagar i veckan",
+            "two": "3 dagar i veckan",
+            "three": "4 dagar i veckan",
+            "four": "Armar",
+            "five": "Rygg"
+        },
+        "planTexts": {
+            "one": "Glutebyggare",
+            "two": "Flexibilitet",
+            "three": "Styrka",
+            "four": "Glutebyggare",
+            "five": "Styrka",
+            "six": "Flexibilitet"
+        }
+    },
+    "membership": {
+        "title": "Registrera dig för ett medlemskap för att låsa upp din fulla potential",
+        "text-1": "få träningsprogram anpassade för dig",
+        "text-2": "obegränsad tillgång till biblioteket",
+        "text-3": "tillgång till live-tränare",
+        "button": "REGISTRERA DIG FÖR MEDLEMSKAP",
+        "image-alt": "en kvinna knyter sin sko"
+    },
+    "reviews": {
+        "heading": "RECENSIONER",
+        "info-1": {
+            "content": "Jag älskar att se spåraren och min framsteg!",
+            "name": "Cole",
+            "city": "Kansas City"
+        },
+        "info-2": {
+            "content": "Jag är svag för gratis saker, så att få en gratis video varje 5 dagar i rad jag avslutar har varit fantastiskt! Det motiverar mig att röra på kroppen :)",
+            "name": "Hannah",
+            "city": "Pennsylvania"
+        }
+    },
+    "trainers": {
+        "heading": "Tränare",
+        "names": {
+            "one": "Natasha",
+            "two": "Chloe",
+            "three": "Taylor",
+            "four": "Rich",
+            "five": "Natasha",
+            "six": "Chloe"
+        }
+    },
+    "footer": {
+        "contact": "Kontakta oss",
+        "privacy": "Integritet & Kakor Inställning",
+        "about": "Om oss",
+        "languageSelector": {
+            "language": "Språk",
+            "english": "Engelska",
+            "swedish": "Svenska"
+        }
+    },
+    "about": {
+        "heading": "Om oss",
+        "article-1": {
+            "subHeading": "Grundat av upptagna kvinnor",
+            "image-alt": "en kvinna som glad håller ett barn som sitter på en soffa",
+            "text": "Våra grundare Emmy och Carina var mödrar, arbetare och partners. De kämpade med att hitta tid för att balansera allt medan de tog hand om sig själva. De testade varje träningsapp men kunde inte hitta träningspass tillräckligt korta för deras upptagna schema."
+        },
+        "article-2": {
+            "subHeading": "som bryr sig om din hälsa",
+            "image-alt": "en hjärtformad skål med olika bär",
+            "text": "Att röra på din kropp minskar risken för sjukdom. När du håller dig konsekvent, oavsett tidpunkt, är hälsofördelarna enorma. Vi uppmanar dig att läsa några av de studier som vi har tillhandahållit. Klicka på 'läs mer' för att se artiklarna."
+        },
+        "article-3": {
+            "subHeading": "åtkomst till träning oavsett budget",
+            "image-alt": "en person som gör yoga vid solnedgången",
+            "text": "Vi tror att alla borde ha möjlighet att följa sina träningsmål. Vi erbjuder olika prisnivåer, varierande från 0 till 75 USD. Hälsoklyftan blir större mellan de fattiga och de rika. Så vi vill erbjuda en lyxig plats för människor från olika ekonomiska bakgrunder. Du är välkommen här!"
+        },        
+        "read": "läs mer"
+    },
+    "contact": {
+        "heading": "Kontakta oss",
+        "intro": "Har du fler frågor eller feedback? Skicka oss ett meddelande!",
+        "name": "namn",
+        "email": "e-post",
+        "message": "meddelande",
+        "send": "skicka",
+        "image-alt": "en person som arbetar på en bärbar dator"
+    }, 
+    "soMe": {
+        "heading": "Sociala medier"
+    }
+}

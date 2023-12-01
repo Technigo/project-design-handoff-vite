@@ -1,0 +1,162 @@
+{
+    "mobileNav": {
+        "logo": {
+            "alt": "At Home Fitness logo"
+        },
+        "hamburgerMenu": {
+            "login": "LOG IN",
+            "about": "ABOUT US",
+            "membershipPlans": "MEMBERSHIP PLANS",
+            "contact": "CONTACT US"
+        }
+    },
+    "desktopNav": {
+        "logo": {
+            "alt": "At Home Fitness logo"
+        },
+        "videos": "VIDEOS",
+        "plans":"WORKOUT PLANS",
+        "tracker": "TRACKER",
+        "fav": "FAVOURITES",
+        "search": "SEARCH"
+    },
+    "heroSection": {
+        "image": {
+            "alt": "a woman stretching her leg"
+        },
+        "title": "AT HOME FITNESS",
+        "motto": "Helping you move in your comfort zone"
+    },
+    "workout": {
+        "heading": "workout",
+        "subHeadings": {
+            "cardio": "Cardio", 
+            "hiit": "HIIT", 
+            "yoga": "Yoga", 
+            "glutes": "Glutes", 
+            "back": "Back", 
+            "arms": "Arms", 
+            "zumba": "Zumba", 
+            "stretch": "Stretch"
+        }   
+       ,
+        "videoTexts": {
+            "one": {
+                "title": "HIIT",
+                "length": "10 min"
+            },
+            "two": {
+                "title": "Low impact cardio",
+                "length": "15 min"
+            },
+            "three": {
+                "title": "Band resistance",
+                "length": "7 min"
+            },
+            "four": {
+                "title": "Glute builder",
+                "length": "20 min"
+            },
+            "five": {
+                "title": "HIIT",
+                "length": "10 min"
+            },
+            "six": {
+                "title": "Low impact cardio",
+                "length": "15 min"
+            }
+        }             
+    },
+    "workoutPlans": {
+        "heading": "Workout plans",
+        "subHeadings": {
+            "one": "2 days a week", 
+            "two": "3 days a week", 
+            "three": "4 days a week", 
+            "four": "Arms", 
+            "five": "Back"
+        },
+        "planTexts": {
+            "one": "Glute builder", 
+            "two": "Flexibility", 
+            "three": "Strength", 
+            "four": "Glute builder",
+            "five": "Strength",
+            "six": "Flexibility"
+        }
+            
+    },
+    "membership": {
+        "title": "Sign up for a membership to unlock your full potential",
+        "text-1": "get workout plans tailored to you",
+        "text-2": "unlimited access to library",
+        "text-3": "access to live trainers",
+        "button": "SIGN UP FOR MEMBERSHIP", 
+        "image-alt": "a woman tying her shoe"
+    },
+    "reviews": {
+        "heading": "Reviews",
+        "info-1": {
+            "content": "I love seeing the tracker and my progress!",
+            "name": "Cole",
+            "city": "Kansas City"
+        },
+        "info-2": {
+            "content": "I am a sucker for free things so getting a free video every 5 days in a row I complete has been awesome! It motivates me to move my body :)",
+            "name": "Hannah",
+            "city": "Pennsylvania"
+        }
+    },
+    "trainers": {
+        "heading": "Trainers",
+        "names": {
+            "one": "Natasha",
+            "two": "Chloe",
+            "three": "Taylor",
+            "four": "Rich",
+            "five": "Natasha",
+            "six": "Chloe"
+        }
+    },
+    "footer": {
+        "contact": "Contact us",
+        "privacy": "Privacy & Cookies Setting",
+        "about": "About us",
+        "languageSelector": {
+            "language": "Language",
+            "english": "English",
+            "swedish": "Swedish"
+        }
+    },
+    "about": {
+        "heading": "About us",
+        "article-1": {
+            "subHeading": "founded by busy women",
+            "image-alt": "a woman happily holding a child sitting on a couch",
+            "text": "Our founders Emmy and Carina were mothers, workers, and partners. They were struggling to find time to balance everything while taking care of themselves. They tried every fitness app and were unable to find workouts short enough for their busy schedule."
+        },
+        "article-2": {
+            "subHeading": "who care about your health",
+            "image-alt": "a heart-shaped bowl of different berries",
+            "text": "Moving your body  helps decrease your morbidity. When you stay consistent not matter the time, the benefits for your health are enormous. We encourage you to read some studies that we have provided. Click read more to see the articles."
+        },
+        "article-3": {
+            "subHeading": "access fitness no matter the budget",
+            "image-alt": "a person doing yoga at sunset",
+            "text": "We believe that everyone should have the opportunity to pursue their fitness goals. We had different price ranges. Ranging from $0 to $75. The health disparity is becoming greater between the poor and rich. So we want to provide a luxurious space for people coming from different economic backgrounds. You are welcome here!"
+        },
+        "read": "read more"
+    },
+    "contact": {
+        "heading": "Contact us",
+        "intro": "Have more questions or feedback? Message us!",
+        "name": "name",
+        "email": "email",
+        "message": "message",
+        "send": "send",
+        "image-alt": "a person working on a laptop"
+    }, 
+    "soMe": {
+        "heading": "Social media"
+    }      
+}
