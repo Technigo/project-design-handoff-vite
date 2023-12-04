@@ -82,5 +82,13 @@
         "carousel": "Bildkarusell insta",
         "logoAlt": "Instagram",
         "connectButton": "Anslut på Instagram"
+    },
+    "navbar": {
+        "schedule": "SCHEMA",
+        "classes": "KLASSER",
+        "prices": "PRISER",
+        "about": "OM OSS",
+        "contact": "KONTAKT",
+        "login": "LOGGA IN"
     }
 }

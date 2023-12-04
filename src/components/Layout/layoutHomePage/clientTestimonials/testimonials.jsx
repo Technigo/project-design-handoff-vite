@@ -20,7 +20,7 @@ export const Testimonials = () => {
                     header={t('testimonials.subHeader')}
                     type="H2"
                     style={{ color: '#1D1C25', fontWeight: 500 }}
-                    className={style.testimonialsSubHeader}
+                    className={style.testimonialsKindWords}
                 />
                 <div className={style.firstTestimonialWrap}>
                     <div className={style.imgWrap}>

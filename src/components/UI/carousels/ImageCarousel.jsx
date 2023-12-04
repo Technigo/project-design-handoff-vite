@@ -8,7 +8,7 @@ export const CardCourseCarousel = ({ children }) => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth >= 1024) {
+            if (window.innerWidth >= 1028) {
                 setSlidesToShow(3);
             } else if (window.innerWidth >= 768) {
                 setSlidesToShow(2);

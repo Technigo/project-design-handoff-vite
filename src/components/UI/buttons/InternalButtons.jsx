@@ -1,11 +1,14 @@
 import { Link } from 'react-router-dom';
-import { StyledButton } from './StyledButton';
+import { StyledButton } from './StyledButtons';
 
-export const InternalButton = ({ to, children }) => {
+//...props
+export const InternalButton = ({ to, children, ...props }) => {
     return (
         <Link to={to} style={{ textDecoration: 'none' }}>
-            <StyledButton>{children}</StyledButton>
+            <StyledButton {...props}>{children}</StyledButton>
         </Link>
     );
 };
+
 //button for internal use/routes - About. 
+

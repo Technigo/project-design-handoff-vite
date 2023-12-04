@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import style from './Navbar.module.css';
 
 export const Navbar = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
     const navRef = useRef(null);
+    const { t } = useTranslation();
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -44,17 +46,28 @@ export const Navbar = () => {
             </div>
             <div className={`${style.navLinks} ${isNavExpanded ? style.active : ''}`}>
                 <svg className={style.navSvgBackground} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 305 532" preserveAspectRatio="none">
-                    <path d="M0 0C236.904 17.8123 -128.96 532 305 532V0H0Z" stroke="#FFD075" stroke-width="0.3" fill="#612E77" />
+                    <path d="M0 0C236.904 17.8123 -128.96 532 305 532V0H0Z" fill="#612E77" />
                 </svg>
-                <NavLink className={style.navLink}>{/*to="/SCHEDULE" onClick={() => setIsNavExpanded(false)*/}SCHEDULE</NavLink>
-                <NavLink to="/classes" className={style.navLink} onClick={() => setIsNavExpanded(false)}>CLASSES</NavLink>
-                <NavLink className={style.navLink}>PRICES</NavLink>
-                <NavLink className={style.navLink}>ABOUT</NavLink>
-                <NavLink className={style.navLink}>CONTACT</NavLink>
-                <NavLink className={style.navLink}>LOG IN</NavLink>
+                <NavLink to="/schedule" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
+                    {t('navbar.schedule')}
+                </NavLink>
+                <NavLink to="/classes" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
+                    {t('navbar.classes')}
+                </NavLink>
+                <NavLink to="/prices" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
+                    {t('navbar.prices')}
+                </NavLink>
+                <NavLink to="/about" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
+                    {t('navbar.about')}
+                </NavLink>
+                <NavLink to="/contact" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
+                    {t('navbar.contact')}
+                </NavLink>
+                <NavLink to="/login" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
+                    {t('navbar.login')}
+                </NavLink>
             </div>
-
-        </nav >
+        </nav>
     );
 };
 

@@ -16,7 +16,16 @@ export const FindUs = () => {
         setShowDropdown(false);
     };
 
-
+    const getFlagIcon = (language) => {
+        switch (language) {
+            case 'en':
+                return "/Images/united-kingdom.png"; // Path to your English flag image
+            case 'se':
+                return "/Images/sweden-flag.png"; // Path to your Swedish flag image
+            default:
+                return "/Images/default-flag.png"; // Path to a default flag image if needed
+        }
+    };
     return (
         <div className={style.background}>
             <section className={style.wrapper}>
@@ -46,17 +55,30 @@ export const FindUs = () => {
                     <Text header={t('findUs.email')} type="bodyText" />
                 </div>
                 <div className={style.languageSelector}>
+
+
                     <div className={style.dropdown}>
                         <button onClick={() => setShowDropdown(!showDropdown)} className={style.dropbtn}>
+                            <img
+                                src={getFlagIcon(i18n.language)}
+                                alt={t('findUs.languages.' + i18n.language)}
+                                className={style.icon}
+                            />
                             {t('findUs.languages.' + i18n.language)}
                         </button>
                         {showDropdown && (
                             <div className={style.dropdownContent}>
                                 {i18n.language !== 'en' && (
-                                    <span onClick={() => changeLanguage('en')}>{t('findUs.languages.en')}</span>
+                                    <span onClick={() => changeLanguage('en')}>
+                                        <img src="/Images/united-kingdom.png" alt="UK Flag" className={style.icon} />
+                                        {t('findUs.languages.en')}
+                                    </span>
                                 )}
                                 {i18n.language !== 'se' && (
-                                    <span onClick={() => changeLanguage('se')}>{t('findUs.languages.se')}</span>
+                                    <span onClick={() => changeLanguage('se')}>
+                                        <img src="/Images/sweden-flag.png" alt="Sweden Flag" className={style.icon} />
+                                        {t('findUs.languages.se')}
+                                    </span>
                                 )}
                             </div>
                         )}

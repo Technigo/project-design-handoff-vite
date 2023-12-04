@@ -95,10 +95,11 @@
 .bar {
     display: block;
     width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    height: 1px;
+    margin: 7px auto;
     background-color: #FFD075;
     transition: all 0.3s ease;
+    border-radius: 10px;
 }
 
 .navLinks.active {
@@ -142,24 +143,53 @@
 
 
 /* iPad Pro 11" */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1028px) {
+    .navBlackSvgBackground {
+        position: absolute;
+        transform: translateY(-20%);
+        width: 110%;
+        z-index: 0;
+
+    }
+
+    .menuIcon {
+        padding-top: 35px;
+        padding-right: 35px;
+    }
+
+    .navLink {
+        top: 8vh;
+        left: 88%;
+    }
+
     .navSvgBackground {
         position: absolute;
-        top: 0;
+        top: 0vh;
         right: 0;
-        width: 55%;
+        width: 38%;
         height: auto;
         z-index: 0;
     }
 
-    .navLink {
+    .bar {
+        display: block;
+        width: 41px;
+        height: 2px;
+        margin: 9px auto;
+        background-color: #FFD075;
+        transition: all 0.3s ease;
+    }
 
-        left: 75%;
-
+    .logo {
+        margin-top: 20px;
     }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1028px) {
+    .navBlackSvgBackground {
+        transform: translateY(-20%);
+    }
+
     .imgsWrapper {
         display: flex;
         position: static;

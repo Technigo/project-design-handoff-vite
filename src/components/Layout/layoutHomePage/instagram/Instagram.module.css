@@ -38,7 +38,7 @@
 }
 
 /* iPad Pro 11" */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1028px) {
 
     .wrapper {
         padding: 50px 41px 40px 41px;
@@ -52,7 +52,7 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1028px) {
     .background {
         height: fit-content;
     }

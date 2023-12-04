@@ -52,6 +52,16 @@
 }
 
 /***********DROPDOWN***************/
+.icon {
+    height: 20px;
+    /* Example size, adjust as needed */
+    width: auto;
+    margin-right: 5px;
+    /* Space between icon and text */
+    vertical-align: middle;
+    /* Align with text */
+}
+
 .dropdown {
     position: relative;
     display: inline-block;
@@ -116,26 +126,22 @@
 
 
 /* iPad Pro 11" */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1028px) {
     .background {
         height: fit-content;
     }
 
     .wrapper {
-        padding: 50px 64px 40px 64px;
+        padding: 50px 64px 60px 64px;
         gap: 30px;
     }
 
     .mapContainer {
         padding-bottom: 60%;
     }
-
-    .translationBox {
-        margin-bottom: 30px;
-    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1028px) {
 
     .background {
         height: fit-content;
@@ -159,7 +165,7 @@
         grid-area: LocationMap;
         position: relative;
         overflow: hidden;
-        /* No idea why only this works*/
+        /* No idea why only this works for keeping the map sized correctly*/
         padding-bottom: calc(539 / 1440 * 100vw);
         height: 0;
         max-width: auto;

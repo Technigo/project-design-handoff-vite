@@ -68,7 +68,8 @@
 }
 
 /* iPad Pro 11" */
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1028px) {
+
     .carouselContainer {
         display: flex;
         flex-wrap: nowrap;
@@ -78,6 +79,7 @@
         transition: transform 0.5s ease-out;
     }
 
+
     .carouselSlide {
         flex: 0 0 auto;
         width: 50%;
@@ -85,13 +87,13 @@
         box-sizing: border-box;
     }
 
+
     .carouselButton {
         display: block;
         position: absolute;
         top: 30%;
         transform: translateY(-50%);
-        z-index: 10;
-
+        z-index: 50;
     }
 
     .carouselButton img {
@@ -114,7 +116,7 @@
 
 
 /* MacBook Air */
-@media (min-width: 1024px) {
+@media (min-width: 1028px) {
 
     .carouselContainer {
         display: grid;
@@ -124,14 +126,10 @@
 
     .carouselSlide {
         display: flex;
-        /* Changed to flex to use justify-content and align-items */
         justify-content: center;
-        /* Centers content horizontally */
         align-items: center;
-        /* Centers content vertically */
         width: 348px;
         margin: auto;
-        /* Centers the card within the grid */
         text-align: left;
     }
 

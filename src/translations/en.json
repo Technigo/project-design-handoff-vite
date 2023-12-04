@@ -82,5 +82,13 @@
         "carousel": "Image carousel insta",
         "logoAlt": "Instagram",
         "connectButton": "Connect on Instagram"
+    },
+    "navbar": {
+        "schedule": "SCHEDULE",
+        "classes": "CLASSES",
+        "prices": "PRICES",
+        "about": "ABOUT",
+        "contact": "CONTACT",
+        "login": "LOG IN"
     }
 }

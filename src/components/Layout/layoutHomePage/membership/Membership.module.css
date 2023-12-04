@@ -51,13 +51,13 @@
     padding-bottom: 19px;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 767px) and (max-width: 1028px) {
     .wrapper {
         padding: 50px 157px 40px 157px;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1028px) {
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
