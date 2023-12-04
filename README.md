@@ -37,7 +37,7 @@ If I had more time I would've liked to follow the design exactly as the UX desig
 ### View it live
 
 Here is the deployed link:
-https://hundred-pilates-amanda.netlify.app/about
+https://hundred-pilates-amanda.netlify.app/
 
 You can find the Figma sketch here:
 https://www.figma.com/file/GUmcjzQgGGQz7PUNkQD9uN/Designer-Developer-Handover-Nathalie?node-id=1%3A3&mode=dev
