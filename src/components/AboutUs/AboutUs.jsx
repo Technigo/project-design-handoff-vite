@@ -14,7 +14,7 @@ export const AboutUs = () => {
                 <h1>{t('AboutUs.heading')}</h1>
                 <p>{t('AboutUs.description')}</p>
                 <Link to="/about">
-                    <button className="yellowButton">{t('AboutUs.button')}</button>
+                    <button className="yellowButton">{t('AboutUs.buttonText')}</button>
                 </Link>
             </div>
             <div className="rightColumn">

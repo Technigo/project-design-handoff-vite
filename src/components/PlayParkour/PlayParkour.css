@@ -2,8 +2,10 @@
     position: relative;
     overflow: hidden;
     padding-top: 20px; 
-    padding-left: 20px;
-    padding-bottom: 150px;
+    padding-left: 40px;
+    padding-right: 20px;
+   height: 250px;
+   width: auto;
 }
 
 .playparkour-wrapper::before {
@@ -29,8 +31,9 @@
 }
 
 .playparkour-wrapper p {
+    width: 50%;
     color: var(--color-purple);
-    font-size: 0.7rem;
+    font-size: 16px;
     
 }
 
@@ -38,37 +41,47 @@
     padding: 10px 20px;
     background-color: var(--color-yellow);
     border: none;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     color: var(--color-purple);
 
 }
-
-
-
-@media (min-width: 700px) and (max-width: 1200px) {
-
+/* Media query for screens between 600px and 900px */
+  
+@media (min-width: 601px) and (max-width: 900px) {
 .playparkour-wrapper {
-   
+    height: 380px;
 }    
+
 .playparkour-wrapper h1 {
-    font-size: 1rem;
+    font-size: 35px;
 }
 
 .playparkour-wrapper p {
-    font-size: 1rem;
+    font-size: 21px;
+    width: 63%;
+}
+
+.playParkourButton {
+font-size: 20px;
+}
+}
+
+/* Media query for screens between 600px and 900px */
+
+@media (min-width: 601px) and (max-width: 900px) {
+    
+}
+
+/* Media query for screens between 900px and 1200px */
+
+@media (min-width: 901px) and (max-width: 1200px) {
    
 }
- 
-.playParkourButton {
-    font-size: 2rem;
-}
 
- }
-
-
+/* Media query for screens above 1200px */
 
 @media (min-width: 1201px) {
    

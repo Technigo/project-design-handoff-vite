@@ -1,7 +1,6 @@
 .howto-wrapper {
     background-color: var(--color-blue-opacity-60);
     padding: 10px;
-    text-align: center; 
     height: 250px;
     display: flex;
    flex-direction: column;
@@ -10,29 +9,26 @@
 }
 
 .howto-wrapper h1 {
+    color: #6A4093;
     font-size: 1.2rem;
     margin: 0;
-    padding: 20px;
-    margin-bottom: 10px;
+    padding: 30px;
 }
 
 .images-wrapper {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: start;
     box-sizing: border-box;
-   gap: 10px;
+   gap: 25px;
    height: 150px;
    max-width: 580px;
 }
 
-.tall-image {
-   margin-top: -8px;
-}
 
 .image-container img {
-    width: 100%; 
-    height: 100px;
+  height: 100px;
+  width: 100px;
     display: block; 
    object-fit: cover;
    object-position: center;
@@ -40,6 +36,44 @@
 }
 
 .image-container p {
+    color: #6A4093;
+    font-size: 11px;
     font-weight: bold;
 }
 
+ a {
+  text-decoration: none;  
+}
+
+/* Media query for screens between 600px and 900px */
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .howto-wrapper {
+        height: 400px;
+    }
+
+    .howto-wrapper h1 {
+        font-size: 25px;
+        padding: 40px;
+    }
+    .image-container img {
+        height: 160px;
+        width: 180px;
+    }
+    .image-container p {
+        font-size: 12px;
+    }
+}
+
+/* Media query for screens between 900px and 1200px */
+
+@media (min-width: 901px) and (max-width: 1200px) {
+   
+}
+
+/* Media query for screens above 1200px */
+
+@media (min-width: 1201px) {
+   
+
+}

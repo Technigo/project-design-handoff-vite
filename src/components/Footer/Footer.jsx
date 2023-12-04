@@ -23,11 +23,12 @@ export const Footer = () => {
                     <Link to="/about">{t('Footer.link2')}</Link>
                     <Link to="/about">{t('Footer.link3')}</Link>
                     <Link to="/about">{t('Footer.link4')}</Link>
-                </div>
+                    </div>
                 <div className="flags-container">
                 <img src={EnglishFlag} alt="English Flag" className="flag-icon" onClick={() => changeLanguage('en')} />
                     <img src={SwedishFlag} alt="Swedish Flag" className="flag-icon" onClick={() => changeLanguage('sv')} />
                 </div>
+              
             </div>
         </div>
     )

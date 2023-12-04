@@ -18,7 +18,7 @@ const resources = {
             },
 
             HowToPlay: {
-                heading: "How to Play Parkour",
+                heading: "How to Play Parkour?",
                 point1: "Play with friends",
                 point2: "Play with your children",
                 point3: "Play with class coach"
@@ -63,7 +63,8 @@ const resources = {
 
             AboutUs: {
                 heading: "About us",
-                description: "It started with grandma and Nestor, 9 years old, being bored on their way home from school. Then came AuntieParkour, and today Play Parkour offers parkour Programs and classes for all ages."
+                description: "It started with grandma and Nestor, 9 years old, being bored on their way home from school. Then came AuntieParkour, and today Play Parkour offers parkour Programs and classes for all ages.",
+                buttonText: "About Play Parkour"
             },
 
             VisionAndGoal: {
@@ -98,7 +99,7 @@ const resources = {
             },
 
             HowToPlay: {
-                heading: "Hur man spelar Parkour",
+                heading: "Hur man spelar Parkour?",
                 point1: "Spela med vänner",
                 point2: "Spela med dina barn",
                 point3: "Spela med träningscoach"
@@ -144,7 +145,8 @@ const resources = {
 
             AboutUs: {
                 heading: "Om oss",
-                description: "Det började med mormor och Nestor, 9 år gammal, som var uttråkade på väg hem från skolan. Sedan kom Tant Parkour, och idag erbjuder Play Parkour parkour-program och lektioner för alla åldrar."
+                description: "Det började med mormor och Nestor, 9 år gammal, som var uttråkade på väg hem från skolan. Sedan kom Tant Parkour, och idag erbjuder Play Parkour parkour-program och lektioner för alla åldrar.",
+                buttonText: "Om Play Parkour"
             },
 
             VisionAndGoal: {

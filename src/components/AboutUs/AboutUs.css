@@ -10,7 +10,9 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 20px;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .rightColumn {
@@ -23,19 +25,20 @@
 .leftColumn h1 {
     margin: 0;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 20px;
     color: var(--color-purple);
 }
 
 .leftColumn p {
     color: black !important;
+    font-size: 12px;
 }
 
 .yellowButton {
     padding: 10px 20px;
     background-color: var(--color-yellow);
     border: none;
-    font-size: 10px;
+    font-size: 12px;
     border-radius: 20px;
     cursor: pointer;
     color: var(--color-purple);
@@ -47,23 +50,38 @@
 }
 
 .roundImage {
-    width: 133px;
-    height: 133px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-  /* Media query for screens up to 600px */
-
-  @media (max-width: 600px) {
-   
-  }
+ 
   
   /* Media query for screens between 600px and 900px */
   
   @media (min-width: 601px) and (max-width: 900px) {
-      
-  }
+    
+    .leftColumn h1 {
+        font-size: 25px;
+    }
+
+    .leftColumn p {
+        font-size: 18px;
+    }
+    .yellowButton {
+       font-size: 16px;
+       padding: 20px;
+       border-radius: 40px;
+       padding-left: 50px;
+       padding-right: 60px
+    }
+    .roundImage {
+        height: 200px;
+        width: 210px;
+        border-radius: 80px;
+    }
+ }
   
   /* Media query for screens between 900px and 1200px */
   
