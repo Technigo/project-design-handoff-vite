@@ -88,11 +88,6 @@ input[type="checkbox"] {
     color: grey;
 }
 
-  /* Media query for screens up to 600px */
-
-  @media (max-width: 600px) {
-   
-  }
   
   /* Media query for screens between 600px and 900px */
   

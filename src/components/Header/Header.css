@@ -53,27 +53,88 @@ height: 35px;
     border-bottom: none;
   }
   
-    /* Media query for screens up to 600px */
+  .header-links {
+    display: none;
+  }  
 
-@media (max-width: 600px) {
-   
+  .play-parkour-link {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .down-arrow-icon {
+    width: 20px; 
+    margin-bottom: -5px;
+    margin-left: -5px;
+  }
+  
+  .parkour-dropdown {
+    position: absolute;
+    display: none;
+  }
+  
+  .parkour-dropdown a {
+    display: block;
+  }
+  /* Show the dropdown when hovering over the link */
+.play-parkour-link:hover .parkour-dropdown {
+  display: block; 
 }
 
-/* Media query for screens between 600px and 900px */
-
-@media (min-width: 601px) and (max-width: 900px) {
-    
+.language-dropdown {
+  position: relative;
+  cursor: pointer;
 }
+
+.language-dropdown span {
+  display: block;
+}
+
+.language-options {
+  display: none;
+  position: absolute;
+}
+
+.language-dropdown:hover .language-options {
+  display: block;
+}
+
 
 /* Media query for screens between 900px and 1200px */
 
-@media (min-width: 901px) and (max-width: 1200px) {
-   
+@media (min-width: 901px)  {
+   .header-wrapper {
+    padding-top: 5px;
+    padding-left: 70px;
+    padding-bottom: 5px;
+   }
+  .logo {
+    height: 130px;
+   }
+  .header-links {
+    display: flex; 
+    align-items: center; 
+    gap: 30px;
+    margin-top: 50px;
+    font-size: 14px;
+  }
+
+  .header-links a {
+    color: black;
+  }
+
+  .header-icon { /* Hide the hamburger icon on larger screens */
+    display: none;
+  }
+
+  .join-us-button {
+    font-size: 12px;
+    background-color: var(--color-yellow);
+   border-radius: 5px;
+   padding-left: 15px;
+   padding-right: 20px;
+   padding-top: 2px;
+   padding-bottom: 2px;
+  }
 }
 
-/* Media query for screens above 1200px */
-
-@media (min-width: 1201px) {
-   
-
-}

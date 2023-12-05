@@ -4,6 +4,13 @@ import { initReactI18next } from "react-i18next";
 const resources = {
     en: {
         translation: {
+            Header: {
+                link1: "About us",
+                link2: "Play Parkour",
+                link3: "Classes",
+                link4: "Prices",
+                link5: "Join Us"
+               },
             Footer: {
                 link1: "About us",
                 link2: "Play Parkour",
@@ -85,6 +92,13 @@ const resources = {
     },
     sv: {
         translation: {
+            Header: {
+               link1: "Om oss",
+               link2: "Spela Parkour",
+               link3: "Klasser",
+               link4: "Priser",
+               link5: "Bli medlem"
+            },
             Footer: {
                 link1: "Om oss",
                 link2: "Spela Parkour",
