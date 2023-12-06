@@ -20,11 +20,10 @@
     justify-content: center;
     align-items: start;
     box-sizing: border-box;
-   gap: 25px;
-   height: 150px;
-   max-width: 580px;
+   gap: 20px;
+   height: auto;
+   max-width: 100%;
 }
-
 
 .image-container img {
   height: 100px;
@@ -39,6 +38,7 @@
     color: #6A4093;
     font-size: 11px;
     font-weight: bold;
+    width: 100px;
 }
 
  a {
@@ -62,13 +62,31 @@
     }
     .image-container p {
         font-size: 12px;
+        width: 180px;
     }
 }
 
 /* Media query for screens between 900px and 1200px */
 
 @media (min-width: 901px) and (max-width: 1200px) {
-   
+    .howto-wrapper {
+        height: 370px;
+    }
+    .howto-wrapper h1 {
+    font-size: 25px;
+   }
+   .image-container img {
+    width: 220px;
+    height: 200px;
+   }
+   .image-container p {
+    font-size: 14px;
+   text-align: center;
+    width: 220px;
+   }
+   .images-wrapper {
+    gap: 80px
+   }
 }
 
 /* Media query for screens above 1200px */

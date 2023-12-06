@@ -59,35 +59,42 @@
 }
 
 .icon-text p {
-    width: 60%;
+    width: 63%;
     color: black;
     position: absolute;
     top: 40%; 
     left: 50%;  
     transform: translate(-50%, -50%); 
     font-weight: bold; 
-    font-size: 9px; 
-    z-index: 1; 
-   
-    
+    font-size: 12px; 
+    z-index: 1;  
 }
 
-  
-  /* Media query for screens between 600px and 900px */
-  
-  @media (min-width: 601px) and (max-width: 900px) {
-    .icon-text p {
-     font-size: 1rem;
-    }
-      
+  .icon-top-row {
+    display: flex;
+    flex-direction: row;
   }
+  .icon-bottom-row {
+    display: flex;
+    flex-direction: row;
+  }
+  
   
   /* Media query for screens between 900px and 1200px */
   
-  @media (min-width: 901px) and (max-width: 1200px) {
+  @media (min-width: 901px)  {
     .icon-text p {
-      font-size: 1rem;
+      font-size: 0,9rem;
      }
+
+    .icon-text {
+      width: 280px;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    } 
+
   }
   
   /* Media query for screens above 1200px */

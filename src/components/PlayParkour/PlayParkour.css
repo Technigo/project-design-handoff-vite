@@ -48,6 +48,11 @@
     color: var(--color-purple);
 
 }
+
+.top-image {
+    display: none;
+}
+
 /* Media query for screens between 600px and 900px */
   
 @media (min-width: 601px) and (max-width: 900px) {
@@ -115,6 +120,7 @@ font-size: 20px;
     }
 
     .playparkour-wrapper .top-image {
+        display: inline;
         position: absolute;
         top: 50%; 
         left: 70%;
