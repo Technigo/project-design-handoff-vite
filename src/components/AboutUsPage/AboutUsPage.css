@@ -4,6 +4,7 @@
 
 .vision-img {
     width: 100%;
+    max-height: 600px;
 }
 
 .vision-text {
@@ -16,6 +17,7 @@
 
 .story-img {
     width: 100%;
+    max-height: 600px;
 }
 
 .story-text {
@@ -78,6 +80,7 @@ input[type="checkbox"] {
     background-color: black;  /* Example color; adjust as needed */
     color: white;
     cursor: pointer;
+    margin-bottom: 50px;
 }
 
 .contact-form button:hover {
@@ -88,22 +91,39 @@ input[type="checkbox"] {
     color: grey;
 }
 
+.contact-form h2 {
+    text-align: center;
+}
+/* Media query for screens between 900px and 1200px */
   
-  /* Media query for screens between 600px and 900px */
-  
-  @media (min-width: 601px) and (max-width: 900px) {
-      
-  }
+@media (min-width: 601px) and (max-width: 900px) {
+    .vision-text {
+        padding: 50px;
+     }
+
+     .story-text {
+        padding: 50px;
+     }
+     .contact-form {
+        padding-left: 50px;
+        padding-right: 50px;
+     }
+}
   
   /* Media query for screens between 900px and 1200px */
   
-  @media (min-width: 901px) and (max-width: 1200px) {
-     
+  @media (min-width: 901px) {
+     .vision-text {
+        padding: 100px;
+     }
+
+     .story-text {
+        padding: 100px;
+     }
+     .contact-form {
+        padding-left: 200px;
+        padding-right: 200px;
+     }
   }
   
-  /* Media query for screens above 1200px */
   
-  @media (min-width: 1201px) {
-     
-  
-  }

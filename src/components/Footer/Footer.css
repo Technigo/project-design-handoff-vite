@@ -31,18 +31,18 @@
 
 .flags-container {
     display: flex;
-    justify-content: center;  /* Horizontally centers the flag icons */
-    align-items: center;      /* Vertically centers the flag icons */
-    margin-top: 20px;         /* Add spacing above the flags, adjust as needed */
+    justify-content: center;  
+    align-items: center;      
+    margin-top: 20px;       
 }
 
 .flag-icon {
-    width: 20px;              /* Or whatever size you want */
+    width: 20px;             
     height: 20px;
-    border-radius: 50%;      /* Makes the image round */
-    margin: 0 10px;          /* Adds some space between the images */
-    object-fit: cover;       /* Ensures the image scales correctly */
-    cursor: pointer;         /* Makes it clear they can be interacted with */
+    border-radius: 50%;     
+    margin: 0 10px;         
+    object-fit: cover;       
+    cursor: pointer;       
 }
 
 .flag-icon:hover {
@@ -81,10 +81,27 @@
   
   /* Media query for screens between 900px and 1200px */
   
-  @media (min-width: 901px) and (max-width: 1200px) {
-     
-  }
-  
+  @media (min-width: 901px)  {
+     .logo-container {
+        width: 80%;
+     }
+
+     .footer-links {
+        font-size: 15px;
+        gap: 80px;
+     }
+     .footer-logo {
+        width: 100px;
+     }
+     .footer-wrapper {
+        padding: 10px;
+     }
+     .flags-container {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: -10px;
+     }
+    }
   /* Media query for screens above 1200px */
   
   @media (min-width: 1201px) {

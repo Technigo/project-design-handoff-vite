@@ -75,7 +75,7 @@ const resources = {
             },
 
             VisionAndGoal: {
-                heading: "About Play Parkour",
+                heading: "Our vision & Goal",
                 description: "Our Vision & Goal - Our vision is to create a world where everyone has the opportunity to experience the joy of parkour. We believe that parkour is more than just a sport; it’s a way of life. Our goal is to inspire people to push their limits, overcome obstacles, and achieve their full potential through the practice of parkour."
             },
 
@@ -164,7 +164,7 @@ const resources = {
             },
 
             VisionAndGoal: {
-                heading: "Om Play Parkour",
+                heading: "Våran vision & mål",
                 description: "Vår Vision & Mål - Vår vision är att skapa en värld där alla har möjlighet att uppleva glädjen med parkour. Vi tror att parkour är mer än bara en sport; det är ett sätt att leva. Vårt mål är att inspirera människor att pusha sina gränser, övervinna hinder och uppnå sin fulla potential genom att praktisera parkour."
             },
 

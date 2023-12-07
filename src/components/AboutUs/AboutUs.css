@@ -2,6 +2,7 @@
     display: flex;
     background-color: var(--color-blue-opacity-60);
     padding: 20px;
+    flex-direction: row;
 }
 
 .leftColumn {
@@ -85,12 +86,15 @@
     }
  }
   
+
+
   /* Media query for screens between 900px and 1200px */
   
-  @media (min-width: 901px) and (max-width: 1200px) {
+  @media (min-width: 901px) {
     .aboutUsContainer {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
 
     .leftColumn, .rightColumn {
@@ -98,38 +102,46 @@
     }
 
     .rightColumn {
-        order: 2; /* Move images below the paragraph */
+        order: 2; 
     }
 
     .leftColumn {
-        order: 1; /* Ensure textual content is first */
+        order: 1; 
+        width: 800px;
+    }
+
+    .leftColumn h1 {
+        font-size: 25px;
     }
     
     .rightColumn {
-        /* Adjust flex layout to accommodate more images */
-        flex-wrap: wrap; 
-        justify-content: space-around; /* Adjust as needed */
+        gap: 50px;
+        flex-wrap: wrap;   
     }
 
     .additionalImage {
-        display: block; /* Show additional images */
-        width: 130px; /* Adjust size as needed */
+        display: block; 
+        width: 130px;
         height: 130px;
         object-fit: cover;
-        margin: 10px; /* Add some space between images */
+        margin: 10px;
     }
 
-    /* Adjustments for the primary image and other elements as needed */
     .roundImage {
-        width: 190px; /* Slightly larger primary image */
+        width: 190px; 
         height: 150px;
         border-radius: 60px;
     }
+
+    .yellowButton {
+        order: 3;
+        width: 100%;
+        margin-top: 20px; 
+        width: 800px;
+        padding: 10px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
   }
   
-  /* Media query for screens above 1200px */
   
-  @media (min-width: 1201px) {
-     
-  
-  }

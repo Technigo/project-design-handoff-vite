@@ -68,7 +68,7 @@
 
 /* Media query for screens between 900px and 1200px */
 
-@media (min-width: 901px) and (max-width: 1200px) {
+@media (min-width: 901px)  {
     .howto-wrapper {
         height: 370px;
     }
@@ -89,9 +89,3 @@
    }
 }
 
-/* Media query for screens above 1200px */
-
-@media (min-width: 1201px) {
-   
-
-}
