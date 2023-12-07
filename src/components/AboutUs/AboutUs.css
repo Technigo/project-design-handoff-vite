@@ -56,7 +56,9 @@
     object-fit: cover;
 }
 
- 
+.additionalImage {
+    display: none;
+}
   
   /* Media query for screens between 600px and 900px */
   
@@ -86,7 +88,43 @@
   /* Media query for screens between 900px and 1200px */
   
   @media (min-width: 901px) and (max-width: 1200px) {
-     
+    .aboutUsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftColumn, .rightColumn {
+        width: 100%;
+    }
+
+    .rightColumn {
+        order: 2; /* Move images below the paragraph */
+    }
+
+    .leftColumn {
+        order: 1; /* Ensure textual content is first */
+    }
+    
+    .rightColumn {
+        /* Adjust flex layout to accommodate more images */
+        flex-wrap: wrap; 
+        justify-content: space-around; /* Adjust as needed */
+    }
+
+    .additionalImage {
+        display: block; /* Show additional images */
+        width: 130px; /* Adjust size as needed */
+        height: 130px;
+        object-fit: cover;
+        margin: 10px; /* Add some space between images */
+    }
+
+    /* Adjustments for the primary image and other elements as needed */
+    .roundImage {
+        width: 190px; /* Slightly larger primary image */
+        height: 150px;
+        border-radius: 60px;
+    }
   }
   
   /* Media query for screens above 1200px */
