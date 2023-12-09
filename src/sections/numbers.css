@@ -1,0 +1,29 @@
+.grid-parent .numbers {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.numbers-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.number-number {
+    font-size: 50px;
+    color: var(--secondary-color);
+    font-family: Prompt;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    display: inline-block;
+}
+
+.number-text {
+    color: var(--background-color);
+    font-family: Prompt;
+    font-size: 14px;
+    font-style: italic;
+    display: inline-block;
+}

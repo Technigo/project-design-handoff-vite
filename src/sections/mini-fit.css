@@ -1,0 +1,36 @@
+.grid-parent .mini-fit {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    grid-column: 1/span 15;
+}
+.mini-fit h3 {
+    padding-left: 25px;
+    color: var(--font-color)
+}
+
+.mini-fit-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.mini-fit-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.mini-fit-pic {
+    width: 144px;
+    height: 144px;
+    object-fit: cover;
+
+}
+
+.mini-fit-caption {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

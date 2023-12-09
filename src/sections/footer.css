@@ -1,0 +1,48 @@
+.red .footer {
+    margin-top: 30px;  
+    position: relative; 
+    margin-bottom: 51.5px;
+}
+
+.footer-logo {
+    width: 116px;
+}
+
+.footer ul {
+    padding: 0;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer li {
+    list-style-type: none;
+}
+.footer a {
+    color: var(--font-color);
+    font-weight: 500;
+    padding-bottom: 5px;
+}
+.footer a:hover {
+    font-weight: 600;
+    color: var(--font-color);
+}
+.footer a:visited {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.social-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    gap: 24.5px;
+}
+.social-media {
+    height: 24.5px;
+    width: 24.5px;
+}
+.social-media:hover {
+    filter: invert(18%) sepia(28%) saturate(4991%) hue-rotate(187deg) brightness(93%) contrast(101%);
+}

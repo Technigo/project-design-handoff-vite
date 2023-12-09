@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+  top: 0;
+  min-height: 25px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+}
+
+.grid-parent {
+  display: grid;
+  grid-template-columns: 25px repeat(12, 1fr) 25px;
+  width: 100%;
+}
+
+.section {
+  grid-column: 2 / span 12;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+@media (min-width: 740px) {
+  .grid-parent {
+    grid-template-columns: 57px repeat(12, 1fr) 57px;
+  }
+}
