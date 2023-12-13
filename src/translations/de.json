@@ -1,5 +1,5 @@
 {
-  "welcome": "Welcome to our website",
+  "welcome": "Welcome to our website test",
   "text": "This sentence is here to test the translation.",
   "translatePage": {
     "heading": "Hello word",
@@ -8,30 +8,30 @@
   "homePage": {
     "header": {},
     "hero": {
-      "h1": "Wo Gelassenheit auf Spannung trifft!",
-      "p": "In unserem Yogastudio sind wir nicht der typische Brezel drehende, 'Om'-zaubernde Haufen. Bei uns dreht sich alles darum deine Yogareise mit einer großen Portion Spaß, einer Prise Verrücktheit und einem Haufen ZEN zu bereichern.",
-      "buttonJoy": "Jetzt anmelden",
-      "buttonRead": "Mehr lesen"
+      "h1": "Where <strong>Serenity</strong> Meets <strong>Stretch</strong>!",
+      "p": "At our yoga studio, we're not your typical pretzel-twisting, 'Om'-chanting bunch. We're all about infusing your yoga journey with a big dose of FUN, a sprinkle of QUIRKY, and a heap of ZEN.",
+      "buttonJoin": "Join today!",
+      "buttonRead": "Read More"
     },
     "body": {
-      "bendP": "Beuge, Atme, Blühe. Unsere erfahrenen Lehrer machen Yoga für alle Niveaus zugänglich und angenehm.",
-      "matPheader": "Buche eine Matte",
-      "matP": "Wir sind nicht die typische Gruppe, die sich wie Brezeln verdreht und 'Om' chantet. Wir möchten deine Yoga-Reise mit einer großen Portion SPASS, einer Prise VERRÜCKTHEIT und einer Menge ZEN bereichern.",
-      "schedulePheader": "Zeitplan anzeigen",
-      "scheduleP": "Zeitplan, um deine Chakren zu kitzeln: Unser flexibler Zeitplan bietet Kurse für jeden Fluss, von Sonnengrüßen bis zur abendlichen Gelassenheit.",
-      "tribePheader": "Schließe dich unserem Stamm an",
-      "tribeP": "Gemeinschaft, die dich stärkt: Werde Teil unseres Yoga-Stammes und gehöre zu einer unterstützenden, gleichgesinnten Gemeinschaft, die deine Reise feiert.",
-      "tourPHeader": "Mach eine Tour",
-      "tourP": "Raum, um deine innere Ruhe zu finden: Unser gemütliches, schickes Studio im Herzen von Stockholm ist ein Zufluchtsort der Entspannung, fernab von der Hektik der Stadt.",
-      "flexP": "Dehne, Atme, Blühe. Unsere erfahrenen Lehrer sorgen dafür, dass Yoga für alle Praktizierenden zugänglich und erfreulich ist.",
-      "bodyButtonJoin": "Trete heute bei!",
-      "bodyButtonBook": "Buchen",
-      "bodyButtonSchedule": "Zeitplan",
-      "bodyButtonExplore": "Erkunden"
+      "bendP": "<strong>Bend, Breathe, Blossom</strong>. Our experienced instructors make yoga <strong>accessible</strong> and <strong>enjoyable</strong> for all levels",
+      "matPheader": "Book a <strong>Mat</strong>",
+      "matP": "We're not your typical pretzel-twisting 'Om'-chanting bunch. We're all about infusing your yoga journey with a big dose of FUN, a sprinkle of QUIRKY, and a heap of ZEN.",
+      "schedulePheader": "View <strong>Schedule</strong>",
+      "scheduleP": "  Timetable to Tingle Your Chakras: Our flexible schedule offers classes to fit every flow, from sunrise salutations to evening tranquility.",
+      "tribePheader": "Join our <strong>tribe</strong>",
+      "tribeP": "   Community That Lifts You Up: Join our yoga tribe and become part of a supportive, like-minded community that celebrates your journey.",
+      "tourPHeader": "Take a <strong>tour</strong>",
+      "tourP": "Space to Find Your Inner Peace: Our cozy, chic studio nestled in the heart of Stockholm is a haven for relaxation, away from the city's hustle and bustle",
+      "flexP": "<strong>Flex, Inhale, Flourish.</strong> Our seasoned instructors ensure yoga is <strong>accessible</strong> and <strong>delightful</strong> for all practitioners",
+      "bodyButtonJoin": "Join today!",
+      "bodyButtonBook": "Book",
+      "bodyButtonSchedule": "Schedule",
+      "bodyButtonExplore": "Explore"
     },
     "footer": {
-      "header1": "Wo Ruhe",
-      "header2": "auf Dehnung trifft",
+      "header1": "Wo <strong>Ruhe</strong>",
+      "header2": "auf Dehnung <strong>trifft</strong>",
       "ourClasses": "Unsere Kurse",
       "schedule": "Zeitplan",
       "events": "Veranstaltungen",
