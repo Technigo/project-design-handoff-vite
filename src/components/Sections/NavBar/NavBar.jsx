@@ -4,39 +4,37 @@ import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   return (
-    <div className={styles.navbarContainer}>
-      <nav className={styles.navBar}>
-        <div className={styles.navigation}>
-          <ul>
-            <li>
-              <Button buttonName="Flow Yoga" />
-            </li>
-            <li>
+    <>
+      <div className={styles.navbarContainer}>
+        <div className={styles.navBar}>
+          <div className={styles.navItem}>
+            <Button buttonName="Flow Yoga" />
+          </div>
+          <div className={styles.navItem}>
+            <div className={styles.navItemMiddle}>
               <a>Our Classes</a>
-            </li>
-            <li>
+            </div>
+            <div className={styles.navItemMiddle}>
               <a>Schedule</a>
-            </li>
-            <li>
+            </div>
+            <div className={styles.navItemMiddle}>
               <Link to={`/events`}>
                 <a>Events</a>
               </Link>
-            </li>
-            <li>
+            </div>
+            <div className={styles.navItemMiddle}>
               <a>Blog</a>
-            </li>
-            <li>
-              <Button buttonName="Join!" />
-            </li>
-            <li>
-              <Button buttonName="Log in" />
-            </li>
-          </ul>
+            </div>
+          </div>
+          <div className={styles.navItem}>
+            <Button buttonName="Join!" />
+            <Button buttonName="Log in" />
+          </div>
         </div>
-      </nav>
+      </div>
       <div className={styles.burgerMenu}>
         <img src="./assets/header-frame.png" />
       </div>
-    </div>
+    </>
   );
 };
