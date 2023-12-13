@@ -8,13 +8,13 @@
   "homePage": {
     "header": {},
     "hero": {
-      "h1": "Where <b>Serenity</b> Meets <b>Stretch</b>!",
+      "h1": "Where <strong>Serenity</strong> Meets <strong>Stretch</strong>!",
       "p": "At our yoga studio, we're not your typical pretzel-twisting, 'Om'-chanting bunch. We're all about infusing your yoga journey with a big dose of FUN, a sprinkle of QUIRKY, and a heap of ZEN.",
       "buttonJoin": "Join today!",
       "buttonRead": "Read More"
     },
     "body": {
-      "bendP": "<b>Bend, Breathe, Blossom</b>. Our experienced instructors make yoga <b>accessible</b> and enjoyable for all levels",
+      "bendP": "<strong>Bend, Breathe, Blossom</strong>. Our experienced instructors make yoga <b>accessible</b> and enjoyable for all levels",
       "matPheader": "Book a Mat",
       "matP": "We're not your typical pretzel-twisting 'Om'-chanting bunch. We're all about infusing your yoga journey with a big dose of FUN, a sprinkle of QUIRKY, and a heap of ZEN.",
       "schedulePheader": "View Schedule",
