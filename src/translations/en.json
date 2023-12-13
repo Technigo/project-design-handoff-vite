@@ -14,24 +14,24 @@
       "buttonRead": "Read More"
     },
     "body": {
-      "bendP": "<strong>Bend, Breathe, Blossom</strong>. Our experienced instructors make yoga <b>accessible</b> and enjoyable for all levels",
-      "matPheader": "Book a Mat",
+      "bendP": "<strong>Bend, Breathe, Blossom</strong>. Our experienced instructors make yoga <strong>accessible</strong> and <strong>enjoyable</strong> for all levels",
+      "matPheader": "Book a <strong>Mat</strong>",
       "matP": "We're not your typical pretzel-twisting 'Om'-chanting bunch. We're all about infusing your yoga journey with a big dose of FUN, a sprinkle of QUIRKY, and a heap of ZEN.",
-      "schedulePheader": "View Schedule",
+      "schedulePheader": "View <strong>Schedule</strong>",
       "scheduleP": "  Timetable to Tingle Your Chakras: Our flexible schedule offers classes to fit every flow, from sunrise salutations to evening tranquility.",
-      "tribePheader": "Join our tribe",
+      "tribePheader": "Join our <strong>tribe</strong>",
       "tribeP": "   Community That Lifts You Up: Join our yoga tribe and become part of a supportive, like-minded community that celebrates your journey.",
-      "tourPHeader": "Take a tour",
+      "tourPHeader": "Take a <strong>tour</strong>",
       "tourP": "Space to Find Your Inner Peace: Our cozy, chic studio nestled in the heart of Stockholm is a haven for relaxation, away from the city's hustle and bustle",
-      "flexP": "Flex, Inhale, Flourish. Our seasoned instructors ensure yoga is accessible and delightful for all practitioners",
+      "flexP": "<strong>Flex, Inhale, Flourish.</strong> Our seasoned instructors ensure yoga is <strong>accessible</strong> and <strong>delightful</strong> for all practitioners",
       "bodyButtonJoin": "Join today!",
       "bodyButtonBook": "Book",
       "bodyButtonSchedule": "Schedule",
       "bodyButtonExplore": "Explore"
     },
     "footer": {
-      "header1": "Where Serenity",
-      "header2": "Meets Stretch",
+      "header1": "Where <strong>Serenity</strong>",
+      "header2": "Meets <strong>Stretch</strong>",
       "ourClasses": "Our Classes",
       "schedule": "Schedule",
       "events": "Events",
@@ -43,40 +43,42 @@
     }
   },
   "eventsPage": {
+    "mainHeader": "Yoga Flow Events: Where Every <strong>Breath</strong> Becomes a <strong>Celebration</strong>",
+    "mainText": "At Yoga Flow, we believe in turning every breath into a celebration of life. Our fantastic events offer a unique blend of mindfulness, movement, and pure joy. Whether you're a seasoned yogi or just dipping your toes into the practice, there's an event for everyone to find their zen and have a great time.",
     "card1": {
-      "header": "Sunrise Salutations",
+      "header": "Sunrise <strong>Salutations</strong>",
       "text": "Start your day with tranquility as you greet the morning sun. Our Sunrise Salutations event is a revitalizing yoga session that energizes your body and spirit."
     },
     "card2": {
-      "header": "Full Moon Flow",
+      "header": "Full <strong>Moon</strong> Flow",
       "text": "Celebrate the magic of the full moon with a mesmerizing yoga flow. Join us to connect with lunar energy and find your balance under the moon's gentle glow."
     },
     "card3": {
-      "header": "Yoga & Brunch Bonanza",
+      "header": "Yoga & Brunch <strong>Bonanza</strong>",
       "text": "Treat yourself to a delightful combination of yoga and brunch. Nourish your body and soul with a morning of wellness followed by a scrumptious meal."
     },
     "card4": {
-      "header": "Zen & Zumba Fusion",
+      "header": "Zen & Zumba <strong>Fusion</strong>",
       "text": "Get your heart pumping and your spirits soaring in our Zen & Zumba Fusion event. Experience a lively blend of yoga and high-energy dance moves for a fun-filled workout."
     },
     "card5": {
-      "header": "Puppy Pose Party",
+      "header": "Puppy Pose <strong>Party<strong>",
       "text": "Unleash your inner child (and your furry friends) in our Puppy Pose Party. Bring your four-legged companions for a heartwarming yoga session filled with playful poses."
     },
     "card6": {
-      "header": "Meditation & Mindfulness Retreat",
+      "header": "Meditation & <strong>Mindfulness</strong> Retreat",
       "text": "Take a deep dive into serenity with our Meditation & Mindfulness Retreat. Explore the art of inner peace through guided meditation and mindfulness practices."
     },
     "card7": {
-      "header": "Glowga: Yoga Under the Stars",
+      "header": "Glowga: Yoga <strong>Under</strong> the <strong>Stars</strong>",
       "text": "Step into a world of enchantment with Glowga. Practice yoga beneath the starry night sky while your body and surroundings illuminate, creating a magical experience."
     },
     "card8": {
-      "header": "Yogis' Night Out Live Music & Laughter",
+      "header": "Yogis' <strong>Night Out</strong> Live Music & Laughter",
       "text": "Get ready for a night of harmony, laughter, and vibrant energy. Our Yogis' Night Out features live music, stand-up comedy, and a joyful yoga session."
     },
     "card9": {
-      "header": "Surf Yoga",
+      "header": "Surf <strong>Yoga</strong>",
       "text": "Start your day with tranquility as you greet the morning sun. Our Sunrise Salutations event is a revitalizing yoga session that energizes your body and spirit."
     },
     "eventsBottom": {
