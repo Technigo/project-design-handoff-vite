@@ -82,6 +82,11 @@ h1 {
   }
 }
 
+/*media query for tablet - 1 row */
+@media (min-width: 668px) and (max-width: 1024px) {
+  
+}
+
 /*media query for desktop - 2 rows */
 @media (min-width: 1025px) {
   .heroContainer {
