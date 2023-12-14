@@ -8,27 +8,28 @@
   "homePage": {
     "header": {},
     "hero": {
-      "h1": "Where <strong>Serenity</strong> Meets <strong>Stretch</strong>!",
-      "p": "At our yoga studio, we're not your typical pretzel-twisting, 'Om'-chanting bunch. We're all about infusing your yoga journey with a big dose of FUN, a sprinkle of QUIRKY, and a heap of ZEN.",
-      "buttonJoin": "Join today!",
-      "buttonRead": "Read More"
+        "h1": "Wo sich <strong>Gelassenheit</strong> und <strong>Dehnung</strong> treffen!",
+        "p": "In unserem Yogastudio sind wir nicht einfach nur eine typische Gruppe, die sich in Verrenkungen übt und 'Om' singt. Wir setzen alles daran, deine Yogareise mit einer großen Portion SPAß, einer Prise VERRÜCKTHEIT und einem Haufen ZEN zu bereichern.",
+        "buttonJoin": "Trete heute bei!",
+        "buttonRead": "Mehr erfahren"
     },
     "body": {
-      "bendP": "<strong>Bend, Breathe, Blossom</strong>. Our experienced instructors make yoga <strong>accessible</strong> and <strong>enjoyable</strong> for all levels",
-      "matPheader": "Book a <strong>Mat</strong>",
-      "matP": "We're not your typical pretzel-twisting 'Om'-chanting bunch. We're all about infusing your yoga journey with a big dose of FUN, a sprinkle of QUIRKY, and a heap of ZEN.",
-      "schedulePheader": "View <strong>Schedule</strong>",
-      "scheduleP": "  Timetable to Tingle Your Chakras: Our flexible schedule offers classes to fit every flow, from sunrise salutations to evening tranquility.",
-      "tribePheader": "Join our <strong>tribe</strong>",
-      "tribeP": "   Community That Lifts You Up: Join our yoga tribe and become part of a supportive, like-minded community that celebrates your journey.",
-      "tourPHeader": "Take a <strong>tour</strong>",
-      "tourP": "Space to Find Your Inner Peace: Our cozy, chic studio nestled in the heart of Stockholm is a haven for relaxation, away from the city's hustle and bustle",
-      "flexP": "<strong>Flex, Inhale, Flourish.</strong> Our seasoned instructors ensure yoga is <strong>accessible</strong> and <strong>delightful</strong> for all practitioners",
-      "bodyButtonJoin": "Join today!",
-      "bodyButtonBook": "Book",
-      "bodyButtonSchedule": "Schedule",
-      "bodyButtonExplore": "Explore"
-    },
+        "bendP": "<strong>Beugen, Atmen, Blühen</strong>. Unsere erfahrenen Instruktoren machen Yoga für alle Levels <strong>zugänglich</strong> und <strong>genussvoll</strong>.",
+        "matPheader": "Buche eine <strong>Matte</strong>",
+        "matP": "Wir sind nicht einfach nur eine typische Gruppe, die sich in Verrenkungen übt und 'Om' singt. Wir setzen alles daran, deine Yogareise mit einer großen Portion SPAß, einer Prise VERRÜCKTHEIT und einem Haufen ZEN zu bereichern.",
+        "schedulePheader": "Zeige den <strong>Zeitplan</strong> an",
+        "scheduleP": "Zeitplan, um deine Chakren zu kitzeln: Unser flexibler Zeitplan bietet Kurse für jeden Rhythmus, von Sonnengruß bis zur Abendruhe.",
+        "tribePheader": "Schließe dich unserem <strong>Stamm</strong> an",
+        "tribeP": "Gemeinschaft, die dich stärkt: Werde Teil unseres Yoga-Stammes und gehöre zu einer unterstützenden, gleichgesinnten Gemeinschaft, die deine Reise feiert.",
+        "tourPHeader": "Mach eine <strong>Tour</strong>",
+        "tourP": "Raum, um deine innere Ruhe zu finden: Unser gemütliches, schickes Studio im Herzen von Stockholm ist ein Ort der Entspannung, fernab von der Hektik der Stadt.",
+        "flexP": "<strong>Dehne, Atme, Blühe.</strong> Unsere erfahrenen Instruktoren sorgen dafür, dass Yoga für alle Praktizierenden <strong>zugänglich</strong> und <strong>erfreulich</strong> ist.",
+        "bodyButtonJoin": "Trete heute bei!",
+        "bodyButtonBook": "Buchen",
+        "bodyButtonSchedule": "Zeitplan",
+        "bodyButtonExplore": "Erkunden"
+    }
+},
     "footer": {
       "header1": "Wo <strong>Ruhe</strong>",
       "header2": "auf Dehnung <strong>trifft</strong>",
