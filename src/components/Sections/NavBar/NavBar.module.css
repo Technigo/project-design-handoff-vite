@@ -1,16 +1,43 @@
-.burgerMenu {
-  display: block;
-  padding-right: 1.5rem;
-  cursor: pointer;
+.navbarContainer {
+  position: relative;
+  display: inline-block;
 }
 
-.burgerMenu img {
-  object-fit: contain;
-  width: 100%;
-  padding: 0.5rem 1rem 0 1rem;
+.hamburgerNav {
+  position: relative;
+  display: inline-block;
 }
 
 .navBar {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburgerNav:hover .hamMenu {
+  display: block;
+}
+
+.hamburgerNav img {
+  object-fit: contain;
+  text-align: right;
+  float: inline-end;
+  width: 10%;
+  background-color: #ffecea;
+}
+
+.hamMenu {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.navItem {
+  display: none;
+}
+
+.desktopNav {
   display: none;
 }
 
@@ -20,8 +47,12 @@
 
 /*media query for desktop */
 @media (min-width: 1025px) {
-  .burgerMenu {
+  .hamburgerNav {
     display: none;
+  }
+
+  .desktopNav {
+    display: block;
   }
 
   .navbarContainer {

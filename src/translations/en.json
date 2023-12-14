@@ -5,6 +5,12 @@
     "heading": "Hello word",
     "sub-heading": "This is a test to help understand nesting"
   },
+  "navBar": {
+    "ourClasses": "Our Classes",
+    "schedule": "Schedule",
+    "events": "Events",
+    "blog": "Blog"
+  },
   "homePage": {
     "header": {},
     "hero": {

@@ -1,29 +1,44 @@
 import styles from "./NavBar.module.css";
 import { Button } from "../../ui/Button/Button";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 export const NavBar = () => {
+  const { t, i18n } = useTranslation();
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
   return (
     <>
       <div className={styles.navbarContainer}>
-        <div className={styles.navBar}>
+        <div className={styles.hamburgerNav}>
+          <img src="./assets/ham.png" alt="Menu" />
+          <div className={styles.hamMenu}>
+            <a>{t("navBar.ourClasses")}</a>
+            <a>{t("navBar.schedule")}</a>
+            <a>{t("navBar.events")}</a>
+            <a>{t("navBar.blog")}</a>
+            <a>{t("homePage.hero.buttonJoin")}</a>
+          </div>
+        </div>
+        <div className={styles.desktopNav}>
           <div className={styles.navItem}>
             <Button buttonName="Flow Yoga" />
           </div>
           <div className={styles.navItem}>
             <div className={styles.navItemMiddle}>
-              <a>Our Classes</a>
+              <a>{t("navBar.ourClasses")}</a>
             </div>
             <div className={styles.navItemMiddle}>
-              <a>Schedule</a>
+              <a>{t("navBar.schedule")}</a>
             </div>
             <div className={styles.navItemMiddle}>
               <Link to={`/events`}>
-                <a>Events</a>
+                <a>{t("navBar.events")}</a>
               </Link>
             </div>
             <div className={styles.navItemMiddle}>
-              <a>Blog</a>
+              <a>{t("navBar.blog")}</a>
             </div>
           </div>
           <div className={styles.navItem}>
@@ -31,9 +46,6 @@ export const NavBar = () => {
             <Button buttonName="Log in" />
           </div>
         </div>
-      </div>
-      <div className={styles.burgerMenu}>
-        <img src="./assets/header-frame.png" />
       </div>
     </>
   );
