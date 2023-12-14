@@ -12,6 +12,12 @@ export const NavBar = () => {
     <>
       <div className={styles.navbarContainer}>
         <div className={styles.hamburgerNav}>
+          <button
+            className={styles.headerButton}
+            style={{ color: "white", backgroundColor: "black" }}
+          >
+            F
+          </button>
           <img src="./assets/ham.png" alt="Menu" />
           <div className={styles.hamMenu}>
             <a>{t("navBar.ourClasses")}</a>

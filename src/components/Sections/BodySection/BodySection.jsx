@@ -23,7 +23,8 @@ export const BodySection = () => {
             </button>
           </div>
           <div className={styles.bodyBox}>
-            <img src="./assets/1st.png" />
+            <img className={styles.imgDesktop} src="/assets/1st.png" />
+            <img className={styles.imgMobile} src="/assets/1st-mobile.png" />
           </div>
           <div className={styles.bodyBox}>
             <p>{t("homePage.body.matPheader")}</p>
@@ -36,7 +37,8 @@ export const BodySection = () => {
             </button>
           </div>
           <div className={styles.bodyBox}>
-            <img src="./assets/2nd.png" />
+            <img className={styles.imgDesktop} src="/assets/2nd.png" />
+            <img className={styles.imgMobile} src="/assets/2nd-mobile.png" />
           </div>
           <div className={styles.bodyBox}>
             <p>{t("homePage.body.schedulePheader")}</p>
@@ -45,11 +47,12 @@ export const BodySection = () => {
               className={styles.bodyButton}
               style={{ color: "black", backgroundColor: "#ffecea" }}
             >
-              Schedule{t("homePage.body.bodyButtonSchedule")}
+              {t("homePage.body.bodyButtonSchedule")}
             </button>
           </div>
           <div className={styles.bodyBox}>
-            <img src="./assets/3rd.png" />
+            <img className={styles.imgDesktop} src="/assets/3rd.png" />
+            <img className={styles.imgMobile} src="/assets/3rd-mobile.png" />
           </div>
           <div className={styles.bodyBox}>
             <p>{t("homePage.body.tribePheader")}</p>
@@ -62,7 +65,8 @@ export const BodySection = () => {
             </button>
           </div>
           <div className={styles.bodyBox}>
-            <img src="./assets/3rd.png" />
+            <img className={styles.imgDesktop} src="/assets/4th.png" />
+            <img className={styles.imgMobile} src="/assets/4th-mobile.png" />
           </div>
           <div className={styles.bodyBox}>
             <p>{t("homePage.body.tourPHeader")}</p>

@@ -13,6 +13,20 @@
   display: inline-block;
 }
 
+.headerButton {
+  align-items: center;
+  align-content: center;
+  background-color: #ffecea;
+  color: #202020;
+  border-radius: 50px;
+  margin: 10px;
+  gap: 10px;
+  padding: 10px 24px 10px 24px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
 .hamburgerNav:hover .hamMenu {
   display: block;
 }

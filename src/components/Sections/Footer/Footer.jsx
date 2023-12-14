@@ -29,6 +29,7 @@ export const Footer = () => {
               F
             </button>
           </div>
+
           <div className={styles.footerBox}>
             <h2>{t("homePage.footer.header1")}</h2>
             <h2>{t("homePage.footer.header2")}</h2>
@@ -45,17 +46,26 @@ export const Footer = () => {
           <div className={styles.footerBox}>
             <p> {t("homePage.footer.blog")}</p>
           </div>
+          <div>
+            <p></p>
+          </div>
           <div className={styles.footerBox}>
             <p> {t("homePage.footer.terms")}</p>
           </div>
           <div className={styles.footerBox}>
             <p> {t("homePage.footer.conditions")}</p>
           </div>
+          <div>
+            <p></p>
+          </div>
           <div className={styles.footerBox}>
             <p> {t("homePage.footer.signUp")}</p>
           </div>
           <div className={styles.footerBox}>
             <p> {t("homePage.footer.logIn")}</p>
+          </div>
+          <div>
+            <p></p>
           </div>
           <div className={styles.footerBox}>
             <div className={styles.internationalisationWwrapper}>

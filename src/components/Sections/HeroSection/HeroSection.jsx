@@ -32,9 +32,8 @@ export const HeroSection = () => {
                 {t("homePage.hero.buttonRead")}
               </button>
             </p>
-            <div className={styles.heroBox}>
-              <img src="/assets/hero-img.png" />
-            </div>
+            <img className={styles.imgDesktop} src="/assets/hero-img.png" />
+            <img className={styles.imgMobile} src="/assets/hero-mobile.png" />
           </div>
         </div>
       </Trans>

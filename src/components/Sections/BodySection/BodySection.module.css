@@ -28,16 +28,39 @@
   background-color: #ffecea;
   color: #202020;
   border-radius: 30px;
-  padding: 8px 115px 8px 115px;
+  padding: 11px 130px 11px 130px;
   text-align: center;
+  font-size: 16px;
   margin-bottom: 10em;
   font-family: "Poppins", sans-serif;
 }
 
+.imgMobile {
+  display: block;
+}
+
+.imgDesktop {
+  display: none;
+}
+
 /*media query for tablet - 1 row */
 @media (min-width: 668px) and (max-width: 1024px) {
+  .imgMobile {
+    display: none;
+  }
+
+  .imgDesktop {
+    display: block;
+  }
 }
 
 /*media query for desktop - 2 rows */
 @media (min-width: 1025px) {
+  .imgMobile {
+    display: none;
+  }
+
+  .imgDesktop {
+    display: block;
+  }
 }
