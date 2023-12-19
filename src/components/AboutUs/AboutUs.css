@@ -1,0 +1,147 @@
+.aboutUsContainer {
+    display: flex;
+    background-color: var(--color-blue-opacity-60);
+    padding: 20px;
+    flex-direction: row;
+}
+
+.leftColumn {
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.rightColumn {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftColumn h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: var(--color-purple);
+}
+
+.leftColumn p {
+    color: black !important;
+    font-size: 12px;
+}
+
+.yellowButton {
+    padding: 10px 20px;
+    background-color: var(--color-yellow);
+    border: none;
+    font-size: 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: var(--color-purple);
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: darken(var(--yellow), 10%);
+    }
+}
+
+.roundImage {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.additionalImage {
+    display: none;
+}
+  
+  /* Media query for screens between 600px and 900px */
+  
+  @media (min-width: 601px) and (max-width: 900px) {
+    
+    .leftColumn h1 {
+        font-size: 25px;
+    }
+
+    .leftColumn p {
+        font-size: 18px;
+    }
+    .yellowButton {
+       font-size: 16px;
+       padding: 20px;
+       border-radius: 40px;
+       padding-left: 50px;
+       padding-right: 60px
+    }
+    .roundImage {
+        height: 200px;
+        width: 210px;
+        border-radius: 80px;
+    }
+ }
+  
+
+
+  /* Media query for screens between 900px and 1200px */
+  
+  @media (min-width: 901px) {
+    .aboutUsContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftColumn, .rightColumn {
+        width: 100%;
+    }
+
+    .rightColumn {
+        order: 2; 
+    }
+
+    .leftColumn {
+        order: 1; 
+        width: 800px;
+    }
+
+    .leftColumn h1 {
+        font-size: 25px;
+    }
+    
+    .rightColumn {
+        gap: 50px;
+        flex-wrap: wrap;   
+    }
+
+    .additionalImage {
+        display: block; 
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        margin: 10px;
+    }
+
+    .roundImage {
+        width: 190px; 
+        height: 150px;
+        border-radius: 60px;
+    }
+
+    .yellowButton {
+        order: 3;
+        width: 100%;
+        margin-top: 20px; 
+        width: 800px;
+        padding: 10px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+  }
+  
+  
