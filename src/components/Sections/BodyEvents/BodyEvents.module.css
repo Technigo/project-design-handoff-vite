@@ -1,8 +1,9 @@
 .eventsContainer {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  overflow: auto;
+  overflow-x: hidden;
   max-height: fit-content;
+  max-width: 100%;
 }
 
 .eventsBox {

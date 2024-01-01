@@ -22,7 +22,9 @@ export const NavBar = () => {
           <div className={styles.hamMenu}>
             <a>{t("navBar.ourClasses")}</a>
             <a>{t("navBar.schedule")}</a>
-            <a>{t("navBar.events")}</a>
+            <Link to={`/events`}>
+              <a>{t("navBar.events")}</a>
+            </Link>
             <a>{t("navBar.blog")}</a>
             <a>{t("homePage.hero.buttonJoin")}</a>
           </div>

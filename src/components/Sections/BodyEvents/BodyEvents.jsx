@@ -5,12 +5,13 @@ import { useTranslation } from "react-i18next";
 import { Trans } from "react-i18next";
 
 export const BodyEvents = () => {
+  const { t, i18n } = useTranslation();
   return (
     <>
       <Trans>
         <div className={styles.eventsContainer}>
           <div className={styles.eventsBox}>
-            <h2>{t("eventsPage.MainHeader")}</h2>
+            <h2>{t("eventsPage.mainHeader")}</h2>
             <p> {t("eventsPage.mainText")}</p>
             <p>
               <button
