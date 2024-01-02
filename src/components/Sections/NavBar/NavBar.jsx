@@ -11,6 +11,15 @@ export const NavBar = () => {
   return (
     <>
       <div className={styles.navbarContainer}>
+        {/* <div className={styles.hamMenu}>
+            <a>{t("navBar.ourClasses")}</a>
+            <a>{t("navBar.schedule")}</a>
+            <Link to={`/events`}>
+              <a>{t("navBar.events")}</a>
+            </Link>
+            <a>{t("navBar.blog")}</a>
+            <a>{t("homePage.hero.buttonJoin")}</a>
+          </div> */}
         <div className={styles.hamburgerNav}>
           <button
             className={styles.headerButton}
@@ -19,39 +28,22 @@ export const NavBar = () => {
             F
           </button>
           <img src="./assets/ham.png" alt="Menu" />
-          <div className={styles.hamMenu}>
-            <a>{t("navBar.ourClasses")}</a>
-            <a>{t("navBar.schedule")}</a>
-            <Link to={`/events`}>
-              <a>{t("navBar.events")}</a>
-            </Link>
-            <a>{t("navBar.blog")}</a>
-            <a>{t("homePage.hero.buttonJoin")}</a>
-          </div>
         </div>
         <div className={styles.desktopNav}>
-          <div className={styles.navItem}>
-            <Button buttonName="Flow Yoga" />
+          <Link className={styles.link} to={`/`}>
+            <Button buttonName="FLOW YOGA" className="blackButton" />
+          </Link>
+          <div className={styles.navItemMiddle}>
+            <a className={styles.navLink}>{t("navBar.ourClasses")}</a>
+            <a className={styles.navLink}>{t("navBar.schedule")}</a>
+            <Link className={styles.link} to={`/events`}>
+              <a className={styles.navLink}>{t("navBar.events")}</a>
+            </Link>
+            <a className={styles.navLink}>{t("navBar.blog")}</a>
           </div>
-          <div className={styles.navItem}>
-            <div className={styles.navItemMiddle}>
-              <a>{t("navBar.ourClasses")}</a>
-            </div>
-            <div className={styles.navItemMiddle}>
-              <a>{t("navBar.schedule")}</a>
-            </div>
-            <div className={styles.navItemMiddle}>
-              <Link to={`/events`}>
-                <a>{t("navBar.events")}</a>
-              </Link>
-            </div>
-            <div className={styles.navItemMiddle}>
-              <a>{t("navBar.blog")}</a>
-            </div>
-          </div>
-          <div className={styles.navItem}>
-            <Button buttonName="Join!" />
-            <Button buttonName="Log in" />
+          <div className={styles.ItemEnd}>
+            <Button buttonName="Join!" className="blackButton" />
+            <Button buttonName="Log in" className="whiteButton" />
           </div>
         </div>
       </div>

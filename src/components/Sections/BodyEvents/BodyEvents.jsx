@@ -13,15 +13,6 @@ export const BodyEvents = () => {
           <div className={styles.eventsBox}>
             <h2>{t("eventsPage.mainHeader")}</h2>
             <p> {t("eventsPage.mainText")}</p>
-            <p>
-              <button
-                className={styles.eventsButton}
-                style={{ color: "white", backgroundColor: "black" }}
-              >
-                Join today!"
-              </button>
-              <button className={styles.eventsButton}>Read More</button>
-            </p>
           </div>
         </div>
       </Trans>

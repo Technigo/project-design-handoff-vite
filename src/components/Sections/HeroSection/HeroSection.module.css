@@ -2,6 +2,7 @@
   display: grid;
   box-sizing: border-box;
   align-items: center;
+  text-align: center;
 }
 
 .heroBox {
@@ -18,7 +19,7 @@
 }
 
 .heroBox p {
-  text-align: left;
+  text-align: center;
   padding-left: 1.2em;
   padding-right: 1.2em;
   font-size: 18px;
@@ -45,6 +46,7 @@
   text-align: center;
   font-family: "Poppins", sans-serif;
   display: inline-block;
+  margin: 1em;
 }
 
 h1 {
@@ -65,8 +67,6 @@ h1 {
     margin-top: 3rem;
     text-align: center;
     vertical-align: middle;
-    height: 100vh;
-    width: 100vw;
   }
 
   .imgMobile {
@@ -80,11 +80,21 @@ h1 {
   .heroBox {
     margin-left: 0;
   }
-}
 
-/*media query for tablet - 1 row */
-@media (min-width: 668px) and (max-width: 1024px) {
-  
+  .heroButton {
+    background-color: #ffecea;
+    color: #202020;
+    border-radius: 30px;
+    padding: 11px 50px 11px 50px;
+    text-align: center;
+    margin: 1rem;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+  }
+
+  .heroBox {
+    text-align: center;
+  }
 }
 
 /*media query for desktop - 2 rows */
@@ -92,13 +102,23 @@ h1 {
   .heroContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 3em 2em 6rem 2em;
-    margin-top: 3rem;
+    padding: 1em 6rem 1em;
     text-align: center;
   }
 
+  .heroButton {
+    background-color: #ffecea;
+    color: #202020;
+    border-radius: 30px;
+    padding: 12px 25px 12px 25px;
+    text-align: center;
+    margin: 1em;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+  }
+
   .heroBox {
-    align-content: left;
+    align-content: center;
     box-sizing: border-box;
     padding: 20px;
   }

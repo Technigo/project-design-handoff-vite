@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 //Trans is used to bold certain words in the translated text with <strong> in the json file.
 import { Trans } from "react-i18next";
 
@@ -41,7 +42,9 @@ export const Footer = () => {
             <p> {t("homePage.footer.schedule")}</p>
           </div>
           <div className={styles.footerBox}>
-            <p> {t("homePage.footer.events")}</p>
+            <Link className={styles.linkStyle} to={`/events`}>
+              <p> {t("homePage.footer.events")}</p>
+            </Link>
           </div>
           <div className={styles.footerBox}>
             <p> {t("homePage.footer.blog")}</p>

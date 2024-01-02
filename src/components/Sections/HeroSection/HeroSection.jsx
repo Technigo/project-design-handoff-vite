@@ -17,8 +17,6 @@ export const HeroSection = () => {
           <div className={styles.heroBox}>
             <h1>{t("homePage.hero.h1")}</h1>
             <p>{t("homePage.hero.p")}</p>
-          </div>
-          <div className={styles.heroBox}>
             <p>
               <button
                 className={styles.heroButton}
@@ -26,12 +24,13 @@ export const HeroSection = () => {
               >
                 {t("homePage.hero.buttonJoin")}
               </button>
-            </p>
-            <p>
+
               <button className={styles.heroButton}>
                 {t("homePage.hero.buttonRead")}
               </button>
             </p>
+          </div>
+          <div className={styles.heroBox}>
             <img className={styles.imgDesktop} src="/assets/hero-img.png" />
             <img className={styles.imgMobile} src="/assets/hero-mobile.png" />
           </div>

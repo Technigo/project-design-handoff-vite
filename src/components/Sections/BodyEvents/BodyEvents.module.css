@@ -44,6 +44,22 @@
 
 /*media query for tablet - 1 row */
 @media (min-width: 668px) and (max-width: 1024px) {
+  .eventsButton {
+    background-color: #ffecea;
+    color: #202020;
+    border-radius: 30px;
+    padding: 11px 50px 11px 50px;
+    text-align: center;
+    margin: 1rem;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+  }
+
+  .eventsBox {
+    text-align: center;
+    margin-top: 0;
+    padding: 3em;
+  }
 }
 
 /*media query for desktop - 2 rows */

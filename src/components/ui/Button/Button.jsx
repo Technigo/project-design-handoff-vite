@@ -1,10 +1,12 @@
 import styles from "./Button.module.css";
 
-import React from "react";
+export const Button = ({ buttonName, className }) => {
+  const buttonClass = `${styles.button} ${
+    className === "blackButton" ? styles.buttonBlack : ""
+  } ${className === "whiteButton" ? styles.buttonWhite : ""}`;
 
-export const Button = ({ buttonName }) => {
   return (
-    <button className={styles.button} type="button">
+    <button className={buttonClass} type="button">
       {buttonName}
     </button>
   );
