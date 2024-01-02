@@ -7,23 +7,17 @@
 # NOTE - UPDATE - 21st Nov 2023
 Unfortunetly, my designer was not able to supply a finished product. My code coaches have connected me with the UX Design teachers who have given me a new design to start again. My initial project has been moved to another branch so I can begin again on main as I cannot fork the repo twice.
 
+Submitted 2nd design on December 2nd 2024: All styling complete and all translation, home page and event page both in English and German.
+
 # Design Handoff Project
 
-This wee we transformed a UX student's design into a React-based landing page for a gym/fitness club. This project bridges the gap between design and development, showcasing the art of bringing visuals to life with code.
+This week we transformed a UX student's design into a React-based landing page for a gym/fitness club. This project bridges the gap between design and development, showcasing the art of bringing visuals to life with code. The teacher did not specify where to put the translation box and told me I was welcome to change the design to fit it in, it now appears as flag buttons in the footer which I rearranged a little.
 
-## Getting Started with the Project
+### The Problem - 2nd Design 
 
-### Dependency Installation & Startup Development Server
+Describe how you approached to problem: I was happy to do this week again with a design supplied by the UX Design teachers. I had a few issues with the styling and grid box, and completing all of the translation was time consuming but gave me a great sense of accomplishment!
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
-
-### The Problem
+### The Problem - 1st Design
 
 Describe how you approached to problem: This week was a fanastic experience and a good challenge. I really enjoyed the real-life aspect of taking a design and following specs to create it. Unfortunetly, my designer had some heath and scheduling issues that meant I have been coding with an incomplete design, and was only given a hand-off on Wednesday morning. My designer did not attend our demos on Friday.
 
@@ -45,10 +39,8 @@ If you had more time, what would be next?: I would have loved more time with the
 
 Deployed site: https://wk11-project-design-handoff-sb.netlify.app/
 
-Designer's Figma design: https://www.figma.com/file/yYvBgyKopMZecZXNv4akgx/Week-9-11---Sophia?type=design&node-id=1455%3A1713&mode=design&t=c4wLjtegJ35CVb5g-1
+1st Design: Designer's Figma design: https://www.figma.com/file/yYvBgyKopMZecZXNv4akgx/Week-9-11---Sophia?type=design&node-id=1455%3A1713&mode=design&t=c4wLjtegJ35CVb5g-1
 
-## Instructions
+2nd Design: UX Teacher's design: https://www.figma.com/file/dPIE69pkDaN6ByySFJNkdp/Design-alongs?type=design&node-id=4-25&mode=design&t=t0XrWOELgDiqCT6e-0
 
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+2nd Design prototype: https://www.figma.com/proto/dPIE69pkDaN6ByySFJNkdp/Design-alongs?page-id=4%3A17&type=design&node-id=79-389&viewport=320%2C210%2C0.09&t=cZ8fYzfoMpxgD9pN-1&scaling=min-zoom&starting-point-node-id=77%3A11
