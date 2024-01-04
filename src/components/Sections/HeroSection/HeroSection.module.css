@@ -65,6 +65,7 @@
 }
 
 .heroButtonBlack {
+  white-space: nowrap;
   background-color: #202020;
   color: #ffecea;
   border-radius: 30px;
@@ -113,17 +114,6 @@ h1 {
     margin-left: 0;
   }
 
-  .heroButton {
-    background-color: #ffecea;
-    color: #202020;
-    border-radius: 30px;
-    padding: 11px 50px 11px 50px;
-    text-align: center;
-    margin: 1rem;
-    font-family: "Poppins", sans-serif;
-    display: inline-block;
-  }
-
   .heroBox {
     text-align: center;
   }
@@ -165,7 +155,7 @@ h1 {
     background-color: #ffecea;
     color: #202020;
     border-radius: 50px;
-    padding: 10px 60px 10px 60px;
+    padding: 11px 60px 11px 60px;
     font-family: "Poppins", sans-serif;
     display: inline-block;
     margin: 1em;
@@ -179,7 +169,7 @@ h1 {
     background-color: #202020;
     color: #ffecea;
     border-radius: 50px;
-    padding: 24px 60px 24px 60px;
+    padding: 11px 60px 11px 60px;
     font-family: "Poppins", sans-serif;
     display: inline-block;
     margin: 1em;

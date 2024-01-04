@@ -11,15 +11,11 @@ export const BodySection = () => {
     <>
       <Trans>
         <div className={styles.bodyContainer}>
+          {/* styles and render for mobile view */}
           <div className={styles.bodyMobile}>
-            <div className={styles.bodyBox}>
+            <div className={styles.bodyLastBox}>
               <p> {t("homePage.body.bendP")}</p>
-            </div>
-            <div className={styles.bodyBox}>
-              <button
-                className={styles.bodyButton}
-                style={{ color: "white", backgroundColor: "black" }}
-              >
+              <button className={styles.bodyButtonBlack}>
                 {t("homePage.body.bodyButtonJoin")}
               </button>
             </div>
@@ -89,18 +85,15 @@ export const BodySection = () => {
               </button>
             </div>
           </div>
+          {/* styles and render for desktop view */}
           <div className={styles.bodyDesktop}>
-            <div className={styles.bodyHeading}>
-              <p> {t("homePage.body.bendP")}</p>{" "}
-              <button
-                className={styles.bodyButton}
-                style={{ color: "white", backgroundColor: "black" }}
-              >
+            <div className={styles.bodyLastBox}>
+              <p> {t("homePage.body.bendP")}</p>
+              <button className={styles.bodyButtonBlack}>
                 {t("homePage.body.bodyButtonJoin")}
               </button>
             </div>
             <div className={styles.bodyBox}>
-              {" "}
               <p>{t("homePage.body.matPheader")}</p>
               <p>{t("homePage.body.matP")}</p>
               <button
@@ -158,10 +151,7 @@ export const BodySection = () => {
             </div>
             <div className={styles.bodyLastBox}>
               <p>{t("homePage.body.flexP")}</p>
-              <button
-                className={styles.bodyButton}
-                style={{ color: "white", backgroundColor: "black" }}
-              >
+              <button className={styles.bodyButtonBlack}>
                 {t("homePage.body.bodyButtonJoin")}
               </button>
             </div>

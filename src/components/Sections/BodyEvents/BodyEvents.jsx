@@ -13,6 +13,18 @@ export const BodyEvents = () => {
           <div className={styles.eventsBox}>
             <h2>{t("eventsPage.mainHeader")}</h2>
             <p> {t("eventsPage.mainText")}</p>
+            <div className={styles.buttonsMobile}>
+              <p>
+                <button className={styles.heroButtonBlack}>
+                  {t("homePage.hero.buttonJoin")}
+                </button>
+              </p>
+              <p>
+                <button className={styles.heroButtonWhite}>
+                  {t("homePage.hero.buttonRead")}
+                </button>
+              </p>
+            </div>
           </div>
         </div>
       </Trans>

@@ -11,6 +11,44 @@
   margin-top: 0;
 }
 
+.buttonsMobile {
+  display: block;
+}
+
+.heroButtonWhite {
+  background-color: #ffecea;
+  color: #202020;
+  border-radius: 30px;
+  padding: 11px 90px 11px 90px;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  margin: 0.5em;
+  display: block; /* Set display to block for mobile view */
+  width: 100%;
+}
+
+.heroButtonWhite:hover {
+  border: 2px solid #0025ff;
+}
+
+.heroButtonBlack {
+  white-space: nowrap;
+  background-color: #202020;
+  color: #ffecea;
+  border-radius: 30px;
+  padding: 11px 90px 11px 90px;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  margin: 0.5em;
+  display: block; /* Set display to block for mobile view */
+  width: 100%;
+}
+
+.heroButtonBlack:hover {
+  background-color: #0025ff;
+  border: 2px solid #0025ff;
+}
+
 .eventsContainer h2 {
   font-size: 40px;
   font-weight: 400;
@@ -60,8 +98,15 @@
     margin-top: 0;
     padding: 3em;
   }
+
+  .buttonsMobile {
+    display: none;
+  }
 }
 
 /*media query for desktop - 2 rows */
 @media (min-width: 1025px) {
+  .buttonsMobile {
+    display: none;
+  }
 }

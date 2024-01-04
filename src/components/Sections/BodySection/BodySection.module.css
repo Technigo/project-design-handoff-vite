@@ -35,6 +35,22 @@
   font-family: "Poppins", sans-serif;
 }
 
+.bodyButtonBlack {
+  background-color: #202020;
+  color: #ffecea;
+  border-radius: 30px;
+  padding: 11px 130px 11px 130px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10em;
+  font-family: "Poppins", sans-serif;
+}
+
+.bodyButtonBlack:hover {
+  background-color: #0025ff;
+  border: 2px solid #0025ff;
+}
+
 .imgMobile {
   display: block;
 }
@@ -60,9 +76,24 @@
     max-height: fit-content;
   }
 
-  
   .bodyDesktop {
     display: none;
+  }
+
+  .bodyButtonBlack {
+    background-color: #202020;
+    color: #ffecea;
+    border-radius: 30px;
+    padding: 11px 60px 11px 60px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10em;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .bodyButtonBlack:hover {
+    background-color: #0025ff;
+    border: 2px solid #0025ff;
   }
 }
 
@@ -70,6 +101,27 @@
 @media (min-width: 1025px) {
   .imgMobile {
     display: none;
+  }
+
+  .bodyBox {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .bodyButtonBlack {
+    background-color: #202020;
+    color: #ffecea;
+    border-radius: 30px;
+    padding: 11px 60px 11px 60px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10em;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .bodyButtonBlack:hover {
+    background-color: #0025ff;
+    border: 2px solid #0025ff;
   }
 
   .bodyLastBox {
@@ -88,6 +140,10 @@
     font-size: 16px;
     margin-bottom: 10em;
     font-family: "Poppins", sans-serif;
+  }
+
+  .bodyButton:hover {
+    border: 2px solid #0025ff;
   }
 
   .bodyHeading {
