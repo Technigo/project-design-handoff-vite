@@ -4,9 +4,14 @@
   border-radius: 30px;
   margin: 10px;
   padding: 8px 24px 8px 24px;
-  border: 1pm solid #202020;
+  border: 1px solid #202020;
   text-align: center;
   font-family: "Poppins", sans-serif;
+}
+
+.buttonBlack:hover {
+  background-color: #0025ff;
+  border: 2px solid #0025ff;
 }
 
 .buttonWhite {
@@ -15,7 +20,11 @@
   border-radius: 30px;
   margin: 10px;
   padding: 8px 24px 8px 24px;
-  border: 1pm solid #202020;
+  border: 2px solid #202020;
   text-align: center;
   font-family: "Poppins", sans-serif;
+}
+
+.buttonWhite:hover {
+  border: 2px solid #0025ff;
 }

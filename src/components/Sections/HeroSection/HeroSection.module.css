@@ -2,7 +2,7 @@
   display: grid;
   box-sizing: border-box;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .heroBox {
@@ -10,7 +10,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
 
 .heroBox h1 {
@@ -19,10 +19,12 @@
 }
 
 .heroBox p {
-  text-align: center;
+  text-align: left;
   padding-left: 1.2em;
   padding-right: 1.2em;
   font-size: 18px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .heroBox img {
@@ -38,15 +40,45 @@
   display: none;
 }
 
-.heroButton {
+.buttonsMobile {
+  display: block;
+}
+
+.buttonsDesktop {
+  display: none;
+}
+
+.heroButtonWhite {
   background-color: #ffecea;
   color: #202020;
   border-radius: 30px;
-  padding: 11px 115px 11px 115px;
-  text-align: center;
+  padding: 11px 120px 11px 120px;
   font-family: "Poppins", sans-serif;
   display: inline-block;
-  margin: 1em;
+  margin: 0.5em;
+  display: block; /* Set display to block for mobile view */
+  width: 100%;
+}
+
+.heroButtonWhite:hover {
+  border: 2px solid #0025ff;
+}
+
+.heroButtonBlack {
+  background-color: #202020;
+  color: #ffecea;
+  border-radius: 30px;
+  padding: 11px 120px 11px 120px;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  margin: 0.5em;
+  display: block; /* Set display to block for mobile view */
+  width: 100%;
+}
+
+.heroButtonBlack:hover {
+  background-color: #0025ff;
+  border: 2px solid #0025ff;
 }
 
 h1 {
@@ -106,21 +138,56 @@ h1 {
     text-align: center;
   }
 
-  .heroButton {
-    background-color: #ffecea;
-    color: #202020;
-    border-radius: 30px;
-    padding: 12px 25px 12px 25px;
-    text-align: center;
-    margin: 1em;
-    font-family: "Poppins", sans-serif;
-    display: inline-block;
-  }
-
   .heroBox {
-    align-content: center;
+    align-content: left;
     box-sizing: border-box;
     padding: 20px;
+  }
+
+  .heroBox p {
+    text-align: left;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .buttonsMobile {
+    display: none;
+  }
+
+  .buttonsDesktop {
+    display: block;
+  }
+
+  .heroButtonWhite {
+    background-color: #ffecea;
+    color: #202020;
+    border-radius: 50px;
+    padding: 10px 60px 10px 60px;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    margin: 1em;
+  }
+
+  .heroButtonWhite:hover {
+    border: 2px solid #0025ff;
+  }
+
+  .heroButtonBlack {
+    background-color: #202020;
+    color: #ffecea;
+    border-radius: 50px;
+    padding: 24px 60px 24px 60px;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    margin: 1em;
+  }
+
+  .heroButtonBlack:hover {
+    background-color: #0025ff;
+    border: 2px solid #0025ff;
   }
 
   .imgMobile {

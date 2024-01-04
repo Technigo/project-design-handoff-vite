@@ -17,18 +17,28 @@ export const HeroSection = () => {
           <div className={styles.heroBox}>
             <h1>{t("homePage.hero.h1")}</h1>
             <p>{t("homePage.hero.p")}</p>
-            <p>
-              <button
-                className={styles.heroButton}
-                style={{ color: "white", backgroundColor: "black" }}
-              >
-                {t("homePage.hero.buttonJoin")}
-              </button>
-
-              <button className={styles.heroButton}>
-                {t("homePage.hero.buttonRead")}
-              </button>
-            </p>
+            <div className={styles.buttonsMobile}>
+              <p>
+                <button className={styles.heroButtonBlack}>
+                  {t("homePage.hero.buttonJoin")}
+                </button>
+              </p>
+              <p>
+                <button className={styles.heroButtonWhite}>
+                  {t("homePage.hero.buttonRead")}
+                </button>
+              </p>
+            </div>
+            <div className={styles.buttonsDesktop}>
+              <p>
+                <button className={styles.heroButtonBlack}>
+                  {t("homePage.hero.buttonJoin")}
+                </button>
+                <button className={styles.heroButtonWhite}>
+                  {t("homePage.hero.buttonRead")}
+                </button>
+              </p>
+            </div>
           </div>
           <div className={styles.heroBox}>
             <img className={styles.imgDesktop} src="/assets/hero-img.png" />
