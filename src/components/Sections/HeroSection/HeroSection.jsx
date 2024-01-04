@@ -30,14 +30,12 @@ export const HeroSection = () => {
               </p>
             </div>
             <div className={styles.buttonsDesktop}>
-              <p>
-                <button className={styles.heroButtonBlack}>
-                  {t("homePage.hero.buttonJoin")}
-                </button>
-                <button className={styles.heroButtonWhite}>
-                  {t("homePage.hero.buttonRead")}
-                </button>
-              </p>
+              <button className={styles.heroButtonBlack}>
+                {t("homePage.hero.buttonJoin")}
+              </button>
+              <button className={styles.heroButtonWhite}>
+                {t("homePage.hero.buttonRead")}
+              </button>
             </div>
           </div>
           <div className={styles.heroBox}>

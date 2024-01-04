@@ -74,10 +74,23 @@
     grid-template-columns: repeat(1, 1fr);
     overflow: auto;
     max-height: fit-content;
+    padding: 3em 2em 6rem 2em;
+    margin-top: 3rem;
+    text-align: left;
+    vertical-align: middle;
   }
 
   .bodyDesktop {
     display: none;
+  }
+
+  .bodyBox {
+    margin-top: 3.5em;
+  }
+
+  .bodyBox p {
+    text-align: center;
+    padding: 0 4em 0 4em;
   }
 
   .bodyButtonBlack {
@@ -88,12 +101,29 @@
     text-align: center;
     font-size: 16px;
     margin-bottom: 10em;
+    margin-top: 1em;
     font-family: "Poppins", sans-serif;
   }
 
   .bodyButtonBlack:hover {
     background-color: #0025ff;
     border: 2px solid #0025ff;
+  }
+
+  .bodyButton {
+    background-color: #ffecea;
+    color: #202020;
+    border-radius: 30px;
+    padding: 11px 50px 11px 50px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10em;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .bodyLastBox {
+    text-align: center;
+    padding: 0 8em 0 8em;
   }
 }
 

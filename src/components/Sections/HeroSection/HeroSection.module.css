@@ -98,8 +98,63 @@ h1 {
     grid-template-columns: repeat(1, 1fr);
     padding: 3em 2em 6rem 2em;
     margin-top: 3rem;
-    text-align: center;
+    text-align: left;
     vertical-align: middle;
+  }
+
+  .heroButtonWhite,
+  .heroButtonBlack {
+    display: inline-block;
+    margin-right: 1em;
+    width: 100%;
+  }
+
+  .buttonsMobile {
+    display: none;
+  }
+
+  .buttonsDesktop {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5em;
+  }
+
+  .heroButtonWhite {
+    background-color: #ffecea;
+    color: #202020;
+    border-radius: 50px;
+    padding: 11px 40px 11px 40px;
+    font-family: "Poppins", sans-serif;
+    max-width: 100%;
+    display: block;
+    margin: 1em;
+  }
+
+  .heroButtonWhite:hover {
+    border: 2px solid #0025ff;
+  }
+
+  .heroButtonBlack {
+    background-color: #202020;
+    color: #ffecea;
+    border-radius: 50px;
+    padding: 11px 40px 11px 40px;
+    font-family: "Poppins", sans-serif;
+    max-width: 100%;
+    display: block;
+    margin: 1em;
+  }
+
+  .heroButtonBlack:hover {
+    background-color: #0025ff;
+    border: 2px solid #0025ff;
+  }
+
+  .buttonsDesktop {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5em;
+    margin-bottom: 4em;
   }
 
   .imgMobile {
@@ -112,9 +167,9 @@ h1 {
 
   .heroBox {
     margin-left: 0;
+    text-align: center;
   }
-
-  .heroBox {
+  .heroBox p {
     text-align: center;
   }
 }
@@ -125,12 +180,11 @@ h1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 1em 6rem 1em;
-    text-align: center;
+    text-align: left;
   }
 
   .heroBox {
     align-content: left;
-    box-sizing: border-box;
     padding: 20px;
   }
 
@@ -139,8 +193,14 @@ h1 {
     padding-left: 1.2em;
     padding-right: 1.2em;
     font-size: 18px;
-    display: flex;
-    align-items: flex-start;
+    margin: 0; /* Remove default margin */
+  }
+
+  .heroButtonWhite,
+  .heroButtonBlack {
+    display: inline-block;
+    margin-right: 1em;
+    width: 100%;
   }
 
   .buttonsMobile {
@@ -148,7 +208,9 @@ h1 {
   }
 
   .buttonsDesktop {
-    display: block;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0.5em;
   }
 
   .heroButtonWhite {
@@ -157,7 +219,8 @@ h1 {
     border-radius: 50px;
     padding: 11px 60px 11px 60px;
     font-family: "Poppins", sans-serif;
-    display: inline-block;
+    max-width: 100%;
+    display: block;
     margin: 1em;
   }
 
@@ -171,7 +234,8 @@ h1 {
     border-radius: 50px;
     padding: 11px 60px 11px 60px;
     font-family: "Poppins", sans-serif;
-    display: inline-block;
+    max-width: 100%;
+    display: block;
     margin: 1em;
   }
 
