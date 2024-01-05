@@ -18,16 +18,12 @@ export const HeroSection = () => {
             <h1>{t("homePage.hero.h1")}</h1>
             <p>{t("homePage.hero.p")}</p>
             <div className={styles.buttonsMobile}>
-              <p>
-                <button className={styles.heroButtonBlack}>
-                  {t("homePage.hero.buttonJoin")}
-                </button>
-              </p>
-              <p>
-                <button className={styles.heroButtonWhite}>
-                  {t("homePage.hero.buttonRead")}
-                </button>
-              </p>
+              <button className={styles.heroButtonBlack}>
+                {t("homePage.hero.buttonJoin")}
+              </button>
+              <button className={styles.heroButtonWhite}>
+                {t("homePage.hero.buttonRead")}
+              </button>
             </div>
             <div className={styles.buttonsDesktop}>
               <button className={styles.heroButtonBlack}>
