@@ -5,6 +5,10 @@
   max-height: fit-content;
 }
 
+.bodyDesktop {
+  display: none;
+}
+
 .bodyBox {
   text-align: center;
   margin-top: 0;
@@ -36,6 +40,8 @@
 }
 
 .bodyButtonBlack {
+  display: inline-block;
+  white-space: nowrap;
   background-color: #202020;
   color: #ffecea;
   border-radius: 30px;
@@ -43,6 +49,7 @@
   text-align: center;
   font-size: 16px;
   margin-bottom: 10em;
+
   font-family: "Poppins", sans-serif;
 }
 
@@ -57,6 +64,11 @@
 
 .imgDesktop {
   display: none;
+}
+
+.bodyLastBox {
+  text-align: center;
+  padding: 0 2em 0 2em;
 }
 
 /*media query for tablet - 1 row */
