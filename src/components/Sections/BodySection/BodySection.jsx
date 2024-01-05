@@ -28,7 +28,11 @@ export const BodySection = () => {
               <p>{t("homePage.body.matP")}</p>
               <button
                 className={styles.bodyButton}
-                style={{ color: "black", backgroundColor: "#ffecea" }}
+                style={{
+                  color: "black",
+                  backgroundColor: "#ffecea",
+                  padding: "0",
+                }}
               >
                 {t("homePage.body.bodyButtonBook")}
               </button>
