@@ -86,4 +86,13 @@
     transform: scale(1.25);
     transition: 0.5s ease;
   }
+
+  .cardHeaders {
+    font-size: 28px;
+    margin-top: 10em;
+  }
+
+  .cardHeaders h2 {
+    margin-top: 20px;
+  }
 }

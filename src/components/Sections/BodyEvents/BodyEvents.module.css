@@ -9,6 +9,7 @@
 .eventsBox {
   text-align: center;
   margin-top: 0;
+  padding: 0 0.5em;
 }
 
 .buttonsMobile {
@@ -108,5 +109,22 @@
 @media (min-width: 1025px) {
   .buttonsMobile {
     display: none;
+  }
+
+  .eventsBox {
+    text-align: center;
+    margin-top: 0;
+    padding: 3em;
+  }
+
+  .eventsBox p {
+    text-align: center;
+    margin-top: 0;
+    padding: 0 20em;
+  }
+
+  .eventsBox h2 {
+    text-align: center;
+    padding: 0 8em;
   }
 }
