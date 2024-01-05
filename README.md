@@ -9,6 +9,8 @@ Unfortunetly, my designer was not able to supply a finished product. My code coa
 
 Submitted 2nd design on December 2nd 2024: All styling complete and all translation, home page and event page both in English and German.
 
+Submitted again on January 5th 2024: To fix some styling and add hover effects.
+
 # Design Handoff Project
 
 This week we transformed a UX student's design into a React-based landing page for a gym/fitness club. This project bridges the gap between design and development, showcasing the art of bringing visuals to life with code. The teacher did not specify where to put the translation box and told me I was welcome to change the design to fit it in, it now appears as flag buttons in the footer which I rearranged a little.
