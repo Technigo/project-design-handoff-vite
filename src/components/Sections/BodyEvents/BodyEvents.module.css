@@ -1,0 +1,130 @@
+.eventsContainer {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  overflow-x: hidden;
+  max-height: fit-content;
+  max-width: 100%;
+}
+
+.eventsBox {
+  text-align: center;
+  margin-top: 0;
+  padding: 0 0.5em;
+}
+
+.buttonsMobile {
+  display: block;
+}
+
+.heroButtonWhite {
+  background-color: #ffecea;
+  color: #202020;
+  border-radius: 30px;
+  padding: 11px 90px 11px 90px;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  margin: 0.5em;
+  display: block; /* Set display to block for mobile view */
+  width: 100%;
+}
+
+.heroButtonWhite:hover {
+  border: 2px solid #0025ff;
+}
+
+.heroButtonBlack {
+  white-space: nowrap;
+  background-color: #202020;
+  color: #ffecea;
+  border-radius: 30px;
+  padding: 11px 90px 11px 90px;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  margin: 0.5em;
+  display: block; /* Set display to block for mobile view */
+  width: 100%;
+}
+
+.heroButtonBlack:hover {
+  background-color: #0025ff;
+  border: 2px solid #0025ff;
+}
+
+.eventsContainer h2 {
+  font-size: 40px;
+  font-weight: 400;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.eventsContainer p {
+  font-size: 18px;
+  padding: 0 0.6em 0 0.6em;
+}
+
+.pBold {
+  font-weight: 600;
+}
+
+.eventsBox img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.eventsButton {
+  background-color: #ffecea;
+  color: #202020;
+  border-radius: 30px;
+  padding: 8px 115px 8px 115px;
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+/*media query for tablet - 1 row */
+@media (min-width: 668px) and (max-width: 1024px) {
+  .eventsButton {
+    background-color: #ffecea;
+    color: #202020;
+    border-radius: 30px;
+    padding: 11px 50px 11px 50px;
+    text-align: center;
+    margin: 1rem;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+  }
+
+  .eventsBox {
+    text-align: center;
+    margin-top: 0;
+    padding: 3em;
+  }
+
+  .buttonsMobile {
+    display: none;
+  }
+}
+
+/*media query for desktop - 2 rows */
+@media (min-width: 1025px) {
+  .buttonsMobile {
+    display: none;
+  }
+
+  .eventsBox {
+    text-align: center;
+    margin-top: 0;
+    padding: 3em;
+  }
+
+  .eventsBox p {
+    text-align: center;
+    margin-top: 0;
+    padding: 0 20em;
+  }
+
+  .eventsBox h2 {
+    text-align: center;
+    padding: 0 8em;
+  }
+}

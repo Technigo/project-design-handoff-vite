@@ -1,0 +1,222 @@
+.bodyMobile {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  overflow: auto;
+  max-height: fit-content;
+}
+
+.bodyDesktop {
+  display: none;
+}
+
+.bodyBox {
+  text-align: center;
+  margin-top: 0;
+}
+
+.bodyContainer p {
+  font-size: 26px;
+  padding: 0 0.6em 0 0.6em;
+}
+
+.pBold {
+  font-weight: 600;
+}
+
+.bodyBox img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.bodyButton {
+  background-color: #ffecea;
+  color: #202020;
+  border-radius: 30px;
+  padding: 11px 130px 11px 130px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10em;
+  font-family: "Poppins", sans-serif;
+}
+
+.bodyButtonBlack {
+  display: inline-block;
+  white-space: nowrap;
+  background-color: #202020;
+  color: #ffecea;
+  border-radius: 30px;
+  padding: 11px 130px 11px 130px;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 10em;
+
+  font-family: "Poppins", sans-serif;
+}
+
+.bodyButtonBlack:hover {
+  background-color: #0025ff;
+  border: 2px solid #0025ff;
+}
+
+.imgMobile {
+  display: block;
+}
+
+.imgDesktop {
+  display: none;
+}
+
+.bodyLastBox {
+  text-align: center;
+  padding: 0 2em 0 2em;
+}
+
+/*media query for tablet - 1 row */
+@media (min-width: 668px) and (max-width: 1024px) {
+  .imgMobile {
+    display: none;
+  }
+
+  .imgDesktop {
+    display: block;
+  }
+
+  .bodyMobile {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    overflow: auto;
+    max-height: fit-content;
+    padding: 3em 2em 6rem 2em;
+    margin-top: 3rem;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  .bodyDesktop {
+    display: none;
+  }
+
+  .bodyBox {
+    margin-top: 3.5em;
+  }
+
+  .bodyBox p {
+    text-align: center;
+  }
+
+  .bodyButtonBlack {
+    background-color: #202020;
+    color: #ffecea;
+    border-radius: 30px;
+    padding: 11px 60px 11px 60px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10em;
+    margin-top: 1em;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .bodyButtonBlack:hover {
+    background-color: #0025ff;
+    border: 2px solid #0025ff;
+  }
+
+  .bodyButton {
+    background-color: #ffecea;
+    color: #202020;
+    border-radius: 30px;
+    padding: 11px 50px 11px 50px;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 5em;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .bodyLastBox {
+    text-align: center;
+    padding: 0 3em 0 3em;
+  }
+}
+
+/*media query for desktop - 2 rows */
+@media (min-width: 1025px) {
+  .bodyMobile {
+    display: none;
+  }
+
+  .imgMobile {
+    display: none;
+  }
+
+  .bodyDesktop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: auto;
+    gap: 20px;
+    padding: 3em;
+  }
+
+  .bodyBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .bodyBox p {
+    text-align: left;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .bodyButtonBlack {
+    background-color: #202020;
+    color: #ffecea;
+    border-radius: 30px;
+    padding: 11px 60px 11px 60px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    margin-top: 1.5em;
+  }
+
+  .bodyButtonBlack:hover {
+    background-color: #0025ff;
+    border: 2px solid #0025ff;
+  }
+
+  .bodyLastBox {
+    text-align: center;
+    grid-column: span 2;
+    padding: 5em 20em 0 20em;
+  }
+
+  .bodyButton {
+    background-color: #ffecea;
+    color: #202020;
+    border-radius: 30px;
+    padding: 11px 150px;
+    min-width: 500px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    margin-left: 4em;
+    margin-top: 2em;
+    margin-bottom: 0;
+  }
+
+  .bodyButton:hover {
+    border: 2px solid #0025ff;
+  }
+
+  .bodyHeading {
+    text-align: center;
+    grid-column: span 2;
+    padding: 5em 20em 0 20em;
+  }
+
+  .imgDesktop {
+    display: block;
+  }
+}
