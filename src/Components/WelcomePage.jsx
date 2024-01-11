@@ -8,7 +8,7 @@ const WelcomePage = () => {
   return (
       <div className="Header">
         <div className="navbar">
-          <img src={Logo} alt="Logotype" />
+          <img src={Logo} alt="Logotype" className="logo"/>
           <ul className="nav-list">
             <li><a href="#">About Us</a></li>
             <li><a href="#">Explore</a></li>
@@ -34,6 +34,8 @@ const WelcomePage = () => {
 };
 
 export default WelcomePage;
+
+
 
 
 

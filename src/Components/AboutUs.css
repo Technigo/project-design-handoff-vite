@@ -1,3 +1,25 @@
+.new-yoga {
+  background-color: #EBE7E4; 
+  padding: 20px; 
+}
+.new-yoga-content {
+  text-align: center; 
+  padding: 20px; 
+}
+.new-yoga-content h2 {
+  font-size: 18px; 
+  color: #38302A; 
+}
+.book-button {
+  background-color: #38302A;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .about-text {
     flex: 1;
     text-align: left;

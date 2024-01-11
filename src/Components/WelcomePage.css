@@ -1,31 +1,35 @@
-/*Header*/
+.header {
+  position: relative;
+  width: 100%;
+}
 .navbar {
-    display: flex;
-    align-items: center;
+  position: relative;
+  z-index: 10; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  padding: 20px;
   }
   .logo {
     width: 100px; 
-    margin-right: 500px;
   }
   .nav-list {
     list-style: none;
     display: flex;
-    padding: 0;
+    margin-right: 100px;
   }
   .nav-list li {
-    margin-right: 70px; 
-  }
-  .nav-list li:last-child {
-    margin-right: 0; 
+    margin-right: 100px; 
   }
   .nav-list li a {
     text-decoration: none; 
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: #38302A; 
   }
 
-  /*welcome page text*/
+
 .welcome-page {
     text-align: left;
   }
@@ -41,7 +45,6 @@
   }
   
   
-  /* welcome text buttons*/
   .buttons {
     display: flex;
     justify-content: flex-start; 
@@ -65,15 +68,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px; 
+    padding: 20px;
+    padding-right: 0; 
     width: 100%;
   }
   .text {
     flex: 1;
+  padding-right: 20px;
   }
   .image {
-    flex: 1;
-    text-align: right;
+    width: 60%; 
+    margin-left: auto;    
   }
-  
-
+  .image img {
+    display: block; 
+    width: 100%; 
+    position: relative; 
+    top: -200px; 
+    z-index: 5; 
+  }
