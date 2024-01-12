@@ -10,10 +10,10 @@ const WelcomePage = () => {
         <div className="navbar">
           <img src={Logo} alt="Logotype" className="logo"/>
           <ul className="nav-list">
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Explore</a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Prices</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">EXPLORE</a></li>
+            <li><a href="#">SCHEDULE</a></li>
+            <li><a href="#">PRICES</a></li>
           </ul>
         </div>
       <div className="content">
