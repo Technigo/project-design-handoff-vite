@@ -1,11 +1,12 @@
 import React from 'react';
-import Logo from '../assets/Images/Logotype.png';
+import Image4 from '../assets/Images/Section 4.png';
 import './Boxes.css';
 
 const Boxes = () => {
     return (
       <div>
         <section className="boxes">
+        <img src={Image4} alt="Image Section 4" />
         <div className="overlay">
           <div className="box">CLASSES</div>
           <div className="box">STUDIO</div>
