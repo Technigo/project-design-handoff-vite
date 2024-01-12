@@ -1,39 +1,81 @@
-.new-yoga {
-  background-color: #EBE7E4; 
-  padding: 20px; 
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr; 
+  grid-template-areas: 
+    "new-yoga new-yoga new-yoga"
+    ". about-container ."; 
+  align-items: center;
+  padding: 50px;
+  background-color: #EBE7E4;
 }
+
 .new-yoga-content {
-  text-align: center; 
-  padding: 20px; 
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  grid-area: new-yoga;
 }
-.new-yoga-content h2 {
-  font-size: 18px; 
-  color: #38302A; 
+
+.new-yoga-content h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
 }
+
+.new-yoga-content p {
+  font-size: 18px;
+  color: #38302A;
+  margin-bottom: 20px;
+}
+
 .book-button {
+  background-color: #fff;
+  color: #38302A;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.about-container {
+  grid-area: about-container;
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 80px;
+}
+
+.yoga-image {
+  width: auto; 
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-content {
+  width: auto; 
+  max-width: 50%; 
+  text-align: left;
+}
+
+.about-content h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #38302A;
+  margin-bottom: 20px;
+}
+
+.discover-story-button {
   background-color: #38302A;
   color: #fff;
   padding: 10px 20px;
   font-size: 16px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.about-text {
-    flex: 1;
-    text-align: left;
-  }
-  .about-text h1 {
-    font-size: 24px; 
-  }
-  .about-text h2 {
-    font-size: 18px; 
-    color: #38302A; 
-  }
-  .discoverstory-button {
-    background-color: #38302A;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;  
-  }
