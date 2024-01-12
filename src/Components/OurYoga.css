@@ -7,17 +7,18 @@
     padding: 20px; 
   }
   .our-yoga-content h2 {
-    font-size: 18px; 
+    font-size: 25px; 
     color: #38302A; 
   }
   .offerrings-button {
-    background-color: #38302A;
-    color: #fff;
+    background-color: #fff; 
+    color: #38302A;
     padding: 10px 20px;
     font-size: 16px;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%);
+    border-radius: 10px;
+    cursor: pointer;
   }
   .offerings {
     display: flex;
@@ -26,22 +27,25 @@
     padding: 20px; 
   }
   .offerings img {
-    width: 50%; 
+    width: 40%; 
   }
   .offerings-text {
     flex: 1;
-    text-align: left;
+    text-align: center;
   }
   .offerings-text h1 {
-    font-size: 24px; 
+    font-size: 45px; 
   }
   .offerings-text h2 {
-    font-size: 18px; 
+    font-size: 20px; 
     color: #38302A; 
+    width: 40%;
   }
   .discoverclasses-button {
-    background-color: #38302A;
+    background-color: #38302A; 
     color: #fff;
     padding: 10px 20px;
     font-size: 16px;  
+    border-radius: 10px;
+    cursor: pointer;
   }

@@ -11,7 +11,8 @@ const InTouch = () => {
           <input type="email" placeholder="Email address" />
           <button className="subscribe-button">Subscribe</button>
         </div>
-        <h2>By signing up for our email list, you consent to the handling of your personal information in accordance with our terms and conditions.</h2>
+        <h2>By signing up for our email list, you consent to the handling of your </h2>
+        <h2>personal information in accordance with our terms and conditions.</h2>
       </section>
     </div>
   );

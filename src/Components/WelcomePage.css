@@ -44,20 +44,24 @@
   margin-top: 20px; 
 }
 
-.discover-button,
-.login-button {
+.discover-button {
   padding: 10px 20px;
   margin-right: 10px; 
   font-size: 16px; 
   background-color: #38302A; 
   color: #fff; 
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
 }
 
 .login-button {
-  background-color: #333; 
+  background-color: #fff; 
+  color: #38302A;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
 }
 
 .content {
