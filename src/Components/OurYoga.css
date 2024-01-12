@@ -1,51 +1,107 @@
-.our-yoga {
-    background-color: #EBE7E4; 
-    padding: 20px; 
+.our-yoga-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  grid-template-areas: 
+    "our-yoga our-yoga our-yoga"
+    ". yoga-container .";
+  align-items: center;
+  padding: 50px;
+  background-color: #ebe7e4;;
+}
+
+.our-yoga-content {
+  text-align: center;
+  padding: 20px;
+  grid-area: our-yoga;
+}
+
+.our-yoga-content h2 {
+  font-size: 18px;
+  color: #38302A;
+  margin-bottom: 20px;
+}
+
+.offerings-button {
+  background-color: #fff;
+  color: #38302A;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.yoga-container {
+  grid-area: yoga-container;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.yoga-image {
+  width: auto;
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+
+.yoga-content {
+  width: auto;
+  max-width: 50%;
+  text-align: left;
+}
+
+.yoga-content h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.yoga-content p {
+  font-size: 18px;
+  color: #38302A;
+  margin-bottom: 20px;
+}
+
+.discover-classes-button {
+  background-color: #38302A;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .our-yoga-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr;
+    grid-template-areas:
+      "our-yoga"
+      "image"
+      "yoga";
   }
-  .our-yoga-content {
-    text-align: center; 
-    padding: 20px; 
-  }
-  .our-yoga-content h2 {
-    font-size: 25px; 
-    color: #38302A; 
-  }
-  .offerrings-button {
-    background-color: #fff; 
-    color: #38302A;
-    padding: 10px 20px;
-    font-size: 16px;
-    position: absolute;
-    left: 50%;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  .offerings {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px; 
-  }
-  .offerings img {
-    width: 40%; 
-  }
-  .offerings-text {
-    flex: 1;
+
+  .our-yoga-content, .yoga-content {
+    grid-column: 1;
+    padding: 0;
     text-align: center;
   }
-  .offerings-text h1 {
-    font-size: 45px; 
+
+  .yoga-image {
+    grid-area: image;
+    width: 100%;
+    order: -1;
+    padding: 0;
   }
-  .offerings-text h2 {
-    font-size: 20px; 
-    color: #38302A; 
-    width: 40%;
+
+  .yoga-content {
+    grid-area: yoga;
+    order: 1;
+    padding: 20px;
   }
-  .discoverclasses-button {
-    background-color: #38302A; 
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;  
-    border-radius: 10px;
-    cursor: pointer;
-  }
+}
