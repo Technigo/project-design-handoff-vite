@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 200px; 
+    padding: 50px; 
     background-color: #ebe7e4;
   }
     
@@ -15,12 +15,14 @@
     font-size: 40px;
     color: #38302A;
     margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
   }
     
   .story-content p {
     font-size: 20px;
     color: #38302A;
     line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
   }
     
   .story-image {
