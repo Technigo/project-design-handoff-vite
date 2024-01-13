@@ -36,6 +36,7 @@
   font-size: 22px;
   font-weight: bold;
   color: #38302A; 
+  font-family: 'Open Sans', sans-serif;
 }
  
 .buttons {
@@ -81,13 +82,15 @@
 }
 
  h1 {
-  font-size: 4rem; 
+  font-size: 80px; 
   line-height: 1.2; 
-  color: #38302A;  
+  color: #38302A; 
+  font-family: 'Open Sans', sans-serif; 
 }
   
 h2 {
-  color: #38302A; 
+  color: #38302A;
+  font-family: 'Open Sans', sans-serif; 
 }
 
 .image {

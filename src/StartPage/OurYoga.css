@@ -19,6 +19,7 @@
   font-size: 18px;
   color: #38302A;
   margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .offerings-button {
@@ -59,12 +60,14 @@
 .yoga-content h1 {
   font-size: 30px;
   margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .yoga-content p {
   font-size: 18px;
   color: #38302A;
   margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .discover-classes-button {
