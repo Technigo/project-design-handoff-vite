@@ -25,7 +25,12 @@ const resources = {
             'CLASSES': 'KLASSER',
             'STUDIO': 'STUDIO',
             'SCHEDULE': 'SCHEMA',
-
+            'NEW TO YOGA?': 'NYBÖRJARE PÅ YOGA?',
+            'Start with a free trial session, and we will help you begin your journey with confidence.': 'VI hjälper dig att börja din resa med självförtroende. Starta med en gratis prova på session idag.',
+            'Book Now': 'Boka nu',
+            'ABOUT US': 'OM OSS',
+            'Serenity Yoga embarked on its journey at Mariatorget, Södermalm in Stockholm in the summer of 2022. In the autumn of 2023, we expanded our presence with a second studio at Hornstulls Strand.': 'Serenity Yoga påbörjade sin resa vid Mariatorget, Södermalm i Stockholm sommaren 2022. På hösten 2023 utökade vi vår närvaro med en andra studio vid Hornstulls Strand.',
+            'Discover Our Story': 'Läs mer om vår historia',
 
         }
     },
