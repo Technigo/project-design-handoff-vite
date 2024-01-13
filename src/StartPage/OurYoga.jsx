@@ -6,9 +6,9 @@ const OurYoga = () => {
   return (
     <div className="our-yoga-section">
       <div className="our-yoga-content">
-        <h2>Welcome to our community of experienced teachers, where you'll find classes for all </h2>
-        <h2>levels. Join us for our heartwarming events, including workshops, teacher training, </h2>
-        <h2>and retreats.</h2>
+        <p>Welcome to our community of experienced teachers, where you'll find classes for all </p>
+        <p>levels. Join us for our heartwarming events, including workshops, teacher training, </p>
+        <p>and retreats.</p>
         <button className="offerings-button">View Our Offerings</button>
       </div>
       <div className="yoga-container">
