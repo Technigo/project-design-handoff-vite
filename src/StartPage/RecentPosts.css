@@ -51,6 +51,10 @@
     display: inline-block; 
     box-sizing: border-box;
   }
+  .read-more-button:hover {
+    background-color: #38302A; 
+    color: #fff;
+  }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {

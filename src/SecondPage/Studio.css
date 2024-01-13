@@ -54,6 +54,11 @@
     cursor: pointer;
     border: none;
     }
+
+    .book-now-button:hover {
+      background-color: #7a899a;
+      color: #fff;
+    }
     
     @media (max-width: 768px) {
     .studio-section {

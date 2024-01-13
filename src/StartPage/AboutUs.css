@@ -34,7 +34,11 @@
   font-size: 16px;
   border-radius: 10px;
   cursor: pointer;
-  border: none;
+}
+
+.book-button:hover {
+  background-color: #7a899a;
+  color: #fff;
 }
 
 .about-container {
@@ -77,5 +81,10 @@
   font-size: 16px;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.discover-story-button:hover {
+  background-color: #7a899a;
+  color: #fff;
 }
 

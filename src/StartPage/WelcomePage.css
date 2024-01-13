@@ -56,6 +56,11 @@
   cursor: pointer;
 }
 
+.discover-button:hover {
+  background-color: #7a899a;
+  color: #fff;
+}
+
 .login-button {
   background-color: #fff; 
   color: #38302A;
@@ -63,6 +68,11 @@
   cursor: pointer;
   font-size: 16px;
   padding: 10px 20px;
+}
+
+.login-button:hover {
+  background-color: #7a899a;
+  color: #fff;
 }
 
 .content {

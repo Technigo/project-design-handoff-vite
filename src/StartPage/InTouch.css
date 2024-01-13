@@ -25,6 +25,7 @@
     padding: 10px;
     width: 20%;
     margin-right: 10px;
+    border: none;
   }
   .subscribe-button {
     background-color: #38302A;
@@ -34,4 +35,8 @@
     border-radius: 10px;
     cursor: pointer;
     margin: 40px;
+  }
+  .subscribe-button:hover {
+    background-color: #7a899a;
+    color: #fff;
   }

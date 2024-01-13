@@ -1,5 +1,7 @@
 import React from 'react';
 import Logo from '../assets/Images/Logotype.png';
+import Social from '../assets/Images/Social media.png';
+import Flag from '../assets/Images/Frame 87.png';
 import './Footer.css';
 
 const Footer = () => {
@@ -9,6 +11,8 @@ const Footer = () => {
         <p>CONTACT</p>
         <p>TERMS</p>
         <p>FAQ</p>
+        <img src={Social} alt="Socialmedia" className="Social-media" />
+        <img src={Flag} alt="Flag" className="Flag" />
       </div>
       <div className="footer-center">
         <img src={Logo} alt="Logotype" className="footer-logo" />

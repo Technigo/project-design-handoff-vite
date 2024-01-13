@@ -22,12 +22,11 @@
 
 .footer-left p, .footer-right div {
   margin-bottom: 10px;
-  cursor: pointer; 
 }
 
 .footer-left p {
   text-align: left;
-  margin-left: 40px; 
+  margin-left: 20px; 
 }
 
 .footer-right {
@@ -38,4 +37,15 @@
   margin: 0; 
 }
 
+.Social-media {
+  margin-right: 20px;
+  width: 70px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.Flag {
+  width: 40px;
+  cursor: pointer;
+}
   
