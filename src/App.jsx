@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import StartPage from './StartPage/StartPage';
 import SecondPage from './SecondPage/SecondPage';
 import Footer from './StartPage/Footer'; 
+import './i18n';
 
 export const App = () => {
   return (
