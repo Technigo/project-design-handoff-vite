@@ -2,6 +2,7 @@ import React from 'react';
 import HeroImage from '../assets/Images/Hero image.png';
 import Logo from '../assets/Images/Logotype.png';
 import './WelcomePage.css';
+import { Link } from 'react-router-dom';
 
 
 const WelcomePage = () => {
@@ -10,7 +11,7 @@ const WelcomePage = () => {
         <div className="navbar">
           <img src={Logo} alt="Logotype" className="logo"/>
           <ul className="nav-list">
-            <li><a href="#">ABOUT US</a></li>
+            <li><Link to="/about">ABOUT US</Link></li>
             <li><a href="#">EXPLORE</a></li>
             <li><a href="#">SCHEDULE</a></li>
             <li><a href="#">PRICES</a></li>
