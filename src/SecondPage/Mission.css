@@ -1,0 +1,41 @@
+.mission-section {
+    position: relative; 
+    text-align: center;
+  }
+  
+  .mission-logo {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    z-index: 10; 
+  }
+  
+  .mission-logo img {
+    max-width: 100px;
+  }
+  
+  .mission-image img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+  }
+  
+  .mission-content {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto; 
+    margin-top: -50px; 
+  }
+  
+  .mission-content h2 {
+    font-size: 35px;
+    color: #38302A;
+    margin-bottom: 20px;
+    margin-top: 70px;
+  }
+  
+  .mission-content p {
+    font-size: 20px;
+    color: #38302A;
+  }
+  
