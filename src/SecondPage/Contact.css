@@ -1,63 +1,62 @@
 .contact-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 50px;
-  }
-  
-  .contact-text {
-    flex: 1;
-    max-width: 40%; 
-    padding-left: 100px; 
-  }
-  
-  .contact-text h2 {
-    font-size: 40px; 
-    margin-bottom: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    color: #38302A;
-  }
-  
-  .contact-text p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #38302A;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
-  .contact-form {
-    flex: 1;
-    max-width: 30%;
-    padding-right: 100px;
-  }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .contact-form label {
-    margin-bottom: 0.5rem;
-  }
-  
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc; 
-    border-radius: 4px;
-  }
-  
-  .contact-form textarea {
-    height: 100px; 
-  }
-  
-  .privacy-policy {
-    display: flex;
-    align-items:
-    center;
-    margin-bottom: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 50px;
+  gap: 100px;
+}
+
+.contact-text {
+  flex: 1;
+  max-width: 25%; 
+}
+
+.contact-text h2 {
+  font-size: 65px; 
+  margin-bottom: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #38302A;
+}
+
+.contact-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #38302A;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 30%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  height: 100px; 
+}
+
+.privacy-policy {
+  display: flex;
+  align-items:
+  center;
+  margin-bottom: 1rem;
 }
 
 .privacy-policy input[type="checkbox"] {

@@ -21,7 +21,7 @@
   }
   
   .mission-content {
-    padding: 20px;
+    padding: 70px;
     max-width: 600px;
     margin: 0 auto; 
     margin-top: -50px; 
@@ -30,7 +30,7 @@
   .mission-content h2 {
     font-size: 40px;
     color: #38302A;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-top: 70px;
     font-family: 'Open Sans', sans-serif;
   }
