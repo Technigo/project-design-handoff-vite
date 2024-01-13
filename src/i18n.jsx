@@ -22,7 +22,9 @@ const resources = {
             'OUR YOGA': 'VÅR YOGA',
             'No matter which class you choose, we stress breath, muscle support, and focus to ensure a safe yoga practice. We tailor our classes to your individual needs, whether you require modifications due to injuries or want to challenge yourself. We love sharing our passion for yoga and are always available to answer your questions after the class. We are here for you!': 'Oavsett vilken klass du väljer, lägger vi vikt vid andning, muskelstöd och fokus för att säkerställa en säker yogapraxis. Vi anpassar våra klasser till dina individuella behov, oavsett om du behöver modifieringar på grund av skador eller vill utmana dig själv. Vi älskar att dela vår passion för yoga och är alltid tillgängliga för att svara på dina frågor efter klassen. Vi finns här för dig!',
             'Discover Our Classes': 'Se våra klasser',
-
+            'CLASSES': 'KLASSER',
+            'STUDIO': 'STUDIO',
+            'SCHEDULE': 'SCHEMA',
 
 
         }
