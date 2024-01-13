@@ -31,6 +31,17 @@ const resources = {
             'ABOUT US': 'OM OSS',
             'Serenity Yoga embarked on its journey at Mariatorget, Södermalm in Stockholm in the summer of 2022. In the autumn of 2023, we expanded our presence with a second studio at Hornstulls Strand.': 'Serenity Yoga påbörjade sin resa vid Mariatorget, Södermalm i Stockholm sommaren 2022. På hösten 2023 utökade vi vår närvaro med en andra studio vid Hornstulls Strand.',
             'Discover Our Story': 'Läs mer om vår historia',
+            'RECENT POSTS': 'SENASTE INLÄGGEN',
+            '25 July 2023': '25 Juli 2023',
+            'FALL SCHEDULE': 'HÖSTENS SCHEMA',
+            'We are open throughout the fall from 25/8 to 20/12. Unlimited yoga during this period - 1490 SEK.': 'I höst har vi öppet från den 25/8 till 20/12. Obegränsat med yoga under denna period för endast 1490 kronor.',
+            'Read more': 'Läs mer',
+            '5 July 2023': '5 Juli 2023',
+            'YOGA TEACHER TRAININGS': 'Lektioner för Yoga lärare',
+            'Starting in the fall of 2023. Early-bird price, 29,900 SEK (including VAT). For more information, email or call, +46 736 26...': 'Startar hösten 2023. Tidig bokningspris, 29 900 SEK (inklusive moms). För mer information, maila eller ring, +46 736 26...',
+            '5 June 2023': '5 Juni 2023',
+            'ASHTANGA COURSE FALL 2023': 'ASHTANGA KURSER HÖST 2023',
+            'Sign up for an Ashtanga course, Step 1, 2, or 3 this fall and receive a free 10-class pass! The pass...': 'Anmäl dig till en Ashtanga-kurs, Steg 1, 2, eller 3 i höst och få ett gratis 10-klasspass! Passet...',
 
         }
     },
