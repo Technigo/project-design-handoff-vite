@@ -61,12 +61,12 @@ const resources = {
             'Changing and Shower Facilities: Freshen up with our convenient amenities.': 'Omklädningsrum och Duschmöjligheter: Fräscha upp dig med våra bekväma faciliteter.',
             'Relaxing Soundscapes: Enjoy calming soundscapes for an oasis of peace.': 'Avkopplande Ljudlandskap: Njut av lugnande ljudlandskap för en oas av fred.',
             'Book Now': 'Boka nu',
-            
-
-
-
-
-
+            'We are here for you': 'Vi finns här för dig',
+            'Thank you for your interest in our yoga services. We welcome any questions, feedback, or inquiries you may have. Please fill out the form, and we will get back to you as soon as possible. Your journey to wellness and inner balance starts here.': 'Tack för ditt intresse för våra yogatjänster. Vi välkomnar alla frågor, feedback eller förfrågningar du kan ha. Vänligen fyll i formuläret, och vi återkommer till dig så snart som möjligt. Din resa till välbefinnande och inre balans börjar här.',
+            'Name': 'Namn',
+            'Message': 'Meddelande',
+            'I agree to the Privacy Policy.': 'Jag godkänner integritetspolicyn',
+            'Submit': 'Skicka',
         }
     },
 
