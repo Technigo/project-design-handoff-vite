@@ -1,0 +1,89 @@
+.about-container {
+  grid-area: about-container;
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 80px;
+  background-color: #EBE7E4;
+}
+
+.yoga-image {
+  width: auto; 
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
+}
+
+.about-content {
+  width: auto; 
+  max-width: 30%; 
+  text-align: left;
+}
+
+.about-content h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  color: #38302A;
+  margin-bottom: 20px;
+}
+
+.discover-story-button {
+  background-color: #38302A;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.discover-story-button:hover {
+  background-color: #7a899a;
+  color: #fff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    }
+    
+    .yoga-image {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      padding-bottom: 20px;
+    }
+    
+    .about-content {
+      order: 3;
+      text-align: center;
+      padding: 0 10px;
+      max-width: none;
+    }
+    
+    .about-content h1 {
+      font-size: 24px; 
+    }
+    
+    .about-content p {
+      font-size: 16px; 
+    }
+    
+    .discover-story-button {
+      font-size: 14px; 
+      padding: 10px; 
+      margin-top: 20px; 
+      margin-bottom: 70px; 
+    }
+  }
+
+
+

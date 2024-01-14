@@ -1,0 +1,57 @@
+.mission-section {
+    position: relative; 
+    text-align: center;
+  }
+  
+  .mission-logo {
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    z-index: 10; 
+  }
+  
+  .mission-logo img {
+    max-width: 100px;
+  }
+  
+  .mission-image img {
+    width: 100%;
+    height: auto; 
+    display: block; 
+  }
+  
+  .mission-content {
+    padding: 70px;
+    max-width: 600px;
+    margin: 0 auto; 
+    margin-top: -50px; 
+  }
+  
+  .mission-content h2 {
+    font-size: 40px;
+    color: #38302A;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .mission-content p {
+    font-size: 20px;
+    color: #38302A;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mission-content {
+      margin-top: 0; 
+      padding: 35px;
+      position: relative;
+      z-index: 2; 
+    }
+    .mission-content h2 {
+        font-size: 30px; 
+    }
+    .mission-section {
+      background-color: #ebe7e4;
+    }
+}

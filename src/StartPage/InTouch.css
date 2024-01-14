@@ -1,0 +1,49 @@
+.in-touch {
+    background-color: #EBE7E4;
+    padding: 20px;
+    text-align: center;
+  }
+  .in-touch h1 {
+    font-size: 24px;
+    color: #38302A;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .in-touch h2 {
+    font-size: 15px;
+    color: #38302A;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  .subscribe-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subscribe-form input {
+    padding: 10px;
+    width: 20%;
+    margin-right: 10px;
+    border: none;
+  }
+  .subscribe-button {
+    background-color: #38302A;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;  
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 40px;
+  }
+  .subscribe-button:hover {
+    background-color: #7a899a;
+    color: #fff;
+  }
+
+  /*mobile*/
+  @media (max-width: 768px) {
+    .subscribe-form input {
+      width: 60%;
+    } 
+  }

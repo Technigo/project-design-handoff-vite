@@ -1,0 +1,128 @@
+.studio-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background-color: #ebe7e4;
+}
+.studio-image {
+    flex-basis: 50%;
+    padding: 0 100px; 
+    display: flex;
+    justify-content: flex-start;
+    }
+    
+    .studio-image img {
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    }
+    
+    .studio-content {
+    flex-basis: 50%;
+    padding: 0 100px; 
+    text-align: left; 
+    }
+    
+    .studio-content h2 {
+    font-size: 40px; 
+    color: #38302A;
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    }
+    
+    .studio-content ul {
+    list-style: none; 
+    padding: 0;
+    margin-bottom: 30px;
+    }
+    
+    .studio-content ul li {
+    font-size: 20px; 
+    color: #38302A;
+    line-height: 1.6;
+    margin-bottom: 10px; 
+    font-family: 'Open Sans', sans-serif;
+    }
+    
+    .book-now-button {
+    background-color: #38302A;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    }
+
+    .book-now-button:hover {
+      background-color: #7a899a;
+      color: #fff;
+    }
+    
+    @media (max-width: 768px) {
+    .studio-section {
+    flex-direction: column-reverse; 
+    padding: 50px 20px; 
+    }
+    
+    .studio-content, .studio-image {
+    flex-basis: auto;
+    padding: 0; 
+    }
+    
+    .studio-content {
+    padding-bottom: 50px; 
+    }
+    .studio-content h2 {
+      text-align: center;
+    }
+    }
+
+    /* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .studio-section {
+    flex-direction: column; 
+    align-items: center; 
+    padding: 50px; 
+  }
+  
+  .studio-image, .studio-content {
+    flex-basis: 100%;
+    text-align: left; 
+  }
+
+  .studio-image {
+    order: 2; 
+    padding-bottom: 20px; 
+  }
+
+  .studio-image img {
+    max-width: 80%; 
+    height: auto; 
+    margin: 0 auto; 
+  }
+
+  .studio-content {
+    order: 1; 
+    padding-top: 20px; 
+  }
+
+  .studio-content h2, .studio-content ul, .book-now-button {
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  .studio-content h2 {
+    font-size: 35px; 
+  }
+
+  .studio-content ul li {
+    font-size: 18px; 
+  }
+
+  .book-now-button {
+  font-size: 18px;
+  margin-bottom: 70px;
+  }
+}

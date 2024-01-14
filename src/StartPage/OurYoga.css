@@ -1,0 +1,92 @@
+.yoga-container {
+  grid-area: yoga-container;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  background-color: #ebe7e4;
+}
+
+.yoga-image {
+  width: auto;
+  max-width: 60%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 90px;
+}
+
+.yoga-content {
+  width: auto;
+  max-width: 30%;
+  text-align: left;
+}
+
+.yoga-content h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.yoga-content p {
+  font-size: 18px;
+  color: #38302A;
+  margin-bottom: 20px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.discover-classes-button {
+  background-color: #38302A;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.discover-classes-button:hover {
+  background-color: #7a899a;
+  color: #fff;
+}
+
+/*mobile*/
+@media (max-width: 768px) {
+  .yoga-container {
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
+  }
+
+  .yoga-image {
+    order: 1; 
+    width: 100%; 
+    max-width: 100%;
+    height:auto; 
+    object-fit: cover;  
+  }
+
+  .yoga-content {
+    order: 2; 
+    text-align: center;
+    padding: 0; 
+    max-width: none;
+  }
+
+  .yoga-content p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .yoga-content h1 {
+    font-size: 24px; 
+  }
+  .discover-classes-button {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 20px; 
+    margin-bottom: 50px; 
+  }
+}
+
