@@ -72,6 +72,9 @@
     }
     
     .studio-content {
-    padding-bottom: 20px; 
+    padding-bottom: 50px; 
+    }
+    .studio-content h2 {
+      text-align: center;
     }
     }

@@ -5,7 +5,6 @@ import Logo from '../assets/Images/Logotype.png';
 import './WelcomePage.css';
 import { Link } from 'react-router-dom';
 
-
 const WelcomePage = () => {
   const { t } = useTranslation();
 

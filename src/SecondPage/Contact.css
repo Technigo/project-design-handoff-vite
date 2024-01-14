@@ -79,20 +79,31 @@ width: 100px;
   color: #fff;
 }
 
-
+/*mobile*/
 @media (max-width: 768px) {
 .contact-section {
 flex-direction: column;
 padding: 20px;
+margin-bottom: 40px;
 }
-
 .contact-text,
 .contact-form {
 max-width: 100%;
 padding: 0;
+text-align: center;
+}
+.contact-text {
+margin-bottom: -40px;
+}
+.contact-text h2 {
+  font-size: 35px;
+  padding-bottom: 10px;
+}
+.contact-form {
+  width: 100%;
+}
+.contact-form button {
+  width: 100%;
 }
 
-.contact-text {
-margin-bottom: 2rem;
-}
 }

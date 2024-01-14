@@ -37,7 +37,8 @@
     height: auto;
     display: block;
   }
-    
+   
+  /*mobile*/
   @media (max-width: 768px) {
     .story-section {
       flex-direction: column;
@@ -52,6 +53,7 @@
     
     .story-content {
       padding-bottom: 20px; 
+      text-align: center;
     }
   }
   

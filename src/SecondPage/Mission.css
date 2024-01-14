@@ -41,3 +41,11 @@
     font-family: 'Open Sans', sans-serif;
   }
   
+  @media screen and (max-width: 768px) {
+    .mission-content h2 {
+        font-size: 30px; 
+    }
+    .mission-section {
+      background-color: #ebe7e4;
+    }
+}
