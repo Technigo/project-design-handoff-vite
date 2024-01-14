@@ -47,7 +47,8 @@ const resources = {
             'Subscribe': 'Prenumerera',
             'By signing up for our email list, you consent to the handling of your': 'Genom att ange din email adress så godkänner du att vi hanterar din',
             'personal information in accordance with our terms and conditions.': 'personliga information i enlighet med våra regler och villkor.',
-
+            'OUR MISSION AND VALUES': 'VÅRT UPPDRAG OCH VÄRDERINGAR',
+            'Our mission is to empower individuals to transform their lives through the practice of yoga. We believe in creating a nurturing and inclusive environment where all can discover their true potential, both on and off the mat. Our core values include authenticity, mindfulness, and a commitment to personal growth.': 'Vårt uppdrag är att ge människor möjligheten att förändra sina liv genom praktiken av yoga. Vi tror på att skapa en närande och inkluderande miljö där alla kan upptäcka sin sanna potential, både på och utanför mattan. Våra kärnvärden inkluderar äkthet, medvetenhet och engagemang för personlig utveckling.',
 
 
 
