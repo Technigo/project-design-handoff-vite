@@ -90,38 +90,39 @@
   .studio-image, .studio-content {
     flex-basis: 100%;
     text-align: left; 
-}
+  }
 
-.studio-image {
-order: 2; 
-padding-bottom: 20px; 
-}
+  .studio-image {
+    order: 2; 
+    padding-bottom: 20px; 
+  }
 
-.studio-image img {
-max-width: 80%; 
-height: auto; 
-margin: 0 auto; 
-}
+  .studio-image img {
+    max-width: 80%; 
+    height: auto; 
+    margin: 0 auto; 
+  }
 
-.studio-content {
-  order: 1; 
-padding-top: 20px; 
-}
+  .studio-content {
+    order: 1; 
+    padding-top: 20px; 
+  }
 
-.studio-content h2, .studio-content ul, .book-now-button {
-margin-left: auto; 
-margin-right: auto;
-}
+  .studio-content h2, .studio-content ul, .book-now-button {
+    margin-left: auto; 
+    margin-right: auto;
+  }
 
-.studio-content h2 {
-font-size: 35px; 
-}
+  .studio-content h2 {
+    font-size: 35px; 
+  }
 
-.studio-content ul li {
-font-size: 18px; 
-}
+  .studio-content ul li {
+    font-size: 18px; 
+  }
 
-.book-now-button {
-font-size: 18px;
-margin-bottom: 70px;
+  .book-now-button {
+  font-size: 18px;
+  margin-bottom: 70px;
+  }
 }

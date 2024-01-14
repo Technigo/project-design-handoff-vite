@@ -162,3 +162,49 @@ h2 {
 }
 
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar .nav-list li {
+    margin-right: 50px; 
+  }
+
+  .nav-list li a {
+    font-size: 18px; 
+  }
+
+  h1 {
+    font-size: 40px; 
+    margin-top: 150px;
+    margin-bottom: 20px; 
+  }
+
+  .text {
+    padding: 10px;
+    margin-left: 3%; 
+    width: 50%; 
+  }
+
+  .image {
+    width: 50%; 
+  }
+
+  .content {
+    justify-content: center; 
+  }
+
+  .buttons {
+    justify-content: center; 
+    margin-top: 10px; 
+  }
+
+  .discover-button {
+    padding: 8px 16px; 
+    font-size: 14px; 
+    width: auto; 
+    margin-bottom: 50px;
+  }
+
+  .login-button {
+      display: none;
+  }
+}
