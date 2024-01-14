@@ -56,15 +56,38 @@
     color: #fff;
   }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-  .post-box {
-    /* On smaller screens, make the box take full width minus the margin */
-    max-width: calc(100% - 20px);
-  }
-
-  .post-boxes {
-    gap: 20px; /* Reduce the gap on smaller screens if needed */
-  }
-}
+  /* Mobile */
+  @media (max-width: 768px) {
+    .recent-posts h1 {
+      font-size: 24px; 
+      padding: 20px; 
+    }
   
+    .post-boxes {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+      gap: 20px; 
+    }
+  
+    .post-box {
+      width: 80%; 
+      max-width: 100%; 
+      margin: 10px 0; 
+    }
+  
+    .post-box img {
+      height: auto; 
+      max-height: 200px; 
+    }
+
+    .post-box p {
+      font-size: 16px; 
+    }
+
+    .read-more-button {
+      font-size: 14px; 
+      padding: 8px 16px; 
+      margin-top: 10px; 
+    }
+}

@@ -88,32 +88,62 @@
   color: #fff;
 }
 
+/*mobile*/
 @media (max-width: 768px) {
   .our-yoga-section {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr 1fr;
-    grid-template-areas:
-      "our-yoga"
-      "image"
-      "yoga";
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #ebe7e4; 
   }
 
-  .our-yoga-content, .yoga-content {
-    grid-column: 1;
-    padding: 0;
+  .our-yoga-content {
+    order: 1; 
     text-align: center;
+    padding-bottom: 20px; 
+  }
+
+  .yoga-container {
+    order: 2; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%; 
   }
 
   .yoga-image {
-    grid-area: image;
-    width: 100%;
-    order: -1;
-    padding: 0;
+    order: 1; 
+    width: 100%; 
+    max-width: 100%;
+    height:auto; 
+    object-fit: cover; 
+    padding-bottom: 20px; 
   }
 
   .yoga-content {
-    grid-area: yoga;
-    order: 1;
-    padding: 20px;
+    order: 2; 
+    text-align: center;
+    padding: 0; 
+    max-width: none;
+  }
+
+  .our-yoga-content p,
+  .yoga-content p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .our-yoga-content h1,
+  .yoga-content h1 {
+    font-size: 24px; 
+  }
+
+  .offerings-button,
+  .discover-classes-button {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
   }
 }
+

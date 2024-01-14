@@ -40,3 +40,10 @@
     background-color: #7a899a;
     color: #fff;
   }
+
+  /*mobile*/
+  @media (max-width: 768px) {
+    .subscribe-form input {
+      width: 60%;
+    } 
+  }

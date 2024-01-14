@@ -88,3 +88,59 @@
   color: #fff;
 }
 
+/* Mobile */
+@media (max-width: 768px) {
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    padding: 5px; 
+    background-color: #EBE7E4;
+  }
+
+  .new-yoga-content {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    }
+    
+    .yoga-image {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      object-fit: cover;
+      padding-bottom: 20px;
+    }
+    
+    .about-content {
+      order: 3;
+      text-align: center;
+      padding: 0 10px;
+      max-width: none;
+    }
+    
+    .new-yoga-content h1,
+    .about-content h1 {
+      font-size: 24px; 
+    }
+    
+    .new-yoga-content p,
+    .about-content p {
+      font-size: 16px; 
+    }
+    
+    .book-button,
+    .discover-story-button {
+      font-size: 14px; 
+      padding: 10px; 
+      margin-top: 20px; 
+      margin-bottom: 70px; 
+    }
+  }
+
+
+
