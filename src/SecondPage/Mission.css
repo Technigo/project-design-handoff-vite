@@ -42,6 +42,12 @@
   }
   
   @media screen and (max-width: 768px) {
+    .mission-content {
+      margin-top: 0; 
+      padding: 35px;
+      position: relative;
+      z-index: 2; 
+    }
     .mission-content h2 {
         font-size: 30px; 
     }
