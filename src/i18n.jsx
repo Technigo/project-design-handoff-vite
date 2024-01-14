@@ -49,7 +49,11 @@ const resources = {
             'personal information in accordance with our terms and conditions.': 'personliga information i enlighet med våra regler och villkor.',
             'OUR MISSION AND VALUES': 'VÅRT UPPDRAG OCH VÄRDERINGAR',
             'Our mission is to empower individuals to transform their lives through the practice of yoga. We believe in creating a nurturing and inclusive environment where all can discover their true potential, both on and off the mat. Our core values include authenticity, mindfulness, and a commitment to personal growth.': 'Vårt uppdrag är att ge människor möjligheten att förändra sina liv genom praktiken av yoga. Vi tror på att skapa en närande och inkluderande miljö där alla kan upptäcka sin sanna potential, både på och utanför mattan. Våra kärnvärden inkluderar äkthet, medvetenhet och engagemang för personlig utveckling.',
-
+            'OUR STORY': 'VÅR HISTORIA',
+            'In the heart of Stockholm, you find Serenity Yoga. Our journey began in 2022 in Mariatorget, Södermalm, and expanded to Hornstulls Strand in 2023.': 'I hjärtat av Stockholm hittar du Serenity Yoga. Vår resa började 2022 i Mariatorget, Södermalm, och utökades till Hornstulls Strand 2023.',
+            'We are all about yoga and holistic wellness. Our two studios are more than just places to practice; where you can discover inner peace, balance, and strength.': 'Yoga och holistiskt välbefinnande är vår kärna. Våra två studior är mer än bara platser för praktik; de är där du kan upptäcka inre frid, balans och styrka.',
+            'At Serenity Yoga, we are like a family. We are committed to making yoga a transformative experience for everyone, creating a safe and inclusive community. Join us as we continue this simple yet beautiful story.': 'På Serenity Yoga är vi som en familj. Vi är engagerade i att göra yoga till en transformativ upplevelse för alla, genom att skapa en trygg och inkluderande gemenskap. Följ med oss när vi fortsätter denna enkla men vackra berättelse.',
+            
 
 
 
