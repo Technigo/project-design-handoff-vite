@@ -42,6 +42,17 @@ const resources = {
             '5 June 2023': '5 Juni 2023',
             'ASHTANGA COURSE FALL 2023': 'ASHTANGA KURSER HÖST 2023',
             'Sign up for an Ashtanga course, Step 1, 2, or 3 this fall and receive a free 10-class pass! The pass...': 'Anmäl dig till en Ashtanga-kurs, Steg 1, 2, eller 3 i höst och få ett gratis 10-klasspass! Passet...',
+            'Stay in touch with us': 'Håll kontakten med oss',
+            'Register your email address for news and updates from Serenity Yoga.': 'Registrera din email för nyheter och uppdateringar från Serenity Yoga',
+            'Subscribe': 'Prenumerera',
+            'By signing up for our email list, you consent to the handling of your': 'Genom att ange din email adress så godkänner du att vi hanterar din',
+            'personal information in accordance with our terms and conditions.': 'personliga information i enlighet med våra regler och villkor.',
+
+
+
+
+
+
 
         }
     },
