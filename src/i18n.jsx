@@ -53,6 +53,14 @@ const resources = {
             'In the heart of Stockholm, you find Serenity Yoga. Our journey began in 2022 in Mariatorget, Södermalm, and expanded to Hornstulls Strand in 2023.': 'I hjärtat av Stockholm hittar du Serenity Yoga. Vår resa började 2022 i Mariatorget, Södermalm, och utökades till Hornstulls Strand 2023.',
             'We are all about yoga and holistic wellness. Our two studios are more than just places to practice; where you can discover inner peace, balance, and strength.': 'Yoga och holistiskt välbefinnande är vår kärna. Våra två studior är mer än bara platser för praktik; de är där du kan upptäcka inre frid, balans och styrka.',
             'At Serenity Yoga, we are like a family. We are committed to making yoga a transformative experience for everyone, creating a safe and inclusive community. Join us as we continue this simple yet beautiful story.': 'På Serenity Yoga är vi som en familj. Vi är engagerade i att göra yoga till en transformativ upplevelse för alla, genom att skapa en trygg och inkluderande gemenskap. Följ med oss när vi fortsätter denna enkla men vackra berättelse.',
+            'OUR STUDIOS FACILITATES': 'VÅRA STUDIOR ERBJUDER',
+            'Spacious Practice Rooms: Our well-lit, tranquil spaces inspire a sense of serenity.': 'Rymliga Praktikrum: Våra välupplysta, lugna utrymmen inspirerar till en känsla av frid.',
+            'Quality Yoga Props: We provide mats, blocks, bolsters, and more for your practice.': 'Kvalitets Yoga-tillbehör: Vi tillhandahåller mattor, block, bolster och mer för din praktik.',
+            'Clean and Hygienic: We maintain high standards of cleanliness using eco-friendly products': 'Rent och Hygieniskt: Vi upprätthåller höga renlighetsstandarder med miljövänliga produkter.',
+            'Comfortable Lounge: Relax and connect with fellow yogis before and after class.': 'Bekväm Lounge: Slappna av och umgås med andra yogis före och efter klassen.',
+            'Changing and Shower Facilities: Freshen up with our convenient amenities.': 'Omklädningsrum och Duschmöjligheter: Fräscha upp dig med våra bekväma faciliteter.',
+            'Relaxing Soundscapes: Enjoy calming soundscapes for an oasis of peace.': 'Avkopplande Ljudlandskap: Njut av lugnande ljudlandskap för en oas av fred.',
+            'Book Now': 'Boka nu',
             
 
 
