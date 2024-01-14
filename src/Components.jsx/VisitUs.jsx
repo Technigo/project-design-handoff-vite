@@ -18,7 +18,7 @@ export const VisitUs = () => {
       <div>
         <img
           className="visit-image"
-          src="./Images/Visit-us.png"
+          src="Visit-us.png"
           alt="Visit us picture"
         />
       </div>

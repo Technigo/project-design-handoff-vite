@@ -20,7 +20,7 @@ const Email = ({ updateFormData, value }) => {
 
   const handleSubscribe = () => {
     if (!error) {
-      setSubscriptionMessage("Thanks for your subscription");
+      setSubscriptionMessage("Thanks for your subscription!");
     }
   };
 
@@ -50,7 +50,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <div className="first-box">
-        <img className="white-logo" src="./Images/MAGNW.png" alt="Logo image" />
+        <img className="white-logo" src="MAGNW.png" alt="Logo image" />
         <div className="subscribe">
           <Email updateFormData={updateFormData} value={formData.email} />
         </div>
@@ -81,18 +81,14 @@ export const Footer = () => {
           <p className="title-line">Contact Us</p>
           <p>+46 001 89 89 10</p>
           <p>magnitude@support.com</p>
-          <img src="./Images/facebook.png" alt="Facebook icon"></img>
+          <img src="facebook.png" alt="Facebook icon"></img>
 
-          <img src="./Images/Instagram.png" alt="Instagram icon"></img>
-          <img src="./Images/Google.png" alt="Google icon"></img>
-          <img src="./Images/Twitter.png" alt="Twitter icon"></img>
+          <img src="Instagram.png" alt="Instagram icon"></img>
+          <img src="Google.png" alt="Google icon"></img>
+          <img src="Twitter.png" alt="Twitter icon"></img>
         </div>
       </div>
-      <img
-        className="white-line"
-        src="./Images/Line3.png"
-        alt="White line"
-      ></img>
+      <img className="white-line" src="Line3.png" alt="White line"></img>
     </div>
   );
 };

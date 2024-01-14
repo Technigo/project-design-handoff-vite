@@ -13,17 +13,17 @@ export const InfoPage = () => {
           <button className="read-more-button">Read more</button>
         </div>
         <div className="grid-item">
-          <img src="./Images/Breakfast-1.png" alt="Breakfast image" />
+          <img src="Breakfast-1.png" alt="Breakfast image" />
         </div>
         <div className="grid-item">
-          <img src="./Images/Breakfast-2.png" alt="Breakfast image" />
+          <img src="Breakfast-2.png" alt="Breakfast image" />
         </div>
 
         <div className="grid-item">
-          <img src="./Images/Gym-1.png" alt="Gym image" />
+          <img src="Gym-1.png" alt="Gym image" />
         </div>
         <div className="grid-item">
-          <img src="./Images/Gym-2.png" alt="Gym image" />
+          <img src="Gym-2.png" alt="Gym image" />
         </div>
 
         <div className="grid-item">
@@ -45,11 +45,11 @@ export const InfoPage = () => {
           <button className="read-more-button">Read more</button>
         </div>
         <div className="grid-item">
-          <img src="./Images/Co-working.png" alt="Co-working image" />
+          <img src="Co-working.png" alt="Co-working image" />
         </div>
 
         <div className="grid-item">
-          <img src="./Images/Spa-3.png" alt="Spa image" />
+          <img src="Spa-3.png" alt="Spa image" />
         </div>
         <div className="grid-item">
           <h2>Spa & Wellness</h2>
@@ -60,7 +60,7 @@ export const InfoPage = () => {
           <button className="read-more-button">Read more</button>
         </div>
         <div className="grid-item">
-          <img src="./Images/Spa-2.png" alt="Spa image" />
+          <img src="Spa-2.png" alt="Spa image" />
         </div>
 
         <div className="grid-item">
@@ -73,9 +73,9 @@ export const InfoPage = () => {
           <button className="read-more-button">Read more</button>
         </div>
         <div className="grid-item">
-          <img src="./Images/After-hours-1.png" alt="After hours image" />
+          <img src="After-hours-1.png" alt="After hours image" />
           <div className="grid-item"></div>
-          <img src="./Images/After-hours-2.png" alt="After hours image" />
+          <img src="After-hours-2.png" alt="After hours image" />
         </div>
       </div>
     </div>

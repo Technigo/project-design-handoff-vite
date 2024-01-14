@@ -3,16 +3,12 @@ import "./Header.css";
 export const Header = () => {
   return (
     <div className="header">
-      <img className="bubbles" src="./Images/Gym-bubble.png" alt="Gym bubble" />
-      <img className="bubbles" src="./Images/Spa-1.png" alt="Spa bubble" />
+      <img className="bubbles" src="Gym-bubble.png" alt="Gym bubble" />
+      <img className="bubbles" src="Spa-1.png" alt="Spa bubble" />
+      <img className="bubbles" src="Co-working.png" alt="Co work bubble" />
       <img
         className="bubbles"
-        src="./Images/Co-working.png"
-        alt="Co work bubble"
-      />
-      <img
-        className="bubbles"
-        src="./Images/After-hours-1.png"
+        src="After-hours-1.png"
         alt="After hours bubble"
       />
       ;
@@ -27,7 +23,7 @@ export const Header = () => {
           stay home. We don’t.
         </p>
       </div>
-      <img className="vector" src="./Images/Vector-2.png" alt="Line" />
+      <img className="vector" src="Vector-2.png" alt="Line" />
     </div>
   );
 };

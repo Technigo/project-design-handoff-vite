@@ -49,8 +49,8 @@
   padding: 10px 20px;
   border: none;
   font-size: 20px;
-  display: inline-flex;
-  padding: 10px 38px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;

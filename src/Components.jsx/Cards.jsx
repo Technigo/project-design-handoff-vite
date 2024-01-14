@@ -4,8 +4,8 @@ export const Cards = () => {
   return (
     <div>
       <div className="backgrounds">
-        <img className="hand" src="./Images/Hand.png" alt="Info card" />
-        <img className="view" src="./Images/Rectangle348.png" alt="Info card" />
+        <img className="hand" src="Hand.png" alt="Info card" />
+        <img className="view" src="Rectangle348.png" alt="Info card" />
         <div className="hand-text">
           <h2>$1.13 million</h2>
           <p>
@@ -34,7 +34,7 @@ export const Cards = () => {
           <h2>
             We want to <span className="yellow">change it.</span>
           </h2>
-          <img src="./Images/Line5.png" alt="White line" />
+          <img src="Line5.png" alt="White line" />
           <button className="read-more-button">Read more</button>
         </div>
       </div>

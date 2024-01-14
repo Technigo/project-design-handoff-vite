@@ -10,7 +10,7 @@ export const About = () => {
 
   return (
     <div>
-      <ul>
+      <ul className="buttons">
         <Link to="/" className="home-button"></Link>
         <div className="navbar-buttons">
           <button onClick={() => (window.location.href = "/membership")}>
@@ -28,13 +28,20 @@ export const About = () => {
         </div>
       </ul>
       <div className="about">
-        <h1 className="what-we-do">What we do</h1>
-        <h2 className="background">BACKGROUND </h2>
-        <div className="first-text">
-          <p>
-            Many gyms build their business model on the bet that most people
-            will stay home. We don’t.
-          </p>
+        <div className="left-column">
+          <h1 className="what-we-do">What we do</h1>
+          <h2 className="background">BACKGROUND</h2>
+          <div className="first-text">
+            <p>
+              Many gyms build their business model on the bet that most people
+              will stay home. We don’t.
+            </p>
+          </div>
+        </div>
+        <div className="line-column">
+          <img className="line" src="Line2.png" alt="line" />
+        </div>
+        <div className="right-column">
           <div className="about-text">
             <p>
               Many business models that profit from unused gym memberships often
@@ -47,7 +54,7 @@ export const About = () => {
               gamble on people's intentions and motivation.
             </p>
             <p>
-              At GroundZero, we're breaking the mold of the 'unused gym
+              At Magnitude, we're breaking the mold of the 'unused gym
               membership' business model. We believe in delivering real value
               for your money. While wanting to offer you a place to workout,
               relax, socialise and network. Besides The Gym, we offer Breakfast,
@@ -59,9 +66,7 @@ export const About = () => {
           </div>
         </div>
       </div>
-      <div>
-        <VisitUs />
-      </div>
+      <VisitUs />
     </div>
   );
 };
