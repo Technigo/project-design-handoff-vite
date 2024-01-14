@@ -107,3 +107,35 @@ margin-bottom: -40px;
 }
 
 }
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contact-section {
+    flex-direction: column;
+    align-items: center; 
+    padding: 50px; 
+  }
+
+  .contact-text,
+  .contact-form {
+    max-width: 100%; 
+    text-align: center; 
+    padding: 0; 
+    margin-bottom: 20px; 
+  }
+
+  .contact-form form {
+    width: 100%; 
+  }
+
+  .contact-form button {
+    width: auto; 
+    margin-top: 20px; 
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: calc(100% - 1rem); 
+  }
+}
