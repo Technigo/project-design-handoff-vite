@@ -97,32 +97,32 @@ input[type="checkbox"] {
 /* Media query for screens between 900px and 1200px */
   
 @media (min-width: 601px) and (max-width: 900px) {
-    .vision-text {
-        padding: 50px;
-     }
+.vision-text {
+    padding: 50px;
+    }
 
-     .story-text {
-        padding: 50px;
-     }
-     .contact-form {
-        padding-left: 50px;
-        padding-right: 50px;
-     }
+.story-text {
+    padding: 50px;
+    }
+.contact-form {
+    padding-left: 50px;
+    padding-right: 50px;
+    }
 }
   
   /* Media query for screens between 900px and 1200px */
   
-  @media (min-width: 901px) {
-     .vision-text {
-        padding: 100px;
-     }
+@media (min-width: 901px) {
+.vision-text {
+    padding: 100px;
+    }
 
-     .story-text {
-        padding: 100px;
-     }
-     .contact-form {
-        padding-left: 200px;
-        padding-right: 200px;
-     }
+.story-text {
+    padding: 100px;
+    }
+.contact-form {
+    padding-left: 200px;
+    padding-right: 200px;
+    }
   }
   

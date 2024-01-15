@@ -7,7 +7,6 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 export const AboutUs = () => {
-    // Hooks
     const { t } = useTranslation();
     const navigate = useNavigate();
     const [isMobile, setIsMobile] = useState(window.innerWidth < 901); 

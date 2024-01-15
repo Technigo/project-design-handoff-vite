@@ -3,9 +3,9 @@
     padding: 10px;
     height: 250px;
     display: flex;
-   flex-direction: column;
-   align-items: center;
-   
+    flex-direction: column;
+    align-items: center;
+
 }
 
 .howto-wrapper h1 {
@@ -20,18 +20,18 @@
     justify-content: center;
     align-items: start;
     box-sizing: border-box;
-   gap: 20px;
-   height: auto;
-   max-width: 100%;
+    gap: 20px;
+    height: auto;
+    max-width: 100%;
 }
 
 .image-container img {
-  height: 100px;
-  width: 100px;
+    height: 100px;
+    width: 100px;
     display: block; 
-   object-fit: cover;
-   object-position: center;
-   border-radius: 20px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
 }
 
 .image-container p {
@@ -41,50 +41,50 @@
     width: 100px;
 }
 
- a {
-  text-decoration: none;  
+a {
+    text-decoration: none;  
 }
 
 /* Media query for screens between 600px and 900px */
 
 @media (min-width: 601px) and (max-width: 900px) {
-    .howto-wrapper {
-        height: 400px;
-    }
+.howto-wrapper {
+    height: 400px;
+}
 
-    .howto-wrapper h1 {
-        font-size: 25px;
-        padding: 40px;
-    }
-    .image-container img {
-        height: 160px;
-        width: 180px;
-    }
-    .image-container p {
-        font-size: 12px;
-        width: 180px;
-    }
+.howto-wrapper h1 {
+    font-size: 25px;
+    padding: 40px;
+}
+.image-container img {
+    height: 160px;
+    width: 180px;
+}
+.image-container p {
+    font-size: 12px;
+    width: 180px;
+}
 }
 
 /* Media query for screens between 900px and 1200px */
 
 @media (min-width: 901px)  {
-    .howto-wrapper {
-        height: 370px;
-    }
-    .howto-wrapper h1 {
+.howto-wrapper {
+    height: 370px;
+}
+.howto-wrapper h1 {
     font-size: 25px;
-   }
-   .image-container img {
+}
+.image-container img {
     width: 220px;
     height: 200px;
-   }
-   .image-container p {
+}
+.image-container p {
     font-size: 14px;
-   text-align: center;
+    text-align: center;
     width: 220px;
-   }
-   .images-wrapper {
+}
+.images-wrapper {
     gap: 80px
-   }
+}
 }
