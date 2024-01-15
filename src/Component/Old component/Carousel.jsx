@@ -2,7 +2,7 @@ import './Carousel.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import data from "../assets/images.json";
+import data from "../../assets/images.json";
 import SVG1 from "../assets/Vector-1.svg";
 
 

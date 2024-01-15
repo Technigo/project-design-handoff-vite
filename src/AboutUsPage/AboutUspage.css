@@ -1,0 +1,128 @@
+.aboutUsPage-wrapper {
+    background-color: var(--color-blue-opacity-60);
+}
+
+.vision-img {
+    width: 100%;
+    max-height: 600px;
+}
+
+.vision-text {
+    padding: 20px;
+}
+
+.vision-text h1 {
+    color: black;
+}
+
+.story-img {
+    width: 100%;
+    max-height: 600px;
+}
+
+.story-text {
+    padding: 20px;
+}
+
+.story-text h1 {
+    color: black;
+}
+
+.form-img {
+    width: 100%;
+}
+
+/* ... (your existing styles) ... */
+
+.contact-form {
+    background-color: #F9FAFA;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* Adjust gap between items */
+    padding: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc; 
+}
+
+.contact-form textarea {
+    height: 150px;  /* Adjust the height as necessary */
+}
+
+.contact-form .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-wrapper input {
+    width: 10px;
+}
+
+.checkbox-wrapper label {
+    font-size: 12px; /* Adjust this value to your preference */
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5); 
+    margin-right: 10px; 
+}
+
+
+.contact-form button {
+    background-color: black;  /* Example color; adjust as needed */
+    color: white;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.contact-form button:hover {
+    background-color: green; /* Darken on hover for example */
+}
+
+.grey-text {
+    color: grey;
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+/* Media query for screens between 900px and 1200px */
+  
+@media (min-width: 601px) and (max-width: 900px) {
+    .vision-text {
+        padding: 50px;
+     }
+
+     .story-text {
+        padding: 50px;
+     }
+     .contact-form {
+        padding-left: 50px;
+        padding-right: 50px;
+     }
+}
+  
+  /* Media query for screens between 900px and 1200px */
+  
+  @media (min-width: 901px) {
+     .vision-text {
+        padding: 100px;
+     }
+
+     .story-text {
+        padding: 100px;
+     }
+     .contact-form {
+        padding-left: 200px;
+        padding-right: 200px;
+     }
+  }
+  

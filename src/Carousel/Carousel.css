@@ -1,0 +1,108 @@
+/* Carousel Styles */
+.carousel-wrapper {
+    height: auto; /* You've already set this */
+    overflow: hidden;
+  }
+  
+  .slick-track {
+    height: auto !important; 
+    display: flex !important;          /* Enable flexbox */
+    justify-content: center;  /* Horizontally center */
+    align-items: center;      /* Vertically center */
+  
+  }
+  
+  
+  .slick-slider {
+      position: relative;
+      box-sizing: border-box;
+    }
+    
+    .slick-list {
+      position: relative;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .carousel-wrapper {
+      height: auto; /* Or whatever height you think is appropriate */
+  }
+  
+  
+    .slick-slide {
+      float: left;
+      min-height: 1px;
+      width: 240px !important;
+      padding: 0 !important;
+      margin: 0 20px !important;
+      height: auto !important;
+  
+      img {
+          display: block;
+          width: 100%;
+          height: auto;
+      }
+  }
+  
+  .icon-text {
+      width: 100%;
+      margin: 0 auto; 
+      text-align: center; 
+      position: relative;
+      
+  }
+  .icon-text img {
+      max-width: 100%;  
+     display: block;
+     margin: 0 auto;
+  }
+  
+  .icon-text p {
+      width: 63%;
+      color: black;
+      position: absolute;
+      top: 40%; 
+      left: 50%;  
+      transform: translate(-50%, -50%); 
+      font-weight: bold; 
+      font-size: 12px; 
+      z-index: 1;  
+  }
+  
+    .icon-top-row {
+      display: flex;
+      flex-direction: row;
+    }
+    .icon-bottom-row {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    
+    /* Media query for screens between 900px and 1200px */
+    
+    @media (min-width: 901px)  {
+      .icon-text p {
+        font-size: 0,9rem;
+       }
+  
+      .icon-text {
+        width: 280px;
+        height: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      } 
+  
+    }
+    
+    /* Media query for screens above 1200px */
+    
+    @media (min-width: 1201px) {
+      .icon-text p {
+        font-size: 1rem;
+       }
+    
+    }
+  

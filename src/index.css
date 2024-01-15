@@ -10,8 +10,8 @@
     --color-blue: #1982C4;
     --color-green: #8AC926;
     --color-yellow: #FFCA3A;
-    --color-green-opacity-40: rgba(138, 201, 38, 0.4); /* Green with 40% opacity */
-    --color-green-opacity-60: rgba(138, 201, 38, 0.6); /* Green with 60% opacity */
+    --color-green-opacity-70: rgba(138, 201, 38, 0.7); /* Green with 40% opacity */
+    --color-green-opacity-60: rgba(138, 201, 38, 0.52); /* Green with 60% opacity */
     --color-blue-opacity-40: rgba(25, 130, 196, 0.4); /* Blue with 40% opacity */
     --color-blue-opacity-60: rgba(25, 130, 196, 0.6); /* Blue with 60% opacity */
 }
@@ -29,5 +29,6 @@ h1 {
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: 600;
 }
+

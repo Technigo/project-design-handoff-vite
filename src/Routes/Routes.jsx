@@ -1,7 +1,7 @@
 import { Route } from "react-router-dom";
-import { Home } from "../Pages/Home";
-import { Classes } from "../Pages/Classes";
-import { PageNotFound } from "../Pages/PageNotFound";
+import { Home } from "../Component/Old component/Pages/Home";
+import { Classes } from "../Component/Old component/Pages/Classes";
+import { PageNotFound } from "../Component/Old component/Pages/PageNotFound";
 
 const routing = (
   <>

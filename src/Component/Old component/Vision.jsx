@@ -1,4 +1,4 @@
-import data from "../assets/images.json";
+import data from "../../assets/images.json";
 import styled from "styled-components";
 import { useTranslation } from 'react-i18next';
 import { Form } from "./Form";

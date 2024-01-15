@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import data from "../assets/images.json";
+import data from "../../assets/images.json";
 import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 
