@@ -1,4 +1,4 @@
-import "./AboutUsPage.css";
+import './AboutUsPage.css';
 import VisionImg from "../../assets/Image18.png";
 import StoryImg from "../../assets/Rectangle19.png";
 import FormImg from "../../assets/Image22.png";
