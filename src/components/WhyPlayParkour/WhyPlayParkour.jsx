@@ -8,7 +8,7 @@ export const WhyPlayParkour = () => {
 
   return (
     <div className="whyplay-wrapper">
-      <h1>{t('WhyPlay.heading')}</h1> 
+      <h1>{t('head3')}</h1> 
       <div className="icons-wrapper">
         <CarouselComponent />
       </div>

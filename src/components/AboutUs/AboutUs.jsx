@@ -1,7 +1,7 @@
 import './AboutUs.css';
-import ImageAboutUs from '/images/image19.png';
-import AdditionalImage1 from '/images/Image22.png';
-import AdditionalImage2 from '/images/Image18.png';
+import ImageAboutUs from '../../assets/image19.png';
+import AdditionalImage1 from '../../assets/Image22.png';
+import AdditionalImage2 from '../../assets/Image18.png';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -30,10 +30,10 @@ export const AboutUs = () => {
             {isMobile ? (
                 <>
                     <div className="leftColumn">
-                        <h1>{t('AboutUs.heading')}</h1>
-                        <p>{t('AboutUs.description')}</p>
+                        <h1>{t('about')}</h1>
+                        <p>{t('paragraph5')}</p>
                         <button className="yellowButton" onClick={navigateToAboutUsPage}>
-                            {t('AboutUs.buttonText')}
+                            {t('head5')}
                         </button>
                     </div>
                     <div className="rightColumn">
@@ -45,8 +45,8 @@ export const AboutUs = () => {
             ) : (
                 <>
             <div className="leftColumn">
-                <h1>{t('AboutUs.heading')}</h1>
-                <p>{t('AboutUs.description')}</p>
+                <h1>{t('about')}</h1>
+                <p>{t('paragraph5')}</p>
                 
             </div>
             <div className="rightColumn">
@@ -55,7 +55,7 @@ export const AboutUs = () => {
                 <img src={AdditionalImage2} alt="Family playing parkour" className="roundImage additionalImage" />
             </div>
             <button className="yellowButton" onClick={navigateToAboutUsPage}>
-                {t('AboutUs.buttonText')}
+                {t('head5')}
             </button>
             </>
             )}

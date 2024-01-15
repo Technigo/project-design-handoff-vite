@@ -13,7 +13,6 @@ export const App = () => {
     <Router>
     <div>
       <Header />
-      
       <Routes>
         <Route path="/" element={
           <>
@@ -21,7 +20,7 @@ export const App = () => {
                 <HowToPlayParkour />
                 <WhyPlayParkour />
                 <AboutUs />
-            </>
+          </>
         } />
         <Route path="/about" element={<AboutUsPage />} />
       </Routes>

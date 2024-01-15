@@ -30,10 +30,10 @@ export const CarouselComponent = () => {
 
 
     const settings = {
-        centerMode: true, // This enables centered view with partial prev/next slides. Use with odd numbered slidesToShow counts.
+        centerMode: true,
         infinite: true,
-        centerPadding: "0px", // You might need to adjust this padding to get the desired effect.
-        slidesToShow: 2, // This would show 3 slides at a time. The one in the center will be the main focused slide.
+        centerPadding: "0px",
+        slidesToShow: 2,
         speed: 500,
         swipeToSlide: true,
         focusOnSelect: true 
@@ -42,32 +42,32 @@ export const CarouselComponent = () => {
     const renderCarousel = () => (
         <Slider {...settings}>
             <div className="icon-text">
-                <img src={SVG1} alt={t('Carousel.quote1.alt')} />
-                <p>{t('Carousel.quote1.text')}</p>
+                <img src={SVG1} alt={t('citat1')} />
+                <p>{t('citat1')}</p>
             </div>
             <div className="icon-text">
-                <img src={SVG7} alt={t('Carousel.quote2.alt')} />
-                <p>{t('Carousel.quote2.text')}</p>
+                <img src={SVG7} alt={t('citat4')} />
+                <p>{t('citat4')}</p>
             </div>
             <div className="icon-text">
-                <img src={SVG2} alt={t('Carousel.quote3.alt')} />
-                <p>{t('Carousel.quote3.text')}</p>
+                <img src={SVG2} alt={t('citat5')} />
+                <p>{t('citat5')}</p>
             </div>
             <div className="icon-text">
-                <img src={SVG3} alt={t('Carousel.quote4.alt')} />
-                <p>{t('Carousel.quote4.text')}</p>
+                <img src={SVG3} alt={t('citat6')} />
+                <p>{t('citat6')}</p>
             </div>
             <div className="icon-text">
-                <img src={SVG6} alt={t('Carousel.quote5.alt')} />
-                <p>{t('Carousel.quote5.text')}</p>
+                <img src={SVG6} alt={t('citat4')} />
+                <p>{t('citat4')}</p>
             </div>
             <div className="icon-text">
-                <img src={SVG5} alt={t('Carousel.quote6.alt')} />
-                <p>{t('Carousel.quote6.text')}</p>
+                <img src={SVG5} alt={t('citat8')} />
+                <p>{t('citat8')}</p>
             </div>
             <div className="icon-text">
-                <img src={SVG4} alt={t('Carousel.quote7.alt')} />
-                <p>{t('Carousel.quote7.text')}</p>
+                <img src={SVG4} alt={t('citat3')} />
+                <p>{t('citat3')}</p>
             </div>
         </Slider>
     );
@@ -76,34 +76,34 @@ export const CarouselComponent = () => {
         <div className="static-items-wrapper">
             <div className='icon-top-row'>
             <div className="icon-text">
-                <img src={SVG7} alt={t('Carousel.quote2.alt')} />
-                <p>{t('Carousel.quote2.text')}</p>
+                <img src={SVG7} alt={t('citat4')} />
+                <p>{t('citat4')}</p>
             </div>
             <div className="icon-text">
-                <img src={SVG1} alt={t('Carousel.quote1.alt')} />
-                <p>{t('Carousel.quote1.text')}</p>
+                <img src={SVG1} alt={t('citat1')} />
+                <p>{t('citat1')}</p>
             </div>
             <div className="icon-text">
-                <img src={SVG2} alt={t('Carousel.quote3.alt')} />
-                <p>{t('Carousel.quote3.text')}</p>
+                <img src={SVG2} alt={t('citat5')} />
+                <p>{t('citat5')}</p>
             </div>
             <div className="icon-text">
-                <img src={SVG3} alt={t('Carousel.quote4.alt')} />
-                <p>{t('Carousel.quote4.text')}</p>
+                <img src={SVG3} alt={t('citat6')} />
+                <p>{t('citat6')}</p>
             </div>
             </div>
             <div className='icon-bottom-row'>
             <div className="icon-text">
-                <img src={SVG4} alt={t('Carousel.quote7.alt')} />
-                <p>{t('Carousel.quote7.text')}</p>
+                <img src={SVG4} alt={t('citat7')} />
+                <p>{t('citat7')}</p>
             </div>
             <div className="icon-text">
-                <img src={SVG5} alt={t('Carousel.quote6.alt')} />
-                <p>{t('Carousel.quote6.text')}</p>
+                <img src={SVG5} alt={t('citat8')} />
+                <p>{t('citat8')}</p>
             </div>
             <div className="icon-text">
-                <img src={SVG6} alt={t('Carousel.quote5.alt')} />
-                <p>{t('Carousel.quote5.text')}</p>
+                <img src={SVG6} alt={t('citat9')} />
+                <p>{t('citat9')}</p>
             </div>
             </div>
         </div>
