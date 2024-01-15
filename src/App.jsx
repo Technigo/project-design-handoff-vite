@@ -6,7 +6,6 @@ import { PlayParkour } from './components/PlayParkour/PlayParkour';
 import { WhyPlayParkour } from './components/WhyPlayParkour/WhyPlayParkour';
 import { HowToPlayParkour } from './components/HowToPlayParkour/HowToPlayParkour';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import './Translate/i18next';
 
 export const App = () => {
 
