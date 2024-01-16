@@ -9,23 +9,23 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 export const App = () => {
 
-  return (
-    <Router>
-    <div>
-      <Header />
-      <Routes>
-        <Route path="/" element={
-          <>
-                <PlayParkour />
-                <HowToPlayParkour />
-                <WhyPlayParkour />
-                <AboutUs />
-          </>
-        } />
-        <Route path="/about" element={<AboutUsPage />} />
-      </Routes>
-      <Footer />
-    </div>
-  </Router>
-  );
+return (
+<Router>
+  <div>
+    <Header />
+    <Routes>
+      <Route path="/" element={
+        <>
+          <PlayParkour />
+          <HowToPlayParkour />
+          <WhyPlayParkour />
+          <AboutUs />
+        </>
+      } />
+      <Route path="/about" element={<AboutUsPage />} />
+    </Routes>
+    <Footer />
+  </div>
+</Router>
+);
 };

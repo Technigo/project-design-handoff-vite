@@ -2,17 +2,17 @@ import './Carousel.css';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import SVG1 from '../../assets/Vector.svg';
-import SVG2 from '../../assets/Vector-2.svg';
-import SVG3 from '../../assets/Vector-3.svg';
-import SVG4 from '../../assets/Vector-4.svg';
-import SVG5 from '../../assets/Vector-5.svg';
-import SVG6 from '../../assets/Vector-6.svg';
-import SVG7 from '../../assets/Vector-7.svg';
+import SVG1 from '../../../public/images/Vector.svg';
+import SVG2 from '../../../public/images/Vector-2.svg';
+import SVG3 from '../../../public/images/Vector-3.svg';
+import SVG4 from '../../../public/images/Vector-4.svg';
+import SVG5 from '../../../public/images/Vector-5.svg';
+import SVG6 from '../../../public/images/Vector-6.svg';
+import SVG7 from '../../../public/images/Vector-7.svg';
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 
-export const CarouselComponent = () => {
+export const CC = () => {
 
     const { t } = useTranslation();
     const [isMobile, setIsMobile] = useState(window.innerWidth < 901);

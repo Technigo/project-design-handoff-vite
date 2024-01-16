@@ -1,9 +1,9 @@
 import './Footer.css';
-import FooterLogo from '../../assets/LogoIcon.svg';
+import FooterLogo from '../../../public/images/LogoIcon.svg';
 import { Link } from 'react-router-dom';
-import EnglishFlag from '../../assets/Eng.png';
-import SwedishFlag from '../../assets/Swe.png';
-import Spanishflag from '../../assets/Spa.png'
+import EnglishFlag from '../../../public/images/Eng.png';
+import SwedishFlag from '../../../public/images/Swe.png';
+import Spanishflag from '../../../public/images/Spa.png'
 import { useTranslation } from 'react-i18next';  
 
 export const Footer = () => {

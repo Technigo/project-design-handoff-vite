@@ -1,7 +1,7 @@
 import './AboutUs.css';
-import ImageAboutUs from '../../assets/image19.png';
-import AdditionalImage1 from '../../assets/Image22.png';
-import AdditionalImage2 from '../../assets/Image18.png';
+import ImageAboutUs from '../../../public/images/image19.png';
+import AdditionalImage1 from '../../../public/images/Image22.png';
+import AdditionalImage2 from '../../../public/images/Image18.png';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';

@@ -1,12 +1,11 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import DownArrowIcon from '../../assets/downArrow.svg';
-
+import DownArrowIcon from '../../../public/images/downArrow.svg';
+import LogoIcon from '../../../public/images/LogoIcon.svg';
+import SearchIcon from '../../../public/images/Search.svg';
+import HamburgerIcon from '../../../public/images/hamburgerIcon.svg';
 import './Header.css';
-import LogoIcon from '../../assets/LogoIcon.svg';
-import SearchIcon from '../../assets/Search.svg';
-import HamburgerIcon from '../../assets/hamburgerIcon.svg';
 
 export const Header = () => {
   const [isDropdownVisible, setIsDropdownVisible] = useState(false);

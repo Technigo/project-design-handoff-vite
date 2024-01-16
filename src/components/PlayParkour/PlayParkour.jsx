@@ -1,7 +1,7 @@
-import './PlayParkour.css';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import PlayParkourImage from '../../assets//image-14.png';
+import PPImage from '../../../public/images/image-14.png';
+import './PlayParkour.css';
 
 export const PlayParkour = () => {
 
@@ -9,7 +9,7 @@ export const PlayParkour = () => {
 
   return (
     <div className='playparkour-wrapper'>
-       <img src={PlayParkourImage} alt="Kids playing Parkour" className="top-image"/>
+       <img src={PPImage} alt="Kids playing Parkour" className="top-image"/>
       <h1>{t('head1')}</h1>
       <p>{t('paragraph1')}</p>
       <Link to="/about">
