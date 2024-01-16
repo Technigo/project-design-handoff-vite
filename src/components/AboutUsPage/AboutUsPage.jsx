@@ -3,7 +3,7 @@ import StoryImg from "../../../public/images/Rectangle19.png";
 import FormImg from "../../../public/images/Image22.png";
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import './AboutUsPage.css';
+import './AboutUspage.css';
 
 export const AboutUsPage = () => {
 
