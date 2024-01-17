@@ -3,6 +3,9 @@
   height: 262px;
   margin-bottom: 30px;
 }
+.textbox {
+  word-wrap: break-word;
+}
 
 .swiper-pagination .swiper-pagination-bullet-active {
   border-radius: 0;

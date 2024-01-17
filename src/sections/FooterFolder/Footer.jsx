@@ -45,7 +45,6 @@ export const Footer = () => {
         </div>
         <div className="footer-buttons">
           <Buttons
-            className="footer-icon fb-button"
             buttonText=""
             url="https://example.com"
             icon={FbLink}
@@ -53,7 +52,6 @@ export const Footer = () => {
           />
 
           <Buttons
-            className="footer-icon"
             buttonText=""
             url="https://example.com"
             icon={IgLink}
@@ -61,7 +59,6 @@ export const Footer = () => {
           />
 
           <Buttons
-            className="footer-icon"
             buttonText=""
             url="https://example.com"
             icon={TikTokLink}

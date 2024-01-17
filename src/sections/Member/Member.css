@@ -1,6 +1,6 @@
 .member-container-main {
   background-color: #004174;
-
+  width: 100%;
   color: #f3f1ed;
   height: 544px;
   position: relative; /* Set the container to relative positioning */
@@ -41,7 +41,7 @@ p {
   z-index: 0;
 }
 
-@media (min-width: 391px) and (max-width: 744px) {
+@media (min-width: 744px) {
   .member-container-main {
     height: 596px;
   }
@@ -61,12 +61,11 @@ p {
 
 @media (min-width: 1024px) {
   .member-container-main {
-    width: 1440px;
     height: 717px;
   }
 
   .member-image {
-    width: 1440px;
+    width: 100%;
     height: auto;
     margin-left: 100px;
   }

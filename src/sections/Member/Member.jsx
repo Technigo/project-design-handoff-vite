@@ -20,7 +20,6 @@ export const Member = () => {
             icon={button}
             hoverIcon={buttonHover}
             alt="Button Icon"
-            className="custom-button"
           />
         </div>
       </div>
