@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./Footer.css";
+import "../translations";
+import { useTranslation } from "react-i18next";
 
 const Email = ({ updateFormData, value }) => {
+  const { t, i18n } = useTranslation();
   const [error, setError] = useState("");
   const [subscriptionMessage, setSubscriptionMessage] = useState("");
 
@@ -26,10 +29,10 @@ const Email = ({ updateFormData, value }) => {
 
   return (
     <div className="email">
-      <label>Subscribe to our newsletter</label>
+      <label>{t("subscribeNews")}</label>
       <input type="text" value={value} onChange={emailInput} />
 
-      <button onClick={handleSubscribe}>Subscribe now</button>
+      <button onClick={handleSubscribe}>{t("subscribeButton")}</button>
       {error && <div className="error-message">{error}</div>}
       {subscriptionMessage && (
         <div className="subscription-message">{subscriptionMessage}</div>
@@ -41,6 +44,7 @@ const Email = ({ updateFormData, value }) => {
 export default Email;
 
 export const Footer = () => {
+  const { t, i18n } = useTranslation();
   const [formData, setFormData] = useState({ email: "" });
 
   const updateFormData = (field, value) => {
@@ -57,28 +61,28 @@ export const Footer = () => {
       </div>
       <div className="footer-information">
         <div className="column">
-          <p className="title-line">Information</p>
-          <p>About us</p>
-          <p>More Search</p>
-          <p>Blog</p>
-          <p>Testimonials</p>
-          <p>Events</p>
+          <p className="title-line">{t("information")}</p>
+          <p>{t("aboutUs")}</p>
+          <p>{t("moreSearch")}</p>
+          <p>{t("blog")}</p>
+          <p>{t("testimonials")}</p>
+          <p>{t("events")}</p>
         </div>
         <div className="column">
-          <p className="title-line">Helpful Links</p>
-          <p>Services</p>
-          <p>Support</p>
-          <p>Terms & Conditions</p>
-          <p>Privacy Policy</p>
+          <p className="title-line">{t("helpfulLinks")}</p>
+          <p>{t("services")}</p>
+          <p>{t("support")}</p>
+          <p>{t("terms")}</p>
+          <p>{t("privacy")}</p>
         </div>
         <div className="column">
-          <p className="title-line"> Our Services</p>
-          <p>Brands list</p>
-          <p>Facilities</p>
-          <p>Opening hours</p>
+          <p className="title-line">{t("ourServices")}</p>
+          <p>{t("brandsList")}</p>
+          <p>{t("facilities")}</p>
+          <p>{t("openingHours")}</p>
         </div>
         <div className="column">
-          <p className="title-line">Contact Us</p>
+          <p className="title-line">{t("contactUs")}</p>
           <p>+46 001 89 89 10</p>
           <p>magnitude@support.com</p>
           <img src="facebook.png" alt="Facebook icon"></img>

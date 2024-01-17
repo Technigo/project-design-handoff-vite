@@ -1,6 +1,10 @@
 import "./Header.css";
+import "../translations";
+import { useTranslation } from "react-i18next";
 
 export const Header = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="header">
       <img className="bubbles" src="Gym-bubble.png" alt="Gym bubble" />
@@ -13,15 +17,12 @@ export const Header = () => {
       />
       ;
       <div className="header-text">
-        <h1>An elevated gym experience.</h1>
+        <h1>{t("title")}</h1>
         <h1>
-          Everything in <span class="yellow">one place.</span>
+          <span class="yellow">{t("title2")}</span>
         </h1>
-        <p>Up to 67 % of traditional gym memberships go completely unused.</p>
-        <p>
-          Many gyms build their business model on the bet that most people will
-          stay home. We don’t.
-        </p>
+        <p>{t("description")}</p>
+        <p>{t("description2")}</p>
       </div>
       <img className="vector" src="Vector-2.png" alt="Line" />
     </div>

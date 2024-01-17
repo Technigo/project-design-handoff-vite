@@ -1,41 +1,27 @@
 import "./Cards.css";
+import "../translations";
+import { useTranslation } from "react-i18next";
 
 export const Cards = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div>
       <div className="backgrounds">
         <img className="hand" src="Hand.png" alt="Info card" />
         <img className="view" src="Rectangle348.png" alt="Info card" />
         <div className="hand-text">
-          <h2>$1.13 million</h2>
-          <p>
-            Americans spend $1.13 million <br /> on unused gym memberships{" "}
-            <br />
-            annually.
-          </p>
-          <h2>$1.9 billion</h2>
-          <p>
-            Australians are wasting $1.9 billion <br /> per year on unused gym
-            <br />
-            memberships
-          </p>
-          <h2>£4 billion</h2>
-          <p>
-            Britons waste more than £4 billion <br /> a year on unused gym
-            <br />
-            memberships
-          </p>
+          <h2>{t("infoTitle1")}</h2>
+          <p>{t("infoText1")}</p>
+          <h2>{t("infoTitle2")}</h2>
+          <p>{t("infoText2")}</p>
+          <h2>{t("infoTitle3")}</h2>
+          <p>{t("infoText3")}</p>
         </div>
         <div className="view-text">
-          <h2>
-            So much money is being tossed <br />
-            away for nothing.
-          </h2>
-          <h2>
-            We want to <span className="yellow">change it.</span>
-          </h2>
+          <h2>{t("rightText")}</h2>
+          <h2 className="yellow">{t("rightTextYellow")}</h2>
           <img src="Line5.png" alt="White line" />
-          <button className="read-more-button">Read more</button>
+          <button className="read-more-button">{t("rightButton")}</button>
         </div>
       </div>
     </div>
