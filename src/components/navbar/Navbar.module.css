@@ -18,10 +18,15 @@
     margin-left: 20px;
 }
 
+
 .logoText {
     position: absolute;
     bottom: 0;
     margin: 0 40px;
+    width: 193px;
+    height: 38px;
+    flex-shrink: 0;
+    z-index: 1;
 }
 
 .nav {
@@ -71,12 +76,6 @@
     z-index: 0;
 }
 
-.logoText {
-    width: 193px;
-    height: 38px;
-    flex-shrink: 0;
-    z-index: 1;
-}
 
 .logo {
     cursor: pointer;
@@ -90,12 +89,61 @@
     cursor: pointer;
     display: block;
     z-index: 1;
+    padding: 30px 10px 0 0;
+}
+
+.searchIcon {
+    z-index: 1;
+    position: relative;
+    height: 28px;
+    width: 28px;
+    margin: 0 10px 0 0;
+}
+
+.searchWrapper {
+    position: absolute;
+    right: 12vw;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-top: 17px;
+    z-index: 1;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #FFD075;
+    box-shadow: none;
+    background-color: transparent;
+    width: fit-content;
+    display: flex;
+    align-items: right;
+}
+
+.searchBar:focus {
+    outline: none;
+}
+
+.searchBar {
+    z-index: 1;
+    position: relative;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+    display: none;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.searchBar::placeholder {
+    color: #FFD075;
+    padding-left: 0.2rem;
 }
 
 .bar {
     display: block;
     width: 25px;
-    height: 1px;
+    height: 2px;
     margin: 7px auto;
     background-color: #FFD075;
     transition: all 0.3s ease;
@@ -126,6 +174,11 @@
     transform: translateX(-50%);
 }
 
+/* .searchBar::placeholder {
+    color: #FFD075;
+    padding-left: 0.2rem;
+} */
+
 .navLink::after {
     content: '';
     display: block;
@@ -138,15 +191,19 @@
 }
 
 .navLink:hover::after {
-    background-color: hotpink;
+    background-color: transparent;
 }
 
 
 /* iPad Pro 11" */
-@media (min-width: 767px) and (max-width: 1028px) {
+@media (min-width: 767px) and (max-width: 1328px) {
+    .nav {
+        display: flex;
+    }
+
     .navBlackSvgBackground {
         position: absolute;
-        transform: translateY(-20%);
+        transform: translateY(-35%);
         width: 110%;
         z-index: 0;
 
@@ -155,6 +212,7 @@
     .menuIcon {
         padding-top: 35px;
         padding-right: 35px;
+        margin-top: 20px;
     }
 
     .navLink {
@@ -181,13 +239,60 @@
     }
 
     .logo {
-        margin-top: 20px;
+        margin-top: 13px;
+        width: 85px;
+        height: 85px;
+    }
+
+    .logoText {
+        /* width: 230px; */
+        height: 110px;
+        margin: 0 60px 0 130px;
+        bottom: -2vw;
+    }
+
+    .searchWrapper {
+        z-index: 1;
+        right: 15vw;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        width: 100%;
+        margin-top: 25px;
+        outline: none;
+        border: #FFD075 1px solid;
+        border-radius: 5px;
+        color: #FFD075;
+        box-shadow: none;
+        background-color: transparent;
+        width: fit-content;
+        display: block;
+        display: flex;
+        align-items: right;
+    }
+
+    .searchBar {
+        z-index: 1;
+        position: relative;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        display: block;
+        width: 200px;
+        margin: 5px;
+    }
+
+    .searchIcon {
+        margin: 5px 10px 5px 0
     }
 }
 
-@media (min-width: 1028px) {
+@media (min-width: 1328px) {
     .navBlackSvgBackground {
-        transform: translateY(-20%);
+        position: absolute;
+        transform: translateY(-35%);
+        width: 113%;
+        z-index: 0;
     }
 
     .imgsWrapper {
@@ -205,7 +310,18 @@
     .logoText {
         position: absolute;
         bottom: 0;
-        margin: 0 40px;
+        height: 110px;
+        bottom: -2vw;
+        margin: 0 60px 0 120px;
+        width: 230px;
+    }
+
+    .logo {
+        cursor: pointer;
+        width: 100px;
+        height: 90px;
+        flex-shrink: 0;
+        z-index: 1;
     }
 
     .navLink:first-of-type {
@@ -216,6 +332,8 @@
 
     .menuIcon {
         display: none;
+        padding: 60px 10px 0 0;
+        margin-top: 20px;
     }
 
     .navLinks {
@@ -292,5 +410,38 @@
         left: 100%;
         right: -1px;
         transform: translateY(-50%);
+    }
+
+    .searchWrapper {
+        z-index: 1;
+        transform: translateY(-50%);
+        position: absolute;
+        width: 100%;
+        width: 100%;
+        outline: none;
+        border: #FFD075 1px solid;
+        border-radius: 5px;
+        color: #FFD075;
+        box-shadow: none;
+        background-color: transparent;
+        width: fit-content;
+        z-index: 1;
+        right: 7vw;
+        top: 11vw;
+    }
+
+    .searchBar {
+        z-index: 1;
+        position: relative;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        display: block;
+        width: 200px;
+        margin: 10px;
+    }
+
+    .searchIcon {
+        margin: 10px 10px 10px 0
     }
 }

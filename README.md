@@ -34,6 +34,13 @@ https://yoga-balance.netlify.app/
 
 ## Instructions
 
+//GJENSTÅR:
+<!-- 4. koble alt på riktig link
+1. instagram
+3. styling side 2
+2. searchbar
+5. lang knapp side 2 -->
+
 <a href="instructions.md">
    See instructions of this project
   </a>

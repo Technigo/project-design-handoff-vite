@@ -81,14 +81,58 @@
         "connect": "Connect and keep inspired",
         "carousel": "Image carousel insta",
         "logoAlt": "Instagram",
-        "connectButton": "Connect on Instagram"
+        "connectButton": "Connect on Instagram",
+        "images": [
+            {
+                "id": "img1",
+                "alt": "Three women doing outdoor yoga"
+            },
+            {
+                "id": "img2",
+                "alt": "Woman in muktasana pose in desert"
+            },
+            {
+                "id": "img3",
+                "alt": "Two women in muktasana pose sitting on yogamats inside by large window"
+            },
+            {
+                "id": "img4",
+                "alt": "Three women sitting on yogamats by pier doing 'Anjali Mudra'"
+            }
+        ]
     },
     "navbar": {
+        "search": "Find yoga class",
+        "searchAlt": "Magnifying Glass Icon",
         "schedule": "SCHEDULE",
         "classes": "CLASSES",
         "prices": "PRICES",
         "about": "ABOUT",
         "contact": "CONTACT",
         "login": "LOG IN"
+    },
+    "headerAbout": {
+        "titleAbout": "Enter our world of yoga for women",
+        "subtitleAbout": "Welcome to our world. We are a small Yoga center in Stockholm who helps women in meno pause living a vivid and healthy life.",
+        "contactUsBtn": "Kontakta oss"
+    },
+    "ourFounder": {
+        "title": "Our founder",
+        "subtitle": "Nita Svensson",
+        "description": "As a women in her 50th I know everything about being in meno pause. My vision is to help other women feel good through life. Yoga helped me a lot to keep stress down, reduce anxiety, sleep better and get well deserved recovery.",
+        "altText": "Image of Nita Svensson, our founder"
+    },
+    "form": {
+        "heading": "Contact us",
+        "labels": {
+            "name": "Name",
+            "email": "Email",
+            "terms": "I agree to terms and conditions"
+        },
+        "placeholders": {
+            "name": "Type your name here...",
+            "email": "Type your email here..."
+        },
+        "button": "Contact me"
     }
 }

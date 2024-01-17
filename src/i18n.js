@@ -1,9 +1,7 @@
-// i18n.js eller tilsvarende fil
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import enTranslations from "./translations/en.json";
-import seTranslations from "./translations/se.json"; // Anta at dette er den svenske oversettelsen
-
+import seTranslations from "./translations/se.json"; //svensk
 const resources = {
     en: {
         translation: enTranslations,
@@ -16,9 +14,9 @@ const resources = {
 i18n.use(initReactI18next).init({
     resources,
     lng: "en", // standard språk
-    fallbackLng: 'en', // Bruk 'en' som reserve språk
+    fallbackLng: 'en',
     interpolation: {
-        escapeValue: false, // Unngå escaping av verdier
+        escapeValue: false,
     },
 });
 

@@ -36,6 +36,17 @@ export const Navbar = () => {
                     alt="YogaBalance Text"
                 />
             </div>
+            <div className={style.searchWrapper}>
+                <input
+                    className={style.searchBar}
+                    type="text"
+                    placeholder={t("navbar.search")} />
+                <img
+                    src="/Images/searchIcon.svg"
+                    alt={t("navbar.searchAlt")}
+                    className={style.searchIcon} />
+
+            </div>
             <div
                 className={`${style.menuIcon} ${isNavExpanded ? style.open : ''}`}
                 onClick={() => setIsNavExpanded(!isNavExpanded)}

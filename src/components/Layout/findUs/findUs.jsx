@@ -19,11 +19,9 @@ export const FindUs = () => {
     const getFlagIcon = (language) => {
         switch (language) {
             case 'en':
-                return "/Images/united-kingdom.png"; // Path to your English flag image
+                return "/Images/united-kingdom.png"; 
             case 'se':
-                return "/Images/sweden-flag.png"; // Path to your Swedish flag image
-            default:
-                return "/Images/default-flag.png"; // Path to a default flag image if needed
+                return "/Images/sweden-flag.png"; 
         }
     };
     return (

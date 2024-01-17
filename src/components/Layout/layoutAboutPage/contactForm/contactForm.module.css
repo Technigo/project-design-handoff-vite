@@ -1,0 +1,109 @@
+.contactSection {
+    background-color: #612E77;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 24px 40px;
+    align-items: center;
+    gap: 20px;
+}
+
+.heading {
+    color: #fff;
+}
+
+form {
+    background-color: #BBA5C5;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px 0 #1D1C25;
+}
+
+.labelText {
+    display: flex;
+    flex-direction: column;
+}
+
+.labelHeader {
+    /* Add styles for your Text component here if needed */
+}
+
+.input {
+    width: 100%;
+    padding: 4px;
+    border: solid 1px #FFD075;
+    border-radius: 5px;
+    background-color: #BBA5C5;
+    color: #fff;
+    font-size: 6px;
+    /* IMPORT FONT? */
+    /* font-family: "Readex", sans-serif; */
+}
+
+.input:focus {
+    border-color: #612E77;
+    outline: #612E77;
+    background-color: #BBA5C5;
+}
+
+.checkboxContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.checkbox {
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #FFD075;
+    border-radius: 5px;
+}
+
+.checkbox:checked {
+    background-color: #FFD075;
+    border-color: #612E77;
+    /* background-image: url("assets/checkMark.svg"); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.submitBtnContainer {
+    width: 100%;
+    align-self: center;
+}
+
+/* Adjust the StyledButton class if needed */
+.styledButton {
+    display: flex;
+    width: 275px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* iPad Pro 11 */
+@media (min-width: 767px) and (max-width: 1028px) {
+    .contactSection {
+        /* Adjust styles for iPad Pro 11 
+        padding: 48px 32px 40px;*/
+        max-width: 700px;
+        /* Example adjustment */
+    }
+
+    /* Add other necessary style adjustments here */
+}
+
+/* MacBook Air */
+@media (min-width: 1028px) {
+    .contactSection {
+        /* Adjust styles for MacBook Air */
+        padding: 48px 64px 40px;
+        /* Example adjustment */
+    }
+
+    /* Add other necessary style adjustments here */
+}

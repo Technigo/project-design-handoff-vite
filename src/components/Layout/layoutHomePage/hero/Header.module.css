@@ -145,6 +145,8 @@
         height: 100%;
         justify-self: start;
         position: relative;
+        padding: 90px 0 40px 0;
+        overflow-y: hidden;
     }
 
 
@@ -155,7 +157,7 @@
     }
 
     .Texth1 {
-        margin-bottom: 40px;
+        padding: 90px 0 40px 0;
     }
 
     .Texth2 {

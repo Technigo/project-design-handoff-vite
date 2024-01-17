@@ -3,6 +3,10 @@ import { useTranslation } from 'react-i18next';
 import style from './Instagram.module.css';
 import { Text } from "../../../UI/textAndTypography/Text";
 import { StyledButton } from '../../../UI/buttons/StyledButtons';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
+// import { InstagramCarousel } from "./InstagramCarousel";
 
 export const Instagram = () => {
     const { t } = useTranslation();
@@ -22,7 +26,15 @@ export const Instagram = () => {
                     style={{ color: '#FFF', fontWeight: 500 }}
                     className={style.gridItem2}
                 />
-                <p>{t('instagram.carousel')}</p>
+
+                {/* Scroll Carousel */}
+                <div className={style.instaCarousel}>
+                    <img src="/Images/instagram1.jpeg" alt={t('instagram.images.img1.alt')} className={style.instaImage} />
+                    <img src="/Images/instagram2.jpeg" alt={t('instagram.images.img2.alt')} className={style.instaImage} />
+                    <img src="/Images/instagram3.jpeg" alt={t('instagram.images.img3.alt')} className={style.instaImage} />
+                    <img src="/Images/instagram4.jpeg" alt={t('instagram.images.img4.alt')} className={style.instaImage} />
+                </div>
+
                 <StyledButton style={{
                     display: 'flex',
                     width: "275px",
@@ -47,7 +59,7 @@ export const Instagram = () => {
                         {t('instagram.connectButton')}
                     </span>
                 </StyledButton>
-            </section>
-        </div>
+            </section >
+        </div >
     );
 };

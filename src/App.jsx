@@ -8,14 +8,12 @@ import { Footer } from './components/Layout/footer/Footer';
 export const App = () => {
     return (
         <>
-
             <BrowserRouter>
                 <Navbar />
                 <Routes>{routes}</Routes>
                 <FindUs />
                 <Footer />
             </BrowserRouter>
-
         </>
     );
 };

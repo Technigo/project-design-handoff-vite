@@ -1,0 +1,10 @@
+.background {
+    height: fit-content;
+    padding: 80px 0;
+    background-color: #612E77;
+}
+
+.heroimage {
+    width: 50%;
+    /* z-index: ; */
+}

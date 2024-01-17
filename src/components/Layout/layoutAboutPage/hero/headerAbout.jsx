@@ -1,11 +1,11 @@
+import style from "./header.module.css"
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import style from './Header.module.css';
-import { Text } from "../../../UI/textAndTypography/Text";
+import { Text } from '../../../UI/textAndTypography/Text';
 import { StyledButton } from '../../../UI/buttons/StyledButtons';
 import { MobileSpecificButton } from '../../../UI/buttons/MobileSpecificButton';
 
-export const Header = () => {
+export const HeaderAbout = () => {
     const { t } = useTranslation();
 
     return (
@@ -13,12 +13,12 @@ export const Header = () => {
             <section className={style.wrapper}>
                 <img
                     className={style.heroimage}
-                    src="/Images/heroimage.png"
-                    alt={t('header.heroImageAlt')}//No description yet I think
+                    src="/Images/HeroImageContactPage.png"
+                    alt={t('headerAbout.heroImageAlt')}//No description yet I think
                 />
                 <section className={style.textWrapper}>
                     <Text
-                        header={t('header.title')}
+                        header={t('headerAbout.titleAbout')}
                         type="H1"
                         style={{ color: '#FFFFFF' }}
                         $width="200px"
@@ -26,26 +26,16 @@ export const Header = () => {
                         className={style.Texth1}
                     />
                     <Text
-                        header={t('header.subtitle')}
-                        type="H2"
+                        header={t('headerAbout.subtitleAbout')}
+                        type="subheading"
                         style={{ color: '#FFF', fontWeight: 300 }}
                         className={style.Texth2}
                     />
-                    <section className={style.btnContainer}>
+                    <section className={style.contactUsBtn}>
                         <MobileSpecificButton
-                            className={style.styledBtn1}
+                            className={style.contactUsBtn}
                         >
-                            {t('header.findYogaClass')}
-                        </MobileSpecificButton>
-                        <MobileSpecificButton
-                            // to="/some-path" 
-                            $backgroundColor="transparent"
-                            $border="2px solid #FFD075;"
-                            $color="#FFD075"
-                            $hoverBackgroundColor="#FFFFFF"
-                            $hoverColor="FFD075"
-                        >
-                            {t('header.becomeMember')}
+                            {t('headerAbout.contactUsBtn')}
                         </MobileSpecificButton>
                     </section>
                 </section>

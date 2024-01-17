@@ -1,15 +1,15 @@
-//import React from "react";
-//import { Header } from './components/Layout/layoutHomePage/hero/header';
-//import { Founder } from "";
-//import { ContactForm } from "";
+import React from "react";
+import { HeaderAbout } from '../components/Layout/layoutAboutPage/hero/headerAbout';
+import { Founder } from '../components/Layout/layoutAboutPage/founder/founder'
+import { ContactForm } from '../components/Layout/layoutAboutPage/contactForm/contactForm'
 
-/*
+
 export const About = () => {
     return (
         <>
-            <Header />.
+            <HeaderAbout />
             <Founder />
             <ContactForm />
         </>
     );
-};*/
+};
