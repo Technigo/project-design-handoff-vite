@@ -3,7 +3,7 @@
 }
 
 .home-button {
-  background-image: url("/Back.png");
+  background-image: url("Back.png");
   background-size: cover;
   display: inline-block;
   width: 100px;
