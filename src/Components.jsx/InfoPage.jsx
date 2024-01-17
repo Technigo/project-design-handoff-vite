@@ -73,9 +73,11 @@ export const InfoPage = () => {
           <button className="read-more-button">Read more</button>
         </div>
         <div className="grid-item">
-          <img src="After-hours-1.png" alt="After hours image" />
-          <div className="grid-item"></div>
-          <img src="After-hours-2.png" alt="After hours image" />
+          <div className="after-hours-images">
+            <img src="After-hours-1.png" alt="After hours image" />
+            {/* <div className="grid-item"></div> */}
+            <img src="After-hours-2.png" alt="After hours image" />
+          </div>
         </div>
       </div>
     </div>

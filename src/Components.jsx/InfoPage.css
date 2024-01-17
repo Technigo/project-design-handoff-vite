@@ -15,6 +15,14 @@
   margin-bottom: 60px;
 }
 
+.after-hours-images {
+  display: flex;
+}
+
+.after-hours-images img {
+  margin-right: 10px;
+}
+
 /* Specific styling for the Co-working section */
 .grid-item:nth-child(7),
 .grid-item:nth-child(8) {
