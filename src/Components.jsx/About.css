@@ -3,7 +3,7 @@
 }
 
 .home-button {
-  background: url("/Back.png") no-repeat;
+  background: url("/Back.png");
   background-size: cover;
   display: inline-block;
   width: 100px;
@@ -27,7 +27,7 @@
 }
 
 .about {
-  background: url("Rectangle357.png");
+  background: url("/Rectangle357.png");
   color: rgb(219, 174, 24);
   font-family: Switzer;
   font-size: 18px;
