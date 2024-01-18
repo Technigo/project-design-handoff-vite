@@ -2,39 +2,43 @@ import styles from './Form.module.css'
 import { H1 } from '../../reusableComponents/H1/H1.jsx'
 import { P1 } from '../../reusableComponents/P1/P1.jsx'
 import FilledButton from '../../reusableComponents/FilledButton/FilledButton.jsx'
+import { useTranslation } from 'react-i18next'
 
 export const Form = () => {
+
+const { t } = useTranslation()
+
     return (
         <>
             <div className={styles.mainContainer}>
                 <div className={styles.contentWrapper}>
-                    <H1 heading="Share your thoughts with us" />
+                    <H1 heading={t('form.h1')} />
                     <P1
-                        text="Our dedicated team is always happy to help so don’t hesitate to reach out to us with any questions you might have." />
+                        text={t('form.h3')} />
                     <div className={styles.formWrapper}>
                         <form>
                             <div className={styles.formInput}>
-                                <label for="name">NAME</label>
+                                <label for="name">{t('form.input1')}</label>
                                 <input
                                     type="text"
                                     id="name"
-                                    placeholder="Input your name*" />
+                                    placeholder={t('form.ph1')} />
                             </div>
                             <div className={styles.formInput}>
-                                <label for="email">E-MAIL</label>
+                                <label for="email">{t('form.input2')}</label>
                                 <input
                                     type="email"
                                     id="email"
-                                    placeholder="mail@yourmail.com*" />
+                                    placeholder={t('form.ph2')} />
                             </div>
                             <div className={styles.formInput}>
-                                <label for="message">MESSAGE</label>
+                                <label for="message">{t('form.input3')}</label>
                                 <textarea
                                     id="message"
-                                    placeholder="What can we help you with?*" />
+                                    placeholder={t('form.ph3')} />
                             </div>
                         </form>
-                        <FilledButton buttonText="SEND MESSAGE" />
+                        <FilledButton buttonText={t('form.button')} />
                     </div>
                 </div>
             </div>

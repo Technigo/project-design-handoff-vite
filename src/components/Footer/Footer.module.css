@@ -17,11 +17,29 @@
 
 .languages {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: flex-end;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
     grid-column: -1 / -2;
     grid-row: 1;
+}
+
+button {
+    color: #FFFFFF;
+    font-size: 1.2em;
+    background: transparent;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    border: 2px white solid;
+    border-radius: 10px;
+    padding: 0.5em;
+    box-shadow: none;
+}
+
+button:hover {
+    background-color: #FFFFFF;
+    color: #40205A;
 }
 
 .address {

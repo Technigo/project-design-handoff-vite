@@ -1,0 +1,83 @@
+{
+    "navBar": {
+        "nav1": "Memberships",
+        "nav2": "About Us",
+        "nav3": "Programs",
+        "nav4": "FAQ",
+        "close": "CLOSE"
+    },
+
+    "header": {
+        "h1": "Reach new heights with us!",
+        "p": "Whether you're a curious first-timer or a seasoned climber seeking new challenges, our dedicated team of experts is here to guide you every grip of the way.",
+        "button1": "TRY FOR FREE",
+        "button2": "ABOUT US"
+    },
+
+    "cta1": {
+        "h2": "Beginner's program",
+        "p": "Our beginner's program is designed for those who want to get a thorough start and have the confidence and knowledge to get started with climbing in a safe and friendly environment."
+    },
+
+    "cta2": {
+        "h2": "Safety first",
+        "p": "Safety is our top priority at Chalky and we're always here to make you feel safe while climbing. Our team of certified climbing instructors is dedicated to guiding and educating climbers, from beginners to advanced, on safe climbing techniques."
+    },
+
+    "questions": {
+        "h1": "Got questions?",
+        "h2": "What is the best way to get started with climbing?",
+        "p1": "We know that stepping outside your comfort zone is scary and you might have a lot of questions about the world of climbing.",
+        "p2": "We have collected some of the most common beginner questions in our FAQ.",
+        "button": "READ OUR FAQ"
+    },
+
+    "benefits": {
+        "h1": "Benefits of climbing",
+        "li1": "Improves overall body stregth",
+        "li2": "Endurance and flexibility",
+        "li3": "Problem-solving-thinking",
+        "li4": "Mindfulness and stress relief",
+        "button": "OUR PROGRAMS"
+    },
+
+    "footer": {
+        "p1": "Bäckvägen",
+        "p2": "(T-Bana) Örnsberg",
+        "p3": "Contact Us",
+        "p4": "hello@chalky.com",
+        "p5": "(+46) 70-99 29 29",
+        "p6": "Opening hours",
+        "p7": "Mon-Fri 7:30-22:00",
+        "p8": "Sat-Sun 10:00-20:00"
+    },
+
+    "aboutUsHome": {
+        "h1": "We just love to climb together",
+        "p1": "Welcome to Stockholm's most beginner-friendly indoor climbing hall, where adventure knows no bounds, and the thrill of conquering new heights awaits climbers of all levels!",
+        "p2": "Our state-of-the-art facility is designed with beginners in mind, providing a safe and welcoming environment for everyone to discover the exhilaration of indoor climbing. Whether you're a curious first-timer or a seasoned climber seeking new challenges, our dedicated team of experts is here to guide you every grip of the way.",
+        "p3": "With a diverse range of climbing walls and routes, we offer something for everyone, from gentle inclines to daring overhangs. You'll find a supportive community of fellow climbers who share your passion and are ready to encourage your progress.",
+        "h2": "Visit us anytime during our opening hours:",
+        "op1": "Mon-Fri 7:30-22:00",
+        "op2": "Sat-Sun 10:00-20:00"
+    },
+
+    "form": {
+        "h1": "Share your thoughts with us",
+        "h3": "Our dedicated team is always happy to help so don't hesitate to reach out to us with any questions you might have.",
+        "input1": "NAME",
+        "input2": "E-MAIL",
+        "input3": "MESSAGE",
+        "button": "SEND MESSAGE",
+        "ph1": "Input your name*",
+        "ph2": "mail@yourmail.com*",
+        "ph3": "What can we help you with?*"
+    },
+
+    "faq": {
+        "h1": "Find out more in our FAQ",
+        "p1": "We know that stepping outside your comfort zone is scary and you might have a lot of questions about the world of climbing.",
+        "p2": "We have collected some of the most common beginner questions in our FAQ.",
+        "button": "READ OUR FAQ"
+    }
+}

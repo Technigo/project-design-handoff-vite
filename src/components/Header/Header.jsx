@@ -9,8 +9,11 @@ import { BorderButton } from '../../reusableComponents/BorderButton/BorderButton
 import { useState } from 'react'
 import menuButton from '../../assets/menuButton.svg'
 import chalkyLogo from '../../assets/chalkyLogo.svg'
+import { useTranslation } from 'react-i18next'
 
 export const Header = () => {
+
+    const { t, i18n } = useTranslation()
 
     const [openMenu, setOpenMenu] = useState(false);
 
@@ -22,28 +25,28 @@ export const Header = () => {
                     {!openMenu && <button className={menuStyles.open} onClick={() => setOpenMenu(true)}><img src={menuButton} alt="Menu" /></button>}
                     {openMenu && (
                         <div className={menuStyles.menuContent}>
-                            <P2 text="Memberships" />
-                            <Link to={`/aboutus/`} className={styles.link}><P2 text="About Us" /></Link>
-                            <P2 text="Programs" />
-                            <P2 text="FAQ" />
+                            <P2 text={t('navBar.nav1')} />
+                            <Link to={`/aboutus/`} className={styles.link}><P2 text={t('navBar.nav2')} /></Link>
+                            <P2 text={t('navBar.nav3')} />
+                            <P2 text={t('navBar.nav4')} />
                             <button className={menuStyles.close} onClick={() => setOpenMenu(false)}>CLOSE</button>
                         </div>
                     )}
                 </div>
                 <div className={styles.navBar}>
-                    <p>Memberships</p>
-                    <Link to={`/aboutus/`} className={styles.link}><p>About Us</p></Link>
-                    <p>Programs</p>
-                    <p>FAQ</p>
+                    <p>{t('navBar.nav1')}</p>
+                    <Link to={`/aboutus/`} className={styles.link}><p>{t('navBar.nav2')}</p></Link>
+                    <p>{t('navBar.nav3')}</p>
+                    <p>{t('navBar.nav4')}</p>
                 </div>
                 <div className={styles.infoContainer}>
-                    <H1 heading="Reach new heights with us!" />
+                    <H1 heading={t('header.h1')} />
                     <P1
                         className={styles.p1}
-                        text="Whether you're a curious first-timer or a seasoned climber seeking new challenges, our dedicated team of experts is here to guide you every grip of the way." />
+                        text={t('header.p')} />
                     <div className={styles.buttonContainer}>
-                        <FilledButton buttonText="TRY FOR FREE" />
-                        <Link to={`/aboutus`} className={styles.link}><BorderButton buttonText="ABOUT US" /></Link>
+                        <FilledButton buttonText={t('header.button1')} />
+                        <Link to={`/aboutus`} className={styles.link}><BorderButton buttonText={t('header.button2')} /></Link>
                     </div>
                 </div>
             </div>

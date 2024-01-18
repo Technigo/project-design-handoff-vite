@@ -1,0 +1,83 @@
+{
+    "navBar": {
+        "nav1": "Jäsenyydet",
+        "nav2": "Meistä",
+        "nav3": "Ohjelmat",
+        "nav4": "UKK",
+        "close": "SULJE"
+    },
+
+    "header": {
+        "h1": "Nouse kanssamme korkeuksiin!",
+        "p": "Oletpa sitten utelias ensikertalainen tai kokenut, uusia haasteita etsivä kiipeilijä, on omistautunut asiantuntijatiimimme täällä sinua varten koko matkan ajan.",
+        "button1": "KOKEILE ILMAISEKSI",
+        "button2": "MEISTÄ"
+    },
+
+    "cta1": {
+        "h2": "Aloittelijan ohjelma",
+        "p": "Aloittelijan ohjelmassamme pääset oppimaan kattavat perustiedot ja kasvattamaan varmuutta kiipeilemiseen turvallisessa ja kannustavassa ympäristössä."
+    },
+
+    "cta2": {
+        "h2": "Turvallisuus ensin",
+        "p": "Turvallisuus on meille ensiarvoisen tärkeää, ja haluamme olosi olevan aina turvallinen kiipeillessäsi. Sertifioiduista kiipeilyvalmentajista koostuva tiimimme ohjaa niin aloittelevia kuin edistyneitäkin kiipeilijöitä oppimaan turvallisia tekniikoita."
+    },
+
+    "questions": {
+        "h1": "Kysyttävää?",
+        "h2": "Mikä on paras tapa aloittaa kiipeileminen?",
+        "p1": "Tiedämme, että mukavuusalueen ulkopuolelle astuminen on pelottavaa ja sinulla saattaa herätä paljon kysymyksiä kiipeilyyn liittyen.",
+        "p2": "Olemme koonneet yleisimpiä aloittelijoiden kysymyksiä UKK:hon.",
+        "button": "LUE UKK"
+    },
+
+    "benefits": {
+        "h1": "Kiipeilemisen hyödyt",
+        "li1": "Lisää oimaa kehoon kokonaisvaltaisesti",
+        "li2": "Kestävyyttä ja liikkuvuutta",
+        "li3": "Ongelmanratkaisuajattelua",
+        "li4": "Läsnäoloa ja helpotusta stressiin",
+        "button": "OHJELMAMME"
+    },
+
+    "footer": {
+        "p1": "Bäckvägen",
+        "p2": "(Metro) Örnsberg",
+        "p3": "Ota yhteyttä",
+        "p4": "hello@chalky.com",
+        "p5": "(+46) 70-99 29 29",
+        "p6": "Aukioloajat",
+        "p7": "Ma-Pe 7:30-22:00",
+        "p8": "La-Su 10:00-20:00"
+    },
+
+    "aboutUsHome": {
+        "h1": "Yhdessä kiipeileminen on ihanaa",
+        "p1": "Tervetuloa Tukholman aloittelijaystävällisimmälle sisäkiipeilyhallille, missä seikkalut eivät tunne rajoja, ja uudet korkeudet odottavat kaikentasoisia kiipeilijöitä!",
+        "p2": "Modernit tilamme ovat suunniteltu aloittelijoita ajatellen, ja ne tarjoavat turvallisen ja vastaanottavaisen ympäristön jokaiselle löytää sisäkiipeilyn ilo. Oletpa sitten utelias ensikertalainen tai kokenut, uusia haasteita etsivä kiipeilijä, on omistautunut asiantuntijatiimimme täällä sinua varten koko matkan ajan.",
+        "p3": "Laaja valikoimamme kiipeilyseiniä ja -reittejä tarjoaa jotakin jokaiselle, lempeistä nousuista jännittäviin roikkumisiin. Kannustava yhteisömme jakaa intohimosi ja rohkaisee kehittymään.",
+        "h2": "Tule käymään aukioloaikoinamme:",
+        "op1": "Ma-Pe 7:30-22:00",
+        "op2": "La-Su 10:00-20:00"
+    },
+
+    "form": {
+        "h1": "Kerro ajatuksiasi",
+        "h3": "Omistautunut tiimimme on aina valmiina auttamaan, joten ole rohkeasti yhteydessä jos sinulla on mitään kysyttävää.",
+        "input1": "NIMI",
+        "input2": "S-POSTI",
+        "input3": "VIESTI",
+        "button": "LÄHETÄ VIESTI",
+        "ph1": "Kirjoita nimesi*",
+        "ph2": "sposti@sinunosoitteesi.com*",
+        "ph3": "Miten voimme auttaa?*"
+    },
+
+    "faq": {
+        "h1": "Lisätietoa UKK:ssa",
+        "p1": "Tiedämme, että mukavuusalueen ulkopuolelle astuminen on pelottavaa ja sinulla saattaa herätä paljon kysymyksiä kiipeilyyn liittyen.",
+        "p2": "Olemme koonneet yleisimpiä aloittelijoiden kysymyksiä UKK:hon.",
+        "button": "LUE UKK"
+    }
+}

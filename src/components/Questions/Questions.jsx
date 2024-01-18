@@ -5,41 +5,44 @@ import { P1 } from '../../reusableComponents/P1/P1.jsx'
 import { P2 } from '../../reusableComponents/P2/P2.jsx'
 import { FilledButton } from '../../reusableComponents/FilledButton/FilledButton.jsx'
 import { BorderButton } from '../../reusableComponents/BorderButton/BorderButton.jsx'
+import { useTranslation } from 'react-i18next'
 
 const inlineStyles = {
     fontWeight: '600'
 }
 
 export const Questions = () => {
+
+const { t, i18n } = useTranslation();
+
     return (
         <>
             <div className={styles.mainContainer}>
                 <img src={gotQuestions} alt="Got questions?" />
                 <div className={styles.componentWrapper}>
                     <div className={styles.textContainer}>
-                        <H1 heading="Got questions?" />
+                        <H1 heading={t('questions.h1')} />
                         <P1
-                            text="What is the best way to get started with climbing?"
+                            text={t('questions.h2')}
                             style={inlineStyles}
                         />
                         <P2
-                            text="We know that stepping outside your comfort zone is 
-                            scary and you might have a lot of questions about the world of climbing." />
+                            text={t('questions.p1')} />
                         <P2
-                            text="We have collected some of the most common beginner questions in our FAQ." />
-                        <FilledButton buttonText="READ OUR FAQ" />
+                            text={t('questions.p2')} />
+                        <FilledButton buttonText={t('questions.button')} />
                     </div>
                     <div className={styles.benefits}>
-                        <H1 heading="Benefits of climbing" />
+                        <H1 heading={t('benefits.h1')} />
                         <div className={styles.benefitsList}>
                             <ul>
-                                <li> Improves overall body stregth</li>
-                                <li> Endurance and flexibility</li>
-                                <li> Problem-solving-thinking</li>
-                                <li> Mindfulness and stress relief</li>
+                                <li> {t('benefits.li1')}</li>
+                                <li> {t('benefits.li2')}</li>
+                                <li> {t('benefits.li3')}</li>
+                                <li> {t('benefits.li4')}</li>
                             </ul>
                         </div>
-                        <BorderButton buttonText="OUR PROGRAMS" />
+                        <BorderButton buttonText={t('benefits.button')} />
                     </div>
                 </div>
             </div>
