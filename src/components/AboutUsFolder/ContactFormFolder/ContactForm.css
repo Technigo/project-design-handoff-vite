@@ -9,7 +9,7 @@
   margin: 25px;
 }
 
-.contact-us {
+.contact-us-section {
   background-color: var(--primary-color);
 }
 
@@ -42,7 +42,9 @@
   gap: 25px;
   margin-top: 30px;
 }
-
+.contact-us-section img {
+  display: none;
+}
 .an-input {
   display: flex;
   flex-direction: column;
@@ -69,4 +71,22 @@ textarea::placeholder {
 .required-star {
   color: var(--secondary-color);
   display: inline-block;
+}
+
+@media (min-width: 744px) {
+  .contact-us-section img {
+    display: block;
+    width: 50%;
+  }
+  .contact-us-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-us-section {
+    margin: 10%;
+  }
 }

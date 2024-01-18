@@ -26,6 +26,18 @@ const resources = {
         cardText:
           "FamiliyFitness has been a game changer in our family. Finally we have time to exercise again!",
         cardAuthor: "Helena and Marcus Brodtkorp, Members for 2 years",
+
+        cardText2:
+          "You don't have to have children to come here. It’s a modern centre, and the people who work here are like friends to me and my husband.",
+        cardAuthor2: "Christina Holm, Member for 7 years",
+
+        cardText3:
+          "For many years I had a terrible back pain, but couldn't prioritize training because I’m a single dad. FamiliyFitness came to my rescue.",
+        cardAuthor3: "Olav Stormberg, Member for 5 years",
+
+        cardText4:
+          "It's great fun being at Minifit! I'm always really looking forward to playing there. I love it!",
+        cardAuthor4: "Susanna Lindtner, Minifit member for 1 year",
       },
 
       MiniFitSwiper: {
@@ -78,6 +90,18 @@ const resources = {
         cardText:
           "FamiliyFitness har vært en spillveksler for familien vår. Endelig har vi tid til å trene igjen!",
         cardAuthor: "Helena og Marcus Brodtkorp, Medlemmer i 2 år",
+
+        cardText2:
+          "Du må ikke ha barn for å komme hit. Det er et moderne senter, og folkene som jobber her er som venner for meg og mannen min.",
+        cardAuthor2: "Christina Holm, medlem i 7 år",
+
+        cardText3:
+          "I mange år hadde jeg forferdelig ryggsmerter, men kunne ikke prioritere trening fordi jeg er alenefar. FamiliyFitness kom til min redning.",
+        cardAuthor3: "Olav Stormberg, medlem i 5 år",
+
+        cardText4:
+          "Det er kjempegøy å være på Minifit! Jeg ser alltid veldig frem til å leke der. Jeg elsker det!",
+        cardAuthor4: "Susanna Lindtner, Minifit-medlem i 1 år",
       },
 
       MiniFitSwiper: {
@@ -131,6 +155,18 @@ const resources = {
         cardText:
           "FamiliyFitness har varit en spelväxlare för vår familj. Äntligen har vi tid att träna igen!",
         cardAuthor: "Helena och Marcus Brodtkorp, Medlemmar i 2 år",
+
+        cardText2:
+          "Du behöver inte ha barn för att komma hit. Det är ett modernt center, och människorna som arbetar här är som vänner till mig och min make.",
+        cardAuthor2: "Christina Holm, medlem i 7 år",
+
+        cardText3:
+          "I många år hade jag fruktansvärda ryggsmärtor, men kunde inte prioritera träning eftersom jag är ensamstående pappa. FamiliyFitness kom till min räddning.",
+        cardAuthor3: "Olav Stormberg, medlem i 5 år",
+
+        cardText4:
+          "Det är jättekul att vara på Minifit! Jag ser alltid fram emot att leka där. Jag älskar det!",
+        cardAuthor4: "Susanna Lindtner, Minifit-medlem i 1 år",
       },
 
       MiniFitSwiper: {

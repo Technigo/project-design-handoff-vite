@@ -19,16 +19,18 @@
   z-index: 1;
 }
 
-h1 {
+.member-content h1 {
   font-style: italic;
   font-size: 30px;
   font-weight: 500;
   line-height: 34.2px;
 }
 
-p {
+.member-content p {
   font-size: 14px;
   line-height: 18.2px;
+  width: fit-content;
+  color: var(--background-color);
 }
 
 .member-image {
@@ -54,7 +56,7 @@ p {
     margin: 57px;
     width: 530px;
   }
-  p {
+  .member-content p {
     width: 317px;
   }
 }

@@ -24,51 +24,66 @@ import "swiper/css/scrollbar";
 
 export const AboutUsSwiper = () => {
   return (
-    <Swiper
-      // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={3}
-      // navigation
-      // pagination={{ clickable: true }}
-      // scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-    >
-      <SwiperSlide>
-        <img src={scrollOne} alt="scroll img" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={scrollTwo} alt="scroll img" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={scrollThree} alt="scroll img" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={scrollFour} alt="scroll img" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={scrollFive} alt="scroll img" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={scrollSix} alt="scroll img" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={scrollSeven} alt="scroll img" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={scrollEight} alt="scroll img" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={scrollNine} alt="scroll img" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={scrollTen} alt="scroll img" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src={scrollEleven} alt="scroll img" />
-      </SwiperSlide>
-    </Swiper>
+    <>
+      <div className="about-us-wrapper"></div>
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={5}
+        slidesPerView={2.5}
+        breakpoints={{
+          // when window width is >= 320px
+          744: {
+            slidesPerView: 3.5,
+            spaceBetween: 5,
+          },
+          // when window width is >= 480px
+          1024: {
+            slidesPerView: 4.5,
+            spaceBetween: 10,
+          },
+        }}
+        // navigation
+        // pagination={{ clickable: true }}
+        // scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
+      >
+        <SwiperSlide>
+          <img src={scrollOne} alt="scroll img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={scrollTwo} alt="scroll img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={scrollThree} alt="scroll img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={scrollFour} alt="scroll img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={scrollFive} alt="scroll img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={scrollSix} alt="scroll img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={scrollSeven} alt="scroll img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={scrollEight} alt="scroll img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={scrollNine} alt="scroll img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={scrollTen} alt="scroll img" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={scrollEleven} alt="scroll img" />
+        </SwiperSlide>
+      </Swiper>
+    </>
   );
 };
 

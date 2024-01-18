@@ -43,12 +43,6 @@ p {
 
 @media (min-width: 1024px) {
   .frame {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 50px;
-    grid-row-gap: 35px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: 176px;
   }
 }

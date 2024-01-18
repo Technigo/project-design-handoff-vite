@@ -1,4 +1,8 @@
 .last-section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #004174;
   color: #f3f1ed;
   margin-left: 25px;
@@ -7,10 +11,11 @@
   margin-bottom: 100px;
 }
 
-.last-section-wrapper img {
+.last-pic {
   margin: 25px;
-  width: 289px;
-  height: 208px;
+  width: 90%;
+  height: 60%;
+  object-fit: cover;
 }
 
 .last-section-wrapper h2 {
@@ -29,6 +34,10 @@
   font-weight: 400;
   line-height: 130%;
   margin: 25px;
+  color: var(--background-color);
+}
+.welcome-text {
+  color: var(--background-color);
 }
 
 .welcome-text {
@@ -46,5 +55,38 @@
 .last-button {
   display: flex;
   justify-content: flex-start;
+  margin: 25px;
   margin-bottom: 40px;
+}
+
+@media (min-width: 744px) {
+  .text-and-button-container {
+    width: 90%;
+    padding: 20px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .last-section-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  .text-and-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  .last-pic {
+    margin: 25px;
+    width: 50%;
+    height: 80%;
+  }
 }

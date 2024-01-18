@@ -29,3 +29,28 @@
   font-style: italic;
   display: inline-block;
 }
+
+@media (min-width: 744px) {
+  .number-number {
+    font-size: 90px;
+    font-weight: 600;
+  }
+  .numbers-container {
+    text-wrap: nowrap;
+  }
+  .number-text {
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .number-number {
+    font-size: 180px;
+  }
+  .numbers-container {
+    text-wrap: nowrap;
+  }
+  .number-text {
+    font-size: 45px;
+  }
+}

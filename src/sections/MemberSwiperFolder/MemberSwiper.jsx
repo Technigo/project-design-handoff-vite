@@ -24,7 +24,18 @@ export const MemberSwiper = () => {
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={10}
         slidesPerView={1}
-        // navigation
+        breakpoints={{
+          // when window width is >= 320px
+          744: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // when window width is >= 480px
+          1024: {
+            slidesPerView: 1.5,
+            spaceBetween: 20,
+          },
+        }}
         pagination={{ clickable: true }}
         // scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
@@ -37,7 +48,7 @@ export const MemberSwiper = () => {
             cardAuthor={t("MemberSwiperCard.cardAuthor")}
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="blue">
           <MemberSwiperCard
             img={CardTwo}
             cardText={t("MemberSwiperCard.cardText2")}
@@ -51,7 +62,7 @@ export const MemberSwiper = () => {
             cardAuthor={t("MemberSwiperCard.cardAuthor3")}
           />
         </SwiperSlide>
-        <SwiperSlide>
+        <SwiperSlide className="blue">
           <MemberSwiperCard
             img={CardFour}
             cardText={t("MemberSwiperCard.cardText4")}

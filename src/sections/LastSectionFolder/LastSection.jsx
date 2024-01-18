@@ -12,20 +12,20 @@ export const LastSection = () => {
   return (
     <>
       <div className="last-section-wrapper">
-        <img src={LastSectionPic} alt="image" />
-        <h2>{t("LastSection.heading")}</h2>
-        <p className="info-text">{t("LastSection.text")}</p>
-
-        <p className="welcome-text">{t("LastSection.welcomeText")}</p>
-
-        <div className="last-button">
-          <Buttons
-            buttonText=""
-            url="https://example.com"
-            icon={button}
-            hoverIcon={buttonHover}
-            alt="Button Icon"
-          />
+        <img className="last-pic" src={LastSectionPic} alt="image" />
+        <div className="text-and-button-container">
+          <h2>{t("LastSection.heading")}</h2>
+          <p className="info-text">{t("LastSection.text")}</p>
+          <p className="welcome-text">{t("LastSection.welcomeText")}</p>
+          <div className="last-button">
+            <Buttons
+              buttonText=""
+              url="https://example.com"
+              icon={button}
+              hoverIcon={buttonHover}
+              alt="Button Icon"
+            />
+          </div>
         </div>
       </div>
     </>

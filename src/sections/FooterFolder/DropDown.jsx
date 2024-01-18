@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import en from "../../assets/icons/en.svg";
 import no from "../../assets/icons/no.svg";
 import se from "../../assets/icons/se.svg";
+import "./DropDown.css";
 
 export const DropDown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,14 +14,14 @@ export const DropDown = () => {
   };
 
   return (
-    <div>
+    <div className="dropdown-wrapper">
       <button onClick={() => setIsOpen(!isOpen)}>
         <img
           src={en}
           alt="English Flag"
           style={{
-            width: "20px", // Adjust the width to your desired size
-            height: "20px", // Adjust the height to your desired size
+            width: "20px",
+            height: "20px",
             marginRight: "8px",
             borderRadius: "50%",
           }}
@@ -34,8 +35,8 @@ export const DropDown = () => {
               src={en}
               alt="English Flag"
               style={{
-                width: "20px", // Adjust the width to your desired size
-                height: "20px", // Adjust the height to your desired size
+                width: "20px",
+                height: "20px",
                 marginRight: "8px",
                 borderRadius: "50%",
               }}
@@ -47,8 +48,8 @@ export const DropDown = () => {
               src={no}
               alt="Norwegain Flag"
               style={{
-                width: "20px", // Adjust the width to your desired size
-                height: "20px", // Adjust the height to your desired size
+                width: "20px",
+                height: "20px",
                 marginRight: "8px",
                 borderRadius: "50%",
               }}

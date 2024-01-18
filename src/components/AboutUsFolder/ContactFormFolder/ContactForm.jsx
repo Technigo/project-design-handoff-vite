@@ -1,8 +1,6 @@
 import "./ContactForm.css";
 import { useState } from "react";
-// import { Buttons } from "../../Buttons/Buttons";
-// import button from "../../../assets/Button.svg";
-// import buttonHover from "../../../assets/ButtonHover.svg";
+import contact from "../../../assets/images/contact.png";
 import { ButtonStyled } from "../../Buttons/ButtonStyled";
 
 export const ContactForm = () => {
@@ -34,7 +32,8 @@ export const ContactForm = () => {
 
   return (
     <div className="grid-parent">
-      <div className="contact-us section">
+      <div className="contact-us-section">
+        <img src={contact} alt="contact-pic" />
         <div className="contact-form">
           <h2>{contactObject.header}</h2>
           <p className="contact-text">{contactObject.text}</p>
