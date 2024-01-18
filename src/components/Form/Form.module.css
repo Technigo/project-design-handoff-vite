@@ -1,0 +1,74 @@
+.mainContainer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em 4em 2em;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    max-width: 70%;
+    align-self: center;
+}
+
+.formWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    max-width: 100%;
+}
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 3px;
+}
+
+input, textarea {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: none;
+    border: 1px solid black;
+    padding: 17px 18px 17px 18px;
+}
+
+textarea {
+    height: 157px;
+    resize: none;
+}
+
+@media screen and (max-width: 667px) {
+    .mainContainer {
+        padding: 2em 1em 2em 1em;
+    }
+
+    .contentWrapper {
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+    .mainContainer {
+        padding: 4em 2em 4em 2em;
+    }
+
+    .contentWrapper {
+        max-width: 90%;
+    }
+}

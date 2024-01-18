@@ -1,0 +1,115 @@
+.mainContainer {
+    background-image: url('../../assets/heroImage.svg');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    height: 65em;
+    background-position: right top;
+    display: flex;
+    align-items: center;
+    margin-left: 8em;
+}
+
+.mainContainer img {
+    position: absolute;
+    top: 4em;
+    left: 4em;
+    width: 350px;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    width: 755px;
+    height: 48px;
+    position: absolute;
+    top: 4em;
+    right: 4em;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.navBar p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4A205A;
+}
+
+.navBar p:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 38px;
+    padding: 10px;
+    max-width: 35%;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+img:hover {
+    transform: scaleX(1.25) scaleY(1.25);
+    transition: ease 0.5s;
+}
+
+@media screen and (max-width: 667px) {
+    .mainContainer {
+        height: 47em;
+        background-size: 80%;
+        align-items: flex-end;
+        margin-left: 1em;
+    }
+
+    .mainContainer img {
+        top: 1em;
+        left: 1em;
+        width: 212px;
+    }
+
+    .infoContainer {
+        max-width: 100%;
+    }
+
+    .navBar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px) {
+    .mainContainer {
+        height: 45em;
+        align-items: center;
+        background-size: 70%;
+        align-items: flex-end;
+        margin-left: 0em;
+    }
+
+    .mainContainer img {
+        width: 234px;
+    }
+
+    .infoContainer {
+        max-width: 55%;
+        gap: 3em;
+        margin-left: 1.5em;
+    }
+
+    .navBar {
+        display: none;
+    }
+}
