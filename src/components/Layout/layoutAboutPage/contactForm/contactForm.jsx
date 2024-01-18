@@ -15,19 +15,21 @@ export const ContactForm = () => {
         agreeToTerms: false,
     });
 
-    // Handlers for form field changes
     const handleChange = (event) => {
         const { name, value, type, checked } = event.target;
-        setFormData(prevFormData => ({
-            ...prevFormData,
-            [name]: type === 'checkbox' ? checked : value
-        }));
+        setFormData(prevFormData => {
+            const newFormData = {
+                ...prevFormData,
+                [name]: type === 'checkbox' ? checked : value
+            };
+
+            // Log the new form data to the console
+            console.log(newFormData);
+
+            return newFormData;
+        });
     };
 
-    // Example log function for the submit button
-    const logData = () => {
-        console.log(formData);
-    };
     return (
         <section className={style.contactSection}>
             <Text
@@ -54,6 +56,7 @@ export const ContactForm = () => {
                         required
                     />
                 </label>
+
                 <label className={style.labelText} htmlFor="email">
                     <Text
                         header={t("form.labels.email")}
@@ -71,11 +74,12 @@ export const ContactForm = () => {
                         required
                     />
                 </label>
-                <label className={style.checkboxContainer} htmlFor="terms">
+
+                <label className={style.labelText} htmlFor="agreeToTerms">
                     <input
                         type="checkbox"
-                        name="terms"
-                        id="terms"
+                        name="agreeToTerms"
+                        id="agreeToTerms"
                         checked={formData.agreeToTerms}
                         onChange={handleChange}
                         className={style.checkbox}
@@ -88,6 +92,8 @@ export const ContactForm = () => {
                         className={style.labelHeader}
                     />
                 </label>
+
+
                 <div className={style.submitBtnContainer}>
                     <StyledButton style={{
                         display: 'flex',
