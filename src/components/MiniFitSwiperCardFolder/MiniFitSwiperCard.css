@@ -1,0 +1,25 @@
+.miniCard {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-container {
+  width: 142px;
+  height: 144px;
+  overflow: hidden;
+}
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.miniCard h4 {
+  color: var(--font-color);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
