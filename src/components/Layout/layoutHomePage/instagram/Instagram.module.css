@@ -48,7 +48,7 @@
  }
 
  /* ipad pro */
- @media (min-width: 767px) and (max-width: 1228px) {
+ @media (min-width: 767px) and (max-width: 1028px) {
      .wrapper {
          padding: 55px 0px;
          gap: 19px;
@@ -61,7 +61,7 @@
  }
 
  /* macbook air */
- @media (min-width: 1228px) {
+ @media (min-width: 1028px) {
      .wrapper {
          padding: 80px 41px 60px 41px;
      }
@@ -72,7 +72,7 @@
      }
 
      .instaImage {
-         width: 22rem;
-         height: 22rem;
+         width: 20rem;
+         height: 20rem;
      }
  }
