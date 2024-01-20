@@ -63,7 +63,7 @@
  /* macbook air */
  @media (min-width: 1028px) {
      .wrapper {
-         padding: 80px 41px 60px 41px;
+         padding: 80px 30px 60px 30px;
      }
 
      .instaCarousel {
@@ -72,7 +72,7 @@
      }
 
      .instaImage {
-         width: 20rem;
-         height: 20rem;
+         width: 18rem;
+         height: 18rem;
      }
  }
