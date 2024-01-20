@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import styles from "./founder.module.css"
+import styles from './founder.module.css'
 import { useTranslation } from 'react-i18next';
 import { Text } from '../../../UI/textAndTypography/Text';
 
@@ -52,7 +52,7 @@ export const Founder = () => {
                         header={t('ourFounder.description')}
                         type="bodyText"
                         style={{ color: '#1D1C25', fontWeight: 300 }}
-                        className={style.Texth2}
+                        className={styles.Texth2}
                     />
                 </section>
             </section>
