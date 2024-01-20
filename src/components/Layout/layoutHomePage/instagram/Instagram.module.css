@@ -48,7 +48,7 @@
  }
 
  /* ipad pro */
- @media (min-width: 767px) and (max-width: 1428px) {
+ @media (min-width: 767px) and (max-width: 1228px) {
      .wrapper {
          padding: 55px 0px;
          gap: 19px;
@@ -61,7 +61,7 @@
  }
 
  /* macbook air */
- @media (min-width: 1428px) {
+ @media (min-width: 1228px) {
      .wrapper {
          padding: 80px 41px 60px 41px;
      }
