@@ -3,10 +3,6 @@ import { useTranslation } from 'react-i18next';
 import style from './Instagram.module.css';
 import { Text } from "../../../UI/textAndTypography/Text";
 import { StyledButton } from '../../../UI/buttons/StyledButtons';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-
-// import { InstagramCarousel } from "./InstagramCarousel";
 
 export const Instagram = () => {
     const { t } = useTranslation();

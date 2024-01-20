@@ -1,7 +1,6 @@
-// index.js
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './i18n'; // Importer i18n konfigurasjonen
+import './i18n';
 import { App } from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

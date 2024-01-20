@@ -174,10 +174,6 @@
     transform: translateX(-50%);
 }
 
-/* .searchBar::placeholder {
-    color: #FFD075;
-    padding-left: 0.2rem;
-} */
 
 .navLink::after {
     content: '';

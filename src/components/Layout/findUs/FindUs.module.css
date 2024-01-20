@@ -54,12 +54,9 @@
 /***********DROPDOWN***************/
 .icon {
     height: 20px;
-    /* Example size, adjust as needed */
     width: auto;
     margin-right: 5px;
-    /* Space between icon and text */
     vertical-align: middle;
-    /* Align with text */
 }
 
 .dropdown {
@@ -165,7 +162,7 @@
         grid-area: LocationMap;
         position: relative;
         overflow: hidden;
-        /* No idea why only this works for keeping the map sized correctly*/
+        /* Not sure why only this works for keeping the map sized correctly*/
         padding-bottom: calc(539 / 1440 * 100vw);
         height: 0;
         max-width: auto;

@@ -10,5 +10,5 @@ export const InternalButton = ({ to, children, ...props }) => {
     );
 };
 
-//button for internal use/routes - About. 
+
 

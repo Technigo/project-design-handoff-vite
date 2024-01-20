@@ -21,18 +21,14 @@
      color: white;
  }
 
-
+ /* "Carousel" Scrollbar */
  .instaCarousel {
      display: flex;
      overflow-x: auto;
-     /* Enables horizontal scrolling */
      -webkit-overflow-scrolling: touch;
-     /* Smooth scrolling on iOS devices */
      gap: 1rem;
      padding-bottom: 1rem;
-     /* Add padding to prevent cutting off the scrollbar */
      width: 100%;
-     /* Ensure the carousel takes full width */
  }
 
  .instaImage {

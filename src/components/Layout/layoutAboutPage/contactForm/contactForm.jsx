@@ -8,7 +8,6 @@ import { StyledButton } from '../../../UI/buttons/StyledButtons';
 export const ContactForm = () => {
     const { t } = useTranslation();
 
-    // Initial state for form data
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -22,8 +21,6 @@ export const ContactForm = () => {
                 ...prevFormData,
                 [name]: type === 'checkbox' ? checked : value
             };
-
-            // Log the new form data to the console
             console.log(newFormData);
 
             return newFormData;
@@ -31,12 +28,12 @@ export const ContactForm = () => {
     };
 
     return (
-        <section className={style.contactSection}>
+        <section className={style.contactWrapper}>
             <Text
                 header={t("form.heading")}
                 type="H2"
                 style={{ color: '#fff' }}
-                className={style.heading}
+                className={style.header}
             />
             <form>
                 <label className={style.labelText} htmlFor="name">
