@@ -104,6 +104,7 @@
     "navbar": {
         "search": "Sök yoga klass",
         "searchAlt": "Förstoringsglasikon",
+        "home": "HEM",
         "schedule": "SCHEMA",
         "classes": "KLASSER",
         "prices": "PRISER",

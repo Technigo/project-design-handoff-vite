@@ -104,6 +104,7 @@
     "navbar": {
         "search": "Find yoga class",
         "searchAlt": "Magnifying Glass Icon",
+        "home": "HOME",
         "schedule": "SCHEDULE",
         "classes": "CLASSES",
         "prices": "PRICES",

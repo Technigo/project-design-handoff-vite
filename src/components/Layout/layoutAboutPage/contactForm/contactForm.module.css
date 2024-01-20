@@ -20,7 +20,6 @@ form {
     width: 100%;
     border-radius: 5px;
     box-shadow: 4px 4px 2px 0 #1D1C25;
-
 }
 
 .labelText {
@@ -89,16 +88,27 @@ form {
 }
 
 /* iPad Pro 11 */
-@media (min-width: 767px) and (max-width: 1028px) {
+@media (min-width: 767px) and (max-width: 1328px) {
     .contactSection {
-        max-width: 700px;
+        padding: 95px 80px 90px 80px;
     }
+
+    form {
+        padding: 50px 20px 30px 20px;
+        gap: 40px;
+    }
+
+    .heading {
+        color: #fff;
+        padding-bottom: 20px;
+    }
+
 }
 
 /* MacBook Air */
-@media (min-width: 1028px) {
+@media (min-width: 1328px) {
     .contactSection {
-        padding: 48px 64px 40px;
+        padding: 50px 120px 90px 120px;
     }
 
 }

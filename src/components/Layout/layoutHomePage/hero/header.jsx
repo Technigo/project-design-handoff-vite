@@ -38,7 +38,7 @@ export const Header = () => {
                             {t('header.findYogaClass')}
                         </MobileSpecificButton>
                         <MobileSpecificButton
-                            // to="/some-path" 
+                            // to="/a-path" 
                             $backgroundColor="transparent"
                             $border="2px solid #FFD075;"
                             $color="#FFD075"

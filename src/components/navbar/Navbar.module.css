@@ -34,7 +34,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    background-color: #612e77;
+    background-color: transparent;
     padding: 0 1rem;
     height: fit-content;
 }
@@ -45,7 +45,7 @@
     right: 0;
     width: 100%;
     height: auto;
-    z-index: 0;
+    z-index: 1;
 }
 
 .navLinks {
@@ -205,7 +205,7 @@
         position: absolute;
         transform: translateY(-35%);
         width: 110%;
-        z-index: 0;
+        z-index: 1;
 
     }
 
@@ -290,9 +290,9 @@
 @media (min-width: 1328px) {
     .navBlackSvgBackground {
         position: absolute;
-        transform: translateY(-35%);
+        transform: translateY(-30%);
         width: 113%;
-        z-index: 0;
+        z-index: 1;
     }
 
     .imgsWrapper {
@@ -314,6 +314,7 @@
         bottom: -2vw;
         margin: 0 60px 0 120px;
         width: 230px;
+        z-index: 2;
     }
 
     .logo {
@@ -427,7 +428,7 @@
         width: fit-content;
         z-index: 1;
         right: 7vw;
-        top: 11vw;
+        top: 13vw;
     }
 
     .searchBar {
