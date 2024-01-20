@@ -60,7 +60,8 @@
 }
 
 /* iPad Pro 11 */
-@media (min-width: 767px) and (max-width: 1028px) {
+/* @media (min-width: 767px) and (max-width: 1028px) { */
+@media (min-width: 800px) and (max-width: 1028px) {
     .H1 {
         font-size: 48px;
         font-style: normal;

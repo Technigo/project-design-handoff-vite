@@ -62,22 +62,22 @@ export const Navbar = () => {
                 <NavLink to="/" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
                     {t('navbar.home')}
                 </NavLink>
-                <NavLink to="/schedule" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
+                <NavLink to="/" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
                     {t('navbar.schedule')}
                 </NavLink>
-                <NavLink to="/classes" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
+                <NavLink to="/" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
                     {t('navbar.classes')}
                 </NavLink>
-                <NavLink to="/prices" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
+                <NavLink to="/" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
                     {t('navbar.prices')}
                 </NavLink>
                 <NavLink to="/about" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
                     {t('navbar.about')}
                 </NavLink>
-                <NavLink to="/contact" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
+                <NavLink to="/about" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
                     {t('navbar.contact')}
                 </NavLink>
-                <NavLink to="/login" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
+                <NavLink to="/" className={style.navLink} onClick={() => setIsNavExpanded(false)}>
                     {t('navbar.login')}
                 </NavLink>
             </div>

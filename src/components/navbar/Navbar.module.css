@@ -194,9 +194,104 @@
     background-color: transparent;
 }
 
+/* ipad mini */
+@media (min-width: 767px) {
+    .navBlackSvgBackground {
+        position: absolute;
+        transform: translateY(-25%);
+        width: 110%;
+        z-index: 1;
+    }
+
+    .searchWrapper {
+        z-index: 1;
+        right: 15vw;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+        width: 100%;
+        margin-top: 25px;
+        outline: none;
+        border: #FFD075 1px solid;
+        border-radius: 5px;
+        color: #FFD075;
+        box-shadow: none;
+        background-color: transparent;
+        width: fit-content;
+        display: block;
+        display: flex;
+        align-items: right;
+    }
+
+    .searchBar {
+        z-index: 1;
+        position: relative;
+        background-color: transparent;
+        box-shadow: none;
+        border: none;
+        display: block;
+        width: 200px;
+        margin: 5px;
+    }
+
+    .searchIcon {
+        margin: 5px 10px 5px 0
+    }
+
+    .menuIcon {
+        padding-top: 35px;
+        padding-right: 35px;
+        margin-top: 20px;
+    }
+
+
+    .navSvgBackground {
+        position: absolute;
+        top: 0vh;
+        right: 0;
+        width: 38%;
+        height: auto;
+        z-index: 0;
+    }
+
+    .bar {
+        display: block;
+        width: 41px;
+        height: 2px;
+        margin: 9px auto;
+        background-color: #FFD075;
+        transition: all 0.3s ease;
+    }
+
+    .logo {
+        cursor: pointer;
+        width: 70px;
+        height: 75px;
+        flex-shrink: 0;
+        z-index: 1;
+        padding: 10px 10px 0 0;
+    }
+
+    .navLink {
+        top: 0vh;
+        left: 88%;
+        padding: 13px 0;
+        line-height: 140%;
+    }
+
+    .navSvgBackground {
+        position: absolute;
+        top: 0vh;
+        right: 0;
+        width: 38%;
+        height: auto;
+        z-index: 0;
+    }
+
+}
 
 /* iPad Pro 11" */
-@media (min-width: 767px) and (max-width: 1328px) {
+@media (min-width: 800px) and (max-width: 1328px) {
     .nav {
         display: flex;
     }
@@ -216,9 +311,14 @@
     }
 
     .navLink {
-        top: 8vh;
+        top: 4vh;
         left: 88%;
+        padding: 16px 0;
+        line-height: 140%;
+        font-size: 25px;
     }
+
+
 
     .navSvgBackground {
         position: absolute;

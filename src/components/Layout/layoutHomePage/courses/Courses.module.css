@@ -1,12 +1,12 @@
 .background {
     background-color: #FFF;
-    height: 740px;
+    height: 780px;
     border-top: 2px solid #612E77;
     border-bottom: 2px solid #612E77;
 }
 
 .wrapper {
-    padding-top: 20px;
+    padding: 30px 0;
     flex-direction: column;
     text-align: center;
     gap: 20px;
