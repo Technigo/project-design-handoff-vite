@@ -26,3 +26,47 @@
 .navbar-buttons button:hover {
   box-shadow: 0px 4px 4px 0px #ffc700;
 }
+
+/* .hamburger {
+  display: block;
+  height: 30px;
+  width: 10%;
+  padding-right: 20px;
+  margin-bottom: -23px;
+  width: 10%;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%; /* Adjust position based on your layout */
+/* right: 20px; /* Adjust position based on your layout */
+/* background-color: #242424;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.2s;
+  font-family: "Rethink Sans", sans-serif;
+} */
+
+/* .dropdown a {
+  color: #ddd;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+} */
+
+@media (min-width: 300px) and (max-width: 1000px) {
+  .navbar-buttons {
+    display: none;
+  }
+}

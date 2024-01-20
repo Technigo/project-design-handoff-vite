@@ -1,7 +1,7 @@
 .header {
   background: url("/Header.png") no-repeat;
-  width: 1280px;
-  height: 622px;
+  width: 100%;
+  height: 100%;
 }
 
 .yellow {
@@ -11,7 +11,7 @@
 .header-text {
   align-self: stretch;
   display: flex;
-  width: 703.847px;
+  width: 70%;
   padding: 29px 64px;
   flex-direction: column;
   align-items: flex-start;
@@ -45,4 +45,47 @@
   height: 5px;
   margin-top: 10%;
   margin-bottom: 10%;
+}
+
+@media (min-width: 300px) {
+  .header {
+    width: 100%;
+    height: 100%;
+  }
+
+  .yellow {
+    color: #ffc700;
+  }
+
+  .header-text {
+    align-self: stretch;
+    display: flex;
+    width: 70%;
+    padding: 29px 64px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+    color: white;
+    background: linear-gradient(
+      90deg,
+      rgba(15, 10, 11, 0.65) 50%,
+      rgba(51, 51, 51, 0) 75.01%
+    );
+    color: #fff;
+    font-family: Gambarino;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .bubbles {
+    width: 99px;
+    height: 99px;
+    border-radius: 99px;
+    border: 3px solid transparent;
+    border-top: 3px solid #ffc700;
+    background: linear-gradient(#ffc700, transparent 50%);
+    align-items: flex-end;
+  }
 }
