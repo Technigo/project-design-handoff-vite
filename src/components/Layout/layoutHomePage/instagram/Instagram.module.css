@@ -1,0 +1,78 @@
+ .background {
+     background-color: #612E77;
+     height: fit-content;
+     margin: 0;
+     padding: 1.5rem;
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .wrapper {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 1.25rem;
+     padding: 3rem 0 2.5rem;
+     text-align: center;
+ }
+
+ .gridItem1,
+ .gridItem2 {
+     color: white;
+ }
+
+ /* "Carousel" Scrollbar */
+ .instaCarousel {
+     display: flex;
+     overflow-x: auto;
+     -webkit-overflow-scrolling: touch;
+     gap: 1rem;
+     padding-bottom: 1rem;
+     width: 100%;
+ }
+
+ .instaImage {
+     flex: 0 0 auto;
+     height: 8rem;
+     width: 8rem;
+     object-fit: cover;
+     border-radius: 0.2rem;
+ }
+
+ .styledButton {
+     display: flex;
+     width: 17rem;
+     align-items: center;
+     justify-content: center;
+     padding: 10px 10px;
+ }
+
+ /* ipad pro */
+ @media (min-width: 767px) and (max-width: 1028px) {
+     .wrapper {
+         padding: 55px 0px;
+         gap: 19px;
+     }
+
+     .instaImage {
+         width: 16rem;
+         height: 16rem;
+     }
+ }
+
+ /* macbook air */
+ @media (min-width: 1028px) {
+     .wrapper {
+         padding: 80px 30px 60px 30px;
+     }
+
+     .instaCarousel {
+         align-content: center;
+         justify-content: center;
+     }
+
+     .instaImage {
+         width: 18rem;
+         height: 18rem;
+     }
+ }

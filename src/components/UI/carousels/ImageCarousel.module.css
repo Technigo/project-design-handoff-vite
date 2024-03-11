@@ -1,0 +1,143 @@
+.carouselContainer {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    transition: transform 0.5s ease-out;
+}
+
+.carouselSlide {
+    display: none;
+    width: 100vw;
+    scroll-snap-align: start;
+    padding: 10px;
+}
+
+.active {
+    display: block;
+}
+
+.carouselButton {
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    z-index: 15;
+}
+
+.carouselButton.left {
+    left: 13px;
+}
+
+.carouselButton.right {
+    right: 13px;
+}
+
+.carouselButton img {
+    width: 26px;
+    height: 26px;
+}
+
+.dots {
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    gap: 5px;
+    top: 40%;
+    z-index: 10;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    z-index: 15;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 208, 117, 0.50);
+}
+
+.dot.active {
+    background-color: #FFD075;
+}
+
+/* iPad Pro 11" */
+@media (min-width: 767px) and (max-width: 1028px) {
+
+    .carouselContainer {
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 0.5s ease-out;
+        width: 100%;
+        overflow-x: hidden;
+        transition: transform 0.5s ease-out;
+    }
+
+
+    .carouselSlide {
+        flex: 0 0 auto;
+        width: 50%;
+        flex: 0 0 50%;
+        box-sizing: border-box;
+    }
+
+
+    .carouselButton {
+        display: block;
+        position: absolute;
+        top: 30%;
+        transform: translateY(-50%);
+        z-index: 50;
+    }
+
+    .carouselButton img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .carouselButton.left {
+        left: 10px;
+    }
+
+    .carouselButton.right {
+        right: 10px;
+    }
+
+    .dots {
+        display: none;
+    }
+}
+
+
+/* MacBook Air */
+@media (min-width: 1028px) {
+
+    .carouselContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .carouselSlide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 348px;
+        margin: auto;
+        text-align: left;
+    }
+
+    .carouselButton {
+        display: none;
+    }
+
+    .dots {
+        display: none;
+    }
+}

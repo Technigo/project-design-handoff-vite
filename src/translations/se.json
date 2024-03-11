@@ -1,0 +1,139 @@
+{
+    "testimonials": {
+        "header": "Vad våra kunder säger",
+        "subHeader": "Några vänliga ord",
+        "firstTestimonial": "“Jag njuter av varje stund på yoga balance så mycket. Det får mig att känna mig yngre och mer levande. Jag rekommenderar detta för varje kvinna i klimakteriet!”",
+        "firstTestimonialAlt": "Kund som praktiserar yoga",
+        "secondTestimonial": "“Jag kan inte leva utan mina yogaklasser på YogaBalance, det hjälper mig att finna frid i sinne och kropp.”",
+        "secondTestimonialAlt": "Kund som slappnar av efter yogaklassen"
+    },
+    "welcome": "Välkommen till vårt samhälle",
+    "text": "Här på YogaBalance erbjuder vi en lugn miljö för din yogaresa.",
+    "translatePage": {
+        "heading": "Välkommen till YogaBalance",
+        "sub-heading": "Gå med i våra klasser och hitta din inre frid"
+    },
+    "membership": {
+        "header": "Våra medlemskap",
+        "subHeader": "Få ut mesta möjliga av din yogapraktik",
+        "allInclusive": {
+            "title": "All inclusive",
+            "description": "Gå på alla våra klasser och kurser samt delta i våra retreater. Du får personlig hjälp av våra instruktörer att planera dina klasser baserat på dina mål. Detta är för dig som vill förbinda dig helt till att leva din fulla potential under klimakteriet och därefter.",
+            "buttonText": "Köp nu 599 sek per månad"
+        },
+        "yogaMember": {
+            "title": "Yogamedlem",
+            "description": "Delta i alla klasser. Detta medlemskap inkluderar även en timmes konsultation med en instruktör varje månad.",
+            "buttonText": "Köp nu 299 sek per månad"
+        }
+    },
+    "header": {
+        "title": "Yoga och meditation för kvinnor",
+        "subtitle": "Vi hjälper dig att hålla dig kraftfull i sinne & kropp under klimakteriet",
+        "findYogaClass": "Hitta yogaklass",
+        "becomeMember": "Bli medlem"
+    },
+    "findUs": {
+        "header": "Hitta oss",
+        "mapTitle": "YogaBalances Plats",
+        "mapSrc": "https://www.google.com/maps/d/embed?mid=10s8TZ9K7aTypybxq4Mm6vhewLKsIjyI&ehbc=2E312F",
+        "address": "Adress: Grycksbovägen 19A, Stockholm",
+        "contactHeader": "Kontakt",
+        "mobile": "Mobil: +46700000000",
+        "email": "E-post: info@yogabalance.se",
+        "languages": {
+            "en": "Engelska",
+            "se": "Svenska"
+        }
+    },
+    "courses": {
+        "header": "Kommande kurser",
+        "subHeader": "Våra kurser är utformade för förbättrad hälsa under och efter klimakteriet"
+    },
+    "carousel": {
+        "course1": {
+            "id": 1,
+            "imgSrc": "/Images/carouselSensing.svg",
+            "description": "Använd yoga och meditation dagligen för att förbättra din kropp och ditt sinne. Förbered dig på att möta nya upplevelser med förnyad styrka, med mjuka rörelser.",
+            "details": "8 veckors Sensing Yoga och meditationspraxis, inkluderar videor och liveklasser, startar 26/10, pris 3400 SEK",
+            "buttonText": "Boka din plats",
+            "altText": "Kvinna sittande på en matta i yogaposition."
+        },
+        "course2": {
+            "id": 2,
+            "imgSrc": "/Images/carouselMeditation.svg",
+            "description": "Meditation kan hjälpa dig att minska stress, sova bättre och verkligen få den återhämtning du behöver. Det hjälper dig också att lyssna på dina känslor och kropp för att veta när det är dags att sakta ner.",
+            "details": "10 veckors meditationspraxis, inkluderar videor och liveklasser, startar 23/11, pris 4300 SEK",
+            "buttonText": "Boka din plats",
+            "altText": "Närbild på kvinna i meditationsposition."
+        },
+        "course3": {
+            "id": 3,
+            "imgSrc": "/Images/carouselYin.svg",
+            "description": "Yin yoga kurs. Lär dig att slappna av och sträcka ut din kropp med långsamma rörelser och statiska positioner. Stressreducerande och det hjälper dig att stärka din mentala hälsa.",
+            "details": "8 veckors Yin Yoga, inkluderar videor och liveklasser, startar 6/12, pris 3400 SEK",
+            "buttonText": "Boka din plats",
+            "altText": "Bild från ovan på kvinna med låsta händer."
+        }
+    },
+    "instagram": {
+        "followUs": "Följ oss på Instagram",
+        "connect": "Anslut och håll dig inspirerad",
+        "carousel": "Bildkarusell insta",
+        "logoAlt": "Instagram",
+        "connectButton": "Anslut på Instagram",
+        "images": [
+            {
+                "id": "img1",
+                "alt": "Tre kvinnor som gör yoga utomhus"
+            },
+            {
+                "id": "img2",
+                "alt": "Kvinna i muktasana-pose i öknen"
+            },
+            {
+                "id": "img3",
+                "alt": "Två kvinnor i muktasana-pose sitter på yogamattor inomhus vid stort fönster"
+            },
+            {
+                "id": "img4",
+                "alt": "Tre kvinnor sitter på yogamattor vid brygga och utför 'Anjali Mudra'"
+            }
+        ]
+    },
+    "navbar": {
+        "search": "Sök yoga klass",
+        "searchAlt": "Förstoringsglasikon",
+        "home": "HEM",
+        "schedule": "SCHEMA",
+        "classes": "KLASSER",
+        "prices": "PRISER",
+        "about": "OM OSS",
+        "contact": "KONTAKT",
+        "login": "LOGGA IN"
+    },
+    "headerAbout": {
+        "titleAbout": "Gå in i vår värld av yoga för kvinnor",
+        "subtitleAbout": "Välkommen till vår värld. Vi är ett litet yogacenter i Stockholm som hjälper kvinnor i klimakteriet att leva ett liv fullt av hälsa och livskraft.",
+        "contactUsBtn": "Hitta yogaklass"
+    },
+    "ourFounder": {
+        "title": "Vår grundare",
+        "subtitle": "Nita Svensson",
+        "description": "Som kvinna i sina 50-årsåldern vet jag allt om att vara i klimakteriet. Min vision är att hjälpa andra kvinnor att må bra genom livet. Yoga hjälpte mig mycket att hålla stressen nere, minska ångest, sova bättre och få den välbehövliga återhämtningen.",
+        "altText": "Bilde av Nita Svensson, vår grundare"
+    },
+    "form": {
+        "heading": "Kontakta oss",
+        "labels": {
+            "name": "Namn",
+            "email": "Epost",
+            "terms": "Jag godkänner villkoren"
+        },
+        "placeholders": {
+            "name": "Skriv ditt namn här...",
+            "email": "Skriv din mail här..."
+        },
+        "button": "Kontakta mig"
+    }
+}

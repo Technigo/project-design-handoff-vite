@@ -1,0 +1,65 @@
+.background {
+    background-color: #FFF;
+    height: 780px;
+    border-top: 2px solid #612E77;
+    border-bottom: 2px solid #612E77;
+}
+
+.wrapper {
+    padding: 30px 0;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    min-height: 480px;
+}
+
+.carouselContainer {
+    min-height: 480px;
+}
+
+.img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+
+.cardTextWrapper {
+    margin-bottom: 20px;
+}
+
+.styledBtn {
+    margin-top: 16px;
+}
+
+/* MacBook Air */
+@media (min-width: 1028px) {
+    .background {
+        height: 851px;
+        padding: 80px 0 60px 0;
+    }
+}
+
+
+/* iPad Pro 11" */
+@media (min-width: 767px) and (max-width: 1028px) {
+    .background {
+        height: 850px;
+    }
+
+    /*padding only works in .carouselSlide in carousel css */
+    .wrapper {
+        min-height: 482px;
+        margin-top: 30px;
+    }
+
+    .carouselContainer {
+        min-height: 482px;
+    }
+
+    .styledBtn {
+        margin-top: 20px;
+    }
+}

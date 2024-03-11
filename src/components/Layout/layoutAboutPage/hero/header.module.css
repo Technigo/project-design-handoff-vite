@@ -1,0 +1,113 @@
+.background {
+    height: fit-content;
+    background-color: #612E77;
+    padding-top: 240px;
+}
+
+.Texth1 {
+    padding: 20px 20px 0px 20px;
+    z-index: 2;
+}
+
+.Texth2 {
+    padding: 20px 20px 30px 20px;
+    z-index: 2;
+}
+
+.contactUsBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    z-index: 2;
+}
+
+
+.heroimage {
+    padding-top: 40px;
+    z-index: 20;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+
+/* ipad mini */
+@media (min-width: 767px) {
+    .background {
+        padding-top: 500px;
+    }
+}
+
+/* ipad air */
+@media (min-width: 800px) {
+    .background {
+        padding-top: 700px;
+    }
+
+
+    .Texth1 {
+        padding: 10px 40px 20px 40px;
+    }
+
+    .Texth2 {
+        padding: 20px 40px 30px 40px;
+        z-index: 2;
+    }
+
+    .contactUsBtn {
+        padding-top: 30px
+    }
+
+}
+
+/* ipad pro */
+@media (min-width: 1085px) {
+    .background {
+        padding-top: 850px;
+    }
+
+    .Texth1 {
+        padding: 50px 50px 10px 50px
+    }
+
+    .heroimage {
+        margin-top: -30px;
+        z-index: 20;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .Texth2 {
+        padding: 50px 50px 60px 50px
+    }
+
+    .contactUsBtn {
+        padding-bottom: 70px;
+    }
+}
+
+@media (min-width: 1385px) {
+    .background {
+        background-size: cover;
+        background-position: center;
+        padding-top: 30px;
+    }
+
+    .Texth1,
+    .Texth2,
+    .contactUsBtn {
+        position: relative;
+        z-index: 2;
+    }
+
+    .Texth1 {
+        padding: 450px 50px 0px 50px
+    }
+
+}

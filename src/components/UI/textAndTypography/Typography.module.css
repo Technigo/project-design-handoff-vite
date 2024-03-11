@@ -1,0 +1,108 @@
+/* iphone 14 pro*/
+.H1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%;
+    /* 37.44px */
+    letter-spacing: 0.36px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.H2 {
+    /*font was changed but not prototype and therefore I "had" to change the size to make it look more like the prototype*/
+    font-size: 29px;
+    font-weight: 800;
+    line-height: 130%;
+    /* 37.44px */
+    letter-spacing: 0.36px;
+    font-style: normal;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.subheading {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    /* 33.28px */
+    letter-spacing: 0.32px;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.yogaCenterName {
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 104%;
+    /* 41.6px */
+    font-style: normal;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.bodyText {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 104%;
+    /* 17.68px */
+    letter-spacing: 0.17px;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.ctaCaption {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 104%;
+    /* 16.64px */
+    letter-spacing: 0.16px;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+/* iPad Pro 11 */
+/* @media (min-width: 767px) and (max-width: 1028px) { */
+@media (min-width: 800px) and (max-width: 1028px) {
+    .H1 {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 104%;
+        /* 49.92px */
+        letter-spacing: 0.48px;
+    }
+}
+
+/* MacBook Air */
+@media (min-width: 1028px) {
+    .H1 {
+        font-size: 64px;
+        font-weight: 800;
+        line-height: 104%;
+        /* 66.56px */
+        letter-spacing: 0.64px;
+    }
+
+    .H2 {
+        font-size: 48px;
+        font-weight: 800;
+        line-height: 104%;
+        /* 49.92px */
+        letter-spacing: 0.48px;
+    }
+
+    .subheading {
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 104%;
+        /* 49.92px */
+        letter-spacing: 0.48px;
+    }
+
+    .yogaCenterName {
+        font-size: 48px;
+        font-weight: 200;
+        line-height: 104%;
+        /* 49.92px */
+        letter-spacing: -0.48px;
+    }
+}
