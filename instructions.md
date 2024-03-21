@@ -3,8 +3,9 @@ This week, you will experience a design hand-off from a UX design student and wo
 
 This is a perfect opportunity to explore fun npm packages to create an image carousel or make some fun animations if that’s included in the design.
 
-## Context
-This is a special week for all of us. It’s the first time we get the chance to collaborate with our UX design students 🤩 Everything will not run smoothly, but honestly - it doesn’t in a real work setting either. We will do this together 💪
+## Task
+This is a special week for all of us, because we will collaborate with our UX design students 🤩 Everything might not run smoothly, but honestly - it doesn’t in a real work setting either. We will do this together 💪
+
 - Details do matter. Assume that all design decisions are intentional.
 - Be honest about any constraints. Try to implement the design, but if there's something that you feel you really can't do - speak up.
 - Since you will not be able to actually build the project until you've seen the design, we've put together a list of the elements that the UX designers have gotten in _their_ project brief. If you want to get a head start before the design handoff, you could start by having a look at that and create some components:
@@ -18,15 +19,13 @@ This is a special week for all of us. It’s the first time we get the chance to
 
 After the design handoff, you will hopefully have a good idea of how to move forward with the design. Use your knowledge of React and feel free to use any npm packages that can make life easier for you. Remember to have fun 🥳
 
-## Requirements:
+## Requirements
 - The app should be built with React
+- Use one of these design libraries:
+  - Styled components
+  - Tailwind CSS
 - Your app should have reusable components
-- Your app should be responsive
+- Make your app responsive (it should look good on devices from 320px width up to 1600px)
 - Your app should look as close as possible to the given design
-- Your app's content will be translated using `react-i18next` into 2 languages. - English & a language of your team's selection -
-
-## Design Recommendations
-
-You'll be handed a design by a fellow UX student at Technigo. Sticking to this design when you're building your project is important. If you're looking for an easy way to style your React project, give styled-components or tailwindCSS a try. They're both great tools that can help you bring the design to life without a lot of fuss.
 
 Happy coding!
