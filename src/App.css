@@ -7,13 +7,13 @@
 /*Argue (download)*/
 @font-face {
   font-family: "Argue";
-  src: local("Argue"), url("./fonts/Argue.otf") format("otf");
+  src: local("Argue"), url("./fonts/Argue.otf") format("opentype");
 }
 
 /*Gerbera (download)*/
 @font-face {
   font-family: "Gerbera";
-  src: local("Gerbera-Bold"), url("./fonts/Gerbera-Bold.otf") format("otf");
+  src: local("Gerbera-Bold"), url("./fonts/Gerbera-Bold.otf") format("opentype");
 }
 
 /* create variables for colours */
