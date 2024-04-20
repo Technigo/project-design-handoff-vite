@@ -1,11 +1,11 @@
 import { Button } from "../reusables/Button";
-import "../App.css";
+
+// import styled from "styled-components";
 
 export const Header = () => {
   return (
     <section>
-      <h1>Header</h1>
-      <Button>View schedule</Button>
+      <Button>Check schedule</Button>
     </section>
   );
 };
