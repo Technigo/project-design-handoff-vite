@@ -1,10 +1,29 @@
 :root {
+  --text-card-bg: #fff;
+  --60: #fffff3;
+  --60-dark: #d4ba9f;
+  --text: #152019;
+  --30: #465d4c;
+  --hover-signup-book: #2b4033;
+  --onclick-signup-book: #819588;
+  --10: #D86E15;
+  --hover-login-links: #EF9D53;
+  --onclick-login: #F4B781
+  --media-md: 744px;
+  --media-lg: 1440px;
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 code {
