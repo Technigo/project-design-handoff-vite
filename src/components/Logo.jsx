@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import mobileLogo from '/mobile logo.svg'
+import mobileLogo from '/logo.svg'
 
 const StyledLogo = styled.img`
   width: 34px;
