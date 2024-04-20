@@ -1,0 +1,39 @@
+/* basic css */
+
+/* import fonts */
+/* Poppins (from google fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/*Argue (download)*/
+@font-face {
+  font-family: "Argue";
+  src: local("Argue"), url("./fonts/Argue.otf") format("otf");
+}
+
+/*Gerbera (download)*/
+@font-face {
+  font-family: "Gerbera";
+  src: local("Gerbera-Bold"), url("./fonts/Gerbera-Bold.otf") format("otf");
+}
+
+/* create variables for colours */
+:root {
+  --primary-blk: #111111;
+  --primary-grey: #505050;
+  --primary-prpl: #620981;
+  --primary-white: #ffffff;
+  --hover-prpl: #430159;
+  --secondary-blue: #dbe3fb;
+}
+
+/* basics */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+h1 {
+  font-family: "Argue";
+}
