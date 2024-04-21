@@ -11,7 +11,7 @@ export default {
       yellow: "#F6E53C",
       pink: "#DE20F9",
       purple: "#4B189E",
-      "dark-purple": "#F6E53C",
+      dkpurple: "#120740",
       white: "#FFFFFF",
       black: "#08031D",
     },
