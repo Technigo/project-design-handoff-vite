@@ -10,21 +10,12 @@ rm -rf .git
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This weeks assignment was to work with a designer from the UX bootcamp. We were asked to follow their design and should either use styled components or tailwind css instead of vanilla css to style the project.
 
 ## Getting Started with the Project
 
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+I started by setting up the basic components and reusable components for the project.
+Then I set up and styled the first components starting with the easier ones like the quote or the about part. This made it easier for me to get used to the styled components approach.
 
 ### The Problem
 
@@ -32,7 +23,7 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://shanti-studio.netlify.app/
 
 ## Instructions
 

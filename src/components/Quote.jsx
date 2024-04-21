@@ -1,6 +1,9 @@
 import styled from "styled-components";
 import quoteImage from "../../public/sunset.jpg";
 
+//to do
+//check paddings -> design on the left side
+
 //styles
 const ImageContainer = styled.section`
   background-image: url(${quoteImage});

@@ -36,7 +36,7 @@ const AboutText = styled.p`
 //component
 // To do:
 // 1) Mobile: "about" smaler and on top of SHANTI
-// 2) Tablet: check padding
+// 2) Tablet: check paddings -> design on the left side
 // 3) Desktop: style with 3 rows and "about" smaler and on top of "SHANTI"
 
 export const About = () => {
