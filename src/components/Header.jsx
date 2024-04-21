@@ -13,12 +13,6 @@ const HeaderContainer = styled.section`
   justify-content: center;
   width: 100%;
   padding: 16px 0 68px 0;
-
-  @media all and (min-width: 744px) {
-  }
-
-  @media all and (min-width: 1024px) {
-  }
 `;
 
 const HeaderNavigation = styled.div`
