@@ -33,19 +33,30 @@ const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  width: 100%;
 
   @media all and (min-width: 1440px) {
     align-items: center;
-    max-width: 1024px;
+  }
+`;
+
+const CarouselContainer = styled.div`
+  width: 90vw;
+  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+
+  @media all and (min-width: 1440px) {
+    width: 100%;
+    align-items: center;
   }
 `;
 
 const StyledCarousel = styled.div`
   display: flex;
   gap: 16px;
-  width: 90vw;
-  overflow-x: scroll;
   padding-bottom: 12px;
+  width: max-content;
 
   @media all and (min-width: 1440px) {
     justify-content: center;
@@ -60,20 +71,21 @@ export const Carousel = () => {
   return (
     <StyledSection>
       <H2>Our services</H2>
-
-      <StyledCarousel>
-        {cardContent.map(card => {
-          return (
-            <Card
-              key={card.heading}
-              url={card.image}
-              alt={card.alt}
-              heading={card.heading}
-              text={card.text}
-            />
-          );
-        })}
-      </StyledCarousel>
+      <CarouselContainer>
+        <StyledCarousel>
+          {cardContent.map(card => {
+            return (
+              <Card
+                key={card.heading}
+                url={card.image}
+                alt={card.alt}
+                heading={card.heading}
+                text={card.text}
+              />
+            );
+          })}
+        </StyledCarousel>
+      </CarouselContainer>
     </StyledSection>
   );
 };
