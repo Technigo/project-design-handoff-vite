@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import quoteImage from "../../public/sunset.jpg";
+import quoteImage from "../../public/images/sunset.jpg";
 
 //to do
 //check paddings -> design on the left side
