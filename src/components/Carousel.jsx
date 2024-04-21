@@ -65,6 +65,11 @@ const StyledCarousel = styled.div`
 
 const H2 = styled.h2`
   text-transform: uppercase;
+  color: #000;
+  font-family: Optima;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 32px; /* 114.286% */
 `;
 
 export const Carousel = () => {

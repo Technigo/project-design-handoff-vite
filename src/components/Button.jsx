@@ -2,14 +2,17 @@
 import styled, { css } from 'styled-components'
 import { useState } from 'react'
 const StyledButton = styled.button`
+  font-family: Montserrat;
   border-radius: 10px;
   width: 70px;
   height: 44px;
   border: none;
   color: var(--text);
   padding: 10px;
+  color: var(--text);
   @media (min-width: 744px) and (max-width: 1440px) {
     width: 112px;
+    width: 125px;
     height: 48px;
     padding: 10px 30px;
   }
@@ -33,6 +36,10 @@ const StyledButton = styled.button`
         props.active ? props.theme.activeGreenColor : '#465d4c'};
       color: white;
       width: 118px;
+      background: ${(props) =>
+        props.active ? props.theme.activeGreenColor : 'var(--30)'};
+      color: var(--text-card-bg);
+      width: 98px;
       height: 44px;
       @media (min-width: 744px) and (max-width: 1440px) {
         width: 211px;
@@ -43,19 +50,24 @@ const StyledButton = styled.button`
         height: 52px;
         padding: 10px 30px;
         &:hover {
-          background: #2b4033;
+          background: var(--hover-signup-book);
         }
       }
     `}
   ${(props) =>
     props.type === 'white' &&
     css`
-      background: white;
+      background: var(--text-card-bg);
       border: 1px solid
         ${(props) => (props.active ? props.theme.activeBorderColor : '#465d4c')};
       color: ${(props) =>
         props.active ? props.theme.activeTextColor : '#465d4c'};
       width: 118px;
+      ${(props) =>
+        props.active ? props.theme.activeBorderColor : 'var(--30)'};
+      color: ${(props) =>
+        props.active ? props.theme.activeTextColor : 'var(--30)'};
+      width: 125px;
       height: 44px;
       padding: 10px;
       @media (min-width: 744px) and (max-width: 1440px) {
@@ -67,9 +79,9 @@ const StyledButton = styled.button`
         height: 52px;
         padding: 10px 30px;
         &:hover {
-          color: #2b4033;
+          color: var(--hover-signup-book);
           border: 1px solid #2b4033;
-          background: white;
+          background: var(--text-card-bg);
         }
       }
     `}
@@ -106,6 +118,10 @@ export const Button = ({ type }) => {
           activeTextColor: 'var(--onclick-signup-book)',
         }}
       >
+        defaultBackground: "var(--10)", activeColor: "var(--onclick-login)",
+        activeGreenColor: "var(--onclick-signup-book)", activeBorderColor:
+        "var(--onclick-signup-book)", activeTextColor:
+        "var(--onclick-signup-book)", }}>
         {buttonText}
       </StyledButton>
     </>
