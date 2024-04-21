@@ -6,6 +6,7 @@ const StyledButton = styled.button`
   width: 70px;
   height: 44px;
   border: none;
+  color: #152019;
   @media (min-width: 744px) and (max-width: 1440px) {
     width: 115px;
     height: 48px;
