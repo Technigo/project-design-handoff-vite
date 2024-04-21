@@ -29,3 +29,7 @@ After the design handoff, you will hopefully have a good idea of how to move for
 - Your app should look as close as possible to the given design
 
 Happy coding!
+
+
+## Roadmap
+- Mobile first
