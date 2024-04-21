@@ -32,4 +32,23 @@ Happy coding!
 
 
 ## Roadmap
+- Basic css. Variables and fonts            CHECK!
 - Mobile first
+- JSON file with language options           Mai
+
+- Hero Section                              Martin
+  - Navigation                              Martin
+  - SignUpButton                            Martin
+  - Logo                                    Martin
+- Info-icons Section                        Martin
+  - InfoIcons                               Martin
+- Feature Cards / review cards Section      Martin
+  - FeatureCard                             Martin
+  - ReviewCard                              Martin
+- Learn more Section                        Mai
+  - Learn More button                       Mai
+- Footer                                    Mai 
+  - SocialMediaIcons                        Mai
+  - TranslationDropdown                     Mai
+  - Links                                   Mai
+  - Location info                           Mai
