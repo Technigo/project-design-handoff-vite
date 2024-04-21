@@ -1,10 +1,10 @@
-import { Logo } from "./Logo";
-import { Button } from "./Button";
-import styled from "styled-components";
-import { useState } from "react";
-import { LeftNav } from "./LeftNav";
-import { Burger } from "./Burger";
-import { NavMenu } from "./NavMenu";
+import { Logo } from './Logo'
+import { Button } from './Button'
+import styled from 'styled-components'
+import { useState } from 'react'
+import { LeftNav } from './LeftNav'
+import { Burger } from './Burger'
+import { NavMenu } from './NavMenu'
 
 const StyledHeader = styled.header`
   box-sizing: border-box;
@@ -20,20 +20,25 @@ const StyledHeader = styled.header`
     align-self: center;
   }
   @media (min-width: 1440px) {
-    display: flex;
-    width: 1440px;
+    display: grid;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 40px;
     justify-content: space-between;
     align-items: center;
   }
-`;
+`
 
 export const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false)
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
+    setMenuOpen(!menuOpen)
+  }
   return (
     <StyledHeader>
       <LeftNav />
@@ -42,5 +47,5 @@ export const Header = () => {
       <Logo />
       <Button />
     </StyledHeader>
-  );
-};
+  )
+}

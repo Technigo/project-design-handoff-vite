@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const StyledCard = styled.article`
   display: flex;
@@ -15,7 +15,7 @@ const StyledCard = styled.article`
   @media all and (min-width: 1440px) {
     width: 325px;
   }
-`;
+`
 
 const Image = styled.img`
   width: 100%;
@@ -26,23 +26,21 @@ const Image = styled.img`
   @media all and (min-width: 1440px) {
     width: 100%;
   }
-`;
+`
 
 const H3 = styled.h3`
   font-family: Optima;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px; /* 116.667% */
-`;
+`
 
 export const Card = ({ url, alt, heading, text }) => {
   return (
     <StyledCard>
-      <Image
-        src={url}
-        alt={alt}></Image>
+      <Image src={url} alt={alt}></Image>
       <H3>{heading}</H3>
       <p>{text}</p>
     </StyledCard>
-  );
-};
+  )
+}

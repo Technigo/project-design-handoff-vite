@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import mobileLogo from "/logo.svg";
+import styled from 'styled-components'
+import mobileLogo from '/logo.svg'
 
 const StyledLogo = styled.img`
   width: 43px;
@@ -14,14 +14,11 @@ const StyledLogo = styled.img`
     width: 85px;
     height: 112px;
   }
-`;
+`
 export const Logo = () => {
   return (
-    <div>
-      <StyledLogo
-        src={mobileLogo}
-        alt="Logo"
-      />
-    </div>
-  );
-};
+    <>
+      <StyledLogo src={mobileLogo} alt="Logo" />
+    </>
+  )
+}

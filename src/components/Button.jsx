@@ -14,8 +14,8 @@ const StyledButton = styled.button`
     padding: 10px 30px;
   }
   @media (min-width: 1440px) {
-    width: 78px;
-    height: 32px;
+    width: 118px;
+    height: 48px;
     padding: 10px 30px;
     &:hover {
       background: var(--hover-login-links);
