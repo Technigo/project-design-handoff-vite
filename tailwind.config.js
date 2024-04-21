@@ -10,7 +10,11 @@ export default {
       white: "#FFFFFF",
       black: "#08031D",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        ubuntu: ["Ubuntu", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 }
