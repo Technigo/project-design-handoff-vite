@@ -4,27 +4,9 @@
   </a>
 </h1>
 
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+Week 12 is a collaboration with the students of the UX bootcamp. We got assigned to a designer to build their web app design. Additionally, we have to chose if we want to do styled-components or Tailwind CSS.
 
 ### The Problem
 
@@ -32,7 +14,7 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+The Zumba Hall
 
 ## Instructions
 
