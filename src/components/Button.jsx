@@ -6,16 +6,19 @@ const StyledButton = styled.button`
   width: 70px;
   height: 44px;
   border: none;
-  color: #152019;
+  color: var(--text);
+  padding: 10px;
   @media (min-width: 744px) and (max-width: 1440px) {
-    width: 115px;
+    width: 112px;
     height: 48px;
+    padding: 10px 30px;
   }
   @media (min-width: 1440px) {
-    width: 138px;
-    height: 52px;
+    width: 78px;
+    height: 32px;
+    padding: 10px 30px;
     &:hover {
-      background: #ef9d53;
+      background: var(--hover-login-links);
     }
   }
   white-space: nowrap;
@@ -29,7 +32,7 @@ const StyledButton = styled.button`
       background: ${(props) =>
         props.active ? props.theme.activeGreenColor : '#465d4c'};
       color: white;
-      width: 98px;
+      width: 118px;
       height: 44px;
       @media (min-width: 744px) and (max-width: 1440px) {
         width: 211px;
@@ -38,6 +41,7 @@ const StyledButton = styled.button`
       @media (min-width: 1440px) {
         width: 240px;
         height: 52px;
+        padding: 10px 30px;
         &:hover {
           background: #2b4033;
         }
@@ -51,16 +55,17 @@ const StyledButton = styled.button`
         ${(props) => (props.active ? props.theme.activeBorderColor : '#465d4c')};
       color: ${(props) =>
         props.active ? props.theme.activeTextColor : '#465d4c'};
-      width: 115px;
+      width: 118px;
       height: 44px;
       padding: 10px;
       @media (min-width: 744px) and (max-width: 1440px) {
-        width: 192px;
-        height: 50px;
+        width: 211px;
+        height: 48px;
       }
       @media (min-width: 1440px) {
-        width: 242px;
-        height: 54px;
+        width: 240px;
+        height: 52px;
+        padding: 10px 30px;
         &:hover {
           color: #2b4033;
           border: 1px solid #2b4033;
@@ -94,11 +99,11 @@ export const Button = ({ type }) => {
         active={active}
         onClick={toggleActive}
         theme={{
-          defaultBackground: '#d86e15',
-          activeColor: '#f4b781',
-          activeGreenColor: '#819588',
-          activeBorderColor: '#819588',
-          activeTextColor: '#819588',
+          defaultBackground: 'var(--10)',
+          activeColor: 'var(--onclick-login)',
+          activeGreenColor: 'var(--onclick-signup-book)',
+          activeBorderColor: 'var(--onclick-signup-book)',
+          activeTextColor: 'var(--onclick-signup-book)',
         }}
       >
         {buttonText}

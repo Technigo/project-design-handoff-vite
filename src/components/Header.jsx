@@ -21,7 +21,7 @@ const StyledHeader = styled.header`
   }
   @media (min-width: 1440px) {
     display: flex;
-    width: 1441px;
+    width: 1440px;
     padding: 40px;
     justify-content: space-between;
     align-items: center;
