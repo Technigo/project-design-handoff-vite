@@ -1,7 +1,5 @@
-import { NavLink } from "react-router-dom";
-import styled from "styled-components";
-
-// import { Burger } from './Burger'
+import { NavLink } from 'react-router-dom'
+import styled from 'styled-components'
 
 const DeskNav = styled.header`
   gap: 10px;
@@ -14,14 +12,14 @@ const DeskNav = styled.header`
     margin: 0;
     padding: 0;
   }
-`;
+`
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: var(--text);
   &:hover {
     color: var(--10);
   }
-`;
+`
 
 export const LeftNav = () => {
   return (
@@ -31,5 +29,5 @@ export const LeftNav = () => {
       <StyledNavLink to="/">MEMBERSHIP</StyledNavLink>
       <StyledNavLink to="/">COACHING</StyledNavLink>
     </DeskNav>
-  );
-};
+  )
+}

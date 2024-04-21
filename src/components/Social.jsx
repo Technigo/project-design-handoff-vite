@@ -16,6 +16,8 @@ const Icon = styled.img`
 
   @media all and (min-width: 1024px) {
     width: 56px;
+    &:hover {
+    }
   }
 `
 
