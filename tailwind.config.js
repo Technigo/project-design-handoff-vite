@@ -15,6 +15,15 @@ export default {
       white: "#FFFFFF",
       black: "#08031D",
     },
+    fontSize: {
+      sm: ["16px", { letterSpacing: "3%", fontWeight: "400" }],
+      base: ["20px", { fontWeight: "400" }],
+      lg: ["25px", { fontWeight: "700" }],
+      xl: ["30px", { fontWeight: "700" }],
+      "2xl": ["35px", { fontWeight: "700" }],
+      "3xl": ["40px", { fontWeight: "700" }],
+      "4xl": ["55px", { fontWeight: "700" }],
+    },
     spacing: {
       1: "16px",
       2: "32px",

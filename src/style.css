@@ -585,6 +585,7 @@ video {
     sans-serif;
   background-color: #120740;
   color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .hover\:bg-darkPurple:hover {

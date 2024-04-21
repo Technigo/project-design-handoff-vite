@@ -1,4 +1,4 @@
-import { Header } from "./components/Header"
+import { HeroSection } from "./components/HeroSection"
 import { Statistics } from "./components/Statistics"
 import { AboutUs } from "./components/AboutUs"
 import { ClassCards } from "./components/ClassCards"
@@ -11,7 +11,7 @@ import { Footer } from "./components/Footer"
 export const App = () => {
   return (
     <>
-      <Header />
+      <HeroSection />
       <Statistics />
       <AboutUs />
       <ClassCards />
