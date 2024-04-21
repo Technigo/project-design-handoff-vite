@@ -1,16 +1,16 @@
-import { Logo } from './Logo'
-import { Button } from './Button'
-import styled from 'styled-components'
-import { useState } from 'react'
-import { LeftNav } from './LeftNav'
-import { Burger } from './Burger'
-import { NavMenu } from './NavMenu'
+import { Logo } from "./Logo";
+import { Button } from "./Button";
+import styled from "styled-components";
+import { useState } from "react";
+import { LeftNav } from "./LeftNav";
+import { Burger } from "./Burger";
+import { NavMenu } from "./NavMenu";
 
 const StyledHeader = styled.header`
   box-sizing: border-box;
   padding: 40px 32px;
   display: flex;
-  background-color: #fffff3;
+  background-color: var(--60);
   position: relative;
   width: 100%;
   height: 112px;
@@ -26,14 +26,14 @@ const StyledHeader = styled.header`
     justify-content: space-between;
     align-items: center;
   }
-`
+`;
 
 export const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen)
-  }
+    setMenuOpen(!menuOpen);
+  };
   return (
     <StyledHeader>
       <LeftNav />
@@ -42,5 +42,5 @@ export const Header = () => {
       <Logo />
       <Button />
     </StyledHeader>
-  )
-}
+  );
+};

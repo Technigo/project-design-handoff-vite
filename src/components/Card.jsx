@@ -10,6 +10,7 @@ const StyledCard = styled.article`
   padding: 10px;
   flex: 1 0 0;
   filter: drop-shadow(0px 4px 4px #1520193c);
+  color: var(--text);
 
   @media all and (min-width: 1440px) {
     width: 325px;
@@ -27,13 +28,20 @@ const Image = styled.img`
   }
 `;
 
+const H3 = styled.h3`
+  font-family: Optima;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px; /* 116.667% */
+`;
+
 export const Card = ({ url, alt, heading, text }) => {
   return (
     <StyledCard>
       <Image
         src={url}
         alt={alt}></Image>
-      <h3>{heading}</h3>
+      <H3>{heading}</H3>
       <p>{text}</p>
     </StyledCard>
   );

@@ -39,6 +39,7 @@ const H1 = styled.h1`
   font-weight: 400;
   line-height: 125%;
   letter-spacing: -0.32px;
+  font-family: Optima;
 `;
 
 const Paragraph = styled.p`

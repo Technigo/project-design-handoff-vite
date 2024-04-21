@@ -1,10 +1,11 @@
-import { USP } from './USP'
-import { StarsRating } from './StarsRating'
-import styled from 'styled-components'
+import { USP } from "./USP";
+import { StarsRating } from "./StarsRating";
+import styled from "styled-components";
+
 export const Rating = () => {
   const StyledRating = styled.div`
     display: flex;
-
+    font-family: Optima;
     padding: 0px 12px;
     flex-direction: column;
     justify-content: center;
@@ -26,7 +27,7 @@ export const Rating = () => {
       gap: 56px;
       flex-direction: row;
     }
-  `
+  `;
   return (
     <StyledRating>
       <USP
@@ -34,7 +35,6 @@ export const Rating = () => {
         text="PROVISION OF COACHING SERVICES TO THE 2022 ICN BODYBUILDING COMPETITION
         NATIONAL CHAMPION"
       />
-
       <StarsRating />
       <USP
         type="deadlift"
@@ -42,5 +42,5 @@ export const Rating = () => {
         THEIR FITNESS AND NUTRITIONAL GOALS"
       />
     </StyledRating>
-  )
-}
+  );
+};

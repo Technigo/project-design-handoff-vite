@@ -1,34 +1,36 @@
 /* eslint-disable react/prop-types */
-import styled, { css } from 'styled-components'
-import { useState } from 'react'
+import styled, { css } from "styled-components";
+import { useState } from "react";
+
 const StyledButton = styled.button`
+  font-family: Montserrat;
   border-radius: 10px;
   width: 70px;
   height: 44px;
   border: none;
-  color: #152019;
+  color: var(--text);
   @media (min-width: 744px) and (max-width: 1440px) {
-    width: 115px;
+    width: 125px;
     height: 48px;
   }
   @media (min-width: 1440px) {
     width: 138px;
     height: 52px;
     &:hover {
-      background: #ef9d53;
+      background: var(--hover-login-links);
     }
   }
   white-space: nowrap;
-  background: ${(props) =>
+  background: ${props =>
     props.active ? props.theme.activeColor : props.theme.defaultBackground};
 
-  ${(props) =>
-    props.type === 'green' &&
+  ${props =>
+    props.type === "green" &&
     css`
       padding: 10px;
-      background: ${(props) =>
-        props.active ? props.theme.activeGreenColor : '#465d4c'};
-      color: white;
+      background: ${props =>
+        props.active ? props.theme.activeGreenColor : "var(--30)"};
+      color: var(--text-card-bg);
       width: 98px;
       height: 44px;
       @media (min-width: 744px) and (max-width: 1440px) {
@@ -39,19 +41,19 @@ const StyledButton = styled.button`
         width: 240px;
         height: 52px;
         &:hover {
-          background: #2b4033;
+          background: var(--hover-signup-book);
         }
       }
     `}
-  ${(props) =>
-    props.type === 'white' &&
+  ${props =>
+    props.type === "white" &&
     css`
-      background: white;
+      background: var(--text-card-bg);
       border: 1px solid
-        ${(props) => (props.active ? props.theme.activeBorderColor : '#465d4c')};
-      color: ${(props) =>
-        props.active ? props.theme.activeTextColor : '#465d4c'};
-      width: 115px;
+        ${props => (props.active ? props.theme.activeBorderColor : "var(--30)")};
+      color: ${props =>
+        props.active ? props.theme.activeTextColor : "var(--30)"};
+      width: 125px;
       height: 44px;
       padding: 10px;
       @media (min-width: 744px) and (max-width: 1440px) {
@@ -62,30 +64,30 @@ const StyledButton = styled.button`
         width: 242px;
         height: 54px;
         &:hover {
-          color: #2b4033;
+          color: var(--hover-signup-book);
           border: 1px solid #2b4033;
-          background: white;
+          background: var(--text-card-bg);
         }
       }
     `}
-`
+`;
 
 export const Button = ({ type }) => {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
 
   const toggleActive = () => {
-    setActive(!active) // Toggle the active state on click
-  }
-  let buttonText = ''
+    setActive(!active); // Toggle the active state on click
+  };
+  let buttonText = "";
   switch (type) {
-    case 'green':
-      buttonText = 'Sign Up'
-      break
-    case 'white':
-      buttonText = 'Book Meeting'
-      break
+    case "green":
+      buttonText = "Sign Up";
+      break;
+    case "white":
+      buttonText = "Book Meeting";
+      break;
     default:
-      buttonText = 'Login'
+      buttonText = "Login";
   }
   return (
     <>
@@ -94,15 +96,14 @@ export const Button = ({ type }) => {
         active={active}
         onClick={toggleActive}
         theme={{
-          defaultBackground: '#d86e15',
-          activeColor: '#f4b781',
-          activeGreenColor: '#819588',
-          activeBorderColor: '#819588',
-          activeTextColor: '#819588',
-        }}
-      >
+          defaultBackground: "var(--10)",
+          activeColor: "var(--onclick-login)",
+          activeGreenColor: "var(--onclick-signup-book)",
+          activeBorderColor: "var(--onclick-signup-book)",
+          activeTextColor: "var(--onclick-signup-book)",
+        }}>
         {buttonText}
       </StyledButton>
     </>
-  )
-}
+  );
+};

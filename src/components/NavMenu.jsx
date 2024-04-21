@@ -1,46 +1,51 @@
 /* eslint-disable react/prop-types */
-import { Button } from './Button'
-import { Logo } from './Logo'
-import styled from 'styled-components'
-import { NavLink } from 'react-router-dom'
+import { Button } from "./Button";
+import { Logo } from "./Logo";
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+
 const Menu = styled.nav`
   gap: 56px;
   width: 100%;
   height: 100vh;
-  background-color: #fffff3;
+  background-color: var(--60);
   position: fixed;
   top: 0;
   left: 0;
-  transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(-100%)')};
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(-100%)")};
   transition: transform 0.3s ease-in-out;
   z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  font-family: Optima;
 
   a {
     text-decoration: none;
-    color: #152019;
+    color: var(--text);
     margin: 10px;
     &:hover {
-      color: #d86e15;
+      color: var(--10);
     }
   }
+
   section {
     display: flex;
     flex-direction: column;
     padding: 32px;
   }
+
   .wrapper-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
   }
+
   button {
     width: 134px;
   }
-`
+`;
 export const NavMenu = ({ open }) => {
   return (
     <>
@@ -63,5 +68,5 @@ export const NavMenu = ({ open }) => {
         </div>
       </Menu>
     </>
-  )
-}
+  );
+};
