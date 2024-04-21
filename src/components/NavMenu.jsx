@@ -22,6 +22,9 @@ const Menu = styled.nav`
     text-decoration: none;
     color: #152019;
     margin: 10px;
+    &:hover {
+      color: #d86e15;
+    }
   }
   section {
     display: flex;

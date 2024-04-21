@@ -13,6 +13,9 @@ const StyledButton = styled.button`
   @media (min-width: 1440px) {
     width: 138px;
     height: 52px;
+    &:hover {
+      background: #ef9d53;
+    }
   }
   white-space: nowrap;
   background: ${(props) =>
@@ -34,6 +37,9 @@ const StyledButton = styled.button`
       @media (min-width: 1440px) {
         width: 240px;
         height: 52px;
+        &:hover {
+          background: #2b4033;
+        }
       }
     `}
   ${(props) =>
@@ -54,6 +60,11 @@ const StyledButton = styled.button`
       @media (min-width: 1440px) {
         width: 242px;
         height: 54px;
+        &:hover {
+          color: #2b4033;
+          border: 1px solid #2b4033;
+          background: white;
+        }
       }
     `}
 `
