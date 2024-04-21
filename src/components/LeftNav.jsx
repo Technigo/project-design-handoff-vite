@@ -6,7 +6,7 @@ import styled from 'styled-components'
 const DeskNav = styled.header`
   gap: 10px;
   display: none;
-  @media (min-width: 1441px) {
+  @media (min-width: 1440px) {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
@@ -18,6 +18,9 @@ const DeskNav = styled.header`
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: #152019;
+  &:hover {
+    color: #d86e15;
+  }
 `
 
 export const LeftNav = () => {
@@ -27,8 +30,6 @@ export const LeftNav = () => {
       <StyledNavLink to="/">THE GYM</StyledNavLink>
       <StyledNavLink to="/">MEMBERSHIP</StyledNavLink>
       <StyledNavLink to="/">COACHING</StyledNavLink>
-      {/* Add more NavLink components for other menu items */}
-      {/* <Burger /> */}
     </DeskNav>
   )
 }

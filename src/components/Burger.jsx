@@ -25,11 +25,7 @@ padding:40px 32px;
     background-color: #D86E15;
     border-radius: 10px;
   }
-  button{
-    width:135px;
-    
-
-  }
+  
   img {
     width: 32px;
     height: 32px;
@@ -48,9 +44,7 @@ export const Burger = () => {
   return (
     <>
       <StyledBurger onClick={toggleMenu}>
-        {open ? (
-          <h2 onClick={toggleMenu}>MENU</h2>
-        ) : (
+        {open ? null : (
           <>
             <div />
             <div />
@@ -58,7 +52,14 @@ export const Burger = () => {
           </>
         )}
 
-        {open ? <img onClick={toggleMenu} src="/Close.png" alt="" /> : null}
+        {/* {open ? <img onClick={toggleMenu} src="/Close.png" alt="" /> : null} */}
+
+        {open ? (
+          <>
+            <img onClick={toggleMenu} src="/Close.png" alt="Close" />
+            <h2>MENU</h2>
+          </>
+        ) : null}
       </StyledBurger>
       <NavMenu open={open} />
     </>

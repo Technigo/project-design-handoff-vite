@@ -7,6 +7,8 @@ import { Burger } from './Burger'
 import { NavMenu } from './NavMenu'
 
 const StyledHeader = styled.header`
+  box-sizing: border-box;
+  padding: 40px 32px;
   display: flex;
   background-color: #fffff3;
   position: relative;
@@ -16,6 +18,13 @@ const StyledHeader = styled.header`
   align-items: center;
   img {
     align-self: center;
+  }
+  @media (min-width: 1440px) {
+    display: flex;
+    width: 1441px;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
   }
 `
 
@@ -32,9 +41,6 @@ export const Header = () => {
       <NavMenu open={menuOpen} />
       <Logo />
       <Button />
-      {/* to import the others 👇🏻
-      <Button type="white" />
-      <Button type="green" /> */}
     </StyledHeader>
   )
 }
