@@ -1,4 +1,4 @@
-import { Button } from "./Button.jsx"
+import { FindUsButton } from "./Button.jsx"
 
 export const Header = () => {
   return (
@@ -12,7 +12,7 @@ export const Header = () => {
       <p>
         Join our training centre and get fit through <span>Dance</span>!
       </p>
-      <Button />
+      <FindUsButton />
     </>
   )
 }
