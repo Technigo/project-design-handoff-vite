@@ -12,8 +12,9 @@ export const InstructorCards = () => {
         <InstructorPieces image={Olivia} alt={'Olivia'} instructorName={'Olivia'}
         instructorInfo={"Always on the look out for the latest Zumba trends, Olivia can guarantee you new steps every month!"} imageStyle= {'w-[315px] h-[150px] rounded-[10px] object-cover'}/>
         <InstructorPieces image={Micheal} alt={'Michael'} instructorName={'Michael'}
-        instructorInfo={"Having a big passion for dance, Michael will make sure you'll also love dance as much as he does!"} imageStyle= {'w-[315px] h-[150px] rounded-[10px] object-cover object-'}/>
+        instructorInfo={"Having a big passion for dance, Michael will make sure you'll also love dance as much as he does!"} imageStyle= {'w-[315px] h-[150px] rounded-[10px] object-cover'}/>
        </div>
     </div>
   )
 }
+//Michael's image need to be confirmed with designer

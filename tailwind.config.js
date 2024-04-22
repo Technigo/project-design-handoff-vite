@@ -46,7 +46,8 @@ export default {
       'sm': '3px 3px rgba(0, 0, 0, 0.5)',
       'base': '5px 5px rgba(0, 0, 0, 0.5)',
       'xl': '4px 4px rgba(0, 0, 0, 0.5)',
-    }
+    },
+    
   },
   plugins: ["prettier-plugin-tailwindcss"],
 };
