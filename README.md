@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="">
-    <img src="/crossfit_mamas.jpg" alt="Crossfit Mamas Image">
+    <img src="public/crossfit_mamas.jpg" alt="Crossfit Mamas Image">
   </a>
 </h1>
 
