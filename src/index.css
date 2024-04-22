@@ -1,13 +1,122 @@
 :root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --green: #BAFB9A;
+  --greenhover: #DBFFC8;
+  --greenclick: #97CB7D;
+  --purple: #DDC5FB;
+  --purplehover: #F0E4FF;
+  --purpleclick: #B376FF;
+  --carousel1: #949494;
+  --carousel2: #D8D8D8;
+  --black: #000;
+  --menublack: rgba(15, 15, 15, 0.3);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+body {
+  margin: 0;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 0 16px;
+}
+
+h1 {
+  color: var(--green);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: -1.5%;
+}
+
+h2 {
+  color: var(--black);
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1.2%;
+}
+
+h3 {
+  color: var(--black);
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 1.2%;
+}
+
+p {
+  color: var(--black);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 22.4px; /* 140% */
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 22.4px;
+}
+
+@media (min-width: 744px) and (max-width: 1493px) {
+  #root {
+    grid-template-columns: repeat(8, 1fr);
+    gap: 16px;
+    margin: 0 32px;
+  }
+
+  h1 {
+    font-size: 120px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    line-height: 25.2px;
+  }
+
+  button {
+    line-height: 25.2px;
+  }
+}
+
+@media (min-width: 1494px) {
+  #root {
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+    margin: 0 128px;
+  }
+
+  h1 {
+    font-size: 160px;
+    letter-spacing: -2%;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  button {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
