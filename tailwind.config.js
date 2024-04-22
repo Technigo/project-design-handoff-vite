@@ -37,6 +37,9 @@ export default {
       fontFamily: {
         ubuntu: ["Ubuntu", "sans-serif"],
       },
+      backgroundImage: {
+        "hero-image": "url('src/assets/woman-dancing.jpg')",
+      },
     },
   },
   plugins: [],
