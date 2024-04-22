@@ -47,6 +47,7 @@ h3 {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 1.2%;
+  margin: 0;
 }
 
 p {
@@ -54,6 +55,21 @@ p {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 22.4px; /* 140% */
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  color: var(--black);
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 22.4px; /* 140% */
+  margin: 0;
 }
 
 button {
@@ -85,6 +101,10 @@ button {
     line-height: 25.2px;
   }
 
+  li {
+    line-height: 25.2px;
+  }
+
   button {
     line-height: 25.2px;
   }
@@ -111,6 +131,11 @@ button {
   }
 
   p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  li {
     font-size: 20px;
     line-height: 28px;
   }
