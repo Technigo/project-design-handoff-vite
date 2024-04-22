@@ -1,0 +1,283 @@
+.topmenu-div {
+    background-color: var( --menublack);
+    height: 72px;
+    width: 100%;
+    grid-column: span 4;
+    margin-left: -16px;
+    margin-right: -16px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+
+.menu-text-section {
+    display: none;
+}
+
+/* LOGO */
+
+.logo {
+    padding-left: 16px;
+}
+
+.logo-phone {
+    display: block;
+}
+
+.logo-tablet {
+    display: none;
+}
+
+.logo-desktop {
+    display: none;
+}
+
+
+/* USER */
+.user-menu-div {
+    padding-right: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.user-phone {
+    display: block;
+    position: fixed;
+}
+
+.user-phone-click{ 
+    display: block;
+    opacity: 0;
+    position: sticky;
+}
+
+.user-phone-click:active{
+    opacity: 1;
+}
+
+.user-desktop {
+    display: none;
+}
+
+.user-desktop-hover {
+    display: none;
+}
+
+/* MENU */
+.menu-phone {
+    display: block;
+    position: fixed;
+}
+
+.menu-phone-click{ 
+    display: block;
+    opacity: 0;
+    position: sticky;
+}
+
+.menu-phone-click:active{
+    opacity: 1;
+}
+
+.menu-desktop {
+    display: none;
+}
+
+.menu-desktop-hover {
+    display: none;
+}
+
+
+@media (min-width: 744px) and (max-width: 1493px) {
+.topmenu-div {
+    background-color: var( --menublack);
+    height: 96px;
+    grid-column: span 8;
+    margin-left: -32px;
+    margin-right: -32px;
+    justify-content: space-between;
+}
+
+.menu-text-section {
+    display: none;
+}
+
+/* LOGO */
+
+.logo {
+    padding-left: 32px;
+}
+
+.logo-phone {
+    display: none;
+}
+
+.logo-tablet {
+    display: block;
+}
+
+.logo-desktop {
+    display: none;
+}
+
+/* USER */
+.user-menu-div {
+    padding-right: 32px;
+}
+
+.user-phone {
+    display: none;
+}
+
+.user-phone-click {
+    display: none;
+}
+
+.user-desktop {
+    display: block;
+    position: fixed;
+}
+
+.user-desktop-hover{ 
+    display: block;
+    opacity: 0;
+    position: sticky;
+}
+
+.user-desktop-hover:hover{
+    opacity: 1;
+}
+
+/* MENU */
+.menu-phone {
+    display: none;
+}
+
+.menu-phone-click {
+    display: none;
+}
+
+.menu-desktop {
+    display: block;
+    position: fixed;
+}
+
+.menu-desktop-hover{
+    display: block;
+    opacity: 0;
+    position: sticky;
+}
+
+.menu-desktop-hover:hover{
+    opacity: 1;
+}
+
+}
+
+@media (min-width: 1494px) {
+.topmenu-div {
+    height: 136px;
+    grid-column: span 12;
+    margin-left: -128px;
+    margin-right: -128px;
+    justify-content: space-between;
+   
+}
+
+.menu-text-section {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    
+}
+
+.menu-text {
+    color: white;
+}
+
+p:hover {
+    font-weight: 550;
+    margin-left: -1px;
+    margin-right: -1px;
+}
+
+.buy {
+    color: var( --purple);
+}
+
+/* LOGO */
+
+.logo {
+    padding-left: 110px;
+}
+
+.logo-phone {
+    display: none;
+}
+
+.logo-tablet {
+    display: none;
+}
+
+.logo-desktop {
+    display: block;
+}
+
+/* USER */
+.user-menu-div {
+    padding-right: 128px;
+}
+
+.user-phone {
+    display: none;
+}
+
+.user-phone-click {
+    display: none;
+}
+
+.user-desktop {
+    display: block;
+    position: fixed;
+}
+
+.user-desktop-hover{ 
+    display: block;
+    opacity: 0;
+    position: sticky;
+}
+
+.user-desktop-hover:hover{
+    opacity: 1;
+}
+
+
+/* MENU */
+.menu-phone {
+    display: none;
+}
+
+.menu-phone-click {
+    display: none;
+}
+
+.menu-desktop {
+    display: block;
+    position: fixed;
+}
+
+.menu-desktop-hover{
+    display: block;
+    opacity: 0;
+    position: sticky;
+}
+
+.menu-desktop-hover:hover{
+    opacity: 1;
+}
+
+}
