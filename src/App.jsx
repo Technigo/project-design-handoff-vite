@@ -2,7 +2,7 @@ import { TopNavigation } from "./components/TopNavigation/TopNavigation";
 
 export const App = () => {
   return (
-    <main>
+    <main className="bg-white">
       <TopNavigation />
 
       <section className="hero__section p-40 md:p-66 bg-royal-purple">
