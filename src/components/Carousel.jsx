@@ -36,14 +36,16 @@ const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 100%;
+  height: 100%;
 `
 
 const CarouselContainer = styled.div`
   width: 90vw;
+  height: 100%;
   overflow-x: scroll;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden;
 `
 
 const StyledCarousel = styled.div`

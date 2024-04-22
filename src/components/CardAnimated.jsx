@@ -1,6 +1,16 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+const animateCard = keyframes`
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.02);
+  }
+`
 const ParentContainer = styled.div`
   position: relative;
+  animation: none;
+  transform: scale(1);
 
   &:hover .card-title-external {
     display: none;
@@ -9,6 +19,9 @@ const ParentContainer = styled.div`
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     background-color: white;
+  }
+  &:hover {
+    animation: ${animateCard} 800ms ease-in;
   }
 `
 const StyledContainer = styled.div`
@@ -28,13 +41,13 @@ const StyledContainer = styled.div`
     --padding: 1.5rem;
     padding: var(--padding);
     background-color: white;
-    transition: opacity 500ms ease, transform 500ms ease;
+    transition: opacity 0.5s ease, transform 1s ease;
     transform: translateY(0);
     opacity: 0;
     position: relative;
     top: 2px;
-    width: 100%; /* Set width to 100% */
-    height: 100%; /* Set height to 100% */
+    width: 100%;
+    height: 100%;
     box-sizing: border-box;
     &:hover {
       opacity: 1;
@@ -104,7 +117,8 @@ const StyledCard = styled.div`
   height: 302px;
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 500ms ease;
+  transition: transform 3s ease;
+
   position: relative;
 
   //   &:hover,
