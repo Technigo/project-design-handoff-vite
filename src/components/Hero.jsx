@@ -6,6 +6,7 @@ const StyledHero = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: solid 1px black;
 
   @media all and (min-width: 744px) {
     flex-direction: row;
