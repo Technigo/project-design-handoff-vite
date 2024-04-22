@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
+    <img src="/crossfit_mamas.jpg" alt="Crossfit Mamas Image">
   </a>
 </h1>
 
@@ -10,9 +10,9 @@ rm -rf .git
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
+This is a landing page for signing up for mum crossfit classes. It is intended for new mums who has never tried crossfit before and want to work out and bring their baby. Also they want it to be a safe place where it is ok that you have to attend to your baby and that you perhaps never have worked out before but want to learn.The Crossfit Mama classes take place in an ordinary crossfit gym, but there are no regular classes in the gym while Mum classes are being held.CTAs are to join this mum crossfit community and once your a member you can also book classes from the web page.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+A design is made for desktop, tablet and mobile. There are no other pages than the actual start page.
 
 ## Getting Started with the Project
 
@@ -32,7 +32,7 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+(Crossfit Mamas)[https://technigo-project-design-handoff-vite.netlify.app/]
 
 ## Instructions
 
