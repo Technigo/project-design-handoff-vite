@@ -14,7 +14,9 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ### View it live
 
-The Zumba Hall
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1c706e0c-299d-413c-a489-ac8a80740e88/deploy-status)](https://app.netlify.com/sites/the-zumba-hall/deploys)
+
+[The Zumba Hall](https://the-zumba-hall.netlify.app/)
 
 ## Instructions
 
