@@ -5,7 +5,7 @@ export default {
     screens: {
       sm: "320px",
       md: "744px",
-      lg: "1024px",
+      lg: "1440px",
     },
     colors: {
       yellow: "#F6E53C",
