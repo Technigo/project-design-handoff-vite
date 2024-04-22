@@ -23,7 +23,8 @@ export default {
       "2xl": ["35px", { fontWeight: "700" }],
       "3xl": ["40px", { fontWeight: "700" }],
       "4xl": ["55px", { fontWeight: "700" }],
-      "5xl": ["25px", {fontWeight: "400"}]
+      "5xl": ["25px", {fontWeight: "400"}],
+      "6xl": ["30px", {fontWeight: "500"}]
     },
     spacing: {
       1: "16px",

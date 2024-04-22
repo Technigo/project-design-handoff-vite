@@ -5,7 +5,7 @@ import JustZumba from "../../assets/classImg/JustZumba.jpeg"
 
 export const ClassCards = () => {
   return (
-    <div className='flex flex-col justify-center items-center gap-y-5 px-[60px] pt-7'>
+    <div className='flex flex-col justify-center items-center gap-y-5 px-[60px] pt-7 '>
     <h4 className='ubuntu text-3xl text-white' >Some of our classes!</h4>
     <div className='flex gap-[27px]'>
       <ClassPieces image={ZumbaEnergetic} alt={'People are having Zumba class'} 
