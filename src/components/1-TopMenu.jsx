@@ -20,7 +20,7 @@ export const TopMenu = () => {
       <div className="menu-text-section">
         <p className="menu-text">First Timers</p>
         <p className="menu-text">Schedule</p>
-        <p className="buy">Buy Sessions</p>
+        <p className="menu-text" id="buy">Buy Sessions</p>
       </div>
       <div className="user-menu-div">
         <div className="user">
