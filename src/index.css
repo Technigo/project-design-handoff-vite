@@ -62,15 +62,15 @@ main {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 21px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 a {
@@ -87,7 +87,7 @@ img {
 
 button {
   font-family: "Bebas Neue", "Roboto";
-  font-size: 18px;
+  font-size: 14px;
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 50px;
@@ -95,13 +95,14 @@ button {
 }
 
 .join-btn {
-  width: 174px;
-  height: 50px;
+  min-width: 121px;
+  padding: 10px;
 }
 
 .learn_more-btn {
-  width: 148px;
-  height: 50px;
+  /* width: 148px; */
+  padding: 10.42px;
+  min-height: 31px;
 }
 
 .log_in-btn {

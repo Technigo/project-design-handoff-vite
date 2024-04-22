@@ -13,12 +13,22 @@ export default {
       terracotta: "#C5515F",
     },
     padding: {
+      40: "40px",
       66: "66px",
     },
     screens: {
       sm: "430px",
       md: "834px",
       lg: "1440px",
+    },
+    fontSize: {
+      "h1-desktop": "36px",
+      "h2-desktop": "25px",
+      "pl-desktop": "18px",
+      "ps-desktop": "16px",
+      "join-btn-desktop": "18px",
+      "join-btn-tablet": "16px",
+      "learn-btn-desktop": "18px",
     },
   },
   plugins: [],

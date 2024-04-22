@@ -5,11 +5,11 @@ export const App = () => {
     <main>
       <TopNavigation />
 
-      <section className="hero__section p-66 bg-royal-purple">
-        <h1 className="text-3xl font-bold underline">HERO SECTION</h1>
+      <section className="hero__section p-40 md:p-66 bg-royal-purple">
+        <h1 className="md:text-h1-desktop font-bold underline">HERO SECTION</h1>
         <h2>This is H2</h2>
 
-        <button className="join-btn bg-crimson-light active:bg-plum-light hover:bg-terracotta text-lg">
+        <button className="join-btn text-join-btn md:text-join-btn-tablet lg:text-join-btn-desktop bg-crimson-light active:bg-plum-light hover:bg-terracotta text-button">
           join today
         </button>
 
@@ -21,10 +21,10 @@ export const App = () => {
         </p>
       </section>
 
-      <section className="article__section p-66">
+      <section className="article__section p-40 md:p-66">
         <h1>ARTICLE SECTION</h1>
         <h2>This is H2</h2>
-        <button className="learn_more-btn bg-plum-light text-lg active:bg-deep-violet hover:bg-royal-purple  text-white">
+        <button className="learn_more-btn md:join-btn-desktop bg-plum-light active:bg-deep-violet hover:bg-royal-purple  text-white buttonSize-base">
           learn more
         </button>
         <p>
@@ -35,7 +35,7 @@ export const App = () => {
         </p>
       </section>
 
-      <section className="testimonial__section p-66 bg-plum-light">
+      <section className="testimonial__section p-40 md:p-66 bg-plum-light">
         <h1>TESTIMONIAL SECTION</h1>
         <h3>This is H3</h3>
 
