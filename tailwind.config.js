@@ -5,7 +5,7 @@ export default {
     screens: {
       sm: "320px",
       md: "744px",
-      lg: "1024px",
+      lg: "1440px",
     },
     colors: {
       yellow: "#F6E53C",
@@ -38,9 +38,9 @@ export default {
         ubuntu: ["Ubuntu", "sans-serif"],
       },
       backgroundImage: {
-        "hero-image": "url('src/assets/woman-dancing.jpg')",
+        "hero-image": "url('src/assets/images/woman-dancing.jpg')",
       },
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],
-}
+};

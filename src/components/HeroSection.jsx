@@ -1,23 +1,23 @@
-import { Header } from "./Header"
-import { FindUsButton } from "./Button"
+import { Header } from "./Header";
+import { FindUsButton } from "./Button";
 
 export const HeroSection = () => {
   return (
-    <div className='bg-hero-image bg-cover bg-center h-[340px] -z-10'>
-      <div className='bg-dkpurple/50 z-0 h-[340px]'>
-        <Header />
-        <div className='flex flex-col text-center justify-center items-center '>
-          <h1 className='mt-6 text-2xl md:text-2xl lg:text-4xl'>
+    <div className="-z-10 h-[340px] w-screen bg-hero-image bg-cover bg-center md:h-[394px] md:bg-top lg:h-[776px]">
+      <div className="-z-5 h-[340px] w-screen bg-dkpurple/50 md:h-[394px] lg:h-[776px]">
+        <Header className="-z-1" />
+        <div className="lg: flex flex-col items-center justify-center text-center">
+          <h1 className="mt-6 text-2xl md:text-[55px] lg:mt-7 lg:text-4xl">
             The Zumba Hall
           </h1>
-          <p className='mt-1 mb-3 mx-[24px] md:mt-2 md:text-base lg:mt-5'>
+          <p className="mx-[24px] mb-3 mt-1 md:mb-6 md:mt-2 md:text-base lg:mb-7 lg:mt-5 lg:text-lg">
             Join our training centre and get fit through{" "}
-            <span className='text-[#F6E53C] italic md:text-base'>Dance</span>
-            <span className='italic md:text-base'>!</span>
+            <span className="italic text-[#F6E53C] md:text-base">Dance</span>
+            <span className="italic md:text-base">!</span>
           </p>
           <FindUsButton />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
