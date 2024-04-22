@@ -18,8 +18,8 @@ export const TopMenu = () => {
         />
       </div>
       <div className="menu-text-section">
-      <p>First Timers</p>
-      <p>Schedule</p>
+      <p className="menu-text">First Timers</p>
+      <p className="menu-text">Schedule</p>
       <p className="buy">Buy Sessions</p>
       </div>
       <div className="user-menu-div">
