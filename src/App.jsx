@@ -1,4 +1,7 @@
 import { Header } from './components/Header';
+import CardArray from './CardArray';
+import { Container } from 'postcss';
+
 export const App = () => {
   return (
     <div>
@@ -7,6 +10,11 @@ export const App = () => {
       </h1>
       <h2 className="font-futura">Find me in src/app.jsx!</h2> */}
       <Header />
+      <div>
+        {CardArray.map((cardArray, index) => (
+          <Card/>
+        ))}
+      </div>
     </div>
   );
 };
