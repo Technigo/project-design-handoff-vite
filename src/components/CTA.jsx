@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import backgroundImage from "../assets/unsplash_tpivPdQgC20_746.jpg";
+import styled from 'styled-components'
+import backgroundImage from '../assets/unsplash_tpivPdQgC20_746.jpg'
 
-import { Button } from "./Button";
+import { Button } from './Button'
 
 const Container = styled.div`
   position: relative;
@@ -29,7 +29,7 @@ const Container = styled.div`
     justify-content: space-evenly;
     padding: 0 32px;
   }
-`;
+`
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -57,7 +57,7 @@ const StyledWrapper = styled.div`
     right: 42px;
     top: 84px;
   }
-`;
+`
 
 const ButtonContainer = styled.div`
   position: absolute;
@@ -73,9 +73,6 @@ const ButtonContainer = styled.div`
     top: 116px;
     transform: none;
     align-items: center;
-    button {
-      width: 191px;
-    }
   }
   @media (min-width: 1440px) {
     display: flex;
@@ -84,7 +81,7 @@ const ButtonContainer = styled.div`
     align-items: center;
     gap: 16px;
   }
-`;
+`
 
 const TitleCTA = styled.h2`
   /* width: 430px; */
@@ -102,7 +99,7 @@ const TitleCTA = styled.h2`
   @media (min-width: 744px) and (max-width: 1440px) {
     width: 568px;
   }
-`;
+`
 
 export const CTA = () => {
   return (
@@ -117,5 +114,5 @@ export const CTA = () => {
         </ButtonContainer>
       </StyledWrapper>
     </Container>
-  );
-};
+  )
+}
