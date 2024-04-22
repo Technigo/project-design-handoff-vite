@@ -15,8 +15,8 @@ export const App = () => {
           <Route path="/" />
         </Routes>
         <Header />
+        <Hero />
         <main>
-          <Hero />
           <Quote />
           <Rating />
           <Carousel />

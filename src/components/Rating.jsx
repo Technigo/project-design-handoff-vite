@@ -1,6 +1,6 @@
-import { USP } from "./USP";
-import { StarsRating } from "./StarsRating";
-import styled from "styled-components";
+import { USP } from './USP'
+import { StarsRating } from './StarsRating'
+import styled from 'styled-components'
 
 export const Rating = () => {
   const StyledRating = styled.div`
@@ -11,6 +11,7 @@ export const Rating = () => {
     justify-content: center;
     align-items: center;
     margin: 0 12px;
+
     gap: 56px;
     @media (min-width: 744px) and (max-width: 1440px) {
       padding: 0px 32px;
@@ -26,8 +27,9 @@ export const Rating = () => {
       align-items: center;
       gap: 56px;
       flex-direction: row;
+      margin-top: 56px;
     }
-  `;
+  `
   return (
     <StyledRating>
       <USP
@@ -42,5 +44,5 @@ export const Rating = () => {
         THEIR FITNESS AND NUTRITIONAL GOALS"
       />
     </StyledRating>
-  );
-};
+  )
+}
