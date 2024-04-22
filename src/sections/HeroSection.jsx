@@ -3,7 +3,7 @@ import yoga from "../assets/images/hero-image-mobile.png"
 
 export const HeroSection = ({ data }) => {
   return (
-    <div className="hero-section">
+    <div className="hero-section" class="">
       <img src={logo} alt={data.logoalt} />
       <img src={yoga} alt={data.logoalt} />
       <h2>{data.heading}</h2>
