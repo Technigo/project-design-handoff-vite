@@ -1,6 +1,11 @@
+//import styled
 import styled from "styled-components";
+
+//import pictues & icons
 import CobraPose from "../../public/images/cobrapose.png";
 import Location from "../../public/icons/location.png";
+
+//import reusables
 import { Button } from "../reusables/Button";
 import { Logo } from "../reusables/Logo";
 

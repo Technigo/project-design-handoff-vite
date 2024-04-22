@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import quoteImage from "../../public/images/sunset.jpg";
+import QuoteImage from "../../public/images/sunset.jpg";
 
 //to do
 //check paddings -> design on the left side
 
 //styles
 const ImageContainer = styled.section`
-  background-image: url(${quoteImage});
+  background-image: url(${QuoteImage});
   background-size: cover;
   display: flex;
   align-items: center;

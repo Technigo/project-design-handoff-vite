@@ -17,7 +17,10 @@ export const Button = styled.button`
   padding: 10px;
 
   &:hover {
-    background-color: var(--hover-prpl);
+    background-color: ${(props) =>
+      props.buy ? "var(--primary-prpl)" : "var(--hover-prpl)"};
+    color: ${(props) =>
+      props.buy ? "var(--primary-white)" : "var(--primary-white)"};
   }
 
   @media all and (min-width: 744px) {
