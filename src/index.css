@@ -1,13 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+INFO ABOUT THE DESIGN
+- All headings are in Bebas Neue. All bobdy text is in Roboto.
+- Both headings and body text have a 1.2% line height. 
+
+
+INFO ABOUT BREAKINGPOINTS
+- Mobile up to 430px
+- Tablet up to 834px
+- Desktop up to 1440px
+
+INFO ABOUT PADDING
+- padding (left, right) = 66px
+
+*/
+
 :root {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Colours */
+  --crl-primary-light: #ec3642;
+  --crl-primary-dark: #762aa7;
+
+  --crl-secondary-light: #9e3e82;
+  --crl-secondary-dark: #9e3e82;
+
+  --clr-black: #000;
+  --clr-white: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html {
+  font-size: clamp(16px, 1.2vw, 32px);
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bebas Neue", "Roboto";
+  margin: 0;
+}
+
+body {
+  position: relative;
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+  letter-spacing: 1.2%;
+  min-height: 100vh;
+  background-color: pink;
+}
+
+a {
+  font-family: "Bebas Neue", "Roboto";
+  text-decoration: none;
+  color: var(--clr-white);
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.shared-padding {
+  padding: 66px;
+}
+
+/* Mobile up to 430px */
+@media only screen and (max-width: 430px) {
+  /* Your CSS styles for mobile here */
+  body {
+    background-color: red;
+  }
+}
+
+/* Tablet up to 834px */
+@media only screen and (min-width: 431px) and (max-width: 834px) {
+  /* Your CSS styles for tablet here */
+  body {
+    background-color: green;
+  }
+}
+
+/* Desktop up to 1440px */
+@media only screen and (min-width: 835px) and (max-width: 1440px) {
+  /* Your CSS styles for desktop here */
+  body {
+    background-color: blue;
+  }
 }
