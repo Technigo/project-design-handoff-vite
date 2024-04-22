@@ -38,9 +38,9 @@ export default {
         ubuntu: ["Ubuntu", "sans-serif"],
       },
       backgroundImage: {
-        "hero-image": "url('src/assets/woman-dancing.jpg')",
+        "hero-image": "url('src/assets/images/woman-dancing.jpg')",
       },
     },
   },
   plugins: ["prettier-plugin-tailwindcss"],
-}
+};
