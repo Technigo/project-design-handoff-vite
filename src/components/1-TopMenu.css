@@ -195,6 +195,8 @@
 
 p:hover {
     font-weight: 550;
+    margin-left: -1px;
+    margin-right: -1px;
 }
 
 .buy {
