@@ -1,3 +1,11 @@
+import { LearnMoreSection } from "./sections/LearnMoreSection";
+import { FooterSection } from './sections/FooterSection';
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <>
+      <LearnMoreSection />
+      <FooterSection/ >
+    </>
+  );
 };
