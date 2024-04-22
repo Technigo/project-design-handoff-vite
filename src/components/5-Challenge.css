@@ -1,0 +1,18 @@
+.challenge-div {
+    grid-column: span 4;
+}
+
+
+@media (min-width: 744px) and (max-width: 1493px) {
+.challenge-div {
+    grid-column: span 8;
+}
+
+}
+
+@media (min-width: 1494px) {
+.challenge-div {
+    grid-column: span 12;
+}
+
+}
