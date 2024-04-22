@@ -16,8 +16,6 @@ const Icon = styled.img`
 
   @media all and (min-width: 1024px) {
     width: 56px;
-    &:hover {
-    }
   }
 `
 
@@ -25,13 +23,13 @@ export const Social = () => {
   return (
     <SocialContainer>
       <a href="#" aria-label="facebook link">
-        <Icon src={facebook} alt="" />
+        <Icon src={facebook} alt="facebook-icon" />
       </a>
       <a href="#" aria-label="instagram link">
-        <Icon src={instagram} alt="" />
+        <Icon src={instagram} alt="instgram-icon" />
       </a>
       <a href="#" aria-label="linkedin link">
-        <Icon src={linkedin} alt="" />
+        <Icon src={linkedin} alt="linkedin-icon" />
       </a>
     </SocialContainer>
   )

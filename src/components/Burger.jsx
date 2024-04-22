@@ -1,6 +1,6 @@
-import { useState } from "react";
-import styled from "styled-components";
-import { NavMenu } from "./NavMenu";
+import { useState } from 'react'
+import styled from 'styled-components'
+import { NavMenu } from './NavMenu'
 
 const StyledBurger = styled.div`
   padding: 40px 32px;
@@ -39,14 +39,18 @@ const StyledBurger = styled.div`
   @media (min-width: 1440px) {
     display: none;
   }
-`;
+`
 
 export const Burger = () => {
-  const [open, setOpen] = useState(false); // Initialize open state as false
-  const toggleMenu = () => setOpen(!open); // Function to toggle the menu
+  const [open, setOpen] = useState(false) // Initialize open state as false
+  const toggleMenu = () => setOpen(!open) // Function to toggle the menu
   return (
     <>
-      <StyledBurger onClick={toggleMenu}>
+      <StyledBurger
+        onClick={toggleMenu}
+        aria-label="Toggle menu"
+        aria-expanded={open}
+      >
         {open ? null : (
           <>
             <div />
@@ -54,21 +58,14 @@ export const Burger = () => {
             <div />
           </>
         )}
-
-        {/* {open ? <img onClick={toggleMenu} src="/Close.png" alt="" /> : null} */}
-
         {open ? (
           <>
-            <img
-              onClick={toggleMenu}
-              src="/Close.png"
-              alt="Close"
-            />
+            <img onClick={toggleMenu} src="/Close.png" alt="Close-button" />
             <h2>MENU</h2>
           </>
         ) : null}
       </StyledBurger>
       <NavMenu open={open} />
     </>
-  );
-};
+  )
+}

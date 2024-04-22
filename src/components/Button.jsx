@@ -96,6 +96,7 @@ export const Button = ({ type }) => {
     <>
       <StyledButton
         type={type}
+        aria-pressed={active}
         active={active}
         onClick={toggleActive}
         theme={{
