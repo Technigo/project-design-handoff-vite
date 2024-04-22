@@ -6,6 +6,7 @@ import { Button } from "../reusables/Button";
 import { HeadingTwo } from "../reusables/HeadingTwo";
 import { ParagraphTwo } from "../reusables/ParagraphTwo";
 import { ParagraphOne } from "../reusables/ParagraphOne";
+import { Arrow } from "../reusables/Arrow";
 
 //import pictures
 // import TeacherBlack from "../../public/images/teacher-black.png";
@@ -26,7 +27,8 @@ export const Yogis = () => {
         At Shanti Studio, our instructors bring years of experience and humble
         wisdom to their teachings, welcoming all with open hearts.
       </ParagraphTwo>
-
+      <Arrow left={true} />
+      <Arrow />
       <ParagraphOne>
         A few years ago, I discovered yoga, and it quickly became crucial to me.
         Using yoga, I can calm my mind, be honest with myself, and see things
