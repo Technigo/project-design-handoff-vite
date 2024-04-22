@@ -1,6 +1,6 @@
 import { HeroSection } from "./sections/HeroSection";
 import { Statistics } from "./sections/Statistics";
-import { AboutUs } from "./components/AboutUs";
+import { AboutUs } from "./sections/AboutUs";
 import { ClassCards } from "./components/classCards/ClassCards";
 import { InstructorCards } from "./components/instructorCards/InstructorCards";
 import { ValueCards } from "./components/valueCards/ValueCards";
