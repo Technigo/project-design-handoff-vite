@@ -10,6 +10,7 @@ export default {
       "royal-purple": "#762aa7",
       "plum-light": "#9e3e82",
       "deep-violet": "#542A8B",
+      terracotta: "#C5515F",
     },
     padding: {
       66: "66px",
