@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+/* Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   margin: 0;
   padding: 0;
@@ -28,16 +33,6 @@ INFO ABOUT PADDING
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* Colours */
-  --crl-primary-light: #ec3642;
-  --crl-primary-dark: #762aa7;
-
-  --crl-secondary-light: #9e3e82;
-  --crl-secondary-dark: #9e3e82;
-
-  --clr-black: #000;
-  --clr-white: #fff;
 }
 
 code {
@@ -84,32 +79,4 @@ a {
 img {
   width: 100%;
   display: block;
-}
-
-.shared-padding {
-  padding: 66px;
-}
-
-/* Mobile up to 430px */
-@media only screen and (max-width: 430px) {
-  /* Your CSS styles for mobile here */
-  body {
-    background-color: red;
-  }
-}
-
-/* Tablet up to 834px */
-@media only screen and (min-width: 431px) and (max-width: 834px) {
-  /* Your CSS styles for tablet here */
-  body {
-    background-color: green;
-  }
-}
-
-/* Desktop up to 1440px */
-@media only screen and (min-width: 835px) and (max-width: 1440px) {
-  /* Your CSS styles for desktop here */
-  body {
-    background-color: blue;
-  }
 }
