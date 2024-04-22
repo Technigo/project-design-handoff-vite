@@ -4,6 +4,7 @@ import { LearnMoreSection } from "./sections/LearnMoreSection";
 import { FooterSection } from "./sections/FooterSection";
 import dataEn from "./data.en.json";
 import dataJp from "./data.jp.json";
+import { HeroSection } from "./sections/HeroSection";
 
 export const App = () => {
   const [locale, setLocale] = useState("en");
@@ -16,6 +17,7 @@ export const App = () => {
 
   return (
     <>
+      <HeroSection data={data ["hero"]} />
       <LearnMoreSection data={data["learn-more"]} />
       <FooterSection
         onLanguageChange={handleLanguageChange}
