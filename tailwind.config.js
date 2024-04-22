@@ -20,6 +20,9 @@ export default {
         tree: "url('src/assets/bgImage/yoga-pose-tree.jpeg')",
         pray: "url('src/assets/bgImage/yoga-pose-pray.jpeg')",
       },
+      height: {
+        800: '47rem',
+      },
     },
   },
   plugins: [],
