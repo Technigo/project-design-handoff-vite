@@ -23,6 +23,7 @@ export default {
       "2xl": ["35px", { fontWeight: "700" }],
       "3xl": ["40px", { fontWeight: "700" }],
       "4xl": ["55px", { fontWeight: "700" }],
+      "5xl": ["25px", {fontWeight: "400"}]
     },
     spacing: {
       1: "16px",
@@ -41,6 +42,12 @@ export default {
         "hero-image": "url('src/assets/images/woman-dancing.jpg')",
       },
     },
+    boxShadow: {
+      'sm': '3px 3px rgba(0, 0, 0, 0.5)',
+      'base': '5px 5px rgba(0, 0, 0, 0.5)',
+      'xl': '4px 4px rgba(0, 0, 0, 0.5)',
+    },
+    
   },
   plugins: ["prettier-plugin-tailwindcss"],
 };
