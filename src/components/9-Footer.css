@@ -1,5 +1,5 @@
 .footer {
-  grid-column: span 12;
+  grid-column: span 4;
   margin-bottom: 109px;
   display: flex;
   flex-direction: column;
@@ -84,6 +84,7 @@
 
 @media (min-width: 744px) and (max-width: 1493px) {
   .footer {
+    grid-column: span 8;
     gap: 64px;
   }
 
@@ -136,6 +137,7 @@
 
 @media (min-width: 1494px) {
   .footer {
+    grid-column: span 12;
     gap: 120px;
   }
 
