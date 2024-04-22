@@ -199,13 +199,14 @@
     color: white;
 }
 
-p:hover {
+.menu-text:hover {
     font-weight: 550;
     margin-left: -1px;
     margin-right: -1px;
+    cursor: pointer;
 }
 
-.buy {
+#buy {
     color: var( --purple);
 }
 
@@ -249,10 +250,12 @@ p:hover {
     display: block;
     opacity: 0;
     position: sticky;
+    cursor: pointer;
 }
 
 .user-desktop-hover:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 
@@ -274,10 +277,12 @@ p:hover {
     display: block;
     opacity: 0;
     position: sticky;
+    cursor: pointer;
 }
 
 .menu-desktop-hover:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 }

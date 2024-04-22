@@ -89,6 +89,7 @@ button {
 
 .cta-btn:hover {
   background-color: var( --purplehover);
+  cursor: pointer;
 }
 .cta-btn:active {
   background-color: var( --purpleclick);
