@@ -3,7 +3,7 @@ import { FindUsButton } from "../components/Button";
 
 export const HeroSection = () => {
   return (
-    <div className="-z-10 h-[340px] w-screen bg-hero-image bg-cover bg-center md:h-[394px] lg:h-[776px]">
+    <div className=" -z-10 h-[340px] w-screen bg-hero-image bg-cover bg-center md:h-[394px] lg:h-[776px]">
       <div className="-z-5 h-[340px] w-screen bg-dkpurple/50 md:h-[394px] lg:h-[776px]">
         <Header className="-z-1" />
         <div className="flex flex-col items-center justify-center text-center">
