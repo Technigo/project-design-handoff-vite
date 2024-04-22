@@ -128,7 +128,13 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <HeaderNavigation>
-        <Logo /> <Hamburger />
+        {/* renders logo based on viewport width */}
+        {window.innerWidth >= 1024 ? (
+          <Logo type="big" />
+        ) : (
+          <Logo type="small" />
+        )}{" "}
+        <Hamburger />
       </HeaderNavigation>
       <HeaderTopWrapper>
         <HeaderImage src={CobraPose} alt="Woman doing cobra pose"></HeaderImage>
