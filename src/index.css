@@ -87,6 +87,13 @@ button {
   height: 40px;
 }
 
+.cta-btn:hover {
+  background-color: var( --purplehover);
+}
+.cta-btn:active {
+  background-color: var( --purpleclick);
+}
+
 
 @media (min-width: 744px) and (max-width: 1493px) {
   #root {
