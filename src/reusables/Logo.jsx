@@ -1,4 +1,7 @@
+//import styled
 import styled from "styled-components";
+
+//import logo
 import LogoSmall from "../../public/logo/primary-small.png";
 
 //styles

@@ -3,7 +3,7 @@ import { Happenings } from "./components/Happenings";
 import { Header } from "./components/Header";
 import { About } from "./components/About";
 import { Philosophy } from "./components/Philosophy";
-import { Start } from "./components/Membership";
+import { Membership } from "./components/Membership";
 import { Yogis } from "./components/Yogis";
 import { Quote } from "./components/Quote";
 import { FAQ } from "./components/FAQ";
@@ -21,7 +21,7 @@ export const App = () => {
       <Philosophy />
       <Yogis />
       <Happenings />
-      <Start />
+      <Membership />
       <Quote />
       <FAQ />
       <Form />

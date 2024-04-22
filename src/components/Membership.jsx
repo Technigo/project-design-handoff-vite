@@ -1,13 +1,13 @@
-import { Button } from "../reusables/Button";
+//import reusables
+// import { Button } from "../reusables/Button";
 import { HeadingTwo } from "../reusables/HeadingTwo";
+import { MembershipCard } from "../reusables/MembershipCard";
 
-export const Start = () => {
+export const Membership = () => {
   return (
-    <div>
+    <>
       <HeadingTwo>Start your journey</HeadingTwo>
-      <Button buy>Buy now</Button>
-      <Button>Buy now</Button>
-      <Button buy>Buy now</Button>
-    </div>
+      <MembershipCard />
+    </>
   );
 };
