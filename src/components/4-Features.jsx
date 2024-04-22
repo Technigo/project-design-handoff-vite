@@ -1,7 +1,7 @@
-
+import "./4-Features.css"
 
 export const Features = () => {
   return (
-    <div>Features</div>
+    <div className="features-div">Features</div>
   )
 }

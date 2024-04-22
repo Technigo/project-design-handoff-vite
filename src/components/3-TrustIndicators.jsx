@@ -1,7 +1,7 @@
-
+import "./3-TrustIndicators.css"
 
 export const TrustIndicators = () => {
   return (
-    <div>TrustIndicators</div>
+    <div className="trustindicators-div">TrustIndicators</div>
   )
 }

@@ -1,7 +1,7 @@
-
+import "./7-Questions.css"
 
 export const Questions = () => {
   return (
-    <div>Questions</div>
+    <div className="questions-div">Questions</div>
   )
 }

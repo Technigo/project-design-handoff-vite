@@ -1,7 +1,7 @@
-
+import "./6-Feedback.css"
 
 export const Feedback = () => {
   return (
-    <div>Feedback</div>
+    <div className="feedback-div">Feedback</div>
   )
 }
