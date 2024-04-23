@@ -1,9 +1,7 @@
 import { useState } from "react";
+import { Page, StyledText, StyledH1, StyledButton } from "./StyledComponents";
 
-import LogoMobile from "../../assets/LogoMobile.svg";
-import LogoTablet from "../../assets/LogoTablet.svg";
-import LogoDesktop from "../../assets/LogoDesktop.svg";
-import { StyledIntro } from "../StyledIntro";
+import { StyledIntro, LogoContainer } from "../StyledIntro";
 
 const Introduction = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -15,21 +13,20 @@ const Introduction = () => {
   };
 
   return (
-    <div className="page">
-      <div className="logo logo-mobile">
-        <LogoMobile />
-      </div>
-      <div className="logo logo-tablet">
-        <LogoTablet />
-      </div>
-      <div className="logo logo-desktop">
-        <LogoDesktop />
-      </div>
-      <div className={`heartIcon ${isClicked ? "clicked" : ""}`} onClick={handleClick}>
+    <Page>
+      <LogoContainer></LogoContainer>
+      <StyledH1>Celebrate Midsommar with yoga and friends</StyledH1>
+      <StyledText>
+        Embrace summer vibes doing yoga among friends. Experience energising asanas under the sun and feed your mind
+        with a relaxing meditation. Afterwards, indulge in prosecco and delectable treats to celebrate the harmony of
+        body and mind.
+      </StyledText>
+
+      <StyledButton className={`heartIcon ${isClicked ? "clicked" : ""}`} onClick={handleClick}>
         <span className={`book ${isClicked ? "clicked" : ""}`}>BOOK YOUR SPOT</span>
         {isHeartVisible && <StyledIntro />}
-      </div>
-    </div>
+      </StyledButton>
+    </Page>
   );
 };
 
