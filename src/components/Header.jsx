@@ -36,7 +36,7 @@ export const Header = () => {
               <li>
                 <a href="#">About Us</a>
               </li>
-              <input type="text" className="h-[30px] w-[204px]" />
+              <input type="text" className="h-[30px] w-[204px] text-black" />
               <li>
                 <a href="#" className="text-yellow">
                   Log in
@@ -46,53 +46,6 @@ export const Header = () => {
           </div>
         </div>
       </nav>
-      {/* <div className='invisible -z-10 flex justify-between mx-[112px] lg:visible'>
-        <img
-          src={LogoWhiteDesktop}
-          alt='Logo of The Zumba Hall'
-        />
-        <nav className='flex gap-1'>
-          <p>
-            <a href=''>What is Zumba?</a>
-          </p>
-          <p>
-            <a href=''>About Us</a>
-          </p>
-          <input
-            type='text'
-            className='w-[204px] h-[30px]'
-          />
-          <p>
-            <a href=''>Log in</a>
-          </p>
-        </nav>
-      </div> */}
     </>
   );
 };
-
-// export const HeaderDesktop = () => {
-//   return (
-//     <div className='invisible flex justify-between mx-[112px] lg:visible'>
-//       <img
-//         src={LogoWhiteDesktop}
-//         alt='Logo of The Zumba Hall'
-//       />
-//       <nav className='flex gap-1'>
-//         <p>
-//           <a href=''>What is Zumba?</a>
-//         </p>
-//         <p>
-//           <a href=''>About Us</a>
-//         </p>
-//         <input
-//           type='text'
-//           className='w-[204px] h-[30px]'
-//         />
-//         <p>
-//           <a href=''>Log in</a>
-//         </p>
-//       </nav>
-//     </div>
-//   )
-// }
