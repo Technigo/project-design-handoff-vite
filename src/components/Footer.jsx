@@ -1,3 +1,37 @@
+import footerLogoMobile from "../assets/Karate-girl-logga-11-2.svg";
+import facebookIcon from "../assets/Facebook-Icon.svg";
+import instagramIcon from "../assets/Instagram-Icon.svg";
+import vimeoIcon from "../assets/Vimeo-Icon.svg";
+
 export const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <section className="flex flex-col items-center">
+      <img src={footerLogoMobile} alt="Logo" />
+      <ul className="flex flex-col items-center">
+        <li>Contact</li>
+        <li>Find your local club</li>
+        <li>Insurances</li>
+        <li>Our Partners</li>
+        <li>FAQ</li>
+      </ul>
+      <div className="flex gap-10">
+        <img src={instagramIcon} alt="Instagram Icon" />
+        <img src={vimeoIcon} alt="Vimeo Icon" />
+        <img src={facebookIcon} alt="Facebook Icon" />
+      </div>
+      <div className="mt-4">
+        <label
+          htmlFor="search"
+          className="block text-sm font-medium text-gray-700" //Just random - should be changed
+        ></label>
+        <input
+          type="text"
+          id="search"
+          name="search"
+          placeholder="Search"
+          className="mt-1 px-4 py-2 w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-blue-500 focus:ring-blue-500" //Just random - should be changed
+        />
+      </div>
+    </section>
+  );
 };
