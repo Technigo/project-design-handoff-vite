@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 const StyledHero = styled.section`
+  margin-top: 177px;
+
   h1 {
     font-family: "Calistoga", serif;
     font-size: 48px;

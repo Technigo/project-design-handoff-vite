@@ -46,6 +46,7 @@ const GlobalStyles = createGlobalStyle`
       #a6c2c5 86%,
       #9cc2d5 100%
     );
+    position:relative;
   }
 
 
