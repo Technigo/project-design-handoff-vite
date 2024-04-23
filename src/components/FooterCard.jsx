@@ -1,12 +1,10 @@
-import links from "../json/links.json";
-
-export const FooterCard = () => {
+export const FooterCard = ({items}) => {
   return (
     <>
     <ul>
-    {links.map((item)=> {
+    {items.map((item, index)=> {
         return(
-        <li key={item}> {links.items} </li>
+        <li key={index}> {item} </li>
         );
     })}
     </ul>
