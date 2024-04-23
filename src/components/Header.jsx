@@ -15,8 +15,8 @@ export const Header = () => {
       <div className="flex flex-col justify-center text-center	font-futura">
         <h1 className="text-3xl font-bold">EMPOWERING VINYASA YOGA</h1>
         <h2 className="my-4 text-xl	font-bold">Online studio & Retreats</h2>
-        <p className="pb-7	text-base font-medium">TO INSPIRE + UPLIFT YOU</p>
-        <p className="text-base font-medium">Since 2010</p>
+        <h3 className="pb-7	text-lg	 font-medium">TO INSPIRE + UPLIFT YOU</h3>
+        <h3 className="text-lg font-medium">Since 2010</h3>
       </div>
       <button className="mt-64 w-40 rounded-[100px] bg-accent-orange	py-3 font-extrabold text-neutral-white">
         Log in
