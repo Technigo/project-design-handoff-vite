@@ -18,7 +18,7 @@ export const Header = () => {
         <p className="pb-7	text-base font-medium">TO INSPIRE + UPLIFT YOU</p>
         <p className="text-base font-medium">Since 2010</p>
       </div>
-      <button className="mt-64 w-40 rounded-[100px] bg-accent-orange	px-12 py-3 font-extrabold text-neutral-white">
+      <button className="mt-64 w-40 rounded-[100px] bg-accent-orange	py-3 font-extrabold text-neutral-white">
         Log in
       </button>
     </header>
