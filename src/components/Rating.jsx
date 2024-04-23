@@ -27,7 +27,6 @@ export const Rating = () => {
       align-items: center;
       gap: 56px;
       flex-direction: row;
-      margin-top: 56px;
     }
   `
   return (
