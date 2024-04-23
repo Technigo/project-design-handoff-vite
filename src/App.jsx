@@ -1,6 +1,10 @@
 import { Header } from './components/Header';
+import CardArray from './CardArray';
+import { Container } from 'postcss';
+import { Card } from './components/Card';
 import { RetreatQuote } from './components/RetreatQuote';
 import { Testimonial } from './components/Testimonial';
+
 export const App = () => {
   return (
     <div>
@@ -11,6 +15,11 @@ export const App = () => {
       <Header />
       <RetreatQuote />
       <Testimonial />
+       <div>
+        {CardArray.map((item, id) => (
+          <Card key={id} item={item}  />
+        ))}
+      </div>
     </div>
   );
 };
