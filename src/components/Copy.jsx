@@ -1,4 +1,4 @@
-export const customerReviews = ['"High quality yoga classes with skilled teachers"','"I really appreciate their flexible schedules"','"These classes are tough – and really get the work done"', '"I love the variety of classes and teachers"', '"I always leave feeling refreshed and energized"'];
+export const customerReviews = ['"High quality yoga classes with skilled teachers"','"I really appreciate their flexible schedules"','"These classes are tough – and really get the work done"'];
 
 export const articles = [
   {
