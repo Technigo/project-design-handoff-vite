@@ -13,14 +13,16 @@ const StyledLogo = styled.img`
   @media (min-width: 1024px) {
     width: 85px;
     height: 112px;
+    ${({ $placement }) => $placement === "footer" && "grid-area: lo;"};
   }
 `;
-export const Logo = () => {
+export const Logo = ({ $placement }) => {
   return (
     <>
       <StyledLogo
         src={mobileLogo}
         alt="Logo"
+        $placement={$placement}
       />
     </>
   );

@@ -9,6 +9,10 @@ const FlagContainer = styled.div`
   @media all and (min-width: 744px) {
     gap: 32px;
   }
+
+  @media all and (min-width: 1024px) {
+    grid-area: ${({ $placement }) => $placement === "footer" && "fl"};
+  }
 `;
 
 const Flag = styled.i`
@@ -28,9 +32,9 @@ const Flag = styled.i`
   }
 `;
 
-export const Flags = () => {
+export const Flags = ({ $placement }) => {
   return (
-    <FlagContainer>
+    <FlagContainer $placement={$placement}>
       <Flag aria-label="english">🇬🇧</Flag>
       <Flag aria-label="swedish">🇸🇪</Flag>
     </FlagContainer>

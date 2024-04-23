@@ -2,6 +2,7 @@ import { Logo } from "./Logo";
 import { Social } from "./Social";
 import { Flags } from "./Flags";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -16,87 +17,127 @@ const StyledFooter = styled.footer`
   @media all and (min-width: 744px) {
     padding: 32px;
   }
+
   @media all and (min-width: 1024px) {
+    padding: 40px;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas:
+      "nav lo ."
+      "nav fl ."
+      "nav so ."
+      "nav li ."
+      "nav co .";
+
+    p {
+      grid-area: co;
+      justify-self: center;
+    }
   }
 `;
 
 const Nav = styled.nav`
   display: none;
 
+  ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--hover-login-links);
+    }
+  }
+
   @media all and (min-width: 744px) {
     display: initial;
   }
-`;
 
-const NavList = styled.ul`
-  list-style-type: none;
-  padding-inline-start: 0;
-  color: inherit;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+  @media all and (min-width: 1024px) {
+    grid-area: nav;
+    justify-self: flex-start;
+    align-self: flex-start;
 
-const NavLink = styled.a`
-  color: inherit;
-  text-decoration: none;
-  cursor: pointer;
+    ul {
+      align-items: flex-start;
+    }
 
-  &:hover {
-    color: var(--hover-login-links);
+    a {
+      display: flex;
+      width: 72px;
+      height: 32px;
+      padding: 2px 0px;
+      align-items: center;
+      white-space: nowrap;
+    }
   }
 `;
 
-const TermsLink = styled.a`
-  font-size: 14px;
-  display: inline;
-  padding: 0.5rem;
-  color: inherit;
-  cursor: pointer;
+const LinkContainer = styled.div`
+  a {
+    font-size: 14px;
+    display: inline;
+    padding: 0.5rem;
+    color: inherit;
+    cursor: pointer;
 
-  &:hover {
-    color: var(--hover-login-links);
+    &:hover {
+      color: var(--hover-login-links);
+    }
+  }
+  @media all and (min-width: 1024px) {
+    grid-area: li;
   }
 `;
 
 export const Footer = () => {
   return (
     <StyledFooter>
-      <Logo />
+      <Logo $placement="footer" />
       <Nav>
-        <NavList>
+        <ul>
           <li>
-            <NavLink href="#">Contact</NavLink>
+            <Link to="/contact">Contact</Link>
           </li>
           <li>
-            <NavLink href="#">About me</NavLink>
+            <Link to="/about">About me</Link>
           </li>
           <li>
-            <NavLink href="#">The gym</NavLink>
+            <Link to="/the-gym">The gym</Link>
           </li>
           <li>
-            <NavLink href="#">Membership</NavLink>
+            <Link to="/membership">Membership</Link>
           </li>
           <li>
-            <NavLink href="#">Personal coaching</NavLink>
+            <Link to="/persona-coaching">Personal coaching</Link>
           </li>
           <li>
-            <NavLink href="#">Nutrition</NavLink>
+            <Link to="/nutrition">Nutrition</Link>
           </li>
           <li>
-            <NavLink href="#">Work with me</NavLink>
+            <Link to="/work">Work with me</Link>
           </li>
           <li>
-            <NavLink href="#">News</NavLink>
+            <Link to="/news">News</Link>
           </li>
-        </NavList>
+        </ul>
       </Nav>
-      <Flags />
-      <Social />
-      <div>
-        <TermsLink href="#">Privacy Policies</TermsLink>
-        <TermsLink href="#">Terms of Service</TermsLink>
-      </div>
+      <Flags $placement="footer" />
+      <Social $placement="footer" />
+      <LinkContainer>
+        <Link to="/">Privacy Policies</Link>
+        <Link to="/">Terms of Service</Link>
+      </LinkContainer>
       <p>© 2024 Thrive Fitness, Inc. All rights reserved.</p>
     </StyledFooter>
   );

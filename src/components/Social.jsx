@@ -10,11 +10,15 @@ const StyledDiv = styled.div`
   align-items: center;
   gap: 32px;
   width: 100%;
+
+  @media all and (min-width: 1024px) {
+    grid-area: ${({ $placement }) => $placement === "footer" && "so"};
+  }
 `;
 
-export const Social = () => {
+export const Social = ({ $placement }) => {
   return (
-    <StyledDiv>
+    <StyledDiv $placement={$placement}>
       <Link to="#">
         <Facebook />
       </Link>
