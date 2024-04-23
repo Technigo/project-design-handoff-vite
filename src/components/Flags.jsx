@@ -20,7 +20,7 @@ const Flag = styled.i`
   @media all and (min-width: 744px) {
     font-size: 32px;
   }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1024px) {
     font-size: 20px;
   }
   &:hover {

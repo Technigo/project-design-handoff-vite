@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import backgroundImage from '../assets/unsplash_tpivPdQgC20_746.jpg'
+import styled from "styled-components";
+import backgroundImage from "../assets/unsplash_tpivPdQgC20_746.jpg";
 
-import { Button } from './Button'
+import { Button } from "./Button";
 
 const Container = styled.div`
   position: relative;
@@ -13,13 +13,13 @@ const Container = styled.div`
   min-height: 348px;
   padding: 0 12px;
 
-  @media (min-width: 744px) and (max-width: 1440px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     height: 495px;
     align-self: stretch;
     padding: 0 32px;
     // min-width: 746px;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     isplay: flex;
     min-height: 700px;
     flex-direction: column;
@@ -29,7 +29,7 @@ const Container = styled.div`
     justify-content: space-evenly;
     padding: 0 32px;
   }
-`
+`;
 
 const StyledWrapper = styled.div`
   display: flex;
@@ -37,13 +37,13 @@ const StyledWrapper = styled.div`
   justify-content: center;
   /* width:; */
 
-  @media (min-width: 744px) and (max-width: 1440px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -57,31 +57,33 @@ const StyledWrapper = styled.div`
     right: 42px;
     top: 84px;
   }
-`
+`;
 
 const ButtonContainer = styled.div`
   position: absolute;
   bottom: 15px;
   display: flex;
   gap: 16px;
-  @media (min-width: 744px) and (max-width: 1440px) {
+
+  @media (min-width: 744px) and (max-width: 1024px) {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 16px;
     right: 51px;
     top: 116px;
+    bottom: initial;
     transform: none;
     align-items: center;
   }
-  @media (min-width: 1440px) {
+  @media (min-width: 1024px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 16px;
   }
-`
+`;
 
 const TitleCTA = styled.h2`
   /* width: 430px; */
@@ -96,10 +98,10 @@ const TitleCTA = styled.h2`
   letter-spacing: -0.32px;
   text-align: center;
 
-  @media (min-width: 744px) and (max-width: 1440px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     width: 568px;
   }
-`
+`;
 
 export const CTA = () => {
   return (
@@ -114,5 +116,5 @@ export const CTA = () => {
         </ButtonContainer>
       </StyledWrapper>
     </Container>
-  )
-}
+  );
+};

@@ -1,7 +1,7 @@
-import { Logo } from './Logo'
-import { Social } from './Social'
-import { Flags } from './Flags'
-import styled from 'styled-components'
+import { Logo } from "./Logo";
+import { Social } from "./Social";
+import { Flags } from "./Flags";
+import styled from "styled-components";
 
 const StyledFooter = styled.footer`
   display: flex;
@@ -11,13 +11,14 @@ const StyledFooter = styled.footer`
   background-color: var(--30);
   color: var(--text-card-bg);
   padding: 24px 12px;
+  width: 100%;
 
   @media all and (min-width: 744px) {
     padding: 32px;
   }
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1024px) {
   }
-`
+`;
 
 const Nav = styled.nav`
   display: none;
@@ -25,7 +26,7 @@ const Nav = styled.nav`
   @media all and (min-width: 744px) {
     display: initial;
   }
-`
+`;
 
 const NavList = styled.ul`
   list-style-type: none;
@@ -34,7 +35,7 @@ const NavList = styled.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
-`
+`;
 
 const NavLink = styled.a`
   color: inherit;
@@ -44,7 +45,7 @@ const NavLink = styled.a`
   &:hover {
     color: var(--hover-login-links);
   }
-`
+`;
 
 const TermsLink = styled.a`
   font-size: 14px;
@@ -56,7 +57,7 @@ const TermsLink = styled.a`
   &:hover {
     color: var(--hover-login-links);
   }
-`
+`;
 
 export const Footer = () => {
   return (
@@ -98,5 +99,5 @@ export const Footer = () => {
       </div>
       <p>© 2024 Thrive Fitness, Inc. All rights reserved.</p>
     </StyledFooter>
-  )
-}
+  );
+};

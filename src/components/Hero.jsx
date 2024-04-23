@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { Button } from './Button'
-import heroImage from '../assets/unsplash_Pd5bbWoIUis_Tyler-Nix.jpg'
+import styled from "styled-components";
+import { Button } from "./Button";
+import heroImage from "../assets/unsplash_Pd5bbWoIUis_Tyler-Nix.jpg";
 
 const StyledHero = styled.section`
   display: flex;
@@ -12,27 +12,27 @@ const StyledHero = styled.section`
     flex-direction: row;
     justify-content: center;
   }
-`
+`;
 
 const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: ${({ $main }) => ($main ? '32px' : '16px')};
-  padding: ${({ $main }) => ($main ? '32px 12px' : null)};
+  gap: ${({ $main }) => ($main ? "32px" : "16px")};
+  padding: ${({ $main }) => ($main ? "32px 12px" : null)};
   text-align: center;
 
   @media all and (min-width: 744px) {
-    gap: ${({ $main }) => ($main ? '40px' : '16px')};
-    padding: ${({ $main }) => ($main ? '0 32px' : null)};
+    gap: ${({ $main }) => ($main ? "40px" : "16px")};
+    padding: ${({ $main }) => ($main ? "0 32px" : null)};
   }
 
   @media all and (min-width: 1024px) {
-    gap: ${({ $main }) => ($main ? '56px' : '16px')};
-    padding: ${({ $main }) => ($main ? '0 40px' : null)};
-    width: ${({ $main }) => ($main ? '50%' : null)};
+    gap: ${({ $main }) => ($main ? "56px" : "16px")};
+    padding: ${({ $main }) => ($main ? "0 40px" : null)};
+    width: ${({ $main }) => ($main ? "50%" : null)};
   }
-`
+`;
 
 const H1 = styled.h1`
   color: var(--text);
@@ -41,14 +41,14 @@ const H1 = styled.h1`
   line-height: 125%;
   letter-spacing: -0.32px;
   font-family: Optima;
-`
+`;
 
 const Paragraph = styled.p`
-  font-family: Optima;
+  font-family: Optima, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 28px; /* 116.667% */
-`
+`;
 
 const Image = styled.img`
   width: 100%;
@@ -56,10 +56,9 @@ const Image = styled.img`
   object-fit: cover;
 
   @media all and (min-width: 744px) {
-    height: 513px;
     width: 50%;
   }
-`
+`;
 
 export const Hero = () => {
   return (
@@ -81,5 +80,5 @@ export const Hero = () => {
         </Container>
       </Container>
     </StyledHero>
-  )
-}
+  );
+};

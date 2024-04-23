@@ -1,10 +1,12 @@
-import { NavLink } from 'react-router-dom'
-import styled from 'styled-components'
+import { NavLink } from "react-router-dom";
+import styled from "styled-components";
 
-const DeskNav = styled.header`
+const DeskNav = styled.nav`
   gap: 10px;
   display: none;
-  @media (min-width: 1440px) {
+  justify-self: flex-start;
+
+  @media (min-width: 1024px) {
     display: flex;
     flex-direction: row;
     box-sizing: border-box;
@@ -12,14 +14,16 @@ const DeskNav = styled.header`
     margin: 0;
     padding: 0;
   }
-`
+`;
 const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: var(--text);
+  white-space: nowrap;
+
   &:hover {
     color: var(--10);
   }
-`
+`;
 
 export const LeftNav = () => {
   return (
@@ -29,5 +33,5 @@ export const LeftNav = () => {
       <StyledNavLink to="/">MEMBERSHIP</StyledNavLink>
       <StyledNavLink to="/">COACHING</StyledNavLink>
     </DeskNav>
-  )
-}
+  );
+};

@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import greenBackground from '../assets/green-background.svg'
-import profileImage from '../assets/unsplash_profile_by-Gabriel-Silverio.jpeg'
+import styled from "styled-components";
+import greenBackground from "../assets/green-background.svg";
+import profileImage from "../assets/unsplash_profile_by-Gabriel-Silverio.jpeg";
 
 const Section = styled.section`
   background: bottom right / cover no-repeat url(${greenBackground});
@@ -11,10 +11,10 @@ const Section = styled.section`
     height: 332px;
   }
 
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1024px) {
     height: 406px;
   }
-`
+`;
 
 const Container = styled.div`
   height: 100%;
@@ -23,7 +23,7 @@ const Container = styled.div`
   align-items: center;
   margin: 0 12px;
   ${({ $text }) =>
-    $text && 'height: fit-content; gap: 16px; flex-direction: column;'}
+    $text && "height: fit-content; gap: 16px; flex-direction: column;"}
   color: var(--text-card-bg);
   font-family: Montserrat;
   font-size: 16px;
@@ -34,10 +34,10 @@ const Container = styled.div`
     margin: 0 32px;
   }
 
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1024px) {
     margin: 0 40px;
   }
-`
+`;
 
 const Image = styled.img`
   width: 92px;
@@ -51,11 +51,11 @@ const Image = styled.img`
     height: 166.816px;
   }
 
-  @media all and (min-width: 1440px) {
+  @media all and (min-width: 1024px) {
     width: 223px;
     height: 248px;
   }
-`
+`;
 
 export const Quote = () => {
   return (
@@ -64,7 +64,7 @@ export const Quote = () => {
         <Container $text>
           <p>
             “My vision is that all women, no matter background or level is gonna
-            find their way to thrive through fitness and health.”{' '}
+            find their way to thrive through fitness and health.”{" "}
           </p>
           <p>
             -Aine Gough, <br></br> Founder of Thrive Fitness
@@ -73,5 +73,5 @@ export const Quote = () => {
         <Image src={profileImage}></Image>
       </Container>
     </Section>
-  )
-}
+  );
+};
