@@ -1,5 +1,7 @@
+import { Home } from "./section/Home"
+
 export const App = () => {
   return <div>
-    <h1 className="text-lx font-b text-red-500">Hello tailwind</h1>
+    <Home />
   </div>;
 };
