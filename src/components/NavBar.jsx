@@ -1,12 +1,19 @@
+import styled from "styled-components";
+
+const StyledNavBar = styled.nav`
+  font-family: "AvenirMedium", sans-serif;
+`;
+
 export const NavBar = () => {
   return (
-    <nav className="nav-section">
+    <StyledNavBar className="nav-section">
       <div className="menu-list">
         <p>Menu</p>
       </div>
       <div className="account-list">
         <p>Account</p>
       </div>
-    </nav>
+    </StyledNavBar>
   );
 };
+//
