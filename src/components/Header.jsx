@@ -3,13 +3,15 @@ import logo from '../assets/logo.svg';
 
 export const Header = () => {
   return (
-    <div className="bg-cobra h-800 bg-cover	bg-center bg-no-repeat">
-      <div className="mx-5 flex py-7">
-        <div className="flex grow justify-center">
-          <img src={logo} />
-        </div>
-        <img className="justify-self-end" src={menuIcon} />
+    <div className="h-[40rem] bg-cobra	bg-cover bg-[35%] bg-no-repeat">
+      <div className="mx-5 flex justify-center py-7">
+        <img className="h-16" src={logo} alt="logo" />
       </div>
+      <img
+        className="absolute right-5 top-7 h-6 w-6"
+        src={menuIcon}
+        alt="hamburger-menu"
+      />
     </div>
   );
 };

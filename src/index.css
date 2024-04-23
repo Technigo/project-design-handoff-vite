@@ -5,11 +5,14 @@
 @layer base {
   @font-face {
     font-family: Avenir;
-    src: local('Avenir') url("./assets/fonts/avenir_roman_12.otf") format("otf");
+    src: local('Avenir') url('./assets/fonts/avenir_roman_12.otf') format('otf');
   }
   @font-face {
     font-family: Futura;
-    src: local('Futura') url("./assets/fonts/FUTURA55REGULAR.TTF") format("ttf");
+    src: local('Futura') url('./assets/fonts/FUTURA55REGULAR.TTF') format('ttf');
+  }
+  html {
+    font-family: 'avenir';
   }
 }
 /* :root {

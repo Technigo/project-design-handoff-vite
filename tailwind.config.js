@@ -2,6 +2,10 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    fontFamily: {
+      avenir: ['Avenir'],
+      futura: ['Futura'],
+    },
     extend: {
       colors: {
         'primary-black': '#444446',
@@ -11,17 +15,10 @@ export default {
         'accent-orange': '#D18B42',
         'accent-blue': '#3C97D1',
       },
-      fontFamily: {
-        avenir: ['Avenir'],
-        futura: ['Futura'],
-      },
       backgroundImage: {
         cobra: "url('src/assets/bgImage/yoga-pose-cobra.jpeg')",
         tree: "url('src/assets/bgImage/yoga-pose-tree.jpeg')",
         pray: "url('src/assets/bgImage/yoga-pose-pray.jpeg')",
-      },
-      height: {
-        800: '47rem',
       },
     },
   },
