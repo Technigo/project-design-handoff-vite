@@ -1,7 +1,7 @@
-import footerLogoMobile from "../assets/Karate-girl-logga-11-2.svg";
-import facebookIcon from "../assets/Facebook-Icon.svg";
-import instagramIcon from "../assets/Instagram-Icon.svg";
-import vimeoIcon from "../assets/Vimeo-Icon.svg";
+import footerLogoMobile from "../assets/logo-medium.svg";
+import facebookIcon from "../assets/icon-facebook.svg";
+import instagramIcon from "../assets/icon-instagram.svg";
+import vimeoIcon from "../assets/icon-vimeo.svg";
 
 export const Footer = () => {
   return (
