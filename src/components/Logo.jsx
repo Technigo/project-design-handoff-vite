@@ -1,9 +1,11 @@
-import LogoWhiteSmall from "../assets/logo/Logo-white-TabletMobile1.svg";
-import LogoWhiteLarge from "../assets/logo/Logo-white-Desktop.svg";
+import LogoWhiteSmall from "../assets/logo/Logo-white-small.svg";
+import LogoWhiteLarge from "../assets/logo/Logo-white-large.svg";
+import LogoBlackSmall from "../assets/logo/Logo-black-small.svg";
+import LogoBlackLarge from "../assets/logo/Logo-black-large.svg";
 
-export const Logo = () => {
+export const LogoLight = () => {
   return (
-    <div>
+    <>
       <img
         src={LogoWhiteSmall}
         alt="the zumba hall logo in white"
@@ -14,6 +16,23 @@ export const Logo = () => {
         alt="the zumba hall logo in white"
         className="hidden lg:block"
       />
-    </div>
+    </>
+  );
+};
+
+export const LogoDark = () => {
+  return (
+    <>
+      <img
+        src={LogoBlackSmall}
+        alt="the zumba hall logo in black"
+        className="lg:hidden"
+      />
+      <img
+        src={LogoBlackLarge}
+        alt="the zumba hall logo in black"
+        className="hidden lg:block"
+      />
+    </>
   );
 };

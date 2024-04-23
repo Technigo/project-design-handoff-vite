@@ -1,12 +1,12 @@
 import MenuIconMobile from "../assets/icons/Menu-mobile.svg";
-import { Logo } from "./Logo";
+import { LogoLight } from "./Logo";
 
 export const Header = () => {
   return (
     <>
       <nav className="mx-[24px] pt-1 md:mx-2 lg:mx-[112px]">
         <div className="flex items-center justify-between">
-          <Logo />
+          <LogoLight />
           <button
             data-collapse-toggle="navbar-default"
             type="button"
