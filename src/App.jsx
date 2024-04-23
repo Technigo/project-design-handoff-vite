@@ -1,10 +1,10 @@
-import { Article } from "./components/article";
-import { Cards } from "./components/cards";
-import { Footer } from "./components/footer";
-import { Hero } from "./components/hero";
-import { List } from "./components/list";
-import { Navbar } from "./components/navbar";
-import { Testimonials } from "./components/testimonials";
+import { Article } from "./components/Article";
+import { Cards } from "./components/Cards";
+import { Footer } from "./components/Footer";
+import { Hero } from "./components/Hero";
+import { List } from "./components/List";
+import { Navbar } from "./components/Navbar";
+import { Testimonials } from "./components/Testimonials";
 
 export const App = () => {
   return (
