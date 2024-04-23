@@ -26,6 +26,9 @@ export default {
         "5xl": ["48px", "1"],
         "6xl": ["80px", "96px"],
       },
+      height: {
+        mhero: ["377px"]
+      }
     },
   },
   plugins: [],
