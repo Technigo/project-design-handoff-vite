@@ -25,20 +25,10 @@ export const TrustIndicators = () => {
   )
 }
 
-const TrustNumber = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-
-  @media (min-width: 1494px) {
-      flex-direction: row;
-      align-items: center;
-      gap: 16px;
-    }
-`
 const StyledTrustIndicators = styled.div`
   grid-column: span 4;
   padding: 80px 0;
+  margin: 0 -16px;
   border-style: solid;
   border-width: 0 0 1px;
   border-color: var(--black);
@@ -48,14 +38,31 @@ const StyledTrustIndicators = styled.div`
 
   @media (min-width: 744px) and (max-width: 1493px) {
     grid-column: span 8;
+    padding: 128px 0;
+    margin: 0 -40px;
     gap: 128px;
   }
 
   @media (min-width: 1494px) {
     grid-column: span 12;
+    padding: 160px 0;
+    margin: 0 -128px;
     gap: 96px;
   }
 `
+
+const TrustNumber = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (min-width: 1494px) {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+  }
+`
+
 const TrustHeading = styled.h2`
   font-size: 24px;
   text-align: center;
