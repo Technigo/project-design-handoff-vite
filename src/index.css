@@ -19,8 +19,8 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Colors */
-  --white: #fff;
-  --black: #000;
+  --clr-white: #fff;
+  --clr-black: #000;
   --crimson-light: #ec3642;
   --royal-purple: #762aa7;
   --plum-light: #9e3e82;
@@ -78,14 +78,15 @@ h3 {
 a {
   font-family: "Bebas Neue", "Roboto";
   text-decoration: none;
-  color: var(--clr-white);
+  /* color: var(--clr-white); */
   cursor: pointer;
+  font-size: 25px;
 }
 
-img {
+/* img {
   width: 100%;
   display: block;
-}
+} */
 
 button {
   font-family: "Bebas Neue", "Roboto";
@@ -94,20 +95,4 @@ button {
   text-transform: uppercase;
   border-radius: 50px;
   font-weight: 700;
-}
-
-.join-btn {
-  min-width: 121px;
-  padding: 10px;
-}
-
-.learn_more-btn {
-  /* width: 148px; */
-  padding: 10.42px;
-  min-height: 31px;
-}
-
-.log_in-btn {
-  width: 130px;
-  height: 40px;
 }
