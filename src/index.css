@@ -1,0 +1,16 @@
+:root {
+  --gap-default: 16px;
+  --gap-compact: 12px;
+  --gap-comfortable: 24px;
+  --gap-spacious: 32px;
+  --gap-medium: 36px;
+  --gap-extra: 48px;
+  --gap-big: 64px;
+  --gap-huge: 96px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

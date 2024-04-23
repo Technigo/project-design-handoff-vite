@@ -3,9 +3,8 @@ import styled from "styled-components";
 /*import LogoTablet from "../assets/LogoTablet.svg";*/
 
 export const Page = styled.div`
-  padding: 5px;
+  display: grid;
 `;
-
 // export const MobileLogo = styled(LogoMobile)`
 //   display: flex;
 // `;
@@ -57,10 +56,19 @@ export const StyledH2 = styled.h2`
 `;
 
 export const StyledButton = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: ${(props) => props.backgroundColor || "#F65135"};
-  color: ${(props) => props.textColor || "black"};
-  padding: 12px 24px;
-  border: 2px solid #1c2996;
+  color: ${(props) => props.textColor || "white"};
+  width: 329px;
+  height: 53px;
+  padding: 12px, 24px;
+  border: none;
+
+  &:focus {
+    border: 2px solid #1c2996;
+  }
 `;
 
 /* header mobile

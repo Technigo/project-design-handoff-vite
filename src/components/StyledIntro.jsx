@@ -4,6 +4,8 @@ import mobileLogo from "../assets/LogoMobile.svg";
 import tabletLogo from "../assets/LogoTablet.svg";
 import desktopLogo from "../assets/LogoDesktop.svg";
 
+import "../index.css";
+
 // Styled components for each logo
 const MobileLogo = styled(mobileLogo)`
   display: none;
@@ -26,13 +28,19 @@ const DesktopLogo = styled(desktopLogo)`
   }
 `;
 
+const LogoBox = styled.div`
+  display: flex;
+  justify-content: center;
+  padding: var(--gap-compact) 0;
+`;
+
 export const LogoContainer = () => {
   return (
-    <div>
+    <LogoBox>
       <MobileLogo />
       <TabletLogo />
       <DesktopLogo />
-    </div>
+    </LogoBox>
   );
 };
 const pulse = keyframes`
@@ -53,6 +61,43 @@ export const StyledIntro = styled(HeartIcon)`
   animation: ${pulse} 2s infinite;
 `;
 
-/*export const StyledIntro = styled.heartIcon`
+export const IntroContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+// export const ImageBox = styled.div`
+//   display: flex;
+// `;
 
-`;*/
+export const IntroContentBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: var(--gap-default) var(--gap-compact);
+  padding-bottom: var(--gap-default);
+  background-color: #f9cdcc;
+  gap: var(--gap-default);
+`;
+
+export const IntroTextBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding: var(--gap-default) var(--gap-compact);
+  gap: var(--gap-compact);
+`;
+
+export const StyledIntroImage = styled.img`
+  width: 100%;
+  aspect-ratio: 16 / 15;
+  object-fit: cover;
+  overflow: hidden;
+
+  @media (max-width: 349px) {
+    display: none;
+  }
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    width: 385px;
+    height: 471px;
+  }
+`;
