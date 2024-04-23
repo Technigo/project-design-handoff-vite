@@ -38,6 +38,7 @@ h2 {
   font-size: 26px;
   font-weight: 600;
   letter-spacing: 1.2%;
+  margin: 0;
 }
 
 h3 {
@@ -52,7 +53,7 @@ h3 {
 p {
   color: var(--black);
   font-family: "Montserrat", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 22.4px; /* 140% */
   margin: 0;
 }
@@ -115,6 +116,7 @@ button {
   }
 
   p {
+    font-size: 18px;
     line-height: 25.2px;
   }
 
