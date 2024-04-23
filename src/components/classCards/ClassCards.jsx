@@ -20,5 +20,4 @@ export const ClassCards = () => {
     </div>
     </div>
   )
-  
 }
