@@ -5,7 +5,7 @@ export const ReasonSection = () => {
     <div>
       <h2>Why Urban Spin</h2>
       <ReasonCard />
-      <img/>
+      <img src="/reasons-image.png" />
     </div>
   )
 }

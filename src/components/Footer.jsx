@@ -1,17 +1,15 @@
-import links from "../assets/json/links.json";
+
+import { FooterCard } from "./FooterCard"; 
 
 export const Footer = () => {
-const getLinks = () => {}
-
+const getLinks = () => {
+    return links.links.map((item) => (
+        <FooterCard key={item} />
+    ))
+}
   return (
     <>
-    <ul>
-
-        <li>
-
-        </li>
-    </ul>
-
+    <div>{getLinks()}</div>
     </>
   )
 }

@@ -1,16 +1,15 @@
+import links from "../json/links.json";
 
 export const FooterCard = () => {
   return (
     <>
     <ul>
-    {linkSet.items.map((item)=> {
+    {links.map((item)=> {
         return(
-        <li key={item}></li>
-        )
-
+        <li key={item}> {links.items} </li>
+        );
     })}
     </ul>
-
     </>
   )
 }
