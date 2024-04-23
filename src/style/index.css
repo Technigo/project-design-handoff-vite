@@ -1,0 +1,19 @@
+:root {
+  --main-text-color: #000000;
+
+  --secondary-color: #e4dbd2;
+
+  --button-static-color: #b3583b;
+  --button-hover-color: #552a1c;
+  --button-text-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #bfcacb;
+}
