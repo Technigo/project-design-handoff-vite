@@ -1,0 +1,38 @@
+[
+  {
+    "altText": "Serving food",
+    "imageUrl": "/mindful_cooking.svg",
+    "title": "Mindful Cooking Workshop",
+    "text": "Change your relationship with food and eating. Get to know centry-old recipes."
+  },
+  {
+    "altText": "Hiking",
+    "imageUrl": "/nature_walks.svg",
+    "title": "Nature Walks",
+    "text": "Embark on immersive journeys in lush landscapes, reconnect with the natural world."
+  },
+  {
+    "altText": "Sky filled with stars",
+    "imageUrl": "/stargazing.svg",
+    "title": "Stargazing",
+    "text": "Lose yourself in the wonders of the night sky, marveling at the cosmic dance of stars."
+  },
+  {
+    "altText": "Herbal Tea",
+    "imageUrl": "/herbal_medicine.svg",
+    "title": "Herbal Medicine Workshop",
+    "text": "Discover nature's healing powers through herbs. Learn how to make basic remedies."
+  },
+  {
+    "altText": "Vegetables",
+    "imageUrl": "/farm_to_table.svg",
+    "title": "Farm-to-Table Experience",
+    "text": "Experience culinary delight with farm-fresh flavors. Our farm is open to all our guests."
+  },
+  {
+    "altText": "Towels and washing equipment",
+    "imageUrl": "/sustainability.svg",
+    "title": "Substainability Workshop",
+    "text": "Explore practical tips and innovative solutions for a green eco-consious lifestyle."
+  }
+]
