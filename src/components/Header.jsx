@@ -1,5 +1,6 @@
 import menuIcon from '../assets/hamburger-menu.svg';
 import logo from '../assets/logo.svg';
+import { Button } from './Button';
 
 export const Header = () => {
   return (
@@ -18,9 +19,7 @@ export const Header = () => {
         <h3 className="pb-7	text-lg	 font-medium">TO INSPIRE + UPLIFT YOU</h3>
         <h3 className="text-lg font-medium">Since 2010</h3>
       </div>
-      <button className="mt-64 w-40 rounded-[100px] bg-accent-orange	py-3 font-extrabold text-neutral-white">
-        Log in
-      </button>
+      <Button text="Log in" customStyle="mt-64" />
     </header>
   );
 };

@@ -1,3 +1,5 @@
+import { Button } from './Button';
+
 export const Testimonial = () => {
   return (
     <section className="flex flex-col">
@@ -9,9 +11,7 @@ export const Testimonial = () => {
         </p>
         <p className="mt-4">Your way of teaching is world-class.”</p>
         <p className="mt-4">- Grace Wetterlund, SWEDEN</p>
-        <button className="mt-8 h-10 w-40 rounded-[100px] bg-accent-orange text-[16px] font-extrabold text-neutral-white">
-          More testimonials
-        </button>
+        <Button text="More testimonials" customStyle="mt-8" />
       </div>
     </section>
   );
