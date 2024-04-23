@@ -1,6 +1,6 @@
 import { Button } from "./Button"
 
-export const HeroPage = () => {
+export const HeroSection = () => {
   return (
     <div>
       <img src="/hero-phone.png" />
@@ -8,7 +8,7 @@ export const HeroPage = () => {
       <h2>
         The world-famous spinning club is now ready for you in Gothenburg!
       </h2>
-      <Button />
+      <Button buttonText={"Book Now"} />
     </div>
   )
 }

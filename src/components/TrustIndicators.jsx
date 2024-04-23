@@ -6,7 +6,7 @@ export const TrustIndicators = () => {
         <p>rating at google</p>
       </div>
       <div>
-        <p>3.5000</p>
+        <p>+35.000</p>
         <p>motivated members</p>
       </div>
       <div>
