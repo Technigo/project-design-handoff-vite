@@ -6,7 +6,7 @@ import { InstructorCards } from "./components/instructorCards/InstructorCards";
 import { ValueCards } from "./components/valueCards/ValueCards";
 import { Membership } from "./components/Membership";
 import { BecomeMember } from "./components/BecomeMember";
-import { Footer } from "./components/Footer";
+import { Footer } from "./sections/Footer";
 
 export const App = () => {
   return (
