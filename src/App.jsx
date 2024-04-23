@@ -3,13 +3,6 @@ import { Buttons } from "./components/Buttons";
 
 import { createGlobalStyle } from "styled-components";
 
-const Fonts = createGlobalStyle`
-body {
-  .mulish-<uniquifier> {
-    font-family: "Mulish", sans-serif;
-  }
-}`;
-
 export const App = () => {
   return (
     <>
@@ -19,3 +12,15 @@ export const App = () => {
     </>
   );
 };
+
+const Fonts = createGlobalStyle`
+body {
+  .mulish-<uniquifier> {
+    font-family: "Mulish", sans-serif;
+  }
+  .philosopher-bold {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}`;

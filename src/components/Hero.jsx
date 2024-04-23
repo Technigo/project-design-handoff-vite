@@ -3,17 +3,14 @@ import styled from "styled-components";
 
 export const Hero = () => {
   return (
-    <div>
-      Hero section
-      <HeroSection>
+    <HeroSection>
+      <HeroContent>
         <h1>Master your board!</h1>
-        <HeroContent>
-          <p>
-            Join us at our Snowboard Camps and unleash your inner Powder Betty!
-          </p>
-        </HeroContent>
-      </HeroSection>
-    </div>
+        <p>
+          Join us at our Snowboard Camps and unleash your inner Powder Betty!
+        </p>
+      </HeroContent>
+    </HeroSection>
   );
 };
 
@@ -28,12 +25,25 @@ const HeroSection = styled.div`
 `;
 
 const HeroContent = styled.div`
-  color: var(--Powder-Black, #0b1623);
-  /* Powder/Mobile/Hero text */
-  font-family: Mulish;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 130%;
-  display: flex;
+  h1 {
+    color: var(--Powder-Black, #0b1623);
+    font-family: Philosopher;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%; /* 46.8px */
+    letter-spacing: 1.08px;
+    padding-left: 24px;
+  }
+  p {
+    color: var(--Powder-Black, #0b1623);
+    /* Powder/Mobile/Hero text */
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 130%;
+    width: 220px;
+    padding-left: 24px;
+  }
 `;
