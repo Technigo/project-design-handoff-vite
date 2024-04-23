@@ -1,5 +1,5 @@
 import "./Button.css";
 
-export const Button = ({ label, classNames }) => {
-  return <button className={`${classNames || ""}`}>{label}</button>;
+export const Button = ({ label, className }) => {
+  return <button className={`${className || ""}`}>{label}</button>;
 };
