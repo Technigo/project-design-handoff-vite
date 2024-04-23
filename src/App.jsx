@@ -1,4 +1,5 @@
 import { Header } from './components/Header';
+import { RetreatQuote } from './components/RetreatQuote';
 export const App = () => {
   return (
     <div>
@@ -7,6 +8,7 @@ export const App = () => {
       </h1>
       <h2 className="font-futura">Find me in src/app.jsx!</h2> */}
       <Header />
+      <RetreatQuote />
     </div>
   );
 };
