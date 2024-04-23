@@ -1,4 +1,3 @@
-import { Article } from "./components/Article";
 import { Cards } from "./components/Cards";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
@@ -14,7 +13,6 @@ export const App = () => {
       <Testimonials />
       <Cards />
       <List />
-      <Article />
       <Footer />
     </>
   );
