@@ -1,9 +1,9 @@
 import { FeedbackCard } from "./FeedbackCard.jsx"
 
-export const Feedback = () => {
+export const FeedbackSection = () => {
   return (
     <div>
-      Feedback by Urban Spinners
+      <h2>Feedback by Urban Spinners</h2>
       <FeedbackCard />
     </div>
   )
