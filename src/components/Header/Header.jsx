@@ -4,10 +4,10 @@ import { HeaderFooter } from "./HeaderFooter";
 
 export const Header = () => {
   return (
-    <div>
+    <header>
       <Nav />
       <Hero />
       <HeaderFooter />
-    </div>
+    </header>
   );
 };
