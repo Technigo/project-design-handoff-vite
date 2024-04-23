@@ -1,6 +1,3 @@
-export const Text = ({ text }) => {
-  return (
-    <div>{text}</div>
-  )
-}
-
+export const Text = ({ className, text }) => {
+  return <p className={className}>{text}</p>;
+};
