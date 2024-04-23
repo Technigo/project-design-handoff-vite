@@ -20,13 +20,10 @@ const GlobalStyle = createGlobalStyle`
 *::before,
 *::after {
   padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
   }
-
-:root {
-  margin: 0 24px;
-}
 `;

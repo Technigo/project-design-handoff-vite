@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const NavBar = () => {
   return (
     <StyledNavBar>
-      LIFTLY<MobileNav src="HamburgerMenu.svg"></MobileNav>
+      <h2>LIFTLY</h2>
+      <MobileNav src="HamburgerMenu.svg"></MobileNav>
     </StyledNavBar>
   );
 };
@@ -12,13 +13,17 @@ export const NavBar = () => {
 
 const StyledNavBar = styled.div`
   height: 83px;
-  color: #404040;
-  font-weight: bold;
-  font-size: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  letter-spacing: 11px;
+  margin: 0 24px;
+
+  h2 {
+    color: #404040;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 11px;
+  }
 `;
 
 const MobileNav = styled.img`
