@@ -1,4 +1,4 @@
-import { Social } from "./Social"
+import { Social } from "../components/Social";
 
 export const Footer = () => {
   return (
@@ -6,5 +6,5 @@ export const Footer = () => {
       <div>Footer</div>
       <Social />
     </>
-  )
-}
+  );
+};

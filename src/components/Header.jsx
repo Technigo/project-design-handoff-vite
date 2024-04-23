@@ -1,17 +1,12 @@
-import LogoWhiteMobile from "../assets/logo/Logo-white-Desktop.svg";
 import MenuIconMobile from "../assets/icons/Menu-mobile.svg";
-// import LogoWhiteDesktop from "../assets/Logo-white-Desktop.svg"
+import { Logo } from "./Logo";
 
 export const Header = () => {
   return (
     <>
       <nav className="mx-[24px] pt-1 md:mx-2 lg:mx-[112px]">
         <div className="flex items-center justify-between">
-          <img
-            src={LogoWhiteMobile}
-            alt="Logo of the zumba hall"
-            className="h-[45px] w-[91px] lg:h-max lg:w-max"
-          />
+          <Logo />
           <button
             data-collapse-toggle="navbar-default"
             type="button"
