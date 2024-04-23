@@ -78,24 +78,6 @@ button {
   line-height: 22.4px;
 }
 
-.cta-btn {
-  background-color: var( --purple);
-  border: none;
-  z-index: 3;
-  font-size: 16px;
-  border-radius: 20px;
-  width: 136px;
-  height: 40px;
-}
-
-.cta-btn:hover {
-  background-color: var( --purplehover);
-  cursor: pointer;
-}
-.cta-btn:active {
-  background-color: var( --purpleclick);
-}
-
 
 @media (min-width: 744px) and (max-width: 1493px) {
   #root {
