@@ -1,0 +1,24 @@
+{
+    "instructors": [
+      {
+        "title": "Maria",
+        "description": "Pilates Instroctor",
+        "img": "Maria.svg"
+      },
+      {
+        "title": "José",
+        "description": "Fitness Instructor",
+        "img": "José.svg"
+      },
+      {
+        "title": "Anna",
+        "description": "Yoga Instructor",
+        "img": "Anna.svg"
+      },
+      {
+        "title": "Sharon",
+        "description": "Dance Instructor",
+        "img": "Sharon.svg"
+      }
+    ]
+  }

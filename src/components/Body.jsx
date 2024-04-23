@@ -19,9 +19,22 @@ export const Body = () => {
   );
 };
 
-const StyledBody = styled.div`
+const StyledBody = styled.main`
   display: flex;
   flex-direction: column;
   gap: 80px;
   margin: 80px 0;
+
+  h1, h2, h3, h4, p {
+    letter-spacing: 0.11em;
+  }
+
+  h3{
+    font-size: 20px;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
 `;

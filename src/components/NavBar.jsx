@@ -11,7 +11,7 @@ export const NavBar = () => {
 
 //Styled Components
 
-const StyledNavBar = styled.div`
+const StyledNavBar = styled.header`
   height: 83px;
   display: flex;
   align-items: center;
@@ -29,4 +29,8 @@ const StyledNavBar = styled.div`
 const MobileNav = styled.img`
   width: 83px;
   height: 83px;
+  
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;

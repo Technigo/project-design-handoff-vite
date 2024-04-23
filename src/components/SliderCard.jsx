@@ -22,6 +22,11 @@ const StyledSliderCard = styled.div`
   letter-spacing: 11px;
   width: 182px;
   gap: 8px;
+
+  p{
+    font-size: 18px;
+    line-height: 22px;
+  }
 `;
 
 const TitleBox = styled.div`

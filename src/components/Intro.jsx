@@ -14,19 +14,17 @@ export const Intro = () => {
   );
 };
 
-const StyledIntro = styled.div`
+const StyledIntro = styled.section`
   margin: 0 24px;
 
   h2 {
     font-weight: bold;
     font-size: 36px;
-    letter-spacing: 11px;
     margin-bottom: 32px;
   }
 
   p {
     font-size: 20px;
-    letter-spacing: 11px;
     line-height: 38px;
   }
 `;

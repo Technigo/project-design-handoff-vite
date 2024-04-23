@@ -27,7 +27,6 @@ const StyledHero = styled.div`
     font-weight: bold;
     font-size: 46px;
     margin: 0 24px;
-    letter-spacing: 11px;
     padding: 183px 0 0 0;
   }
 

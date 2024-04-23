@@ -1,6 +1,6 @@
 import { SliderCard } from "./SliderCard";
 import styled from "styled-components";
-import { activity } from "../../slidercardsdata.json";
+import { activity } from "../libraries/slidercardsdata.json";
 
 export const Slider = () => {
   return (
@@ -14,8 +14,9 @@ export const Slider = () => {
 
 // Styled Components
 
-const StyledSlider = styled.div`
+export const StyledSlider = styled.section`
   display: flex;
   gap: 16px;
   margin: 0 24px;
+  overflow: scroll;
 `;
