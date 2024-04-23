@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { HeroCard } from "./HeroCard";
 
 const StyledHero = styled.section`
   h1 {
@@ -19,6 +20,7 @@ export const Hero = () => {
       <ul className="customer-comments">
         <li>lalala</li>
       </ul>
+      <HeroCard />
     </StyledHero>
   );
 };
