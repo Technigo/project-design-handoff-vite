@@ -1,14 +1,14 @@
 [
-    {
-        "cardName": "Personal Traning",
-        "imageURL":"/public/hero01.png"
-    },
-    {
-        "cardName":"Our Space",
-        "imageURL":"/public/hero02.png"
-    },
-    {
-        "cardName":"Over 30 classes",
-        "imageURL":"/public/hero03.png"
-    }
+  {
+    "cardName": "Personal Traning",
+    "imageURL": "/hero01.png"
+  },
+  {
+    "cardName": "Our Space",
+    "imageURL": "/hero02.png"
+  },
+  {
+    "cardName": "Over 30 classes",
+    "imageURL": "/hero03.png"
+  }
 ]
