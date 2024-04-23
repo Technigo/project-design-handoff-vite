@@ -25,7 +25,7 @@ export const Card = () => {
               </div>
               <h3 className="font-futura text-lg font-medium">{item.title}</h3>
               <p>{item.paragraph}</p>
-              <button>{item.button}</button>
+              <div>{item.button}</div>
             </div>
           ))}
         </div>
