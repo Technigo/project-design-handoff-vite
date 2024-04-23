@@ -1,3 +1,8 @@
+import { Reviews } from "./components/Reviews";
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return <div>
+
+    <Reviews />
+  </div>;
 };
