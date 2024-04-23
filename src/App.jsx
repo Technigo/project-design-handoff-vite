@@ -16,17 +16,3 @@ export const App = () => {
   );
 };
 
-// Components:
-
-// <Header />
-// 	<Nav  />
-//  <Hero />
-//  <HeaderFooter />
-
-// <Introduction />
-
-// <Programs />
-
-// <BecomeMember />
-
-// <Footer />
