@@ -1,11 +1,11 @@
-import { NavLink } from "react-router-dom";
-import logo from "/assets/logo/logo-desktop.svg";
-import { Button } from "../styles/button/Button";
-import { SearchIcon, BurgerIcon } from "../../assets/Icons";
+import { NavLink } from "react-router-dom"
+import logo from "/assets/logo/logo-desktop.svg"
+import { Button } from "../styles/button/Button"
+import { SearchIcon, BurgerIcon } from "../../assets/Icons"
 
 export const TopNavigation = () => {
   return (
-    <header className="top-navigation flex justify-between items-center px-20 md:px-66 py-10 md:py-20 lg:bg-cyan-500 fixed w-full max-w-1440">
+    <header className="top-navigation flex justify-between items-center px-20 md:px-66 py-10 md:py-20 lg:bg-cyan-500 fixed w-full max-w-1440 z-50">
       <img
         src={logo}
         alt="Crossfit Mamas Logo"
@@ -39,5 +39,5 @@ export const TopNavigation = () => {
         </div>
       </nav>
     </header>
-  );
-};
+  )
+}
