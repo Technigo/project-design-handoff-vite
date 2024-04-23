@@ -17,11 +17,10 @@ export const Social = () => {
         <Facebook />
       </NavLink>
       <NavLink to="/">
-        <Linkedin />
-      </NavLink>
-
-      <NavLink to="/">
         <Instagram />
+      </NavLink>
+      <NavLink to="/">
+        <Linkedin />
       </NavLink>
     </StyledDiv>
   )
