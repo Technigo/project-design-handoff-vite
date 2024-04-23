@@ -8,14 +8,12 @@ export const Card = () => {
 
   return (
     <>
-      <div>
+      <div className="grid">
         {cardArray.map((item) => (
           <div key={item.id} className="flex flex-col md:flex-row">
-            <div className="flex flex-col md:flex-row">
-              <img src={item.image} alt={item.alt} />
-              <h3>{item.title}</h3>
-              <p>{item.paragraph}</p>
-            </div>
+            <img src={item.image} alt={item.alt} />
+            <h3>{item.title}</h3>
+            <p>{item.paragraph}</p>
           </div>
         ))}
       </div>
