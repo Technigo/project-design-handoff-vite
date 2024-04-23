@@ -23,7 +23,8 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif}
+  font-family: Arial, Helvetica, sans-serif;
+  }
 
 :root {
   margin: 0 24px;
