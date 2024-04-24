@@ -37,22 +37,19 @@ const FaqSection = styled.section`
 
 const FaqImage = styled.img`
   grid-area: img;
-
-  height: 100%;
-
-  /* max-height: 375px; */
-  object-fit: contain;
+  height: 300px; // Set a fixed height
+  object-fit: cover;
   position: absolute;
   left: -2000px;
 
   @media all and (min-width: 744px) {
-    min-height: 500px;
+    height: 500px;
     left: -180px;
     padding-bottom: 0;
   }
   @media all and (min-width: 1024px) {
     left: -420px;
-    min-height: 900px;
+    height: 900px;
   }
 `;
 
@@ -129,6 +126,11 @@ const FaqIcon = styled.img`
   @media all and (min-width: 744px) {
     width: 10px;
     height: 10px;
+  }
+
+  @media all and (min-width: 1024px) {
+    width: 20px;
+    height: 20px;
   }
 `;
 
