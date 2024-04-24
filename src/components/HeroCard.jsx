@@ -43,7 +43,7 @@ export const HeroCard = () => {
               objectFit: "cover",
             }}
           />
-          <div>
+          <div style={{ width: "236px"}}>
             <Buttons buttonList={[item]} />
           </div>
         </StyledImageContainer>

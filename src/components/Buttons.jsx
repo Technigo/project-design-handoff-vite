@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Styled button component
 const StyledButton = styled.button`
   position: absolute;
-  bottom: 40px; 
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 12px;
@@ -12,10 +12,11 @@ const StyledButton = styled.button`
   font-family: Avenir, sans-serif;
   font-size: 15px;
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 8px 48px;
   border: none;
   cursor: pointer;
-`
+  white-space: nowrap;
+`;
 
 export const Buttons = ({ buttonList }) => {
   return (
