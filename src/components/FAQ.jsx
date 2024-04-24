@@ -37,19 +37,22 @@ const FaqSection = styled.section`
 
 const FaqImage = styled.img`
   grid-area: img;
-  /* width: 100%; */
+
   height: 100%;
+
   /* max-height: 375px; */
   object-fit: contain;
   position: absolute;
-  left: -700px;
+  left: -2000px;
 
   @media all and (min-width: 744px) {
+    min-height: 500px;
     left: -180px;
     padding-bottom: 0;
   }
   @media all and (min-width: 1024px) {
     left: -420px;
+    min-height: 900px;
   }
 `;
 
@@ -131,17 +134,57 @@ const FaqIcon = styled.img`
 
 //component
 export const FAQ = () => {
-  //track currently expanded question
-  const [expanded, setExpanded] = useState(null);
+  const [expanded, setExpanded] = useState(null); //track if extra questions are shown
+  const [selected, setSelected] = useState(null); //track selected question
 
-  const toggleFAQ = (exp) => {
-    //toggle expanded item, setting it to null to close or to clicked ot open
-    if (expanded === exp) {
-      setExpanded(null);
-    } else {
-      setExpanded(exp);
-    }
+  const toggleFAQ = (index) => {
+    setSelected(selected === index ? null : index); //toggle question open/close
   };
+
+  const toggleExpand = () => {
+    setExpanded(!expanded); //toggle expanded/collapsed state
+  };
+
+  const faqs = [
+    {
+      question: "What type of yoga classes do you offer?",
+      answer:
+        "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
+    },
+    {
+      question: "How do I know which class is right for me?",
+      answer:
+        "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
+    },
+    {
+      question: "What should I wear/bring to a yoga class?",
+      answer:
+        "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
+    },
+    {
+      question: "Do I need to bring my own yoga mat?",
+      answer:
+        "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
+    },
+    {
+      question: "Are there options for private yoga sessions?",
+      answer:
+        "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
+    },
+    {
+      question: "Is drop-in available or do I need a membership?",
+      answer:
+        "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
+    },
+    {
+      question: "What is your cancellation policy for classes?",
+      answer:
+        "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
+      decodeURI,
+    },
+  ];
+
+  const questionsShow = expanded ? faqs : faqs.slice(0, 4); //show 4 on mobile all when expanded
 
   return (
     <FaqSection>
@@ -149,62 +192,25 @@ export const FAQ = () => {
       <HeadingWrapper>
         <HeadingTwoVar>FAQ</HeadingTwoVar>
       </HeadingWrapper>
-      <ArrowWrapper>
+      <ArrowWrapper onClick={toggleExpand}>
         <ArrowText>See more </ArrowText>
         <Arrow />
       </ArrowWrapper>
       <FaqWrapper>
-        {[
-          {
-            question: "What type of yoga classes do you offer?",
-            answer:
-              "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
-          },
-          {
-            question: "How do I know which class is right for me?",
-            answer:
-              "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
-          },
-          {
-            question: "What should I wear/bring to a yoga class?",
-            answer:
-              "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
-          },
-          {
-            question: "Do I need to bring my own yoga mat?",
-            answer:
-              "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
-          },
-          {
-            question: "Are there options for private yoga sessions?",
-            answer:
-              "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
-          },
-          {
-            question: "Is drop-in available or do I need a membership?",
-            answer:
-              "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
-          },
-          {
-            question: "What is your cancellation policy for classes?",
-            answer:
-              "I'm baby gluten-free try-hard yuccie cray bitters stumptown blog unicorn.",
-            decodeURI,
-          },
-        ].map((faq, exp) => (
-          <FaqItem key={exp}>
-            <FaqQuestion onClick={() => toggleFAQ(exp)}>
+        {questionsShow.map((faq, index) => (
+          <FaqItem key={index}>
+            <FaqQuestion onClick={() => toggleFAQ(index)}>
               {faq.question}
               <FaqIcon
                 src={Dropdown}
                 alt="dropdown"
                 style={{
                   transform:
-                    expanded === exp ? "rotate(180deg)" : "rotate(0deg)",
+                    selected === index ? "rotate(180deg)" : "rotate(0deg)",
                 }}
               />
             </FaqQuestion>
-            <FaqAnswer show={expanded === exp}>{faq.answer}</FaqAnswer>
+            <FaqAnswer show={selected === index}>{faq.answer}</FaqAnswer>
           </FaqItem>
         ))}
       </FaqWrapper>
