@@ -8,16 +8,32 @@ export const Footer = () => {
     <section className="flex flex-col items-center">
       <img src={footerLogoMobile} alt="Logo" className="mb-5" />
       <ul className="flex flex-col items-center font-avengeance text-primary-darkblue gap-8 text-xs mb-10">
-        <li>Contact</li>
-        <li>Find your local club</li>
-        <li>Insurances</li>
-        <li>Our Partners</li>
-        <li>FAQ</li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+        <li>
+          <a href="">Find your local club</a>
+        </li>
+        <li>
+          <a href="">Insurances</a>
+        </li>
+        <li>
+          <a href="">Our Partners</a>
+        </li>
+        <li>
+          <a href="">FAQ</a>
+        </li>
       </ul>
       <div className="flex gap-8 mb-10">
-        <img src={instagramIcon} alt="Instagram Icon" />
-        <img src={vimeoIcon} alt="Vimeo Icon" />
-        <img src={facebookIcon} alt="Facebook Icon" />
+        <a href="">
+          <img src={instagramIcon} alt="Instagram Icon" />
+        </a>
+        <a href="">
+          <img src={vimeoIcon} alt="Vimeo Icon" />
+        </a>
+        <a href="">
+          <img src={facebookIcon} alt="Facebook Icon" />
+        </a>
       </div>
       <div>
         <label htmlFor="search"></label>
