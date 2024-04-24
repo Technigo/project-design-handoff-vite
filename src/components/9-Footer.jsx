@@ -1,3 +1,4 @@
+import styled from "styled-components"
 import FacebookIcon from "../assets/icons/newsletter/Facebook.png"
 import InstagramIcon from "../assets/icons/newsletter/Instagram.png"
 import SpotifyIcon from "../assets/icons/newsletter/Spotify.png"
@@ -6,13 +7,13 @@ import "./9-Footer.css"
 
 export const Footer = () => {
   return (
-    <div className="footer">
-      <div className="social-media-box">
-        <img className="social-icon" src={FacebookIcon} alt="Facebook icon" />
-        <img className="social-icon" src={InstagramIcon} alt="Instagram icon" />
-        <img className="social-icon" src={SpotifyIcon} alt="Spotify icon" />
-      </div>
-      <div className="footer-text">
+    <StyledFooter>
+      <SocialMediaBox>
+        <SocialIcon src={FacebookIcon} alt="Facebook icon" />
+        <SocialIcon src={InstagramIcon} alt="Instagram icon" />
+        <SocialIcon src={SpotifyIcon} alt="Spotify icon" />
+      </SocialMediaBox>
+      <FooterText>
         <div className="footer-menu">
           <div>
             <ul className="footer-list">
@@ -49,7 +50,68 @@ export const Footer = () => {
           <p>Privacy Policy</p>
           <p>Terms of Service</p>
         </div>
-      </div>
-    </div>
+      </FooterText>
+    </StyledFooter>
   )
 }
+
+const StyledFooter = styled.div`
+  grid-column: span 4;
+  margin-bottom: 109px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+
+  @media (min-width: 744px) and (max-width: 1493px) {
+    grid-column: span 8;
+    gap: 64px;
+  }
+
+  @media (min-width: 1494px) {
+    grid-column: span 12;
+    gap: 120px;
+  }
+`
+
+const SocialMediaBox = styled.div`
+  display: flex;
+  gap: 40px;
+
+  @media (min-width: 744px) and (max-width: 1493px) {
+    gap: 48px;
+  }
+
+  @media (min-width: 1494px) {
+    gap: 80px;
+  }
+`
+
+const SocialIcon = styled.img`
+  height: 24px;
+
+  @media (min-width: 744px) and (max-width: 1493px) {
+    height: 40px;
+  }
+
+  @media (min-width: 1494px) {
+    height: 56px;
+  }
+`
+
+const FooterText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+
+  @media (min-width: 744px) and (max-width: 1493px) {
+    gap: 64px;
+  }
+
+  @media (min-width: 1494px) {
+    gap: 80px;
+  }
+`
+
+
