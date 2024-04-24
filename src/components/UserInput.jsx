@@ -1,10 +1,12 @@
+import { HoverableButton } from './HoverableButton';
+
 export const UserInput = () => {
   return (
     <>
-      <section className="place-content-center gap[43px] grid h-[474px] w-full bg-[#F8F7F3] px-[38px] py-[48px]">
-        <div className="h-auto w-[284px] px-[11px] pb-[24px] pt-[64px] text-center font-futura text-xl font-bold">
-          <h2 className="h-[29px] w-[284px]">JOIN OUR COMMUNITY</h2>
-          <p className="h-[66px] w-[211px] gap-[8px] text-center font-avenir text-base font-medium text-black">
+      <section className="gap[43px] grid h-[520px] w-full items-center justify-center bg-[#F8F7F3] px-[38px] py-6">
+        <div className="flex w-[284px] flex-col pb-[24px] text-center font-futura font-bold">
+          <h2 className="text-xl">JOIN OUR COMMUNITY</h2>
+          <p className="gap-[8px] justify-self-center px-10 text-center font-avenir text-base font-medium text-black">
             Don’t miss out on free offerings, exclusive offers and new classes
             and retreats
           </p>
@@ -25,6 +27,7 @@ export const UserInput = () => {
             placeholder="Email Adress"
             className="h-[40px] w-[280px] border-[1px] border-[#444446] bg-white text-center font-avenir font-medium text-black"
           />
+          <HoverableButton text="Sign up" customStyle="justify-self-center" />
         </form>
       </section>
     </>
