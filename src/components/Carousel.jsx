@@ -46,7 +46,7 @@ const StyledSection = styled.section`
 `
 
 const CarouselContainer = styled.div`
-  width: 95vw;
+
   height: 100%;
   overflow-x: auto;
   display: flex;
