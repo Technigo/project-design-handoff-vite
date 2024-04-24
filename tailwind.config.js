@@ -2,6 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      sm: "320px",
+      md: "668px",
+      lg: "1024px",
+    },
     extend: {
       boxShadow: {
         inputShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25);",
