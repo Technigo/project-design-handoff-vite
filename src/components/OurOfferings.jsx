@@ -1,31 +1,29 @@
-import snowboarderMobile from "../assets/mobileIcons/snowboarder-mobile.png";
-import houseMobile from "../assets/mobileIcons/house-mobile.png";
-import exploreMobile from "../assets/mobileIcons/explore-mobile.png";
-import funMobile from "../assets/mobileIcons/fun-mobile.png";
 import styled from "styled-components";
+import { Learn } from "./cards-components/Learn";
+import { Live } from "./cards-components/Live"
+import { Explore } from "./cards-components/Explore"
+import { HaveFun } from "./cards-components/HaveFun"
+
+import { createGlobalStyle } from "styled-components";
 
 export const OurOfferings = () => {
   return (
-    <OurOfferingsSection>
-      <h1>Our Offerings</h1>
-      <p>
-        Embark on your snowboarding adventure! Dive into unforgettable
-        experiences surrounded by stunning nature, friendly faces, and epic
-        vibes.
-      </p>
+    <>
+      <OurOfferingsSection>
+        <h1>Our Offerings</h1>
+        <p>
+          Embark on your snowboarding adventure! Dive into unforgettable
+          experiences surrounded by stunning nature, friendly faces, and epic
+          vibes.
+        </p>
+      </OurOfferingsSection>
       <OurOfferingsCards>
-        <OurOfferingsImage></OurOfferingsImage>
-        <OurOfferingsText>
-          <h2>Learn</h2>
-          <p>
-            Beginners and advanced lessons in small groups and wonderful
-            coaches.
-          </p>
-          
-        </OurOfferingsText>
-        <OurOfferingsSnowboard></OurOfferingsSnowboard>
+        <Learn />
+        <Live />
+        <Explore />
+        <HaveFun />
       </OurOfferingsCards>
-    </OurOfferingsSection>
+    </>
   );
 };
 const OurOfferingsSection = styled.section`
@@ -53,61 +51,8 @@ const OurOfferingsSection = styled.section`
   }
 `;
 
-const OurOfferingsImage = styled.div`
-  background-image: url(${snowboarderMobile});
-  background-repeat: no-repeat;
-  background-position: left;
-  display: flex;
-  justify-content: left;
-  height: 70px;
-  width: 70px;
-  padding-top: 45px;
-`;
-
-const OurOfferingsText = styled.div`
-  flex-direction: column;
-  width: 280px;
-  h2 {
-    color: #0b1623;
-    font-size: 21px;
-    font-family: Philosopher;
-    font-weight: 700;
-    line-height: 27.3px;
-    word-wrap: break-word;
-  }
-  p {
-    color: var(--Powder-Black, #0b1623);
-    font-family: Mulish;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 130%; /* 18.2px */
-  }
-`;
-
 const OurOfferingsCards = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: left;
 `;
-const OurOfferingsSnowboard = styled.div`
-  background-image: url(${houseMobile});
-  background-repeat: no-repeat;
-  background-position: left;
-  display: flex;
-  justify-content: left;
-  height: 70px;
-  width: 70px;
-  padding-top: 45px;
-`;
-
-
-// const OurOfferingsCardsStyled = styled(OurOfferingsCards)`
-// background-image: url(${houseMobile})
-// height: 600px;
-
-//
-
-// image: url(${houseMobile});
-// image: url(${exploreMobile});
-// image: url(${funMobile});
