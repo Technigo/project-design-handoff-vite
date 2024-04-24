@@ -18,6 +18,7 @@ const HeroContainer = styled.div`
   margin-right: -16px;
   padding-left: 16px;
   padding-right: 16px;
+  padding-top: 150px;
 
   
   @media (min-width: 744px) and (max-width: 1493px) {
@@ -27,6 +28,7 @@ const HeroContainer = styled.div`
     margin-right: -32px;
     padding-left: 32px;
     padding-right: 32px;
+    padding-top: 210px;
    
     
   }
@@ -38,6 +40,7 @@ const HeroContainer = styled.div`
     margin-right: -128px;
     padding-left: 128px;
     padding-right: 128px;
+    padding-top: 320px;
   }
 `;
 
@@ -46,8 +49,7 @@ const HeroText = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 200px;
-  padding-top: 130px;
+  padding-bottom: 180px;
 `;
 
 const HeaderText = styled.h1`
@@ -58,29 +60,41 @@ const HeaderText = styled.h1`
 const InfoText = styled.h2`
   text-align: center;
   color: white;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 16px;
+  margin-right: 16px;
   margin-top: -20px;
   padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
+  margin-bottom: 30px;
 
   @media (min-width: 744px) and (max-width: 1493px) {
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 32px;
+    margin-right: 32px;
     margin-top: -90px;
     font-weight: 400;
     font-size: 32px;
+    margin-bottom: 50px;
   }
 
   @media (min-width: 1494px) {
-    margin-left: 220px;
-    margin-right: 220px;
+    margin-left: 128px;
+    margin-right: 128px;
     margin-top: -90px;
     margin-bottom: 10px;
     font-weight: 450;
     font-size: 36px;
   }
+`;
+
+const ArrowIcon = styled.img`
+        display: none;
+        @media (min-width: 1494px) {
+          display: block; 
+          margin-bottom: 150px;
+          padding-top: 90px;
+        }
+      
 `;
 
 export const HeroSection = () => {
@@ -93,6 +107,10 @@ export const HeroSection = () => {
         </InfoText>
         <CtaButton>Book Now</CtaButton>
       </HeroText>
+      <ArrowIcon
+          className="arrow-icon"
+          src="./src/assets/icons/arrowDown.png"
+        />
     </HeroContainer>
   );
 };
