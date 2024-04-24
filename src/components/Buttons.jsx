@@ -1,14 +1,27 @@
+import styled from "styled-components";
 
-export const Buttons = ({ buttonList}) => {
+// Styled button component
+const StyledButton = styled.button`
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  border-radius: 12px;
+  background: #b3583b;
+`;
+
+export const Buttons = ({ buttonList }) => {
   return (
-    <div className="button-list">
+    <div>
       {buttonList.map((button, index) => (
-        <button key={index} onClick={() => console.log(button.buttonText)}>
+        <StyledButton
+          key={index}
+          onClick={() => console.log(button.buttonText)}
+        >
           {button.buttonText}
-        </button>
+        </StyledButton>
       ))}
     </div>
   );
 };
-
-
