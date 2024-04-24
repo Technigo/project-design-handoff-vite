@@ -1,6 +1,5 @@
 import { BannerWrapper, Banner, BannerContainer, TitleText, SubText, Email, BannerInvert } from './Banner-section.jsx'
 import { CtaButton } from './CTA-button.jsx'
-import styled from 'styled-components';
 
 export const Newsletter = () => {
   return (
