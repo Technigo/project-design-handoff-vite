@@ -8,9 +8,13 @@ export const Nav = () => {
     setNavlist((prevNavlist) => !prevNavlist);
   };
   return (
-    <nav className=" bg-transparent md:bg-peach">
-      <div className=" ">
-        <img src={logoStudioMama} alt="Studio Mama Logo" />
+    <nav className="absolute bg-transparent p-4 flex justify-between items-center w-full md:bg-peach md:relative ">
+      <div>
+        <img
+          src={logoStudioMama}
+          alt="Studio Mama Logo"
+          className=" w-28 md:w-44 2xl:w-80"
+        />
       </div>
 
       <div className="mobile-nav">
