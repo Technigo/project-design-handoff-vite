@@ -1,7 +1,8 @@
-import { BrowserRouter } from "react-router-dom";
-import { TopNavigation } from "./components/sections/TopNavigation";
-import { Hero } from "./components/sections/Hero/Hero";
-import { Article } from "./components/sections/Article";
+import { BrowserRouter } from "react-router-dom"
+import { TopNavigation } from "./components/sections/TopNavigation"
+import { Hero } from "./components/sections/Hero"
+import { Article } from "./components/sections/Article"
+import { ValueProps } from "./components/sections/ValueProps"
 
 export const App = () => {
   return (
@@ -23,7 +24,8 @@ export const App = () => {
             minus et, illo eligendi accusamus!
           </p>
         </section>
+        <ValueProps />
       </main>
     </BrowserRouter>
-  );
-};
+  )
+}

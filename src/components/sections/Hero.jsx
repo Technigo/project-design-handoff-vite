@@ -1,9 +1,9 @@
-import { Button } from "../../styles/button/Button"
+import { Button } from "../styles/button/Button"
 
 export const Hero = () => {
   return (
     <section
-      className="bg-[url(/assets/images/crossfit-baby.jpg)] p-40 md:p-66 bg-cover text-white flex flex-col items-center justify-center"
+      className="bg-[url(/assets/images/crossfit-48.png)] p-40 md:p-66 bg-cover text-white flex flex-col items-center justify-center"
       style={{ height: "600px" }}
     >
       <div
@@ -13,8 +13,7 @@ export const Hero = () => {
 
       <div className="relative z-10">
         <h1 className="mt-11 text-h1-tab-mob lg:text-h1-desktop font-bold mb-6">
-          fun, fabulous & fearless: <br />
-          crossfit for mums
+          fun, fabulous & fearless: crossfit for mums
         </h1>
         <h2 className="mb-6 text-h2-tab-mob">
           Ready for crossfit and cuddles? Join our small groups for amazing mums

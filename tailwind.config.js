@@ -28,6 +28,7 @@ export default {
     fontSize: {
       "h1-desktop": "36px",
       "h2-desktop": "25px",
+      "h3-desktop": "20px",
       "pl-desktop": "18px",
       "ps-desktop": "16px",
       "h1-tab-mob": "30px",
@@ -38,6 +39,8 @@ export default {
       "join-btn-desktop": "18px",
       "join-btn-tablet": "16px",
       "learn-btn-desktop": "18px",
+      "value-props-btn-mob": "14px",
+      "value-props-btn": "18px",
     },
     extend: {
       maxWidth: {
