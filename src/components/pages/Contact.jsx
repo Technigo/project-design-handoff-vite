@@ -1,4 +1,5 @@
 // This is where we create styled compontens for the Contact page
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import { css } from "styled-components";
 
@@ -31,6 +32,31 @@ const ContactText = styled.p`
 `;
 
 export const Contact = () => {
+  const [deviceType, setDeviceType] = useState("desktop");
+
+  useEffect(() => {
+    const handleResize = () => {
+      const width = window.innerWidth;
+      if (width < 350) {
+        setDeviceType("none");
+      } else if (width >= 350 && width <= 650) {
+        setDeviceType("mobile");
+      } else if (width <= 1024) {
+        setDeviceType("tablet");
+      } else {
+        setDeviceType("desktop");
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  if (deviceType === "none") {
+    return null;
+  }
   return (
     <YellowWrapper>
       <IconSome href="https://facebook.com">

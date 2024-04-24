@@ -76,8 +76,8 @@ export const StyledButton = styled.button`
   justify-content: center;
   background-color: ${(props) => props.$backgroundColor || "#F65135"};
   color: ${(props) => props.$textColor || "white"};
+  border: ${(props) => props.$border || "none"};
   padding: var(--gap-default) var(--gap-comfortable);
-  border: none;
   font-family: "Lato", sans-serif;
   font-weight: 700;
 

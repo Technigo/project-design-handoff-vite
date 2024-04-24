@@ -9,7 +9,7 @@ import {
   StyledImage,
   StyledButton,
   ButtonBox,
-} from "./StyledComponents";
+} from "../StyledComponents";
 import AboutOne from "../../assets/about-one.jpg";
 import AboutTwo from "../../assets/about-two.jpg";
 import { Carousel } from "react-responsive-carousel";
@@ -48,6 +48,10 @@ export const About = () => {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  if (deviceType === "none") {
+    return null;
+  }
 
   return (
     <Page>
@@ -125,13 +129,14 @@ export const About = () => {
             </Slide>
           </StyledAboutBox>
         </Carousel>
-        <ButtonBox style={{ padding: "0 0 var(--gap-compact) 0" }}>
+        <ButtonBox style={{ padding: "0 0 var(--gap-medium) 0" }}>
           <StyledButton
             $mobile={deviceType === "mobile"}
             $tablet={deviceType === "tablet"}
             $desktop={deviceType === "desktop"}
             $backgroundColor="#F9CDCC"
             $textColor="#1C2996"
+            $border="2px solid #1c2996"
             className="book"
             aria-label="sign up">
             {" "}

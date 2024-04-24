@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Page, StyledText, StyledH1, StyledButton, ButtonBox, Container, StyledImage } from "./StyledComponents";
+import { Page, StyledText, StyledH1, StyledButton, ButtonBox, Container, StyledImage } from "../StyledComponents";
 import { IconHeart, LogoContainer, IntroTextBox, IntroContentBox } from "../StyledIntro";
 import ImgIntro from "../../assets/intro-one.jpg";
 
