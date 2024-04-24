@@ -32,11 +32,14 @@ const GlobalStyles = createGlobalStyle`
   }
 
   html,
-  body {
+  body, #root {
+    min-height: 100vh;
     height: 100%;
+    
   }
 
   body {
+    background-repeat: no-repeat;
     background: linear-gradient(
       180deg,
       #a6c2c5 9.5%,
@@ -44,8 +47,14 @@ const GlobalStyles = createGlobalStyle`
       #d2dbe0 51%,
       #9ab8c8 66.5%,
       #a6c2c5 86%,
-      #9cc2d5 100%
-    );
+      #9cc2d2 100%
+    ) ;
+   
+  }
+
+  main{
+    height: 100%;
+     position:relative;
   }
 
 
@@ -53,13 +62,17 @@ const GlobalStyles = createGlobalStyle`
 
 export const App = () => {
   return (
-    <main>
+    <>
       <GlobalStyles />
-      <NavBar />
-      <Hero />
-      <OurClass />
-      <Event />
-      <Footer />
-    </main>
+      <main>
+        <div className="lauch-page">
+          <NavBar />
+          <Hero />
+        </div>
+        <OurClass />
+        <Event />
+        <Footer />
+      </main>
+    </>
   );
 };
