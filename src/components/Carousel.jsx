@@ -52,6 +52,11 @@ const CarouselContainer = styled.div`
   display: flex;
   flex-direction: column;
   overflow-y: hidden;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
+}
 
   @media all and (min-width: 1200px) {
     align-items: center;
@@ -59,11 +64,7 @@ const CarouselContainer = styled.div`
 
   @media all and (min-width: 1440px) {
     width: 100%;
-    ::-webkit-scrollbar {
-      display: none;
-    }
-    scrollbar-width: none;
-  }
+   
 `
 
 const StyledCarousel = styled.div`
