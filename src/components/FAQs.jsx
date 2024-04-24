@@ -10,11 +10,21 @@ export const FAQs = () => {
 
   return (
     <div>
-      <h2>Find Your Answers Here</h2>
+      <h2 className="text-green-700">Find Your Answers Here</h2>
+      <div className="grid grid-cols-2 gap-1">
+      <div className="flex justify-center items-center">
       <ButtonFAQ text={"Prices"} />
-      <ButtonFAQ text={"Bookings"} />
-      <ButtonFAQ text={"My Account"} />
-      <ButtonFAQ text={"Facilities"} />
+       </div>
+  <div className="flex justify-center items-center">
+    <ButtonFAQ text={"Bookings"} />
+  </div>
+  <div className="flex justify-center items-center">
+    <ButtonFAQ text={"My Account"} />
+  </div>
+  <div className="flex justify-center items-center">
+    <ButtonFAQ text={"Facilities"} />
+  </div>
+      </div>
       <h3>FAQs</h3>
       <button>Discover All Here</button>
       <ul>{getQuestions(0, 6)}</ul>
