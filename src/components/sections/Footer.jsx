@@ -1,9 +1,9 @@
-import facebook from '../assets/contactIcons/Facebook.svg';
-import email from '../assets/contactIcons/Email.svg';
-import instagram from '../assets/contactIcons/Instagram.svg';
-import phone from '../assets/contactIcons/Phone.svg';
-import map from '../assets/contactIcons/Map.svg';
-import twitter from '../assets/contactIcons/Twitter.svg';
+import facebook from '../../assets/contactIcons/Facebook.svg';
+import email from '../../assets/contactIcons/Email.svg';
+import instagram from '../../assets/contactIcons/Instagram.svg';
+import phone from '../../assets/contactIcons/Phone.svg';
+import map from '../../assets/contactIcons/Map.svg';
+import twitter from '../../assets/contactIcons/Twitter.svg';
 
 const contact = [
   { alt: 'phone', src: phone, text: 'Tel: +352 961 537 583' },

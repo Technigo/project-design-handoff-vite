@@ -1,6 +1,6 @@
-import menuIcon from '../assets/hamburger-menu.svg';
-import logo from '../assets/logo.svg';
-import { HoverableButton } from './HoverableButton';
+import menuIcon from '../../assets/hamburger-menu.svg';
+import logo from '../../assets/logo.svg';
+import { HoverableButton } from '../HoverableButton';
 
 export const Header = () => {
   return (
@@ -8,7 +8,7 @@ export const Header = () => {
       <div className="mx-5 flex justify-center py-8 pt-7 lg:hidden">
         <img className="h-16 md:h-20" src={logo} alt="logo" />
       </div>
-      <nav className="mb-28 mt-10 hidden w-4/5 self-center lg:block">
+      <nav className="mb-28 mt-10 hidden w-max lg:block">
         <ul className="flex flex-row items-end space-x-9">
           <li>About us</li>
           <li>Retreats</li>

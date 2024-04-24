@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-import cardArray from '../CardArray';
-import { Discover } from './Discover';
-import { HoverableButton } from './HoverableButton';
+import cardArray from '../../CardArray';
+import { Discover } from '../Discover';
+import { HoverableButton } from '../HoverableButton';
 
 export const Card = () => {
   return (

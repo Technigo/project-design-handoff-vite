@@ -1,4 +1,4 @@
-import { HoverableButton } from './HoverableButton';
+import { HoverableButton } from '../HoverableButton';
 
 export const Testimonial = () => {
   return (

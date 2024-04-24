@@ -1,10 +1,10 @@
-import { Card } from './components/Card';
-import { Footer } from './components/Footer';
-import { Header } from './components/Header';
-import { Membership } from './components/Membership';
-import { RetreatQuote } from './components/RetreatQuote';
-import { Testimonial } from './components/Testimonial';
-import { UserInput } from './components/UserInput';
+import { Card } from './components/sections/Card';
+import { Footer } from './components/sections/Footer';
+import { Header } from './components/sections/Header';
+import { Membership } from './components/sections/Membership';
+import { RetreatQuote } from './components/sections/RetreatQuote';
+import { Testimonial } from './components/sections/Testimonial';
+import { UserInput } from './components/sections/UserInput';
 
 export const App = () => {
   return (

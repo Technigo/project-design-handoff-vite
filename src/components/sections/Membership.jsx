@@ -1,6 +1,6 @@
-import euro from '../assets/euro-sign.svg';
-import { HoverableButton } from './HoverableButton';
-import { SignupButton } from './SignupButton';
+import euro from '../../assets/euro-sign.svg';
+import { HoverableButton } from '../HoverableButton';
+import { SignupButton } from '../SignupButton';
 
 export const Membership = () => {
   return (
