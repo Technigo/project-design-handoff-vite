@@ -16,7 +16,7 @@ export const Footer = () => {
   return (
     <section className="flex flex-col">
       <img src={footerLogoMobile} alt="Logo" className="mb-5 h-14 lg:mb-20" />
-      <ul className="flex flex-col items-center font-avengeance text-primary-darkblue gap-8 text-xs mb-10 lg:flex-row lg:justify-center">
+      <ul className="flex flex-col items-center font-avengeance text-primary-darkblue gap-8 text-xs mb-10 md:text-sm lg:flex-row lg:justify-center lg:text-lg">
         <li>
           <a href="">Contact</a>
         </li>
@@ -33,7 +33,7 @@ export const Footer = () => {
           <a href="">FAQ</a>
         </li>
       </ul>
-      <div className="flex flex-col items-center md:flex md:flex-row md:justify-between lg:justify-center">
+      <div className="flex flex-col items-center md:flex md:flex-row md:justify-between md:ml-8 md:mr-8 lg:justify-center">
         <div className="flex gap-8 mb-10 md:order-last">
           <a href="">
             <img src={instagramIcon} alt="Instagram Icon" />
