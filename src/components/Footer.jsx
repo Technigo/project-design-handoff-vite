@@ -25,14 +25,14 @@ const FooterWrapper = styled.div`
     grid-template-areas:
       "logo logo logo logo lk lk lk lk adr adr adr adr"
       " . . . . . . . lg lg sl sl sl";
-    padding: 26px 16px;
+    padding: 26px 24px;
     row-gap: 16px;
     border-top: 1px solid var(--primary-blk);
   }
 
   @media all and (min-width: 1024px) {
     grid-template-areas: "logo logo lk lk lk adr adr adr lg lg sl sl";
-    padding: 32px 16px;
+    padding: 32px 124px;
   }
 `;
 

@@ -22,7 +22,7 @@ const FormSection = styled.section`
     "frm frm frm frm frm frm frm frm frm frm frm frm"
     " btn btn btn btn btn btn btn btn btn btn btn btn";
   row-gap: 20px;
-  padding: 20px 0;
+  padding: 20px 16px;
 
   @media all and (min-width: 744px) {
     grid-template-areas:
@@ -30,6 +30,11 @@ const FormSection = styled.section`
       "frm frm frm frm frm frm img img img img img img"
       "btn btn btn btn btn btn img img img img img img";
     row-gap: 17px;
+    padding: 20px 24px;
+  }
+
+  @media all and (min-width: 1024px) {
+    padding: 20px 124px;
   }
 `;
 
@@ -44,6 +49,7 @@ const FormImage = styled.img`
   @media all and (min-width: 744px) {
     padding-bottom: 0;
     height: auto;
+    align-self: center;
   }
 `;
 
@@ -55,8 +61,12 @@ const HeaderWrapper = styled.div`
 const StyledForm = styled.form`
   grid-area: frm;
   padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   @media all and (min-width: 744px) {
+    display: block;
     align-items: left;
   }
 `;
