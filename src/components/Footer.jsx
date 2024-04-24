@@ -1,28 +1,28 @@
-import iconGlobe from "/public/icon-globe.svg";
-import iconInstagram from "/public/icon-instagram.svg";
-import iconFacebook from "/public/icon-facebook.svg";
+import iconFacebook from "/icon-facebook.svg";
+import iconGlobe from "/icon-globe.svg";
+// import iconInstagram from "/icon-instagram.svg";
 
 export const Footer = () => {
   return (
     <>
-      <adress>
+      <div>
         <ul>
           <li>Mitt konto</li>
           <li>Kontakta kundservice</li>
           <li>Om Studio Mamma</li>
           <li>Bli medlem</li>
           <li>Cookies-inställningar</li>
-          <li>Allmäna villkör</li>
+          <li>Allmänna villkor</li>
         </ul>
-      </adress>
+      </div>
       <footer>
         <div>
-          <img src={iconGlobe} alt="icon globe" />
+          <img src={iconGlobe} alt="globe-icon" />
           <h2>Sweden</h2>
         </div>
         <div>
-          <img src={iconInstagram} alt="" />
-          <img src={iconFacebook} alt="" />
+          {/* <img src={iconInstagram} alt="instagram-icon" /> */}
+          <img src={iconFacebook} alt="facebook-icon" />
         </div>
       </footer>
     </>

@@ -8,11 +8,10 @@ export const App = () => {
   return (
     <div className="main-wrapper">
       <Header />
-      <Introduction />
+      {/* <Introduction />
       <Programs />
       <BecomeMember />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };
-

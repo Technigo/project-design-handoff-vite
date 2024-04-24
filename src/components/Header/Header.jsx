@@ -4,7 +4,7 @@ import { HeaderFooter } from "./HeaderFooter";
 
 export const Header = () => {
   return (
-    <header>
+    <header className="bg-peach">
       <Nav />
       <Hero />
       <HeaderFooter />
