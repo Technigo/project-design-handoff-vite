@@ -38,13 +38,14 @@ export const HeroCard = () => {
             alt={item.buttonText}
             style={{
               borderRadius: "12px",
-              width: "100%", 
-              height: "100%", 
+              width: "100%",
+              height: "100%",
               objectFit: "cover",
             }}
           />
-          <Buttons
-            buttonList={[item]} />
+          <div>
+            <Buttons buttonList={[item]} />
+          </div>
         </StyledImageContainer>
       ))}
     </StyledHeroCardContainer>

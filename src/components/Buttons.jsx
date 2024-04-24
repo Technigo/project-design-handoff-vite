@@ -3,7 +3,7 @@ import styled from "styled-components";
 // Styled button component
 const StyledButton = styled.button`
   position: absolute;
-  bottom: 34px; 
+  bottom: 40px; 
   left: 50%;
   transform: translateX(-50%);
   border-radius: 12px;
