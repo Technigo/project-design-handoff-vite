@@ -58,7 +58,7 @@ const StyledHero = styled.section`
   }
 
   .start-btn {
-    margin-top: 8rem;
+    margin-top: 15vw;
     margin-bottom: 1rem;
   }
 
@@ -75,12 +75,13 @@ const StyledHero = styled.section`
     margin-right: 7vw;
   }
 
-  .customer-comments li:not(:last-child) {
-    margin-right: 7vw;
+  #last-comment {
+    margin-right: 0;
   }
 
   li {
     list-style-type: none;
+    margin: 0 auto;
   }
 
   .comment-keyword {
@@ -125,7 +126,7 @@ export const Hero = () => {
           and the classes are so fun!”
           <span className="comment-break">- Ben</span>
         </li>
-        <li className="comment">
+        <li className="comment" id="last-comment">
           “Pilates is the only exercise that has worked for me,
           <span className="comment-keyword"> no more back pain</span>”
           <span className="comment-break">- Jesse</span>

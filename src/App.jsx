@@ -65,8 +65,10 @@ export const App = () => {
     <>
       <GlobalStyles />
       <main>
-        <NavBar />
-        <Hero />
+        <div className="lauch-page">
+          <NavBar />
+          <Hero />
+        </div>
         <OurClass />
         <Event />
         <Footer />
