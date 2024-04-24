@@ -1,43 +1,52 @@
+
 import styled from "styled-components";
 import buttonData from "./Buttons.json";
-import { HeroImages } from "./HeroImages";
-import { Buttons } from "./Buttons";
+import { Buttons } from "./Buttons"; 
 
 // Parent container with relative positioning
 const StyledHeroCardContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+`;
+
+// Container for image and button, with relative positioning
+const StyledImageContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding: 20px;
+  width: 357px; 
+  height: 376px; 
 `;
-
-// Button container with absolute positioning for flexible layout
-const StyledHeroButtonContainer = styled.div`
-  position: absolute;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: space-between;
-  z-index: 2;
-`;
-
 
 
 
 export const HeroCard = () => {
-  const topThreeButtons = buttonData.slice(1, 4);
+  const buttonsWithImages = buttonData.filter((item) => item.imageId);
 
   return (
     <StyledHeroCardContainer>
-      <HeroImages />
-      <StyledHeroButtonContainer>
-
-          <Buttons buttonList={topThreeButtons} />{" "}
-
-      </StyledHeroButtonContainer>
+      {buttonsWithImages.map((item, index) => (
+        <StyledImageContainer key={index}>
+          <img
+            src={item.imageId}
+            alt={item.buttonText}
+            style={{
+              borderRadius: "12px",
+              width: "100%", 
+              height: "100%", 
+              objectFit: "cover",
+            }}
+          />
+          <Buttons
+            buttonList={[item]} />
+        </StyledImageContainer>
+      ))}
     </StyledHeroCardContainer>
   );
 };
