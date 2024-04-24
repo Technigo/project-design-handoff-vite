@@ -3,11 +3,6 @@ export const BenefitsCard = ({ title, description, link, images, symbols }) => {
     <div>
       <picture>
         <source
-          media="(min-width: 1024px)"
-          srcSet={images.medium}
-          alt="Karate girl"
-        />
-        <source
           media="(min-width: 668px)"
           srcSet={images.medium}
           alt="Karate girl"
@@ -21,7 +16,18 @@ export const BenefitsCard = ({ title, description, link, images, symbols }) => {
       <h3>{title}</h3>
       <p>{description}</p>
       <a href="">{link}</a>
-      <img src={symbols.small} alt="Heart" />
+      <picture>
+        <source
+          media="(min-width: 668px)"
+          srcSet={symbols.medium}
+          alt="Heart"
+        />
+        <img
+          src={symbols.small}
+          alt="Heart"
+          className="object-fit max-h-56 w-12 md:w-20 lg:w-40 "
+        />
+      </picture>
     </div>
   );
 };
