@@ -29,9 +29,11 @@ export const Address = () => {
         />
         <div className="flex flex-col">
           <h2 className="text-lg">Postal address</h2>
-          <p>Streetname 10</p>
-          <p>1234 56 City</p>
-          <p>Country</p>
+          <div className="gap-[8px]">
+            <p>Streetname 10</p>
+            <p>1234 56 City</p>
+            <p>Country</p>
+          </div>
         </div>
       </div>
       <div className="flex gap-[25px]">
