@@ -9,14 +9,11 @@ export const StyledAboutBox = styled.div`
   align-items: center;
   gap: var(--gap-compact);
   padding-bottom: 80px;
-  margin-top: 35px;
+  margin-top: 25px;
 `;
 
 export const GlobalCarouselStyles = createGlobalStyle`
- .carousel .control-dots {
-  
-   
- }
+
  .carousel .control-dots {
   position: absolute;
   bottom: -12px;
@@ -58,11 +55,16 @@ export const GlassesIcon = styled(Glasses)`
   height: 20px;
 `;
 
+export const TitleBox = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+`;
+
 export const Slide = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: var(--gap-comfortable);
   gap: var(--gap-comfortable);
 `;
 

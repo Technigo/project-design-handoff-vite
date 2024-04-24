@@ -5,8 +5,8 @@ export const PromiseBox = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #ffcd64;
-  gap: var(--gap-comfortable);
-  padding: var(--gap-spacious) 0;
+  gap: var(--gap-spacious);
+  padding: var(--gap-extra) 0;
 `;
 
 export const PromiseTextBox = styled.div`

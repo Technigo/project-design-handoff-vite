@@ -105,6 +105,10 @@ export const StyledButton = styled.button`
   &:focus {
     border: 2px solid #1c2996;
   }
+
+  &.about-button:hover {
+    background-color: white;
+  }
 `;
 
 export const ButtonBox = styled.div`

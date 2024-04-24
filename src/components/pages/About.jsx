@@ -23,6 +23,7 @@ import {
   LotusIcon,
   StyledAboutBox,
   AboutTwoImage,
+  TitleBox,
 } from "../StyledAbout";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
@@ -56,7 +57,9 @@ export const About = () => {
   return (
     <Page>
       <Container>
-        <StyledH1 style={{ alignSelf: "center" }}>Here is the plan:</StyledH1>
+        <TitleBox>
+          <StyledH1 style={{ alignSelf: "center" }}>Here is the plan:</StyledH1>
+        </TitleBox>
         <Carousel Carousel showArrows={false} showStatus={false} showThumbs={false} infiniteLoop={false}>
           <StyledAboutBox>
             <Slide>
@@ -137,9 +140,8 @@ export const About = () => {
             $backgroundColor="#F9CDCC"
             $textColor="#1C2996"
             $border="2px solid #1c2996"
-            className="book"
+            className="book about-button"
             aria-label="sign up">
-            {" "}
             SIGN UP WITH YOUR FRIENDS
           </StyledButton>
         </ButtonBox>
