@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
       'rock-salt': ['"Rock Salt"', 'cursive'],
+      'roboto-mono': ['Roboto Mono', 'monospace'],
       },
     },
   },
