@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Page, StyledText, StyledH1, StyledButton, ButtonBox, Container } from "./StyledComponents";
-import { IconHeart, LogoContainer, IntroTextBox, IntroContentBox, StyledIntroImage } from "../StyledIntro";
+import { Page, StyledText, StyledH1, StyledButton, ButtonBox, Container, StyledImage } from "./StyledComponents";
+import { IconHeart, LogoContainer, IntroTextBox, IntroContentBox } from "../StyledIntro";
 import ImgIntro from "../../assets/intro-one.jpg";
 
 const Introduction = () => {
@@ -38,7 +38,7 @@ const Introduction = () => {
       <LogoContainer></LogoContainer>
       <Container>
         <IntroContentBox>
-          <StyledIntroImage src={ImgIntro} alt="Introduction Image" />
+          <StyledImage src={ImgIntro} alt="Introduction Image" />
 
           <IntroTextBox>
             {deviceType === "none" && (

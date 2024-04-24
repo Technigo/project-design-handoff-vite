@@ -1,5 +1,21 @@
 import styled, { css } from "styled-components";
 
+export const StyledImage = styled.img`
+  width: 100%;
+  aspect-ratio: 16 / 15;
+  object-fit: cover;
+  overflow: hidden;
+
+  @media (max-width: 349px) {
+    display: none;
+  }
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    width: 385px;
+    height: 471px;
+  }
+`;
+
 export const Page = styled.div`
   display: grid;
   background-color: #f6f6f6;
@@ -11,7 +27,7 @@ export const Container = styled.div`
   flex-direction: column;
 `;
 
-export const StyledText = styled.p`
+export const StyledText = styled.div`
   font-family: "Lato";
   font-weight: 400;
   font-size: 16px;
@@ -20,7 +36,7 @@ export const StyledText = styled.p`
   line-height: 25.6px;
 `;
 
-export const StyledH1 = styled.h1`
+export const StyledH1 = styled.div`
   font-family: Yeseva One;
   font-size: 24px;
   font-weight: 400;
@@ -42,7 +58,7 @@ export const StyledH2 = styled.h2`
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
-  color: #f65135;
+  color: #1c2996;
 
   @media (min-width: 350px) and (max-width: 650px) {
   }
@@ -58,8 +74,8 @@ export const StyledButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${(props) => props.backgroundColor || "#F65135"};
-  color: ${(props) => props.textColor || "white"};
+  background-color: ${(props) => props.$backgroundColor || "#F65135"};
+  color: ${(props) => props.$textColor || "white"};
   padding: var(--gap-default) var(--gap-comfortable);
   border: none;
   font-family: "Lato", sans-serif;
@@ -94,7 +110,7 @@ export const StyledButton = styled.button`
 export const ButtonBox = styled.div`
   display: flex;
   width: 100%;
-  padding: 0 var(--gap-compact) var(--gap-compact) var(--gap-compact);
+  padding: ${(props) => props.$padding || "0 var(--gap-compact) var(--gap-compact) var(--gap-compact)"};
 `;
 
 /* header mobile
