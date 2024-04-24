@@ -1,12 +1,12 @@
-import IgSmall from "../assets/socialSVG/ig-icon-s.svg";
-import IgMedium from "../assets/socialSVG/ig-icon-m.svg";
-import IgLarge from "../assets/socialSVG/ig-icon-l.svg";
-import FbSmall from "../assets/socialSVG/fb-icon-s.svg";
-import FbMedium from "../assets/socialSVG/fb-icon-m.svg";
-import FbLarge from "../assets/socialSVG/fb-icon-l.svg";
-import YtSmall from "../assets/socialSVG/yt-icon-s.svg";
-import YtMedium from "../assets/socialSVG/yt-icon-m.svg";
-import YtLarge from "../assets/socialSVG/yt-icon-l.svg";
+import IgSmall from "../../assets/socialSVG/ig-icon-s.svg";
+import IgMedium from "../../assets/socialSVG/ig-icon-m.svg";
+import IgLarge from "../../assets/socialSVG/ig-icon-l.svg";
+import FbSmall from "../../assets/socialSVG/fb-icon-s.svg";
+import FbMedium from "../../assets/socialSVG/fb-icon-m.svg";
+import FbLarge from "../../assets/socialSVG/fb-icon-l.svg";
+import YtSmall from "../../assets/socialSVG/yt-icon-s.svg";
+import YtMedium from "../../assets/socialSVG/yt-icon-m.svg";
+import YtLarge from "../../assets/socialSVG/yt-icon-l.svg";
 
 export const Social = () => {
   const socialIcons = [
@@ -21,7 +21,7 @@ export const Social = () => {
         <h2 className="hidden md:block md:text-right md:text-lg">
           Follow us !
         </h2>
-        <div className="mt-[8px] flex gap-1 md:justify-end">
+        <div className="mt-[8px] flex flex-wrap justify-end gap-1">
           {socialIcons.map((icon) => (
             <img
               key={icon.name}

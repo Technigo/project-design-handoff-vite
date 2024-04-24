@@ -1,9 +1,9 @@
-import AtIconSmall from "../assets/icons/at-icon-small.svg";
-import AtIconLarge from "../assets/icons/at-icon-large.svg";
-import LetterIconSmall from "../assets/icons/letter-icon-small.svg";
-import LetterIconLarge from "../assets/icons/letter-icon-large.svg";
-import PhoneIconSmall from "../assets/icons/phone-icon-small.svg";
-import PhoneIconLarge from "../assets/icons/phone-icon-large.svg";
+import AtIconSmall from "../../assets/icons/at-icon-small.svg";
+import AtIconLarge from "../../assets/icons/at-icon-large.svg";
+import LetterIconSmall from "../../assets/icons/letter-icon-small.svg";
+import LetterIconLarge from "../../assets/icons/letter-icon-large.svg";
+import PhoneIconSmall from "../../assets/icons/phone-icon-small.svg";
+import PhoneIconLarge from "../../assets/icons/phone-icon-large.svg";
 
 export const Address = () => {
   const atIconSource = {
@@ -27,9 +27,9 @@ export const Address = () => {
           alt="letter icon"
           srcSet={`${letterIconSource.small} 744w, ${letterIconSource.large} 1440w`}
         />
-        <div className=" inline-block">
+        <div className="flex flex-col">
           <h2 className="text-lg">Postal address</h2>
-          <p className="tracking-wide ">
+          <p className="text-base leading-tight tracking-wider">
             Streetname 10 <br />
             1234 56 City <br />
             Country
