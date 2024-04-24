@@ -1,0 +1,20 @@
+[
+  {
+    "buttonText":"Get Started"
+  },
+  {
+    "buttonText": "Personal Training",
+    "imageId": "/public/hero01.png"
+  },
+  {
+    "buttonText": "Our Space",
+    "imageId": "/public/hero02.png"
+  },
+  {
+    "buttonText": "Over 30 Classes",
+    "imageId": "/public/hero03.png"
+  },
+  {
+    "buttonText":"Book Now"
+  }
+]

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { HeroCard } from "./HeroCard";
 
 const StyledHero = styled.section`
   font-family: "AvenirMedium", sans-serif;
@@ -132,6 +133,7 @@ export const Hero = () => {
           <span className="comment-break">- Jesse</span>
         </li>
       </ul>
+      <HeroCard />
     </StyledHero>
   );
 };
