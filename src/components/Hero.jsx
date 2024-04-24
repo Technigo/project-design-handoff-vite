@@ -8,6 +8,11 @@ const StyledHero = styled.section`
   align-items: center;
   margin-top: 177px;
 
+  background-image: url("/heading.png");
+  background-size: cover;
+  background-position: center 90%;
+  background-repeat: no-repeat;
+
   .web-title {
     position: relative;
   }
@@ -38,8 +43,57 @@ const StyledHero = styled.section`
     line-height: normal;
   }
 
+  .title-extra-info {
+    margin-top: 160px;
+  }
+
+  .slogan-keyword {
+    margin-top: 10rem;
+    color: #000;
+    font-family: "AvenirBlack", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+
+  .start-btn {
+    margin-top: 8rem;
+    margin-bottom: 1rem;
+  }
+
+  .customer-comments {
+    width: 100%;
+    background-color: #e4dbd2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8rem;
+  }
+
+  .customer-comments li {
+    margin-right: 7vw;
+  }
+
+  .customer-comments li:not(:last-child) {
+    margin-right: 7vw;
+  }
+
   li {
     list-style-type: none;
+  }
+
+  .comment-keyword {
+    color: #000;
+    font-family: "AvenirBlack", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .comment-break {
+    display: block;
   }
 `;
 
@@ -55,9 +109,27 @@ export const Hero = () => {
         <h1>Curve Pilates</h1>
       </div>
       <h2>Wellness and Movement</h2>
-      <button>Get Started</button>
+      <h2 className="title-extra-info">
+        Helping <span className="slogan-keyword">everybody</span> to strengthen,
+        heal & recharge
+      </h2>
+      <button className="start-btn">Get Started</button>
       <ul className="customer-comments">
-        <li>lalala</li>
+        <li className="comment">
+          “I always feels <span className="comment-keyword">so good</span> after
+          a session, I saw improvements after a few weeks”
+          <span className="comment-break">- Charlotte</span>
+        </li>
+        <li className="comment">
+          “The teachers are <span className="comment-keyword">fantastic </span>
+          and the classes are so fun!”
+          <span className="comment-break">- Ben</span>
+        </li>
+        <li className="comment">
+          “Pilates is the only exercise that has worked for me,
+          <span className="comment-keyword"> no more back pain</span>”
+          <span className="comment-break">- Jesse</span>
+        </li>
       </ul>
     </StyledHero>
   );
