@@ -39,7 +39,7 @@ export const ValueProps = () => {
           </p>
           <Button
             className={
-              "px-10 py-7 h-8 mt-1 text-value-props-btn-mob text-white md:text-value-props-btn lg:text-value-props-btn bg-plum-light active:bg-royal-purple text-button"
+              "px-10 py-7 w-36 h-10 mt-1 text-value-props-btn-mob text-white md:text-value-props-btn lg:text-value-props-btn bg-plum-light hover:bg-royal-purple active:bg-deep-violet text-button"
             }
             label={"our philosophy"}
           />
@@ -64,7 +64,7 @@ export const ValueProps = () => {
           </p>
           <Button
             className={
-              "px-10 py-7 h-8 mt-1 text-value-props-btn-mob text-white md:text-value-props-btn lg:text-value-props-btn bg-plum-light active:bg-royal-purple text-button lg:mt-0"
+              "px-10 py-7 w-36 h-10 mt-1 text-value-props-btn-mob text-white md:text-value-props-btn lg:text-value-props-btn bg-plum-light hover:bg-royal-purple active:bg-deep-violet text-button lg:mt-0"
             }
             label={"meet your coaches"}
           />
@@ -90,7 +90,7 @@ export const ValueProps = () => {
           </p>
           <Button
             className={
-              "px-10 py-7 h-8 mt-1 mb-12 text-value-props-btn-mob text-white md:text-value-props-btn lg:text-value-props-btn bg-plum-light active:bg-royal-purple text-button"
+              "px-10 py-7 w-36 h-10 mt-1 mb-12 text-value-props-btn-mob text-white md:text-value-props-btn lg:text-value-props-btn bg-plum-light hover:bg-royal-purple active:bg-deep-violet text-button"
             }
             label={"learn more"}
           />

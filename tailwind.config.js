@@ -19,6 +19,7 @@ export default {
       20: "20px",
       40: "40px",
       66: "66px",
+      80: "80px",
     },
     screens: {
       sm: "430px",
@@ -42,23 +43,15 @@ export default {
       "value-props-btn-mob": "14px",
       "value-props-btn": "18px",
     },
+    fontFamily: {
+      sans: ["Roboto", "sans-serif"],
+      bebas: ["Bebas Neue", "sans-serif"],
+    },
     extend: {
       maxWidth: {
         1440: "1440px",
       },
     },
-    // extend: {
-    //   button: {
-    //     base: {
-    //       fontFamily: ["Bebas Neue", "Roboto"],
-    //       fontSize: "14px",
-    //       cursor: "pointer",
-    //       textTransform: "uppercase",
-    //       borderRadius: "50px",
-    //       fontWeight: "700",
-    //     },
-    //   },
-    // },
   },
   plugins: [],
 };
