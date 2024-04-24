@@ -1,14 +1,7 @@
 import { useState, useEffect } from "react";
-import { Page, StyledText, StyledH1, StyledButton, ButtonBox } from "./StyledComponents";
-import {
-  IconHeart,
-  LogoContainer,
-  IntroContainer,
-  IntroTextBox,
-  IntroContentBox,
-  StyledIntroImage,
-} from "../StyledIntro";
-import ImgIntro from "../../assets/jaspinder-singh-dtm8XNpMqGs-unsplash.jpg";
+import { Page, StyledText, StyledH1, StyledButton, ButtonBox, Container } from "./StyledComponents";
+import { IconHeart, LogoContainer, IntroTextBox, IntroContentBox, StyledIntroImage } from "../StyledIntro";
+import ImgIntro from "../../assets/intro-one.jpg";
 
 const Introduction = () => {
   const [isClicked, setIsClicked] = useState(false);
@@ -43,7 +36,7 @@ const Introduction = () => {
   return (
     <Page>
       <LogoContainer></LogoContainer>
-      <IntroContainer>
+      <Container>
         <IntroContentBox>
           <StyledIntroImage src={ImgIntro} alt="Introduction Image" />
 
@@ -87,7 +80,7 @@ const Introduction = () => {
             </ButtonBox>
           )}
         </IntroContentBox>
-      </IntroContainer>
+      </Container>
     </Page>
   );
 };

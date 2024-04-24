@@ -1,18 +1,15 @@
 import styled, { css } from "styled-components";
-/*import LogoMobile from "../assets/LogoMobile.svg";*/
-/*import LogoTablet from "../assets/LogoTablet.svg";*/
 
 export const Page = styled.div`
   display: grid;
   background-color: #f6f6f6;
+  padding: 0 var(--gap-compact);
 `;
-// export const MobileLogo = styled(LogoMobile)`
-//   display: flex;
-// `;
 
-// export const TabletLogo = styled(LogoTablet)`
-//   display: none;
-// `;
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
 
 export const StyledText = styled.p`
   font-family: "Lato";
@@ -20,6 +17,7 @@ export const StyledText = styled.p`
   font-size: 16px;
   line-height: 25.6px;
   color: #1c2996;
+  line-height: 25.6px;
 `;
 
 export const StyledH1 = styled.h1`

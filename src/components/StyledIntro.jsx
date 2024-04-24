@@ -6,7 +6,6 @@ import desktopLogo from "../assets/LogoDesktop.svg";
 
 import "../index.css";
 
-// Styled components for each logo
 const MobileLogo = styled(mobileLogo)`
   display: none;
   @media (min-width: 350px) and (max-width: 650px) {
@@ -64,19 +63,11 @@ export const IconHeart = styled(HeartIcon)`
   margin-left: 13px;
 `;
 
-export const IntroContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-`;
-// export const ImageBox = styled.div`
-//   display: flex;
-// `;
-
 export const IntroContentBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: var(--gap-default) var(--gap-compact);
+
   padding-bottom: var(--gap-default);
   background-color: #f9cdcc;
   gap: var(--gap-compact);
