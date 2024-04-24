@@ -10,7 +10,7 @@ const StyledHero = styled.section`
 
   background-image: url("/heading.png");
   background-size: cover;
-  background-position: center 90%;
+  background-position: center 50%;
   background-repeat: no-repeat;
 
   .web-title {
