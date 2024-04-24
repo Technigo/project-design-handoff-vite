@@ -1,23 +1,25 @@
 import data from "../json/links.json";
-import { FooterCard } from "./FooterCard";
 
 export const Footer = () => {
-  const getLinks = () => {
-    return data.links.map((linkList, index) => (
-      <FooterCard items={linkList.items} key={index} />
-    ));
+  const getLinks = (startIndex, endIndex) => {
+    return data.links
+      .slice(startIndex, endIndex)
+      .map((link, index) => <li key={index}>{link}</li>);
   };
   return (
     <>
-      <img src="./Facelogo-mobile.png" />
-      <img src="./Instalogo-mobile.png" />
-      <img src="./Spotlogo-mobile.png" />
-      <div>{getLinks()}</div>
-      <select>
+      <div className="flex justify-center mt-20 mb-10">
+        <img alt="Facebook" src="./Facelogo-mobile.png" />
+        <img alt="Instagram" className="mx-10" src="./Instalogo-mobile.png" />
+        <img alt="Spotify" src="./Spotlogo-mobile.png" />
+      </div>
+      <ul>{getLinks(0, 4)}</ul>
+      <ul>{getLinks(4, 9)}</ul>
+      <select className="mt-10 flex items-end">
         <option>ENG</option>
         <option>SWE</option>
       </select>
-      <p>
+      <p className="flex justify-center mt-20 mb-10 text-xs">
         © 2024 Urban Spin. All rights reserved.
         <a>Privacy Policy</a>
         <a>Terms of Service</a>

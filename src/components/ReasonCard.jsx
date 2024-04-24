@@ -1,17 +1,17 @@
-import reasons from "../json/why.json"
+import PropTypes from "prop-types";
 
-export const ReasonCard = () => {
+export const ReasonCard = ({icon, title, description}) => {
   return (
-    <div>
-      {reasons.reasons.map(({ id, icon, title, description }) => {
-        return (
-          <div key={id}>
-            <img src={icon} alt="icon"></img>
-            <h3>{title}</h3>
-            <p>{description}</p>
-          </div>
-        )
-      })}
+    <div className="flex flex-col w-60 mx-auto">
+        <img className="self-center mb-6" src={icon} alt="icon"></img>
+        <h3 className="text-xl font-medium self-start mb-4">{title}</h3>
+        <p className="self-start">{description}</p>
     </div>
-  )
-}
+  );
+};
+
+ReasonCard.propTypes = {
+  icon: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};

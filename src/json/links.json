@@ -1,27 +1,14 @@
 {
-"links": [
-    {
-        "items": [
-            "About Urban Spin",
-            "Contact Us",
-            "Find Us",
-            "Carrers"
-        ]
-    },
-    {
-        "items": [
-            "Schedule",
-            "FAQs",
-            "Customer Service"
-        ]
-    },
-    {
-        "items": [
-            "Prices",
-            "Health Benefit",
-            "Gift Cards"
-        ]
-    }
-]
-
+  "links": [
+    "About Urban Spin",
+    "Contact Us",
+    "Find Us",
+    "Carrers",
+    "Schedule",
+    "FAQs",
+    "Customer Service",
+    "Prices",
+    "Health Benefit",
+    "Gift Cards"
+  ]
 }

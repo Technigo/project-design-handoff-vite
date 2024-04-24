@@ -3,7 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     colors: {
-      black: "#0F0F0F",
+      "off-black": "#0F0F0F",
       white: "#FDFDFD",
       lightgrey: "#F7F7F7",
       green: "#BAFB9A",
@@ -20,6 +20,9 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
       },
+      height: {
+        136: "34rem", // Hero image height
+      }
     },
   },
   plugins: [],

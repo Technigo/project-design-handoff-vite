@@ -2,8 +2,10 @@ import PropTypes from "prop-types";
 
 export const Button = ({ buttonText }) => {
   return (
-    <div>
-      <button className="font-montserrat bg-purple rounded-full w-28 h-10">{buttonText}</button>
+    <div className="flex justify-center">
+      <button className="font-montserrat bg-purple hover:bg-purple-hover active:bg-purple-click rounded-full w-28 h-10">
+        {buttonText}
+      </button>
     </div>
   );
 };
