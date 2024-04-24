@@ -9,7 +9,6 @@ export const App = () => {
     <>
       <Fonts />
       <Hero />
-      <Buttons />
       <OurOfferings />
     </>
   );

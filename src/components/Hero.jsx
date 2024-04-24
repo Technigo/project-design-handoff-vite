@@ -11,7 +11,7 @@ export const Hero = () => {
         </p>
       </HeroContent>
       <div>
-        <CtaButton>Special CTA Button</CtaButton>
+        <CtaButton>Explore our camps</CtaButton>
       </div>
     </HeroSection>
   );
@@ -28,6 +28,8 @@ const HeroSection = styled.div`
 `;
 
 const HeroContent = styled.div`
+  display: flex;
+  flex-direction: column;
   h1 {
     color: var(--Powder-Black, #0b1623);
     font-family: Philosopher;
@@ -48,30 +50,28 @@ const HeroContent = styled.div`
     line-height: 130%;
     width: 220px;
     padding-left: 24px;
+    margin-bottom: 180px;
   }
 `;
 
 const CtaButton = styled.button`
-display: inline-flex;
-padding: 16px 32px;
-margin-left: 
-justify-content: center;
-align-items: center;
-gap: 10px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 342px;
+  height: 48px;
 
-width: 342px;
-height: 48px;
+  border-radius: 32px;
+  border: 1px solid var(--Powder-Black, #0b1623);
+  background: var(--Powder-Accent-2, #f2ff49);
+  box-shadow: 2px 3px 0px 0px #0b1623;
+  display: ;
 
-border-radius: 32px;
-border: 1px solid var(--Powder-Black, #0b1623);
-background: var(--Powder-Accent-2, #f2ff49);
-box-shadow: 2px 3px 0px 0px #0b1623;
-display: ;
-
-color: var(--Powder-Black, #0B1623);
-font-family: Mulish;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 100%; /* 16px */
+  color: var(--Powder-Black, #0b1623);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 16px */
 `;
