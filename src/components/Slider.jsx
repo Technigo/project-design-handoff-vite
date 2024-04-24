@@ -50,7 +50,7 @@ export const StyledSlider = styled.section`
   display: flex;
   gap: 16px;
   margin: 0 24px;
-  //Why is the margin on the right not working???
+  //Why is the margin on the right not showing???
 `;
 
 const StyledSliderButtonBox = styled.div`
