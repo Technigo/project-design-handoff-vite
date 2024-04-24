@@ -1,6 +1,15 @@
-const tailwindConfig = {
-  content: ["./src/**/*.jsx"],
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/components/**/*.{html,jsx}',
+    '.index.html',
+  ],
   theme: {
+    screens: {
+      'mobile': '320px',
+      'tablet': '680px',
+      'desktop': '1280px',
+    },
     extend: {
       backgroundImage: {
         'left-center': 'left center',
@@ -42,4 +51,4 @@ const tailwindConfig = {
   plugins: [],
 };
 
-export default tailwindConfig;
+
