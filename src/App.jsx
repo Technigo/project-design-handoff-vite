@@ -1,3 +1,11 @@
+import { HeroSection } from "./components/HeroSection";
+import { NavigationBar } from "./components/NavigationBar";
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <>
+      <NavigationBar />
+      <HeroSection />
+    </>
+  );
 };
