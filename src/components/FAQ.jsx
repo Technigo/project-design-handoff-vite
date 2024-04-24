@@ -1,9 +1,9 @@
-import { HeadingTwo } from "../reusables/HeadingTwo";
+import { HeadingTwoVar } from "../reusables/HeadingTwoVar";
 
 export const FAQ = () => {
   return (
     <div>
-      <HeadingTwo>FAQ</HeadingTwo>
+      <HeadingTwoVar>FAQ</HeadingTwoVar>
     </div>
   );
 };
