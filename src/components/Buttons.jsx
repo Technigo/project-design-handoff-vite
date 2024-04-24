@@ -4,7 +4,6 @@ export const Buttons = () => {
   return (
     <div>
       <Button>Primary button</Button>
-      <CtaButton>Special CTA button</CtaButton>
     </div>
   );
 };
@@ -15,6 +14,7 @@ const Button = styled.button`
   justify-content: center;
   align-items: center;
   gap: 10px;
+
   border-radius: 32px;
   border: 1px solid var(--Powder-Black, #0b1623);
   background: var(--Powder-Accent-1-Regular, #ffa3c4);
@@ -33,13 +33,10 @@ const Button = styled.button`
       rgba(0, 0, 0, 0.22),
       rgba(255, 255, 255, 0.25)
     );
+    border-radius: 32px;
+    border: 1px solid var(--Powder-Black, #0b1623);
+    background: var(--Powder-Accent-1-Dark, #f87ba8);
+    box-shadow: 2px 3px 0px 0px #0b1623;
   }
 `;
 
-const CtaButton = styled(Button)`
-  border-radius: 32px;
-  border: 1px solid var(--Powder-Black, #0b1623);
-  background: var(--Powder-Accent-2, #f2ff49);
-  box-shadow: 2px 3px 0px 0px #0b1623;
-  display: ;
-`;

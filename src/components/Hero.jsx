@@ -10,6 +10,9 @@ export const Hero = () => {
           Join us at our Snowboard Camps and unleash your inner Powder Betty!
         </p>
       </HeroContent>
+      <div>
+        <CtaButton>Special CTA Button</CtaButton>
+      </div>
     </HeroSection>
   );
 };
@@ -22,7 +25,6 @@ const HeroSection = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 600px;
-  // clip-path: inset(30px 30px 50px 100px);
 `;
 
 const HeroContent = styled.div`
@@ -47,4 +49,29 @@ const HeroContent = styled.div`
     width: 220px;
     padding-left: 24px;
   }
+`;
+
+const CtaButton = styled.button`
+display: inline-flex;
+padding: 16px 32px;
+margin-left: 
+justify-content: center;
+align-items: center;
+gap: 10px;
+
+width: 342px;
+height: 48px;
+
+border-radius: 32px;
+border: 1px solid var(--Powder-Black, #0b1623);
+background: var(--Powder-Accent-2, #f2ff49);
+box-shadow: 2px 3px 0px 0px #0b1623;
+display: ;
+
+color: var(--Powder-Black, #0B1623);
+font-family: Mulish;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; /* 16px */
 `;

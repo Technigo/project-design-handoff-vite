@@ -2,6 +2,7 @@ import { Hero } from "./components/Hero";
 import { Buttons } from "./components/Buttons";
 
 import { createGlobalStyle } from "styled-components";
+import { OurOfferings } from "./components/OurOfferings";
 
 export const App = () => {
   return (
@@ -9,6 +10,7 @@ export const App = () => {
       <Fonts />
       <Hero />
       <Buttons />
+      <OurOfferings />
     </>
   );
 };
