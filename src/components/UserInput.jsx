@@ -1,7 +1,7 @@
 export const UserInput = () => {
   return (
     <>
-      <section className="gap[43px] grid h-[474px] w-full bg-[#F8F7F3] px-[38px] py-[48px]">
+      <section className="place-content-center gap[43px] grid h-[474px] w-full bg-[#F8F7F3] px-[38px] py-[48px]">
         <div className="h-auto w-[284px] px-[11px] pb-[24px] pt-[64px] text-center font-futura text-xl font-bold">
           <h2 className="h-[29px] w-[284px]">JOIN OUR COMMUNITY</h2>
           <p className="h-[66px] w-[211px] gap-[8px] text-center font-avenir text-base font-medium text-black">
