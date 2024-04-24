@@ -1,33 +1,12 @@
-import snowboarderMobile from "../assets/mobileIcons/snowboarder-mobile.png";
-import houseMobile from "../assets/mobileIcons/house-mobile.png";
-import exploreMobile from "../assets/mobileIcons/explore-mobile.png";
-import funMobile from "../assets/mobileIcons/fun-mobile.png";
-import styled from "styled-components";
+import React from 'react'
 
-export const OurOfferings = () => {
+export const OurofferingsCards = () => {
   return (
-    <OurOfferingsSection>
-      <h1>Our Offerings</h1>
-      <p>
-        Embark on your snowboarding adventure! Dive into unforgettable
-        experiences surrounded by stunning nature, friendly faces, and epic
-        vibes.
-      </p>
-      <OurOfferingsCards>
-        <OurOfferingsImage></OurOfferingsImage>
-        <OurOfferingsText>
-          <h2>Learn</h2>
-          <p>
-            Beginners and advanced lessons in small groups and wonderful
-            coaches.
-          </p>
-          
-        </OurOfferingsText>
-        <OurOfferingsSnowboard></OurOfferingsSnowboard>
-      </OurOfferingsCards>
-    </OurOfferingsSection>
-  );
-};
+    <div>OurofferingsCards</div>
+  )
+}
+
+
 const OurOfferingsSection = styled.section`
   display: flex;
   flex-direction: column;
@@ -54,7 +33,7 @@ const OurOfferingsSection = styled.section`
 `;
 
 const OurOfferingsImage = styled.div`
-  background-image: url(${snowboarderMobile});
+  background-image: url(${});
   background-repeat: no-repeat;
   background-position: left;
   display: flex;
@@ -102,12 +81,7 @@ const OurOfferingsSnowboard = styled.div`
 `;
 
 
-// const OurOfferingsCardsStyled = styled(OurOfferingsCards)`
-// background-image: url(${houseMobile})
-// height: 600px;
 
-//
 
-// image: url(${houseMobile});
-// image: url(${exploreMobile});
-// image: url(${funMobile});
+
+
