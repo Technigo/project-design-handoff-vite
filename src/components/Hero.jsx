@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import buttonData from "./Buttons.json";
+import { Buttons } from "./Buttons";
 import { HeroCard } from "./HeroCard";
 
 const StyledHero = styled.section`
@@ -48,7 +50,7 @@ const StyledHero = styled.section`
   }
 
   .title-extra-info {
-    margin-top: 160px;
+    margin: 160px 0 8rem;
   }
 
   .slogan-keyword {
@@ -102,6 +104,8 @@ const StyledHero = styled.section`
   }
 `;
 
+const heroStart = buttonData[0];
+
 export const Hero = () => {
   return (
     <StyledHero className="hero-section">
@@ -119,7 +123,7 @@ export const Hero = () => {
           Helping <span className="slogan-keyword">everybody</span> to
           strengthen, heal & recharge
         </h2>
-        <button className="start-btn">Get Started</button>
+        <Buttons buttonText={heroStart.buttonText} fontSize={24} />
       </div>
       <ul className="customer-comments">
         <li className="comment">
