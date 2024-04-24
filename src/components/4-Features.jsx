@@ -3,15 +3,17 @@ import CycleIcon from "../assets/icons/trustindicators/Icon1-default.png"
 import FireIcon from "../assets/icons/trustindicators/Icon2-default.png"
 import BuildingIcon from "../assets/icons/trustindicators/Icon3-default.png"
 import PeopleIcon from "../assets/icons/trustindicators/Icon4-default.png"
+import FeatureImagePhoneTablet from "../assets/images/Spinning_landscape.png"
+import FeatureImageDesktop from "../assets/images/Spinning_portrait.png"
 
 export const Features = () => {
   return (
     <StyledFeatures>
       <h2>Why Urban Spin</h2>
       <FeatureInfo>
-        <InfoSection>
-          <FeatureBox>
-            <FeatureIcon src={CycleIcon} alt="Icon with bicycle" />
+        <FeatureBoxLeft>
+          <FeatureIcon src={CycleIcon} alt="Icon with bicycle" />
+          <FeatureText>
             <h3>State-Of-The-Art Equipment</h3>
             <p>
               We are providing the most innovative spinning bikes on the market,
@@ -19,20 +21,22 @@ export const Features = () => {
               connect your smart watch or phone and track the session. Beat your
               own record!
             </p>
-          </FeatureBox>
-          <FeatureBox>
-            <FeatureIcon src={FireIcon} alt="Icon with flame" />
+          </FeatureText>
+        </FeatureBoxLeft>
+        <FeatureBoxRight>
+          <FeatureIcon src={FireIcon} alt="Icon with flame" />
+          <FeatureText>
             <h3>High-Intensity Classes</h3>
             <p>
               Be ready to burn a lot of calories & get sweaty. Our instructors
               are all and will push you motivate you through the session. If
               that’s not enough, high-beat electronic music does the extra!
             </p>
-          </FeatureBox>
-        </InfoSection>
-        <InfoSection>
-          <FeatureBox>
-            <FeatureIcon src={BuildingIcon} alt="Icon with building" />
+          </FeatureText>
+        </FeatureBoxRight>
+        <FeatureBoxLeft>
+          <FeatureIcon src={BuildingIcon} alt="Icon with building" />
+          <FeatureText>
             <h3>Exclusive Clubs</h3>
             <p>
               All our clubs are equipped with towels, high-quality shower
@@ -40,17 +44,20 @@ export const Features = () => {
               more. And the fuel stations are selling fresh protein shakes,
               salads and delicious bowls.
             </p>
-          </FeatureBox>
-          <FeatureBox>
-            <FeatureIcon src={PeopleIcon} alt="Icon with people" />
+          </FeatureText>
+        </FeatureBoxLeft>
+        <FeatureBoxRight>
+          <FeatureIcon src={PeopleIcon} alt="Icon with people" />
+          <FeatureText>
             <h3>Not just a Gym</h3>
             <p>
               We are proud to call us a club, and with that comes our lovely
               community. Training is our focus but we also love our special club
               events. Stay tuned!
             </p>
-          </FeatureBox>
-        </InfoSection>
+          </FeatureText>
+        </FeatureBoxRight>
+        <FeatureImage />
       </FeatureInfo>
     </StyledFeatures>
   )
@@ -82,40 +89,64 @@ const FeatureInfo = styled.div`
   flex-direction: column;
   gap: 40px;
 
-  @media (min-width: 1494px) {
-    gap: 80px;
-  }
-`
-const InfoSection = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-
   @media (min-width: 744px) and (max-width: 1493px) {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0;
+    grid-row-gap: 40px;
   }
 
   @media (min-width: 1494px) {
-    gap: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat (4, 1fr);
+    grid-column-gap: 132px;
+    grid-row-gap: 80px;
+    grid-auto-flow: column;
   }
 `
 
-const FeatureBox = styled.div`
+const FeatureBoxLeft = styled.div`
+  margin: 0 79px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
 
   @media (min-width: 744px) and (max-width: 1493px) {
-    width: 320px;
+    margin: 0 16px 0 32px;
     align-items: flex-start;
     gap: 32px;
   }
 
   @media (min-width: 1494px) {
+    margin: 0;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+  }
+`
+
+const FeatureBoxRight = styled.div`
+  margin: 0 79px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  @media (min-width: 744px) and (max-width: 1493px) {
+    margin: 0 32px 0 16px;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  @media (min-width: 1494px) {
+    margin: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 40px;
   }
 `
@@ -127,5 +158,35 @@ const FeatureIcon = styled.img`
   @media (min-width: 1494px) {
     height: 64px;
     width: 64px;
+  }
+`
+
+const FeatureText = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`
+
+const FeatureImage = styled.div`
+  height: 256px;
+  width: 100vw;
+  margin-top: 40px;
+  background-image: url(${FeatureImagePhoneTablet});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 744px) and (max-width: 1493px) {
+    margin-top: 94px;
+    height: 472px;
+    grid-column: span 2;
+  }
+
+  @media (min-width: 1494px) {
+    background-image: url(${FeatureImageDesktop});
+    margin-top: 0;
+    height: 100%;
+    width: 90%;
+    grid-row: span 4;
   }
 `

@@ -10,7 +10,7 @@ export const TrustIndicators = () => {
         </TrustText>
       </TrustNumber>
       <TrustNumber>
-        <TrustHeading>+3.500</TrustHeading>
+        <TrustHeading>+35.000</TrustHeading>
         <TrustText>
           motivated <br /> members
         </TrustText>
