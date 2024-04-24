@@ -14,6 +14,8 @@ export const Intro = () => {
   );
 };
 
+//Styled Components
+
 const StyledIntro = styled.section`
   margin: 0 24px;
 

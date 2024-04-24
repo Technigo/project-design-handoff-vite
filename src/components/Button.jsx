@@ -24,7 +24,7 @@ const StyledButton = styled.button`
   //We will have to fix the width somehow because percentage doesn't work. I was just trying to come close but I don't know how to tell the button to fill the whole width except the margin...
   border-radius: ${({ $sticky }) => ($sticky ? "100px" : "10px")};
   color: ${({ $orange }) => ($orange ? "#FFFFFF" : "#000000")};
-  box-shadow: 5px 4px 4px #0000008f;
+  box-shadow: ${({ $orange }) => ($orange ? "5px 4px 4px #0000008f" : "none")};
   margin: 0 24px;
   height: 61px;
   border: 0;

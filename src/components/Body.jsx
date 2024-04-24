@@ -20,6 +20,8 @@ export const Body = () => {
   );
 };
 
+//Styled Components
+
 const StyledBody = styled.main`
   display: flex;
   flex-direction: column;

@@ -29,6 +29,7 @@ export const Download = () => {
   );
 };
 
+//Styled Components
 const StyledDownload = styled.section`
   h2 {
     font-weight: bold;

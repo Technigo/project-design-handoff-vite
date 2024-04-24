@@ -25,6 +25,8 @@ export const Instructors = () => {
   );
 };
 
+//Styled Components
+
 const StyledInstructors = styled.section`
   .instructors {
     margin: 0 24px;
