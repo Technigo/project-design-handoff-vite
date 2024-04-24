@@ -1,6 +1,7 @@
 {
     "footer": {
         "join": "Join our newsletter",
+        "placeholder": "email address",
         "sign": "Sign up",
         "about": "About",
         "contact": "Contact",

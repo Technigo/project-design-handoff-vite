@@ -1,11 +1,12 @@
 {
     "footer": {
         "join": "Anmäl dig till vårt nyhetsbrev",
+        "placeholder": "epostadress",
         "sign": "Registrera",
         "about": "Om oss",
         "contact": "Kontakt",
-        "shop": "Shop",
-        "privacy": "Privacy",
+        "shop": "Webbshop",
+        "privacy": "Integritetspolicy",
         "select": "Välj språk",
         "en": "Engelska",
         "sw": "Svenska"
