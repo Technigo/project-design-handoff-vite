@@ -3,7 +3,7 @@ import { Image } from "../component/Image";
 
 export const Testimonial = ({ className }) => {
   return (
-    <div className="flex flex-col items-center mx-9">
+    <div className="flex flex-col items-center px-9 bg-sky-900">
       <Image
         className={"self-center"}
         link={"/Images/star.svg"}
