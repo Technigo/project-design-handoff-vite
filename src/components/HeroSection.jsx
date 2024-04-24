@@ -8,7 +8,7 @@ export const HeroSection = () => {
       style={{ backgroundImage: "url('/hero-phone.png')" }}
     >
       <Navbar />
-      <div className="flex flex-col">
+      <div className="flex flex-col justify-center mt-24">
         <h1 className="font-bebas text-green text-6xl">READY TO SWEAT?</h1>
         <h2 className="font-montserrat text-base text-white">
           The world-famous spinning club is now ready for you in Gothenburg!
