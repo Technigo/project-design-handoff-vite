@@ -5,3 +5,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Avengeance";
+    src: url("./assets/fonts/avengeance-mightiest-avenger.ttf");
+  }
+  @font-face {
+    font-family: "Urbanist-Italic";
+    src: url("./assets/fonts/Urbanist-Italic-VariableFont_wght.ttf");
+  }
+  @font-face {
+    font-family: "Urbanist";
+    src: url("./assets/fonts/Urbanist-VariableFont_wght.ttf");
+  }
+}
