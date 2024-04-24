@@ -34,23 +34,15 @@ export default {
       "join-btn-tablet": "16px",
       "learn-btn-desktop": "18px",
     },
+    fontFamily: {
+      sans: ["Roboto", "sans-serif"],
+      bebas: ["Bebas Neue", "sans-serif"],
+    },
     extend: {
       maxWidth: {
         1440: "1440px",
       },
     },
-    // extend: {
-    //   button: {
-    //     base: {
-    //       fontFamily: ["Bebas Neue", "Roboto"],
-    //       fontSize: "14px",
-    //       cursor: "pointer",
-    //       textTransform: "uppercase",
-    //       borderRadius: "50px",
-    //       fontWeight: "700",
-    //     },
-    //   },
-    // },
   },
   plugins: [],
 };
