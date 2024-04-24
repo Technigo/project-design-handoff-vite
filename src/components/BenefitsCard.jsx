@@ -1,6 +1,6 @@
 export const BenefitsCard = ({ title, description, link, images, symbols }) => {
   return (
-    <div>
+    <div className="flex flex-row">
       <picture>
         <source
           media="(min-width: 668px)"
@@ -25,7 +25,7 @@ export const BenefitsCard = ({ title, description, link, images, symbols }) => {
         <img
           src={symbols.small}
           alt="Heart"
-          className="object-fit max-h-56 w-12 md:w-20 lg:w-40 "
+          className="object-cover max-h-56 w-12 md:w-20 lg:w-40 "
         />
       </picture>
     </div>
