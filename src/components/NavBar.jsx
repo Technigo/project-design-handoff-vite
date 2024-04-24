@@ -22,14 +22,13 @@ const StyledNavBar = styled.header`
     color: #404040;
     font-weight: bold;
     font-size: 30px;
-    letter-spacing: 11px;
   }
 `;
 
 const MobileNav = styled.img`
   width: 83px;
   height: 83px;
-  
+
   @media screen and (min-width: 768px) {
     display: none;
   }

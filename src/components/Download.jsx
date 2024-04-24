@@ -1,7 +1,7 @@
-import styled from 'styled-components'
-import image from '/weightLifting.svg'
-import AppStore from '/AppStore.svg'
-import GooglePlay from '/GooglePlay.svg'
+import AppStore from "/AppStore.svg";
+import GooglePlay from "/GooglePlay.svg";
+import image from "/weightLifting.svg";
+import styled from "styled-components";
 
 export const Download = () => {
   return (
@@ -13,12 +13,21 @@ export const Download = () => {
           Take your favorite classes at home, while traveling or outdoors.
           Download classes on the app for a practice that moves with you
         </p>
-        <img className="download-link" src={AppStore} alt="app store download link" />
-        <img className="download-link" src={GooglePlay} alt="Google play download link" />
+        <div>
+          <StyledDownloadIcon
+            $margin
+            src={AppStore}
+            alt="app store download link"
+          />
+          <StyledDownloadIcon
+            src={GooglePlay}
+            alt="Google play download link"
+          />
+        </div>
       </div>
     </StyledDownload>
-  )
-}
+  );
+};
 
 const StyledDownload = styled.section`
   h2 {
@@ -33,16 +42,22 @@ const StyledDownload = styled.section`
   }
 
   img {
-    width: 100%;
+    /* width: 100%; */
+    //Check in the end if we need this for other viewports. If yes we need to give a classname otherwise it overwrites the Icon Download...
   }
+
   .download-classes {
     display: flex;
     flex-direction: column;
-    margin: 20px 24px 0 24px;
+    margin: 20px 56px 0 24px;
+    //Changed the right boarder according to the design
     gap: 20px;
   }
-  
-  .download-link{
-    width: 180px;
-  }
-`
+`;
+
+const StyledDownloadIcon = styled.img`
+  width: 180px;
+  margin-bottom: ${({ $margin }) => ($margin ? "18px" : "0")};
+`;
+
+//I had to do this all complicated because the margin ist not the same!

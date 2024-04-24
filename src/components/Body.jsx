@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { CTA } from "./CTA";
 import { Description } from "./Description";
 import { Download } from "./Download";
@@ -25,16 +26,11 @@ const StyledBody = styled.main`
   gap: 80px;
   margin: 80px 0;
 
-  h1, h2, h3, h4, p {
-    letter-spacing: 0.11em;
-  }
-
-  h3{
+  h3 {
     font-size: 20px;
   }
 
   ::-webkit-scrollbar {
     display: none;
   }
-
 `;

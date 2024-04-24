@@ -29,7 +29,6 @@ const StyledButton = styled.button`
   border: 0;
   font-size: 21px;
   font-weight: bold;
-  letter-spacing: 11px;
 
   &:hover {
     background-color: ${({ $orange }) => ($orange ? "#FFFFFF80" : "#827F7FB3")};

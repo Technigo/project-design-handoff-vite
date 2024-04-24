@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+
 /* import styled from "styled-components"; */
 import { Body } from "./components/Body";
 import { Footer } from "./components/Footer";
@@ -26,4 +27,8 @@ const GlobalStyle = createGlobalStyle`
 body {
   font-family: Arial, Helvetica, sans-serif;
   }
+
+h1, h2, h3, h4, p, button {
+  letter-spacing: 0.11em;
+}
 `;

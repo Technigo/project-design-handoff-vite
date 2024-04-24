@@ -1,6 +1,7 @@
+import styled from "styled-components";
+
 import { NormalButton } from "./Button";
 import { NavBar } from "./NavBar";
-import styled from "styled-components";
 
 export const Hero = () => {
   return (
@@ -19,7 +20,7 @@ export const Hero = () => {
 const StyledHero = styled.div`
   height: 558px;
   background-image: url(HeroPicture.svg);
-  //Hej, Izabal could you check how the picture is looking for you? I downloaded the big one but only see mobile size. Weird...
+  //Hej, Izabel could you check how the picture is looking for you? I downloaded the big one but only see mobile size. Weird...
   background-repeat: no-repeat;
 
   h1 {

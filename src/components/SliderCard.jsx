@@ -1,10 +1,10 @@
-import styled from "styled-components";
 import PropTypes from "prop-types";
+import styled from "styled-components";
 
 export const SliderCard = ({ data }) => {
   return (
     <StyledSliderCard>
-      <img src={data.img} alt={data.title}></img>
+      <StyledImgSlider src={data.img} alt={data.title}></StyledImgSlider>
       <TitleBox>
         <h3>{data.title}</h3>
         <img src={data.icon}></img>
@@ -23,14 +23,23 @@ const StyledSliderCard = styled.div`
   width: 182px;
   gap: 8px;
 
-  p{
+  p {
     font-size: 18px;
     line-height: 22px;
   }
 `;
 
+const StyledImgSlider = styled.img`
+  height: ${({ $longcard }) => ($longcard ? "274px" : "243px")};
+`;
+
 const TitleBox = styled.div`
   display: flex;
+
+  h3 {
+    font-size: 21px;
+    font-weight: bold;
+  }
 `;
 
 SliderCard.propTypes = {
