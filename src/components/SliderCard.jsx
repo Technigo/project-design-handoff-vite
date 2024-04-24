@@ -27,6 +27,8 @@ const StyledSliderCard = styled.div`
     font-size: 18px;
     line-height: 22px;
   }
+  //Check if Netlify takes over right font-size for both sliders! Also H3
+  //It takes it over when I save this folder but the it looses it again... Why?
 `;
 
 const StyledImgSlider = styled.img`
