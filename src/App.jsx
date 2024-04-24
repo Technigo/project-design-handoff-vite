@@ -1,8 +1,12 @@
 import { Reviews } from "./components/Reviews";
 
-export const App = () => {
-  return <div>
+import { Header } from "./components/Header/Header";
 
-    <Reviews />
-  </div>;
+export const App = () => {
+  return (
+    <>
+    <Header />
+<Reviews />
+</>
+  )
 };
