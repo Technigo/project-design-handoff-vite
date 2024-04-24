@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 
 const TopMenuContainer = styled.div`
   background-color: var(--menublack);
-  height: 72px;
   width: 100%;
   margin-left: -16px;
   margin-right: -16px;
