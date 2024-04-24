@@ -2,14 +2,17 @@ import styled from "styled-components";
 
 // Styled button component
 const StyledButton = styled.button`
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 12px;
-  cursor: pointer;
   border-radius: 12px;
   background: #b3583b;
+  color: #fff;
+  font-family: Avenir, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 48px;
+  border: none;
+  cursor: pointer;
 `;
+
 
 export const Buttons = ({ buttonList }) => {
   return (
