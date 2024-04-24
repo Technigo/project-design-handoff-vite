@@ -14,9 +14,15 @@ export const Navbar = () => {
       </picture>
       <div className="hidden lg:flex">
         <ul className="flex flex-row items-center gap-6 text-lg font-avengeance text-primary-darkblue">
-          <li className="whitespace-nowrap">About us</li>
-          <li className="whitespace-nowrap">Classes</li>
-          <li className="whitespace-nowrap">Find your local club</li>
+          <li className="whitespace-nowrap">
+            <a href="">About us</a>
+          </li>
+          <li className="whitespace-nowrap">
+            <a href="">Classes</a>
+          </li>
+          <li className="whitespace-nowrap">
+            <a href="">Find your local club</a>
+          </li>
           <li className="ml-2">
             <img src={searchIcon} />
           </li>
