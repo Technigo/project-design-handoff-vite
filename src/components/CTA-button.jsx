@@ -8,7 +8,7 @@ export const CtaButton = styled.button`
   border-radius: 20px;
   width: 136px;
   height: 40px;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.2s ease; 
 
   &:hover {
     background-color: var(--purplehover);
