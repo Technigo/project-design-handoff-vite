@@ -2,16 +2,19 @@
   {
     "sub-title": "Our classes",
     "title": "Girls 6-13 years",
-    "description": "Beginner -,continuation and pro-classes. Try the first class for free!"
+    "description": "Beginner -,continuation and pro-classes. Try the first class for free!",
+    "image": "./assets/karate-girls01.png"
   },
   {
     "sub-title": "Comming up",
     "title": "Summer camp",
-    "description": "Every summer we arrange both day- and weekly long camps."
+    "description": "Every summer we arrange both day- and weekly long camps.",
+    "image": "./assets/karate-girls02.png"
   },
   {
     "sub-title": "Interview",
     "title": "Meet Mica",
-    "description": "Meet Karate Girl´s teacher Mika in this months newsletter."
+    "description": "Meet Karate Girl´s teacher Mika in this months newsletter.",
+    "image": "./assets/karate-girls03.png"
   }
 ]
