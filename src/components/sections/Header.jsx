@@ -1,6 +1,6 @@
 import menuIcon from '../../assets/hamburger-menu.svg';
 import logo from '../../assets/logo.svg';
-import { HoverableButton } from '../HoverableButton';
+import { GeneralButton } from '../GeneralButton';
 
 export const Header = () => {
   return (
@@ -31,7 +31,7 @@ export const Header = () => {
         <h3 className="pb-7	text-lg	 font-medium">TO INSPIRE + UPLIFT YOU</h3>
         <h3 className="text-lg font-medium">Since 2010</h3>
       </div>
-      <HoverableButton
+      <GeneralButton
         text="Log in"
         customStyle="mt-64 md:absolute md:right-5 md:mt-0 md:top-7 lg:top-20 lg:right-12 "
       />

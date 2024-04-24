@@ -1,4 +1,4 @@
-import { HoverableButton } from '../HoverableButton';
+import { GeneralButton } from '../GeneralButton';
 
 export const UserInput = () => {
   return (
@@ -27,7 +27,7 @@ export const UserInput = () => {
             placeholder="Email Adress"
             className="h-[40px] w-[280px] border-[1px] border-[#444446] bg-white text-center font-avenir font-medium text-black"
           />
-          <HoverableButton text="Sign up" customStyle="justify-self-center" />
+          <GeneralButton text="Sign up" customStyle="justify-self-center" />
         </form>
       </section>
     </>

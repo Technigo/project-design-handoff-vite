@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
 import cardArray from '../../CardArray';
-import { Discover } from '../Discover';
-import { HoverableButton } from '../HoverableButton';
+import { DiscoverButton } from '../DiscoverButton';
+import { GeneralButton } from '../GeneralButton';
 
 export const Card = () => {
   return (
@@ -27,11 +27,11 @@ export const Card = () => {
               </div>
               <h3 className="font-futura text-lg font-medium">{item.title}</h3>
               <p className="w-60">{item.paragraph}</p>
-              <div>{item.button}</div>
+              <DiscoverButton />
             </div>
           ))}
         </div>
-        <HoverableButton text="Book a retreat" customStyle="mt-20 mb-24" />
+        <GeneralButton text="Book a retreat" customStyle="mt-20 mb-24" />
       </section>
     </>
   );

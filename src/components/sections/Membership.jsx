@@ -1,6 +1,6 @@
 import euro from '../../assets/euro-sign.svg';
-import { HoverableButton } from '../HoverableButton';
-import { SignupButton } from '../SignupButton';
+import { GeneralButton } from '../GeneralButton';
+import { PillButton } from '../PillButton';
 
 export const Membership = () => {
   return (
@@ -14,14 +14,14 @@ export const Membership = () => {
         </h3>
       </div>
       <div className="my-4 inline-flex w-full justify-center">
-        <SignupButton />
+        <PillButton />
       </div>
       <div className="inline-flex items-center justify-center font-futura ">
         <img src={euro} alt="euro" />
         <span className="text-base">29.00</span>
       </div>
       <p className="my-2	text-base font-medium">Every month</p>
-      <HoverableButton text="Sign up" />
+      <GeneralButton text="Sign up" />
     </section>
   );
 };

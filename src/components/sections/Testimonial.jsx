@@ -1,4 +1,4 @@
-import { HoverableButton } from '../HoverableButton';
+import { GeneralButton } from '../GeneralButton';
 
 export const Testimonial = () => {
   return (
@@ -11,7 +11,7 @@ export const Testimonial = () => {
         </p>
         <p className="mt-4">Your way of teaching is world-class.”</p>
         <p className="mt-4">- Grace Wetterlund, SWEDEN</p>
-        <HoverableButton text="More testimonials" customStyle="mt-8" />
+        <GeneralButton text="More testimonials" customStyle="mt-8" />
       </div>
     </section>
   );

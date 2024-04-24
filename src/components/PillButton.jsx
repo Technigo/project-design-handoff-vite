@@ -5,7 +5,7 @@ const commonStyle =
 const activeStyle = ' bg-accent-blue text-neutral-white';
 const inactiveStyle = 'bg-none text-accent-blue';
 
-export const SignupButton = () => {
+export const PillButton = () => {
   const [monthlyActive, setMonthlyActive] = useState(true);
 
   return (
