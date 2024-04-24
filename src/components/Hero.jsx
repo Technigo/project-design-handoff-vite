@@ -3,17 +3,20 @@ import { HeroCard } from "./HeroCard";
 
 const StyledHero = styled.section`
   font-family: "AvenirMedium", sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   margin-top: 177px;
 
-  background-image: url("/heading.png");
-  background-size: cover;
-  background-position: center 50%;
-  background-repeat: no-repeat;
-
+  .launch-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url("/heading.png");
+    background-size: cover;
+    background-position: center 50%;
+    background-repeat: no-repeat;
+  }
   .web-title {
     position: relative;
   }
@@ -102,20 +105,22 @@ const StyledHero = styled.section`
 export const Hero = () => {
   return (
     <StyledHero className="hero-section">
-      <div className="web-title">
-        <img
-          className="web-title-logo"
-          src="./curve.png"
-          alt="web-title-logo"
-        />
-        <h1>Curve Pilates</h1>
+      <div className="launch-section">
+        <div className="web-title">
+          <img
+            className="web-title-logo"
+            src="./curve.png"
+            alt="web-title-logo"
+          />
+          <h1>Curve Pilates</h1>
+        </div>
+        <h2>Wellness and Movement</h2>
+        <h2 className="title-extra-info">
+          Helping <span className="slogan-keyword">everybody</span> to
+          strengthen, heal & recharge
+        </h2>
+        <button className="start-btn">Get Started</button>
       </div>
-      <h2>Wellness and Movement</h2>
-      <h2 className="title-extra-info">
-        Helping <span className="slogan-keyword">everybody</span> to strengthen,
-        heal & recharge
-      </h2>
-      <button className="start-btn">Get Started</button>
       <ul className="customer-comments">
         <li className="comment">
           “I always feels <span className="comment-keyword">so good</span> after
