@@ -1,5 +1,6 @@
 import euro from '../assets/euro-sign.svg';
 import { Button } from './Button';
+import { SignupButton } from './SignupButton';
 
 export const Membership = () => {
   return (
@@ -13,12 +14,7 @@ export const Membership = () => {
         </h3>
       </div>
       <div className="my-4 inline-flex w-full justify-center">
-        <button className="h-10 w-20 rounded-l-[100px] border-[1px] border-r-0 border-[#79747E] bg-accent-blue text-[14px] font-black text-neutral-white">
-          Monthly
-        </button>
-        <button className="h-10 w-20 rounded-r-[100px] border-[1px] border-[#79747E] bg-none text-[14px] font-black text-accent-blue">
-          Yearly
-        </button>
+        <SignupButton />
       </div>
       <div className="inline-flex items-center justify-center font-futura ">
         <img src={euro} alt="euro" />
