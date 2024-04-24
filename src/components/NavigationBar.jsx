@@ -17,10 +17,10 @@ const Navbar = styled.nav`
   z-index: 100; // High z-index to ensure the nav bar stays to the top
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 16px 32px;
-  padding-bottom: 32px;
+  align-items: flex-end; 
+  padding: 32px var(--Spacing-16, 128px);
   background-color: rgba(8, 61, 86, 0.75);
+  backdrop-filter: blur(2px);
 `;
 
 const Logo = styled.img`

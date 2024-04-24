@@ -1,11 +1,48 @@
 import styled from "styled-components";
+import { CardActivities } from "../utility/CardActivities";
+import { activities } from "../utility/ActivityData";
+
+export function RetreatActivities() {
+  const introText = "Book your stay and dive into practical workshops and activities that go beyond the clichés, offering tangible ways to reshape habits and enrich your daily experience. Customize your stay, choose your adventures, and embrace a journey that's grounded in reality, accessible to everyone seeking a more fulfilling life."
+
+  return (
+    <ActivitiesSection>
+      <IntroText>{introText}</IntroText>
+      {activities.map((activity, index) => (
+        <CardActivities
+          key={index}
+          imageSrc={`/images/${activity.image}`}
+          title={activity.name}
+          description={activity.description}
+          /*  buttonLabel="Learn More" */
+          buttonOnClick={() => console.log(`Joined ${activity.name}`)}
+        />
+      ))}
+    </ActivitiesSection>
+  );
+}
+
 
 const ActivitiesSection = styled.section`
-  padding: 40px;
-  background: white;
+  padding: 96px 128px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 96px;
+  align-self: stretch;
 `;
 
-const Activity = styled.div`
+const IntroText = styled.p`
+font-family: var(--header);
+font-size: 28px;
+font-weight: 500;
+line-height: 48px;
+text-align: left;
+padding: 40px;
+gap: 10px;
+border-left: 4px solid var(--blue);
+`
+
+/* const Activity = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,37 +63,4 @@ const ActivityDescription = styled.p`
   text-align: center;
 `;
 
-export function RetreatActivities() {
-  const activities = [
-    {
-      name: "Yoga",
-      description: "Relaxing and rejuvenating.",
-      image: "yoga.jpg",
-    },
-    {
-      name: "Meditation",
-      description: "Find your inner peace.",
-      image: "meditation.jpg",
-    },
-    {
-      name: "Nature Walks",
-      description: "Explore the beauty of nature.",
-      image: "walk.jpg",
-    },
-  ];
-
-  return (
-    <ActivitiesSection>
-      {activities.map((activity, index) => (
-        <Activity key={index}>
-          <ActivityImage
-            src={`path/to/${activity.image}`}
-            alt={activity.name}
-          />
-          <ActivityName>{activity.name}</ActivityName>
-          <ActivityDescription>{activity.description}</ActivityDescription>
-        </Activity>
-      ))}
-    </ActivitiesSection>
-  );
-}
+ */
