@@ -8,7 +8,7 @@ export const Nav = () => {
     setNavlist((prevNavlist) => !prevNavlist);
   };
   return (
-    <nav className="absolute p-4 flex justify-between items-center w-full md:relative md:items-end md:h-24 2xl:h-36 2xl:max-w-7xl 2xl:m-auto">
+    <nav className="absolute p-4  flex justify-between items-center w-full md:relative md:items-end md:p-8 md:h-24 2xl:h-36 2xl:max-w-7xl 2xl:m-auto">
       <div>
         <img
           src={logoStudioMama}

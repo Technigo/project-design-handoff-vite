@@ -15,7 +15,9 @@ export const Hero = () => {
         className="hidden w-full md:block"
       />
       <div className="">
-        <h1>Gravid och Mamma-träning på dina villkor.</h1>
+        <h1 className="absolute top-36 font-zilla font-semibold text-center leading-12 text-3xl">
+          Gravid och Mamma-träning på dina villkor.
+        </h1>
         <h2>
           Styrketräning, magaktivering eller återhämtning, vad behöver din kropp
           idag?
