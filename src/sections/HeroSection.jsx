@@ -10,7 +10,7 @@ export const HeroSection = () => {
           <h1 className="mt-6 text-2xl md:text-4xl lg:mt-7 lg:text-[70px]">
             The Zumba Hall
           </h1>
-          <p className="mx-[24px] mb-3 mt-[8px] md:mb-6 md:text-base lg:mb-7 lg:mt-1 lg:text-3xl">
+          <p className="mx-[24px] mb-3 mt-[8px] leading-tight md:mb-6 md:text-base lg:mb-7 lg:mt-1 lg:text-3xl">
             Join our training centre and get fit through{" "}
             <span className="italic text-[#F6E53C] md:text-base lg:text-3xl">
               Dance

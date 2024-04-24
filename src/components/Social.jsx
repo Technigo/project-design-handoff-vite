@@ -21,12 +21,12 @@ export const Social = () => {
         <h2 className="hidden md:block md:text-right md:text-lg">
           Follow us !
         </h2>
-        <div className="flex justify-end">
+        <div className="mt-[8px] flex gap-1 md:justify-end">
           {socialIcons.map((icon) => (
             <img
               key={icon.name}
               src={icon.small}
-              srcSet={`${icon.small}, ${icon.medium} 744w, ${icon.large} 1440w`}
+              srcSet={`${icon.small} ,${icon.small} 600w, ${icon.medium} 744w, ${icon.large} 1440w`}
               alt={`${icon.name} Icon`}
               className="h-[30px] w-[30px]"
             />

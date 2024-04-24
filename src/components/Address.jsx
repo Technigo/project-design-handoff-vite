@@ -21,19 +21,19 @@ export const Address = () => {
 
   return (
     <section className="hidden flex-col text-base md:flex">
-      <div className="flex gap-[25px]">
+      <div className="flex items-start gap-[25px]">
         <img
           src={letterIconSource.small}
           alt="letter icon"
           srcSet={`${letterIconSource.small} 744w, ${letterIconSource.large} 1440w`}
         />
-        <div className="flex flex-col">
+        <div className=" inline-block">
           <h2 className="text-lg">Postal address</h2>
-          <div className="gap-[8px]">
-            <p>Streetname 10</p>
-            <p>1234 56 City</p>
-            <p>Country</p>
-          </div>
+          <p className="tracking-wide ">
+            Streetname 10 <br />
+            1234 56 City <br />
+            Country
+          </p>
         </div>
       </div>
       <div className="flex gap-[25px]">
