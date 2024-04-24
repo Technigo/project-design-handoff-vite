@@ -13,7 +13,7 @@ export const Navbar = () => {
         <img src={navbarLogoSm} />
       </picture>
       <div className="hidden lg:flex">
-        <ul className="flex flex-row items-center gap-6">
+        <ul className="flex flex-row items-center gap-6 text-lg font-avengeance text-primary-darkblue">
           <li className="whitespace-nowrap">About us</li>
           <li className="whitespace-nowrap">Classes</li>
           <li className="whitespace-nowrap">Find your local club</li>
