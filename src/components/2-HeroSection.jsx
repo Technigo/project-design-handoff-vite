@@ -16,12 +16,19 @@ const HeroContainer = styled.div`
   grid-column: span 4;
   margin-left: -16px;
   margin-right: -16px;
+  padding-left: 16px;
+  padding-right: 16px;
 
+  
   @media (min-width: 744px) and (max-width: 1493px) {
     background-image: url(${heroTablet});
     grid-column: span 8;
     margin-left: -32px;
     margin-right: -32px;
+    padding-left: 32px;
+    padding-right: 32px;
+   
+    
   }
 
   @media (min-width: 1494px) {
@@ -29,6 +36,8 @@ const HeroContainer = styled.div`
     grid-column: span 12;
     margin-left: -128px;
     margin-right: -128px;
+    padding-left: 128px;
+    padding-right: 128px;
   }
 `;
 
