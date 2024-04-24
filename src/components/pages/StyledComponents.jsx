@@ -1,9 +1,10 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 /*import LogoMobile from "../assets/LogoMobile.svg";*/
 /*import LogoTablet from "../assets/LogoTablet.svg";*/
 
 export const Page = styled.div`
   display: grid;
+  background-color: #f6f6f6;
 `;
 // export const MobileLogo = styled(LogoMobile)`
 //   display: flex;
@@ -61,14 +62,41 @@ export const StyledButton = styled.button`
   justify-content: center;
   background-color: ${(props) => props.backgroundColor || "#F65135"};
   color: ${(props) => props.textColor || "white"};
-  width: 329px;
-  height: 53px;
-  padding: 12px, 24px;
+  padding: var(--gap-default) var(--gap-comfortable);
   border: none;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+
+  ${(props) =>
+    props.$mobile &&
+    css`
+      font-size: 18px;
+      flex: 1;
+      line-height: 28.8px;
+      letter-spacing: 0.5px;
+    `}
+
+  ${(props) =>
+    props.$tablet &&
+    css`
+      font-size: 18px;
+    `}
+
+  ${(props) =>
+    props.$desktop &&
+    css`
+      font-size: 20px;
+    `}
 
   &:focus {
     border: 2px solid #1c2996;
   }
+`;
+
+export const ButtonBox = styled.div`
+  display: flex;
+  width: 100%;
+  padding: 0 var(--gap-compact) var(--gap-compact) var(--gap-compact);
 `;
 
 /* header mobile

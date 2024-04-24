@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import { Page, StyledText, StyledH1, StyledButton } from "./StyledComponents";
+import { Page, StyledText, StyledH1, StyledButton, ButtonBox } from "./StyledComponents";
 import {
-  StyledIntro,
+  IconHeart,
   LogoContainer,
   IntroContainer,
   IntroTextBox,
@@ -13,14 +13,25 @@ import ImgIntro from "../../assets/jaspinder-singh-dtm8XNpMqGs-unsplash.jpg";
 const Introduction = () => {
   const [isClicked, setIsClicked] = useState(false);
   const [isHeartVisible, setIsHeartVisible] = useState(true);
-  const [isMobile, setIsMobile] = useState(false); //
+  const [deviceType, setDeviceType] = useState("desktop");
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 349);
+      const width = window.innerWidth;
+      if (width < 350) {
+        setDeviceType("none");
+      } else if (width >= 350 && width <= 650) {
+        setDeviceType("mobile");
+      } else if (width <= 1024) {
+        setDeviceType("tablet");
+      } else {
+        setDeviceType("desktop");
+      }
     };
+
     window.addEventListener("resize", handleResize);
     handleResize();
+
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
@@ -37,17 +48,18 @@ const Introduction = () => {
           <StyledIntroImage src={ImgIntro} alt="Introduction Image" />
 
           <IntroTextBox>
-            {isMobile ? (
-              <>
+            {deviceType === "none" && (
+              <div>
                 <StyledH1>Congratulations!</StyledH1>
                 <StyledText>
-                  Youre unable to access this website on your current phone. But fear not! We are looking for
+                  You&apos;re unable to access this website on your current phone. But fear not! We are looking for
                   individuals like you to participate in our Midsommar yoga event. So, simply invite a friend with a
                   newer phone to access this page, and if they succeed, you&apos;ll get 1 ticket for free. Just remember
                   to insert the code DSFHSIUG!
                 </StyledText>
-              </>
-            ) : (
+              </div>
+            )}
+            {deviceType !== "none" && (
               <>
                 <StyledH1>Celebrate Midsommar with yoga and friends</StyledH1>
                 <StyledText>
@@ -58,12 +70,22 @@ const Introduction = () => {
               </>
             )}
           </IntroTextBox>
-          <div className="knappbox">
-            <StyledButton className={`heartIcon ${isClicked ? "clicked" : ""}`} onClick={handleClick}>
-              <span className={`book ${isClicked ? "clicked" : ""}`}>BOOK YOUR SPOT</span>
-              {isHeartVisible && <StyledIntro />}
-            </StyledButton>
-          </div>
+          {deviceType !== "none" && (
+            <ButtonBox>
+              <StyledButton
+                $backgroundColor="#F65135"
+                $textColor="white"
+                onClick={handleClick}
+                $desktop={deviceType === "desktop"}
+                $mobile={deviceType === "mobile"}
+                $tablet={deviceType === "tablet"}
+                className={`heartIcon ${isClicked ? "clicked" : ""}`}
+                aria-label="Book your spot for the Midsommar yoga event">
+                <span className={`book ${isClicked ? "clicked" : ""}`}>BOOK YOUR SPOT</span>
+                {isHeartVisible && <IconHeart />}
+              </StyledButton>
+            </ButtonBox>
+          )}
         </IntroContentBox>
       </IntroContainer>
     </Page>

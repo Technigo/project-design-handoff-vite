@@ -31,7 +31,6 @@ const DesktopLogo = styled(desktopLogo)`
 const LogoBox = styled.div`
   display: flex;
   justify-content: center;
-  padding: var(--gap-compact) 0;
 `;
 
 export const LogoContainer = () => {
@@ -43,6 +42,7 @@ export const LogoContainer = () => {
     </LogoBox>
   );
 };
+
 const pulse = keyframes`
   0% {
     transform: scaleX(1) scaleY(1);
@@ -57,8 +57,11 @@ const pulse = keyframes`
   }
 `;
 
-export const StyledIntro = styled(HeartIcon)`
+export const IconHeart = styled(HeartIcon)`
   animation: ${pulse} 2s infinite;
+  width: 20px;
+  height: 18.35px;
+  margin-left: 13px;
 `;
 
 export const IntroContainer = styled.div`
@@ -76,7 +79,7 @@ export const IntroContentBox = styled.div`
   margin: var(--gap-default) var(--gap-compact);
   padding-bottom: var(--gap-default);
   background-color: #f9cdcc;
-  gap: var(--gap-default);
+  gap: var(--gap-compact);
 `;
 
 export const IntroTextBox = styled.div`
