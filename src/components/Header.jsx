@@ -4,7 +4,7 @@ import { LogoLight } from "./Logo";
 export const Header = () => {
   return (
     <>
-      <nav className="mx-[24px] pt-1 md:mx-2 lg:mx-[112px]">
+      <nav className="mx-[24px] pt-1 md:mx-2 lg:mx-[112px] lg:pt-2">
         <div className="flex items-center justify-between">
           <LogoLight />
           <button
@@ -22,7 +22,7 @@ export const Header = () => {
             />
           </button>
           <div className="hidden w-full lg:block lg:w-auto lg:text-base">
-            <ul className=" mt-1 flex flex-col lg:flex-row lg:gap-2 ">
+            <ul className=" mt-1 flex flex-col lg:mt-[0px] lg:flex-row lg:gap-2 ">
               <li>
                 <a href="#" className=" block rounded text-white">
                   What is Zumba?

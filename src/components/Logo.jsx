@@ -31,7 +31,7 @@ export const LogoDark = () => {
       <img
         src={LogoBlackLarge}
         alt="the zumba hall logo in black"
-        className="hidden lg:block"
+        className="hidden h-[154px] lg:block"
       />
     </>
   );

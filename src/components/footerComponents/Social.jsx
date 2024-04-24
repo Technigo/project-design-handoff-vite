@@ -18,17 +18,17 @@ export const Social = () => {
   return (
     <section>
       <div className="flex flex-col">
-        <h2 className="hidden md:block md:text-right md:text-lg">
+        <h2 className="hidden md:block md:text-right md:text-lg md:leading-loose lg:text-3xl">
           Follow us !
         </h2>
-        <div className="mt-[8px] flex flex-wrap justify-end gap-1">
+        <div className="mt-[8px] flex flex-wrap justify-end gap-[18px] md:mt-[0px] lg:gap-[35px]">
           {socialIcons.map((icon) => (
             <img
               key={icon.name}
               src={icon.small}
-              srcSet={`${icon.small} ,${icon.small} 600w, ${icon.medium} 744w, ${icon.large} 1440w`}
+              srcSet={`${icon.small} 340w, ${icon.medium} 744w, ${icon.large} 1440w`}
               alt={`${icon.name} Icon`}
-              className="h-[30px] w-[30px]"
+              className="h-[30px] w-[30px] lg:h-[60px] lg:w-[60px]"
             />
           ))}
         </div>
