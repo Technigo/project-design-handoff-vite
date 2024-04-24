@@ -40,23 +40,20 @@ export const Banner = styled.div`
   margin-left: -16px;
   margin-right: -16px;
   padding-bottom: 40px;
-  padding-top: 20px;
-  margin-top: 80px;
 
 
   @media (min-width: 744px) and (max-width: 1493px) {
     background-image: url(${bannerTablet});
     grid-column: span 8;
     padding-bottom: 70px;
-    margin-top: 128px;
+ 
   }
 
   @media (min-width: 1494px) {
     background-image: url(${bannerDesktop});
     grid-column: span 12;
     padding-bottom: 50px;
-    padding-top: 30px;
-    margin-top: 160px;
+    padding-top: 160px;
   }
 `;
 
@@ -142,7 +139,6 @@ export const BannerInvert = styled.div`
   margin-left: -16px;
   margin-right: -16px;
   padding-bottom: 40px;
-  margin-bottom: 80px;
   padding-top: 20px;
   -webkit-transform:scaleY(-1);
   -moz-transform:scaleY(-1);
@@ -155,7 +151,6 @@ export const BannerInvert = styled.div`
     background-image: url(${bannerTablet});
     grid-column: span 8;
     padding-bottom: 70px;
-    margin-bottom: 128px;
     
   }
 
@@ -164,7 +159,6 @@ export const BannerInvert = styled.div`
     grid-column: span 12;
     padding-bottom: 50px;
     padding-top: 30px;
-    margin-bottom: 160px;
    
   }
 `;
