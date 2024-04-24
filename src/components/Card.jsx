@@ -18,7 +18,7 @@ export const Card = () => {
           {cardArray.map((item) => (
             <div
               key={item.id}
-              className="flex max-h-[538px] w-[360px] flex-col gap-6 px-[60px] py-6"
+              className="h-[600px] w-[360px] flex-col gap-6 px-[60px] py-6 space-y-4 "
             >
               <div className="h-60 w-60">
                 <img src={item.image} alt={item.alt} />
