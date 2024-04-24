@@ -1,0 +1,46 @@
+[
+  {
+    "title": "A holistic approach",
+    "description": "We mix dicipline with joy and compassion to encourage focus, bodycontrol  but also power and self trust.",
+    "link": "Learn more",
+    "images": {
+      "small": "./src/assets/benefits/karate-girl-photo-small.png",
+      "medium": "./src/assets/benefits/karate-girl-photo-medium.png"
+    },
+    "symbols": {
+      "small": "./src/assets/benefits/symbol-heart-small.svg",
+      "medium": "./src/assets/benefits/symbol-heart-medium.svg",
+      "large": ""
+    }
+  },
+  {
+    "title": "A holistic approach",
+    "description": "We mix dicipline with joy and compassion to encourage focus, bodycontrol  but also power and self trust.",
+    "link": "Learn more",
+    "images": {
+      "small": "./src/assets/benefits/karate-girl-photo-small.png",
+      "medium": "./src/assets/benefits/karate-girl-photo-medium.png",
+      "large": ""
+    },
+    "symbols": {
+      "small": "./src/assets/benefits/symbol-heart-small.svg",
+      "medium": "",
+      "big": ""
+    }
+  },
+  {
+    "title": "A holistic approach",
+    "description": "We mix dicipline with joy and compassion to encourage focus, bodycontrol  but also power and self trust.",
+    "link": "Learn more",
+    "images": {
+      "small": "./src/assets/benefits/karate-girl-photo-small.png",
+      "medium": "./src/assets/benefits/karate-girl-photo-medium.png",
+      "large": ""
+    },
+    "symbols": {
+      "small": "./src/assets/benefits/symbol-heart-small.svg",
+      "medium": "",
+      "big": ""
+    }
+  }
+]
