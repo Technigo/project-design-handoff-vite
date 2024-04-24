@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 const TopMenuContainer = styled.div`
   background-color: var(--menublack);
   width: 100%;
+  height: 72px;
   margin-left: -16px;
   margin-right: -16px;
   position: fixed;
