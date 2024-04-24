@@ -27,7 +27,7 @@ const socialMeida = [
 
 export const Footer = () => {
   return (
-    <footer className="flex justify-center bg-primary-black py-12 text-neutral-white">
+    <footer className="flex justify-center bg-primary-black py-12 text-neutral-white md:py-24 lg:py-32">
       <div className="grid w-max grid-cols-1 items-center gap-y-10 md:w-full md:grid-cols-2 md:justify-items-center">
         <ul className="flex  flex-col gap-8">
           {contact.map((item, index) => (

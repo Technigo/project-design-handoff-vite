@@ -6,6 +6,7 @@ export default {
       avenir: ['Avenir'],
       futura: ['Futura'],
     },
+
     extend: {
       colors: {
         'primary-black': '#444446',

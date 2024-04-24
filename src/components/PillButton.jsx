@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const commonStyle =
-  'h-10 w-20 border-[1px] text-[14px] font-black border-[#79747E]';
+  'h-10 w-20 border-[1px] text-[14px] font-black border-[#79747E] xl:text-base xl:h-12 xl:w-28';
 const activeStyle = ' bg-accent-blue text-neutral-white';
 const inactiveStyle = 'bg-none text-accent-blue';
 

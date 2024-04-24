@@ -8,7 +8,7 @@ import { UserInput } from './components/sections/UserInput';
 
 export const App = () => {
   return (
-    <div>
+    <div className="grid grid-cols-1">
       <Header />
       <RetreatQuote />
       <Testimonial />
