@@ -22,6 +22,7 @@ const HeroSection = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 600px;
+  // clip-path: inset(30px 30px 50px 100px);
 `;
 
 const HeroContent = styled.div`

@@ -26,6 +26,14 @@ const Button = styled.button`
   font-style: normal;
   font-weight: 500;
   line-height: 100%;
+
+  &:hover {
+    background: linear-gradient(
+      135deg,
+      rgba(0, 0, 0, 0.22),
+      rgba(255, 255, 255, 0.25)
+    );
+  }
 `;
 
 const CtaButton = styled(Button)`
