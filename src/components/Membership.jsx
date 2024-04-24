@@ -1,5 +1,5 @@
 import euro from '../assets/euro-sign.svg';
-import { Button } from './Button';
+import { HoverableButton } from './HoverableButton';
 import { SignupButton } from './SignupButton';
 
 export const Membership = () => {
@@ -21,7 +21,7 @@ export const Membership = () => {
         <span className="text-base">29.00</span>
       </div>
       <p className="my-2	text-base font-medium">Every month</p>
-      <Button text="Sign up" />
+      <HoverableButton text="Sign up" />
     </section>
   );
 };

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import cardArray from '../CardArray';
 import { Discover } from './Discover';
-import { Button } from './Button';
+import { HoverableButton } from './HoverableButton';
 
 export const Card = () => {
   return (
@@ -31,7 +31,7 @@ export const Card = () => {
             </div>
           ))}
         </div>
-        <Button text="Book a retreat" customStyle="mt-20 mb-24" />
+        <HoverableButton text="Book a retreat" customStyle="mt-20 mb-24" />
       </section>
     </>
   );
