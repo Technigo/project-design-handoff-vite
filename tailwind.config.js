@@ -39,7 +39,7 @@ export default {
         ubuntu: ["Ubuntu", "sans-serif"],
       },
       backgroundImage: {
-        "hero-image": "url('images/woman-dancing.jpg')",
+        "hero-image": "url('/woman-dancing.jpg')",
       },
     },
     boxShadow: {
