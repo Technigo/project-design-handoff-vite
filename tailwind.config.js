@@ -9,6 +9,7 @@ export default {
       fontFamily: {
       'rock-salt': ['"Rock Salt"', 'cursive'],
       'roboto-mono': ['Roboto Mono', 'monospace'],
+      'inter': ['Inter', 'sans-serif']
       },
     },
   },

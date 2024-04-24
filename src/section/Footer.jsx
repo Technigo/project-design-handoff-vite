@@ -4,25 +4,26 @@ import { Text } from "../component/Text";
 
 export const Footer = () => {
   return (
-    <div>
-      <div>
+    <div className="bg-cyan-600">
+    <div className="flex flex-col mx-9 font-inter text-base font-bold gap-y-2.5 pb-10">
+      <div className="flex gap-8 border border-black cursor-pointer rounded-full w-44 mt-1.5">
         <Image link={"/Images/globe.svg"} />
 
-        <select name="English">
-          <option value="es">Spanish</option>
+        <select className="appearance-none bg-transparent  select-custom" >
+          <option value="es">English</option>
           <option value="fr">French</option>
           <option value="de">German</option>
           <option value="it">Italian</option>
         </select>
       </div>
-      <div>
+      
         <Link link={"tel:+12345678900"} text={"Contact us"} />
         <Text text={"Social media"} />
-      </div>
-      <div>
+     
+      <div className="flex gap-3 ">
         <Image link={"./Images/fblogo.svg"} />
         <Image link={"./Images/iglogo.svg"} />
-        <Image link={"./Images/musicnotelogo.svg"} />
+        <Image link={"./Images/tiktoklogo.svg"} />
       </div>
       <div>
         <Link
@@ -32,11 +33,12 @@ export const Footer = () => {
           text={"Runebergsgatan 44 Helsingfors"}
         />
       </div>
-      <span>
+      <span className="flex text-xs gap-x-1">
         <Image link={"/Images/copyright.svg"} />
         <Text text={"2024 HIITFORYOU"} />
-        <Link link={"https://www.google.com"} text={"Privacy Policy"} />
+        <Link className="ml-10" link={"https://www.google.com"} text={"Privacy Policy"} />
       </span>
+    </div>
     </div>
   );
 };

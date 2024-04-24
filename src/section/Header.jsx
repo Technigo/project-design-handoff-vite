@@ -4,7 +4,7 @@ import { Image } from "../component/Image";
 export const Header = () => {
   return (
     <>
-      <div className="flex-col pt-12 px-9 text-center">
+      <div className="flex flex-col mt-12 mx-9 text-center">
         <h1 className="font-rock-salt mb-4 text-4xl">HIIT FOR YOU</h1>
         <div className="flex justify-center mb-7">
         <Image className="w-9 h-10" link={"/Images/logo.svg"} imgText={"red flame"} />
