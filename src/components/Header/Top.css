@@ -1,0 +1,64 @@
+.top{
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+}
+
+.title{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 0 20px;
+  color: #042D43;
+}
+
+.title h1{
+  margin: 0;
+  font-size: 80px;
+  font-weight: 500;
+  font-family: "roboto";
+  line-height: 80px;
+}
+
+.title h4{
+  margin: 0;
+  font-size: 30px;
+  font-family: "roboto";
+  font-weight: 400;
+}
+
+.function-container{
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  position: absolute;
+  margin: 20px;
+  right: 10px;
+}
+
+.search-menu{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+
+}
+
+.search {
+  cursor: pointer;
+}
+
+.search img{
+  width: 40px;
+  margin-top: 4px;
+}
+
+.menu{
+  cursor: pointer;
+}
+
+.menu img{
+  width: 50px;
+}
