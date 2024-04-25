@@ -12,6 +12,7 @@ export const NavBar = () => {
 //Styled Components
 
 const StyledNavBar = styled.header`
+  max-width: 100vw;
   height: 83px;
   display: flex;
   align-items: center;

@@ -1,10 +1,23 @@
 import styled from "styled-components";
+import { useState, useRef } from 'react'
 
 import { instructors } from "../libraries/instructors.json";
-import { StyledSlider } from "./Slider";
-import { SliderCard } from "./SliderCard";
+import { InstructorsSliderCard } from "./InstructorsSliderCard";
 
 export const Instructors = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const containerRef = useRef();
+
+  const handleScroll = (scrollAmount) => {
+    const newScrollPosition = scrollPosition + scrollAmount;
+    setScrollPosition(newScrollPosition);
+    containerRef.current.scrollLeft = newScrollPosition;
+  };
+
+  const showLeftButton = scrollPosition > 0;
+  const showRightButton = scrollPosition < 1;
+
   return (
     <StyledInstructors>
       <div className="instructors">
@@ -15,12 +28,28 @@ export const Instructors = () => {
           wellness goals and enjoy the journey on the way.
         </p>
       </div>
+      <StyledSliderButtonBox>
+      {showLeftButton && (
+        <StyledSliderButton onClick={() => handleScroll(-400)}>
+          <img src="ScrollLeft.svg" />
+        </StyledSliderButton>
+      )}
+      <div
+        ref={containerRef}
+        style={{ overflowX: "scroll", scrollBehavior: "smooth" }}
+      >
       <StyledSlider>
         {instructors.map((instructor, index) => (
-          <SliderCard $longcard key={index} data={instructor} />
-          //We have to be able to make these cards higher right now it is not working yet. But the only solution I could think of is making a new SliderCard Component but before I change all the code maybe you have another idea but will have to change it eventually.
+          <InstructorsSliderCard key={index} data={instructor} />
         ))}
-      </StyledSlider>
+        </StyledSlider>
+        </div>
+        {showRightButton && (
+        <StyledSliderButton $left onClick={() => handleScroll(400)}>
+          <img src="ScrollRight.svg" />
+        </StyledSliderButton>
+      )}
+      </StyledSliderButtonBox>
     </StyledInstructors>
   );
 };
@@ -46,4 +75,28 @@ const StyledInstructors = styled.section`
     font-size: 20px;
     line-height: 38px;
   }
-`;
+  `
+  const StyledSlider = styled.section`
+  display: flex;
+  gap: 16px;
+  margin: 0 24px;
+  //Why is the margin on the right not showing???
+`
+
+const StyledSliderButtonBox = styled.div`
+  display: flex;
+  align-items: center;
+  position: relative;
+`
+
+const StyledSliderButton = styled.button`
+  height: 32px;
+  width: 32px;
+  border-radius: 100px;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  left: ${({ $left }) => ($left ? "85%" : "10%")};
+`
+
+

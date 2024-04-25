@@ -6,7 +6,7 @@ import styled from "styled-components";
 export const Download = () => {
   return (
     <StyledDownload>
-      <img src={image} alt="weight lifting" />
+      <img id="weight-lift" src={image} alt="weight lifting" />
       <div className="download-classes">
         <h2>WORLD-CLASS WORKOUTS. WHEREEVER YOU ARE.</h2>
         <p>
@@ -42,9 +42,9 @@ const StyledDownload = styled.section`
     line-height: 38px;
   }
 
-  img {
-    /* width: 100%; */
-    //Check in the end if we need this for other viewports. If yes we need to give a classname otherwise it overwrites the Icon Download...
+  #weight-lift {
+    width: 100%;
+
   }
 
   .download-classes {

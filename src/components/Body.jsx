@@ -23,6 +23,7 @@ export const Body = () => {
 //Styled Components
 
 const StyledBody = styled.main`
+  width: 100vw;
   display: flex;
   flex-direction: column;
   gap: 80px;

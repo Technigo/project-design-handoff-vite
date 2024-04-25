@@ -44,7 +44,8 @@ export const Footer = () => {
 
 //Styled Components
 
-const StyledFooter = styled.div`
+const StyledFooter = styled.footer`
+  width: 100vw;
   height: 668px;
   background-color: #3e4c65;
   display: flex;

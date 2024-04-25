@@ -46,7 +46,7 @@ export const Slider = () => {
 
 // Styled Components
 
-export const StyledSlider = styled.section`
+ const StyledSlider = styled.section`
   display: flex;
   gap: 16px;
   margin: 0 24px;

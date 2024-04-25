@@ -13,7 +13,7 @@ export const CTA = () => {
 
 //Styled Components
 
-const StyledCTA = styled.div`
+const StyledCTA = styled.section`
   height: 504px;
   background-image: url(CTAImg.svg);
   background-repeat: no-repeat;
