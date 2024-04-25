@@ -10,18 +10,16 @@ import { Footer } from "./components/Footer"
 
 export const App = () => {
   return (
-    <div className="relative">
+    <>
       <Navbar />
-      <div className="relative z-10">
-        <HeroSection />
-        <TrustIndicators />
-        <ReasonSection />
-        <CallToAction />
-        <FeedbackSection />
-        <FAQs />
-        <Newsletter />
-        <Footer />
-      </div>
-    </div>
+      <HeroSection />
+      <TrustIndicators />
+      <ReasonSection />
+      <CallToAction />
+      <FeedbackSection />
+      <FAQs />
+      <Newsletter />
+      <Footer />
+    </>
   )
 }

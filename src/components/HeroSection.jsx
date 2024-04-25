@@ -1,12 +1,10 @@
 import { Button } from "./Button"
-// import { Navbar } from "./Navbar"
 
 export const HeroSection = () => {
   return (
     <div
-      className="relative bg-cover bg-center object-none h-136 w-auto"
-      style={{ backgroundImage: "url('/hero-phone.png')" }}>
-      {/* <Navbar /> */}
+      className="relative bg-hero-pattern bg-no-repeat bg-cover bg-bottom object-none h-136 w-auto py-20"
+      >
       <div className="flex flex-col justify-center mt-24">
         <h1 className="font-bebas text-green text-center text-6xl px-6 pb-4">
           READY TO SWEAT?

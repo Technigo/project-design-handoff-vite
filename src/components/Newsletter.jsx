@@ -11,8 +11,8 @@ export const Newsletter = () => {
           events!
         </p>
         <input
-          className="mt-4 rounded-full w-full h-7 pl-4 placeholder:text-black"
           type="email"
+          className="mt-4 rounded-full w-full h-7 pl-4 placeholder-black placeholder-opacity-100"
           placeholder="Enter your e-mail address here."
           aria-label="Email address"
         />

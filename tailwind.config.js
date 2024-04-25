@@ -16,6 +16,9 @@ export default {
       "grey-dot2": "#D8D8D8",
     },
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('/hero-phone.png')",
+      },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],

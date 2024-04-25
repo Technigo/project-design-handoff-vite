@@ -3,7 +3,7 @@ import { CiMenuBurger } from "react-icons/ci"
 export const Navbar = () => {
   return (
     <>
-      <nav className="sticky top-0 bg-off-black bg-opacity-30 px-4 py-2 z-50 lg:px-32">
+      <nav className="fixed top-0 bg-off-black bg-opacity-30 px-4 py-2 z-50 w-full lg:px-32">
         <div className="relative flex h-16 items-center justify-between">
           <img src="/logo.png" />
           <div className="hidden lg:flex">

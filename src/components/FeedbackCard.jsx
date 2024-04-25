@@ -7,7 +7,7 @@ export const FeedbackCard = () => {
         return (
           <div key={id}>
             <img src={photo} alt="icon"></img>
-            <h3>{text}</h3>
+            <h3 className="italic">{text}</h3>
             <p>{sender}</p>
           </div>
         )
