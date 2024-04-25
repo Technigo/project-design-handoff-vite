@@ -17,6 +17,7 @@ export default {
           darkblue: "#232E90",
           violetblue: "#99A2FB",
           mediumpink: "#F3B6AB",
+          mediumred: "#EC7361",
           valupropsviolet: "#B5BCF9",
         },
       },
