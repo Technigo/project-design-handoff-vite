@@ -2,6 +2,7 @@ import styled from "styled-components";
 import heroPhone from "/src/assets/images/HeroPhone.png";
 import heroTablet from "/src/assets/images/HeroTablet.png";
 import heroDesktop from "/src/assets/images/HeroDesktop.png";
+import arrowDown from "/src/assets/arrowDown.png";
 import { CtaButton } from "./CTA-button.jsx";
 
 export const HeroSection = () => {
@@ -15,8 +16,7 @@ export const HeroSection = () => {
         <CtaButton>Book Now</CtaButton>
       </HeroText>
       <ArrowIcon
-        className="arrow-icon"
-        src="./src/assets/icons/arrowDown.png"
+        src={arrowDown}
       />
     </HeroContainer>
   );
