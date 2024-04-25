@@ -1,8 +1,12 @@
 import { Hero } from "./components/Hero";
-import { Buttons } from "./components/Buttons";
+import { Fonts } from "./components/Fonts"
+//import { Buttons } from "./components/Buttons";
 
-import { createGlobalStyle } from "styled-components";
+
 import { OurOfferings } from "./components/OurOfferings";
+import { HeaderNavbar } from "./components/HeaderNavbar";
+//import { CardsCarousel } from "./components/CardsCarousel";
+
 
 export const App = () => {
   return (
@@ -14,14 +18,4 @@ export const App = () => {
   );
 };
 
-const Fonts = createGlobalStyle`
-body {
-  .mulish-<uniquifier> {
-    font-family: "Mulish", sans-serif;
-  }
-  .philosopher-bold {
-    font-family: "Philosopher", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-}`;
+
