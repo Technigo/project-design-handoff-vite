@@ -3,7 +3,6 @@ import workshop from "../components/workshop.json";
 
 export const WorkshopList = () => {
   const workshops = workshop;
-  console.log(workshops);
   return (
     <div>
       <p>
@@ -16,6 +15,7 @@ export const WorkshopList = () => {
       {workshops.map((workshop, index) => (
         <WorkshopCard key={index} workshop={workshop} />
       ))}
+      <a href="">See All Workshops</a>
     </div>
   );
 };

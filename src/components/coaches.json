@@ -1,0 +1,23 @@
+[
+  {
+    "altText": "Willow Greenforest",
+    "imageUrl": "/willow_greenforest.svg",
+    "name": "Willow Greenforest",
+    "topics": "Herbs and Spices",
+    "text": "Nature's pharmacy holds the key to holistic healing; let the earth's bounty guide you to vibrant health and well-being."
+  },
+  {
+    "altText": "Serenity Rose",
+    "imageUrl": "/serenity_rose.svg",
+    "name": "Serenity Rose",
+    "topics": "Meditation and Yoga",
+    "text": "In the quiet embrace of meditation and the gentle flow of yoga, we rediscover our inner strength and nurturing a deep connection with ourselves and the world around us."
+  },
+  {
+    "altText": "Chef Gabriel Stone",
+    "imageUrl": "/gabriel_stone.svg",
+    "name": "Chef Gabriel Stone",
+    "topics": "Mindful Cooking",
+    "text": "Nourish your body and soul with every mindful bite, savouring the essence of life in every dish."
+  }
+]
