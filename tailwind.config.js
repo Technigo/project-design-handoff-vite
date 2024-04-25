@@ -20,6 +20,10 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
         bebas: ["Bebas Neue", "sans-serif"],
       },
+      fontSize: {
+        xs: ['10px', '12px']
+
+      },
       height: {
         136: "34rem", // Hero image height
       }
