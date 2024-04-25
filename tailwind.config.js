@@ -26,6 +26,7 @@ module.exports = {
       },
       backgroundSize: {
         'max': 'cover',
+
       },
       fontFamily: {
         "roboto": ["Roboto", "sans-serif"],
@@ -41,7 +42,7 @@ module.exports = {
         "21": "1.313rem",
         "20": "1.25rem",
         "18": "1.125rem",
-        "paragraph-mob": "1rem",
+        "16": "1rem",
       },
       colors: {
         "beige": "#DECEC6",
@@ -49,6 +50,14 @@ module.exports = {
         "steelblue": "#A1B5D8",
         "darkblue": "#042d43",
         "yogawhite": "#F8F7F7",
+      },
+      images: {
+        "mobw": "194px",
+        "mobh": "137px",
+        "tabh": "167px",
+        "tabw": "234px",
+        "deskh": "310px",
+        "deskw": "417px",
       },
     },
   },
