@@ -30,6 +30,7 @@ const StyledNavBar = styled.section`
   }
 
   .menu-logo {
+    cursor: pointer;
     margin-right: 56px;
     width: 20%;
     height: auto;
@@ -37,6 +38,7 @@ const StyledNavBar = styled.section`
   }
 
   li {
+    cursor: pointer;
     list-style-type: none;
     margin-right: 56px;
     color: #000;
@@ -56,6 +58,7 @@ const StyledNavBar = styled.section`
   }
 
   .account-list {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -64,6 +67,7 @@ const StyledNavBar = styled.section`
 
   .small-screen-menu {
     display: none;
+    cursor: pointer;
   }
 
   @media (max-width: 1200px) {

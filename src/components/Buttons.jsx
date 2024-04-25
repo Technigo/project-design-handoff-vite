@@ -13,6 +13,11 @@ const StyledButton = styled.button`
   border: none;
   cursor: pointer;
   white-space: nowrap;
+  transition: background 0.2s;
+
+  &:hover {
+    background: #552a1c;
+  }
 `;
 
 export const Buttons = ({ buttonText, fontSize }) => {
