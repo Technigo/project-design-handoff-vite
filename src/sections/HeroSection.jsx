@@ -4,6 +4,7 @@ import bg from "../assets/backgrounds/stripes-mobile.png";
 import burger from "../assets/icons/hamburger.svg"
 import { SignUpButton } from "../components/SignUpButton";
 
+
 export const HeroSection = ({ data }) => {
   return (
     <>
