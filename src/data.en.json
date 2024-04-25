@@ -8,20 +8,19 @@
 
   "info-icons": [
     {
+      "name": "Food",
+      "description": "Delicious lunch"
+    },    {
+      "name": "Parking",
+      "description": "Free for members!"
+    },
+    {
       "name": "Gym",
       "description": "24/7 Access"
     },
     {
-      "name": "Co-working",
+      "name": "Co-work",
       "description": "Wifi, vibes"
-    },
-    {
-      "name": "Canteen",
-      "description": "Delicious lunch"
-    },
-    {
-      "name": "Parking",
-      "description": "Free for members!"
     }
   ],
 

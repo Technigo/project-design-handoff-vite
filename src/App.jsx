@@ -19,7 +19,7 @@ export const App = () => {
   return (
     <>
       <HeroSection data={data["hero"]} />
-      <InfoIconSections />
+      <InfoIconSections data={data["info-icons"] } />
       <LearnMoreSection data={data["learn-more"]} />
       <FooterSection
         onLanguageChange={handleLanguageChange}
