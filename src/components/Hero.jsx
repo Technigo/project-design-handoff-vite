@@ -160,6 +160,7 @@ const StyledHero = styled.section`
   }
 
   @media (max-width: 428px) {
+    //mobile
   }
 `;
 

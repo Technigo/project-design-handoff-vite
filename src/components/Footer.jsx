@@ -18,7 +18,11 @@ const StyledFooter = styled.footer`
     font-size: 24px;
     font-style: normal;
     font-weight: 900;
-    line-height: 19px;
+    line-height: 2rem;
+  }
+
+  .footer-title-breaker {
+    display: block;
   }
 
   .social-media {
@@ -28,7 +32,7 @@ const StyledFooter = styled.footer`
     align-items: center;
     position: absolute;
     right: 10%;
-    top: 33%;
+    top: 43%;
   }
 
   .media-link {
@@ -81,6 +85,7 @@ const StyledFooter = styled.footer`
   }
 
   .company-email {
+    cursor: pointer;
     font-weight: 900;
   }
 
@@ -90,7 +95,13 @@ const StyledFooter = styled.footer`
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 30px;
+  }
+
+  .link {
+    cursor: pointer;
+    list-style-type: none;
+
+    margin-top: 3px;
   }
 
   .language-select {
@@ -118,14 +129,107 @@ const StyledFooter = styled.footer`
     font-weight: 500;
     line-height: normal;
   }
+
+  @media (max-width: 1200px) {
+    .social-media {
+      right: 8%;
+    }
+  }
+
+  @media (max-width: 985px) {
+    padding: 1.5rem 0.8rem 1rem;
+    .social-media {
+      right: 6%;
+    }
+  }
+
+  @media (max-width: 744px) {
+    position: none;
+
+    .footer-title {
+      margin-bottom: 0;
+      font-size: 1rem;
+      line-height: 19px;
+    }
+
+    .footer-title-breaker {
+      display: inline;
+    }
+
+    .social-media {
+      margin: 40px auto;
+      position: initial;
+      right: auto;
+      top: auto;
+    }
+
+    .media-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .further-info {
+      width: 100%;
+      padding: 0 0.5rem;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .text-info {
+      align-items: flex-end;
+    }
+
+    .company-name {
+      font-size: 19px;
+    }
+
+    .address-detail {
+      font-size: 1rem;
+    }
+
+    .info-links {
+      font-size: 1rem;
+    }
+
+    .language-select {
+      width: 30%;
+      margin-top: 1.5rem;
+    }
+  }
+
+  @media (max-width: 428px) {
+    .footer-title-breaker {
+      display: block;
+    }
+
+    .further-info {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .text-info {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .language-select {
+      width: 50%;
+    }
+  }
 `;
 
 export const Footer = () => {
   return (
     <StyledFooter>
       <h3 className="footer-title">
-        Pilates promises greater flexibility, strength and stamina - and yes,
-        everybody&#39;s welcome
+        Pilates promises greater flexibility, strength and{" "}
+        <span className="footer-title-breaker">
+          stamina - and yes, everybody&#39;s welcome
+        </span>
       </h3>
       <div className="social-media">
         <a className="media-link" href="#">
@@ -148,15 +252,17 @@ export const Footer = () => {
               <p className="company-email">hello@curvespace.com</p>
             </div>
           </div>
-          <div className="info-links">
-            <p className="link">Privacy policy</p>
-            <p className="link">Download app</p>
-            <p className="link">Cancellation policy</p>
-            <p className="link">My account/log in</p>
-          </div>
+          <ul className="info-links">
+            <li className="link">Privacy policy</li>
+            <li className="link">Download app</li>
+            <li className="link">Cancellation policy</li>
+            <li className="link">My account/log in</li>
+          </ul>
         </div>
         <select className="language-select">
-          <option disabled>Select Language</option>
+          <option className="placeholder" disabled defaultValue>
+            Select Language
+          </option>
           <option value="en">English</option>
           <option value="sv">Swedish</option>
         </select>
