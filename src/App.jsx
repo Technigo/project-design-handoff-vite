@@ -1,8 +1,10 @@
-import { Header } from "./components/Header/Header";
+
+import { Strength } from "./components/Strength";
 
 export const App = () => {
   return (
-    <Header />
-
+    <>
+      <Strength />
+    </>
   ) 
 };
