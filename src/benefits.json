@@ -4,12 +4,12 @@
     "description": "We mix dicipline with joy and compassion to encourage focus, bodycontrol  but also power and self trust.",
     "link": "Learn more",
     "images": {
-      "small": "./src/assets/benefits/karate-girl-photo.png",
-      "medium": "./src/assets/benefits/karate-girl-photo-blob.png"
+      "small": "/assets/benefits/karate-girl-photo.png",
+      "medium": "/assets/benefits/karate-girl-photo-blob.png"
     },
     "symbols": {
-      "small": "./src/assets/benefits/symbol-heart-red.svg",
-      "medium": "./src/assets/benefits/symbol-heart-pink.svg"
+      "small": "/assets/benefits/symbol-heart-red.svg",
+      "medium": "/assets/benefits/symbol-heart-pink.svg"
     }
   },
   {
@@ -17,12 +17,12 @@
     "description": "Videos and fun challenges to practice at home. Create your own Karate Kid profile and get new scores in the Karate Kids game. ",
     "link": "Watch videos",
     "images": {
-      "small": "./src/assets/benefits/karate-girl-3D.png",
-      "medium": "./src/assets/benefits/karate-girl-3D.png"
+      "small": "/assets/benefits/karate-girl-3D.png",
+      "medium": "/assets/benefits/karate-girl-3D.png"
     },
     "symbols": {
-      "small": "./src/assets/benefits/symbol-lightning-blue.svg",
-      "medium": "./src/assets/benefits/symbol-lightning-blue.svg"
+      "small": "/assets/benefits/symbol-lightning-blue.svg",
+      "medium": "/assets/benefits/symbol-lightning-blue.svg"
     }
   },
   {
@@ -30,12 +30,12 @@
     "description": "Get a full overview by the app and see scedules, classes, events and chat with other parents and our teachers.",
     "link": "Get the app",
     "images": {
-      "small": "./src/assets/benefits/image-overview.svg",
-      "medium": "./src/assets/benefits/image-overview.svg"
+      "small": "/assets/benefits/image-overview.svg",
+      "medium": "/assets/benefits/image-overview.svg"
     },
     "symbols": {
-      "small": "./src/assets/benefits/symbol-smiley.svg",
-      "medium": "./src/assets/benefits/symbol-smiley.svg"
+      "small": "/assets/benefits/symbol-smiley.svg",
+      "medium": "/assets/benefits/symbol-smiley.svg"
     }
   }
 ]
