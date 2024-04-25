@@ -4,7 +4,7 @@ import { TrustIndicators } from "./components/3-TrustIndicators.jsx"
 import { Features } from "./components/4-Features.jsx"
 import { Challenge } from "./components/5-Challenge.jsx" 
 import { Feedback } from "./components/6-Feedback.jsx"
-import { Questions } from "./components/7-Questions.jsx"
+import { QuestionsSection } from "./components/7-Questions.jsx"
 import { Newsletter } from "./components/8-Newsletter.jsx"
 import { Footer } from "./components/9-Footer.jsx"
 
@@ -17,7 +17,7 @@ export const App = () => {
     <Features />
     <Challenge />
     <Feedback />
-    <Questions />
+    <QuestionsSection />
     <Newsletter />
     <Footer />
   </>
