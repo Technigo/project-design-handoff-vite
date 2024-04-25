@@ -4,7 +4,7 @@ export const FeatureCard = ({ feature }) => {
   console.log(feature);
     let img = "";
     
-    const reducedContentCheck = false;
+    let reducedContentCheck = false;
 
     if ( feature.smallTitle === true ){
         reducedContentCheck = true;
@@ -27,7 +27,7 @@ export const FeatureCard = ({ feature }) => {
     <div className="border border-black bg-background-neon-green rounded-lg drop-shadow-card m-4 flex">
       <img className="w-20 h-20 self-center" src={img} />
           <div className="p-4">
-              {reducedContentCheck ? <h3 className="phone">{feature.smallTitle} </h3> : <h3 className="tablet">{feature.title}</h3>}
+              {reducedContentCheck ? <h3 className="tablet:hidden">{feature.smallTitle} </h3> : <h3 className="hidden tablet:inline">{feature.title}</h3>}
 
 
         <p>{feature.description}</p>
