@@ -38,6 +38,7 @@ export const Carousel = () => {
     onSwipedLeft: () => setIndex(prevIndex => (prevIndex === feedback.length - 1 ? 0 : prevIndex + 1)),
     onSwipedRight: () => setIndex(prevIndex => (prevIndex === 0 ? feedback.length - 1 : prevIndex - 1)),
     preventDefaultTouchmoveEvent: true,
+    preventScrollOnSwipe: true, 
     trackMouse: true
   });
 
