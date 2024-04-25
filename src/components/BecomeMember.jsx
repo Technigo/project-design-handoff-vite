@@ -3,7 +3,7 @@ import membership from "/image-membership.png";
 export const BecomeMember = () => {
   return (
     <section className="py-8">
-      <div className="bg-amber">
+      <div className="bg-peach">
         <div className="image-cut-out">
           <img src={membership} alt="membership-image" />
         </div>
