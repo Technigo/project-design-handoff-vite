@@ -52,7 +52,7 @@ export const Footer = () => {
             id="search"
             name="search"
             placeholder="Search"
-            className="px-2 py-2 w-40 h-10 border-2 border-primary-violetblue rounded-2xl focus:outline-none focus:border-primary-mediumpink font-urbanist shadow-inputShadow placeholder-primary-darkblue bg-transparent text-sm lg:hidden"
+            className="px-2 py-2 w-40 h-10 border-2 border-primary-violetblue rounded-2xl focus:outline-none focus:border-primary-mediumpink font-urbanist shadow-boxShadow placeholder-primary-darkblue bg-transparent text-sm lg:hidden"
           />
         </div>
       </div>

@@ -9,7 +9,7 @@ export default {
     },
     extend: {
       boxShadow: {
-        inputShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25);",
+        boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25);",
       },
       colors: {
         primary: {
@@ -17,6 +17,7 @@ export default {
           darkblue: "#232E90",
           violetblue: "#99A2FB",
           mediumpink: "#F3B6AB",
+          valupropsviolet: "#B5BCF9",
         },
       },
       fontFamily: {
