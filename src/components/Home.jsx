@@ -8,7 +8,7 @@ import { Stats } from "../sections/Stats";
 
 export const Home = () => {
   return (
-    <div>
+    <div className="container">
       <Navbar />
       <Header />
       <Stats />

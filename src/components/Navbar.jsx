@@ -42,7 +42,7 @@ const Navbar = () => {
   }
 
   return (
-    <div>
+    <nav className="bg-navbar fixed  w-full bg-opacity-75">
       <div
         style={{
           background: `url(${logoImage})`,
@@ -57,7 +57,7 @@ const Navbar = () => {
           height: `${navHeight}px`,
         }}
       ></div>
-    </div>
+    </nav>
   );
 };
 
