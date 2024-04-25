@@ -8,6 +8,12 @@ export default {
       lg: "1024px",
     },
     extend: {
+      padding: {
+        180: "720px",
+      },
+      inset: {
+        220: "880px",
+      },
       borderWidth: {
         half: "0.5px",
       },
