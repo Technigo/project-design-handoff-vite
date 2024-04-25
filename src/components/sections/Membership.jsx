@@ -26,13 +26,13 @@ export const Membership = () => {
       </div>
       <GeneralButton
         text="Sign up"
-        customStyle="mt-5 justify-self-center top-5 md:top-7 xl:top-10" //removed the relative bc button didn't hover
+        customStyle="relative mt-5 justify-self-center top-5 md:top-7 xl:top-10 z-10" //removed the relative bc button didn't hover
       />
       <div className="relative bottom-0">
         <img
           src={pray}
           alt="yoga pose pray"
-          className="w-52 object-cover md:w-72 xl:w-[28rem]"
+          className="w-52 object-cover md:w-72 xl:w-[28rem] "
         />
       </div>
     </section>
