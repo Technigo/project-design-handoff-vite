@@ -226,6 +226,7 @@ const BottomSection = styled.div`
   text-align: left;
   align-items: center;
   gap: 128px;
+  margin-top: 40px;
 
   @media (min-width: 744px) and (max-width: 1493px) {
     justify-content: left;
@@ -233,7 +234,8 @@ const BottomSection = styled.div`
 
   @media (min-width: 1494px) {
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
+
   }
 `;
 
@@ -242,14 +244,18 @@ const Questions = styled.div`
   flex-direction: column;
   text-align: left;
   gap: 16px;
-  padding-bottom: 80px;
+  padding-bottom: 20px;
+  margin-bottom: 80px;
+  
 
   @media (min-width: 744px) and (max-width: 1493px) {
-    padding-bottom: 128px;
+    margin-bottom: 128px;
+    padding-bottom: 80px;
   }
 
   @media (min-width: 1494px) {
-    padding-bottom: 160px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
   }
 `;
 
@@ -262,6 +268,7 @@ const Question = styled.div`
   display: flex;
   flex-direction: row;
   min-width: 310px;
+  max-width: 510px;
   justify-content: space-between;
   text-align: left;
   align-items: center;
@@ -287,12 +294,14 @@ const Question = styled.div`
 
   @media (min-width: 744px) and (max-width: 1493px) {
     font-size: 18px;
-    min-width: 510px;
+    min-width: 610px;
+    max-width: 810px;
   }
 
   @media (min-width: 1494px) {
     font-size: 20px;
-    min-width: 560px;
+    min-width: 600px;
+    max-width: 800px;
   }
 `;
 
@@ -305,7 +314,6 @@ const QuestionsDesktop = styled.div`
     justify-content: left;
     text-align: left;
     gap: 16px;
-    padding-bottom: 160px;
   }
 `;
 
@@ -315,6 +323,7 @@ const QuestionDesktop = styled.div`
   @media (min-width: 1494px) {
   display: flex;
   min-width: 310px;
+  max-width: 510px;
   justify-content: space-between;
   text-align: left;
   align-items: center;
@@ -322,7 +331,9 @@ const QuestionDesktop = styled.div`
   border-width: 0 0 1px;
   border-color: var(--black);
   padding-bottom: 8px;
-
+  font-size: 20px;
+  min-width: 600px;
+  max-width: 800px;
 
   &:hover {
     cursor: pointer;
@@ -338,15 +349,5 @@ const QuestionDesktop = styled.div`
       transform: rotate(90deg);
       transition: transform ease 0.2s;
     }
-  }
-
-  @media (min-width: 744px) and (max-width: 1493px) {
-    font-size: 18px;
-    min-width: 510px;
-  }
-
-  @media (min-width: 1494px) {
-    font-size: 20px;
-    min-width: 560px;
   }
 `;
