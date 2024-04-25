@@ -228,7 +228,7 @@ const BottomSection = styled.div`
   text-align: left;
   align-items: center;
   gap: 128px;
-  margin: 40px 128px 0 128px;
+  margin-top; 40px;
 
   @media (min-width: 744px) and (max-width: 1493px) {
     justify-content: left;
@@ -237,6 +237,7 @@ const BottomSection = styled.div`
   @media (min-width: 1494px) {
     flex-direction: row;
     justify-content: center;
+    margin: 40px 128px 0 128px;
 
   }
 `;
