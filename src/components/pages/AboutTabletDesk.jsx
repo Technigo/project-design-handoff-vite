@@ -1,14 +1,5 @@
 import useDeviceType from "../useDeviceType";
-import {
-  Page,
-  StyledH1,
-  StyledH2,
-  StyledText,
-  StyledImage,
-  StyledButton,
-  ButtonBox,
-  Container,
-} from "../StyledComponents";
+import { Page, StyledH1, StyledH2, StyledText, StyledButton, ButtonBox, Container } from "../StyledComponents";
 import AboutOne from "../../assets/about-one.jpg";
 import AboutTwo from "../../assets/about-two.jpg";
 import {
@@ -23,6 +14,7 @@ import {
   TitleBox,
   MeditaionBox,
   MeditationText,
+  AboutOneImage,
 } from "../StyledAbout";
 
 export const AboutTabletDesk = () => {
@@ -46,7 +38,7 @@ export const AboutTabletDesk = () => {
         </StyledText>
 
         <MeditaionBox>
-          <StyledImage src={AboutOne} alt="Midsommar celebration" />
+          <AboutOneImage src={AboutOne} alt="Midsommar celebration" />
           <MeditationText>
             <AboutInfoBox>
               <AboutTitleBox>

@@ -72,19 +72,19 @@ export const Form = () => {
     <FormContainer>
       <FormGroup>
         <Label htmlFor="name">
-          <StyledText>Name</StyledText>
+          <StyledText style={{ fontSize: deviceType === "tablet" ? "18px" : "inherit" }}>Name</StyledText>
         </Label>
         <Input type="text" id="name" name="name" value={name} onChange={handleNameChange} />
       </FormGroup>
       <FormGroup>
         <Label htmlFor="email">
-          <StyledText>e-mail:</StyledText>
+          <StyledText style={{ fontSize: deviceType === "tablet" ? "18px" : "inherit" }}>e-mail:</StyledText>
         </Label>
         <Input type="email" id="email" name="email" value={email} onChange={handleEmailChange} />
       </FormGroup>
       <FormGroup>
         <Label htmlFor="phoneNumber">
-          <StyledText>Phone number:</StyledText>
+          <StyledText style={{ fontSize: deviceType === "tablet" ? "18px" : "inherit" }}>Phone number:</StyledText>
         </Label>
         <Input type="tel" id="phoneNumber" name="phoneNumber" value={phoneNumber} onChange={handlePhoneNumberChange} />
       </FormGroup>
@@ -93,7 +93,9 @@ export const Form = () => {
         <FormGroup>
           <CounterBox>
             <Label htmlFor="numberOfPeople">
-              <StyledText>Number of people</StyledText>
+              <StyledText style={{ fontSize: deviceType === "tablet" ? "18px" : "inherit" }}>
+                Number of people
+              </StyledText>
             </Label>
             <IncrementDecrementContainer>
               <MinusIcon onClick={handleDecrement}></MinusIcon>

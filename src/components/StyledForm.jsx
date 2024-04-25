@@ -108,6 +108,11 @@ export const CounterContainer = styled.div`
   gap: var(--gap-comfortable);
   margin-bottom: 18px;
   margin-top: 15px;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 `;
 
 export const TotalBox = styled.div`

@@ -99,6 +99,12 @@ export const AboutTextBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--gap-comfortable);
+  width: 100%;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    grid-column: 2 / 3;
+    height: auto;
+  }
 `;
 
 export const AboutTitleBox = styled.div`
@@ -107,12 +113,19 @@ export const AboutTitleBox = styled.div`
   gap: 10px;
 `;
 
+export const AboutOneImage = styled.img`
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+`;
+
 export const AboutTwoImage = styled.img`
   width: 100%;
-  object-fit: cover;
-  overflow: hidden;
+  height: auto;
+  object-fit: contain;
 
-  @media (min-width: 651px) and (max-width: 1024px) {
+  @media (min-width: 350px) and (max-width: 1024px) {
+    height: auto;
   }
 `;
 
@@ -120,10 +133,16 @@ export const MeditaionBox = styled.div`
   display: flex;
   gap: var(--gap-comfortable);
   margin-top: var(--gap-spacious);
+  max-width: 100%;
 `;
 
 export const MeditationText = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--gap-comfortable);
+  max-width: 100%;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    gap: var(--gap-extra);
+  }
 `;

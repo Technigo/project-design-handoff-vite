@@ -21,3 +21,15 @@ export const StyledTeacherTwo = styled.img`
   object-fit: cover;
   overflow: hidden;
 `;
+
+export const TeacherBox = styled.div`
+  display: flex;
+  gap: var(--gap-extra);
+  margin: var(--gap-extra) 0;
+`;
+
+export const TeacherBoxOne = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+  gap: var(--gap-default);
+`;

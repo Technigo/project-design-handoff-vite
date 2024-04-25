@@ -35,6 +35,8 @@ export const StyledImage = styled.img`
 `;
 
 export const Page = styled.div`
+  max-width: 100%;
+  width: 100%;
   display: grid;
   background-color: var(--light-grey);
   padding: 0 var(--gap-compact);

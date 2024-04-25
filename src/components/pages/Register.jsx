@@ -19,7 +19,7 @@ export const Register = () => {
         <TitleReg>
           <StyledH1>Register for the event</StyledH1>
         </TitleReg>
-        <StyledText style={{ textAlign: "center" }}>
+        <StyledText style={{ textAlign: "center", fontSize: deviceType === "tablet" ? "18px" : "inherit" }}>
           Ensure a spot and invite your friends to join in the celebration of Midsommar with a blend of yoga, meditation
           and feasting.
         </StyledText>
