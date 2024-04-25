@@ -10,7 +10,7 @@ export const BenefitsCard = ({ title, description, link, images, symbols }) => {
         <img
           src={images.small}
           alt="Karate girl"
-          className="object-fit md:w-48 lg:w-80 border-2 border-red"
+          className="object-fit md:w-48 lg:w-80"
         />
       </picture>
       <div className="md:self-center md:flex md:flex-col gap-2 md:gap-4 ">
