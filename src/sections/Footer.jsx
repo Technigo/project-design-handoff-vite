@@ -45,38 +45,43 @@ const Footer = () => {
   }
 
   return (
-    <div>
+    <div className=" bg-blue p-8">
       <div
+        className=""
         style={{
           background: `url(${logoImage})`,
           width: `${logoWidth}px`,
           height: `${logoHeight}px`,
         }}
       ></div>
-      <p>About us</p>
-      <p>Contact us</p>
-      <p>FAQ</p>
-      <div
-        style={{
-          background: `url(${instagramImage})`,
-          width: `${mediaSize}px`,
-          height: `${mediaSize}px`,
-        }}
-      ></div>
-      <div
-        style={{
-          background: `url(${twitterImage})`,
-          width: `${mediaSize}px`,
-          height: `${mediaSize}px`,
-        }}
-      ></div>
-      <div
-        style={{
-          background: `url(${whatsappImage})`,
-          width: `${mediaSize}px`,
-          height: `${mediaSize}px`,
-        }}
-      ></div>
+      <p className="m-2 text-yellowLight">About us</p>
+      <p className="ml-2 text-yellowLight">Contact us</p>
+      <p className="m-2 text-yellowLight">FAQ</p>
+      <div className="m-2 flex py-2">
+        <div
+          className="mr-6"
+          style={{
+            background: `url(${instagramImage})`,
+            width: `${mediaSize}px`,
+            height: `${mediaSize}px`,
+          }}
+        ></div>
+        <div
+          className="mr-6"
+          style={{
+            background: `url(${twitterImage})`,
+            width: `${mediaSize}px`,
+            height: `${mediaSize}px`,
+          }}
+        ></div>
+        <div
+          style={{
+            background: `url(${whatsappImage})`,
+            width: `${mediaSize}px`,
+            height: `${mediaSize}px`,
+          }}
+        ></div>
+      </div>
     </div>
   );
 };

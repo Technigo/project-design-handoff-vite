@@ -33,12 +33,13 @@ const Booking = () => {
   }
 
   return (
-    <div>
+    <div className="flex-co m-8 mt-14 flex flex-col font-heading text-2xl">
       <p>
         Your path to a healthier lifestyle starts here! Take your first step to
         feeling inner balance and peace.
       </p>
       <button
+        className="ml-auto mt-16"
         style={{
           background: `url(${bookButton})`,
           width: `${buttonWidth}px`,
