@@ -4,6 +4,7 @@ import { Teachers } from "./components/pages/Teachers.jsx";
 import Introduction from "./components/pages/Introduction.jsx";
 import { Border } from "./components/pages/Border.jsx";
 import { Promise } from "./components/pages/Promise.jsx";
+import { Register } from "./components/pages/Register.jsx";
 const App = () => {
   return (
     <div>
@@ -12,6 +13,8 @@ const App = () => {
       <About />
       <Promise />
       <Teachers />
+      <Border />
+      <Register />
       <Border />
     </div>
   );

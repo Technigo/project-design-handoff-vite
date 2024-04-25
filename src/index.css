@@ -14,3 +14,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.counter-box {
+  display: flex;
+  border: 2px solid black;
+  width: 155px;
+
+  height: 53px;
+}
+
+.counter-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
