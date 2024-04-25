@@ -5,37 +5,37 @@ import celebrationImageTablet from "../assets/images/celebration-image-tablet.pn
 import celebrationImageMobile from "../assets/images/celebration-image-mobile.png";
 
 export const LearnMoreSection = ({ data }) => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 360);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const checkIfMobile = () => setIsMobile(window.innerWidth < 360);
+    checkIfMobile();
+
     function handleResize() {
-      setIsMobile(window.innerWidth < 360);
+      checkIfMobile();
     }
 
     window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return (
-    <div className="bg-background-lavender text-text-dark p-5 text-center md:text-left flex flex-col md:flex-row-reverse">
-      <div className="md:flex-1 md:text-left">
-        <h2 className="font-orelega text-2xl md:text-4xl font-bold leading-tight">
+    <div className="bg-background-lavender text-text-dark text-center flex flex-col lg:flex-row-reverse items-start relative">
+      <div className="flex-1 relative pt-8 pb-24 px-6">
+        <h2 className="font-orelega text-xl md:text-4xl font-bold mb-4 leading-tight">
           {isMobile ? "Embrace your awesomeness!" : data.heading}
         </h2>
-        <p className="font-Montserrat mb-6">
-          {" "}
+        <p className="font-montserrat mb-4 text-sm">
           {isMobile
             ? "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events."
             : data.subheading}
         </p>
-        <button className="bg-main-blue text-text-light py-2 px-6 rounded hover:bg-hover-blue transition duration-300">
+        <button className="bg-main-blue text-text-light py-2 px-6 rounded hover:bg-hover-blue transition duration-300 shadow-md">
           {data.cta}
         </button>
       </div>
 
-      <div className="md:flex-1">
+      <div className="flex-1">
         <picture>
           <source
             srcSet={celebrationImageDesktop}
@@ -43,9 +43,9 @@ export const LearnMoreSection = ({ data }) => {
           />
           <source srcSet={celebrationImageTablet} media="(min-width: 768px)" />
           <img
-            className="md:w-full lg:w-full xl:w-full mb-0"
             src={celebrationImageMobile}
-            alt="celebration"
+            alt="Celebration"
+            className="w-48 md:w-64 lg:w-full absolute bottom-0 left-0 lg:static"
           />
         </picture>
       </div>
