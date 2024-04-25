@@ -1,10 +1,16 @@
-import waveMobile from "../assets/testimonials/wave-mobile.svg";
+import waveDesktop from "../assets/testimonials/wave-desktop.svg";
 
 export const Testimonials = () => {
   return (
-    <div className="relative">
-      <img src={waveMobile} className=""></img>
-      <ul className="font-urbanistitalic text-primary-darkblue text-lg absolute inset-4 flex text-center gap-8">
+    <div className="h-40 bg-primary-greyblue">
+      {/* <div className="">
+        <img
+          src={waveDesktop}
+          className="size-full"
+          // style={{ width: "100%", height: "auto", maxWidth: "none" }}
+        />
+      </div> */}
+      <ul className=" font-urbanistitalic text-primary-darkblue text-lg inset-4 flex text-center items-center gap-8 lg:text-2xl size-full">
         <li>
           <p>11 clubs in 7 cities within the Nordic region</p>
         </li>

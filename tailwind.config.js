@@ -19,6 +19,7 @@ export default {
           mediumpink: "#F3B6AB",
           mediumred: "#EC7361",
           valupropsviolet: "#B5BCF9",
+          greyblue: "#E3E6FF",
         },
       },
       fontFamily: {
