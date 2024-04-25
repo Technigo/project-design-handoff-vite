@@ -13,7 +13,7 @@ export const BenefitsCard = ({ title, description, link, images, symbols }) => {
           className="object-fit md:w-48 lg:w-80 border-2 border-red"
         />
       </picture>
-      <div className="md:self-center md:flex md:flex-col md:gap-4 ">
+      <div className="md:self-center md:flex md:flex-col gap-2 md:gap-4 ">
         <h3 className="font-avengeance text-primary-darkblue text-lg lg:text-2xl">
           {title}
         </h3>
