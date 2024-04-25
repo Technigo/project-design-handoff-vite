@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-
+import useDeviceType from "../useDeviceType";
 import {
   Page,
   Container,
@@ -28,27 +27,7 @@ import {
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export const About = () => {
-  const [deviceType, setDeviceType] = useState("desktop");
-
-  useEffect(() => {
-    const handleResize = () => {
-      const width = window.innerWidth;
-      if (width < 350) {
-        setDeviceType("none");
-      } else if (width >= 350 && width <= 650) {
-        setDeviceType("mobile");
-      } else if (width <= 1024) {
-        setDeviceType("tablet");
-      } else {
-        setDeviceType("desktop");
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const deviceType = useDeviceType();
 
   if (deviceType === "none") {
     return null;
@@ -137,9 +116,9 @@ export const About = () => {
             $mobile={deviceType === "mobile"}
             $tablet={deviceType === "tablet"}
             $desktop={deviceType === "desktop"}
-            $backgroundColor="#F9CDCC"
-            $textColor="#1C2996"
-            $border="2px solid #1c2996"
+            $backgroundColor="var(--pink)"
+            $textColor="var(--blue)"
+            $border="2px solid var(--blue)"
             className="book about-button"
             aria-label="sign up">
             SIGN UP WITH YOUR FRIENDS

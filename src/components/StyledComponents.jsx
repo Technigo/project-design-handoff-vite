@@ -18,7 +18,7 @@ export const StyledImage = styled.img`
 
 export const Page = styled.div`
   display: grid;
-  background-color: #f6f6f6;
+  background-color: var(--light-grey);
   padding: 0 var(--gap-compact);
 `;
 
@@ -32,7 +32,7 @@ export const StyledText = styled.div`
   font-weight: 400;
   font-size: 16px;
   line-height: 25.6px;
-  color: #1c2996;
+  color: var(--blue);
   line-height: 25.6px;
 `;
 
@@ -41,7 +41,7 @@ export const StyledH1 = styled.div`
   font-size: 24px;
   font-weight: 400;
   line-height: 27.72px;
-  color: #1c2996;
+  color: var(--blue);
 
   @media (min-width: 350px) and (max-width: 650px) {
   }
@@ -58,7 +58,7 @@ export const StyledH2 = styled.h2`
   font-size: 20px;
   font-weight: 400;
   font-style: normal;
-  color: #1c2996;
+  color: var(--blue);
 
   @media (min-width: 350px) and (max-width: 650px) {
   }
@@ -74,7 +74,7 @@ export const StyledButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ${(props) => props.$backgroundColor || "#F65135"};
+  background-color: ${(props) => props.$backgroundColor || "var(--red)"};
   color: ${(props) => props.$textColor || "white"};
   border: ${(props) => props.$border || "none"};
   padding: var(--gap-default) var(--gap-comfortable);
@@ -103,7 +103,7 @@ export const StyledButton = styled.button`
     `}
 
   &:focus {
-    border: 2px solid #1c2996;
+    border: 2px solid var(--blue);
   }
 
   &.about-button:hover {

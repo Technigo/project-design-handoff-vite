@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import useDeviceType from "../useDeviceType";
 import { StyledText } from "../StyledComponents";
 import {
   FormContainer,
@@ -7,13 +8,18 @@ import {
   IncrementDecrementContainer,
   Input,
   NumberInput,
-  FlexibleButton,
   MinusIcon,
   PlusIcon,
   CounterBox,
   CounterContainer,
   TotalBox,
+  FlexibleButton,
+  CheckboxContainer,
+  HiddenCheckbox,
+  StyledCheckbox,
+  Icon,
 } from "../StyledForm";
+import { PromiseText } from "../StyledPromise";
 
 export const Form = () => {
   const [name, setName] = useState("");
@@ -21,7 +27,8 @@ export const Form = () => {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [numberOfPeople, setNumberOfPeople] = useState(0);
   const pricePerPerson = 20;
-  const [deviceType, setDeviceType] = useState("desktop");
+  const deviceType = useDeviceType();
+  const [isChecked, setIsChecked] = useState(false);
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -43,6 +50,10 @@ export const Form = () => {
     setNumberOfPeople(numberOfPeople + 1);
   };
 
+  const handleCheckboxChange = (event) => {
+    setIsChecked(event.target.checked);
+  };
+
   const totalAmount = numberOfPeople * pricePerPerson;
 
   const isSubmitDisabled = name === "" || email === "" || phoneNumber === "" || numberOfPeople === 0;
@@ -53,26 +64,6 @@ export const Form = () => {
     setPhoneNumber("");
     setNumberOfPeople(0);
   };
-
-  useEffect(() => {
-    const handleResize = () => {
-      const width = window.innerWidth;
-      if (width < 350) {
-        setDeviceType("none");
-      } else if (width >= 350 && width <= 650) {
-        setDeviceType("mobile");
-      } else if (width <= 1024) {
-        setDeviceType("tablet");
-      } else {
-        setDeviceType("desktop");
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   if (deviceType === "none") {
     return null;
@@ -98,6 +89,7 @@ export const Form = () => {
         </Label>
         <Input type="tel" id="phoneNumber" name="phoneNumber" value={phoneNumber} onChange={handlePhoneNumberChange} />
       </FormGroup>
+
       <CounterContainer>
         <FormGroup>
           <CounterBox>
@@ -124,15 +116,26 @@ export const Form = () => {
         </FormGroup>
       </CounterContainer>
       <FormGroup>
+        <CheckboxContainer>
+          <HiddenCheckbox id="notificationCheckbox" checked={isChecked} onChange={handleCheckboxChange} />
+          <StyledCheckbox checked={isChecked}>
+            <Icon viewBox="0 0 24 24">
+              <polyline points="20 6 9 17 4 12" />
+            </Icon>
+          </StyledCheckbox>
+          <PromiseText>Add a notification to my Calendar</PromiseText>
+        </CheckboxContainer>
+      </FormGroup>
+      <FormGroup>
         <FlexibleButton
-          $backgroundColor="#F65135"
-          $textColor="white"
           onClick={handleSubmit}
           $desktop={deviceType === "desktop"}
           $mobile={deviceType === "mobile"}
           $tablet={deviceType === "tablet"}
           disabled={isSubmitDisabled}
-          aria-label="Submit"></FlexibleButton>
+          aria-label="Submit">
+          Register now
+        </FlexibleButton>
       </FormGroup>
     </FormContainer>
   );

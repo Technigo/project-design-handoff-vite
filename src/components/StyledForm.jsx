@@ -30,15 +30,21 @@ export const Label = styled.label``;
 
 export const Input = styled.input`
   padding: var(--gap-compact) var(--gap-default);
-  border: 2px solid #1c2996;
+  border: 2px solid var(--blue);
 `;
 
 export const FlexibleButton = styled.button`
-  padding: 10px 20px;
-  background-color: ${(props) => (props.disabled ? "gray" : "pink")};
+  padding: var(--gap-compact) var(--gap-comfortable);
+  background-color: ${(props) => (props.disabled ? "var(--dark-grey)" : "var(--red)")};
   border: none;
-  border-radius: 5px;
-  color: white;
+  color: ${(props) => (props.disabled ? "var(--light-grey)" : "#fff")};
+  text-transform: uppercase;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28.8px;
+  letter-spacing: 0.02em;
+
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
 
   ${(props) =>
@@ -69,7 +75,7 @@ export const IncrementDecrementContainer = styled.div`
   justify-content: center;
   background-color: #fff;
   width: 115px;
-  border: 2px solid #1c2996;
+  border: 2px solid var(--blue);
 `;
 
 export const NumberInput = styled.input`
@@ -82,7 +88,7 @@ export const NumberInput = styled.input`
   font-weight: 400;
   font-size: 18px;
   line-height: 28.8px;
-  color: #1c2996;
+  color: var(--blue);
 `;
 
 export const CounterBox = styled.div`
@@ -106,5 +112,47 @@ export const TotalBox = styled.div`
   font-weight: 400;
   line-height: 55.44px;
   text-align: center;
-  color: #1c2996;
+  color: var(--blue);
+`;
+
+export const CheckboxContainer = styled.div`
+  display: flex;
+  gap: var(--gap-compact);
+  align-items: center;
+`;
+
+export const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+`;
+
+export const StyledCheckbox = styled.div`
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: ${(props) => (props.checked ? "#f9cdcc" : "#fff")};
+  border: 2px solid var(--blue);
+  transition: all 150ms;
+
+  ${HiddenCheckbox}:focus + & {
+    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
+  }
+
+  ${HiddenCheckbox}:checked + & {
+    background: #f9cdcc;
+  }
+`;
+
+export const Icon = styled.svg`
+  fill: none;
+  stroke: white;
+  stroke-width: 2px;
 `;

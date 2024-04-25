@@ -1,7 +1,13 @@
 import { PromiseBox, PromiseSmallTextBox, PromiseText, PromiseTextBox } from "../StyledPromise";
 import { StyledH2 } from "../StyledComponents";
+import useDeviceType from "../useDeviceType";
 
 export const Promise = () => {
+  const deviceType = useDeviceType();
+
+  if (deviceType === "none") {
+    return null;
+  }
   return (
     <PromiseBox>
       <StyledH2>WE PROMISE:</StyledH2>

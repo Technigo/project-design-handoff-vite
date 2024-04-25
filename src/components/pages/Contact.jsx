@@ -4,12 +4,12 @@ import styled from "styled-components";
 import { css } from "styled-components";
 
 const YellowWrapper = styled.div`
-  background-color: #ffcd64;
+  background-color: var(--yellow);
 `;
 
 // styled.a is a styled component that is an anchor tag
 const IconSome = styled.a`
-  color: #ffcd64;
+  color: var(--yellow);
   font-size: 2rem;
 `;
 const Heading = styled.h2`

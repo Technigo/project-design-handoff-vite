@@ -5,6 +5,7 @@ export const RegisterContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--gap-default);
+  margin-bottom: var(--gap-spacious);
 `;
 
 export const UnionContainer = styled.div`
@@ -25,5 +26,4 @@ export const UnionStyled = styled(Union)`
 export const TitleReg = styled.div`
   display: flex;
   justify-content: center;
-  /* margin: var(--gap-comfortable); */
 `;

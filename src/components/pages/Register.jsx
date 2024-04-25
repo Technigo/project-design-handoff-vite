@@ -1,8 +1,15 @@
 import { UnionContainer, UnionStyled, TitleReg, RegisterContainer } from "../StyledRegister";
 import { Page, StyledH1, StyledText } from "../StyledComponents";
 import { Form } from "./Form.jsx";
+import useDeviceType from "../useDeviceType";
 
 export const Register = () => {
+  const deviceType = useDeviceType();
+
+  if (deviceType === "none") {
+    return null;
+  }
+
   return (
     <Page>
       <RegisterContainer>

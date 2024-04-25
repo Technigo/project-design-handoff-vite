@@ -69,7 +69,7 @@ export const IntroContentBox = styled.div`
   align-items: center;
 
   padding-bottom: var(--gap-default);
-  background-color: #f9cdcc;
+  background-color: var(--pink);
   gap: var(--gap-compact);
 `;
 

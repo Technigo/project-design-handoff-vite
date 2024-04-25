@@ -4,7 +4,7 @@ export const PromiseBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffcd64;
+  background-color: var(--yellow);
   gap: var(--gap-spacious);
   padding: var(--gap-extra) 0;
 `;
@@ -12,7 +12,6 @@ export const PromiseBox = styled.div`
 export const PromiseTextBox = styled.div`
   display: flex;
   flex-direction: column;
-  text-transform: uppercase;
   text-align: center;
   gap: var(--gap-default);
   justify-content: center;
@@ -29,7 +28,7 @@ export const PromiseText = styled.div`
   font-weight: 400;
   line-height: 22.4px;
   letter-spacing: 0.06em;
-
-  color: #1c2996;
+  color: var(--blue);
   margin-right: 13px;
+  text-transform: uppercase;
 `;

@@ -24,7 +24,7 @@ export const GlobalCarouselStyles = createGlobalStyle`
 }
 
  .carousel .control-dots .dot {
-    background: #7E7C7C; 
+    background: var(--dark-grey); 
     width: 12px;
     height: 12px;
     top: 1px;
@@ -32,7 +32,7 @@ export const GlobalCarouselStyles = createGlobalStyle`
  }
 
  .carousel .control-dots .dot.selected {
-    background: #F65135;
+    background: var(--red);
     width: 12px;
     height: 12px;
     top: 1px;

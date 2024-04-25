@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import useDeviceType from "../useDeviceType";
 import { Page, StyledText, StyledH1, StyledButton, ButtonBox, Container, StyledImage } from "../StyledComponents";
 import { IconHeart, LogoContainer, IntroTextBox, IntroContentBox } from "../StyledIntro";
 import ImgIntro from "../../assets/intro-one.jpg";
@@ -6,27 +7,7 @@ import ImgIntro from "../../assets/intro-one.jpg";
 const Introduction = () => {
   const [isClicked, setIsClicked] = useState(false);
   const [isHeartVisible, setIsHeartVisible] = useState(true);
-  const [deviceType, setDeviceType] = useState("desktop");
-
-  useEffect(() => {
-    const handleResize = () => {
-      const width = window.innerWidth;
-      if (width < 350) {
-        setDeviceType("none");
-      } else if (width >= 350 && width <= 650) {
-        setDeviceType("mobile");
-      } else if (width <= 1024) {
-        setDeviceType("tablet");
-      } else {
-        setDeviceType("desktop");
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const deviceType = useDeviceType();
 
   const handleClick = () => {
     setIsClicked((prevIsClicked) => !prevIsClicked);
@@ -66,7 +47,7 @@ const Introduction = () => {
           {deviceType !== "none" && (
             <ButtonBox>
               <StyledButton
-                $backgroundColor="#F65135"
+                $backgroundColor="var(--red)"
                 $textColor="white"
                 onClick={handleClick}
                 $desktop={deviceType === "desktop"}
