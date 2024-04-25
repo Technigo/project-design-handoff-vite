@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export const Footer = () => {
   return (
-    <footer className="bg-plum-light flex justify-center py-[70px]">
+    <footer className="bg-plum-light flex justify-center py-[70px] max-w-1440 m-auto">
       <nav className="navbar">
         <ul className="items-center px-12 flex flex-wrap justify-center">
           <li>
