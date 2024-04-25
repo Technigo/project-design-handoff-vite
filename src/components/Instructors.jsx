@@ -58,13 +58,18 @@ export const Instructors = () => {
 
 const StyledInstructors = styled.section`
   .instructors {
-    margin: 0 0 20px 24px;
+    margin: 0 24px 20px 24px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
     @media screen and (min-width: 834px) {
-      margin: 0 0 32px 32px;
+      margin: 0 32px 32px 32px;
+      gap: 32px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin: 0 128px 32px 128px;
       gap: 32px;
     }
   }
@@ -84,7 +89,10 @@ const StyledSlider = styled.section`
   display: flex;
   gap: 16px;
   margin: 0 24px;
-  //Why is the margin on the right not showing???
+
+  @media screen and (min-width: 1440px) {
+    gap: 32px;
+  }
 `;
 
 const StyledSliderButtonBox = styled.div`

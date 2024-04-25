@@ -66,6 +66,11 @@ const StyledFooter = styled.footer`
     gap: 20px;
     justify-content: center;
   }
+
+  @media screen and (min-width: 1440px) {
+    padding: 32px 128;
+    gap: 84px;
+  }
 `;
 
 const FooterPart = styled.div`
@@ -88,6 +93,12 @@ const FooterPart = styled.div`
     padding-bottom: 0;
     padding-right: ${({ $bright }) => ($bright ? "20px" : "0")};
     padding-left: ${({ $bright }) => ($bright ? "10px" : "0")};
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-right: ${({ $bright }) => ($bright ? "84px" : "0")};
+    padding-left: ${({ $bright }) => ($bright ? "79px" : "0")};
+    gap: ${({ $small }) => ($small ? "190px" : "32px")};
   }
 
   h3 {

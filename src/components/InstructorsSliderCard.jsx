@@ -6,6 +6,7 @@ export const InstructorsSliderCard = ({ data }) => {
     <StyledSliderCard>
       <StyledImgSlider>
         {" "}
+        <source media="(min-width: 1440px)" srcSet={data.imgdesk} />
         <source media="(min-width: 834px)" srcSet={data.imgtab} />
         <img id="inst-pic-mobile" src={data.img} alt={data.title} />{" "}
       </StyledImgSlider>
@@ -37,11 +38,18 @@ const StyledImgSlider = styled.picture`
   width: 182px;
   object-fit: cover;
 
-  #inst-pic-mobile {
-    height: 274px;
-    width: 182px;
-    object-fit: cover;
-    border-radius: 10px;
+  @media screen and (min-width: 1440px) {
+    height: 331px;
+    width: 278px;
+  }
+
+  @media screen and (max-width: 834px) {
+    #inst-pic-mobile {
+      height: 274px;
+      width: 182px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
   }
 `;
 
