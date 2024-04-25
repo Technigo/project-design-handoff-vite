@@ -82,6 +82,7 @@ export const Button = styled.button`
   padding: 10px;
 
   &:hover {
+    cursor: pointer;
     background-color: ${(props) =>
       props.buy ? "var(--primary-prpl)" : "var(--hover-prpl)"};
     color: ${(props) =>

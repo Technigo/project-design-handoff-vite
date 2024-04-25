@@ -35,15 +35,13 @@ const CardSection = styled.section`
       "li li li"
       "prc prc prc"
       "btn btn btn";
-    /* width: 202px; */
     width: 100%;
     padding: 10px;
-
     align-items: stretch;
   }
 
   @media all and (min-width: 1024px) {
-    width: 385px;
+    width: 100%ß;
   }
 `;
 
@@ -55,6 +53,11 @@ const CardTitle = styled.h1`
   color: var(--primary-white);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--primary-blk);
+
+  &:hover {
+    cursor: pointer;
+    color: var(--primary-prpl);
+  }
 `;
 
 const CardSubtitle = styled.h3`
