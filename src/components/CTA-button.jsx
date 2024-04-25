@@ -8,6 +8,7 @@ export const CtaButton = styled.button`
   border-radius: 20px;
   padding: 7px 15px;
   transition: background-color 0.2s ease;
+  text-decoration: none;
 
   &:hover {
     background-color: var(--purplehover);
