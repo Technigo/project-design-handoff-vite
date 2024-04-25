@@ -169,7 +169,6 @@ const BottomSection = styled.div`
 const Questions = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: left;
   text-align: left;
   gap: 16px;
   padding-bottom: 80px;
@@ -181,40 +180,50 @@ const Questions = styled.div`
   @media (min-width: 1494px) {
     padding-bottom: 160px;
   }
+
+ 
 `;
 
-const Question = styled.p`
-  display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: minmax(300px, 358px);
+const Arrow = styled.img`
+  transform: scale(70%);
+  margin-right: 5px;
+`;
+
+const Question = styled.div`
+  display: flex;
+  flex-direction: row;
+  min-width: 310px;
+  justify-content: space-between;
   text-align: left;
   align-items: center;
   border-style: solid;
   border-width: 0 0 1px;
   border-color: var(--black);
   padding-bottom: 8px;
-  background-image: url(${arrow});
-  background-repeat: no-repeat;
-  background-position: 98% 6px;
-    
-    &:hover {
-    background-image: url(${arrowBold});
-    background-position: 97% 3px;
-    }
 
-    &:active {
-    background-image: url(${arrowDown});
-    background-position: 98% 11px;
+  &:hover {
+    cursor: pointer;
+    ${Arrow} {
+      transform: scale(100%);
+      transition: transform ease-in-out 0.1s;
     }
+  }
+
+  &:active {
+    ${Arrow} {
+      transform: rotate(90deg);
+      transition: transform ease-in-out 0.2s;
+    }
+  }
 
   @media (min-width: 744px) and (max-width: 1493px) {
-    grid-template-columns: 509px;
     font-size: 18px;
+    min-width: 510px;
   }
 
   @media (min-width: 1494px) {
-    grid-template-columns: 564px;
     font-size: 20px;
+    min-width: 560px;
   }
 `;
 
@@ -235,38 +244,41 @@ const QuestionDesktop = styled.div`
   display: none;
   
   @media (min-width: 1494px) {
-  display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: 358px;
+  display: flex;
+  min-width: 310px;
+  justify-content: space-between;
   text-align: left;
-  align-items: left;
-  justify-content: left;
+  align-items: center;
   border-style: solid;
   border-width: 0 0 1px;
   border-color: var(--black);
   padding-bottom: 8px;
-  background-image: url(${arrow});
-  background-repeat: no-repeat;
-  background-position: 97% 6px;
-    
-    &:hover {
-    background-image: url(${arrowBold});
-    background-position: 97% 3px;
-    }
 
-    &:active {
-    background-image: url(${arrowDown});
-    background-position: 98% 11px;
+
+  &:hover {
+    cursor: pointer;
+    ${Arrow} {
+      transform: scale(100%);
+      transition: transform ease 0.1s;
+      
     }
+  }
+
+  &:active {
+    ${Arrow} {
+      transform: rotate(90deg);
+      transition: transform ease 0.2s;
+    }
+  }
 
   @media (min-width: 744px) and (max-width: 1493px) {
-    grid-template-columns: 509px;
     font-size: 18px;
+    min-width: 510px;
   }
 
   @media (min-width: 1494px) {
-    grid-template-columns: 564px;
     font-size: 20px;
+    min-width: 560px;
   }
 `;
 
@@ -290,41 +302,53 @@ export const QuestionsSection = () => {
         <Questions>
           <Question>
             <p>What is Spinning?</p>
+            <Arrow src={arrowBold}/>
           </Question>
           <Question>
             <p>What to bring to the class?</p>
+            <Arrow src={arrowBold}/>
           </Question>
           <Question>
             <p>How to cancel if I get sick?</p>
+            <Arrow src={arrowBold}/>
           </Question>
           <Question>
             <p>How am I setting up the bike?</p>
+            <Arrow src={arrowBold}/>
           </Question>
           <Question>
             <p>Do you have a free trial?</p>
+            <Arrow src={arrowBold}/>
           </Question>
           <Question>
             <p>What are the prices for a single class?</p>
+            <Arrow src={arrowBold}/>
           </Question>
         </Questions>
         <QuestionsDesktop>
           <QuestionDesktop>
             <p>What food do you sell?</p>
+            <Arrow src={arrowBold}/>
           </QuestionDesktop>
           <QuestionDesktop>
             <p>Does Urban Spin have merch?</p>
+            <Arrow src={arrowBold}/>
           </QuestionDesktop>
           <QuestionDesktop>
             <p>Can I choose the bike?</p>
+            <Arrow src={arrowBold}/>
           </QuestionDesktop>
           <QuestionDesktop>
             <p>Do I need a lock?</p>
+            <Arrow src={arrowBold}/>
           </QuestionDesktop>
           <QuestionDesktop>
             <p>Can I borrow cycling shoes?</p>
+            <Arrow src={arrowBold}/>
           </QuestionDesktop>
           <QuestionDesktop>
             <p>Are the classes held in English?</p>
+            <Arrow src={arrowBold}/>
           </QuestionDesktop>
         </QuestionsDesktop>
       </BottomSection>
