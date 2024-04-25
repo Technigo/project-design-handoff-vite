@@ -40,6 +40,8 @@ export default {
       },
       backgroundImage: {
         "hero-image": "url('/woman-dancing.jpg')",
+        "hero-small": "url('/Hero-img-small.png')",
+        "hero-large": "url('/Hero-img-large.png')",
       },
     },
     boxShadow: {

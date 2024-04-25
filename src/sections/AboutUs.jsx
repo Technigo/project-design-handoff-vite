@@ -1,6 +1,6 @@
 export const AboutUs = () => {
   return (
-    <div className="mt-3 flex flex-col text-center md:mx-[100px] lg:mx-[185px]">
+    <div className="mt-3 flex flex-col text-center md:mx-[100px] md:mt-6 lg:mx-[185px] lg:mt-7">
       <h2 className="text-pretty text-2xl leading-tight lg:text-4xl">
         What is <br />
         The Zumba Hall?
