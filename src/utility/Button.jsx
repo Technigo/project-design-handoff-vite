@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "./breakpoints";
 
 export const Button = styled.button`
   padding: ${(props) => props.padding || "24px 48px"};
@@ -25,6 +26,13 @@ export const Button = styled.button`
     /* Change background color on hover */
     background: ${(props) => props.hoverBackground || "var(--yellow)"};
   }
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 24p 16px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
 `;
 
 export default Button;

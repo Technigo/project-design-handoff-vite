@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { breakpoints } from "../utility/breakpoints";
 
 export const NavigationBar = () => {
   return (
@@ -21,14 +22,34 @@ const Navbar = styled.nav`
   padding: 32px var(--Spacing-16, 128px);
   background-color: rgba(8, 61, 86, 0.75);
   backdrop-filter: blur(2px);
+  
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 24px 64px;
+    height: 112px;
+  }
+
+  /* 
+    @media (max-width: ${breakpoints.mobile}) {
+      padding: 240px 64px 32px;
+    } */
 `;
 
 const Logo = styled.img`
   width: 218px;
   height: 80px;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding-right: 48px;
+    height: 64px;
+  }
 `;
 const BurgerMenu = styled.img`
   width: 42px;
   height: 24px;
   cursor: pointer;
+
+  @media (max-width: ${breakpoints.tablet}) {
+   width: 44px;
+   height: 24;
+  }
 `;

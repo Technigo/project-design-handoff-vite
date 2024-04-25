@@ -20,19 +20,23 @@ export function HeroSection() {
 const Hero = styled.section`
  padding: 96px 128px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 624px;
   background-image: url("/images/hero.img.jpeg");
   background-size: cover;
   background-position: center;
+  
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 64px;
+    height: 544px;
+  }
+
 
   @media (max-width: ${breakpoints.mobile}) {
     padding: 240px 64px 32px;
   }
 
-  @media (max-width: ${breakpoints.tablet}) {
-    padding: 224px 64px;
-    height: 544px;
-  }
 `;
 const HeroContent = styled.div`
   display: flex;
@@ -67,6 +71,12 @@ const Highlight = styled.span`
 
 const ButtonWrapper = styled.div`
 align-self: flex-end;
+
+@media (max-width: ${breakpoints.tablet}) {
+  align-items: flex-start;
+    font-size: 32px;
+    line-height: 40px;
+  }
 `;
 
 /* import styled from "styled-components";
@@ -98,6 +108,7 @@ const Hero = styled.section`
   justify-content: flex-end;
   align-items: flex-end;
   position: relative;
+
   @media (max-width: ${breakpoints.mobile}) {
     padding: 64px 32px;
   }

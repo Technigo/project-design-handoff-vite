@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { CardActivities } from "../utility/CardActivities";
 import { activities } from "../utility/ActivityData";
+import { breakpoints } from "../utility/breakpoints";
 
 export function RetreatActivities() {
   const introText = "Book your stay and dive into practical workshops and activities that go beyond the clichés, offering tangible ways to reshape habits and enrich your daily experience. Customize your stay, choose your adventures, and embrace a journey that's grounded in reality, accessible to everyone seeking a more fulfilling life."
@@ -14,8 +15,6 @@ export function RetreatActivities() {
           imageSrc={`/images/${activity.image}`}
           title={activity.name}
           description={activity.description}
-          /*  buttonLabel="Learn More" */
-          buttonOnClick={() => console.log(`Joined ${activity.name}`)}
         />
       ))}
     </ActivitiesSection>
@@ -24,11 +23,21 @@ export function RetreatActivities() {
 
 
 const ActivitiesSection = styled.section`
+display: flex;
   padding: 96px 128px;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   gap: 96px;
-  align-self: stretch;
+
+  @media (max-width: ${breakpoints.tablet}) {
+    padding: 64px;
+    gap: 32px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+  padding: 32px;
+  }
+
 `;
 
 const IntroText = styled.p`
@@ -40,27 +49,17 @@ text-align: left;
 padding: 40px;
 gap: 10px;
 border-left: 4px solid var(--blue);
+
+@media (max-width: ${breakpoints.tablet}) {
+    padding: 64px;
+    gap: 32px;
+    font-size: 26px;
+    line-height: 40px;
+  }
+
+  @media (max-width: ${breakpoints.mobile}) {
+  padding: 16px;
+  font-size: 20px;
+  line-height: 32px;
+  }
 `
-
-/* const Activity = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-`;
-
-const ActivityImage = styled.img`
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-`;
-
-const ActivityName = styled.h3`
-  margin: 10px 0;
-`;
-
-const ActivityDescription = styled.p`
-  text-align: center;
-`;
-
- */
