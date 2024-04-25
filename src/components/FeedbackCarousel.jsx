@@ -14,34 +14,41 @@ export const FeedbackCarousel = () => {
   };
 
   return (
-    <>
-      <div>
-        <BsArrowLeftCircleFill onClick={prevSlide} />
-        {feedback.feedback.map(
-          ({ id, photo, text, sender, profession }, index) => {
-            return (
-              <FeedbackCard
-                currentCard={slide === index}
-                key={id}
-                photo={photo}
-                text={text}
-                sender={sender}
-                profession={profession}
-              />
-            );
-          }
-        )}
-        <BsArrowRightCircleFill onClick={nextSlide} />
-      </div>
-      <span>
+    <div className="relative">
+      <BsArrowLeftCircleFill
+        className="absolute w-8 h-8 text-black left-4 cursor-pointer m-auto"
+        onClick={prevSlide}
+      />
+      {feedback.feedback.map(
+        ({ id, photo, text, sender, profession }, index) => {
+          return (
+            <FeedbackCard
+              currentCard={slide === index}
+              key={id}
+              photo={photo}
+              text={text}
+              sender={sender}
+              profession={profession}
+            />
+          );
+        }
+      )}
+      <BsArrowRightCircleFill
+        className="absolute w-8 h-8 text-black right-4 cursor-pointer m-auto"
+        onClick={nextSlide}
+      />
+
+      <span className="flex absolute bottom-4 m-auto">
         {feedback.feedback.map((_, index) => {
           return (
-            <button key={index} onClick={() => setSlide(index)}>
-              Button
-            </button>
+            <button
+              className="bg-off-black w-2 h-2 rounded-full border-none outline-none mx-1 cursor-pointer"
+              key={index}
+              onClick={() => setSlide(index)}
+            ></button>
           );
         })}
       </span>
-    </>
+    </div>
   );
 };

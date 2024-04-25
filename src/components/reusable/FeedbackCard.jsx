@@ -10,7 +10,7 @@ export const FeedbackCard = ({
   return (
     <div
       className={`flex flex-col w-64 mb-40 mx-auto ${
-        currentCard ? "" : "hidden"
+        currentCard === false && "hidden"
       }`}
     >
       <img className="h-40 w-40 self-center" src={photo} alt="icon"></img>
@@ -26,5 +26,5 @@ FeedbackCard.propTypes = {
   text: PropTypes.string.isRequired,
   sender: PropTypes.string.isRequired,
   profession: PropTypes.string.isRequired,
-  currentCard: PropTypes.bool.isRequired,
+  currentCard: PropTypes.bool,
 };

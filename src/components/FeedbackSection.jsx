@@ -1,5 +1,6 @@
-import feedback from "../json/feedback.json"
-import { FeedbackCard } from "./reusable/FeedbackCard.jsx"
+import feedback from "../json/feedback.json";
+import { FeedbackCarousel } from "./FeedbackCarousel.jsx";
+import { FeedbackCard } from "./reusable/FeedbackCard.jsx";
 
 export const FeedbackSection = () => {
   return (
@@ -7,7 +8,8 @@ export const FeedbackSection = () => {
       <h2 className="text-2xl font-semibold mb-16 mx-8 text-center">
         Feedback by Urban Spinners
       </h2>
-      <div>
+      <FeedbackCarousel />
+      <div className="hidden">
         {feedback.feedback.map(({ id, photo, text, sender, profession }) => (
           <FeedbackCard
             key={id}
@@ -19,5 +21,5 @@ export const FeedbackSection = () => {
         ))}
       </div>
     </div>
-  )
-}
+  );
+};

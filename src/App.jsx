@@ -7,7 +7,6 @@ import { FeedbackSection } from "./components/FeedbackSection";
 import { FAQs } from "./components/FAQs";
 import { Newsletter } from "./components/Newsletter";
 import { Footer } from "./components/Footer";
-import { FeedbackCarousel } from "./components/FeedbackCarousel";
 
 export const App = () => {
   return (
@@ -17,7 +16,6 @@ export const App = () => {
       <TrustIndicators />
       <ReasonSection />
       <BookClass />
-      <FeedbackCarousel />
       <FeedbackSection />
       <FAQs />
       <Newsletter />
