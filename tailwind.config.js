@@ -8,6 +8,9 @@ export default {
       lg: "1024px",
     },
     extend: {
+      borderWidth: {
+        half: "0.5px",
+      },
       boxShadow: {
         boxShadow: "0px 4px 4px 0px rgba(0, 0, 0, 0.25);",
       },

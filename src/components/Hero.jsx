@@ -26,7 +26,7 @@ export const Hero = () => {
         >
           YOUNG <br></br>HEROES,<br></br> BIG HEARTS
         </h1>
-        <h2 className="font-urbanist bg-white text-primary-lightblue text-xl mb-4 lg:text-3xl">
+        <h2 className="font-urbanist bg-white text-primary-lightblue text-xl mb-4 lg:text-3xl ">
           We empower girls to find their inner dragons through karate.
         </h2>
         <button>

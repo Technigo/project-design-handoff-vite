@@ -6,27 +6,27 @@ export const ValuePropsCard = ({
   link,
 }) => {
   return (
-    <div className="bg-primary-valupropsviolet border border-black rounded flex flex-col items-center shadow-boxShadow w-52 lg:w-64 lg:h-96">
+    <div className="bg-primary-valupropsviolet border-half border-black rounded-md p-6 lg:p-6 flex flex-col items-center shadow-boxShadow min-w-52 w-52 lg:min-w-64 lg:w-64 ">
       <img
         src={image}
-        className="rounded-full object-cover border-solid border border-black h-40 w-40 mt-6 lg:h-48"
+        className="rounded-full object-cover border-solid border border-black h-40 w-40 lg:h-48 lg:w-48"
       ></img>
-      <div className="flex flex-col items-center mt-2 mr-2 ml-2 mb-6">
+      <div className="flex flex-col items-center mt-2 ">
         <h4 className="font-urbanistitalic font-medium text-primary-darkblue lg:text-xl">
           {subtitle.toUpperCase()}
         </h4>
-        <h3 className="font-avengeance text-primary-darkblue text-lg lg:text-2xl">
+        <h3 className="font-avengeance text-primary-darkblue text-lg lg:text-2xl leading-5">
           {title}
         </h3>
         <p className="font-urbanist text-primary-darkblue text-sm text-center lg:text-lg">
-          {description}
-        </p>
+          {description}<br></br>
         <a
           href={link}
           className="font-urbanist text-primary-darkblue text-sm font-semibold lg:text-lg"
         >
           More
         </a>
+        </p>
       </div>
     </div>
   );
