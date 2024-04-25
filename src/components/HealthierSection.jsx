@@ -1,19 +1,17 @@
 import styled from 'styled-components';
+import Button from "../utility/Button";
+import { breakpoints } from "../utility/breakpoints";
 
 export const HealthierSection = () => {
   return (
     <>
-      {/* Styled section for healthier section */}
       <StyledSection>
-        {/* Flex container for text */}
         <FlexContainer>
-          {/* Text for healthier section */}
           <Text>
             Your path to a healthier lifestyle starts here! Take your first step to feeling inner balance and peace.
           </Text>
         </FlexContainer>
-        {/* Button for healthier section */}
-        <Button>Continue to Book</Button>
+        <CtaButton>Continue to Book</CtaButton>
       </StyledSection>
     </>
   );
@@ -30,10 +28,10 @@ const FlexContainer = styled.div`
   gap: 32px;
   width: 390px;
 
-  @media (min-width: 768px) { /* Tablet */
+  @media (min-width: ${breakpoints.tablet}) {
     padding: 64px 64px 64px 64px;
   }
-  @media (min-width: 1200px) { /* desktop */
+  @media (min-width: ${breakpoints.desktop}) {
     padding: 64px 0px 64px 0px;
   }
 `;
@@ -50,13 +48,13 @@ const Text = styled.p`
   position: relative;
   white-space: pre-wrap;
 
-  @media (min-width: 768px) { /* Tablet */
+  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
     font-size: 26px;
     line-height: 40px;
     width: 642px;
     font-weight: 500;
   }
-  @media (min-width: 1200px) { /* desktop */
+  @media (min-width: ${breakpoints.desktopt}) { /* desktop */
     font-size: 28px;
     line-height: 48px;
     width: 10562px;
@@ -66,40 +64,25 @@ const Text = styled.p`
   }
 `;
 
-const Button = styled.button`
-  background-color: #E4C144;
-  border: #E4C144;
-  border-radius: 20px;
-  padding: 5px 15px 5px 15px;
-  font-family: Fira Sans;
-  font-size: 14px;
-  font-weight: 400px;
-  color: rgba(6,49,69,1);
-  line-height: 24px;
-  text-align: center;
+const CtaButton = styled(Button)`
   display: block;
   position: relative;
-  cursor: pointer;
   justify-content: flex-start;
   align-items: flex-start;
   left: 170px;
 
-  &:hover {
-    background-color: #E9CD69;
-    color: #063145;
-  }
 
-  &:active {
+ /*  &:active {
     background-color: #00000066;
     background-image: linear-gradient(to bottom, #00000066 40%, transparent 40%, transparent 60%, #00000066 60%);
     color: #063145;
   }
-
-  @media (min-width: 768px) { /* Tablet */
+ */
+  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
     justify-content: flex-end;
     align-items: flex-end;
   }
-  @media (min-width: 1200px) { /* desktop */
+  @media (min-width: ${breakpoints.desktopt}) { /* desktop */
     justify-content: flex-end;
     align-items: flex-end;
   }
@@ -114,10 +97,10 @@ const StyledSection = styled.section`
   padding: 32px 16px 32px 16px;
   gap: 0;
 
-  @media (min-width: 768px) { /* Tablet */
+  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
     padding: 64px 64px 64px 64px;
   }
-  @media (min-width: 1200px) { /* desktop */
+  @media (min-width: ${breakpoints.desktopt}) { /* desktop */
     padding: 64px 128px 64px 128px;
   }
 `;

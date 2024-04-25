@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { breakpoints } from "../utility/breakpoints";
 import CoachCard from './CoachCard';
 import coachPic1 from '../assets/coach-pic.png';
 import coachPic2 from '../assets/coach-pic2.png';
@@ -7,7 +8,7 @@ import coachPic3 from '../assets/coach-pic3.png';
 export const CoachSection = () => {
   return (
     <SectionContainer>
-      <SectionTitle>Meet Our Coaches</SectionTitle>
+      <CoachTitle>Meet Our Coaches</CoachTitle>
       <CardWrapper>
         {/* Coach Card 1 */}
         <CoachCard
@@ -39,26 +40,22 @@ export const CoachSection = () => {
 const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
-  gap: 0;
-  width: 390px;
   justify-content: center;
-  align-items: flex-start;
+/*   align-items: flex-start; */
   position: relative;
-  padding: 64px 32px 64px 32px;
-  background-color: rgba(228, 193, 68, 1);
+  padding: 64px 32px;
+  background-color: var(--yellow);
 
-  @media (min-width: 768px) { /* Tablet */
-    width: 834px;
+  @media (min-width: ${breakpoints.tablet}) {
     padding: 64px;
   }
-  @media (min-width: 1200px) { /* Desktop */
-    width: 1440px;
+  @media (min-width: ${breakpoints.desktop}) {
     justify-content: flex-start;
-    padding: 120px 128x 120px 128px;
+    padding: 120px 128px;
   }
 `;
 
-const SectionTitle = styled.h1`
+const CoachTitle = styled.h2`
   font-family: Fira Sans;
   font-size: 24px;
   font-weight: 500;
@@ -66,19 +63,17 @@ const SectionTitle = styled.h1`
   line-height: 32px;
   text-align: left;
   display: block;
-  width: 326px;
   position: relative;
   white-space: pre-wrap;
 
-  @media (min-width: 768px) { /* Tablet */
+  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
     font-size: 28px;
   }
-  @media (min-width: 1200px) { /* Desktop */
+  @media (min-width: ${breakpoints.desktop}) { /* Desktop */
     font-size: 36px;
     line-height: 40px;
-    width: 326px;
     padding-top: 20px;
-    padding-left: 35px;
+    /* padding-left: 35px; */
   }
 `;
 
@@ -90,14 +85,12 @@ const CardWrapper = styled.div`
   align-items: flex-start;
   position: relative;
 
-  @media (min-width: 768px) { /* Tablet */
-    width: 706px;
+  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
     justify-content: flex-start;
     padding: 64px 32px 64px 32px;
   }
-  @media (min-width: 1200px) { /* Desktop */
-    width: 1184px;
-    padding: 96px 0px 96px 0px;
+  @media (min-width: ${breakpoints.desktop}) { /* Desktop */
+    padding: 96px 0; 
   }
 `;
 

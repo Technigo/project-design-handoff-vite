@@ -1,38 +1,30 @@
-import PropTypes from 'prop-types'; // Importing PropTypes for type checking
-import styled from 'styled-components'; // Importing styled-components for styling
+import styled from 'styled-components';
+import { breakpoints } from "../utility/breakpoints";
 
 const CoachCard = ({ title, subtitle, description, imageUrl }) => {
   return (
     <CardContainer>
-      {/* Image Container */}
+
       <ImageContainer>
-        {/* Image */}
+
         <Image src={imageUrl} alt="Coach" />
       </ImageContainer>
-      {/* Title */}
+
       <Title>{title}</Title>
-      {/* Subtitle */}
+
       <Subtitle>{subtitle}</Subtitle>
-      {/* Description Section */}
+
       <DescriptionSection>
-        {/* Description */}
+
         <Description>{description}</Description>
-      </DescriptionSection>     
+      </DescriptionSection>
     </CardContainer>
   );
 };
 
-// Type checking for props
-CoachCard.propTypes = {
-  title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  imageUrl: PropTypes.string.isRequired,
-};
-
 export default CoachCard;
 
-// Styled-components styles
+
 const CardContainer = styled.div`
   border-radius: 32px;
   padding-bottom: 64px;
@@ -44,7 +36,7 @@ const ImageContainer = styled.div`
   width: 240px;
   height: 272px;
 
-  @media (min-width: 768px) { /* Tablet */
+  @media (min-width: ${breakpoints.tablet}) {
     width: 376px;
   }
 `;
@@ -55,7 +47,7 @@ const Image = styled.img`
   object-fit: cover; /* Ensures the image covers the entire container */
   border-radius: 16px;
 
-  @media (min-width: 768px) { /* Tablet */
+  @media (min-width: ${breakpoints.tablet}) {
     width: 376px;
   }
 `;
@@ -72,13 +64,13 @@ const Title = styled.h2`
   position: relative;
   white-space: pre-wrap;
 
-  @media (min-width: 768px) { /* Tablet */
+  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
     padding-top: 30px;
     font-size: 26px;
     font-weight: 500;
     line-height: 40px;
   }
-  @media (min-width: 1200px) { /* Desktop */
+  @media (min-width: ${breakpoints.desktop}) { /* Desktop */
     padding-top: 28px;
     font-size: 28px;
     line-height: 48px;
@@ -98,11 +90,11 @@ const Subtitle = styled.h3`
   margin-bottom: 10px;
   padding-top: 10px;
 
-  @media (min-width: 768px) { /* Tablet */
+  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
     font-size: 18px;
     line-height: 24px;
   }
-  @media (min-width: 1200px) { /* Desktop */
+  @media (min-width: ${breakpoints.desktop}) { /* Desktop */
     padding-top: 2px;
     font-size: 24px;
     line-height: 32px;
@@ -121,13 +113,13 @@ const Description = styled.p`
   width: 224px;
   position: relative;
 
-  @media (min-width: 768px) { /* Tablet */
+  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
     font-size: 18px;
     line-height: 40px;
     letter-spacing: -0.57px;
     width: 334px;
   }
-  @media (min-width: 1200px) { /* Desktop */
+  @media (min-width: ${breakpoints.desktop}) { /* Desktop */
     padding-top: 2px;
     font-size: 20px;
     line-height: 40px;
