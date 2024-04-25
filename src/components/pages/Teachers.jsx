@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import useDeviceType from "../useDeviceType";
 import { StyledTeacherOne, StyledTeacherTwo, TeacherTitleBox } from "../StyledTeachers";
 import { Page, Container, StyledH1, StyledH2, StyledText } from "../StyledComponents";
 import TeacherOne from "../../assets/teacher-one.jpg";
@@ -8,29 +8,13 @@ import { AboutInfoBox, AboutTextBox, AboutTitleBox, Slide, StyledAboutBox } from
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 export const Teachers = () => {
-  const [deviceType, setDeviceType] = useState("desktop");
-
-  useEffect(() => {
-    const handleResize = () => {
-      const width = window.innerWidth;
-      if (width < 350) {
-        setDeviceType("none");
-      } else if (width >= 350 && width <= 650) {
-        setDeviceType("mobile");
-      } else if (width <= 1024) {
-        setDeviceType("tablet");
-      } else {
-        setDeviceType("desktop");
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const deviceType = useDeviceType();
 
   if (deviceType === "none") {
+    return null;
+  }
+
+  if (deviceType === "tablet") {
     return null;
   }
 

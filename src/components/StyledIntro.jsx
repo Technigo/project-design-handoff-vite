@@ -42,6 +42,27 @@ export const LogoContainer = () => {
   );
 };
 
+export const HeaderBox = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    justify-content: space-between;
+  }
+`;
+
+export const NavBox = styled.div`
+  display: flex;
+  align-items: center;
+  gap: var(--gap-extra);
+`;
+
+export const IntroTextButton = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const pulse = keyframes`
   0% {
     transform: scaleX(1) scaleY(1);
@@ -71,6 +92,14 @@ export const IntroContentBox = styled.div`
   padding-bottom: var(--gap-default);
   background-color: var(--pink);
   gap: var(--gap-compact);
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    flex-direction: row;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 1025px) {
+  }
 `;
 
 export const IntroTextBox = styled.div`
@@ -78,20 +107,7 @@ export const IntroTextBox = styled.div`
   flex-direction: column;
   padding: var(--gap-default) var(--gap-compact);
   gap: var(--gap-compact);
-`;
-
-export const StyledIntroImage = styled.img`
-  width: 100%;
-  aspect-ratio: 16 / 15;
-  object-fit: cover;
-  overflow: hidden;
-
-  @media (max-width: 349px) {
-    display: none;
-  }
 
   @media (min-width: 651px) and (max-width: 1024px) {
-    width: 385px;
-    height: 471px;
   }
 `;

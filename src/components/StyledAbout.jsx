@@ -10,6 +10,11 @@ export const StyledAboutBox = styled.div`
   gap: var(--gap-compact);
   padding-bottom: 80px;
   margin-top: 25px;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    gap: var(--gap-extra);
+    flex-direction: row-reverse;
+  }
 `;
 
 export const GlobalCarouselStyles = createGlobalStyle`
@@ -43,22 +48,38 @@ export const GlobalCarouselStyles = createGlobalStyle`
 export const LotusIcon = styled(Lotus)`
   width: 20px;
   height: 20px;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    width: 28.83px;
+    height: 24px;
+  }
 `;
 
 export const BuddhaIcon = styled(Buddha)`
   width: 20px;
   height: 20px;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    width: 28.83px;
+    height: 24px;
+  }
 `;
 
 export const GlassesIcon = styled(Glasses)`
   width: 20px;
   height: 20px;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    width: 28.83px;
+    height: 24px;
+  }
 `;
 
 export const TitleBox = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 35px;
+  margin-top: 10px;
 `;
 
 export const Slide = styled.div`
@@ -77,7 +98,7 @@ export const AboutInfoBox = styled.div`
 export const AboutTextBox = styled.div`
   display: flex;
   flex-direction: column;
-  gap: var(--gap-spacious);
+  gap: var(--gap-comfortable);
 `;
 
 export const AboutTitleBox = styled.div`
@@ -90,4 +111,19 @@ export const AboutTwoImage = styled.img`
   width: 100%;
   object-fit: cover;
   overflow: hidden;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+  }
+`;
+
+export const MeditaionBox = styled.div`
+  display: flex;
+  gap: var(--gap-comfortable);
+  margin-top: var(--gap-spacious);
+`;
+
+export const MeditationText = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-comfortable);
 `;

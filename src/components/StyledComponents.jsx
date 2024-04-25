@@ -1,18 +1,36 @@
 import styled, { css } from "styled-components";
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    padding: 0 var(--gap-medium);
+  }
+`;
+
 export const StyledImage = styled.img`
   width: 100%;
   aspect-ratio: 16 / 15;
   object-fit: cover;
-  overflow: hidden;
 
   @media (max-width: 349px) {
     display: none;
   }
 
-  @media (min-width: 651px) and (max-width: 1024px) {
+  @media (min-width: 721px) and (max-width: 1024px) {
     width: 385px;
     height: 471px;
+  }
+
+  @media (min-width: 675px) and (max-width: 721px) {
+    width: 285px;
+    height: 371px;
+  }
+
+  @media (min-width: 651px) and (max-width: 674px) {
+    width: 250px;
+    height: 371px;
   }
 `;
 
@@ -20,11 +38,14 @@ export const Page = styled.div`
   display: grid;
   background-color: var(--light-grey);
   padding: 0 var(--gap-compact);
-`;
 
-export const Container = styled.div`
-  display: flex;
-  flex-direction: column;
+  @media (min-width: 651px) and (max-width: 1024px) {
+    padding: var(--gap-default) var(--gap-spacious);
+  }
+
+  @media (min-width: 1025px) {
+    padding: var(--gap-huge);
+  }
 `;
 
 export const StyledText = styled.div`
@@ -34,6 +55,12 @@ export const StyledText = styled.div`
   line-height: 25.6px;
   color: var(--blue);
   line-height: 25.6px;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+  }
+
+  @media (min-width: 1025px) {
+  }
 `;
 
 export const StyledH1 = styled.div`
@@ -47,6 +74,8 @@ export const StyledH1 = styled.div`
   }
 
   @media (min-width: 651px) and (max-width: 1024px) {
+    font-size: 32px;
+    line-height: 36.96px;
   }
 
   @media (min-width: 1025px) {
@@ -64,6 +93,8 @@ export const StyledH2 = styled.h2`
   }
 
   @media (min-width: 651px) and (max-width: 1024px) {
+    font-size: 24px;
+    line-height: 27.72px;
   }
 
   @media (min-width: 1025px) {
@@ -102,7 +133,7 @@ export const StyledButton = styled.button`
       font-size: 20px;
     `}
 
-  &:focus {
+  &:hover {
     border: 2px solid var(--blue);
   }
 

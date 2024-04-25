@@ -18,6 +18,7 @@ export const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: var(--gap-compact);
+  margin-top: 10px;
 `;
 
 export const FormGroup = styled.div`
@@ -30,6 +31,7 @@ export const Label = styled.label``;
 
 export const Input = styled.input`
   padding: var(--gap-compact) var(--gap-default);
+  height: 53px;
   border: 2px solid var(--blue);
 `;
 
@@ -75,19 +77,20 @@ export const IncrementDecrementContainer = styled.div`
   justify-content: center;
   background-color: #fff;
   width: 115px;
+  height: 53px;
   border: 2px solid var(--blue);
 `;
 
 export const NumberInput = styled.input`
-  padding: 10px;
+  padding: 10px !important;
   border: none;
+  line-height: normal;
   text-align: center;
   width: 43px;
-  height: 53px;
   font-family: Lato;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28.8px;
+  box-sizing: content-box;
   color: var(--blue);
 `;
 
@@ -103,7 +106,8 @@ export const CounterContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: var(--gap-comfortable);
-  margin: 24px 0;
+  margin-bottom: 18px;
+  margin-top: 15px;
 `;
 
 export const TotalBox = styled.div`
@@ -115,44 +119,9 @@ export const TotalBox = styled.div`
   color: var(--blue);
 `;
 
-export const CheckboxContainer = styled.div`
+export const CalenderBox = styled.div`
   display: flex;
-  gap: var(--gap-compact);
   align-items: center;
-`;
-
-export const HiddenCheckbox = styled.input.attrs({ type: "checkbox" })`
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-`;
-
-export const StyledCheckbox = styled.div`
-  display: inline-block;
-  width: 28px;
-  height: 28px;
-  background: ${(props) => (props.checked ? "#f9cdcc" : "#fff")};
-  border: 2px solid var(--blue);
-  transition: all 150ms;
-
-  ${HiddenCheckbox}:focus + & {
-    box-shadow: 0 0 0 3px rgba(21, 156, 228, 0.4);
-  }
-
-  ${HiddenCheckbox}:checked + & {
-    background: #f9cdcc;
-  }
-`;
-
-export const Icon = styled.svg`
-  fill: none;
-  stroke: white;
-  stroke-width: 2px;
+  gap: var(--gap-compact);
+  margin-bottom: var(--gap-compact);
 `;

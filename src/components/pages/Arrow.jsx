@@ -19,7 +19,9 @@ const Arrow = () => {
   return (
     <Page>
       <ArrowBox>
-        <StyledText>Find out more about event</StyledText>
+        <StyledText style={{ fontSize: deviceType === "tablet" ? "18px" : "inherit" }}>
+          Find out more about event
+        </StyledText>
         <ArrowIcon onClick={handleArrowClick} />
       </ArrowBox>
     </Page>

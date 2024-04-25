@@ -1,13 +1,13 @@
 import useDeviceType from "../useDeviceType";
 import {
   Page,
-  Container,
   StyledH1,
   StyledH2,
   StyledText,
   StyledImage,
   StyledButton,
   ButtonBox,
+  Container,
 } from "../StyledComponents";
 import AboutOne from "../../assets/about-one.jpg";
 import AboutTwo from "../../assets/about-two.jpg";
@@ -30,6 +30,9 @@ export const About = () => {
   const deviceType = useDeviceType();
 
   if (deviceType === "none") {
+    return null;
+  }
+  if (deviceType === "tablet") {
     return null;
   }
 

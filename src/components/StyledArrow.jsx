@@ -7,6 +7,11 @@ export const ArrowBox = styled.div`
   align-items: center;
   gap: var(--gap-compact);
   margin: var(--gap-spacious) 0;
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
 `;
 
 export const ArrowIcon = styled(arrow)`

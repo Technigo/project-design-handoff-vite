@@ -1,7 +1,15 @@
 import { useState } from "react";
 import useDeviceType from "../useDeviceType";
-import { Page, StyledText, StyledH1, StyledButton, ButtonBox, Container, StyledImage } from "../StyledComponents";
-import { IconHeart, LogoContainer, IntroTextBox, IntroContentBox } from "../StyledIntro";
+import { Page, StyledText, StyledH1, StyledButton, ButtonBox, StyledImage } from "../StyledComponents";
+import {
+  IconHeart,
+  LogoContainer,
+  IntroTextBox,
+  IntroContentBox,
+  HeaderBox,
+  NavBox,
+  IntroTextButton,
+} from "../StyledIntro";
 import ImgIntro from "../../assets/intro-one.jpg";
 
 const Introduction = () => {
@@ -16,11 +24,28 @@ const Introduction = () => {
 
   return (
     <Page>
-      <LogoContainer></LogoContainer>
-      <Container>
-        <IntroContentBox>
-          <StyledImage src={ImgIntro} alt="Introduction Image" />
+      <HeaderBox>
+        <LogoContainer> </LogoContainer>
+        {(deviceType === "tablet" || deviceType === "desktop") && (
+          <NavBox>
+            <StyledText>About us</StyledText>
+            <StyledButton
+              $mobile={deviceType === "mobile"}
+              $tablet={deviceType === "tablet"}
+              $desktop={deviceType === "desktop"}
+              $backgroundColor="var(--pink)"
+              $textColor="var(--blue)"
+              $border="2px solid var(--blue)"
+              aria-label="contact us">
+              CONTACT US
+            </StyledButton>
+          </NavBox>
+        )}
+      </HeaderBox>
 
+      <IntroContentBox>
+        <StyledImage src={ImgIntro} alt="Introduction Image" />
+        <IntroTextButton>
           <IntroTextBox>
             {deviceType === "none" && (
               <div>
@@ -33,6 +58,7 @@ const Introduction = () => {
                 </StyledText>
               </div>
             )}
+
             {deviceType !== "none" && (
               <>
                 <StyledH1>Celebrate Midsommar with yoga and friends</StyledH1>
@@ -60,8 +86,8 @@ const Introduction = () => {
               </StyledButton>
             </ButtonBox>
           )}
-        </IntroContentBox>
-      </Container>
+        </IntroTextButton>
+      </IntroContentBox>
     </Page>
   );
 };

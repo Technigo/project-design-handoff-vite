@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Checkbox from "../Checkbox";
 import useDeviceType from "../useDeviceType";
 import { StyledText } from "../StyledComponents";
 import {
@@ -14,10 +15,7 @@ import {
   CounterContainer,
   TotalBox,
   FlexibleButton,
-  CheckboxContainer,
-  HiddenCheckbox,
-  StyledCheckbox,
-  Icon,
+  CalenderBox,
 } from "../StyledForm";
 import { PromiseText } from "../StyledPromise";
 
@@ -50,8 +48,8 @@ export const Form = () => {
     setNumberOfPeople(numberOfPeople + 1);
   };
 
-  const handleCheckboxChange = (event) => {
-    setIsChecked(event.target.checked);
+  const handleCheckboxChange = () => {
+    setIsChecked(!isChecked);
   };
 
   const totalAmount = numberOfPeople * pricePerPerson;
@@ -63,6 +61,7 @@ export const Form = () => {
     setEmail("");
     setPhoneNumber("");
     setNumberOfPeople(0);
+    setIsChecked(false);
   };
 
   if (deviceType === "none") {
@@ -73,19 +72,19 @@ export const Form = () => {
     <FormContainer>
       <FormGroup>
         <Label htmlFor="name">
-          <StyledText>Name:</StyledText>
+          <StyledText>Name</StyledText>
         </Label>
         <Input type="text" id="name" name="name" value={name} onChange={handleNameChange} />
       </FormGroup>
       <FormGroup>
         <Label htmlFor="email">
-          <StyledText>Email:</StyledText>
+          <StyledText>e-mail:</StyledText>
         </Label>
         <Input type="email" id="email" name="email" value={email} onChange={handleEmailChange} />
       </FormGroup>
       <FormGroup>
         <Label htmlFor="phoneNumber">
-          <StyledText>Phone Number:</StyledText>
+          <StyledText>Phone number:</StyledText>
         </Label>
         <Input type="tel" id="phoneNumber" name="phoneNumber" value={phoneNumber} onChange={handlePhoneNumberChange} />
       </FormGroup>
@@ -107,24 +106,22 @@ export const Form = () => {
                 value={numberOfPeople}
                 readOnly
               />
-              <PlusIcon onClick={handleIncrement}>+</PlusIcon>
+              <PlusIcon onClick={handleIncrement}></PlusIcon>
             </IncrementDecrementContainer>
           </CounterBox>
         </FormGroup>
         <FormGroup>
-          <TotalBox>${totalAmount}</TotalBox>
+          <TotalBox>{totalAmount} $</TotalBox>
         </FormGroup>
       </CounterContainer>
       <FormGroup>
-        <CheckboxContainer>
-          <HiddenCheckbox id="notificationCheckbox" checked={isChecked} onChange={handleCheckboxChange} />
-          <StyledCheckbox checked={isChecked}>
-            <Icon viewBox="0 0 24 24">
-              <polyline points="20 6 9 17 4 12" />
-            </Icon>
-          </StyledCheckbox>
-          <PromiseText>Add a notification to my Calendar</PromiseText>
-        </CheckboxContainer>
+        <label>
+          <CalenderBox>
+            <Checkbox checked={isChecked} onChange={handleCheckboxChange} />
+
+            <PromiseText>Add a notification to my Calendar</PromiseText>
+          </CalenderBox>
+        </label>
       </FormGroup>
       <FormGroup>
         <FlexibleButton
