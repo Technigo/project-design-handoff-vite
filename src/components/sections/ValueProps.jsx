@@ -6,7 +6,7 @@ import kettlebell from "/assets/icons/kettlebell.svg"
 
 export const ValueProps = () => {
   return (
-    <section className="relative bg-crimson-light pt-8 pr-40 pb-10 grid grid-cols-1 lg:pr-66 pl-66">
+    <section className="relative bg-crimson-light pt-8 pr-40 pb-10 grid grid-cols-1 lg:pr-66 pl-66 lg:overflow-hidden">
       <img
         src={kettlebell}
         alt="Kettlebell icon"
