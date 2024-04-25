@@ -1,29 +1,19 @@
-import waveDesktop from "../assets/testimonials/wave-desktop.svg";
+import waveMobile from "../assets/testimonials/wave-mobile.svg";
 
 export const Testimonials = () => {
   return (
-    <div className="h-40 bg-primary-greyblue">
-      {/* <div className="">
+    <div className="h-40 relative overflow-x-scroll scroll-smooth">
         <img
-          src={waveDesktop}
-          className="size-full"
+          src={waveMobile}
+          className="h-40 object-cover object-left absolute overflow-visible"
           // style={{ width: "100%", height: "auto", maxWidth: "none" }}
         />
-      </div> */}
-      <ul className=" font-urbanistitalic text-primary-darkblue text-lg inset-4 flex text-center items-center gap-8 lg:text-2xl size-full">
-        <li>
+      <div className="relative font-urbanistitalic text-primary-darkblue text-lg grid grid-cols-[190px_190px_190px_190px] text-center items-center px-4 gap-8 lg:text-2xl size-full">
           <p>11 clubs in 7 cities within the Nordic region</p>
-        </li>
-        <li>
           <p>Winner of 2021 Best Sport Intiative for Kids </p>
-        </li>
-        <li>
           <p>Part or the JKA Sweden Group</p>
-        </li>
-        <li>
-          <p>First Kids sport offerng an app solution </p>
-        </li>
-      </ul>
+          <p>First Kids sport offering an app solution </p>
+      </div>
     </div>
   );
 };

@@ -1,25 +1,16 @@
+import { Testimonials } from "./Testimonials";
 import heroImg from "/assets/hero.png";
 import registerButton from "/assets/register-button01.png";
 
 export const Hero = () => {
   return (
-    <div className="container" style={{ height: "598px" }}>
-      <div className="w-screen">
-        <img
-          src={heroImg}
-          className="object-cover w-full relative"
-          style={{ height: "598px" }}
-          alt="Hero Image"
-        />
-      </div>
-      <div
-        className="absolute flex flex-col w-80"
-        style={{
-          top: "10%",
-          left: "5%",
-          height: "598px",
-        }}
-      >
+    <div className="relative mb-28">
+      <img
+        src={heroImg}
+        className="object-cover h-full absolute"
+        alt="Hero Image"
+      />
+      <div className="flex flex-col w-72 top-28 pb-2 mx-4 relative">
         <h1
           className="font-avengeance text-primary-lightblue text-3xl mb-8 md:text-4xl lg:text-6xl lg:mt-20"
           style={{ WebkitTextStroke: "0.4px black" }}
@@ -32,6 +23,9 @@ export const Hero = () => {
         <button>
           <img src={registerButton} alt="Register Button" />
         </button>
+      </div>
+      <div className="relative -bottom-28">
+        <Testimonials />
       </div>
     </div>
   );

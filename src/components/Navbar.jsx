@@ -6,7 +6,7 @@ import hamburgerMenu from "../assets/hamburger-menu.svg";
 
 export const Navbar = () => {
   return (
-    <nav className="flex flex-row items-center justify-between m-4 md:m-8 lg:mx-28 lg:mt-6">
+    <nav className="absolute top-0 left-0 right-0 flex flex-row items-center justify-between m-4 md:m-8 lg:mx-28 lg:mt-6 z-10">
       <picture>
         <source media="(min-width: 1024px)" srcSet={navbarLogoLg} />
         <source media="(min-width: 768px)" srcSet={navbarLogoMd} />
