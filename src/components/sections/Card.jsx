@@ -1,8 +1,7 @@
-import PropTypes from 'prop-types';
-
 import cardArray from '../../CardArray';
 import { DiscoverButton } from '../DiscoverButton';
 import { GeneralButton } from '../GeneralButton';
+import PropTypes from 'prop-types';
 
 export const Card = () => {
   return (
@@ -15,7 +14,7 @@ export const Card = () => {
             living.
           </p>
         </div>
-        <div className="grid grid-rows-4 gap-y-16 py-6 md:grid-rows-2 md:grid-cols-2 md:gap-x-16 xl:grid-cols-4 xl:grid-rows-1 xl:py-20">
+        <div className="grid grid-rows-4 gap-y-16 py-6 md:grid-cols-2 md:grid-rows-2 md:gap-x-16 xl:grid-cols-4 xl:grid-rows-1 xl:py-20">
           {cardArray.map((item) => (
             <div key={item.id} className=" mx-auto flex flex-col gap-6">
               <div>

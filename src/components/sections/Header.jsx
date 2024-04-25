@@ -6,7 +6,7 @@ import { GeneralButton } from '../GeneralButton';
 
 export const Header = () => {
   return (
-    <header className="grid h-screen grid-cols-1 grid-rows-[auto_auto_1fr] bg-cobra bg-cover bg-[35%] bg-no-repeat md:max-h-[1133px]">
+    <header className="grid h-svh grid-cols-1 grid-rows-[auto_auto_1fr] bg-cobra bg-cover bg-[35%] bg-no-repeat md:max-h-[1133px]">
       <div className="mx-5 w-28 justify-self-center py-8 pt-7 md:w-40 xl:hidden">
         <img className="object-cover " src={Logo} alt="Logo" />
       </div>
