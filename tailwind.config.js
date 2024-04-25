@@ -30,7 +30,19 @@ export default {
         mhero: ["377px"],
       },
       dropShadow: {
-        "button-shadow": "0 5px 2px rgba(0, 0, 0, 0.9)",
+        button: "0 5px 2px rgba(0, 0, 0, 0.9)",
+        card: "0 4px 2px rgba(0, 0, 0, 0.5)",
+        section: "0 3px 3px rgba(0, 0, 0, 0.3)",
+      },
+      screens: {
+        tablet: "744px",
+        // => @media (min-width: 640px) { ... }
+
+        laptop: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        desktop: "1511px",
+        // => @media (min-width: 1280px) { ... }
       },
     },
   },
