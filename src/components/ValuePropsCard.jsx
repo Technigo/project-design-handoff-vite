@@ -6,7 +6,7 @@ export const ValuePropsCard = ({
   link,
 }) => {
   return (
-    <div className="bg-primary-valupropsviolet border rounded flex flex-col items-center shadow-boxShadow w-52 lg:w-64 lg:h-96">
+    <div className="bg-primary-valupropsviolet border-half border-black rounded-md flex flex-col items-center shadow-boxShadow min-w-52 lg:min-w-64 lg:h-96">
       <img
         src={image}
         className="rounded-full object-cover border-solid border border-black h-40 w-40 mt-6 lg:h-48"
