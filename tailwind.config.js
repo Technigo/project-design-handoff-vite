@@ -22,6 +22,8 @@ export default {
     extend: {
       backgroundImage: {
         "hero-pattern": "url('/hero-phone.png')",
+        "hero-tablet": "url('/hero-tablet.png')",
+        "hero-desktop": "url('/hero-desktop.png')",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
@@ -31,7 +33,9 @@ export default {
         xs: ["10px", "12px"],
       },
       height: {
-        136: "34rem", // Hero image height
+        136: "34rem", // Hero image height mobile
+        220: "55rem", // Hero image height tablet
+        244: "61rem", // Hero image height desktop
       },
     },
   },
