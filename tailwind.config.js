@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [ "./src/**/*.{jsx}"],
+  content: [ 
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -23,7 +26,6 @@ export default {
         "title-h3-mob": "1.125rem",
         "paragraph-large-mob": "1rem",
         "paragraph-small-mob": "1rem",
-
       },
       colors:{
         "beige": "#DECEC6",
@@ -31,11 +33,8 @@ export default {
         "steelblue": "#A1B5D8",
         "darkblue": "#042d43",
         "lightgray": "#042d43",
-      }
-
       },
     },
-
+  },
   plugins: [],
 }
-

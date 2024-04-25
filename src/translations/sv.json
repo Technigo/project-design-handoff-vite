@@ -1,0 +1,20 @@
+{
+    "footer": {
+        "join": "Anmäl dig till vårt nyhetsbrev",
+        "placeholder": "epostadress",
+        "sign": "Registrera",
+        "studio": "Kontakta Y Studio",
+        "office": "Huvudkontor",
+        "conditions": "Villkor",
+        "props": "Yogatillbehör",
+        "clothing": "Kläder",
+        "reading": "Böcker",
+        "about": "Om oss",
+        "contact": "Kontakt",
+        "shop": "Webbshop",
+        "privacy": "Integritetspolicy",
+        "select": "Välj språk",
+        "en": "Engelska",
+        "sw": "Svenska"
+    }
+}
