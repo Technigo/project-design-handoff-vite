@@ -26,7 +26,7 @@ export const Membership = () => {
       </div>
       <GeneralButton
         text="Sign up"
-        customStyle="relative top-5 md:top-7 xl:top-10"
+        customStyle="mt-5 justify-self-center top-5 md:top-7 xl:top-10" //removed the relative bc button didn't hover
       />
       <div className="relative bottom-0">
         <img
