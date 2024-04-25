@@ -12,6 +12,7 @@ export default {
           darkblue: "#232E90",
           violetblue: "#99A2FB",
           mediumpink: "#F3B6AB",
+          valupropsviolet: "#B5BCF9",
         },
       },
       fontFamily: {

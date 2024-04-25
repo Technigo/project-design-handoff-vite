@@ -3,7 +3,7 @@ import jsonData from "../ValueProps.json";
 
 export const ValueProps = () => {
   return (
-    <div className="flex gap-12 overflow-x-auto md:flex md:flex-row">
+    <div className="flex gap-8 md:flex md:flex-row md:justify-center lg:gap-16">
       {jsonData.map((item, index) => {
         return <ValuePropsCard key={index} {...item} />;
       })}
