@@ -37,10 +37,10 @@ const FaqSection = styled.section`
 
 const FaqImage = styled.img`
   grid-area: img;
-  height: 300px; // Set a fixed height
+  height: 300px;
   object-fit: cover;
   position: absolute;
-  left: -2000px;
+  left: -2000px; //image is out of viewport on mobile
 
   @media all and (min-width: 744px) {
     height: 500px;
@@ -49,7 +49,7 @@ const FaqImage = styled.img`
   }
   @media all and (min-width: 1024px) {
     left: -420px;
-    height: 900px;
+    height: 750px;
   }
 `;
 
@@ -62,6 +62,7 @@ const ArrowWrapper = styled.div`
   grid-area: arrow;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 `;
 
 const ArrowText = styled.p`
@@ -195,7 +196,7 @@ export const FAQ = () => {
         <HeadingTwoVar>FAQ</HeadingTwoVar>
       </HeadingWrapper>
       <ArrowWrapper onClick={toggleExpand}>
-        <ArrowText>See more </ArrowText>
+        <ArrowText>{expanded ? "Show less" : "See more"} </ArrowText>
         <Arrow />
       </ArrowWrapper>
       <FaqWrapper>
