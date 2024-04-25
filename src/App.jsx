@@ -1,27 +1,41 @@
-import styled, { createGlobalStyle } from 'styled-components'; // Importing styled-components for styling
-import CoachSection from "./components/CoachSection"; // Importing CoachSection component
-import HealthierSection from "./components/HealthierSection"; // Importing HealthierSection component
-import Footer from "./components/Footer"; // Importing Footer component
+import { HeroSection } from "./components/HeroSection";
+import { NavigationBar } from "./components/NavigationBar";
+import { RetreatActivities } from "./components/RetreatActivities";
+import { TrustIndicator } from "./components/TrustIndicator";
 
-const App = () => {
+export const App = () => {
   return (
-    <div className="app">
-      {/* Global styles */}
-      <GlobalStyle />
-      {/* Main section containing CoachSection, HealthierSection, and Footer */}
-      <Main>
-        <CoachSection />
-        <HealthierSection />
-        <Footer />
-      </Main>
-    </div>
+    <>
+      <NavigationBar />
+      <HeroSection />
+      <TrustIndicator />
+      <RetreatActivities />
+    </>
   );
-};
+  import styled, { createGlobalStyle } from 'styled-components'; // Importing styled-components for styling
+  import CoachSection from "./components/CoachSection"; // Importing CoachSection component
+  import HealthierSection from "./components/HealthierSection"; // Importing HealthierSection component
+  import Footer from "./components/Footer"; // Importing Footer component
 
-export default App;
+  const App = () => {
+    return (
+      <div className="app">
+        {/* Global styles */}
+        <GlobalStyle />
+        {/* Main section containing CoachSection, HealthierSection, and Footer */}
+        <Main>
+          <CoachSection />
+          <HealthierSection />
+          <Footer />
+        </Main>
+      </div>
+    );
+  };
 
-// Global styles
-const GlobalStyle = createGlobalStyle`
+  export default App;
+
+  // Global styles
+  const GlobalStyle = createGlobalStyle`
   *,
   *::before,
   *::after {
@@ -37,7 +51,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
-// Styled main section
-const Main = styled.section`
+  // Styled main section
+  const Main = styled.section`
   min-width: 100%;
 `;
