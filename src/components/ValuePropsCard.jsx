@@ -11,22 +11,22 @@ export const ValuePropsCard = ({
         src={image}
         className="rounded-full object-cover border-solid border border-black h-40 w-40 mt-6 lg:h-48"
       ></img>
-      <div className="flex flex-col items-center mt-2 mr-2 ml-2 mb-6 gap-2">
+      <div className="flex flex-col items-center mt-2 mr-6 ml-6 mb-6 gap-2">
         <h4 className="font-urbanistitalic font-medium text-primary-darkblue lg:text-xl">
           {subtitle.toUpperCase()}
         </h4>
-        <h3 className="font-avengeance text-primary-darkblue text-lg lg:text-2xl">
+        <h3 className="font-avengeance text-primary-darkblue text-lg lg:text-2xl leading-5">
           {title}
         </h3>
         <p className="font-urbanist text-primary-darkblue text-sm text-center lg:text-lg">
-          {description}
-        </p>
+          {description}<br></br>
         <a
           href={link}
           className="font-urbanist text-primary-darkblue text-sm font-semibold lg:text-lg"
         >
           More
         </a>
+        </p>
       </div>
     </div>
   );
