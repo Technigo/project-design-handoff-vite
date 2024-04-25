@@ -3,9 +3,17 @@ import registerButton from "/assets/register-button01.png";
 
 export const Hero = () => {
   return (
-    <div className="container relative w-screen">
+    <div
+      className="container relative"
+      style={{ height: "598px", width: "100%" }}
+    >
       <div className="w-screen">
-        <img src={heroImg} className="object-none w-screen" alt="Hero Image" />
+        <img
+          src={heroImg}
+          className="object-cover w-full"
+          style={{ height: "598px" }}
+          alt="Hero Image"
+        />
       </div>
       <div
         className="absolute"
