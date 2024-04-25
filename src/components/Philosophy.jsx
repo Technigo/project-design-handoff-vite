@@ -24,20 +24,6 @@ const PhiloSection = styled.section`
   }
 `;
 
-// const ImageWrapper = styled.div`
-//   padding-top: 33px;
-//   background-image: url(${Lotus});
-//   background-size: contain;
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   opacity: 0.1;
-// `;
-
-// const PhiloWrapper = styled.div`
-//   display: flex;
-//   flex-direction: column;
-// `;
-
 const ImageWrapper = styled.div`
   padding-top: 33px;
   position: relative;
