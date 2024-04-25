@@ -171,13 +171,19 @@ const MiddleSection = styled.div`
   flex-direction: row;
   align-items: center;
   gap: 16px;
+  margin-top: 64px;
+  margin-bottom: 40px;
 
   @media (min-width: 744px) and (max-width: 1493px) {
     justify-content: left;
+    margin-top: 64px;
+    margin-bottom: 64px;
   }
 
   @media (min-width: 1494px) {
     justify-content: left;
+    margin-top: 120px;
+    margin-bottom: 40px;
   }
 `;
 
@@ -228,7 +234,6 @@ const BottomSection = styled.div`
   text-align: left;
   align-items: center;
   gap: 128px;
-  margin-top; 40px;
 
   @media (min-width: 744px) and (max-width: 1493px) {
     justify-content: left;
@@ -237,7 +242,8 @@ const BottomSection = styled.div`
   @media (min-width: 1494px) {
     flex-direction: row;
     justify-content: center;
-    margin: 40px 128px 0 128px;
+    margin-left: 128px;
+    margin-right: 128px;
 
   }
 `;
@@ -303,7 +309,7 @@ const Question = styled.div`
 
   @media (min-width: 1494px) {
     font-size: 20px;
-    min-width: 600px;
+    min-width: 570px;
     max-width: 800px;
   }
 `;
@@ -335,7 +341,7 @@ const QuestionDesktop = styled.div`
   border-color: var(--black);
   padding-bottom: 8px;
   font-size: 20px;
-  min-width: 600px;
+  min-width: 570px;
   max-width: 800px;
 
   &:hover {
