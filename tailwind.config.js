@@ -45,9 +45,9 @@ export default {
         // => @media (min-width: 1280px) { ... }
       },
       backgroundImage: {
-        "stripes-mobile": "url('src/assets/backgrounds/stripes-mobile.png')",
-        "stripes-tablet": "url('src/assets/backgrounds/stripes-tablet.png')",
-        "stripes-desktop": "url('src/assets/backgrounds/stripes-desktop.png')",
+        "stripes-mobile": "url('../assets/backgrounds/stripes-mobile.png')",
+        "stripes-tablet": "url('../assets/backgrounds/stripes-tablet.png')",
+        "stripes-desktop": "url('../assets/backgrounds/stripes-desktop.png')",
       },
     },
   },
