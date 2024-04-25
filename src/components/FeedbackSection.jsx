@@ -8,8 +8,14 @@ export const FeedbackSection = () => {
         Feedback by Urban Spinners
       </h2>
       <div>
-        {feedback.feedback.map(({ id, photo, text, sender }) => (
-          <FeedbackCard key={id} photo={photo} text={text} sender={sender} />
+        {feedback.feedback.map(({ id, photo, text, sender, profession }) => (
+          <FeedbackCard
+            key={id}
+            photo={photo}
+            text={text}
+            sender={sender}
+            profession={profession}
+          />
         ))}
       </div>
     </div>
