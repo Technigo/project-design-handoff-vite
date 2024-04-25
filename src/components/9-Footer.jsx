@@ -160,6 +160,10 @@ const FooterItem = styled.li`
   font-size: 14px;
   line-height: normal;
 
+  &:hover {
+    font-weight: 600;
+  }
+
   @media (min-width: 744px) and (max-width: 1493px) {
     font-size: 16px;
   }
@@ -167,7 +171,7 @@ const FooterItem = styled.li`
   @media (min-width: 1494px) {
     font-size: 18px;
   }
-`
+`;
 
 const LanguageSelectField = styled.div`
   display: flex;
@@ -236,8 +240,3 @@ const CopyrightText = styled.p`
     font-size: 16px;
   }
 `
-
-/*
-.footer-menu li:hover {
-  font-weight: 600;
-}*/

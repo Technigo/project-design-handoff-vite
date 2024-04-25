@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import bannerPhone from '/src/assets/banners/BannerPhone.png';
-import bannerTablet from '/src/assets/banners/BannerTablet.png';
+import styled from 'styled-components'
+import bannerPhone from '/src/assets/banners/BannerPhone.png'
+import bannerTablet from '/src/assets/banners/BannerTablet.png'
 import bannerDesktop from '/src/assets/banners/BannerDesktop.png'
 
 
@@ -27,9 +27,7 @@ export const BannerWrapper = styled.div`
     margin-left: -128px;
     margin-right: -128px;
   }
-`;
-
-
+`
 
 export const Banner = styled.div`
   background-image: url(${bannerPhone});
@@ -58,7 +56,7 @@ export const Banner = styled.div`
     padding-top: 30px;
     margin-top: 160px;
   }
-`;
+`
 
 export const BannerContainer = styled.div`
   background-color: black; 
@@ -83,12 +81,12 @@ export const BannerContainer = styled.div`
     height: 480px;
 
   }
-`;
+`
 
 export const TitleText = styled.h2`
     color: white;
     text-align: center;
-`;
+`
 
 export const SubText = styled.h3`
     color: white;
@@ -111,7 +109,7 @@ export const SubText = styled.h3`
     margin-right: 128px;
     margin-bottom: 40px;
   }
-`;
+`
 
 export const Email = styled.input`
     border-radius: 20px;
@@ -130,7 +128,7 @@ export const Email = styled.input`
     font-size: 18px;
     width: 20%;
   }
-`;
+`
 
 
 export const BannerInvert = styled.div`
@@ -167,7 +165,7 @@ export const BannerInvert = styled.div`
     margin-bottom: 160px;
    
   }
-`;
+`
 
 
 
