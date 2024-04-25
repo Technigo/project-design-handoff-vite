@@ -39,7 +39,7 @@ const StyledTrustIndicators = styled.div`
   @media (min-width: 744px) and (max-width: 1493px) {
     grid-column: span 8;
     padding: 128px 0;
-    margin: 0 -40px;
+    margin: 0 -32px;
     gap: 128px;
   }
 

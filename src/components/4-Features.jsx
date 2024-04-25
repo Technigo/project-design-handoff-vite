@@ -65,7 +65,7 @@ export const Features = () => {
 
 const StyledFeatures = styled.div`
   grid-column: span 4;
-  padding: 80px 63px;
+  padding: 80px 63px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,13 +73,13 @@ const StyledFeatures = styled.div`
 
   @media (min-width: 744px) and (max-width: 1493px) {
     grid-column: span 8;
-    padding: 128px 0;
+    padding: 128px 0 0;
     gap: 80px;
   }
 
   @media (min-width: 1494px) {
     grid-column: span 12;
-    padding: 160px 0;
+    padding: 160px 0 0;
     gap: 112px;
   }
 `
