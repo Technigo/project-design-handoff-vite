@@ -3,10 +3,6 @@ import { useTranslation } from "react-i18next"
 export const Footer = () => {
   const { t, i18n } = useTranslation()
 
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language)
-  }
-
   return (
     <footer className="sticky bottom-0 w-full">
         <section>
@@ -16,7 +12,7 @@ export const Footer = () => {
                 <button className="text-darkblue bg-steelblue px-8 py-1 rounded-3xl transition hover:text-white ml-2">{t("footer.sign")}</button>
             </div>
 
-            <div className="flex flex-col gap-6 text-center sm:text-left bg-steelblue p-6">
+            <div className="flex flex-col gap-2 text-center sm:text-left bg-steelblue p-6">
               <label className="text-darkblue text-lg font-semibold">{t("footer.studio")}</label>
               <ul className="flex flex-col gap-2 text-darkblue">
                 <li>{t("footer.office")}</li>
@@ -74,10 +70,14 @@ export const Footer = () => {
                 <p>{t("footer.privacy")}</p>
             </div>
 
-            <div className="bg-steelblue text-center sm:text-left p-6">
-              <button onClick={() => changeLanguage("en")} className="border-2 border-beige text-beige transition hover:text-darkblue hover:border-darkblue">{t("footer.en")}</button>
-              <button onClick={() => changeLanguage("sv")} className="border-2 border-beige text-beige transition hover:text-darkblue hover:border-darkblue ml-2">{t("footer.sw")}</button>
-           </div>
+            <div className="bg-steelblue p-6 text-center sm:text-left">
+            <select name="" id="" value={i18n.language} onChange={(e) => i18n.changeLanguage(e.target.value)} className="bg-steelblue border-darkblue rounded-md">
+              <option value="" selected disabled>{t("footer.select")}</option>
+              <option value="en">{t("footer.en")}</option>
+              <option value="sv">{t("footer.sw")}</option>
+            </select>
+            </div>
+
         </section>
     </footer>
   )
@@ -90,3 +90,12 @@ export const Footer = () => {
     <option value="sv">{t("footer.sw")}</option>
 </select>
 </div>*/
+
+/*<div className="bg-steelblue text-center sm:text-left p-6">
+<button onClick={() => changeLanguage("en")} className="border-2 border-beige text-beige transition hover:text-darkblue hover:border-darkblue">{t("footer.en")}</button>
+<button onClick={() => changeLanguage("sv")} className="border-2 border-beige text-beige transition hover:text-darkblue hover:border-darkblue ml-2">{t("footer.sw")}</button>
+</div>*/
+
+/*const changeLanguage = (language) => {
+    i18n.changeLanguage(language)
+  }*/

@@ -6,7 +6,7 @@
         "studio": "Kontakta Y Studio",
         "office": "Huvudkontor",
         "conditions": "Villkor",
-        "props": "Yoga rekvisita",
+        "props": "Yogatillbehör",
         "clothing": "Kläder",
         "reading": "Böcker",
         "about": "Om oss",
@@ -14,7 +14,7 @@
         "shop": "Webbshop",
         "privacy": "Integritetspolicy",
         "select": "Välj språk",
-        "en": "EN",
-        "sw": "SV"
+        "en": "Engelska",
+        "sw": "Svenska"
     }
 }
