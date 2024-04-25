@@ -18,9 +18,7 @@ export default {
         'accent-blue': '#3C97D1',
       },
       backgroundImage: {
-        cobra: "url('src/assets/bgImage/yoga-pose-cobra.jpeg')",
-        tree: "url('src/assets/bgImage/yoga-pose-tree.jpeg')",
-        pray: "url('src/assets/bgImage/yoga-pose-pray.jpeg')",
+        cobra: "url('yoga-pose-cobra.jpeg')",
       },
     },
   },
