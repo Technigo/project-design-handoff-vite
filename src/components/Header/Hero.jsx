@@ -1,9 +1,9 @@
 export const Hero = () => {
   return (
-    <section className="backdrop-blur relative bg-heroMobile bg-no-repeat bg-cover h-h960 flex justify-center items-start md:bg-heroTablets md:bg-right py-20 2xl:bg-heroDesktop">
+    <section className="relative bg-heroMobile bg-no-repeat bg-cover h-h960 flex justify-center items-start md:bg-heroTablets md:bg-right py-20 2xl:bg-heroDesktop">
       {/* <div className="container justify-start text-center md:mx-auto"> */}
-      <div className=" flex py-24 gap-y-96 items-start flex-col max-w-xs md:max-w-sm mx-auto md:gap-10 2xl:max-w-w850 ">
-        <h1 className="font-zilla font-semibold text-4xl text-center text-darkBlue 2xl:text-6xl ">
+      <div className=" flex  gap-y-96 items-start flex-col max-w-xs md:py-24 md:max-w-sm mx-auto md:gap-10 2xl:max-w-w850 ">
+        <h1 className="font-semibold text-4xl text-center text-darkBlue 2xl:text-6xl ">
           Gravid och Mamma-träning på dina villkor.
         </h1>
         <div className="flex flex-col items-center gap-2 justify-center md:gap-10">
