@@ -2,6 +2,10 @@
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      md: '744px',
+      xl: '1440px',
+    },
     fontFamily: {
       avenir: ['Avenir'],
       futura: ['Futura'],

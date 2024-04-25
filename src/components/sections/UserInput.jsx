@@ -3,8 +3,8 @@ import { GeneralButton } from '../GeneralButton';
 export const UserInput = () => {
   return (
     <>
-      <section className="grid w-full items-center justify-center bg-[#F8F7F3] px-[38px] py-20">
-        <div className="flex flex-col pb-[24px] text-center font-futura font-bold w-[362px] xl:w-auto xl:mt-20">
+      <section className="grid w-full items-center justify-center justify-items-center bg-[#F8F7F3] px-[38px] py-20">
+        <div className="flex max-w-96 flex-col pb-[24px] text-center font-futura font-bold xl:mt-20 xl:max-w-max">
           <h2 className="font-futura text-xl font-bold md:text-2xl xl:text-4xl">
             JOIN OUR COMMUNITY
           </h2>
@@ -13,7 +13,10 @@ export const UserInput = () => {
             and retreats
           </p>
         </div>
-        <form className="grid place-items-center gap-8 xl:mb-12 xl:mt-8 xl:flex">
+        <form
+          className="grid place-items-center gap-8 xl:mb-12 xl:mt-8 xl:flex"
+          onSubmit={(e) => e.preventDefault()}
+        >
           <input
             type="text"
             placeholder="First Name"

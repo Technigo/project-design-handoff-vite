@@ -1,8 +1,8 @@
-import facebook from '../../assets/contactIcons/Facebook.svg';
 import email from '../../assets/contactIcons/Email.svg';
+import facebook from '../../assets/contactIcons/Facebook.svg';
 import instagram from '../../assets/contactIcons/Instagram.svg';
-import phone from '../../assets/contactIcons/Phone.svg';
 import map from '../../assets/contactIcons/Map.svg';
+import phone from '../../assets/contactIcons/Phone.svg';
 import twitter from '../../assets/contactIcons/Twitter.svg';
 
 const contact = [
@@ -39,7 +39,7 @@ export const Footer = () => {
           <li className="hidden md:flex md:gap-10">
             {socialMeida.map((item, index) => (
               <img
-                className="hover:scale-125"
+                className="cursor-pointer hover:scale-125"
                 key={index}
                 alt={item.alt}
                 src={item.src}
@@ -47,7 +47,7 @@ export const Footer = () => {
             ))}
           </li>
         </ul>
-        <ul className="flex flex-col gap-8 md:gap-6">
+        <ul className="flex cursor-pointer flex-col gap-8 md:gap-6">
           {footerMenu.map((item, index) => (
             <li key={index}>{item}</li>
           ))}
