@@ -1,4 +1,97 @@
 import styled, { css } from "styled-components";
+import logoPhone from "/src/assets/icons/topmenu/LogoPhone.png";
+import logoTablet from "/src/assets/icons/topmenu/LogoTablet.png";
+import logoDesktop from "/src/assets/icons/topmenu/LogoDesktop.png";
+import userPhone from "/src/assets/icons/topmenu/UserPhone.png";
+import userPhoneClick from "/src/assets/icons/topmenu/UserPhoneClick.png";
+import userDefault from "/src/assets/icons/topmenu/UserDefault.png";
+import userTablClick from "/src/assets/icons/topmenu/UserTablClick.png";
+import menuPhone from "/src/assets/icons/topmenu/MenuPhone.png";
+import menuPhoneClick from "/src/assets/icons/topmenu/MenuPhoneClick.png";
+import menuDefault from "/src/assets/icons/topmenu/MenuDefault.png";
+import menuTablHover from "/src/assets/icons/topmenu/MenuTablHoverClick.png";
+
+
+const topOfPage = () => {
+  window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: "smooth",
+});
+} 
+
+export const TopMenu = () => {
+  return (
+    <TopMenuContainer>
+      <Logo onClick={topOfPage}>
+        <LogoPhone
+          src={logoPhone}
+          phone
+        />
+        <LogoTablet
+          src={logoTablet}
+          tablet
+        />
+        <LogoDesktop
+          src={logoDesktop}
+          desktop
+        />
+      </Logo>
+      <MenuTextSection>
+        <MenuText>First Timers</MenuText>
+        <MenuText>Schedule</MenuText>
+        <MenuText buy id="buy">
+          Buy Sessions
+        </MenuText>
+      </MenuTextSection>
+      <UserMenuDiv>
+        <div>
+          <UserPhone
+            src={userPhone}
+            phone
+          />
+          <UserPhone
+            src={userPhoneClick}
+            phoneclick
+            active
+          />
+          <UserDesktop
+            src={userDefault}
+            desktop
+          />
+          <UserDesktop
+            src={userTablClick}
+            desktophover
+            hover
+          />
+        </div>
+        <div>
+          <MenuPhone
+            src={menuPhone}
+            phone
+          />
+          <MenuPhone
+            src={menuPhoneClick}
+            phoneclick
+            active
+          />
+          <MenuDesktop
+            src={menuDefault}
+            desktop
+          />
+          <MenuDesktop
+            src={menuTablHover}
+            desktophover
+            hover
+          />
+        </div>
+      </UserMenuDiv>
+    </TopMenuContainer>
+  );
+};
+
+
+
 
 const TopMenuContainer = styled.div`
   background-color: var(--menublack);
@@ -310,91 +403,4 @@ const MenuDesktop = styled.img`
       }
     `}
 `;
-
-const topOfPage = () => {
-  window.scrollTo({
-  top: 0,
-  left: 0,
-  behavior: "smooth",
-});
-} 
-
-export const TopMenu = () => {
-  return (
-    <TopMenuContainer>
-      <Logo onClick={topOfPage}>
-        <LogoPhone
-          src="./src/assets/icons/topmenu/LogoPhone.png"
-          phone
-        />
-        <LogoTablet
-          src="./src/assets/icons/topmenu/LogoTablet.png"
-          tablet
-        />
-        <LogoDesktop
-          src="./src/assets/icons/topmenu/LogoDesktop.png"
-          desktop
-        />
-      </Logo>
-      <MenuTextSection>
-        <MenuText>First Timers</MenuText>
-        <MenuText>Schedule</MenuText>
-        <MenuText buy id="buy">
-          Buy Sessions
-        </MenuText>
-      </MenuTextSection>
-      <UserMenuDiv>
-        <div>
-          <UserPhone
-            className="user-phone"
-            src="./src/assets/icons/topmenu/UserPhone.png"
-            phone
-          />
-          <UserPhone
-            className="user-phone-click"
-            src="./src/assets/icons/topmenu/UserPhoneClick.png"
-            phoneclick
-            active
-          />
-          <UserDesktop
-            className="user-desktop"
-            src="./src/assets/icons/topmenu/UserDefault.png"
-            desktop
-          />
-          <UserDesktop
-            className="user-desktop-hover"
-            src="./src/assets/icons/topmenu/UserTablClick.png"
-            desktophover
-            hover
-          />
-        </div>
-        <div>
-          <MenuPhone
-            className="menu-phone"
-            src="./src/assets/icons/topmenu/MenuPhone.png"
-            phone
-          />
-          <MenuPhone
-            className="menu-phone-click"
-            src="./src/assets/icons/topmenu/MenuPhoneClick.png"
-            phoneclick
-            active
-          />
-          <MenuDesktop
-            className="menu-desktop"
-            src="./src/assets/icons/topmenu/MenuDefault.png"
-            desktop
-          />
-          <MenuDesktop
-            className="menu-desktop-hover"
-            src="./src/assets/icons/topmenu/MenuTablHoverClick.png"
-            desktophover
-            hover
-          />
-        </div>
-      </UserMenuDiv>
-    </TopMenuContainer>
-  );
-};
-
 
