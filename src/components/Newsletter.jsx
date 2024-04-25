@@ -1,4 +1,4 @@
-import { Button } from "./Button"
+import { Button } from "./reusable/Button"
 
 export const Newsletter = () => {
   return (
@@ -16,6 +16,8 @@ export const Newsletter = () => {
           placeholder="Enter your e-mail address here."
           aria-label="Email address"
         />
+
+        {/* The placeholder should be black but cant make it work */}
         <div className="mt-4 mb-10">
           <Button buttonText={"Subscribe"} />
         </div>

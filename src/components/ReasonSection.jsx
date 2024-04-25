@@ -1,5 +1,5 @@
-import { ReasonCard } from "./ReasonCard";
-import reasons from "../json/why.json";
+import { ReasonCard } from "./reusable/ReasonCard"
+import reasons from "../json/why.json"
 
 export const ReasonSection = () => {
   return (
@@ -23,5 +23,5 @@ export const ReasonSection = () => {
         alt="black and white photo of a spinning bike"
       />
     </div>
-  );
-};
+  )
+}

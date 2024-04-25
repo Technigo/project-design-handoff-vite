@@ -1,16 +1,16 @@
-import { ButtonFAQ } from "./ButtonFAQ";
-import data from "../json/FAQs.json";
-import arrow from "/arrow.svg";
+import { ButtonFAQ } from "./reusable/ButtonFAQ"
+import data from "../json/FAQs.json"
+import arrow from "/arrow.svg"
 
 export const FAQs = () => {
   const getQuestions = (startIndex, endIndex) => {
     return data.questions.slice(startIndex, endIndex).map((question, index) => (
       <li className="border-b-2 flex justify-between" key={index}>
         {question}
-        <img  src={arrow} />
+        <img src={arrow} />
       </li>
-    ));
-  };
+    ))
+  }
 
   return (
     <div>
@@ -38,9 +38,9 @@ export const FAQs = () => {
         </button>
       </div>
       <div className="grid grid-cols-1 font-montserrat text-sm">
-      <ul className="mx-4">{getQuestions(0, 6)}</ul>
-      <ul className="mx-4 invisible md:visible">{getQuestions(6, 12)}</ul>
+        <ul className="mx-4">{getQuestions(0, 6)}</ul>
+        <ul className="mx-4 invisible md:visible">{getQuestions(6, 12)}</ul>
       </div>
     </div>
-  );
-};
+  )
+}

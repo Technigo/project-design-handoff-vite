@@ -2,7 +2,7 @@ import { Navbar } from "./components/Navbar"
 import { HeroSection } from "./components/HeroSection"
 import { TrustIndicators } from "./components/TrustIndicators"
 import { ReasonSection } from "./components/ReasonSection"
-import { CallToAction } from "./components/CallToAction"
+import { BookClass } from "./components/BookClass"
 import { FeedbackSection } from "./components/FeedbackSection"
 import { FAQs } from "./components/FAQs"
 import { Newsletter } from "./components/Newsletter"
@@ -15,7 +15,7 @@ export const App = () => {
       <HeroSection />
       <TrustIndicators />
       <ReasonSection />
-      <CallToAction />
+      <BookClass />
       <FeedbackSection />
       <FAQs />
       <Newsletter />

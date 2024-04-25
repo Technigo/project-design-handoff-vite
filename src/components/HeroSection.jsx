@@ -1,4 +1,4 @@
-import { Button } from "./Button"
+import { Button } from "./reusable/Button"
 
 export const HeroSection = () => {
   return (
