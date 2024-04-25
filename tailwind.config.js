@@ -18,6 +18,7 @@ export default {
           violetblue: "#99A2FB",
           mediumpink: "#F3B6AB",
           valupropsviolet: "#B5BCF9",
+          greyblue: "#E3E6FF",
         },
       },
       fontFamily: {
