@@ -1,0 +1,42 @@
+.booking-system{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: start;
+  left: 20%;
+  top: 240px;
+  gap: 12px;
+  color: #042D43;
+}
+
+.power{
+  margin: 0;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.anywhere{
+  margin: 0;
+  font-family: 'Roboto';
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+.booking {
+  width: fit-content;
+  height: auto;
+  padding: 8px 16px;
+  margin-top: 8px;
+  background-color: #042D43;
+  color: white;
+  border-radius: 30px;
+  font-family: 'Roboto';
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 500;
+  cursor: pointer;
+}

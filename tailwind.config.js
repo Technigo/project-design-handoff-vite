@@ -27,7 +27,7 @@ export default {
         "paragraph-large-mob": "1rem",
         "paragraph-small-mob": "1rem",
       },
-      colors: {
+      colors:{
         "beige": "#DECEC6",
         "lightblue": "#CADCFF",
         "steelblue": "#A1B5D8",
@@ -36,8 +36,5 @@ export default {
       },
     },
   },
-
   plugins: [],
 }
-
-
