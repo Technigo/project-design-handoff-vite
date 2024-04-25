@@ -44,6 +44,11 @@ export default {
         desktop: "1511px",
         // => @media (min-width: 1280px) { ... }
       },
+      backgroundImage: {
+        "stripes-mobile": "url('src/assets/backgrounds/stripes-mobile.png')",
+        "stripes-tablet": "url('src/assets/backgrounds/stripes-tablet.png')",
+        "stripes-desktop": "url('src/assets/backgrounds/stripes-desktop.png')",
+      },
     },
   },
   plugins: [],
