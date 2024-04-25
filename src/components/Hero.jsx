@@ -6,14 +6,16 @@ import { HeroCard } from "./HeroCard";
 const StyledHero = styled.section`
   font-family: "AvenirMedium", sans-serif;
 
-  margin-top: 177px;
+  margin-top: 173px;
 
   .launch-section {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: auto;
     background-image: url("/heading.png");
     background-size: cover;
     background-position: center 50%;
@@ -50,7 +52,9 @@ const StyledHero = styled.section`
   }
 
   .title-extra-info {
-    margin: 160px 0 8rem;
+    margin: 160px auto 8rem;
+    padding: 0 2rem;
+    text-align: center;
   }
 
   .slogan-keyword {
@@ -66,6 +70,10 @@ const StyledHero = styled.section`
   .start-btn {
     margin-top: 15vw;
     margin-bottom: 1rem;
+  }
+
+  .small-screen-btn {
+    display: none;
   }
 
   .customer-comments {
@@ -102,6 +110,57 @@ const StyledHero = styled.section`
   .comment-break {
     display: block;
   }
+
+  @media (max-width: 1200px) {
+    margin-top: 169px;
+  }
+
+  @media (max-width: 985px) {
+    margin-top: 155px;
+    .line-break {
+      display: block;
+    }
+  }
+
+  @media (max-width: 744px) {
+    margin-top: 79px;
+    .sub-title {
+      font-size: 30px;
+    }
+    .title-extra-info,
+    .slogan-keyword {
+      font-size: 24px;
+    }
+
+    .customer-comments {
+      margin: 0 auto;
+      padding: 2rem 26vw;
+      text-aling: center;
+    }
+
+    .customer-comments li {
+      margin-right: 0;
+      transform: translateX(20px);
+    }
+
+    .comment-break {
+      display: inline;
+    }
+
+    .not-first-comment {
+      display: none;
+    }
+
+    .big-screen-btn {
+      display: none;
+    }
+    .small-screen-btn {
+      display: block;
+    }
+  }
+
+  @media (max-width: 428px) {
+  }
 `;
 
 const heroStart = buttonData[0];
@@ -118,12 +177,17 @@ export const Hero = () => {
           />
           <h1>Curve Pilates</h1>
         </div>
-        <h2>Wellness and Movement</h2>
+        <h2 className="sub-title">Wellness and Movement</h2>
         <h2 className="title-extra-info">
           Helping <span className="slogan-keyword">everybody</span> to
-          strengthen, heal & recharge
+          <span className="line-break"> strengthen, heal & recharge</span>
         </h2>
-        <Buttons buttonText={heroStart.buttonText} fontSize={24} />
+        <div className="big-screen-btn">
+          <Buttons buttonText={heroStart.buttonText} fontSize={24} />
+        </div>
+        <div className="small-screen-btn">
+          <Buttons buttonText={heroStart.buttonText} fontSize={18} />
+        </div>
       </div>
       <ul className="customer-comments">
         <li className="comment">
@@ -131,12 +195,12 @@ export const Hero = () => {
           a session, I saw improvements after a few weeks”
           <span className="comment-break">- Charlotte</span>
         </li>
-        <li className="comment">
+        <li className="comment not-first-comment">
           “The teachers are <span className="comment-keyword">fantastic </span>
           and the classes are so fun!”
           <span className="comment-break">- Ben</span>
         </li>
-        <li className="comment" id="last-comment">
+        <li className="comment not-first-comment" id="last-comment">
           “Pilates is the only exercise that has worked for me,
           <span className="comment-keyword"> no more back pain</span>”
           <span className="comment-break">- Jesse</span>
