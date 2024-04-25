@@ -1,19 +1,23 @@
 import heroImage from "../assets/heroSectionImages/heroimage.png";
 import styled from "styled-components";
+import { HeaderNavbar } from "./HeaderNavbar";
 
 export const Hero = () => {
   return (
-    <HeroSection>
-      <HeroContent>
-        <h1>Master your board!</h1>
-        <p>
-          Join us at our Snowboard Camps and unleash your inner Powder Betty!
-        </p>
-      </HeroContent>
-      <div>
-        <CtaButton>Explore our camps</CtaButton>
-      </div>
-    </HeroSection>
+    <>
+      <HeroSection>
+        <HeaderNavbar />
+        <HeroContent>
+          <h1>Master your board!</h1>
+          <p>
+            Join us at our Snowboard Camps and unleash your inner Powder Betty!
+          </p>
+        </HeroContent>
+        <div>
+          <CtaButton>Explore our camps</CtaButton>
+        </div>
+      </HeroSection>
+    </>
   );
 };
 
