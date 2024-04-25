@@ -7,7 +7,7 @@ export const InstructorsSliderCard = ({ data }) => {
       <StyledImgSlider src={data.img} alt={data.title} />
       <TitleBox>
         <h3>{data.title}</h3>
-      <p>{data.description}</p>
+        <p className="work-title">{data.description}</p>
       </TitleBox>
     </StyledSliderCard>
   )
@@ -42,7 +42,7 @@ const TitleBox = styled.div`
     font-size: 21px;
     font-weight: bold;
   }
-  p {
+  .work-title {
     font-size: 18px;
     line-height: 22px;
   }
