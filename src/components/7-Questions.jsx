@@ -144,6 +144,7 @@ const CategoryBtn = styled.button`
   border-radius: 30px;
   padding: 12px 0px;
   text-decoration: none;
+  color: black;
   transition: background-color 0.2s ease;
 
   &:hover {
@@ -201,6 +202,7 @@ const DiscoverBtn = styled.button`
   border-color: #b9b9b9;
   padding: 4px 10px;
   text-decoration: none;
+  color: black;
   transition: background-color 0.2s ease;
 
   &:hover {
