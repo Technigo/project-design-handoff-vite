@@ -31,6 +31,14 @@ const StyledButton = styled.button`
   font-size: 21px;
   font-weight: bold;
 
+  @media screen and (min-width: 441px) {
+    width: ${({ $sticky }) => ($sticky ? "159px" : "381px")};
+  }
+
+  @media screen and (min-width: 834px) {
+    width: ${({ $sticky }) => ($sticky ? "159px" : "574px")};
+  }
+
   &:hover {
     background-color: ${({ $orange }) => ($orange ? "#FFFFFFD6" : "#827F7FB3")};
     color: ${({ $orange }) => ($orange ? "#F4AB49" : "#FFFFFF")};

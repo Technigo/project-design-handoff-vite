@@ -1,12 +1,16 @@
 import AppStore from "/AppStore.svg";
 import GooglePlay from "/GooglePlay.svg";
 import image from "/weightLifting.svg";
+import imageTablet from "/weightTablet.svg";
 import styled from "styled-components";
 
 export const Download = () => {
   return (
     <StyledDownload>
-      <img id="weight-lift" src={image} alt="weight lifting" />
+      <picture>
+        <source media="(min-width: 834px)" srcSet={imageTablet} />
+        <img id="weight-lift" src={image} alt="weight lifting" />
+      </picture>
       <div className="download-classes">
         <h2>WORLD-CLASS WORKOUTS. WHEREEVER YOU ARE.</h2>
         <p>
@@ -31,17 +35,6 @@ export const Download = () => {
 
 //Styled Components
 const StyledDownload = styled.section`
-  h2 {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
-  }
-
-  p {
-    font-size: 20px;
-    line-height: 38px;
-  }
-
   #weight-lift {
     width: 100%;
   }
@@ -52,11 +45,37 @@ const StyledDownload = styled.section`
     margin: 20px 56px 0 24px;
     //Changed the right boarder according to the design
     gap: 20px;
+
+    @media screen and (min-width: 834px) {
+      margin: 20px 32px 0 32px;
+      flex-direction: row;
+      gap: 16px;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 50px;
+
+      @media screen and (min-width: 834px) {
+        width: 279px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 38px;
+
+      @media screen and (min-width: 834px) {
+        width: 279px;
+      }
+    }
   }
 
   .pink-download-box {
     display: flex;
     flex-direction: column;
+    align-self: center;
   }
 `;
 

@@ -46,17 +46,25 @@ export const Slider = () => {
 
 // Styled Components
 
- const StyledSlider = styled.section`
+const StyledSlider = styled.section`
   display: flex;
   gap: 16px;
   margin: 0 24px;
-  //Why is the margin on the right not showing???
+
+  @media screen and (min-width: 834px) {
+    margin: 0 32px;
+  }
 `;
 
 const StyledSliderButtonBox = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+
+  @media screen and (min-width: 640px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 const StyledSliderButton = styled.button`
@@ -67,4 +75,8 @@ const StyledSliderButton = styled.button`
   background-color: transparent;
   position: absolute;
   left: ${({ $left }) => ($left ? "85%" : "10%")};
+
+  @media screen and (min-width: 640px) {
+    display: none;
+  }
 `;

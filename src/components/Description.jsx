@@ -36,6 +36,13 @@ const StyledDescription = styled.section`
   display: flex;
   flex-direction: column;
   color: white;
+
+  @media screen and (min-width: 834px) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 89px;
+  }
 `;
 const DescriptionText = styled.div`
   display: flex;
@@ -45,10 +52,18 @@ const DescriptionText = styled.div`
   border-bottom: ${({ $border }) => ($border ? "solid 1px #FFFFFF80" : "none")};
   //I changed the color to be 50% transparent as in her design ;)
 
+  @media screen and (min-width: 834px) {
+    border-bottom: none;
+    border-right: ${({ $border }) =>
+      $border ? "solid 1px #FFFFFF80" : "none"};
+    padding: 0 20px 0 0;
+    margin: 20px 0;
+    width: 188px;
+  }
+
   h3 {
     font-weight: bold;
     font-size: 20px;
-    /* line-height: ; */
   }
 
   p {

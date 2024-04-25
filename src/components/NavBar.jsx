@@ -5,6 +5,11 @@ export const NavBar = () => {
     <StyledNavBar>
       <h2>LIFTLY</h2>
       <MobileNav src="HamburgerMenu.svg"></MobileNav>
+      <DesktopNav>
+        <p>ABOUT US</p>
+        <p>SEARCH</p>
+        <p>SIGN IN</p>
+      </DesktopNav>
     </StyledNavBar>
   );
 };
@@ -19,6 +24,11 @@ const StyledNavBar = styled.header`
   justify-content: space-between;
   margin: 0 24px;
 
+  @media screen and (min-width: 834px) {
+    height: 52px;
+    margin: 0 32px;
+  }
+
   h2 {
     color: #404040;
     font-weight: bold;
@@ -30,7 +40,20 @@ const MobileNav = styled.img`
   width: 83px;
   height: 83px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 834px) {
     display: none;
+  }
+`;
+
+const DesktopNav = styled.div`
+  display: none;
+
+  @media screen and (min-width: 834px) {
+    display: flex;
+    gap: 10px;
+
+    p {
+      padding: 10px;
+    }
   }
 `;

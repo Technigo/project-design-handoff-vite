@@ -22,6 +22,8 @@ const StyledHero = styled.div`
   background-image: url(HeroPicture.svg);
   //Hej, Izabel could you check how the picture is looking for you? I downloaded the big one but only see mobile size. Weird...
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
 
   @media screen and (min-width: 441px) {
     height: 504px;
@@ -38,11 +40,24 @@ const StyledHero = styled.div`
 
     @media screen and (min-width: 441px) {
       padding: 140px 0 0 0;
+      width: 381px;
+      align-self: center;
+    }
+
+    @media screen and (min-width: 834px) {
+      width: 640px;
+      font-size: 30px;
+      padding: 268px 0 0 0;
     }
   }
 
   button {
     margin-top: 45px;
+    align-self: center;
     //There is just an auto margin between the text and the button. I tried to come close but maybe we need to ask Elin? Or do you see something in the design?
+
+    @media screen and (min-width: 834px) {
+      margin-top: 49px;
+    }
   }
 `;
