@@ -27,8 +27,11 @@ export default {
         "6xl": ["80px", "96px"],
       },
       height: {
-        mhero: ["377px"]
-      }
+        mhero: ["377px"],
+      },
+      dropShadow: {
+        "button-shadow": "0 5px 2px rgba(0, 0, 0, 0.9)",
+      },
     },
   },
   plugins: [],
