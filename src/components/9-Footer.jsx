@@ -1,8 +1,8 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import FacebookIcon from "../assets/icons/newsletter/Facebook.png"
 import InstagramIcon from "../assets/icons/newsletter/Instagram.png"
 import SpotifyIcon from "../assets/icons/newsletter/Spotify.png"
-import Arrow from "../assets/icons/language-select-arrow.svg"
+import { LanguageSelect } from "./LanguageSelect"
 
 export const Footer = () => {
   return (
@@ -18,30 +18,22 @@ export const Footer = () => {
             <FooterItem>About Urban Spin</FooterItem>
             <FooterItem>Contact Us</FooterItem>
             <FooterItem>Find Us</FooterItem>
+          </FooterList>
+          <FooterList>
             <FooterItem>Careers</FooterItem>
           </FooterList>
-          <FooterMenuTwo>
-            <FooterList>
-              <FooterItem>Schedule</FooterItem>
-              <FooterItem>FAQs</FooterItem>
-              <FooterItem>Customer Service</FooterItem>
-            </FooterList>
-            <FooterList>
-              <FooterItem>Prices</FooterItem>
-              <FooterItem>Health Benefit</FooterItem>
-              <FooterItem>Gift Cards</FooterItem>
-            </FooterList>
-          </FooterMenuTwo>
+          <FooterList>
+            <FooterItem>Schedule</FooterItem>
+            <FooterItem>FAQs</FooterItem>
+            <FooterItem>Customer Service</FooterItem>
+          </FooterList>
+          <FooterList right>
+            <FooterItem>Prices</FooterItem>
+            <FooterItem>Health Benefit</FooterItem>
+            <FooterItem>Gift Cards</FooterItem>
+          </FooterList>
         </FooterMenu>
-        <LanguageSelectField>
-          <DropDownBtn>
-            <h3>ENG</h3>
-            <LanguageArrow src={Arrow} alt="Select arrow" />
-          </DropDownBtn>
-          <div className="dropdown-content">
-            <h3>FR</h3>
-          </div>
-        </LanguageSelectField>
+        <LanguageSelect />
         <CopyrightField>
           <CopyrightText>© 2024 Urban Spin. All rights reserved.</CopyrightText>
           <CopyrightText>Privacy Policy</CopyrightText>
@@ -115,38 +107,25 @@ const FooterText = styled.div`
 `
 
 const FooterMenu = styled.div`
+  width: 100%;
   padding: 0 16px;
-  width: 292px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 16px;
+  grid-auto-flow: column;
 
   @media (min-width: 744px) and (max-width: 1493px) {
-    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 32px;
     padding: 0;
-    width: 466px;
   }
 
   @media (min-width: 1494px) {
-    gap: 160px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 160px;
     padding: 0;
-    width: 772px;
-  }
-`
-
-const FooterMenuTwo = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-
-  @media (min-width: 744px) and (max-width: 1493px) {
-    flex-direction: row;
-    gap: 32px;
-  }
-
-  @media (min-width: 1494px) {
-    flex-direction: row;
-    gap: 160px;
   }
 `
 
@@ -154,6 +133,14 @@ const FooterList = styled.ul`
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  @media (min-width: 744px) {
+    ${(props) =>
+      props.right &&
+      css`
+        grid-column-start: 3;
+      `}
+  }
 `
 
 const FooterItem = styled.li`
@@ -171,52 +158,11 @@ const FooterItem = styled.li`
   @media (min-width: 1494px) {
     font-size: 18px;
   }
-`;
-
-const LanguageSelectField = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`
-
-const DropDownBtn = styled.button`
-  background: none;
-  font-size: 16px;
-  border: none;
-  width: 74px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-
-  @media (min-width: 744px) and (max-width: 1493px) {
-    font-size: 18px;
-    width: 90px;
-    gap: 16px;
-  }
-
-  @media (min-width: 1494px) {
-    font-size: 18px;
-    width: 90px;
-    gap: 16px;
-  }
-`
-
-const LanguageArrow = styled.img`
-  width: 9.218px;
-  height: 16px;
-
-  @media (min-width: 744px) and (max-width: 1493px) {
-    width: 13.826px;
-    height: 24px;
-  }
-
-  @media (min-width: 1494px) {
-    width: 13.826px;
-    height: 24px;
-  }
 `
 
 const CopyrightField = styled.div`
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 40px;
 
@@ -231,12 +177,16 @@ const CopyrightField = styled.div`
 
 const CopyrightText = styled.p`
   font-size: 10px;
+  max-width: 25%;
+  line-height: normal;
 
   @media (min-width: 744px) and (max-width: 1493px) {
+    max-width: 70%;
     font-size: 14px;
   }
 
   @media (min-width: 1494px) {
+    max-width: 50%;
     font-size: 16px;
   }
 `
