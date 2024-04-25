@@ -9,15 +9,18 @@ export const Reviews = () => {
   return (
 
     <div className="mx-auto align-middle  bg-yogawhite flex-1  py-7">
-     <div className="reviews  bg-yogawhite relative center bg-no-repeat bg-contain"   style={{
+     <div className="reviews  bg-yogawhite  bg-no-repeat bg-contain md:mx-8 "   style={{
         backgroundImage: `url(${leftblob}), url(${rightblob})`,
-        backgroundPosition: 'left center, right center',
-        backgroundSize: 'contain',
+        backgroundPosition: 'left bottom, right top',
+        backgroundSize: 'contain, contain',
+        minHeight: '111px',
+        maxHeight:'300px',
+
       }}>
         <div className="flex justify-evenly">
           {customerReviews.map((review, index) => (
-            <div className="reviews flex-col justify-items-start w-24"  key={index} >
-              <p className="font-inter text-darkblue text-center mobile:text-paragraph-mob  tablet: text-title-h2-h3-paragraph-large-tablet-and-paragraph-small-dt  ">{review}</p>
+            <div className="reviews flex-col justify-items-start sm:w-24 m-2 text-16 md:w-32 md:text-20 lg:w-56 lg:text-25"  key={index} >
+              <p className="font-inter text-darkblue text-center ">{review}</p>
             </div>
           ))}
         </div>
