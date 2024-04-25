@@ -1,7 +1,79 @@
-import styled, { css } from "styled-components";
-import arrow from "/src/assets/icons/FAQ/FAQarrow.png";
+import styled from "styled-components";
 import arrowBold from "/src/assets/icons/FAQ/FAQarrowBold.png";
-import arrowDown from "/src/assets/icons/FAQ/FAQarrowDown.png";
+
+export const QuestionsSection = () => {
+  return (
+    <QuestionsContainer>
+      <TopSection>
+        <TopTitle>Find Your Answers Here</TopTitle>
+        <CategoryButtons>
+          <CategoryBtn>Prices</CategoryBtn>
+          <CategoryBtn>Bookings</CategoryBtn>
+          <CategoryBtn>My Account</CategoryBtn>
+          <CategoryBtn>Facilities</CategoryBtn>
+        </CategoryButtons>
+      </TopSection>
+      <MiddleSection>
+        <FAQTitle>FAQs</FAQTitle>
+        <DiscoverBtn>Discover All Here</DiscoverBtn>
+      </MiddleSection>
+      <BottomSection>
+        <Questions>
+          <Question>
+            <p>What is Spinning?</p>
+            <Arrow src={arrowBold} />
+          </Question>
+          <Question>
+            <p>What to bring to the class?</p>
+            <Arrow src={arrowBold} />
+          </Question>
+          <Question>
+            <p>How to cancel if I get sick?</p>
+            <Arrow src={arrowBold} />
+          </Question>
+          <Question>
+            <p>How am I setting up the bike?</p>
+            <Arrow src={arrowBold} />
+          </Question>
+          <Question>
+            <p>Do you have a free trial?</p>
+            <Arrow src={arrowBold} />
+          </Question>
+          <Question>
+            <p>What are the prices for a single class?</p>
+            <Arrow src={arrowBold} />
+          </Question>
+        </Questions>
+        <QuestionsDesktop>
+          <QuestionDesktop>
+            <p>What food do you sell?</p>
+            <Arrow src={arrowBold} />
+          </QuestionDesktop>
+          <QuestionDesktop>
+            <p>Does Urban Spin have merch?</p>
+            <Arrow src={arrowBold} />
+          </QuestionDesktop>
+          <QuestionDesktop>
+            <p>Can I choose the bike?</p>
+            <Arrow src={arrowBold} />
+          </QuestionDesktop>
+          <QuestionDesktop>
+            <p>Do I need a lock?</p>
+            <Arrow src={arrowBold} />
+          </QuestionDesktop>
+          <QuestionDesktop>
+            <p>Can I borrow cycling shoes?</p>
+            <Arrow src={arrowBold} />
+          </QuestionDesktop>
+          <QuestionDesktop>
+            <p>Are the classes held in English?</p>
+            <Arrow src={arrowBold} />
+          </QuestionDesktop>
+        </QuestionsDesktop>
+      </BottomSection>
+    </QuestionsContainer>
+  );
+};
 
 const QuestionsContainer = styled.div`
   grid-column: span 4;
@@ -10,7 +82,6 @@ const QuestionsContainer = styled.div`
   justify-content: center;
   gap: 40px;
   margin-top: 80px;
-
 
   @media (min-width: 744px) and (max-width: 1493px) {
     grid-column: span 8;
@@ -33,10 +104,9 @@ const TopSection = styled.div`
     gap: 80px;
   }
 
-    @media (min-width: 1494px) {
+  @media (min-width: 1494px) {
     gap: 120px;
   }
-  
 `;
 
 const TopTitle = styled.h2`
@@ -73,7 +143,7 @@ const CategoryBtn = styled.button`
   font-size: 16px;
   border-radius: 30px;
   padding: 12px 0px;
-  
+
   transition: background-color 0.2s ease;
 
   &:hover {
@@ -128,7 +198,7 @@ const DiscoverBtn = styled.button`
   font-size: 16px;
   border-radius: 20px;
   border-width: 1px;
-  border-color: #B9B9B9;
+  border-color: #b9b9b9;
   padding: 4px 10px;
   transition: background-color 0.2s ease;
 
@@ -156,11 +226,9 @@ const BottomSection = styled.div`
   align-items: center;
   gap: 128px;
 
-
   @media (min-width: 744px) and (max-width: 1493px) {
     justify-content: left;
   }
-
 
   @media (min-width: 1494px) {
     flex-direction: row;
@@ -175,15 +243,13 @@ const Questions = styled.div`
   gap: 16px;
   padding-bottom: 80px;
 
- @media (min-width: 744px) and (max-width: 1493px) {
+  @media (min-width: 744px) and (max-width: 1493px) {
     padding-bottom: 128px;
   }
 
   @media (min-width: 1494px) {
     padding-bottom: 160px;
   }
-
- 
 `;
 
 const Arrow = styled.img`
@@ -233,12 +299,12 @@ const QuestionsDesktop = styled.div`
   display: none;
 
   @media (min-width: 1494px) {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  text-align: left;
-  gap: 16px;
-  padding-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    gap: 16px;
+    padding-bottom: 160px;
   }
 `;
 
@@ -283,77 +349,3 @@ const QuestionDesktop = styled.div`
     min-width: 560px;
   }
 `;
-
-export const QuestionsSection = () => {
-  return (
-    <QuestionsContainer>
-      <TopSection>
-        <TopTitle>Find Your Answers Here</TopTitle>
-        <CategoryButtons>
-          <CategoryBtn>Prices</CategoryBtn>
-          <CategoryBtn>Bookings</CategoryBtn>
-          <CategoryBtn>My Account</CategoryBtn>
-          <CategoryBtn>Facilities</CategoryBtn>
-        </CategoryButtons>
-      </TopSection>
-      <MiddleSection>
-        <FAQTitle>FAQs</FAQTitle>
-        <DiscoverBtn>Discover All Here</DiscoverBtn>
-      </MiddleSection>
-      <BottomSection>
-        <Questions>
-          <Question>
-            <p>What is Spinning?</p>
-            <Arrow src={arrowBold}/>
-          </Question>
-          <Question>
-            <p>What to bring to the class?</p>
-            <Arrow src={arrowBold}/>
-          </Question>
-          <Question>
-            <p>How to cancel if I get sick?</p>
-            <Arrow src={arrowBold}/>
-          </Question>
-          <Question>
-            <p>How am I setting up the bike?</p>
-            <Arrow src={arrowBold}/>
-          </Question>
-          <Question>
-            <p>Do you have a free trial?</p>
-            <Arrow src={arrowBold}/>
-          </Question>
-          <Question>
-            <p>What are the prices for a single class?</p>
-            <Arrow src={arrowBold}/>
-          </Question>
-        </Questions>
-        <QuestionsDesktop>
-          <QuestionDesktop>
-            <p>What food do you sell?</p>
-            <Arrow src={arrowBold}/>
-          </QuestionDesktop>
-          <QuestionDesktop>
-            <p>Does Urban Spin have merch?</p>
-            <Arrow src={arrowBold}/>
-          </QuestionDesktop>
-          <QuestionDesktop>
-            <p>Can I choose the bike?</p>
-            <Arrow src={arrowBold}/>
-          </QuestionDesktop>
-          <QuestionDesktop>
-            <p>Do I need a lock?</p>
-            <Arrow src={arrowBold}/>
-          </QuestionDesktop>
-          <QuestionDesktop>
-            <p>Can I borrow cycling shoes?</p>
-            <Arrow src={arrowBold}/>
-          </QuestionDesktop>
-          <QuestionDesktop>
-            <p>Are the classes held in English?</p>
-            <Arrow src={arrowBold}/>
-          </QuestionDesktop>
-        </QuestionsDesktop>
-      </BottomSection>
-    </QuestionsContainer>
-  );
-};

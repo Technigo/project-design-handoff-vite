@@ -1,8 +1,26 @@
-import styled from 'styled-components';
-import heroPhone from '/src/assets/images/HeroPhone.png';
-import heroTablet from '/src/assets/images/HeroTablet.png';
-import heroDesktop from '/src/assets/images/HeroDesktop.png'
-import { CtaButton } from './CTA-button.jsx'
+import styled from "styled-components";
+import heroPhone from "/src/assets/images/HeroPhone.png";
+import heroTablet from "/src/assets/images/HeroTablet.png";
+import heroDesktop from "/src/assets/images/HeroDesktop.png";
+import { CtaButton } from "./CTA-button.jsx";
+
+export const HeroSection = () => {
+  return (
+    <HeroContainer>
+      <HeroText>
+        <HeaderText>Ready to sweat?</HeaderText>
+        <InfoText>
+          The world-famous spinning club is now ready for you in Gothenburg!
+        </InfoText>
+        <CtaButton>Book Now</CtaButton>
+      </HeroText>
+      <ArrowIcon
+        className="arrow-icon"
+        src="./src/assets/icons/arrowDown.png"
+      />
+    </HeroContainer>
+  );
+};
 
 const HeroContainer = styled.div`
   background-image: url(${heroPhone});
@@ -20,7 +38,6 @@ const HeroContainer = styled.div`
   padding-right: 16px;
   padding-top: 150px;
 
-  
   @media (min-width: 744px) and (max-width: 1493px) {
     background-image: url(${heroTablet});
     grid-column: span 8;
@@ -29,8 +46,6 @@ const HeroContainer = styled.div`
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 210px;
-   
-    
   }
 
   @media (min-width: 1494px) {
@@ -88,29 +103,12 @@ const InfoText = styled.h2`
 `;
 
 const ArrowIcon = styled.img`
-        display: none;
-        @media (min-width: 1494px) {
-          display: block; 
-          margin-bottom: 150px;
-          padding-top: 90px;
-        }
-      
+  display: none;
+  @media (min-width: 1494px) {
+    display: block;
+    margin-bottom: 150px;
+    padding-top: 90px;
+  }
 `;
 
-export const HeroSection = () => {
-  return (
-    <HeroContainer>
-      <HeroText>
-        <HeaderText>Ready to sweat?</HeaderText>
-        <InfoText>
-          The world-famous spinning club is now ready for you in Gothenburg!
-        </InfoText>
-        <CtaButton>Book Now</CtaButton>
-      </HeroText>
-      <ArrowIcon
-          className="arrow-icon"
-          src="./src/assets/icons/arrowDown.png"
-        />
-    </HeroContainer>
-  );
-};
+
