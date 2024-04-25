@@ -1,3 +1,8 @@
+import parking from "../assets/icons/parking.png";
+import food from "../assets/icons/food.png";
+import gym from "../assets/icons/gym.png";
+import wifi from "../assets/icons/wifi.png";
+
 export const InfoIcons = ({ icon, index }) => {
 
   console.log("Info Icons: ", icon);
@@ -8,25 +13,25 @@ export const InfoIcons = ({ icon, index }) => {
     icon.name.toLowerCase() === "food" ||
     icon.name.toLowerCase() === "ランチ"
   ) {
-    img = "src/assets/icons/food.png";
+    img = food;
   }
     if (
       icon.name.toLowerCase() === "parking" ||
       icon.name.toLowerCase() === "パーキング有"
     ) {
-      img = "src/assets/icons/parking.png";
+      img = parking;
     }
       if (
         icon.name.toLowerCase() === "gym" ||
         icon.name.toLowerCase() === "ジム"
       ) {
-        img = "src/assets/icons/gym.png";
+        img = gym;
       }
       if (
         icon.name.toLowerCase() === "co-working" ||
         icon.name.toLowerCase() === "オフィス"
       ) {
-        img = "src/assets/icons/wifi.png";
+        img = wifi;
       }
   
   return (

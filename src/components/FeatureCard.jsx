@@ -1,4 +1,7 @@
 import arrow from "../assets/icons/Forward.svg"
+import meditation from "../assets/images/meditation.png";
+import distanceWorking from "../assets/images/distance-working.png";
+import drinkingCoffee from "../assets/images/drinking-coffee.png";
 
 export const FeatureCard = ({ feature }) => {
   console.log(feature);
@@ -13,13 +16,13 @@ export const FeatureCard = ({ feature }) => {
   switch (feature.title) {
     case "Work-Life Balance":
     case "ワークライフバランス":
-      img = "src/assets/images/meditation.png";
+      img = meditation;
       break;
     case "Get the job done":
-      img = "src/assets/images/distance-working.png";
+      img = distanceWorking;
       break;
     case "Supportive Community":
-      img = "src/assets/images/drinking-coffee.png";
+      img = drinkingCoffee;
       break;
   }
 
