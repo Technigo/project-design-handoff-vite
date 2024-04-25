@@ -127,6 +127,8 @@ const DiscoverBtn = styled.button`
   z-index: 3;
   font-size: 16px;
   border-radius: 20px;
+  border-width: 1px;
+  border-color: #B9B9B9;
   padding: 4px 10px;
   transition: background-color 0.2s ease;
 
