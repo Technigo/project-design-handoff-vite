@@ -5,6 +5,7 @@ export default {
     fontFamily: {
       avenir: ['Avenir'],
       futura: ['Futura'],
+      sans: ['Futura, Avenir, Gill Sans, sans-serif'],
     },
 
     extend: {

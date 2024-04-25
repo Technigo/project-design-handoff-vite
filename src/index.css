@@ -11,8 +11,12 @@
     font-family: Futura;
     src: local('Futura') url('./assets/fonts/FUTURA55REGULAR.TTF') format('ttf');
   }
+  @font-face {
+    font-family: Gill Sans;
+    src: local('Gill Sans') url('./assets/fonts/Gill\ Sans.otf') format('oft');
+  }
   html {
-    font-family: 'avenir';
+    font-family: 'avenir', 'futura', 'gill sans';
   }
 }
 
