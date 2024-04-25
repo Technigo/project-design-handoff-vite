@@ -22,11 +22,11 @@ export const LearnMoreSection = ({ data }) => {
 
   return (
     <div className="bg-background-lavender text-text-dark text-center flex flex-col lg:flex-row-reverse items-start relative">
-      <div className="flex-1 relative pt-8 pb-24 px-6">
+      <div className="flex-1 relative py-12 px-6">
         <h2 className="font-orelega text-xl md:text-4xl font-bold mb-4 leading-tight">
           {isMobile ? "Embrace your awesomeness!" : data.heading}
         </h2>
-        <p className="font-montserrat mb-4 text-sm">
+        <p className="font-montserrat text-sm">
           {isMobile
             ? "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events."
             : data.subheading}
