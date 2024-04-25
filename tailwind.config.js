@@ -14,15 +14,55 @@ export default {
         whiteText: "#FEFEFE",
         neutralDark: "#090329",
       },
+
       fontFamily: {
         // Configure your font family here
-        inter: ["Inter", "sans-serif"],
         zilla: ["Zilla Slab", "serif"],
+        inter: ["Inter", "sans-serif"],
       },
+
       fontSize: {
-        text: {
-          135: "135px",
-          36: "36px",
+        16: "16px",
+        24: "24px",
+        28: "28px",
+        36: "36px",
+        44: "44px",
+        60: "60px",
+      },
+
+      backgroundImage: {
+        heroMobile: "url('/image-hero-mobile.png')",
+        heroTablets: "url('/image-hero-tablet.png')",
+        heroDesktop: "url('/image-hero-desktop.png')",
+      },
+
+      lineHeight: {
+        leading20: "20px",
+        leading24: "24px",
+        leading28: "28px",
+        leading32: "32px",
+        leading36: "36px",
+        48: "48px",
+      },
+
+      height: {
+        h960: "960px",
+      },
+
+      maxWidth: {
+        w850: "850px",
+      },
+      typography: {
+        DEFAULT: {
+          css: {
+            fontFamily: {
+              inter: ["Inter", "sans-serif"],
+              zilla: ["Zilla Slab", "serif"],
+            },
+            p: {
+              lineHeight: "none",
+            },
+          },
         },
       },
     },

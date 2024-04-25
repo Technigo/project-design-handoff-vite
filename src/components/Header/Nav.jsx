@@ -8,12 +8,12 @@ export const Nav = () => {
     setNavlist((prevNavlist) => !prevNavlist);
   };
   return (
-    <nav className="absolute p-4  flex justify-between items-center w-full md:relative md:items-end md:p-8 md:h-24 2xl:h-36 2xl:max-w-7xl 2xl:m-auto">
+    <nav className="absolute backdrop-blur-sm p-4 z-[99] flex justify-between items-center w-full md:relative md:items-end md:p-8 md:h-24 2xl:h-36 2xl:max-w-7xl 2xl:m-auto">
       <div>
         <img
           src={logoStudioMama}
           alt="Studio Mama Logo"
-          className="absolute top-4 w-28 md:w-44 md:top-5 2xl:w-80 2xl:top-10"
+          className="absolute top-4 w-28 md:w-44 md:top-5 2xl:w-80 2xl:top-10 "
         />
       </div>
 
@@ -34,7 +34,7 @@ export const Nav = () => {
         </ul>
       </div>
       {!navlist && (
-        <ul className="2xl:inline-flex">
+        <ul className="absolute justify-center align-center 2xl:inline-flex">
           <li>
             <a href="#program">Program</a>
           </li>

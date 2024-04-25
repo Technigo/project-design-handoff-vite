@@ -8,9 +8,9 @@ export const App = () => {
   return (
     <div className="main-wrapper">
       <Header />
-      {/* <Introduction />
-      <Programs />
-      <BecomeMember />
+      <Introduction />
+      {/* <Programs />
+       <BecomeMember />
       <Footer /> */}
     </div>
   );
