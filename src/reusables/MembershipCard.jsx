@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 //import styled
 import styled from "styled-components";
 
@@ -20,9 +21,12 @@ const CardSection = styled.section`
   width: 292px;
   height: 405px;
   padding: 31px 33px;
+  margin: 10px;
   background: var(--primary-white);
   border-radius: 15px;
+  /* row-gap: 18px; */
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+  align-content: space-between;
 
   @media all and (min-width: 744px) {
     grid-template-areas:
@@ -31,10 +35,15 @@ const CardSection = styled.section`
       "li li li"
       "prc prc prc"
       "btn btn btn";
-    width: 202px;
-    height: 100%;
-    padding: 0;
-    box-shadow: none;
+    /* width: 202px; */
+    width: 100%;
+    padding: 10px;
+
+    align-items: stretch;
+  }
+
+  @media all and (min-width: 1024px) {
+    width: 385px;
   }
 `;
 
@@ -42,14 +51,10 @@ const CardTitle = styled.h1`
   grid-area: num;
   font-weight: 500;
   font-size: 96px;
-  justify-self: end;
+  justify-self: center;
   color: var(--primary-white);
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: var(--primary-blk);
-
-  @media all and (min-width: 744px) {
-    justify-self: center;
-  }
 `;
 
 const CardSubtitle = styled.h3`
@@ -63,7 +68,7 @@ const CardSubtitle = styled.h3`
   }
 `;
 
-const CardList = styled.li`
+const CardList = styled.div`
   grid-area: li;
   font-size: 16px;
   text-align: center;
@@ -83,7 +88,7 @@ const ButtonWrapper = styled.div`
 `;
 
 //component
-export const MembershipCard = () => {
+export const MembershipCard = ({ title, subtitle, listItems, price }) => {
   //state to track if the screen size is tablet
   const [isTablet, setIsTablet] = useState(false);
 
@@ -109,12 +114,16 @@ export const MembershipCard = () => {
 
   return (
     <CardSection>
-      <CardTitle>3</CardTitle>
-      <CardSubtitle>Yoga anytime</CardSubtitle>
-      <CardList>Unlimited acces to all yoga classes</CardList>
-      <CardPrice>5499 SEK</CardPrice>
+      <CardTitle>{title}</CardTitle>
+      <CardSubtitle>{subtitle}</CardSubtitle>
+      <CardList>
+        {listItems.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </CardList>
+      <CardPrice>{price}</CardPrice>
       <ButtonWrapper>
-        <UseButton>Buy now</UseButton>
+        <UseButton buy>Buy now</UseButton>
       </ButtonWrapper>
     </CardSection>
   );
