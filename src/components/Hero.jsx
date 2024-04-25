@@ -12,10 +12,9 @@ export const Hero = () => {
           <p>
             Join us at our Snowboard Camps and unleash your inner Powder Betty!
           </p>
-        </HeroContent>
-        <div>
+
           <CtaButton>Explore our camps</CtaButton>
-        </div>
+        </HeroContent>
       </HeroSection>
     </>
   );
@@ -24,7 +23,7 @@ export const Hero = () => {
 const HeroSection = styled.div`
   background-image: url(${heroImage});
   background-size: cover;
-  background-position: top;
+  background-position: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,19 +62,34 @@ const CtaButton = styled.button`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 342px;
+  width: 85%;
   height: 48px;
 
   border-radius: 32px;
   border: 1px solid var(--Powder-Black, #0b1623);
   background: var(--Powder-Accent-2, #f2ff49);
   box-shadow: 2px 3px 0px 0px #0b1623;
-  display: ;
 
   color: var(--Powder-Black, #0b1623);
   font-family: Mulish;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 100%; /* 16px */
+  line-height: 100%;
+  margin: auto;
+
+  &:hover {
+    border-radius: 32px;
+    border: 1px solid var(--Powder-Black, #0b1623);
+    background: var(--Powder-Accent-2-Regular, #deec24);
+    box-shadow: 2px 3px 0px 0px #0b1623;
+  }
+
+  &:active {
+    border-radius: 32px;
+    border: 1px solid var(--Powder-Black, #0b1623);
+    background: linear-gradient(180deg, #b6c211 0%, #deec24 100%);
+
+    box-shadow: 2px 3px 0px 0px #0b1623;
+  }
 `;
