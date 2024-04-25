@@ -6,6 +6,7 @@ export const SliderCard = ({ data }) => {
     <StyledSliderCard>
       <StyledImgSlider>
         {" "}
+        <source media="(min-width:1440px)" srcSet={data.imgdesk} />
         <source media="(min-width: 834px)" srcSet={data.imgtab} />
         <img src={data.img} alt={data.title} />{" "}
       </StyledImgSlider>
@@ -26,6 +27,10 @@ export const StyledSliderCard = styled.div`
 
   width: 182px;
   gap: 8px;
+
+  @media screen and (min-width: 1440px) {
+    width: 378px;
+  }
 
   p {
     font-size: 18px;

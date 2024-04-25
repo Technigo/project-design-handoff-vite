@@ -29,6 +29,7 @@ const StyledCTA = styled.section`
 
   @media screen and (min-width: 834px) {
     gap: 24px;
+    background-image: url(CTADesk.svg);
   }
 
   h2 {

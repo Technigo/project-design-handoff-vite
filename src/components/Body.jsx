@@ -34,6 +34,11 @@ const StyledBody = styled.main`
     margin: 104px 0;
   }
 
+  @media screen and (min-width: 1440px) {
+    gap: 144px;
+    margin: 144px 0;
+  }
+
   h3 {
     font-size: 20px;
   }

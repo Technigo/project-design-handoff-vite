@@ -28,6 +28,10 @@ const StyledNavBar = styled.header`
     height: 52px;
     margin: 0 32px;
   }
+  @media screen and (min-width: 1440px) {
+    height: 57px;
+    margin: 0 128px;
+  }
 
   h2 {
     color: #404040;

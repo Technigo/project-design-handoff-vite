@@ -50,6 +50,7 @@ const StyledDownload = styled.section`
       margin: 20px 32px 0 32px;
       flex-direction: row;
       gap: 16px;
+      justify-content: center;
     }
 
     h2 {

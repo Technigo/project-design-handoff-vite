@@ -39,6 +39,10 @@ const StyledButton = styled.button`
     width: ${({ $sticky }) => ($sticky ? "159px" : "574px")};
   }
 
+  @media screen and (min-width: 1440px) {
+    width: ${({ $sticky }) => ($sticky ? "159px" : "580px")};
+  }
+
   &:hover {
     background-color: ${({ $orange }) => ($orange ? "#FFFFFFD6" : "#827F7FB3")};
     color: ${({ $orange }) => ($orange ? "#F4AB49" : "#FFFFFF")};

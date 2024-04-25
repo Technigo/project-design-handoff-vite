@@ -54,6 +54,11 @@ const StyledSlider = styled.section`
   @media screen and (min-width: 834px) {
     margin: 0 32px;
   }
+
+  @media screen and (min-width: 1440px) {
+    margin: 0 128px;
+    gap: 24px;
+  }
 `;
 
 const StyledSliderButtonBox = styled.div`

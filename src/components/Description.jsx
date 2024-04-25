@@ -42,6 +42,7 @@ const StyledDescription = styled.section`
     justify-content: center;
     gap: 20px;
     padding: 20px 89px;
+    height: 330px;
   }
 `;
 const DescriptionText = styled.div`
@@ -59,6 +60,10 @@ const DescriptionText = styled.div`
     padding: 0 20px 0 0;
     margin: 20px 0;
     width: 188px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: 278px;
   }
 
   h3 {

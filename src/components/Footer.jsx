@@ -49,7 +49,6 @@ export const Footer = () => {
 //Styled Components
 
 const StyledFooter = styled.footer`
-  width: 100vw;
   height: 668px;
   background-color: #3e4c65;
   display: flex;
@@ -65,6 +64,7 @@ const StyledFooter = styled.footer`
     flex-direction: row;
     padding: 32px;
     gap: 20px;
+    justify-content: center;
   }
 `;
 

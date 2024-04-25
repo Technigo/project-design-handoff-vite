@@ -31,6 +31,10 @@ const StyledHero = styled.div`
     background-position: center;
   }
 
+  @media screen and (min-width: 834px) {
+    background-image: url(HeroDesk.svg);
+  }
+
   h1 {
     color: #fff;
     font-weight: bold;
@@ -49,6 +53,10 @@ const StyledHero = styled.div`
       font-size: 30px;
       padding: 268px 0 0 0;
     }
+
+    @media screen and (min-width: 1440px) {
+      padding: 265px 0 0 0;
+    }
   }
 
   button {
@@ -58,6 +66,10 @@ const StyledHero = styled.div`
 
     @media screen and (min-width: 834px) {
       margin-top: 49px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin-top: 48px;
     }
   }
 `;

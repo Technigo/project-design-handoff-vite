@@ -5,21 +5,24 @@
       "icon": "arrow-right.svg",
       "description": "Get lost in your flow with every yoga variety, from Vinyasa to Hatha.",
       "img": "YogaImg.svg",
-      "imgtab": "YOGATablet.svg"
+      "imgtab": "YOGATablet.svg",
+      "imgdesk": "YOGADesk.svg"
     },
     {
       "title": "FITNESS",
       "icon": "arrow-right.svg",
       "description": "Level up your workouts with Pilates, HIIT, and much more.",
       "img": "FitImg.svg",
-      "imgtab": "FitTablet.svg"
+      "imgtab": "FitTablet.svg",
+      "imgdesk": "FitDesk.svg"
     },
     {
       "title": "DANCE",
       "icon": "arrow-right.svg",
       "description": "Shake your stress away with a dance class.",
       "img": "DanceImg.svg",
-      "imgtab": "DanceTablet.svg"
+      "imgtab": "DanceTablet.svg",
+      "imgdesk": "DanceDesk.svg"
     }
   ]
 }
