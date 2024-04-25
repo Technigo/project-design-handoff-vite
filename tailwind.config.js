@@ -49,7 +49,10 @@ export default {
       height: {
         h960: "960px",
       },
-
+      width: {
+        350: "350px",
+        500: "500px",  
+      },
       maxWidth: {
         w850: "850px",
       },

@@ -1,32 +1,30 @@
 import iconFacebook from "/icon-facebook.svg";
 import iconGlobe from "/icon-globe.svg";
-// import iconInstagram from "/icon-instagram.svg";
+import iconInstagram from "/icon-instagram.svg";
 
 export const Footer = () => {
   return (
-    <>
-      <section className="bg-amber py-8">
-        <div>
-          <ul>
-            <li>Mitt konto</li>
-            <li>Kontakta kundservice</li>
-            <li>Om Studio Mamma</li>
-            <li>Bli medlem</li>
-            <li>Cookies-inställningar</li>
-            <li>Allmänna villkor</li>
-          </ul>
+    <div className="bg-amber">
+      <section className=" text-darkBlue py-8 flex flex-col p-3 gap-6 max-w-xs md:max-w-2xl mx-auto md:gap-10 2xl:max-w-w850 2xl:text-3xl">
+        <div className="flex flex-col gap-1 my-10 text-2xl">
+          <a>Mitt konto</a>
+          <a>Kontakta kundservice</a>
+          <a>Om Studio Mamma</a>
+          <a>Bli medlem</a>
+          <a>Cookies-inställningar</a>
+          <a>Allmänna villkor</a>
         </div>
-        <footer>
-          <div>
-            <img src={iconGlobe} alt="globe-icon" />
-            <h2>Sweden</h2>
+        <footer className="flex flex-row justify-between h-10 md:h-16 2xl:h-24">
+          <div className="flex justify-center flex-row gap-5 items-center">
+            <img className="h-10 md:h-16 2xl:h-24 cursor-pointer" src={iconGlobe} alt="globe-icon" />
+            <h2 className="font-bold text-center text-2xl 2xl:text-6xl">Sweden</h2>
           </div>
-          <div>
-            {/* <img src={iconInstagram} alt="instagram-icon" /> */}
-            <img src={iconFacebook} alt="facebook-icon" />
+          <div className="flex flex-row self-end gap-5">
+            <img className="h-10 md:h-16 2xl:h-24 cursor-pointer " src={iconInstagram} alt="instagram-icon" />
+            <img className="h-10 md:h-16 2xl:h-24 cursor-pointer" src={iconFacebook} alt="facebook-icon" />
           </div>
         </footer>
       </section>
-    </>
+    </div>
   );
 };
