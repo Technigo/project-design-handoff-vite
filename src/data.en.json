@@ -1,6 +1,6 @@
 {
   "hero": {
-    "heading": "Make it work",
+    "heading": "Make\nit\nwork",
     "subheading": "Say goodbye to the 'no time' blues and hello to our one-stop-shop for fitness and productivity.",
     "cta": "Sign up!",
     "logoalt": "Worky logo"
@@ -8,20 +8,19 @@
 
   "info-icons": [
     {
+      "name": "Food",
+      "description": "Delicious lunch"
+    },    {
+      "name": "Parking",
+      "description": "Free for members!"
+    },
+    {
       "name": "Gym",
       "description": "24/7 Access"
     },
     {
-      "name": "Co-working",
+      "name": "Co-work",
       "description": "Wifi, vibes"
-    },
-    {
-      "name": "Canteen",
-      "description": "Delicious lunch"
-    },
-    {
-      "name": "Parking",
-      "description": "Free for members!"
     }
   ],
 

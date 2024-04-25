@@ -1,6 +1,6 @@
 {
   "hero": {
-    "heading": "Make it work",
+    "heading": "Make\nit\nwork",
     "subheading": "「時間がない」なんて言い訳はもうおしまい。フィットネスと仕事が一体となった、新しいスタイルのジムへようこそ。",
     "cta": "今すぐ登録！",
     "logoalt": "ワーキロゴ"
@@ -8,20 +8,20 @@
 
   "info-icons": [
     {
+      "name": "ランチ",
+      "description": "おいしいランチメニュー"
+    },
+        {
+      "name": "パーキング有",
+      "description": "会員無料"
+    },
+    {
       "name": "ジム",
       "description": "24時間利用可能"
     },
     {
       "name": "オフィス",
       "description": "Wi-Fi完備"
-    },
-    {
-      "name": "ランチ",
-      "description": "おいしいランチメニュー"
-    },
-    {
-      "name": "パーキング有",
-      "description": "会員無料"
     }
   ],
 
