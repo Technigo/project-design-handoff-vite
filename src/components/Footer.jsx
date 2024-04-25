@@ -12,14 +12,14 @@ export const Footer = () => {
         <section>
             <div className="bg-lightblue p-6">
                 <h2 className="text-lg text-darkblue">{t("footer.join")}</h2>
-                <input type="text" placeholder={t("footer.placeholder")}/>
-                <button className="text-darkblue bg-steelblue px-8 py-1 rounded-3xl transition hover:text-white">{t("footer.sign")}</button>
+                <input type="text" placeholder={t("footer.placeholder")} className="rounded-md"/>
+                <button className="text-darkblue bg-steelblue px-8 py-1 rounded-3xl transition hover:text-white ml-2">{t("footer.sign")}</button>
             </div>
 
             <div className="flex flex-col gap-6 text-center sm:text-left bg-steelblue p-6">
-              <label className="text-darkblue text-lg font-semibold">Contact Y Studio</label>
+              <label className="text-darkblue text-lg font-semibold">{t("footer.studio")}</label>
               <ul className="flex flex-col gap-2 text-darkblue">
-                <li>Head Office</li>
+                <li>{t("footer.office")}</li>
                 <li>Stadsgatan 4</li>
                 <li>111 11 Stockholm</li>
                 <li>+46 1234</li>
@@ -28,25 +28,25 @@ export const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left bg-steelblue p-6">
-              <p className="text-lg font-semibold text-darkblue">Shop</p>
+              <p className="text-lg font-semibold text-darkblue">{t("footer.shop")}</p>
 
               <nav className="mt-2">
                 <ul className="gap-2">
                   <li>
                     <a className="text-darkblue transition hover:text-white" href="/">
-                      Yoga Props
+                    {t("footer.props")}
                     </a>
                  </li>
 
                  <li>
                    <a className="text-darkblue transition hover:text-white" href="/">
-                    Clothing
+                   {t("footer.clothing")}
                   </a>
                  </li>
 
                  <li>
                    <a className="text-darkblue transition hover:text-white" href="/">
-                     Reading
+                   {t("footer.reading")}
                    </a>
                  </li>
                 </ul>
@@ -54,13 +54,13 @@ export const Footer = () => {
             </div>
 
             <div className="text-center sm:text-left bg-steelblue p-6">
-              <p className="text-lg font-semibold text-darkblue">Privacy</p>
+              <p className="text-lg font-semibold text-darkblue">{t("footer.privacy")}</p>
 
               <nav className="mt-2">
                 <ul className="gap-2">
                   <li>
                     <a className="text-darkblue transition hover:text-white" href="/">
-                      Conditions
+                      {t("footer.conditions")}
                     </a>
                  </li>
                 </ul>
@@ -74,9 +74,9 @@ export const Footer = () => {
                 <p>{t("footer.privacy")}</p>
             </div>
 
-            <div className="bg-steelblue text-center sm:text-left">
-              <button onClick={() => changeLanguage("en")}>{t("footer.en")}</button>
-              <button onClick={() => changeLanguage("sv")}>{t("footer.sw")}</button>
+            <div className="bg-steelblue text-center sm:text-left p-6">
+              <button onClick={() => changeLanguage("en")} className="border-2 border-beige text-beige transition hover:text-darkblue hover:border-darkblue">{t("footer.en")}</button>
+              <button onClick={() => changeLanguage("sv")} className="border-2 border-beige text-beige transition hover:text-darkblue hover:border-darkblue ml-2">{t("footer.sw")}</button>
            </div>
         </section>
     </footer>

@@ -3,13 +3,19 @@
         "join": "Join our newsletter",
         "placeholder": "email address",
         "sign": "Sign up",
+        "studio": "Contact Y Studio",
+        "office": "Head office",
+        "conditions": "Conditions",
+        "props": "Yoga props",
+        "clothing": "Clothing",
+        "reading": "Reading",
         "about": "About",
         "contact": "Contact",
         "shop": "Shop",
         "privacy": "Privacy",
         "select": "Select language",
-        "en": "English",
-        "sw": "Swedish"
+        "en": "EN",
+        "sw": "SWE"
     }
 
 }
