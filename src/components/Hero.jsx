@@ -12,7 +12,6 @@ export const Hero = () => {
           <p>
             Join us at our Snowboard Camps and unleash your inner Powder Betty!
           </p>
-
           <CtaButton>Explore our camps</CtaButton>
         </HeroContent>
       </HeroSection>
