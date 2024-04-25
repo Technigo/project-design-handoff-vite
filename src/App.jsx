@@ -7,6 +7,8 @@ import Introduction from "./components/pages/Introduction.jsx";
 import { Border } from "./components/pages/Border.jsx";
 import { Promise } from "./components/pages/Promise.jsx";
 import { Register } from "./components/pages/Register.jsx";
+import { Quote } from "./components/pages/Quote.jsx";
+import { Contact } from "./components/pages/Contact.jsx";
 const App = () => {
   return (
     <div>
@@ -20,6 +22,8 @@ const App = () => {
       <Border />
       <Register />
       <Border />
+      <Quote />
+      <Contact />
     </div>
   );
 };
