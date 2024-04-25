@@ -173,8 +173,6 @@ const UserDesktop = styled.img`
     ${({ desktop }) =>
       desktop &&
       css`
-        display: none;
-
         display: block;
         position: fixed;
       `}
