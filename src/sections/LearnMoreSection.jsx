@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import celebrationImageDesktop from "../assets/images/celebration-image-desktop.png";
 import celebrationImageTablet from "../assets/images/celebration-image-tablet.png";
 import celebrationImageMobile from "../assets/images/celebration-image-mobile.png";
+import { LearnMoreButton } from "../components/LearnMoreButton";
 
 export const LearnMoreSection = ({ data }) => {
   const [isMobile, setIsMobile] = useState(false);
@@ -30,9 +31,7 @@ export const LearnMoreSection = ({ data }) => {
             ? "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events."
             : data.subheading}
         </p>
-        <button className="bg-main-blue text-text-light py-2 px-6 rounded hover:bg-hover-blue transition duration-300 shadow-md">
-          {data.cta}
-        </button>
+       <LearnMoreButton cta={data.cta} /> 
       </div>
 
       <div className="flex-1">
@@ -58,5 +57,6 @@ LearnMoreSection.propTypes = {
     heading: PropTypes.string.isRequired,
     subheading: PropTypes.string.isRequired,
     cta: PropTypes.string.isRequired,
+
   }).isRequired,
 };
