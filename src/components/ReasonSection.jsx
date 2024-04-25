@@ -7,7 +7,7 @@ export const ReasonSection = () => {
       <h2 className="text-2xl font-semibold mb-16 text-center">
         Why Urban Spin
       </h2>
-      <div className="grid grid-cols-1 gap-10">
+      <div className="grid grid-cols-1 gap-10 tablet:grid-cols-2 tablet:gap-8">
         {reasons.reasons.map(({ id, icon, title, description }) => (
           <ReasonCard
             key={id}

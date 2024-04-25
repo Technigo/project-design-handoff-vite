@@ -1,4 +1,4 @@
-import { CiMenuBurger } from "react-icons/ci";
+import { CiMenuBurger } from "react-icons/ci"
 
 export const Navbar = () => {
   return (
@@ -20,5 +20,5 @@ export const Navbar = () => {
         </div>
       </nav>
     </>
-  );
-};
+  )
+}
