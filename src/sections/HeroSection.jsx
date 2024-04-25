@@ -9,8 +9,7 @@ export const HeroSection = ({ data }) => {
   return (
     <>
       <div
-        className="hero-section bg-center bg-cover bg-no-repeat relative h-mhero "
-        style={{ backgroundImage: "url(" + bg + ")" }}
+        className="hero-section bg-sripes-mobile bg-center bg-cover bg-no-repeat relative h-mhero "
       >
         <header className="flex justify-between items-center">
           <img src={logo} alt={data.logoalt} className="w-24" />
