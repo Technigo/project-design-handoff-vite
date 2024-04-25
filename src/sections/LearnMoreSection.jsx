@@ -22,11 +22,11 @@ export const LearnMoreSection = ({ data }) => {
 
   return (
     <div className="bg-background-lavender text-text-dark text-center flex flex-col lg:flex-row-reverse items-start relative">
-      <div className="flex-1 relative py-12 px-6">
-        <h2 className="font-orelega text-xl md:text-4xl font-bold mb-4 leading-tight">
+      <div className="flex-1 relative py-12 px-6 lg:w-144">
+        <h2 className="font-orelega text-xl md:text-2xl font-bold mb-4 leading-tight lg:text-4xl lg:text-left">
           {isMobile ? "Embrace your awesomeness!" : data.heading}
         </h2>
-        <p className="font-montserrat text-sm">
+        <p className="font-montserrat text-sm lg:text-left lg:text-lg">
           {isMobile
             ? "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events." : data.subheading.split("\n").map((line) =>(
               <>
@@ -38,7 +38,7 @@ export const LearnMoreSection = ({ data }) => {
        <LearnMoreButton cta={data.cta} /> 
       </div>
 
-      <div className="flex-1">
+      <div className="flex-1 lg:mb-0">
         <picture>
           <source
             srcSet={celebrationImageDesktop}
@@ -48,7 +48,7 @@ export const LearnMoreSection = ({ data }) => {
           <img
             src={celebrationImageMobile}
             alt="Celebration"
-            className="w-48 md:w-64 lg:w-full absolute bottom-0 left-0 lg:static"
+            className="w-48 md:w-72 lg:w-full absolute bottom-0 left-0 mb-0 lg:static"
           />
         </picture>
       </div>
