@@ -42,6 +42,8 @@ export default {
       "learn-btn-desktop": "18px",
       "value-props-btn-mob": "14px",
       "value-props-btn": "18px",
+      "nav-desktop": "25px",
+      "nav-tab-mob": "21px",
     },
     fontFamily: {
       sans: ["Roboto", "sans-serif"],

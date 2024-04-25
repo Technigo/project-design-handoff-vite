@@ -30,7 +30,7 @@ export const Article = () => {
         <div
           key={`article_${index}`}
           className={`flex-1 ${index === 1 ? "mx-4" : ""}`}
-          style={{ minWidth: "189px" }}
+          style={{ minWidth: "250px" }}
         >
           <Image src={article.image} alt={article.src} />
           <Heading

@@ -19,12 +19,6 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Colors */
-  --clr-white: #fff;
-  --clr-black: #000;
-  --crimson-light: #ec3642;
-  --royal-purple: #762aa7;
-  --plum-light: #9e3e82;
-  --deep-violet: #542a8b;
   --clr-grey-300: #e5e5e5;
 }
 
@@ -61,14 +55,6 @@ main {
   margin: 0 auto;
   letter-spacing: 1.2%;
   min-height: 100vh;
-}
-
-a {
-  font-family: "Bebas Neue", "Roboto";
-  text-decoration: none;
-  /* color: var(--clr-white); */
-  cursor: pointer;
-  font-size: 25px;
 }
 
 img {
