@@ -24,7 +24,7 @@ export const Footer = () => {
         <a href="#">Legal Notice</a>
         <a href="#">Privacy Policy</a>
       </FooterPart>
-      <FooterPart $row>
+      <FooterPart $row $small>
         <StyledSMIcons>
           <p>FOLLOW US</p>
           <div className="icon-box">
@@ -60,10 +60,14 @@ const StyledFooter = styled.footer`
 const FooterPart = styled.div`
   display: flex;
   flex-direction: ${({ $row }) => ($row ? "row" : "column")};
-  gap: 32px;
+  gap: ${({ $small }) => ($small ? "12px" : "32px")};
   border-bottom: ${({ $border }) => ($border ? "solid 1px #FFFFFF80" : "none")};
   padding-bottom: ${({ $border }) => ($border ? "32px" : "0")};
   text-align: ${({ $center }) => ($center ? "center" : "none")};
+
+  @media screen and (min-width: 441px) {
+    gap: 32px;
+  }
 
   h3 {
     font-weight: bold;

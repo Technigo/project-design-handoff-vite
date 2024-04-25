@@ -13,7 +13,7 @@ export const Download = () => {
           Take your favorite classes at home, while traveling or outdoors.
           Download classes on the app for a practice that moves with you
         </p>
-        <div>
+        <div className="pink-download-box">
           <StyledDownloadIcon
             $margin
             src={AppStore}
@@ -44,7 +44,6 @@ const StyledDownload = styled.section`
 
   #weight-lift {
     width: 100%;
-
   }
 
   .download-classes {
@@ -53,6 +52,11 @@ const StyledDownload = styled.section`
     margin: 20px 56px 0 24px;
     //Changed the right boarder according to the design
     gap: 20px;
+  }
+
+  .pink-download-box {
+    display: flex;
+    flex-direction: column;
   }
 `;
 

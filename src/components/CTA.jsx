@@ -22,6 +22,11 @@ const StyledCTA = styled.section`
   flex-direction: column;
   gap: 14px;
 
+  @media screen and (min-width: 441px) {
+    background-image: url(CTATablet.svg);
+    background-position: center;
+  }
+
   h2 {
     color: #fff;
     font-weight: bold;

@@ -23,12 +23,22 @@ const StyledHero = styled.div`
   //Hej, Izabel could you check how the picture is looking for you? I downloaded the big one but only see mobile size. Weird...
   background-repeat: no-repeat;
 
+  @media screen and (min-width: 441px) {
+    height: 504px;
+    background-image: url(HeroTablet.svg);
+    background-position: center;
+  }
+
   h1 {
     color: #fff;
     font-weight: bold;
     font-size: 46px;
     margin: 0 24px;
     padding: 183px 0 0 0;
+
+    @media screen and (min-width: 441px) {
+      padding: 140px 0 0 0;
+    }
   }
 
   button {
