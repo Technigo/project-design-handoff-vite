@@ -1,6 +1,6 @@
 {
   "hero": {
-    "heading": "Make\nit\nwork",
+    "heading": "Make it work",
     "subheading": "Say goodbye to the 'no time' blues and hello to our one-stop-shop for fitness and productivity.",
     "cta": "Sign up!",
     "logoalt": "Worky logo"
@@ -19,7 +19,8 @@
       "description": "24/7 Access"
     },
     {
-      "name": "Co-work",
+      "name": "Co-working",
+      "small-name": "Co-work",
       "description": "Wifi, vibes"
     }
   ],
@@ -35,6 +36,7 @@
     },
     {
       "title": "Supportive Community",
+      "smallTitle": "Community",
       "description": "It's not just a gym – it's a tight-knit squad, because we’re all in this together! We organize inspiring talks, social events where creative minds meet and magic happens!"
     }
   ],
