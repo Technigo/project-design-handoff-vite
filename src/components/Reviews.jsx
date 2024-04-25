@@ -8,16 +8,16 @@ export const Reviews = () => {
 
   return (
 
-    <div className="bg-lightgray">
-     <div className="reviews relative bg-no-repeat bg-contain my-4 bg-lightgray py-3 "   style={{
+    <div className="mx-auto align-middle  bg-yogawhite flex-1  py-7">
+     <div className="reviews  bg-yogawhite relative center bg-no-repeat bg-contain"   style={{
         backgroundImage: `url(${leftblob}), url(${rightblob})`,
         backgroundPosition: 'left center, right center',
-        zIndex: '-1'
+        backgroundSize: 'contain',
       }}>
-        <div className="flex flex-wrap justify-center reviews-container max-h-24  ">
+        <div className="flex justify-evenly">
           {customerReviews.map((review, index) => (
-            <div className="reviews flex-col justify-items-start py-1 w-24"  key={index} >
-              <p className="paragraph-small-mob text-sm font-inter text-darkblue text-center">{review}</p>
+            <div className="reviews flex-col justify-items-start w-24"  key={index} >
+              <p className="font-inter text-darkblue text-center mobile:text-paragraph-mob  tablet: text-title-h2-h3-paragraph-large-tablet-and-paragraph-small-dt  ">{review}</p>
             </div>
           ))}
         </div>
