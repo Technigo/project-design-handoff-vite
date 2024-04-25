@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import buttonData from "./Buttons.json";
+import buttonData from "../data/Buttons.json";
 import { Buttons } from "./Buttons";
 
 // Parent container with relative positioning

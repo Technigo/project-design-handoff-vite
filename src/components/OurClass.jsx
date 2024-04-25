@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
+import { ClassCard } from "./ClassCard";
+
 const StyledOurClass = styled.section`
-  text-align: center;
   color: #000;
-  text-align: center;
   font-family: "AvenirMedium", sans-serif;
   font-size: 18px;
   font-style: normal;
@@ -20,11 +20,26 @@ const StyledOurClass = styled.section`
   }
 `;
 
+
+
+// Parent container for the "Our Classes" section
+const StyledClassesContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 56px 40px;
+  padding: 20px;
+  width: 100%;
+`;
+
 export const OurClass = () => {
   return (
     <StyledOurClass className="class-section">
       <h3 className="sub-title">our class</h3>
-      <p>cards</p>
+      <StyledClassesContainer>
+        <ClassCard />
+      </StyledClassesContainer>
     </StyledOurClass>
   );
 };
