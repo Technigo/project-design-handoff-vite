@@ -1,3 +1,5 @@
+// import { useGym } from "../../GymContext"
+
 export const ClassPieces = ({image, alt, courseName, courseInfo}) => {
     return (
         <div className='flex flex-col sm:w-[257px] sm:h-[369px] sm:pt-1 sm:pb-[24px] sm:gap-y-1 md:w-[334px] md:h-[382px] md:pt-[24px] md:px-2 md:pb-2w-[422px] h-[552px] rounded-[10px] bg-purple hover:bg-yellow px-[40px] pt-[40px] pb-[45px] gap-y-[25px] shadow-base shadow-yellow text-white hover:text-black hover:cursor-pointer '>
