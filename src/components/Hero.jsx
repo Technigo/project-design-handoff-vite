@@ -19,13 +19,13 @@ export const Hero = () => {
         className="absolute"
         style={{ top: "50%", left: "50%", transform: "translate(-50%, -50%)" }}
       >
-        <h3
-          className="font-avengeance text-primary-lightblue text-3xl"
+        <h1
+          className="font-avengeance text-primary-lightblue text-3xl mb-8"
           style={{ WebkitTextStroke: "0.2px black" }}
         >
           YOUNG HEROES, BIG HEARTS
-        </h3>
-        <h2 className="font-urbanist bg-white text-primary-lightblue text-xl">
+        </h1>
+        <h2 className="font-urbanist bg-white text-primary-lightblue text-xl mb-4">
           We empower girls to find their inner dragons through karate.
         </h2>
         <button>
