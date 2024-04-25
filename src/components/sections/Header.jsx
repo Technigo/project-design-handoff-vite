@@ -1,5 +1,5 @@
 import menuIcon from '../../assets/hamburger-menu.svg';
-import logo from '../../assets/logo.svg';
+import Logo from '../../assets/Logo.svg';
 import { GeneralButton } from '../GeneralButton';
 
 //flex flex-col items-center
@@ -8,7 +8,7 @@ export const Header = () => {
   return (
     <header className="grid h-dvh grid-cols-1 grid-rows-[auto_auto_1fr] bg-cobra bg-cover bg-[35%] bg-no-repeat md:max-h-[1133px] xl:max-h-[1024px]">
       <div className="mx-5 flex justify-center py-8 pt-7 xl:hidden">
-        <img className="md:h-35 h-25 mt-7" src={logo} alt="logo" />
+        <img className="md:h-35 h-25 mt-7" src={Logo} alt="Logo" />
       </div>
       <nav className="mb-28 mt-10 hidden w-max justify-self-center xl:block">
         <ul className="flex flex-row items-end space-x-9 text-lg font-medium">
