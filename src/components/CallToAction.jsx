@@ -15,7 +15,6 @@ export const CallToAction = () => {
       <div>
         <img src="/banner-tablet.png" className="transform rotate-180" />
       </div>
-      {/* make sure img is filling the whole vw here */}
     </div>
   );
 };

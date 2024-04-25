@@ -14,7 +14,7 @@ export const FAQs = () => {
 
   return (
     <div>
-      <h2 className="font-montserrat text-xl font-semibold text-center mb-16 mt-10">
+      <h2 className="font-montserrat text-xl font-semibold text-center mb-16 pt-20 border-t">
         Find Your Answers Here
       </h2>
       <div className="grid grid-cols-2 gap-1 mb-16">
