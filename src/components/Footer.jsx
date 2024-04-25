@@ -1,20 +1,24 @@
-import styled from 'styled-components';
-import LogoText from '../assets/LogoText.png';
-import FacebookIcon from '../assets/Facebook.png';
-import InstagramIcon from '../assets/Instagram.png';
-import TwitterIcon from '../assets/Twitter.png';
-import WhatsAppIcon from '../assets/WhatsApp.png';
+import styled from 'styled-components'; // Importing styled-components for styling
+import LogoText from '../assets/LogoText.png'; // Importing LogoText image from assets folder
+import FacebookIcon from '../assets/Facebook.png'; // Importing FacebookIcon image from assets folder
+import InstagramIcon from '../assets/Instagram.png'; // Importing InstagramIcon image from assets folder
+import TwitterIcon from '../assets/Twitter.png'; // Importing TwitterIcon image from assets folder
+import WhatsAppIcon from '../assets/WhatsApp.png'; // Importing WhatsAppIcon image from assets folder
 
 const Footer = () => {
   return (
     <StyledFooter>
+      {/* Flex container for the footer */}
       <FlexContainer>
+        {/* Logo */}
         <Logo src={LogoText} alt="Logo" />
+        {/* Footer Links */}
         <FooterLinks>
           <FooterLink>About Us</FooterLink>
           <FooterLink>Contact Us</FooterLink>
           <FooterLink>FAQ</FooterLink>
         </FooterLinks>
+        {/* Social Icons */}
         <SocialIcons>
           <Icon src={FacebookIcon} alt="Facebook" />
           <Icon src={InstagramIcon} alt="Instagram" />
@@ -26,6 +30,7 @@ const Footer = () => {
   );
 };
 
+// Styled-components styles
 const StyledFooter = styled.footer`
   width: 100%;
   background-color: #f4f4f4;
@@ -52,10 +57,8 @@ const FlexContainer = styled.div`
 @media (min-width: 1200px) { /* desktop */
   width: 1440px;
   padding: 64px 128px;
-
 }
 `;
-
 
 const Logo = styled.img`
   gap: 10px;

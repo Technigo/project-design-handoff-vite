@@ -1,21 +1,28 @@
-import PropTypes from 'prop-types';
-import styled from 'styled-components';
+import PropTypes from 'prop-types'; // Importing PropTypes for type checking
+import styled from 'styled-components'; // Importing styled-components for styling
 
 const CoachCard = ({ title, subtitle, description, imageUrl }) => {
   return (
     <CardContainer>
+      {/* Image Container */}
       <ImageContainer>
+        {/* Image */}
         <Image src={imageUrl} alt="Coach" />
       </ImageContainer>
+      {/* Title */}
       <Title>{title}</Title>
+      {/* Subtitle */}
       <Subtitle>{subtitle}</Subtitle>
+      {/* Description Section */}
       <DescriptionSection>
+        {/* Description */}
         <Description>{description}</Description>
       </DescriptionSection>     
     </CardContainer>
   );
 };
 
+// Type checking for props
 CoachCard.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string.isRequired,
@@ -25,6 +32,7 @@ CoachCard.propTypes = {
 
 export default CoachCard;
 
+// Styled-components styles
 const CardContainer = styled.div`
   border-radius: 32px;
   padding-bottom: 64px;
@@ -70,11 +78,11 @@ const Title = styled.h2`
     font-weight: 500;
     line-height: 40px;
   }
-  @media (min-width: 1200px) { /* Tablet */
-  padding-top: 28px;
-  font-size: 28px;
-  line-height: 48px;
-}
+  @media (min-width: 1200px) { /* Desktop */
+    padding-top: 28px;
+    font-size: 28px;
+    line-height: 48px;
+  }
 `;
 
 const Subtitle = styled.h3`
@@ -94,11 +102,11 @@ const Subtitle = styled.h3`
     font-size: 18px;
     line-height: 24px;
   }
-  @media (min-width: 1200px) { /* Tablet */
-  padding-top: 2px;
-  font-size: 24px;
-  line-height: 32px;
-}
+  @media (min-width: 1200px) { /* Desktop */
+    padding-top: 2px;
+    font-size: 24px;
+    line-height: 32px;
+  }
 `;
 
 const Description = styled.p`
@@ -119,13 +127,13 @@ const Description = styled.p`
     letter-spacing: -0.57px;
     width: 334px;
   }
-  @media (min-width: 1200px) { /* Tablet */
-  padding-top: 2px;
-  font-size: 20px;
-  line-height: 40px;
-  letter-spacing: -0.65px;
-  width: 309px;
-
+  @media (min-width: 1200px) { /* Desktop */
+    padding-top: 2px;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: -0.65px;
+    width: 309px;
+  }
 `;
 
 const DescriptionSection = styled.div`
