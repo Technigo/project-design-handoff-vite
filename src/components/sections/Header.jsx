@@ -11,12 +11,17 @@ export const Header = () => {
         <img className="object-cover " src={Logo} alt="Logo" />
       </div>
       <nav className="mb-28 mt-10 hidden w-full justify-center xl:flex">
-        <ul className="flex w-9/12 flex-row items-end justify-between	 text-lg font-medium">
+        <ul className="flex w-9/12 cursor-pointer flex-row items-end justify-between text-lg font-medium">
           <li>About us</li>
           <li>Retreats</li>
           <li>Free Classes</li>
           <li className="relative top-2">
-            <img className="h-20" src={Logo} alt="logo" />
+            <img
+              className="h-20"
+              src={Logo}
+              alt="logo"
+              onClick={() => location.reload()}
+            />
           </li>
           <li>Online Yoga</li>
           <li>Events</li>

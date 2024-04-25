@@ -20,17 +20,17 @@ export const UserInput = () => {
           <input
             type="text"
             placeholder="First Name"
-            className="h-[40px] border-[1px] border-[#444446] bg-white  text-center font-avenir font-medium text-black xl:w-56"
+            className="h-[40px] border-[1px] border-[#444446] bg-white  text-center font-avenir font-medium text-black focus:outline-none focus:ring-2 focus:ring-accent-blue xl:w-56 "
           />
           <input
             type="text"
             placeholder="Last Name"
-            className="h-[40px] border-[1px] border-[#444446] bg-white text-center font-avenir font-medium text-black xl:w-56"
+            className="h-[40px] border-[1px] border-[#444446] bg-white text-center font-avenir font-medium text-black focus:outline-none focus:ring-2 focus:ring-accent-blue xl:w-56"
           />
           <input
             type="text"
             placeholder="Email Adress"
-            className="h-[40px] border-[1px] border-[#444446] bg-white text-center font-avenir font-medium text-black xl:w-56"
+            className="h-[40px] border-[1px] border-[#444446] bg-white text-center font-avenir font-medium text-black focus:outline-none focus:ring-2 focus:ring-accent-blue xl:w-56 "
           />
           <GeneralButton text="Join us" customStyle="justify-self-center" />
         </form>
