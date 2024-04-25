@@ -6,12 +6,12 @@ export const ValuePropsCard = ({
   link,
 }) => {
   return (
-    <div className="bg-primary-valupropsviolet border-half border-black rounded-md flex flex-col items-center shadow-boxShadow min-w-52 lg:min-w-64 lg:h-96">
+    <div className="bg-primary-valupropsviolet border-half border-black rounded-md p-6 lg:p-6 flex flex-col items-center shadow-boxShadow min-w-52 w-52 lg:min-w-64 lg:w-64 ">
       <img
         src={image}
-        className="rounded-full object-cover border-solid border border-black h-40 w-40 mt-6 lg:h-48"
+        className="rounded-full object-cover border-solid border border-black h-40 w-40 lg:h-48 lg:w-48"
       ></img>
-      <div className="flex flex-col items-center mt-2 mr-6 ml-6 mb-6 gap-2">
+      <div className="flex flex-col items-center mt-2 ">
         <h4 className="font-urbanistitalic font-medium text-primary-darkblue lg:text-xl">
           {subtitle.toUpperCase()}
         </h4>

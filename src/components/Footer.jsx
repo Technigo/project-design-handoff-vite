@@ -14,7 +14,7 @@ import vimeoIcon from "../assets/icon-vimeo.svg";
 
 export const Footer = () => {
   return (
-    <section className="flex flex-col mb-24">
+    <section className="flex flex-col mb-24 md:mb-0">
       <img src={footerLogoMobile} alt="Logo" className="mb-5 h-14 lg:mb-20" />
       <ul className="flex flex-col items-center font-avengeance text-primary-darkblue gap-8 text-xs mb-10 md:text-sm lg:flex-row lg:justify-center lg:text-lg">
         <li>
