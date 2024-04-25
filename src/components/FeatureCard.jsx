@@ -1,5 +1,10 @@
-export const FeatureCard = () => {
+export const FeatureCard = ({ feature }) => {
+  console.log(feature);
   return (
-    <div>FeatureCard</div>
-  )
-}
+    <div>
+      <img src="src/assets/images/distance-working.png" />
+      <h3>{feature.title}</h3>
+      <p>{feature.description}</p>
+    </div>
+  );
+};
