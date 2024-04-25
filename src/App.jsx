@@ -9,7 +9,7 @@ import { Benefits } from "./components/Benefits";
 
 export const App = () => {
   return (
-    <>
+    <div className="flex flex-col gap-12 md:gap-14 lg:gap-20">
       <Navbar />
       <Hero />
       <Testimonials />
@@ -18,6 +18,6 @@ export const App = () => {
       <Article />
       <BgBlob />
       <Footer />
-    </>
+    </div>
   );
 };
