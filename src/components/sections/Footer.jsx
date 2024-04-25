@@ -27,7 +27,7 @@ const socialMeida = [
 
 export const Footer = () => {
   return (
-    <footer className="flex justify-center bg-primary-black py-12 text-neutral-white md:py-24 xl:text-xl lg:py-32">
+    <footer className="flex justify-center bg-primary-black py-12 text-neutral-white md:py-24 lg:py-32 xl:text-xl">
       <div className="grid w-max grid-cols-1 items-center gap-y-10 md:w-full md:grid-cols-2 md:justify-items-center">
         <ul className="flex  flex-col gap-8">
           {contact.map((item, index) => (
@@ -38,7 +38,12 @@ export const Footer = () => {
           ))}
           <li className="hidden md:flex md:gap-10">
             {socialMeida.map((item, index) => (
-              <img key={index} alt={item.alt} src={item.src} />
+              <img
+                className="hover:scale-125"
+                key={index}
+                alt={item.alt}
+                src={item.src}
+              />
             ))}
           </li>
         </ul>
@@ -49,7 +54,12 @@ export const Footer = () => {
         </ul>
         <div className="flex flex-row gap-10 md:hidden">
           {socialMeida.map((item, index) => (
-            <img key={index} alt={item.alt} src={item.src} />
+            <img
+              className="hover:scale-125"
+              key={index}
+              alt={item.alt}
+              src={item.src}
+            />
           ))}
         </div>
       </div>
