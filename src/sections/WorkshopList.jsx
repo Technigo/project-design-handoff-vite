@@ -4,9 +4,9 @@ import workshop from "../components/workshop.json";
 export const WorkshopList = () => {
   const workshops = workshop;
   return (
-    <div className="text-blueDeep mx-8 py-16">
+    <section className="text-blueDeep mx-8 py-16">
       <div className="pb-16">
-        <h3 className="font-heading border-blueDeep border-l-2 px-4 text-xl font-medium">
+        <h3 className="font-heading border-blueDeep border-l-2 px-4 text-xl font-medium leading-8">
           Dive into practical workshops and activities that go beyond the
           clichés, offering tangible ways to reshape habits and enrich your
           daily experience. Customize your stay, choose your adventures, and
@@ -25,6 +25,6 @@ export const WorkshopList = () => {
           See All Workshops
         </a>
       </div>
-    </div>
+    </section>
   );
 };

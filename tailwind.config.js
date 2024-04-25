@@ -20,7 +20,7 @@ export default {
         darker: "inset 0 7px 5px -5px rgba(0, 0, 0, 0.3)",
       },
       height: {
-        workCard: "432px",
+        workCard: "455px",
       },
     },
     fontFamily: {
