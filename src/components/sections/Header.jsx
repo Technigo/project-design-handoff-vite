@@ -16,7 +16,7 @@ export const Header = () => {
           <li>Retreats</li>
           <li>Free Classes</li>
           <li className="relative top-2">
-            <img className="h-20" src={logo} alt="logo" />
+            <img className="h-20" src={Logo} alt="logo" />
           </li>
           <li>Online Yoga</li>
           <li>Events</li>
