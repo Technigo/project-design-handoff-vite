@@ -3,9 +3,11 @@ import seeMore from "/button-see-more.svg";
 export const Programs = () => {
   return (
     <section className="py-8">
-      <div className="program-headline">
-        <h2>Våra program</h2>
-        <p>
+      <div className="flex flex-col items-center justify-center gap-4">
+        <h2 className="font-medium font-zilla font-text-center text-2xl text-darkBlue">
+          Våra program
+        </h2>
+        <p className="text-center font-inter text-base text-darkBlue">
           På Studio Mama arbetar både PT och Fysioterapeuter för att hjälpa dig
           finna den rätta träningen där du är just nu.
         </p>
@@ -33,9 +35,11 @@ export const Programs = () => {
         <button>Läs mer</button>
       </div>
 
-      <div>
-        <button>
-          <span>Alla program</span>
+      <div className="flex justify-end">
+        <button className="inline-flex gap-4 items-center py-4 ">
+          <span className="text-darkBlue text-lg font-medium font-inter">
+            Alla program
+          </span>
           <img src={seeMore} alt="alla program-knapp" />
         </button>
       </div>
