@@ -5,8 +5,8 @@ import { Text } from "../component/Text";
 export const Footer = () => {
   return (
     <div className="container mx-auto bg-aqua">
-      <div className="flex flex-col mx-9 font-inter text-base font-bold gap-y-2.5 pb-10">
-        <div className="flex gap-8 border border-black cursor-pointer rounded-full w-44 mt-1.5">
+      <div className="flex flex-col mx-9 md:mx-69 font-inter text-base font-bold gap-y-2.5 pb-10">
+        <div className="flex gap-8 border border-black cursor-pointer rounded-full w-44 mt-1.5  md:mt-18">
           <Image link={"/Images/globe.svg"} />
 
           <select className="appearance-none bg-transparent  select-custom">

@@ -1,0 +1,7 @@
+
+export const ButtonThird = ({ className, text, addedClasses }) => {
+  const allClasses = `bg-aqua text-cream rounded-full p-2.5 w-custom-width h-custom-height border border-blue ${className} ${addedClasses}`;
+  return (
+  <button className={allClasses}>{text}</button>
+  )
+};
