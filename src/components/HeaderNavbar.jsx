@@ -7,26 +7,32 @@ export const HeaderNavbar = () => {
     <>
       <Navbar>
         <NavbarLogo></NavbarLogo>
-        <NavbarMenu>
-          Here goes a dropdown menu<br></br>
-          It only shows when I add text inside this element
-        </NavbarMenu>
+        <NavbarMenu></NavbarMenu>
       </Navbar>
     </>
   );
 };
 
-const Navbar = styled.div``;
+const Navbar = styled.div`
+  display: flex;
+  justify-content: space-between;
+`;
 
 const NavbarLogo = styled.div`
   background-image: url(${navbarLogo});
   background-repeat: no-repeat;
   height: 34.471px;
+  width: 100px;
   flex-shrink: 1;
-  padding-left: 24px;
+  margin-left: 24px;
   padding-top: 40px;
 `;
 
 const NavbarMenu = styled.div`
   background-image: url(${dropdownMenu});
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 50px;
+  margin-bottom: 50px;
+  margin-right: 24px;
 `;
