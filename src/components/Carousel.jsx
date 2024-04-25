@@ -33,7 +33,7 @@ const cardContent = [
 
 const StyledSection = styled.section`
   margin-top: 56px;
-  padding: 0 12px;
+
   display: flex;
   flex-direction: column;
   gap: 8px;
