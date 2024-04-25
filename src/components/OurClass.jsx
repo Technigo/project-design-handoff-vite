@@ -31,6 +31,8 @@ const StyledClassesContainer = styled.div`
   gap: 56px 40px;
   padding: 20px;
   width: 100%;
+  margin-top: 80px;
+  margin-bottom: 80px;
 `;
 
 export const OurClass = () => {
