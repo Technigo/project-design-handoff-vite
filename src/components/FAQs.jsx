@@ -1,23 +1,23 @@
-import { ButtonFAQ } from "./reusable/ButtonFAQ"
-import data from "../json/FAQs.json"
-import arrow from "/arrow.svg"
+import { ButtonFAQ } from "./reusable/ButtonFAQ";
+import data from "../json/FAQs.json";
+import arrow from "/arrow.svg";
 
 export const FAQs = () => {
   const getQuestions = (startIndex, endIndex) => {
     return data.questions.slice(startIndex, endIndex).map((question, index) => (
-      <li className="border-b-2 flex justify-between" key={index}>
+      <li className="border-b-2 flex justify-between py-1 my-1" key={index}>
         {question}
         <img src={arrow} />
       </li>
-    ))
-  }
+    ));
+  };
 
   return (
     <div>
-      <h2 className="font-montserrat text-xl font-semibold text-center mb-16 pt-20 border-t">
+      <h2 className="font-montserrat text-2xl font-semibold text-center mb-16 pt-20 border-t">
         Find Your Answers Here
       </h2>
-      <div className="grid grid-cols-2 gap-1 mb-16">
+      <div className="grid grid-cols-2 gap-1 mb-16 md:flex ">
         <div className="flex justify-center items-center">
           <ButtonFAQ text={"Prices"} />
         </div>
@@ -32,15 +32,15 @@ export const FAQs = () => {
         </div>
       </div>
       <div className="flex justify-evenly mb-10">
-        <h3 className="font-montserrat text-sm font-medium">FAQs</h3>
-        <button className="font-montserrat border-solid border-current border text-base bg-grey-dot2 hover:bg-lightgrey active:bg-grey-dot1 rounded-full w-36 h-8">
+        <h3 className="font-montserrat text-xl font-medium">FAQs</h3>
+        <button className="font-montserrat border-solid border-current border text-base bg-grey-dot2 hover:bg-lightgrey active:bg-grey-dot1 rounded-full w-auto px-4 h-8">
           Discover All Here
         </button>
       </div>
       <div className="grid grid-cols-1 font-montserrat text-sm">
         <ul className="mx-4">{getQuestions(0, 6)}</ul>
-        <ul className="mx-4 invisible md:visible">{getQuestions(6, 12)}</ul>
+        <ul className="mx-4 invisible lg:visible">{getQuestions(6, 12)}</ul>
       </div>
     </div>
-  )
-}
+  );
+};

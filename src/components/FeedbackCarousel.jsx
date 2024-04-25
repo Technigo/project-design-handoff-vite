@@ -16,8 +16,12 @@ export const FeedbackCarousel = () => {
   return (
     <div className="relative">
       <BsArrowLeftCircleFill
-        className="absolute w-8 h-8 text-black left-4 cursor-pointer m-auto"
+        className="absolute w-8 h-8 text-black left-4 cursor-pointer inset-y-1/2"
         onClick={prevSlide}
+      />
+      <BsArrowRightCircleFill
+        className="absolute w-8 h-8 text-black right-4 cursor-pointer inset-y-1/2"
+        onClick={nextSlide}
       />
       {feedback.feedback.map(
         ({ id, photo, text, sender, profession }, index) => {
@@ -33,16 +37,11 @@ export const FeedbackCarousel = () => {
           );
         }
       )}
-      <BsArrowRightCircleFill
-        className="absolute w-8 h-8 text-black right-4 cursor-pointer m-auto"
-        onClick={nextSlide}
-      />
-
-      <span className="flex absolute bottom-4 m-auto">
+      <span className="w-full absolute -bottom-8 left-0 flex place-content-center">
         {feedback.feedback.map((_, index) => {
           return (
             <button
-              className="bg-off-black w-2 h-2 rounded-full border-none outline-none mx-1 cursor-pointer"
+              className="bg-grey-dot1 hover:bg-grey-dot2 w-2 h-2 rounded-full border-none outline-none mx-1 cursor-pointer"
               key={index}
               onClick={() => setSlide(index)}
             ></button>

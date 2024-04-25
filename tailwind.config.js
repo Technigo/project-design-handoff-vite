@@ -2,6 +2,10 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      tablet: "744px",
+      desktop: "1494px",
+    },
     colors: {
       "off-black": "#0F0F0F",
       white: "#FDFDFD",
@@ -24,12 +28,11 @@ export default {
         bebas: ["Bebas Neue", "sans-serif"],
       },
       fontSize: {
-        xs: ['10px', '12px']
-
+        xs: ["10px", "12px"],
       },
       height: {
         136: "34rem", // Hero image height
-      }
+      },
     },
   },
   plugins: [],
