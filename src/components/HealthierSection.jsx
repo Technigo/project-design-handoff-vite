@@ -1,21 +1,26 @@
-import styled from 'styled-components';
-import PropTypes from 'prop-types';
+import styled from 'styled-components'; // Importing styled-components for styling
+import PropTypes from 'prop-types'; // Importing PropTypes for type-checking props
 
 const HealthierSection = () => {
   return (
     <>
+      {/* Styled section for healthier section */}
       <StyledSection>
+        {/* Flex container for text */}
         <FlexContainer>
+          {/* Text for healthier section */}
           <Text>
             Your path to a healthier lifestyle starts here! Take your first step to feeling inner balance and peace.
           </Text>
         </FlexContainer>
+        {/* Button for healthier section */}
         <Button>Continue to Book &#8594;</Button>
       </StyledSection>
     </>
   );
 };
 
+// Styled-components styles
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -25,11 +30,13 @@ const FlexContainer = styled.div`
   position: relative;
   gap: 32px;
   width: 390px;
+
   @media (min-width: 768px) { /* Tablet */
-  padding: 64px 64px 64px 64px;
+    padding: 64px 64px 64px 64px;
   }
   @media (min-width: 1200px) { /* desktop */
-  padding: 64px 0px 64px 0px;
+    padding: 64px 0px 64px 0px;
+  }
 `;
 
 const Text = styled.p`
@@ -45,19 +52,19 @@ const Text = styled.p`
   white-space: pre-wrap;
 
   @media (min-width: 768px) { /* Tablet */
-  font-size: 26px;
-  line-height: 40px;
-  width: 642px;
-  font-weight: 500;
+    font-size: 26px;
+    line-height: 40px;
+    width: 642px;
+    font-weight: 500;
   }
   @media (min-width: 1200px) { /* desktop */
-  font-size: 28px;
-  line-height: 48px;
-  width: 10562px;
-  font-weight: 500;
-  margin-left: 50px;
-  margin-right: 50px;
-
+    font-size: 28px;
+    line-height: 48px;
+    width: 10562px;
+    font-weight: 500;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
 `;
 
 const Button = styled.button`
@@ -88,14 +95,15 @@ const Button = styled.button`
     background-image: linear-gradient(to bottom, #00000066 40%, transparent 40%, transparent 60%, #00000066 60%);
     color: #063145;
   }
+
   @media (min-width: 768px) { /* Tablet */
-  justify-content: flex-end;
-  align-items: flex-end;
+    justify-content: flex-end;
+    align-items: flex-end;
   }
   @media (min-width: 1200px) { /* desktop */
-  justify-content: flex-end;
-  align-items: flex-end;
-  
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
 `;
 
 const StyledSection = styled.section`
@@ -108,13 +116,15 @@ const StyledSection = styled.section`
   gap: 0;
 
   @media (min-width: 768px) { /* Tablet */
-  padding: 64px 64px 64px 64px;
+    padding: 64px 64px 64px 64px;
   }
   @media (min-width: 1200px) { /* desktop */
-  padding: 64px 128px 64px 128px;
+    padding: 64px 128px 64px 128px;
+  }
 `;
 
 Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func.isRequired, // Type-checking for onClick prop
 };
+
 export default HealthierSection;

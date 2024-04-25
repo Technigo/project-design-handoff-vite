@@ -1,13 +1,14 @@
-import styled, { createGlobalStyle } from 'styled-components';
-import CoachSection from "./components/CoachSection";
-import HealthierSection from "./components/HealthierSection"
-import Footer from "./components/Footer"
-
+import styled, { createGlobalStyle } from 'styled-components'; // Importing styled-components for styling
+import CoachSection from "./components/CoachSection"; // Importing CoachSection component
+import HealthierSection from "./components/HealthierSection"; // Importing HealthierSection component
+import Footer from "./components/Footer"; // Importing Footer component
 
 const App = () => {
   return (
     <div className="app">
+      {/* Global styles */}
       <GlobalStyle />
+      {/* Main section containing CoachSection, HealthierSection, and Footer */}
       <Main>
         <CoachSection />
         <HealthierSection />
@@ -18,8 +19,6 @@ const App = () => {
 };
 
 export default App;
-
-
 
 // Global styles
 const GlobalStyle = createGlobalStyle`
@@ -35,21 +34,6 @@ const GlobalStyle = createGlobalStyle`
     font-family: "Inter", sans-serif;
     font-size: 16px;
     background-color: #eff7f6;
-  }
-
-  h1 {
-    font-weight: 600;
-    color: #262626;
-    font-size: 24px;
-  }
-
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: 300;
-    color: #262626;
   }
 `;
 
