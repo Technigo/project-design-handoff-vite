@@ -6,6 +6,7 @@ import dataEn from "./data.en.json";
 import dataJp from "./data.jp.json";
 import { HeroSection } from "./sections/HeroSection";
 import { InfoIconSections } from "./sections/InfoIconSections";
+import { FeatureReviewSection } from "./sections/FeatureReviewSection";
 
 export const App = () => {
   const [locale, setLocale] = useState("en");
@@ -19,7 +20,11 @@ export const App = () => {
   return (
     <>
       <HeroSection data={data["hero"]} />
-      <InfoIconSections data={data["info-icons"] } />
+      <InfoIconSections data={data["info-icons"]} />
+      <FeatureReviewSection
+        featureData={data["features"]}
+        reviewData={data["reviews"]}
+      />
       <LearnMoreSection data={data["learn-more"]} />
       <FooterSection
         onLanguageChange={handleLanguageChange}
