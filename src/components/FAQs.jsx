@@ -37,8 +37,10 @@ export const FAQs = () => {
           Discover All Here
         </button>
       </div>
-      <ul>{getQuestions(0, 6)}</ul>
-      <ul>{getQuestions(6, 12)}</ul>
+      <div className="grid grid-cols-1 gap-x-4 gap-y-10">
+      <ul className="m-auto">{getQuestions(0, 6)}</ul>
+      <ul className="m-auto hiden">{getQuestions(6, 12)}</ul>
+      </div>
     </div>
   );
 };

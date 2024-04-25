@@ -3,7 +3,7 @@ import { Button } from "./Button";
 export const CallToAction = () => {
   return (
     <div className="font-montserrat border-b border-t bg-off-black text-center">
-      <img src="/banner-phone.png"></img>
+      <img src="/banner-tablet.png"></img>
       <h2 className="text-white text-2xl font-medium mt-16">
         Looking for a Challenge?
       </h2>
@@ -13,7 +13,7 @@ export const CallToAction = () => {
         <Button buttonText={"Book Now"} />
       </div>
       <div>
-        <img src="/banner-phone.png" className="transform rotate-180" />
+        <img src="/banner-tablet.png" className="transform rotate-180" />
       </div>
       {/* make sure img is filling the whole vw here */}
     </div>
