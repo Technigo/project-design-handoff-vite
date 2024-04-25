@@ -5,7 +5,7 @@ export const FeatureReviewSection = ({ featureData, reviewData }) => {
   console.log("Feature data: ", featureData);
   console.log("Review data: ", reviewData);
   return (
-    <div className="bg-background-neon-green pb-6">
+    <div className="bg-background-neon-green py-6">
       {featureData.map((feature, index) => (
         <FeatureCard key={index} feature={feature} />
       ))}
