@@ -28,8 +28,12 @@ export const LearnMoreSection = ({ data }) => {
         </h2>
         <p className="font-montserrat text-sm">
           {isMobile
-            ? "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events."
-            : data.subheading}
+            ? "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events." : data.subheading.split("\n").map((line) =>(
+              <>
+                {line}
+                <br />
+            </>
+            ))}
         </p>
        <LearnMoreButton cta={data.cta} /> 
       </div>
