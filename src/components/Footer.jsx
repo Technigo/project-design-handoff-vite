@@ -5,7 +5,7 @@ import InstagramIcon from '../assets/Instagram.png'; // Importing InstagramIcon 
 import TwitterIcon from '../assets/Twitter.png'; // Importing TwitterIcon image from assets folder
 import WhatsAppIcon from '../assets/WhatsApp.png'; // Importing WhatsAppIcon image from assets folder
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <StyledFooter>
       {/* Flex container for the footer */}
@@ -84,7 +84,7 @@ const FooterLinks = styled.div`
   flex-direction: column;
   gap: 16px;
   width: 100px;
-  heigt: 100px;
+  height: 100px;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 16px 0px 16px 0px;
@@ -158,4 +158,4 @@ const Icon = styled.img`
 }
 `;
 
-export default Footer;
+

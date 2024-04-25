@@ -1,7 +1,6 @@
-import styled from 'styled-components'; // Importing styled-components for styling
-import PropTypes from 'prop-types'; // Importing PropTypes for type-checking props
+import styled from 'styled-components';
 
-const HealthierSection = () => {
+export const HealthierSection = () => {
   return (
     <>
       {/* Styled section for healthier section */}
@@ -14,7 +13,7 @@ const HealthierSection = () => {
           </Text>
         </FlexContainer>
         {/* Button for healthier section */}
-        <Button>Continue to Book &#8594;</Button>
+        <Button>Continue to Book</Button>
       </StyledSection>
     </>
   );
@@ -123,8 +122,3 @@ const StyledSection = styled.section`
   }
 `;
 
-Button.propTypes = {
-  onClick: PropTypes.func.isRequired, // Type-checking for onClick prop
-};
-
-export default HealthierSection;

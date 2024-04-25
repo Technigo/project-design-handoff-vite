@@ -1,18 +1,16 @@
-import styled from 'styled-components'; // Importing styled-components for styling
-import CoachCard from './CoachCard'; // Importing the CoachCard component
-import coachPic1 from '../assets/coach-pic.png'; // Importing image from assets folder
-import coachPic2 from '../assets/coach-pic2.png'; // Importing image from assets folder
-import coachPic3 from '../assets/coach-pic3.png'; // Importing image from assets folder
+import styled from 'styled-components';
+import CoachCard from './CoachCard';
+import coachPic1 from '../assets/coach-pic.png';
+import coachPic2 from '../assets/coach-pic2.png';
+import coachPic3 from '../assets/coach-pic3.png';
 
-const CoachSection = () => {
+export const CoachSection = () => {
   return (
     <SectionContainer>
-      {/* Section title */}
       <SectionTitle>Meet Our Coaches</SectionTitle>
-      {/* Card Wrapper */}
       <CardWrapper>
         {/* Coach Card 1 */}
-        <CoachCard 
+        <CoachCard
           imageUrl={coachPic1}
           title="Willow Greenforest"
           subtitle="Herbs and Spices"
@@ -20,14 +18,14 @@ const CoachSection = () => {
         />
         {/* Coach Card 2 */}
         <CoachCard
-          imageUrl={coachPic2} 
+          imageUrl={coachPic2}
           title="Serenity Rose"
           subtitle="Meditation and Yoga"
           description="In the quiet embrace of meditation and the gentle flow of yoga, we rediscover our inner strength and nurturing a deep connection with ourselves and the world around us."
         />
         {/* Coach Card 3 */}
         <CoachCard
-          imageUrl={coachPic3} 
+          imageUrl={coachPic3}
           title="Chef Gabriel Stone"
           subtitle="Mindful Cooking"
           description="Nourish your body and soul with every mindful bite, savoring the essence of life in every dish."
@@ -103,4 +101,3 @@ const CardWrapper = styled.div`
   }
 `;
 
-export default CoachSection;
