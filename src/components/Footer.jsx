@@ -5,26 +5,28 @@ import iconGlobe from "/icon-globe.svg";
 export const Footer = () => {
   return (
     <>
-      <div>
-        <ul>
-          <li>Mitt konto</li>
-          <li>Kontakta kundservice</li>
-          <li>Om Studio Mamma</li>
-          <li>Bli medlem</li>
-          <li>Cookies-inställningar</li>
-          <li>Allmänna villkor</li>
-        </ul>
-      </div>
-      <footer>
+      <section className="bg-amber py-8">
         <div>
-          <img src={iconGlobe} alt="globe-icon" />
-          <h2>Sweden</h2>
+          <ul>
+            <li>Mitt konto</li>
+            <li>Kontakta kundservice</li>
+            <li>Om Studio Mamma</li>
+            <li>Bli medlem</li>
+            <li>Cookies-inställningar</li>
+            <li>Allmänna villkor</li>
+          </ul>
         </div>
-        <div>
-          {/* <img src={iconInstagram} alt="instagram-icon" /> */}
-          <img src={iconFacebook} alt="facebook-icon" />
-        </div>
-      </footer>
+        <footer>
+          <div>
+            <img src={iconGlobe} alt="globe-icon" />
+            <h2>Sweden</h2>
+          </div>
+          <div>
+            {/* <img src={iconInstagram} alt="instagram-icon" /> */}
+            <img src={iconFacebook} alt="facebook-icon" />
+          </div>
+        </footer>
+      </section>
     </>
   );
 };

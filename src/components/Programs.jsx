@@ -1,8 +1,8 @@
-import seeMore from "/button-see-more.svg"
+import seeMore from "/button-see-more.svg";
 
 export const Programs = () => {
   return (
-    <section className="programs">
+    <section className="py-8">
       <div className="program-headline">
         <h2>Våra program</h2>
         <p>

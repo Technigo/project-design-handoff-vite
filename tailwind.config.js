@@ -13,6 +13,7 @@ export default {
         hoverCoral: "#FEA1A9",
         whiteText: "#FEFEFE",
         neutralDark: "#090329",
+        whiteBackground: "#FFFAFA",
       },
 
       fontFamily: {

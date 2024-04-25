@@ -6,12 +6,12 @@ import { Programs } from "./components/Programs";
 
 export const App = () => {
   return (
-    <div className="main-wrapper">
+    <div className="bg-whiteBackground">
       <Header />
       <Introduction />
-      {/* <Programs />
-       <BecomeMember />
-      <Footer /> */}
+      <Programs />
+      <BecomeMember />
+      <Footer />
     </div>
   );
 };

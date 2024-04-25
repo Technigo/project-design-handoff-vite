@@ -5,10 +5,12 @@ import seeMore from "/button-see-more.svg";
 
 export const Introduction = () => {
   return (
-    <section className="introduction">
-      <div className="hey-mama">
-        <h2>Hey Mama!</h2>
-        <p>
+    <section className="bg-whiteBackground pt-16">
+      <div className="flex flex-col items-center justify-center gap-4">
+        <h3 className="font-medium font-zilla font-text-center text-2xl text-darkBlue">
+          Hey Mama!
+        </h3>
+        <p className="text-center font-inter text-sm text-darkBlue">
           Vi vet hur viktigt det är att lyssna på sin kropp, därför finns vi här
           för att skräddarsy just din träningsupplevelse. Det är du som sätter
           agendan och fokuset för din träning. Delta i ett sammanhang där du kan
