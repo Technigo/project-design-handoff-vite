@@ -22,7 +22,7 @@ export const Header = () => {
             />
           </button>
           <div className="hidden w-full lg:block lg:w-auto lg:text-base">
-            <ul className=" mt-1 flex flex-col lg:mt-[0px] lg:flex-row lg:gap-2 ">
+            <ul className=" mt-1 flex flex-col gap-2 lg:mt-[0px] lg:flex-row ">
               <li>
                 <a href="#" className=" block rounded text-white">
                   What is Zumba?
@@ -31,7 +31,9 @@ export const Header = () => {
               <li>
                 <a href="#">About Us</a>
               </li>
-              <input type="text" className="h-[30px] w-[204px] text-black" />
+              <div>
+                <input type="text" className="h-[30px] w-[204px] text-black" />
+              </div>
               <li>
                 <a href="#" className="text-yellow">
                   Log in
