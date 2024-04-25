@@ -72,6 +72,10 @@ const StyledCarousel = styled.div`
   gap: 16px;
   padding-bottom: 12px;
   width: 100%;
+
+  @media (min-width: 1440px) {
+    justify-content: center;
+  }
 `
 
 const H2 = styled.h2`
