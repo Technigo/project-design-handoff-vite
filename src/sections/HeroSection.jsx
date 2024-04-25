@@ -1,6 +1,5 @@
 import logo from "../assets/icons/logo-desktop.png";
 import yoga from "../assets/images/hero-image-mobile-test.png";
-import bg from "../assets/backgrounds/stripes-mobile.png";
 import burger from "../assets/icons/hamburger.svg"
 import { SignUpButton } from "../components/SignUpButton";
 
