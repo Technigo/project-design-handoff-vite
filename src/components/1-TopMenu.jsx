@@ -29,6 +29,7 @@ const TopMenuContainer = styled.div`
 const Logo = styled.div`
   padding-left: 16px;
   margin-top: -55px;
+  cursor: pointer;
 
   @media (min-width: 744px) {
     padding-left: 32px;
@@ -310,11 +311,18 @@ const MenuDesktop = styled.img`
     `}
 `;
 
-// TopMenu component
+const topOfPage = () => {
+  window.scrollTo({
+  top: 0,
+  left: 0,
+  behavior: "smooth",
+});
+} 
+
 export const TopMenu = () => {
   return (
     <TopMenuContainer>
-      <Logo>
+      <Logo onClick={topOfPage}>
         <LogoPhone
           className="logo-phone"
           src="./src/assets/icons/topmenu/LogoPhone.png"
@@ -391,3 +399,5 @@ export const TopMenu = () => {
     </TopMenuContainer>
   );
 };
+
+
