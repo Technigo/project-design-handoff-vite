@@ -14,10 +14,14 @@ export const Footer = () => {
           <option value="french">French</option>
           <option value="german">German</option>
         </StyledSelect>
-        <p>E-mail: info@liftly.com</p>
-        <p>Phone: (555) 555-5555</p>
+        <p>
+          E-mail: <a className="underline">info@liftly.com</a>
+        </p>
+        <p>
+          Phone: <a className="underline">(555) 555-5555</a>
+        </p>
       </FooterPart>
-      <FooterPart $center>
+      <FooterPart $center $bright>
         <a href="#">About us</a>
         <a href="#">Contact</a>
         <a href="#">Terms & Conditions</a>
@@ -55,6 +59,13 @@ const StyledFooter = styled.footer`
   padding-top: 24px;
   color: #fff;
   gap: 32px;
+
+  @media screen and (min-width: 834px) {
+    height: 280px;
+    flex-direction: row;
+    padding: 32px;
+    gap: 20px;
+  }
 `;
 
 const FooterPart = styled.div`
@@ -69,12 +80,19 @@ const FooterPart = styled.div`
     gap: 32px;
   }
 
+  @media screen and (min-width: 834px) {
+    border-bottom: none;
+    border-right: ${({ $bright }) =>
+      $bright ? "solid 1px #FFFFFF80" : "none"};
+    text-align: left;
+    padding-bottom: 0;
+    padding-right: ${({ $bright }) => ($bright ? "20px" : "0")};
+    padding-left: ${({ $bright }) => ($bright ? "10px" : "0")};
+  }
+
   h3 {
     font-weight: bold;
     font-size: 30px;
-  }
-
-  select {
   }
 
   a {
@@ -86,6 +104,10 @@ const FooterPart = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .underline {
+    text-decoration: underline;
   }
 `;
 

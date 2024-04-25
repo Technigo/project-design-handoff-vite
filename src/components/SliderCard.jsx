@@ -9,7 +9,6 @@ export const SliderCard = ({ data }) => {
         <source media="(min-width: 834px)" srcSet={data.imgtab} />
         <img src={data.img} alt={data.title} />{" "}
       </StyledImgSlider>
-
       <TitleBox>
         <h3>{data.title}</h3>
         <img src={data.icon}></img>
@@ -24,7 +23,7 @@ export const SliderCard = ({ data }) => {
 export const StyledSliderCard = styled.div`
   display: flex;
   flex-direction: column;
-  letter-spacing: 11px;
+
   width: 182px;
   gap: 8px;
 

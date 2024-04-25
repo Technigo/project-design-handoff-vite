@@ -3,22 +3,26 @@
     {
       "title": "Maria",
       "description": "Pilates Instructor",
-      "img": "Maria.svg"
+      "img": "Maria.svg",
+      "imgtab": "MariaTablet.svg"
     },
     {
       "title": "José",
       "description": "Fitness Instructor",
-      "img": "José.svg"
+      "img": "José.svg",
+      "imgtab": "JoséTablet.svg"
     },
     {
       "title": "Anna",
       "description": "Yoga Instructor",
-      "img": "Anna.svg"
+      "img": "Anna.svg",
+      "imgtab": "AnnaTablet.svg"
     },
     {
       "title": "Sharon",
       "description": "Dance Instructor",
-      "img": "Sharon.svg"
+      "img": "Sharon.svg",
+      "imgtab": "SharonTablet.svg"
     }
   ]
 }

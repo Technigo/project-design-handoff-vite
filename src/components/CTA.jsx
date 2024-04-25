@@ -27,6 +27,10 @@ const StyledCTA = styled.section`
     background-position: center;
   }
 
+  @media screen and (min-width: 834px) {
+    gap: 24px;
+  }
+
   h2 {
     color: #fff;
     font-weight: bold;
@@ -35,5 +39,9 @@ const StyledCTA = styled.section`
     //There is no fixed padding in the design for that. Should we check in with Elin?
     /* margin: 0 24px; */
     width: 272px;
+    @media screen and (min-width: 834px) {
+      width: 730px;
+      padding: 315px 0 0 0;
+    }
   }
 `;

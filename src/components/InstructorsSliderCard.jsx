@@ -4,11 +4,13 @@ import styled from "styled-components";
 export const InstructorsSliderCard = ({ data }) => {
   return (
     <StyledSliderCard>
-      <StyledImgSlider src={data.img} alt={data.title} />
-      <TitleBox>
-        <h3 className="inst-title">{data.title}</h3>
-        <p className="work-title">{data.description}</p>
-      </TitleBox>
+      <StyledImgSlider>
+        {" "}
+        <source media="(min-width: 834px)" srcSet={data.imgtab} />
+        <img id="inst-pic-mobile" src={data.img} alt={data.title} />{" "}
+      </StyledImgSlider>
+      <h3 className="inst-title">{data.title}</h3>
+      <p className="work-title">{data.description}</p>
     </StyledSliderCard>
   );
 };
@@ -16,21 +18,6 @@ export const InstructorsSliderCard = ({ data }) => {
 //Styled Components
 
 const StyledSliderCard = styled.div`
-  display: flex;
-  flex-direction: column;
-  letter-spacing: 11px;
-  width: 182px;
-  gap: 8px;
-`;
-
-const StyledImgSlider = styled.img`
-  height: 274px;
-  width: 182px;
-  object-fit: cover;
-  border-radius: 10px;
-`;
-
-const TitleBox = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -42,6 +29,19 @@ const TitleBox = styled.div`
   .work-title {
     font-size: 18px;
     line-height: 22px;
+  }
+`;
+
+const StyledImgSlider = styled.picture`
+  height: 274px;
+  width: 182px;
+  object-fit: cover;
+
+  #inst-pic-mobile {
+    height: 274px;
+    width: 182px;
+    object-fit: cover;
+    border-radius: 10px;
   }
 `;
 
