@@ -7,19 +7,22 @@ import { Feedback } from "./components/6-Feedback.jsx"
 import { Questions } from "./components/7-Questions.jsx"
 import { Newsletter } from "./components/8-Newsletter.jsx"
 import { Footer } from "./components/9-Footer.jsx"
+import { CarouselProvider } from "./contexts/CarouselContext.jsx"
 
 export const App = () => {
   return (
   <>
-    <TopMenu />
-    <HeroSection />
-    <TrustIndicators />
-    <Features />
-    <Challenge />
-    <Feedback />
-    <Questions />
-    <Newsletter />
-    <Footer />
+    <CarouselProvider>
+      <TopMenu />
+      <HeroSection />
+      <TrustIndicators />
+      <Features />
+      <Challenge />
+      <Feedback />
+      <Questions />
+      <Newsletter />
+      <Footer />
+    </CarouselProvider>
   </>
   )
 };

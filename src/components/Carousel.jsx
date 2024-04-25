@@ -2,18 +2,21 @@ import { useState } from "react";
 import { useSwipeable } from "react-swipeable";
 import styled from "styled-components";
 
-const CarouselContainer = styled.div`
-  display: flex;
-  flex-direction; row;
-  overflow: hidden;
-  width: 100%;
-`;
+
 
 const Slide = styled.div`
   flex: 0 0 100%;
   transition: transform 0.5s ease;
-  transform: translateX(${props => props.translateValue}%);
-`;
+  transform: translateX(${(props) => props.translateValue}%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+
+  @media (min-width: 744px) {
+    gap: 80px;
+  } 
+`
 
 const feedback = [{
   image: "./src/assets/feedback/JimDeskTabl.png",
@@ -45,7 +48,7 @@ export const Carousel = () => {
 
   return (
     <CarouselContainer {...handlers}>
-      {feedback.map(({image, text, name, id}) => (
+      {feedback.map(({ image, text, name, id }) => (
         <Slide key={id} translateValue={translateValue}>
           <CarouselBox>
             <Image src={image} alt={`Image of ${name}`} />
@@ -57,8 +60,15 @@ export const Carousel = () => {
         </Slide>
       ))}
     </CarouselContainer>
-  )
+  );
 }
+
+const CarouselContainer = styled.div`
+  display: flex;
+  flex-direction; row;
+  overflow: hidden;
+  width: 100%;
+`
 
 const CarouselBox = styled.div`
   display: flex;
