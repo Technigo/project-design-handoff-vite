@@ -1,5 +1,5 @@
-import { Button } from "../styles/button/Button"
-import journeyImage from "/assets/images/crossfit-54.png"
+import { Button } from "../styles/Button";
+import journeyImage from "/assets/images/crossfit-54.png";
 
 export const StartJourney = () => {
   return (
@@ -25,5 +25,5 @@ export const StartJourney = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

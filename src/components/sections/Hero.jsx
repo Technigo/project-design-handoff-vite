@@ -1,4 +1,4 @@
-import { Button } from "../styles/button/Button"
+import { Button } from "../styles/Button";
 
 export const Hero = () => {
   return (
@@ -25,5 +25,5 @@ export const Hero = () => {
         />
       </div>
     </section>
-  )
-}
+  );
+};

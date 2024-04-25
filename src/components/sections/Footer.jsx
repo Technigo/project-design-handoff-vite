@@ -1,58 +1,28 @@
-import { NavLink } from "react-router-dom";
+import { NavLinks } from "../elements/NavLinks";
 
 export const Footer = () => {
+  const navLinks = [
+    "contact",
+    "faq",
+    "follow us",
+    "terms & conditions",
+    "select language",
+    "log in",
+  ];
   return (
     <footer className="bg-plum-light flex justify-center py-[70px] max-w-1440 m-auto">
       <nav className="navbar">
         <ul className="items-center px-12 flex flex-wrap justify-center">
-          <li>
-            <NavLink
-              className="px-10 text-white hover:text-grey text-ps-desktop md:text-h2-desktop"
-              to="/"
-            >
-              contact
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="px-10 text-white hover:text-grey text-ps-desktop md:text-h2-desktop"
-              to="/"
-            >
-              faq
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="px-10 text-white hover:text-grey text-ps-desktop md:text-h2-desktop"
-              to="/"
-            >
-              follow us
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="px-10 text-white hover:text-grey text-ps-desktop md:text-h2-desktop"
-              to="/"
-            >
-              terms & conditions
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="px-10 text-white hover:text-grey text-ps-desktop md:text-h2-desktop"
-              to="/"
-            >
-              select language
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              className="px-10 text-white hover:text-grey text-ps-desktop md:text-h2-desktop"
-              to="/"
-            >
-              log in
-            </NavLink>
-          </li>
+          {navLinks.map((links, index) => (
+            <li key={`footer_link-${index}`}>
+              <NavLinks
+                className={
+                  "px-10 text-white hover:text-grey text-ps-desktop md:text-h2-desktop"
+                }
+                label={links}
+              />
+            </li>
+          ))}
         </ul>
       </nav>
     </footer>

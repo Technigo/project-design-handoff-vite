@@ -1,8 +1,8 @@
-import { Button } from "../styles/button/Button"
-import imageOne from "/assets/images/crossfit-45.png"
-import imageTwo from "/assets/images/crossfit-baby.png"
-import imageThree from "/assets/images/crossfit-53.png"
-import kettlebell from "/assets/icons/kettlebell.svg"
+import { Button } from "../styles/Button";
+import imageOne from "/assets/images/crossfit-45.png";
+import imageTwo from "/assets/images/crossfit-baby.png";
+import imageThree from "/assets/images/crossfit-53.png";
+import kettlebell from "/assets/icons/kettlebell.svg";
 
 export const ValueProps = () => {
   return (
@@ -97,5 +97,5 @@ export const ValueProps = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
