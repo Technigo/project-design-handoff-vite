@@ -3,6 +3,8 @@ import { Buttons } from "./components/Buttons";
 
 import { createGlobalStyle } from "styled-components";
 import { OurOfferings } from "./components/OurOfferings";
+import { OurLessons } from "./components/OurLessons";
+import { Contact } from "./components/Conatct";
 
 export const App = () => {
   return (
@@ -10,6 +12,8 @@ export const App = () => {
       <Fonts />
       <Hero />
       <OurOfferings />
+      <OurLessons />
+      <Contact />
     </>
   );
 };

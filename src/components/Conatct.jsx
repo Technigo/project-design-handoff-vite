@@ -1,25 +1,25 @@
-import LessonsImage from "../assets/OurLessonImages/OurLessonsImage.png";
+import contactImage from "../assets/contactImages/contactImage.png"
 
 import styled from "styled-components";
 
-export const OurLessons = () => {
-  return (
-    <OurLessonSection>
-      <OurLessonContent>
-        <h1>Our Lesson</h1>
+export const Contact = () => {
+    return (
+        <ContactSection>
+            <ContactContent>
+            <h1>Not sure what to chose?</h1>
         <p>
-          Personalise your stay and add our snowboarding lessons! Whether you're
-          just starting out or have already some skills - we offer lessons that
-          suit every Powder Betty’s need!
+        We are happy to help. Let’s chat!
         </p>
-      </OurLessonContent>
-      <CtaButton>Explore our Lessons</CtaButton>
-    </OurLessonSection>
-  );
-};
+<CtaButton>Start a chat</CtaButton>
+            </ContactContent>
 
-const OurLessonSection = styled.div`
-  background-image: url(${LessonsImage});
+
+        </ContactSection>
+    )
+}
+
+const ContactSection = styled.div`
+  background-image: url(${contactImage});
   background-size: cover;
   background-position: top;
   display: flex;
@@ -28,7 +28,7 @@ const OurLessonSection = styled.div`
   height: 600px;
 `;
 
-const OurLessonContent = styled.div`
+const ContactContent = styled.div`
   display: flex;
   flex-direction: column;
   h1 {
