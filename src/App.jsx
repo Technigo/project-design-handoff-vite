@@ -6,7 +6,7 @@ import { Programs } from "./components/Programs";
 
 export const App = () => {
   return (
-    <div>
+    <div className="bg-whiteBackground">
       <Header />
       <Introduction />
       <Programs />

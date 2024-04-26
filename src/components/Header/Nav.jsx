@@ -23,13 +23,19 @@ export const Nav = () => {
       <div className="hidden 2xl:inline-flex">
         <ul className="2xl:inline-flex p-4 gap-11">
           <li>
-            <a href="#program">Program</a>
+            <a className="font-inter text-lg" href="#program">
+              Program
+            </a>
           </li>
           <li>
-            <a href="#om">Om Studio Mama</a>
+            <a className="font-inter text-lg" href="#om">
+              Om Studio Mama
+            </a>
           </li>
           <li>
-            <a href="#logga-in">Logga in</a>
+            <a className="font-inter text-lg" href="#logga-in">
+              Logga in
+            </a>
           </li>
         </ul>
       </div>
