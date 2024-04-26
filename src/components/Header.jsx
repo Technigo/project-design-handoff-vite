@@ -1,5 +1,6 @@
 import MenuIconMobile from "../assets/icons/Menu-mobile.svg";
 import { LogoLight } from "./Logo";
+import SearchIcon from "../assets/icons/magnifier.svg";
 
 export const Header = () => {
   return (
@@ -31,8 +32,18 @@ export const Header = () => {
               <li>
                 <a href="#">About Us</a>
               </li>
-              <div>
-                <input type="text" className="h-[30px] w-[204px] text-black" />
+              <div className="flex bg-white pr-[10px]">
+                <input
+                  type="text"
+                  className="h-[30px] w-[200px] pl-[5px] text-black"
+                />
+                <button>
+                  <img
+                    src={SearchIcon}
+                    alt="search icon"
+                    className="pl-[5px]"
+                  />
+                </button>
               </div>
               <li>
                 <a href="#" className="text-yellow">
