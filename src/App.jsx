@@ -26,6 +26,7 @@ const GlobalStyle = createGlobalStyle`
   margin: 0;
 }
 
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;

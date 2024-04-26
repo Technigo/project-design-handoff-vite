@@ -15,8 +15,10 @@ export const CTA = () => {
 
 const StyledCTA = styled.section`
   height: 504px;
+  width: 100%;
   background-image: url(CTAImg.svg);
   background-repeat: no-repeat;
+  background-position: cover;
   display: flex;
   align-items: center;
   flex-direction: column;

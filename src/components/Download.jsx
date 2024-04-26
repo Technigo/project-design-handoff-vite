@@ -1,9 +1,9 @@
-import AppStore from "/AppStore.svg";
-import GooglePlay from "/GooglePlay.svg";
-import "/weightLifting.svg";
-import "/weightTablet.svg";
-import "/weightDesk.svg";
-import styled from "styled-components";
+import AppStore from '/AppStore.svg'
+import GooglePlay from '/GooglePlay.svg'
+import '/weightLifting.svg'
+import '/weightTablet.svg'
+import '/weightDesk.svg'
+import styled from 'styled-components'
 
 export const Download = () => {
   return (
@@ -11,7 +11,7 @@ export const Download = () => {
       <picture className="weightpic">
         <source media="(min-width: 835px)" srcSet="/weightDesk.svg" />
         <source media="(min-width: 429px)" srcSet="/weightTablet.svg" />
-        <img src="weightLifting.svg" alt="weight lifting" />
+        <img src="weightLifting.svg" height="401" alt="weight lifting" />
       </picture>
       <div className="download-classes">
         <h2>WORLD-CLASS WORKOUTS. WHEREEVER YOU ARE.</h2>
@@ -37,6 +37,16 @@ export const Download = () => {
 
 //Styled Components
 const StyledDownload = styled.section`
+  .weightpic {
+    height: 401px;
+
+      img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
   @media screen and (min-width: 835px) {
     display: flex;
     margin: 0 128px;
@@ -45,7 +55,6 @@ const StyledDownload = styled.section`
   .weightpic {
     display: flex;
     justify-content: center;
-
   }
 
   .download-classes {
@@ -110,7 +119,7 @@ const StyledDownload = styled.section`
 
 const StyledDownloadIcon = styled.img`
   width: 180px;
-  margin-bottom: ${({ $margin }) => ($margin ? "18px" : "0")};
-`;
+  margin-bottom: ${({ $margin }) => ($margin ? '18px' : '0')};
+`
 
 //I had to do this all complicated because the margin ist not the same!
