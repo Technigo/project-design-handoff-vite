@@ -28,7 +28,7 @@ export const App = () => {
       <LearnMoreSection data={data["learn-more"]} />
       <FooterSection
         onLanguageChange={handleLanguageChange}
-        data={["footer"]}
+        data={data["footer"]}
       />
     </>
   );
