@@ -28,16 +28,21 @@
   "features": [
     {
       "title": "Work-Life Balance",
-      "description": "Ditch chaos, prioritize what rocks your world – life's too fabulous for anything less! Save time for what matters, skip the office-gym commute."
+      "smallTitle": "Work-Life Balance",
+      "description": "Ditch chaos, prioritize what rocks your world – life's too fabulous for anything less! Save time for what matters, skip the office-gym commute.",
+      "smallDescription": "Ditch the chaos and prioritize what truly rocks your world - life's too fabulous to waste on anything else!"
     },
     {
       "title": "Get the job done",
-      "description": "Work those glutes and  spreadsheets – switch from work out to work-mode in no time! Our creamy co-working space has lightning-fast WiFi and enough coffee to power your hustle."
+      "smallTitle": "Get the job done",
+      "description": "Work those glutes and  spreadsheets – switch from work out to work-mode in no time! Our creamy co-working space has lightning-fast WiFi and enough coffee to power your hustle.",
+      "smallDescription": "Work those glutes and speadsheets! Switch from work out to work mode in no time."
     },
     {
       "title": "Supportive Community",
       "smallTitle": "Community",
-      "description": "It's not just a gym – it's a tight-knit squad, because we’re all in this together! We organize inspiring talks, social events where creative minds meet and magic happens!"
+      "description": "It's not just a gym – it's a tight-knit squad, because we’re all in this together! We organize inspiring talks, social events where creative minds meet and magic happens!",
+      "smallDescription": "It's not just a gym - it's a tight-knit squad, because we're all in this together!"
     }
   ],
 
