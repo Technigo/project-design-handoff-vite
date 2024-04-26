@@ -22,7 +22,7 @@ export const ValueCards = () => {
             valueHeaderSmall={"New dance hall"}
             valueHeaderBig={"New building catered to dance!"}
           />
-          <p className="ubuntu sm:text-7px sm:text-wrap md:text-base lg:text-5xl">
+          <p className="ubuntu sm:text-7xl sm:text-wrap md:text-base lg:text-5xl">
             Newly build Zumba dance gym with big halls and luxurious changing
             rooms.
           </p>
@@ -47,7 +47,7 @@ export const ValueCards = () => {
             valueHeaderSmall={"Certified instructors"}
             valueHeaderBig={"Licensed Zumba instructors"}
           />
-          <p className="ubuntu sm:text-7px sm:text-wrap md:text-base lg:text-5xl">
+          <p className="ubuntu sm:text-7xl sm:text-wrap md:text-base lg:text-5xl">
             Our instructors will make sure your workout sessions are fun,
             challenging and at your level!
           </p>
@@ -70,11 +70,11 @@ export const ValueCards = () => {
             valueHeaderBig={"Changing classes"}
             valueHeaderSmall={"Changing classes"}
           />
-          <p className="ubuntu sm:text-7px sm:text-wrap lg:text-5xl">
+          <p className="ubuntu sm:text-7xl sm:text-wrap lg:text-5xl">
             Change your type of class whenever you want
-            <span className="font-bold">-free of charge!</span>
+            <span className="lg:font-bold">-free of charge!</span>
           </p>
-          <p className="ubuntu sm:text-7px sm:text-wrap md:hidden md:text-base lg:inline lg:text-5xl">
+          <p className="ubuntu sm:text-7px sm:text-wrap sm:hidden md:hidden md:text-base lg:inline lg:text-5xl">
             We want our members to feel free in their class choices, since we
             never know how och when life will throw us a vurve ball.
           </p>
