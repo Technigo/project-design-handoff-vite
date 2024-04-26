@@ -1,3 +1,9 @@
+<h1 align="center">
+  <a href="">
+    <img src="/public/Liftly-overview.png" alt="Project Banner Image">
+  </a>
+</h1>
+
 # Design Handoff Project
 
 ## Getting Started with the Project
