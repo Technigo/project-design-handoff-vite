@@ -4,10 +4,10 @@ import { Reviews } from "./components/Reviews";
 
 export const App = () => {
   return (
-    <div>
+    <div className="page-container">
       <Header />
       <Reviews />
       <Footer />
     </div>
-  )
+  ) 
 };
