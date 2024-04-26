@@ -31,6 +31,7 @@ const StyledIntro = styled.section`
     font-weight: bold;
     font-size: 36px;
     margin-bottom: 32px;
+    color: #404040;
   }
 
   p {

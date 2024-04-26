@@ -85,6 +85,7 @@ const StyledDownload = styled.section`
       font-weight: bold;
       font-size: 30px;
       line-height: 50px;
+      color: #404040;
 
       @media screen and (min-width: 834px) {
         width: 279px;

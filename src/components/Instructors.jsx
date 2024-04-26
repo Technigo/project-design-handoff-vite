@@ -78,6 +78,7 @@ const StyledInstructors = styled.section`
     font-size: 36px;
     line-height: 50px;
     font-weight: bold;
+    color: #404040;
   }
 
   p {

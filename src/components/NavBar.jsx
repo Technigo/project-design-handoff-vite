@@ -70,39 +70,41 @@ const StyledNavBar = styled.header`
 `;
 
 const MobileNav = styled.div`
-  /* width: 83px;
-  height: 83px; */
 
   .burger-menu {
-    height: 20%;
-    width: 10px;
+    position: absolute;
+    gap: 6px;
+    right: 50px;
+    top: 34px; 
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    /* align-items: flex-start; */
     justify-content: space-between;
     cursor: pointer;
   }
 
   .burger-bar {
-    width: 50px;
-    height: 3px;
-    background-color: #000;
+    
+    width: 30px;
+    height: 2px;
+    background-color: #404040;
     border-radius: 0.5em;
+    transform-origin: left center;
   }
 
   .burger-bar.clicked:nth-child(1) {
-    transform: rotate(45deg) translate(0.6em, 1.2em);
+    rotate: 45deg;
+    width: 23px;
     transition: ease-out 0.5s;
   }
 
   .burger-bar.clicked:nth-child(2) {
-    transform: scale(0.1);
-    transition: ease-out 0.5s;
+    transform: scale(0);
+    transition: scale ease-out 0.5s;
   }
 
   .burger-bar.clicked:nth-child(3) {
-    transform: rotate(130deg) translate(-0.5em, 1em);
+    rotate: -45deg;
+    width: 23px;
     transition: ease-out 0.5s;
   }
   .burger-bar.unclicked {
@@ -144,8 +146,9 @@ const DesktopNav = styled.div`
 
   @media screen and (min-width: 834px) {
     .menu {
-      top: 0;
-      left: 63%;
+      top: 24px;
+      position: relative;
+      right: 32px;
       background-color: transparent;
     }
 
@@ -165,6 +168,13 @@ const DesktopNav = styled.div`
     }
     li {
       padding: 10px;
+    }
+  }
+
+  
+  @media screen and (min-width: 1440px) {
+    .menu {
+      right: 128px;
     }
   }
 `;
