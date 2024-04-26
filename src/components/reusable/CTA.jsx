@@ -6,7 +6,9 @@ export const CTA = ({ title, description, buttonText, showInput }) => {
     <div className="font-montserrat border-b border-t bg-off-black text-center">
       <div className="bg-banner-phone w-full h-10 bg-repeat-x tablet:h-16 tablet:bg-banner-desktop" />
       <div className="font-montserrat text-center px-4">
-        <h2 className="text-white text-2xl font-medium mt-16">{title}</h2>
+        <h2 className="text-white text-2xl font-medium mt-16 desktop:text-4xl">
+          {title}
+        </h2>
         <p className="text-white">{description}</p>
         {showInput && (
           <input

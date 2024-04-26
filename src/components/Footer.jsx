@@ -1,14 +1,14 @@
-import data from "../json/links.json";
+import data from "../json/links.json"
 
 export const Footer = () => {
   const getLinks = (startIndex, endIndex) => {
     return data.links
       .slice(startIndex, endIndex)
-      .map((link, index) => <li key={index}>{link}</li>);
-  };
+      .map((link, index) => <li key={index}>{link}</li>)
+  }
   return (
     <>
-      <div className="flex justify-center mt-20 mb-10 tablet: mb-16">
+      <div className="flex justify-center mt-20 mb-10 tablet:mb-16">
         <img
           alt="Facebook"
           className="w-6 h-6 desktop:w-14 desktop:h-14 tablet:w-10 tablet:h-10"
@@ -40,5 +40,5 @@ export const Footer = () => {
         <a>Terms of Service</a>
       </p>
     </>
-  );
-};
+  )
+}
