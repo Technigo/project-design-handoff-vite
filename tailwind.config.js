@@ -12,6 +12,26 @@ export default {
         blueDeep: "#063145",
         navbar: "#083D57",
       },
+      borderRadius: {
+        custom: "3.5rem",
+        button: "1.7rem",
+      },
+      boxShadow: {
+        darker: "inset 0 7px 5px -5px rgba(0, 0, 0, 0.3)",
+      },
+      height: {
+        workCardSmall: "455px",
+        workCardMed: "600px",
+        workCardLarge: "350px",
+      },
+      fontSize: {
+        largeNumber: "56px",
+        font28: "28px",
+        font26: "26px",
+      },
+      lineHeight: {
+        lh48: "48px",
+      },
     },
     fontFamily: {
       heading: ["Fira Sans", "sans-serif"],

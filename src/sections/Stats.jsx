@@ -1,11 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { StatCard } from "../components/StatCard";
 
 export const Stats = () => {
-  const [text, setText] = useState("");
-
-  const changeText = (newText) => {
-    setText("");
-  };
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const statContent = [
     {
@@ -25,37 +22,16 @@ export const Stats = () => {
     },
   ];
 
-  /*import { useState, useEffect } from 'react';
-import './styles.css'; // Import your CSS file where you define the animation
-
-const AnimatedText = () => {
-  const texts = ['Text 1', 'Text 2', 'Text 3'];
-  const [currentIndex, setCurrentIndex] = useState(0);
-
   useEffect(() => {
-    // Function to cycle through the texts with animation
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 3000); // Change text every 3 seconds
-
-    return () => clearInterval(interval);
-  }, []);
+    const intervalId = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % statContent.length);
+    }, 5000);
+    return () => clearInterval(intervalId);
+  }, [statContent.length]);
 
   return (
-    <p className="text-lg font-bold text-center animate-slide-fade">{texts[currentIndex]}</p>
-  );
-}; */
-
-  return (
-    <>
-      <p className="animate-textRoll"></p>
-      {/*statContent.map((stat, index) => (
-        <div key={index}>
-          <h1>{stat.number}</h1>
-          <h2>{stat.heading}</h2>
-          <p>{stat.text}</p>
-        </div>
-      ))*/}
-    </>
+    <section className="m-0 bg-yellow px-8 py-16 md:px-16 lg:px-32 lg:py-24">
+      <StatCard stat={statContent[currentIndex]} />
+    </section>
   );
 };
