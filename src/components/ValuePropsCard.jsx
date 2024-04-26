@@ -13,12 +13,12 @@ export const ValuePropsCard = ({
         className="rounded-full object-cover border-solid border border-black h-40 w-40 lg:h-48 lg:w-48"
       ></img>
       <div className="flex flex-col items-center mt-2 ">
-        <h4 className="font-urbanistitalic font-medium text-primary-darkblue lg:text-xl">
+        <h3 className="font-urbanistitalic font-medium text-primary-darkblue lg:text-xl">
           {subtitle.toUpperCase()}
-        </h4>
-        <h3 className="font-avengeance text-primary-darkblue text-lg lg:text-2xl leading-5">
-          {title}
         </h3>
+        <h4 className="font-avengeance text-primary-darkblue text-lg lg:text-2xl leading-5">
+          {title}
+        </h4>
         <p className="font-urbanist text-primary-darkblue text-sm text-center lg:text-lg">
           {description}
           <br></br>
