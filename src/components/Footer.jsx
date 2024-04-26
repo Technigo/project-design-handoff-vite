@@ -6,6 +6,12 @@ export const Footer = () => {
       <MobileLogo></MobileLogo>
       <FooterText>
         <h1>Learn, Laugh, and Connect on the Slopes!</h1>
+        <FooterMeny>
+          About us 
+          FAQ
+          Privacy Policy
+          Terms and conditions
+          </FooterMeny>
       </FooterText>
     </FooterContent>
   );
@@ -27,6 +33,7 @@ const MobileLogo = styled.div`
 `;
 
 const FooterText = styled.div`
+
   h1 {
     font-family: Philosopher;
     font-size: 30px;
@@ -38,3 +45,12 @@ const FooterText = styled.div`
     margin-bottom: 24px;
   }
 `;
+
+const FooterMeny = styled.div`
+  color: white;
+font-size: 18px;
+font-family: Mulish;
+font-weight: 500;
+line-height: 23.40px;
+word-wrap: break-word
+`
