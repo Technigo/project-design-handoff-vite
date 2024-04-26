@@ -14,7 +14,7 @@ export const Features = () => {
         <FeatureBoxLeft>
           <FeatureIcon src={CycleIcon} alt="Icon with bicycle" />
           <FeatureText>
-            <h3>State-Of-The-Art Equipment</h3>
+            <FeatureTitle>State-Of-The-Art Equipment</FeatureTitle>
             <p>
               We are providing the most innovative spinning bikes on the market,
               which are easily adjustable to your personal fit. On top, you can
@@ -26,7 +26,7 @@ export const Features = () => {
         <FeatureBoxRight>
           <FeatureIcon src={FireIcon} alt="Icon with flame" />
           <FeatureText>
-            <h3>High-Intensity Classes</h3>
+            <FeatureTitle>High-Intensity Classes</FeatureTitle>
             <p>
               Be ready to burn a lot of calories & get sweaty. Our instructors
               are all and will push you motivate you through the session. If
@@ -37,7 +37,7 @@ export const Features = () => {
         <FeatureBoxLeft>
           <FeatureIcon src={BuildingIcon} alt="Icon with building" />
           <FeatureText>
-            <h3>Exclusive Clubs</h3>
+            <FeatureTitle>Exclusive Clubs</FeatureTitle>
             <p>
               All our clubs are equipped with towels, high-quality shower
               necessities. The changing rooms have lockers, hair dryers and
@@ -49,7 +49,7 @@ export const Features = () => {
         <FeatureBoxRight>
           <FeatureIcon src={PeopleIcon} alt="Icon with people" />
           <FeatureText>
-            <h3>Not just a Gym</h3>
+            <FeatureTitle>Not just a Gym</FeatureTitle>
             <p>
               We are proud to call us a club, and with that comes our lovely
               community. Training is our focus but we also love our special club
@@ -165,6 +165,15 @@ const FeatureText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
+`
+
+const FeatureTitle = styled.h3`
+   cursor: pointer;
+
+   &:hover {
+    font-weight: 650;
+    transition: transform ease 0.5s;
+    }
 `
 
 const FeatureImage = styled.div`
