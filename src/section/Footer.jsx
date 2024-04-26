@@ -33,7 +33,7 @@ export const Footer = () => {
             text={"Runebergsgatan 44 Helsingfors"}
           />
         </div>
-        <span className="flex text-xs gap-x-1">
+        <span className="flex text-xs gap-x-1 md:pb-21">
           <Image link={"/Images/copyright.svg"} />
           <Text text={"2024 HIITFORYOU"} />
           <Link

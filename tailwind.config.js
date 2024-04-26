@@ -11,17 +11,21 @@ export default {
         "custom-width": '92px',
         "width-two": "361px",
         "width-three": "620px",
+        "width-four": "575px"
       },
       height: {
         "custom-height": '87px', 
         "height-two": "376px",
         "height-three": "315px",
         "height-four": "494px",
+        "height-five": "165px",
+        "height-six": "223px"
       },
       colors: {
         blue: "#0F3057",
         aqua: "#008891",
         cream: "#e7e7de",
+        white: "#D9D9D9 "
       },
       fontSize: {
         20: "20px",
@@ -34,11 +38,13 @@ export default {
         25: "25px",
         21: "21px",
         28: "28px",
+        35: "35px",
         38: "38px",
         62: "62px",
         28: "28px",
         18: "18px",
         69: "69px",
+        117: "117px"
       },
       boxShadow: {
         "custom-btn-p": "0 2px 0px 0px rgb(0 0 0)",
