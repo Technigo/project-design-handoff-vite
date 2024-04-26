@@ -13,8 +13,8 @@ export const App = () => {
 
   const data = locale === "en" ? dataEn : dataJp;
 
-  const handleLanguageChange = (e) => {
-    setLocale(e.target.value);
+  const handleLanguageChange = (newLocale) => {
+    setLocale(newLocale);
   };
 
   return (
@@ -27,8 +27,8 @@ export const App = () => {
       />
       <LearnMoreSection data={data["learn-more"]} />
       <FooterSection
-        onLanguageChange={handleLanguageChange}
-        data={data["footer"]}
+       onLanguageChange={handleLanguageChange}
+      data={{ ...data["footer"], locale }}
       />
     </>
   );
