@@ -7,10 +7,12 @@ export default {
         'custom': '30px', 
       },
       width: {
-        'custom-width': '114px',
+        'custom-width': '92px',
+        "width-two": "361px",
       },
       height: {
-        'custom-height': '109px', 
+        'custom-height': '87px', 
+        "height-two": "315px",
       },
       colors: {
         blue: "#0F3057",
@@ -28,6 +30,7 @@ export default {
         25: "25px",
         21: "21px",
         28: "28px",
+        38: "38px",
         62: "62px",
         28: "28px",
         18: "18px",
@@ -41,7 +44,7 @@ export default {
     fontFamily: {
       "rock-salt": ['"Rock Salt"', "cursive"],
       "roboto-mono": ["Roboto Mono", "monospace"],
-      inter: ["Inter", "sans-serif"],
+      "inter": ["Inter", "sans-serif"],
     },
   },
   plugins: [],
