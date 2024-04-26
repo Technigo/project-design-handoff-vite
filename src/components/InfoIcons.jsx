@@ -1,12 +1,13 @@
+import { useState, useEffect } from "react";
+
 import parking from "../assets/icons/parking.png";
 import food from "../assets/icons/food.png";
 import gym from "../assets/icons/gym.png";
 import wifi from "../assets/icons/wifi.png";
 
 export const InfoIcons = ({ icon, index }) => {
-
   console.log("Info Icons: ", icon);
-      console.log("Info index: ", index);
+  console.log("Info index: ", index);
 
   let img = "";
   if (
@@ -15,29 +16,44 @@ export const InfoIcons = ({ icon, index }) => {
   ) {
     img = food;
   }
-    if (
-      icon.name.toLowerCase() === "parking" ||
-      icon.name.toLowerCase() === "パーキング有"
-    ) {
-      img = parking;
+  if (
+    icon.name.toLowerCase() === "parking" ||
+    icon.name.toLowerCase() === "パーキング有"
+  ) {
+    img = parking;
+  }
+  if (icon.name.toLowerCase() === "gym" || icon.name.toLowerCase() === "ジム") {
+    img = gym;
+  }
+  if (
+    icon.name.toLowerCase() === "co-working" ||
+    icon.name.toLowerCase() === "オフィス"
+  ) {
+    img = wifi;
+  }
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => setIsMobile(window.innerWidth < 360);
+    checkIfMobile();
+
+    function handleResize() {
+      checkIfMobile();
     }
-      if (
-        icon.name.toLowerCase() === "gym" ||
-        icon.name.toLowerCase() === "ジム"
-      ) {
-        img = gym;
-      }
-      if (
-        icon.name.toLowerCase() === "co-working" ||
-        icon.name.toLowerCase() === "オフィス"
-      ) {
-        img = wifi;
-      }
-  
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className="flex flex-col items-center justify-center px-4 py-8">
       <img src={img} className="w-10 h-10 object-contain" />
-      <p className="whitespace-nowrap">{ icon.name}</p>
+      <p className="whitespace-nowrap text-[16px] desktop:text-[18px]">
+        {isMobile && icon.smallName ? icon.smallName : icon.name}
+      </p>
+
+      <p className="hidden tablet:block text-[14px] desktop:text-[16px]">{icon.description}</p>
     </div>
-  )
-}
+  );
+};
