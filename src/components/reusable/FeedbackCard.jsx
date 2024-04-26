@@ -9,7 +9,7 @@ export const FeedbackCard = ({
 }) => {
   return (
     <div
-      className={`flex flex-col w-64 mb-40 mx-auto tablet:flex-row tablet:w-96 ${
+      className={`flex flex-col w-64 h-96 mb-28 mx-auto tablet:flex-row tablet:w-96 ${
         currentCard === false && "hidden"
       }`}
     >

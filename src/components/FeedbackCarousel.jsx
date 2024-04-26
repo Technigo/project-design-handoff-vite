@@ -7,10 +7,13 @@ export const FeedbackCarousel = () => {
   const touchStartX = useRef(null)
   const touchEndX = useRef(null)
 
+  //Touch events to enable swiping in the carousel rather than clicking
+  //It determines when and where a touch events start and end using "useRef"
+  //It also triggers actions based on swip direction (change card in the carousel)
   const handleTouchStart = (e) => {
     touchStartX.current = e.touches[0].clientX
   }
-
+  //clientX is a given property and gives the X position of a touch event
   const handleTouchMove = (e) => {
     touchEndX.current = e.touches[0].clientX
   }
@@ -21,9 +24,10 @@ export const FeedbackCarousel = () => {
     } else if (touchEndX.current - touchStartX.current > 50) {
       prevSlide()
     }
-    touchStartX.current(null)
-    touchEndX.current(null)
+    touchStartX.current = null
+    touchEndX.current = null
   }
+  //End of touch events
 
   const nextSlide = () => {
     setSlide(slide === feedback.feedback.length - 1 ? 0 : slide + 1)
@@ -66,20 +70,3 @@ export const FeedbackCarousel = () => {
     </div>
   )
 }
-
-/*
-  return (
-    <div className="relative desktop:hidden">
-      <BsArrowLeftCircleFill
-        className="absolute w-8 h-8 text-black left-4 cursor-pointer inset-y-1/2 tablet:hidden"
-        onClick={prevSlide}
-      />
-      <BsArrowRightCircleFill
-        className="absolute w-8 h-8 text-black right-4 cursor-pointer inset-y-1/2 tablet:hidden"
-        onClick={nextSlide}
-      />
-     
-      )}
-      
-    </div>
-  );*/
