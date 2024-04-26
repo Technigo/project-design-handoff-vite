@@ -35,11 +35,11 @@ const PhiloSection = styled.section`
   padding: 84px 16px;
 
   @media all and (min-width: 744px) {
-    padding: 80px 16px;
+    padding: 93px 50px;
   }
 
   @media all and (min-width: 1024px) {
-    padding: 174px 16px;
+    padding: 174px 230px;
   }
 `;
 
@@ -82,7 +82,6 @@ const PhiloWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 33px 15px 0 15px;
-
   position: relative; //keeps content positioned correctly in the wrapper
   z-index: 1;
 
@@ -92,7 +91,8 @@ const PhiloWrapper = styled.div`
     grid-template-columns: repeat(2, 1fr);
     column-gap: 21px;
     row-gap: 65px;
-    padding: 50px 93px 0 93px;
+    padding-top: 50px;
+    /* padding: 50px 93px 0 93px; */
   }
   @media all and (min-width: 1024px) {
     //to put it into two columns on tablet
@@ -100,7 +100,7 @@ const PhiloWrapper = styled.div`
     grid-template-columns: repeat(2, 1fr);
     column-gap: 350px;
     row-gap: 77px;
-    padding: 85px 93px 0 93px;
+    padding-top: 85px;
   }
 `;
 
