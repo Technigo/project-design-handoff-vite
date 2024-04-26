@@ -12,6 +12,7 @@ export const NavigationBar = () => {
 
 const Navbar = styled.nav`
   position: absolute;
+  height: 88px;
   top: 0;
   left: 0;
   right: 0;
@@ -19,37 +20,48 @@ const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: flex-end; 
-  padding: 32px var(--Spacing-16, 128px);
+  padding: 16px 32px;
+  
   background-color: rgba(8, 61, 86, 0.75);
   backdrop-filter: blur(2px);
   
-  @media (max-width: ${breakpoints.tablet}) {
+  @media (min-width: ${breakpoints.tablet}) {
     padding: 24px 64px;
-    height: 112px;
   }
-
-  /* 
-    @media (max-width: ${breakpoints.mobile}) {
-      padding: 240px 64px 32px;
-    } */
+ 
+    @media (min-width: ${breakpoints.desktop}) {
+      padding: 32px var(--Spacing-16, 128px);
+    } 
 `;
 
 const Logo = styled.img`
-  width: 218px;
-  height: 80px;
+height: 44px;
 
-  @media (max-width: ${breakpoints.tablet}) {
+  @media (min-width: ${breakpoints.tablet}) {
     padding-right: 48px;
     height: 64px;
+    width: 208px;
+  }
+
+  @media (min-width: ${breakpoints.desktop}) {
+    padding-right: 48px;
+    height: 80px;
+    width: 218px;
+    
   }
 `;
 const BurgerMenu = styled.img`
-  width: 42px;
+  width: 32px;
   height: 24px;
   cursor: pointer;
 
-  @media (max-width: ${breakpoints.tablet}) {
-   width: 44px;
-   height: 24;
+  @media (min-width: ${breakpoints.tablet}) {
+   width: 40px;
+   height: 24px;
+  }
+
+  @media (min-width: ${breakpoints.desktop}) {
+   width: 42px;
+   height: 24px;
   }
 `;

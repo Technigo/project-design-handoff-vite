@@ -21,15 +21,16 @@ export const HealthierSection = () => {
 const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 32px 32px 32px 32px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 64px 32px;
   position: relative;
   gap: 32px;
   width: 390px;
 
   @media (min-width: ${breakpoints.tablet}) {
     padding: 64px 64px 64px 64px;
+    
   }
   @media (min-width: ${breakpoints.desktop}) {
     padding: 64px 0px 64px 0px;
@@ -54,7 +55,7 @@ const Text = styled.p`
     width: 642px;
     font-weight: 500;
   }
-  @media (min-width: ${breakpoints.desktopt}) { /* desktop */
+  @media (min-width: ${breakpoints.desktop}) { /* desktop */
     font-size: 28px;
     line-height: 48px;
     width: 10562px;

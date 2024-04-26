@@ -18,50 +18,59 @@ export function HeroSection() {
 }
 
 const Hero = styled.section`
- padding: 96px 128px;
+ padding: 64px 32px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 624px;
+  justify-content: flex-end;
+  height: 544px;
   background-image: url("/images/hero.img.jpeg");
   background-size: cover;
   background-position: center;
   
-  @media (max-width: ${breakpoints.tablet}) {
+  @media (min-width: ${breakpoints.tablet}) {
     padding: 64px;
     height: 544px;
   }
 
 
-  @media (max-width: ${breakpoints.mobile}) {
-    padding: 240px 64px 32px;
+  @media (min-width: ${breakpoints.desktop}) {
+    padding: 98px 128px;
   }
 
 `;
 const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-gap: 48px;
+ /*  align-items: flex-end;
+  justify-content: flex-end; */
+  gap: 32px;
 
-  @media (max-width: ${breakpoints.tablet}) {
-    gap: 32px;
-    align-items: flex-end;
+  @media (min-width: ${breakpoints.tablet}) {
+ 
+  }
+
+  @media (min-width: ${breakpoints.desktop}) {
+    gap: 48px;
   }
 `;
 
 const Headline = styled.h1`
   color: var(--yellow);
-  font-size: 56px;
-  line-height: 56px;
+  font-size: 32px;
+  line-height: 40px;
   font-weight: 500;
   font-family: var(--header);
-  text-align: left;
+/*   text-align: left; */
   margin-top: 0;
 
-  @media (max-width: ${breakpoints.tablet}) {
+  @media (min-width: ${breakpoints.tablet}) {
     font-size: 32px;
     line-height: 40px;
+  }
+
+  @media (min-width: ${breakpoints.desktop}) {
+    font-size: 56px;
+    line-height: 56px;
   }
 `;
 
@@ -71,6 +80,8 @@ const Highlight = styled.span`
 
 const ButtonWrapper = styled.div`
 align-self: flex-end;
+height: var(--Spacing-5, 40px);
+gap: 8px;
 
 @media (max-width: ${breakpoints.tablet}) {
   align-items: flex-start;

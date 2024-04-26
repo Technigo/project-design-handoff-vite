@@ -35,8 +35,8 @@ const ActivitiesSection = styled.section`
     gap: 32px;
   }
 
-  @media (max-width: ${breakpoints.mobile}) {
-    padding: 32px;
+  @media (max-width: ${breakpoints.desktop}) {
+    padding: 96px 128px
   }
 `;
 

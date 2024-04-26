@@ -2,15 +2,15 @@ import styled from "styled-components";
 import { breakpoints } from "./breakpoints";
 
 export const Button = styled.button`
-  padding: ${(props) => props.padding || "24px 48px"};
+  padding: ${(props) => props.padding || "24px 16px"};
   border-radius: ${(props) => props.borderRadius || "32px"};
   background: ${(props) => props.background || "var(--yellow-medium)"};
   border: 1px solid var(--yellow);
   border-bottom-width: 4px;
   color: var(--blue-deep);
-  font-size: ${(props) => props.fontSize || "24px"};
+  font-size: ${(props) => props.fontSize || "14px"};
   font-weight: ${(props) => props.fontWeight || "400"};
-  line-height: ${(props) => props.lineHeight || "32px"};
+  line-height: ${(props) => props.lineHeight || "20px"};
   cursor: pointer;
   text-align: center;
   transition: box-shadow 0.3s ease;
@@ -27,12 +27,16 @@ export const Button = styled.button`
     background: ${(props) => props.hoverBackground || "var(--yellow)"};
   }
 
-  @media (max-width: ${breakpoints.tablet}) {
-    padding: 24p 16px;
+  @media (min-width: ${breakpoints.tablet}) {
     font-size: 18px;
     line-height: 24px;
   }
-  
+
+  @media (min-width: ${breakpoints.desktop}) {
+    padding: 24px px48;
+    font-size: 24px;
+    line-height: 32px;
+  }
 `;
 
 export default Button;
