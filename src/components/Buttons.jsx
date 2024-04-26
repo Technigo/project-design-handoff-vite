@@ -1,4 +1,4 @@
-import seeMore from "/public/button-see-more.svg"
+import seeMore from "/button-see-more.svg"
 
 export const BtnProgram = () => {
   return (
@@ -8,7 +8,7 @@ export const BtnProgram = () => {
             Alla program
           </span>
           <div className="w-8 h-8 md:w-20 md:h-20 p-2 bg-coral hover:bg-amber hover:scale-105 rounded-full flex justify-center items-center">
-            <img src={seeMore} alt="all programs utton"  className="h-10"/>
+            <img src={seeMore} alt="all programs-button"  className="h-10"/>
           </div>
         </button>
       </div>
@@ -23,7 +23,7 @@ export const BtnIntroduction = () => {
             Läs mer
           </span>
           <div className="w-8 h-8 md:w-20 md:h-20 p-2 bg-darkBlue hover:bg-hoverBlue  hover:scale-105 rounded-full flex justify-center items-center">
-            <img src={seeMore} alt="all programs utton"  className="h-10 invert hover:invert-0"/>
+            <img src={seeMore} alt="see all-button"  className="h-10 invert hover:invert-0"/>
           </div>
         </button>
       </div>

@@ -25,9 +25,9 @@ export const Programs = () => {
   ];
 
   return (
-    <section className="relative flex flex-col justify-center items-center m-auto py-8 md:max-w-lg 2xl:max-w-5xl">
+    <section className="relative flex flex-col justify-center items-center m-auto pt-4 md:max-w-lg 2xl:max-w-5xl">
       <div className="flex flex-col items-center justify-center gap-4 ">
-        <h2 className="font-text-center text-2xl text-darkBlue font-bold">
+        <h2 className="font-medium font-zilla font-text-center text-2xl text-darkBlue 2xl:text-4xl">
           Våra program
         </h2>
         <p className="text-center font-inter text-base text-darkBlue">
@@ -36,7 +36,7 @@ export const Programs = () => {
         </p>
       </div>
 
-      <div className="flex flex-col  2xl:flex-row gap-8 items-center px-14 py-20">
+      <div className="flex flex-col  2xl:flex-row gap-8 items-center px-14 py-4">
         {/* Map over the programs array to render program cards */}
         {programs.map((program, index) => (
           <div key={index} className="p-10 py-10 flex flex-col w-310 justify-between text-left  bg-darkBlue md:h-h400 2xl:h-h550 text-whiteText rounded-lg 2xl:w-96">

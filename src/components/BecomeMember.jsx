@@ -6,7 +6,7 @@ export const BecomeMember = () => {
       <div className=" flex flex-col align-center justify-center mx-auto md:flex-row  gap-8 items-center  px-14 py-20 ">
           <img className="rounded-full rounded-b-none w-64 md:w-350 2xl:w-500" src={membership} alt="membership-image" />
         <div className="flex flex-col gap-8 justify-center items-center text-center md:w-350 2xl:w-500">
-          <h3 className="text-3xl font-bold">Det handlar om dig.</h3>
+          <h3 className="font-zilla text-3xl font-bold">Det handlar om dig.</h3>
           <p className="max-w-xs font-inter">
             Ditt välmående är våran prioritet. Gå med i Studio Mama&apos;s
             community och stärk din kropp och ditt sinne!

@@ -6,7 +6,7 @@ import { BtnIntroduction } from "./Buttons";
 export const Introduction = () => {
   return (
     <section>
-      <div className="flex flex-col justify-center mx-auto px-4 py-16 md:max-w-lg 2xl:max-w-5xl">
+      <div className="flex flex-col justify-center mx-auto px-4 py-8 md:max-w-lg 2xl:max-w-5xl">
       <div className="flex flex-col items-center justify-center gap-4 md:gap-5">
         <h2 className="font-medium font-zilla font-text-center text-2xl text-darkBlue 2xl:text-4xl">
           Hey Mama!

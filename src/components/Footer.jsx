@@ -6,7 +6,7 @@ export const Footer = () => {
   return (
     <div className="bg-amber">
       <section className=" text-darkBlue py-8 flex flex-col p-3 gap-6 max-w-xs md:max-w-2xl mx-auto md:gap-10 2xl:max-w-w850 2xl:text-3xl">
-        <div className="flex flex-col gap-1 my-10 text-2xl">
+        <div className="flex flex-col gap-7 text-2xl py-4 md:gap-3">
           <a>Mitt konto</a>
           <a>Kontakta kundservice</a>
           <a>Om Studio Mamma</a>
