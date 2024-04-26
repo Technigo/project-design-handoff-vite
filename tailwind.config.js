@@ -62,6 +62,7 @@ module.exports = {
         "steelblue": "#A1B5D8",
         "darkblue": "#042d43",
         "yogawhite": "#F8F7F7",
+        "activegray":"909394",
       },
       images: {
         "mobw": "194px",
