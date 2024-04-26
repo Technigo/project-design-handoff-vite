@@ -24,7 +24,7 @@ export const BenefitsCard = ({ title, description, link, images, symbols }) => {
           {link}
         </a>
       </div>
-      <picture className="absolute md:static right-6 -bottom-3 md:self-center">
+      <picture className="absolute xs:hidden sm:flex md:static right-6 -bottom-3 md:self-center">
         <source
           media="(min-width: 668px)"
           srcSet={symbols.medium}
