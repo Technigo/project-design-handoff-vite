@@ -13,10 +13,9 @@ export const App = () => {
 
   const data = locale === "en" ? dataEn : dataJp;
 
-  const handleLanguageChange = (newLocale) => {
-    setLocale(newLocale);
-  };
-
+ const handleLanguageChange = (e) => {
+  setLocale(e.target.value);
+};
   return (
     <>
       <HeroSection data={data["hero"]} />
