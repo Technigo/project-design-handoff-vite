@@ -47,9 +47,12 @@ export default {
       },
 
       height: {
+        h550: "550px",
+        h400: "400px",
         h960: "960px",
       },
       width: {
+        310: "310px",
         350: "350px",
         500: "500px",  
       },
