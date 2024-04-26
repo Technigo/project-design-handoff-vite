@@ -7,7 +7,7 @@ https://www.figma.com/file/xXTQARQcuaowBAH5j46eUt/Designer-Developer-Handover---
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Our main problem with working with Tailwind was navigating the tradeoff between following the design by the pixel and customizing in Tailwind or use Tailwinds preset widths/margins/font sizes. We have configurated certain things such as colors, viewport sizes and certain font sizes but for the paddings and margins we went with the approach "as close as possible" with the default pixels. We ended up enjoying working with Tailwind but in the future, we would prefer working from a design tailored for Tailwind and it's various viewports.
 
 ### View it live
 
