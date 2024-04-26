@@ -1,10 +1,8 @@
 import styled from "styled-components";
 import { Learn } from "./cards-components/Learn";
-import { Live } from "./cards-components/Live"
-import { Explore } from "./cards-components/Explore"
-import { HaveFun } from "./cards-components/HaveFun"
-
-import { createGlobalStyle } from "styled-components";
+import { Live } from "./cards-components/Live";
+import { Explore } from "./cards-components/Explore";
+import { HaveFun } from "./cards-components/HaveFun";
 
 export const OurOfferings = () => {
   return (

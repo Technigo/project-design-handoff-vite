@@ -1,19 +1,15 @@
 import styled from "styled-components";
 
-export const Buttons = () => {
-  return (
-    <div>
-      <Button>Primary button</Button>
-    </div>
-  );
-};
-
-const Button = styled.button`
+export const Button = styled.button`
   display: inline-flex;
   padding: 16px 32px;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  width: 85%;
+  height: 48px;
+  margin: auto;
+
 
   border-radius: 32px;
   border: 1px solid var(--Powder-Black, #0b1623);

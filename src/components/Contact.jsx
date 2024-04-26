@@ -1,27 +1,27 @@
 import contactImage from "../assets/contactImages/contactImage.png";
-import { Buttons } from "../components/Buttons.jsx"
+import { Button } from "./Buttons.jsx";
 import styled from "styled-components";
 
 export const Contact = () => {
   return (
     <>
-    <ContactImage></ContactImage>
+      <ContactImage></ContactImage>
       <ContactContent>
         <ContactText>
-        <h1>Not sure what to choose?</h1>
-        <p>We are happy to help. Let’s chat!</p>
+          <h1>Not sure what to choose?</h1>
+          <p>We are happy to help. Let’s chat!</p>
         </ContactText>
-        <Buttons>test</Buttons>
+        <Button>Start a chat</Button>
       </ContactContent>
-      </>
+    </>
   );
 };
 const ContactContent = styled.div`
-background-color: #e6f4ff;
+  background-color: #e6f4ff;
   display: flex;
   flex-direction: column;
-  padding-left: 24px;
   padding-bottom: 24px;
+  margin: auto;
 `;
 
 const ContactImage = styled.div`

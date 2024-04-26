@@ -2,13 +2,10 @@ import { Fonts } from "./components/Fonts";
 import { Hero } from "./components/Hero";
 import { OurOfferings } from "./components/OurOfferings";
 import { OurLessons } from "./components/OurLessons";
-import { Contact } from "./components/Conatct";
+import { Contact } from "./components/Contact";
 import { TestimonialCards } from "./components/TestimonialCards";
 import { MakeYourPick } from "./components/MakeYourPick";
-import { Footer } from "./components/Footer"
-
-//import { Buttons } from "./components/Buttons";
-//import { CardsCarousel } from "./components/CardsCarousel";
+import { Footer } from "./components/Footer";
 
 export const App = () => {
   return (
@@ -20,7 +17,7 @@ export const App = () => {
       <TestimonialCards />
       <MakeYourPick />
       <Contact />
-      <Footer/>
+      <Footer />
     </>
   );
 };

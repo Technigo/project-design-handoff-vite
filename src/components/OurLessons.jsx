@@ -1,5 +1,5 @@
 import LessonsImage from "../assets/ourLessonsImages/OurLessonsImage.png";
-import { Buttons } from "./Buttons";
+import { Button } from "./Buttons";
 
 import styled from "styled-components";
 
@@ -16,7 +16,7 @@ export const OurLessons = () => {
             lessons that suit every Powder Betty’s need!
           </p>
         </OurLessonsText>
-        <Buttons>Explore our Lessons</Buttons>
+        <Button>Explore our Lessons</Button>
       </OurLessonContent>
     </>
   );
@@ -26,7 +26,7 @@ const OurLessonContent = styled.div`
   background-color: #e6f4ff;
   display: flex;
   flex-direction: column;
-  padding-left: 24px;
+  margin: auto;
   padding-bottom: 24px;
 `;
 
