@@ -32,7 +32,6 @@ const CarouselContainer = styled.div`
   flex-direction; row;
   overflow: hidden;
   width: 100%;
-  preventScrollOnSwipe: true,
 `
 
 const Slide = styled.div`
