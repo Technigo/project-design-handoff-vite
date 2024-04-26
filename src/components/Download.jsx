@@ -50,6 +50,7 @@ const StyledDownload = styled.section`
   @media screen and (min-width: 1440px) {
     display: flex;
     margin: 0 128px;
+    align-self: center;
   }
 
   .weightpic {
