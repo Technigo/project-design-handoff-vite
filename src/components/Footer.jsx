@@ -4,7 +4,7 @@ export const Footer = () => {
   const { t, i18n } = useTranslation()
 
   return (
-    <footer className="sticky bottom-0 w-full">
+    <footer className="bottom-0 mt-96 w-full">
         <section>
             <div className="bg-lightblue p-6">
                 <h2 className="text-lg text-darkblue">{t("footer.join")}</h2>
