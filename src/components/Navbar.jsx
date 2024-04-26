@@ -10,7 +10,7 @@ export const Navbar = () => {
       <picture>
         <source media="(min-width: 1024px)" srcSet={navbarLogoLg} />
         <source media="(min-width: 768px)" srcSet={navbarLogoMd} />
-        <img src={navbarLogoSm} />
+        <img src={navbarLogoSm} alt="logo" />
       </picture>
       <div className="hidden lg:flex">
         <ul className="flex flex-row items-center gap-6 text-lg font-avengeance text-primary-darkblue">
@@ -24,11 +24,11 @@ export const Navbar = () => {
             <a href="">Find your local club</a>
           </li>
           <li className="ml-2">
-            <img src={searchIcon} />
+            <img src={searchIcon} alt="search-icon" />
           </li>
         </ul>
       </div>
-      <img src={hamburgerMenu} className="flex lg:hidden" />
+      <img src={hamburgerMenu} alt="menu-icon" className="flex lg:hidden" />
     </nav>
   );
 };

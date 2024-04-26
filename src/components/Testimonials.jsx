@@ -19,6 +19,7 @@ export const Testimonials = () => {
         <img
           src={waveMobile}
           className="h-40 lg:h-60 lg:w-full object-cover lg:object-cover object-left absolute overflow-visible"
+          alt="Testimonials"
           // style={{ width: "100%", height: "auto", maxWidth: "none" }}
         />
       </picture>
