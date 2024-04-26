@@ -9,17 +9,25 @@ const StyledUSP = styled.div`
   text-align: center;
   display: flex;
   gap: 4px;
+
   p {
     max-width: 406px;
+    font-family: Optima;
+    font-size: 24px;
+    line-height: 28px; /* 116.667% */
   }
   @media (min-width: 744px) and (max-width: 1024px) {
     p {
       max-width: 682px;
+      font-size: 28px;
+      line-height: 32px; /* 114.286% */
     }
   }
   @media (min-width: 1024px) {
     p {
       max-width: 416px;
+      font-size: 32px;
+      line-height: 40px; /* 125% */
     }
   }
 `;

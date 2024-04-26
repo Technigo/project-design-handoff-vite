@@ -8,6 +8,9 @@ const StyledButton = styled.button`
   height: 44px;
   border: none;
   color: var(--text);
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px; /* 150% */
   padding: 10px;
   justify-self: ${({ $header }) => ($header ? "flex-end" : null)};
 
@@ -15,11 +18,16 @@ const StyledButton = styled.button`
     width: 112px;
     height: 48px;
     padding: 10px 30px;
+    font-size: 18px;
+    line-height: 28px; /* 155.556% */
   }
+
   @media (min-width: 1024px) {
-    width: 118px;
-    height: 48px;
-    padding: 10px 30px;
+    width: 138px;
+    height: 52px;
+    /* padding: 10px 30px; */
+    font-size: 25px;
+    line-height: 32px; /* 128% */
 
     &:hover {
       background: var(--hover-login-links);
@@ -36,7 +44,7 @@ const StyledButton = styled.button`
       background: ${props =>
         props.active ? props.theme.activeGreenColor : "#465d4c"};
       color: white;
-      width: 118px;
+      width: 135px;
       height: 44px;
 
       @media (min-width: 744px) and (max-width: 1024px) {
@@ -62,7 +70,7 @@ const StyledButton = styled.button`
         ${props => (props.active ? props.theme.activeBorderColor : "#465d4c")};
       color: ${props =>
         props.active ? props.theme.activeTextColor : "#465d4c"};
-      width: 118px;
+      width: 135px;
       height: 44px;
       padding: 10px;
 

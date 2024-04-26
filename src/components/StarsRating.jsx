@@ -16,6 +16,8 @@ const StyledStars = styled.div`
     align-items: center;
     gap: 4px;
     align-self: stretch;
+    font-size: 28px;
+    line-height: 32px; /* 114.286% */
   }
 
   @media (min-width: 1024px) {
@@ -26,6 +28,8 @@ const StyledStars = styled.div`
     gap: 4px;
     flex: 1 0 0;
     align-self: stretch;
+    font-size: 32px;
+    line-height: 40px; /* 125% */
   }
 `;
 export const StarsRating = () => {

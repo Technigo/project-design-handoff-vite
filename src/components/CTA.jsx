@@ -100,6 +100,9 @@ const TitleCTA = styled.h2`
 
   @media (min-width: 744px) and (max-width: 1024px) {
     width: 568px;
+    font-size: 36px;
+    line-height: 44px; /* 122.222% */
+    letter-spacing: -0.36px;
   }
 `;
 

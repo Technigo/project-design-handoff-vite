@@ -53,6 +53,9 @@ const Nav = styled.nav`
     color: inherit;
     text-decoration: none;
     cursor: pointer;
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 28px; /* 140% */
 
     &:hover {
       color: var(--hover-login-links);

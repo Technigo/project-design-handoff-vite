@@ -5,6 +5,9 @@ const DeskNav = styled.nav`
   gap: 10px;
   display: none;
   justify-self: flex-start;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 28px; /* 140% */
 
   @media (min-width: 1024px) {
     display: flex;

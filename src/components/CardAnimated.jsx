@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components'
+import styled, { keyframes } from "styled-components";
 const animateCard = keyframes`
   from {
     transform: scale(1);
@@ -6,7 +6,7 @@ const animateCard = keyframes`
   to {
     transform: scale(1.02);
   }
-`
+`;
 const ParentContainer = styled.div`
   position: relative;
   animation: none;
@@ -23,7 +23,7 @@ const ParentContainer = styled.div`
   &:hover {
     animation: ${animateCard} 800ms ease-in;
   }
-`
+`;
 const StyledContainer = styled.div`
   width: 325px;
   height: 200px;
@@ -69,7 +69,7 @@ const StyledContainer = styled.div`
   }
 
   .card-title::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 4px;
     width: calc(100% + var(--padding));
@@ -107,11 +107,11 @@ const StyledContainer = styled.div`
       transition-delay: 0ms !important;
     }
   }
-`
+`;
 
 const StyledCard = styled.div`
   color: var(--clr-neutral-100);
-  background-image: url(${(props) => props.url});
+  background-image: url(${props => props.url});
   background-size: cover;
   padding: 0;
   width: 325px;
@@ -130,7 +130,7 @@ const StyledCard = styled.div`
   &:hover + ${StyledContainer} .card-title::after {
     transform: translate(-50%, -50%) scaleX(1);
   }
-`
+`;
 const H3 = styled.h3`
   color: #000;
 
@@ -142,7 +142,7 @@ const H3 = styled.h3`
   &:hover + ${StyledCard} + ${StyledContainer} {
     opacity: 0;
   }
-`
+`;
 
 export const CardAnimated = ({ url, heading, text }) => {
   return (
@@ -151,10 +151,10 @@ export const CardAnimated = ({ url, heading, text }) => {
       <StyledCard url={url}></StyledCard>
       <StyledContainer className="card-container">
         <div className="card-content">
-          <h2 className="card-title">{heading}</h2>
+          <h3 className="card-title">{heading}</h3>
           <p className="card-body">{text}</p>
         </div>
       </StyledContainer>
     </ParentContainer>
-  )
-}
+  );
+};

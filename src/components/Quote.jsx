@@ -32,10 +32,17 @@ const Container = styled.div`
 
   @media all and (min-width: 744px) {
     margin: 0 32px;
+    font-family: Optima, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 114.286% */
   }
 
   @media all and (min-width: 1024px) {
     margin: 0 40px;
+    font-size: 32px;
+    line-height: 40px; /* 125% */
   }
 `;
 
