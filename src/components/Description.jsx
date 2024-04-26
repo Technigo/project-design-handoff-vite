@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const Description = () => {
   return (
@@ -25,8 +25,8 @@ export const Description = () => {
         </p>
       </DescriptionText>
     </StyledDescription>
-  )
-}
+  );
+};
 
 //Styled components
 
@@ -44,19 +44,19 @@ const StyledDescription = styled.section`
     padding: 20px 89px;
     height: 330px;
   }
-`
+`;
 
 const DescriptionText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px 0;
-  border-bottom: ${({ $border }) => ($border ? 'solid 1px #FFFFFF80' : 'none')}
+  border-bottom: ${({ $border }) => ($border ? "solid 1px #FFFFFF80" : "none")};
 
   @media screen and (min-width: 834px) {
     border-bottom: none;
     border-right: ${({ $border }) =>
-      $border ? 'solid 1px #FFFFFF80' : 'none'};
+      $border ? "solid 1px #FFFFFF80" : "none"};
     padding: 0 20px 0 0;
     margin: 20px 0;
     width: 188px;
@@ -75,4 +75,4 @@ const DescriptionText = styled.div`
     font-size: 16px;
     line-height: 24px;
   }
-`
+`;
