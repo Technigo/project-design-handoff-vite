@@ -18,20 +18,23 @@ export const FooterSection = ({ data }) => {
         ))}
       </div>
         <div className="my-3 ml-2">
-          <div className="mt=">
+          <div className="mt-12">
             <p>{info.email}</p>
             <p>{info.phone}</p>
           </div>
-          <div>
-            <p> {info.address.company}, {info.address['street-number']}, {info.address.zipcode} {info.address.city}</p>
-        </div>
-        
-        <p>
-            {info.attribution.illustrations} <a href={`https://${info.attribution.link}`} className="underline">{info.attribution.link}</a>
-          </p>
-          <p>
-            {info.attribution.copyright} {info.attribution.company}
-          </p>
+        <div className="mt-6">
+            <p>{info.address.company}</p>
+            <p>{info.address['street-number']}</p>
+            <p>{info.address.zipcode} {info.address.city}</p>
+          </div>
+          <div className="mt-12">
+            <p>
+              {info.attribution.illustrations} <a href={`https://${info.attribution.link}`} className="underline">{info.attribution.link}</a>
+            </p>
+          </div>
+          <div className="mt-6">
+            <p>{info.attribution.copyright} {info.attribution.company}</p>
+          </div>
         </div>
       </div>
   </footer>
