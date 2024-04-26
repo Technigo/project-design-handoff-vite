@@ -3,10 +3,12 @@ import { IoIosArrowDown } from "react-icons/io";
 
 export const FooterSection = ({ data, onLanguageChange }) => {
   const { links, info } = data;
+  const firstGroup = links.slice(0, 5);
+  const secondGroup = links.slice(5);
 
   return (
     <footer className="bg-main-blue text-text-light font-montserrat text-sm font-extralight text-left">
-      <div className="p-6">
+      <div className="p-6 flex flex-col md:flex-row justify-between">
         <div className="relative bg-main-blue" style={{ width: "312px" }}>
           <select
             onChange={onLanguageChange}
@@ -21,21 +23,27 @@ export const FooterSection = ({ data, onLanguageChange }) => {
             <IoIosArrowDown />
           </div>
         </div>
-        <div className="mb-4 w-full md:w-auto">
-          <a
-            href="/"
-            className="flex items-center justify-center md:justify-start "
-          ></a>
+
+        <div className="flex flex-row mt-12">
+          <div className="flex flex-col mr-12">
+            {firstGroup.map((link, index) => (
+              <a key={index} href={link.link} className="my-3 underline">
+                {link.text}
+              </a>
+            ))}
+          </div>
+
+          <div className="flex flex-col">
+            {secondGroup.map((link, index) => (
+              <a key={index} href={link.link} className="my-3 underline">
+                {link.text}
+              </a>
+            ))}
+          </div>
         </div>
-        <div className="flex flex-col justify-start">
-          {links.map((link, index) => (
-            <a key={index} href={link.link} className="my-3 ml-2 underline">
-              {link.text}
-            </a>
-          ))}
-        </div>
+
         <div className="my-3 ml-2">
-          <div className="mt-12">
+          <div className="mt-12 ">
             <p>{info.email}</p>
             <p>{info.phone}</p>
           </div>
@@ -46,7 +54,7 @@ export const FooterSection = ({ data, onLanguageChange }) => {
               {info.address.zipcode} {info.address.city}
             </p>
           </div>
-          <div className="mt-12">
+          <div className="mt-12 text-sm">
             <p>
               {info.attribution.illustrations}{" "}
               <a
@@ -57,7 +65,7 @@ export const FooterSection = ({ data, onLanguageChange }) => {
               </a>
             </p>
           </div>
-          <div className="mt-6">
+          <div className="mt-6 text-sm">
             <p>
               {info.attribution.copyright} {info.attribution.company}
             </p>
