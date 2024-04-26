@@ -68,8 +68,8 @@ const Nav = styled.nav`
 
   @media all and (min-width: 1024px) {
     grid-area: nav;
-    justify-self: flex-start;
-    align-self: flex-start;
+    place-self: flex-start;
+    align-self: center;
 
     ul {
       align-items: flex-start;

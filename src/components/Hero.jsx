@@ -21,19 +21,15 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   ${({ $main }) => ($main ? "gap: 32px; padding: 32px 12px" : "gap: 16px")};
-  /* padding: ${({ $main }) => ($main ? "32px 12px" : null)}; */
   text-align: center;
 
   @media all and (min-width: 744px) {
     ${({ $main }) => ($main ? "gap: 40px; padding: 32px" : "gap: 16px;")};
-    /* padding: ${({ $main }) => ($main ? "0 32px" : null)}; */
   }
 
   @media all and (min-width: 1024px) {
     ${({ $main }) =>
       $main ? "gap: 56px; padding: 0 40px; width: 50%;" : "gap: 16px;"};
-    /* padding: ${({ $main }) => ($main ? "0 40px" : null)};
-    width: ${({ $main }) => ($main ? "50%" : null)}; */
   }
 `;
 
