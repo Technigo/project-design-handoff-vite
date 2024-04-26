@@ -197,7 +197,7 @@ export const FAQ = () => {
       </HeadingWrapper>
       <ArrowWrapper onClick={toggleExpand}>
         <ArrowText>{expanded ? "Show less" : "See more"} </ArrowText>
-        <Arrow />
+        <Arrow alt="arrow right" />
       </ArrowWrapper>
       <FaqWrapper>
         {questionsShow.map((faq, index) => (

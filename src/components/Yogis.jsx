@@ -62,8 +62,8 @@ export const Yogis = () => {
         At Shanti Studio, our instructors bring years of experience and humble
         wisdom to their teachings, welcoming all with open hearts.
       </ParagraphTwo>
-      <Arrow left={true} />
-      <Arrow />
+      <Arrow left={true} alt="left arrow" />
+      <Arrow alt="right arrow" />
       <YogisWrapper>
         {/* render MembershipCard with the data */}
         {yogiData.map((yogi, index) => (
