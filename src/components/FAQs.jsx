@@ -7,17 +7,17 @@ export const FAQs = () => {
     return data.questions.slice(startIndex, endIndex).map((question, index) => (
       <li className="border-b-2 flex justify-between py-1 my-1" key={index}>
         {question}
-        <img src={arrow} />
+        <img className src={arrow} />
       </li>
     ))
   }
 
   return (
-    <div>
-      <h2 className="font-montserrat text-2xl font-semibold text-center mb-16 pt-20 border-t tablet:text-left tablet:mx-8 desktop:mx-32 desktop:mt-36 desktop:text-4xl">
+    <div className="pt-20	font-montserrat border-t tablet:pt-32">
+      <h2 className="text-2xl font-semibold text-center mb-16 pt-4 tablet:text-left tablet:mx-8 desktop:mx-32 desktop:mt-36 desktop:text-4xl">
         Find Your Answers Here
       </h2>
-      <div className="grid grid-cols-2 gap-y-4 mb-16 tablet:flex justify-around desktop:mx-32">
+      <div className="grid grid-cols-2 gap-y-4 mb-16 tablet:flex tablet:justify-between tablet:mx-8 desktop:my-32">
         <div className="flex justify-center items-center ">
           <ButtonFAQ text={"Prices"} />
         </div>
@@ -39,13 +39,11 @@ export const FAQs = () => {
           Discover All Here
         </button>
       </div>
-      <div className="grid grid-cols-1 font-montserrat text-sm desktop:grid desktop:grid-cols-2 desktop:text-xl desktop:mx-32 desktop:mb-36">
-        <ul className="mx-4 tablet:gap-y-8 tablet:w-8/12 tablet:text-lg desktop:text-xl desktop:w-10/12">
+      <div className="grid grid-cols-1 font-montserrat text-sm desktop:grid desktop:grid-cols-2 desktop:text-xl desktop:mx-32 desktop:gap-x-16 desktop:mb-36 desktop:justify-between">
+        <ul className="mx-4 tablet:gap-y-8 tablet:w-8/12 tablet:text-lg desktop:text-xl desktop:mx-0 desktop:w-full">
           {getQuestions(0, 6)}
         </ul>
-        <ul className="invisible desktop:visible desktop:w-10/12">
-          {getQuestions(6, 12)}
-        </ul>
+        <ul className="invisible desktop:visible">{getQuestions(6, 12)}</ul>
       </div>
     </div>
   )
