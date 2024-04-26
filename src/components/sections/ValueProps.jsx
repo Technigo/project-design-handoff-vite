@@ -1,12 +1,12 @@
-import { Button } from "../styles/Button";
-import imageOne from "/assets/images/crossfit-45.png";
-import imageTwo from "/assets/images/crossfit-baby.png";
-import imageThree from "/assets/images/crossfit-53.png";
-import kettlebell from "/assets/icons/kettlebell.svg";
+import { Button } from "../styles/Button"
+import imageOne from "/assets/images/crossfit-45.jpg"
+import imageTwo from "/assets/images/crossfit-baby.png"
+import imageThree from "/assets/images/crossfit-53.png"
+import kettlebell from "/assets/icons/kettlebell.svg"
 
 export const ValueProps = () => {
   return (
-    <section className="relative bg-crimson-light pt-8 pr-40 pb-10 grid grid-cols-1 lg:pr-66 pl-66 lg:overflow-hidden">
+    <section className="relative bg-crimson-light pt-8 pr-40 pl-40 pb-10 grid grid-cols-1 lg:overflow-hidden">
       <img
         src={kettlebell}
         alt="Kettlebell icon"
@@ -21,12 +21,12 @@ export const ValueProps = () => {
         why crossfit mamas?
       </h2>
 
-      <div className="sm:grid grid-cols-2 gap-5 md:gap-10 lg:w-2/3">
-        <div className="md:w-full">
+      <div className="sm:grid grid-cols-2 gap-5 md:gap-10 lg:w-2/3 sm:mb-8 md:mb-12">
+        <div className="sm:items-start">
           <img
             src={imageOne}
             alt="Woman doing lats"
-            className="mb-4 lg:w-full"
+            className="mb-4  sm:m-0 lg:w-full"
           />
         </div>
         <div className="max-w-xs flex flex-col justify-start items-center sm:items-start">
@@ -46,19 +46,19 @@ export const ValueProps = () => {
         </div>
       </div>
 
-      <div className="sm:grid grid-cols-2 gap-5 justify-start md:gap-10 lg:w-2/3">
-        <div>
+      <div className="sm:grid grid-cols-2 gap-5 justify-start md:gap-10 lg:w-2/3 sm:mb-8 md:mb-12">
+        <div className="sm:items-start">
           <img
             src={imageTwo}
             alt="Mom with her baby in the gym"
-            className="mt-10 mb-4 lg:w-full"
+            className="mt-10 mb-4 sm:m-0 lg:w-full"
           />
         </div>
-        <div className="max-w-xs flex flex-col justify-start items-center sm:items-start mt-10">
+        <div className="max-w-xs flex flex-col justify-start items-center sm:items-start">
           <h3 className="text-h3-tab-mob lg:text-h3-desktop">
             mum coaches only
           </h3>
-          <p className="hidden sm:block md:block lg:block lg:text-pl-desktop lg:mt-3 mb-5 mt-2">
+          <p className="hidden sm:block md:block lg:block lg:text-pl-desktop lg:mt-3 mb-5 mt-2 lg:w-56">
             We’re here for you. This is your community of like-minded mamas and
             coaches who know what you’re going through.
           </p>
@@ -71,15 +71,15 @@ export const ValueProps = () => {
         </div>
       </div>
 
-      <div className="sm:grid grid-cols-2 gap-5 md:gap-10 lg:w-2/3">
-        <div>
+      <div className="sm:grid grid-cols-2 gap-5 md:gap-10 lg:w-2/3 md:mb-12">
+        <div className="sm:items-start">
           <img
             src={imageThree}
             alt="A mom and baby in the gym"
-            className="mt-10 mb-4 lg:w-full"
+            className="mt-10 mb-4 sm:m-0 lg:w-full"
           />
         </div>
-        <div className="max-w-xs flex flex-col justify-start items-center sm:items-start mt-10">
+        <div className="max-w-xs flex flex-col justify-start items-center sm:items-start">
           <h3 className="text-h3-tab-mob lg:text-h3-desktop">
             safe for you & your baby
           </h3>
@@ -97,5 +97,5 @@ export const ValueProps = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

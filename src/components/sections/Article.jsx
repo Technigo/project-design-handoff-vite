@@ -1,6 +1,6 @@
-import { Image } from "../styles/Image";
-import { Heading } from "../typography/Heading";
-import { Paragraph } from "../typography/Paragraph";
+import { Image } from "../styles/Image"
+import { Heading } from "../typography/Heading"
+import { Paragraph } from "../typography/Paragraph"
 
 export const Article = () => {
   const articleContent = [
@@ -17,12 +17,12 @@ export const Article = () => {
       text: "You might be nervous, and that's normal. But don't worry, we'll guide you through it.",
     },
     {
-      image: "/assets/images/unsplash_h4i9G-de7Po.jpg",
+      image: "/assets/images/crossfit-55.jpg",
       src: "Crossfit Mamas",
       heading: "classes tailored to your needs",
       text: "Our classes are tailored for new mums and programmed by specialist coaches for safe lifting.",
     },
-  ];
+  ]
 
   return (
     <section className="p-20 md:p-66 flex justify-start overflow-x-scroll">
@@ -42,5 +42,5 @@ export const Article = () => {
         </div>
       ))}
     </section>
-  );
-};
+  )
+}

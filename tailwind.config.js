@@ -22,7 +22,7 @@ export default {
       80: "80px",
     },
     screens: {
-      sm: "430px",
+      sm: "431px",
       md: "834px",
       lg: "1440px",
     },
