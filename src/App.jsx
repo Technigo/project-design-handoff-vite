@@ -1,12 +1,12 @@
-import { HeroSection } from "./components/HeroSection"
-import { Statistics } from "./components/Statistics"
-import { AboutUs } from "./components/AboutUs"
-import { ClassCards } from "./components/classCards/ClassCards"
-import { InstructorCards } from "./components/instructorCards/InstructorCards"
-import { ValueCards } from "./components/valueCards/ValueCards"
-import { Membership } from "./components/Membership"
-import { BecomeMember } from "./components/BecomeMember"
-import { Footer } from "./components/Footer"
+import { HeroSection } from "./sections/HeroSection";
+import { Statistics } from "./sections/Statistics";
+import { AboutUs } from "./sections/AboutUs";
+import { ClassCards } from "./components/classCards/ClassCards";
+import { InstructorCards } from "./components/instructorCards/InstructorCards";
+import { ValueCards } from "./components/valueCards/ValueCards";
+import { Membership } from "./sections/Membership";
+import { BecomeMember } from "./sections/BecomeMember";
+import { Footer } from "./sections/Footer";
 
 export const App = () => {
   return (
@@ -21,5 +21,5 @@ export const App = () => {
       <BecomeMember />
       <Footer />
     </>
-  )
-}
+  );
+};
