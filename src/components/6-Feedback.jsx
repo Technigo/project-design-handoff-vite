@@ -29,20 +29,29 @@ export const Feedback = () => {
 
 const StyledFeedback = styled.div`
   grid-column: span 4;
-  padding: 80px 0;
+  padding: 80px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
+  margin-right: -16px;
+  margin-left: -16px;
+  border-style: solid;
+  border-width: 0 0 1px;
+  border-color: var(--black);
 
   @media (min-width: 744px) and (max-width: 1493px) {
     grid-column: span 8;
-    padding: 128px 0;
+    padding: 128px 32px;
+    margin-right: -32px;
+    margin-left: -32px;
   }
 
   @media (min-width: 1494px) {
     grid-column: span 12;
-    padding: 160px 0;
+    padding: 160px 128px;
+    margin-right: -128px;
+    margin-left: -128px;
   }
 `;
 
