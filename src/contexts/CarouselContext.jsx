@@ -42,6 +42,7 @@ export const CarouselProvider = ({ children }) => {
       )
     },
     preventDefaultTouchmoveEvent: true,
+    preventScrollOnSwipe: true,
     trackMouse: true,
   })
 
