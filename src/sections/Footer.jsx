@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const Footer = () => {
+export const Footer = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ const Footer = () => {
   }
 
   return (
-    <div className=" bg-blue p-8">
+    <footer className="w-screen bg-blue p-8 sm:flex">
       <div
         className=""
         style={{
@@ -54,9 +54,9 @@ const Footer = () => {
           height: `${logoHeight}px`,
         }}
       ></div>
-      <p className="m-2 text-yellowLight">About us</p>
-      <p className="ml-2 text-yellowLight">Contact us</p>
-      <p className="m-2 text-yellowLight">FAQ</p>
+      <p className="sm: m-2 text-yellowLight sm:my-4">About us</p>
+      <p className="ml-2 text-yellowLight sm:my-4">Contact us</p>
+      <p className="m-2 text-yellowLight sm:my-4">FAQ</p>
       <div className="m-2 flex py-2">
         <div
           className="mr-6"
@@ -82,8 +82,6 @@ const Footer = () => {
           }}
         ></div>
       </div>
-    </div>
+    </footer>
   );
 };
-
-export default Footer;

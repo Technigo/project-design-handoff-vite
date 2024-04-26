@@ -30,7 +30,7 @@ export const Stats = () => {
   }, [statContent.length]);
 
   return (
-    <section className="m-0 bg-yellow px-8 py-16 md:px-16 lg:px-32 lg:py-24">
+    <section className="m-0 w-screen bg-yellow px-8 py-16 md:px-16 lg:px-32 lg:py-24">
       <StatCard stat={statContent[currentIndex]} />
     </section>
   );

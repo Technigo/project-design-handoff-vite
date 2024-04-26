@@ -14,7 +14,7 @@ export default {
       },
       borderRadius: {
         custom: "3.5rem",
-        button: "1.7rem",
+        button: "2rem",
       },
       boxShadow: {
         darker: "inset 0 7px 5px -5px rgba(0, 0, 0, 0.3)",

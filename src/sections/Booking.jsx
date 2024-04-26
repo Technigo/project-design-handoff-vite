@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Booking = () => {
+export const Booking = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const Booking = () => {
   }
 
   return (
-    <div className="flex-co m-8 mt-16 flex flex-col font-heading text-2xl text-blue">
+    <section className="flex w-screen flex-col px-8 py-16 font-heading text-2xl text-blue sm:p-16 md:px-16 lg:px-32 lg:py-24">
       <p>
         Your path to a healthier lifestyle starts here! Take your first step to
         feeling inner balance and peace.
@@ -46,8 +46,6 @@ const Booking = () => {
           height: `${buttonHeight}px`,
         }}
       ></button>
-    </div>
+    </section>
   );
 };
-
-export default Booking;

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const Navbar = () => {
+export const Navbar = () => {
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -42,7 +42,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="h-88px fixed  w-full bg-navbar bg-opacity-75 p-4">
+    <nav className="fixed flex h-min w-screen bg-navbar bg-opacity-75 p-4 px-8 md:px-16 md:py-6 lg:px-32 lg:py-8">
       <div
         style={{
           background: `url(${logoImage})`,
@@ -60,5 +60,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

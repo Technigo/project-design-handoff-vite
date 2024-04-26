@@ -4,7 +4,7 @@ import workshop from "../components/workshop.json";
 export const WorkshopList = () => {
   const workshops = workshop;
   return (
-    <section className="px-8 py-16 text-blueDeep md:px-16">
+    <section className="w-screen px-8 py-16 text-blueDeep md:px-16 lg:px-32 lg:py-24">
       <div className="pb-16">
         <h3 className="md:text-font26 lg:text-font28 lg:leading-lh48 border-l-2 border-blueDeep pl-4 font-heading text-xl font-medium leading-8 md:p-10 md:leading-10">
           Dive into practical workshops and activities that go beyond the
@@ -19,7 +19,7 @@ export const WorkshopList = () => {
           <WorkshopCard key={index} workshop={workshop} />
         ))}
         <a
-          className="self-end font-normal text-sm font-medium tracking-tight underline"
+          className="self-end font-normal text-sm font-medium leading-6 tracking-tight underline md:text-lg lg:text-xl"
           href=""
         >
           <p className="font-medium"> See All Workshops</p>
