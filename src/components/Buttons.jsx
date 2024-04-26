@@ -2,8 +2,7 @@ import seeMore from "/public/button-see-more.svg"
 
 export const BtnProgram = () => {
   return (
-    <div>
-      <div className=" self-end">
+      <div className="ml-auto">
         <button className="inline-flex gap-4 items-center py-4 m-5">
           <span className="text-darkBlue text-lg font-medium font-inter">
             Alla program
@@ -13,14 +12,12 @@ export const BtnProgram = () => {
           </div>
         </button>
       </div>
-    </div>
   )
 }
 
 export const BtnIntroduction = () => {
   return (
-    <div>
-      <div className=" self-end">
+      <div className=" ml-auto">
         <button className="inline-flex gap-4 items-center py-4 m-5">
           <span className="text-darkBlue text-lg font-medium font-inter">
             Läs mer
@@ -30,6 +27,5 @@ export const BtnIntroduction = () => {
           </div>
         </button>
       </div>
-    </div>
   )
 }

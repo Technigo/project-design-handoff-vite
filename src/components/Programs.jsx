@@ -25,7 +25,7 @@ export const Programs = () => {
   ];
 
   return (
-    <section className="relative flex flex-col justify-center items-center py-8 ">
+    <section className="relative flex flex-col justify-center items-center m-auto py-8 md:max-w-lg 2xl:max-w-5xl">
       <div className="flex flex-col items-center justify-center gap-4 ">
         <h2 className="font-text-center text-2xl text-darkBlue font-bold">
           Våra program
