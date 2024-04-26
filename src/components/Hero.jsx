@@ -1,4 +1,4 @@
-import heroImage from "../assets/heroSectionImages/heroimage.png";
+import heroImage from "../assets/heroSectionImages/heroImage.png";
 import styled from "styled-components";
 import { HeaderNavbar } from "./HeaderNavbar";
 
