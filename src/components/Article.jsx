@@ -5,7 +5,7 @@ import backgroundBlob from "/assets/background-blob.svg";
 export const Article = () => {
   return (
     
-      <section className="mx-8 lg:container lg:mx-auto grid grid-rows-1 grid-cols-1 md:grid-cols-[240px_auto] lg:grid-cols-[320px_auto] gap-4 relative">
+      <section className="xs:mx-4 sm:mx-8 lg:container lg:mx-auto grid grid-rows-1 grid-cols-1 md:grid-cols-[240px_auto] lg:grid-cols-[320px_auto] xs:gap-12 sm:gap-4 relative">
         <img
           src={imageBlob}
           alt=""
@@ -24,7 +24,7 @@ export const Article = () => {
             the first class for free.
           </p>
         </div>
-        <button className="absolute bottom-20 right-0 md:bottom-4 md:left-32 lg:bottom-20 lg:left-28">
+        <button className="absolute bottom-32 left-40 sm:bottom-20 sm:left-48 md:bottom-4 md:left-32 lg:bottom-20 lg:left-28">
           <img
             src={defaultButton}
             alt="Join class"
