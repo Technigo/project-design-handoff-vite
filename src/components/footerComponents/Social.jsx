@@ -10,9 +10,27 @@ import YtLarge from "../../assets/socialSVG/yt-icon-l.svg";
 
 export const Social = () => {
   const socialIcons = [
-    { name: "Instagram", small: IgSmall, medium: IgMedium, large: IgLarge },
-    { name: "Facebook", small: FbSmall, medium: FbMedium, large: FbLarge },
-    { name: "YouTube", small: YtSmall, medium: YtMedium, large: YtLarge },
+    {
+      name: "Instagram",
+      small: IgSmall,
+      medium: IgMedium,
+      large: IgLarge,
+      link: "https://www.instagram.com/thezumbahall",
+    },
+    {
+      name: "Facebook",
+      small: FbSmall,
+      medium: FbMedium,
+      large: FbLarge,
+      link: "https://www.facebook.com/thezumbahall",
+    },
+    {
+      name: "YouTube",
+      small: YtSmall,
+      medium: YtMedium,
+      large: YtLarge,
+      link: "https://www.youtube.com/thezumbahall",
+    },
   ];
 
   return (
@@ -23,13 +41,19 @@ export const Social = () => {
         </h2>
         <div className="mt-[8px] flex flex-wrap justify-end gap-[18px] md:mt-[0px] lg:gap-[35px]">
           {socialIcons.map((icon) => (
-            <img
+            <a
               key={icon.name}
-              src={icon.small}
-              srcSet={`${icon.small} 340w, ${icon.medium} 744w, ${icon.large} 1440w`}
-              alt={`${icon.name} Icon`}
-              className="h-[30px] w-[30px] lg:h-[60px] lg:w-[60px]"
-            />
+              href={icon.link}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={icon.small}
+                srcSet={`${icon.small} 340w, ${icon.medium} 744w, ${icon.large} 1440w`}
+                alt={`${icon.name} Icon`}
+                className="h-[30px] w-[30px] lg:h-[60px] lg:w-[60px]"
+              />
+            </a>
           ))}
         </div>
       </div>
