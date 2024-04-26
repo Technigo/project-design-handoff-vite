@@ -11,7 +11,20 @@ module.exports = {
         'right-center': 'right center',
       },
       spacing: {
-        325: '325px',
+        's-325': '325px',
+        's-150': '150px',
+        's-105': '105px',
+        's-65': '65px',
+        's-45': '45px',
+        's-33': '33px',
+        's-32': '32px',
+'s-31': '31px',
+'s-28': '28px',
+        's-25': '25px',
+        's-22':'22px',
+        's-20': '20px',
+        's-12': '12px',
+
 
       },
       screens: {

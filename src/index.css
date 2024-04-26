@@ -10,11 +10,18 @@
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /*background-color: #F8F7F7;*/
-  color:#042d43;
+
+
+
 
 
 }
+
+@layer utillities{
+  body{
+  background-color: #F8F7F7;
+  color:#042d43;
+}}
 
 
 code {
@@ -22,6 +29,14 @@ code {
     monospace;
 }
 
+
+.philo {
+  background-color: #F8F7F7;
+}
+
+
 body{
   margin: 0;
+  padding:0;
+  min-height: 100vh;
 }

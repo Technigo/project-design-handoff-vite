@@ -1,3 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+
+@layer utillities{
+  .philo{
+  background-color: #F8F7F7;
+  color:#042d43;
+}
+}

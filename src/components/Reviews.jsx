@@ -3,6 +3,7 @@ import leftblob from "/images/leftblob.svg";
 import rightblob from "/images/rightblob.svg";
 import "./Reviews.css";
 
+
 export const Reviews = () => {
 
 
@@ -13,11 +14,12 @@ export const Reviews = () => {
         backgroundImage: `url(${leftblob}), url(${rightblob})`,
         backgroundPosition: 'left bottom, right top',
         backgroundSize: 'contain, contain',
-        minHeight: '111px',
+        minHeight:'111px',
         maxHeight:'300px',
 
+
       }}>
-        <div className="flex justify-evenly">
+        <div className="flex justify-evenly" >
           {customerReviews.map((review, index) => (
             <div className="reviews flex-col justify-items-start sm:w-24 m-2 text-16 md:w-32 md:text-20 lg:w-56 lg:text-25"  key={index} >
               <p className="font-inter text-darkblue text-center ">{review}</p>
