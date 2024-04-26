@@ -88,11 +88,11 @@ const MobileNav = styled.div`
     height: 2px;
     background-color: #404040;
     border-radius: 0.5em;
-    transform-origin: left center;
+    transform-origin: right center;
   }
 
   .burger-bar.clicked:nth-child(1) {
-    rotate: 45deg;
+    rotate: -45deg;
     width: 23px;
     transition: ease-out 0.5s;
   }
@@ -103,7 +103,7 @@ const MobileNav = styled.div`
   }
 
   .burger-bar.clicked:nth-child(3) {
-    rotate: -45deg;
+    rotate: 45deg;
     width: 23px;
     transition: ease-out 0.5s;
   }
