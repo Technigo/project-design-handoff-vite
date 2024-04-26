@@ -4,11 +4,19 @@ export const NavBar = () => {
   return (
     <StyledNavBar>
       <h2>LIFTLY</h2>
-      <MobileNav src="HamburgerMenu.svg"></MobileNav>
+      <MobileNav>
+        <span className="hambuger-bar"/>
+        <span className="hambuger-bar"/>
+        <span className="hambuger-bar"/>
+      </MobileNav>
       <DesktopNav>
-        <p>ABOUT US</p>
-        <p>SEARCH</p>
-        <p>SIGN IN</p>
+        <nav>
+        <ul>
+        <li>ABOUT US</li>
+        <li>SEARCH</li>
+        <li>SIGN IN</li>
+        </ul>
+        </nav>
       </DesktopNav>
     </StyledNavBar>
   );
@@ -40,7 +48,7 @@ const StyledNavBar = styled.header`
   }
 `;
 
-const MobileNav = styled.img`
+const MobileNav = styled.div`
   width: 83px;
   height: 83px;
 
@@ -56,7 +64,12 @@ const DesktopNav = styled.div`
     display: flex;
     gap: 10px;
 
-    p {
+    ul{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+    li {
       padding: 10px;
     }
   }

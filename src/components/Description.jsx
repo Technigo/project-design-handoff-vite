@@ -36,6 +36,7 @@ const StyledDescription = styled.section`
   display: flex;
   flex-direction: column;
   color: white;
+
   @media screen and (min-width: 834px) {
     flex-direction: row;
     justify-content: center;
@@ -43,6 +44,7 @@ const StyledDescription = styled.section`
     padding: 20px 89px;
     height: 330px;
   }`;
+  
 const DescriptionText = styled.div`
   display: flex;
   flex-direction: column;

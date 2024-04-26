@@ -48,7 +48,7 @@ export const Slider = () => {
 
 const StyledSlider = styled.section`
   display: flex;
-  gap: 16px;
+  gap: 8px;
   margin: 0 24px;
 
   @media screen and (min-width: 834px) {

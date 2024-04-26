@@ -24,9 +24,14 @@ export const SliderCard = ({ data }) => {
 export const StyledSliderCard = styled.div`
   display: flex;
   flex-direction: column;
-
   width: 182px;
   gap: 8px;
+  padding: 10px 10px 50px 10px;
+
+  &:hover{
+    background-color: rgba(244, 171, 73, 0.1);
+    border-radius: 10px;
+  }
 
   @media screen and (min-width: 1440px) {
     width: 378px;

@@ -74,6 +74,7 @@ const StyledDownload = styled.section`
     @media screen and (min-width: 835px) {
       flex-direction: column;
       gap: 32px;
+      margin: 0 32px;
     }
 
     h2 {
@@ -120,6 +121,9 @@ const StyledDownload = styled.section`
 const StyledDownloadIcon = styled.img`
   width: 180px;
   margin-bottom: ${({ $margin }) => ($margin ? '18px' : '0')};
+
+  @media screen and (min-width: 834px) {
+    margin-bottom: 0;
+  }
 `
 
-//I had to do this all complicated because the margin ist not the same!

@@ -11,8 +11,17 @@ export const OrangeButton = () => {
 
 export const StickyButton = () => {
   return (
-    <StyledButton $sticky $orange>
+    <StyledButton $sticky $mobile $orange>
       Let&apos;s go!
+      <img src={arrow} id="arrow" alt="arrow" />
+    </StyledButton>
+  )
+}
+
+export const StickyDesktopButton = () => {
+  return (
+    <StyledButton $sticky $orange $desktop>
+      Let&apos;s get started!
       <img src={arrow} id="arrow" alt="arrow" />
     </StyledButton>
   )
@@ -38,6 +47,12 @@ const StyledButton = styled.button`
   display: ${({ $sticky }) => ($sticky ? 'flex' : 'block')};
   align-items: ${({ $sticky }) => ($sticky ? 'center' : 'auto')};
   justify-content: ${({ $sticky }) => ($sticky ? 'center' : 'auto')};
+  visibility: ${({ $desktop }) => ($desktop ? "hidden" : "visible")};
+  
+  &:hover{
+    cursor: pointer;
+    
+  }
 
   #arrow{
     margin-left: 6px;
@@ -48,15 +63,20 @@ const StyledButton = styled.button`
   }
 
   @media screen and (min-width: 834px) {
-    width: ${({ $sticky }) => ($sticky ? "159px" : "574px")};
+    width: ${({ $desktop }) => ($desktop ? "276px" : "574px")};
+    float: ${({ $desktop }) => ($desktop ? 'right' : 'none')};
+    visibility: ${({ $mobile }) => ($mobile ? "hidden" : "visible")};
+    margin: ${({ $desktop }) => ($desktop ? '0 32px 0 0' : '0 24px')};
   }
 
+
   @media screen and (min-width: 1440px) {
-    width: ${({ $sticky }) => ($sticky ? "159px" : "580px")};
+    width: ${({ $desktop }) => ($desktop ? "276px" : "580px")};
+    margin: ${({ $desktop }) => ($desktop ? '0 128px 0 0' : '0 24px')};
   }
   &:hover {
     background-color: ${({ $orange }) => ($orange ? '#FFFFFFD6' : '#827F7FB3')};
     color: ${({ $orange }) => ($orange ? '#F4AB49' : '#FFFFFF')};
-    box-shadow: none;
+    box-shadow: ${({ $sticky }) => ($sticky ? '5px 4px 4px #0000008f' : 'none')};
   }
 `
