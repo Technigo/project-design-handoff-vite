@@ -2,7 +2,7 @@ import { HeroSection } from "./components/HeroSection"
 import { Statistics } from "./components/Statistics"
 import { AboutUs } from "./components/AboutUs"
 // import { ClassCards } from "./components/classCards/ClassCards"
-import { ClassCard } from "./components/ClassCard"
+import {ClassCards} from "./components/classCards/ClassCards"
 
 import { ValueCards } from "./components/valueCards/ValueCards"
 import { Membership } from "./components/Membership"
@@ -17,7 +17,7 @@ export const App = () => {
       <HeroSection />
       <Statistics />
       <AboutUs />
-      <ClassCard />
+      <ClassCards />
       <InstructorCards />
       <ValueCards />
       <Membership />
