@@ -9,7 +9,7 @@ export const FeedbackSection = () => {
         Feedback by Urban Spinners
       </h2>
       <FeedbackCarousel />
-      <div className="hidden desktop:block desktop:flex desktop:mx-32 desktop:text-xl desktop:mb-40">
+      <div className="hidden desktop:flex desktop:mx-32 desktop:text-xl desktop:mb-40">
         {feedback.feedback.map(({ id, photo, text, sender, profession }) => (
           <FeedbackCard
             key={id}
