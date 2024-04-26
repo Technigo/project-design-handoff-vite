@@ -1,5 +1,11 @@
-export const Navigation = () => {
+export const Navigation = ({ data }) => {
   return (
-    <div>Navigation</div>
-  )
-}
+    <>
+      {data.navbar.map((link, index) => (
+        <a href={link.link} key={index} className="hover:drop-shadow-md">
+          <h3>{link.text}</h3>
+        </a>
+      ))}
+    </>
+  );
+};
