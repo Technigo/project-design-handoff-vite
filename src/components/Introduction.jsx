@@ -2,6 +2,7 @@ import seeMore from "/button-see-more.svg";
 import bareWellsDesktop from "/icon-barewells-desktop.png";
 import shakeHandsDesktop from "/icon-hand-shake-desktop.png";
 import adultChildDesktop from "/icon-adult-child-desktop.png";
+import { BtnIntroduction } from "./Buttons";
 
 export const Introduction = () => {
   return (
@@ -37,14 +38,7 @@ export const Introduction = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-end">
-        <button className="inline-flex gap-4 items-center py-4 ">
-          <span className="text-darkBlue text-lg font-medium font-inter">
-            Läs mer
-          </span>
-          <img src={seeMore} alt="läs mer-knapp" />
-        </button>
-      </div>
+      <BtnIntroduction />
       </div>
     </section>
   );
