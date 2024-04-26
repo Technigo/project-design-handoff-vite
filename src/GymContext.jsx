@@ -4,16 +4,15 @@ import { createContext, useState, useContext } from "react";
 const GymContext = createContext()
 
 export const GymProvider = ({children}) => {
-    const [bgColor, setBgColor] = useState('bg-pink')
-    const [fontColor, setFontColor] = useState ('text-black')
+    const [isClick, setClick] = useState ('white')
+ 
 
     const clickCard = () => {
-        setBgColor('bg-purple')
-        setFontColor('text-pink')
+        setClick (isClick === 'white' ? 'pink' : 'white')
     }
     
     return (
-        <GymContext.Provider value={{bgColor,fontColor, clickCard}}
+        <GymContext.Provider value={{isClick, clickCard}}
         > {children}
         </GymContext.Provider>
     )
