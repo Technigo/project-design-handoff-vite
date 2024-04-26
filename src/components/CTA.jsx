@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { OrangeButton } from "./Button";
+import { OrangeButton } from './Button'
 
 export const CTA = () => {
   return (
@@ -8,8 +8,8 @@ export const CTA = () => {
       <h2>TRANSFORM YOUR LIFE IN JUST WEEKS!</h2>
       <OrangeButton />
     </StyledCTA>
-  );
-};
+  )
+}
 
 //Styled Components
 
@@ -31,4 +31,4 @@ const StyledCTA = styled.section`
     /* margin: 0 24px; */
     width: 272px;
   }
-`;
+`

@@ -1,7 +1,7 @@
-import AppStore from "/AppStore.svg";
-import GooglePlay from "/GooglePlay.svg";
-import image from "/weightLifting.svg";
-import styled from "styled-components";
+import AppStore from '/AppStore.svg'
+import GooglePlay from '/GooglePlay.svg'
+import image from '/weightLifting.svg'
+import styled from 'styled-components'
 
 export const Download = () => {
   return (
@@ -26,8 +26,8 @@ export const Download = () => {
         </div>
       </div>
     </StyledDownload>
-  );
-};
+  )
+}
 
 //Styled Components
 const StyledDownload = styled.section`
@@ -44,7 +44,6 @@ const StyledDownload = styled.section`
 
   #weight-lift {
     width: 100%;
-
   }
 
   .download-classes {
@@ -54,11 +53,11 @@ const StyledDownload = styled.section`
     //Changed the right boarder according to the design
     gap: 20px;
   }
-`;
+`
 
 const StyledDownloadIcon = styled.img`
   width: 180px;
-  margin-bottom: ${({ $margin }) => ($margin ? "18px" : "0")};
-`;
+  margin-bottom: ${({ $margin }) => ($margin ? '18px' : '0')};
+`
 
 //I had to do this all complicated because the margin ist not the same!

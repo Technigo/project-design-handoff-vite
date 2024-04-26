@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Description = () => {
   return (
@@ -25,8 +25,8 @@ export const Description = () => {
         </p>
       </DescriptionText>
     </StyledDescription>
-  );
-};
+  )
+}
 
 //Styled components
 
@@ -36,13 +36,13 @@ const StyledDescription = styled.section`
   display: flex;
   flex-direction: column;
   color: white;
-`;
+`
 const DescriptionText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px 0;
-  border-bottom: ${({ $border }) => ($border ? "solid 1px #FFFFFF80" : "none")};
+  border-bottom: ${({ $border }) => ($border ? 'solid 1px #FFFFFF80' : 'none')};
   //I changed the color to be 50% transparent as in her design ;)
 
   h3 {
@@ -55,4 +55,4 @@ const DescriptionText = styled.div`
     font-size: 16px;
     line-height: 24px;
   }
-`;
+`

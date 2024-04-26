@@ -7,6 +7,7 @@ import { Instructors } from "./Instructors";
 import { Intro } from "./Intro";
 import { Slider } from "./Slider";
 
+
 export const Body = () => {
   return (
     <StyledBody>
@@ -33,7 +34,4 @@ const StyledBody = styled.main`
     font-size: 20px;
   }
 
-  ::-webkit-scrollbar {
-    display: none;
-  }
 `;
