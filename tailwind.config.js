@@ -24,6 +24,8 @@ export default {
         "hero-pattern": "url('/hero-phone.png')",
         "hero-tablet": "url('/hero-tablet.png')",
         "hero-desktop": "url('/hero-desktop.png')",
+        "banner-desktop": "url('/banner-desktop.png')",
+        "banner-phone": "url('/banner-phone.png')",
       },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
@@ -31,6 +33,7 @@ export default {
       },
       fontSize: {
         xs: ["10px", "12px"],
+        tablethero: ["120px", "144px"],
       },
       height: {
         136: "34rem", // Hero image height mobile
@@ -40,4 +43,4 @@ export default {
     },
   },
   plugins: [],
-};
+}
