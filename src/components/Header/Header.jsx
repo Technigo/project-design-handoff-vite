@@ -5,7 +5,7 @@ import { Top } from "./Top"
 
 export const Header = () => {
   return (
-    <div className = "header-container">
+    <div className = "sticky top-0 w-full">
       <MainImage />
       <Top />
       <Booking />

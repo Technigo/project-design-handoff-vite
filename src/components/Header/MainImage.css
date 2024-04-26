@@ -5,6 +5,5 @@
 
 .main-image{
   width: 100%;
-  object-fit: cover;
-  position: absolute;
+  object-fit: cover; 
 }

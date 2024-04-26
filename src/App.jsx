@@ -7,7 +7,7 @@ export const App = () => {
     <div className="page-container">
       <Header />
       <Reviews />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   ) 
 };
