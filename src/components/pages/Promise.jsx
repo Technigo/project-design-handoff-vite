@@ -5,6 +5,10 @@ import useDeviceType from "../useDeviceType";
 export const Promise = () => {
   const deviceType = useDeviceType();
 
+  if (deviceType === "none") {
+    return null;
+  }
+
   if (deviceType === "desktop" || deviceType === "tablet") {
     return (
       <PromiseBox>

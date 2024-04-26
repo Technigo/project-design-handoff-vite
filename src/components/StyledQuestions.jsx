@@ -6,6 +6,10 @@ export const QuestionContainer = styled.div`
   gap: var(--gap-default);
   align-items: center;
   margin: var(--gap-comfortable) 0;
+
+  @media (min-width: 1025px) {
+    padding: 0 var(--gap-huge);
+  }
 `;
 
 export const QuestionInfoBox = styled.div`
@@ -25,16 +29,17 @@ export const QuestionImg = styled.img`
   object-fit: cover;
 
   @media (min-width: 651px) {
-    width: 50%;
     height: 100%;
-    object-fit: cover;
   }
 `;
 
 export const QuestionTextBox = styled.div`
-  display: flex;
   flex-direction: column;
-  gap: var(--gap-default);
+  gap: var(--gap-comfortable);
+
+  @media (min-width: 651px) {
+    max-width: 50%;
+  }
 `;
 
 export const QuestionSmallTextBox = styled.div`

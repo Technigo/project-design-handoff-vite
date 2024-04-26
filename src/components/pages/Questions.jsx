@@ -9,8 +9,15 @@ import {
   QuestionImgContainer,
   QuestionSmallTextBox,
 } from "../StyledQuestions";
+import useDeviceType from "../useDeviceType";
 
 export const Questions = () => {
+  const deviceType = useDeviceType();
+
+  if (deviceType === "none") {
+    return null;
+  }
+
   return (
     <Page>
       <QuestionContainer>
@@ -25,7 +32,7 @@ export const Questions = () => {
               <StyledH2>What should I bring with me?</StyledH2>
               <StyledText>
                 We recommend bringing a yoga mat, comfortable clothing suitable for movement, a water bottle, and any
-                props you typically use during your practice. Don't forget sunscreen and a hat because our event is
+                props you typically use during your practice. Don&apos;t forget sunscreen and a hat because our event is
                 outdoors!
               </StyledText>
             </QuestionSmallTextBox>
@@ -35,7 +42,7 @@ export const Questions = () => {
               <StyledText>
                 Yes, children are welcome to join the event! However, please note that our yoga sessions are primarily
                 designed for adults. We recommend assessing whether the event atmosphere and activities are suitable for
-                your child's age and interests. Parental supervision is required for children attending the event.
+                your child&apos;s age and interests. Parental supervision is required for children attending the event.
               </StyledText>
             </QuestionSmallTextBox>
 

@@ -6,6 +6,10 @@ export const RegisterContainer = styled.div`
   flex-direction: column;
   gap: var(--gap-default);
   margin-bottom: var(--gap-spacious);
+
+  @media (min-width: 651px) {
+    padding: 0 var(--gap-huge);
+  }
 `;
 
 export const UnionContainer = styled.div`

@@ -3,10 +3,21 @@ import HeartIcon from "../assets/HeartIcon.svg";
 import mobileLogo from "../assets/LogoMobile.svg";
 import tabletLogo from "../assets/LogoTablet.svg";
 import desktopLogo from "../assets/LogoDesktop.svg";
+import Easteregg from "../assets/EasterEgg.svg";
 
 import "../index.css";
 
-const MobileLogo = styled(mobileLogo)`
+export const EasterEgg = styled(Easteregg)`
+  width: 126px;
+  height: 70px;
+`;
+
+export const EasterEggContainer = styled.div`
+  position: relative;
+  top: 30px;
+`;
+
+export const MobileLogo = styled(mobileLogo)`
   display: none;
   @media (min-width: 350px) and (max-width: 650px) {
     display: block;

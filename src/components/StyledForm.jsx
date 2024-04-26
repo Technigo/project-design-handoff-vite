@@ -19,6 +19,9 @@ export const FormContainer = styled.div`
   flex-direction: column;
   gap: var(--gap-compact);
   margin-top: 10px;
+
+  @media (min-width: 651px) {
+  }
 `;
 
 export const FormGroup = styled.div`
@@ -46,7 +49,6 @@ export const FlexibleButton = styled.button`
   font-weight: 700;
   line-height: 28.8px;
   letter-spacing: 0.02em;
-
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
 
   ${(props) =>
@@ -69,6 +71,14 @@ ${(props) =>
     css`
       font-size: 20px;
     `}
+
+    @media (min-width:651px) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1025px) {
+    margin-bottom: var(--gap-extra);
+  }
 `;
 
 export const IncrementDecrementContainer = styled.div`
@@ -109,7 +119,7 @@ export const CounterContainer = styled.div`
   margin-bottom: 18px;
   margin-top: 15px;
 
-  @media (min-width: 651px) and (max-width: 1024px) {
+  @media (min-width: 651px) {
     flex-direction: row;
     justify-content: space-between;
   }

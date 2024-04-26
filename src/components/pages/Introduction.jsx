@@ -9,6 +9,8 @@ import {
   HeaderBox,
   NavBox,
   IntroTextButton,
+  EasterEgg,
+  EasterEggContainer,
 } from "../StyledIntro";
 import ImgIntro from "../../assets/intro-one.jpg";
 
@@ -48,7 +50,7 @@ const Introduction = () => {
         <IntroTextButton>
           <IntroTextBox>
             {deviceType === "none" && (
-              <div>
+              <EasterEggContainer>
                 <StyledH1>Congratulations!</StyledH1>
                 <StyledText>
                   You&apos;re unable to access this website on your current phone. But fear not! We are looking for
@@ -56,7 +58,8 @@ const Introduction = () => {
                   newer phone to access this page, and if they succeed, you&apos;ll get 1 ticket for free. Just remember
                   to insert the code DSFHSIUG!
                 </StyledText>
-              </div>
+                <EasterEgg />
+              </EasterEggContainer>
             )}
 
             {deviceType !== "none" && (
