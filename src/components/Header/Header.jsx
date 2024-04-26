@@ -5,10 +5,10 @@ import { Top } from "./Top"
 
 export const Header = () => {
   return (
-    <>
+    <div className = "header-container mb-96 top-0">
       <MainImage />
       <Top />
       <Booking />
-    </>
+    </div>
   )
 }

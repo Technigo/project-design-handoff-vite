@@ -35,8 +35,19 @@ code {
 }
 
 
-body{
+
+.philo {
+  background-color: #F8F7F7;
+}
+
+
+body {
   margin: 0;
   padding:0;
   min-height: 100vh;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
 }
