@@ -7,9 +7,8 @@ export default {
       xl: '1440px',
     },
     fontFamily: {
-      avenir: ['Avenir'],
-      futura: ['Futura'],
-      sans: ['Futura, Avenir, Gill Sans, sans-serif'],
+      avenir: ['Avenir', 'Gill Sans'],
+      futura: ['Futura', 'Gill Sans'],
     },
 
     extend: {
@@ -20,6 +19,7 @@ export default {
         'neutral-white': '#FFFFFF',
         'accent-orange': '#D18B42',
         'accent-blue': '#3C97D1',
+        'other-gray': '#ECECEC',
       },
       backgroundImage: {
         cobra: 'url("/cobra.jpeg")',

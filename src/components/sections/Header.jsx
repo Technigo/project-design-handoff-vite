@@ -2,8 +2,6 @@ import menuIcon from '../../assets/hamburger-menu.svg';
 import Logo from '../../assets/Logo.svg';
 import { GeneralButton } from '../GeneralButton';
 
-//flex flex-col items-center
-
 export const Header = () => {
   return (
     <header className="grid h-svh grid-cols-1 grid-rows-[auto_auto_1fr] bg-cobra bg-cover bg-[35%] bg-no-repeat md:max-h-[1133px]">
@@ -16,12 +14,7 @@ export const Header = () => {
           <li>Retreats</li>
           <li>Free Classes</li>
           <li className="relative top-2">
-            <img
-              className="h-20"
-              src={Logo}
-              alt="logo"
-              onClick={() => location.reload()}
-            />
+            <img className="h-20" src={Logo} alt="logo" />
           </li>
           <li>Online Yoga</li>
           <li>Events</li>

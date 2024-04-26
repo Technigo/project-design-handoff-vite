@@ -9,7 +9,7 @@ export const Card = () => {
       <section className="flex flex-col items-center">
         <div className="pb-[24px] pt-[64px] text-center font-futura text-xl font-bold md:text-2xl xl:text-4xl">
           <h2 className="pb-[20px] md:pb-[30px] xl:pb-[40px]">OUR RETREATS</h2>
-          <p className="md:px-30 px-10 text-center font-avenir text-base font-medium text-[#444446] ">
+          <p className="md:px-30 px-10 text-center font-avenir text-base font-medium text-primary-black">
             For sun-seekers and dreamers who appreciate barefoot-luxury and slow
             living.
           </p>
@@ -30,7 +30,7 @@ export const Card = () => {
             </div>
           ))}
         </div>
-        <GeneralButton text="Book a retreat" customStyle="mt-20 mb-24 md:" />
+        <GeneralButton text="Book a retreat" customStyle="mt-20 mb-24" />
       </section>
     </>
   );

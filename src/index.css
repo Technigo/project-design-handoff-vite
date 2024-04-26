@@ -13,23 +13,9 @@
   }
   @font-face {
     font-family: Gill Sans;
-    src: local('Gill Sans') url('./assets/fonts/Gill\ Sans.otf') format('oft');
+    src: local('Gill Sans') url('./assets/fonts/Gill Sans.otf') format('otf');
   }
   html {
     font-family: 'avenir', 'futura', 'gill sans';
   }
 }
-
-/* :root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-} */

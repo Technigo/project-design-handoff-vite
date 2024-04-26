@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import pray from '../../assets/bgImage/yoga-pray.png';
+import pray from '../../assets/images/yoga-pray.png';
 import euro from '../../assets/euro-sign.svg';
 import { GeneralButton } from '../GeneralButton';
 import { PillButton } from '../PillButton';
@@ -8,12 +8,8 @@ import { PillButton } from '../PillButton';
 export const Membership = () => {
   const [monthlyActive, setMonthlyActive] = useState(true);
 
-  // const handleClick = (bool) => {
-  //   setMonthlyActive(bool);
-  // };
-
   return (
-    <section className="grid grid-cols-1 grid-rows-[auto_auto__auto_1fr] place-items-center  bg-[#ECECEC] px-11 pt-10 md:pt-20 xl:pt-32">
+    <section className="bg-other-gray grid grid-cols-1 grid-rows-[auto_auto__auto_1fr] place-items-center px-11 pt-10 md:pt-20 xl:pt-32">
       <div className="flex flex-col gap-4 text-center">
         <h2 className="font-futura text-xl font-bold md:text-2xl xl:text-4xl">
           JOIN OUR ONLINE MEMBERSHIP

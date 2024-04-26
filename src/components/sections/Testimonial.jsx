@@ -1,10 +1,9 @@
 import { GeneralButton } from '../GeneralButton';
-import treePose from '../../assets/bgImage/yoga-pose-tree.jpeg';
+import treePose from '../../assets/images/yoga-pose-tree.jpeg';
 
 export const Testimonial = () => {
   return (
     <section className="flex flex-col md:flex-row">
-      {/* <div className="min-h-96 w-full bg-tree bg-cover bg-center md:h-auto md:min-h-[30rem] md:w-3/6"></div> */}
       <div className="md:w-3/6">
         <img
           className="object-cover"
