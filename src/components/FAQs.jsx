@@ -1,6 +1,6 @@
-import { ButtonFAQ } from "./reusable/ButtonFAQ"
-import data from "../json/FAQs.json"
-import arrow from "/arrow.svg"
+import { ButtonFAQ } from "./reusable/ButtonFAQ";
+import data from "../json/FAQs.json";
+import arrow from "/arrow.svg";
 
 export const FAQs = () => {
   const getQuestions = (startIndex, endIndex) => {
@@ -9,8 +9,8 @@ export const FAQs = () => {
         {question}
         <img className src={arrow} />
       </li>
-    ))
-  }
+    ));
+  };
 
   return (
     <div className="pt-20	font-montserrat border-t tablet:pt-32">
@@ -46,5 +46,5 @@ export const FAQs = () => {
         <ul className="invisible desktop:visible">{getQuestions(6, 12)}</ul>
       </div>
     </div>
-  )
-}
+  );
+};
