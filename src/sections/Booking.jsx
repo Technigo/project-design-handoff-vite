@@ -33,7 +33,7 @@ const Booking = () => {
   }
 
   return (
-    <div className="flex-co m-8 mt-16 flex flex-col font-heading text-2xl">
+    <div className="flex-co m-8 mt-16 flex flex-col font-heading text-2xl text-blue">
       <p>
         Your path to a healthier lifestyle starts here! Take your first step to
         feeling inner balance and peace.
