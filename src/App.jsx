@@ -14,9 +14,9 @@ export const App = () => {
       <HeroSection />
       <Statistics />
       <AboutUs />
-      <ClassCards />
+      {/* <ClassCards />
       <InstructorCards />
-      <ValueCards />
+      <ValueCards /> */}
       <Membership />
       <BecomeMember />
       <Footer />

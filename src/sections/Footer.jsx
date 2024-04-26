@@ -7,7 +7,7 @@ import { Legal } from "../components/footerComponents/Legal";
 export const Footer = () => {
   return (
     <>
-      <section className="relative h-[260px] w-auto bg-yellow text-black md:h-[337px] lg:h-[756px]">
+      <section className="relative h-[260px] w-auto bg-yellow text-black md:h-[339px] lg:h-[756px]">
         <div className="grid grid-cols-2 px-[24px] pb-[23px] pt-[64px] md:px-2 md:pb-[30px] md:pt-[90px] lg:px-[112px] lg:pb-[107px] lg:pt-[188px] ">
           <LogoDark />
           <div className="col-start-2 col-end-3 row-start-1 row-end-3">
