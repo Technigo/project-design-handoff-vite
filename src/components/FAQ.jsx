@@ -187,7 +187,7 @@ export const FAQ = () => {
     },
   ];
 
-  const questionsShow = expanded ? faqs : faqs.slice(0, 4); //show 4 on mobile all when expanded
+  const questionsShow = expanded ? faqs : faqs.slice(0, 4); //show 4 on mobile and all when expanded
 
   return (
     <FaqSection>

@@ -5,11 +5,30 @@ import styled from "styled-components";
 import Lotus from "../../public/images/lotus.png";
 
 //import hook
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 //import reusables
 import { HeadingTwo } from "../reusables/HeadingTwo";
 import { ParagraphTwo } from "../reusables/ParagraphTwo";
+
+//custom hook to determine if screen with is above 744px breakpoint for tablet
+const useIsTablet = (breakpoint) => {
+  const [isTablet, setIsTablet] = useState(window.innerWidth >= breakpoint);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsTablet(window.innerWidth >= breakpoint);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [breakpoint]);
+
+  return isTablet;
+};
 
 //styles
 const PhiloSection = styled.section`
@@ -36,14 +55,24 @@ const ImageWrapper = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    /* height: 100%; */
     background-image: url(${Lotus});
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.1;
-    /* pointer-events: none; */
     z-index: -1; //set picture behind the context
+
+    @media all and (min-width: 744px) {
+      z-index: 1;
+      opacity: 1;
+      right: -100%;
+      bottom: 14%;
+    }
+
+    @media all and (min-width: 744px) {
+      z-index: 1;
+      opacity: 1;
+    }
   }
 `;
 
@@ -51,9 +80,32 @@ const PhiloWrapper = styled.div`
   display: flex;
   flex-direction: column;
   padding: 15px 0;
-  /* align-items: center; */
   position: relative; //keeps content positioned correctly in the wrapper
   z-index: 1;
+
+  @media all and (min-width: 744px) {
+    //to put it into two columns on tablet
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 21px;
+    row-gap: 65px;
+    justify-items: start;
+    padding: 0 93px;
+  }
+`;
+
+const TitleTextWrapper = styled.div`
+  /* color: var(--primary-prpl);
+  ${({ isTablet, isSelected }) =>
+    !isTablet &&
+    isSelected &&
+    `color: var(--primary-prpl);`} // Purple when selected on smaller screens
+
+  @media all and (min-width: 744px) {
+    &:hover {
+      color: var(--primary-prpl); // Purple on hover for tablet or bigger
+    }
+  } */
 `;
 
 const PhiloTitle = styled.h3`
@@ -61,37 +113,50 @@ const PhiloTitle = styled.h3`
   font-size: 16px;
   padding-bottom: 17px;
   text-align: center;
+  cursor: pointer;
 
   @media all and (min-width: 744px) {
     font-size: 24px;
+    text-align: left;
   }
 
   @media all and (min-width: 1024px) {
     font-size: 28px;
   }
-
-  ${({ isSelected }) =>
+  ${({ isTablet, isSelected }) =>
+    !isTablet &&
     isSelected &&
-    `color: var(--primary-prpl);`}// Apply purple color if selected
+    `color: var(--primary-prpl);`} // Purple when selected on smaller screens
+
+  @media all and (min-width: 744px) {
+    &:hover {
+      color: var(--primary-prpl); // Purple on hover for tablet or bigger
+    }
+  }
 `;
 
 const PhiloText = styled.p`
   font-size: 12px;
-  color: var(--primary-grey);
-  padding-bottom: 17px;
   text-align: center;
+  color: var(--primary-prpl);
+  padding-bottom: 17px;
 
   @media all and (min-width: 744px) {
     font-size: 14px;
+    text-align: left;
+    padding-bottom: 0;
+    color: var(--primary-grey);
   }
 
   @media all and (min-width: 1024px) {
     font-size: 18px;
   }
 
-  ${({ isSelected }) =>
-    isSelected &&
-    `color: var(--primary-prpl);`}// Apply purple color if selected
+  @media all and (min-width: 744px) {
+    &:hover {
+      color: var(--primary-prpl); // Purple on hover for tablet or bigger
+    }
+  }
 `;
 
 //data for philosphy section
@@ -144,16 +209,17 @@ const philoData = [
       "Enlightenment or union with the divine, a state of spiritual realisation and oneness, with pure awareness.",
   },
 ];
-//component
 
+//component
 export const Philosophy = () => {
+  const tabletBreakpoint = 744;
+  const isTablet = useIsTablet(tabletBreakpoint); //check if tablet or bigger
+
   const [selected, setSelected] = useState(null); //track the selected item
 
   const handleTitleClick = (index) => {
-    if (selected === index) {
-      setSelected(null); //deselect if clicked again
-    } else {
-      setSelected(index); //select the clicked index
+    if (!isTablet) {
+      setSelected(selected === index ? null : index);
     }
   };
 
@@ -168,19 +234,22 @@ export const Philosophy = () => {
       <ImageWrapper>
         <PhiloWrapper>
           {philoData.map((data, index) => (
-            <div key={index}>
+            <TitleTextWrapper
+              key={index}
+              isTablet={isTablet}
+              isSelected={selected === index}
+            >
               <PhiloTitle
-                isSelected={selected === index} //pass selected state to style
+                isTablet={isTablet}
+                isSelected={selected === index}
                 onClick={() => handleTitleClick(index)}
               >
                 {data.title}
               </PhiloTitle>
-              {selected === index && (
-                <PhiloText isSelected={selected === index}>
-                  {data.answer}
-                </PhiloText>
+              {(isTablet || selected === index) && (
+                <PhiloText>{data.answer}</PhiloText>
               )}
-            </div>
+            </TitleTextWrapper>
           ))}
         </PhiloWrapper>
       </ImageWrapper>
