@@ -6,27 +6,27 @@ export const CTA = ({ title, description, buttonText, showInput }) => {
     <div className="font-montserrat border-b border-t bg-off-black text-center">
       {/* Banner */}
       <div className="bg-banner-phone w-full h-10 bg-repeat-x tablet:h-16 tablet:bg-banner-desktop" />
-      {/* Text section start */}
-      <div className="font-montserrat text-center tablet:w-96 tablet:mx-auto desktop:w-auto">
+      {/* Div for the whole text section including button */}
+      <div className="font-montserrat text-center mt-20 mb-20 tablet:mt-32 tablet:mb-32 tablet:w-96 tablet:mx-auto desktop:mt-36 desktop:mb-36 desktop:w-auto">
         {/* Title */}
-        <h2 className="text-white text-2xl font-medium mt-16 tablet:pt-32 desktop:text-4xl">
+        <h2 className="text-white text-2xl font-medium tablet:mb-2 desktop:text-4xl">
           {title}
         </h2>
         {/* Paragraph */}
-        <p className="text-white desktop:mt-2 desktop:mb-10 desktop:text-2xl">
+        <p className="text-white mb-4 max-w-96 mx-auto tablet:mb-8 desktop:mb-10 desktop:text-2xl desktop:max-w-full">
           {description}
         </p>
         {/* Email input */}
         {showInput && (
           <input
             type="email"
-            className="mt-4 rounded-full max-w-96 h-7 pl-4 placeholder-black placeholder-opacity-100 tablet:w-96"
+            className="rounded-full w-80 h-7 pl-4 placeholder-black placeholder-opacity-100 mb-4 tablet:w-96"
             placeholder="Enter your e-mail address here."
             aria-label="Email address"
           />
         )}
         {/* Button */}
-        <div className="mt-6 mb-16 tablet:mb-32">
+        <div className="">
           <Button buttonText={buttonText} />
         </div>
       </div>

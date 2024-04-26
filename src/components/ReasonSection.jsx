@@ -3,7 +3,7 @@ import reasons from "../json/why.json"
 
 export const ReasonSection = () => {
   return (
-    <div className="pt-20	font-montserrat border-t tablet:pt-32">
+    <div className="pt-20	font-montserrat border-t tablet:pt-32 desktop:mb-40">
       <h2 className="text-2xl font-semibold mb-16 text-center tablet:text-left tablet:mx-8 desktop:mx-32 desktop:mb-28 desktop:text-4xl">
         Why Urban Spin
       </h2>
@@ -19,7 +19,7 @@ export const ReasonSection = () => {
           ))}
         </div>
         <img
-          className="pt-20 tablet:pt-32 desktop:hidden"
+          className="mt-20 tablet:mt-32 desktop:hidden"
           src="/reasons-img.png"
           alt="black and white photo of a spinning bike"
         />
