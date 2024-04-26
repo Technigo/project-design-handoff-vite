@@ -108,7 +108,7 @@ const FooterText = styled.div`
 
 const FooterMenu = styled.div`
   width: 100%;
-  padding: 0 16px;
+  margin: 0 16px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -119,13 +119,13 @@ const FooterMenu = styled.div`
   @media (min-width: 744px) and (max-width: 1493px) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 32px;
-    padding: 0;
+    margin: 0;
   }
 
   @media (min-width: 1494px) {
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 160px;
-    padding: 0;
+    margin: 0;
   }
 `
 
