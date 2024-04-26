@@ -7,30 +7,9 @@ export const Container = styled.div`
   @media (min-width: 651px) and (max-width: 1024px) {
     padding: 0 var(--gap-medium);
   }
-`;
 
-export const StyledImage = styled.img`
-  width: 100%;
-  aspect-ratio: 16 / 15;
-  object-fit: cover;
-
-  @media (max-width: 349px) {
-    display: none;
-  }
-
-  @media (min-width: 721px) and (max-width: 1024px) {
-    width: 385px;
-    height: 471px;
-  }
-
-  @media (min-width: 675px) and (max-width: 721px) {
-    width: 285px;
-    height: 371px;
-  }
-
-  @media (min-width: 651px) and (max-width: 674px) {
-    width: 250px;
-    height: 371px;
+  @media (min-width: 1025px) {
+    padding: 0 var(--gap-huge);
   }
 `;
 
@@ -46,7 +25,23 @@ export const Page = styled.div`
   }
 
   @media (min-width: 1025px) {
-    padding: var(--gap-huge);
+    padding: 0 var(--gap-huge);
+  }
+`;
+
+export const StyledImage = styled.img`
+  width: 100%;
+  aspect-ratio: 16 / 15;
+  object-fit: cover;
+
+  @media (min-width: 651px) {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 349px) {
+    display: none;
   }
 `;
 
@@ -81,6 +76,9 @@ export const StyledH1 = styled.div`
   }
 
   @media (min-width: 1025px) {
+    font-size: 48px;
+
+    line-height: 55.44px;
   }
 `;
 
@@ -100,7 +98,16 @@ export const StyledH2 = styled.h2`
   }
 
   @media (min-width: 1025px) {
+    font-family: Yeseva One;
+    font-size: 32px;
+    line-height: 36.96px;
   }
+`;
+
+export const UnderlinedWord = styled.span`
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
 `;
 
 export const StyledButton = styled.button`
@@ -148,6 +155,14 @@ export const ButtonBox = styled.div`
   display: flex;
   width: 100%;
   padding: ${(props) => props.$padding || "0 var(--gap-compact) var(--gap-compact) var(--gap-compact)"};
+
+  @media (min-width: 1025px) {
+    padding: ${(props) => props.$padding || "0 0 var(--gap-huge) var(--gap-extra) "};
+  }
+
+  @media (min-width: 651px) and (max-width: 1024px) {
+    padding: ${(props) => props.$padding || "0 var(--gap-compact) var(--gap-spacious) var(--gap-compact)"};
+  }
 `;
 
 /* header mobile

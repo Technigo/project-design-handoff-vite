@@ -20,7 +20,7 @@ import {
 export const AboutTabletDesk = () => {
   const deviceType = useDeviceType();
 
-  if (deviceType !== "tablet") {
+  if (deviceType !== "tablet" && deviceType !== "desktop") {
     return null;
   }
 
@@ -84,8 +84,7 @@ export const AboutTabletDesk = () => {
             </AboutTitleBox>
             <AboutTextBox>
               <StyledText style={{ textAlign: "start" }}>
-                Feast among friends. Last but not least we will invite you to gather among friends and indulge in
-                delectable treats.
+                Last but not least we will invite you to gather among friends and indulge in delectable treats.
               </StyledText>
               <StyledText style={{ textAlign: "start" }}>
                 You will get baskets brimming with delights, including fresh strawberries, knäckebröd paired with potato
@@ -94,7 +93,7 @@ export const AboutTabletDesk = () => {
             </AboutTextBox>
           </AboutInfoBox>
         </StyledAboutBox>
-        <ButtonBox style={{ padding: "0 0 var(--gap-medium) 0" }}>
+        <ButtonBox style={{ justifyContent: "center" }}>
           <StyledButton
             $mobile={deviceType === "mobile"}
             $tablet={deviceType === "tablet"}

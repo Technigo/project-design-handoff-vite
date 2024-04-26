@@ -1,4 +1,4 @@
-import { Mobiledec } from "../StyledBorder";
+import { Desktopdec, Mobiledec, Tabletdec } from "../StyledBorder";
 import useDeviceType from "../useDeviceType";
 
 export const Border = () => {
@@ -6,7 +6,11 @@ export const Border = () => {
 
   if (deviceType === "none") {
     return null;
+  } else if (deviceType === "tablet") {
+    return <Tabletdec />;
+  } else if (deviceType === "desktop") {
+    return <Desktopdec />;
+  } else {
+    return <Mobiledec />;
   }
-
-  return <Mobiledec />;
 };

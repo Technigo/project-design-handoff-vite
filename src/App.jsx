@@ -9,6 +9,7 @@ import { Promise } from "./components/pages/Promise.jsx";
 import { Register } from "./components/pages/Register.jsx";
 import { Quote } from "./components/pages/Quote.jsx";
 import { Contact } from "./components/pages/Contact.jsx";
+import { Questions } from "./components/pages/Questions.jsx";
 const App = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const App = () => {
       <Border />
       <Register />
       <Border />
+      <Questions />
       <Quote />
       <Contact />
     </div>

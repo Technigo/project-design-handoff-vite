@@ -1,6 +1,6 @@
 import { useState } from "react";
 import useDeviceType from "../useDeviceType";
-import { Page, StyledText, StyledH1, StyledButton, ButtonBox, StyledImage } from "../StyledComponents";
+import { Page, StyledText, StyledH1, StyledButton, ButtonBox, StyledImage, UnderlinedWord } from "../StyledComponents";
 import {
   IconHeart,
   LogoContainer,
@@ -61,7 +61,9 @@ const Introduction = () => {
 
             {deviceType !== "none" && (
               <>
-                <StyledH1>Celebrate Midsommar with yoga and friends</StyledH1>
+                <StyledH1>
+                  Celebrate <UnderlinedWord>Midsommar</UnderlinedWord> with yoga and friends
+                </StyledH1>
                 <StyledText>
                   Embrace summer vibes doing yoga among friends. Experience energising asanas under the sun and feed
                   your mind with a relaxing meditation. Afterwards, indulge in prosecco and delectable treats to

@@ -11,9 +11,16 @@ export const StyledAboutBox = styled.div`
   padding-bottom: 80px;
   margin-top: 25px;
 
-  @media (min-width: 651px) and (max-width: 1024px) {
-    gap: var(--gap-extra);
+  @media (min-width: 651px) {
     flex-direction: row-reverse;
+    align-items: flex-start;
+    margin-top: var(--gap-medium);
+    padding-bottom: var(--gap-medium);
+  }
+
+  @media (min-width: 1025px) {
+    margin-top: var(--gap-big);
+    padding-bottom: var(--gap-big);
   }
 `;
 
@@ -49,7 +56,7 @@ export const LotusIcon = styled(Lotus)`
   width: 20px;
   height: 20px;
 
-  @media (min-width: 651px) and (max-width: 1024px) {
+  @media (min-width: 651px) {
     width: 28.83px;
     height: 24px;
   }
@@ -59,7 +66,7 @@ export const BuddhaIcon = styled(Buddha)`
   width: 20px;
   height: 20px;
 
-  @media (min-width: 651px) and (max-width: 1024px) {
+  @media (min-width: 651px) {
     width: 28.83px;
     height: 24px;
   }
@@ -69,7 +76,7 @@ export const GlassesIcon = styled(Glasses)`
   width: 20px;
   height: 20px;
 
-  @media (min-width: 651px) and (max-width: 1024px) {
+  @media (min-width: 651px) {
     width: 28.83px;
     height: 24px;
   }
@@ -80,6 +87,10 @@ export const TitleBox = styled.div`
   justify-content: center;
   margin-bottom: 35px;
   margin-top: 10px;
+
+  @media (min-width: 1025px) {
+    margin-top: var(--gap-extra);
+  }
 `;
 
 export const Slide = styled.div`
@@ -100,10 +111,8 @@ export const AboutTextBox = styled.div`
   flex-direction: column;
   gap: var(--gap-comfortable);
   width: 100%;
-
-  @media (min-width: 651px) and (max-width: 1024px) {
-    grid-column: 2 / 3;
-    height: auto;
+  margin-bottom: ${(props) => props.$margin || "0"};
+  @media (min-width: 651px) {
   }
 `;
 
@@ -114,24 +123,28 @@ export const AboutTitleBox = styled.div`
 `;
 
 export const AboutOneImage = styled.img`
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+
+  @media (min-width: 651px) {
+    padding-right: var(--gap-compact);
+  }
 `;
 
 export const AboutTwoImage = styled.img`
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
 
-  @media (min-width: 350px) and (max-width: 1024px) {
-    height: auto;
+  @media (min-width: 651px) {
+    padding-left: var(--gap-compact);
   }
 `;
 
 export const MeditaionBox = styled.div`
   display: flex;
-  gap: var(--gap-comfortable);
+  gap: var(--gap-compact);
   margin-top: var(--gap-spacious);
   max-width: 100%;
 `;
@@ -142,7 +155,7 @@ export const MeditationText = styled.div`
   gap: var(--gap-comfortable);
   max-width: 100%;
 
-  @media (min-width: 651px) and (max-width: 1024px) {
+  @media (min-width: 651px) {
     gap: var(--gap-extra);
   }
 `;

@@ -8,7 +8,7 @@ import { AboutInfoBox, AboutTextBox, AboutTitleBox, Slide } from "../StyledAbout
 export const TeachersTabletdesk = () => {
   const deviceType = useDeviceType();
 
-  if (deviceType !== "tablet") {
+  if (deviceType !== "tablet" && deviceType !== "desktop") {
     return null;
   }
 
@@ -36,13 +36,13 @@ export const TeachersTabletdesk = () => {
         </Slide>
 
         <Slide>
-          <TeacherBoxOne>
+          <TeacherBoxOne $gap={"0"}>
             <StyledTeacherTwo src={TeacherTwo} alt="Frida Berg" />
             <AboutInfoBox>
               <AboutTitleBox>
                 <StyledH2>Frida Berg</StyledH2>
               </AboutTitleBox>
-              <AboutTextBox>
+              <AboutTextBox $margin={"var(--gap-spacious)"}>
                 <StyledText style={{ textAlign: "start" }}>
                   Frida is a tech professional and yoga instructor. She received her a 200- and 300-hour through Sunny
                   Yoga. Frida believes that this simple yet powerful practice informs the way we communicate with

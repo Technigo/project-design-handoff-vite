@@ -47,7 +47,7 @@ export const HeaderBox = styled.div`
   justify-content: center;
   margin-bottom: 10px;
 
-  @media (min-width: 651px) and (max-width: 1024px) {
+  @media (min-width: 651px) {
     justify-content: space-between;
   }
 `;
@@ -93,7 +93,7 @@ export const IntroContentBox = styled.div`
   background-color: var(--pink);
   gap: var(--gap-compact);
 
-  @media (min-width: 651px) and (max-width: 1024px) {
+  @media (min-width: 651px) {
     flex-direction: row;
     padding-bottom: 0;
   }
@@ -109,5 +109,10 @@ export const IntroTextBox = styled.div`
   gap: var(--gap-compact);
 
   @media (min-width: 651px) and (max-width: 1024px) {
+    padding: var(--gap-extra) var(--gap-compact) var(--gap-compact);
+  }
+
+  @media (min-width: 1025px) {
+    padding: var(--gap-huge) var(--gap-extra) var(--gap-comfortable);
   }
 `;

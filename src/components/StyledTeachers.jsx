@@ -31,5 +31,5 @@ export const TeacherBox = styled.div`
 export const TeacherBoxOne = styled.div`
   display: flex;
   flex-direction: column-reverse;
-  gap: var(--gap-default);
+  gap: ${(props) => props.$gap || "var(--gap-default)"};
 `;

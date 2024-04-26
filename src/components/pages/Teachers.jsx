@@ -10,11 +10,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 export const Teachers = () => {
   const deviceType = useDeviceType();
 
-  if (deviceType === "none") {
-    return null;
-  }
-
-  if (deviceType === "tablet") {
+  if (deviceType !== "mobile") {
     return null;
   }
 
