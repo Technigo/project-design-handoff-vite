@@ -1,5 +1,4 @@
-// make horizontal scrollbar with cards with a title, image and description
-// The Philosophy component will display the articles from the Copy file in a horizontal scrollable list of cards. Each card will have an image, title, and description.
+
 
 import { articles } from './Copy';
 import './Reviews.css';
