@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 //import element
-import Element from "../../public/images/Element.svg";
+import Element from "../../public/images/element.svg";
 
 //import reusables
 import { ParagraphOne } from "./ParagraphOne";
