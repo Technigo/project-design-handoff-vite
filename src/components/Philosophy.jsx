@@ -70,10 +70,9 @@ const PhiloTitle = styled.h3`
     font-size: 28px;
   }
 
-  &:hover {
-    cursor: pointer;
-    color: var(--primary-prpl);
-  }
+  ${({ isSelected }) =>
+    isSelected &&
+    `color: var(--primary-prpl);`}// Apply purple color if selected
 `;
 
 const PhiloText = styled.p`
@@ -89,6 +88,10 @@ const PhiloText = styled.p`
   @media all and (min-width: 1024px) {
     font-size: 18px;
   }
+
+  ${({ isSelected }) =>
+    isSelected &&
+    `color: var(--primary-prpl);`}// Apply purple color if selected
 `;
 
 //data for philosphy section
@@ -166,10 +169,17 @@ export const Philosophy = () => {
         <PhiloWrapper>
           {philoData.map((data, index) => (
             <div key={index}>
-              <PhiloTitle onClick={() => handleTitleClick(index)}>
+              <PhiloTitle
+                isSelected={selected === index} //pass selected state to style
+                onClick={() => handleTitleClick(index)}
+              >
                 {data.title}
               </PhiloTitle>
-              {selected === index && <PhiloText>{data.answer}</PhiloText>}
+              {selected === index && (
+                <PhiloText isSelected={selected === index}>
+                  {data.answer}
+                </PhiloText>
+              )}
             </div>
           ))}
         </PhiloWrapper>
