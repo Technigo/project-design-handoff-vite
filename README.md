@@ -4,11 +4,11 @@
   </a>
 </h1>
 
-# Design Handoff Project
 
-## Getting Started with the Project
 
-### The Problem
+# LIFTLY
+
+##  Design Handoff Project 
 
 This week we got a design from one of the design students and our instructions were to put the design into code and make the page come alive.
 We started by talking about how to structure the project with the components then the coding began. We worked mostly ansynchronous and keep each other in touch via Slack.
