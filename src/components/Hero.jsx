@@ -43,7 +43,7 @@ const StyledHero = styled.div`
     margin: 0 24px 20px 24px;
     padding: 183px 0 0 0;
     align-self: center;
-    width: 381px;
+    max-width: 378px;
 
     @media screen and (min-width: 834px) {
       width: 640px;

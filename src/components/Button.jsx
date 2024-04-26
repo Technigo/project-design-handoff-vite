@@ -40,9 +40,9 @@ const StyledButton = styled.button`
   border: 0;
   font-size: ${({ $sticky }) => ($sticky ? '18px' : '21px')};
   font-weight: bold;
-  position: ${({ $sticky }) => ($sticky ? 'sticky' : 'relative')};
+  position: ${({ $sticky }) => ($sticky ? 'fixed' : 'relative')};
   bottom: ${({ $sticky }) => ($sticky ? '24px' : '0')};
-  float: ${({ $sticky }) => ($sticky ? 'right' : 'auto')};
+  right: ${({ $sticky }) => ($sticky ? '24px' : 'auto')};
   display: ${({ $sticky }) => ($sticky ? 'flex' : 'block')};
   align-items: ${({ $sticky }) => ($sticky ? 'center' : 'auto')};
   justify-content: ${({ $sticky }) => ($sticky ? 'center' : 'auto')};
@@ -63,15 +63,14 @@ const StyledButton = styled.button`
 
   @media screen and (min-width: 834px) {
     width: ${({ $desktop }) => ($desktop ? "276px" : "574px")};
-    float: ${({ $desktop }) => ($desktop ? 'right' : 'none')};
     visibility: ${({ $mobile }) => ($mobile ? "hidden" : "visible")};
-    margin: ${({ $desktop }) => ($desktop ? '0 32px 0 0' : '0 24px')};
+    right: ${({ $desktop }) => ($desktop ? '32px' : '0')};
   }
 
 
   @media screen and (min-width: 1440px) {
     width: ${({ $desktop }) => ($desktop ? "276px" : "580px")};
-    margin: ${({ $desktop }) => ($desktop ? '0 128px 0 0' : '0 24px')};
+    right: ${({ $desktop }) => ($desktop ? '128px' : '0')};
   }
   &:hover {
     background-color: ${({ $orange }) => ($orange ? '#FFFFFFD6' : '#827F7FB3')};
