@@ -6,8 +6,6 @@ import gym from "../assets/icons/gym.png";
 import wifi from "../assets/icons/wifi.png";
 
 export const InfoIcons = ({ icon, index }) => {
-  console.log("Info Icons: ", icon);
-  console.log("Info index: ", index);
 
   let img = "";
   if (

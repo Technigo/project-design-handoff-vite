@@ -4,7 +4,6 @@ import distanceWorking from "../assets/images/distance-working.png";
 import drinkingCoffee from "../assets/images/drinking-coffee.png";
 
 export const FeatureCard = ({ feature }) => {
-  console.log(feature);
   let img = "";
 
   switch (feature.title) {
