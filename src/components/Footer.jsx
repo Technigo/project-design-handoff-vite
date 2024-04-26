@@ -1,18 +1,18 @@
-import mobileLogo from "../assets/footerImages/mobile-logo.png";
+import tabletLogo from "../assets/footerImages/tablet-logo.png";
 import styled from "styled-components";
 export const Footer = () => {
   return (
     <FooterContent>
-      <MobileLogo></MobileLogo>
+      <MobileLogo alt="Company logo" />
       <FooterText>
-        <h1>Learn, Laugh, and Connect on the Slopes!</h1>
-        <FooterMeny>
-          About us 
-          FAQ
-          Privacy Policy
-          Terms and conditions
-          </FooterMeny>
+        <h1>
+          Learn, Laugh, and<br></br>Connect on the Slopes!
+        </h1>
       </FooterText>
+      <FooterList>About us</FooterList>
+      <FooterList>FAQ</FooterList>
+      <FooterList>Privacy Policy</FooterList>
+      <FooterList>Terms and conditions</FooterList>
     </FooterContent>
   );
 };
@@ -25,14 +25,21 @@ const FooterContent = styled.div`
 `;
 
 const MobileLogo = styled.div`
-  background-image: url(${mobileLogo});
+  background-image: url(${tabletLogo});
   background-repeat: no-repeat;
-  height: 30px;
-  width: 80px;
-  margin-left: 60px;
+  height: 40px;
+  width: 100px;
+  margin-left: 24px;
+  padding-bottom: 40px;
 `;
 
 const FooterText = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-bottom: 40px;
+  margin: auto;
 
   h1 {
     font-family: Philosopher;
@@ -41,16 +48,17 @@ const FooterText = styled.div`
     font-weight: 700;
     line-height: 39px;
     letter-spacing: 1.08px;
-    padding-left: 100px;
-    margin-bottom: 24px;
   }
 `;
 
-const FooterMeny = styled.div`
-  color: white;
-font-size: 18px;
-font-family: Mulish;
-font-weight: 500;
-line-height: 23.40px;
-word-wrap: break-word
-`
+const FooterList = styled.li`
+  display: flex;
+  padding-left: 24px;
+  padding-bottom: 10px;
+  color: #fff;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+`;
