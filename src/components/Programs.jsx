@@ -1,4 +1,4 @@
-import { BtnIntroduction, BtnProgram } from "./Buttons";
+import {  BtnProgram } from "./Buttons";
 
 
 export const Programs = () => {

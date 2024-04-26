@@ -1,4 +1,3 @@
-import seeMore from "/button-see-more.svg";
 import bareWellsDesktop from "/icon-barewells-desktop.png";
 import shakeHandsDesktop from "/icon-hand-shake-desktop.png";
 import adultChildDesktop from "/icon-adult-child-desktop.png";
