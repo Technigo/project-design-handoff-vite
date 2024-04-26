@@ -34,20 +34,38 @@ code {
   background-color: #F8F7F7;
 }
 
-
-
-.philo {
-  background-color: #F8F7F7;
-}
-
-
 body {
   margin: 0;
   padding:0;
   min-height: 100vh;
+  border:none;
+  all:unset;
+}
+
+.wrapper{
+position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .page-container {
   display: flex;
   flex-direction: column;
+}
+
+.review-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 1370px) {
+.wrapper {
+  width: 1370px;
+  left:0;
+  transform: translateX(0%);
+}
+
 }
