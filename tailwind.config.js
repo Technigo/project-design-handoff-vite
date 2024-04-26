@@ -23,19 +23,24 @@ export default {
         workCardSmall: "455px",
         workCardMed: "600px",
         workCardLarge: "350px",
+        headerMobile: "544px",
+        headerDesktop: "624px",
       },
       fontSize: {
-        largeNumber: "56px",
+        font56: "56px",
+        font40: "40px",
+        font32: "32px",
         font28: "28px",
         font26: "26px",
       },
       lineHeight: {
         lh48: "48px",
+        lh56: "56px",
       },
     },
     fontFamily: {
       heading: ["Fira Sans", "sans-serif"],
-      normal: ["Montserrat", "sans-serif"],
+      mont: ["Montserrat", "sans-serif"],
     },
     backgroundImage: {
       "header-image": "url('/header_image.svg')",

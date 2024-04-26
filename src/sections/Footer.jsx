@@ -1,86 +1,34 @@
-import { useState, useEffect } from "react";
-
 export const Footer = () => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
-  let logoImage, instagramImage, twitterImage, whatsappImage;
-  let logoWidth, logoHeight, mediaSize;
-
-  if (screenWidth < 745) {
-    logoImage = "/icons/logo_s.svg";
-    instagramImage = "/icons/instagram_s.svg";
-    twitterImage = "/icons/twitter_s.svg";
-    whatsappImage = "/icons/whatsapp_s.svg";
-    logoHeight = 40;
-    logoWidth = 97;
-    mediaSize = 24;
-  } else if (screenWidth >= 745 && screenWidth <= 1024) {
-    logoImage = "/icons/logo_m.svg";
-    instagramImage = "/icons/instagram_m.svg";
-    twitterImage = "/icons/twitter_m.svg";
-    whatsappImage = "/icons/whatsapp_m.svg";
-    logoHeight = 64;
-    logoWidth = 208;
-    mediaSize = 32;
-  } else {
-    logoImage = "/icons/logo_l.svg";
-    instagramImage = "/icons/instagram_l.svg";
-    twitterImage = "/icons/twitter_l.svg";
-    whatsappImage = "/icons/whatsapp_l.svg";
-    logoHeight = 80;
-    logoWidth = 218;
-    mediaSize = 48;
-  }
-
   return (
-    <footer className="w-screen bg-blue p-8 sm:flex">
-      <div
-        className=""
-        style={{
-          background: `url(${logoImage})`,
-          width: `${logoWidth}px`,
-          height: `${logoHeight}px`,
-        }}
-      ></div>
-      <p className="sm: m-2 text-yellowLight sm:my-4">About us</p>
-      <p className="ml-2 text-yellowLight sm:my-4">Contact us</p>
-      <p className="m-2 text-yellowLight sm:my-4">FAQ</p>
-      <div className="m-2 flex py-2">
-        <div
-          className="mr-6"
-          style={{
-            background: `url(${instagramImage})`,
-            width: `${mediaSize}px`,
-            height: `${mediaSize}px`,
-          }}
-        ></div>
-        <div
-          className="mr-6"
-          style={{
-            background: `url(${twitterImage})`,
-            width: `${mediaSize}px`,
-            height: `${mediaSize}px`,
-          }}
-        ></div>
-        <div
-          style={{
-            background: `url(${whatsappImage})`,
-            width: `${mediaSize}px`,
-            height: `${mediaSize}px`,
-          }}
-        ></div>
+    <footer className="lg:text-font26 flex w-screen flex-col gap-4 bg-blue p-8 font-mont text-lg leading-6 tracking-tight text-yellowLight md:flex-row md:items-center md:justify-between md:p-16 md:text-2xl md:leading-8">
+      <div>
+        <img
+          className="h-10 md:h-16 lg:h-20"
+          src="/icons/logo_l.svg"
+          alt="Oasis logo"
+        />
+      </div>
+      <div className="flex flex-col gap-4 md:flex-row">
+        <p className="font-medium">About us</p>
+        <p className="font-medium">Contact us</p>
+        <p className="font-medium">FAQ</p>
+      </div>
+      <div className="flex gap-8 md:justify-end md:gap-4">
+        <img
+          className="h-6 md:h-8 lg:h-12"
+          src="/icons/instagram_l.svg"
+          alt="Instagram icon"
+        />
+        <img
+          className="h-6 md:h-8 lg:h-12"
+          src="/icons/twitter_l.svg"
+          alt="X icon"
+        />
+        <img
+          className="h-6 md:h-8 lg:h-12"
+          src="/icons/whatsapp_l.svg"
+          alt="WhatsApp icon"
+        />
       </div>
     </footer>
   );
