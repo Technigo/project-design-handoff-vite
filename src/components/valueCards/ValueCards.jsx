@@ -8,7 +8,7 @@ import { MiddleReadMore } from "./MiddleReadMore"
 
 export const ValueCards = () => {
   return (
-    <div className="flex flex-col items-center justify-center sm:w-full sm:gap-y-1 sm:pt-3 md:gap-y-[47px] md:pt-6 lg:gap-y-5">
+    <div className="flex flex-col items-center justify-center sm:w-full sm:gap-y-1 sm:pt-3 md:gap-y-[47px] md:pt-6 lg:gap-y-5 lg:pt-[144px]">
       <h4 className="Ubuntu text-white sm:text-xl md:text-xl lg:text-3xl ">
         <span className="hidden md:inline lg:inline">
           Why you should train with us!
@@ -63,7 +63,7 @@ export const ValueCards = () => {
         </div>
       </div>
 
-      <div className="flex w-full items-center justify-center border-b-[4px] border-pink bg-pink bg-opacity-25 sm:flex sm:h-[361px] sm:flex-col sm:gap-[30px] sm:gap-y-1 sm:px-[24px] sm:pb-[30px] sm:pt-[20px] md:h-[244px] md:flex-row md:gap-y-1 md:px-[33px] md:py-[17px] lg:h-[501px] lg:gap-y-5 lg:px-[113px] lg:py-[45px]">
+      <div className="flex w-full items-center justify-center border-b-[4px] border-pink bg-pink bg-opacity-25 sm:flex sm:h-[361px] sm:flex-col sm:gap-[30px] sm:gap-y-1 sm:px-[24px] sm:pb-[30px] sm:pt-[20px] md:h-[244px] md:flex-row md:gap-y-1 md:px-[33px] md:py-[17px] lg:h-[501px] lg:gap-y-5 lg:px-[113px] lg:py-[45px]  ">
         <ValueImg image={Jump} alt={"jumping"} />
         <div className="flex flex-col sm:gap-y-[8px] md:gap-y-1 lg:gap-y-[24px]">
           <ValueHeader
