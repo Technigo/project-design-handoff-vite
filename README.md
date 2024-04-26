@@ -1,41 +1,20 @@
 <h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
+  <a href="https://aspire-yoga.netlify.app/" alt="Aspire Yoga site">
+    <img src="https://i.postimg.cc/L6CS8Rd3/aspire-yoga.png" alt="Site preview">
   </a>
 </h1>
 
-### Remove git
+## Design Handoff Project
 
-rm -rf .git
+This week we implemented a [design](<https://www.figma.com/file/FVoujOAxjDFHMYFVO8M7Gj/Template-Designer-Developer-Handover-(Grace)>) made by a UX-designer. We used React and focused on styling with Tailwind.css.
 
-# Design Handoff Project
+## The Problem
 
-Replace this readme with your own information about your project.
+First we got a presentation of the design by our designer Grace Wetterlund. We then worked both synchronously (in pair-pogramming) and asynchronously with different parts of the design. We styled the project using Tailwind.css which we both thought was a straight-forward and logic method for styling.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+We had continuous communication with our designer during the week and that made the process smooth and we could pay alot of attention to the coding.
 
-## Getting Started with the Project
+## View it live
 
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
-
-### The Problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-### View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b0b184f0-8fb4-4a09-92ae-f34e05cfa420/deploy-status)](https://app.netlify.com/sites/aspire-yoga/deploys)
+https://aspire-yoga.netlify.app/
