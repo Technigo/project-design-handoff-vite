@@ -19,8 +19,8 @@ export const StickyButton = () => {
 //Styled Components
 
 const StyledButton = styled.button`
-  background-color: ${({ $orange }) => ($orange ? '#F4AB49' : '#FFFFFFD6')};
-  width: ${({ $sticky }) => ($sticky ? '159px' : '88%')};
+  background-color: ${({ $orange }) => ($orange ? "#F4AB49" : "#FFFFFFD6")};
+  width: ${({ $sticky }) => ($sticky ? "159px" : "85%")};
   //We will have to fix the width somehow because percentage doesn't work. I was just trying to come close but I don't know how to tell the button to fill the whole width except the margin...
   border-radius: ${({ $sticky }) => ($sticky ? '100px' : '10px')};
   color: ${({ $orange }) => ($orange ? '#FFFFFF' : '#000000')};
@@ -34,7 +34,17 @@ const StyledButton = styled.button`
   bottom: ${({ $sticky }) => ($sticky ? '24px' : '0')};
   right: ${({ $sticky }) => ($sticky ? '24px' : '0')};
   
+  @media screen and (min-width: 441px) {
+    width: ${({ $sticky }) => ($sticky ? "159px" : "381px")};
+  }
 
+  @media screen and (min-width: 834px) {
+    width: ${({ $sticky }) => ($sticky ? "159px" : "574px")};
+  }
+
+  @media screen and (min-width: 1440px) {
+    width: ${({ $sticky }) => ($sticky ? "159px" : "580px")};
+  }
   &:hover {
     background-color: ${({ $orange }) => ($orange ? '#FFFFFFD6' : '#827F7FB3')};
     color: ${({ $orange }) => ($orange ? '#F4AB49' : '#FFFFFF')};

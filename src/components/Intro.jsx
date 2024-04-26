@@ -19,6 +19,14 @@ export const Intro = () => {
 const StyledIntro = styled.section`
   margin: 0 24px;
 
+  @media screen and (min-width: 834px) {
+    margin: 0 32px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin: 0 128px;
+  }
+
   h2 {
     font-weight: bold;
     font-size: 36px;

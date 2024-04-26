@@ -1,5 +1,5 @@
+import { useRef, useState } from "react";
 import styled from "styled-components";
-import { useState, useRef } from 'react'
 
 import { instructors } from "../libraries/instructors.json";
 import { InstructorsSliderCard } from "./InstructorsSliderCard";
@@ -29,26 +29,26 @@ export const Instructors = () => {
         </p>
       </div>
       <StyledSliderButtonBox>
-      {showLeftButton && (
-        <StyledSliderButton onClick={() => handleScroll(-400)}>
-          <img src="ScrollLeft.svg" />
-        </StyledSliderButton>
-      )}
-      <div
-        ref={containerRef}
-        style={{ overflowX: "scroll", scrollBehavior: "smooth" }}
-      >
-      <StyledSlider>
-        {instructors.map((instructor, index) => (
-          <InstructorsSliderCard key={index} data={instructor} />
-        ))}
-        </StyledSlider>
+        {showLeftButton && (
+          <StyledSliderButton onClick={() => handleScroll(-400)}>
+            <img src="ScrollLeft.svg" />
+          </StyledSliderButton>
+        )}
+        <div
+          ref={containerRef}
+          style={{ overflowX: "scroll", scrollBehavior: "smooth" }}
+        >
+          <StyledSlider>
+            {instructors.map((instructor, index) => (
+              <InstructorsSliderCard key={index} data={instructor} />
+            ))}
+          </StyledSlider>
         </div>
         {showRightButton && (
-        <StyledSliderButton $left onClick={() => handleScroll(400)}>
-          <img src="ScrollRight.svg" />
-        </StyledSliderButton>
-      )}
+          <StyledSliderButton $left onClick={() => handleScroll(400)}>
+            <img src="ScrollRight.svg" />
+          </StyledSliderButton>
+        )}
       </StyledSliderButtonBox>
     </StyledInstructors>
   );
@@ -58,11 +58,20 @@ export const Instructors = () => {
 
 const StyledInstructors = styled.section`
   .instructors {
-    margin: 0 24px;
+    margin: 0 24px 20px 24px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-bottom: 20px;
+
+    @media screen and (min-width: 834px) {
+      margin: 0 32px 32px 32px;
+      gap: 32px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      margin: 0 128px 32px 128px;
+      gap: 32px;
+    }
   }
 
   h2 {
@@ -75,19 +84,27 @@ const StyledInstructors = styled.section`
     font-size: 20px;
     line-height: 38px;
   }
-  `
-  const StyledSlider = styled.section`
+`;
+const StyledSlider = styled.section`
   display: flex;
   gap: 16px;
   margin: 0 24px;
-  //Why is the margin on the right not showing???
-`
+
+  @media screen and (min-width: 1440px) {
+    gap: 32px;
+  }
+`;
 
 const StyledSliderButtonBox = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-`
+
+  @media screen and (min-width: 834px) {
+    width: 100%;
+    justify-content: center;
+  }
+`;
 
 const StyledSliderButton = styled.button`
   height: 32px;
@@ -97,6 +114,8 @@ const StyledSliderButton = styled.button`
   background-color: transparent;
   position: absolute;
   left: ${({ $left }) => ($left ? "85%" : "10%")};
-`
 
-
+  @media screen and (min-width: 834px) {
+    display: none;
+  }
+`;

@@ -1,19 +1,25 @@
-import AppStore from '/AppStore.svg'
-import GooglePlay from '/GooglePlay.svg'
-import image from '/weightLifting.svg'
-import styled from 'styled-components'
+import AppStore from "/AppStore.svg";
+import GooglePlay from "/GooglePlay.svg";
+import "/weightLifting.svg";
+import "/weightTablet.svg";
+import "/weightDesk.svg";
+import styled from "styled-components";
 
 export const Download = () => {
   return (
     <StyledDownload>
-      <img id="weight-lift" src={image} alt="weight lifting" />
+      <picture className="weightpic">
+        <source media="(min-width: 835px)" srcSet="/weightDesk.svg" />
+        <source media="(min-width: 429px)" srcSet="/weightTablet.svg" />
+        <img src="weightLifting.svg" alt="weight lifting" />
+      </picture>
       <div className="download-classes">
         <h2>WORLD-CLASS WORKOUTS. WHEREEVER YOU ARE.</h2>
         <p>
           Take your favorite classes at home, while traveling or outdoors.
           Download classes on the app for a practice that moves with you
         </p>
-        <div>
+        <div className="pink-download-box">
           <StyledDownloadIcon
             $margin
             src={AppStore}
@@ -31,19 +37,15 @@ export const Download = () => {
 
 //Styled Components
 const StyledDownload = styled.section`
-  h2 {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
+  @media screen and (min-width: 835px) {
+    display: flex;
+    margin: 0 128px;
   }
 
-  p {
-    font-size: 20px;
-    line-height: 38px;
-  }
+  .weightpic {
+    display: flex;
+    justify-content: center;
 
-  #weight-lift {
-    width: 100%;
   }
 
   .download-classes {
@@ -52,12 +54,63 @@ const StyledDownload = styled.section`
     margin: 20px 56px 0 24px;
     //Changed the right boarder according to the design
     gap: 20px;
+
+    @media screen and (min-width: 834px) {
+      margin: 20px 32px 0 32px;
+      flex-direction: row;
+      gap: 16px;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 835px) {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 50px;
+
+      @media screen and (min-width: 834px) {
+        width: 279px;
+      }
+
+      @media screen and (min-width: 835px) {
+        width: 455px;
+      }
+    }
+
+    p {
+      font-size: 20px;
+      line-height: 38px;
+
+      @media screen and (min-width: 834px) {
+        width: 279px;
+      }
+
+      @media screen and (min-width: 835px) {
+        width: 455px;
+      }
+    }
+  }
+
+  .pink-download-box {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    @media screen and (min-width: 835px) {
+      flex-direction: row;
+      gap: 24px;
+      align-self: flex-start;
+    }
   }
 `
 
 const StyledDownloadIcon = styled.img`
   width: 180px;
-  margin-bottom: ${({ $margin }) => ($margin ? '18px' : '0')};
-`
+  margin-bottom: ${({ $margin }) => ($margin ? "18px" : "0")};
+`;
 
 //I had to do this all complicated because the margin ist not the same!

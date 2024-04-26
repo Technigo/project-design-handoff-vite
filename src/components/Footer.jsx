@@ -14,17 +14,21 @@ export const Footer = () => {
           <option value="french">French</option>
           <option value="german">German</option>
         </StyledSelect>
-        <p>E-mail: info@liftly.com</p>
-        <p>Phone: (555) 555-5555</p>
+        <p>
+          E-mail: <a className="underline">info@liftly.com</a>
+        </p>
+        <p>
+          Phone: <a className="underline">(555) 555-5555</a>
+        </p>
       </FooterPart>
-      <FooterPart $center>
+      <FooterPart $center $bright>
         <a href="#">About us</a>
         <a href="#">Contact</a>
         <a href="#">Terms & Conditions</a>
         <a href="#">Legal Notice</a>
         <a href="#">Privacy Policy</a>
       </FooterPart>
-      <FooterPart $row>
+      <FooterPart $row $small>
         <StyledSMIcons>
           <p>FOLLOW US</p>
           <div className="icon-box">
@@ -45,7 +49,6 @@ export const Footer = () => {
 //Styled Components
 
 const StyledFooter = styled.footer`
-  width: 100vw;
   height: 668px;
   background-color: #3e4c65;
   display: flex;
@@ -55,22 +58,52 @@ const StyledFooter = styled.footer`
   padding-top: 24px;
   color: #fff;
   gap: 32px;
+
+  @media screen and (min-width: 834px) {
+    height: 280px;
+    flex-direction: row;
+    padding: 32px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 32px 128;
+    gap: 84px;
+  }
 `;
 
 const FooterPart = styled.div`
   display: flex;
   flex-direction: ${({ $row }) => ($row ? "row" : "column")};
-  gap: 32px;
+  gap: ${({ $small }) => ($small ? "12px" : "32px")};
   border-bottom: ${({ $border }) => ($border ? "solid 1px #FFFFFF80" : "none")};
   padding-bottom: ${({ $border }) => ($border ? "32px" : "0")};
   text-align: ${({ $center }) => ($center ? "center" : "none")};
 
+  @media screen and (min-width: 441px) {
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 834px) {
+    border-bottom: none;
+    border-right: ${({ $bright }) =>
+      $bright ? "solid 1px #FFFFFF80" : "none"};
+    text-align: left;
+    padding-bottom: 0;
+    padding-right: ${({ $bright }) => ($bright ? "20px" : "0")};
+    padding-left: ${({ $bright }) => ($bright ? "10px" : "0")};
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding-right: ${({ $bright }) => ($bright ? "84px" : "0")};
+    padding-left: ${({ $bright }) => ($bright ? "79px" : "0")};
+    gap: ${({ $small }) => ($small ? "190px" : "32px")};
+  }
+
   h3 {
     font-weight: bold;
     font-size: 30px;
-  }
-
-  select {
   }
 
   a {
@@ -82,6 +115,10 @@ const FooterPart = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .underline {
+    text-decoration: underline;
   }
 `;
 
