@@ -1,22 +1,18 @@
-import contactImage from "../assets/contactImages/contactImage.png"
+import contactImage from "../assets/contactImages/contactImage.png";
 
 import styled from "styled-components";
 
 export const Contact = () => {
-    return (
-        <ContactSection>
-            <ContactContent>
-            <h1>Not sure what to chose?</h1>
-        <p>
-        We are happy to help. Let’s chat!
-        </p>
-<CtaButton>Start a chat</CtaButton>
-            </ContactContent>
-
-
-        </ContactSection>
-    )
-}
+  return (
+    <ContactSection>
+      <ContactContent>
+        <h1>Not sure what to chose?</h1>
+        <p>We are happy to help. Let’s chat!</p>
+        <CtaButton>Start a chat</CtaButton>
+      </ContactContent>
+    </ContactSection>
+  );
+};
 
 const ContactSection = styled.div`
   background-image: url(${contactImage});
