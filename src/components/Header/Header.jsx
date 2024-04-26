@@ -1,14 +1,18 @@
 import { Booking } from "./Booking"
-import "./Header.css"
-import { MainImage } from "./MainImage"
 import { Top } from "./Top"
 
 export const Header = () => {
   return (
-    <div className = "sticky top-0 w-full">
-      <MainImage />
+    <div className="top-0 mb-96 w-full flex flex-col" style={{       
+      backgroundImage: `url('/assets/main-image.svg')`, backgroundSize: 'cover', 
+      backgroundPosition: 'center', 
+      backgroundRepeat: 'no-repeat',
+      minHeight:'100vh',
+    }}>
       <Top />
-      <Booking />
+      <div className="absolute top-1/3 right-1/2">
+        <Booking />
+      </div>
     </div>
   )
 }
