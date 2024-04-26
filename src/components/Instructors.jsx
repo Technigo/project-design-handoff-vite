@@ -30,7 +30,7 @@ export const Instructors = () => {
       </div>
       <StyledSliderButtonBox>
         {showLeftButton && (
-          <StyledSliderButton onClick={() => handleScroll(-400)}>
+          <StyledSliderButton onClick={() => handleScroll(-300)}>
             <img src="ScrollLeft.svg" />
           </StyledSliderButton>
         )}
@@ -45,7 +45,7 @@ export const Instructors = () => {
           </StyledSlider>
         </div>
         {showRightButton && (
-          <StyledSliderButton $left onClick={() => handleScroll(400)}>
+          <StyledSliderButton $left onClick={() => handleScroll(300)}>
             <img src="ScrollRight.svg" />
           </StyledSliderButton>
         )}
