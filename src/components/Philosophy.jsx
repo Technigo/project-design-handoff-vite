@@ -11,25 +11,6 @@ import { useState, useEffect } from "react";
 import { HeadingTwo } from "../reusables/HeadingTwo";
 import { ParagraphTwo } from "../reusables/ParagraphTwo";
 
-//custom hook to determine if screen with is above 744px breakpoint for tablet
-const useIsTablet = (breakpoint) => {
-  const [isTablet, setIsTablet] = useState(window.innerWidth >= breakpoint);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsTablet(window.innerWidth >= breakpoint);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [breakpoint]);
-
-  return isTablet;
-};
-
 //styles
 const PhiloSection = styled.section`
   padding: 84px 16px;
@@ -71,8 +52,8 @@ const ImageWrapper = styled.div`
 
     @media all and (min-width: 1024px) {
       top: 25%;
-      left: 0;
-      right: 0;
+      left: 10%;
+      right: 10%;
       bottom: 21%;
     }
   }
@@ -98,7 +79,7 @@ const PhiloWrapper = styled.div`
     //to put it into two columns on tablet
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 350px;
+    column-gap: 200px;
     row-gap: 77px;
     padding-top: 85px;
   }
@@ -220,6 +201,25 @@ const philoData = [
       "Enlightenment or union with the divine, a state of spiritual realisation and oneness, with pure awareness.",
   },
 ];
+
+//custom hook to determine if screen width is above 744px; breakpoint for tablet & desktop
+const useIsTablet = (breakpoint) => {
+  const [isTablet, setIsTablet] = useState(window.innerWidth >= breakpoint);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsTablet(window.innerWidth >= breakpoint);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, [breakpoint]);
+
+  return isTablet;
+};
 
 //component
 export const Philosophy = () => {

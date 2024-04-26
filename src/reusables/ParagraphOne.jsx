@@ -6,8 +6,6 @@ import styled from "styled-components";
 export const ParagraphOne = styled.p`
   color: ${(props) =>
     props.grey ? "var(--primary-black)" : "var(--primary-grey)"};
-  font-family: Poppins;
-  font-weight: 400;
   font-size: 14px;
   text-align: left;
 
