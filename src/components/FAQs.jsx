@@ -39,7 +39,7 @@ export const FAQs = () => {
           Discover All Here
         </button>
       </div>
-      <div className="grid grid-cols-1 font-montserrat text-sm desktop:grid grid-cols-2 desktop:text-xl desktop:mx-32 desktop:mb-36">
+      <div className="grid grid-cols-1 font-montserrat text-sm desktop:grid desktop:grid-cols-2 desktop:text-xl desktop:mx-32 desktop:mb-36">
         <ul className="mx-4 tablet:gap-y-8 tablet:w-8/12 tablet:text-lg desktop:text-xl desktop:w-10/12">
           {getQuestions(0, 6)}
         </ul>
