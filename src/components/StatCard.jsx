@@ -1,9 +1,13 @@
 export const StatCard = ({ stat }) => {
   return (
-    <div className="text-blueDeep font-normal tracking-tighter">
-      <p className="text-5xl font-medium">{stat.number}</p>
-      <p className="py-2 text-lg font-medium leading-6">{stat.heading}</p>
-      <p className="text-sm leading-6 font-medium">{stat.text}</p>
+    <div className="font-normal tracking-tighter text-blueDeep">
+      <p className="text-5xl font-medium md:text-largeNumber">{stat.number}</p>
+      <p className="lg:text-font26 py-2 text-lg font-medium leading-6 md:text-2xl md:leading-8 lg:py-4">
+        {stat.heading}
+      </p>
+      <p className="text-sm font-medium leading-6 md:text-lg md:leading-10 lg:text-xl">
+        {stat.text}
+      </p>
     </div>
   );
 };
