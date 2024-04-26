@@ -1,7 +1,7 @@
 export const Header = () => {
   return (
     <div className="h-544 bg-header-image bg-cover bg-center bg-no-repeat py-20">
-      <div className="flex flex-col p-4">
+      <div className=" mx-auto flex w-96 flex-col p-4">
         <h2 className=" mt-20 text-center font-heading text-3xl text-yellow">
           Be with yourself at
         </h2>
