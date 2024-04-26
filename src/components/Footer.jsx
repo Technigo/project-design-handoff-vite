@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-import LogoText from '../assets/LogoText.png';
+
 import FacebookIcon from '../assets/Facebook.png';
 import InstagramIcon from '../assets/Instagram.png';
+import LogoText from '../assets/LogoText.png';
 import TwitterIcon from '../assets/Twitter.png';
 import WhatsAppIcon from '../assets/WhatsApp.png';
 import { breakpoints } from "../utility/breakpoints";
@@ -36,7 +37,7 @@ const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 0;
-  width: 390px;
+/*   width: 390px; */
   justify-content: center;
   align-items: flex-start;
   overflow: hidden;
@@ -45,13 +46,12 @@ const FlexContainer = styled.div`
   background-color: rgba(8,61,86,1);
 
   @media (min-width: ${breakpoints.tablet}) { 
-  width: 834px;
+/*   width: 834px; */
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 @media (min-width: ${breakpoints.desktop}) { 
-  width: 1440px;
   padding: 64px 128px;
 }
 `;
@@ -66,7 +66,7 @@ const Logo = styled.img`
 
   @media (min-width: ${breakpoints.tablet}) { /* Tablet */
   width: 120px;
-  heigt: 120px;
+  height: 120px;
   justify-content: flex-start;
   padding-top: 10px;
 }

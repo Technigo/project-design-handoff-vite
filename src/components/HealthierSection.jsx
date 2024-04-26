@@ -1,6 +1,7 @@
 import styled from 'styled-components';
-import Button from "../utility/Button";
+
 import { breakpoints } from "../utility/breakpoints";
+import Button from "../utility/Button";
 
 export const HealthierSection = () => {
   return (
@@ -11,7 +12,10 @@ export const HealthierSection = () => {
             Your path to a healthier lifestyle starts here! Take your first step to feeling inner balance and peace.
           </Text>
         </FlexContainer>
-        <CtaButton>Continue to Book</CtaButton>
+        <CtaButton>
+          Continue to Book
+          <ArrowIcon />
+        </CtaButton>
       </StyledSection>
     </>
   );
@@ -23,17 +27,15 @@ const FlexContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
-  padding: 64px 32px;
   position: relative;
   gap: 32px;
-  width: 390px;
 
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 64px 64px 64px 64px;
+   /*  padding: 64px; */
     
   }
   @media (min-width: ${breakpoints.desktop}) {
-    padding: 64px 0px 64px 0px;
+  
   }
 `;
 
@@ -45,32 +47,29 @@ const Text = styled.p`
   line-height: 32px;
   text-align: left;
   display: block;
-  width: 294px;
   position: relative;
   white-space: pre-wrap;
 
   @media (min-width: ${breakpoints.tablet}) { /* Tablet */
     font-size: 26px;
     line-height: 40px;
-    width: 642px;
     font-weight: 500;
   }
-  @media (min-width: ${breakpoints.desktop}) { /* desktop */
+  @media (min-width: ${breakpoints.desktop}) {
     font-size: 28px;
     line-height: 48px;
-    width: 10562px;
     font-weight: 500;
-    margin-left: 50px;
-    margin-right: 50px;
+   /*  margin-left: 50px;
+    margin-right: 50px; */
   }
 `;
 
 const CtaButton = styled(Button)`
   display: block;
-  position: relative;
-  justify-content: flex-start;
-  align-items: flex-start;
-  left: 170px;
+/*   position: relative; */
+  justify-content: flex-end;
+  align-items: flex-end;
+/*   left: 170px; */
 
 
  /*  &:active {
@@ -83,10 +82,18 @@ const CtaButton = styled(Button)`
     justify-content: flex-end;
     align-items: flex-end;
   }
-  @media (min-width: ${breakpoints.desktopt}) { /* desktop */
+  @media (min-width: ${breakpoints.desktop}) { /* desktop */
     justify-content: flex-end;
     align-items: flex-end;
   }
+`;
+
+const ArrowIcon = styled.span`
+  width: 28px;
+  height: 24px;
+  background: url("/icons/arrow1.svg");
+  background-size: contain;
+  margin-left: 16px;
 `;
 
 const StyledSection = styled.section`
@@ -95,14 +102,16 @@ const StyledSection = styled.section`
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
-  padding: 32px 16px 32px 16px;
+  padding: 32px 16px;
   gap: 0;
 
   @media (min-width: ${breakpoints.tablet}) { /* Tablet */
-    padding: 64px 64px 64px 64px;
+    padding: 64px;
   }
-  @media (min-width: ${breakpoints.desktopt}) { /* desktop */
-    padding: 64px 128px 64px 128px;
+
+  @media (min-width: ${breakpoints.desktop}) { /* desktop */
+    padding: 64px 128px;
+    gap: 32px;
   }
 `;
 

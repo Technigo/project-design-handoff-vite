@@ -1,9 +1,10 @@
 import styled from 'styled-components';
-import { breakpoints } from "../utility/breakpoints";
-import CoachCard from './CoachCard';
+
 import coachPic1 from '../assets/coach-pic.png';
 import coachPic2 from '../assets/coach-pic2.png';
 import coachPic3 from '../assets/coach-pic3.png';
+import { breakpoints } from "../utility/breakpoints";
+import CoachCard from './CoachCard';
 
 export const CoachSection = () => {
   return (
@@ -41,7 +42,7 @@ const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-/*   align-items: flex-start; */
+  align-items: ;
   position: relative;
   padding: 64px 32px;
   background-color: var(--yellow);
@@ -87,7 +88,7 @@ const CardWrapper = styled.div`
 
   @media (min-width: ${breakpoints.tablet}) { /* Tablet */
     justify-content: flex-start;
-    padding: 64px 32px 64px 32px;
+    padding: 64px 32px;
   }
   @media (min-width: ${breakpoints.desktop}) { /* Desktop */
     padding: 96px 0; 
