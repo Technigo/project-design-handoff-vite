@@ -9,6 +9,10 @@ We started by talking about how to structure the project with the components the
 The Responsivness took way longer than we though in the beginning but it worked out quite well in the end.
 Altough it wasn't part of the instructions we wanted to add some functionality therefore the select as well as the hamburger menu are working.
 
+### The design in Figma
+
+https://www.figma.com/file/B7kleMlz4yhtsZgdc90LJi/LIFTLY--Week-9-Elin-Bradway?type=design&node-id=1%3A3&mode=design&t=0iGCAz2gNtngrco8-1
+
 ### View it live
 
 https://liftly.netlify.app/
