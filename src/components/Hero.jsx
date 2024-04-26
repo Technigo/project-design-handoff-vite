@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
-import { NormalButton } from "./Button";
-import { NavBar } from "./NavBar";
+import { NormalButton } from './Button'
+import { NavBar } from './NavBar'
 
 export const Hero = () => {
   return (
@@ -12,27 +12,27 @@ export const Hero = () => {
         <NormalButton />
       </StyledHero>
     </>
-  );
-};
+  )
+}
 
 //Styled Components
 
 const StyledHero = styled.div`
   height: 558px;
-  width: 100%;
+  width: 100vw;
   background-image: url(HeroPicture.svg);
-  //Hej, Izabel could you check how the picture is looking for you? I downloaded the big one but only see mobile size. Weird...
   background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-
-  @media screen and (min-width: 441px) {
-    height: 504px;
-    background-image: url(HeroTablet.svg);
-    background-position: center;
-  }
+  background-position: center;
 
   @media screen and (min-width: 834px) {
+    height: 504px;
+    background-image: url(HeroTablet.svg);
+  }
+
+  @media screen and (min-width: 1440px) {
     background-image: url(HeroDesk.svg);
   }
 
@@ -40,19 +40,16 @@ const StyledHero = styled.div`
     color: #fff;
     font-weight: bold;
     font-size: 46px;
-    margin: 0 24px;
+    margin: 0 24px 20px 0;
     padding: 183px 0 0 0;
-
-    @media screen and (min-width: 441px) {
-      padding: 140px 0 0 0;
-      width: 381px;
-      align-self: center;
-    }
+    align-self: center;
+    width: 381px;
 
     @media screen and (min-width: 834px) {
       width: 640px;
       font-size: 30px;
       padding: 268px 0 0 0;
+      margin: 0 24px;
     }
 
     @media screen and (min-width: 1440px) {
@@ -61,9 +58,7 @@ const StyledHero = styled.div`
   }
 
   button {
-    margin-top: 45px;
     align-self: center;
-    //There is just an auto margin between the text and the button. I tried to come close but maybe we need to ask Elin? Or do you see something in the design?
 
     @media screen and (min-width: 834px) {
       margin-top: 49px;
@@ -73,4 +68,4 @@ const StyledHero = styled.div`
       margin-top: 48px;
     }
   }
-`;
+`

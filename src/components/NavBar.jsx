@@ -4,11 +4,7 @@ export const NavBar = () => {
   return (
     <StyledNavBar>
       <h2>LIFTLY</h2>
-      <MobileNav>
-        <span className="hambuger-bar"/>
-        <span className="hambuger-bar"/>
-        <span className="hambuger-bar"/>
-      </MobileNav>
+      <MobileNav> <img src="HamburgerMenu.svg" /></MobileNav>
       <DesktopNav>
         <nav>
         <ul>

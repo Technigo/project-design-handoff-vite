@@ -43,20 +43,20 @@ const StyledDescription = styled.section`
     gap: 20px;
     padding: 20px 89px;
     height: 330px;
-  }`;
-  
+  }
+`
+
 const DescriptionText = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px 0;
-  border-bottom: ${({ $border }) => ($border ? 'solid 1px #FFFFFF80' : 'none')};
-  //I changed the color to be 50% transparent as in her design ;)
+  border-bottom: ${({ $border }) => ($border ? 'solid 1px #FFFFFF80' : 'none')}
 
   @media screen and (min-width: 834px) {
     border-bottom: none;
     border-right: ${({ $border }) =>
-      $border ? "solid 1px #FFFFFF80" : "none"};
+      $border ? 'solid 1px #FFFFFF80' : 'none'};
     padding: 0 20px 0 0;
     margin: 20px 0;
     width: 188px;

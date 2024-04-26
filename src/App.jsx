@@ -5,7 +5,7 @@ import { Body } from './components/Body'
 import { Footer } from './components/Footer'
 import { Hero } from './components/Hero'
 import { StickyButton } from './components/Button'
-import { StickyDesktopButton } from './components/button'
+import { StickyDesktopButton } from './components/Button'
 
 export const App = () => {
   return (
@@ -32,6 +32,7 @@ const GlobalStyle = createGlobalStyle`
 body {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
+  transition: all 0.4s;
   }
 
 h1, h2, h3, h4, p, button, li {
@@ -43,7 +44,12 @@ h1, h2, h3, h4, p, button, li {
 
 li{
   padding-left: 0;
-  list-style-type: none;
-  
+  list-style-type: none; 
 }
+li:hover{
+  background-color: rgba(153, 149, 149, 0.25);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
 `

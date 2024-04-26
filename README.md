@@ -1,41 +1,14 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
-
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
 ## Getting Started with the Project
 
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
-
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+This week we got a design from one of the design students and our instructions were to put the design into code and make the page come alive.
+We started by talking about how to structure the project with the components then the coding began. We worked mostly ansynchronous and keep each other in touch via Slack.
+The Responsivness took way longer than we though in the beginning but it worked out quite well in the end.
+Altough it wasn't part of the instructions we wanted to add some functionality therefore the select as well as the hamburger menu are working.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://liftly.netlify.app/

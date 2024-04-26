@@ -9,8 +9,8 @@ export const Download = () => {
   return (
     <StyledDownload>
       <picture className="weightpic">
-        <source media="(min-width: 835px)" srcSet="/weightDesk.svg" />
-        <source media="(min-width: 429px)" srcSet="/weightTablet.svg" />
+        <source media="(min-width: 1440px)" srcSet="/weightDesk.svg" />
+        <source media="(min-width: 834px)" srcSet="/weightTablet.svg" />
         <img src="weightLifting.svg" height="401" alt="weight lifting" />
       </picture>
       <div className="download-classes">
@@ -40,14 +40,14 @@ const StyledDownload = styled.section`
   .weightpic {
     height: 401px;
 
-      img {
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
 
-  @media screen and (min-width: 835px) {
+  @media screen and (min-width: 1440px) {
     display: flex;
     margin: 0 128px;
   }
@@ -61,7 +61,6 @@ const StyledDownload = styled.section`
     display: flex;
     flex-direction: column;
     margin: 20px 56px 0 24px;
-    //Changed the right boarder according to the design
     gap: 20px;
 
     @media screen and (min-width: 834px) {
@@ -69,9 +68,13 @@ const StyledDownload = styled.section`
       flex-direction: row;
       gap: 16px;
       justify-content: center;
+
+      .weightpic {
+        width: 681px;
+      }
     }
 
-    @media screen and (min-width: 835px) {
+    @media screen and (min-width: 1440px) {
       flex-direction: column;
       gap: 32px;
       margin: 0 32px;
@@ -86,7 +89,7 @@ const StyledDownload = styled.section`
         width: 279px;
       }
 
-      @media screen and (min-width: 835px) {
+      @media screen and (min-width: 1440px) {
         width: 455px;
       }
     }
@@ -99,7 +102,7 @@ const StyledDownload = styled.section`
         width: 279px;
       }
 
-      @media screen and (min-width: 835px) {
+      @media screen and (min-width: 1440px) {
         width: 455px;
       }
     }
@@ -110,7 +113,7 @@ const StyledDownload = styled.section`
     flex-direction: column;
     align-self: center;
 
-    @media screen and (min-width: 835px) {
+    @media screen and (min-width: 1440px) {
       flex-direction: row;
       gap: 24px;
       align-self: flex-start;
@@ -122,8 +125,7 @@ const StyledDownloadIcon = styled.img`
   width: 180px;
   margin-bottom: ${({ $margin }) => ($margin ? '18px' : '0')};
 
-  @media screen and (min-width: 834px) {
+  @media screen and (min-width: 1440px) {
     margin-bottom: 0;
   }
 `
-

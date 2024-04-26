@@ -132,7 +132,7 @@ const StyledSelect = styled.select`
   border: 1px solid #fff;
   border-radius: 5px;
   padding: 2px;
-  //Making the standart arrow dispappear according to stackoverflow;)
+  //Making the standart arrow dispappear
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;

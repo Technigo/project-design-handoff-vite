@@ -18,24 +18,21 @@ const StyledCTA = styled.section`
   width: 100%;
   background-image: url(CTAImg.svg);
   background-repeat: no-repeat;
-  background-position: cover;
+  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 14px;
-
-  @media screen and (min-width: 441px) {
-    background-image: url(CTATablet.svg);
-    background-position: center;
-  }
+  background-position: center;
 
   @media screen and (min-width: 834px) {
+    background-image: url(CTATablet.svg);
     gap: 24px;
-    background-image: url(CTADesk.svg);
   }
 
   @media screen and (min-width: 1440px) {
     gap: 42px;
+    background-image: url(CTADesk.svg);
   }
 
   h2 {
@@ -43,8 +40,6 @@ const StyledCTA = styled.section`
     font-weight: bold;
     font-size: 30px;
     padding: 265px 0 0 0;
-    //There is no fixed padding in the design for that. Should we check in with Elin?
-    /* margin: 0 24px; */
     width: 272px;
 
     @media screen and (min-width: 834px) {
