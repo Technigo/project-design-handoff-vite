@@ -11,10 +11,11 @@ export const FooterSection = ({ data, onLanguageChange }) => {
   <footer className="bg-main-blue text-text-light font-montserrat text-sm font-extralight text-left">
       <div className="p-6">
         <div className="language-toggle">
-        <button onClick={toggleLanguage}>
-          {data.locale === 'en' ? '日本語' : 'English'}
-        </button>
-      </div>
+          <select onChange={onLanguageChange} value={data.locale} style={{ backgroundColor: 'transparent', color: 'inherit', border: 'none' }}>
+            <option value="en">English</option>
+            <option value="jp">日本語</option>
+          </select>
+        </div>
       <div className="mb-4 w-full md:w-auto">
         <a href="/" className="flex items-center justify-center md:justify-start ">
         </a>
