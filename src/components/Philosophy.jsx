@@ -44,14 +44,13 @@ const PhiloSection = styled.section`
 `;
 
 const ImageWrapper = styled.div`
-  padding-top: 33px;
   position: relative;
   overflow: hidden;
 
   &::before {
     content: "";
     position: absolute;
-    top: 0;
+    top: 30%;
     left: 0;
     right: 0;
     bottom: 0;
@@ -66,7 +65,8 @@ const ImageWrapper = styled.div`
       z-index: 1;
       opacity: 1;
       right: -100%;
-      bottom: 14%;
+      top: 14%;
+      bottom: 18%;
     }
 
     @media all and (min-width: 744px) {
@@ -79,7 +79,8 @@ const ImageWrapper = styled.div`
 const PhiloWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 15px 0;
+  padding: 33px 15px 0 15px;
+
   position: relative; //keeps content positioned correctly in the wrapper
   z-index: 1;
 
@@ -90,22 +91,12 @@ const PhiloWrapper = styled.div`
     column-gap: 21px;
     row-gap: 65px;
     justify-items: start;
-    padding: 0 93px;
+    padding: 33px 93px 0 93px;
   }
 `;
 
 const TitleTextWrapper = styled.div`
-  /* color: var(--primary-prpl);
-  ${({ isTablet, isSelected }) =>
-    !isTablet &&
-    isSelected &&
-    `color: var(--primary-prpl);`} // Purple when selected on smaller screens
-
-  @media all and (min-width: 744px) {
-    &:hover {
-      color: var(--primary-prpl); // Purple on hover for tablet or bigger
-    }
-  } */
+  /* background-color: white; */
 `;
 
 const PhiloTitle = styled.h3`
@@ -224,14 +215,15 @@ export const Philosophy = () => {
   };
 
   return (
-    <PhiloSection>
-      <HeadingTwo>The Philosophy</HeadingTwo>
-      <ParagraphTwo>
-        We aim to nurture the seeds of a yogic lifestyle, knowing they&#39;ll
-        blossom uniquely in each of us. May you discover your center, your
-        essence, and make room for it in your daily life.
-      </ParagraphTwo>
-      <ImageWrapper>
+    <ImageWrapper>
+      <PhiloSection>
+        <HeadingTwo>The Philosophy</HeadingTwo>
+        <ParagraphTwo>
+          We aim to nurture the seeds of a yogic lifestyle, knowing they&#39;ll
+          blossom uniquely in each of us. May you discover your center, your
+          essence, and make room for it in your daily life.
+        </ParagraphTwo>
+        {/* <ImageWrapper> */}
         <PhiloWrapper>
           {philoData.map((data, index) => (
             <TitleTextWrapper
@@ -252,7 +244,8 @@ export const Philosophy = () => {
             </TitleTextWrapper>
           ))}
         </PhiloWrapper>
-      </ImageWrapper>
-    </PhiloSection>
+        {/* </ImageWrapper> */}
+      </PhiloSection>
+    </ImageWrapper>
   );
 };
