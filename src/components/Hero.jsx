@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
-import { NormalButton } from './Button'
-import { NavBar } from './NavBar'
+import { NormalButton } from "./Button";
+import { NavBar } from "./NavBar";
 
 export const Hero = () => {
   return (
@@ -12,8 +12,8 @@ export const Hero = () => {
         <NormalButton />
       </StyledHero>
     </>
-  )
-}
+  );
+};
 
 //Styled Components
 
@@ -40,7 +40,7 @@ const StyledHero = styled.div`
     color: #fff;
     font-weight: bold;
     font-size: 46px;
-    margin: 0 24px 20px 0;
+    margin: 0 24px 20px 24px;
     padding: 183px 0 0 0;
     align-self: center;
     width: 381px;
@@ -68,4 +68,4 @@ const StyledHero = styled.div`
       margin-top: 48px;
     }
   }
-`
+`;
