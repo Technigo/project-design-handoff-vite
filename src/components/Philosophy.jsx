@@ -69,9 +69,11 @@ const ImageWrapper = styled.div`
       bottom: 18%;
     }
 
-    @media all and (min-width: 744px) {
-      z-index: 1;
-      opacity: 1;
+    @media all and (min-width: 1024px) {
+      top: 25%;
+      left: 0;
+      right: 0;
+      bottom: 21%;
     }
   }
 `;
@@ -90,13 +92,27 @@ const PhiloWrapper = styled.div`
     grid-template-columns: repeat(2, 1fr);
     column-gap: 21px;
     row-gap: 65px;
-    justify-items: start;
-    padding: 33px 93px 0 93px;
+    padding: 50px 93px 0 93px;
+  }
+  @media all and (min-width: 1024px) {
+    //to put it into two columns on tablet
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 350px;
+    row-gap: 77px;
+    padding: 85px 93px 0 93px;
   }
 `;
 
 const TitleTextWrapper = styled.div`
-  /* background-color: white; */
+  text-align: center; // Default alignment
+
+  @media all and (min-width: 1024px) {
+    justify-self: ${(props) =>
+      props.index % 2 === 0
+        ? "start"
+        : "end"}; // Left or right alignment based on index
+  }
 `;
 
 const PhiloTitle = styled.h3`
@@ -113,6 +129,8 @@ const PhiloTitle = styled.h3`
 
   @media all and (min-width: 1024px) {
     font-size: 28px;
+    text-align: ${(props) =>
+      props.index % 2 === 0 ? "left" : "right"}; // Left or right based on index
   }
   ${({ isTablet, isSelected }) =>
     !isTablet &&
@@ -141,6 +159,8 @@ const PhiloText = styled.p`
 
   @media all and (min-width: 1024px) {
     font-size: 18px;
+    text-align: ${(props) =>
+      props.index % 2 === 0 ? "left" : "right"}; // Left or right based on index
   }
 
   @media all and (min-width: 744px) {
@@ -232,6 +252,7 @@ export const Philosophy = () => {
               isSelected={selected === index}
             >
               <PhiloTitle
+                index={index}
                 isTablet={isTablet}
                 isSelected={selected === index}
                 onClick={() => handleTitleClick(index)}
@@ -239,7 +260,7 @@ export const Philosophy = () => {
                 {data.title}
               </PhiloTitle>
               {(isTablet || selected === index) && (
-                <PhiloText>{data.answer}</PhiloText>
+                <PhiloText index={index}>{data.answer}</PhiloText>
               )}
             </TitleTextWrapper>
           ))}
