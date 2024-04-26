@@ -1,73 +1,46 @@
-import { useState } from "react";
-import { useSwipeable } from "react-swipeable";
-import styled from "styled-components";
-
-
-
-const Slide = styled.div`
-  flex: 0 0 100%;
-  transition: transform 0.5s ease;
-  transform: translateX(${(props) => props.translateValue}%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 64px;
-
-  @media (min-width: 744px) {
-    gap: 80px;
-  } 
-`
-
-const feedback = [{
-  image: "./src/assets/feedback/JimDeskTabl.png",
-  text: "“I am so happy that I found Urban Spin for me, the classes are giving me the best balance after a stressful day at work!”",
-  name: "Jim Svensson, Architect"
-},
-{
-  image: "./src/assets/feedback/ElviraDeskTabl.png",
-  text: "“The classes at Urban Spin are my highlight of the week. The instructors are amazing and the high-beat music gives the right push. Love it!”",
-  name: "Elvira Andersson, Influencer"
-},
-{
-  image: "./src/assets/feedback/MikeDeskTabl.png",
-  text: "“What I love the most is the flexibility, there are so many classes during the week! And of course, the session itself.”",
-  name: "Mike Kjell, Project Manager"
-}]
+import styled from "styled-components"
+import { useCarousel } from "../contexts/CarouselContext.jsx"
 
 export const Carousel = () => {
-  const [index, setIndex] = useState(0);
+  const { feedbackNumber, feedback, handlers } = useCarousel()  
 
-  const handlers = useSwipeable({
-    onSwipedLeft: () => setIndex(prevIndex => (prevIndex === feedback.length - 1 ? 0 : prevIndex + 1)),
-    onSwipedRight: () => setIndex(prevIndex => (prevIndex === 0 ? feedback.length - 1 : prevIndex - 1)),
-    preventDefaultTouchmoveEvent: true,
-    trackMouse: true
-  });
-
-  const translateValue = -index * 100;
+  const translateValue = -feedbackNumber * 100;
 
   return (
-    <CarouselContainer {...handlers}>
-      {feedback.map(({ image, text, name, id }) => (
+    <CarouselContainer {...handlers} className="carousel">
+      {feedback.map(({ image, text, name, title, id }) => (
         <Slide key={id} translateValue={translateValue}>
           <CarouselBox>
             <Image src={image} alt={`Image of ${name}`} />
             <TextDiv>
               <Text>{text}</Text>
-              <Name>{name}</Name>
+              <NameDiv>
+                <Name>{name}</Name>
+                <p>{title}</p>
+              </NameDiv>
             </TextDiv>
           </CarouselBox>
         </Slide>
       ))}
     </CarouselContainer>
-  );
+  )
 }
 
 const CarouselContainer = styled.div`
+  @media (max-width: 1493px) {
   display: flex;
   flex-direction; row;
   overflow: hidden;
   width: 100%;
+  preventScrollOnSwipe: true,
+`
+
+const Slide = styled.div`
+  @media (max-width: 1493px) {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease;
+    transform: translateX(${(props) => props.translateValue}%);
+  }
 `
 
 const CarouselBox = styled.div`
@@ -84,6 +57,12 @@ const CarouselBox = styled.div`
     gap: 40px;
     margin-left: 32px;
     margin-right: 184px;
+  }
+
+  @media (min-width: 1494px) {
+    margin: 0 40px;
+    align-items: flex-start;
+    gap: 64px;
   }
 `
 
@@ -102,18 +81,24 @@ const TextDiv = styled.div`
   flex-direction: column;
   gap: 16px;
 
-  @media (min-width: 744px) and (max-width: 1493px) {
+  @media (min-width: 744px) {
     gap: 32px;
   }
 `
 
 const Text = styled.p`
-  font-size: 16px;
   font-style: italic;
   text-align: left;
-  
+`
+
+const NameDiv = styled.div`
+  text-align: left;
+  display: flex;
+  flex-direction: column;
 `
 
 const Name = styled.p`
-  text-align: left;
+  @media (min-width: 744px) and (max-width: 1493px) {
+    font-size: 20px;
+  }
 `

@@ -1,5 +1,5 @@
-import { Carousel } from "./Carousel.jsx"
 import styled from "styled-components"
+import { Carousel } from "./Carousel.jsx"
 import { useCarousel } from "../contexts/CarouselContext.jsx"
 
 export const Feedback = () => {
@@ -10,9 +10,18 @@ export const Feedback = () => {
       <FeedbackTitle>Feedback by Urban Spinners</FeedbackTitle>
       <Carousel />
       <ButtonContainer>
-        <CarouselBtn onClick={changeNumber(1)} />
-        <CarouselBtn onClick={changeNumber(2)} />
-        <CarouselBtn onClick={changeNumber(3)} />
+        <CarouselBtnOne
+          onClick={() => changeNumber(0)}
+          number={feedbackNumber}
+        />
+        <CarouselBtnTwo
+          onClick={() => changeNumber(1)}
+          number={feedbackNumber}
+        />
+        <CarouselBtnThree
+          onClick={() => changeNumber(2)}
+          number={feedbackNumber}
+        />
       </ButtonContainer>
     </StyledFeedback>
   )
@@ -57,15 +66,27 @@ const ButtonContainer = styled.div`
 `
 
 const CarouselBtn = styled.button`
-  background-color: #d9d9d9;
   border-radius: 50%;
   border: none;
   height: 8px;
   width: 8px;
   padding: 0;
+  cursor: pointer;
 
   @media (min-width: 744px) {
     height: 16px;
     width: 16px;
   }
+`
+
+const CarouselBtnOne = styled(CarouselBtn)`
+  background-color: ${(props) => (props.number === 0 ? "#989898" : "#d9d9d9")};
+`
+
+const CarouselBtnTwo = styled(CarouselBtn)`
+  background-color: ${(props) => (props.number === 1 ? "#989898" : "#d9d9d9")};
+`
+
+const CarouselBtnThree = styled(CarouselBtn)`
+  background-color: ${(props) => (props.number === 2 ? "#989898" : "#d9d9d9")};
 `

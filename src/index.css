@@ -68,7 +68,7 @@ li {
   color: var(--black);
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  line-height: 22.4px; /* 140% */
+  line-height: 22.4px;
   margin: 0;
 }
 
@@ -76,6 +76,11 @@ button {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
   line-height: 22.4px;
+}
+
+.carousel {
+  display: flex;
+  margin: 0 -40px;
 }
 
 
