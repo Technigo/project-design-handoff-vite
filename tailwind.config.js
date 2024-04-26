@@ -11,6 +11,7 @@ export default {
         "Inter": ["Inter", "sans-serif"],
       },
       fontSize: {
+        "logo-h1-dt": "8.375rem",
         "title-h1-dt": "4.375rem",
         "title-h2-dt": "3.063rem",
         "title-h3-dt": "2.25rem",
@@ -34,6 +35,10 @@ export default {
         "darkblue": "#042d43",
         "lightgray": "#042d43",
       },
+      
+      lineHeight:{
+        "12": "6.4rem"
+      }
     },
   },
   plugins: [],

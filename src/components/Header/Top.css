@@ -1,4 +1,4 @@
-.top{
+/* .top{
   z-index: 2;
   display: flex;
   flex-direction: row;
@@ -10,7 +10,7 @@
   position: absolute;
   justify-content: center;
   align-items: center;
-  margin: 1em 0 0 1em;
+  margin: 1em 0 0 2em;
   color: #042D43;
   top: 0;
 }
@@ -63,4 +63,4 @@
 
 .menu img{
   width: 50px;
-}
+} */
