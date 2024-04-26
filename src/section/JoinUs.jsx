@@ -7,29 +7,37 @@ import { Image } from "../component/Image";
 // import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { useState, useEffect } from "react"
 
-const CarouselButtons = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const buttonTexts = ["Who are we?", "Our trainers", "Health benefits"]
 
-  const nextButton = () => {
-    setCurrentIndex((prevIndex) => {prevIndex + 1})
-  }
-}
 
 
 
 export const JoinUs = () => {
+
+  
+    const [currentIndex, setCurrentIndex] = useState(0)
+    const buttonTexts = ["Who are we?", "Our trainers", "Health benefits"]
+  
+    const nextButton = () => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % buttonTexts.length)
+    }
+  
+    const prevButton = () => {
+      setCurrentIndex((prevIndex) => (prevIndex - 1 + buttonTexts.length) % buttonTexts.length)
+    }
+  
   return (
     <div className="flex flex-col items-center gap-28 px-9 md:gap-8">
       <ButtonPrimary text={"Join us"} addedClasses="py-21 px-6" />
-
+      
+      <ButtonSecondary text={buttonTexts[currentIndex]} />
+      <button onClick={nextButton}>next</button>
    
-      <ButtonSecondary text={"Who are we?"} />
+      {/* <ButtonSecondary text={"Who are we?"} />
       
       <ButtonSecondary text={"Our trainers"} />
       
       <ButtonSecondary text={"Health benefits"} />
-      
+       */}
 
       <ButtonSecondary text={"Membership cards"} />
 
