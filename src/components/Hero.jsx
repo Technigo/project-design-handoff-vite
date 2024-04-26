@@ -46,7 +46,7 @@ const StyledHero = styled.div`
     max-width: 378px;
 
     @media screen and (min-width: 834px) {
-      width: 640px;
+      max-width: 640px;
       font-size: 30px;
       padding: 268px 0 0 0;
       margin: 0 24px;
