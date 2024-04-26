@@ -6,7 +6,8 @@ export const CTA = ({ title, description, buttonText, showInput }) => {
     <div className="font-montserrat border-b border-t bg-off-black text-center">
       <div className="bg-banner-phone w-full h-10 bg-repeat-x tablet:h-16 tablet:bg-banner-desktop" />
       <div className="font-montserrat text-center px-4">
-        <h2 className="text-white text-2xl font-medium mt-16 desktop:text-4xl">
+        <h2 className="text-white text-2xl font-medium mt-16 tablet:pt-32 desktop:text-4xl">
+
           {title}
         </h2>
         <p className="text-white">{description}</p>
@@ -18,7 +19,7 @@ export const CTA = ({ title, description, buttonText, showInput }) => {
             aria-label="Email address"
           />
         )}
-        <div className="mt-6 mb-16">
+        <div className="mt-6 mb-16 tablet:mb-32">
           <Button buttonText={buttonText} />
         </div>
       </div>
