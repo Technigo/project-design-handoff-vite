@@ -1,32 +1,40 @@
 import contactImage from "../assets/contactImages/contactImage.png";
-
+import { Buttons } from "../components/Buttons.jsx"
 import styled from "styled-components";
 
 export const Contact = () => {
   return (
-    <ContactSection>
+    <>
+    <ContactImage></ContactImage>
       <ContactContent>
-        <h1>Not sure what to chose?</h1>
+        <ContactText>
+        <h1>Not sure what to choose?</h1>
         <p>We are happy to help. Let’s chat!</p>
-        <CtaButton>Start a chat</CtaButton>
+        </ContactText>
+        <Buttons>test</Buttons>
       </ContactContent>
-    </ContactSection>
+      </>
   );
 };
+const ContactContent = styled.div`
+background-color: #e6f4ff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-bottom: 24px;
+`;
 
-const ContactSection = styled.div`
+const ContactImage = styled.div`
   background-image: url(${contactImage});
   background-size: cover;
   background-position: top;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 600px;
+  height: 240px;
 `;
 
-const ContactContent = styled.div`
-  display: flex;
-  flex-direction: column;
+const ContactText = styled.div`
   h1 {
     color: var(--Powder-Black, #0b1623);
     font-family: Philosopher;
@@ -36,6 +44,7 @@ const ContactContent = styled.div`
     line-height: 130%; /* 46.8px */
     letter-spacing: 1.08px;
     padding-left: 24px;
+    margin-bottom: 24px;
   }
   p {
     color: var(--Powder-Black, #0b1623);
@@ -47,27 +56,6 @@ const ContactContent = styled.div`
     line-height: 130%;
     width: 220px;
     padding-left: 24px;
-    margin-bottom: 180px;
+    margin-bottom: 40px;
   }
-`;
-const CtaButton = styled.button`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 342px;
-  height: 48px;
-
-  border-radius: 32px;
-  border: 1px solid var(--Powder-Black, #0b1623);
-  background: var(--Powder-Accent-2, #f2ff49);
-  box-shadow: 2px 3px 0px 0px #0b1623;
-  display: ;
-
-  color: var(--Powder-Black, #0b1623);
-  font-family: Mulish;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%; /* 16px */
 `;

@@ -4,6 +4,8 @@ import { OurOfferings } from "./components/OurOfferings";
 import { OurLessons } from "./components/OurLessons";
 import { Contact } from "./components/Conatct";
 import { TestimonialCards } from "./components/TestimonialCards";
+import { MakeYourPick } from "./components/MakeYourPick";
+import { Footer } from "./components/Footer"
 
 //import { Buttons } from "./components/Buttons";
 //import { CardsCarousel } from "./components/CardsCarousel";
@@ -15,8 +17,10 @@ export const App = () => {
       <Hero />
       <OurOfferings />
       <OurLessons />
-      <Contact />
       <TestimonialCards />
+      <MakeYourPick />
+      <Contact />
+      <Footer/>
     </>
   );
 };

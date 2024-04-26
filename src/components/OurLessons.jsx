@@ -1,49 +1,60 @@
-import LessonsImage from "../assets/OurLessonImages/OurLessonsImage.png";
+import LessonsImage from "../assets/ourLessonsImages/OurLessonsImage.png";
+import { Buttons } from "./Buttons";
 
 import styled from "styled-components";
 
 export const OurLessons = () => {
   return (
-    <OurLessonSection>
+    <>
+      <OurLessonsImage></OurLessonsImage>
       <OurLessonContent>
-        <h1>Our Lesson</h1>
-        <p>
-          Personalise your stay and add our snowboarding lessons! Whether you're
-          just starting out or have already some skills - we offer lessons that
-          suit every Powder Betty’s need!
-        </p>
+        <OurLessonsText>
+          <h1>Our Lessons</h1>
+          <p>
+            Personalise your stay and add our snowboarding lessons! Whether
+            you're just starting out or have already some skills - we offer
+            lessons that suit every Powder Betty’s need!
+          </p>
+        </OurLessonsText>
+        <Buttons>Explore our Lessons</Buttons>
       </OurLessonContent>
-      <CtaButton>Explore our Lessons</CtaButton>
-    </OurLessonSection>
+    </>
   );
 };
 
-const OurLessonSection = styled.div`
+const OurLessonContent = styled.div`
+  background-color: #e6f4ff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 24px;
+  padding-bottom: 24px;
+`;
+
+const OurLessonsImage = styled.div`
   background-image: url(${LessonsImage});
   background-size: cover;
-  background-position: top;
+  background-repeat: no-repeat;
+  background-position: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 600px;
+  height: 240px;
 `;
 
-const OurLessonContent = styled.div`
-  display: flex;
-  flex-direction: column;
+const OurLessonsText = styled.div`
   h1 {
-    color: var(--Powder-Black, #0b1623);
+    color: #0b1623;
     font-family: Philosopher;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 130%; /* 46.8px */
+    line-height: 130%;
     letter-spacing: 1.08px;
     padding-left: 24px;
+    margin-bottom: 24px;
   }
   p {
-    color: var(--Powder-Black, #0b1623);
-    /* Powder/Mobile/Hero text */
+    color: #0b1623;
     font-family: Mulish;
     font-size: 18px;
     font-style: normal;
@@ -51,27 +62,6 @@ const OurLessonContent = styled.div`
     line-height: 130%;
     width: 220px;
     padding-left: 24px;
-    margin-bottom: 180px;
+    margin-bottom: 40px;
   }
-`;
-const CtaButton = styled.button`
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 342px;
-  height: 48px;
-
-  border-radius: 32px;
-  border: 1px solid var(--Powder-Black, #0b1623);
-  background: var(--Powder-Accent-2, #f2ff49);
-  box-shadow: 2px 3px 0px 0px #0b1623;
-  display: ;
-
-  color: var(--Powder-Black, #0b1623);
-  font-family: Mulish;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 100%; /* 16px */
 `;
