@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="">
-    <img src="/public/liftly-overview.png" alt="Project Banner Image">
+    <img src="/public/liftly.png" alt="Project Banner Image">
   </a>
 </h1>
 
