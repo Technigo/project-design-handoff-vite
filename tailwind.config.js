@@ -5,14 +5,18 @@ export default {
     extend: {
       borderRadius: {
         'custom': '30px', 
+        "custom-two": "40px"
       },
       width: {
-        'custom-width': '92px',
+        "custom-width": '92px',
         "width-two": "361px",
+        "width-three": "620px",
       },
       height: {
-        'custom-height': '87px', 
-        "height-two": "315px",
+        "custom-height": '87px', 
+        "height-two": "376px",
+        "height-three": "315px",
+        "height-four": "494px",
       },
       colors: {
         blue: "#0F3057",
@@ -40,7 +44,6 @@ export default {
         "custom-btn-p": "0 2px 0px 0px rgb(0 0 0)",
       },
     },
-
     fontFamily: {
       "rock-salt": ['"Rock Salt"', "cursive"],
       "roboto-mono": ["Roboto Mono", "monospace"],
