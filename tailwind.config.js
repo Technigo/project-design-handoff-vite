@@ -28,6 +28,7 @@ export default {
       },
       height: {
         mhero: ["377px"],
+        "max-content": "max-content",
       },
       dropShadow: {
         button: "0 5px 2px rgba(0, 0, 0, 0.9)",
