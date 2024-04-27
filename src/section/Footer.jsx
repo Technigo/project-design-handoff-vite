@@ -5,8 +5,8 @@ import { Text } from "../component/Text";
 export const Footer = () => {
   return (
     // <div className="bg-aqua">
-    <div className="container mx-auto w-fit bg-aqua  ">
-      <div className="flex flex-col px-9 md:mx-69 font-inter text-base font-bold gap-y-2.5 pb-10">
+    <div className="w-screen bg-aqua">
+      <div className="flex flex-col mx-9 md:mx-69 font-inter text-base font-bold gap-y-2.5 pb-10">
         <div className="flex flex-row gap-8 border border-black cursor-pointer rounded-full w-44 mt-1.5  md:mt-18">
           <Image link={"/Images/globe.svg"} />
 
@@ -34,7 +34,8 @@ export const Footer = () => {
             text={"Runebergsgatan 44 Helsingfors"}
           />
         </div>
-        <span className="flex text-xs gap-x-1 md:pb-21">
+        <span className="flex text-xs  gap-x-1 mb-7 md:pb-21">
+         
           <Image link={"/Images/copyright.svg"} />
           <Text text={"2024 HIITFORYOU"} />
           <Link

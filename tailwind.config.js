@@ -5,7 +5,8 @@ export default {
     extend: {
       borderRadius: {
         'custom': '30px', 
-        "custom-two": "40px"
+        "custom-two": "40px",
+        "custom-three": "1000px",
       },
       width: {
         "custom-width": '92px',

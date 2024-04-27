@@ -30,27 +30,35 @@ export const Testimonial = () => {
 
       <div class="relative md:block">
         {windowWidth >= 1280 ? (
-          <div>
+          <div className="text-32">
             <img
-              className="h-height-seven w-width-five object-cover"
+              className="h-height-seven w-width-five object-cover mx-auto"
               src={"/Images/barbell.svg"}
             />
-            <div className="h-height-eight w-width-six absolute inset-6 bg-white bg-opacity-50"></div>
+            <div className="h-height-eight w-width-six absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-70">
             <div
-              className="absolute inset-0 flex flex-col items-center justify-evenly
+              className="absolute inset-0 flex flex-col items-center justify-between
              "
             >
-              <ButtonPrimary text={"Join us"} addedClasses="text-32 p-2.5 " />
-
-              <div>
-                <ButtonSecondary text={"Who are we?"} />
-                <ButtonSecondary text={"Our trainers"} />
-                <ButtonSecondary text={"Health benefits"} />
+              <div className="">
+              <ButtonPrimary text={"Join us"} addedClasses="p-2.5" />
               </div>
+
+              <div className="flex flex-row justify-between w-full px-4">
+                
+                <ButtonSecondary addedClasses="p-2.5 rounded-lg" text={"Who are we?"} />
+                
+                <ButtonSecondary addedClasses="p-2.5 rounded-lg" text={"Our trainers"} />
+                
+                <ButtonSecondary addedClasses="p-2.5 rounded-lg" text={"Health benefits"} />
+              </div>
+              <div className="flex flex-row justify-between w-full px-4 mb-4">
               <ButtonSecondary
-                addedClasses="md:rounded-custom-two md:px-2.5 md:py-5 md:w-width-three"
+                addedClasses="p-2.5 rounded-lg w-full "
                 text={"Membership cards"}
               />
+              </div>
+              </div>
             </div>
           </div>
         ) : (
@@ -68,7 +76,7 @@ export const Testimonial = () => {
               <Image
                 className="mt-7 h-height-two w-width-two object-cover md:mt-0 md:h-height-four md:w-width-three"
                 link={"/Images/weights.svg"}
-                alt={"people lifting weights"}
+                imgText={"people lifting weights"}
               />
         
       </div>
