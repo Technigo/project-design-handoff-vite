@@ -42,6 +42,8 @@ const OurLessonsImage = styled.div`
 `;
 
 const OurLessonsText = styled.div`
+  margin-left: 24px;
+  margin-right: 24px;
   h1 {
     color: #0b1623;
     font-family: Philosopher;
@@ -50,8 +52,6 @@ const OurLessonsText = styled.div`
     font-weight: 700;
     line-height: 130%;
     letter-spacing: 1.08px;
-    padding-left: 24px;
-    margin-bottom: 24px;
   }
   p {
     color: #0b1623;
@@ -60,8 +60,6 @@ const OurLessonsText = styled.div`
     font-style: normal;
     font-weight: 600;
     line-height: 130%;
-    width: 220px;
-    padding-left: 24px;
     margin-bottom: 40px;
   }
 `;
