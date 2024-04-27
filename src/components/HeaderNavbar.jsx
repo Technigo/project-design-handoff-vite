@@ -1,14 +1,16 @@
 import styled from "styled-components";
 import navbarLogo from "../assets/heroSectionImages/navbarLogoBlack.png";
-import dropdownMenu from "../assets/heroSectionImages/menu.png";
+import menuIcon from "../assets/heroSectionImages/menu.png";
+import { Dropdown } from "./Dropdown"
 
 export const HeaderNavbar = () => {
   return (
     <>
       <Navbar>
-        <NavbarLogo></NavbarLogo>
-        <NavbarMenu></NavbarMenu>
+        <NavbarLogo src={navbarLogo} />
+        <Dropdown />
       </Navbar>
+    
     </>
   );
 };
@@ -18,9 +20,7 @@ const Navbar = styled.div`
   justify-content: space-between;
 `;
 
-const NavbarLogo = styled.div`
-  background-image: url(${navbarLogo});
-  background-repeat: no-repeat;
+const NavbarLogo = styled.img`
   height: 34.471px;
   width: 100px;
   flex-shrink: 1;
@@ -28,11 +28,9 @@ const NavbarLogo = styled.div`
   padding-top: 40px;
 `;
 
-const NavbarMenu = styled.div`
-  background-image: url(${dropdownMenu});
-  background-repeat: no-repeat;
-  background-position: right;
-  width: 50px;
-  margin-bottom: 50px;
-  margin-right: 24px;
-`;
+// const NavbarMenu = styled.img`
+// padding-right: 24px;
+// padding-top: 30px;
+// width: 40px;
+// height: 40px;
+// `;
