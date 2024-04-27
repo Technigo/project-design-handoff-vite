@@ -16,6 +16,26 @@ const StyledCard = styled.div`
   font-style: normal;
   font-weight: 500;
   font-family: Avenir, sans-serif;
+
+  // Responsive styles for tablets and smartphones
+
+  //For smartphones
+  @media (min-width: 375px) and (max-width: 744px) {
+    width: 395px;
+    height: 216px;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 24px;
+    padding: 16px;
+  }
+
+  //For tablets
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 680px;
+    height: 232px;
+    padding: 16px 24px;
+    gap:24px;
+  }
 `;
 
 // Styled component for the class image
@@ -25,18 +45,39 @@ const StyledClassImage = styled.img`
   object-fit: cover;
   border-radius: 12px;
   opacity: 0.96;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 228px;
+    height: 200px;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    width: 158px;
+    height: 200px;
+  }
 `;
 
 // Styled container for text and button
 const StyledTextButton = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
-  align-items: flex-start; 
+  justify-content: space-between;
+  align-items: flex-start;
   width: 248px;
   font-family: Avenir, sans-serif;
   gap: 16px;
-  font-size: 16px;
+  font-size: 17px;
+
+  @media (min-width:375px) and (max-width: 744px) {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 100%;
+    padding-left: 40px;
+    padding-top: 16px;
+    }
 `;
 
 // Styled component for the class description
@@ -44,6 +85,13 @@ const StyledClassDescription = styled.div`
   color: #000;
   font-weight: 500;
   margin: 0;
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 16px;
+    }
 `;
 
 // Styled component for the button
@@ -59,20 +107,36 @@ const StyledButton = styled.button`
   &:hover {
     background-color: #552a1c;
   }
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    width: 175px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 336px;
+  }
 `;
 
 // Styled component for the button, centered
 const StyledButtonWrapper = styled.div`
   display: flex;
-  justify-content: center; // Centers the button within its wrapper
-  width: 100%; // Ensures the wrapper takes full width for centering
-`;
+  justify-content: center;
+  width: 100%;
 
+
+`;
 
 const StyledClassName = styled.p`
   color: #000;
-  padding-top: 16px;
   margin: 0;
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 16px;
+  }
 `;
 
 //Hard code the class card

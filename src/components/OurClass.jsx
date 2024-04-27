@@ -18,6 +18,8 @@ const StyledOurClass = styled.section`
     justify-content: center;
     align-items: center;
   }
+
+
 `;
 
 
@@ -33,6 +35,16 @@ const StyledClassesContainer = styled.div`
   width: 100%;
   margin-top: 80px;
   margin-bottom: 80px;
+
+  //responsive
+  @media (max-width: 1200px) {
+  }
+
+  @media (max-width: 985px) {
+  }
+
+  @media (max-width: 744px) {
+  }
 `;
 
 export const OurClass = () => {
