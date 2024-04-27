@@ -56,6 +56,14 @@ const YogiSection = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media all and (min-width: 744px) {
+    padding: 64px 55px;
+  }
+
+  @media all and (min-width: 1024px) {
+    padding: 90px 110px;
+  }
 `;
 
 const SliderWrapper = styled.div`
@@ -97,7 +105,7 @@ export const Yogis = () => {
   const sliderSettings = {
     className: "center",
     centerMode: true,
-    centerPadding: "20px",
+    centerPadding: "10px",
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
