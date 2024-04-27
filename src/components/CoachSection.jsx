@@ -42,7 +42,7 @@ const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: ;
+/*   align-items: ; */
   position: relative;
   padding: 64px 32px;
   background-color: var(--yellow);

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { breakpoints } from "./breakpoints";
 
 export const Button = styled.button`
@@ -13,7 +14,7 @@ export const Button = styled.button`
   line-height: ${(props) => props.lineHeight || "20px"};
   cursor: pointer;
   text-align: center;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease-in-out;
 
   /* Base inner shadow for depth */
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -21,7 +22,7 @@ export const Button = styled.button`
   &:hover {
     /* Darker and deeper inner shadow */
     box-shadow: 
-      0px -4px 8px 0px rgba(0, 0, 0, 0.35) inset;
+      0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 
     /* Change background color on hover */
     background: ${(props) => props.hoverBackground || "var(--yellow)"};
@@ -33,7 +34,7 @@ export const Button = styled.button`
   }
 
   @media (min-width: ${breakpoints.desktop}) {
-    padding: 24px px48;
+padding: 24px 48px; 
     font-size: 24px;
     line-height: 32px;
   }

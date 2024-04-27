@@ -18,7 +18,7 @@ export function HeroSection() {
 }
 
 const Hero = styled.section`
- padding: 64px 32px;
+ padding: var(--padding-mobile);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -28,13 +28,12 @@ const Hero = styled.section`
   background-position: center;
   
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 64px;
-    height: 544px;
+    padding: var(--padding-tablet)
   }
 
 
   @media (min-width: ${breakpoints.desktop}) {
-    padding: 98px 128px;
+    padding: var(--padding-desktop);
   }
 
 `;
@@ -45,10 +44,10 @@ const HeroContent = styled.div`
   justify-content: flex-end; */
   gap: 32px;
 
-  @media (min-width: ${breakpoints.tablet}) {
+  /* @media (min-width: ${breakpoints.tablet}) {
  
   }
-
+ */
   @media (min-width: ${breakpoints.desktop}) {
     gap: 48px;
   }
@@ -56,22 +55,6 @@ const HeroContent = styled.div`
 
 const Headline = styled.h1`
   color: var(--yellow);
-  font-size: 32px;
-  line-height: 40px;
-  font-weight: 500;
-  font-family: var(--header);
-/*   text-align: left; */
-  margin-top: 0;
-
-  @media (min-width: ${breakpoints.tablet}) {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  @media (min-width: ${breakpoints.desktop}) {
-    font-size: 56px;
-    line-height: 56px;
-  }
 `;
 
 const Highlight = styled.span`

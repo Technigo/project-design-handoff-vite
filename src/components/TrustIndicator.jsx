@@ -39,15 +39,15 @@ export function TrustIndicator() {
     <TrustSection>
       <TrustTextWrapper>
         <TrustTitle>{title}</TrustTitle>
-        <TrustSubtitle>{subtitle}</TrustSubtitle>
-        <TrustParagraph>{paragraph}</TrustParagraph>
+        <p className="main-paragraph">{subtitle}</p>
+        <p className="secondary-paragraph">{paragraph}</p>
       </TrustTextWrapper>
     </TrustSection>
   );
 }
 
 const TrustSection = styled.section`
-  padding: 64px 32px;
+  padding: var(--padding-mobile);
   background: var(--yellow);
   flex-direction: column;
   justify-content: center;
@@ -55,11 +55,11 @@ const TrustSection = styled.section`
   align-self: stretch;
 
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 64px;
+    padding: var(--padding-tablet);
   } 
 
   @media (min-width: ${breakpoints.desktop}) {
-    padding: 96px 128px; 
+    padding: var(--padding-desktop); 
   }
 `;
 
@@ -68,10 +68,15 @@ const TrustTextWrapper = styled.div`
   width: 326px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 8px;
+  color: var(--blue); //adding the color here because there were no defined properties for the title in the design. 
+  font-family: var(--paragraph); 
+  font-weight: 500;
+  margin: 0;
+
 
   @media (min-width: ${breakpoints.tablet}) {
     width: 472px;
+    gap: 8px;
   }
 
   @media (min-width: ${breakpoints.desktop}) {
@@ -79,57 +84,12 @@ const TrustTextWrapper = styled.div`
   }
 `;
 
-const BaseText = styled.p`
-  color: var(--blue);
-  font-family: var(--paragraph); /* Default font for all text */
+const TrustTitle = styled.p`
+  font-size: 48px;
   font-weight: 500;
   margin: 0;
-`;
-
-const TrustTitle = styled(BaseText)`
-  font-size: 48px;
 
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 56px;
-  }
-
-  @media (min-width: ${breakpoints.desktop}) {
-    font-size: 56px;
-  }
-`;
-
-const TrustSubtitle = styled(BaseText)`
-  font-size: 18px;
-  letter-spacing: -0.72px;
-  line-height: 26px;
-
-  @media (min-width: ${breakpoints.desktop}) {
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: -0.96px;
-  }
-
-  @media (min-width: ${breakpoints.desktop}) {
-    font-size: 26px;
-    line-height: 32px;
-    letter-spacing: -1.04px;
-  }
-`;
-
-const TrustParagraph = styled(BaseText)`
-  font-size: 20px;
-  line-height: 40px;
-  letter-spacing: -0.8px;
-
-  @media (min-width: ${breakpoints.tablet}) {
-    font-size: 18px;
-    line-height: 40px;
-    letter-spacing: -0.72px;
-  }
-
-  @media (min-width: ${breakpoints.desktop}) {
-    font-size: 26px;
-    line-height: 32px;
-    letter-spacing: -1.04px;
   }
 `;

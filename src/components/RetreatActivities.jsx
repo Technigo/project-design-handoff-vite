@@ -26,53 +26,54 @@ export function RetreatActivities() {
 
 const ActivitiesSection = styled.section`
   display: flex;
-  padding: 64px 32px;
+  padding: var(--padding-mobile);
   flex-direction: column;
   align-items: center;
   gap: 64px;
 
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 64px;
-    gap: 32px;
+    padding: var(--padding-tablet);
   }
 
   @media (min-width: ${breakpoints.desktop}) {
-    padding: 96px 128px;
+    padding: var(--padding-desktop);
     gap: 96px;
   }
 `;
 
-const IntroText = styled.p`
-  font-family: var(--header);
-  font-size: 280x;
-  font-weight: 600;
-  line-height: 32px;
+const IntroText = styled.h3`
   text-align: left;
   padding: 16px;
-  gap: 64px;
+  color: var(--blue);
+  gap: 10px;
   border-left: 4px solid var(--blue);
 
   @media (min-width: ${breakpoints.tablet}) {
     padding: 40px;
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 40px;
-  }
-
-  @media (min-width: ${breakpoints.desktop}) {
-    font-size: 28px;
-    line-height: 48px;
   }
 `;
+
 const SeeAllLink = styled.span`
-  font-family: var(--paragraph);
-  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   text-decoration-line: underline;
   color: var(--blue);
   line-height: 24px;
-  letter-spacing: -0.8px;
+  letter-spacing: -0.56px;
   font-weight: 500;
   display: flex;
   justify-content: flex-end;
   width: 100%;
+
+  @media (min-width: ${breakpoints.tablet}) {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.72px;
+  }
+
+  @media (min-width: ${breakpoints.desktop}) {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: -0.8px;
+  }
 `;

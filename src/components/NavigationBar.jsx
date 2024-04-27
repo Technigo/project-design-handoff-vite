@@ -21,7 +21,6 @@ const Navbar = styled.nav`
   justify-content: space-between;
   align-items: flex-end; 
   padding: 16px 32px;
-  
   background-color: rgba(8, 61, 86, 0.75);
   backdrop-filter: blur(2px);
   
@@ -29,8 +28,8 @@ const Navbar = styled.nav`
     padding: 24px 64px;
   }
  
-    @media (min-width: ${breakpoints.desktop}) {
-      padding: 32px var(--Spacing-16, 128px);
+  @media (min-width: ${breakpoints.desktop}) {
+    padding: 32px var(--Spacing-16, 128px);
     } 
 `;
 

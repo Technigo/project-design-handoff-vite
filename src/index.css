@@ -2,26 +2,6 @@
 
 
 :root {
-  margin: 0;
-  font-family: 'Fira Sans', 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-  /* custom colors*/
-  --yellow-light: #faf3da;
-  --yellow-medium: #e9cd69;
-  --yellow: #e4c144;
-  --blue-light: #f3f6f7;
-  --blue: #083d56;
-  --blue-deep: #063145;
-
-  /* custom typography  */
-  --header: "Fira Sans", sans-serif;
-  --paragraph: Montserrat;
-
-
-}
-
-body {
-  margin: 0;
 }
