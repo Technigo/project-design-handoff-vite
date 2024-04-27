@@ -9,7 +9,9 @@ export const Navbar = () => {
         />
       </div>
       <div>
-        <img className="h-6" src="/icons/burger_l.png" alt="menu" />
+        <a href="">
+          <img className="h-6" src="/icons/burger_l.png" alt="menu" />
+        </a>
       </div>
     </nav>
   );

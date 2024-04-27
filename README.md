@@ -4,35 +4,17 @@
   </a>
 </h1>
 
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+For this week's assignment we were given a design by one of the UX-design students. The task was to realise the design in code and style it using either Tailwind CSS or Styled Components. Our design was by Mandana Amiri. 
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We first created a sketch of the component layout using Figma. We decided to use Tailwind CSS for styling. Any questions about the design that arose duing the project were brought up with the designer, who was very helpful during the whole process. 
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://oasis-wellness-center.netlify.app/
 
 ## Instructions
 
