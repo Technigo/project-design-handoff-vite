@@ -135,7 +135,7 @@ const StyledHero = styled.section`
     .customer-comments {
       margin: 0 auto;
       padding: 2rem 26vw;
-      text-aling: center;
+      text-align: center;
     }
 
     .customer-comments li {
