@@ -11,7 +11,11 @@ export default {
         "custom-width": '92px',
         "width-two": "361px",
         "width-three": "620px",
-        "width-four": "575px"
+        "width-four": "575px",
+        "width-five": "1187px",
+        "width-six": "1052px",
+
+
       },
       height: {
         "custom-height": '87px', 
@@ -19,7 +23,10 @@ export default {
         "height-three": "315px",
         "height-four": "494px",
         "height-five": "165px",
-        "height-six": "223px"
+        "height-six": "223px",
+        "height-seven": "408px",
+        "height-eight": "282px",
+
       },
       colors: {
         blue: "#0F3057",
@@ -48,6 +55,9 @@ export default {
       },
       boxShadow: {
         "custom-btn-p": "0 2px 0px 0px rgb(0 0 0)",
+      },
+      screens: {
+        sm: '320px',
       },
     },
     fontFamily: {

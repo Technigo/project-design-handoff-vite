@@ -4,7 +4,7 @@ import { Image } from "../component/Image";
 export const Header = () => {
   return (
     // <div className="bg-blue">
-      <div className="bg-blue container mx-auto flex flex-col pt-28 text-center md:px-16  ">
+      <div className="bg-blue container mx-auto flex flex-col px-9 pt-28 text-center md:px-16  ">
 
         <h1 className="font-rock-salt mb-4  lg:mb-0 text-4xl md:text-42 md:pt-8 lg:text-60 lg:p-2.5 text-shadow text-stroke">HIIT FOR YOU</h1>
 
