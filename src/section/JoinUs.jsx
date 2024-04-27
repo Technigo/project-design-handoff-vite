@@ -10,16 +10,18 @@ export const JoinUs = () => {
   return (
     <div className="flex flex-col items-center gap-28 px-9 md:gap-8 md:px-16">
       <ButtonPrimary text={"Join us"} addedClasses="py-21 px-6 xl:hidden 2xl:hidden" />
+
       <Carousel
         showStatus={false}
         showIndicators={false}
-        className="w-full lg:hidden xl:hidden 2xl:hidden">
-        <ButtonSecondary text={"Who are we?"} />
-        <ButtonSecondary text={"Our trainers"} />
-        <ButtonSecondary text={"Health benefits"} />
+        className="rounded-custom w-full text-lg md:text-2xl md:p-6 lg:hidden xl:hidden 2xl:hidden ">
+        <ButtonSecondary addedClasses="p-5 md:w-72" text={"Who are we?"} />
+        <ButtonSecondary addedClasses="p-5 md:w-72" text={"Our trainers"} />
+        <ButtonSecondary addedClasses="p-5 md:w-72" text={"Health benefits"} />
       </Carousel>
+
       <ButtonSecondary
-        addedClasses="md:rounded-custom-two md:px-2.5 md:py-5 md:w-width-three xl:hidden 2xl:hidden"
+        addedClasses="w-72 h-16 rounded-custom-two text-xl md:text-2xl md:px-2.5 md:py-5 md:w-width-three md:h-20 xl:hidden 2xl:hidden"
         text={"Membership cards"}
       />
       <ButtonPrimary
@@ -29,7 +31,7 @@ export const JoinUs = () => {
       {/* barbell section */}
       <div class="relative hidden md:block xl:hidden 2xl:hidden">
         <img
-          className="md:h-height-six md:w-width-three md:object-cover"
+          className="rounded-lg md:h-height-six md:w-width-three md:object-cover"
           src={"/Images/barbell.svg"}
         />
         <div className="md:absolute md:inset-6 md:h-height-five md:w-width-four md:bg-white md:bg-opacity-50"></div>
@@ -42,10 +44,10 @@ export const JoinUs = () => {
         </div>
       </div>
 
-      <div className="flex flex-row gap-2.5 md:gap-36">
-        <ButtonThird addedClasses="xl:text-32 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three p-20" text={"45 minutes"} />
-        <ButtonThird addedClasses="xl:text-32 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three" text={"3 sections"} />
-        <ButtonThird addedClasses="xl:text-32 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three" text={"Heart rate monitor"} />
+      <div className="flex flex-row gap-2.5 md:gap-36 ">
+        <ButtonThird addedClasses="md:w-width-7 md:h-height-9 xl:text-32 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three" text={"45 minutes"} />
+        <ButtonThird addedClasses="md:w-width-7 md:h-height-9 xl:text-32 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three" text={"3 sections"} />
+        <ButtonThird addedClasses="md:w-width-7 md:h-height-9 xl:text-32 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three" text={"Heart rate monitor"} />
       </div>
       {/* <div> */}
         <Image

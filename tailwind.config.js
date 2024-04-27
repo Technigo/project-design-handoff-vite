@@ -7,6 +7,8 @@ export default {
         'custom': '30px', 
         "custom-two": "40px",
         "custom-three": "1000px",
+        "custom-4": "20px",
+
       },
       width: {
         "custom-width": '92px',
@@ -15,6 +17,7 @@ export default {
         "width-four": "575px",
         "width-five": "1187px",
         "width-six": "1052px",
+        "width-7": "114px",
 
 
       },
@@ -27,6 +30,7 @@ export default {
         "height-six": "223px",
         "height-seven": "408px",
         "height-eight": "282px",
+        "height-9": "109px",
 
       },
       colors: {
@@ -56,6 +60,7 @@ export default {
       },
       boxShadow: {
         "custom-btn-p": "0 2px 0px 0px rgb(0 0 0)",
+        "custom-btn-2": "0 4px 4px 0px rgb(0 0 0)",
       },
       screens: {
         sm: '320px',

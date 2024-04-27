@@ -35,7 +35,7 @@ export const Testimonial = () => {
               className="h-height-seven w-width-five object-cover mx-auto"
               src={"/Images/barbell.svg"}
             />
-            <div className="h-height-eight w-width-six absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-70">
+            <div className="h-height-eight w-width-six absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white bg-opacity-70 rounded-custom-4 border border-solid border-black shadow-custom-btn-2">
             <div
               className="absolute inset-0 flex flex-col items-center justify-between
              "
