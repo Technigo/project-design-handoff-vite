@@ -9,10 +9,11 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
 
   return (
     <footer className="bg-main-blue text-text-light font-montserrat text-sm font-extralight text-left">
-      <div className="px-6 py-12 flex flex-col justify-between">
-        <div className="flex flex-col md:flex-row">
+      <div className="px-6 flex flex-col justify-between">
+
+        <div className="flex flex-col items-center md:flex-row">
           <SocialMediaIcons icons={icons} />
-          <div className="relative bg-main-blue w-[312px] h-max-content mt-12 md:mt-0 lg:mt-0 ">
+          <div className="relative bg-main-blue w-[312px] h-max-content md:mt-0 lg:mt-0 ">
             <select
               onChange={onLanguageChange}
               value={data.locale}
