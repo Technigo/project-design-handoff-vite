@@ -40,7 +40,7 @@ export const Event = () => {
       <h3 className="sub-title">upcoming events</h3>
       <StyledEventContainer>
         {eventData.map((event, index) => (
-          <EventCard key={index} event={event} /> // Render an EventCard for each item in the JSON array
+          <EventCard key={index} event={event} /> 
         ))}
       </StyledEventContainer>
     </StyledEvent>
