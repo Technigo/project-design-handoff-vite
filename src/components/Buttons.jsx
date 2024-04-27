@@ -18,6 +18,8 @@ const StyledButton = styled.button`
   &:hover {
     background: #552a1c;
   }
+
+  
 `;
 
 export const Buttons = ({ buttonText, fontSize }) => {
