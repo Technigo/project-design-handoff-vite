@@ -30,7 +30,18 @@ export const Testimonial = () => {
 
       <div class="relative md:block">
         {windowWidth >= 1280 ? (
-          <div className="text-32">
+          <div className="text-32 mx-117">
+            <div className="flex flex-col text-xl gap-25">
+            <Image
+              className="self-center"
+              link={"/Images/star.svg"}
+              imgText={"five stars"}
+            />
+            <Text
+              className="p-2.5 mb-25 text-center font-bold"
+              text={` "The best workout of my life" - Marie PT" `}
+            />
+            </div>
             <img
               className="h-height-seven w-width-five object-cover mx-auto"
               src={"/Images/barbell.svg"}
@@ -67,7 +78,7 @@ export const Testimonial = () => {
               <Image
               className="self-center"
               link={"/Images/star.svg"}
-              imgText={"red flame"}
+              imgText={"five stars"}
             />
             <Text
               className="p-2.5 text-center font-bold"

@@ -18,6 +18,9 @@ export default {
         "width-five": "1187px",
         "width-six": "1052px",
         "width-7": "114px",
+        "width-8": "203px",
+        "width-9": "273px",
+
 
 
       },
@@ -31,6 +34,11 @@ export default {
         "height-seven": "408px",
         "height-eight": "282px",
         "height-9": "109px",
+        "height-10": "170px",
+        "height-11": "628px",
+        "height-12": "701px",
+
+
 
       },
       colors: {
@@ -41,20 +49,21 @@ export default {
       },
       fontSize: {
         20: "20px",
+        31: "31px",
+
         32: "32px",
         42: "42px",
         60: "60px",
       },
       spacing: {
         10: "10",
-        25: "25px",
+        18: "18px",
         21: "21px",
+        25: "25px",
         28: "28px",
         35: "35px",
         38: "38px",
         62: "62px",
-        28: "28px",
-        18: "18px",
         69: "69px",
         117: "117px"
       },

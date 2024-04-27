@@ -3,18 +3,33 @@ import { ButtonSecondary } from "../component/ButtonSecondary";
 import { ButtonThird } from "../component/ButtonThird";
 import { Image } from "../component/Image";
 import { Carousel } from "react-responsive-carousel";
-
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { useState, useEffect } from "react";
 
 export const JoinUs = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  });
+
   return (
     <div className="flex flex-col items-center gap-28 px-9 md:gap-8 md:px-16">
-      <ButtonPrimary text={"Join us"} addedClasses="py-21 px-6 xl:hidden 2xl:hidden" />
+      <ButtonPrimary
+        text={"Join us"}
+        addedClasses="py-21 px-6 xl:hidden 2xl:hidden"
+      />
 
       <Carousel
         showStatus={false}
         showIndicators={false}
-        className="rounded-custom w-full text-lg md:text-2xl md:p-6 lg:hidden xl:hidden 2xl:hidden ">
+        className="w-full rounded-custom text-lg md:p-6 md:text-2xl lg:hidden xl:hidden 2xl:hidden "
+      >
         <ButtonSecondary addedClasses="p-5 md:w-72" text={"Who are we?"} />
         <ButtonSecondary addedClasses="p-5 md:w-72" text={"Our trainers"} />
         <ButtonSecondary addedClasses="p-5 md:w-72" text={"Health benefits"} />
@@ -44,17 +59,56 @@ export const JoinUs = () => {
         </div>
       </div>
 
-      <div className="flex flex-row gap-2.5 md:gap-36 ">
-        <ButtonThird addedClasses="md:w-width-7 md:h-height-9 xl:text-32 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three" text={"45 minutes"} />
-        <ButtonThird addedClasses="md:w-width-7 md:h-height-9 xl:text-32 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three" text={"3 sections"} />
-        <ButtonThird addedClasses="md:w-width-7 md:h-height-9 xl:text-32 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three" text={"Heart rate monitor"} />
-      </div>
-      {/* <div> */}
-        <Image
-          link={"/Images/plank.svg"}
-          alt={"people working out"}
-          className="h-height-three w-width-two object-cover pb-38 pt-3.5 md:h-height-four md:w-width-three md:object-cover md:object-center"
+      <div className="flex flex-row gap-2.5 md:gap-36 xl:mx-117 xl:gap-56 xl:py-25 2xl:py-25 2xl:mx-117 2xl:gap-72">
+        <ButtonThird
+          addedClasses="md:w-width-7 md:h-height-9 xl:text-3xl 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three xl:w-width-8 xl:h-height-10"
+          text={"45 minutes"}
         />
+        <ButtonThird
+          addedClasses="md:w-width-7 md:h-height-9 xl:text-3xl 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three xl:w-width-8 xl:h-height-10"
+          text={"3 sections"}
+        />
+        <ButtonThird
+          addedClasses="md:w-width-7 md:h-height-9 xl:text-31 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three xl:w-width-8 xl:h-height-10"
+          text={"Heart rate monitor"}
+        />
+      </div>
+
+      {windowWidth >= 1280 ? (
+        <div className="flex flex-col gap-25">
+          <Image
+            className="h-height-11 w-width-five object-cover"
+            link={"/Images/weights.svg"}
+            imgText={"people lifting weights"}
+          />
+          <div class="relative mt-25">
+            <Image
+              className="h-height-five w-width-five object-cover rounded-custom-4"
+              link={"/Images/weightplate.svg"}
+              imgText={"bar weights"}
+            />
+
+            <div className="absolute inset-0 flex items-center justify-around text-32">
+              <ButtonPrimary text={"First time"} addedClasses="w-48 py-21 px-6" />
+              <ButtonPrimary
+                text={"5 time pass"}
+                addedClasses="w-48 py-21 px-6"
+              />
+              <ButtonPrimary
+                text={"Job openings"}
+                addedClasses="py-21 px-6"
+              />
+            </div>
+          </div>
+        </div>
+      ) : null}
+
+      {/* <div> */}
+      <Image
+        link={"/Images/plank.svg"}
+        alt={"people working out"}
+        className="h-height-three w-width-two object-cover pb-38 pt-3.5 md:h-height-four md:w-width-three md:object-cover md:object-center xl:h-height-12 xl:w-width-five"
+      />
       {/* </div> */}
     </div>
   );
