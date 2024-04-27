@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import celebrationImageDesktop from "../assets/images/celebration-image-desktop.png";
@@ -28,14 +29,16 @@ export const LearnMoreSection = ({ data }) => {
         </h2>
         <p className="font-montserrat text-sm lg:text-left lg:text-lg">
           {isMobile
-            ? "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events." : data.subheading.split("\n").map((line) =>(
-              <>
-                {line}
-                <br />
-            </>
-            ))}
+            ? "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events."
+            : data.subheading.split("\n").map((line, index) => (
+                <React.Fragment key={index}>
+                  {" "}
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
         </p>
-       <LearnMoreButton cta={data.cta} /> 
+        <LearnMoreButton cta={data.cta} />
       </div>
 
       <div className="flex-1 lg:mb-0">
@@ -61,6 +64,5 @@ LearnMoreSection.propTypes = {
     heading: PropTypes.string.isRequired,
     subheading: PropTypes.string.isRequired,
     cta: PropTypes.string.isRequired,
-
   }).isRequired,
 };
