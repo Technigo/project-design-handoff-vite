@@ -1,8 +1,16 @@
 import styled from "styled-components";
 
 import { breakpoints } from "./breakpoints";
+export const Button = ({ withArrow, children, ...props }) => (
+  <StyledButton {...props}>
+    {children}
+    {withArrow && <ArrowIcon />} {/* Add arrow conditionally */}
+  </StyledButton>
+);
 
-export const Button = styled.button`
+const StyledButton = styled.button`
+  display: flex;
+  align-items: center;
   padding: ${(props) => props.padding || "24px 16px"};
   border-radius: ${(props) => props.borderRadius || "32px"};
   background: ${(props) => props.background || "var(--yellow-medium)"};
@@ -21,8 +29,7 @@ export const Button = styled.button`
 
   &:hover {
     /* Darker and deeper inner shadow */
-    box-shadow: 
-      0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset;
 
     /* Change background color on hover */
     background: ${(props) => props.hoverBackground || "var(--yellow)"};
@@ -34,10 +41,19 @@ export const Button = styled.button`
   }
 
   @media (min-width: ${breakpoints.desktop}) {
-padding: 24px 48px; 
+    padding: 24px 48px;
     font-size: 24px;
     line-height: 32px;
   }
+`;
+
+const ArrowIcon = styled.span`
+  display: inline-block;
+  width: 28px;
+  height: 24px;
+  background: url("/icons/arrow1.svg");
+  background-size: contain;
+  margin-left: 16px;
 `;
 
 export default Button;

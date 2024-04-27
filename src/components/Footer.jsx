@@ -1,157 +1,142 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import FacebookIcon from '../assets/Facebook.png';
-import InstagramIcon from '../assets/Instagram.png';
-import LogoText from '../assets/LogoText.png';
-import TwitterIcon from '../assets/Twitter.png';
-import WhatsAppIcon from '../assets/WhatsApp.png';
+import InstagramIcon from "../assets/Instagram.png";
+import TwitterIcon from "../assets/Twitter.png";
+import WhatsAppIcon from "../assets/WhatsApp.png";
 import { breakpoints } from "../utility/breakpoints";
 
 export const Footer = () => {
   return (
-    <StyledFooter>
-      <FlexContainer>
-        <Logo src={LogoText} alt="Logo" />
-        <FooterLinks>
+    <FooterContainer>
+      <AllAboutUs>
+        <Logo src="/icons/logo.svg" alt="Logo Image"></Logo>
+        <FooterLinks className="main-paragraph">
           <FooterLink>About Us</FooterLink>
           <FooterLink>Contact Us</FooterLink>
           <FooterLink>FAQ</FooterLink>
         </FooterLinks>
-        <SocialIcons>
-          <Icon src={FacebookIcon} alt="Facebook" />
-          <Icon src={InstagramIcon} alt="Instagram" />
-          <Icon src={TwitterIcon} alt="Twitter" />
-          <Icon src={WhatsAppIcon} alt="WhatsApp" />
-        </SocialIcons>
-      </FlexContainer>
-    </StyledFooter>
+      </AllAboutUs>
+      <SocialIcons>
+        <Icon src={InstagramIcon} alt="Instagram" />
+        <Icon src={TwitterIcon} alt="Twitter" />
+        <Icon src={WhatsAppIcon} alt="WhatsApp" />
+      </SocialIcons>
+    </FooterContainer>
   );
 };
 
-const StyledFooter = styled.footer`
+const FooterContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  background-color: var(--blue);
   width: 100%;
-  background-color: #f4f4f4;
+
+  @media (min-width: ${breakpoints.tablet}) {
+    padding: var(--padding-tablet);
+    flex-direction: row;
+    align-items: center;
+  }
+
+  @media (min-width: ${breakpoints.desktop}) {
+    padding: var(--padding-desktop);
+    justify-content: space-between;
+  }
 `;
 
-const FlexContainer = styled.div`
+const AllAboutUs = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0;
-/*   width: 390px; */
-  justify-content: center;
-  align-items: flex-start;
-  overflow: hidden;
-  position: relative;
-  padding: 32px 32px 32px 32px;
-  background-color: rgba(8,61,86,1);
+  justify-content: space-around;
+  gap: 16px;
+  margin: 0;
 
-  @media (min-width: ${breakpoints.tablet}) { 
-/*   width: 834px; */
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-@media (min-width: ${breakpoints.desktop}) { 
-  padding: 64px 128px;
-}
+  @media (min-width: ${breakpoints.tablet}) {
+    flex-direction: row;
+  }
 `;
 
 const Logo = styled.img`
-  gap: 10px;
-  direction: row;
-  width: 80px;
-  height: 80px;
-  display: block;
-  position: relative;
+  height: 54px;
 
-  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
-  width: 120px;
-  height: 120px;
-  justify-content: flex-start;
-  padding-top: 10px;
-}
-@media (min-width: ${breakpoints.desktop}) { /* desktop */
+  @media (min-width: ${breakpoints.tablet}) {
+    height: 64px;
+    padding-right: 48px;
+  }
 
-}
+  @media (min-width: ${breakpoints.desktop}) {
+    height: 80px;
+  }
 `;
 
 const FooterLinks = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  width: 100px;
-  height: 100px;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 16px 0px 16px 0px;
+  padding: 16px 0;
 
-  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
-  flex-direction: row;
-  align-items: center;}
+  @media (min-width: ${breakpoints.tablet}) {
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+  }
 
-  @media (min-width: ${breakpoints.desktop}) { /* desktop */
-
-}
+  @media (min-width: ${breakpoints.desktop}) {
+    align-self: end;
+    justify-content: center;
+    padding-left: 50px;
+  }
 `;
 
 const FooterLink = styled.a`
-  font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 500;
-  color: #faf3da;
-  line-height: 24px;
+  color: var(--yellow-light);
   text-align: left;
-  display: block;
-  letter-spacing: -0.57px;
-  position: relative;
   white-space: pre-wrap;
 
-  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
-  font-size: 24px;
-  line-height: 24px;
-  letter-spacing: -0.81px;
-  justify-content: space-between;
-  padding: 0px 10px 0px 10px;
-
-}
-  @media (max-width: ${breakpoints.desktop}) { /* desktop */
-
-}
+  @media (min-width: ${breakpoints.tablet}) {
+    justify-content: space-between;
+    padding: 0 10px;
+  }
 `;
 
 const SocialIcons = styled.div`
   display: flex;
   flex-direction: row;
-  gap: 16px;
-  justify-content: flex-start;
+  gap: 32px;
   align-items: center;
-  padding: 16px 8px 16px 0px;
+  padding: 16px 0;
 
-  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
-  align-items: center;
-  justify-content: space-between;
+  @media (min-width: ${breakpoints.tablet}) {
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
   }
 
-  @media (min-width: ${breakpoints.desktop}) { 
-}
+  @media (min-width: ${breakpoints.desktop}) {
+    flex-direction: row;
+  }
 `;
 
 const Icon = styled.img`
-  gap:32px;
+  gap: 32px;
   width: 24px;
   height: 24px;
   direction: row;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  padding: 16px 0px 16px 0px;
+  padding: 16px 0;
 
   @media (min-width: ${breakpoints.tablet}) {
-  align-items: center;
-}
+    align-items: center;
+    width: 32px;
+    height: 32px;
+  }
 
-  @media (min-width: ${breakpoints.desktop}) { 
-}
+  @media (min-width: ${breakpoints.desktop}) {
+    width: 48px;
+    height: 48px;
+  }
 `;
-
-
