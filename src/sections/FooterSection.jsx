@@ -21,6 +21,7 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
             <option value="jp">日本語</option>
           </select>
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-white">
+            {/* why arrow is off when desktop */}
             <IoIosArrowDown />
           </div>
         </div>
