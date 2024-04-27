@@ -9,12 +9,11 @@ export const FooterSection = ({ data, onLanguageChange }) => {
   return (
     <footer className="bg-main-blue text-text-light font-montserrat text-sm font-extralight text-left">
       <div className="p-6 flex flex-col md:flex-row justify-between">
-        <div className="relative bg-main-blue" style={{ width: "312px" }}>
+        <div className="relative bg-main-blue w-[312px]">
           <select
             onChange={onLanguageChange}
             value={data.locale}
             className="appearance-none bg-transparent text-white py-2 pl-3 pr-10 border border-white rounded leading-tight focus:outline-none w-full"
-            style={{ WebkitAppearance: "none", MozAppearance: "none" }}
           >
             <option value="en">English</option>
             <option value="jp">日本語</option>
@@ -41,9 +40,9 @@ export const FooterSection = ({ data, onLanguageChange }) => {
             ))}
           </div>
         </div>
-
-        <div className="my-3 ml-2">
-          <div className="mt-12 ">
+        {/* font size doesnt reflect to 14px */}
+        <div className="my-3 ml-2 text-sm">
+          <div className="mt-12">
             <p>{info.email}</p>
             <p>{info.phone}</p>
           </div>
@@ -54,7 +53,7 @@ export const FooterSection = ({ data, onLanguageChange }) => {
               {info.address.zipcode} {info.address.city}
             </p>
           </div>
-          <div className="mt-12 text-sm">
+          <div className="mt-12">
             <p>
               {info.attribution.illustrations}{" "}
               <a
@@ -65,9 +64,13 @@ export const FooterSection = ({ data, onLanguageChange }) => {
               </a>
             </p>
           </div>
-          <div className="mt-6 text-sm">
+          <div className="mt-6">
             <p>
-              {info.attribution.copyright} {info.attribution.company}
+              {/* underline still shows for icons8.com */}
+              <a href="#" className="no-underline">
+                {info.attribution.copyright}
+              </a>
+              {info.attribution.company}
             </p>
           </div>
         </div>
