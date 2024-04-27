@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { SocialMediaIcons } from "./components/SocialMediaIcons";
+import { SocialMediaIcons } from "../components/SocialMediaIcons";
 import { IoIosArrowDown } from "react-icons/io";
 
 export const FooterSection = ({ data, onLanguageChange, icons }) => {
