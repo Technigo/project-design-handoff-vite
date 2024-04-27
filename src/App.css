@@ -44,3 +44,16 @@ body {
   background-repeat: no-repeat;
   /* height: 100vh; */
 }
+
+/* overriding slick formatting, couldn't find any other way 😅*/
+.slick-initialized .slick-slide {
+  display: grid;
+  justify-content: center;
+}
+
+.slick-dots li button:before {
+  color: var(--primary-prpl);
+}
+.slick-dots li.slick-active button:before {
+  color: var(--primary-white);
+}

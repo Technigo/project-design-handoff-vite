@@ -117,7 +117,6 @@ export const Yogis = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          centerMode: true,
         },
       },
 
@@ -125,8 +124,6 @@ export const Yogis = () => {
         breakpoint: 744,
         settings: {
           slidesToShow: 1,
-          centerMode: true,
-          // centerPadding: "0px",
         },
       },
     ],

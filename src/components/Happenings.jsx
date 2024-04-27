@@ -4,9 +4,16 @@ import styled from "styled-components";
 //import reusables
 import { HeadingTwo } from "../reusables/HeadingTwo";
 import { HappeningsCard } from "../reusables/HappeningsCard";
+import { Arrow } from "../reusables/Arrow";
 
 //import pictures
 import Cartwheel from "../../public/images/cartwheel.png";
+
+//import react-slick dependencies for carousel
+import Slider from "react-slick";
+import { useRef } from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 //data object for yogis
 const happeningsData = [
@@ -77,6 +84,7 @@ const happeningsData = [
 
 //styles
 const HappeningSection = styled.section`
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 25px 16px;
@@ -102,23 +110,71 @@ const StyledImage = styled.img`
   }
 `;
 
+const ArrowWrapper = styled.div`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+`;
+
+const LeftArrowWrapper = styled(ArrowWrapper)`
+  left: 20px;
+`;
+
+const RightArrowWrapper = styled(ArrowWrapper)`
+  right: 20px;
+`;
+
 //component
 export const Happenings = () => {
+  const sliderRef = useRef(null); //use ref to controll slider
+
+  const handleLeftArrow = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev(); //navigate to previous slide
+    }
+  };
+
+  const handleRightArrow = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext(); //navigate to next slide
+    }
+  };
+
+  //slider settings for carousel styling reponsiveness
+  const sliderSettings = {
+    infinit: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+    arrows: false,
+    dots: true,
+    appendDots: (dots) => <ul>{dots}</ul>,
+  };
+
   return (
     <HappeningSection>
       <HeadingTwo>Happenings</HeadingTwo>
-      {/* render HappeningsCard with data */}
-      {happeningsData.map((hap, index) => (
-        <HappeningsCard
-          key={index}
-          picture={
-            <StyledImage src={hap.picture} alt={`${hap.title} picture`} />
-          }
-          title={hap.title}
-          date={hap.date}
-          description={hap.description}
-        />
-      ))}
+      <LeftArrowWrapper onClick={handleLeftArrow}>
+        <Arrow left={true} alt="left arrow" />
+      </LeftArrowWrapper>
+      <RightArrowWrapper onClick={handleRightArrow}>
+        <Arrow alt="right arrow" />
+      </RightArrowWrapper>
+      <Slider ref={sliderRef} {...sliderSettings}>
+        {/* render HappeningsCard with data */}
+        {happeningsData.map((hap, index) => (
+          <HappeningsCard
+            key={index}
+            picture={
+              <StyledImage src={hap.picture} alt={`${hap.title} picture`} />
+            }
+            title={hap.title}
+            date={hap.date}
+            description={hap.description}
+          />
+        ))}
+      </Slider>
     </HappeningSection>
   );
 };

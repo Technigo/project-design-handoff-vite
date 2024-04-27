@@ -10,6 +10,7 @@ const CardSection = styled.section`
   padding: 18px 16px;
   background: var(--primary-white);
   border-radius: 15px;
+  width: 295px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-areas:
@@ -23,9 +24,10 @@ const CardSection = styled.section`
       "img img img intro intro intro"
       "img img img outro outro outro";
     column-gap: 42px;
+    width: 90%;
   }
 
-  @media all and (min-width: 744px) {
+  @media all and (min-width: 1024px) {
     column-gap: 101px;
   }
 `;
