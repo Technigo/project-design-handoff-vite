@@ -61,18 +61,18 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
               {info.attribution.illustrations}{" "}
               <a
                 href={`https://${info.attribution.link}`}
-                className="underline"
+                className="no-underline"
               >
                 {info.attribution.link}
               </a>
             </p>
           </div>
           <div>
-            <p className="mt-12 text-sm lg:text-base no-underline">
-              {/* underline still shows for icons8.com */}
+            <p className="mt-12 text-sm lg:text-base">
               <a href="#">
                 {info.attribution.copyright}
               </a>
+              {" "}
               {info.attribution.company}
             </p>
           </div>
