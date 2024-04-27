@@ -2,14 +2,14 @@ import PropTypes from "prop-types";
 import { SocialMediaIcons } from "./components/SocialMediaIcons"
 import { IoIosArrowDown } from "react-icons/io";
 
-export const FooterSection = ({ data, onLanguageChange }) => {
+export const FooterSection = ({ data, onLanguageChange, icons }) => {
   const { links, info } = data;
   const firstGroup = links.slice(0, 5);
   const secondGroup = links.slice(5);
 
   return (
     <footer className="bg-main-blue text-text-light font-montserrat text-sm font-extralight text-left">
-      <SocialMediaIcons />
+      <SocialMediaIcons icons={icons}/>
       <div className="p-6 flex flex-col md:flex-row justify-between">
         <div className="relative bg-main-blue w-[312px]">
           <select
@@ -84,4 +84,5 @@ export const FooterSection = ({ data, onLanguageChange }) => {
 FooterSection.propTypes = {
   data: PropTypes.object.isRequired,
   onLanguageChange: PropTypes.func.isRequired,
+  icons: PropTypes.arrayOf(PropTypes.string),
 };
