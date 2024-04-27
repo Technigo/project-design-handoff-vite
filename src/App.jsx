@@ -6,18 +6,21 @@ import { Contact } from "./components/Contact";
 import { TestimonialCards } from "./components/TestimonialCards";
 import { MakeYourPick } from "./components/MakeYourPick";
 import { Footer } from "./components/Footer";
+import { CarouselProvider } from "./contexts/CarouselContext";
 
 export const App = () => {
   return (
     <>
-      <Fonts />
-      <Hero />
-      <OurOfferings />
-      <OurLessons />
-      <TestimonialCards />
-      <MakeYourPick />
-      <Contact />
-      <Footer />
+      <CarouselProvider>
+        <Fonts />
+        <Hero />
+        <OurOfferings />
+        <OurLessons />
+        <TestimonialCards />
+        <MakeYourPick />
+        <Contact />
+        <Footer />
+      </CarouselProvider>
     </>
   );
 };

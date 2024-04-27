@@ -1,23 +1,65 @@
-import cardOne from "../assets/testimonialCards/LegendOne.png";
-import cardTwo from "../assets/testimonialCards/LegendTwo.png";
-import cardThree from "../assets/testimonialCards/LegendThree.png";
 import styled from "styled-components";
+import { Carousel } from "./Carousel.jsx";
+import { useCarousel } from "../contexts/CarouselContext.jsx";
 
 export const TestimonialCards = () => {
+  const { testimonialNumber, changeNumber } = useCarousel();
   return (
     <>
-      
+      <StyledTestimonial>
         <TextSection>
           <h1>What other Bettys say</h1>
         </TextSection>
-        <CardSection>
-        <CardOne></CardOne>
-        <CardTwo></CardTwo>
-        <CardThree></CardThree>
-      </CardSection>
+        <Carousel />
+        <ButtonContainer>
+          <CarouselBtnOne
+            onClick={() => changeNumber(0)}
+            number={testimonialNumber}
+          />
+          <CarouselBtnTwo
+            onClick={() => changeNumber(1)}
+            number={testimonialNumber}
+          />
+          <CarouselBtnThree
+            onClick={() => changeNumber(2)}
+            number={testimonialNumber}
+          />
+        </ButtonContainer>
+      </StyledTestimonial>
     </>
   );
 };
+
+const StyledTestimonial = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  gap: 12px;
+`;
+
+const CarouselBtn = styled.button`
+  border-radius: 50%;
+  border: none;
+  height: 10px;
+  width: 8px;
+`;
+
+const CarouselBtnOne = styled(CarouselBtn)`
+  background-color: ${(props) => (props.number === 0 ? "#989898" : "#d9d9d9")};
+`;
+
+const CarouselBtnTwo = styled(CarouselBtn)`
+  background-color: ${(props) => (props.number === 1 ? "#989898" : "#d9d9d9")};
+`;
+
+const CarouselBtnThree = styled(CarouselBtn)`
+  background-color: ${(props) => (props.number === 2 ? "#989898" : "#d9d9d9")};
+`;
 
 const TextSection = styled.div`
   display: flex;
@@ -34,34 +76,4 @@ const TextSection = styled.div`
     font-weight: 700;
     line-height: 130%; /* 39px */
   }
-`;
-const CardSection = styled.div`
-  display: flex;
-  margin-top: 50px;
-  margin-bottom: 40px;
-`;
-
-const CardOne = styled.div`
-  background-image: url(${cardOne});
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 200px;
-  width: 200px;
-`;
-
-const CardTwo = styled.div`
-  background-image: url(${cardTwo});
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 200px;
-  width: 200px;
-`;
-
-const CardThree = styled.div`
-  background-image: url(${cardThree});
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 200px;
-  width: 200px;
-  dispaly: none;
 `;
