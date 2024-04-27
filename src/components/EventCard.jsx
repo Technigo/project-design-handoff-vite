@@ -19,11 +19,12 @@ const StyledEventCard = styled.div`
   @media (min-width: 375px) and (max-width: 744px) {
     height: 456px;
     width: 294px;
-    
+    gap: 23px;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
     width: 261px;
+    min-height: 500px;
   }
 `;
 
@@ -53,6 +54,9 @@ const StyledEventTitle = styled.h3`
   font-weight: 600;
   color: #000;
 
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 16px;
+  }
 
   @media (min-width: 375px) and (max-width: 744px) {
     font-size: 14px;
@@ -66,16 +70,25 @@ const StyledDateDescription = styled.div`
   line-height: 1.5;
   margin: 0;
   width: 100%;
-  word-wrap: break-word;
-  white-space: normal;
-  overflow: hidden;
+  word-wrap: break-word; // Prevents text overflow
+  white-space: normal; // Allows text to wrap
+
+  // Ensure fixed spacing to avoid affecting the image
+  padding: 0; // Reset padding to avoid extra space
+  margin: 0; // Ensure proper alignment
 
   @media (min-width: 375px) and (max-width: 744px) {
     font-size: 14px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
     font-size: 16px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: hidden;
   }
 `;
 
@@ -127,7 +140,7 @@ const StyledEventButton = styled.button`
   }
 
   @media (min-width: 375px) and (max-width: 744px) {
-    width: 113px;
+    width: 145px;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
