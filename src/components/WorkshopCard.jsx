@@ -2,8 +2,8 @@ import { Button } from "./Button";
 
 export const WorkshopCard = ({ workshop }) => {
   return (
-    <div className="flex h-workCardSmall flex-col overflow-hidden rounded-tl-2xl rounded-tr-custom md:h-workCardMed md:max-w-2xl lg:h-workCardLarge lg:max-w-5xl lg:flex-row lg:rounded-bl-custom">
-      <div className="h-1/2 lg:h-full lg:w-1/2">
+    <div className="flex h-workCardSmall flex-col md:h-workCardMed md:max-w-2xl lg:h-workCardLarge lg:max-w-5xl lg:flex-row">
+      <div className="h-1/2 overflow-hidden rounded-tl-2xl rounded-tr-custom lg:h-full lg:w-1/2 lg:rounded-bl-custom lg:rounded-tr-none">
         <img
           className="h-full w-full object-cover object-center"
           src={workshop.imageUrl}
