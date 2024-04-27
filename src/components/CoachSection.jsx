@@ -1,16 +1,16 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import coachPic1 from '../assets/coach-pic.png';
-import coachPic2 from '../assets/coach-pic2.png';
-import coachPic3 from '../assets/coach-pic3.png';
+import coachPic1 from "../assets/coach-pic.png";
+import coachPic2 from "../assets/coach-pic2.png";
+import coachPic3 from "../assets/coach-pic3.png";
 import { breakpoints } from "../utility/breakpoints";
-import CoachCard from './CoachCard';
+import CoachCard from "../utility/CoachCard";
 
 export const CoachSection = () => {
   return (
     <SectionContainer>
       <CoachTitle>Meet Our Coaches</CoachTitle>
-      <CardWrapper>
+      <ScrollableCardWrapper>
         {/* Coach Card 1 */}
         <CoachCard
           imageUrl={coachPic1}
@@ -32,66 +32,60 @@ export const CoachSection = () => {
           subtitle="Mindful Cooking"
           description="Nourish your body and soul with every mindful bite, savoring the essence of life in every dish."
         />
-      </CardWrapper>
+      </ScrollableCardWrapper>
     </SectionContainer>
   );
 };
 
-// Styled-components styles
 const SectionContainer = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-/*   align-items: ; */
-  position: relative;
-  padding: 64px 32px;
+  align-items: flex-start;
+  padding: var(--padding-mobile);
   background-color: var(--yellow);
+  width: 100%;
+  overflow: hidden;
 
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 64px;
+    padding: var(--padding-tablet);
   }
   @media (min-width: ${breakpoints.desktop}) {
-    justify-content: flex-start;
+    justify-content: center;
     padding: 120px 128px;
   }
 `;
 
 const CoachTitle = styled.h2`
-  font-family: Fira Sans;
-  font-size: 24px;
-  font-weight: 500;
-  color: rgba(8,61,86,1);
-  line-height: 32px;
   text-align: left;
-  display: block;
   position: relative;
-  white-space: pre-wrap;
+  white-space: pre-wrap; // Allow text wrapping
 
-  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
-    font-size: 28px;
+  @media (min-width: ${breakpoints.tablet}) {
+    /* Tablet */
   }
-  @media (min-width: ${breakpoints.desktop}) { /* Desktop */
-    font-size: 36px;
-    line-height: 40px;
-    padding-top: 20px;
+  @media (min-width: ${breakpoints.desktop}) {
     /* padding-left: 35px; */
   }
 `;
 
-const CardWrapper = styled.div`
+const ScrollableCardWrapper = styled.div`
   display: flex;
-  gap: 32px;
   flex-direction: row;
   justify-content: space-between;
+  overflow-x: auto;
+  justify-content: space-between;
   align-items: flex-start;
-  position: relative;
+  width: 100%;
+  padding: 96px 0;
+  gap: 32px;
 
-  @media (min-width: ${breakpoints.tablet}) { /* Tablet */
+  @media (min-width: ${breakpoints.tablet}) {
     justify-content: flex-start;
     padding: 64px 32px;
   }
-  @media (min-width: ${breakpoints.desktop}) { /* Desktop */
-    padding: 96px 0; 
+  @media (min-width: ${breakpoints.desktop}) {
+    padding: 96px 0;
+  
   }
 `;
-
