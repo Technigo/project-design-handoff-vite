@@ -1,4 +1,5 @@
 import heroImage from "../assets/heroSectionImages/heroImage.png";
+import mountainImage from "../assets/heroSectionImages/mountainGraphic.png";
 import styled from "styled-components";
 import { HeaderNavbar } from "./HeaderNavbar";
 
@@ -12,8 +13,9 @@ export const Hero = () => {
           <p>
             Join us at our Snowboard Camps and unleash your inner Powder Betty!
           </p>
-          <CtaButton>Explore our camps</CtaButton>
         </HeroContent>
+        <CtaButton>Explore our camps</CtaButton>
+        <MountainImage src={mountainImage} />
       </HeroSection>
     </>
   );
@@ -27,6 +29,12 @@ const HeroSection = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 600px;
+`;
+
+const MountainImage = styled.img`
+  display: flex;
+  height: 50px;
+  padding-top: 70px;
 `;
 
 const HeroContent = styled.div`
@@ -52,7 +60,7 @@ const HeroContent = styled.div`
     line-height: 130%;
     width: 220px;
     padding-left: 24px;
-    margin-bottom: 180px;
+    padding-bottom: 160px;
   }
 `;
 

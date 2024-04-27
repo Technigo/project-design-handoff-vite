@@ -34,7 +34,7 @@ export const Footer = () => {
 
 const FooterContent = styled.div`
   background-color: #234059;
-  height: 600px;
+  height: 550px;
   color: #ffc8dd;
   padding-top: 40px;
 `;
@@ -63,6 +63,7 @@ const FooterText = styled.div`
     font-weight: 700;
     line-height: 39px;
     letter-spacing: 1.08px;
+    text-align: left;
   }
 `;
 
@@ -113,4 +114,4 @@ const Language = styled.div`
 
 const Icons = styled.div`
   display: flex;
-n`;
+`;
