@@ -49,21 +49,32 @@ const yogiData = [
 
 //styles
 const YogiSection = styled.section`
+  position: relative; //relative to allow absolute positioning of arrows
   background: var(--secondary-blue);
   padding: 68px 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* min-height: 100vh; */
-  /* min-width: 0;
-  min-height: 0; */
 `;
 
 const SliderWrapper = styled.div`
   width: 100%;
-  /* min-width: 0;
-  min-height: 0; */
+`;
+
+const ArrowWrapper = styled.div`
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 100;
+`;
+
+const LeftArrowWrapper = styled(ArrowWrapper)`
+  left: 20px;
+`;
+
+const RightArrowWrapper = styled(ArrowWrapper)`
+  right: 20px;
 `;
 
 //component
@@ -120,8 +131,12 @@ export const Yogis = () => {
         At Shanti Studio, our instructors bring years of experience and humble
         wisdom to their teachings, welcoming all with open hearts.
       </ParagraphTwo>
-      <Arrow left={true} alt="left arrow" onClick={handleLeftArrow} />
-      <Arrow alt="right arrow" onClick={handleRightArrow} />
+      <LeftArrowWrapper onClick={handleLeftArrow}>
+        <Arrow left={true} alt="left arrow" />
+      </LeftArrowWrapper>
+      <RightArrowWrapper onClick={handleRightArrow}>
+        <Arrow alt="right arrow" />
+      </RightArrowWrapper>
       <SliderWrapper>
         <Slider ref={sliderRef} {...sliderSettings}>
           {/* render YogiCard with the data */}
