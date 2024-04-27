@@ -10,36 +10,33 @@ import { ParagraphOne } from "./ParagraphOne";
 
 //styles
 const CardSection = styled.section`
-  position: relative; // Required for absolute positioning within the card
+  /* height: 448px; */
+  width: 260px;
+  padding: 44px 16px 26px 16px;
+`;
+
+const PictureWrapper = styled.div`
+  padding-bottom: 20px;
 `;
 
 const YogiElement = styled.div`
-  position: absolute; // Ensures it sits behind other elements
-  z-index: 1;
-  height: 448px;
-  width: 260px; // Keep it behind other elements
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0; // Fills the entire section
+  background-image: url(${Element});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  width: 100%;
 `;
 
 const YogiPicture = styled.div`
-  height: 200px;
-  width: 200px;
-  object-fit: cover; // Ensures the image is contained within the div
-  position: absolute; // Required to position on top of YogiElement
-  z-index: 2; // Keep it in the foreground
-  top: -38px; // Adjust for placement
-  left: 50%; // Center horizontally
-  transform: translateX(-50%); // Centers the image
+  height: 190px;
+  width: 260px;
+  object-fit: contain;
 `;
 
 const YogiName = styled.h3`
   font-size: 20px;
   font-weight: 500;
-  text-align: center; // Align the text to center
-  margin-top: 240px; // Adjust for spacing from the picture
+  padding-bottom: 6px;
 
   @media all and (min-width: 744px) {
     font-size: 14px;
@@ -53,7 +50,7 @@ const YogiName = styled.h3`
 const YogiClass = styled.h4`
   font-size: 18px;
   font-weight: 500;
-  text-align: center; // Align the text to center
+  padding-bottom: 6px;
 
   @media all and (min-width: 744px) {
     font-size: 14px;
@@ -63,17 +60,30 @@ const YogiClass = styled.h4`
   }
 `;
 
+const ReadMore = styled.p`
+  font-size: 14px;
+  text-align: left;
+  color: var(--primary-grey);
+  padding-top: 20px;
+
+  @media all and (min-width: 1024px) {
+    font-size: 16px;
+  }
+`;
+
 //component
 export const YogiCard = ({ picture, name, teaching, description }) => {
   return (
     <CardSection>
-      <YogiElement>
-        <img src={Element} alt="white background" />
-        <YogiPicture>{picture}</YogiPicture>
-      </YogiElement>
+      <PictureWrapper>
+        <YogiElement>
+          <YogiPicture>{picture}</YogiPicture>
+        </YogiElement>
+      </PictureWrapper>
       <YogiName>{name}</YogiName>
       <YogiClass>{teaching}</YogiClass>
       <ParagraphOne>{description}</ParagraphOne>
+      <ReadMore>Read more</ReadMore>
     </CardSection>
   );
 };

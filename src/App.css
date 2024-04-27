@@ -23,7 +23,8 @@
   --primary-prpl: #620981;
   --primary-white: #ffffff;
   --hover-prpl: #430159;
-  --secondary-blue: #dbe3fb;
+  --secondary-blue: rgba(213, 224, 252, 0.5);
+  /* 50% transparent */
 }
 
 /* basics */
