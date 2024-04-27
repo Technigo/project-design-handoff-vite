@@ -16,11 +16,11 @@ const StyledHeroCardContainer = styled.div`
   @media (min-width: 375px) and (max-width: 744px) {
     margin-top: 40px;
     margin-bottom: 40px;
-    overflow-x: auto; 
-    white-space: nowrap; 
-    padding: 20px; 
-    gap: 40px; 
-    height: auto; 
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    gap: 40px;
+    height: auto;
   }
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -50,6 +50,9 @@ const StyledImageContainer = styled.div`
     margin-top: 50px;
   }
 
+
+  
+
   @media (min-width: 375px) and (max-width: 744px) {
     width: 194px;
     height: 317px;
@@ -70,7 +73,11 @@ export const HeroCard = () => {
     <StyledHeroCardContainer>
       {buttonsWithImages.map((item, index) => (
         <StyledImageContainer key={index} imagesrc={item.imageId}>
-          <Buttons buttonText={item.buttonText} fontSize={15} />
+          <Buttons
+            buttonText={item.buttonText}
+            fontSize={15}
+            className="hero-button"
+          />
         </StyledImageContainer>
       ))}
     </StyledHeroCardContainer>
