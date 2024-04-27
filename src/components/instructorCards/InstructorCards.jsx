@@ -4,6 +4,8 @@ import Olivia from "/instructorImg/Olivia.jpeg"
 import Micheal from "/instructorImg/Micheal.jpeg"
 import { Dots } from "../dot/Dots"
 
+
+
 export const InstructorCards = () => {
 
   return (
@@ -12,7 +14,9 @@ export const InstructorCards = () => {
       <h4 className="ubuntu text-white sm:text-xl lg:text-3xl">
         Meet three of our instructors!
       </h4>
+ 
       <div className="flex sm:gap-1 md:gap-1">
+      
           <InstructorPieces
           image={Susie}
           alt={"Susie"}
@@ -48,7 +52,7 @@ export const InstructorCards = () => {
         />
 
       </div>
-        
+
         
       <Dots />
     </div>
