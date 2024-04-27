@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { SocialMediaIcons } from "./components/SocialMediaIcons"
+import { SocialMediaIcons } from "./components/SocialMediaIcons";
 import { IoIosArrowDown } from "react-icons/io";
 
 export const FooterSection = ({ data, onLanguageChange, icons }) => {
@@ -9,7 +9,7 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
 
   return (
     <footer className="bg-main-blue text-text-light font-montserrat text-sm font-extralight text-left">
-      <SocialMediaIcons icons={icons}/>
+      <SocialMediaIcons icons={icons} />
       <div className="p-6 flex flex-col md:flex-row justify-between">
         <div className="relative bg-main-blue w-[312px]">
           <select
@@ -82,7 +82,30 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
 };
 
 FooterSection.propTypes = {
-  data: PropTypes.object.isRequired,
+  data: PropTypes.shape({
+    links: PropTypes.arrayOf(
+      PropTypes.shape({
+        text: PropTypes.string.isRequired,
+        link: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+    info: PropTypes.shape({
+      email: PropTypes.string.isRequired,
+      phone: PropTypes.string.isRequired,
+      address: PropTypes.shape({
+        company: PropTypes.string.isRequired,
+        "street-number": PropTypes.string.isRequired,
+        zipcode: PropTypes.string.isRequired,
+        city: PropTypes.string.isRequired,
+      }).isRequired,
+      attribution: PropTypes.shape({
+        illustrations: PropTypes.string.isRequired,
+        link: PropTypes.string.isRequired,
+        copyright: PropTypes.string.isRequired,
+        company: PropTypes.string.isRequired,
+      }).isRequired,
+    }).isRequired,
+    locale: PropTypes.string.isRequired,
+  }).isRequired,
   onLanguageChange: PropTypes.func.isRequired,
-  icons: PropTypes.arrayOf(PropTypes.string),
 };
