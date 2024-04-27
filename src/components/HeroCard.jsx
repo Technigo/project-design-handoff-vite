@@ -10,6 +10,8 @@ const StyledHeroCardContainer = styled.div`
   padding: 20px;
   width: 100%;
   height: 100%;
+  margin-top: 80px;
+  margin-bottom: 80px;
 `;
 
 // Container for image and button, with relative positioning

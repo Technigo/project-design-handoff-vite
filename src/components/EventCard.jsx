@@ -10,10 +10,9 @@ const StyledEventCard = styled.div`
   padding: 24px;
   border-radius: 12px;
   background: #ffffff;
-  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   width: 350px;
   margin: 0 auto;
-  gap: 48px;
   font-family: Avenir;
   font-weight: 500;
 `;

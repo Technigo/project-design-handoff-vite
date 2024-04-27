@@ -31,17 +31,19 @@ const StyledClassImage = styled.img`
 const StyledTextButton = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-between; 
+  align-items: flex-start; 
   width: 248px;
   font-family: Avenir, sans-serif;
+  gap: 16px;
+  font-size: 16px;
 `;
 
 // Styled component for the class description
 const StyledClassDescription = styled.div`
   color: #000;
-  font-size: 18px;
   font-weight: 500;
+  margin: 0;
 `;
 
 // Styled component for the button
@@ -53,17 +55,24 @@ const StyledButton = styled.button`
   color: white;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  align-items: center;
   gap: 10px;
   &:hover {
     background-color: #552a1c;
   }
 `;
 
+// Styled component for the button, centered
+const StyledButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center; // Centers the button within its wrapper
+  width: 100%; // Ensures the wrapper takes full width for centering
+`;
+
+
 const StyledClassName = styled.p`
-  font-size: 18px;
   color: #000;
   padding-top: 16px;
+  margin: 0;
 `;
 
 //Hard code the class card
@@ -79,10 +88,12 @@ export const ClassCard = () => {
             and balance.
           </StyledClassName>
           <StyledClassDescription>
-            <p>We also offer 1-1 classes.</p>
+            <p>We also offer 1-1 classes.</p> <br />
             <p>Suitable for all levels of fitness.</p>
           </StyledClassDescription>
-          <StyledButton>Book Now</StyledButton>
+          <StyledButtonWrapper>
+            <StyledButton>Book Now</StyledButton>
+          </StyledButtonWrapper>
         </StyledTextButton>
       </StyledCard>
 
@@ -97,7 +108,9 @@ export const ClassCard = () => {
           <StyledClassDescription>
             A great place to start your pilates journey.
           </StyledClassDescription>
-          <StyledButton>Book Now</StyledButton>
+          <StyledButtonWrapper>
+            <StyledButton>Book Now</StyledButton>
+          </StyledButtonWrapper>
         </StyledTextButton>
       </StyledCard>
 
@@ -112,7 +125,9 @@ export const ClassCard = () => {
             Gentle exercises to maintain strength, flexibility, and promote
             relaxation.
           </StyledClassDescription>
-          <StyledButton>Book Now</StyledButton>
+          <StyledButtonWrapper>
+            <StyledButton>Book Now</StyledButton>
+          </StyledButtonWrapper>
         </StyledTextButton>
       </StyledCard>
 
@@ -126,7 +141,9 @@ export const ClassCard = () => {
           <StyledClassDescription>
             Live classes online and over 100 pre-recorded sessions.
           </StyledClassDescription>
-          <StyledButton>Book Now</StyledButton>
+          <StyledButtonWrapper>
+            <StyledButton>Book Now</StyledButton>
+          </StyledButtonWrapper>
         </StyledTextButton>
       </StyledCard>
     </>
