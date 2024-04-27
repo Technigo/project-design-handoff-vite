@@ -42,7 +42,7 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
             ))}
           </div>
         </div>
-        <div className="my-3 ml-2">
+        <div>
           <div className="mt-12">
             <p className="text-sm lg:text-base">{info.email}</p>
             <p className="text-sm lg:text-base">{info.phone}</p>
