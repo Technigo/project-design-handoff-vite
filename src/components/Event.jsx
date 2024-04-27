@@ -11,6 +11,17 @@ const StyledEventContainer = styled.div`
   overflow-x: auto;
   margin-top: 80px;
   margin-bottom: 80px;
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 48px;
+  }
 `;
 const StyledEvent = styled.section`
   text-align: center;
@@ -21,7 +32,6 @@ const StyledEvent = styled.section`
   font-style: normal;
   font-weight: 900;
   line-height: normal;
-
 
   .sub-title {
     height: 5.5rem;
@@ -40,7 +50,7 @@ export const Event = () => {
       <h3 className="sub-title">upcoming events</h3>
       <StyledEventContainer>
         {eventData.map((event, index) => (
-          <EventCard key={index} event={event} /> 
+          <EventCard key={index} event={event} />
         ))}
       </StyledEventContainer>
     </StyledEvent>

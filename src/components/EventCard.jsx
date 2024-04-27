@@ -15,6 +15,16 @@ const StyledEventCard = styled.div`
   margin: 0 auto;
   font-family: Avenir;
   font-weight: 500;
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    height: 456px;
+    width: 294px;
+    
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 261px;
+  }
 `;
 
 // Styled component for the event image
@@ -23,6 +33,18 @@ const StyledEventImage = styled.img`
   height: 234px;
   object-fit: cover;
   border-radius: 12px;
+  flex-shrink: 0;
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    width: 246px;
+    height: 185px;
+    flex-shrink: 0;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 213px;
+    height: 240px;
+    flex-shrink: 0;
+  }
 `;
 
 // Styled component for the event title
@@ -30,11 +52,31 @@ const StyledEventTitle = styled.h3`
   font-size: 18px;
   font-weight: 600;
   color: #000;
+
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    font-size: 14px;
+  }
 `;
 
 //Styled component for the date and description
 const StyledDateDescription = styled.div`
   text-align: left;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow: hidden;
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    font-size: 16px;
+  }
 `;
 
 // Styled component for the event date
@@ -43,6 +85,16 @@ const StyledEventDate = styled.p`
   color: #000;
   text-align: left;
   margin-bottom: 16px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    margin-bottom: 16px;
+  }
 `;
 
 // Styled component for the event description
@@ -50,6 +102,13 @@ const StyledEventDescription = styled.p`
   font-size: 18px;
   color: #000;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    font-size: 14px;
+
+  }
 `;
 
 // Styled component for the event button
@@ -65,6 +124,14 @@ const StyledEventButton = styled.button`
   transition: background-color 0.3s ease;
   &:hover {
     background-color: #552a1c;
+  }
+
+  @media (min-width: 375px) and (max-width: 744px) {
+    width: 113px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 145px;
   }
 `;
 
