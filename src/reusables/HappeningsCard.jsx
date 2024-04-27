@@ -7,15 +7,36 @@ import { ButtonSmall } from "./ButtonSmall";
 
 //styles
 const CardSection = styled.section`
-  background-color: pink;
+  padding: 18px 16px;
+  background: var(--primary-white);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "img img intro intro intro intro"
+    "outro outro outro outro outro outro";
+  column-gap: 21px;
+
+  @media all and (min-width: 744px) {
+    background: none;
+    grid-template-areas:
+      "img img img intro intro intro"
+      "img img img outro outro outro";
+    column-gap: 42px;
+  }
+
+  @media all and (min-width: 744px) {
+    column-gap: 101px;
+  }
 `;
 
-const PictureWrapper = styled.div``;
-
-const Picture = styled.div``;
+const Picture = styled.div`
+  grid-area: img;
+`;
 
 const IntroWrapper = styled.div`
-  border: 2px solid white;
+  grid-area: intro;
+  padding-bottom: 16px;
 `;
 
 const Title = styled.h3`
@@ -41,7 +62,17 @@ const Date = styled.p`
 `;
 
 const OutroWrapper = styled.div`
-  border: 2px solid blue;
+  grid-area: outro;
+`;
+
+const ButtonWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+
+  @media all and (min-width: 744px) {
+    justify-content: left;
+  }
 `;
 
 const Description = styled.p`
@@ -56,16 +87,17 @@ const Description = styled.p`
 export const HappeningsCard = ({ picture, title, date, description }) => {
   return (
     <CardSection>
-      <PictureWrapper>
-        <Picture>{picture}</Picture>
-      </PictureWrapper>
+      <Picture>{picture}</Picture>
+
       <IntroWrapper>
         <Title>{title}</Title>
         <Date>{date}</Date>
       </IntroWrapper>
       <OutroWrapper>
         <Description>{description}</Description>
-        <ButtonSmall>Sign up</ButtonSmall>
+        <ButtonWrapper>
+          <ButtonSmall>Sign up</ButtonSmall>
+        </ButtonWrapper>
       </OutroWrapper>
     </CardSection>
   );
