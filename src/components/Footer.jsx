@@ -77,6 +77,14 @@ const FooterList = styled.li`
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
+
+  &:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  &:active {
+    text-decoration: underline;
+  }
 `;
 
 const FollowUs = styled.div`
@@ -105,4 +113,4 @@ const Language = styled.div`
 
 const Icons = styled.div`
   display: flex;
-`;
+n`;
