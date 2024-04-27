@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 //import styled
 import styled from "styled-components";
 
@@ -49,6 +50,20 @@ const yogiData = [
 //styles
 const YogiSection = styled.section`
   background: var(--secondary-blue);
+  padding: 68px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 100vh; */
+  /* min-width: 0;
+  min-height: 0; */
+`;
+
+const SliderWrapper = styled.div`
+  width: 100%;
+  /* min-width: 0;
+  min-height: 0; */
 `;
 
 //component
@@ -67,13 +82,35 @@ export const Yogis = () => {
     }
   };
 
-  //slider settings for carousel styling and responsiveness
+  // slider settings for carousel styling and responsiveness
   const sliderSettings = {
+    className: "center",
+    centerMode: true,
+    centerPadding: "20px",
     infinite: true,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     speed: 500, //transition speed in milliseconds
     arrows: false, //disable default slick arrows to use own
+    // responsiveness approach needs to be from big screen to small screen otherwise it's not working 👇
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          centerMode: true,
+        },
+      },
+
+      {
+        breakpoint: 744,
+        settings: {
+          slidesToShow: 1,
+          centerMode: true,
+          // centerPadding: "0px",
+        },
+      },
+    ],
   };
 
   return (
@@ -85,18 +122,20 @@ export const Yogis = () => {
       </ParagraphTwo>
       <Arrow left={true} alt="left arrow" onClick={handleLeftArrow} />
       <Arrow alt="right arrow" onClick={handleRightArrow} />
-      <Slider ref={sliderRef} {...sliderSettings}>
-        {/* render YogiCard with the data */}
-        {yogiData.map((yogi, index) => (
-          <YogiCard
-            key={index}
-            picture={<img src={yogi.picture} alt={`${yogi.name} picture`} />}
-            name={yogi.name}
-            teaching={yogi.teaching}
-            description={yogi.description}
-          />
-        ))}
-      </Slider>
+      <SliderWrapper>
+        <Slider ref={sliderRef} {...sliderSettings}>
+          {/* render YogiCard with the data */}
+          {yogiData.map((yogi, index) => (
+            <YogiCard
+              key={index}
+              picture={<img src={yogi.picture} alt={`${yogi.name} picture`} />}
+              name={yogi.name}
+              teaching={yogi.teaching}
+              description={yogi.description}
+            />
+          ))}
+        </Slider>
+      </SliderWrapper>
       <Button>Check schedule</Button>
     </YogiSection>
   );

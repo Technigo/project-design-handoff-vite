@@ -10,13 +10,23 @@ import { ParagraphOne } from "./ParagraphOne";
 
 //styles
 const CardSection = styled.section`
-  /* height: 448px; */
-  width: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 44px 16px 26px 16px;
+
+  @media all and (min-width: 744px) {
+    padding: 49px 20px 26px 20px;
+  }
 `;
 
 const PictureWrapper = styled.div`
+  display: flex;
   padding-bottom: 20px;
+
+  @media all and (min-width: 744px) {
+    /* width: 200px; */
+  }
 `;
 
 const YogiElement = styled.div`
@@ -28,15 +38,27 @@ const YogiElement = styled.div`
 `;
 
 const YogiPicture = styled.div`
-  height: 190px;
-  width: 260px;
+  /* height: 190px;
+  width: 260px; */
+  width: auto;
   object-fit: contain;
+
+  @media all and (min-width: 744px) {
+    /* width: 200px; */
+    object-fit: scale-down;
+  }
 `;
 
+const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+`;
 const YogiName = styled.h3`
   font-size: 20px;
   font-weight: 500;
   padding-bottom: 6px;
+  text-align: left;
 
   @media all and (min-width: 744px) {
     font-size: 14px;
@@ -80,10 +102,12 @@ export const YogiCard = ({ picture, name, teaching, description }) => {
           <YogiPicture>{picture}</YogiPicture>
         </YogiElement>
       </PictureWrapper>
-      <YogiName>{name}</YogiName>
-      <YogiClass>{teaching}</YogiClass>
-      <ParagraphOne>{description}</ParagraphOne>
-      <ReadMore>Read more</ReadMore>
+      <TextWrapper>
+        <YogiName>{name}</YogiName>
+        <YogiClass>{teaching}</YogiClass>
+        <ParagraphOne>{description}</ParagraphOne>
+        <ReadMore>Read more</ReadMore>
+      </TextWrapper>
     </CardSection>
   );
 };
