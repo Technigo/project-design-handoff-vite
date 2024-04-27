@@ -40,6 +40,7 @@ const GlobalStyles = createGlobalStyle`
 
   body {
     background-repeat: no-repeat;
+    background-size: cover; 
     background: linear-gradient(
       180deg,
       #a6c2c5 9.5%,
