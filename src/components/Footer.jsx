@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import InstagramIcon from "../assets/Instagram.png";
-import TwitterIcon from "../assets/Twitter.png";
-import WhatsAppIcon from "../assets/WhatsApp.png";
+import InstagramIcon from "/icons/Instagram.png";
+import TwitterIcon from "/icons/Twitter.png";
+import WhatsAppIcon from "/icons/WhatsApp.png";
 import { breakpoints } from "../utility/breakpoints";
 
 export const Footer = () => {

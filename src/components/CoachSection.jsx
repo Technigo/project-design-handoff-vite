@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-import coachPic1 from "../assets/coach-pic.png";
-import coachPic2 from "../assets/coach-pic2.png";
-import coachPic3 from "../assets/coach-pic3.png";
+import coachPic1 from "/images/coach-pic.png";
+import coachPic2 from "/images/coach-pic2.png";
+import coachPic3 from "/images/coach-pic3.png";
 import { breakpoints } from "../utility/breakpoints";
 import CoachCard from "../utility/CoachCard";
 
@@ -53,12 +53,12 @@ const SectionContainer = styled.section`
   @media (min-width: ${breakpoints.desktop}) {
     justify-content: center;
     padding: 120px 128px;
+    overflow: visible;
   }
 `;
 
 const CoachTitle = styled.h2`
   text-align: left;
-  position: relative;
   white-space: pre-wrap; // Allow text wrapping
 
   @media (min-width: ${breakpoints.tablet}) {
