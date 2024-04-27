@@ -19,7 +19,7 @@ export const JoinUs = () => {
   });
 
   return (
-    <div className="flex flex-col items-center gap-28 px-9 md:gap-8 md:px-16">
+    <div className="flex flex-col items-center gap-28 px-9 md:gap-8 md:px-16 lg:gap-25 2xl:gap-25 xl:mx-">
       <ButtonPrimary
         text={"Join us"}
         addedClasses="py-21 px-6 xl:hidden 2xl:hidden"
@@ -59,7 +59,7 @@ export const JoinUs = () => {
         </div>
       </div>
 
-      <div className="flex flex-row gap-2.5 md:gap-36 xl:mx-117 xl:gap-56 xl:py-25 2xl:py-25 2xl:mx-117 2xl:gap-72">
+      <div className="flex flex-row gap-2.5 md:gap-36 xl:mx-117 xl:gap-56 xl:pt-25 2xl:pt-25 2xl:mx-117 2xl:gap-72">
         <ButtonThird
           addedClasses="md:w-width-7 md:h-height-9 xl:text-3xl 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three xl:w-width-8 xl:h-height-10"
           text={"45 minutes"}
@@ -77,13 +77,13 @@ export const JoinUs = () => {
       {windowWidth >= 1280 ? (
         <div className="flex flex-col gap-25">
           <Image
-            className="h-height-11 w-width-five object-cover"
+            className="h-height-11 w-width-10 2xl:w-width-five object-cover"
             link={"/Images/weights.svg"}
             imgText={"people lifting weights"}
           />
-          <div class="relative mt-25">
+          <div class="relative">
             <Image
-              className="h-height-five w-width-five object-cover rounded-custom-4"
+              className="h-height-five lg:w-width-10 2xl:w-width-five object-cover rounded-custom-4"
               link={"/Images/weightplate.svg"}
               imgText={"bar weights"}
             />
@@ -107,7 +107,7 @@ export const JoinUs = () => {
       <Image
         link={"/Images/plank.svg"}
         alt={"people working out"}
-        className="h-height-three w-width-two object-cover pb-38 pt-3.5 md:h-height-four md:w-width-three md:object-cover md:object-center xl:h-height-12 xl:w-width-five"
+        className="h-height-three w-width-two object-cover pb-38 pt-3.5 md:h-height-four md:w-width-three md:object-cover md:object-center xl:h-height-12 xl:w-width-10 xl:pt-0 2xl:pt-0 2xl:w-width-five"
       />
       {/* </div> */}
     </div>
