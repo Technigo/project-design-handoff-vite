@@ -11,7 +11,7 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
     <footer className="bg-main-blue text-text-light font-montserrat text-sm font-extralight text-left">
       <SocialMediaIcons icons={icons} />
       <div className="p-6 flex flex-col md:flex-row justify-between">
-        <div className="relative bg-main-blue w-[312px]">
+        <div className="relative bg-main-blue w-[312px] h-max-content">
           <select
             onChange={onLanguageChange}
             value={data.locale}
