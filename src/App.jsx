@@ -26,8 +26,9 @@ export const App = () => {
       />
       <LearnMoreSection data={data["learn-more"]} />
       <FooterSection
-       onLanguageChange={handleLanguageChange}
-      data={{ ...data["footer"], locale }}
+        onLanguageChange={handleLanguageChange}
+        data={{ ...data["footer"], locale }}
+        icons={data["footer"]["social-media"]}
       />
     </>
   );
