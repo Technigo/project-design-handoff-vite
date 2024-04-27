@@ -21,7 +21,6 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
             <option value="jp">日本語</option>
           </select>
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-white">
-            {/* why arrow is off when desktop */}
             <IoIosArrowDown />
           </div>
         </div>
@@ -43,21 +42,22 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
             ))}
           </div>
         </div>
-        {/* font size doesnt reflect to 14px */}
-        <div className="my-3 ml-2 text-sm">
+        <div className="my-3 ml-2">
           <div className="mt-12">
-            <p>{info.email}</p>
-            <p>{info.phone}</p>
+            <p className="text-sm lg:text-base">{info.email}</p>
+            <p className="text-sm lg:text-base">{info.phone}</p>
           </div>
           <div className="mt-6">
-            <p>{info.address.company}</p>
-            <p>{info.address["street-number"]}</p>
-            <p>
+            <p className="text-sm lg:text-base">{info.address.company}</p>
+            <p className="text-sm lg:text-base">
+              {info.address["street-number"]}
+            </p>
+            <p className="text-sm lg:text-base">
               {info.address.zipcode} {info.address.city}
             </p>
           </div>
-          <div className="mt-12">
-            <p>
+          <div>
+            <p className="mt-12 text-sm lg:text-base">
               {info.attribution.illustrations}{" "}
               <a
                 href={`https://${info.attribution.link}`}
@@ -67,10 +67,10 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
               </a>
             </p>
           </div>
-          <div className="mt-6">
-            <p>
+          <div>
+            <p className="mt-12 text-sm lg:text-base no-underline">
               {/* underline still shows for icons8.com */}
-              <a href="#" className="no-underline">
+              <a href="#">
                 {info.attribution.copyright}
               </a>
               {info.attribution.company}
