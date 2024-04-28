@@ -7,9 +7,9 @@ export const App = () => {
     <div className="flex flex-col">
       <Header />
       <Reviews />
-      <div className="mt-96">
+      <div className="mt-48">
         <Footer />
       </div>
     </div>
   ) 
-};
+}
