@@ -28,12 +28,14 @@ const FooterWrapper = styled.div`
       " . . . . . . . lg lg sl sl sl";
     padding: 26px 24px;
     row-gap: 16px;
+    column-gap: 12px;
     border-top: 1px solid var(--primary-blk);
   }
 
   @media all and (min-width: 1024px) {
-    grid-template-areas: "logo logo lk lk lk adr adr adr lg lg sl sl";
+    grid-template-areas: "logo logo lk lk lk lk adr adr adr adr lg sl";
     padding: 32px 124px;
+    column-gap: 20px;
   }
 `;
 
@@ -81,16 +83,10 @@ const LinksWrapper = styled.div`
   grid-area: lk;
   display: flex;
   justify-content: center;
-  column-gap: 12px;
-
-  @media all and (min-width: 744px) {
-    column-gap: 20px;
-  }
 `;
 
 const LanguageWrapper = styled.div`
   grid-area: lg;
-  column-gap: 12px;
   display: flex;
   justify-content: center;
 
@@ -101,7 +97,6 @@ const LanguageWrapper = styled.div`
 
 const IconWrapper = styled.div`
   grid-area: sl;
-  column-gap: 21px;
   display: flex;
   justify-content: center;
 
@@ -109,11 +104,6 @@ const IconWrapper = styled.div`
     justify-content: flex-end;
   }
 `;
-
-// const FooterIcon = styled.img`
-//   width: 24px;
-//   height: 24px;
-// `;
 
 //component
 export const Footer = () => {
@@ -139,15 +129,11 @@ export const Footer = () => {
         </AddressWrapper>
         <LinksWrapper>
           <FooterText>About</FooterText>
-          {/* <FooterText>|</FooterText> */}
           <FooterText>Schedule</FooterText>
-          {/* <FooterText>|</FooterText> */}
           <FooterText>Contact</FooterText>
         </LinksWrapper>
         <LanguageWrapper>
           <Language />
-          {/* <FooterIcon src={Globe} alt="Globe icon"></FooterIcon>
-          <FooterText>English</FooterText> */}
         </LanguageWrapper>
         <IconWrapper>
           <Socials social="yt" url="https://www.youtube.com/" />

@@ -90,7 +90,6 @@ export const HappeningsCard = ({ picture, title, date, description }) => {
   return (
     <CardSection>
       <Picture>{picture}</Picture>
-
       <IntroWrapper>
         <Title>{title}</Title>
         <Date>{date}</Date>

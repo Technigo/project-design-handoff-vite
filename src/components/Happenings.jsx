@@ -1,7 +1,3 @@
-//to dos
-//💡 read more on mobile -> unfold, to another page, necessary?
-//🍎 Alex agreed on moving the button inside the card on mobile
-
 //import styled
 import styled from "styled-components";
 
@@ -119,6 +115,10 @@ const ArrowWrapper = styled.div`
   top: 50%;
   transform: translateY(-50%);
   z-index: 100;
+
+  @media all and (max-width: 743px) {
+    display: none; //hide arrows on mobile
+  }
 `;
 
 const LeftArrowWrapper = styled(ArrowWrapper)`
