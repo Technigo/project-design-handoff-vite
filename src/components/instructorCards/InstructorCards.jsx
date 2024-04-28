@@ -15,7 +15,7 @@ export const InstructorCards = () => {
         Meet three of our instructors!
       </h4>
  
-      <div className="flex sm:gap-1 md:gap-1">
+      <div className="flex sm:gap-1 md:gap-1 ">
       
           <InstructorPieces
           image={Susie}
