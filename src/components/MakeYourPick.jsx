@@ -5,17 +5,17 @@ import styled from "styled-components";
 
 export const MakeYourPick = () => {
   return (
-  <>
-  <TextSection>
-    <h1>Make Your Pick</h1>
-  </TextSection>
-  <CardSection>
-  <MakeYourPickOne />
-  <MakeYourPickTwo />
-  <MakeYourPickThree />
-  </CardSection>
-  </>
-  )
+    <>
+      <TextSection>
+        <h1>Make Your Pick</h1>
+      </TextSection>
+      <CardSection>
+        <MakeYourPickOne src={priceCardOne} />
+        <MakeYourPickTwo src={priceCardTwo} />
+        <MakeYourPickThree src={priceCardThree} />
+      </CardSection>
+    </>
+  );
 };
 
 const TextSection = styled.div`
@@ -36,30 +36,54 @@ const TextSection = styled.div`
 
 const CardSection = styled.div`
   display: flex;
+  justify-content: center;
   margin-top: 50px;
   margin-bottom: 40px;
 `;
 
-const MakeYourPickOne = styled.div`
-  background-image: url(${priceCardOne});
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 300px;
-  width: 200px;
+const MakeYourPickOne = styled.img`
+  display: flex;
+  height: 380px;
+  width: 280px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @media (min-width: 1200px) {
+    display: flex;
+    height: 400px;
+    width: 300px;
+
+  }
 `;
 
-const MakeYourPickTwo = styled.div`
-  background-image: url(${priceCardTwo});
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 300px;
-  width: 200px;
+const MakeYourPickTwo = styled.img`
+  display: none;
+
+  @media (min-width: 600px) and (max-width: 1200px) {
+    display: flex;
+    height: 380px;
+    width: 280px;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
 
-const MakeYourPickThree = styled.div`
-  background-image: url(${priceCardThree});
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 300px;
-  width: 200px;
+const MakeYourPickThree = styled.img`
+  display: none;
+
+  @media (min-width: 600px) and (max-width: 1200px) {
+    display: none;
+  }
+  @media (min-width: 1200px) {
+    display: flex;
+    height: 400px;
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
