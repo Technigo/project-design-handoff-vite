@@ -30,6 +30,9 @@ export default {
         mhero: ["377px"],
         "max-content": "max-content",
       },
+      margin: {
+        "36": "148px"
+      },
       dropShadow: {
         button: "0 5px 2px rgba(0, 0, 0, 0.9)",
         card: "0 4px 2px rgba(0, 0, 0, 0.5)",

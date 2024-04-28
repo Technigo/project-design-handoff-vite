@@ -9,7 +9,7 @@ export const InfoIcons = ({ icon, index }) => {
 
   let img = "";
   if (
-    icon.name.toLowerCase() === "food" ||
+    icon.name.toLowerCase() === "canteen" ||
     icon.name.toLowerCase() === "ランチ"
   ) {
     img = food;

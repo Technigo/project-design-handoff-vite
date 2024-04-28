@@ -7,8 +7,8 @@ import { Navigation } from "../components/Navigation";
 export const HeroSection = ({ data }) => {
   return (
     <>
-      <div className="hero-section bg-stripes-mobile bg-center bg-cover bg-no-repeat h-mhero desktop:h-[736px] ">
-        <div className="max-w-screen-xl relative h-mhero desktop:h-[736px] m-auto">
+      <div className="hero-section bg-stripes-mobile tablet:bg-stripes-tablet desktop:bg-stripes-desktop bg-center bg-cover bg-no-repeat h-mhero desktop:h-[736px] ">
+        <div className="relative h-mhero desktop:h-[736px] m-auto">
           <header className="flex justify-between items-center desktop:py-4 desktop:px-16 ">
             <img
               src={logo}

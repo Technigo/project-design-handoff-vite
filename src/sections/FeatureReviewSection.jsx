@@ -20,14 +20,14 @@ export const FeatureReviewSection = ({ featureData, reviewData }) => {
   }, []);
 
   return (
-    <div className="bg-background-neon-green py-6">
+    <div className="bg-background-neon-green">
       <div className="max-w-screen-xl m-auto grid grid-cols-1 desktop:grid-cols-2">
-        <div>
+        <div className="desktop:basis-2/3">
           {featureData.map((feature, index) => (
             <FeatureCard key={index} feature={feature} />
           ))}
         </div>
-        <div className="flex flex-col tablet:flex-row desktop:flex-col justify-center">
+        <div className="flex flex-col tablet:flex-row desktop:flex-col desktop:basis-1/3 justify-center">
           {reviewData.map((review, index) => (
             <ReviewCard key={index} review={review} />
           ))}

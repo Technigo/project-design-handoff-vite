@@ -1,41 +1,10 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
-### Remove git
-
-rm -rf .git
-
-# Design Handoff Project
-
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+### Project
+This project involves collaborating with UX design students to transform their landing page designs into functional React components for a fitness club. The goal is to create a responsive and visually accurate website using React and Tailwind CSS, incorporating features like a navigation header, hero section, registration form with various states, and a detailed footer.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Setting up Tailwind CSS for the first time presented challenges, as did closely following the designer's layout and style specifications. Adjusting to these requirements was a key learning curve in the project.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://worky-design.netlify.app/

@@ -26,7 +26,8 @@
 
   "info-icons": [
     {
-      "name": "Food",
+      "name": "Canteen",
+      "smallName": "Food",
       "description": "Delicious lunch"
     },    {
       "name": "Parking",
@@ -75,7 +76,9 @@
 
   "learn-more": {
     "heading": "Embrace your awesomeness and celebrate success!",
+    "smallHeading": "Embrace your awesomeness",
     "subheading": "Who says working out can't be as rewarding as happy hour?\nAt our gym, we've turned sweating into sweet treats and gains into VIP status. Join us, where every rep gets you closer to dis- counted bliss and exclusive invites.\nBecause with Worky, celebrating success is the only workout plan you'll ever need!",
+    "smallSubheading": "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events.",
     "cta": "Learn more"
   },
 
