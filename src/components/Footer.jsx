@@ -62,7 +62,7 @@ export const Footer = () => {
                 </ul>
               </nav>
             </div>
-          
+
             <div className="bg-steelblue p-6">
                 <p>{t("footer.about")}</p>
                 <p>{t("footer.contact")}</p>
@@ -72,7 +72,7 @@ export const Footer = () => {
 
             <div className="bg-steelblue p-6 text-center sm:text-left">
             <select name="" id="" value={i18n.language} onChange={(e) => i18n.changeLanguage(e.target.value)} className="bg-steelblue border-darkblue rounded-md">
-              <option value="" selected disabled>{t("footer.select")}</option>
+              <option value="" disabled>{t("footer.select")}</option>
               <option value="en">{t("footer.en")}</option>
               <option value="sv">{t("footer.sw")}</option>
             </select>
