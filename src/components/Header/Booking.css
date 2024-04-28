@@ -5,7 +5,7 @@
   position: relative;
   align-items: start;
   left: 20%;
-  top: 256px;
+  top: 240px;
   gap: 12px;
   color: #042D43;
 }
@@ -38,4 +38,5 @@
   font-size: 24px;
   line-height: 26px;
   font-weight: 500;
+  cursor: pointer;
 }

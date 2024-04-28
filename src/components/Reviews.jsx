@@ -3,12 +3,8 @@ import leftblob from "/images/leftblob.svg";
 import rightblob from "/images/rightblob.svg";
 import "./Reviews.css";
 
-
 export const Reviews = () => {
-
-
   return (
-
     <div className="mx-auto align-middle  bg-yogawhite flex-1  py-7">
      <div className="reviews  bg-yogawhite  bg-no-repeat bg-contain md:mx-8 "   style={{
         backgroundImage: `url(${leftblob}), url(${rightblob})`,
@@ -16,8 +12,6 @@ export const Reviews = () => {
         backgroundSize: 'contain, contain',
         minHeight:'111px',
         maxHeight:'300px',
-
-
       }}>
         <div className="flex justify-evenly" >
           {customerReviews.map((review, index) => (
@@ -27,8 +21,6 @@ export const Reviews = () => {
           ))}
         </div>
         </div>
-
-
     </div>
 
   );
