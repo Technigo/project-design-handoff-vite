@@ -5,11 +5,11 @@ import { Reviews } from "./components/Reviews";
 
 export const App = () => {
   return (
-    <div className="page-container">
+    <div className="flex flex-col">
       <Header />
       <Reviews />
       <Strength />
       <Footer />
     </div>
   ) 
-};
+}

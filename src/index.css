@@ -19,8 +19,3 @@ code {
 body {
   margin: 0;
 }
-
-.page-container {
-  display: flex;
-  flex-direction: column;
-}
