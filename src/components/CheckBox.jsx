@@ -32,7 +32,7 @@ const StyledCheckbox = styled.div`
   }
 `;
 
-const Checkbox = ({ className, checked, ...props }) => (
+const CheckBox = ({ className, checked, ...props }) => (
   <CheckboxContainer className={className}>
     <HiddenCheckbox checked={checked} {...props} />
     <StyledCheckbox checked={checked}>
@@ -43,10 +43,10 @@ const Checkbox = ({ className, checked, ...props }) => (
   </CheckboxContainer>
 );
 
-Checkbox.propTypes = {
+CheckBox.propTypes = {
   className: PropTypes.string,
   checked: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 
-export default Checkbox;
+export default CheckBox;

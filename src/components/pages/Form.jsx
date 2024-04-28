@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Checkbox from "../Checkbox";
+import CheckBox from "../Checkbox";
 import useDeviceType from "../useDeviceType";
 import { StyledText } from "../StyledComponents";
 import {
@@ -119,7 +119,7 @@ export const Form = () => {
       <FormGroup>
         <label>
           <CalenderBox>
-            <Checkbox checked={isChecked} onChange={handleCheckboxChange} />
+            <CheckBox checked={isChecked} onChange={handleCheckboxChange} />
 
             <PromiseText>Add a notification to my Calendar</PromiseText>
           </CalenderBox>
