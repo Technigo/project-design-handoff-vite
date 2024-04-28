@@ -28,6 +28,7 @@ export default {
         's-12': '12px',
       },
       fontSize: {
+        "logo-h1-dt": "8.375rem",
         "title-h1-dt": "4.375rem",
         "title-h2-dt": "3.063rem",
         "title-h3-dt": "2.25rem",
@@ -64,6 +65,13 @@ export default {
         'tablet': '680px',
         'desktop': '1280px',
       },
+      // screens: {
+      //   'tablet': {'min': '744px', 'max': '1439px'},
+      //   // => @media (min-width: 640px) { ... }
+  
+      //   'desktop': '1440px',
+      //   // => @media (min-width: 1280px) { ... }
+      // },
       backgroundSize: {
         'max': 'cover',
 
@@ -87,6 +95,9 @@ export default {
         "tabw": "234px",
         "deskh": "310px",
         "deskw": "417px",
+      },
+      lineHeight:{
+        "12": "6.4rem"
       },
     },
   },

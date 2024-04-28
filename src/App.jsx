@@ -6,7 +6,7 @@ import { Philosophy } from "./components/Philosophy";
 
 export const App = () => {
   return (
-    <div className="page-container">
+    <div className="flex flex-col">
       <Header />
       <Reviews />
       <Philosophy />
@@ -14,4 +14,4 @@ export const App = () => {
       <Footer />
     </div>
   ) 
-};
+}
