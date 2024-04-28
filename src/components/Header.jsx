@@ -63,7 +63,8 @@ const HeaderImage = styled.img`
   z-index: 2;
 
   @media all and (min-width: 744px) {
-    max-width: 700px;
+    max-width: 675px;
+    height: 100%;
   }
 `;
 

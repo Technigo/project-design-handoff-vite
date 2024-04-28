@@ -12,15 +12,16 @@ import { HeadingTwo } from "../reusables/HeadingTwo";
 import { ParagraphTwo } from "../reusables/ParagraphTwo";
 
 //styles
+//desktop: original padding of 174px 230px is very squished on 1024px screen -> adjusted!
 const PhiloSection = styled.section`
-  padding: 84px 16px;
+  padding: 68px 16px;
 
   @media all and (min-width: 744px) {
-    padding: 93px 50px;
+    padding: 44px 90px;
   }
 
   @media all and (min-width: 1024px) {
-    padding: 174px 230px;
+    padding: 148px 124px;
   }
 `;
 
@@ -40,12 +41,12 @@ const ImageWrapper = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     opacity: 0.1;
-    z-index: -1; //set picture behind the context
+    z-index: -1; //sets picture behind the context
 
     @media all and (min-width: 744px) {
       z-index: 1;
       opacity: 1;
-      right: -100%;
+      right: -90%;
       top: 14%;
       bottom: 18%;
     }
@@ -72,27 +73,26 @@ const PhiloWrapper = styled.div`
     grid-template-columns: repeat(2, 1fr);
     column-gap: 21px;
     row-gap: 65px;
-    padding-top: 50px;
-    /* padding: 50px 93px 0 93px; */
+    padding: 50px 0 0 0;
   }
   @media all and (min-width: 1024px) {
     //to put it into two columns on tablet
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 200px;
+    column-gap: 230px;
     row-gap: 77px;
-    padding-top: 85px;
+    padding: 85px 0 0 0;
   }
 `;
 
 const TitleTextWrapper = styled.div`
-  text-align: center; // Default alignment
+  text-align: center;
 
   @media all and (min-width: 1024px) {
     justify-self: ${(props) =>
       props.index % 2 === 0
         ? "start"
-        : "end"}; // Left or right alignment based on index
+        : "end"}; //left or right alignment based on index
   }
 `;
 
@@ -111,16 +111,18 @@ const PhiloTitle = styled.h3`
   @media all and (min-width: 1024px) {
     font-size: 28px;
     text-align: ${(props) =>
-      props.index % 2 === 0 ? "left" : "right"}; // Left or right based on index
+      props.index % 2 === 0
+        ? "left"
+        : "right"}; //left or right alignment based on index
   }
   ${({ isTablet, isSelected }) =>
     !isTablet &&
     isSelected &&
-    `color: var(--primary-prpl);`} // Purple when selected on smaller screens
+    `color: var(--primary-prpl);`} //purple when selected on smaller screens
 
   @media all and (min-width: 744px) {
     &:hover {
-      color: var(--primary-prpl); // Purple on hover for tablet or bigger
+      color: var(--primary-prpl); //purple on hover for tablet or bigger
     }
   }
 `;
@@ -141,12 +143,14 @@ const PhiloText = styled.p`
   @media all and (min-width: 1024px) {
     font-size: 18px;
     text-align: ${(props) =>
-      props.index % 2 === 0 ? "left" : "right"}; // Left or right based on index
+      props.index % 2 === 0
+        ? "left"
+        : "right"}; //left or right alignment based on index
   }
 
   @media all and (min-width: 744px) {
     &:hover {
-      color: var(--primary-prpl); // Purple on hover for tablet or bigger
+      color: var(--primary-prpl); //purple on hover for tablet or bigger
     }
   }
 `;
@@ -243,7 +247,6 @@ export const Philosophy = () => {
           blossom uniquely in each of us. May you discover your center, your
           essence, and make room for it in your daily life.
         </ParagraphTwo>
-        {/* <ImageWrapper> */}
         <PhiloWrapper>
           {philoData.map((data, index) => (
             <TitleTextWrapper
@@ -265,7 +268,6 @@ export const Philosophy = () => {
             </TitleTextWrapper>
           ))}
         </PhiloWrapper>
-        {/* </ImageWrapper> */}
       </PhiloSection>
     </ImageWrapper>
   );

@@ -1,8 +1,8 @@
+//import styled
 import styled from "styled-components";
-import QuoteImage from "../../public/images/sunset.jpg";
 
-//to do
-//check paddings -> design on the left side
+//import picture
+import QuoteImage from "../../public/images/sunset.jpg";
 
 //styles
 const ImageContainer = styled.section`
@@ -27,7 +27,7 @@ const QuoteText = styled.h1`
   font-size: 40px;
   color: var(--primary-white);
   text-align: center;
-  padding: 66px 35px;
+  padding: 73px 32px 59px 36px;
 
   @media all and (min-width: 744px) {
     font-size: 58px;

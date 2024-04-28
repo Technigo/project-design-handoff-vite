@@ -37,18 +37,6 @@ const YogiElement = styled.div`
   width: 100%;
 `;
 
-const YogiPicture = styled.div`
-  /* height: 190px;
-  width: 260px; */
-  width: auto;
-  object-fit: contain;
-
-  @media all and (min-width: 744px) {
-    /* width: 200px; */
-    object-fit: scale-down;
-  }
-`;
-
 const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -82,31 +70,17 @@ const YogiClass = styled.h4`
   }
 `;
 
-const ReadMore = styled.p`
-  font-size: 14px;
-  text-align: left;
-  color: var(--primary-grey);
-  padding-top: 20px;
-
-  @media all and (min-width: 1024px) {
-    font-size: 16px;
-  }
-`;
-
 //component
 export const YogiCard = ({ picture, name, teaching, description }) => {
   return (
     <CardSection>
       <PictureWrapper>
-        <YogiElement>
-          <YogiPicture>{picture}</YogiPicture>
-        </YogiElement>
+        <YogiElement>{picture}</YogiElement>
       </PictureWrapper>
       <TextWrapper>
         <YogiName>{name}</YogiName>
         <YogiClass>{teaching}</YogiClass>
         <ParagraphOne>{description}</ParagraphOne>
-        <ReadMore>Read more</ReadMore>
       </TextWrapper>
     </CardSection>
   );

@@ -1,3 +1,7 @@
+//to do:
+//💡check read more with Alex
+//💡info to Alex about changes made to tablet (only showing two yogis)
+
 /* eslint-disable no-undef */
 //import styled
 import styled from "styled-components";

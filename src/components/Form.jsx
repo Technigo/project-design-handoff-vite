@@ -83,34 +83,32 @@ const StyledInput = styled.input`
   color: var(--primary-blk);
 `;
 
+//styling CHECKBOX
 const CheckboxInput = styled.input`
   display: none; //hide the native checkbox
 `;
 
 const CheckboxLabel = styled.label`
-  position: relative;
-  cursor: pointer;
   display: flex;
   align-items: center;
-  padding-bottom: 53px;
+  cursor: pointer;
+  padding-bottom: 20px;
 
   //custom box styling
-  &:before {
-    content: " ";
+  &::before {
+    content: "";
+    display: inline-block;
     width: 20px;
     height: 20px;
     border: 2px solid var(--primary-grey);
     border-radius: 5px;
-    display: flex;
     margin-right: 10px;
   }
-
   //checked styling
-  ${CheckboxInput}:checked + &:before {
+  ${CheckboxInput}:checked + &::before {
     background-color: var(--primary-prpl);
-    border: 2px solid var(--primary-prpl);
-    /* content: "\2714"; */
-    content: "x";
+    border-color: var(--primary-prpl);
+    content: "✔"; // Alternative to Unicode checkmark for clarity
     color: white;
     text-align: center;
     line-height: 18px;
