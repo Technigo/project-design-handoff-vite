@@ -1,41 +1,11 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+This project involves transforming a UX design for a fitness club landing page into functional code using React. The task focuses on collaboration between UX design and development teams, with an emphasis on interpreting designs kindly and implementing them faithfully.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Approaching this project involved careful planning and consideration of the design specifications provided. We utilized React for building the components and Tailwind CSS for styling, ensuring a responsive layout that adapts seamlessly to various screen sizes. All data for the project was sourced from JSON files, allowing for easy management and integration.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://karategirl.netlify.app/
