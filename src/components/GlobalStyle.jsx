@@ -4,7 +4,7 @@ import { breakpoints } from "../utility/breakpoints";
 const GlobalStyle = createGlobalStyle`
 *, *::before, *::after {
 	margin: 0;
-			padding: 0;
+	padding: 0;
 	  }
 	
 	body {
@@ -29,11 +29,10 @@ const GlobalStyle = createGlobalStyle`
    --paragraph: "Montserrat", sans-serif;
 }
 
-section {
+/* section {
     width: 100%; // Ensure sections take full width
     max-width: 100%; // Prevent overflow
- 
-  }
+  } */
 
 h1 {
     font-family: "Fira Sans", sans-serif;

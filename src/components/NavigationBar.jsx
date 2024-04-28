@@ -12,12 +12,11 @@ export const NavigationBar = () => {
 
 const Navbar = styled.nav`
   position: absolute;
-/*   height: 88px; */
-  width: 100%;
   z-index: 100; // High z-index to ensure the nav bar stays to the top
   display: flex;
   justify-content: space-between;
   align-items: flex-end; 
+  justify-content: stretch;
   padding: 16px 32px;
   background-color: rgba(8, 61, 86, 0.75);
   backdrop-filter: blur(2px);

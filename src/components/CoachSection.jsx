@@ -44,7 +44,6 @@ const SectionContainer = styled.section`
   align-items: flex-start;
   padding: var(--padding-mobile);
   background-color: var(--yellow);
-  width: 100%;
   overflow: hidden;
 
   @media (min-width: ${breakpoints.tablet}) {
@@ -52,21 +51,14 @@ const SectionContainer = styled.section`
   }
   @media (min-width: ${breakpoints.desktop}) {
     justify-content: center;
-    padding: 120px 128px;
-    overflow: visible;
+    padding: 120px 100px;
+    /* overflow: visible; */
   }
 `;
 
 const CoachTitle = styled.h2`
   text-align: left;
   white-space: pre-wrap; // Allow text wrapping
-
-  @media (min-width: ${breakpoints.tablet}) {
-    /* Tablet */
-  }
-  @media (min-width: ${breakpoints.desktop}) {
-    /* padding-left: 35px; */
-  }
 `;
 
 const ScrollableCardWrapper = styled.div`
@@ -74,11 +66,11 @@ const ScrollableCardWrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   overflow-x: auto;
-  justify-content: space-between;
   align-items: flex-start;
-  width: 100%;
+  width: 100vw;
   padding: 96px 0;
   gap: 32px;
+  width: calc(4 * (250px + 32px) - 32px);
 
   @media (min-width: ${breakpoints.tablet}) {
     justify-content: flex-start;
@@ -86,6 +78,5 @@ const ScrollableCardWrapper = styled.div`
   }
   @media (min-width: ${breakpoints.desktop}) {
     padding: 96px 0;
-  
   }
 `;

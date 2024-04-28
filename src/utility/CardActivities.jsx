@@ -28,24 +28,23 @@ const CardWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 16px;
-  height: 432px;
+width: 100%;
+padding: 16px;
+
 
   @media (min-width: ${breakpoints.tablet}) {
     /*  height: 600px; looks good on tablet but creates space on the desktop */
-    height: 600px;
   }
 
   @media (min-width: ${breakpoints.desktop}) {
     flex-direction: row;
-    align-items: center;
-      height: 336px;
+justify-content: space-between;
+padding: 0;
   }
 `;
 
 const ImageWrapper = styled.div`
   width: 100%; //keep this 
-  /* height: 336px; */ // ensure a consistent hight since we have different image sizes
   overflow: hidden;
   border-radius: 16px 56px 0 0;
 
@@ -54,8 +53,7 @@ const ImageWrapper = styled.div`
 
   @media (min-width: ${breakpoints.desktop}) {
     border-radius: 16px 0 0 56px;
-    width: 512px;
-    height: 336px;
+    width: 50%; //not helping
   }
 `;
 
@@ -63,7 +61,7 @@ const CardImage = styled.img`
   object-fit: cover;
   object-position: center;
   width: 100%;
-  height: 100%;
+  height: auto;
   //nothing to change here
 
   @media (min-width: ${breakpoints.tablet}) {
@@ -72,6 +70,7 @@ const CardImage = styled.img`
 
   @media (min-width: ${breakpoints.desktop}) {
     border-radius: 16px 0 0 56px;
+    height: 336px;
   }
 `;
 
@@ -97,6 +96,7 @@ flex: 1;
     border-left: none;
     border-top: 8px solid var(--yellow-medium);
   /*   padding: 32px; */
+  width: 50%;
   }
 `;
 

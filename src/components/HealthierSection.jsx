@@ -28,7 +28,7 @@ const StyledSection = styled.section`
   align-items: flex-start;
   position: relative;
   padding: 32px;
-  width: 100%;
+/*   width: 100%; */
   align-items: end;
 
   @media (min-width: ${breakpoints.tablet}) {
@@ -45,7 +45,8 @@ const FlexContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-self: baseline;
+/*   align-items: flex-end; */
   padding: 32px 16px;
 
   @media (min-width: ${breakpoints.tablet}) {
@@ -65,6 +66,7 @@ const CtaButton = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  align-self: end;
   padding: 0 8px;
 
   @media (min-width: ${breakpoints.tablet}) {
