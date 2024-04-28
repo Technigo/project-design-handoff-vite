@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import styled from "styled-components";
 import buttonData from "../data/Buttons.json";
 import { Buttons } from "./Buttons";
@@ -13,7 +14,7 @@ const StyledHeroCardContainer = styled.div`
   margin-top: 80px;
   margin-bottom: 80px;
 
-  @media (min-width: 375px) and (max-width: 744px) {
+  @media (min-width: 320px) and (max-width: 744px) {
     margin-top: 40px;
     margin-bottom: 40px;
     overflow-x: auto;
@@ -50,10 +51,7 @@ const StyledImageContainer = styled.div`
     margin-top: 50px;
   }
 
-
-  
-
-  @media (min-width: 375px) and (max-width: 744px) {
+  @media (min-width: 320px) and (max-width: 744px) {
     width: 194px;
     height: 317px;
     flex-shrink: 0;
@@ -67,6 +65,20 @@ const StyledImageContainer = styled.div`
 `;
 
 export const HeroCard = () => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const buttonsWithImages = buttonData.filter((item) => item.imageId);
 
   return (
@@ -76,6 +88,7 @@ export const HeroCard = () => {
           <Buttons
             buttonText={item.buttonText}
             fontSize={15}
+            paddinglr={windowWidth >= 1024 ? 48 : 16}
             className="hero-button"
           />
         </StyledImageContainer>

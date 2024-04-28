@@ -18,11 +18,7 @@ const StyledOurClass = styled.section`
     justify-content: center;
     align-items: center;
   }
-
-
 `;
-
-
 
 // Parent container for the "Our Classes" section
 const StyledClassesContainer = styled.div`
