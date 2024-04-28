@@ -1,4 +1,3 @@
-//checked and fixed 🌈//
 //import styled
 import styled from "styled-components";
 
@@ -72,7 +71,6 @@ const HeaderTitle = styled.h1`
   font-family: "Gerbera";
   font-size: 104px;
   color: var(--primary-white);
-  /* letter-spacing: 20px; */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1;
 

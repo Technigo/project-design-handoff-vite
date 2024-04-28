@@ -1,9 +1,6 @@
 //import styled
 import styled from "styled-components";
 
-//import icon
-// import Globe from "../../public/icons/globe.png";
-
 //import reusables
 import { Logo } from "../reusables/Logo";
 import { Socials } from "../reusables/Socials";

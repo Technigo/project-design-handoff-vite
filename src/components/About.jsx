@@ -1,5 +1,3 @@
-// fixed and checked -> all done here 🌈//
-
 //import styled
 import styled from "styled-components";
 

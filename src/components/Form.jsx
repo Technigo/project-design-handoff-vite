@@ -108,7 +108,7 @@ const CheckboxLabel = styled.label`
   ${CheckboxInput}:checked + &::before {
     background-color: var(--primary-prpl);
     border-color: var(--primary-prpl);
-    content: "✔"; // Alternative to Unicode checkmark for clarity
+    content: "✔";
     color: white;
     text-align: center;
     line-height: 18px;
