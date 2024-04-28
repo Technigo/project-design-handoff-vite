@@ -20,6 +20,7 @@ const CardSection = styled.section`
   column-gap: 21px;
 
   @media all and (min-width: 744px) {
+    box-shadow: none;
     background: none;
     grid-template-areas:
       "img img img intro intro intro"

@@ -32,7 +32,7 @@ const FooterWrapper = styled.div`
   @media all and (min-width: 1024px) {
     grid-template-areas: "logo logo lk lk lk lk adr adr adr adr lg sl";
     padding: 32px 124px;
-    column-gap: 20px;
+    column-gap: 12px;
   }
 `;
 
@@ -66,9 +66,11 @@ const FooterText = styled.p`
   font-weight: 400;
   text-align: center;
   color: var(--primary-blk);
+  padding: 0 20px;
 
   @media all and (min-width: 744px) {
     font-size: 14px;
+    padding: 0 5px;
   }
 
   @media all and (min-width: 1024px) {
