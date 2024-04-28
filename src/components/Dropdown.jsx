@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import menuIcon from "../assets/heroSectionImages/menu.png";
 import vector from "../assets/heroSectionImages/vector.png";
+
 export const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
 
