@@ -5,7 +5,7 @@
 
 ### Project Brief
 
-A collabration project with Technigo UX designer. A business website made for a gym group named "Curve Pilates". Utilizing **React**, we've ensured an interactive and seamless user experience. Through the implementation of **reusable components** like Buttons and Cards, managing updates and maintenance is simplified for long-term sustainability. With **responsive design** in place, our site seamlessly adjusts to various screen sizes, delivering a consistent and enjoyable user experience across devices.
+A collabration project with Technigo UX designer. A business website made for a gym group named "Curve Pilates". Utilizing **React**, we've ensured an interactive and seamless user experience. Through the implementation of **reusable components** like Buttons and Cards, as well as the styling with **styled-component**, managing updates and maintenance is simplified for long-term sustainability. With **responsive design** in place, our site seamlessly adjusts to various screen sizes, delivering a consistent and enjoyable user experience across devices.
 
 UI/UX Designer : Chantal Williams
 
