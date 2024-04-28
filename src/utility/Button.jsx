@@ -42,7 +42,7 @@ const StyledButton = styled.button`
   }
 
   @media (min-width: ${breakpoints.desktop}) {
-    padding: 24px 48px;
+    /*   padding: 24px 48px; */
     font-size: 24px;
     line-height: 32px;
   }
@@ -57,16 +57,15 @@ const ArrowIcon = styled.span`
   margin-left: 8px;
 
   @media (min-width: ${breakpoints.tablet}) {
-  width: 19px;
-  height: 16px;
+    width: 19px;
+    height: 16px;
   }
 
   @media (min-width: ${breakpoints.desktop}) {
-   margin-left: 16px;
-   width: 28px;
-  height: 24px;
+    margin-left: 16px;
+    width: 28px;
+    height: 24px;
   }
 `;
-
 
 export default Button;

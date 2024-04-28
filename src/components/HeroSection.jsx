@@ -18,7 +18,7 @@ export function HeroSection() {
 }
 
 const Hero = styled.section`
- padding: var(--padding-mobile);
+  padding: var(--padding-mobile);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -26,28 +26,20 @@ const Hero = styled.section`
   background-image: url("/images/hero.img.jpeg");
   background-size: cover;
   background-position: center;
-  
-  @media (min-width: ${breakpoints.tablet}) {
-    padding: var(--padding-tablet)
-  }
 
+  @media (min-width: ${breakpoints.tablet}) {
+    padding: var(--padding-tablet);
+  }
 
   @media (min-width: ${breakpoints.desktop}) {
     padding: var(--padding-desktop);
   }
-
 `;
 const HeroContent = styled.div`
   display: flex;
   flex-direction: column;
- /*  align-items: flex-end;
-  justify-content: flex-end; */
   gap: 32px;
 
-  /* @media (min-width: ${breakpoints.tablet}) {
- 
-  }
- */
   @media (min-width: ${breakpoints.desktop}) {
     gap: 48px;
   }
@@ -62,12 +54,12 @@ const Highlight = styled.span`
 `;
 
 const ButtonWrapper = styled.div`
-align-self: flex-end;
-height: var(--Spacing-5, 40px);
-gap: 8px;
+  align-self: flex-end;
+  height: var(--Spacing-5, 40px);
+  gap: 8px;
 
-@media (max-width: ${breakpoints.tablet}) {
-  align-items: flex-start;
+  @media (max-width: ${breakpoints.tablet}) {
+    align-items: flex-start;
     font-size: 32px;
     line-height: 40px;
   }

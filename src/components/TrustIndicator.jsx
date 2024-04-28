@@ -56,10 +56,10 @@ const TrustSection = styled.section`
 
   @media (min-width: ${breakpoints.tablet}) {
     padding: var(--padding-tablet);
-  } 
+  }
 
   @media (min-width: ${breakpoints.desktop}) {
-    padding: var(--padding-desktop); 
+    padding: var(--padding-desktop);
   }
 `;
 
@@ -68,11 +68,12 @@ const TrustTextWrapper = styled.div`
   width: 326px;
   flex-direction: column;
   align-items: flex-start;
-  color: var(--blue); //adding the color here because there were no defined properties for the title in the design. 
-  font-family: var(--paragraph); 
+  color: var(
+    --blue
+  ); //adding the color here because there were no defined properties for the title in the design.
+  font-family: var(--paragraph);
   font-weight: 500;
   margin: 0;
-
 
   @media (min-width: ${breakpoints.tablet}) {
     width: 472px;

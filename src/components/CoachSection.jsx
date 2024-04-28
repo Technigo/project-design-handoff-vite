@@ -52,7 +52,6 @@ const SectionContainer = styled.section`
   @media (min-width: ${breakpoints.desktop}) {
     justify-content: center;
     padding: 120px 128px;
-    /* overflow: visible; */
   }
 `;
 
@@ -64,17 +63,18 @@ const CoachTitle = styled.h2`
 const ScrollableCardWrapper = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   overflow-x: auto;
   align-items: flex-start;
   padding: 96px 0;
   gap: 32px;
-  width: calc(4 * (300px + 32px) - 32px);
+  width: 100%;
 
   @media (min-width: ${breakpoints.tablet}) {
     justify-content: flex-start;
     padding: 64px 32px;
   }
+
   @media (min-width: ${breakpoints.desktop}) {
     padding: 96px 0;
   }

@@ -32,7 +32,7 @@ const FooterContainer = styled.div`
   align-items: flex-start;
   padding: 32px;
   background-color: var(--blue);
- /*  width: 100%; */
+  /*  width: 100%; */
 
   @media (min-width: ${breakpoints.tablet}) {
     padding: var(--padding-tablet);

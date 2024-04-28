@@ -4,11 +4,11 @@ import { breakpoints } from "../utility/breakpoints";
 const GlobalStyle = createGlobalStyle`
 *, *::before, *::after {
 	margin: 0;
-	padding: 0;
-	  }
+ padding: 0;
+}
 	
-	body {
-			font-family: 'Fira Sans', 'Montserrat', sans-serif;
+body {
+	font-family: 'Fira Sans', 'Montserrat', sans-serif;
 	}
 
 :root {
@@ -28,11 +28,6 @@ const GlobalStyle = createGlobalStyle`
    --header: "Fira Sans", sans-serif;
    --paragraph: "Montserrat", sans-serif;
 }
-
-/* section {
-    width: 100%; // Ensure sections take full width
-    max-width: 100%; // Prevent overflow
-  } */
 
 h1 {
     font-family: "Fira Sans", sans-serif;
