@@ -9,6 +9,7 @@ import { Quote } from "./components/Quote";
 import { FAQ } from "./components/FAQ";
 import { Form } from "./components/Form";
 import { Footer } from "./components/Footer";
+import { Navigation } from "./components/Navigation";
 
 //stylesheet
 import "./App.css";
@@ -16,6 +17,7 @@ import "./App.css";
 export const App = () => {
   return (
     <>
+      <Navigation />
       <Header />
       <About />
       <Philosophy />

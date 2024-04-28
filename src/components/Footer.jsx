@@ -2,11 +2,12 @@
 import styled from "styled-components";
 
 //import icon
-import Globe from "../../public/icons/globe.png";
+// import Globe from "../../public/icons/globe.png";
 
 //import reusables
 import { Logo } from "../reusables/Logo";
 import { Socials } from "../reusables/Socials";
+import { Language } from "../reusables/Language";
 
 //styles
 const FooterWrapper = styled.div`
@@ -109,10 +110,10 @@ const IconWrapper = styled.div`
   }
 `;
 
-const FooterIcon = styled.img`
-  width: 24px;
-  height: 24px;
-`;
+// const FooterIcon = styled.img`
+//   width: 24px;
+//   height: 24px;
+// `;
 
 //component
 export const Footer = () => {
@@ -144,8 +145,9 @@ export const Footer = () => {
           <FooterText>Contact</FooterText>
         </LinksWrapper>
         <LanguageWrapper>
-          <FooterIcon src={Globe} alt="Globe icon"></FooterIcon>
-          <FooterText>English</FooterText>
+          <Language />
+          {/* <FooterIcon src={Globe} alt="Globe icon"></FooterIcon>
+          <FooterText>English</FooterText> */}
         </LanguageWrapper>
         <IconWrapper>
           <Socials social="yt" url="https://www.youtube.com/" />

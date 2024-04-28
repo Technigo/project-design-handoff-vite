@@ -1,3 +1,7 @@
+//to dos
+//💡 read more on mobile -> unfold, to another page, necessary?
+//🍎 Alex agreed on moving the button inside the card on mobile
+
 //import styled
 import styled from "styled-components";
 

@@ -1,3 +1,8 @@
+//to dos
+//💡 navigation
+//💡 fix position of button on desktop/tablet
+//💡 🍎 hover on location (purple) -> should it be cklickable and link somewhere? Or just change color on hover?
+
 //import styled
 import styled from "styled-components";
 
@@ -7,7 +12,7 @@ import Location from "../../public/icons/location.png";
 
 //import reusables
 import { Button } from "../reusables/Button";
-import { Logo } from "../reusables/Logo";
+// import { Logo } from "../reusables/Logo";
 
 //styles
 const HeaderContainer = styled.section`
@@ -20,12 +25,12 @@ const HeaderContainer = styled.section`
   padding: 16px 0 68px 0;
 `;
 
-const HeaderNavigation = styled.div`
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 16px;
-`;
+// const HeaderNavigation = styled.div`
+//   display: flex;
+//   justify-content: space-between;
+//   width: 100%;
+//   padding: 0 16px;
+// `;
 
 const HeaderTopWrapper = styled.div`
   position: relative;
@@ -56,13 +61,13 @@ const HeaderImage = styled.img`
   z-index: 2;
 `;
 
-//Hamburger
-//check library Vittoria chat
-const Hamburger = styled.p`
-  width: 30px;
-  height: 30px;
-  background: red;
-`;
+// //Hamburger
+// //check library Vittoria chat
+// const Hamburger = styled.p`
+//   width: 30px;
+//   height: 30px;
+//   background: red;
+// `;
 
 const HeaderTitle = styled.h1`
   position: absolute;
@@ -109,7 +114,6 @@ const HeaderIcon = styled.img`
 `;
 
 const HeaderText = styled.p`
-  font-family: "Poppins";
   font-size: 16px;
   color: var(--primary-blk);
   text-align: center;
@@ -127,15 +131,16 @@ const HeaderText = styled.p`
 export const Header = () => {
   return (
     <HeaderContainer>
-      <HeaderNavigation>
-        {/* renders logo based on viewport width */}
-        {window.innerWidth >= 1024 ? (
+      {/* <HeaderNavigation> */}
+      {/* renders logo based on viewport width */}
+      {/* {window.innerWidth >= 1024 ? (
           <Logo type="big" />
         ) : (
           <Logo type="small" />
         )}{" "}
         <Hamburger />
-      </HeaderNavigation>
+      </HeaderNavigation> */}
+
       <HeaderTopWrapper>
         <HeaderImage src={CobraPose} alt="Woman doing cobra pose"></HeaderImage>
         <HeaderTitle>YOGA</HeaderTitle>

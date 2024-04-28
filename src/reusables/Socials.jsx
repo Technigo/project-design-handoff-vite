@@ -16,6 +16,10 @@ const StyledSocials = styled.img`
     height: 25px;
     width: 25px;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 const StyledSocialLink = styled.a`
