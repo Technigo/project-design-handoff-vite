@@ -6,7 +6,7 @@ export const LearnMoreSection = ({ data }) => {
 
   return (
     <div className="bg-background-lavender text-text-dark text-center flex flex-col lg:flex-row-reverse items-start relative md:items-center lg:justify-center">
-      <div className="flex-1 relative py-6 px-6 max-w-[600px]">
+      <div className="flex-1 relative py-6 px-6 md:items-center md:max-w-[600px] lg:">
         <h2 className="font-orelega text-xl md:text-2xl font-bold mb-4 leading-tight lg:text-4xl lg:text-left">
           <span className="block md:hidden">
             {data["smallHeading"]}
@@ -48,7 +48,7 @@ export const LearnMoreSection = ({ data }) => {
           <img
             src="/assets/images/celebration-image-mobile.png"
             alt="Celebration"
-            className="w-48 md:w-72 lg:w-full absolute bottom-0 left-0 mb-0 md:ml-28 lg:static drop-shadow-xl max-w-[652px] self-end"
+            className="w-48 md:w-72 lg:w-full absolute bottom-0 left-0 mb-0 md:ml-20 lg:ml-8 lg:static drop-shadow-xl max-w-[652px] self-end"
           />
         </picture>
       </div>
