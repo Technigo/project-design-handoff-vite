@@ -2,16 +2,23 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+      xs: "320px",
+      sm: "430px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
       borderRadius: {
-        'custom': '30px', 
+        custom: "30px",
         "custom-two": "40px",
         "custom-three": "1000px",
         "custom-4": "20px",
-
       },
       width: {
-        "custom-width": '92px',
+        "custom-width": "92px",
         "width-two": "361px",
         "width-three": "620px",
         "width-four": "575px",
@@ -22,12 +29,10 @@ export default {
         "width-9": "273px",
         "width-10": "1049px",
         "width-11": "920px",
-
-
-
+        "width-12": "302px",
       },
       height: {
-        "custom-height": '87px', 
+        "custom-height": "87px",
         "height-two": "376px",
         "height-three": "315px",
         "height-four": "494px",
@@ -39,20 +44,17 @@ export default {
         "height-10": "170px",
         "height-11": "628px",
         "height-12": "701px",
-
-
-
+        "height-13": "21px",
       },
       colors: {
         blue: "#0F3057",
         aqua: "#008891",
         cream: "#e7e7de",
-        white: "#D9D9D9 "
+        white: "#D9D9D9 ",
       },
       fontSize: {
         20: "20px",
         31: "31px",
-
         32: "32px",
         42: "42px",
         60: "60px",
@@ -67,20 +69,17 @@ export default {
         38: "38px",
         62: "62px",
         69: "69px",
-        117: "117px"
+        117: "117px",
       },
       boxShadow: {
         "custom-btn-p": "0 2px 0px 0px rgb(0 0 0)",
         "custom-btn-2": "0 4px 4px 0px rgb(0 0 0)",
       },
-      screens: {
-        sm: '320px',
-      },
     },
     fontFamily: {
       "rock-salt": ['"Rock Salt"', "cursive"],
       "roboto-mono": ["Roboto Mono", "monospace"],
-      "inter": ["Inter", "sans-serif"],
+      inter: ["Inter", "sans-serif"],
     },
   },
   plugins: [],

@@ -17,16 +17,7 @@ export const Testimonial = () => {
   });
 
   return (
-    // <div className="flex flex-col items-center px-9 pb-28 md:gap-8 md:px-16 md:pb-8 lg:gap-35 lg:text-20">
-    //   <Image
-    //     className="self-center"
-    //     link={"/Images/star.svg"}
-    //     imgText={"red flame"}
-    //   />
-    //   <Text
-    //     className="p-2.5 text-center font-bold"
-    //     text={` "The best workout of my life" - Marie PT" `}
-    //   />
+  
 
       <div class="relative md:block">
         {windowWidth >= 1280 ? (
@@ -74,18 +65,18 @@ export const Testimonial = () => {
           </div>
         ) : (
          
-          <div className="flex flex-col items-center px-9 pb-28 md:gap-8 md:px-16 md:pb-8 lg:gap-35 lg:text-20">
+          <div className="flex flex-col items-center px-9 pb-28 md:pb-8 md:px-16 lg:gap-35 lg:text-20">
               <Image
-              className="self-center"
+              className="self-center "
               link={"/Images/star.svg"}
               imgText={"five stars"}
             />
             <Text
-              className="p-2.5 text-center font-bold"
+              className="p-2.5 text-center font-bold md:mb-8"
               text={` "The best workout of my life" - Marie PT" `}
             />
               <Image
-                className="mt-7 h-height-two w-width-two object-cover md:mt-0 md:h-height-four md:w-width-three"
+                className="mt-7 xs:h-56 xs:w-64 sm:h-height-two sm:w-width-two object-cover md:mt-0 md:h-height-four md:w-width-three"
                 link={"/Images/weights.svg"}
                 imgText={"people lifting weights"}
               />
