@@ -11,7 +11,7 @@ export const InstructorCards = () => {
   return (
     <>
     <div className="flex flex-col items-center justify-center sm:gap-y-1 sm:pt-3 md:gap-y-1 md:pt-[80px] lg:gap-y-5 lg:pt-[144px]">
-      <h4 className="ubuntu text-white sm:text-xl lg:text-3xl">
+      <h4 className="ubuntu text-white sm:text-xl lg:text-3xl text-center">
         Meet three of our instructors!
       </h4>
  
