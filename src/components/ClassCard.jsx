@@ -23,12 +23,12 @@ const StyledCard = styled.div`
 
   //For smartphones
   @media (min-width: 320px) and (max-width: 744px) {
-    width: 92.5%;
+    width: 98%;
     height: 216px;
     flex-shrink: 0;
     align-items: center;
-    gap: 40px;
-    padding: 16px 24px;
+    gap: 15px;
+    padding: 16px 16px;
   }
 
   //For tablets
@@ -59,7 +59,7 @@ const StyledClassImage = styled.img`
     height: 200px;
   }
   @media (min-width: 320px) and (max-width: 448px) {
-    width: 128px;
+    width: 40%;
     height: 200px;
   }
 `;
@@ -77,7 +77,7 @@ const StyledTextButton = styled.div`
 
   @media (min-width: 320px) and (max-width: 744px) {
     font-size: 13px;
-    width: 55%;
+    width: 60%;
     gap: 8px;
   }
 
@@ -125,7 +125,7 @@ const StyledClassName = styled.p`
     line-height: 19px;
   }
 
-  @media (min-width: 375px) and (max-width: 744px) {
+  @media (min-width: 320px) and (max-width: 744px) {
     font-size: 14px;
 
     .class-keyword {
@@ -176,10 +176,8 @@ export const ClassCard = () => {
             <Buttons
               buttonText="Book Now"
               fontSize={15}
-              paddinglr={
-                windowWidth >= 1024 ? 48 : windowWidth >= 420 ? 56 : 40
-              }
-              width={windowWidth >= 744 ? 70 : windowWidth >= 448 ? 100 : 90}
+              paddinglr={windowWidth >= 1024 ? 32 : 16}
+              width={windowWidth >= 744 ? 70 : windowWidth >= 448 ? 100 : 95}
               className="class-button"
             />
           </StyledButtonWrapper>
@@ -202,7 +200,7 @@ export const ClassCard = () => {
               buttonText="Book Now"
               fontSize={15}
               paddinglr={windowWidth >= 1024 ? 32 : 16}
-              width={windowWidth >= 744 ? 70 : windowWidth >= 448 ? 100 : 90}
+              width={windowWidth >= 744 ? 70 : windowWidth >= 448 ? 100 : 95}
               className="class-button"
             />
           </StyledButtonWrapper>
@@ -225,7 +223,7 @@ export const ClassCard = () => {
               buttonText="Book Now"
               fontSize={15}
               paddinglr={windowWidth >= 1024 ? 48 : 16}
-              width={windowWidth >= 744 ? 70 : windowWidth >= 448 ? 100 : 90}
+              width={windowWidth >= 744 ? 70 : windowWidth >= 448 ? 100 : 95}
               className="class-button"
             />
           </StyledButtonWrapper>
@@ -248,7 +246,7 @@ export const ClassCard = () => {
               buttonText="Book Now"
               fontSize={15}
               paddinglr={windowWidth >= 1024 ? 48 : 16}
-              width={windowWidth >= 744 ? 70 : windowWidth >= 448 ? 100 : 90}
+              width={windowWidth >= 744 ? 70 : windowWidth >= 448 ? 100 : 95}
               className="class-button"
             />
           </StyledButtonWrapper>
