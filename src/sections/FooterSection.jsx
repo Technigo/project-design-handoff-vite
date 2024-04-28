@@ -9,19 +9,22 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
 
   return (
     <footer className="bg-main-blue text-text-light font-montserrat text-sm font-extralight text-left">
-      <SocialMediaIcons icons={icons} />
-      <div className="p-6 flex flex-col md:flex-row justify-between">
-        <div className="relative bg-main-blue w-[312px] h-max-content">
-          <select
-            onChange={onLanguageChange}
-            value={data.locale}
-            className="appearance-none bg-transparent text-white py-2 pl-3 pr-10 border border-white rounded leading-tight focus:outline-none w-full"
-          >
-            <option value="en">English</option>
-            <option value="jp">日本語</option>
-          </select>
-          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-white">
-            <IoIosArrowDown />
+      <div className="px-6 flex flex-col justify-between">
+
+        <div className="flex flex-col items-center md:flex-row">
+          <SocialMediaIcons icons={icons} />
+          <div className="relative bg-main-blue w-[312px] h-max-content md:mt-0 lg:mt-0 ">
+            <select
+              onChange={onLanguageChange}
+              value={data.locale}
+              className="appearance-none bg-transparent text-white py-2 pl-3 pr-10 border border-white rounded leading-tight focus:outline-none w-full"
+            >
+              <option value="en">English</option>
+              <option value="jp">日本語</option>
+            </select>
+            <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-white">
+              <IoIosArrowDown />
+            </div>
           </div>
         </div>
 
@@ -42,12 +45,12 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
             ))}
           </div>
         </div>
-        <div>
-          <div className="mt-12">
+        <div className="md:flex md:flex-row md:justify-between md:my-14 lg:my-14">
+          <div className="mt-12 md:mt-0 lg:mt-0">
             <p className="text-sm lg:text-base">{info.email}</p>
             <p className="text-sm lg:text-base">{info.phone}</p>
           </div>
-          <div className="mt-6">
+          <div className="mt-6 md:mt-0 lg:mt-0">
             <p className="text-sm lg:text-base">{info.address.company}</p>
             <p className="text-sm lg:text-base">
               {info.address["street-number"]}
@@ -57,7 +60,7 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
             </p>
           </div>
           <div>
-            <p className="mt-12 text-sm lg:text-base">
+            <p className="mt-12 md:mt-0 lg:mt-0 text-sm lg:text-base">
               {info.attribution.illustrations}{" "}
               <a
                 href={`https://${info.attribution.link}`}
@@ -68,11 +71,8 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
             </p>
           </div>
           <div>
-            <p className="mt-12 text-sm lg:text-base">
-              <a href="#">
-                {info.attribution.copyright}
-              </a>
-              {" "}
+            <p className="mt-12 md:mt-0 lg:mt-0 text-sm lg:text-base">
+              <a href="#">{info.attribution.copyright}</a>{" "}
               {info.attribution.company}
             </p>
           </div>
