@@ -8,14 +8,14 @@ export const Carousel = () => {
 
   return (
     <CarouselContainer {...handlers} className="carousel">
-      {testimonial.map(({ image, id }) => (
+      {testimonial.map(({ testimonialImage, priceCardImage, id }) => (
         <Slide key={id} translateValue={translateValue}>
-          <CarouselBox>
+          <CarouselTestimonials>
             <Image
-              src={image}
+              src={testimonialImage}
               alt="image with testimonial from previous participants"
             />
-          </CarouselBox>
+          </CarouselTestimonials>
         </Slide>
       ))}
     </CarouselContainer>
@@ -35,7 +35,7 @@ const Slide = styled.div`
   transform: translateX(${(props) => props.translateValue}%);
 `;
 
-const CarouselBox = styled.div`
+const CarouselTestimonials = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,3 +46,21 @@ const CarouselBox = styled.div`
 `;
 
 const Image = styled.img``;
+
+
+{/* <CarouselPriceCards>
+<Image
+src={priceCardImage}
+alt="image with prices for snowboard courses"
+/>
+</CarouselPriceCards>
+
+const CarouselPriceCards = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 16px;
+  margin-right: 16px;
+  gap: 16px;
+`; */}

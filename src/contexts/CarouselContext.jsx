@@ -3,6 +3,9 @@ import { useSwipeable } from "react-swipeable";
 import cardOne from "../assets/testimonialCards/cardOne.png";
 import cardTwo from "../assets/testimonialCards/cardTwo.png";
 import cardThree from "../assets/testimonialCards/cardThree.png";
+import priceCardOne from "../assets/priceCards/priceCardOne.png";
+import priceCardTwo from "../assets/priceCards/priceCardTwo.png";
+import priceCardThree from "../assets/priceCards/priceCardThree.png";
 
 const CarouselContext = createContext();
 
@@ -11,14 +14,23 @@ export const CarouselProvider = ({ children }) => {
 
   const testimonial = [
     {
-      image: cardOne,
+      testimonialImage: cardOne,
     },
     {
-      image: cardTwo,
+      testimonialImage: cardTwo,
     },
     {
-      image: cardThree,
+      testimonialImage: cardThree,
     },
+    // {
+    //   priceCardImage: priceCardOne,
+    // },
+    // {
+    //   priceCardImage: priceCardTwo,
+    // },
+    // {
+    //   priceCardImage: priceCardThree,
+    // },
   ];
 
   const handlers = useSwipeable({
