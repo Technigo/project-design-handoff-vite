@@ -1,15 +1,14 @@
-import { customerReviews } from "./Copy";
-import leftblob from "/images/leftblob.svg";
-import rightblob from "/images/rightblob.svg";
+
+
 import "./Reviews.css";
 
-export const Reviews = () => {
+export const Reviews = ({ customerReviews, leftBlob, rightBlob }) => {
 
   return (
     <div className="review-wrap">
       <div className="max-w-[1370px] mx-auto align-middle  bg-yogawhite flex-1  mt-[65px] pt-[20px]  ">
         <div className="reviews  bg-yogawhite  bg-no-repeat bg-contain md:mx-8" style={{
-          backgroundImage: `url(${leftblob}), url(${rightblob})`,
+          backgroundImage: `url(${leftBlob}), url(${rightBlob})`,
           backgroundPosition: 'left 15px, right -15px',
           backgroundSize: 'contain, contain',
           minHeight: '111px',

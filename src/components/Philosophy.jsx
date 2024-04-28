@@ -1,7 +1,7 @@
-import { articles } from './Copy';
+
 import './Reviews.css';
 
-export const Philosophy = () => {
+export const Philosophy = ({articles}) => {
   return (
     <>
       <div className="font-inter wrapper relative text-darkblue bg-yogawhite flex py-[65px] mx-auto lg:py-[109px]">

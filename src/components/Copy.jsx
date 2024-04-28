@@ -19,3 +19,7 @@ export const articles = [
   image: "./images/location.jpg",
 },
 ]
+
+export const mainText = "Find your power";
+
+export const subText = "Anywhere. Anytime.";
