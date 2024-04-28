@@ -1,14 +1,9 @@
-//
-
-//to dos
-//writing on mobile
-//💡 fix position of button on desktop/tablet
-
+//checked and fixed 🌈//
 //import styled
 import styled from "styled-components";
 
 //import pictues & icons
-import CobraPose from "../../public/images/cobrapose.png";
+import CobraPose from "../../public/images/cobrapose2.png";
 import Location from "../../public/icons/location.png";
 
 //import reusables
@@ -62,10 +57,14 @@ const HeaderBottomWrapper = styled.div`
 const HeaderImage = styled.img`
   position: absolute;
   width: 100%;
-  max-width: 700px;
   height: 100%;
   object-fit: cover;
+  object-position: right;
   z-index: 2;
+
+  @media all and (min-width: 744px) {
+    max-width: 700px;
+  }
 `;
 
 const HeaderTitle = styled.h1`
@@ -92,7 +91,7 @@ const HeaderTextWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 0 10px 0;
+  padding: 0 0 31px 0;
 
   @media all and (min-width: 744px) {
     flex-direction: row;
