@@ -23,6 +23,7 @@ const StyledHero = styled.section`
   }
   .web-title {
     position: relative;
+    text-align: center;
   }
 
   .web-title-logo {
@@ -43,7 +44,7 @@ const StyledHero = styled.section`
 
   h2 {
     color: #000;
-
+    text-align: center;
     font-family: "AvenirMedium", sans-serif;
     font-size: 36px;
     font-style: normal;
@@ -123,6 +124,10 @@ const StyledHero = styled.section`
   }
 
   @media (max-width: 744px) {
+    h1 {
+      font-size: 36px;
+    }
+
     margin-top: 79px;
     .sub-title {
       font-size: 30px;
@@ -160,7 +165,9 @@ const StyledHero = styled.section`
   }
 
   @media (max-width: 428px) {
-    //mobile
+    h1 {
+      font-size: 30px;
+    }
   }
 `;
 
@@ -184,10 +191,18 @@ export const Hero = () => {
           <span className="line-break"> strengthen, heal & recharge</span>
         </h2>
         <div className="big-screen-btn">
-          <Buttons buttonText={heroStart.buttonText} fontSize={24} />
+          <Buttons
+            buttonText={heroStart.buttonText}
+            fontSize={24}
+            paddinglr={72}
+          />
         </div>
         <div className="small-screen-btn">
-          <Buttons buttonText={heroStart.buttonText} fontSize={18} />
+          <Buttons
+            buttonText={heroStart.buttonText}
+            fontSize={18}
+            paddinglr={48}
+          />
         </div>
       </div>
       <ul className="customer-comments">

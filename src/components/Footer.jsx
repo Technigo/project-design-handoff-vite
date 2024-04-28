@@ -22,7 +22,7 @@ const StyledFooter = styled.footer`
   }
 
   .footer-title-breaker {
-    display: block;
+    display: inline;
   }
 
   .social-media {

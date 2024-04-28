@@ -13,7 +13,7 @@ const StyledEventCard = styled.div`
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   width: 350px;
   margin: 0 auto;
-  font-family: Avenir;
+  font-family: "AvenirMedium", sans-serif;
   font-weight: 500;
 
   @media (min-width: 375px) and (max-width: 744px) {
@@ -50,8 +50,9 @@ const StyledEventImage = styled.img`
 
 // Styled component for the event title
 const StyledEventTitle = styled.h3`
+  font-family: "AvenirBlack", sans-serif;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 900;
   color: #000;
 
   @media (min-width: 768px) and (max-width: 1024px) {
@@ -67,6 +68,7 @@ const StyledEventTitle = styled.h3`
 const StyledDateDescription = styled.div`
   text-align: left;
   font-size: 18px;
+  font-weight: 500;
   line-height: 1.5;
   margin: 0;
   width: 100%;
@@ -120,7 +122,6 @@ const StyledEventDescription = styled.p`
 
   @media (min-width: 375px) and (max-width: 744px) {
     font-size: 14px;
-
   }
 `;
 

@@ -31,16 +31,8 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html,
-  body, #root {
-    min-height: 100vh;
-    height: 100%;
-    
-  }
-
   body {
-    background-repeat: no-repeat;
-    background-size: cover; 
+     height: 100%;
     background: linear-gradient(
       180deg,
       #a6c2c5 9.5%,
@@ -50,11 +42,12 @@ const GlobalStyles = createGlobalStyle`
       #a6c2c5 86%,
       #9cc2d2 100%
     ) ;
+    background-repeat: no-repeat;
+    background-size: cover;
    
   }
 
   main{
-    height: 100%;
      position:relative;
   }
 

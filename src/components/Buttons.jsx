@@ -8,7 +8,8 @@ const StyledButton = styled.button`
   font-family: Avenir, sans-serif;
   font-size: ${(props) => props.fontSize}px;
   font-weight: 500;
-  padding: 8px 48px;
+  padding: 8px ${(props) => props.paddinglr}px;
+  width: ${(props) => props.width}%;
   margin: 0 auto 1rem;
   border: none;
   cursor: pointer;
@@ -18,13 +19,16 @@ const StyledButton = styled.button`
   &:hover {
     background: #552a1c;
   }
-
-  
 `;
 
-export const Buttons = ({ buttonText, fontSize }) => {
+export const Buttons = ({ buttonText, fontSize, paddinglr, width }) => {
   return (
-    <StyledButton onClick={() => console.log(buttonText)} fontSize={fontSize}>
+    <StyledButton
+      onClick={() => console.log(buttonText)}
+      fontSize={fontSize}
+      paddinglr={paddinglr}
+      width={width}
+    >
       {buttonText}
     </StyledButton>
   );
