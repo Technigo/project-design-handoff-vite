@@ -1,4 +1,4 @@
-import LessonsImage from "src/assets/ourLessonsImage.png";
+import LessonsImage from "public/OurLessonsImage.png";
 import { Button } from "./Buttons";
 
 import styled from "styled-components";
