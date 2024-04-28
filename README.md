@@ -1,6 +1,6 @@
 <h1 align="center">
-  <img src="/public/preview01.svg" alt="Project Preview01" style="display: inline-block; margin-right: 10px;">
-  <img src="/public/preview02.svg" alt="Project Preview02" style="display: inline-block;">
+  <img src="/preview01.svg" alt="Project Preview01" style="display: inline-block; margin-right: 10px;">
+  <img src="/preview02.svg" alt="Project Preview02" style="display: inline-block;">
 </h1>
 
 ### Project Brief
