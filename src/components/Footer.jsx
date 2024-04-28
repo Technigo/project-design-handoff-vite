@@ -4,14 +4,6 @@ import facebookIcon from "../assets/icon-facebook.svg";
 import instagramIcon from "../assets/icon-instagram.svg";
 import vimeoIcon from "../assets/icon-vimeo.svg";
 
-{
-  /* <picture>
-  <source media="(min-width: 1024px)" srcSet={navbarLogoLg} />
-  <source media="(min-width: 768px)" srcSet={navbarLogoMd} />
-  <img src={navbarLogoSm} />
-</picture>; */
-}
-
 export const Footer = () => {
   return (
     <section className="flex flex-col mb-24 md:mb-0">
