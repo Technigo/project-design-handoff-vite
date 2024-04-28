@@ -73,7 +73,7 @@ export default {
       },
       boxShadow: {
         "custom-btn-p": "0 2px 0px 0px rgb(0 0 0)",
-        "custom-btn-2": "0 4px 4px 0px rgb(0 0 0)",
+        "custom-btn-2": "0 4px 4px 0px rgba(0, 0, 0, 0.25)",
       },
     },
     fontFamily: {

@@ -19,12 +19,11 @@ export const JoinUs = () => {
   });
 
   return (
-    <div className="xl:mx- flex flex-col items-center gap-28 px-9 md:gap-8 md:px-16 lg:gap-25 2xl:gap-25">
+    <div className="flex flex-col items-center gap-28 px-9 md:gap-8 md:px-16 lg:gap-25 xl:px-0 2xl:gap-25">
       <ButtonPrimary
         text={"Join us"}
         addedClasses="py-21 px-6 xl:hidden 2xl:hidden"
       />
-
       <Carousel
         showStatus={false}
         showIndicators={false}
@@ -34,7 +33,6 @@ export const JoinUs = () => {
         <ButtonSecondary addedClasses="p-5 md:w-72" text={"Our trainers"} />
         <ButtonSecondary addedClasses="p-5  md:w-72" text={"Health benefits"} />
       </Carousel>
-
       <ButtonSecondary
         addedClasses="w-72 h-14 px-2.5 rounded-custom-two text-xl sm:w-width-12 md:text-2xl md:py-5 md:w-width-three md:h-custom-height xl:hidden 2xl:hidden"
         text={"Membership cards"}
@@ -58,7 +56,6 @@ export const JoinUs = () => {
           />
         </div>
       </div>
-
       <div className="flex flex-row gap-2.5 md:gap-36 xl:mx-117 xl:gap-56 xl:pt-25 2xl:mx-117 2xl:gap-72 2xl:pt-25">
         <ButtonThird
           addedClasses="sm:w-width-7 sm:h-height-9 sm:text-base md:w-width-7 md:h-height-9 xl:text-3xl 2xl:text-32 xl:rounded-custom-three 2xl:rounded-custom-three xl:w-width-8 xl:h-height-10"
@@ -73,13 +70,7 @@ export const JoinUs = () => {
           text={"Heart rate monitor"}
         />
       </div>
-      <div>
-        <Image
-          link={"/Images/plank.svg"}
-          alt={"people working out"}
-          className="mb-38 mt-3.5 object-cover xs:h-56 xs:w-64 sm:h-height-three sm:w-width-two md:h-height-four md:w-width-three md:object-cover md:object-center xl:h-height-12 xl:w-width-10 xl:pt-0 2xl:w-width-five 2xl:pt-0"
-        />
-      </div>
+      <div></div>
 
       {windowWidth >= 1280 ? (
         <div className="flex flex-col gap-25">
@@ -109,6 +100,14 @@ export const JoinUs = () => {
           </div>
         </div>
       ) : null}
+
+      <div>
+        <Image
+          link={"/Images/plank.svg"}
+          alt={"people working out"}
+          className="mb-38 mt-3.5 object-cover xs:h-56 xs:w-64 sm:mb-16 sm:h-height-three sm:w-width-two md:h-height-four md:w-width-three md:object-cover md:object-center xl:mt-0 xl:h-height-12 xl:w-width-10 xl:pt-0 2xl:w-width-five 2xl:pt-0"
+        />
+      </div>
     </div>
   );
 };

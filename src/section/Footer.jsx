@@ -4,23 +4,19 @@ import { Text } from "../component/Text";
 
 export const Footer = () => {
   return (
-    // <div className="bg-aqua">
     <div className="w-screen bg-aqua ">
-      <div className="flex flex-col mx-9 md:mx-69 font-inter text-base font-bold gap-y-2.5 pb-10 xl:mx-117 2xl:mx-117">
-        <div className="flex flex-row gap-8 border border-black cursor-pointer rounded-full w-44 mt-1.5  md:mt-18">
+      <div className="mx-9 flex flex-col gap-y-2.5 pb-10 font-inter text-base font-bold md:mx-69 xl:mx-117">
+        <div className="mt-1.5 flex w-44 cursor-pointer flex-row gap-8 rounded-full border border-black  md:mt-18">
           <Image link={"/Images/globe.svg"} />
-
-          <select className="appearance-none bg-transparent  select-custom">
+          <select className="select-custom appearance-none  bg-transparent">
             <option value="es">English</option>
             <option value="fr">French</option>
             <option value="de">German</option>
             <option value="it">Italian</option>
           </select>
         </div>
-
         <Link link={"tel:+12345678900"} text={"Contact us"} />
         <Text text={"Social media"} />
-
         <div className="flex gap-3 ">
           <Image link={"./Images/fblogo.svg"} />
           <Image link={"./Images/iglogo.svg"} />
@@ -34,8 +30,7 @@ export const Footer = () => {
             text={"Runebergsgatan 44 Helsingfors"}
           />
         </div>
-        <span className="flex text-xs gap-x-1 mb-7 md:pb-21">
-         
+        <span className="mb-7 flex gap-x-1 text-xs md:pb-21">
           <Image link={"/Images/copyright.svg"} />
           <Text text={"2024 HIITFORYOU"} />
           <Link
@@ -46,6 +41,5 @@ export const Footer = () => {
         </span>
       </div>
     </div>
-    // </div>
   );
 };
