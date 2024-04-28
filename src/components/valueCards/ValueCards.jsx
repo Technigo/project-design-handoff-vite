@@ -1,10 +1,12 @@
 import Jump from "/valueImg/Jump.jpeg"
-import Move from "/valueImg/Move.jpeg"
+// import Move from "/valueImg/Move.jpeg"
 import Room from "/valueImg/Room.jpeg"
 import { ReadMore } from "./ReadMore"
 import { ValueHeader } from "./ValueHeader"
 import { ValueImg } from "./ValueImg"
 import { MiddleReadMore } from "./MiddleReadMore"
+import middleTraining from "/valueImg/middleTraining.png"
+import smallTraining from "/valueImg/smallTraining.png"
 
 export const ValueCards = () => {
   return (
@@ -41,7 +43,9 @@ export const ValueCards = () => {
       </div>
 
       <div className="flex w-full items-center justify-center border-b-[4px] border-pink bg-pink bg-opacity-25 sm:flex sm:h-[361px] sm:flex-col sm:gap-[30px] sm:gap-y-1 sm:px-[24px] sm:pb-[30px] sm:pt-[20px] md:h-[244px] md:w-full md:flex-row-reverse md:gap-y-1 md:px-[33px] md:py-[17px] lg:h-[501px] lg:gap-y-5 lg:px-[113px] lg:py-[45px]">
-        <ValueImg image={Move} alt={"a woman is training"} />
+        {/* <ValueImg image={Move} alt={"a woman is training"} /> */}
+        <img src={middleTraining} alt="a woman is training" className="rounded-[10px] sm:h-[143px] sm:w-[312px] md:h-[210px] md:w-[245px] lg:h-[411px] lg:w-[481px] md:inline sm:hidden " />
+        <img src={smallTraining} alt = "a woman is training" className="rounded-[10px] sm:h-[143px] sm:w-[312px] lg:hidden md:hidden sm:inline" />
         <div className="flex flex-col sm:gap-y-[8px] md:gap-y-1 lg:gap-y-[24px]">
           <ValueHeader
             valueHeaderSmall={"Certified instructors"}

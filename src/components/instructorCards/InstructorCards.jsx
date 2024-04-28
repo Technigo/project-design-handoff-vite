@@ -1,8 +1,9 @@
 import { InstructorPieces } from "./InstructorPieces"
 import Susie from "/instructorImg/Susie.jpeg"
 import Olivia from "/instructorImg/Olivia.jpeg"
-import Micheal from "/instructorImg/Micheal.jpeg"
+// import Micheal from "/instructorImg/Micheal.jpeg"
 import { Dots } from "../dot/Dots"
+import smallMicheal from "/instructorImg/smallMicheal.png"
 
 
 
@@ -40,7 +41,7 @@ export const InstructorCards = () => {
           }
         />
         <InstructorPieces
-          image={Micheal}
+          image={smallMicheal}
           alt={"Michael"}
           instructorName={"Michael"}
           instructorInfo={
