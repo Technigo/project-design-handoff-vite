@@ -1,41 +1,14 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
+### Design Handoff Project
 
-### Remove git
+For this project, we were provided with a design for a fitness club from a UX student and the goal was to follow the design as closely as possible using a new styling framework - styled components or Tailwind CSS. We decided to go for Tailwind.
 
-rm -rf .git
-
-# Design Handoff Project
-
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+The design can be found here:
+https://www.figma.com/file/xXTQARQcuaowBAH5j46eUt/Designer-Developer-Handover---Claudia?type=design&node-id=0-1&mode=design
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Our main problem with working with Tailwind was navigating the tradeoff between following the design by the pixel and customizing in Tailwind or use Tailwinds preset widths/margins/font sizes. We have configurated certain things such as colors, viewport sizes and certain font sizes but for the paddings and margins we went with the approach "as close as possible" with the default pixels. We ended up enjoying working with Tailwind but in the future, we would prefer working from a design tailored for Tailwind and it's various viewports.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://urban-spin.netlify.app/

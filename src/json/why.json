@@ -1,0 +1,28 @@
+{
+    "reasons": [
+        {
+            "id": 1,
+            "icon": "/why-mobile-1.png",
+            "title": "State-Of-The-Art Equipment",
+            "description": "We are providing the most innovative spinning bikes on the market, which are easily adjustable to your personal fit. On top, you can connect your smart watch or phone and track the session. Beat your own record!"
+        }, 
+        {
+            "id": 2,
+            "icon": "/why-mobile-2.png",
+            "title": "High-Intensity Classes",
+            "description": "Be ready to burn a lot of calories & get sweaty. Our instructors are all and will push you motivate you through the session. If that’s not enough, high-beat electronic music does the extra!"
+        }, 
+        {
+            "id": 3,
+            "icon": "/why-mobile-3.png",
+            "title": "Exclusive Clubs",
+            "description": "All our clubs are equipped with towels, high-quality shower necessities. The changing rooms have lockers, hair dryers and more. And the fuel stations are selling fresh protein shakes, salads and delicious bowls."
+        }, 
+        {
+            "id": 4,
+            "icon": "/why-mobile-4.png",
+            "title": "Not just a Gym",
+            "description": "We are proud to call us a club, and with that comes our lovely community. Training is our focus but we also love our special club events. Stay tuned!"
+        }
+    ]
+}
