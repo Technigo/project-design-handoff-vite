@@ -12,11 +12,13 @@ export const NavigationBar = () => {
 
 const Navbar = styled.nav`
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 100; // High z-index to ensure the nav bar stays to the top
   display: flex;
   justify-content: space-between;
   align-items: flex-end; 
-  justify-content: stretch;
   padding: 16px 32px;
   background-color: rgba(8, 61, 86, 0.75);
   backdrop-filter: blur(2px);
@@ -26,7 +28,7 @@ const Navbar = styled.nav`
   }
  
   @media (min-width: ${breakpoints.desktop}) {
-    padding: 32px var(--Spacing-16, 128px);
+    padding: 32px 128px;
     } 
 `;
 

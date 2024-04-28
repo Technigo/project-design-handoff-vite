@@ -51,7 +51,7 @@ const SectionContainer = styled.section`
   }
   @media (min-width: ${breakpoints.desktop}) {
     justify-content: center;
-    padding: 120px 100px;
+    padding: 120px 128px;
     /* overflow: visible; */
   }
 `;
@@ -67,10 +67,9 @@ const ScrollableCardWrapper = styled.div`
   justify-content: space-between;
   overflow-x: auto;
   align-items: flex-start;
-  width: 100vw;
   padding: 96px 0;
   gap: 32px;
-  width: calc(4 * (250px + 32px) - 32px);
+  width: calc(4 * (300px + 32px) - 32px);
 
   @media (min-width: ${breakpoints.tablet}) {
     justify-content: flex-start;
