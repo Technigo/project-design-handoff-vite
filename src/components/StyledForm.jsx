@@ -19,6 +19,8 @@ export const FormContainer = styled.div`
   flex-direction: column;
   gap: var(--gap-compact);
   margin-top: 10px;
+  max-width: 616px;
+  width: 100%;
 
   @media (min-width: 651px) {
   }
@@ -40,7 +42,8 @@ export const Input = styled.input`
 
 export const FlexibleButton = styled.button`
   padding: var(--gap-compact) var(--gap-comfortable);
-  background-color: ${(props) => (props.disabled ? "var(--dark-grey)" : "var(--red)")};
+  background-color: ${(props) =>
+    props.disabled ? "var(--dark-grey)" : "var(--red)"};
   border: none;
   color: ${(props) => (props.disabled ? "var(--light-grey)" : "#fff")};
   text-transform: uppercase;
@@ -89,10 +92,12 @@ export const IncrementDecrementContainer = styled.div`
   width: 115px;
   height: 53px;
   border: 2px solid var(--blue);
+  padding: 10px;
 `;
 
 export const NumberInput = styled.input`
-  padding: 10px !important;
+  padding: 0px !important;
+  padding-left: 10px !important;
   border: none;
   line-height: normal;
   text-align: center;

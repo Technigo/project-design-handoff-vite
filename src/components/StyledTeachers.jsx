@@ -26,6 +26,8 @@ export const TeacherBox = styled.div`
   display: flex;
   gap: var(--gap-extra);
   margin: var(--gap-extra) 0;
+  max-width: 1050px;
+  justify-self: center;
 `;
 
 export const TeacherBoxOne = styled.div`

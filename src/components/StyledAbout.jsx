@@ -10,6 +10,7 @@ export const StyledAboutBox = styled.div`
   gap: var(--gap-compact);
   padding-bottom: 80px;
   margin-top: 25px;
+  max-width: 1050px;
 
   @media (min-width: 651px) {
     flex-direction: row-reverse;
@@ -146,7 +147,8 @@ export const MeditaionBox = styled.div`
   display: flex;
   gap: var(--gap-compact);
   margin-top: var(--gap-spacious);
-  max-width: 100%;
+  max-width: 1050px;
+  justify-self: center;
 `;
 
 export const MeditationText = styled.div`

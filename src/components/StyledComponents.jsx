@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   @media (min-width: 651px) and (max-width: 1024px) {
     padding: 0 var(--gap-medium);
@@ -155,13 +156,18 @@ export const StyledButton = styled.button`
 export const ButtonBox = styled.div`
   display: flex;
   width: 100%;
-  padding: ${(props) => props.$padding || "0 var(--gap-compact) var(--gap-compact) var(--gap-compact)"};
+  padding: ${(props) =>
+    props.$padding ||
+    "0 var(--gap-compact) var(--gap-compact) var(--gap-compact)"};
 
   @media (min-width: 1025px) {
-    padding: ${(props) => props.$padding || "0 0 var(--gap-huge) var(--gap-extra) "};
+    padding: ${(props) =>
+      props.$padding || "0 0 var(--gap-huge) var(--gap-extra) "};
   }
 
   @media (min-width: 651px) and (max-width: 1024px) {
-    padding: ${(props) => props.$padding || "0 var(--gap-compact) var(--gap-spacious) var(--gap-compact)"};
+    padding: ${(props) =>
+      props.$padding ||
+      "0 var(--gap-compact) var(--gap-spacious) var(--gap-compact)"};
   }
 `;

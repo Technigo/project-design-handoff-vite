@@ -21,6 +21,8 @@ const Layout = styled.div`
   @media (min-width: 650px) {
     flex-direction: row;
     column-gap: 30px;
+
+    max-width: 1273px;
   }
 `;
 
@@ -71,7 +73,13 @@ export const Quote = () => {
           src={anna}
           alt="Portrait photo of a white woman with black hair smiling. The caption below reads 'Anna Lindgren"
         />
-        <Icon width="119" height="117" viewBox="0 0 119 117" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <Icon
+          width="119"
+          height="117"
+          viewBox="0 0 119 117"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -81,9 +89,10 @@ export const Quote = () => {
         </Icon>
 
         <Blockquote>
-          I love attending Sunny Yoga events, and I must say, they are truly a transformative experience. The
-          instructors are not only highly knowledgeable and skilled but also incredibly supportive, guiding me through
-          each pose with patience and encouragement.
+          I love attending Sunny Yoga events, and I must say, they are truly a
+          transformative experience. The instructors are not only highly
+          knowledgeable and skilled but also incredibly supportive, guiding me
+          through each pose with patience and encouragement.
         </Blockquote>
       </Layout>
     </PinkWrapper>

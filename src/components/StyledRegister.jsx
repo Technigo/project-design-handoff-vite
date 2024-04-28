@@ -6,6 +6,7 @@ export const RegisterContainer = styled.div`
   flex-direction: column;
   gap: var(--gap-default);
   margin-bottom: var(--gap-spacious);
+  align-items: center;
 
   @media (min-width: 651px) {
     padding: 0 var(--gap-huge);
