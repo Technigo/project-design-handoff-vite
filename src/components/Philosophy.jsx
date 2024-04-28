@@ -13,7 +13,7 @@ export const Philosophy = () => {
                 alt={article.title}
               />
               <h3 className='font-semibold text-25 md:text-25 lg:text-36 lg:mb-s40'>{article.title}</h3>
-              <p className=" mt-[25px] text-wrap text-16 md:text-20 lg:text-30">{article.copy}</p>
+              <p className=" mt-[25px] text-wrap whitespace-normal text-16 md:text-20 lg:text-30">{article.copy}</p>
               <p className='text-16 md:text-20 lg:text-30'>Read more &gt;</p>
             </div>
           ))}
