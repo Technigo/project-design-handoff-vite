@@ -52,6 +52,7 @@ export const StyledText = styled.div`
   line-height: 25.6px;
   color: var(--blue);
   line-height: 25.6px;
+  text-align: ${(props) => props.$textAlign || "left"};
 
   @media (min-width: 651px) and (max-width: 1024px) {
   }

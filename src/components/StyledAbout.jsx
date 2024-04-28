@@ -73,8 +73,8 @@ export const BuddhaIcon = styled(Buddha)`
 `;
 
 export const GlassesIcon = styled(Glasses)`
-  width: 20px;
-  height: 20px;
+  width: ${(props) => props.$width || "20px"};
+  height: ${(props) => props.$height || "20px"};
 
   @media (min-width: 651px) {
     width: 28.83px;

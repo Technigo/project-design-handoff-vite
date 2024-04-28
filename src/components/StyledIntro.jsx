@@ -3,23 +3,42 @@ import HeartIcon from "../assets/HeartIcon.svg";
 import mobileLogo from "../assets/LogoMobile.svg";
 import tabletLogo from "../assets/LogoTablet.svg";
 import desktopLogo from "../assets/LogoDesktop.svg";
-import Easteregg from "../assets/EasterEgg.svg";
+import NamasteCircle from "../assets/EasterEgg.svg";
 
 import "../index.css";
 
-export const EasterEgg = styled(Easteregg)`
-  width: 126px;
-  height: 70px;
+export const NamasteIcon = styled(NamasteCircle)`
+  align-self: flex-end;
+  position: relative;
+  top: -80px;
+  left: 0;
 `;
 
 export const EasterEggContainer = styled.div`
-  position: relative;
-  top: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--pink);
+  padding: var(--gap-comfortable) var(--gap-compact);
+  margin: 0 var(--gap-default) var(--gap-comfortable) var(--gap-default);
+  gap: var(--gap-compact);
+  justify-content: center;
+  align-items: center;
+`;
+
+export const OuterContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-comfortable);
+  background-color: var(--light-grey);
+`;
+
+export const IconTitleBox = styled.div`
+  gap: var(--gap-compact);
 `;
 
 export const MobileLogo = styled(mobileLogo)`
   display: none;
-  @media (min-width: 350px) and (max-width: 650px) {
+  @media (max-width: 650px) {
     display: block;
   }
 `;
@@ -99,7 +118,6 @@ export const IntroContentBox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding-bottom: var(--gap-default);
   background-color: var(--pink);
   gap: var(--gap-compact);
