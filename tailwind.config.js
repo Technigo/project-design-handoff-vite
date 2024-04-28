@@ -1,4 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+<<<<<<<<< Temporary merge branch 1
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+=========
 module.exports = {
   content: [
     './src/components/**/*.{html,jsx}',
@@ -36,6 +42,13 @@ module.exports = {
         'tablet': '680px',
         'desktop': '1280px',
       },
+      // screens: {
+      //   'tablet': {'min': '744px', 'max': '1439px'},
+      //   // => @media (min-width: 640px) { ... }
+
+      //   'desktop': '1440px',
+      //   // => @media (min-width: 1280px) { ... }
+      // },
       backgroundSize: {
         'max': 'cover',
 
@@ -43,18 +56,6 @@ module.exports = {
       fontFamily: {
         "roboto": ["Roboto", "sans-serif"],
         "inter": ["Inter", "sans-serif"],
-      },
-      fontSize: {
-        "70": "4.375rem",
-        "49": "3.063rem",
-        "36": "2.25rem",
-        "32": "2rem",
-        "30": "1.875rem",
-        "25": "1.563rem",
-        "21": "1.313rem",
-        "20": "1.25rem",
-        "18": "1.125rem",
-        "16": "1rem",
       },
       colors: {
         "beige": "#DECEC6",
@@ -71,6 +72,9 @@ module.exports = {
         "tabw": "234px",
         "deskh": "310px",
         "deskw": "417px",
+      },
+      lineHeight:{
+        "12": "6.4rem"
       },
     },
   },

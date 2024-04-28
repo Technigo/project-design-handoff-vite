@@ -12,11 +12,13 @@ import rightblob from "/images/rightblob.svg";
 import mainImg from "/assets/main-image.svg"
 
 export const App = () => {
-  return <div>
+  return (
+    <div>
     <Hero heroImg={mainImg} mainText={mainData} subText={subData} />
     <Reviews customerReviews={reviewData} leftBlob={leftblob} rightBlob={rightblob} />
     <Philosophy articles={articlesData} />
     <Strength />
     <Footer />
   </div>
-}
+  )
+};
