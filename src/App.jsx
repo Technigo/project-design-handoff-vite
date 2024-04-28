@@ -6,9 +6,9 @@ import { Philosophy } from "./components/Philosophy";
 
 export const App = () => {
   return <div>
-    <Hero />
-    <Reviews />
-    <Philosophy />
+<Hero />
+<Reviews />
+  <Philosophy />
     <Strength />
     <Footer />
   </div>

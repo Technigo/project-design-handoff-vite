@@ -3,6 +3,13 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
+@layer utillities {
+  body {
+    background-color: #F8F7F7;
+    color: #042d43;
+  }
+}
 :root {
   margin: 0;
   font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",

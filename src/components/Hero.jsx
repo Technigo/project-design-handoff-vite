@@ -5,7 +5,7 @@ import menuIcon from '/assets/menu-icon.svg'
 export const Hero = () => {
   return (
     <>
-      <div className="flex justify-center w-screen">
+      <div className="flex flex-wrap justify-center w-screen">
         <div className="grid grid-cols-6 min-h-[375px] min-w-[320px] auto-rows-auto md:pb-[500px] lg:pb-[500px]" style={{
           backgroundImage: `url(${mainImg})`,
           backgroundPosition: 'left center',
@@ -13,7 +13,7 @@ export const Hero = () => {
           backgroundRepeat: 'no-repeat',
 
         }}>
-          <div className="flex justify-start col-start-1 font-Roboto font-semi-bold ">
+          <div className="flex flex-wrap justify-start col-start-1 font-Roboto font-semi-bold ">
             <div className="text-center md:px-5  lg:px-7">
               <h1 className="ml-3 text-[40px] mb-[-15px] md:text-[78px] md:mt-[-10px]  lg:text-[120px] lg:mb-[-45px]" >Y</h1>
               <h4 className="ml-3 text-[10px] md:text-[20px] md:mt-[-30px] lg:text-[40px] mt-0">Studio</h4>
@@ -22,7 +22,7 @@ export const Hero = () => {
 
 
           <div className="col-start-6 row-start-1 ">
-            <div className="flex justify-end mr-3 mt-3 lg:px-7 lg:py-7  ">
+            <div className="flex flex-wrap justify-end mr-3 mt-3  lg:py-7  ">
               <img className="w-[19px] md:w-[24px] lg:w-[38px]" src={searchIcon} alt="search-icon" /> <img className="w-[19px] md:w-[33px] lg:w-[38px]" src={menuIcon} alt="menu-icon" />
             </div>
           </div>
