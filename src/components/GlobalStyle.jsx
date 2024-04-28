@@ -2,6 +2,15 @@ import { createGlobalStyle } from "styled-components";
 import { breakpoints } from "../utility/breakpoints";
 
 const GlobalStyle = createGlobalStyle`
+*, *::before, *::after {
+	margin: 0;
+			padding: 0;
+	  }
+	
+	body {
+			font-family: 'Fira Sans', 'Montserrat', sans-serif;
+	}
+
 :root {
   --padding-desktop: 96px 128px;
   --padding-tablet: 64px;
@@ -18,18 +27,13 @@ const GlobalStyle = createGlobalStyle`
   /*   custom typography   */
    --header: "Fira Sans", sans-serif;
    --paragraph: "Montserrat", sans-serif;
-
-
-  --spacing-5: 40px;
-  --spacing-16: 128px
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Fira Sans', 'Montserrat', sans-serif;
-    box-sizing: border-box;
-}
+section {
+    width: 100%; // Ensure sections take full width
+    max-width: 100%; // Prevent overflow
+ 
+  }
 
 h1 {
     font-family: "Fira Sans", sans-serif;
@@ -55,6 +59,7 @@ h2 {
     letter-spacing: 0;
     font-size: 24px;
     line-height: 32px;
+		color: var(--blue);
 		
     @media (min-width: ${breakpoints.tablet}) {
 			font-size: 28px;
@@ -91,6 +96,7 @@ h2 {
     letter-spacing: 0;
     font-size: 14px;
     line-height: 20px;
+		color: var(--blue);
 		
     @media (min-width: ${breakpoints.tablet}) {
 			font-size: 18px;

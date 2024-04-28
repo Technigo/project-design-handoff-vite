@@ -65,11 +65,15 @@ const CtaButton = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  padding: 0 8px;
 
   @media (min-width: ${breakpoints.tablet}) {
     justify-content: flex-end;
+    padding: 0px 16px;
+    
   }
   @media (min-width: ${breakpoints.desktop}) {
     justify-content: flex-end;
+    padding: 0px 24px;
   }
 `;

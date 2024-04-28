@@ -1,24 +1,23 @@
+import styled from "styled-components";
 import { breakpoints } from "./breakpoints";
 import Button from "./Button";
-import styled from "styled-components";
 
 export const CardActivities = ({ imageSrc, title, description }) => (
   <CardWrapper>
     <ImageWrapper>
       <CardImage src={imageSrc} alt={title} />
     </ImageWrapper>
-    <CardInfo>
-      <CardTitle>{title}</CardTitle>
-      <CardParagraph className="secondary-paragraph">
-        {description}
-      </CardParagraph>
+    <CardContent>
+      <TextContainer>
+        <CardTitle>{title}</CardTitle>
+        <CardDescription className="secondary-paragraph">
+          {description}
+        </CardDescription>
+      </TextContainer>
       <ButtonWrapper>
-        <Button>
-          Continue to Book
-          <ArrowIcon />
-        </Button>
+        <Button withArrow={true}>Continue to Book</Button>
       </ButtonWrapper>
-    </CardInfo>
+    </CardContent>
   </CardWrapper>
 );
 
@@ -28,114 +27,118 @@ const CardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  padding: 16px;
+  height: 432px;
 
   @media (min-width: ${breakpoints.tablet}) {
-    /* height: 600px; */
-    padding: 0 40px;
+    /*  height: 600px; looks good on tablet but creates space on the desktop */
+    height: 600px;
   }
 
   @media (min-width: ${breakpoints.desktop}) {
     flex-direction: row;
-    padding: 0 80px;
-    /* height: 336px; */
+    align-items: center;
+      height: 336px;
   }
 `;
 
 const ImageWrapper = styled.div`
-  width: 100%;
-  flex-shrink: 0;
-  height: 320px;
+  width: 100%; //keep this 
+  /* height: 336px; */ // ensure a consistent hight since we have different image sizes
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 16px 56px 0 0;
+
+  @media (min-width: ${breakpoints.tablet}) {
+  }
 
   @media (min-width: ${breakpoints.desktop}) {
     border-radius: 16px 0 0 56px;
+    width: 512px;
     height: 336px;
   }
 `;
 
 const CardImage = styled.img`
   object-fit: cover;
+  object-position: center;
   width: 100%;
   height: 100%;
-  flex-direction: column;
+  //nothing to change here
 
   @media (min-width: ${breakpoints.tablet}) {
-    height: 320px;
-    border-radius: 16px 56px 0 0;
+    /* border-radius: 16px 56px 0 0; */
   }
 
   @media (min-width: ${breakpoints.desktop}) {
     border-radius: 16px 0 0 56px;
-    height: 336px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
   }
 `;
 
-const CardInfo = styled.div`
-  background-color: var(--yellow-light);
+const CardContent = styled.div`
+flex: 1;
   display: flex;
   flex-direction: column;
-  /*   justify-content: space-between; */
+  align-items: center;
+  justify-content: flex-start; //makes the button to move to the bottom: ;
+  background-color: var(--yellow-light);
   border-radius: 0 16px 56px 0;
   border-left: 8px solid var(--yellow-medium);
   border-bottom: 8px solid var(--yellow-medium);
-  padding: 32px 16px;
+/*   padding: 16px; */
+  /*   padding: 32px;  makes the card info to get bigger*/
 
   @media (min-width: ${breakpoints.tablet}) {
     height: 320px;
-    padding: 32px;
-    flex-direction: column;
+    /*  padding: 32px; */
   }
 
   @media (min-width: ${breakpoints.desktop}) {
-    flex-direction: column;
     border-left: none;
     border-top: 8px solid var(--yellow-medium);
-    /*   padding: 32px 40px; */
+  /*   padding: 32px; */
+  }
+`;
+
+const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 16px;
+  /* padding: 0; with 32px kind add the space i need */
+
+  @media (min-width: ${breakpoints.desktop}) {
+  /*   margin-bottom: 32px; */
   }
 `;
 
 const CardTitle = styled.h3`
   margin-bottom: 8px;
+  margin: 0 0 16px 0;
 
   @media (min-width: ${breakpoints.desktop}) {
     margin-bottom: 16px;
   }
 `;
 
-const CardParagraph = styled.p`
+const CardDescription = styled.p`
   margin-bottom: 16px;
-
-  @media (min-width: ${breakpoints.tablet}) {
-    margin-bottom: 32px;
-  }
 `;
 
 const ButtonWrapper = styled.div`
+  justify-content: flex-end;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: flex-end;
   align-items: center;
-  padding: 0 16px;
+  width: auto;
+  padding: 0;
+  padding: 16px;
 
   @media (min-width: ${breakpoints.tablet}) {
-    padding: 32px;
+    padding: 0 16px;
   }
-`;
 
-const ArrowIcon = styled.span`
-  display: inline-block; //make the arrow to be inside the reusable button
-  width: 28px;
-  height: 24px;
-  background: url("/icons/arrow1.svg");
-  background-size: contain;
-  margin-left: 16px;
+  @media (min-width: ${breakpoints.desktop}) {
+    padding: 0 24px;
+  }
 `;

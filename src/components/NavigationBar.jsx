@@ -12,10 +12,8 @@ export const NavigationBar = () => {
 
 const Navbar = styled.nav`
   position: absolute;
-  height: 88px;
-  top: 0;
-  left: 0;
-  right: 0;
+/*   height: 88px; */
+  width: 100%;
   z-index: 100; // High z-index to ensure the nav bar stays to the top
   display: flex;
   justify-content: space-between;

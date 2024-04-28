@@ -11,14 +11,16 @@ export function RetreatActivities() {
   return (
     <ActivitiesSection>
       <IntroText>{introText}</IntroText>
-      {activities.map((activity, index) => (
-        <CardActivities
-          key={index}
-          imageSrc={`/images/${activity.image}`}
-          title={activity.name}
-          description={activity.description}
-        />
-      ))}
+      <CardList>
+        {activities.map((activity, index) => (
+          <CardActivities
+            key={index}
+            imageSrc={`/images/${activity.image}`}
+            title={activity.name}
+            description={activity.description}
+          />
+        ))}
+      </CardList>
       <SeeAllLink>See All Workshops</SeeAllLink>
     </ActivitiesSection>
   );
@@ -26,9 +28,9 @@ export function RetreatActivities() {
 
 const ActivitiesSection = styled.section`
   display: flex;
-  padding: var(--padding-mobile);
   flex-direction: column;
   align-items: center;
+  padding: var(--padding-mobile);
   gap: 64px;
 
   @media (min-width: ${breakpoints.tablet}) {
@@ -44,7 +46,6 @@ const ActivitiesSection = styled.section`
 const IntroText = styled.h3`
   text-align: left;
   padding: 16px;
-  color: var(--blue);
   gap: 10px;
   border-left: 4px solid var(--blue);
 
@@ -52,6 +53,24 @@ const IntroText = styled.h3`
     padding: 40px;
   }
 `;
+
+const CardList = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+
+
+  @media (min-width: ${breakpoints.tablet}) {
+    padding: 0 40px;
+  }
+
+  @media (min-width: ${breakpoints.desktop}) {
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 96px;
+    padding: 0 80px;
+  }
+`
 
 const SeeAllLink = styled.span`
   font-family: "Montserrat", sans-serif;

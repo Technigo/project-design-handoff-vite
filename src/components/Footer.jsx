@@ -42,7 +42,6 @@ const FooterContainer = styled.div`
 
   @media (min-width: ${breakpoints.desktop}) {
     padding: var(--padding-desktop);
-    justify-content: space-between;
   }
 `;
 
@@ -80,7 +79,7 @@ const FooterLinks = styled.div`
   @media (min-width: ${breakpoints.tablet}) {
     flex-direction: row;
     align-items: center;
-    padding-left: 50px;
+    inline-size: max-content;
   }
 
   @media (min-width: ${breakpoints.desktop}) {

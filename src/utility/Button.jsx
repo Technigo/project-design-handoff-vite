@@ -11,7 +11,7 @@ export const Button = ({ withArrow, children, ...props }) => (
 const StyledButton = styled.button`
   display: flex;
   align-items: center;
-  padding: ${(props) => props.padding || "24px 16px"};
+  padding: ${(props) => props.padding || "10px 16px"};
   border-radius: ${(props) => props.borderRadius || "32px"};
   background: ${(props) => props.background || "var(--yellow-medium)"};
   border: 1px solid var(--yellow);
@@ -38,6 +38,7 @@ const StyledButton = styled.button`
   @media (min-width: ${breakpoints.tablet}) {
     font-size: 18px;
     line-height: 24px;
+    padding: 18px 16px;
   }
 
   @media (min-width: ${breakpoints.desktop}) {
@@ -49,11 +50,23 @@ const StyledButton = styled.button`
 
 const ArrowIcon = styled.span`
   display: inline-block;
-  width: 28px;
-  height: 24px;
+  width: 10px;
+  height: 8px;
   background: url("/icons/arrow1.svg");
   background-size: contain;
-  margin-left: 16px;
+  margin-left: 8px;
+
+  @media (min-width: ${breakpoints.tablet}) {
+  width: 19px;
+  height: 16px;
+  }
+
+  @media (min-width: ${breakpoints.desktop}) {
+   margin-left: 16px;
+   width: 28px;
+  height: 24px;
+  }
 `;
+
 
 export default Button;
