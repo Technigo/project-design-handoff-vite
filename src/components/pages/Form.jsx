@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CheckBox from "../Checkbox";
+import CheckBox from "../CheckBox";
 import useDeviceType from "../useDeviceType";
 import { StyledText } from "../StyledComponents";
 import {
