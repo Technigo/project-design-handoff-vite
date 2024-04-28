@@ -25,7 +25,7 @@ export const InstructorPieces = ({
       <img src={image} alt={alt} className={imageStyle} />
       <div className="flex flex-col sm:gap-y-[8px] md:gap-y-[15px] lg:gap-y-[20px]">
         <h5 className="ubuntu sm:text-lg md:text-xl ">{instructorName}</h5>
-        <p className="ubuntu sm:text-base lg:text-5xl">{instructorInfo}</p>
+        <p className="ubuntu sm:text-base lg:text-7xl">{instructorInfo}</p>
       </div>
     </div>
 

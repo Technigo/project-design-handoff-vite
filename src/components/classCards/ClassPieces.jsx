@@ -18,7 +18,7 @@ export const ClassPieces = ({ image, alt, courseName, courseInfo }) => {
       />
       <div className="flex flex-col sm:gap-y-[8px] sm:px-[15px] md:gap-y-1 lg:gap-y-2">
         <h5 className="ubuntu sm:text-lg lg:text-xl">{courseName}</h5>
-        <p className="ubuntu sm:text-5xl md:text-base lg:text-5xl">
+        <p className="ubuntu sm:text-7xl md:text-base lg:text-5xl">
           {courseInfo}
         </p>
       </div>
