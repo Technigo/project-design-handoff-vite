@@ -27,14 +27,13 @@ export const Hero = () => {
             </div>
           </div>
 
-          <div className=" font-roboto  grid-row-start-3 col-start-1 col-span-2 w-96 ml-16 md:mt-[100px] lg:mt-40">
+          <div className=" font-roboto  grid-row-start-3 col-start-1 col-span-2  min-w-80 ml-16 md:mt-[100px] lg:mt-40">
             <h1 className="text-[28px] md:ml-16 md:text-[36px] lg:text-[82px] lg:font-bold lg:min-w-[600px]  ">Find your power</h1>
             <h3 className="text-[17px] md:ml-16  md:text-[25px] lg:text-[49px] lg:min-w-[600px]">Anywhere. Anytime.</h3>
             <button className="text-[11px] md:ml-16 md:mt-2 md:text-[15px] lg:text-[35px] bg-darkblue hover:bg-steelblue  active:bg-[#909394] text-yogawhite font-bold px-3 py-1 rounded-[15px] lg:rounded-[40px] lg:py-2 lg:px-5 lg:mt-2">Book now</button>
           </div>
         </div>
-      </div>
-
+</div>
     </>
 
   )
