@@ -63,8 +63,8 @@ export const Footer = () => {
               </nav>
             </div>
           
-            <div className="bg-steelblue w-full desktop:flex desktop:items-center desktop:justify-around p-2">
-                <ul className="hidden desktop:flex flex-row justify-center mb-2 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5">
+            <div className="bg-steelblue w-full desktop:flex desktop:items-center desktop:justify-center p-1">
+                <ul className="hidden desktop:flex flex-row justify-center mb-2 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-20">
                 <li>
                     <a href="/" className="transition hover:text-beige">{t("footer.about")}</a>
                 </li>
@@ -79,7 +79,7 @@ export const Footer = () => {
                 </li>
                 </ul>
 
-                <div className="text-center desktop:mb-2">
+                <div className="text-center desktop:mb-2 desktop:ml-10">
                 <select name="" id="" value={i18n.language} onChange={(e) => i18n.changeLanguage(e.target.value)} className="bg-steelblue border-4 border-darkblue rounded-2xl p-1">
                     <option value="en">{t("footer.en")}</option>
                     <option value="sv">{t("footer.sw")}</option>
@@ -87,7 +87,7 @@ export const Footer = () => {
                 </div>
             </div>
 
-            <div className="bg-steelblue text-center desktop:hidden py-2">
+            <div className="bg-steelblue text-center  py-2 desktop:text-left desktop:py-0">
               <p className="text-xs text-darkblue md:text-sm">Copyright &copy; 2024 Y Studio Stockholm</p>
             </div>
         </section>

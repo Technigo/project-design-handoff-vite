@@ -7,7 +7,7 @@ import './Reviews.css';
 export const Philosophy = () => {
   return (
     <>
-<div className=' bg-yogawhite'>
+<div className=' bg-yogawhite '>
         <div className="philo justify-center flex
         " style={{
           backgroundColor: '#F8F7F7',
