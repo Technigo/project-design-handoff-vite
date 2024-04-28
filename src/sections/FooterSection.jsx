@@ -45,7 +45,6 @@ export const FooterSection = ({ data, onLanguageChange, icons }) => {
             ))}
           </div>
         </div>
-
         <div className="md:flex md:flex-row md:justify-between md:my-14 lg:my-14">
           <div className="mt-12 md:mt-0 lg:mt-0">
             <p className="text-sm lg:text-base">{info.email}</p>
