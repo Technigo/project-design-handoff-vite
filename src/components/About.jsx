@@ -1,29 +1,31 @@
+// fixed and checked -> all done here 🌈//
+
 import styled from "styled-components";
 
 //styles
 const AboutContainer = styled.section`
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  /* grid-template-rows: 3; */
-  grid-template-areas:
-    "subtitle subtitle subtitle subtitle subtitle subtitle subtitle subtitle"
-    "title title title title title title title title"
-    "text text text text text text text text";
   padding: 68px 16px;
   background: var(--primary-white);
 
   @media all and (min-width: 744px) {
-    grid-template-areas:
-      ". . . subtitle title . . . "
-      "text text text text text text text text";
-    padding: 68px 58px;
+    padding: 44px 24px;
   }
 
   @media all and (min-width: 1024px) {
-    grid-template-areas:
-      "subtitle subtitle subtitle subtitle text text text text"
-      "title title title title text text text text";
-    padding: 150px 58px;
+    padding: 148px 124px;
+    display: flex;
+  }
+`;
+
+const AboutTitleWrapper = styled.div`
+  @media all and (min-width: 744px) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 23px;
+  }
+  @media all and (min-width: 1024px) {
+    flex-direction: column;
+    padding-bottom: 0;
   }
 `;
 
@@ -32,16 +34,17 @@ const AboutTitle = styled.h1`
   font-size: 48px;
   color: var(--primary-prpl);
   text-align: center;
-  grid-area: title;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
 
   @media all and (min-width: 744px) {
     font-size: 40px;
+    padding-bottom: 0;
   }
 
   @media all and (min-width: 1024px) {
     font-size: 112px;
     text-align: left;
+    padding-right: 36px;
   }
 `;
 
@@ -50,7 +53,6 @@ const AboutSubtitle = styled.h1`
   font-size: 24px;
   color: var(--primary-prpl);
   text-align: center;
-  grid-area: subtitle;
 
   @media all and (min-width: 744px) {
     font-size: 40px;
@@ -59,19 +61,21 @@ const AboutSubtitle = styled.h1`
   @media all and (min-width: 1024px) {
     font-size: 64px;
     text-align: left;
+    padding-bottom: 25px;
   }
 `;
 
 const AboutText = styled.p`
-  font-family: "Poppins", sans-serif;
   font-size: 14px;
   text-align: center;
-  grid-area: text;
-  /* width: 50%; */
 
   @media all and (min-width: 1024px) {
     font-size: 16px;
     text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 36px;
+    align-items: center;
   }
 `;
 
@@ -79,14 +83,21 @@ const AboutText = styled.p`
 export const About = () => {
   return (
     <AboutContainer>
-      <AboutSubtitle>About&#160;</AboutSubtitle>
-      <AboutTitle>SHANTI</AboutTitle>
+      <AboutTitleWrapper>
+        <AboutSubtitle>About&#160;</AboutSubtitle>
+        <AboutTitle>SHANTI</AboutTitle>
+      </AboutTitleWrapper>
       <AboutText>
-        Shanti believes in fostering inner peace and personal growth. Our
-        mission is to provide urban sanctuaries where individuals can connect,
-        explore, and find resilience. Named after the Sanskrit word for
-        &#34;peace&#34;, Shanti encapsulates our commitment to fostering inner
-        tranquility and empowerment among our students.
+        <span>
+          Shanti believes in fostering inner peace and personal growth. Our
+          mission is to provide urban sanctuaries where individuals can connect,
+          explore, and find resilience.
+        </span>{" "}
+        <span>
+          Named after the Sanskrit word for &#34;peace&#34;, Shanti encapsulates
+          our commitment to fostering inner tranquility and empowerment among
+          our students.
+        </span>
       </AboutText>
     </AboutContainer>
   );
