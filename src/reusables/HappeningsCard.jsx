@@ -10,6 +10,7 @@ const CardSection = styled.section`
   padding: 18px 16px;
   background: var(--primary-white);
   border-radius: 15px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
   width: 295px;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
