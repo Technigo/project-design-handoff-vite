@@ -1,8 +1,6 @@
+import React from "react";
 import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import celebrationImageDesktop from "../assets/images/celebration-image-desktop.png";
-import celebrationImageTablet from "../assets/images/celebration-image-tablet.png";
-import celebrationImageMobile from "../assets/images/celebration-image-mobile.png";
 import { LearnMoreButton } from "../components/LearnMoreButton";
 
 export const LearnMoreSection = ({ data }) => {
@@ -28,27 +26,34 @@ export const LearnMoreSection = ({ data }) => {
         </h2>
         <p className="font-montserrat text-sm lg:text-left lg:text-lg">
           {isMobile
-            ? "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events." : data.subheading.split("\n").map((line) =>(
-              <>
-                {line}
-                <br />
-            </>
-            ))}
+            ? "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events."
+            : data.subheading.split("\n").map((line, index) => (
+                <React.Fragment key={index}>
+                  {" "}
+                  {line}
+                  <br />
+                </React.Fragment>
+              ))}
         </p>
-       <LearnMoreButton cta={data.cta} /> 
+        <LearnMoreButton cta={data.cta} />
       </div>
 
       <div className="flex-1 lg:mb-0">
         <picture>
           <source
-            srcSet={celebrationImageDesktop}
+            srcSet="/assets/images/celebration-image-desktop.png"
             media="(min-width: 1024px)"
+            className="bottom-0 drop-shadow-xl"
           />
-          <source srcSet={celebrationImageTablet} media="(min-width: 768px)" />
+          <source
+            srcSet="/assets/images/celebration-image-tablet.png"
+            media="(min-width: 768px)"
+            className="drop-shadow-xl"
+          />
           <img
-            src={celebrationImageMobile}
+            src="/assets/images/celebration-image-mobile.png"
             alt="Celebration"
-            className="w-48 md:w-72 lg:w-full absolute bottom-0 left-0 mb-0 lg:static"
+            className="w-48 md:w-72 lg:w-full absolute bottom-0 left-0 mb-0 lg:static drop-shadow-xl"
           />
         </picture>
       </div>
@@ -61,6 +66,5 @@ LearnMoreSection.propTypes = {
     heading: PropTypes.string.isRequired,
     subheading: PropTypes.string.isRequired,
     cta: PropTypes.string.isRequired,
-
   }).isRequired,
 };
