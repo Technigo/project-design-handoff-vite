@@ -10,8 +10,6 @@ export const Header = () => {
       <div className="absolute bottom-1/2 left-1/4">
         <Booking />
       </div>
-      
-      
     </div>
   )
 }

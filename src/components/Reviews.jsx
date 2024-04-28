@@ -9,7 +9,7 @@ export const Reviews = () => {
   return (
 
     <>
-      <div className="reviews">
+      <div className="reviews my-96">
         <h2>Reviews</h2>
         <div className="column-5" className="reviews-container" style={{
           backgroundImage: `url(${leftblob}), url(${rightblob})`,

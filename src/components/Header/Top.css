@@ -35,8 +35,8 @@
   width: fit-content;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   position: absolute;
+  flex-wrap: nowrap;
   margin: 20px;
   right: 10px;
   top: 0;

@@ -35,10 +35,16 @@ export default {
         "darkblue": "#042d43",
         "lightgray": "#042d43",
       },
-      
       lineHeight:{
         "12": "6.4rem"
-      }
+      },
+      screens: {
+        'tablet': {'min': '744px', 'max': '1439px'},
+        // => @media (min-width: 640px) { ... }
+  
+        'desktop': '1440px',
+        // => @media (min-width: 1280px) { ... }
+      },
     },
   },
   plugins: [],
