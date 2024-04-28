@@ -1,7 +1,8 @@
+//
+
 //to dos
-//💡 navigation
+//writing on mobile
 //💡 fix position of button on desktop/tablet
-//💡 🍎 hover on location (purple) -> should it be cklickable and link somewhere? Or just change color on hover?
 
 //import styled
 import styled from "styled-components";
@@ -12,7 +13,6 @@ import Location from "../../public/icons/location.png";
 
 //import reusables
 import { Button } from "../reusables/Button";
-// import { Logo } from "../reusables/Logo";
 
 //styles
 const HeaderContainer = styled.section`
@@ -23,31 +23,38 @@ const HeaderContainer = styled.section`
   justify-content: center;
   width: 100%;
   padding: 16px 0 68px 0;
-`;
 
-// const HeaderNavigation = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-//   width: 100%;
-//   padding: 0 16px;
-// `;
+  @media all and (min-width: 744px) {
+    padding: 0 24px 68px 24px;
+  }
+  @media all and (min-width: 1024px) {
+    padding: 0 124px 68px 124px;
+  }
+`;
 
 const HeaderTopWrapper = styled.div`
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 460px;
+  align-items: center;
   width: 100%;
+
+  @media all and (min-width: 744px) {
+    flex-direction: row;
+    height: 460px;
+  }
 `;
 
 const HeaderBottomWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 55px;
 
   @media all and (min-width: 744px) {
-    flex-direction: row;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
   }
 `;
@@ -61,34 +68,23 @@ const HeaderImage = styled.img`
   z-index: 2;
 `;
 
-// //Hamburger
-// //check library Vittoria chat
-// const Hamburger = styled.p`
-//   width: 30px;
-//   height: 30px;
-//   background: red;
-// `;
-
 const HeaderTitle = styled.h1`
-  position: absolute;
-  top: 50%; //centers vertically
-  left: 50%; //centers horizontally
-  transform: translate(-50%, -50%) rotate(90deg); //adjusts for rotation and proper centering
   font-family: "Gerbera";
   font-size: 104px;
   color: var(--primary-white);
-  letter-spacing: 20px;
+  /* letter-spacing: 20px; */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   z-index: 1;
 
   @media all and (min-width: 744px) {
-    transform: translate(-50%, -50%);
     font-size: 128px;
     text-align: center;
+    padding: 13px;
   }
 
   @media all and (min-width: 1024px) {
     font-size: 248px;
+    padding: 25px;
   }
 `;
 
@@ -100,10 +96,7 @@ const HeaderTextWrapper = styled.div`
 
   @media all and (min-width: 744px) {
     flex-direction: row;
-    padding: 0 0 0 16px;
-  }
-
-  @media all and (min-width: 1024px) {
+    padding: 0;
   }
 `;
 
@@ -131,19 +124,12 @@ const HeaderText = styled.p`
 export const Header = () => {
   return (
     <HeaderContainer>
-      {/* <HeaderNavigation> */}
-      {/* renders logo based on viewport width */}
-      {/* {window.innerWidth >= 1024 ? (
-          <Logo type="big" />
-        ) : (
-          <Logo type="small" />
-        )}{" "}
-        <Hamburger />
-      </HeaderNavigation> */}
-
       <HeaderTopWrapper>
         <HeaderImage src={CobraPose} alt="Woman doing cobra pose"></HeaderImage>
-        <HeaderTitle>YOGA</HeaderTitle>
+        <HeaderTitle>Y</HeaderTitle>
+        <HeaderTitle>O</HeaderTitle>
+        <HeaderTitle>G</HeaderTitle>
+        <HeaderTitle>A</HeaderTitle>
       </HeaderTopWrapper>
       <HeaderBottomWrapper>
         <HeaderTextWrapper>

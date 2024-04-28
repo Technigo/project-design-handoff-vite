@@ -1,8 +1,11 @@
+//checked and fixed 🌈//
+
 //import styled
 import styled from "styled-components";
 
 //import reusables
 import { Logo } from "../reusables/Logo";
+import { Language } from "../reusables/Language";
 
 //import hooks
 import { useState } from "react";
@@ -13,6 +16,14 @@ const HeaderNavigation = styled.div`
   justify-content: space-between;
   align-items: center;
   padding: 16px;
+
+  @media all and (min-width: 744px) {
+    padding: 24px 19px 0 19px;
+  }
+
+  @media all and (min-width: 1024px) {
+    padding: 34px 124px 0 124px;
+  }
 `;
 
 //hamburger styling with transitions to turn burger into x
@@ -71,16 +82,34 @@ const MobileMenu = styled.div`
   & > ul > li {
     padding: 8px 0;
     cursor: pointer;
+    font-size: 12px;
+
+    @media all and (min-width: 1024px) {
+      font-size: 16px;
+    }
   }
 `;
 
 //navigation links for desktop and tablet
 const DesktopNavLinks = styled.ul`
   display: flex;
-  gap: 16px;
+  gap: 10px;
   list-style: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+  justify-content: center;
+
+  @media all and (min-width: 1024px) {
+    gap: 104px;
+  }
+`;
+
+//to hide language selector on mobile
+const LanguageWrapper = styled.div`
+  @media all and (max-width: 744px) {
+    display: none;
+  }
 `;
 
 //component
@@ -101,7 +130,6 @@ export const Navigation = () => {
           <li>Schedule</li>
           <li>Yoga</li>
           <li>Prices</li>
-          <li>English</li>
         </DesktopNavLinks>
       ) : (
         <Hamburger onClick={toggleMenu} isOpen={menuOpen}>
@@ -119,10 +147,12 @@ export const Navigation = () => {
             <li>Schedule</li>
             <li>Yoga</li>
             <li>Prices</li>
-            <li>English</li>
           </ul>
         </MobileMenu>
       )}
+      <LanguageWrapper>
+        <Language />
+      </LanguageWrapper>
     </HeaderNavigation>
   );
 };

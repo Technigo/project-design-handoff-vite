@@ -5,6 +5,10 @@ import styled from "styled-components";
 import Globe from "../../public/icons/globe.svg";
 
 //styles
+const LanguageWrapper = styled.div`
+  display: flex;
+`;
+
 const FooterIcon = styled.img`
   width: 24px;
   height: 24px;
@@ -17,6 +21,7 @@ const FooterIcon = styled.img`
 
 const FooterText = styled.p`
   font-size: 16px;
+  font-weight: 500;
   text-align: center;
   color: var(--primary-blk);
 
@@ -37,9 +42,9 @@ const FooterText = styled.p`
 //component
 export const Language = () => {
   return (
-    <>
+    <LanguageWrapper>
       <FooterIcon src={Globe} alt="Globe icon"></FooterIcon>
       <FooterText>English</FooterText>
-    </>
+    </LanguageWrapper>
   );
 };
