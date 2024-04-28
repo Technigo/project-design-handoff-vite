@@ -3,7 +3,7 @@ import { Top } from "./Top"
 
 export const Header = () => {
   return (
-    <div className="top-0 mb-20 w-full h-screen flex flex-col box-border bg-cover bg-center bg-no-repeat" style={{       
+    <div className="top-0 w-full h-screen flex flex-col box-border bg-cover bg-center bg-no-repeat" style={{       
       backgroundImage: `url('/assets/main-image.svg')`, 
     }}>
       <Top />
