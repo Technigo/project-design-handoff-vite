@@ -10,7 +10,7 @@ import "../index.css";
 export const NamasteIcon = styled(NamasteCircle)`
   align-self: flex-end;
   position: relative;
-  top: -80px;
+  top: -57px;
   left: 0;
 `;
 
