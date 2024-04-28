@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
+import PropTypes from "prop-types";
 
 import parking from "../assets/icons/parking.png";
 import food from "../assets/icons/food.png";
 import gym from "../assets/icons/gym.png";
 import wifi from "../assets/icons/wifi.png";
 
-export const InfoIcons = ({ icon, index }) => {
+export const InfoIcons = ({ icon }) => {
 
   let img = "";
   if (
@@ -54,4 +55,8 @@ export const InfoIcons = ({ icon, index }) => {
       <p className="hidden tablet:block text-[14px] desktop:text-[16px]">{icon.description}</p>
     </div>
   );
+};
+
+InfoIcons.propTypes = {
+  icon: PropTypes.object.isRequired,
 };

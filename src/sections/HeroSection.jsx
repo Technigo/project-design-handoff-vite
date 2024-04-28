@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import logo from "../assets/icons/logo-desktop.png";
 import yoga from "/assets/images/hero-image.png";
 import burger from "../assets/icons/hamburger.svg";
@@ -51,4 +53,8 @@ export const HeroSection = ({ data }) => {
       </div>
     </>
   );
+};
+
+HeroSection.propTypes = {
+  data: PropTypes.object.isRequired
 };

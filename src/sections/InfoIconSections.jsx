@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import { InfoIcons } from "../components/InfoIcons";
 
 export const InfoIconSections = ({ data }) => {
@@ -10,4 +12,8 @@ export const InfoIconSections = ({ data }) => {
       </div>
     </div>
   );
+};
+
+InfoIconSections.propTypes = {
+  data: PropTypes.object.isRequired
 };

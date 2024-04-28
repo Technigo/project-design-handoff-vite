@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const Navigation = ({ data }) => {
   return (
     <>
@@ -8,4 +10,8 @@ export const Navigation = ({ data }) => {
       ))}
     </>
   );
+};
+
+Navigation.propTypes = {
+  data: PropTypes.object.isRequired,
 };

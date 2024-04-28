@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 import arrow from "../assets/icons/Forward.svg";
 import meditation from "../assets/images/meditation.png";
 import distanceWorking from "../assets/images/distance-working.png";
@@ -40,4 +42,8 @@ export const FeatureCard = ({ feature }) => {
       <img className="h-6 mr-4 self-center" src={arrow} />
     </div>
   );
+};
+
+FeatureCard.propTypes = {
+  feature: PropTypes.object.isRequired,
 };

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export const SignUpButton = ({ buttonName }) => {
   return (
     <>
@@ -6,4 +8,8 @@ export const SignUpButton = ({ buttonName }) => {
       </button>
     </>
   );
+};
+
+SignUpButton.propTypes = {
+  buttonName: PropTypes.string.isRequired,
 };
