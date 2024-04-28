@@ -25,15 +25,16 @@ export default CardActivities;
 
 const CardWrapper = styled.div`
   display: flex;
+  width: 100%;;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-width: 100%;
 padding: 16px;
 
 
   @media (min-width: ${breakpoints.tablet}) {
     /*  height: 600px; looks good on tablet but creates space on the desktop */
+    padding: 0 40px;
   }
 
   @media (min-width: ${breakpoints.desktop}) {
@@ -45,6 +46,7 @@ padding: 0;
 
 const ImageWrapper = styled.div`
   width: 100%; //keep this 
+/*   height: 320px; makes the picture to not be aline*/
   overflow: hidden;
   border-radius: 16px 56px 0 0;
 
@@ -60,8 +62,9 @@ const ImageWrapper = styled.div`
 const CardImage = styled.img`
   object-fit: cover;
   object-position: center;
-  width: 100%;
-  height: auto;
+  width: 400px;
+  height: 100%;
+  flex-shrink: 0;
   //nothing to change here
 
   @media (min-width: ${breakpoints.tablet}) {
@@ -127,9 +130,9 @@ const CardDescription = styled.p`
 `;
 
 const ButtonWrapper = styled.div`
-  justify-content: flex-end;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
   width: auto;
   padding: 0;
   padding: 16px;
