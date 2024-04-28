@@ -7,7 +7,7 @@ export const Reviews = ({ customerReviews, leftBlob, rightBlob }) => {
   return (
     <a className='cursor-pointer' href="#">
       <div className="review-wrap">
-        <div className="max-w-[1370px] mx-auto align-middle  bg-yogawhite flex-1  mt-[65px] pt-[20px]  ">
+        <div className="max-w-[1370px] mx-auto align-middle  bg-yogawhite flex-1  mt-[33px] pt-[20px]  ">
           <div className="reviews  bg-yogawhite  bg-no-repeat bg-contain md:mx-8" style={{
             backgroundImage: `url(${leftBlob}), url(${rightBlob})`,
             backgroundPosition: 'left 15px, right -15px',
