@@ -48,6 +48,7 @@ const CardSection = styled.section`
       "btn btn btn";
     width: 100%;
     height: 100%;
+    row-gap: 30px;
     padding: 10px;
     align-items: stretch;
     box-shadow: none;
@@ -55,6 +56,7 @@ const CardSection = styled.section`
 
   @media all and (min-width: 1024px) {
     align-items: center;
+    row-gap: 43px;
   }
 `;
 
@@ -92,7 +94,6 @@ const CardList = styled.div`
 
   @media all and (min-width: 744px) {
     text-align: center;
-    padding: 16px;
   }
 
   ul {
