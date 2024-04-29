@@ -63,8 +63,8 @@ export const Footer = () => {
               </nav>
             </div>
 
-            <div className="bg-steelblue w-full desktop:flex desktop:items-center desktop:justify-around p-2">
-                <ul className="hidden desktop:flex flex-row justify-center mb-2 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5">
+            <div className="bg-steelblue w-full desktop:flex desktop:items-center desktop:justify-center p-1">
+                <ul className="hidden desktop:flex flex-row justify-center mb-2 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-20">
                 <li>
                     <a href="/" className="transition hover:text-beige">{t("footer.about")}</a>
                 </li>

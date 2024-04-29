@@ -20,5 +20,15 @@ export const App = () => {
     <Strength />
     <Footer />
   </div>
+=========
+  return (
+    <div className="flex flex-col">
+      <Header />
+      <Reviews />
+      <Philosophy />
+      <Strength />
+      <Footer />
+    </div>
   )
-};
+>>>>>>>>> Temporary merge branch 2
+}

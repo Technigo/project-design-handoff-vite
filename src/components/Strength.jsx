@@ -2,10 +2,8 @@ import strength1 from "/images/strength1.svg"
 import strength2 from "/images/strength2.svg"
 import strength3 from "/images/strength3.svg"
 
-
 export const Strength = () => {
   return (
-
     <section className="flex flex-col justify-center p-2 gap-6 mx-2 tablet:mx-8 desktop:mx-36 font-Inter mb-8">
       <div className=" ">
         <img className="float-left mr-3 max-w-[120px] md:max-w-[350px] lg:max-w-[600px]" src={strength1} alt=" Build strength - lose stress" />
@@ -23,6 +21,5 @@ export const Strength = () => {
         <p className="text-base tablet:text-xl desktop:text2xl overflow-auto">We believe in easy access yoga classes. Drop-in or schedule ahead. Sign up or on the go.</p>
       </div>
     </section>
-
   )
 }
