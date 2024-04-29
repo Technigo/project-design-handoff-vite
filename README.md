@@ -1,4 +1,4 @@
-<h1 align="center">
+I d<h1 align="center">
   <a href="https://the-zumba-hall.netlify.app/">
     <img src="public/zumba-hall-preview.png" alt="Project Banner Image">
   </a>
@@ -11,6 +11,8 @@ Week 12 is a collaboration with the students of the UX bootcamp. We got assigned
 ### The Problem
 
 We started off discussing what component we need and wrote down what we need and which CSS framework we want to go with. We decided on Tailwind, because we thought it's not that hard to get into it. After we wrote down all the components in a Canvas on Slack, we started working async. We kept the Canvas up to date for the other person and worked in branches.
+
+By this project, we realized that a solid knowledge of Vanila CSS is important. It will be easier to understand and implement Tailwind. 
 
 Because our scheduele was different, we both had different progress in our parts. Another problem was that the designer chose to have different breakpoints than we usually have. Therefore, the mobile version starts at 360px. Designer and Web devs were talking about this issue, since it was our requirement to make it fit from 320px to 1600px.
 
