@@ -17,7 +17,7 @@ export const Reviews = ({ customerReviews, leftBlob, rightBlob }) => {
           }}>
             <div className="flex justify-evenly " >
               {customerReviews.map((review, index) => (
-                <div className="reviews flex-col justify-items-start leading-[20px] sm:w-24 m-2 text-16 md:leading-[33px] md:w-32 md:text-20 lg:leading-[45px] lg:w-56 lg:text-25" key={index} >
+                <div className="reviews flex-col justify-items-start leading-[20px] w-[150px] m-2 text-[16px] md:leading-[33px] md:w-[150px] md:text-[20px] lg:leading-[45px] lg:w-[200px] lg:text-[25px]" key={index} >
                   <p className="font-inter text-darkblue text-center ">{review}</p>
                 </div>
               ))}
