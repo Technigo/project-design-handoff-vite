@@ -54,7 +54,6 @@ const CardSection = styled.section`
   }
 
   @media all and (min-width: 1024px) {
-    width: 80%;
     align-items: center;
   }
 `;
