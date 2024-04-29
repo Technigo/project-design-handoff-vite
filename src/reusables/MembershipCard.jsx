@@ -94,6 +94,12 @@ const CardList = styled.div`
 
   @media all and (min-width: 744px) {
     text-align: center;
+    padding: 0 16px;
+  }
+
+  @media all and (min-width: 1024px) {
+    text-align: center;
+    padding: 0 36px;
   }
 
   ul {
