@@ -12,7 +12,6 @@ export const Hero = ({ heroImg, mainText, subText, }) => {
           backgroundPosition: 'left center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
-
         }}>
           <div className="flex flex-wrap justify-start col-start-1 font-Roboto font-semi-bold ">
             <div className="text-center md:px-5  lg:px-7">
@@ -23,25 +22,22 @@ export const Hero = ({ heroImg, mainText, subText, }) => {
             </div>
           </div>
 
-
           <div className="col-start-6 row-start-1 ">
             <div className="flex flex-wrap justify-end mr-3 mt-3  lg:py-7  ">
-              <img className="w-[19px] md:w-[24px] lg:w-[38px]" src={searchIcon} alt="search-icon" /> <img className="w-[19px] md:w-[33px] lg:w-[38px]" src={menuIcon} alt="menu-icon" />
+              <img className="w-[19px] md:w-[26px] lg:w-[44px] cursor-pointer" src={searchIcon} alt="search-icon" /> 
+              <img className="w-[24px] md:w-[33px] lg:w-[57px] cursor-pointer" src={menuIcon} alt="menu-icon" />
             </div>
           </div>
           <div className=" font-roboto  grid-row-start-3 col-start-1 col-span-2  min-w-60  md:min-w-80 lg:min-w-96 ml-16 md:mt-[100px] lg:mt-40">
           <Link to="Philosophy" smooth={true} duration={500}>
-            <h1 className="cursor-pointer text-[28px] md:ml-16 md:text-[36px] lg:text-[82px] lg:font-bold lg:min-w-[600px]  ">{mainText}</h1>
+            <h1 className="cursor-pointer text-[28px] md:ml-16 md:text-[36px] lg:text-[70px] lg:font-bold lg:min-w-[600px]  ">{mainText}</h1>
             </Link>
-            <h3 className="text-[17px] md:ml-16  md:text-[25px] lg:text-[49px] lg:min-w-[600px]">{subText}</h3>
+            <h3 className="text-[21px] md:ml-16  md:text-[25px] lg:text-[49px] lg:min-w-[600px]">{subText}</h3>
             <button className=" cursor-pointer text-[11px] md:ml-16 md:mt-2 md:text-[15px] lg:text-[35px] bg-darkblue hover:bg-steelblue  active:bg-[#909394] text-yogawhite font-bold px-3 py-1 rounded-[15px] lg:rounded-[40px] lg:py-2 lg:px-5 lg:mt-2" onClick={() => alert("Sorry we are full at the moment - please try again later 🙏🏽 ")}
 >Book now</button>
           </div>
-
         </div>
 </div>
-
     </>
-
   )
 }
