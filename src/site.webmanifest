@@ -1,0 +1,19 @@
+{
+    "name": "Y Studio - Find your power - Anytime, Anywhere - An exclusive yoga studio in central Stockholm or other bigger city, specialized in ashtanga yoga. This is a tougher and more physically demanding type of yoga, often referred to as Power Yoga for those who are after the physical training more than the meditation part of yoga.",
+    "short_name": "Y Studio - Find your power - Anytime, Anywhere",
+    "icons": [
+       {
+          "src": "assets/android-chrome-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+       },
+       {
+        "src": "assets/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+        }
+    ],
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "display": "standalone"
+ }
