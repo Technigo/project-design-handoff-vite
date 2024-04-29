@@ -5,8 +5,8 @@ export const FindUsButton = () => {
   const [bgColor, setBgColor] = useState("bg-yellow");
 
   const changeColor = () => {
-    setTextColor("text-pink");
-    setBgColor("bg-dkpurple");
+    setTextColor(textColor === "text-black" ? "text-pink" : "text-black");
+    setBgColor(bgColor === "bg-yellow" ? "bg-dkpurple" : "bg-yellow");
   };
   return (
     <button
