@@ -16,10 +16,10 @@ export const InstructorPieces = ({
   return (
    
       <div
-      className={`shadow-opacity-75 flex flex-col rounded-[10px] bg-purple shadow-xl shadow-pink hover:cursor-pointer hover:bg-pink hover:text-black 
+      className={`shadow-opacity-75 flex-col rounded-[10px] bg-purple shadow-xl shadow-pink hover:cursor-pointer hover:bg-pink hover:text-black 
          sm:h-[338px] sm:w-[202px] sm:gap-y-1 sm:px-[20px] sm:pb-[25px] sm:pt-[15px]
          md:h-[361px] md:w-[245px] md:gap-y-[20px] md:px-[25px] md:pb-[35px] md:pt-[15px]
-         lg:h-[434px] lg:w-[395px]  lg:gap-y-[25px] 
+         lg:h-[434px] lg:w-[395px]  lg:gap-y-[25px] relative inline-block text-wrap
          lg:px-[40px] lg:pb-[35px] lg:pt-[25px] text-${isClick}`} onClick={clickCard}
     >
       <img src={image} alt={alt} className={imageStyle} />
