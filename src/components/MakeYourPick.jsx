@@ -59,7 +59,7 @@ const MakeYourPickOne = styled.img`
 const MakeYourPickTwo = styled.img`
   display: none;
 
-  @media (min-width: 600px) and (max-width: 1200px) {
+  @media (min-width: 600px) and (max-width: 1199px) {
     display: flex;
     height: 380px;
     width: 280px;
@@ -76,7 +76,7 @@ const MakeYourPickTwo = styled.img`
 const MakeYourPickThree = styled.img`
   display: none;
 
-  @media (min-width: 600px) and (max-width: 1200px) {
+  @media (min-width: 600px) and (max-width: 1199px) {
     display: none;
   }
   @media (min-width: 1200px) {

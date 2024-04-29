@@ -25,9 +25,7 @@ export const OurOfferings = () => {
   );
 };
 const OurOfferingsSection = styled.section`
-  display: flex;
-  flex-direction: column;
-
+  
   h1 {
     color: #0b1623;
 
@@ -50,7 +48,14 @@ const OurOfferingsSection = styled.section`
 `;
 
 const OurOfferingsCards = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
+  display: grid;
+
+  @media (min-width: 600px) and (max-width: 1199px) {
+    grid-template-columns: 1fr 1fr;
+  
+    
+  }
+  @media (min-width: 1200px){
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 `;

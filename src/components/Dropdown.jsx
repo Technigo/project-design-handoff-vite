@@ -38,6 +38,8 @@ const SelectContainer = styled.div`
   position: relative;
   display: flex;
   justify-content: flex-end;
+  @media (min-width: 1200px) {
+  }
 `;
 
 const DropdownButton = styled.button`
@@ -48,6 +50,9 @@ const DropdownButton = styled.button`
   display: flex;
   align-items: center;
   cursor: pointer;
+  @media (min-width: 1200px) {
+    display: none;
+  }
 `;
 
 const DropdownMenu = styled.img`
@@ -62,11 +67,21 @@ const OptionsContainer = styled.div`
   padding-bottom: 20px;
   border: none;
   display: ${({ open }) => (open ? "" : "none")};
+  @media (min-width: 1200px) {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    padding-right: 150px;
+  }
 `;
 
 const VectorBtn = styled.button`
   background: none;
   border: none;
+  @media (min-width: 1200px) {
+    display: none;
+  }
 `;
 
 const VectorImg = styled.img`
@@ -78,6 +93,8 @@ const VectorImg = styled.img`
   height: 12px;
   padding-left: 125px;
   padding-top: 6px;
+  @media (min-width: 1200px){
+    display: none;
 `;
 
 const Option = styled.div`

@@ -5,33 +5,45 @@ import styled from "styled-components";
 export const Contact = () => {
   return (
     <>
-      <ContactImage></ContactImage>
-      <ContactContent>
-        <ContactText>
-          <h1>Not sure what to choose?</h1>
-          <p>We are happy to help. Let’s chat!</p>
-        </ContactText>
-        <Button>Start a chat</Button>
-      </ContactContent>
+      <ContactWrapper>
+        <ContactImage></ContactImage>
+        <ContactContent>
+          <ContactText>
+            <h1>Not sure what to choose?</h1>
+            <p>We are happy to help. Let’s chat!</p>
+          </ContactText>
+          <Button>Start a chat</Button>
+        </ContactContent>
+      </ContactWrapper>
     </>
   );
 };
-const ContactContent = styled.div`
+
+const ContactWrapper = styled.section`
   background-color: #e6f4ff;
+  display: grid;
+
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+`;
+const ContactContent = styled.div`
   display: flex;
   flex-direction: column;
-  padding-bottom: 24px;
   margin: auto;
+  padding-bottom: 24px;
 `;
 
 const ContactImage = styled.div`
   background-image: url(${contactImage});
   background-size: cover;
-  background-position: top;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 240px;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 240px;
+
+  @media (min-width: 600px) {
+    order: 0;
+  }
 `;
 
 const ContactText = styled.div`
@@ -39,7 +51,7 @@ const ContactText = styled.div`
   margin-right: 24px;
 
   h1 {
-    width: fit-content;
+    width: 100 %
     color: var(--Powder-Black, #0b1623);
     font-family: Philosopher;
     font-size: 36px;
@@ -57,5 +69,6 @@ const ContactText = styled.div`
     font-weight: 600;
     line-height: 130%;
     margin-bottom: 40px;
+    width: 100%;
   }
 `;

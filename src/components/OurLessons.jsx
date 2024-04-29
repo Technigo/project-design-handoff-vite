@@ -6,21 +6,31 @@ import styled from "styled-components";
 export const OurLessons = () => {
   return (
     <>
-      <OurLessonsImage></OurLessonsImage>
-      <OurLessonContent>
-        <OurLessonsText>
-          <h1>Our Lessons</h1>
-          <p>
-            Personalise your stay and add our snowboarding lessons! Whether
-            you're just starting out or have already some skills - we offer
-            lessons that suit every Powder Betty’s need!
-          </p>
-        </OurLessonsText>
-        <Button>Explore our Lessons</Button>
-      </OurLessonContent>
+      <OurLessonsWrapper>
+        <OurLessonsImage></OurLessonsImage>
+        <OurLessonContent>
+          <OurLessonsText>
+            <h1>Our Lessons</h1>
+            <p>
+              Personalise your stay and add our snowboarding lessons! Whether
+              you're just starting out or have already some skills - we offer
+              lessons that suit every Powder Betty’s need!
+            </p>
+          </OurLessonsText>
+          <Button>Explore our Lessons</Button>
+        </OurLessonContent>
+      </OurLessonsWrapper>
     </>
   );
 };
+
+const OurLessonsWrapper = styled.section`
+  display: grid;
+
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+`;
 
 const OurLessonContent = styled.div`
   background-color: #e6f4ff;
@@ -35,10 +45,12 @@ const OurLessonsImage = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 240px;
+  width: 100%;
+  min-height: 240px;
+  
+  @media (min-width: 600px) {
+    order: 1;
+  }
 `;
 
 const OurLessonsText = styled.div`
@@ -52,6 +64,7 @@ const OurLessonsText = styled.div`
     font-weight: 700;
     line-height: 130%;
     letter-spacing: 1.08px;
+    width: 100%;
   }
   p {
     color: #0b1623;
@@ -61,5 +74,6 @@ const OurLessonsText = styled.div`
     font-weight: 600;
     line-height: 130%;
     margin-bottom: 40px;
+    width: 100%;
   }
 `;

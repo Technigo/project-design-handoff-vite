@@ -17,6 +17,10 @@ export const Live = () => {
 
 const LiveCard = styled.div`
   display: flex;
+  
+  @media(min-width: 600px){
+    flex-direction: column;
+  }
 `;
 
 const LiveImage = styled.div`

@@ -29,6 +29,13 @@ const HeroSection = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 600px;
+
+  @media (min-width: 600px) and (max-width: 1200px) {
+    height: 1133px;
+  }
+  @media (min-width: 1200px) {
+    height: 1024px;
+  }
 `;
 
 const MountainImage = styled.img`
@@ -62,6 +69,22 @@ const HeroContent = styled.div`
     padding-left: 24px;
     padding-bottom: 160px;
   }
+  @media (min-width: 600px) and (max-width: 1200px) {
+    h1 {
+      font-size: 64px;
+      line-height: 83.2px;
+      padding-top: 306px;
+    }
+    p {
+      font-size: 25px;
+      line-height: 32.5px;
+      width: 363px;
+      padding-left: 32px;
+      padding-bottom: 80px;
+    }
+  }
+  @media (min-width: 1200px) {
+  }
 `;
 
 const CtaButton = styled.button`
@@ -84,6 +107,11 @@ const CtaButton = styled.button`
   font-weight: 500;
   line-height: 100%;
   margin: auto;
+  @media (min-width: 600px) {
+    width: 30%;
+    height: 48px;
+    padding-left: 32px;
+  }
 
   &:hover {
     border-radius: 32px;

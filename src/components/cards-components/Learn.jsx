@@ -20,6 +20,9 @@ export const Learn = () => {
 
 const LearnCard = styled.div`
   display: flex;
+  @media(min-width: 600px){
+    flex-direction: column;
+  }
 `;
 
 const LearnImage = styled.div`

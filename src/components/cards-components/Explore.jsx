@@ -20,6 +20,10 @@ export const Explore = () => {
 
 const ExploreCard = styled.div`
   display: flex;
+
+  @media(min-width: 600px){
+    flex-direction: column;
+  }
 `;
 
 const ExploreImage = styled.div`
