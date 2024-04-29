@@ -32,6 +32,11 @@ const MembershipSection = styled.section`
 
   @media all and (min-width: 744px) {
     background: var(--primary-white);
+    padding: 64px 55px;
+  }
+
+  @media all and (min-width: 1024px) {
+    padding: 64px 124px;
   }
 `;
 
