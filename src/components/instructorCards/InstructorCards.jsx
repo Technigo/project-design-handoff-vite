@@ -19,7 +19,7 @@ export const InstructorCards = () => {
       <h4 className="ubuntu text-white sm:text-xl lg:text-3xl text-center ">
         Meet three of our instructors!
       </h4>
-      <div className="flex justify-center sm:gap-1 md:gap-1 ">
+      <div className="flex justify-center sm:gap-1 md:gap-1 overflow-x-scroll scroll whitespace-nowrap scroll-smooth">
        
             <InstructorPieces
             image={Susie}
