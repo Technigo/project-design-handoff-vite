@@ -1,18 +1,16 @@
-import { ClassPieces } from "./ClassPieces"
-import ZumbaEnergetic from "/classImg/ZumbaEnergetic.jpeg"
-import ZumbaHeavy from "/classImg/ZumbaHeavy.jpeg"
-import JustZumba from "/classImg/JustZumba.jpeg"
-import { Dots } from "../dot/Dots"
-// import {useGym} from "../../GymContext"
+import { ClassPieces } from "./ClassPieces";
+import ZumbaEnergetic from "/classImg/ZumbaEnergetic.jpeg";
+import ZumbaHeavy from "/classImg/ZumbaHeavy.jpeg";
+import JustZumba from "/classImg/JustZumba.jpeg";
+import { Dots } from "../dot/Dots";
 
 export const ClassCards = () => {
-  
   return (
-    <div className="flex flex-col items-center justify-center sm:pt-[40px] md:gap-y-1 md:pt-[80px] lg:gap-y-5 lg:px-[60px] lg:pt-[144px]">
-      <h4 className="ubuntu text-white  sm:text-xl lg:text-3xl">
+    <div className="flex flex-col items-center justify-center pt-[40px] md:gap-y-1 md:pt-[80px] lg:gap-y-5 lg:px-[60px] lg:pt-[144px] ">
+      <h2 className=" text-xl text-white lg:text-3xl">
         Some of our classes!
-      </h4>
-      <div className="flex sm:gap-1 md:gap-[30px] lg:gap-[27px]">
+      </h2>
+      <div className="scroll smooth flex h-full w-screen flex-none items-start gap-1 overflow-x-scroll whitespace-nowrap pb-[20px] md:gap-[30px] lg:gap-[27px] lg:overflow-x-hidden lg:justify-center">
         <ClassPieces
           image={ZumbaEnergetic}
           alt={"People are having Zumba class"}
@@ -41,4 +39,4 @@ export const ClassCards = () => {
       <Dots />
     </div>
   );
-}
+};

@@ -1,7 +1,7 @@
 export const Arrow = () => {
     return (
       <svg
-        className="sm:h-[14px] sm:w-[14px] md:h-[24px] md:w-[24px] lg:h-[30px] lg:w-[30px]"
+        className="h-[14px] w-[14px] md:h-[24px] md:w-[24px] lg:h-[30px] lg:w-[30px]"
         viewBox="0 0 14 14"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

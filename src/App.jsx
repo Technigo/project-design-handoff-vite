@@ -7,7 +7,6 @@ import { ValueCards } from "./components/valueCards/ValueCards";
 import { Membership } from "./sections/Membership";
 import { BecomeMember } from "./sections/BecomeMember";
 import { Footer } from "./sections/Footer";
-// import { InstructorCard } from "./components/InstructorCard"
 
 export const App = () => {
   return (
@@ -16,13 +15,11 @@ export const App = () => {
       <Statistics />
       <AboutUs />
       <ClassCards />
-
       <InstructorCards />
       <ValueCards />
       <Membership />
       <BecomeMember />
       <Footer />
-      {/* <InstructorCard /> */}
     </>
   );
 };

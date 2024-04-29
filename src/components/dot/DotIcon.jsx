@@ -1,7 +1,7 @@
 export const DotIcon = () => {
   return (
     <svg
-      className="sm:h-[10px] sm:w-[10px] md:h-[16px] md:w-[16x]"
+      className="h-[10px] w-[10px] md:h-[16px] md:w-[16x]"
       viewBox="0 0 13 13"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
