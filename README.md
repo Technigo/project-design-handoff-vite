@@ -1,6 +1,6 @@
 <h1 align="center">
-  <a href="">
-    <img src="/zumba-hall-preview.png" alt="Project Banner Image">
+  <a href="https://the-zumba-hall.netlify.app/">
+    <img src="public/zumba-hall-preview.png" alt="Project Banner Image">
   </a>
 </h1>
 
