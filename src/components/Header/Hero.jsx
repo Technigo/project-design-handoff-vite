@@ -7,7 +7,7 @@ export const Hero = () => {
         </h1>
         <div className="flex flex-col items-center gap-2 justify-center md:gap-10">
           <h2
-            className="backdrop-blur-sm font-zilla font-medium text-darkBlue text-center text-2xl 2xl:text-36"
+            className="backdrop-blur-sm font-medium text-darkBlue text-center text-2xl 2xl:text-36"
           >
             Styrketräning, magaktivering eller återhämtning, vad behöver din
             kropp idag?

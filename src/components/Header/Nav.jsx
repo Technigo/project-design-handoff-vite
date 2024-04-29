@@ -40,15 +40,15 @@ export const Nav = () => {
         </ul>
       </div>
       {!navlist && (
-        <ul className="absolute justify-center align-center 2xl:inline-flex">
+        <ul className="z-[110] bg-amber absolute inset-y-28 w-210 inset-x-1/2 justify-right text-right align-center 2xl:inline-flex">
           <li>
-            <a href="#program">Program</a>
+            <a className="font-inter text-lg hover:font-medium text-darkBlue " href="#program">Program</a>
           </li>
           <li>
-            <a href="#om">Om Studio Mama</a>
+            <a className="font-inter text-lg hover:font-medium text-darkBlue " href="#om">Om Studio Mama</a>
           </li>
           <li>
-            <a href="#logga-in">Logga in</a>
+            <a className="font-inter text-lg hover:font-medium text-darkBlue " href="#logga-in">Logga in</a>
           </li>
         </ul>
       )}
