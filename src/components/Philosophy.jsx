@@ -5,7 +5,7 @@ export const Philosophy = ({ articles }) => {
 	return (
 		<>
 			<a className='cursor-pointer' href="#">
-				<div id="Philosophy" className="font-inter wrapper relative text-darkblue bg-yogawhite flex py-[65px] mx-auto lg:py-[109px]">
+				<div id="Philosophy" className="font-inter wrapper relative text-darkblue bg-yogawhite flex py-[65px] mx-auto lg:py-[109px] pl-[5px] md:pl-[10px]">
 					<div id='slider' className='mx-[4.5px] w-full h-full overflow-x-scroll whitespace-nowrap scroll smooth xl:overflow-x-hidden'>
 						{articles.map((article, index) => (
 							<div className="relative align-top mx-[7.5px] h-full inline-block m max-w-[194px] md:flex-col  md:px-5 md:max-w-[234px] lg:max-w-[417px]" key={index}>
