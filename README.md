@@ -1,4 +1,4 @@
-I d<h1 align="center">
+<h1 align="center">
   <a href="https://the-zumba-hall.netlify.app/">
     <img src="public/zumba-hall-preview.png" alt="Project Banner Image">
   </a>
@@ -6,17 +6,17 @@ I d<h1 align="center">
 
 # Design Handoff Project
 
-Week 12 is a collaboration with the students of the UX bootcamp. We got assigned to a designer to build their web app design. Additionally, we have to chose if we want to do styled-components or Tailwind CSS. This is the design we got. [View it in Figma](https://www.figma.com/file/lxCKfaKF7XiBMMj9rEySIN/Annluis-Designer-Developer-Handover?type=design&node-id=116%3A1041&mode=design&t=vEVpGRl2eafxgbn2-1).
+Week 12 is a collaboration with the students of the UX Bootcamp. We got assigned to a designer to build their web app design. Additionally, we have to choose if we want to do styled components or Tailwind CSS. This is the design we got. [View it in Figma](https://www.figma.com/file/lxCKfaKF7XiBMMj9rEySIN/Annluis-Designer-Developer-Handover?type=design&node-id=116%3A1041&mode=design&t=vEVpGRl2eafxgbn2-1).
 
 ### The Problem
 
-We started off discussing what component we need and wrote down what we need and which CSS framework we want to go with. We decided on Tailwind, because we thought it's not that hard to get into it. After we wrote down all the components in a Canvas on Slack, we started working async. We kept the Canvas up to date for the other person and worked in branches.
+We started off discussing what component we needed and wrote down what we needed and which CSS framework we wanted to go with. We decided on Tailwind because we thought it was not that hard to get into it. After we wrote down all the components in Canvas on Slack, we started working async. We kept the Canvas up to date for the other person and worked in branches.
 
-By this project, we realized that a solid knowledge of Vanila CSS is important. It will be easier to understand and implement Tailwind. 
+By this project, we realized that a solid knowledge of Vanilla CSS is important. It will be easier to understand and implement Tailwind. 
 
-Because our scheduele was different, we both had different progress in our parts. Another problem was that the designer chose to have different breakpoints than we usually have. Therefore, the mobile version starts at 360px. Designer and Web devs were talking about this issue, since it was our requirement to make it fit from 320px to 1600px.
+Because our schedule was different, we both had different progress on our parts. Another problem was that the designer chose to have different breakpoints than we usually have. Therefore, the mobile version starts at 360px. The designer and Web devs were discussing this issue since we required to make it fit from 320px to 1600px.
 
-We have to keep in mind that both parties (designer and web developers) are students and still learning. We don't have the full capacity to do what the designer wanted from us. And also the designer hasn't learned all necessities to be an UX designer. It was important we could communicate clearly what is possible and what not without changing the design.
+We must remember that both parties (designer and web developers) are students and still learning. We don't have the full capacity to do what the designer wanted from us. And also the designer hasn't learned all the necessities to be a UX designer. It was important we could communicate clearly what is possible and what is not without changing the design.
 
 ### View it live
 
@@ -27,5 +27,5 @@ We have to keep in mind that both parties (designer and web developers) are stud
 ## Instructions
 
 <a href="instructions.md">
-   See instructions of this project
+   See instructions for this project
   </a>
