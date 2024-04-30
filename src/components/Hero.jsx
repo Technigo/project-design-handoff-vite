@@ -29,12 +29,15 @@ const HeroSection = styled.div`
   flex-direction: column;
   justify-content: center;
   height: 600px;
+  width: 100%;
 
-  @media (min-width: 600px) and (max-width: 1200px) {
+  @media (min-width: 600px) and (max-width: 1199px) {
     height: 1133px;
+
   }
   @media (min-width: 1200px) {
     height: 1024px;
+    
   }
 `;
 
@@ -69,7 +72,7 @@ const HeroContent = styled.div`
     padding-left: 24px;
     padding-bottom: 160px;
   }
-  @media (min-width: 600px) and (max-width: 1200px) {
+  @media (min-width: 600px) {
     h1 {
       font-size: 64px;
       line-height: 83.2px;
@@ -83,8 +86,6 @@ const HeroContent = styled.div`
       padding-bottom: 80px;
     }
   }
-  @media (min-width: 1200px) {
-  }
 `;
 
 const CtaButton = styled.button`
@@ -94,6 +95,7 @@ const CtaButton = styled.button`
   gap: 10px;
   width: 85%;
   height: 48px;
+ 
 
   border-radius: 32px;
   border: 1px solid var(--Powder-Black, #0b1623);
