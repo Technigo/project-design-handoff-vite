@@ -50,13 +50,13 @@ export const Nav = () => {
  {/* Navlist for Mobile & Tablet - Hidden by Default */}
       {navlistVisible && (
         <ul className="bg-peach w-full text-darkBlue text-sm py-14 absolute top-20 right-0 text-center md:top-24">
-          <li className="py-2">
+          <li className="py-4">
             <a className="font-inter hover:font-medium" href="#program">Program</a>
           </li>
-          <li className="py-2">
+          <li className="py-4">
             <a className="font-inter hover:font-medium" href="#om">Om Studio Mama</a>
           </li>
-          <li className="py-2">
+          <li className="py-4">
             <a className="font-inter hover:font-medium " href="#logga-in">Logga in</a>
           </li>
         </ul>
