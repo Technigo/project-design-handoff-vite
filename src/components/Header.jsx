@@ -118,6 +118,10 @@ const HeaderText = styled.p`
   }
 `;
 
+const HeaderButton = styled(Button)`
+  justify-self: center;
+`;
+
 //component
 export const Header = () => {
   return (
@@ -136,7 +140,7 @@ export const Header = () => {
             Stockholm <br></br>Åsögatan 96, 128 35
           </HeaderText>
         </HeaderTextWrapper>
-        <Button>Check schedule</Button>
+        <HeaderButton>Check schedule</HeaderButton>
       </HeaderBottomWrapper>
     </HeaderContainer>
   );
