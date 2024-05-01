@@ -128,6 +128,7 @@ const StyledFooter = styled.footer`
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    text-align: center;
   }
 
   @media (max-width: 1200px) {
@@ -176,6 +177,7 @@ const StyledFooter = styled.footer`
     }
 
     .text-info {
+      width: 100%;
       align-items: flex-end;
     }
 
@@ -188,7 +190,7 @@ const StyledFooter = styled.footer`
     }
 
     .info-links {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     .language-select {
