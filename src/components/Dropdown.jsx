@@ -94,7 +94,7 @@ const VectorImg = styled.img`
   padding-left: 125px;
   padding-top: 6px;
   @media (min-width: 1200px){
-    display: none;
+    display: none;}
 `;
 
 const Option = styled.div`

@@ -15,4 +15,4 @@ We decided to use Styled Components for CSS to work on our UI. At first it requi
 
 ### View it live
 
-TBA
+https://monumental-banoffee-da2acb.netlify.app/
