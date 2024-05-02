@@ -9,7 +9,7 @@ The UX design only had three responsive breakpoints, therefore I configured cust
 
 ### View it live
 
-https://app.netlify.com/sites/clever-selkie-dfebb0/overview
+https://clever-selkie-dfebb0.netlify.app/
 
 #### The UX Design
 
