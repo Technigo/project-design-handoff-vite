@@ -56,10 +56,12 @@ export default {
         210: "210px",
         310: "310px",
         350: "350px",
+        380: "380px",
         500: "500px",  
       },
       maxWidth: {
         w850: "850px",
+        w750: "750px",  
       },
       typography: {
         DEFAULT: {
