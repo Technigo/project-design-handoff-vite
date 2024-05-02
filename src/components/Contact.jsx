@@ -1,4 +1,4 @@
-import contactImage from "../assets/contactImages/contactImage.png";
+import contactImage from "/contactImage.png";
 import { Button } from "./Buttons.jsx";
 import styled from "styled-components";
 
