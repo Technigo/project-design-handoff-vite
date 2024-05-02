@@ -4,7 +4,7 @@ import {  BtnProgram, BtnReadMore } from "./Buttons";
 export const Programs = () => {
 
   return (
-    <section className="relative flex flex-col justify-center items-center m-auto pt-8 md:px-0 2xl:max-w-7xl">
+    <section className="relative flex flex-col justify-center items-center m-auto pt-8 p-28 md:px-0 2xl:max-w-7xl">
       <div className="flex flex-col items-center justify-center gap-4 ">
         <h2 className="font-medium font-zilla font-text-center text-2xl text-darkBlue 2xl:text-4xl">
           Våra program
