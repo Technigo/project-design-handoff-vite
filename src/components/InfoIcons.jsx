@@ -46,7 +46,7 @@ export const InfoIcons = ({ icon }) => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center px-4 py-8">
+    <div className="flex flex-col items-center justify-center px-4 py-8 overflow-hidden">
       <img src={img} alt={icon.name} className="w-10 h-10 object-contain" />
       <p className="whitespace-nowrap text-[16px] desktop:text-[18px]">
         {isMobile && icon.smallName ? icon.smallName : icon.name}
