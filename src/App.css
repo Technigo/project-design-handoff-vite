@@ -1,0 +1,59 @@
+/* basic css */
+
+/* import fonts */
+/* Poppins (from google fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/*Argue (download)*/
+@font-face {
+  font-family: "Argue";
+  src: local("Argue"), url("./fonts/Argue.otf") format("opentype");
+}
+
+/*Gerbera (download)*/
+@font-face {
+  font-family: "Gerbera";
+  src: local("Gerbera-Bold"), url("./fonts/Gerbera-Bold.otf") format("opentype");
+}
+
+/* create variables for colours */
+:root {
+  --primary-blk: #111111;
+  --primary-grey: #505050;
+  --primary-prpl: #620981;
+  --primary-white: #ffffff;
+  --hover-prpl: #430159;
+  --secondary-blue: rgba(213, 224, 252, 0.5);
+  /* 50% transparent */
+}
+
+/* basics */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  font-weight: 400;
+  color: var(--primary-blk);
+}
+
+body {
+  background-image: url("../public/images/gradient.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* height: 100vh; */
+}
+
+/* overriding slick formatting, couldn't find any other way 😅*/
+.slick-initialized .slick-slide {
+  display: grid;
+  justify-content: center;
+}
+
+.slick-dots li button:before {
+  color: var(--primary-prpl);
+}
+.slick-dots li.slick-active button:before {
+  color: var(--primary-white);
+}

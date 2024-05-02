@@ -10,32 +10,21 @@ rm -rf .git
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This weeks assignment was to work with a designer from the UX bootcamp. We were asked to follow their design and should either use styled components or tailwind css instead of vanilla css to style the project.
 
 ## Getting Started with the Project
 
-### Dependency Installation & Startup Development Server
+I started by setting up the basic components and reusable components for the project.
+Then I set up and styled the first components starting with the easier ones like the quote or the about part. This made it easier for me to get used to the styled components approach.
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+I finished the membership part last -> it's a carousel in mobile and 3 cards next to each other in tablet/desktop.
+My approach seems to be super complicated. I tried to find an easier way, but no success yet.
+Also have to look at the buttons again. It works, but seems to be too complicated. Problem: I defined the sizes with media queries. But the membership part needed a new logic... 😅 Small buttons on tablet size.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+Used styled components and slick for the carousels.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://shanti-studio.netlify.app/
