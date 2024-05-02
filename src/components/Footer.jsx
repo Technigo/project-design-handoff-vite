@@ -1,4 +1,6 @@
 import tabletLogo from "../assets/footerImages/tablet-logo.png";
+// import mobileLogo from "../assets/footerImages/moblie-logo.png";
+// import desktopLogo from "../assets/footerImages/desktop-logo.png";
 import facebook from "../assets/followUsSection/facebook.png";
 import instagram from "../assets/followUsSection/instagram.png";
 import chevron from "../assets/followUsSection/chevron.png";
@@ -46,6 +48,12 @@ const MobileLogo = styled.div`
   width: 100px;
   margin-left: 24px;
   padding-bottom: 40px;
+
+  /* @media(min-width: 600 px) and (max-width: 1199px){
+    background-image: url(${tabletLogo})
+    height: 100px;
+    width: 150px; 
+  } */
 `;
 
 const FooterText = styled.div`
@@ -92,6 +100,11 @@ const FollowUs = styled.div`
   display: flex;
   justify-content: space-between;
   padding-top: 50px;
+
+  @media (min-width: 600px){
+    display: flex;
+    justify-content: flex-end;
+  }
 `;
 
 const IconImage = styled.img`

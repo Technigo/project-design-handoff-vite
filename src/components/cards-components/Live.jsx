@@ -1,4 +1,6 @@
 import houseMobile from "../../assets/mobileIcons/house-mobile.png";
+// import houseTablet from "../../assets/tabletIcons/house-tablet.png";
+// import desktopTablet from "../../assets/desktopIcons/house-desktop.png";
 import styled from "styled-components";
 
 export const Live = () => {
@@ -17,8 +19,12 @@ export const Live = () => {
 
 const LiveCard = styled.div`
   display: flex;
-  
-  @media(min-width: 600px){
+
+  @media (min-width: 600px) and (max-width: 1199px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1200px) {
     flex-direction: column;
   }
 `;
