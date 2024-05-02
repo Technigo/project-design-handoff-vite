@@ -1,8 +1,8 @@
 import { createContext, useContext, useState } from "react";
 import { useSwipeable } from "react-swipeable";
-import cardOne from "../assets/testimonialCards/cardOne.png";
-import cardTwo from "../assets/testimonialCards/cardTwo.png";
-import cardThree from "../assets/testimonialCards/cardThree.png";
+import cardOne from "../assets/testimonialCards/CardOne.png";
+import cardTwo from "../assets/testimonialCards/CardTwo.png";
+import cardThree from "../assets/testimonialCards/CardThree.png";
 import priceCardOne from "../assets/priceCards/priceCardOne.png";
 import priceCardTwo from "../assets/priceCards/priceCardTwo.png";
 import priceCardThree from "../assets/priceCards/priceCardThree.png";
@@ -60,7 +60,8 @@ export const CarouselProvider = ({ children }) => {
         testimonial,
         handlers,
         changeNumber,
-      }}>
+      }}
+    >
       {children}
     </CarouselContext.Provider>
   );
