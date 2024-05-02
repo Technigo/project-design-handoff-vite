@@ -1,8 +1,5 @@
 import styled from "styled-components";
-import { useState, useEffect } from "react";
-import { handleResize } from "../utils/handleResize";
-import reviewStarsSmall from "/mobile&tablet reviewstars.png";
-import reviewStarsBig from "/desktop review stars.png";
+import stars from "../assets/stars.svg";
 
 const StyledStars = styled.div`
   font-family: Optima;
@@ -10,6 +7,10 @@ const StyledStars = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 4px;
+
+  img {
+    width: 166px;
+  }
 
   @media (min-width: 744px) and (max-width: 1024px) {
     justify-content: center;
@@ -30,21 +31,18 @@ const StyledStars = styled.div`
     align-self: stretch;
     font-size: 32px;
     line-height: 40px; /* 125% */
+
+    img {
+      width: 256px;
+    }
   }
 `;
 export const StarsRating = () => {
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const cleanup = handleResize(setWindowWidth); // Using the imported handleResize function
-
-    return () => cleanup();
-  }, []);
   return (
     <StyledStars>
       <p>512 reviews • Excellent</p>
       <img
-        src={windowWidth >= 1440 ? reviewStarsBig : reviewStarsSmall}
+        src={stars}
         alt="stars-reviews"
       />
       <p>4,9 on Trustpilot</p>

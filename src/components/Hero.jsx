@@ -69,7 +69,9 @@ export const Hero = ({ handleResize, setWindowWidth, windowWidth }) => {
   return (
     <>
       <StyledHero>
-        <Image src={windowWidth < 1024 ? tabletImage : desktopImage}></Image>
+        <Image
+          src={windowWidth < 1024 ? tabletImage : desktopImage}
+          alt="Two women stretching in the streets"></Image>
         <Container $main>
           <Container>
             <H1>FIND YOUR WAY TO THRIVE</H1>

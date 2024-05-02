@@ -111,7 +111,7 @@ const StyledContainer = styled.div`
 
 const StyledCard = styled.div`
   color: var(--clr-neutral-100);
-  background-image: url(${props => props.url});
+  background-image: url(${props => props.imgUrl});
   background-size: cover;
   padding: 0;
   width: 325px;
@@ -148,7 +148,7 @@ export const CardAnimated = ({ url, heading, text }) => {
   return (
     <ParentContainer>
       <H3 className="card-title-external">{heading}</H3>
-      <StyledCard url={url}></StyledCard>
+      <StyledCard imgUrl={url}></StyledCard>
       <StyledContainer className="card-container">
         <div className="card-content">
           <h3 className="card-title">{heading}</h3>

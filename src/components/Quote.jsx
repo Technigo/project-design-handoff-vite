@@ -77,7 +77,9 @@ export const Quote = () => {
             -Aine Gough, <br></br> Founder of Thrive Fitness
           </p>
         </Container>
-        <Image src={profileImage}></Image>
+        <Image
+          src={profileImage}
+          alt="Woman with red hair smiling"></Image>
       </Container>
     </Section>
   );

@@ -2,33 +2,34 @@ import { USP } from "./USP";
 import { StarsRating } from "./StarsRating";
 import styled from "styled-components";
 
-export const Rating = () => {
-  const StyledRating = styled.div`
+const StyledRating = styled.section`
+  display: flex;
+  font-family: Optima;
+  padding: 0px 12px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12px;
+  gap: 56px;
+
+  @media (min-width: 744px) and (max-width: 1024px) {
+    padding: 0px 32px;
+    gap: 40px;
+    margin: 0 32px;
+    // min-width: 744px;
+  }
+
+  @media (min-width: 1024px) {
+    margin: 0 40px;
     display: flex;
-    font-family: Optima;
-    padding: 0px 12px;
-    flex-direction: column;
+    padding: 0px 40px;
     justify-content: center;
     align-items: center;
-    margin: 0 12px;
-
     gap: 56px;
-    @media (min-width: 744px) and (max-width: 1024px) {
-      padding: 0px 32px;
-      gap: 40px;
-      margin: 0 32px;
-      // min-width: 744px;
-    }
-    @media (min-width: 1024px) {
-      margin: 0 40px;
-      display: flex;
-      padding: 0px 40px;
-      justify-content: center;
-      align-items: center;
-      gap: 56px;
-      flex-direction: row;
-    }
-  `;
+    flex-direction: row;
+  }
+`;
+export const Rating = () => {
   return (
     <StyledRating>
       <USP

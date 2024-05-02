@@ -13,19 +13,26 @@ const StyledDiv = styled.div`
 
   @media all and (min-width: 1024px) {
     grid-area: ${({ $placement }) => $placement === "footer" && "so"};
+    gap: 40px;
   }
 `;
 
 export const Social = ({ $placement }) => {
   return (
     <StyledDiv $placement={$placement}>
-      <Link to="#">
+      <Link
+        to="#"
+        aria-label="Facebook">
         <Facebook />
       </Link>
-      <Link to="#">
+      <Link
+        to="#"
+        aria-label="Instagram">
         <Instagram />
       </Link>
-      <Link to="#">
+      <Link
+        to="#"
+        aria-label="Linkedin">
         <Linkedin />
       </Link>
     </StyledDiv>

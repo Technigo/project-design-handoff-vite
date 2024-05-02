@@ -97,9 +97,20 @@ const LinkContainer = styled.div`
     &:hover {
       color: var(--hover-login-links);
     }
+
+    @media all and (min-width: 744px) {
+      font-size: 16px;
+      line-height: 24px; /* 150% */
+    }
   }
+
   @media all and (min-width: 1024px) {
     grid-area: li;
+
+    a {
+      font-size: 20px;
+      line-height: 28px; /* 140% */
+    }
   }
 `;
 

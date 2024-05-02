@@ -13,6 +13,7 @@ const StyledButton = styled.button`
   line-height: 24px; /* 150% */
   padding: 10px;
   justify-self: ${({ $header }) => ($header ? "flex-end" : null)};
+  text-align: center;
 
   @media (min-width: 744px) and (max-width: 1024px) {
     width: 112px;
@@ -25,7 +26,6 @@ const StyledButton = styled.button`
   @media (min-width: 1024px) {
     width: 138px;
     height: 52px;
-    /* padding: 10px 30px; */
     font-size: 25px;
     line-height: 32px; /* 128% */
 
@@ -111,22 +111,19 @@ export const Button = ({ type, $header }) => {
       buttonText = "Login";
   }
   return (
-    <>
-      <StyledButton
-        type={type}
-        aria-pressed={active}
-        active={active}
-        onClick={toggleActive}
-        $header={$header}
-        theme={{
-          defaultBackground: "var(--10)",
-          activeColor: "var(--onclick-login)",
-          activeGreenColor: "var(--onclick-signup-book)",
-          activeBorderColor: "var(--onclick-signup-book)",
-          activeTextColor: "var(--onclick-signup-book)",
-        }}>
-        {buttonText}
-      </StyledButton>
-    </>
+    <StyledButton
+      type={type}
+      aria-pressed={active}
+      onClick={toggleActive}
+      $header={$header}
+      theme={{
+        defaultBackground: "var(--10)",
+        activeColor: "var(--onclick-login)",
+        activeGreenColor: "var(--onclick-signup-book)",
+        activeBorderColor: "var(--onclick-signup-book)",
+        activeTextColor: "var(--onclick-signup-book)",
+      }}>
+      {buttonText}
+    </StyledButton>
   );
 };

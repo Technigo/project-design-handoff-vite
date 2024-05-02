@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import backgroundImage from "../assets/unsplash_tpivPdQgC20_746.jpg";
+import desktopImage from "../assets/unsplash_tpivPdQgC20_desktop.jpg";
 
 import { Button } from "./Button";
 
@@ -20,7 +21,8 @@ const Container = styled.div`
     // min-width: 746px;
   }
   @media (min-width: 1024px) {
-    isplay: flex;
+    background-image: url(${desktopImage});
+    display: flex;
     min-height: 700px;
     flex-direction: column;
     align-items: flex-end;
