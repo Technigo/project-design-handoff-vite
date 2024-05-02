@@ -1,0 +1,141 @@
+{
+  "hero": {
+    "heading": "Make it work",
+    "subheading": "「時間がない」なんて言い訳はもうおしまい。フィットネスと仕事が一体となった、新しいスタイルのジムへようこそ。",
+    "cta": "今すぐ登録！",
+    "logoalt": "ワーキロゴ",
+    "navbar": [
+      {
+        "text": "サービス",
+        "link": "#"
+      },
+      {
+        "text": "Workyについて",
+        "link": "#"
+      },
+      {
+        "text": "ポイントサービス",
+        "link": "#"
+      },
+      {
+        "text": "コンタクト",
+        "link": "#"
+      }
+    ]
+  },
+
+  "info-icons": [
+    {
+      "name": "ランチ",
+      "description": "おいしいランチメニュー"
+    },
+        {
+      "name": "パーキング有",
+      "description": "会員無料"
+    },
+    {
+      "name": "ジム",
+      "description": "24時間利用可能"
+    },
+    {
+      "name": "オフィス",
+      "description": "Wi-Fi完備"
+    }
+  ],
+
+  "features": [
+    {
+      "title": "ワークライフバランス",
+      "smallTitle": "ワークライフバランス",
+      "description": "大切なことにこそ時間を使いましょう。仕事とプライベートのバランスを整えるお手伝いをします。",
+      "smallDescription": "大切なことにこそ時間を使いましょう。仕事とプライベートのバランスを整えるお手伝いをします。"
+    },
+    {
+      "title": "目標達成の場",
+      "smallTitle": "目標達成の場",
+      "description": "トレーニングと仕事がこの一か所で完結。運動の後はすぐに業務に取りかかれる環境を整えています。高速Wi-Fiと充実したコーヒーで、作業効率もアップ。",
+      "smallDescription": "トレーニングと仕事がこの一か所で完結。運動の後はすぐに業務に取りかかれる環境を整えています。高速Wi-Fiと充実したコーヒーで、作業効率もアップ。"
+    },
+    {
+      "title": "充実のコミュニティ",
+      "smallTitle": "充実のコミュニティ",
+      "description": "ただのジムを超える体験を。刺激的なトークイベントや社交活動で、クリエイティブな出会いが待っています。",
+      "smallDescription": "ただのジムを超える体験を。刺激的なトークイベントや社交活動で、クリエイティブな出会いが待っています。"
+    }
+  ],
+
+  "reviews": [
+    {
+      "review": "「長い間、忙しさを理由にしていましたが、このジムで理想のバランスを実現。仕事もトレーニングもこれ以上ないほど充実しています！」"
+    },
+    {
+      "review": "「汗を流しながら仕事もできる、すっきりとリフレッシュできる場所です。ここはただのジムではありません。」"
+    }
+  ],
+
+  "learn-more": {
+    "heading": "素晴らしさを実感し、成功を祝おう",
+    "smallHeading": "素晴らしさを実感",
+    "subheading": "運動を通じてステップアップできるVIP体験をご用意しています。あなたの努力を全力でサポートする特典が満載です。",
+    "smallSubheading": "運動を通じてステップアップできるVIP体験をご用意。あなたの努力を全力でサポートする特典が満載！",
+    "cta": "詳細はこちら"
+  },
+
+  "footer": {
+    "social-media": ["TikTok", "Instagram", "Facebook", "Twitter"],
+    "links": [
+      {
+        "text": "登録",
+        "link": "#"
+      },
+      {
+        "text": "ジム",
+        "link": "#"
+      },
+      {
+        "text": "オフィス",
+        "link": "#"
+      },
+      {
+        "text": "コミュニティ",
+        "link": "#"
+      },
+      {
+        "text": "特典プログラム",
+        "link": "#"
+      },
+      {
+        "text": "Workyについて",
+        "link": "#"
+      },
+      {
+        "text": "FAQ",
+        "link": "#"
+      },
+      {
+        "text": "利用規約",
+        "link": "#"
+      },
+      {
+        "text": "プライバシーポリシー",
+        "link": "#"
+      }
+    ],
+    "info": {
+      "email": "info@worky.com",
+      "phone": "+46 123456789",
+      "address": {
+        "company": "Worky株式会社",
+        "street-number": "Street street 1",
+        "zipcode": "123 45",
+        "city": "City"
+      },
+      "attribution": {
+        "illustrations": "イラスト：",
+        "link": "icons8.com",
+        "copyright": "Copyright:",
+        "company": "Worky株式会社 2024"
+      }
+    }
+  }
+}

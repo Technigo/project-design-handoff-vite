@@ -1,0 +1,142 @@
+{
+  "hero": {
+    "heading": "Make it work",
+    "subheading": "Say goodbye to the 'no time' blues and hello to our one-stop-shop for fitness and productivity.",
+    "cta": "Sign up!",
+    "logoalt": "Worky logo",
+    "navbar": [
+      {
+        "text": "Services",
+        "link": "#"
+      },
+      {
+        "text": "About",
+        "link": "#"
+      },
+      {
+        "text": "Rewards",
+        "link": "#"
+      },
+      {
+        "text": "Contact",
+        "link": "#"
+      }
+    ]
+  },
+
+  "info-icons": [
+    {
+      "name": "Canteen",
+      "smallName": "Food",
+      "description": "Delicious lunch"
+    },    {
+      "name": "Parking",
+      "description": "Free for members!"
+    },
+    {
+      "name": "Gym",
+      "description": "24/7 Access"
+    },
+    {
+      "name": "Co-working",
+      "smallName": "Co-work",
+      "description": "Wifi, vibes"
+    }
+  ],
+
+  "features": [
+    {
+      "title": "Work-Life Balance",
+      "smallTitle": "Work-Life Balance",
+      "description": "Ditch chaos, prioritize what rocks your world – life's too fabulous for anything less! Save time for what matters, skip the office-gym commute.",
+      "smallDescription": "Ditch the chaos and prioritize what truly rocks your world - life's too fabulous to waste on anything else!"
+    },
+    {
+      "title": "Get the job done",
+      "smallTitle": "Get the job done",
+      "description": "Work those glutes and  spreadsheets – switch from work out to work-mode in no time! Our creamy co-working space has lightning-fast WiFi and enough coffee to power your hustle.",
+      "smallDescription": "Work those glutes and speadsheets! Switch from work out to work mode in no time."
+    },
+    {
+      "title": "Supportive Community",
+      "smallTitle": "Community",
+      "description": "It's not just a gym – it's a tight-knit squad, because we’re all in this together! We organize inspiring talks, social events where creative minds meet and magic happens!",
+      "smallDescription": "It's not just a gym - it's a tight-knit squad, because we're all in this together!"
+    }
+  ],
+
+  "reviews": [
+    {
+      "review": "\"After years of juggling deadlines and excuses, I finally found the perfect balance: deadlines at work, deadlifts at the gym!\""
+    },
+    {
+      "review": "\"I found this gym and never looked back; it's not just about lifting weights, it's about lifting spirits.\""
+    }
+  ],
+
+  "learn-more": {
+    "heading": "Embrace your awesomeness and celebrate success!",
+    "smallHeading": "Embrace your awesomeness",
+    "subheading": "Who says working out can't be as rewarding as happy hour?\nAt our gym, we've turned sweating into sweet treats and gains into VIP status. Join us, where every rep gets you closer to dis- counted bliss and exclusive invites.\nBecause with Worky, celebrating success is the only workout plan you'll ever need!",
+    "smallSubheading": "Celebrate success! Our Reward Program is filled with treats, discounts and special invites to events.",
+    "cta": "Learn more"
+  },
+
+  "footer": {
+    "social-media": ["tiktok", "instagram", "facebook", "twitter"],
+    "links": [
+      {
+        "text": "Sign Up",
+        "link": "#"
+      },
+      {
+        "text": "Gym",
+        "link": "#"
+      },
+      {
+        "text": "Co-working",
+        "link": "#"
+      },
+      {
+        "text": "Community",
+        "link": "#"
+      },
+      {
+        "text": "Rewards Program",
+        "link": "#"
+      },
+      {
+        "text": "About Us",
+        "link": "#"
+      },
+      {
+        "text": "FAQ",
+        "link": "#"
+      },
+      {
+        "text": "Terms of Service",
+        "link": "#"
+      },
+      {
+        "text": "Privacy Policy",
+        "link": "#"
+      }
+    ],
+    "info": {
+      "email": "info@worky.com",
+      "phone": "+46 123456789",
+      "address": {
+        "company": "Worky AB",
+        "street-number": "Street street 1",
+        "zipcode": "123 45",
+        "city": "City"
+      },
+      "attribution": {
+        "illustrations": "Illustrations:",
+        "link": "icons8.com",
+        "copyright": "Copyright:",
+        "company": "Worky AB 2024"
+      }
+    }
+  }
+}
