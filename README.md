@@ -4,35 +4,34 @@
   </a>
 </h1>
 
-### Remove git
+## Remove git
 
 rm -rf .git
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
+## The Problem
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+This week we're practicing working with a designer, by turning Catrine's design into a website.
 
-## Getting Started with the Project
+This is a collab project between [sofia32057] and [vittoriamatteoli], where we divided the components and built it async, while communicating throughout (devs, as well as designer). Any changes have been approved by Catrine and are documented by comments in Figma.
 
-### Dependency Installation & Startup Development Server
+We decided to use styled components and keep it as simlpe as possible, to focus on the design.
+Will go back and add global styling at a later point.
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
+### Requirements
 
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
+- The app should be built with React
+- Use one of these design libraries:
+  - Styled components
+  - Tailwind CSS
+- Your app should have reusable components
+- Make your app responsive (it should look good on devices from 320px width up to 1600px)
+- Your app should look as close as possible to the given design
 
-```bash
-npm i && code . && npm run dev
-```
+## View it live
 
-### The Problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-### View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+Thrive Fitness on Netilfy -> [https://thrive-fitness-gym.netlify.app/]
 
 ## Instructions
 
