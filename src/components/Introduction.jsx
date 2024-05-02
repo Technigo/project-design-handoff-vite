@@ -5,7 +5,7 @@ import { BtnIntroduction } from "./Buttons";
 
 export const Introduction = () => {
   return (
-    <section className="relative">
+    <section className="relative flex flex-col justify-center items-center m-auto pt-8 md:px-0 2xl:max-w-7xl">
       <div className="flex flex-col justify-center mx-auto px-4 pt-8 p-28 md:max-w-lg 2xl:max-w-5xl">
         <div className="flex flex-col items-center justify-center gap-4 md:gap-5">
           <h2 className="font-medium font-zilla font-text-center text-2xl text-darkBlue 2xl:text-4xl">
