@@ -1,0 +1,32 @@
+{
+  "instructors": [
+    {
+      "title": "Maria",
+      "description": "Pilates Instructor",
+      "img": "Maria.svg",
+      "imgtab": "MariaTablet.svg",
+      "imgdesk": "MariaDesk.svg"
+    },
+    {
+      "title": "José",
+      "description": "Fitness Instructor",
+      "img": "José.svg",
+      "imgtab": "JoséTablet.svg",
+      "imgdesk": "JoséDesk.svg"
+    },
+    {
+      "title": "Anna",
+      "description": "Yoga Instructor",
+      "img": "Anna.svg",
+      "imgtab": "AnnaTablet.svg",
+      "imgdesk": "AnnaDesk.svg"
+    },
+    {
+      "title": "Sharon",
+      "description": "Dance Instructor",
+      "img": "Sharon.svg",
+      "imgtab": "SharonTablet.svg",
+      "imgdesk": "SharonDesk.svg"
+    }
+  ]
+}
