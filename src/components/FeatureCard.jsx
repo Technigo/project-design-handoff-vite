@@ -28,6 +28,7 @@ export const FeatureCard = ({ feature }) => {
       <img
         className="w-[100px] tablet:w-[120px] desktop:w-[160px] self-center ml-2 tablet:ml-4"
         src={img}
+        alt={feature.title + " image"}
       />
       <div className="p-4">
         <h3 className="block text-lg tablet:hidden">{feature.smallTitle}</h3>
@@ -39,7 +40,7 @@ export const FeatureCard = ({ feature }) => {
         </p>
         <p className="hidden tablet:block text-xl">{feature.description}</p>
       </div>
-      <img className="h-6 mr-4 self-center" src={arrow} />
+      <img className="h-6 mr-4 self-center" src={arrow} alt="arrow" />
     </div>
   );
 };

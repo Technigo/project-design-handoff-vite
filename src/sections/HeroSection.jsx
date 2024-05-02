@@ -20,7 +20,7 @@ export const HeroSection = ({ data }) => {
             <nav className="hidden desktop:flex gap-16">
               <Navigation data={data} />
             </nav>
-            <img src={burger} className="h-12 desktop:hidden" />
+            <img src={burger} alt="hamburger menu" className="h-12 desktop:hidden" />
             <img
               src=""
               alt=""
