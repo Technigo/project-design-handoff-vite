@@ -12,7 +12,7 @@ export const SliderCard = ({ data }) => {
       </StyledImgSlider>
       <TitleBox>
         <h3>{data.title}</h3>
-        <img src={data.icon}></img>
+        <img src={data.icon} alt="arrowright"></img>
       </TitleBox>
       <p>{data.description}</p>
     </StyledSliderCard>
@@ -28,7 +28,7 @@ export const StyledSliderCard = styled.div`
   gap: 8px;
   padding: 10px 10px 50px 10px;
 
-  &:hover{
+  &:hover {
     background-color: rgba(244, 171, 73, 0.1);
     border-radius: 10px;
   }

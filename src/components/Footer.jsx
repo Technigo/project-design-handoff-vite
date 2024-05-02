@@ -8,7 +8,7 @@ export const Footer = () => {
     <StyledFooter>
       <FooterPart $border>
         <h3>LIFTLY</h3>
-        <StyledSelect>
+        <StyledSelect aria-label="Select to choose the language of the page.">
           <option value="english">English</option>
           <option value="swedish">Swedish</option>
           <option value="french">French</option>

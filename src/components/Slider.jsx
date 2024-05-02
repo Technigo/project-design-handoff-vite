@@ -21,8 +21,11 @@ export const Slider = () => {
   return (
     <StyledSliderButtonBox>
       {showLeftButton && (
-        <StyledSliderButton onClick={() => handleScroll(-400)}>
-          <img src="ScrollLeft.svg" />
+        <StyledSliderButton
+          aria-label="button to scroll to the left"
+          onClick={() => handleScroll(-400)}
+        >
+          <img src="ScrollLeft.svg" alt="arrowleft" />
         </StyledSliderButton>
       )}
       <div
@@ -36,8 +39,12 @@ export const Slider = () => {
         </StyledSlider>
       </div>
       {showRightButton && (
-        <StyledSliderButton $left onClick={() => handleScroll(400)}>
-          <img src="ScrollRight.svg" />
+        <StyledSliderButton
+          aria-label="button to scroll to the right"
+          $left
+          onClick={() => handleScroll(400)}
+        >
+          <img src="ScrollRight.svg" alt="arrowright" />
         </StyledSliderButton>
       )}
     </StyledSliderButtonBox>
