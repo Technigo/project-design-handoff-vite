@@ -1,6 +1,6 @@
-import tabletLogo from "../assets/footerImages/tablet-logo.png";
-// import mobileLogo from "../assets/footerImages/moblie-logo.png";
-// import desktopLogo from "../assets/footerImages/desktop-logo.png";
+import tabletLogo from "../assets/footerImages/tablet-logo.png"; //
+import mobileLogo from "../assets/footerImages/mobile-logo.png";
+import desktopLogo from "../assets/footerImages/desktop-logo.png";
 import facebook from "../assets/followUsSection/facebook.png";
 import instagram from "../assets/followUsSection/instagram.png";
 import chevron from "../assets/followUsSection/chevron.png";
@@ -42,18 +42,23 @@ const FooterContent = styled.div`
 `;
 
 const MobileLogo = styled.div`
-  background-image: url(${tabletLogo});
+  background-image: url(${mobileLogo});
   background-repeat: no-repeat;
   height: 40px;
   width: 100px;
   margin-left: 24px;
   padding-bottom: 40px;
 
-  /* @media(min-width: 600 px) and (max-width: 1199px){
-    background-image: url(${tabletLogo})
-    height: 100px;
-    width: 150px; 
-  } */
+  @media (min-width: 600 px) and (max-width: 1199px) {
+    background-image: url(${tabletLogo});
+    height: 60px;
+    width: 150px;
+  }
+  @media (min-width: 1200px) {
+    background-image: url(${desktopLogo});
+    height: 50px;
+    width: 140px;
+  }
 `;
 
 const FooterText = styled.div`
@@ -101,7 +106,7 @@ const FollowUs = styled.div`
   justify-content: space-between;
   padding-top: 50px;
 
-  @media (min-width: 600px){
+  @media (min-width: 600px) {
     display: flex;
     justify-content: flex-end;
   }

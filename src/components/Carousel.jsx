@@ -46,21 +46,3 @@ const CarouselTestimonials = styled.div`
 `;
 
 const Image = styled.img``;
-
-
-{/* <CarouselPriceCards>
-<Image
-src={priceCardImage}
-alt="image with prices for snowboard courses"
-/>
-</CarouselPriceCards>
-
-const CarouselPriceCards = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-left: 16px;
-  margin-right: 16px;
-  gap: 16px;
-`; */}

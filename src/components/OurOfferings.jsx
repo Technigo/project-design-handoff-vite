@@ -25,7 +25,6 @@ export const OurOfferings = () => {
   );
 };
 const OurOfferingsSection = styled.section`
-  
   h1 {
     color: #0b1623;
 
@@ -52,10 +51,8 @@ const OurOfferingsCards = styled.div`
 
   @media (min-width: 600px) and (max-width: 1199px) {
     grid-template-columns: 1fr 1fr;
-  
-    
   }
-  @media (min-width: 1200px){
+  @media (min-width: 1200px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 `;

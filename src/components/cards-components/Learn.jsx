@@ -1,6 +1,6 @@
 import snowboarderMobile from "../../assets/mobileIcons/snowboarder-mobile.png";
-// import snowboarderTablet from "../../assets/tabletIcons/snowboarder-tablet.png";
-// import snowboarderDesktop from "../../assets/desktopIcons/snowboarder-desktop.png";
+import snowboarderTablet from "../../assets/tabletIcons/snowboarder-tablet.png";
+import snowboarderDesktop from "../../assets/desktopIcons/snowboarder-desktop.png";
 import styled from "styled-components";
 
 export const Learn = () => {
@@ -40,9 +40,15 @@ const LearnImage = styled.div`
   height: 70px;
   width: 70px;
   padding-top: 45px;
-  /* @media (min-width: 600px) and (max-width: 1199px) {
+
+  @media (min-width: 600px) {
     background-image: url(${snowboarderTablet});
-  } */
+    width: 120px;
+  }
+  @media (min-width: 1999px) {
+    background-image: url(${snowboarderDesktop});
+    width: 120px;
+  }
 `;
 
 const LearnText = styled.div`

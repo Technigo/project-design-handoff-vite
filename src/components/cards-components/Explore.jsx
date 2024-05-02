@@ -1,6 +1,6 @@
 import exploreMobile from "../../assets/mobileIcons/explore-mobile.png";
-// import exploreTablet from "../../assets/tabletIcons/explore-tablet.png";
-// import exploreDesktop from "../../assets/desktopIcons/explore-desktop.png";
+import exploreTablet from "../../assets/tabletIcons/explore-tablet.png";
+import exploreDesktop from "../../assets/desktopIcons/explore-desktop.png";
 import styled from "styled-components";
 
 export const Explore = () => {
@@ -23,11 +23,11 @@ export const Explore = () => {
 const ExploreCard = styled.div`
   display: flex;
 
-  @media(min-width: 600px) and (max-width: 1199px){
+  @media (min-width: 600px) and (max-width: 1199px) {
     flex-direction: row;
   }
 
-  @media(min-width: 1200px){
+  @media (min-width: 1200px) {
     flex-direction: column;
   }
 `;
@@ -41,6 +41,15 @@ const ExploreImage = styled.div`
   height: 70px;
   width: 70px;
   padding-top: 35px;
+
+  @media (min-width: 600px) {
+    background-image: url(${exploreTablet});
+    width: 120px;
+  }
+  @media (min-width: 1999px) {
+    background-image: url(${exploreDesktop});
+    width: 120px;
+  }
 `;
 
 const ExploreText = styled.div`

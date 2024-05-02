@@ -52,7 +52,6 @@ const MakeYourPickOne = styled.img`
     display: flex;
     height: 400px;
     width: 300px;
-
   }
 `;
 

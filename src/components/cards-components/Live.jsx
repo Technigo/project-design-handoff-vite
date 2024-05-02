@@ -1,6 +1,6 @@
 import houseMobile from "../../assets/mobileIcons/house-mobile.png";
-// import houseTablet from "../../assets/tabletIcons/house-tablet.png";
-// import desktopTablet from "../../assets/desktopIcons/house-desktop.png";
+import houseTablet from "../../assets/tabletIcons/house-tablet.png";
+import houseDesktop from "../../assets/desktopIcons/house-desktop.png";
 import styled from "styled-components";
 
 export const Live = () => {
@@ -38,6 +38,15 @@ const LiveImage = styled.div`
   height: 70px;
   width: 70px;
   padding-top: 40px;
+
+  @media (min-width: 600px) {
+    background-image: url(${houseTablet});
+    width: 120px;
+  }
+  @media (min-width: 1999px) {
+    background-image: url(${houseDesktop});
+    width: 120px;
+  }
 `;
 
 const LiveText = styled.div`
