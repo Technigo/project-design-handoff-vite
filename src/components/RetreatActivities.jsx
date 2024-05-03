@@ -59,7 +59,6 @@ const CardList = styled.div`
   flex-direction: column;
   gap: 64px;
 
-
   @media (min-width: ${breakpoints.tablet}) {
     padding: 0 40px;
   }
@@ -70,7 +69,7 @@ const CardList = styled.div`
     gap: 96px;
     padding: 0 80px;
   }
-`
+`;
 
 const SeeAllLink = styled.span`
   font-family: "Montserrat", sans-serif;
