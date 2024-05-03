@@ -49,9 +49,8 @@ const AllAboutUs = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  /* align-items: center; */
   gap: 16px;
-  margin: 0;
 
   @media (min-width: ${breakpoints.tablet}) {
     flex-direction: row;
