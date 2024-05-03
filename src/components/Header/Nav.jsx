@@ -12,35 +12,35 @@ export const Nav = () => {
   };
 
   return (
-    <nav className="absolute backdrop-blur-sm p-4 z-50 flex justify-between items-center w-full md:relative md:items-end md:p-8 md:h-24 2xl:h-36 2xl:max-w-7xl 2xl:m-auto">
+    <nav className="absolute backdrop-blur-sm p-4 z-50 flex justify-between items-center w-full md:relative md:items-end md:p-8 md:h-24 lg:h-36 lg:max-w-7xl lg:m-auto">
       <div>
         <img
           src={logoStudioMama}
           alt="Studio Mama Logo"
-          className="absolute top-4 w-28 md:w-44 md:top-5 2xl:w-80 2xl:top-10 "
+          className="absolute top-4 w-28 md:w-44 md:top-5 lg:w-80 lg:top-10 "
         />
       </div>
 
  {/* Hamburger Menu Button for Mobile */}
-      <div className="2xl:hidden">
+      <div className="lg:hidden">
         <img src={hamburgerMenu} alt="Nav menu" className="absolute right-6 top-6 md:top-10 md:right-8 cursor-pointer" onClick={toggleNavlist} />
       </div>
 
    {/* Navlist for larger devices */}
-      <div className="hidden 2xl:inline-flex">
-        <ul className="2xl:inline-flex p-4 gap-11">
+      <div className="hidden lg:inline-flex">
+        <ul className="lg:inline-flex p-4 gap-11">
           <li>
-            <a className="font-inter text-lg text-darkBlue" href="#program">
+            <a className="font-inter text-lg text-darkBlue hover:underline" href="#program">
               Program
             </a>
           </li>
           <li>
-            <a className="font-inter text-lg" href="#om">
+            <a className="font-inter text-lg text-darkBlue hover:underline" href="#om">
               Om Studio Mama
             </a>
           </li>
           <li>
-            <a className="font-inter text-lg" href="#logga-in">
+            <a className="font-inter text-lg text-darkBlue hover:underline" href="#logga-in">
               Logga in
             </a>
           </li>
@@ -51,13 +51,13 @@ export const Nav = () => {
       {navlistVisible && (
         <ul className="bg-peach w-full text-darkBlue text-sm py-14 absolute top-20 right-0 text-center md:top-24">
           <li className="py-4">
-            <a className="font-inter hover:font-medium" href="#program">Program</a>
+            <a className="font-inter text-lg hover:font-medium" href="#program">Program</a>
           </li>
           <li className="py-4">
-            <a className="font-inter hover:font-medium" href="#om">Om Studio Mama</a>
+            <a className="font-inter text-lg hover:font-medium" href="#om">Om Studio Mama</a>
           </li>
           <li className="py-4">
-            <a className="font-inter hover:font-medium " href="#logga-in">Logga in</a>
+            <a className="font-inter text-lg hover:font-medium " href="#logga-in">Logga in</a>
           </li>
         </ul>
       )}

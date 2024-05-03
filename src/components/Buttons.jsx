@@ -33,7 +33,7 @@ export const BtnIntroduction = () => {
 export const BtnReadMore = () => {
   return (
     <>
-      <button className="text-xl font-inter font-bold bg-white hover:bg-hoverBlue mx-auto text-darkBlue text-24 px-7 py-2 rounded-lg hover:text-white 2xl:text-2xl">
+      <button className="text-xl font-inter font-bold bg-white hover:bg-hoverBlue mx-auto text-darkBlue text-24 px-7 py-2 rounded-lg hover:text-white lg:text-lg">
         Läs mer
       </button>
     </>
