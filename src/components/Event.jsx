@@ -9,18 +9,18 @@ const StyledEventContainer = styled.div`
   justify-content: space-between;
   gap: 24px;
   overflow-x: auto;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin: 80px auto;
 
-  @media (min-width: 375px) and (max-width: 744px) {
+  @media (min-width: 320px) and (max-width: 744px) {
+    margin: 48px 0px 96px 17px;
     overflow-x: auto;
     white-space: nowrap;
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
+    margin: 48px 0px 48px 32px;
     overflow-x: auto;
     white-space: nowrap;
-    gap: 48px;
   }
 `;
 const StyledEvent = styled.section`
@@ -41,6 +41,18 @@ const StyledEvent = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  @media (max-width: 744px) {
+    .sub-title {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 428px) {
+    .sub-title {
+      font-size: 14px;
+    }
   }
 `;
 

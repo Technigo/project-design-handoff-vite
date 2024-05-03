@@ -18,6 +18,18 @@ const StyledOurClass = styled.section`
     justify-content: center;
     align-items: center;
   }
+
+  @media (max-width: 744px) {
+    .sub-title {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 428px) {
+    .sub-title {
+      font-size: 14px;
+    }
+  }
 `;
 
 // Parent container for the "Our Classes" section
@@ -29,24 +41,27 @@ const StyledClassesContainer = styled.div`
   gap: 56px 40px;
   padding: 20px;
   width: 100%;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  margin: 80px auto;
 
-  //responsive
-  @media (max-width: 1200px) {
+  @media (min-width: 320px) and (max-width: 744px) {
+    margin: 48px auto;
+    padding: 0 32px;
+    gap: 48px;
   }
 
-  @media (max-width: 985px) {
-  }
-
-  @media (max-width: 744px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
+    margin: 48px auto;
+    padding: 0;
+    gap: 48px;
   }
 `;
 
 export const OurClass = () => {
   return (
     <StyledOurClass className="class-section">
-      <h3 className="sub-title">our class</h3>
+      <h3 className="sub-title" id="sub-title">
+        our class
+      </h3>
       <StyledClassesContainer>
         <ClassCard />
       </StyledClassesContainer>

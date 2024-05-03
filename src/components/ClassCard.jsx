@@ -32,7 +32,7 @@ const StyledCard = styled.div`
   }
 
   //For tablets
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     width: 91%;
     height: 232px;
     padding: 16px 24px;

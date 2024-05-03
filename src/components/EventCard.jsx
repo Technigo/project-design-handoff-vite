@@ -22,7 +22,7 @@ const StyledEventCard = styled.div`
     gap: 23px;
   }
 
-  @media (min-width: 768px) and (max-width: 1024px) {
+  @media (min-width: 744px) and (max-width: 1024px) {
     width: 261px;
     min-height: 500px;
   }
@@ -36,7 +36,7 @@ const StyledEventImage = styled.img`
   border-radius: 12px;
   flex-shrink: 0;
 
-  @media (min-width: 375px) and (max-width: 744px) {
+  @media (min-width: 320px) and (max-width: 744px) {
     width: 246px;
     height: 185px;
     flex-shrink: 0;

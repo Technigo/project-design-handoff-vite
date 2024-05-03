@@ -94,7 +94,7 @@ const StyledHero = styled.section`
     margin-right: 0;
   }
 
-  li {
+  .comment {
     list-style-type: none;
     margin: 0 auto;
   }
@@ -139,13 +139,14 @@ const StyledHero = styled.section`
 
     .customer-comments {
       margin: 0 auto;
-      padding: 2rem 26vw;
+      padding: 2rem 20vw;
+      justify-content: center;
       text-align: center;
     }
 
     .customer-comments li {
       margin-right: 0;
-      transform: translateX(20px);
+      transform: translateX(0);
     }
 
     .comment-break {

@@ -171,13 +171,13 @@ const StyledFooter = styled.footer`
 
     .further-info {
       width: 100%;
-      padding: 0 0.5rem;
-      justify-content: space-around;
+      padding: 0 0.5rem 0 3rem;
+      justify-content: flex-start;
       align-items: center;
     }
 
     .text-info {
-      width: 100%;
+      width: 60%;
       align-items: flex-end;
     }
 
@@ -194,12 +194,25 @@ const StyledFooter = styled.footer`
     }
 
     .language-select {
-      width: 30%;
-      margin-top: 1.5rem;
+      border: blue 1px solid;
+      width: 25%;
+      margin: 1.5rem 0 0 3rem;
     }
   }
 
   @media (max-width: 428px) {
+    .company-name {
+      font-size: 19px;
+    }
+
+    .address-detail {
+      font-size: 0.8rem;
+    }
+
+    .info-links {
+      font-size: 0.8rem;
+    }
+
     .footer-title-breaker {
       display: block;
     }
@@ -208,18 +221,20 @@ const StyledFooter = styled.footer`
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
+      padding: 8px 0;
     }
 
     .text-info {
       width: 100%;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: flex-end;
     }
 
     .language-select {
       width: 50%;
+      margin: 1.5rem 0 0 0;
     }
   }
 `;

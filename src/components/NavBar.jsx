@@ -94,10 +94,11 @@ const StyledNavBar = styled.section`
   }
 
   @media (max-width: 744px) {
-    padding: 24px 40px;
+    padding: 24px 6vw;
     .pages-list {
       margin: 0;
     }
+
     .nav-bar {
       padding: 0 4vw;
     }
