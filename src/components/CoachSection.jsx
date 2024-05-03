@@ -1,8 +1,8 @@
-import styled from "styled-components";
-
 import coachPic1 from "/images/coach-pic.png";
 import coachPic2 from "/images/coach-pic2.png";
 import coachPic3 from "/images/coach-pic3.png";
+import styled from "styled-components";
+
 import { breakpoints } from "../utility/breakpoints";
 import CoachCard from "../utility/CoachCard";
 
@@ -66,7 +66,6 @@ const ScrollableCardWrapper = styled.div`
   justify-content: flex-start;
   overflow-x: auto;
   align-items: flex-start;
-  padding: 96px 0;
   gap: 32px;
   width: 100%;
 

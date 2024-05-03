@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { breakpoints } from "../utility/breakpoints";
 import Button from "../utility/Button";
 
@@ -25,10 +26,10 @@ const Hero = styled.section`
   height: 544px;
   background-image: url("/images/hero.img.jpeg");
   background-size: cover;
-  background-position: center;
 
   @media (min-width: ${breakpoints.tablet}) {
     padding: var(--padding-tablet);
+    background-position: center;
   }
 
   @media (min-width: ${breakpoints.desktop}) {

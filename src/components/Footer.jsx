@@ -1,8 +1,8 @@
-import styled from "styled-components";
-
 import InstagramIcon from "/icons/Instagram.png";
 import TwitterIcon from "/icons/Twitter.png";
 import WhatsAppIcon from "/icons/WhatsApp.png";
+import styled from "styled-components";
+
 import { breakpoints } from "../utility/breakpoints";
 
 export const Footer = () => {
@@ -27,7 +27,7 @@ export const Footer = () => {
 
 const FooterContainer = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   align-items: flex-start;
   padding: 32px;
@@ -49,6 +49,7 @@ const AllAboutUs = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
   gap: 16px;
   margin: 0;
 
@@ -84,7 +85,7 @@ const FooterLinks = styled.div`
 
   @media (min-width: ${breakpoints.desktop}) {
     align-self: end;
-    justify-content: center;
+    justify-content: space-around;
     padding-left: 50px;
   }
 `;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import { breakpoints } from "./breakpoints";
 import Button from "./Button";
 
@@ -64,10 +65,9 @@ const CardContent = styled.div`
   flex-direction: column;
   justify-content: space-between; /* Align content vertically */
   background-color: var(--yellow-light);
-  border-radius: 0 16px 56px 0;
+  border-radius: 0 0 16px 56px;
   border-left: 8px solid var(--yellow-medium);
   border-bottom: 8px solid var(--yellow-medium);
-  width: 100%;
 
   @media (min-width: ${breakpoints.tablet}) and (max-width: ${breakpoints.desktop -
     1}px) {

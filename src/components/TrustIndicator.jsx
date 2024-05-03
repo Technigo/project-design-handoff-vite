@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import styled from "styled-components";
+
 import { breakpoints } from "../utility/breakpoints";
 
 export function TrustIndicator() {
@@ -65,7 +66,7 @@ const TrustSection = styled.section`
 
 const TrustTextWrapper = styled.div`
   display: flex;
-  width: 326px;
+ /*  width: 326px; */
   flex-direction: column;
   align-items: flex-start;
   color: var(
