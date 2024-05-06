@@ -27,14 +27,14 @@ export const JoinUs = () => {
       <Carousel
         showStatus={false}
         showIndicators={false}
-        className="w-full rounded-custom text-lg md:p-6 md:text-2xl lg:hidden xl:hidden 2xl:hidden "
+        className="w-full rounded-custom text-lg -mb-9 md:-mb-14 md:-mt-5 md:p-6 md:text-2xl xl:hidden 2xl:hidden"
       >
-        <ButtonSecondary addedClasses="p-5 md:w-72" text={"Who are we?"} />
-        <ButtonSecondary addedClasses="p-5 md:w-72" text={"Our trainers"} />
-        <ButtonSecondary addedClasses="p-5  md:w-72" text={"Health benefits"} />
+        <ButtonSecondary addedClasses="xs:w-48 xs:h-20 p-5 w-64 h-24 md:w-72" text={"Who are we?"} />
+        <ButtonSecondary addedClasses="xs:w-48 xs:h-20 p-5 w-64 h-24 md:w-72" text={"Our trainers"} />
+        <ButtonSecondary addedClasses="xs:w-48 xs:h-20 xs:text-base p-5 w-64 h-24 md:w-72" text={"Health benefits"} />
       </Carousel>
       <ButtonSecondary
-        addedClasses="w-72 h-14 px-2.5 rounded-custom-two text-xl sm:w-width-12 md:text-2xl md:py-5 md:w-width-three md:h-custom-height xl:hidden 2xl:hidden"
+        addedClasses="w-72 h-14 px-2.5 rounded-custom-two text-xl sm:w-width-13 sm:h-height-14 md:text-2xl md:py-5 md:w-width-three md:h-custom-height xl:hidden 2xl:hidden"
         text={"Membership cards"}
       />
       <ButtonPrimary
@@ -70,7 +70,7 @@ export const JoinUs = () => {
           text={"Heart rate monitor"}
         />
       </div>
-      <div></div>
+      
 
       {windowWidth >= 1280 ? (
         <div className="flex flex-col gap-25">
@@ -104,8 +104,8 @@ export const JoinUs = () => {
       <div>
         <Image
           link={"/Images/plank.svg"}
-          alt={"people working out"}
-          className="mb-38 mt-3.5 object-cover xs:h-56 xs:w-64 sm:mb-16 sm:h-height-three sm:w-width-two md:h-height-four md:w-width-three md:object-cover md:object-center xl:mt-0 xl:h-height-12 xl:w-width-10 xl:pt-0 2xl:w-width-five 2xl:pt-0"
+          imgText={"people working out"}
+          className="mb-38 object-cover xs:h-56 xs:w-64 sm:mb-16 sm:h-height-three sm:w-width-two md:h-height-four md:w-width-three md:object-cover md:object-center xl:mt-0 xl:h-height-12 xl:w-width-10 xl:pt-0 2xl:w-width-five 2xl:pt-0"
         />
       </div>
     </div>

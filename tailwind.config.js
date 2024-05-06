@@ -30,6 +30,7 @@ export default {
         "width-10": "1049px",
         "width-11": "920px",
         "width-12": "302px",
+        "width-13": "322px"
       },
       height: {
         "custom-height": "87px",
@@ -45,6 +46,7 @@ export default {
         "height-11": "628px",
         "height-12": "701px",
         "height-13": "21px",
+        "height-14": "76px",
       },
       colors: {
         blue: "#0F3057",
