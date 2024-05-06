@@ -1,41 +1,17 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+This project is a collaborative effort to design a hand-off from a UX design student and transform it into a landing page. It involves showcasing the use of React, incorporating reusable components, and leveraging Tailwind CSS for styling all while adhering to the design specifications.
+Additionally, it demonstrates the integration of npm packages for enhanced functionality, such as image carousels to enhance the user experience.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The UX design only had three responsive breakpoints, therefore I configured custom screen sizes to include more breakpoints and made the decisions for styling the additional breakpoints all while maintaining the original design.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://clever-selkie-dfebb0.netlify.app/
 
-## Instructions
+#### The UX Design
 
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://www.figma.com/file/xu73ZPWlDEfbnYmj1txyyn/%F0%9F%9F%A0-Team-Coral-Figma-%F0%9F%9F%A0?node-id=5259%3A1604&mode=dev
+
