@@ -1,6 +1,14 @@
+/* Import font from Google Fonts (Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
 body {
-  background-image: url("/background.jpg");
+  font-family: "Poppins", sans-serif;
+  background-image: url("/images/background.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
