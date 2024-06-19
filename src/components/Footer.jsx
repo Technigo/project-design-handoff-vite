@@ -1,4 +1,4 @@
-import tabletLogo from "../assets/footerImages/tablet-logo.png"; //
+import tabletLogo from "../assets/footerImages/tablet-logo.png";
 import mobileLogo from "../assets/footerImages/mobile-logo.png";
 import desktopLogo from "../assets/footerImages/desktop-logo.png";
 import facebook from "../assets/followUsSection/facebook.png";
@@ -9,8 +9,8 @@ import styled from "styled-components";
 export const Footer = () => {
   return (
     <FooterContent>
-      <MobileLogo alt="Company logo" />
       <FooterText>
+        <MobileLogo alt="Company logo" />
         <h1>
           Learn, Laugh, and<br></br>Connect on the Slopes!
         </h1>
@@ -38,7 +38,14 @@ const FooterContent = styled.div`
   background-color: #234059;
   height: 550px;
   color: #ffc8dd;
-  padding-top: 40px;
+  padding-top: 80px;
+
+  @media (min-width 600px) and (max-width: 1199px) {
+    margin: 80px 32px 80 px 32px;
+  }
+
+  @media (min-width: 1200px) {
+  }
 `;
 
 const MobileLogo = styled.div`
@@ -47,12 +54,10 @@ const MobileLogo = styled.div`
   height: 40px;
   width: 100px;
   margin-left: 24px;
-  padding-bottom: 40px;
 
   @media (min-width: 600 px) and (max-width: 1199px) {
     background-image: url(${tabletLogo});
-    height: 60px;
-    width: 150px;
+    padding-top: 35px;
   }
   @media (min-width: 1200px) {
     background-image: url(${desktopLogo});
@@ -63,11 +68,8 @@ const MobileLogo = styled.div`
 
 const FooterText = styled.div`
   display: flex;
-  justify-content: flex-end;
-  padding-right: 24px;
-  padding-left: 24px;
-  padding-bottom: 40px;
-  margin: auto;
+  justify-content: space-between;
+  padding-right: 32px;
 
   h1 {
     font-family: Philosopher;
@@ -76,7 +78,7 @@ const FooterText = styled.div`
     font-weight: 700;
     line-height: 39px;
     letter-spacing: 1.08px;
-    text-align: left;
+    text-align: right;
   }
 `;
 
@@ -99,16 +101,22 @@ const FooterList = styled.li`
   &:active {
     text-decoration: underline;
   }
+
+  @media (min-width: 600px) {
+    display: flex;
+    justify-content: flex-start;
+  }
 `;
 
 const FollowUs = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  margin-top: 80px;
 
   @media (min-width: 600px) {
     display: flex;
     justify-content: flex-end;
+    margin-top: 0px;
   }
 `;
 

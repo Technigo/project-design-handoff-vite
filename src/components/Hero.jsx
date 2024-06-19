@@ -106,9 +106,11 @@ const CtaButton = styled.button`
   font-weight: 500;
   line-height: 100%;
   margin: auto;
+
   @media (min-width: 600px) {
-    width: 30%;
+    width: 250px;
     height: 48px;
+    margin-left: 24px;
   }
 
   &:hover {
