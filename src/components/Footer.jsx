@@ -10,7 +10,7 @@ export const Footer = () => {
   return (
     <FooterContent>
       <FooterText>
-        <MobileLogo alt="Company logo" />
+        <Logo alt="Company logo" />
         <h1>
           Learn, Laugh, and<br></br>Connect on the Slopes!
         </h1>
@@ -36,19 +36,16 @@ export const Footer = () => {
 
 const FooterContent = styled.div`
   background-color: #234059;
-  height: 550px;
+  height: 400px;
   color: #ffc8dd;
   padding-top: 80px;
 
-  @media (min-width 600px) and (max-width: 1199px) {
+  @media (min-width 600px) {
     margin: 80px 32px 80 px 32px;
-  }
-
-  @media (min-width: 1200px) {
   }
 `;
 
-const MobileLogo = styled.div`
+const Logo = styled.div`
   background-image: url(${mobileLogo});
   background-repeat: no-repeat;
   height: 40px;
@@ -57,6 +54,8 @@ const MobileLogo = styled.div`
 
   @media (min-width: 600 px) and (max-width: 1199px) {
     background-image: url(${tabletLogo});
+    height: 60px;
+    width: 140px;
     padding-top: 35px;
   }
   @media (min-width: 1200px) {
@@ -72,6 +71,7 @@ const FooterText = styled.div`
   padding-right: 32px;
 
   h1 {
+    margin-top: 0px;
     font-family: Philosopher;
     font-size: 30px;
     font-style: normal;
@@ -116,7 +116,7 @@ const FollowUs = styled.div`
   @media (min-width: 600px) {
     display: flex;
     justify-content: flex-end;
-    margin-top: 0px;
+    margin-top: -35px;
   }
 `;
 

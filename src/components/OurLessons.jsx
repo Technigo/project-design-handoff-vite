@@ -47,7 +47,7 @@ const OurLessonsImage = styled.div`
   background-position: 100%;
   width: 100%;
   min-height: 240px;
-  
+
   @media (min-width: 600px) {
     order: 1;
   }

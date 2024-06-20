@@ -10,79 +10,69 @@ export const MakeYourPick = () => {
         <h1>Make Your Pick</h1>
       </TextSection>
       <CardSection>
-        <MakeYourPickOne src={priceCardOne} />
-        <MakeYourPickTwo src={priceCardTwo} />
-        <MakeYourPickThree src={priceCardThree} />
+        <Card>
+          <Image src={priceCardOne} alt="Price Card One" />
+        </Card>
+        <Card>
+          <Image src={priceCardTwo} alt="Price Card Two" />
+        </Card>
+        <Card>
+          <Image src={priceCardThree} alt="Price Card Three" />
+        </Card>
       </CardSection>
     </>
   );
 };
 
 const TextSection = styled.div`
-  display: flex;
-  justify-content: center;
+  margin-bottom: 20px;
   margin-top: 40px;
 
   h1 {
     color: var(--Powder-Black, #0b1623);
-    text-align: center;
+    text-align: left;
     font-family: Philosopher;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: 130%;
   }
+  @media (min-width: 600px) {
+    margin-left: 32px;
+    margin-right: auto;
+  }
+  @media (min-width: 1199px) {
+    margin-left: 150px;
+    margin-right: auto;
+  }
 `;
 
 const CardSection = styled.div`
   display: flex;
-  justify-content: center;
-  margin-top: 50px;
-  margin-bottom: 40px;
-`;
+  margin-bottom: 100px;
+  margin-right: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
 
-const MakeYourPickOne = styled.img`
-  display: flex;
-  height: 380px;
-  width: 280px;
-  padding-left: 10px;
-  padding-right: 10px;
-
-  @media (min-width: 1200px) {
-    display: flex;
-    height: 400px;
-    width: 300px;
+  @media (min-width: 600px) {
+    margin-left: 32px;
+    margin-right: auto;
+  }
+  @media (min-width: 1199px) {
+    margin-left: 150px;
+    margin-right: auto;
   }
 `;
 
-const MakeYourPickTwo = styled.img`
-  display: none;
-
-  @media (min-width: 600px) and (max-width: 1199px) {
-    display: flex;
-    height: 380px;
-    width: 280px;
-  }
-  @media (min-width: 1200px) {
-    display: flex;
-    height: 400px;
-    width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+const Card = styled.div`
+  flex: 0 0 auto;
+  margin-right: 10px;
+  scroll-snap-align: start;
 `;
 
-const MakeYourPickThree = styled.img`
-  display: none;
-
-  @media (min-width: 600px) and (max-width: 1199px) {
-    display: none;
-  }
-  @media (min-width: 1200px) {
-    display: flex;
-    height: 400px;
-    width: 300px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+const Image = styled.img`
+  display: block;
+  max-width: 100%;
+  height: auto;
 `;
