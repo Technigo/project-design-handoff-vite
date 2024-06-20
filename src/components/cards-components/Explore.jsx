@@ -7,7 +7,7 @@ export const Explore = () => {
   return (
     <>
       <ExploreCard>
-        <ExploreImage></ExploreImage>
+        <ExploreImage alt="Image of a map"/>
         <ExploreText>
           <h2>Explore</h2>
           <p>

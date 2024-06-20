@@ -7,7 +7,7 @@ export const Live = () => {
   return (
     <>
       <LiveCard>
-        <LiveImage></LiveImage>
+        <LiveImage alt="Image of a house for accommodation"/>
         <LiveText>
           <h2>Live</h2>
           <p>Enjoy your stay at our cozy cabin in Laax.</p>

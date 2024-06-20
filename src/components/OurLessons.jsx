@@ -7,7 +7,7 @@ export const OurLessons = () => {
   return (
     <>
       <OurLessonsWrapper>
-        <OurLessonsImage></OurLessonsImage>
+        <OurLessonsImage alt="Snowboarding Lessons" />
         <OurLessonContent>
           <OurLessonsText>
             <h1>Our Lessons</h1>

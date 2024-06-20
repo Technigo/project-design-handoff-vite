@@ -12,7 +12,7 @@ export const Contact = () => {
             <h1>Not sure what to choose?</h1>
             <p>We are happy to help. Let’s chat!</p>
           </ContactText>
-          <Button>Start a chat</Button>
+          <Button aria-label="Start a chat">Start a chat</Button>
         </ContactContent>
       </ContactWrapper>
     </>

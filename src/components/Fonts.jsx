@@ -4,7 +4,7 @@ import { createGlobalStyle } from "styled-components";
 export const Fonts = () => {
   return (
     <>
-    <GlobalFonts></GlobalFonts>
+    <GlobalFonts/>
     </>
   )
 }

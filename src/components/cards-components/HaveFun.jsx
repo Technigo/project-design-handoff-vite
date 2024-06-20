@@ -7,7 +7,7 @@ export const HaveFun = () => {
   return (
     <>
       <HaveFunCard>
-        <HaveFunImage></HaveFunImage>
+        <HaveFunImage alt="Image of a microphone"/>
         <HaveFunText>
           <h2>Have fun</h2>
           <p>

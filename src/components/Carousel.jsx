@@ -8,7 +8,7 @@ export const Carousel = () => {
 
   return (
     <CarouselContainer {...handlers} className="carousel">
-      {testimonial.map(({ testimonialImage, priceCardImage, id }) => (
+      {testimonial.map(({ testimonialImage, id }) => (
         <Slide key={id} translateValue={translateValue}>
           <CarouselTestimonials>
             <Image

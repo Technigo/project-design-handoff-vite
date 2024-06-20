@@ -7,7 +7,7 @@ export const Learn = () => {
   return (
     <>
       <LearnCard>
-        <LearnImage></LearnImage>
+        <LearnImage alt="Image of a girl with a snowboard"/>
         <LearnText>
           <h2>Learn</h2>
           <p>

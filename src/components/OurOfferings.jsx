@@ -24,6 +24,7 @@ export const OurOfferings = () => {
     </>
   );
 };
+
 const OurOfferingsSection = styled.section`
   h1 {
     color: #0b1623;

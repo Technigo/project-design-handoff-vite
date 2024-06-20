@@ -15,15 +15,17 @@ export const Footer = () => {
           Learn, Laugh, and<br></br>Connect on the Slopes!
         </h1>
       </FooterText>
-      <FooterList>About us</FooterList>
-      <FooterList>FAQ</FooterList>
-      <FooterList>Privacy Policy</FooterList>
-      <FooterList>Terms and conditions</FooterList>
+      <nav aria-label="Footer Navigation">
+        <FooterList href="#about-us">About us</FooterList>
+        <FooterList href="#faq">FAQ</FooterList>
+        <FooterList href="#privacy-policy">Privacy Policy</FooterList>
+        <FooterList href="#terms-and-conditions">Terms and conditions</FooterList>
+      </nav>
       <FollowUs>
         <Icons>
-          <FooterList>Follow us</FooterList>
-          <IconImage src={facebook} />
-          <IconImage src={instagram} />
+          <FooterList href="#follow-us">Follow us</FooterList>
+          <IconImage src={facebook} alt="Facebook icon"/>
+          <IconImage src={instagram} alt="Instagram icon"/>
         </Icons>
         <Language>
           <FooterList>EN</FooterList>

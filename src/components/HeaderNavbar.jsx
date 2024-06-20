@@ -6,7 +6,7 @@ export const HeaderNavbar = () => {
   return (
     <>
       <Navbar>
-        <NavbarLogo src={navbarLogo} />
+        <NavbarLogo src={navbarLogo} alt="Company logo" />
         <Dropdown />
       </Navbar>
     </>

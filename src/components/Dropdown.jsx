@@ -18,16 +18,21 @@ export const Dropdown = () => {
 
   return (
     <SelectContainer>
-      <DropdownButton onClick={toggleDropdown}>
-        <DropdownMenu src={menuIcon} alt="Navigation bar menu" open={isOpen} />
+      <DropdownButton
+        onClick={toggleDropdown}
+        aria-haspopup="true"
+        aria-expanded={isOpen}>
+        <DropdownMenu src={menuIcon} alt="Navigation bar menu" />
       </DropdownButton>
 
-      <OptionsContainer open={isOpen}>
-        <VectorBtn onClick={toggleDropdown}>
-          <VectorImg src={vector} />
+      <OptionsContainer open={isOpen} role="menu" aria-label="Options">
+        <VectorBtn onClick={toggleDropdown} aria-label="Close menu">
+          <VectorImg src={vector} alt="" />
         </VectorBtn>
         {options.map((option) => (
-          <Option key={option.value}>{option.label}</Option>
+          <Option key={option.value} role="menuitem" tabIndex="0" onClick={toggleDropdown}>
+            {option.label}
+          </Option>
         ))}
       </OptionsContainer>
     </SelectContainer>
@@ -93,8 +98,9 @@ const VectorImg = styled.img`
   height: 12px;
   padding-left: 125px;
   padding-top: 6px;
-  @media (min-width: 1200px){
-    display: none;}
+  @media (min-width: 1200px) {
+    display: none;
+  }
 `;
 
 const Option = styled.div`
