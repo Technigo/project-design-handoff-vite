@@ -4,36 +4,24 @@
   </a>
 </h1>
 
-### Remove git
-
-rm -rf .git
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
+This is the project collab with the designer from the UX track of Technigo.
+Initially this was a group project, but as the other participants did not contribute in fixing the previous errors I am handing it in by myself this last time.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+<a href="https://www.figma.com/design/EEkPGyQxMk1qRcss2gTFiq/Template-Designer-Developer-Handover-(Anna-H)?node-id=2583-527&t=9cS2mtsH5LXhdEQ1-0"> design handoff </a>
 
 ### The Problem
+We startet up discussing with the designer,asking questions about the execution as there were multiple areas who was not described down to a "pixel" some parts had noe design at all, and she did not have time to finalize it, so we needed to compromize.
+Then we split the elements of the page between us developers, and started to work on the different parts.
+at the end of the  week (thursday) we worked to get the pieces to work togheter.
+We had a sit down with the designer as well and did some final adjustments before handing in the project.
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
+<a href="https://y-yogastudio.netlify.app">Y yogastudio </a>
 ## Instructions
 
 <a href="instructions.md">
