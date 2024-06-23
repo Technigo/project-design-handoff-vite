@@ -16,5 +16,43 @@
         "select": "Välj språk",
         "en": "Engelska",
         "sw": "Svenska"
+    },
+
+    "info": {
+      "ourPhilosophy": "Vår filosofi",
+      "ourPhilosophyText": "Vi tror på din kraft inom dig. Men ibland behöver den lite hjälp.",
+      "ourClasses": "Våra klasser",
+      "ourClassesText":  "Vi fokuserar på Ashtanga yoga, en fysiskt krävande sorts yoga.",
+      "ourLocations": "Våra platser",
+      "ourLocationsText": "Välj mellan någon av våra exklusiva yogastudior för din träning."
+    },
+      "HeaderText":{
+        "mainText": "Hitta din kraft",
+        "subText": "Var som helst. När som helst."
+      },
+      "customerReviews":{
+        "review1": "'Högkvalitativa yogaklasser med skickliga lärare'",
+        "review2": "'Jag uppskattar verkligen deras flexibla scheman'",
+        "review3": "'Dessa klasser är tuffa – och får verkligen jobbet gjort'"
+    },
+    "articles":{
+      "buildTitle":"Bygg styrka - tappa stress",
+      "buildText":"Fysiskt krävande samtidigt som du lugnar din själ, Ashtanga yoga är premiumvalet.",
+      "locationTitle":"Nära där du är",
+      "locationText":"Med över 50 platser över hela staden gjorde vi det enkelt för dig att träna.",
+      "scheduleTitle":"Flexibla scheman",
+      "scheduleText":"Vi tror på lättillgängliga yogaklasser. Drop-in eller schema i förväg. Registrera dig eller på språng."
+    },
+    "cta":{
+      "book": "Boka nu",
+      "read": "Läs mer",
+      "confirm": "Bekräfta",
+      "message": "Ni har veljat:"
+    },
+    "input": {
+        "name": "Navn",
+        "email": "E-post",
+        "phone": "Telefon"
     }
+
 }

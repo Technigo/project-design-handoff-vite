@@ -16,6 +16,44 @@
         "select": "Select language",
         "en": "English",
         "sw": "Swedish"
+    },
+
+    "info": {
+      "ourPhilosophy": "Our philosophy",
+      "ourPhilosophyText": "We believe in your power within. But sometimes it needs a little help.",
+      "ourClasses": "Our classes",
+      "ourClassesText":  "We focus on Ashtanga yoga, a physically demanding kind of yoga.",
+      "ourLocations": "Our locations",
+      "ourLocationsText": "Choose between any of our high-end yoga studios for your exercise."
+    },
+      "HeaderText":{
+        "mainText": "Find your power",
+        "subText": "Anywhere. Anytime."
+      },
+      "customerReviews":{
+        "review1": "'High quality yoga classes with skilled teachers'",
+        "review2": "'I really appreciate their flexible schedules'",
+        "review3": "'These classes are tough – and really get the work done'"
+    },
+    "articles":{
+      "buildTitle":"Build strength - lose stress",
+      "buildText":"Physically demanding while soothing your soul, Ashtanga yoga is the premium choice.",
+      "locationTitle":"Close to where you are",
+      "locationText":"With over 50 locations all over the city, we made it easy for you to exercise.",
+      "scheduleTitle":"Flexible schedules",
+      "scheduleText":"We believe in easy access yoga classes. Drop-in or schedule ahead. Sign up or on the go."
+    },
+    "cta":{
+      "book": "Book now",
+      "read": "Read more",
+      "confirm": "confirm booking",
+      "message": "chosen date and time:"
+    },
+    "input": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone"
+
     }
 
 }

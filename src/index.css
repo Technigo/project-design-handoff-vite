@@ -3,16 +3,16 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 
 @layer utilities {
   body {
     background-color: #F8F7F7;
     color: #042d43;
+
+  .rounded-md{
+    border-radius: 25px;
+
+  }
   }
 }
 :root {

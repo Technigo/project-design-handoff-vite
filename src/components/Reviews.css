@@ -3,30 +3,22 @@
     background-color: #F8F7F7;
     color: #042d43;
   }
-
   .review-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-
   .wrapper {
     position: relative;
     left: 50%;
     transform: translateX(-50%);
   }
-
-
   @media screen and (min-width: 1370px) {
     .wrapper {
       width: 1370px;
       left: 0%;
       transform: translateX(0%);
     }
-
   }
-
-
-
 }

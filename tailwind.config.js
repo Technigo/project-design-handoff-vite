@@ -37,13 +37,6 @@ module.exports = {
         'tablet': '680px',
         'desktop': '1280px',
       },
-      // screens: {
-      //   'tablet': {'min': '744px', 'max': '1439px'},
-      //   // => @media (min-width: 640px) { ... }
-
-      //   'desktop': '1440px',
-      //   // => @media (min-width: 1280px) { ... }
-      // },
       backgroundSize: {
         'max': 'cover',
 
