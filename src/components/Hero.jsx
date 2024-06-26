@@ -1,7 +1,7 @@
-import heroImage from "../assets/heroSectionImages/heroImage.png";
-import mountainImage from "../assets/heroSectionImages/mountainGraphic.png";
-import styled from "styled-components";
-import { HeaderNavbar } from "./HeaderNavbar";
+import heroImage from "../assets/heroSectionImages/heroImage.png"
+import mountainImage from "../assets/heroSectionImages/mountainGraphic.png"
+import styled from "styled-components"
+import { HeaderNavbar } from "./HeaderNavbar"
 
 export const Hero = () => {
   return (
@@ -15,11 +15,11 @@ export const Hero = () => {
           </p>
         </HeroContent>
         <CtaButton>Explore our camps</CtaButton>
-        <MountainImage src={mountainImage} />
+        <MountainImage src={mountainImage} alt="Mountain" />
       </HeroSection>
     </>
-  );
-};
+  )
+}
 
 const HeroSection = styled.div`
   background-image: url(${heroImage});
@@ -37,13 +37,13 @@ const HeroSection = styled.div`
   @media (min-width: 1200px) {
     height: 1024px;
   }
-`;
+`
 
 const MountainImage = styled.img`
   display: flex;
   height: 50px;
   padding-top: 70px;
-`;
+`
 
 const HeroContent = styled.div`
   display: flex;
@@ -84,7 +84,7 @@ const HeroContent = styled.div`
       padding-bottom: 80px;
     }
   }
-`;
+`
 
 const CtaButton = styled.button`
   display: inline-flex;
@@ -127,4 +127,4 @@ const CtaButton = styled.button`
 
     box-shadow: 2px 3px 0px 0px #0b1623;
   }
-`;
+`

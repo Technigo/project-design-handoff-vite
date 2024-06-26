@@ -1,10 +1,10 @@
-import tabletLogo from "../assets/footerImages/tablet-logo.png";
-import mobileLogo from "../assets/footerImages/mobile-logo.png";
-import desktopLogo from "../assets/footerImages/desktop-logo.png";
-import facebook from "../assets/followUsSection/facebook.png";
-import instagram from "../assets/followUsSection/instagram.png";
-import chevron from "../assets/followUsSection/chevron.png";
-import styled from "styled-components";
+import tabletLogo from "../assets/footerImages/tablet-logo.png"
+import mobileLogo from "../assets/footerImages/mobile-logo.png"
+import desktopLogo from "../assets/footerImages/desktop-logo.png"
+import facebook from "../assets/followUsSection/facebook.png"
+import instagram from "../assets/followUsSection/instagram.png"
+import chevron from "../assets/followUsSection/chevron.png"
+import styled from "styled-components"
 
 export const Footer = () => {
   return (
@@ -19,22 +19,24 @@ export const Footer = () => {
         <FooterList href="#about-us">About us</FooterList>
         <FooterList href="#faq">FAQ</FooterList>
         <FooterList href="#privacy-policy">Privacy Policy</FooterList>
-        <FooterList href="#terms-and-conditions">Terms and conditions</FooterList>
+        <FooterList href="#terms-and-conditions">
+          Terms and conditions
+        </FooterList>
       </nav>
       <FollowUs>
         <Icons>
           <FooterList href="#follow-us">Follow us</FooterList>
-          <IconImage src={facebook} alt="Facebook icon"/>
-          <IconImage src={instagram} alt="Instagram icon"/>
+          <IconImage src={facebook} alt="Facebook icon" />
+          <IconImage src={instagram} alt="Instagram icon" />
         </Icons>
         <Language>
           <FooterList>EN</FooterList>
-          <ChevronImage src={chevron} />
+          <ChevronImage src={chevron} alt="chevron" />
         </Language>
       </FollowUs>
     </FooterContent>
-  );
-};
+  )
+}
 
 const FooterContent = styled.div`
   background-color: #234059;
@@ -45,7 +47,7 @@ const FooterContent = styled.div`
   @media (min-width 600px) {
     margin: 80px 32px 80 px 32px;
   }
-`;
+`
 
 const Logo = styled.div`
   background-image: url(${mobileLogo});
@@ -65,7 +67,7 @@ const Logo = styled.div`
     height: 50px;
     width: 140px;
   }
-`;
+`
 
 const FooterText = styled.div`
   display: flex;
@@ -82,7 +84,7 @@ const FooterText = styled.div`
     letter-spacing: 1.08px;
     text-align: right;
   }
-`;
+`
 
 const FooterList = styled.li`
   display: flex;
@@ -108,7 +110,7 @@ const FooterList = styled.li`
     display: flex;
     justify-content: flex-start;
   }
-`;
+`
 
 const FollowUs = styled.div`
   display: flex;
@@ -120,12 +122,12 @@ const FollowUs = styled.div`
     justify-content: flex-end;
     margin-top: -35px;
   }
-`;
+`
 
 const IconImage = styled.img`
   height: 24px;
   padding: 5px;
-`;
+`
 
 const ChevronImage = styled.img`
   height: 20px;
@@ -134,12 +136,12 @@ const ChevronImage = styled.img`
   padding-top: 8px;
   padding-left: 10px;
   padding-right: 24px;
-`;
+`
 
 const Language = styled.div`
   display: flex;
-`;
+`
 
 const Icons = styled.div`
   display: flex;
-`;
+`

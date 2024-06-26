@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import { Carousel } from "./Carousel.jsx";
-import { useCarousel } from "../contexts/CarouselContext.jsx";
+import styled from "styled-components"
+import { Carousel } from "./Carousel.jsx"
+import { useCarousel } from "../contexts/CarouselContext.jsx"
 
 export const TestimonialCards = () => {
-  const { testimonialNumber, changeNumber } = useCarousel();
+  const { testimonialNumber, changeNumber } = useCarousel()
   return (
     <>
       <StyledTestimonial>
@@ -15,51 +15,54 @@ export const TestimonialCards = () => {
           <CarouselBtnOne
             onClick={() => changeNumber(0)}
             number={testimonialNumber}
+            aria-label="Testimonial picture one"
           />
           <CarouselBtnTwo
             onClick={() => changeNumber(1)}
             number={testimonialNumber}
+            aria-label="Testimonial picture two"
           />
           <CarouselBtnThree
             onClick={() => changeNumber(2)}
             number={testimonialNumber}
+            aria-label=" Testimonial picture three"
           />
         </ButtonContainer>
       </StyledTestimonial>
     </>
-  );
-};
+  )
+}
 
 const StyledTestimonial = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 64px;
-`;
+`
 
 const ButtonContainer = styled.div`
   display: flex;
   gap: 12px;
-`;
+`
 
 const CarouselBtn = styled.button`
   border-radius: 50%;
   border: none;
   height: 10px;
   width: 8px;
-`;
+`
 
 const CarouselBtnOne = styled(CarouselBtn)`
   background-color: ${(props) => (props.number === 0 ? "#989898" : "#d9d9d9")};
-`;
+`
 
 const CarouselBtnTwo = styled(CarouselBtn)`
   background-color: ${(props) => (props.number === 1 ? "#989898" : "#d9d9d9")};
-`;
+`
 
 const CarouselBtnThree = styled(CarouselBtn)`
   background-color: ${(props) => (props.number === 2 ? "#989898" : "#d9d9d9")};
-`;
+`
 
 const TextSection = styled.div`
   display: flex;
@@ -76,4 +79,4 @@ const TextSection = styled.div`
     font-weight: 700;
     line-height: 130%; /* 39px */
   }
-`;
+`
