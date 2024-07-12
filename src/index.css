@@ -1,8 +1,14 @@
-/* Import font from Google Fonts (Poppins) */
+/* Import font from Google Fonts (Poppins, Gerbera) */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gerbera:wght@700&display=swap");
+
+/* Downloaded Font (Argue) */
+@font-face {
+  font-family: 'Argue';
+  src: local('Argue'), url('./fonts/Argue.otf') format('opentype');
+}
 
 body {
-  font-family: "Poppins", sans-serif;
   background-image: url("/images/background.jpg");
   background-size: cover;
   background-position: center;
