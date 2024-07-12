@@ -31,14 +31,16 @@ const AboutTitleWrapper = styled.div`
 
 const AboutSubtitle = styled.h1`
   font-family: "Argue", sans-serif;
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 400;
   color: #620981;
   text-align: center;
   margin: 0;
+
   @media (min-width: 744px) {
     font-size: 64px;
   }
+
   @media (min-width: 1024px) {
     font-size: 64px;
   }
@@ -46,14 +48,16 @@ const AboutSubtitle = styled.h1`
 
 const AboutTitle = styled.h1`
   font-family: "Argue", sans-serif;
-  font-size: 96px;
+  font-size: 48px;
   font-weight: 400;
   color: #620981;
   text-align: center;
   margin: 0;
+
   @media (min-width: 744px) {
     font-size: 124px;
   }
+
   @media (min-width: 1024px) {
     font-size: 124px;
   }
