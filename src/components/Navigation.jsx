@@ -54,6 +54,10 @@ const NavLinks = styled.ul`
   margin: 0;
   padding: 0;
 
+  @media (max-width: 930px) {
+    gap: 50px;
+  }
+
   @media (max-width: 744px) {
     gap: 40px;
   }
@@ -99,7 +103,7 @@ const LanguageSelector = styled.a`
   }
 
   @media (max-width: 569px) {
-    display: none; /* Hide LanguageSelector on small screens */
+    display: none;
   }
 
   @media (max-width: 744px) {
