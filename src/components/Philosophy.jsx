@@ -36,7 +36,7 @@ const Heading = styled.h1`
     line-height: 42.78px;
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 640px) {
     font-size: 30px;
     line-height: 40.11px;
   }
@@ -54,7 +54,7 @@ const SubText = styled.p`
     line-height: 24px;
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 640px) {
     font-size: 14px;
     line-height: 21px;
   }
@@ -108,15 +108,20 @@ const PhilosophyImage = styled.div`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 745px) {
+  @media (min-width: 640px) and (max-width: 745px) {
     position: absolute;
-    top: -60px;
+    top: -55px;
     left: 360px;
     width: 517px;
     height: 764px;
-    margin-top: 20px;
     justify-content: flex-end;
     order: 2;
+  }
+
+  @media (max-width: 640px) {
+    opacity: 0.1; /* Fade effect */
+    width: 368px;
+    height: 552px;
   }
 `;
 
@@ -137,7 +142,7 @@ const TextBlock = styled.div`
   @media (max-width: 745px) {
     width: 100%;
     max-width: 230px;
-    margin-bottom: 25px;
+    margin-bottom: 45px;
     margin-right: 30px;
   }
 `;
@@ -151,6 +156,7 @@ const TextHeading = styled.h2`
   margin-bottom: 5px;
   cursor: pointer;
   transition: color 0.3s;
+  display: inline;
 
   &:hover {
     color: #620981;
@@ -159,6 +165,33 @@ const TextHeading = styled.h2`
   @media (max-width: 745px) {
     font-size: 24px;
     line-height: 30px;
+  }
+
+  @media (max-width: 640px) {
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Ensure space after '|' separator */
+    span:first-child::after {
+      content: " ";
+    }
+
+    /* Prevent line breaks */
+    span {
+      display: inline;
+    }
+  }
+
+  /* Line breaks on screens larger than 640px */
+  @media (min-width: 641px) {
+    span {
+      display: block;
+    }
   }
 `;
 
@@ -173,6 +206,10 @@ const TextParagraph = styled.p`
 
   &:hover {
     color: #620981;
+  }
+
+  @media (max-width: 640px) {
+    display: none;
   }
 
   @media (max-width: 745px) {
@@ -197,7 +234,8 @@ export const Philosophy = () => {
         <TextSection align="left">
           <TextBlock>
             <TextHeading>
-              Yama |<br /> Ethical Living
+              <span>Yama |</span>
+              <span>Ethical Living</span>
             </TextHeading>
             <TextParagraph>
               Fostering a compassionate and respectful relationship with
@@ -206,7 +244,8 @@ export const Philosophy = () => {
           </TextBlock>
           <TextBlock>
             <TextHeading>
-              Niyamas |<br /> Personal practises
+              <span>Niyamas |</span>
+              <span>Personal Practices</span>
             </TextHeading>
             <TextParagraph>
               Self-discipline or observances, such as cleanliness, contentment
@@ -215,7 +254,8 @@ export const Philosophy = () => {
           </TextBlock>
           <TextBlock>
             <TextHeading>
-              Asana |<br /> Postures
+              <span>Asana |</span>
+              <span>Postures</span>
             </TextHeading>
             <TextParagraph>
               Physical postures or poses, which are commonly practiced in modern
@@ -224,10 +264,11 @@ export const Philosophy = () => {
           </TextBlock>
           <TextBlock>
             <TextHeading>
-              Pranayama |<br /> Mindful breathing
+              <span>Pranayama |</span>
+              <span>Mindful Breathing</span>
             </TextHeading>
             <TextParagraph>
-              Breathing techniques, that aims to calm the mind and enhance the
+              Breathing techniques, that aim to calm the mind and enhance the
               flow of prana (life force).
             </TextParagraph>
           </TextBlock>
@@ -240,7 +281,8 @@ export const Philosophy = () => {
         <TextSection align="right">
           <TextBlock>
             <TextHeading>
-              Prathyahara |<br /> Turning inward
+              <span>Prathyahara |</span>
+              <span>Turning Inward</span>
             </TextHeading>
             <TextParagraph>
               Creating a mental filter, allowing us to focus on what truly
@@ -249,7 +291,8 @@ export const Philosophy = () => {
           </TextBlock>
           <TextBlock>
             <TextHeading>
-              Dharana |<br /> Concentration
+              <span>Dharana |</span>
+              <span>Concentration</span>
             </TextHeading>
             <TextParagraph>
               Training your mind to focus on one thing at a time, which can help
@@ -258,7 +301,8 @@ export const Philosophy = () => {
           </TextBlock>
           <TextBlock>
             <TextHeading>
-              Dhyana |<br /> De-concentration
+              <span>Dhyana |</span>
+              <span>De-concentration</span>
             </TextHeading>
             <TextParagraph>
               Meditation, the uninterrupted flow of concentration on an object
@@ -267,7 +311,8 @@ export const Philosophy = () => {
           </TextBlock>
           <TextBlock>
             <TextHeading>
-              Samadhi |<br /> Pure bliss
+              <span>Samadhi |</span>
+              <span>Pure Bliss</span>
             </TextHeading>
             <TextParagraph>
               Enlightenment or union with the divine, a state of spiritual

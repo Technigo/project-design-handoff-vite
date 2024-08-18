@@ -77,31 +77,23 @@ const AboutText = styled.p`
   position: relative;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 50%;
 
-  @media (min-width: 1024px) {
-    max-width: 50%;
-  }
-
-  @media (max-width: 745px) {
+  @media (max-width: 1024px) {
     font-size: 14px;
     line-height: 21px;
     text-align: center;
     margin-top: 25px;
-    grid-template-columns: 1fr;
+    display: block;
   }
 
   @media (max-width: 430px) {
     display: -webkit-box;
-    -webkit-line-clamp: ${(props) =>
-      props.isExpanded
-        ? "unset"
-        : "4"}; /* Number of lines to show when collapsed */
+    -webkit-line-clamp: ${(props) => (props.isExpanded ? "unset" : "4")};
     -webkit-box-orient: vertical;
     overflow: hidden;
-    max-height: ${(props) =>
-      props.isExpanded
-        ? "none"
-        : "63px"}; /* Adjust height for collapsed state */
+    max-height: ${(props) => (props.isExpanded ? "none" : "63px")};
   }
 `;
 
