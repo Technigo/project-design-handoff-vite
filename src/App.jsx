@@ -7,6 +7,7 @@ import { Happenings } from "./components/Happenings";
 import { YogaPackages } from "./components/YogaPackages";
 import { Quote } from "./components/Quote";
 import { FAQ } from "./components/FAQ";
+import { Newsletter } from "./components/Newsletter";
 
 export const App = () => {
   return (
@@ -20,6 +21,7 @@ export const App = () => {
       <YogaPackages />
       <Quote />
       <FAQ />
+      <Newsletter />
     </>
   );
 };
