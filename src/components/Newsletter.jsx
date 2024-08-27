@@ -4,7 +4,7 @@ import stretchingPoseImage from "../../public/images/stretchingpose.png";
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  padding: 100px 100px;
+  padding: 20px 100px;
   box-sizing: border-box;
   position: relative;
 `;
