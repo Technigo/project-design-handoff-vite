@@ -4,12 +4,12 @@ import stretchingPoseImage from "../../public/images/stretchingpose.png";
 const Wrapper = styled.div`
   display: flex;
   justify-content: center;
-  padding: 20px 50px;
+  padding: 0 50px;
   box-sizing: border-box;
   position: relative;
 
   @media (max-width: 920px) {
-    padding: 20px 60px;
+    padding: 0 60px;
   }
 `;
 

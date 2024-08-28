@@ -5,7 +5,6 @@ import arrowIcon from "../../public/icons/arrow.svg";
 const FAQContainer = styled.div`
   display: flex;
   align-items: center;
-  padding: 40px 0;
 `;
 
 const ImageContainer = styled.div`
@@ -17,18 +16,24 @@ const ImageContainer = styled.div`
     width: 100%;
     height: auto;
   }
+
+  @media (max-width: 725px) {
+    display: none;
+  }
 `;
 
 const ContentContainer = styled.div`
   flex: 2;
-  max-width: 750px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
 `;
 
 const FAQHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: -50px;
+  margin-top: 20px;
 `;
 
 const Heading = styled.h1`
@@ -37,6 +42,16 @@ const Heading = styled.h1`
   font-size: 64px;
   line-height: 100px;
   color: #111111;
+
+  @media (max-width: 1200px) {
+    font-size: 32px;
+    line-height: 42.78px;
+  }
+
+  @media (max-width: 725px) {
+    font-size: 30px;
+    line-height: 40.11px;
+  }
 `;
 
 const SeeMoreContainer = styled.div`
@@ -64,12 +79,33 @@ const SeeMoreText = styled.span`
   line-height: 36px;
   color: #111111;
   margin-right: 10px;
+
+  @media (max-width: 1200px) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 30px;
+  }
+
+  @media (max-width: 725px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 `;
 
 const ArrowIcon = styled.img`
   width: 49px;
   height: 15px;
   transition: filter 0.3s;
+
+  @media (max-width: 1200px) {
+    width: 43px;
+    height: 16px;
+  }
+
+  @media (max-width: 725px) {
+    width: 57px;
+    height: 22px;
+  }
 `;
 
 const FAQItems = styled.div`
@@ -89,6 +125,14 @@ const FAQItem = styled.div`
     border-top: 1px solid #111111;
     padding-top: 20px;
   }
+
+  @media (max-width: 1200px) {
+    padding-bottom: 10px;
+
+    &:first-child {
+      padding-top: 10px;
+    }
+  }
 `;
 
 const Question = styled.span`
@@ -98,6 +142,17 @@ const Question = styled.span`
   line-height: 36px;
   color: #111111;
   cursor: pointer;
+
+  @media (max-width: 1200px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  
+  @media (max-width: 725px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   &:hover {
   font-weight: 500;
@@ -118,6 +173,20 @@ const Arrow = styled.span`
   &:hover {
     border-color: #620981;
     border-width: 0 2px 2px 0;
+  }
+
+  @media (max-width: 1200px) {
+    width: 10px;
+    height: 10px;
+  }
+
+  @media (max-width: 725px) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (max-width: 430px) {
+    display: none;
   }
 `;
 
