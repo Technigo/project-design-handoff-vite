@@ -102,6 +102,13 @@ const Input = styled.input`
     padding: 10px 50px;
     font-size: 20px;
   }
+
+  @media (max-width: 350px) {
+    width: 300px;
+    height: 67px;
+    padding: 10px 50px;
+    font-size: 20px;
+  }
 `;
 
 const CheckboxLabel = styled.label`
@@ -122,6 +129,10 @@ const CheckboxLabel = styled.label`
 
   @media (max-width: 725px) {
     text-align: left;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 12px;
   }
 `;
 
@@ -164,6 +175,11 @@ const Checkbox = styled.input.attrs({ type: "checkbox" })`
     width: 20px;
     height: 20px;
     margin-right: 10px;
+  }
+
+  @media (max-width: 350px) {
+    width: 30px;
+    height: 20px;
   }
 `;
 
@@ -221,7 +237,7 @@ const Button = styled.button`
     margin-top: 20px;
   }
 
-    @media (max-width: 725px) {
+  @media (max-width: 725px) {
     width: 226px;
     height: 55px;
     font-size: 20px;
