@@ -51,7 +51,7 @@ const Heading = styled.h1`
   font-family: "Gerbera", sans-serif;
   font-weight: 700;
   font-size: 64px;
-  line-height: 80px;
+  line-height: 100px;
   color: #620981;
   margin-bottom: 60px;
   white-space: nowrap;

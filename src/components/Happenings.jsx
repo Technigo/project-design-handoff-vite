@@ -24,9 +24,15 @@ const Header = styled.h1`
   width: 100%;
   max-width: 990px;
 
-  @media (max-width: 745px) {
+  @media (max-width: 1200px) {
     font-size: 32px;
     line-height: 42.78px;
+  }
+
+  @media (max-width: 725px) {
+    font-size: 30px;
+    line-height: 40.11px;
+    margin-bottom: 30px;
   }
 `;
 
@@ -35,7 +41,7 @@ const ContentContainer = styled.div`
   max-width: 990px;
   position: relative;
 
-  @media (max-width: 745px) {
+  @media (max-width: 1200px) {
     margin-top: -80px;
   }
 `;
@@ -85,6 +91,12 @@ const SliderContainer = styled.div`
     background-color: #ffffff;
     border-color: #111111;
   }
+
+  @media (max-width: 725px) {
+    .slick-dots {
+      display: none;
+    }
+  }
 `;
 
 const SlideContent = styled.div`
@@ -94,8 +106,19 @@ const SlideContent = styled.div`
   box-sizing: border-box;
   gap: 20px;
 
-  @media (max-width: 745px) {
+  @media (max-width: 1200px) {
     gap: 15px;
+  }
+
+  @media (max-width: 725px) {
+    flex-direction: row; 
+    align-items: flex-start; 
+    background-color: #ffffff;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
   }
 `;
 
@@ -112,9 +135,10 @@ const Placeholder = styled.div`
   mask-size: cover;
   mask-repeat: no-repeat;
 
-  @media (max-width: 745px) {
-    max-width: 247px;
-    height: auto;
+  @media (max-width: 725px) {
+    width: 85.04px;
+    height: 67.39px;
+    display: block;
   }
 `;
 
@@ -123,11 +147,25 @@ const Image = styled.img`
   height: auto;
   object-fit: cover;
   object-position: center;
+
+  @media (max-width: 725px) {
+    width: 105%;
+    display: block;
+  }
 `;
 
 const TextContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 20px;
   flex: 1;
+  position: relative;
+
+  @media (max-width: 725px) {
+    max-width: calc(100% - 100px);
+    padding: 10px;
+  }
 `;
 
 const Heading = styled.h2`
@@ -138,9 +176,14 @@ const Heading = styled.h2`
   color: #111111;
   margin: 0;
 
-  @media (max-width: 745px) {
+  @media (max-width: 1200px) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (max-width: 725px) {
+    font-size: 18px;
+    line-height: 20px;
   }
 `;
 
@@ -152,9 +195,14 @@ const SubHeading = styled.h3`
   color: #505050;
   margin: 2px 0 10px;
 
-  @media (max-width: 745px) {
+  @media (max-width: 1200px) {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (max-width: 725px) {
+    font-size: 14px;
+    line-height: 21px;
   }
 `;
 
@@ -167,9 +215,15 @@ const Description = styled.p`
   margin: 0;
   margin-bottom: 20px;
 
-  @media (max-width: 745px) {
+  @media (max-width: 1200px) {
     font-size: 14px;
     line-height: 21px;
+  }
+
+  @media (max-width: 725px) {
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 10px;
   }
 `;
 
@@ -192,10 +246,15 @@ const ReadMore = styled.button`
     font-weight: 500;
   }
 
-  @media (max-width: 745px) {
+  @media (max-width: 1200px) {
     font-size: 14px;
     line-height: 21px;
     margin-left: 0px;
+  }
+
+  @media (max-width: 725px) {
+    font-size: 14px;
+    line-height: 24px;
   }
 `;
 
@@ -214,6 +273,7 @@ const SignUpButton = styled.button`
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
+  margin-top: 20px;
 
   &:hover {
     background-color: #430159;
@@ -249,10 +309,11 @@ const sliderSettings = {
       },
     },
     {
-      breakpoint: 480,
+      breakpoint: 725,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        dots: false,
       },
     },
   ],

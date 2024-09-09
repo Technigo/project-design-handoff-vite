@@ -12,7 +12,7 @@ const TopSectionContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 225px 0; /* 136px on template */
+  padding: 225px 0;
 
   @media (min-width: 1650px) {
     margin-top: 150px;
@@ -68,7 +68,7 @@ const TopSectionTitle = styled.h1`
   text-align: center;
   font-family: "Gerbera", sans-serif;
   font-weight: 700;
-  font-size: 15vw; /* should be 248px; = 12.9vw on template */
+  font-size: 15vw;
   line-height: 1;
   letter-spacing: 1.3vw;
   padding-top: 25px;
@@ -80,7 +80,7 @@ const TopSectionTitle = styled.h1`
   justify-content: center;
 
   @media (max-width: 430px) {
-    font-size: 80px; /* should be 104px; = ?vw on template */
+    font-size: 80px;
     writing-mode: vertical-rl;
     text-orientation: upright;
     letter-spacing: -5px;
@@ -92,28 +92,35 @@ const TopSectionTitle = styled.h1`
 const ContentWrapper = styled.div`
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 250px;
-  padding: 0 124px;
+  padding: 270px 124px 0;
+  margin-bottom: -140px;
   width: 100%;
   box-sizing: border-box;
 
   @media (min-width: 1650px) {
-    margin-top: 380px;
+    padding: 450px 124px 0;
   }
 
   @media (max-width: 1050px) {
-    margin-top: 180px;
+    padding: 180px 30px 0;
+    margin-bottom: -60px;
   }
 
   @media (max-width: 750px) {
-    margin-top: 150px;
+    padding: 140px 30px 0;
+    margin-bottom: -60px;
+  }
+
+  @media (max-width: 725px) {
+    padding: 140px 30px 0;
+    margin-bottom: -60px;
+    flex-direction: column;
   }
 
   @media (max-width: 430px) {
-    margin-top: 330px;
+    padding: 370px 30px 0;
+    margin-bottom: -10px;
   }
 `;
 
@@ -121,6 +128,10 @@ const LocationWrapper = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 15px;
+
+  @media (max-width: 1050px) {
+    margin-bottom: 20px;
+  }
 `;
 
 const LocationIcon = styled.img`
@@ -131,6 +142,11 @@ const LocationIcon = styled.img`
   @media (max-width: 750px) {
     width: 16px;
     height: 23px;
+  }
+
+  @media (max-width: 725px) {
+    width: 22px;
+    height: 32px;
   }
 `;
 
@@ -146,29 +162,50 @@ const AddressText = styled.p`
     font-size: 14px;
     line-height: 18px;
   }
+
+  @media (max-width: 725px) {
+    font-size: 16px;
+  }
 `;
 
 const TopSectionButton = styled.button`
   width: 300px;
-  height: 60px; /* 64px on template */
+  height: 60px;
   border-radius: 60px;
   padding: 10px;
   font-size: 24px;
-  letter-spacing: 1px; /* not on template */
+  letter-spacing: 1px;
   background-color: #620981;
   color: #ffffff;
   border: none;
   cursor: pointer;
-  align-self: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
 
   &:hover {
     background-color: #430159;
   }
 
+  @media (max-width: 725px) {
+    position: relative;
+    left: 0;
+    transform: none;
+    margin-top: 20px;
+  }
+
   @media (max-width: 750px) {
     width: 182px;
     height: 38px;
-    font-size: 14px; /* 15px on template */
+    font-size: 15px;
+  }
+
+  @media (max-width: 725px) {
+    width: 226px;
+    height: 55px;
+    font-size: 20px;
+    margin-top: 10px;
   }
 `;
 

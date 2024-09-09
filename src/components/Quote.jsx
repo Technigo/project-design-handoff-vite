@@ -12,11 +12,11 @@ const Container = styled.div`
   align-items: center;
 
   @media (max-width: 1200px) {
-    height: 100vh;
+    height: 80vh;
   }
 
   @media (max-width: 725px) {
-    height: 80vh;
+    height: 60vh;
   }
 `;
 

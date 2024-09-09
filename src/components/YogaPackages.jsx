@@ -9,10 +9,6 @@ const Container = styled.div`
   padding-bottom: 70px;
   padding-left: 20px;
   padding-right: 20px;
-
-  @media (max-width: 768px) {
-    padding-bottom: 100px;
-  }
 `;
 
 const ContentWrapper = styled.div`
@@ -32,28 +28,31 @@ const Header = styled.h1`
   color: #620981;
   margin-bottom: 50px;
 
-  @media (max-width: 768px) {
-    font-size: 48px;
-    line-height: 60px;
-    margin-bottom: 30px;
+  @media (max-width: 1200px) {
+    font-size: 32px;
+    line-height: 42.78px;
+    margin-top: 60px;
+    margin-bottom: 10px;
   }
 `;
 
 const CardsContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 10px;
+  gap: 20px;
+  flex-wrap: nowrap;
   position: relative;
-  flex-wrap: wrap;
+  width: 100%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1199px) and (min-width: 726px) {
     gap: 10px;
   }
 `;
 
 const Card = styled.div`
-  width: 340px;
+  flex: 1;
+  max-width: 33.33%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -63,18 +62,19 @@ const Card = styled.div`
   border: none;
   box-sizing: border-box;
   padding: 20px;
+  margin-bottom: 20px;
 
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 20px;
+  @media (max-width: 1199px) and (min-width: 726px) {
+    max-width: 30%;
+    padding: 15px;
   }
 `;
 
 const CardNumber = styled.div`
   font-family: Poppins;
   font-weight: 500;
-  font-size: 100px;
-  line-height: 120px;
+  font-size: 138px;
+  line-height: 170px;
   text-align: center;
   color: ${({ isSelected }) => (isSelected ? "#620981" : "#FFFFFF")};
   text-shadow: ${({ isSelected }) =>
@@ -82,60 +82,62 @@ const CardNumber = styled.div`
       ? "none"
       : "1px 1px 0 #111111, -1px -1px 0 #111111, 1px -1px 0 #111111, -1px 1px 0 #111111"};
 
-  @media (max-width: 768px) {
-    font-size: 80px;
-    line-height: 100px;
+  @media (max-width: 1200px) {
+    font-size: 96px;
+    line-height: 144px;
   }
 `;
 
 const CardText = styled.div`
   font-family: Poppins;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 32px;
+  line-height: 48px;
   text-align: center;
   color: #111111;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
-  @media (max-width: 768px) {
-    font-size: 20px;
-    line-height: 28px;
+  @media (max-width: 1200px) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: -10px;
   }
 `;
 
 const CardBulletText = styled.div`
   font-family: Poppins;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 20px;
+  line-height: 30px;
   text-align: center;
   color: #111111;
   white-space: pre-wrap;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 21px;
   }
 `;
 
 const CardPrice = styled.div`
   font-family: Poppins;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 48px;
+  line-height: 72px;
   text-align: center;
   color: #111111;
-  margin-top: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
 
-  @media (max-width: 768px) {
-    font-size: 28px;
-    line-height: 40px;
+  @media (max-width: 1200px) {
+    font-size: 32px;
+    line-height: 48px;
   }
 `;
 
 const CardButton = styled.button`
-  width: 280px;
-  height: 50px;
+  width: 300px;
+  height: 64px;
   border-radius: 50px;
   border: 1px solid #620981;
   background-color: ${({ isSelected }) =>
@@ -143,31 +145,42 @@ const CardButton = styled.button`
   color: ${({ isSelected }) => (isSelected ? "#FFFFFF" : "#620981")};
   font-family: Poppins;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 20px;
   text-align: center;
   padding: 10px 40px;
   margin-top: 10px;
   cursor: pointer;
 
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 10px 20px;
+  @media (max-width: 1200px) {
+    width: 180px;
+    height: 50px;
+    padding: 10px 30px;
+    font-size: 18px;
   }
 `;
 
 const Divider = styled.div`
   width: 1px;
-  height: 320px;
+  height: 475px;
   background-color: #111111;
   position: absolute;
   top: 40px;
-  left: calc(50% - 170px);
+  left: calc(33.33% - 10px);
+
   &:last-child {
-    left: calc(50% + 170px);
+    left: calc(66.66% - 10px);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1199px) and (min-width: 726px) {
+    height: 370px;
+    left: calc(33.33% - 5px);
+    &:last-child {
+      left: calc(66.66% - 5px);
+    }
+  }
+
+  @media (max-width: 500px) {
     display: none;
   }
 `;
