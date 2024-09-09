@@ -5,23 +5,36 @@ const AboutContainer = styled.section`
   background: #ffffff;
   min-height: 70vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   padding: 10px 16px;
 
   @media (min-width: 1024px) {
     padding: 40px 80px;
-    flex-direction: row;
-    justify-content: space-between;
   }
 
   @media (min-width: 451px) and (max-width: 1240px) {
     min-height: 50vh;
     padding: 30px 16px;
+  }
+`;
+
+const ContentWrapper = styled.div`
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media (min-width: 1024px) and (max-width: 1240px) {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
+  }
+
+  @media (min-width: 1240px) {
+    flex-direction: row;
+    justify-content: space-between;
   }
 `;
 
@@ -107,7 +120,7 @@ const AboutText = styled.p`
 
   @media (min-width: 451px) and (max-width: 1240px) {
     display: block;
-    max-width: 100%;
+    max-width: 90%;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
@@ -158,26 +171,28 @@ export const About = () => {
 
   return (
     <AboutContainer>
-      <AboutTitleWrapper>
-        <AboutSubtitle>About</AboutSubtitle>
-        <AboutTitle>SHANTI</AboutTitle>
-      </AboutTitleWrapper>
-      <AboutText isExpanded={isExpanded}>
-        <span>
-          Shanti believes in fostering inner peace and personal growth. Our
-          mission is to provide urban sanctuaries where individuals can connect,
-          explore, and find resilience.
-        </span>
-        <span>
-          Named after the Sanskrit word for &#34;peace&#34;, Shanti encapsulates
-          our commitment to fostering inner tranquility and empowerment among
-          our students.
-        </span>
-      </AboutText>
-      <ReadMoreLink onClick={toggleExpanded} href="#read-more">
-        {isExpanded ? "Read less" : "Read more"}
-        <ArrowIcon src="/icons/arrow.svg" alt="Arrow icon" />
-      </ReadMoreLink>
+      <ContentWrapper>
+        <AboutTitleWrapper>
+          <AboutSubtitle>About</AboutSubtitle>
+          <AboutTitle>SHANTI</AboutTitle>
+        </AboutTitleWrapper>
+        <AboutText isExpanded={isExpanded}>
+          <span>
+            Shanti believes in fostering inner peace and personal growth. Our
+            mission is to provide urban sanctuaries where individuals can
+            connect, explore, and find resilience.
+          </span>
+          <span>
+            Named after the Sanskrit word for &#34;peace&#34;, Shanti
+            encapsulates our commitment to fostering inner tranquility and
+            empowerment among our students.
+          </span>
+        </AboutText>
+        <ReadMoreLink onClick={toggleExpanded} href="#read-more">
+          {isExpanded ? "Read less" : "Read more"}
+          <ArrowIcon src="/icons/arrow.svg" alt="Arrow icon" />
+        </ReadMoreLink>
+      </ContentWrapper>
     </AboutContainer>
   );
 };
