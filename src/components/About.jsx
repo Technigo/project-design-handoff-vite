@@ -3,21 +3,25 @@ import styled from "styled-components";
 
 const AboutContainer = styled.section`
   background: #ffffff;
-  height: 462px;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 16px;
-
-  @media (min-width: 744px) {
-    padding: 20px 24px;
-  }
+  padding: 10px 16px;
 
   @media (min-width: 1024px) {
-    padding: 20px 80px;
+    padding: 40px 80px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  @media (min-width: 451px) and (max-width: 1240px) {
+    min-height: 50vh;
+    padding: 30px 16px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 `;
 
@@ -27,9 +31,22 @@ const AboutTitleWrapper = styled.div`
   align-items: center;
   gap: 5px;
 
-  @media (min-width: 1024px) {
+  @media (max-width: 450px) {
+    margin-top: 50px;
+  }
+
+  @media (min-width: 451px) and (max-width: 1240px) {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+
+  @media (min-width: 1240px) {
+    flex-direction: column;
     align-items: flex-start;
-    gap: 0px;
+    gap: 0;
   }
 `;
 
@@ -41,11 +58,15 @@ const AboutSubtitle = styled.h1`
   text-align: center;
   margin: 0;
 
-  @media (min-width: 745px) {
-    font-size: 64px;
+  @media (max-width: 450px) {
+    font-size: 24px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 451px) and (max-width: 1240px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 1240px) {
     font-size: 64px;
   }
 `;
@@ -58,11 +79,15 @@ const AboutTitle = styled.h1`
   text-align: center;
   margin: 0;
 
-  @media (min-width: 745px) {
-    font-size: 124px;
+  @media (max-width: 450px) {
+    font-size: 48px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 451px) and (max-width: 1240px) {
+    font-size: 40px;
+  }
+
+  @media (min-width: 1240px) {
     font-size: 124px;
   }
 `;
@@ -80,7 +105,9 @@ const AboutText = styled.p`
   gap: 20px;
   max-width: 50%;
 
-  @media (max-width: 1024px) {
+  @media (min-width: 451px) and (max-width: 1240px) {
+    display: block;
+    max-width: 100%;
     font-size: 14px;
     line-height: 21px;
     text-align: center;
@@ -88,12 +115,15 @@ const AboutText = styled.p`
     display: block;
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 450px) {
+    text-align: center;
+    font-size: 14px;
+    max-width: 90%;
     display: -webkit-box;
     -webkit-line-clamp: ${(props) => (props.isExpanded ? "unset" : "4")};
     -webkit-box-orient: vertical;
     overflow: hidden;
-    max-height: ${(props) => (props.isExpanded ? "none" : "63px")};
+    max-height: ${(props) => (props.isExpanded ? "none" : "74px")};
   }
 `;
 
@@ -106,8 +136,9 @@ const ReadMoreLink = styled.a`
   margin-top: 25px;
   display: none;
 
-  @media (max-width: 430px) {
+  @media (max-width: 450px) {
     display: flex;
+    margin-bottom: 50px;
   }
 `;
 
