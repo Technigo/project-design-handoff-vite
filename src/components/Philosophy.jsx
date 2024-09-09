@@ -7,7 +7,6 @@ const PhilosophyContainer = styled.div`
   overflow: hidden;
 `;
 
-/* Header part */
 const PhilosophyHeader = styled.header`
   text-align: center;
   width: 100%;
@@ -60,7 +59,6 @@ const SubText = styled.p`
   }
 `;
 
-/* Philosophy content part */
 const PhilosophyContent = styled.div`
   display: flex;
   align-items: flex-start;
@@ -78,6 +76,13 @@ const PhilosophyContent = styled.div`
     width: 90%;
     margin: 0 auto;
     padding: 0 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 420px) {
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 `;
 
@@ -119,9 +124,14 @@ const PhilosophyImage = styled.div`
   }
 
   @media (max-width: 640px) {
-    opacity: 0.1; /* Fade effect */
+    top: -60px;
+    opacity: 0.1;
     width: 368px;
     height: 552px;
+  }
+
+  @media (max-width: 420px) {
+    top: -130px;
   }
 `;
 
@@ -145,6 +155,26 @@ const TextBlock = styled.div`
     margin-bottom: 45px;
     margin-right: 30px;
   }
+
+  @media (max-width: 640px) {
+    margin-bottom: 5px;
+  }
+
+  @media (max-width: 420px) {
+    margin-bottom: -5px;
+  }
+`;
+
+const PranayamaBlock = styled(TextBlock)`
+  margin-bottom: 0px;
+
+  @media (max-width: 420px) {
+    margin-bottom: -15px;
+  }
+`;
+
+const PrathyaharaBlock = styled(TextBlock)`
+  margin-top: -10px;
 `;
 
 const TextHeading = styled.h2`
@@ -170,24 +200,24 @@ const TextHeading = styled.h2`
   @media (max-width: 640px) {
     font-size: 16px;
     line-height: 24px;
-    white-space: nowrap;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
 
-    /* Ensure space after '|' separator */
+    span:first-child {
+      margin-right: 5px;
+    }
+
     span:first-child::after {
       content: " ";
     }
 
-    /* Prevent line breaks */
     span {
       display: inline;
     }
   }
 
-  /* Line breaks on screens larger than 640px */
   @media (min-width: 641px) {
     span {
       display: block;
@@ -262,7 +292,7 @@ export const Philosophy = () => {
               yoga classes.
             </TextParagraph>
           </TextBlock>
-          <TextBlock>
+          <PranayamaBlock>
             <TextHeading>
               <span>Pranayama |</span>
               <span>Mindful Breathing</span>
@@ -271,7 +301,7 @@ export const Philosophy = () => {
               Breathing techniques, that aim to calm the mind and enhance the
               flow of prana (life force).
             </TextParagraph>
-          </TextBlock>
+          </PranayamaBlock>
         </TextSection>
 
         <PhilosophyImage>
@@ -279,7 +309,7 @@ export const Philosophy = () => {
         </PhilosophyImage>
 
         <TextSection align="right">
-          <TextBlock>
+          <PrathyaharaBlock>
             <TextHeading>
               <span>Prathyahara |</span>
               <span>Turning Inward</span>
@@ -288,7 +318,7 @@ export const Philosophy = () => {
               Creating a mental filter, allowing us to focus on what truly
               matters while tuning out the noise.
             </TextParagraph>
-          </TextBlock>
+          </PrathyaharaBlock>
           <TextBlock>
             <TextHeading>
               <span>Dharana |</span>
