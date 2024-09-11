@@ -50,19 +50,23 @@ const SliderContainer = styled.div`
   width: 100%;
   overflow: hidden;
   padding-bottom: 80px;
+  box-sizing: border-box;
 
   .slick-slide {
     display: flex;
     justify-content: center;
-    padding: 0 5px;
+    padding: 0 10px; 
+    box-sizing: border-box;
   }
 
   .slick-track {
     display: flex;
+    align-items: center; 
   }
 
   .slick-list {
-    padding: 0;
+    overflow: hidden; 
+    padding: 0; 
   }
 
   /* Style for dots */
@@ -97,6 +101,21 @@ const SliderContainer = styled.div`
       display: none;
     }
   }
+
+  @media (max-width: 410px) {
+    .slick-slide {
+      padding: 0 5px; 
+    }
+
+    .slick-list {
+      padding: 0; 
+    }
+
+    .slick-slide > div {
+      width: 100%;
+      margin: 0 auto; 
+    }
+  }
 `;
 
 const SlideContent = styled.div`
@@ -105,14 +124,16 @@ const SlideContent = styled.div`
   width: 100%;
   box-sizing: border-box;
   gap: 20px;
+  /* Ensure full-width centering */
+  justify-content: center;
 
   @media (max-width: 1200px) {
     gap: 15px;
   }
 
   @media (max-width: 725px) {
-    flex-direction: row; 
-    align-items: flex-start; 
+    flex-direction: column; 
+    align-items: center;
     background-color: #ffffff;
     border-radius: 15px;
     overflow: hidden;
@@ -136,6 +157,7 @@ const Placeholder = styled.div`
   mask-repeat: no-repeat;
 
   @media (max-width: 725px) {
+    margin-top: 10px;
     width: 85.04px;
     height: 67.39px;
     display: block;
@@ -157,12 +179,14 @@ const Image = styled.img`
 const TextContainer = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   padding: 20px;
   flex: 1;
   position: relative;
+  text-align: left;
+  margin: auto;
 
   @media (max-width: 725px) {
+    align-items: center;
     max-width: calc(100% - 100px);
     padding: 10px;
   }
@@ -279,11 +303,20 @@ const SignUpButton = styled.button`
     background-color: #430159;
   }
 
-  @media (max-width: 745px) {
+  @media (max-width: 1200px) {
     width: 159px;
     height: 37px;
     font-size: 14px;
     line-height: 21px;
+    padding: 0;
+  }
+
+  @media (max-width: 725px) {
+    width: 226px;
+    height: 55px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: -20px;
   }
 `;
 
