@@ -8,6 +8,7 @@ import { YogaPackages } from "./components/YogaPackages";
 import { Quote } from "./components/Quote";
 import { FAQ } from "./components/FAQ";
 import { Newsletter } from "./components/Newsletter";
+import { Footer } from "./components/Footer";
 
 export const App = () => {
   return (
@@ -22,6 +23,7 @@ export const App = () => {
       <Quote />
       <FAQ />
       <Newsletter />
+      <Footer />
     </>
   );
 };
