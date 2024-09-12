@@ -146,7 +146,7 @@ const SocialIcons = styled.div`
   }
 `;
 
-const Footer = () => {
+export const Footer = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 725);
 
   useEffect(() => {
@@ -189,5 +189,3 @@ const Footer = () => {
     </FooterContainer>
   );
 };
-
-export default Footer;

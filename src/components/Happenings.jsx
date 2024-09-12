@@ -44,6 +44,10 @@ const ContentContainer = styled.div`
   @media (max-width: 1200px) {
     margin-top: -80px;
   }
+
+  @media (max-width: 350px) {
+    width: 120%;
+  }
 `;
 
 const SliderContainer = styled.div`
@@ -55,18 +59,18 @@ const SliderContainer = styled.div`
   .slick-slide {
     display: flex;
     justify-content: center;
-    padding: 0 10px; 
+    padding: 0 10px;
     box-sizing: border-box;
   }
 
   .slick-track {
     display: flex;
-    align-items: center; 
+    align-items: center;
   }
 
   .slick-list {
-    overflow: hidden; 
-    padding: 0; 
+    overflow: hidden;
+    padding: 0;
   }
 
   /* Style for dots */
@@ -104,16 +108,16 @@ const SliderContainer = styled.div`
 
   @media (max-width: 410px) {
     .slick-slide {
-      padding: 0 5px; 
+      padding: 0 5px;
     }
 
     .slick-list {
-      padding: 0; 
+      padding: 0;
     }
 
     .slick-slide > div {
       width: 100%;
-      margin: 0 auto; 
+      margin: 0 auto;
     }
   }
 `;
@@ -124,7 +128,6 @@ const SlideContent = styled.div`
   width: 100%;
   box-sizing: border-box;
   gap: 20px;
-  /* Ensure full-width centering */
   justify-content: center;
 
   @media (max-width: 1200px) {
@@ -132,13 +135,12 @@ const SlideContent = styled.div`
   }
 
   @media (max-width: 725px) {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     background-color: #ffffff;
     border-radius: 15px;
     overflow: hidden;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
   }
 `;
