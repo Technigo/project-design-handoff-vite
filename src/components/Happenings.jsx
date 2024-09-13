@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import styled from "styled-components";
 import placeholderImage from "../../public/elements/bubble.svg";
+import smallPlaceholderImage from "../../public/elements/placeholder.svg";
 import cartwheelImage from "../../public/images/cartwheel.png";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -73,36 +74,44 @@ const SliderContainer = styled.div`
     padding: 0;
   }
 
-  /* Style for dots */
-  .slick-dots {
-    bottom: -65px;
-  }
+  @media (min-width: 726px) {
+    .slick-dots {
+      bottom: -65px;
+    }
 
-  .slick-dots li {
-    width: 10px;
-    height: 10px;
-    margin: 0 10px;
-  }
+    .slick-dots li {
+      width: 10px;
+      height: 10px;
+      margin: 0 10px;
+    }
 
-  .slick-dots li button:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #620981;
-    opacity: 1;
-    border: 1px solid transparent;
-  }
+    .slick-dots li button:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background-color: #620981;
+      opacity: 1;
+      border: 1px solid transparent;
+    }
 
-  .slick-dots .slick-active button:before {
-    background-color: #ffffff;
-    border-color: #111111;
+    .slick-dots .slick-active button:before {
+      background-color: #ffffff;
+      border-color: #111111;
+    }
   }
 
   @media (max-width: 725px) {
     .slick-dots {
-      display: none;
+      bottom: -30px;
+      display: block;
+    }
+
+    .slick-dots li {
+      width: 8px;
+      height: 8px;
+      margin: 0 10px;
     }
   }
 
@@ -159,7 +168,8 @@ const Placeholder = styled.div`
   mask-repeat: no-repeat;
 
   @media (max-width: 725px) {
-    margin-top: 10px;
+    background-image: url(${smallPlaceholderImage});
+    mask-image: url(${smallPlaceholderImage});
     width: 85.04px;
     height: 67.39px;
     display: block;
@@ -208,6 +218,7 @@ const Heading = styled.h2`
   }
 
   @media (max-width: 725px) {
+    text-align: center;
     font-size: 18px;
     line-height: 20px;
   }
@@ -348,7 +359,7 @@ const sliderSettings = {
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: false,
+        dots: true,
       },
     },
   ],
