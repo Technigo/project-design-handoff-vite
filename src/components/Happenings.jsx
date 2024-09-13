@@ -173,6 +173,7 @@ const Placeholder = styled.div`
     width: 85.04px;
     height: 67.39px;
     display: block;
+    margin-top: 10px;
   }
 `;
 

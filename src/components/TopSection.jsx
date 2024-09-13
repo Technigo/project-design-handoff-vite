@@ -126,18 +126,27 @@ const ContentWrapper = styled.div`
 
 const LocationWrapper = styled.div`
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: center; 
   margin-bottom: 15px;
 
   @media (max-width: 1050px) {
     margin-bottom: 20px;
+  }
+
+  @media (max-width: 570px) {
+    margin-top: -40px;
+  }
+
+  @media (max-width: 725px) {
+    margin-bottom: 20px; 
   }
 `;
 
 const LocationIcon = styled.img`
   width: 28px;
   height: 39px;
-  margin-right: 15px;
+  margin-bottom: 10px; 
 
   @media (max-width: 750px) {
     width: 16px;
@@ -165,6 +174,7 @@ const AddressText = styled.p`
 
   @media (max-width: 725px) {
     font-size: 16px;
+    text-align: center;
   }
 `;
 
