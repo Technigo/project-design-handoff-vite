@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import styled from "styled-components";
 
 const YogisContainer = styled.div`
@@ -9,9 +10,10 @@ const YogisContainer = styled.div`
   padding: 50px 0;
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 
-  @media (max-width: 745px) {
-    padding: 30px 10px;
+  @media (max-width: 800px) {
+    padding: 20px 20px 10px 20px;
   }
 `;
 
@@ -26,12 +28,13 @@ const Heading = styled.h1`
   color: #620981;
   margin-bottom: 20px;
 
-  @media (max-width: 745px) {
+  @media (max-width: 800px) {
     font-size: 32px;
     line-height: 42.78px;
+    margin-bottom: 0px;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 450px) {
     font-size: 30px;
     line-height: 40.11px;
     padding: 0 10px;
@@ -44,20 +47,24 @@ const Text = styled.p`
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
+  margin-bottom: 60px;
   line-height: 27px;
   text-align: center;
   color: #111111;
 
-  @media (max-width: 745px) {
+  @media (max-width: 800px) {
     font-size: 16px;
     line-height: 24px;
-    padding: 0 10px;
+    margin-bottom: 20px;
   }
 
-  @media (max-width: 640px) {
+  @media (max-width: 700px) {
+    margin-bottom: -60px;
+  }
+
+  @media (max-width: 450px) {
     font-size: 14px;
     line-height: 21px;
-    padding: 0 10px;
   }
 `;
 
@@ -70,11 +77,14 @@ const CardsContainer = styled.div`
   position: relative;
   padding: 0 60px;
   box-sizing: border-box;
+  justify-content: center;
 
-  @media (max-width: 745px) {
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
+  @media (max-width: 700px) {
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 0 10px;
+    width: 80%;
   }
 `;
 
@@ -83,9 +93,10 @@ const Card = styled.div`
   flex: 1;
   max-width: 384px;
   text-align: left;
+  scroll-snap-align: center;
 
-  @media (max-width: 745px) {
-    width: 90%;
+  @media (max-width: 700px) {
+    min-width: 100%;
     margin-bottom: 20px;
   }
 `;
@@ -93,14 +104,25 @@ const Card = styled.div`
 const ImageWrapper = styled.div`
   position: relative;
   width: 100%;
+  max-width: 990px;
   padding-bottom: 63%;
   margin-bottom: 15px;
-  overflow: visible;
-
   background: url("/elements/halfmoon.svg") no-repeat center bottom;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center bottom;
+
+  @media (max-width: 700px) {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 70%;
+  }
+
+  @media (max-width: 500px) {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 80%;
+  }
 
   img {
     position: absolute;
@@ -108,8 +130,23 @@ const ImageWrapper = styled.div`
     left: 50%;
     transform: translateX(-50%);
     object-fit: contain;
-    width: 240px; /* 296px on template */
-    height: 225px; /* 281px on template */
+    width: 100%;
+    height: auto;
+
+    @media (max-width: 800px) {
+      max-width: 180px;
+      max-height: 170px;
+    }
+
+    @media (max-width: 700px) {
+      max-width: 370px;
+      max-height: 330px;
+    }
+
+    @media (max-width: 500px) {
+      max-width: 300px;
+      max-height: 240px;
+    }
   }
 `;
 
@@ -120,6 +157,16 @@ const CardHeading = styled.h3`
   line-height: 30px;
   color: #111111;
   margin-bottom: -20px;
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 `;
 
 const CardHeadingSmall = styled.h4`
@@ -129,6 +176,16 @@ const CardHeadingSmall = styled.h4`
   line-height: 24px;
   color: #111111;
   margin-bottom: 10px;
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
 `;
 
 const CardText = styled.p`
@@ -137,6 +194,11 @@ const CardText = styled.p`
   font-size: 16px;
   line-height: 24px;
   color: #505050;
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 `;
 
 const ReadMoreButton = styled.button`
@@ -155,11 +217,16 @@ const ReadMoreButton = styled.button`
     font-weight: 500;
     color: #620981;
   }
+
+  @media (max-width: 800px) {
+    font-size: 14px;
+    line-height: 21px;
+  }
 `;
 
 const Arrow = styled.div`
   position: absolute;
-  top: 18%;
+  top: 50%;
   width: 57px;
   height: 22px;
   background: url("/icons/arrow.svg") no-repeat center center;
@@ -167,14 +234,15 @@ const Arrow = styled.div`
   transform-origin: center;
   transition: transform 0.3s ease;
   cursor: pointer;
+  z-index: 20;
 
   &.left {
-    left: 0;
+    left: 10px;
     transform: translateY(-50%) rotate(180deg);
   }
 
   &.right {
-    right: 0;
+    right: 10px;
     transform: translateY(-50%);
   }
 
@@ -186,7 +254,7 @@ const Arrow = styled.div`
     transform: scale(1.2) translateY(-50%) rotate(180deg);
   }
 
-  @media (max-width: 745px) {
+  @media (max-width: 800px) {
     width: 45px;
     height: 18px;
   }
@@ -204,9 +272,20 @@ const Button = styled.button`
   justify-content: center;
   cursor: pointer;
   margin-top: 60px;
+  margin-bottom: 60px;
 
   &:hover {
     background-color: #430159;
+  }
+
+  @media (max-width: 800px) {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 450px) {
+    width: 226px;
+    height: 55px;
+    padding: 10px 30px;
   }
 `;
 
@@ -219,9 +298,26 @@ const ButtonText = styled.span`
   line-height: 36px;
   color: #ffffff;
   text-align: center;
+
+  @media (max-width: 450px) {
+    font-size: 20px;
+    line-height: 35px;
+  }
 `;
 
 export const Yogis = () => {
+  const sliderRef = useRef(null);
+
+  const handleScroll = (direction) => {
+    const container = sliderRef.current;
+    const scrollAmount = container.clientWidth;
+    if (direction === "left") {
+      container.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+    } else {
+      container.scrollBy({ left: scrollAmount, behavior: "smooth" });
+    }
+  };
+
   return (
     <YogisContainer>
       <Heading>Meet our yogis</Heading>
@@ -232,8 +328,8 @@ export const Yogis = () => {
         gentle encouragement along the way.
       </Text>
 
-      <CardsContainer>
-        <Arrow className="left" />
+      <Arrow className="left" onClick={() => handleScroll("left")} />
+      <CardsContainer ref={sliderRef}>
         <Card>
           <ImageWrapper>
             <img src="/images/teacher1.png" alt="Teacher 1" />
@@ -277,8 +373,8 @@ export const Yogis = () => {
           </CardText>
           <ReadMoreButton>Read More</ReadMoreButton>
         </Card>
-        <Arrow className="right" />
       </CardsContainer>
+      <Arrow className="right" onClick={() => handleScroll("right")} />
       <Button>
         <ButtonText>Check schedule</ButtonText>
       </Button>
