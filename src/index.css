@@ -1,13 +1,34 @@
-:root {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Import font from Google Fonts (Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* Downloaded Font (Argue) */
+@font-face {
+  font-family: "Argue";
+  src: local("Argue"), url("./fonts/Argue.otf") format("opentype");
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Downloaded Font (Gerbera) */
+@font-face {
+  font-family: "Gerbera";
+  src: local("Gerbera Regular"),
+    url("./fonts/Gerbera/Gerbera-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Gerbera";
+  src: local("Gerbera Bold"),
+    url("./fonts/Gerbera/Gerbera-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+body {
+  background-image: url("/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }

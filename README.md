@@ -1,41 +1,11 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
-
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+In Week 12, we were supposed to work with a UX design student and build their design using Styled Components or Tailwind. I missed out this week and had to catch up later and doing it by myself.
 
 ## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+I decided to use styled components for the project. I started creating all the components for each section of the the template and then I started working on them one by one. However looking back, a lot of the code is repeated across components. Reusing styled components could have helped reduce code. I plan to clean this up at a later time. Realizing now that if I had structured and organized from the beginning the code would be more manageable and styles wouldn't conflict with each other, allowing for more dynamic styling.
 
 ### The Problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+The design template I worked with was really advanced, with a cool layout. It was definitely a challenge to follow, to say the least! I struggled especially with the slider library and its arrows/dots. This was also my first time using placeholders, and while I did my best, they were tricky and far from perfect. Another challenge was getting the images to change transparency and rearrange on different viewports. Overall, it was a tough project, but I did my best to follow the design as closely as I could.
 
 ### View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://spiffy-biscuit-a5a89b.netlify.app/
