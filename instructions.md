@@ -29,5 +29,6 @@ After the design handoff, you will hopefully have a good idea of how to move for
 - Your app should have reusable components
 - The UX students' task was to create a **mobile wireframe**, but you should still try to make it look good on devices from 320px and up
 - Your app should look as close as possible to the given design
+- Follow the guidelines on how to write clean code
 
 Happy coding!
