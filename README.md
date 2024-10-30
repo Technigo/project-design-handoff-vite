@@ -1,41 +1,14 @@
 <h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
+  <img src="/public/preview01.png" alt="Project Preview01" style="display: inline-block; margin-right: 10px;">
+  <img src="/public/preview02.png" alt="Project Preview02" style="display: inline-block;">
 </h1>
 
-### Remove git
+### Project Brief
 
-rm -rf .git
+A collabration project with Technigo UX designer. A business website made for a gym group named "Curve Pilates". Utilizing **React**, we've ensured an interactive and seamless user experience. Through the implementation of **reusable components** like Buttons and Cards, as well as the styling with **styled-component**, managing updates and maintenance is simplified for long-term sustainability. With **responsive design** in place, our site seamlessly adjusts to various screen sizes, delivering a consistent and enjoyable user experience across devices.
 
-# Design Handoff Project
-
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
-
-### The Problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+UI/UX Designer : Chantal Williams
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dd0034f3-ac8e-4bda-97b1-f48ceac18ef2/deploy-status)](https://app.netlify.com/sites/curve-pilates/deploys)
