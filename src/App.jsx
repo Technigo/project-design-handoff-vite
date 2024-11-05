@@ -1,3 +1,8 @@
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <div>
+      <h1>Hello</h1>
+      <p>Find me in src/app.jsx!</p>
+    </div>
+  );
 };

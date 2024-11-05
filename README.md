@@ -1,13 +1,3 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
-### Remove git
-
-rm -rf .git
-
 # Design Handoff Project
 
 Replace this readme with your own information about your project.
