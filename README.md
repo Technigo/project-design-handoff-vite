@@ -6,32 +6,13 @@
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
+This week we recieved a design from a UX student to follow as precisely as possible.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We decided to use Styled Components for CSS to work on our UI. At first it required some practise but after some repetition, the workflow gets really fun. It's a bit time consuming to not have all the CSS rules built in, so it's been a learning-by-trying-out many different solutions and commands. 
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://monumental-banoffee-da2acb.netlify.app/
