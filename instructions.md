@@ -23,11 +23,9 @@ After the design handoff, you will hopefully have a good idea of how to move for
 
 ## Requirements
 - The app should be built with React
-- Use one of these design libraries:
-  - Styled components
-  - Tailwind CSS
+- Your app should use Styled components
 - Your app should have reusable components
-- The UX students' task was to create a **mobile wireframe**, but you should still try to make it look good on devices from 320px and up
+- The UX students' task was to create a mobile wireframe, but you should still try to make it look good on devices from 320px and up
 - Your app should look as close as possible to the given design
 - Follow the guidelines on how to write clean code
 
