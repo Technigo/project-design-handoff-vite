@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SubH1 = styled.h1`
+export const SubH1 = styled.p`
   font-size: 40px;
   font-style: normal;
   font-weight: 400;

@@ -1,10 +1,17 @@
-import { Heading1 } from "./components/Typography/Title";
+import { Footer } from "./components/Footer";
+import { Header } from "./components/Header";
+import { Steps } from "./components/Steps";
+import { Testimonials } from "./components/Testimonials";
 
 export const App = () => {
   return (
-    <div>
-      <Heading1>Hello world</Heading1>
-      <p>Find me in src/app.jsx!</p>
-    </div>
+    <>
+      <main>
+        <Header />
+        <Steps />
+        <Testimonials />
+      </main>
+      <Footer />
+    </>
   );
 };
