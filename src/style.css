@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+*/
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.bg-yellow {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 229 60 / var(--tw-bg-opacity));
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(8 3 29 / var(--tw-text-opacity));
+}
+
+.text-pink {
+  --tw-text-opacity: 1;
+  color: rgb(222 32 249 / var(--tw-text-opacity));
+}
+
+:root {
+  margin: 0;
+  background-color: #120740;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.hover\:bg-darkPurple:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(246 229 60 / var(--tw-bg-opacity));
+}
