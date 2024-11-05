@@ -9,7 +9,6 @@ export const Heading1 = styled.h1`
     { 1200: 7.75 },
   ])};
   line-height: 100%;
-  letter-spacing: 1px;
 `;
 
 export const Heading2 = styled.h2`
@@ -20,5 +19,14 @@ export const Heading2 = styled.h2`
     { 1200: 6 },
   ])};
   line-height: 105%;
-  letter-spacing: 1px;
+`;
+
+export const Heading3 = styled.h3`
+  ${breakpoints("font-size", "rem", [
+    { 0: 1.5 },
+    { 375: 2 },
+    { 768: 2.5 },
+    { 1200: 3 },
+  ])};
+  line-height: 110%;
 `;

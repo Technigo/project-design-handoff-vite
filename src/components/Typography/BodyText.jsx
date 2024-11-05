@@ -1,25 +1,33 @@
 import styled from "styled-components";
+import { breakpoints } from "../../utils/helpers";
 
 export const BodyLarge = styled.p`
-  font-size: 24px;
-  font-style: normal;
+  ${breakpoints("font-size", "rem", [
+    { 0: 1 },
+    { 375: 1.25 },
+    { 768: 1.5 },
+    { 1200: 1.75 },
+  ])};
   font-weight: 500;
   line-height: 115%;
-  letter-spacing: 0.24px;
+  letter-spacing: 0.015rem;
 `;
 
 export const BodyXSmall = (bold) => styled.p`
-  font-size: 20px;
-  font-style: normal;
+  ${breakpoints("font-size", "rem", [
+    { 0: 1 },
+    { 375: 1.25 },
+    { 768: 1.5 },
+    { 1200: 1.75 },
+  ])};
   font-weight: ${bold ? 700 : 400};
   line-height: 115%;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 `;
 
 export const FinePrint = styled.p`
-  font-size: 18px;
-  font-style: normal;
+  ${breakpoints("font-size", "rem", [{ 0: 1 }, { 375: 1.125 }, { 768: 1.25 }])};
   font-weight: 400;
   line-height: 120%;
-  letter-spacing: 0.18px;
+  letter-spacing: 0.01125rem;
 `;

@@ -1,9 +1,9 @@
-import { Title } from "./components/Typography/Title";
+import { Heading1 } from "./components/Typography/Title";
 
 export const App = () => {
   return (
     <div>
-      <Title>Hello world</Title>
+      <Heading1>Hello world</Heading1>
       <p>Find me in src/app.jsx!</p>
     </div>
   );

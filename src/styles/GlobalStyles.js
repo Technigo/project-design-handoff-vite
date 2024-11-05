@@ -59,6 +59,7 @@ export const GlobalStyle = createGlobalStyle`
     h5,
     h6 {
 			font-family: ${({ theme }) => theme.fonts.heading};
+      letter-spacing: 0.0625rem;
     }
     
     /* 9. Improve line wrapping */
