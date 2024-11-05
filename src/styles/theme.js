@@ -15,7 +15,7 @@ export const theme = {
   },
   fonts: {
     body: '"Crimson Pro", serif',
-    heading: '"Bebas Neue", sans-serif',
+    heading: '"Bebas Neue", "Arial Narrow", sans-serif',
   },
   spacing: {
     small: "0.5rem",

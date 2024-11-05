@@ -7,7 +7,7 @@ export const App = () => {
   return (
     <>
       <main>
-        <Header />
+        <Header colorTheme="red" />
         <Steps />
         <Testimonials />
       </main>

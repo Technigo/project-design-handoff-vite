@@ -1,19 +1,15 @@
 import styled from "styled-components";
+import { breakpoints } from "../../utils/helpers";
 
 export const SubH1 = styled.p`
-  font-size: 40px;
-  font-style: normal;
+  ${breakpoints("font-size", "rem", [
+    { 0: 2 },
+    { 375: 2.5 },
+    { 768: 2.75 },
+    { 1200: 3 },
+  ])};
   font-weight: 400;
   line-height: 110%; /* 44px */
-  letter-spacing: 1px;
-  text-transform: uppercase;
-`;
-
-export const H3Link = styled.a`
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 110%; /* 35.2px */
-  letter-spacing: 1px;
+  letter-spacing: 0.0625rem;
   text-transform: uppercase;
 `;
