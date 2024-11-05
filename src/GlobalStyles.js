@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+import {createGlobalStyle} from 'styled-components'
+
+export const GlobalStyles = createGlobalStyle`
 
 * {
   margin: 0;
@@ -17,11 +19,8 @@
   
   /* COLORS */
   --color-primary: rgba(239, 223, 197, 1);
-  ;
   --color-secondary: rgba(58, 69, 55, 1);
-  ;
   --color-neutral: rgba(249, 244, 237, 1);
-  ;
   --color-accent: rgba(153, 71, 29, 1);
   --color-font: rgba(51, 23, 9, 1);
 }
@@ -29,3 +28,4 @@
 body {
   margin: 0;
 }
+`
