@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import headerimg from "../assets/header-img.svg"
+// import headerimg from "../assets/header-img.svg"
+import HeaderImg from "../assets/HeaderImage.svg"
 
 
 // Styled-components for the Header
@@ -9,10 +10,10 @@ const HeaderContainer = styled.div`
   background-size: cover;
   display: flex;
   gap: 10px;
-  height: 402.37px;
+//   height: 402.37px;
   padding: 18px 24px;
   position: relative;
-  width: 412px;
+//   width: 412px;
 `;
 
 const HeaderImage = styled.img`
@@ -40,7 +41,7 @@ const HeaderText = styled.p`
 export const Header = () => {
   return (
     <HeaderContainer>
-      <HeaderImage src={headerimg} alt="Header background" />
+      <HeaderImage src={HeaderImg} alt="Header background" />
       <HeaderText>
         Tomten kommer inte <br />
         till alla barn
