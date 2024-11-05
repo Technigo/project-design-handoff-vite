@@ -1,11 +1,9 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
 
-const Container = styled.div`
-  width: 100%;
+const AnimationContainer = styled.div`
   background: #FDF8F5;
   border-radius: 5px;
-  overflow: hidden;
   border: 1px #9747FF dotted;
   text-align: center;
 `;
@@ -15,7 +13,6 @@ const SubText = styled.div`
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  margin-bottom: 20px;
 `;
 
 const MainText = styled.div`
@@ -23,7 +20,6 @@ const MainText = styled.div`
   font-size: 24px;
   font-family: 'Schoolbell', sans-serif;
   line-height: 30px;
-  margin: 10px;
 `;
 
 const AnimatedTextComponent = () => {
@@ -44,10 +40,10 @@ const AnimatedTextComponent = () => {
   }, []);
 
   return (
-    <Container>
+    <AnimationContainer>
       <SubText>Tack för att du är med och bidrar till att barn</SubText>
       <MainText>{messages[index]}</MainText>
-    </Container>
+    </AnimationContainer>
   );
 };
 

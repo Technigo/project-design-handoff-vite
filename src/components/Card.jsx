@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { infoArray } from './CardInfo';
 import StyledButton from './SwishButton';
 
-const Container = styled.div`
+const CardContainer = styled.div`
   background: gray;
   display: flex; 
   flex-direction: column; 
@@ -11,12 +11,13 @@ const Container = styled.div`
 `;
 
 const InfoContainer = styled.div`
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
   background: white; 
   border-radius: 10px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 16px; 
+  padding: 16px; /* Optional padding for spacing */
 `;
 
 const CircleContainer = styled.div`
@@ -57,7 +58,7 @@ const Image = styled.img`
 
 const CardComponent = () => {
   return (
-    <Container>
+    <CardContainer>
       {infoArray.map(info => (
         <InfoContainer key={info.id}>
           <CircleContainer>
@@ -68,7 +69,7 @@ const CardComponent = () => {
           <StyledButton>{info.buttonText}</StyledButton>
         </InfoContainer>
       ))}
-    </Container>
+    </CardContainer>
   );
 };
 
