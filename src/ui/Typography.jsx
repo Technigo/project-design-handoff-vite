@@ -9,6 +9,7 @@ export const StyledH1 = styled.h1`
   font-weight: 400;
   line-height: 150%; /* 3.375rem */
   letter-spacing: -0.02475rem;
+  z-index: 1;
 `;
 
 export const StyledH2 = styled.h2`
@@ -28,4 +29,5 @@ export const StyledBody = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  z-index: 1;
 `;
