@@ -4,26 +4,6 @@ import { Divider } from "../ui/Divider";
 import { SocialMediaIcons } from "../ui/SocialMediaIcons";
 import styled from "styled-components";
 
-
-// // Styled components for icon wrapper
-// const IconWrapper = styled.div`
-//   display: flex;
-//   gap: 1rem;
-//   justify-content: center;
-//   margin-bottom: 1.2rem;
-//   width: 5.9rem;
-//   height: 2.3rem;
-//   z-index: 1;
-//   `;
-
-// // Styled component for social media icon
-// const Icon = styled.img`
-//   width: 2.275rem;
-//   height: 2.275rem;
-//   flex-shrink: 0;
-//   }
-//   `;
-
 // Style for Content Wrapper
 const ContentWrapper = styled.div`
   display: flex;

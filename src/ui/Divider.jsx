@@ -7,5 +7,5 @@ const DividerImage = styled.img`
 `;
 
 export const Divider = () => {
-  return <DividerImage src="/assets/divider.svg" alt="Section Divider" />;
+  return <DividerImage src="/assets/divider.svg" alt="Section Divider" /> 
 };

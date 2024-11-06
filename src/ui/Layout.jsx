@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+// Background with paw
 export const Layout = styled.section`
   display: flex;
   flex-direction: column;

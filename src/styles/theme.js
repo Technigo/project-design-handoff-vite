@@ -9,5 +9,5 @@ export const theme = {
   fonts: {
     primary: "Poppins",
     secondary: "Italiana",
-  },
+  }
 };
