@@ -14,8 +14,7 @@ align-items: center;
 gap: 8px;
 flex-shrink: 0;
 border-radius: 16px;
-background: blue;
-// background: #EEE7EB;
+background: #EEE7EB;
 box-shadow: 0px 4px 4px 0px rgba(54, 12, 37, 0.50);
 `;
 

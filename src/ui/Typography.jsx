@@ -28,6 +28,7 @@ export const H3 = styled.h3`
   font-style: normal;
   font-weight: 300;
   line-height: 130%;
+  margin: 55px;
 `
 
 export const CardP = styled.p`
@@ -56,4 +57,13 @@ export const FooterP = styled.p`
   font-style: normal;
   font-weight: 300;
   line-height: 110%;
+`
+export const ButtonP = styled.p`
+color: #FFF;
+text-align: center;
+font-family: "Josefin Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
 `

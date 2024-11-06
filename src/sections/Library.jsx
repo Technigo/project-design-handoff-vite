@@ -2,7 +2,10 @@
 
 import styled from "styled-components";
 import { Card } from "../components/Card";
+import { H3 } from "../UI/Typography";
+import { H2 } from "../UI/Typography";
 import data from "../../cards.json";
+import { Divider } from "../components/Divider";
 
 const CardContainer = styled.div`
 
@@ -24,14 +27,20 @@ overflow-x: auto;
 
 export const Library = () => {
   return (
-    <CardContainer>
-      {data.cards.map((card, index) => (
-        <Card
-          key={index}
-          cardImage={card.image}
-          cardText={card.text}
-        />
-      ))}
-    </CardContainer>
+    <>
+
+      <Divider><H2>Library</H2></Divider>
+      <H3>In need of a temporary spell to help you through the day? Check out our library of commonly used spells. </H3>
+
+      <CardContainer>
+        {data.cards.map((card, index) => (
+          <Card
+            key={index}
+            cardImage={card.image}
+            cardText={card.text}
+          />
+        ))}
+      </CardContainer>
+    </>
   );
 };
