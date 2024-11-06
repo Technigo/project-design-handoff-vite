@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* nav bar styling */
+nav {
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 130%;
+    display: flex;
+    height: 55px;
+    padding: 10px;
+    gap: 10px;
+    border: solid 3px;
+
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+nav p {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+
+}
+
+.meny-icon {
+    width: 21px;
+    height: 18px;
+    flex-shrink: 0;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.search-icon {
+    width: 21.75px;
+    height: 21.75px;
+    flex-shrink: 0;
+    padding: 10px;
+    margin-top: 8.5px;
+
+}
+
+/* The hero image */
+.hero-image {
+    display: flex;
+    width: 393px;
+    height: 535px;
+    padding-bottom: 72px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+
+
+}
+
+
+.hero-container {
+    position: relative;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    /* Or any color that stands out on your image */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional for better readability */
+}
+
+.hero-text h1 {
+    font-size: 2rem;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+}
+
+.hero-text button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
