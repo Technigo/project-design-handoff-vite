@@ -4,11 +4,6 @@ import { Header } from "./components/Header/Header"
 // import { Footer } from "./components/Footer/Footer"
 import "./App.css"
 
-// export const App = () => {
-//   return <div>Find me in src/app.jsx! Test test</div>;
-// };
-
-
 export const App = () => {
 
   return (

@@ -19,7 +19,7 @@ export const Header = () => {
       <Typography typography={title} level={1} className="heading" />
 
       {/* Body Text */}
-      <Typography typography={bodyText} level={2} className="body-text" />
+      <Typography typography={bodyText} level={3} className="body-text" />
       {/* <Button /> */}
     </header>
   )
