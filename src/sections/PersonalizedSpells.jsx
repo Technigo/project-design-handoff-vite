@@ -1,5 +1,6 @@
+// PersonalizedSpells.jsx
 
-import data from "../../quotes.json"; // Rättade import-syntaxen
+import data from "../../quotes.json";
 import { Quotes } from "../components/Quotes";
 
 export const PersonalizedSpells = () => {

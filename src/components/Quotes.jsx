@@ -1,4 +1,7 @@
+// Quotes.jsx
+
 import styled from "styled-components"
+import { QuotesP } from "../UI/Typography";
 
 
 const QuotesCard = styled.div`
@@ -16,7 +19,7 @@ background: #EEE7EB;
 export const Quotes = ({ quote }) => {
   return (
     <QuotesCard>
-      <p>{quote}</p>
+      <QuotesP>{quote}</QuotesP>
     </QuotesCard>
 
   );

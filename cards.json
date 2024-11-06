@@ -1,36 +1,36 @@
 {
-    "cards": [
-        {
-            "image": "./public/images/CardImages/Breath.png",
-            "text": "Bye morning breath"
-        },
-        {
-            "image": "./public/images/CardImages/Manual.png",
-            "text": "Understand a manual"
-        },
-        {
-            "image": "./public/images/CardImages/Bag.png",
-            "text": "Finding keys in messy bag"
-        },
-        {
-            "image": "./public/images/CardImages/Pasta.png",
-            "text": "Cooking perfect pasta"
-        },
-        {
-            "image": "./public/images/CardImages/Bus.png",
-            "text": "Getting a seat on the bus"
-        },
-        {
-            "image": "./public/images/CardImages/Hair.png",
-            "text": "Having a good hair day"
-        },
-        {
-            "image": "./public/images/CardImages/Time.png",
-            "text": "5 min extra in your day"
-        },
-        {
-            "image": "./public/images/CardImages/Shoes.png",
-            "text": "High heel skills"
-        }
-    ]
+  "cards": [
+    {
+      "image": "/images/CardImages/Breath.png",
+      "text": "Bye morning breath"
+    },
+    {
+      "image": "/images/CardImages/Manual.png",
+      "text": "Understand a manual"
+    },
+    {
+      "image": "/images/CardImages/Bag.png",
+      "text": "Finding keys in messy bag"
+    },
+    {
+      "image": "/images/CardImages/Pasta.png",
+      "text": "Cooking perfect pasta"
+    },
+    {
+      "image": "/images/CardImages/Bus.png",
+      "text": "Getting a seat on the bus"
+    },
+    {
+      "image": "/images/CardImages/Hair.png",
+      "text": "Having a good hair day"
+    },
+    {
+      "image": "/images/CardImages/Time.png",
+      "text": "5 min extra in your day"
+    },
+    {
+      "image": "/images/CardImages/Shoe.png",
+      "text": "High heel skills"
+    }
+  ]
 }
