@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledH1 = styled.h1`
-  color: #331709;
+  color: ${({ theme }) => theme.colors.font};
   text-align: center;
   font-family: Italiana;
   font-size: 2.25rem;
@@ -12,7 +12,7 @@ export const StyledH1 = styled.h1`
 `;
 
 export const StyledH2 = styled.h2`
-  color: var(--Labels-Primary, #000);
+  color: var(--color-font);
   text-align: center;
   font-family: Poppins;
   font-size: 1.5rem;
@@ -21,7 +21,7 @@ export const StyledH2 = styled.h2`
 `;
 
 export const StyledBody = styled.p`
-  color: var(--Labels-Primary, #000);
+  color: var(--color-font);
   text-align: center;
   font-family: Poppins;
   font-size: 1rem;
