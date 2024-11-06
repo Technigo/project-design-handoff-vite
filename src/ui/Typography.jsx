@@ -7,22 +7,6 @@ font-size: 2rem;
 font-weight: 700;
 line-height: 130%;
 `
-
-// const Title = styled.h1`
-//   font-size: 2.5rem;
-//   font-weight: bold;
-//   margin-bottom: 24px;
-//   line-height: 1.2;
-
-//   @media (max-width: 768px) {
-//     font-size: 2rem;
-//   }
-
-//   @media (max-width: 480px) {
-//     font-size: 1.8rem;
-//   }
-// `;
-
 export const Headline2 = styled.h2`
 text-align: center;
 font-family: Inter;
@@ -43,32 +27,19 @@ font-size: 1rem;
 font-weight: 400;
 line-height: 140%;
 `
-
-// const Paragraph = styled.p`
-//   font-size: 1.2rem;
-//   margin-bottom: 16px;
-//   line-height: 1.6;
-
-//   @media (max-width: 768px) {
-//     font-size: 1rem;
-//   }
-
-//   @media (max-width: 480px) {
-//     font-size: 0.9rem;
-//   }
-// `;
-
-// const HighlightText = styled.p`
-//   font-size: 1.3rem;
-//   font-weight: bold;
-//   margin-top: 40px;
-
-//   @media (max-width: 768px) {
-//     font-size: 1.1rem;
-//   }
-
-//   @media (max-width: 480px) {
-//     font-size: 1rem;
-//     margin-top: 30px;
-//   }
-// `;
+export const TextHeader = styled.p`
+font-family: Inter;
+font-size: 1rem;
+font-weight: 700;
+line-height: 130%;
+`
+export const HeaderBig = styled.h1`
+grid-column: span 4;
+text-align: center;
+color: #FFF;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.18);
+font-family: Inter;
+font-size: 2.5rem;
+font-weight: 700;
+line-height: 130%;
+`
