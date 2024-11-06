@@ -1,37 +1,51 @@
-import styled from "styled-components"
-import { Grid } from "../ui/Grid"
-import { HeaderBig } from "../ui/Typography"
+import styled from "styled-components";
+import { Grid } from "../ui/Grid";
+import { HeaderBig, BodyTextWithBackground } from "../ui/Typography";
+import Button from "../ui/Button";
 
 const StyledHeroSection = styled.section`
-  grid-column: span 4;
   width: 100%;
   background-image: url("../../src/assets/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 
-  @media (min-width: 768px) {
-    grid-column: span 8;
-    display: flex;
-    justify-content: center;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
   }
+`;
 
-  @media (min-width: 1200px) {
-    grid-column: span 12;
-  }
-`
+const HeroContent = styled.div`
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 500px;
+`;
 
 export const HeaderHeroSection = () => {
   return (
-    <>
-      <StyledHeroSection>
-        <Grid>
-          <HeaderBig>
-            Sprid en god gärning för en vänligare värld
-          </HeaderBig>
-        </Grid>
-      </StyledHeroSection >
-    </>
-  )
-}
+    <StyledHeroSection>
+      <HeroContent>
+        <HeaderBig>Sprid en god gärning för en vänligare värld</HeaderBig>
+        <BodyTextWithBackground>Vi skapar mötesplatser för äkta samtal och goda handlingar</BodyTextWithBackground>
+        <Button>Läs mer om oss</Button>
+      </HeroContent>
+    </StyledHeroSection>
+  );
+};
