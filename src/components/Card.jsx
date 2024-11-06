@@ -3,11 +3,14 @@ import { infoArray } from './CardInfo';
 import StyledButton from './SwishButton';
 
 const CardContainer = styled.div`
-  background: gray;
   display: flex; 
   flex-direction: column; 
   align-items: center; 
   gap: 32px; 
+  @media (max-width: 768px) {
+    gap: 24px;
+    padding: 16px;
+  }
 `;
 
 const InfoContainer = styled.div`
@@ -17,17 +20,29 @@ const InfoContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 16px; 
-  padding: 16px; /* Optional padding for spacing */
+  padding: 16px;
+  background: #FDF8F5;
+
+
+  @media (max-width: 768px) {
+    width: 100%;
+    padding: 12px;
+  }
 `;
 
 const CircleContainer = styled.div`
   width: 234px;
   height: 234px;
   background: #55A4A1;
-  border-radius: 117px;
+  border-radius: 50%;
   display: flex; 
   justify-content: center; 
   align-items: center; 
+
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 180px;
+  }
 `;
 
 const CategoryText = styled.div`
@@ -35,25 +50,38 @@ const CategoryText = styled.div`
   text-align: center;
   color: #545F71;
   font-size: 24px;
-  font-family: 'Cabin', sans-serif;
+  font-family: "Cabin", sans-serif;
   font-weight: 400;
   line-height: 32px;
   word-wrap: break-word;
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 const DescriptionText = styled.div`
-  height: 118px;
+  height: auto;
   text-align: center;
   color: #545F71;
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   line-height: 28px;
   word-wrap: break-word;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 `;
 
 const Image = styled.img`
   width: 40%; 
   height: auto; 
+
+  @media (max-width: 768px) {
+    width: 50%;
+  }
 `;
 
 const CardComponent = () => {

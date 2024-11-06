@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import styled from 'styled-components';
+import menu from '../assets/menu.svg';
 
 const MenuContainer = styled.div`
   position: relative;
+  padding-right: 16px;
 `;
 
 const MenuButton = styled.button`
@@ -44,13 +46,14 @@ export const Menu = () => {
   return (
     <MenuContainer>
       <MenuButton onClick={toggleMenu}>
-        {/* Add an icon here if needed, like a hamburger icon or dots icon */}
-        <span>☰</span>
+        <span>
+        <img src={menu} alt="Menu" />
+        </span>
       </MenuButton>
       <MenuDropdown isOpen={isOpen}>
-        <MenuItem>Option 1</MenuItem>
-        <MenuItem>Option 2</MenuItem>
-        <MenuItem>Option 3</MenuItem>
+        <MenuItem>Om oss</MenuItem>
+        <MenuItem>Kontakt</MenuItem>
+        <MenuItem>Press</MenuItem>
       </MenuDropdown>
     </MenuContainer>
   );

@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer";
 import { Navigation } from "./components/Navigation";
 import { Header } from "./components/Header";
 import { TopInfo } from "./components/TopInfo";
@@ -13,5 +14,6 @@ export const App = () => {
     <TopInfo/>
     <CardComponent/>
     <AnimatedTextComponent />
+    <Footer />
   </>;
 };

@@ -7,7 +7,7 @@ const TopInfoContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 16px; 
-  padding: 16px; /* Optional padding for spacing */
+  padding: 16px; 
 `;  
 
 const BodyText = styled.p`

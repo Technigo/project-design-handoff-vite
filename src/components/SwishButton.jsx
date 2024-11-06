@@ -28,7 +28,7 @@ const ButtonText = styled.span`
   text-align: center;
   color: white;
   font-size: 20px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Open Sans';
   font-weight: 700;
   line-height: 22.4px;
   word-wrap: break-word;

@@ -13,6 +13,7 @@ const SubText = styled.div`
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
+   font-family: 'Open sans', sans-serif;
 `;
 
 const MainText = styled.div`

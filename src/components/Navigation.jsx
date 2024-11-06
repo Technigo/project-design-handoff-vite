@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import rmLogo from "../assets/grm-logo.svg";
-import { Menu } from "./Menu"; // Use curly braces for named import
+import { Menu } from "./Menu"; 
 
 const NavigationWrapper = styled.div`
   align-items: center;
@@ -8,9 +8,8 @@ const NavigationWrapper = styled.div`
   display: flex;
   height: 53px;
   justify-content: space-between;
-  padding: 0px 16px;
   position: relative;
-  width: 412px;
+  width: 100%;
 `;
 
 const Logo = styled.img`
@@ -18,6 +17,7 @@ const Logo = styled.img`
   object-fit: cover;
   position: relative;
   width: 171px;
+  padding-left: 16px;
 `;
 
 const MenuInstance = styled(Menu)`
