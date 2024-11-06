@@ -1,10 +1,14 @@
+import spellsData from "./spells.json";
 import "./App.css"
+import { Library } from "./components/Library/Library";
+
 
 
 export const App = () => {
-  return <div>Find me in src/app.jsx!
-    <p>test erika</p>
 
-    
-  </div>;
+  return (
+    <>
+      <Library spellsData={spellsData}/> 
+    </>
+  );
 };
