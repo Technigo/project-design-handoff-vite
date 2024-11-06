@@ -1,0 +1,20 @@
+{
+  "reviews": 
+    {
+      "id" : 1,
+      "icon": ,
+      "name": "H-Smith",
+      "subject": "Simplified genius",
+      "review": "This idea is very simple but still very impactful. It's a great reminder to spread positivity, even in small ways!",
+      
+      "image": "./img.png",
+      "description": "The chat bot app is a conversational AI-powered tool designed to enhance user experience by providing instant, personalized, and automated responses to user inquiries.",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript"
+      ],
+      "netlifylink": "https://pizzeriagivovanni.netlify.app/",
+      "githublink": "https://github.com/gabster94/project-pizza"
+    }
+}
