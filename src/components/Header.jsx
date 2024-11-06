@@ -30,7 +30,8 @@ font-size: 48px;
   line-height: 48px;
   position: relative;
   width: 321px;
-  text-align: center; /* Centers the text */
+  text-align: left; 
+  padding-left: 24px;
 `;
 
 export const Header = () => {

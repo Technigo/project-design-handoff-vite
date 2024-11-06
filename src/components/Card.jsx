@@ -23,7 +23,6 @@ const InfoContainer = styled.div`
   padding: 16px;
   background: #FDF8F5;
 
-
   @media (max-width: 768px) {
     width: 100%;
     padding: 12px;
