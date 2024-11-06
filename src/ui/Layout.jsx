@@ -3,10 +3,15 @@ import styled from "styled-components";
 export const Layout = styled.section`
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
   background-color: ${({ theme }) => theme.colors.primary};
   position: relative;
   width: 100%;
   max-width: 100vw;
+  z-index: 1;
 
 &::before {
   content: "";
