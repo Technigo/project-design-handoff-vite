@@ -1,12 +1,18 @@
 import { Welcome } from './sections/Welcome';
-import { Header } from './sections/Header'
+import { HeaderSection } from './sections/HeaderSection';
+import { GlobalStyles } from './styles/GlobalStyles';
+import { HeaderHeroSection } from './sections/HeaderHeroSection';
 
 const App = () => {
   return (
-    <div>
-      <Header />
-      <Welcome />
-    </div>
+    <>
+      <GlobalStyles />
+      <div>
+        <HeaderSection />
+        <HeaderHeroSection />
+        <Welcome />
+      </div>
+    </>
   );
 };
 
