@@ -2,7 +2,37 @@
 import { useState } from 'react';
 import { LibraryCard } from "./LibraryCard"
 import styled from 'styled-components';
-// import spellsData from "../src/spells.json";
+/* import spellsData from "../src/spells.json"; */
+
+const LibraryTitle = styled.section`
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #111010;
+    color: #fff;
+`;
+
+const LibraryInfoSection = styled.section`
+    display: flex;
+    width: 295px;
+    margin: 0 auto;
+`;
+
+const LibraryInfo = styled.p`
+    color: #000;
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    padding: 50px 10px;
+`;
 
 const LibraryGrid = styled.section`
     display: grid;
@@ -48,6 +78,14 @@ export const Library = ({ spellsData }) => {
 
     return (
         <div>
+            <LibraryTitle>
+                <h2>Library</h2>
+            </LibraryTitle>
+
+            <LibraryInfoSection>
+                <LibraryInfo>In need of a temporary spell to help you through the day? Check out our library of commonly used spells. </LibraryInfo>
+            </LibraryInfoSection>
+
             <LibraryGrid>
                 {spellsData.spells.map((spell, index) => (
                     <LibraryCard
