@@ -14,6 +14,44 @@ const LibraryGrid = styled.section`
     scroll-snap-type: x mandatory;
 `;
 
+const LibraryTitleSection = styled.section`
+    display: flex;
+    width: 100%;
+    height: 56px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    background: #111010;
+`;
+
+const LibraryTitle = styled.h2`
+    color: #fff;
+    text-align: center;
+    font-family: "Yeseva One";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 36px */
+`;
+
+const LibraryInfoSection = styled.section`
+    display: flex;
+    width: 295px;
+    margin: 0 auto;
+`;
+
+const LibraryInfo = styled.p`
+    color: #000;
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    padding: 50px 10px;
+`;
+
 const PopupOverlay = styled.div`
   position: fixed;
   top: 0;
@@ -48,6 +86,15 @@ export const Library = ({ spellsData }) => {
 
     return (
         <div>
+
+            <LibraryTitleSection>
+                <LibraryTitle>Library</LibraryTitle>
+            </LibraryTitleSection>
+
+            <LibraryInfoSection>
+                <LibraryInfo>In need of a temporary spell to help you through the day? Check out our library of commonly used spells. </LibraryInfo>
+            </LibraryInfoSection>
+
             <LibraryGrid>
                 {spellsData.spells.map((spell, index) => (
                     <LibraryCard
