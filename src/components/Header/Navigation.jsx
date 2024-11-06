@@ -4,6 +4,7 @@ import { Menu } from "./Menu"
 
 const Nav = styled.nav`
 
+background: #111010; 
 
 
 `
