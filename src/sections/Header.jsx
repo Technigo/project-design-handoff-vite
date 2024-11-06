@@ -139,7 +139,7 @@ const Button = styled.button`
   }
 `;
 
-const Header = () => {
+export const Header = () => {
   return (
     <div>
       <HeaderContainer>
@@ -152,7 +152,7 @@ const Header = () => {
           <Icon src={MenuIcon} alt="Menu" />
         </IconContainer>
       </HeaderContainer>
-      
+
       <BannerSection>
         <MainText>Sprid en god gärning för en vänligare värld</MainText>
         <SubText>Vi skapar mötesplatser för äkta samtal och goda handlingar</SubText>
@@ -160,6 +160,4 @@ const Header = () => {
       </BannerSection>
     </div>
   );
-};
-
-export default Header;
+}
