@@ -12,8 +12,14 @@ letter-spacing: 1px;
 text-transform: uppercase;
 `
 
-export const H2 = 
+export const H2 = styled.h2 `
+  //styling
+`
 
-export const H3 = 
+export const H3 = styled.h3 `
+//styling
+`
 
-export const BodyText = 
+export const BodyText = styled.text`
+  //styling
+`
