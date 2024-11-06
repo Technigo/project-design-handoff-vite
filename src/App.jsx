@@ -1,6 +1,5 @@
-import React from 'react';
-import Header from './sections/Header';
-import Welcome from './sections/Welcome';
+import { Welcome } from './sections/Welcome';
+import { Header } from './sections/Header'
 
 const App = () => {
   return (
