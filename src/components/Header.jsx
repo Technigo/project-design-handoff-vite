@@ -21,7 +21,7 @@ const StyledHeroImage = styled.img`
   object-fit: cover;
 `;
 
-// Container for H1 text overlay
+// Container for H1 text overlay styling
 const StyledTextContainer = styled.div`
     width: 321px;
     height: 144px;
