@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { infoArray } from './CardInfo';
-import StyledButton from './SwishButton';
+import ButtonComponent from './SwishButton';
 
 const CardContainer = styled.div`
   display: flex; 
@@ -93,7 +93,7 @@ const CardComponent = () => {
           </CircleContainer>
           <CategoryText>{info.title}</CategoryText>
           <DescriptionText>{info.text}</DescriptionText>
-          <StyledButton>{info.buttonText}</StyledButton>
+          <ButtonComponent>{info.buttonText}</ButtonComponent>
         </InfoContainer>
       ))}
     </CardContainer>

@@ -1,14 +1,13 @@
 import styled from "styled-components";
-import HeaderImg from "../assets/HeaderImage.svg"
+import HeaderImg from "../assets/HeaderImage.svg";
 
-
-// Styled-components for the Header
 const HeaderContainer = styled.div`
   align-items: flex-end;
   background-position: 50% 50%;
   background-size: cover;
   display: flex;
   position: relative;
+  height: 100vh; /* Ensure the container takes the full height */
 `;
 
 const HeaderImage = styled.img`
@@ -18,20 +17,19 @@ const HeaderImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1; 
+  z-index: -1;
 `;
 
-const HeaderText = styled.p`
+const HeaderText = styled.h1`
   color: #ffffff;
- font-family: "Cabin", sans-serif;
-font-size: 48px;
+  font-family: "Cabin", sans-serif;
+  font-size: 48px;
   font-weight: 500;
   letter-spacing: -0.96px;
   line-height: 48px;
-  position: relative;
-  width: 321px;
-  text-align: left; 
+  text-align: left;
   padding-left: 24px;
+  position: absolute;
 `;
 
 export const Header = () => {

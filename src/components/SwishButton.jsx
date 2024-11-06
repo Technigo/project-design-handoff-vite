@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledButton = styled.button`
   width: 100%;
@@ -15,12 +16,12 @@ const StyledButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    background: #D06932; /* Lätt mörkare ton för hover-effekt */
+    background: #D06932;
   }
 
   &:focus {
     outline: none;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5); /* Fokus-effekt */
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
   }
 `;
 
@@ -34,12 +35,16 @@ const ButtonText = styled.span`
   word-wrap: break-word;
 `;
 
-const ButtonComponent = () => {
+const ButtonComponent = ({ children }) => {
   return (
     <StyledButton>
-      <ButtonText>Button</ButtonText>
+      <ButtonText>{children}</ButtonText>
     </StyledButton>
   );
+};
+
+ButtonComponent.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default ButtonComponent;
