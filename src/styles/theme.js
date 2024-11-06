@@ -1,5 +1,6 @@
 export const theme = {
   colors: {
+    pureWhite: "#fff",
     red: {
       background: "#F93701",
       color: "#FFF6F4",
@@ -18,9 +19,10 @@ export const theme = {
     heading: '"Bebas Neue", "Arial Narrow", sans-serif',
   },
   spacing: {
-    small: "0.5rem",
-    medium: "1rem",
-    large: "1.25rem",
+    xsmall: "0.5rem",
+    small: "1rem",
+    medium: "1.25rem",
+    large: "1.5rem",
     xlarge: "2rem",
     xxlarge: "2.5rem",
     xxxlarge: "4rem",
