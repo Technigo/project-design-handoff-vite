@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import styled from 'styled-components';
 
 
@@ -16,9 +17,11 @@ const Card = styled.article`
   transition: transform 0.2s;
 
   &:hover {
-    transform: scale(1.05); /* Lätt "zoom"-effekt vid hover */
+    transform: scale(1.05);   
   }
 `;
+// Zoom on hoover
+
 
 const CardImage = styled.img`
   width: 100px;
@@ -34,10 +37,10 @@ const CardTitle = styled.p`
 
 
 export const LibraryCard = ({ image, title, onClick }) => {
-    return (
-        <Card onClick={onClick}>
-          <CardImage src={image} alt={title} />
-          <CardTitle>{title}</CardTitle>
-        </Card>
-    );
+  return (
+    <Card onClick={onClick}>
+      <CardImage src={image} alt={title} />
+      <CardTitle>{title}</CardTitle>
+    </Card>
+  );
 };

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { LibraryCard } from "./LibraryCard";
+/* eslint-disable react/prop-types */
+import { useState } from 'react';
+import { LibraryCard } from "./LibraryCard"
 import styled from 'styled-components';
 /* import spellsData from "../src/spells.json"; */
 
@@ -16,22 +17,21 @@ const LibraryTitle = styled.section`
     color: #fff;
 `;
 
-const LibrarySubSection = styled.section`
+const LibraryInfoSection = styled.section`
     display: flex;
     width: 295px;
-    height: 129px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+    margin: 0 auto;
 `;
 
-const LibrarySubTitle = styled.h3`
+const LibraryInfo = styled.p`
+    color: #000;
     text-align: center;
     font-family: "Josefin Sans";
     font-size: 24px;
     font-style: normal;
     font-weight: 300;
-    line-height: 130%; /* 31.2px */
+    line-height: 130%;
+    padding: 50px 10px;
 `;
 
 const LibraryGrid = styled.section`
@@ -54,7 +54,7 @@ const PopupOverlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
+`
 
 const PopupContent = styled.div`
   background-color: white;
@@ -65,16 +65,16 @@ const PopupContent = styled.div`
 `;
 
 
-export const Library = ( { spellsData }) => {
+export const Library = ({ spellsData }) => {
     const [selectedSpell, setSelectedSpell] = useState(null);
-    
+
     const handleCardClick = (spell) => {
         setSelectedSpell(spell);
-      };
+    };
 
-      const closePopup = () => {
+    const closePopup = () => {
         setSelectedSpell(null);
-      };
+    };
 
     return (
         <div>
@@ -82,29 +82,29 @@ export const Library = ( { spellsData }) => {
                 <h2>Library</h2>
             </LibraryTitle>
 
-            <LibrarySubSection>
-                <LibrarySubTitle>In need of a temporary spell to help you through the day? Check out our library of commonly used spells. </LibrarySubTitle>
-            </LibrarySubSection>
+            <LibraryInfoSection>
+                <LibraryInfo>In need of a temporary spell to help you through the day? Check out our library of commonly used spells. </LibraryInfo>
+            </LibraryInfoSection>
 
             <LibraryGrid>
-            {spellsData.spells.map((spell, index) => (
-                <LibraryCard
-                    key={index}
-                    image={spell.image}
-                    title={spell.name}
-                    onClick={() => handleCardClick(spell)}
-                />
-            ))}
+                {spellsData.spells.map((spell, index) => (
+                    <LibraryCard
+                        key={index}
+                        image={spell.image}
+                        title={spell.name}
+                        onClick={() => handleCardClick(spell)}
+                    />
+                ))}
             </LibraryGrid>
 
             {selectedSpell && (
-            <PopupOverlay onClick={closePopup}>
-                <PopupContent onClick={(e) => e.stopPropagation()}>
-                    <h2>{selectedSpell.name}</h2>
-                    <p>More information about the spell or a form can go here.</p>
-                    <button onClick={closePopup}>Close</button>
-                </PopupContent>
-            </PopupOverlay>
+                <PopupOverlay onClick={closePopup}>
+                    <PopupContent onClick={(e) => e.stopPropagation()}>
+                        <h2>{selectedSpell.name}</h2>
+                        <p>More information about the spell or a form can go here.</p>
+                        <button onClick={closePopup}>Close</button>
+                    </PopupContent>
+                </PopupOverlay>
             )}
         </div>
 
