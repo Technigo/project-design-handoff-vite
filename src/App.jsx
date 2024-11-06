@@ -7,4 +7,15 @@ import { Library } from "./components/Library/Library";
 
 
 
+
 export const App = () => {
+
+  return (
+    <>
+      <Header />
+      <Library spellsData={spellsData} />
+      {/* <PersonalizedSpells />
+      <Footer />  */}
+    </>
+  )
+}

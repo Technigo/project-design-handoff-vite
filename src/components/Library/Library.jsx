@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
-import { LibraryCard } from "./LibraryCard";
+/* eslint-disable react/prop-types */
+import { useState } from 'react';
+import { LibraryCard } from "./LibraryCard"
 import styled from 'styled-components';
-/* import spellsData from "../src/spells.json"; */
+// import spellsData from "../src/spells.json";
 
 const LibraryGrid = styled.section`
     display: grid;
@@ -23,7 +24,7 @@ const PopupOverlay = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-`;
+`
 
 const PopupContent = styled.div`
   background-color: white;
@@ -34,38 +35,38 @@ const PopupContent = styled.div`
 `;
 
 
-export const Library = ( { spellsData }) => {
+export const Library = ({ spellsData }) => {
     const [selectedSpell, setSelectedSpell] = useState(null);
-    
+
     const handleCardClick = (spell) => {
         setSelectedSpell(spell);
-      };
+    };
 
-      const closePopup = () => {
+    const closePopup = () => {
         setSelectedSpell(null);
-      };
+    };
 
     return (
         <div>
             <LibraryGrid>
-            {spellsData.spells.map((spell, index) => (
-                <LibraryCard
-                    key={index}
-                    image={spell.image}
-                    title={spell.name}
-                    onClick={() => handleCardClick(spell)}
-                />
-            ))}
+                {spellsData.spells.map((spell, index) => (
+                    <LibraryCard
+                        key={index}
+                        image={spell.image}
+                        title={spell.name}
+                        onClick={() => handleCardClick(spell)}
+                    />
+                ))}
             </LibraryGrid>
 
             {selectedSpell && (
-            <PopupOverlay onClick={closePopup}>
-                <PopupContent onClick={(e) => e.stopPropagation()}>
-                    <h2>{selectedSpell.name}</h2>
-                    <p>More information about the spell or a form can go here.</p>
-                    <button onClick={closePopup}>Close</button>
-                </PopupContent>
-            </PopupOverlay>
+                <PopupOverlay onClick={closePopup}>
+                    <PopupContent onClick={(e) => e.stopPropagation()}>
+                        <h2>{selectedSpell.name}</h2>
+                        <p>More information about the spell or a form can go here.</p>
+                        <button onClick={closePopup}>Close</button>
+                    </PopupContent>
+                </PopupOverlay>
             )}
         </div>
 
