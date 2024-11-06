@@ -1,3 +1,17 @@
+import { PersonalizedSpells } from "./sections/PersonalizedSpells";
+import { Button } from "./ui/Button";
+
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+
+
+
+    <main>
+
+      <Button> Hejhej </Button>
+      <PersonalizedSpells />
+
+    </main>
+  )
 };
