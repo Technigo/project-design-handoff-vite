@@ -1,0 +1,84 @@
+{
+    "spells": [
+      {
+        "name": "Bye morning breath",
+        "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "link": "https://js-pizzeria-place.netlify.app/"
+      },
+      {
+        "name": "Understand a manual",
+        "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "link": "https://js-pizzeria-place.netlify.app/"
+      },
+      {
+        "name": "Finding keys in messy bag",
+        "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "link": "https://js-pizzeria-place.netlify.app/"
+      },
+      {
+        "name": "Cooking perfect pasta",
+        "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "link": "https://js-pizzeria-place.netlify.app/"
+      },
+      {
+        "name": "Getting a seat on the bus",
+        "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "link": "https://js-pizzeria-place.netlify.app/"
+      },
+      {
+        "name": "Having a good hair day",
+        "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "link": "https://js-pizzeria-place.netlify.app/"
+      },
+      {
+        "name": "5 min extra in your day",
+        "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "link": "https://js-pizzeria-place.netlify.app/"
+      },
+      {
+        "name": "High heel skills",
+        "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+        "tags": [
+          "HTML5",
+          "CSS3",
+          "JavaScript"
+        ],
+        "link": "https://js-pizzeria-place.netlify.app/"
+      }
+    ]
+  }
