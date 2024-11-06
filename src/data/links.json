@@ -1,0 +1,28 @@
+{
+  "web-links": [
+    {
+      "_id": "1",
+      "name": "arrow",
+      "icon": "public/icons/arrow-icon.svg",
+      "link": "https://www.google.com/"
+    },
+    {
+      "_id": "2",
+      "name": "instagram",
+      "icon": "public/icons/instagram.svg",
+      "link": "https://www.google.com/"
+    },
+    {
+      "_id": "3",
+      "name": "tiktok",
+      "icon": "public/icons/tiktok.svg",
+      "link": "https://www.google.com/"
+    },
+    {
+      "_id": "4",
+      "name": "share",
+      "icon": "public/icons/instagram.svg",
+      "link": "https://www.google.com/"
+    }
+  ]
+}
