@@ -3,6 +3,37 @@ import { LibraryCard } from "./LibraryCard";
 import styled from 'styled-components';
 /* import spellsData from "../src/spells.json"; */
 
+const LibraryTitle = styled.section`
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    background: #111010;
+    color: #fff;
+`;
+
+const LibrarySubSection = styled.section`
+    display: flex;
+    width: 295px;
+    height: 129px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+`;
+
+const LibrarySubTitle = styled.h3`
+    text-align: center;
+    font-family: "Josefin Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%; /* 31.2px */
+`;
+
 const LibraryGrid = styled.section`
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -47,6 +78,14 @@ export const Library = ( { spellsData }) => {
 
     return (
         <div>
+            <LibraryTitle>
+                <h2>Library</h2>
+            </LibraryTitle>
+
+            <LibrarySubSection>
+                <LibrarySubTitle>In need of a temporary spell to help you through the day? Check out our library of commonly used spells. </LibrarySubTitle>
+            </LibrarySubSection>
+
             <LibraryGrid>
             {spellsData.spells.map((spell, index) => (
                 <LibraryCard
