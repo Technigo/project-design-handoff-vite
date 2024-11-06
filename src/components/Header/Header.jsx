@@ -1,4 +1,4 @@
-// import { Navigation } from "./Navigation"
+import { Navigation } from "./Navigation"
 // import { Menu } from "./Menu"
 // import { Button } from "../../ui/Button"
 import { Typography } from "../../ui/Typography"
@@ -12,6 +12,7 @@ const HeaderFlex = styled.section`
     justify-content: center; 
     align-items: center;  
     gap: 16px;   
+    overflow-x: hidden;
 
     @media (min-width: 768px) {
     flex-direction: row; 
@@ -38,7 +39,7 @@ export const Header = () => {
 
   return (
     <header>
-      {/* <Navigation /> */}
+      <Navigation />
       {/* <Menu /> */}
       <HeaderFlex>
         <HeaderImg src={witch} alt="Witch Image" className="witch" />
