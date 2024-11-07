@@ -101,7 +101,7 @@ export const PersonalizedSpells = ({ quotesData }) => {
 
             <PersInfoSection>
                 <Typography typography={bodyText} level={4} />
-                <Button text="Spell generator" />
+                <Button text="Get the power" />
             </PersInfoSection>
 
             <PersGrid>
