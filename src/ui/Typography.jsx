@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import styled from 'styled-components';
 
 
@@ -53,12 +52,22 @@ font-weight: 300;
 line-height: 1.95rem;
 `;
 
+const Typography6 = styled.p`
+color: #000;
+text-align: center;
+font-family: "Josefin Sans";
+font-size: 1.125rem;
+font-weight: 300;
+line-height: 1.2375rem;
+`;
+
 export const Typography = ({ typography, level = 2, className }) => {
-  // Use `Typography4` for level 4, otherwise dynamically select `h1`, `h2`, etc.
+  // Use `Typography4`, 5 and 6 for level 4,5 and 6 otherwise dynamically select `h1`, `h2`, etc.
   const Tag = level === 1 ? Level1
     : level === 4 ? Typography4
       : level === 5 ? Typography5
-        : `h${level}`; // Use `h2`, `h3` directly for levels 2 and 3
+        : level === 6 ? Typography6
+          : `h${level}`; // Use `h2`, `h3` directly for levels 2 and 3
   return <Tag className={`typography typography${level} ${className}`}>{typography}</Tag>
 };
 

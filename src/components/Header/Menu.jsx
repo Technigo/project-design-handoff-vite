@@ -54,15 +54,18 @@ const HamburgerIcon = styled.div`
 
 const MenuBox = styled.div`
   position: fixed;
-  top: 0;
+  top: 3.6875rem;
   right: 0;
-  width: 320px;
-  height: 100%;
   background-color: #360C25; /* Semi-transparent background */
+  width: 9.1875rem; 
+  height: 11rem;    
+  padding: 0rem 0.5rem; 
+  flex-direction: column;
+  align-items: flex-end;
   display: ${props => (props.isOpen ? 'block' : 'none')};
   z-index: 1000;
   transition: all 0.3s ease-in-out;
-  padding: 2rem;
+  padding: 0rem 0.5rem;
 
   ul {
     list-style: none;
@@ -73,7 +76,7 @@ const MenuBox = styled.div`
 
   li {
     margin: 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: 0.875rem;
   }
 
   a {
@@ -86,16 +89,6 @@ const MenuBox = styled.div`
     }
   }
 
-  /* Close Button (X) */
-  .close-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 2rem;
-    color: white;
-    cursor: pointer;
-  }
-
   /* Desktop styling */
   @media (min-width: 1200px) {
     width: 1440px; /* Set the width for desktop */
@@ -104,8 +97,8 @@ const MenuBox = styled.div`
 
 const CloseButton = styled.div`
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  bottom: 1rem;
+  left: 1rem;
   font-size: 2rem;
   color: white;
   cursor: pointer;
