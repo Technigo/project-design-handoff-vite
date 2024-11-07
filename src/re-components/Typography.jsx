@@ -7,7 +7,7 @@ export const H1 = styled.h1 `
   font-weight: ${({ theme }) => theme.fontWeights.bold};
   color: ${({ theme }) => theme.text.secondary};
 `;
-export const subH1 = styled.h1 `
+export const SubH1 = styled.h1 `
   font-family: ${({ theme }) => theme.fonts.heading};
   font-size: ${({ theme }) => theme.fontSizes.subH1};
   line-height: ${({ theme }) => theme.lineHeights.subH1};
