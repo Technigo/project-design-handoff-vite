@@ -8,14 +8,15 @@ export const themes = {
   },
 
   backgrounds: {
-    primary: themes.colors.tintedWhite,
-    secondary: themes.colors.lavaRed,
-    highlight: themes.colors.mellowYellow
+    primary: "#FFF6F4", //tinted
+    secondary: "#F93701", //lava 
+    highlight: "#FFE675", //yellow
   },
 
   text: {
-    primary: themes.colors.black,
-    secondary: themes.colors.tintedWhite
+    primary: "#1E1E1E", //black
+    secondary: "#FFFCFB", //white
+    accent: "#F93701" // lava
   },
 
   fonts: {
@@ -63,8 +64,6 @@ export const themes = {
 
   breakpoints: {
 
-  }
+  },
 
 };
-
-

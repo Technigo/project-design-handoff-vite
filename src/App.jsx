@@ -9,7 +9,7 @@ import { themes } from "./styles/themes";
 export const App = () => {
   return (
     <>
-    <ThemeProvider themes={themes}> 
+    <ThemeProvider theme={themes}> 
       < GlobalStyles />
       < Introcontent />
       < Instructions />
