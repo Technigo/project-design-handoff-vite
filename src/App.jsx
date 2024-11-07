@@ -38,7 +38,7 @@ export const App = () => {
         <Steps />
         <Testimonials />
       </main>
-      <Footer />
+      <Footer colorTheme="yellow" />
     </>
   );
 };
