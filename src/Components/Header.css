@@ -11,7 +11,7 @@ nav {
     height: 55px;
     padding: 10px;
     gap: 10px;
-    border: solid 3px;
+
 
 }
 
@@ -81,16 +81,29 @@ nav p {
     color: white;
     /* Or any color that stands out on your image */
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
-    /* Optional for better readability */
+
 }
 
 .hero-text h1 {
     font-size: 2rem;
+
 }
 
 .hero-text p {
     font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.18);
+    font-family: "Roboto Serif";
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 130%;
+    width: 393px;
+    /* 31.2px */
+
+    /* Optional for better readability */
 }
 
 .hero-text button {

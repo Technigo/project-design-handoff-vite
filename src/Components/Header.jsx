@@ -8,8 +8,7 @@ export const Header = () => {
                 <p> Kindness & Compassion</p>
                 <img className="search-icon" src="../Images/search-icon.svg" alt="Picture of Search-icon" />
                 <img className="meny-icon" src="../Images/hamburger-menu.svg" alt="Picture of Hamburgermenu-icon" />
-            </nav >
-
+            </nav>
 
             <div className="hero-container">
                 <img className="hero-image" src="../Images/Hero-image.png" alt="Hero" />
@@ -19,9 +18,6 @@ export const Header = () => {
                     <button>Läs mer om oss</button>
                 </div>
             </div>
-
-
-
-
-            );
+        </div>
+    );
 };

@@ -1,0 +1,12 @@
+footer {
+    background-color: #FFCAF8;
+    display: flex;
+    width: 393px;
+    padding: 24px 0px;
+}
+
+h5 {
+    text-decoration: underline;
+    display: flex;
+    text-align: center;
+}
