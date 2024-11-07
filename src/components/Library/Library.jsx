@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import { LibraryCard } from "./LibraryCard"
+import { Typography } from '../../ui/Typography';
 import styled from 'styled-components';
 /* import spellsData from "../src/spells.json"; */
 
@@ -84,6 +85,7 @@ export const Library = ({ spellsData }) => {
 
             <LibraryInfoSection>
                 <LibraryInfo>In need of a temporary spell to help you through the day? Check out our library of commonly used spells. </LibraryInfo>
+                {/* <Typography4>In need of a temporary spell to help you through the day? Check out our library of commonly used spells.</Typography4> */}
             </LibraryInfoSection>
 
             <LibraryGrid>
