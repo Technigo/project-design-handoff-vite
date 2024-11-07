@@ -11,11 +11,11 @@ align-items: center;
 gap: 0.625rem;
 flex-shrink: 0;
 border-radius: 1.125rem;
+border: none;
 background: #A05042;
 box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.50);
 
   &:hover {
-    background-color: darkblue;
+    background-color: #D0B5B0;
   }
 `;
-

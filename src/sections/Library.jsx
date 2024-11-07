@@ -19,6 +19,7 @@ gap: 22px 21px;
 flex-shrink: 0;
 flex-wrap: wrap;
 overflow-x: auto;
+padding: 0px 0px 77px 18px;
 
 
 `

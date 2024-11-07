@@ -17,7 +17,11 @@ export const DailySpells = () => {
       <WitchImage src={Witch} alt="Witch" />
       <H1>Daily Spells</H1>
       <H3>Your go-to guide for everyday magic</H3>
-      <Button><ButtonP>Spell generator</ButtonP></Button>
-    </div>
+
+      <Button>
+        <ButtonP>Spell generator</ButtonP>
+      </Button>
+
+    </div >
   )
 }
