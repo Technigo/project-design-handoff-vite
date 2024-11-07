@@ -7,6 +7,7 @@ const IntroContainer = styled.div`
   padding-left: ${({ theme }) => theme.spacing.xsmall}; 
   padding-right: ${({ theme }) => theme.spacing.xsmall}; 
   padding-bottom: ${({ theme }) => theme.spacing.small};
+  gap: ${({ theme }) => theme.spacing.xxsmall};
   display: flex;
   flex-direction: column;
 `;
