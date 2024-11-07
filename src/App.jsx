@@ -1,7 +1,8 @@
 import { Header } from "./components/Header/Header"
-// import { PersonalizedSpells } from "./components/PersonalizedSpells/PersonalizedSpells"
+import { PersonalizedSpells } from "./components/PersonalizedSpells/PersonalizedSpells"
 // import { Footer } from "./components/Footer/Footer"
 import spellsData from "./spells.json";
+import quotesData from "./quotes.json"
 import { GlobalStyle } from "./styles/GlobalStyle"
 import { Library } from "./components/Library/Library";
 
@@ -12,8 +13,8 @@ export const App = () => {
       <GlobalStyle />
       <Header />
       <Library spellsData={spellsData} />
-      {/* <PersonalizedSpells />
-      <Footer />  */}
+      <PersonalizedSpells quotesData={quotesData} />
+      {/* <Footer />  */}
     </>
   )
 }

@@ -9,7 +9,7 @@ const LibraryTitle = styled.section`
     display: flex;
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 0 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -21,18 +21,7 @@ const LibraryTitle = styled.section`
 const LibraryInfoSection = styled.section`
     display: flex;
     width: 295px;
-    margin: 0 auto;
-`;
-
-const LibraryInfo = styled.p`
-    color: #000;
-    text-align: center;
-    font-family: "Josefin Sans";
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 130%;
-    padding: 50px 10px;
+    margin: 3rem auto;
 `;
 
 const LibraryGrid = styled.section`
@@ -42,7 +31,10 @@ const LibraryGrid = styled.section`
     gap: 16px;
     overflow-x: auto;
     padding: 16px;
-    scroll-snap-type: x mandatory;
+
+    @media screen and (min-width: 768px) {
+        grid-template-rows: repeat(1, 1fr);
+    }
 `;
 
 const PopupOverlay = styled.div`
@@ -67,6 +59,9 @@ const PopupContent = styled.div`
 
 
 export const Library = ({ spellsData }) => {
+    const title = "Library"
+    const bodyText = "In need of a temporary spell to help you through the day? Check out our library of commonly used spells."
+
     const [selectedSpell, setSelectedSpell] = useState(null);
 
     const handleCardClick = (spell) => {
@@ -80,12 +75,11 @@ export const Library = ({ spellsData }) => {
     return (
         <div>
             <LibraryTitle>
-                <h2>Library</h2>
+                <Typography typography={title} level={2} />
             </LibraryTitle>
 
             <LibraryInfoSection>
-                <LibraryInfo>In need of a temporary spell to help you through the day? Check out our library of commonly used spells. </LibraryInfo>
-                {/* <Typography4>In need of a temporary spell to help you through the day? Check out our library of commonly used spells.</Typography4> */}
+                <Typography typography={bodyText} level={4} />
             </LibraryInfoSection>
 
             <LibraryGrid>
