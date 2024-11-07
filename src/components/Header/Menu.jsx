@@ -58,7 +58,7 @@ const MenuBox = styled.div`
   right: 0;
   width: 320px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  background-color: #360C25; /* Semi-transparent background */
   display: ${props => (props.isOpen ? 'block' : 'none')};
   z-index: 1000;
   transition: all 0.3s ease-in-out;
