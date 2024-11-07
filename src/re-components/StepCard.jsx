@@ -1,8 +1,8 @@
-import kindsteps from "../../data/steps.json";
+// import kindsteps from "../../data/steps.json";
 
 export const StepCard = () => {
-    return (
-
-    )
+  return (
+    <p>this is a vard with one step</p>
+  )
 }
 
