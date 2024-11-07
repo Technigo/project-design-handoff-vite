@@ -16,6 +16,7 @@ export const StyledH1 = styled.h1`
 
 export const StyledH2 = styled.h2`
   color: ${({ theme }) => theme.colors.font};
+  text-wrap: balance;
   text-align: center;
   font-family: Poppins;
   font-size: 1.5rem;
