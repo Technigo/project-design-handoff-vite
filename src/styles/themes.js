@@ -1,11 +1,11 @@
 export const themes = {
-  colors: {
-    white: "#FFFCFB",
-    black: "#1E1E1E",
-    lavaRed: "#F93701",
-    tintedWhite: "#FFF6F4",
-    mellowYellow: "#FFE675"
-  },
+  // colors: {
+  //   white: "#FFFCFB",
+  //   black: "#1E1E1E",
+  //   lavaRed: "#F93701",
+  //   tintedWhite: "#FFF6F4",
+  //   mellowYellow: "#FFE675"
+  // },
 
   backgrounds: {
     primary: "#FFF6F4", //tinted

@@ -23,4 +23,13 @@ h3 {
 font-weight: 400;
 }
 
+ img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
 `
