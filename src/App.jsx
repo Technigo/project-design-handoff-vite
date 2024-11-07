@@ -4,16 +4,21 @@ import { Intro } from "./components/Intro";
 import { theme } from "./styles/theme";
 import { About } from "./components/About";
 import { Button } from "./ui/Button";
+import { Header } from "./components/Header";
+
 
 export const App = () => {
   return (
-    <main>
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <main>
+        <Header />
         <Intro />
+
         <About />
         <Button />
-        <GlobalStyles />
-      </ThemeProvider>
-    </main>
+      </main>
+      <GlobalStyles />
+    </ThemeProvider>
   );
-};
+}
