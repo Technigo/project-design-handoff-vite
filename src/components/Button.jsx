@@ -10,8 +10,8 @@ const StyledButtonLink = styled.a`
     align-items: center;
     ${breakpoints("gap", "", [
       { 0: theme.spacing.large },
-      { 375: theme.spacing.xlarge },
-      { 1200: theme.spacing.xxlarge },
+      { 375: theme.spacing.xxlarge },
+      { 1200: theme.spacing.xxxlarge },
     ])};
     color: currentColor;
     text-decoration: underline;
