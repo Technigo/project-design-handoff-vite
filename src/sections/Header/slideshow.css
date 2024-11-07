@@ -1,0 +1,21 @@
+/* Slideshow.css */
+
+.slideshow {
+    overflow: hidden; /* Ensures only part of the images are visible */
+    width: 100%; /* Can adjust to any width */
+    max-width: 600px;
+    margin: auto; /* Centers the slideshow */
+  }
+  
+  .slideshow-inner {
+    display: flex; /* Aligns images in a row */
+    width: max-content; /* Fits content width without breaking rows */
+  }
+  
+  .slide {
+    width: 100%; /* Full width for each image */
+    max-width: 200px; /* Adjusts image size */
+    margin-right: 16px; /* Space between images */
+    flex-shrink: 0; /* Prevents images from shrinking */
+    border-radius: 8px; /* Optional rounded corners */
+  }
