@@ -25,7 +25,7 @@ const StyledHeroImage = styled.img`
 // Container for H1 text overlay styling
 const StyledTextContainer = styled.div`
     width: 321px;
-    height: 144px;
+    height: auto;
     position: absolute;
     padding-left: 24px;
 `;
@@ -39,6 +39,13 @@ const StyledHeaderText = styled.h1`
   font-weight: 500;
   line-height: 48px; /* 100% */
   letter-spacing: -0.96px;
+  padding-bottom: 18px;
+  margin: 0;
+`;
+
+// Styling to separate the H1 text in three lines
+const StyledSpan = styled.span`
+  display: block;  
 `;
 
 export const Header = () => {
@@ -46,7 +53,11 @@ export const Header = () => {
     <HeroContainer>
       <StyledHeroImage src={HeroImage} alt="Two children looking out the window" />
       <StyledTextContainer>
-        <StyledHeaderText>Tomten kommer inte till alla barn</StyledHeaderText>
+        <StyledHeaderText>
+          <StyledSpan>Tomten</StyledSpan> 
+          <StyledSpan>kommer inte</StyledSpan> 
+          <StyledSpan>till alla barn</StyledSpan>
+        </StyledHeaderText>
       </StyledTextContainer>
     </HeroContainer>
   );
