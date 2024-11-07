@@ -7,7 +7,6 @@ const NavContainer = styled.div`
   display: flex;
   width: 412px;
   height: 53px;
-  // padding: 0px 16px;
   justify-content: space-between;
   align-items: center;
   flex-shrink: 0;
@@ -19,6 +18,7 @@ const StyledHeaderLogo = styled.img`
   width: 171px;
   height: 23px;
   flex-shrink: 0;
+  padding-left: 16px;
 `;
 
 export const Navigation = () => {

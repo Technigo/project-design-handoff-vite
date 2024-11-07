@@ -12,6 +12,7 @@ const HeroContainer = styled.div`
   align-items: flex-end;
   gap: 10px;
   flex-shrink: 0;
+  margin: 0;
 `;
 
 // Hero image styling
