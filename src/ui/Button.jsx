@@ -10,10 +10,8 @@ const StyledButton = styled.button`
   height: 3.5rem;
   padding: 0.625rem;
   background: #A05042;
-  color: white;
   border: none;
   border-radius: 1.125rem;
-  font-size: 1rem;
   box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.50);
   cursor: pointer;
   transition: background 0.3s;
@@ -32,7 +30,7 @@ const StyledButton = styled.button`
 export const Button = ({ text, onClick, className }) => {
   return (
     <StyledButton onClick={onClick} className={className}>
-      {text}
+      <Typography typography={text} level={5} className="button-typography" />
     </StyledButton>
   );
 };

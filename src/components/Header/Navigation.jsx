@@ -1,6 +1,6 @@
+import { useState } from 'react';
+import { Menu } from "./Menu"
 import styled from "styled-components";
-// import { Menu } from "./Menu"
-
 
 const Nav = styled.nav`
 
@@ -17,11 +17,22 @@ flex-shrink: 0;
 `;
 
 export const Navigation = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   return (
     <Nav>
-      {/* <Menu /> */}
-    </Nav>
+      <div className="hamburger" onClick={toggleMenu}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
 
-  )
-}
+      {/* Menu component will show when isMenuOpen is true */}
+      <Menu isOpen={isMenuOpen} closeMenu={toggleMenu} />
+    </Nav>
+  );
+};
