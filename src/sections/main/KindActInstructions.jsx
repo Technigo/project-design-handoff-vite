@@ -1,7 +1,12 @@
-import { Steps } from "./KindnessActSteps";
+import { SectionTitle } from "../../re-components/SectionTitle";
+import { KindnessSteps } from "./KindnessActSteps";
 
 export const Instructions = () => {
     return (
-        <Steps/>
+        <>
+      <SectionTitle title="IT’s easy, peasy"/>
+      <KindnessSteps/>
+        </>
+        
     )
 }
