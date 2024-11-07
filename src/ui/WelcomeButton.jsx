@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const StyledWelcomeButton = styled.button`
+grid-column: span 4;
   background: none;
   border: none;
   color: black;
