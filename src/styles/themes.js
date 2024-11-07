@@ -51,7 +51,7 @@ export const themes = {
     small: "24px", //fine-print
     medium: "32px", //gutter
     large: "48px",
-    xlarge: "56",
+    xlarge: "56px",
     xxlarge: "64px",
     xxxlarge: "80px"
   },

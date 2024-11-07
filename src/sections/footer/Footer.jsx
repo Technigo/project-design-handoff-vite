@@ -1,5 +1,7 @@
+import { FinePrint } from "../../re-components/Typography"
+
 export const Footer = () => {
   return (
-    <h3>I am the Footer</h3>
+    <p>I am the Footer</p>
   )
 }
