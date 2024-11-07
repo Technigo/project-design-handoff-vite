@@ -1,42 +1,40 @@
 import styled from 'styled-components';
-import { Grid } from '../ui/Grid';
 import { HeaderCard } from '../components/HeaderCard';
 import { Logo } from '../ui/Logo';
-import { BodyText } from '../ui/Typography';
+import { HeaderText } from '../ui/Typography';
 import { Icon } from '../ui/Icon';
 
 const StyledHeaderSection = styled.section`
- grid-column: span 4;
- padding-left: 1rem;
- padding-right: 1rem;
- width: 100%;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+`;
 
-  @media (min-width: 768px) {
-    grid-column: span 8;
-    display: flex;
-    justify-content: center;
-  }
+const LeftSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+`;
 
-  @media (min-width: 1200px) {
-    grid-column: span 12;
-  }
-`
+const RightSection = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 1.5rem; 
+`;
 
 export const HeaderSection = () => {
   return (
-    <>
-      <StyledHeaderSection>
-        <Grid>
-          <HeaderCard>
-            <Logo src="../../src/assets/HeaderSun.png" alt="alt"></Logo>
-            <BodyText>Kindness & Compassion</BodyText>
-            <Icon src="../../src/assets/Search.svg" alt="Search"></Icon>
-            <Icon scr="../../src/assets/Menu.svg" alt="Menu"></Icon>
-          </HeaderCard>
-        </Grid>
-      </StyledHeaderSection >
-    </>
+    <StyledHeaderSection>
+      <LeftSection>
+        <Logo src="../../src/assets/HeaderSun.png" alt="Kindness & Compassion logo" />
+        <HeaderText>Kindness & Compassion</HeaderText>
+      </LeftSection>
+      <RightSection>
+        <Icon src="../../src/assets/Search.svg" alt="Search" />
+        <Icon src="../../src/assets/Menu.svg" alt="Menu" />
+      </RightSection>
+    </StyledHeaderSection>
   );
-}
-
-
+};
