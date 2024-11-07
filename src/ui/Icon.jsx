@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const IconImage = styled.img`
-  height: 21.75px;
+  height: ${({ size }) => size || "21.75px"};
+  width: auto;
 `;
 
 const IconContainer = styled.div`
@@ -10,10 +11,10 @@ const IconContainer = styled.div`
   justify-content: center;
 `;
 
-export const Icon = ({ src, alt }) => {
+export const Icon = ({ src, alt, size }) => {
     return (
         <IconContainer>
-            <IconImage src={src} alt={alt} />
+            <IconImage src={src} alt={alt} size={size} />
         </IconContainer>
-    )
-}
+    );
+};

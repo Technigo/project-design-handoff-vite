@@ -65,3 +65,51 @@ export const HeaderText = styled.p`
   line-height: 130%;
   white-space: nowrap;
 `;
+
+export const FooterTitle = styled.h2`
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+`;
+
+export const FooterText = styled.p`
+  margin: 1rem 0;
+  line-height: 1.5;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    margin: 0.8rem 0;
+  }
+`;
+
+export const FooterSectionTitle = styled.h3`
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 0.5rem 0;
+  font-size: 1rem;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+`;
+
+export const FooterContactInfo = styled.p`
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  margin-top: 1rem;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+  }
+`;
