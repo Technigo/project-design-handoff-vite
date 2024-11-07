@@ -1,6 +1,8 @@
+import { BodyText } from "./Typography"
+
 export const ReviewCard = () => {
 
     return (
-        <h4>hi, im one review card</h4>
+        <BodyText>hi, im one review card</BodyText>
     )
 }
