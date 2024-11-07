@@ -45,12 +45,6 @@ export const themes = {
     finePrint: "120%"
   },
 
-  fontWeights: {
-    bold: 700,
-    medium: 500,
-    regular: 400
-  },
-
   spacing: {
     xxsmall:"8px",
     xsmall:"16px", 
@@ -63,6 +57,6 @@ export const themes = {
   },
 
   breakpoints: {
-    
+
   }
 };

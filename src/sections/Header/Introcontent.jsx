@@ -1,13 +1,14 @@
 import styled from "styled-components";
-import {H1, SubH1 } from "../../re-components/Typography.jsx"
+import {H1, SubH1, FinePrint } from "../../re-components/Typography.jsx"
 
 const IntroContainer = styled.div`
   background-color: ${({ theme }) => theme.backgrounds.secondary};  
-  padding: ${({ theme }) => theme.spacing.medium};
+  padding-top: ${({ theme }) => theme.spacing.xxlarge};
+  padding-left: ${({ theme }) => theme.spacing.xsmall}; 
+  padding-right: ${({ theme }) => theme.spacing.xsmall}; 
+  padding-bottom: ${({ theme }) => theme.spacing.small};
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
-  justify-content: flex-end;
 `;
 
 export const Introcontent = () => {
@@ -15,7 +16,7 @@ export const Introcontent = () => {
       <IntroContainer>
       <H1>START SPREADING SMILES</H1>
       <SubH1>WITH SMALL, SIMPLE ACTS </SubH1>
-      <p>Natural Magic*</p>
+      <FinePrint>Natural Magic*</FinePrint>
       </IntroContainer>
       
     )
