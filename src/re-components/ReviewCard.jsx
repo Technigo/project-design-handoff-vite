@@ -1,6 +1,6 @@
 export const ReviewCard = () => {
 
     return (
-        <p>hi, im one review card</p>
+        <h4>hi, im one review card</h4>
     )
 }
