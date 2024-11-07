@@ -11,6 +11,13 @@ font-size: 3rem;
 font-style: normal;
 font-weight: 400;
 margin: 0;
+
+
+   //Desktop styling
+   @media (min-width: 1200px) {
+    font-size: 6rem;
+  
+  }
 `
 
 const Typography4 = styled.p`
@@ -21,8 +28,7 @@ font-size: 1.5rem;
 font-style: normal;
 font-weight: 300;
 line-height: 130%; /* 1.95rem */
-width: 16.0625rem;
-height: 4.8125rem;
+margin-bottom: 2.19rem; //added instead of the height 
 `;
 
 

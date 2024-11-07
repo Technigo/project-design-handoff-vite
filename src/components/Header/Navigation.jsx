@@ -9,7 +9,13 @@ width: 100%;
 height: 3.6875rem;
 flex-shrink: 0;
 
-`
+ //Desktop styling
+ @media (min-width: 768px) {
+    background: transparent;
+    
+    }
+`;
+
 export const Navigation = () => {
 
   return (
