@@ -3,9 +3,9 @@ import { GlobalStyles } from "./styles/GlobalStyles";
 import { Intro } from "./components/Intro";
 import { theme } from "./styles/theme";
 import { About } from "./components/About";
-import { Button } from "./ui/Button";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { Contact } from "./components/Contact";
 
 
 export const App = () => {
@@ -15,9 +15,8 @@ export const App = () => {
       <main>
         <Header />
         <Intro />
-
         <About />
-        <Button />
+        <Contact />
       </main>
       <Footer />
       <GlobalStyles />

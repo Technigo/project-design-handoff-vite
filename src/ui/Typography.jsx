@@ -11,6 +11,8 @@ export const StyledH1 = styled.h1`
   font-weight: 400;
   line-height: 150%; /* 3.375rem */
   letter-spacing: -0.02475rem;
+  margin-top: 2rem;
+  
   z-index: 1;
 `;
 
@@ -20,7 +22,7 @@ export const StyledH2 = styled.h2`
   text-align: center;
   font-family: Poppins;
   font-size: 1.5rem;
-  font-style: normal;
+  font-style: italic;
   font-weight: 400;
 `;
 

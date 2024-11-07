@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import headerLogo from "/public/assets/logo-images/header-logo.svg";
 
@@ -108,7 +107,7 @@ export const Header = () => {
         <MenuItem>Din valp</MenuItem>
 
         <MenuItem>
-          Thorondor's familij <DropdownIconComponent />
+          Thorondor&apos;s familij <DropdownIconComponent />
           <Dropdown>
             <DropdownItem>Option 1</DropdownItem>
             <DropdownItem>Option 2</DropdownItem>
