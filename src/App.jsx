@@ -1,11 +1,13 @@
 import { GlobalStyles } from "./styles/GlobalStyles";
-import { SocialProof } from "./sections/main/Socialproof";
-
-import { Instructions } from "./sections/main/KindActInstructions";
-import { Footer } from "./sections/footer/Footer";
-import { Header } from "./sections/Header/Header";
 import { ThemeProvider } from "styled-components";
 import { themes } from "./styles/themes";
+
+import { Header } from "./sections/Header/Header";
+import { Instructions } from "./sections/main/KindActInstructions";
+import { SocialProof } from "./sections/main/Socialproof";
+import { Footer } from "./sections/footer/Footer";
+
+
 
 
 export const App = () => {
@@ -15,11 +17,9 @@ export const App = () => {
       < GlobalStyles />
       < Header />
       < Instructions />
-
       < SocialProof />  
       < Footer /> 
-    </ThemeProvider>
-
+      </ThemeProvider>
     </>
   );
 };
