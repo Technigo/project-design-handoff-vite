@@ -3,6 +3,7 @@ import { HeaderSection } from './sections/HeaderSection';
 import { GlobalStyles } from './styles/GlobalStyles';
 import { HeaderHeroSection } from './sections/HeaderHeroSection';
 import { FooterSection } from './sections/Footer';
+import { SupportgroupSection } from './sections/Supportgroup';
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <HeaderSection />
         <HeaderHeroSection />
         <Welcome />
+        <SupportgroupSection />
         <FooterSection />
       </div>
     </>
