@@ -1,4 +1,4 @@
-import { Steps } from "./Steps";
+import { Steps } from "./KindnessActSteps";
 
 export const Instructions = () => {
     return (

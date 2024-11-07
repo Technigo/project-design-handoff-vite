@@ -1,8 +1,10 @@
-import {img1} from "../../../public/images/img1.svg";
-import {img2} from "../../../public/images/img2.svg";
-import {img3} from "../../../public/images/img3.svg";
-import {img4} from "../../../public/images/img4.svg";
-import {img5} from "../../../public/images/img5.svg";
+import img1 from "../../../public/images/img1.png";
+import img2 from "../../../public/images/img2.png";
+import img3 from "../../../public/images/img3.png";
+import img4 from "../../../public/images/img4.png";
+import img5 from "../../../public/images/img5.png";
+
+
 
 export const Slideshow = () => {
     return (

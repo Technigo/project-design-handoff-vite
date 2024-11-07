@@ -1,9 +1,13 @@
 import { GlobalStyles } from "./styles/GlobalStyles";
-import { Introcontent } from "./sections/header/Introcontent";
-import { SocialProof } from "./sections/main/Socialproof";
-import { Instructions } from "./sections/main/Instructions";
 import { ThemeProvider } from "styled-components";
 import { themes } from "./styles/themes";
+
+import { Header } from "./sections/Header/Header";
+import { Instructions } from "./sections/main/KindActInstructions";
+import { SocialProof } from "./sections/main/Socialproof";
+import { Footer } from "./sections/footer/Footer";
+
+
 
 
 export const App = () => {
@@ -11,10 +15,11 @@ export const App = () => {
     <>
     <ThemeProvider theme={themes}> 
       < GlobalStyles />
-      < Introcontent />
+      < Header />
       < Instructions />
-      < SocialProof />   
-    </ThemeProvider>
+      < SocialProof />  
+      < Footer /> 
+      </ThemeProvider>
     </>
   );
 };

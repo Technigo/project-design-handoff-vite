@@ -62,8 +62,4 @@ export const themes = {
     xxxlarge: "80px"
   },
 
-  breakpoints: {
-
-  },
-
-};
+  breakpoints: {}
