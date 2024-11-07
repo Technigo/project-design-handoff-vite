@@ -39,9 +39,9 @@ const P = styled.p`
 export const CarouselCard = ({ text }) => {
 
   return (
-    	<Card>
-        <P>{text}</P>
-      	{/* <Typography text={text} level={4} /> */}
-    	</Card>
+    <Card>
+      <P>{text}</P>
+      {/* <Typography text={text} level={4} /> */}
+    </Card>
   );
 };

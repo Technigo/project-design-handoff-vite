@@ -9,7 +9,7 @@ const LibraryTitle = styled.section`
     display: flex;
     width: 100%;
     height: auto;
-    padding: 0 0 10px;
+    padding: 0 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -62,9 +62,6 @@ export const Library = ({ spellsData }) => {
     const title = "Library"
     const bodyText = "In need of a temporary spell to help you through the day? Check out our library of commonly used spells."
 
-    const title = "Library"
-    const bodyText = "In need of a temporary spell to help you through the day? Check out our library of commonly used spells."
-
     const [selectedSpell, setSelectedSpell] = useState(null);
 
     const handleCardClick = (spell) => {
@@ -77,8 +74,8 @@ export const Library = ({ spellsData }) => {
 
     return (
         <div>
-            <LibraryTitle>
-                <h2>Library</h2>
+            <LibraryTitle id="library">
+                <Typography typography={title} level={2} />
             </LibraryTitle>
 
             <LibraryInfoSection>

@@ -12,14 +12,14 @@ const CarouselBackground = styled.section`
     position: relative;
 `;
 /* const CarouselBackground = styled.section`
-	background-image: url(${flower});
+    background-image: url(${flower});
     background-size: contain;
-	background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-position: bottom;
-	height: 719px;
+    height: 719px;
 `; */
 
-const PersBackgroundImage = styled.img `
+const PersBackgroundImage = styled.img`
     max-width: 100%;
     height: auto;
     position: absolute;
