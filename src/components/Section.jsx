@@ -1,24 +1,31 @@
 import styled from "styled-components";
 import PropTypes from "prop-types";
+import { breakpoints } from "../utils/helpers";
 
 const StyledSection = styled.section`
-  background-color: ${({ theme, $colorTheme }) =>
-    theme.colors[$colorTheme].background};
-  color: ${({ theme, $colorTheme }) => theme.colors[$colorTheme].color};
-  padding: ${({ theme, $paddingTop }) =>
-    `${theme.spacing[$paddingTop]} ${theme.spacing.small} ${theme.spacing.medium}`};
+  ${({ theme, $colorTheme, $paddingTop }) => `
+    background-color: ${theme.colors[$colorTheme].background};
+    color: ${theme.colors[$colorTheme].color};
+
+    ${breakpoints("padding", "", [
+      {
+        0: `${theme.spacing[$paddingTop]} ${theme.spacing.small} ${theme.spacing.medium}`,
+      },
+      {
+        1024: `${theme.spacing[$paddingTop]} ${theme.spacing.xlarge} ${theme.spacing.medium}`,
+      },
+    ])};
+  `}
 `;
 
 export const Section = ({ children, colorTheme, paddingTop = "large" }) => {
   return (
-    <>
-      <StyledSection
-        $colorTheme={colorTheme}
-        $paddingTop={paddingTop}
-      >
-        {children}
-      </StyledSection>
-    </>
+    <StyledSection
+      $colorTheme={colorTheme}
+      $paddingTop={paddingTop}
+    >
+      {children}
+    </StyledSection>
   );
 };
 
@@ -32,6 +39,6 @@ Section.propTypes = {
     "large",
     "xlarge",
     "xxlarge",
-    "xxxlarge",
+    "xxxxlarge",
   ]),
 };

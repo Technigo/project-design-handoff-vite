@@ -30,10 +30,10 @@ const HeaderText = styled.div`
     color: ${theme.colors[$colorTheme].color};
     ${breakpoints("padding", "", [
       {
-        0: `${theme.spacing.xxxlarge} ${theme.spacing.small} ${theme.spacing.medium}`,
+        0: `${theme.spacing.xxxxlarge} ${theme.spacing.small} ${theme.spacing.medium}`,
       },
       {
-        1024: `${theme.spacing.xxxlarge} ${theme.spacing.large} ${theme.spacing.xlarge}`,
+        1024: `${theme.spacing.xxxxlarge} ${theme.spacing.xxlarge} ${theme.spacing.xxlarge}`,
       },
     ])};
   `}
