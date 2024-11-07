@@ -3,14 +3,16 @@ import { GlobalStyles } from "./styles/GlobalStyles";
 // import { Typography } from "./ui/Typography";
 import { Intro } from "./components/Intro";
 import { theme } from "./styles/theme";
+import { Header } from "./components/Header";
 
 export const App = () => {
   return (
-    <main>
-      <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
+      <GlobalStyles />
+      <main>
+        <Header />
         <Intro />
-        <GlobalStyles />
-      </ThemeProvider>
-    </main>
+      </main>
+    </ThemeProvider>
   );
-};
+}
