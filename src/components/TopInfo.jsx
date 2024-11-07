@@ -8,6 +8,9 @@ const TopInfoContainer = styled.div`
   align-items: center;
   gap: 16px;
   padding: 16px;
+  max-width: 350px;
+  margin: 0 auto;
+
 `;
 
 const BodyText = styled.p`

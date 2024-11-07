@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import HeaderImg from "../assets/HeaderImage.svg";
+import HeaderImg from "../assets/header-img.svg"
 
 const HeaderContainer = styled.div`
   align-items: flex-end;
@@ -7,7 +7,7 @@ const HeaderContainer = styled.div`
   background-size: cover;
   display: flex;
   position: relative;
-  height: 100vh; /* Ensure the container takes the full height */
+  height: 100vh;
 `;
 
 const HeaderImage = styled.img`
@@ -30,6 +30,18 @@ const HeaderText = styled.h1`
   text-align: left;
   padding-left: 24px;
   position: absolute;
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 36px;
+    padding-left: 16px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 12px;
+  }
 `;
 
 export const Header = () => {

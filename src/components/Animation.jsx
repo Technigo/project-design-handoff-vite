@@ -4,8 +4,9 @@ import styled from 'styled-components';
 const AnimationContainer = styled.div`
   background: #FDF8F5;
   border-radius: 5px;
-  border: 1px #9747FF dotted;
   text-align: center;
+  margin: 0 auto;
+  max-width: 350px;
 `;
 
 const SubText = styled.div`
@@ -13,7 +14,9 @@ const SubText = styled.div`
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-   font-family: 'Open sans', sans-serif;
+  font-family: 'Open sans', sans-serif;
+  margin-top: 32px;
+  max-width: 350px;
 `;
 
 const MainText = styled.div`

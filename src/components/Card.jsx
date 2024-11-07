@@ -22,6 +22,7 @@ const InfoContainer = styled.div`
   gap: 16px; 
   padding: 16px;
   background: #FDF8F5;
+  max-width: 412px;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -53,6 +54,7 @@ const CategoryText = styled.div`
   font-weight: 400;
   line-height: 32px;
   word-wrap: break-word;
+  max-width: 350px;
 
   @media (max-width: 768px) {
     font-size: 20px;
@@ -67,6 +69,7 @@ const DescriptionText = styled.div`
   font-family: 'Open Sans', sans-serif;
   line-height: 28px;
   word-wrap: break-word;
+  max-width: 350px;
 
   @media (max-width: 768px) {
     font-size: 14px;
