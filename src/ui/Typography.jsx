@@ -66,6 +66,14 @@ export const HeaderText = styled.p`
   white-space: nowrap;
 `;
 
+export const CarouselHeader = styled.h2`
+font-family: "Roboto Serif";
+font-size: 6rem;
+font-style: italic;
+font-weight: 600;
+line-height: 140%;
+`
+
 export const FooterTitle = styled.h2`
   font-family: 'Inter', sans-serif;
   font-weight: 700;
