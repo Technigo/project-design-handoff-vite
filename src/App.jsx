@@ -1,15 +1,17 @@
 import { GlobalStyles } from "./styles/GlobalStyles";
-import { Introcontent } from "./sections/header/Introcontent";
 import { SocialProof } from "./sections/main/Socialproof";
-import { Instructions } from "./sections/main/Instructions";
+import { Instructions } from "./sections/main/KindActInstructions";
+import { Footer } from "./sections/footer/Footer";
+import { Header } from "./sections/Header/Header";
 
 export const App = () => {
   return (
     <>
       < GlobalStyles />
-      < Introcontent />
+      < Header />
       < Instructions />
-      < SocialProof />   
+      < SocialProof />  
+      < Footer /> 
     </>
   );
 };
