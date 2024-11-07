@@ -5,6 +5,7 @@ import { theme } from "./styles/theme";
 import { About } from "./components/About";
 import { Button } from "./ui/Button";
 import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 
 export const App = () => {
@@ -18,6 +19,7 @@ export const App = () => {
         <About />
         <Button />
       </main>
+      <Footer />
       <GlobalStyles />
     </ThemeProvider>
   );
