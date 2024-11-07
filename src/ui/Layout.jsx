@@ -7,7 +7,7 @@ export const Layout = styled.section`
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
   background-color: ${({ theme }) => theme.colors.primary};
   position: relative;
   width: 100%;

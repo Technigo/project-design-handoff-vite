@@ -12,8 +12,7 @@ const AboutContent = styled.div`
   background-size: cover;
   background-position: center;
   width: 100%;
-  width: 24.375rem;
-  height: 13.75rem;
+  height: 15.75rem;
   flex-shrink: 0;
 
   display: flex;
@@ -29,7 +28,7 @@ const ContentWrapper = styled.div`
   padding: 1.5rem;
   text-align: center;
   border-radius: 0 0 8px 8px;
-  max-width: 24.375rem;
+  /* max-width: 24.375rem; */
   margin-top: -1rem; /* Optional: To slightly overlap the button over the image */
   z-index: 0;
   position: relative;
@@ -46,15 +45,15 @@ const ContentWrapper = styled.div`
 `;
 export const About = () => {
   return (
-    <Layout $top="60%" $left="27%" $rotation="8deg">
+    <Layout $top="80%" $left="80%" $rotation="28deg">
       <AboutContent />
       <ContentWrapper>
         <Button>Om oss</Button>
-        <Divider />
+        <Divider $variant="rotateY"/>
         <StyledH2>
           Vi erbjuder livslång kontakt och stöd till våra valköpare.
         </StyledH2>
-        <Divider reversed />
+        <Divider $variant="rotate" />
       </ContentWrapper>
     </Layout>
   );
