@@ -1,14 +1,13 @@
 import { useRef, useEffect } from "react";
 import "../header/slideshow.css"
 
-import img1 from "../../../public/images/img1.png";
-import img2 from "../../../public/images/img2.png";
-import img3 from "../../../public/images/img3.png";
-import img4 from "../../../public/images/img4.png";
-import img5 from "../../../public/images/img5.png";
-
-
-const images = [img1, img2, img3, img4, img5]
+const images = [
+  "/images/img1.png",
+  "/images/img2.png",
+  "/images/img3.png",
+  "/images/img4.png",
+  "/images/img5.png"
+];
 
 // export const Slideshow = () => {
 //    const [currentIndex, setCurrentIndex] = useState(0);
