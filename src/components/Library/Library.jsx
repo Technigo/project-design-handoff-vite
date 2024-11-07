@@ -79,7 +79,7 @@ export const Library = ({ spellsData }) => {
 
     return (
         <div>
-            <LibraryTitle>
+            <LibraryTitle id="library">
                 <h2>Library</h2>
             </LibraryTitle>
 

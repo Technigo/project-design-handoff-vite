@@ -22,8 +22,8 @@ export const Menu = () => {
       <MenuBox isOpen={isMenuOpen}>
         <CloseButton onClick={toggleMenu}>X</CloseButton>
         <ul>
-          <li><a href="/">Library</a></li>
-          <li><a href="/#services">Personalized Spells</a></li>
+          <li><a href="#library" onClick={toggleMenu}>Library</a></li>
+          <li><a href="#personal-spells" onClick={toggleMenu}>Personalized Spells</a></li>
           <li><a href="/#about">About Daily Spells</a></li>
           <li><a href="/#terms">Terms of use</a></li>
         </ul>
@@ -71,11 +71,10 @@ const MenuBox = styled.div`
     list-style: none;
     padding: 0;
     text-align: center;
-    margin-top: 3rem;
   }
 
   li {
-    margin: 1.5rem 0;
+    padding: 0.5rem 0rem;
     font-size: 0.875rem;
   }
 
@@ -89,9 +88,35 @@ const MenuBox = styled.div`
     }
   }
 
+  //Tablet
+  @media (min-width: 768px) {
+    width: 11rem; 
+    height: 14rem;
+  
+
+  li {
+      font-size: 1.2rem;  /* Increase font size */
+    }
+
+    a {
+      font-size: 1.2rem;  /* Increase font size for links */
+    }
+  
+  }
+
   /* Desktop styling */
   @media (min-width: 1200px) {
-    width: 1440px; /* Set the width for desktop */
+    width: 15rem; 
+    height: 17rem;
+  
+
+  li {
+      font-size: 1.5rem; 
+    }
+
+    a {
+      font-size: 1.5rem; 
+    }
   }
 `;
 
@@ -99,7 +124,19 @@ const CloseButton = styled.div`
   position: absolute;
   bottom: 1rem;
   left: 1rem;
-  font-size: 2rem;
   color: white;
   cursor: pointer;
+  font-size: 0.875rem; 
+
+  
+  //Tablet
+  @media (min-width: 768px) {
+  font-size: 1.2rem;  
+
+  }
+    
+    /* Desktop styling */
+  @media (min-width: 1200px) {
+    font-size: 1.5rem; 
+  }
 `;
