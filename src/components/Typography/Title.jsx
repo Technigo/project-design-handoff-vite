@@ -3,7 +3,7 @@ import { breakpoints } from "../../utils/helpers";
 
 export const Heading1 = styled.h1`
   ${breakpoints("font-size", "rem", [
-    { 0: 4.75 },
+    { 0: 3.5 },
     { 375: 5.75 },
     { 768: 6.75 },
     { 1200: 7.75 },
@@ -13,7 +13,7 @@ export const Heading1 = styled.h1`
 
 export const Heading2 = styled.h2`
   ${breakpoints("font-size", "rem", [
-    { 0: 3 },
+    { 0: 2.25 },
     { 375: 4 },
     { 768: 5 },
     { 1200: 6 },

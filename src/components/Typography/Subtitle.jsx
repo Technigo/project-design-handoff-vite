@@ -3,7 +3,7 @@ import { breakpoints } from "../../utils/helpers";
 
 export const SubH1 = styled.p`
   ${breakpoints("font-size", "rem", [
-    { 0: 2 },
+    { 0: 1.625 },
     { 375: 2.5 },
     { 768: 2.75 },
     { 1200: 3 },

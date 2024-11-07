@@ -16,19 +16,26 @@ const scrolling = keyframes`
 `;
 
 const HeaderSection = styled.section`
-  display: flex;
-  ${breakpoints("flex-direction", "", [{ 0: "column" }, { 1200: "row" }])};
-
-  > * {
-    flex: 1 1 100%;
-  }
+  display: grid;
+  grid-auto-columns: 1fr;
+  ${breakpoints("grid-auto-flow", "", [{ 0: "row" }, { 1024: "column" }])};
 `;
 
 const HeaderText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   ${({ theme, $colorTheme }) => `
     background-color: ${theme.colors[$colorTheme].background};
     color: ${theme.colors[$colorTheme].color};
-    padding: ${theme.spacing.xxxlarge} ${theme.spacing.small} ${theme.spacing.medium};
+    ${breakpoints("padding", "", [
+      {
+        0: `${theme.spacing.xxxlarge} ${theme.spacing.small} ${theme.spacing.medium}`,
+      },
+      {
+        1024: `${theme.spacing.xxxlarge} ${theme.spacing.large} ${theme.spacing.xlarge}`,
+      },
+    ])};
   `}
 `;
 
@@ -53,11 +60,11 @@ const ImageSliderInner = styled.div`
   flex: 0 0 100%;
   will-change: transform;
   animation: ${scrolling} linear infinite;
-  ${breakpoints("animation-duration", "", [{ 0: "10s" }, { 1200: "20s" }])};
+  ${breakpoints("animation-duration", "", [{ 0: "10s" }, { 1024: "20s" }])};
 
   img {
+    ${breakpoints("min-width", "", [{ 0: "100vw" }, { 1024: "50vw" }])};
     height: auto;
-    ${breakpoints("min-width", "", [{ 0: "100vw" }, { 1200: "50vw" }])};
   }
 `;
 
