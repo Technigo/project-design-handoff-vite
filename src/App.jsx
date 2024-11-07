@@ -13,7 +13,7 @@ import { Footer } from "./sections/footer/Footer";
 export const App = () => {
   return (
     <>
-    <ThemeProvider themes={themes}> 
+    <ThemeProvider theme={themes}> 
       < GlobalStyles />
       < Header />
       < Instructions />
