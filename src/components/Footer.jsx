@@ -87,11 +87,6 @@ const LogoContainer = styled.div`
     @media screen and (min-width: 375px) {
       padding: ${theme.spacing.xxxxlarge} ${theme.spacing.large};
     }
-
-    @media screen and (min-width: 1024px) {
-      position: absolute;
-      right: 0;
-    }
 `};
 `;
 
@@ -101,9 +96,16 @@ const StyledLogo = styled(Logo)`
       0: "65vw",
     },
     {
-      1024: "25vw",
+      1024: "32rem",
     },
   ])};
+
+  @media screen and (min-width: 1024px) {
+    position: absolute;
+    right: ${({ theme }) => theme.spacing.xlarge};
+    top: 50%;
+    transform: translateY(-50%);
+  }
 `;
 
 export const Footer = ({ colorTheme }) => {
