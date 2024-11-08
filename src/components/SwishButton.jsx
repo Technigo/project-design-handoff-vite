@@ -13,6 +13,7 @@ const StyledButton = styled.button`
   align-items: center;
   cursor: pointer;
   margin: 0 16px;
+  margin-top: auto;
 
   &:hover {
     background: #D06932;

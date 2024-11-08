@@ -29,7 +29,7 @@ export const infoArray = [
   {
     id: 4,
     title: 'Valfritt belopp',
-    text: 'Varje gåva spelar roll - stora som små donationer hjälper barnfamiljer att klara vintern och fira en varm jul. Swisha ett valfritt belopp och gör skillnad för dme som behöver det mest.',
+    text: 'Varje gåva spelar roll - stora som små donationer hjälper barnfamiljer att klara vintern och fira en varm jul. Swisha ett valfritt belopp och gör skillnad för dem som behöver det mest.',
     image: heart,
     buttonText: 'Swisha valt belopp'
   },

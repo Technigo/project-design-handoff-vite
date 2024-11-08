@@ -29,10 +29,6 @@ const CircleContainer = styled.div`
 const Image = styled.img`
   width: 40%; 
   height: auto; 
-
-  @media (max-width: 768px) {
-    width: 50%;
-  }
 `;
 
 const CardComponent = () => {
