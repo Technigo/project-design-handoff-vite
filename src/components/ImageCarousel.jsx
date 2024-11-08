@@ -57,7 +57,7 @@ const images = ["/assets/dog-images/carousel-images/carousel-img-one.webp",
 
 
 return (
-  <Layout $top="20%" $left="70%" $rotation="8deg">
+  <Layout $top="25%" $left="86%" $rotation="20deg">
      <MediaText>
         
         <SocialMediaIcons sectionType="contact"/>
