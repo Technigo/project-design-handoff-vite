@@ -51,7 +51,7 @@ export const FooterSection = () => {
   return (
     <FooterContainer>
       <LogoContainer>
-        <Icon src="../../src/assets/HeaderSun.png" alt="Kindness & Compassion logo" size="60px" />
+        <Icon src="/assets/HeaderSun.png" alt="Kindness & Compassion logo" size="60px" />
       </LogoContainer>
       <FooterTitle>Kindness & Compassion</FooterTitle>
       <FooterText>
