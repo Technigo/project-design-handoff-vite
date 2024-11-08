@@ -28,10 +28,17 @@ body {
   background: linear-gradient(180deg, #360C25 0%, #E1C9D8 50%, #360C25 100%);
   width: 100%;
   height: 2500px;
+
+  @media (min-width: 768px) {
+    height: 2180px;
+    background: linear-gradient(180deg, #360C25 0%, #E1C9D8 6.67%, #E1C9D8 75%, #360C25 94.17%);
+  }
 }
 
 html, body {
   margin: 0;
   padding: 0;
 }
+
+  
 `

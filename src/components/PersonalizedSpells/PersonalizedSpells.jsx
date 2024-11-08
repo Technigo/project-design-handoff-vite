@@ -7,42 +7,59 @@ import { Button } from "../../ui/Button";
 import flower from "../../assets/Flower.png"
 /* import quotesData from "../../quotes.json" */
 
+
 const CarouselBackground = styled.section`
-    height: 719px;
     position: relative;
+    margin: 50px 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `;
-/* const CarouselBackground = styled.section`
-    background-image: url(${flower});
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    height: 719px;
-`; */
 
 const PersBackgroundImage = styled.img`
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 70vh;
     position: absolute;
-    z-index: 0;
-    bottom: 0;
-    right: -95px;
+    z-index: -1;
+    bottom: -100px;
+    right: -140px;
+
+    @media (min-width: 768px) {
+        height: 80vh;
+        width: 110%;
+    }
+
+    @media (min-width: 1200px) {
+        height: 85vh;
+        width: 80%;
+        right: -390px;
+    }
 `;
 
 const PersTitle = styled.section`
     display: flex;
     width: 100%;
     height: auto;
-    padding: 0 10px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
     background: #111010;
     color: #fff;
+    z-index: 1;
 `;
 
 const PersInfoSection = styled.section`
     width: 295px;
-    margin: 3rem auto;
+    margin: 3rem auto 0;
+    z-index: 1;
+
+    @media screen and (min-width: 1200px) {
+        width: 40rem;
+        margin: 3rem auto;
+    }
 `;
 
 const PersGrid = styled.section`
@@ -51,11 +68,17 @@ const PersGrid = styled.section`
     grid-auto-flow: column;
     gap: 81px;
     overflow-x: auto;
-    padding: 16px;
+    padding: 5rem 0;
+    z-index: 1;
 
-    /* @media screen and (min-width: 768px) {
-        grid-template-rows: repeat(1, 1fr);
-    } */
+    @media (min-width: 768px) {
+        grid-auto-flow: row;
+    }
+
+    @media screen and (min-width: 1200px) {
+        grid-auto-flow: column;
+        padding: 12rem 0;
+    }
 `;
 
 /* const PopupOverlay = styled.div`
@@ -101,8 +124,9 @@ export const PersonalizedSpells = ({ quotesData }) => {
 
             <PersInfoSection>
                 <Typography typography={bodyText} level={4} />
-                <Button text="Get the power" />
             </PersInfoSection>
+
+            <Button text="Get the power" />
 
             <PersGrid>
                 {quotesData.quotes.map((quote, index) => (
@@ -113,7 +137,7 @@ export const PersonalizedSpells = ({ quotesData }) => {
                 ))}
             </PersGrid>
 
-            <PersBackgroundImage src={flower} alt="Flower in background" width={600} />
+            <PersBackgroundImage src={flower} alt="Flower in background" />
 
         </CarouselBackground>
 

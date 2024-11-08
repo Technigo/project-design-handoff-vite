@@ -37,7 +37,7 @@ export const LibraryCard = ({ image, title, onClick }) => {
   return (
     <Card onClick={onClick}>
       <CardImage src={image} alt={title} />
-      <Typography typography={title} level={4} />
+      <Typography typography={title} level={6} />
     </Card>
   );
 };
