@@ -3,6 +3,7 @@ import { Navigation } from "./Navigation"
 import { Button } from "../../ui/Button"
 import { Typography } from "../../ui/Typography"
 import witch from "../../assets/Witch.png"
+import sparkle from "../../assets/Sparkle.png"
 import styled from "styled-components"
 
 
@@ -81,13 +82,43 @@ const PopupContent = styled.div`
   position: relative; 
 `;
 
+const SparkleImg = styled.img`
+position: absolute;
+bottom: 1rem;
+right:1rem;
+ width: 2.74888rem;
+height: 1.859rem;
+transform: rotate(-7.732deg);
+flex-shrink: 0;
+`;
+
+const SparkleImgTopLeft = styled.img`
+  position: absolute;
+  top: 0.4rem;
+  left: 0.8rem;
+  width: 2.4375rem;
+  height: 1.6875rem;
+  flex-shrink: 0;
+`;
+
+const SparkleImgTopLeftSmall = styled.img`
+  position: absolute;
+  top: 3rem; /* Slightly below the top left sparkle */
+  left: 0.5rem;
+  width: 1.65794rem; /* Smaller size */
+  height: 1.12125rem;
+  transform: rotate(36.278deg);
+  flex-shrink: 0;
+`;
+
 const CloseButton = styled.div`
   position: absolute;
   top: 1rem;
   right: 1rem;
   color: #000;
   cursor: pointer;
-  font-size: 2rem; 
+  font-size: 1rem; 
+  font-weight: bold; 
 `;
 
 export const Header = () => {
@@ -125,6 +156,11 @@ export const Header = () => {
             <Typography typography={heading3} level={3} />
             <Typography typography={popup} level={7} />
             <CloseButton onClick={togglePopup}>X</CloseButton>
+            {/* Sparkle Images */}
+            <SparkleImgTopLeft src={sparkle} alt="Sparkle Icon Top Left" />
+            <SparkleImgTopLeftSmall src={sparkle} alt="Smaller Sparkle Icon Below Top Left" />
+            <SparkleImg src={sparkle} alt="Sparkle Icon Bottom Right" />
+
           </PopupContent>
         </PopupOverlay>
       )}
