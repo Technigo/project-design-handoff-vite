@@ -3,28 +3,16 @@ import { H2 } from "./Typography";
     
 // Define styled button component
     const StyledButton = styled.button`
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: ${({ theme }) => theme.backgrounds.highlight};
+  color: ${({ theme }) => theme.text.accent}; 
 
-    // Example of hover effect
-    &:hover {
-      background-color: #0056b3;
-    }
-
-    // Style the text and icon separately
-    span {
-      margin-right: 8px;
-    }
+    // Style the icon separately
+    
 
     img {
-      width: 20px;
-      height: 20px;
+      width: 2.37556rem;
+      height: 2.37488rem;
+      flex-shrink: 0;
     }
   `;
 

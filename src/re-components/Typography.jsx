@@ -19,6 +19,13 @@ export const H2 = styled.h2`
   line-height: ${({ theme }) => theme.lineHeights.h2};
 `;
 
+export const H3 = styled.h3 `
+  font-family: ${({ theme }) => theme.fonts.heading};
+  font-size: ${({ theme }) => theme.fontSizes.h3};
+  line-height: ${({ theme }) => theme.lineHeights.h3};
+  color: ${({ theme }) => theme.text.accent};
+`;
+
 export const BodyText = styled.p`
   font-family: ${({ theme }) => theme.fonts.body};
   font-size: ${({ theme }) => theme.fontSizes.bodyLarge};
@@ -42,4 +49,11 @@ export const FinePrint = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.finePrint};
   line-height: ${({ theme }) => theme.lineHeights.finePrint};
   color: ${({ theme }) => theme.text.secondary};
+`;
+
+export const FinePrintFooter = styled.p`
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes.finePrint};
+  line-height: ${({ theme }) => theme.lineHeights.finePrint};
+  color: ${({ theme }) => theme.text.accent};
 `;

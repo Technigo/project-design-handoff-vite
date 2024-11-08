@@ -23,6 +23,9 @@ padding: 0rem 1rem;
 flex-direction: column;
 align-items: flex-start;
 background-color: pink;
+
+padding-bottom: ${({ theme }) => theme.spacing.xxsmall};
+padding-top: ${({ theme }) => theme.spacing.xxsmall};
 `;
 
 const SocialLinksContainer = styled.div`
