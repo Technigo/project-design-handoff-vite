@@ -95,7 +95,7 @@ export const PersonalizedSpells = ({ quotesData }) => {
 
   return (
     <CarouselBackground>
-      <PersTitle>
+      <PersTitle id="personal-spells">
         <Typography typography={title} level={2} />
       </PersTitle>
 
