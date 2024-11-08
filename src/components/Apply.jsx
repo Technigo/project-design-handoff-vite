@@ -1,6 +1,7 @@
 import { StyledBody } from "../ui/Typography";
 import { Layout } from "../ui/Layout";
 import { Divider } from "../ui/Divider";
+import { Button } from "../ui/Button";
 
 import applySectionImage from "../../public/assets/dog-images/apply-section.webp";
 
@@ -54,6 +55,7 @@ export const Apply = () => {
           gemensamma resa.
         </StyledBody>
         <Divider $variant="rotate" />
+        <Button>Ansök om din valp</Button>
       </ContentWrapper>
     </Layout>
   );
