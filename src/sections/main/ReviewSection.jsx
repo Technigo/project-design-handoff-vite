@@ -1,12 +1,22 @@
+import styled from "styled-components";
 import { SectionTitle } from "../../re-components/SectionTitle";
 import { SocialProof } from "./Socialproof";
 
+const SectionContainer = styled.div `
+display: flex;
+flex-direction: column;
+gap: 40px; //Combined the spacing for xsmall and fine-print = 40px
+margin-bottom: ${({ theme }) => theme.spacing.medium}; 
+`;
+
 export const ReviewsSection = () => {
   return (
-        <>
-    <SectionTitle title="kind words"/>
-    <SocialProof/>
-        </>
+    <>
+      <SectionContainer> 
+      <SectionTitle title="kind words"/>
+      <SocialProof/>
+      </SectionContainer>
+    </>
         
   )
 }
