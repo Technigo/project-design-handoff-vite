@@ -77,5 +77,5 @@ export const Animation = () => {
         </TextContainer>
       </AnimationContainer>
     </AnimationBox>
-  )
-}
+  );
+};
