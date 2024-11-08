@@ -3,28 +3,15 @@ import styled from "styled-components";
     
 // Define styled button component
     const StyledButton = styled.button`
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
+    background-color: ${({ theme }) => theme.backgrounds.highlight};
+
     cursor: pointer;
-
-    // Example of hover effect
-    &:hover {
-      background-color: #0056b3;
-    }
-
-    // Style the text and icon separately
-    span {
-      margin-right: 8px;
-    }
+    border: none;
 
     img {
-      width: 20px;
-      height: 20px;
+      width: 1.728rem;
+      height: 1.728rem;
+      fill: var(--Color, #F93701);
     }
   `;
 

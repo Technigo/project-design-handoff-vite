@@ -6,7 +6,7 @@ import { H2 } from "./Typography";
   background-color: ${({ theme }) => theme.backgrounds.highlight};
   color: ${({ theme }) => theme.text.accent}; 
 
-    // Style the icon separately
+  cursor: pointer;
     
 
     img {
