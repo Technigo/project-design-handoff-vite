@@ -7,9 +7,9 @@ const StyledTextContainer = styled.div`
     flex-shrink: 0;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 32px;
+    // padding-bottom: 32px;
     padding-top: 32px;
-      margin: 0 auto;
+    margin: 0 auto;
 `;
 const StyledParagraph = styled.p`
     color: #545F71;

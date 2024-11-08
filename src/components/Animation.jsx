@@ -17,6 +17,7 @@ const AnimationContainer = styled.div`
   justify-content: center;
   border-radius: 20px;
   background: #FDF8F5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
 const TextContainer = styled.div`
