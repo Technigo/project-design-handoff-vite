@@ -1,18 +1,19 @@
 /* eslint-disable react/prop-types */
 import styled from 'styled-components';
+import { Typography } from '../../ui/Typography';
 
 
 const Card = styled.article`
   display: flex;
+  width: 10rem;
+  padding: 14px 14px 0;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: #f8e7f3;
+  gap: 8px;
   border-radius: 16px;
-  padding: 16px;
-  min-width: 150px;
+  background: #EEE7EB;
+  box-shadow: 0px 4px 4px 0px rgba(54, 12, 37, 0.50);
   scroll-snap-align: start;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   cursor: pointer; 
   transition: transform 0.2s;
 
@@ -21,26 +22,22 @@ const Card = styled.article`
   }
 `;
 // Zoom on hoover
+// change in typography = p-size smaller and no margin-bottom
 
 
 const CardImage = styled.img`
-  width: 100px;
+  width: 100%;
   height: auto;
-  margin-bottom: 8px;
-  border-radius: 8px;
 `;
 
-const CardTitle = styled.p`
-  text-align: center;
-  font-size: 0.9em;
-`;
 
 
 export const LibraryCard = ({ image, title, onClick }) => {
+
   return (
     <Card onClick={onClick}>
       <CardImage src={image} alt={title} />
-      <CardTitle>{title}</CardTitle>
+      <Typography typography={title} level={4} />
     </Card>
   );
 };

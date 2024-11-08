@@ -1,5 +1,5 @@
+import { useState } from 'react';
 import { Navigation } from "./Navigation"
-// import { Menu } from "./Menu"
 import { Button } from "../../ui/Button"
 import { Typography } from "../../ui/Typography"
 import witch from "../../assets/Witch.png"
@@ -59,10 +59,48 @@ const HeaderContent = styled.article`
     
 `;
 
+const PopupOverlay = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+`;
+
+const PopupContent = styled.div`
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  position: relative; 
+`;
+
+const CloseButton = styled.div`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #000;
+  cursor: pointer;
+  font-size: 2rem; 
+`;
 
 export const Header = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const title = "Daily spells"
   const bodyText = "Your go-to guide for everyday magic."
+  const heading3 = "Paper cut no more"
+  const popup = "By paper's edge, so sharp and sly,May fingers pass and never cry.With careful hands and nimble grace,Let no cut leave a single trace!"
+
+  // Toggle the popup visibility
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
 
   return (
     <header>
@@ -77,11 +115,24 @@ export const Header = () => {
           {/* Body Text */}
           <Typography typography={bodyText} level={4} />
           {/* Button Component */}
-          <Button text="Spell generator" />
+          <Button text="Spell generator" onClick={togglePopup} />
         </HeaderContent>
       </HeaderFlex>
+      {/* Conditional Popup Display */}
+      {isPopupOpen && (
+        <PopupOverlay onClick={togglePopup}>
+          <PopupContent onClick={(e) => e.stopPropagation()}>
+            <Typography typography={heading3} level={3} />
+            <Typography typography={popup} level={7} />
+            <CloseButton onClick={togglePopup}>X</CloseButton>
+          </PopupContent>
+        </PopupOverlay>
+      )}
     </header>
   )
 }
+
+
+
 
 

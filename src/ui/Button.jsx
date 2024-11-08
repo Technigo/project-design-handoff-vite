@@ -34,4 +34,3 @@ export const Button = ({ text, onClick, className }) => {
     </StyledButton>
   );
 };
-

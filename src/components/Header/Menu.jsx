@@ -90,8 +90,8 @@ const MenuBox = styled.div`
 
   //Tablet
   @media (min-width: 768px) {
-    width: 11rem; 
-    height: 14rem;
+    width: 14rem; 
+    height: 16rem;
   
 
   li {
@@ -106,8 +106,8 @@ const MenuBox = styled.div`
 
   /* Desktop styling */
   @media (min-width: 1200px) {
-    width: 15rem; 
-    height: 17rem;
+    width: 16rem; 
+    height: 18rem;
   
 
   li {
