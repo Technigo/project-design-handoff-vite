@@ -1,84 +1,54 @@
 import React from 'react';
-import styled from 'styled-components';
+import Card from './Cards';
 
-const CardContainer = styled.div`
-  background-color: #FDF8F5;
-  border: 1px solid #e6e6e6;
-  border-radius: 10px;
-  padding: 32px 0px;
-  width: 380px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 32px;
-`;
-
-const Circle = styled.div`
-  border-radius: 117px;
-  background: #55A4A1;
-  width: 234px;
-  height: 234px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-  gap: 10px;
-`;
-
-const IconWrapper = styled.div`
-  width: 91px;
-  height: 106px;
-  flex-shrink: 0 0 91 106;
-`;
-
-const Title = styled.h2`
-  color: #545F71;
-  text-align: center;
-  font-family: Cabin;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 32px; /* 133.333% */
-  letter-spacing: -0.48px;
-`;
-
-const Description = styled.p`
-  color: #545F71;
-  text-align: center;
-  font-family: "Open Sans";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 175% */
-  letter-spacing: -0.32px;
-`;
-
-const Button = styled.button`
-  background-color: #E07C3E;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s;
-
-  &:hover {
-    background-color: #C25A1A;
-  }
-`;
-
-const Card = ({ icon, title, description, buttonText }) => (
-  <CardContainer>
-    <Circle>
-      <IconWrapper>{icon}</IconWrapper>
-    </Circle>
-    <Title>{title}</Title>
-    <Description>{description}</Description>
-    <Button>{buttonText}</Button>
-  </CardContainer>
+const WinterClothesIcon = () => (
+  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    
+    <circle cx="12" cy="12" r="10" stroke="black" strokeWidth="2" />
+  </svg>
 );
 
-export default Card;
+const CardInfo = () => {
+  const cardData = [
+    {
+      icon: <WinterClothesIcon />, 
+      title: "Julklappar",
+      description: "Din hjälp ser till att fler barn får uppleva glädjen i att få en julklapp att öppna och känna hopp på julafton. Tillsammans kan vi sprida värme och omtanke.",
+      buttonText: "Swisha 100 kr"
+      },  
+    {
+      icon: <WinterClothesIcon />,
+      title: "Vinterkläder",
+      description: "Barn växer snabbt och sliter ut vinterkläder – ge ett barn en varm vinter genom att skänka en gåva för nya varma kläder som skyddar mot kylan.",
+      buttonText: "Swisha 200 kr"
+      },
+    {
+      icon: <WinterClothesIcon />, 
+      title: "Julmatskasse",
+      description: "Sötta barnfamiljer att kunna fira en jul med mat på bordet. Ge familjer i behov en chans till en minnesvärd julmiddag. Tillsammans gör vi julen ljusare för alla!",
+      buttonText: "Swisha 300 kr"
+      },
+    {
+        icon: <WinterClothesIcon />, 
+        title: "Valfritt belopp",
+        description: "Varje gåva spelar roll - stora som små donationer hjälper barnfamiljer att klara vintern och fira en varm jul. Swisha ett valfritt belopp och gör skillnad för de som behöver det mest.",
+        buttonText: "Swishat valt belopp"
+      },
+  ];
+
+  return (
+    <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+      {cardData.map((data, index) => (
+        <Card
+          key={index}
+          icon={data.icon}
+          title={data.title}
+          description={data.description}
+          buttonText={data.buttonText}
+        />
+      ))}
+    </div>
+  );
+};
+
+export default CardInfo;
