@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import instagramIconSrc from "../../src/assets/Instagram.png"; 
+import styled from 'styled-components';
+import instagramIconSrc from '../../src/assets/Instagram.png';
 
 export const IconImage = styled.img`
   height: 24px;
@@ -12,7 +12,7 @@ export const IconContainer = styled.div`
 `;
 
 export const InstagramIcon = () => (
-    <IconContainer>
-      <IconImage src={instagramIconSrc} alt="Instagram" style={{ height: '40px' }} />
-    </IconContainer>
-  );
+  <IconContainer>
+    <IconImage src={instagramIconSrc} alt="Instagram" style={{ height: '40px' }} />
+  </IconContainer>
+);

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { HeaderCard } from '../components/HeaderCard';
 import { Logo } from '../ui/Logo';
 import { HeaderText } from '../ui/Typography';
 import { Icon } from '../ui/Icon';

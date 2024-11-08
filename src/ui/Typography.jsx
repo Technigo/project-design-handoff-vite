@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Headline1 = styled.h1`
   text-align: center;
@@ -64,16 +64,32 @@ export const HeaderText = styled.p`
   font-weight: 700;
   line-height: 130%;
   white-space: nowrap;
-`;
-
+`
 export const CarouselHeader = styled.h2`
 font-family: "Roboto Serif";
 font-size: 6rem;
 font-style: italic;
 font-weight: 600;
 line-height: 140%;
+color: black;
 `
-
+export const CarouselText = styled.p`
+color: #000;
+font-family: Inter;
+font-size: 1rem;
+font-style: italic;
+font-weight: 500;
+line-height: 140%;
+margin-bottom: 0.62rem;
+`
+export const CarouselAuthor = styled.p`
+color: #000;
+font-family: Inter;
+font-size: 1rem;
+font-style: italic;
+font-weight: 300;
+line-height: 140%;
+`
 export const FooterTitle = styled.h2`
   font-family: 'Inter', sans-serif;
   font-weight: 700;

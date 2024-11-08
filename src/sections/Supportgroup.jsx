@@ -1,9 +1,9 @@
-import styled from "styled-components"
-import { SupportgroupCard } from "../components/SupportgroupCard"
-import { Grid } from "../ui/Grid"
-import { BodyText, Headline2 } from "../ui/Typography"
-import { Spacer } from "../ui/Spacer"
-import WelcomeButton from "../ui/WelcomeButton"
+import styled from 'styled-components';
+import { SupportgroupCard } from '../components/SupportgroupCard';
+import { Grid } from '../ui/Grid';
+import { BodyText, Headline2 } from '../ui/Typography';
+import { Spacer } from '../ui/Spacer';
+import WelcomeButton from '../ui/WelcomeButton';
 
 const SupportgroupSectionText = styled.div`
 grid-column: span 4;
@@ -19,9 +19,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 background: #FFCAF8;
+padding-bottom: 2.5rem;
 `
-
-
 export const SupportgroupSection = () => {
   return (
     <SupportgroupSectionStyle>
@@ -44,4 +43,4 @@ export const SupportgroupSection = () => {
       </Grid>
     </SupportgroupSectionStyle>
   )
-}
+};
