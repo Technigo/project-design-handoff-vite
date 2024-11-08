@@ -31,6 +31,11 @@ export const BodyTextLarge = styled.p `
   line-height: ${({ theme }) => theme.lineHeights.bodyLarge};
 `;
 
+export const BodyTextSmall = styled.p `
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: ${({ theme }) => theme.fontSizes.bodySmall};
+  line-height: ${({ theme }) => theme.lineHeights.bodySmall};
+`;
 
 export const FinePrint = styled.p`
   font-family: ${({ theme }) => theme.fonts.body};

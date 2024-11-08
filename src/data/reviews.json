@@ -2,38 +2,38 @@
   "reviews": [
     {
       "id" : 1,
-      "rating": "./star.svg",
+      "rating": "/icons/star.svg",
       "name": "H-Smith",
       "subject": "Simplified genius",
       "review": "This idea is very simple but still very impactful. It's a great reminder to spread positivity, even in small ways!",
-      "date": "Oct 18, 2024",
+      "date": "Oct 18, 2024 •",
       "country": "US"
     },
     {
       "id" : 2,
-      "rating": "./star.svg",
+      "rating": "/icons/star.svg",
       "name": "LM_Gbg",
       "subject": "A.m.a.z.i.n.g 🫶",
       "review": "This app makes my day. It does so much more than any other social or well-being app. Forget about likes >> start making smiles!",
-      "date": "July 6, 2024",
+      "date": "July 6, 2024 •",
       "country": "Sweden"
     },
     {
       "id" : 3,
-      "rating": "./star.svg",
+      "rating": "/icons/star.svg",
       "name": "Valerie-in-Paris",
       "subject": "One of my favorite apps ❤️❤️❤️",
       "review": "Fun and simple acts, and no cost. I complimented an older lady, and she was so surprised- she hadn’t gotten a compliment since she was young! The world needs more kindness. Merci Random Acts of Kindness. Biz",
-      "date": "Aug 22, 2024",
+      "date": "Aug 22, 2024 •",
       "country": "France"
     },
     {
       "id" : 4,
-      "rating": "./star.svg",
+      "rating": "/icons/star.svg",
       "name": "SisuAino",
       "subject": "Brightens your day 🌞",
       "review": "I looove tracking the global kindness progress. Suomi in top 10!! 🤩",
-      "date": "Oct 18, 2024",
+      "date": "Oct 18, 2024 •",
       "country": "US"
     }
   ]
