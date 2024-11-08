@@ -5,9 +5,8 @@ import { BodyParagraph } from "./components/BodyParagraph";
 import Heading3 from "./components/Heading3";
 import { CardInfo } from "./components/CardInfo";
 import { Animation } from "./components/Animation";
-
 import { Footer } from "./components/Footer";
-import { Animation } from "./components/Animation";
+
 
 export const App = () => {
   return (
