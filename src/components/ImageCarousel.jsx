@@ -22,19 +22,19 @@ const settings = {
   // Add responsive settings
   responsive: [
     {
-      breakpoint: 768,
+      breakpoint: 480,
       settings: {
         slidesToShow: 1.25,
       },
     },
     {
-      breakpoint: 1024,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2.5,
       },
     },
     {
-      breakpoint: 1440,
+      breakpoint: 1024,
       settings: {
         slidesToShow: 4.3,
       },
