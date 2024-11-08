@@ -35,9 +35,27 @@ export const App = () => {
             <Heading2>It&apos;s easy, peasy</Heading2>
           </Section>
         </GroupedSections>
-        <Steps />
-        <Testimonials />
+        <Section
+          colorTheme="white"
+          paddingTop="large"
+          paddingBottom="large"
+        >
+          <Steps />
+        </Section>
+        <Section
+          colorTheme="red"
+          paddingTop="xxlarge"
+        >
+          <Heading2>Kind words</Heading2>
+        </Section>
+        <Section
+          colorTheme="white"
+          paddingTop="large"
+        >
+          <Testimonials />
+        </Section>
       </main>
+
       <Footer colorTheme="yellow" />
     </>
   );

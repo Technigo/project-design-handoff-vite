@@ -13,14 +13,14 @@ export const BodyLarge = styled.p`
   letter-spacing: 0.015rem;
 `;
 
-export const BodyXSmall = (bold) => styled.p`
+export const BodyXSmall = styled.p`
   ${breakpoints("font-size", "rem", [
     { 0: 1 },
     { 375: 1.25 },
     { 768: 1.5 },
     { 1200: 1.75 },
   ])};
-  font-weight: ${bold ? 700 : 400};
+  font-weight: ${props => props.bold ? 700 : 400};
   line-height: 115%;
   letter-spacing: 0.0125rem;
 `;
