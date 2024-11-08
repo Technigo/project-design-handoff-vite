@@ -1,10 +1,14 @@
 import React from 'react';
+import JulklapparIcon from '../assets/JulklapparIcon.svg';
+import VinterkladerIcon from '../assets/VinterkladerIcon.svg';
+import JulmatskasseIcon from '../assets/JulmatskasseIcon.svg';
+import ValfrittBeloppIcon from '../assets/ValfrittBeloppIcon.svg';
 
 const icons = {
-  JulklapparIcon: ('../assets/JulklapparIcon.svg').default,
-  VinterkladerIcon: ('../assets/VinterkladerIcon.svg').default,
-  JulmatskasseIcon: ('../assets/JulmatskasseIcon.svg').default,
-  ValfrittBeloppIcon: ('../assets/ValfrittBeloppIcon.svg').default,
+  JulklapparIcon,
+  VinterkladerIcon,
+  JulmatskasseIcon,
+  ValfrittBeloppIcon,
 };
 
 const Icon = ({ name, width = 40, height = 40 }) => {
@@ -15,7 +19,7 @@ const Icon = ({ name, width = 40, height = 40 }) => {
     return null;
   }
 
-  return <SvgIcon width={width} height={height} />;
+  return <img src={SvgIcon} width={width} height={height} alt={`${name} icon`} />;
 };
 
 export default Icon;

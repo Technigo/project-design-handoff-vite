@@ -1,6 +1,52 @@
 import React from 'react';
+import styled from 'styled-components';
 import { Card } from './Cards';
 import Icon from './Icon';
+
+const CardGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  padding: 0 16px;
+
+  /* Tablet and larger screens (768px and up) */
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 32px 46px; /* Row gap: 32px, Column gap: 46px */
+    padding: 0 31.5px;
+    
+    /* Make the fourth card span across all columns */
+    & > :nth-child(4) {
+      grid-column: 1 / -1;
+      margin-top: 90px;
+    }
+  }
+
+  /* Desktop screens (1025px and up) */
+  @media (min-width: 1025px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 13px; /* Row gap: 32px, Column gap: 13px */
+    padding: 0 65px;
+
+    & > :nth-child(4) {
+      grid-column: 1 / -1;
+      margin-top: 90px;
+    }
+  }
+
+  /* Large desktop screens (1441px and up) */
+  @media (min-width: 1441px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px 13px;
+    padding: 0 66px;
+
+    & > :nth-child(4) {
+      grid-column: 1 / -1;
+      margin-top: 90px;
+    }
+  }
+`;
 
 export const CardInfo = () => {
   const cardData = [
@@ -31,7 +77,7 @@ export const CardInfo = () => {
   ];
 
   return (
-    <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+    <CardGrid>
       {cardData.map((data, index) => (
         <Card
           key={index}
@@ -41,7 +87,6 @@ export const CardInfo = () => {
           buttonText={data.buttonText}
         />
       ))}
-    </div>
+    </CardGrid>
   );
 };
-
