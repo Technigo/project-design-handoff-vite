@@ -11,7 +11,7 @@ export const Layout = styled.section`
   background-color: ${({ theme }) => theme.colors.primary};
   position: relative;
   width: 100%;
-  max-width: 100vw;
+  // max-width: 100vw;
   z-index: 1;
 
 &::before {

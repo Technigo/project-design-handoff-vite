@@ -3,8 +3,9 @@ import { GlobalStyles } from "./styles/GlobalStyles";
 import { Intro } from "./components/Intro";
 import { theme } from "./styles/theme";
 import { About } from "./components/About";
-import { Header } from "./components/Header";
+// import { Header } from "./components/Header";
 import {Contact} from "./components/Contact";
+import { ImageCarousel } from "./components/ImageCarousel";
 
 
 export const App = () => {
@@ -12,10 +13,11 @@ export const App = () => {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <main>
-        <Header />
+        {/* <Header /> */}
         <Intro />
         <About />
         <Contact />
+        <ImageCarousel />
       </main>
       <GlobalStyles />
     </ThemeProvider>

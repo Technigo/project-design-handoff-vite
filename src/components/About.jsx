@@ -49,7 +49,7 @@ export const About = () => {
       <AboutContent />
       <ContentWrapper>
         <Button>Om oss</Button>
-        <Divider $variant="rotateY"/>
+        <Divider $variant="rotateX"/>
         <StyledH2>
           Vi erbjuder livslång kontakt och stöd till våra valköpare.
         </StyledH2>

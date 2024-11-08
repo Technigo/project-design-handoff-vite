@@ -8,6 +8,13 @@ export const GlobalStyles = createGlobalStyle`
     font-family: "Poppins", sans-serif;
   }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
   :root {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -16,10 +23,6 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  
-body {
-  margin: 0;
-}
 
 // Apply paw cursor globally with default cursor fallback
 body, a, button {

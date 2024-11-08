@@ -1,0 +1,38 @@
+@import "/node_modules/slick-carousel/slick/slick.css";
+@import "/node_modules/slick-carousel/slick/slick-theme.css";
+
+
+.carousel-container {
+  padding: 3rem 0rem;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.carousel-image {
+  display: inline-flex;
+  align-items: center;
+  width: 15.625rem;
+  height: 15.625rem;
+}
+.carousel-image img {
+display: inline-flex;
+  object-fit: cover;
+  width: 100%;
+  flex-shrink: 0;
+  /* padding: 0 10px */
+  height: auto;
+}
+
+
+.slick-list {
+  overflow: hidden;
+  margin: 0 -0.5rem;
+}
+
+.slick-track {
+display: flex;
+gap: 1rem;
+}
