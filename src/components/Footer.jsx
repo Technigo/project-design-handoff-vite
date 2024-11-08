@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import footerLogo from "/public/assets/logo-images/footer-logo.svg";
 
-import facebookIcon from "/public/assets/social-media-images/facebook.svg";
-import instagramIcon from "/public/assets/social-media-images/instagram.svg";
 
 // Contenedor principal del Footer
 const FooterContainer = styled.footer`
@@ -87,29 +85,24 @@ const TextBox = styled.div`
 `;
 
 export const Footer = () => {
-    return (
-        <FooterContainer>
-            {/* Sección izquierda con email e ícono */}
-            <LeftSection>
-                <EmailText>thorondorskennel@gmail.com</EmailText>
-                <IconTextWrapper>
-                    <p>THORONDORS KENNEL</p>
-                    <p>2024</p>
-                    <FooterLogo src={footerLogo} alt="Footer Logo" />
-                </IconTextWrapper>
-            </LeftSection>
+  return (
+    <FooterContainer>
+      {/* Sección izquierda con email e ícono */}
+      <LeftSection>
+        <EmailText>thorondorskennel@gmail.com</EmailText>
+        <IconTextWrapper>
+          <p>THORONDORS KENNEL</p>
+          <p>2024</p>
+          <FooterLogo src={footerLogo} alt="Footer Logo" />
+        </IconTextWrapper>
+      </LeftSection>
 
-            {/* Iconos de redes sociales */}
-            <SocialMediaContainer>
-                <SocialMediaIcon src={facebookIcon} alt="Facebook Icon" />
-                <SocialMediaIcon src={instagramIcon} alt="Instagram Icon" />
-            </SocialMediaContainer>
 
-            {/* Cuadro de texto a la derecha */}
-            <RightSection>
-                <TextBox><p>Friska och sunda</p>
-                    <p>hundar för aktiva liv</p></TextBox>
-            </RightSection>
-        </FooterContainer>
-    );
+      {/* Cuadro de texto a la derecha */}
+      <RightSection>
+        <TextBox><p>Friska och sunda</p>
+          <p>hundar för aktiva liv</p></TextBox>
+      </RightSection>
+    </FooterContainer>
+  );
 };
