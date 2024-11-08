@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { H2 } from "./Typography";
+
     
 // Define styled button component
     const StyledButton = styled.button`
@@ -28,7 +28,7 @@ import { H2 } from "./Typography";
     }
   `;
 
-export const Button = ({
+export const Button3 = ({
   text,
   icon,
   link,
@@ -41,14 +41,14 @@ export const Button = ({
 
 
   return (
-  
+
+
       <StyledButton onClick={onClick || handleClick}>
-        <H2>{text}</H2>
         <img
           src={icon}
           aria-hidden="true" // Hide the icon from assistive technologies
         />
       </StyledButton>
-
+ 
   );
 };

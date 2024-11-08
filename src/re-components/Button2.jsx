@@ -28,9 +28,8 @@ import { H2 } from "./Typography";
     }
   `;
 
-export const Button = ({
+export const Button2 = ({
   text,
-  icon,
   link,
   onClick,
 }) => {
@@ -41,14 +40,12 @@ export const Button = ({
 
 
   return (
-  
+
+      
       <StyledButton onClick={onClick || handleClick}>
         <H2>{text}</H2>
-        <img
-          src={icon}
-          aria-hidden="true" // Hide the icon from assistive technologies
-        />
       </StyledButton>
+
 
   );
 };
