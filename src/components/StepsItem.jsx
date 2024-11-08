@@ -16,7 +16,6 @@ const StyledDiv = styled.div`
 
 const ImgContainer = styled.div`
   display: flex;
-  width: 390px;
   height: 128px;
   flex-direction: column;
   justify-content: center;

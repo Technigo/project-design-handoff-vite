@@ -22,36 +22,20 @@ export const App = () => {
       <main>
         <Header colorTheme="red" />
         <GroupedSections>
-          <Section
-            colorTheme="yellow"
-            paddingTop="large"
-          >
+          <Section colorTheme="yellow" paddingTop="large">
             <Button url="https://google.com">Start today</Button>
           </Section>
-          <Section
-            colorTheme="red"
-            paddingTop="large"
-          >
+          <Section colorTheme="red" paddingTop="large">
             <Heading2>It&apos;s easy, peasy</Heading2>
           </Section>
         </GroupedSections>
-        <Section
-          colorTheme="white"
-          paddingTop="large"
-          paddingBottom="large"
-        >
+        <Section colorTheme="white" paddingTop="xxxlarge">
           <Steps />
         </Section>
-        <Section
-          colorTheme="red"
-          paddingTop="xxlarge"
-        >
+        <Section colorTheme="red" paddingTop="xxlarge">
           <Heading2>Kind words</Heading2>
         </Section>
-        <Section
-          colorTheme="white"
-          paddingTop="large"
-        >
+        <Section colorTheme="white" paddingTop="large">
           <Testimonials />
         </Section>
       </main>
