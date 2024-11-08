@@ -27,8 +27,8 @@ const StyledInsamlingImage = styled.img`
 export const Footer = () => {
   return (
     <StyledFooter>
-      <StyledSwishImage src={SwishIcon} alt="Swish icon" />
-      <StyledInsamlingImage src={InsamlingIcon} alt="Insamling icon" />
+      <StyledSwishImage src={SwishIcon} alt="Swish logo, colorful circular icon indicating support for Swish mobile payments." />
+      <StyledInsamlingImage src={InsamlingIcon} alt="Svensk Insamlingskontroll logo, indicating certification for trusted fundraising through a 90 accountn" />
     </StyledFooter>
   );
 };

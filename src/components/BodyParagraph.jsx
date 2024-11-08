@@ -9,6 +9,7 @@ const StyledTextContainer = styled.div`
     padding-right: 16px;
     padding-bottom: 32px;
     padding-top: 32px;
+      margin: 0 auto;
 `;
 const StyledParagraph = styled.p`
     color: #545F71;
