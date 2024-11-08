@@ -17,24 +17,22 @@ background-color: black;
 `;
 
 const LinkButtonsContainer = styled.div`
+background-color: ${({ theme }) => theme.backgrounds.highlight};
+padding-bottom: ${({ theme }) => theme.spacing.xxsmall};
+padding-top: ${({ theme }) => theme.spacing.xxsmall};
 display: flex;
 width: 24.375rem;
 padding: 0rem 1rem;
 flex-direction: column;
 align-items: flex-start;
-background-color: pink;
-
-padding-bottom: ${({ theme }) => theme.spacing.xxsmall};
-padding-top: ${({ theme }) => theme.spacing.xxsmall};
 `;
 
 const SocialLinksContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  padding-left: 1rem;
-  align-items: center;
-  background-color: green;
+display: flex;
+padding-left: 1rem;
+align-items: center;
+gap: var(--Gutter, 2rem);
+align-self: stretch;
 `;
 
 
@@ -45,26 +43,22 @@ const ButtonStyle1 = styled.div`
 `;
 
 const ButtonStyle2 = styled.div`
-  padding: 10px;
-  background-color: lightcoral;
+  display: flex;
+  padding: 0.5rem 0rem;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+
 `;
 
 const ButtonStyle3 = styled.div`
-  padding: 10px;
-  background-color: lightgreen;
-  display: flex;
+display: flex;
+padding-left: 1rem;
+align-items: center;
+gap: var(--Gutter, 2rem);
+align-self: stretch;
 `;
 
-
-        
-//         // The return null; at the end of the map callback function ensures that if an item doesn’t match any of the specified _id groups (1, 2, 3, 4, or 5, 6, 7), it won’t render anything for that particular item. It essentially means, "don’t render anything if none of the conditions are met."
-//         //In this code, it’s a safety measure to handle unexpected data. It tells React to skip rendering if an item with an unexpected _id is present in weblinks["web-links"], avoiding potential errors or unintended output.
-//         return null;
-        
-//       })}   
-//     </>
-//   );
-// };
 
 export const SocialLinks = () => {
   return (
