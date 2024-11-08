@@ -91,6 +91,7 @@ const LogoContainer = styled.div`
 `;
 
 const StyledLogo = styled(Logo)`
+  width: 100%;
   ${breakpoints("max-width", "", [
     {
       0: "65vw",
