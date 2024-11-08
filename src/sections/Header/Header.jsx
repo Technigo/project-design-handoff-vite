@@ -1,6 +1,6 @@
 
 import { Introcontent } from "./Introcontent";
-import { Slideshow } from "./Slideshow";
+import { Slideshow } from "./Slideshow" 
 
 export const Header = () => {
     return (
