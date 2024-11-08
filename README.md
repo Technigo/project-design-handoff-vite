@@ -1,6 +1,6 @@
 # Random Acts of Kindness
 
-Our mission was to create a landing page for the fictional app Random Act of Kindness. This was a collaboration with the a UX designer from the UX Bootcamp. The goal was to use Styled Components and also to follow the given design as close as possible. It also meant to practice using Figma Dev Mode and to communicate and collaborate with our UX designer.
+Our mission was to create a landing page for the fictional app Random Acts of Kindness. This was a collaboration with the a UX designer from the UX Bootcamp. The goal was to use Styled Components and also to follow the given design as close as possible. It also meant to practice using Figma Dev Mode and to communicate and collaborate with our UX designer.
 
 ## The Project
 
