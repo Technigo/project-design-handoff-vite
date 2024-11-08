@@ -17,7 +17,7 @@ const settings = {
   arrows: false,
   centerMode: true,
   centerPadding: "0",
-  //accessibility: true, // Enable keyboard and gesture navigation
+  accessibility: true, // Enable keyboard and gesture navigation
 
   // Add responsive settings
   responsive: [
