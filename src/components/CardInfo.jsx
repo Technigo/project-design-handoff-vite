@@ -31,6 +31,6 @@ export const infoArray = [
     title: 'Valfritt belopp',
     text: 'Varje gåva spelar roll - stora som små donationer hjälper barnfamiljer att klara vintern och fira en varm jul. Swisha ett valfritt belopp och gör skillnad för dme som behöver det mest.',
     image: heart,
-    buttonText: 'Swisha valt blopp'
+    buttonText: 'Swisha valt belopp'
   },
 ];

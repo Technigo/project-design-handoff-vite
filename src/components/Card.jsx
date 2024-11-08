@@ -1,33 +1,19 @@
 import styled from 'styled-components';
 import { infoArray } from './CardInfo';
 import ButtonComponent from './SwishButton';
+import { H2, P } from './Typography';
+import GridContainer from './Grid';
 
-const CardContainer = styled.div`
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  gap: 32px; 
-  @media (max-width: 768px) {
-    gap: 24px;
-    padding: 16px;
-  }
-`;
-
-const InfoContainer = styled.div`
-  background: white; 
+const Card = styled.div`
+  background: #FDF8F5;
   border-radius: 10px; 
+  column-span: span 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px; 
-  padding: 16px;
-  background: #FDF8F5;
-  max-width: 412px;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 12px;
-  }
+  padding: 32px 16px;
+  margin: 0 16px;
 `;
 
 const CircleContainer = styled.div`
@@ -38,43 +24,6 @@ const CircleContainer = styled.div`
   display: flex; 
   justify-content: center; 
   align-items: center; 
-
-  @media (max-width: 768px) {
-    width: 180px;
-    height: 180px;
-  }
-`;
-
-const CategoryText = styled.div`
-  height: 32px;
-  text-align: center;
-  color: #545F71;
-  font-size: 24px;
-  font-family: "Cabin", sans-serif;
-  font-weight: 400;
-  line-height: 32px;
-  word-wrap: break-word;
-  max-width: 350px;
-
-  @media (max-width: 768px) {
-    font-size: 20px;
-  }
-`;
-
-const DescriptionText = styled.div`
-  height: auto;
-  text-align: center;
-  color: #545F71;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  line-height: 28px;
-  word-wrap: break-word;
-  max-width: 350px;
-
-  @media (max-width: 768px) {
-    font-size: 14px;
-    line-height: 24px;
-  }
 `;
 
 const Image = styled.img`
@@ -88,18 +37,18 @@ const Image = styled.img`
 
 const CardComponent = () => {
   return (
-    <CardContainer>
+    <GridContainer>
       {infoArray.map(info => (
-        <InfoContainer key={info.id}>
+        <Card key={info.id}>
           <CircleContainer>
             <Image src={info.image} alt={info.title} />
           </CircleContainer>
-          <CategoryText>{info.title}</CategoryText>
-          <DescriptionText>{info.text}</DescriptionText>
+          <H2>{info.title}</H2>
+          <P>{info.text}</P>
           <ButtonComponent>{info.buttonText}</ButtonComponent>
-        </InfoContainer>
+        </Card>
       ))}
-    </CardContainer>
+    </GridContainer>
   );
 };
 

@@ -1,29 +1,16 @@
 import { useState, useEffect } from 'react';
 import styled from 'styled-components';
+import { AnimationH3, AnimationP } from './Typography';
 
 const AnimationContainer = styled.div`
+display: flex;
+flex-direction: column;
   background: #FDF8F5;
-  border-radius: 5px;
+  border-radius: 20px;
   text-align: center;
-  margin: 0 auto;
-  max-width: 350px;
-`;
-
-const SubText = styled.div`
-  color: black;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  font-family: 'Open sans', sans-serif;
-  margin-top: 32px;
-  max-width: 350px;
-`;
-
-const MainText = styled.div`
-  color: #1C7D79;
-  font-size: 24px;
-  font-family: 'Schoolbell', sans-serif;
-  line-height: 30px;
+  margin: 58px 16px 0 16px;
+  height: 100%;
+  padding: 30px 20px;
 `;
 
 const AnimatedTextComponent = () => {
@@ -45,8 +32,8 @@ const AnimatedTextComponent = () => {
 
   return (
     <AnimationContainer>
-      <SubText>Tack för att du är med och bidrar till att barn</SubText>
-      <MainText>{messages[index]}</MainText>
+      <AnimationP>Tack för att du är med och bidrar till att barn</AnimationP>
+      <AnimationH3>{messages[index]}</AnimationH3>
     </AnimationContainer>
   );
 };

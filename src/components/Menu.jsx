@@ -24,7 +24,7 @@ const MenuDropdown = styled.div`
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 8px;
-  display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+  display: ${({ $isOpen }) => ($isOpen ? 'block' : 'none')};
 `;
 
 const MenuItem = styled.div`
@@ -47,10 +47,10 @@ export const Menu = () => {
     <MenuContainer>
       <MenuButton onClick={toggleMenu}>
         <span>
-        <img src={menu} alt="Menu" />
+          <img src={menu} alt="Menu" />
         </span>
       </MenuButton>
-      <MenuDropdown isOpen={isOpen}>
+      <MenuDropdown $isOpen={isOpen}>
         <MenuItem>Om oss</MenuItem>
         <MenuItem>Kontakt</MenuItem>
         <MenuItem>Press</MenuItem>
