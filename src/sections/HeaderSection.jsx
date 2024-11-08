@@ -27,7 +27,7 @@ export const HeaderSection = () => {
   return (
     <StyledHeaderSection>
       <LeftSection>
-        <Logo src="../../src/assets/HeaderSun.png" alt="Kindness & Compassion logo" />
+        <Logo src="../../public/assets/HeaderSun" alt="Kindness & Compassion logo" />
         <HeaderText>Kindness & Compassion</HeaderText>
       </LeftSection>
       <RightSection>
