@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import PropTypes from "prop-types";
 import { breakpoints } from "../utils/helpers";
 import { Button } from "./Button";
@@ -10,6 +10,16 @@ import Logo from "../assets/animated-logo.svg?react";
 import Instagram from "../assets/icons/instagram.svg?react";
 import TikTok from "../assets/icons/tiktok.svg?react";
 import Share from "../assets/icons/share.svg?react";
+
+/* Animation */
+const rotate = keyframes`
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+`;
 
 const StyledFooter = styled.footer`
   ${({ theme, $colorTheme }) => `
@@ -51,6 +61,7 @@ const LinkGroup = styled.ul`
 `;
 
 const Link = styled.a`
+  display: inline-block;
   ${({ theme, $colorTheme }) => `
     text-decoration: underline;
     color: ${theme.colors[$colorTheme].color};
@@ -86,6 +97,16 @@ const IconLink = styled.a`
     text-decoration: underline;
     color: ${theme.colors[$colorTheme].color};
   `};
+
+  svg {
+    transform-origin: center;
+  }
+
+  &:hover {
+    svg {
+      animation: ${rotate} 4s linear infinite;
+    }
+  }
 `;
 
 const LogoContainer = styled.div`
@@ -153,17 +174,26 @@ export const Footer = ({ colorTheme }) => {
         </LinkGroup>
         <IconLinkGroup>
           <li>
-            <IconLink $colorTheme={colorTheme}>
+            <IconLink
+              href="#"
+              $colorTheme={colorTheme}
+            >
               <Instagram />
             </IconLink>
           </li>
           <li>
-            <IconLink $colorTheme={colorTheme}>
+            <IconLink
+              href="#"
+              $colorTheme={colorTheme}
+            >
               <TikTok />
             </IconLink>
           </li>
           <li>
-            <IconLink $colorTheme={colorTheme}>
+            <IconLink
+              href="#"
+              $colorTheme={colorTheme}
+            >
               <Share />
             </IconLink>
           </li>
