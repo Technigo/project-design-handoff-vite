@@ -11,7 +11,6 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
 `;
 
 const Circle = styled.div`
@@ -23,7 +22,6 @@ const Circle = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  gap: 10px;
 `;
 
 const IconWrapper = styled.div`
@@ -39,7 +37,7 @@ const Title = styled.h2`
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 133.333% */
+  line-height: 32px; 
   letter-spacing: -0.48px;
 `;
 
@@ -52,6 +50,7 @@ const Description = styled.p`
   font-weight: 400;
   line-height: 28px; /* 175% */
   letter-spacing: -0.32px;
+  padding: 16px;
 `;
 
 const Button = styled.button`
