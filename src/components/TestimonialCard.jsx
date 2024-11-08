@@ -23,7 +23,7 @@ const FooterContainer = styled.div`
   color: rgba(30, 30, 30, 0.3);
 `;
 
-export const TestimonialCard = ({ stars, name, title, text, location }) => {
+export const TestimonialCard = ({ stars, name, title, text, date }) => {
   return (
     <>
       <StarsContainer>
@@ -39,7 +39,7 @@ export const TestimonialCard = ({ stars, name, title, text, location }) => {
         <BodyXSmall>{text}</BodyXSmall>
       </TextContainer>
       <FooterContainer>
-        <BodyXSmall>{location}</BodyXSmall>
+        <BodyXSmall>{date}</BodyXSmall>
       </FooterContainer>
     </>
   );

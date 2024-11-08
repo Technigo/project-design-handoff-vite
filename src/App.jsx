@@ -28,7 +28,7 @@ export const App = () => {
           <Section colorTheme="red" paddingTop="large">
             <Heading2>It&apos;s easy, peasy</Heading2>
           </Section>
-          <Section colorTheme="white" paddingTop="large" paddingBottom="large">
+          <Section colorTheme="white" paddingTop="xxxlarge">
             <Steps />
           </Section>
           <Section colorTheme="red" paddingTop="xxlarge">

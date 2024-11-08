@@ -7,6 +7,7 @@ const StyledSection = styled.section`
   color: ${({ theme, $colorTheme }) => theme.colors[$colorTheme].color};
   padding: ${({ theme, $paddingTop }) =>
     `${theme.spacing[$paddingTop]} ${theme.spacing.small} ${theme.spacing.medium}`};
+  overflow: hidden;
 `;
 
 export const Section = ({ children, colorTheme, paddingTop = "large" }) => {
