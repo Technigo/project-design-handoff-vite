@@ -16,6 +16,16 @@ const StyledButtonLink = styled.a`
     color: currentColor;
     text-decoration: underline;
 
+    > * {
+      transition: letter-spacing 0.25s cubic-bezier(0.175, 0.885, 0.320, 1.275);
+    }
+
+    &:hover {
+      > * {
+        letter-spacing: 0.5rem;
+      }
+    }
+
     svg {
       height: auto;
       ${breakpoints("width", "rem", [

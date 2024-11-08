@@ -55,6 +55,16 @@ const Link = styled.a`
     text-decoration: underline;
     color: ${theme.colors[$colorTheme].color};
   `};
+
+  > * {
+    transition: letter-spacing 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  &:hover {
+    > * {
+      letter-spacing: 0.35rem;
+    }
+  }
 `;
 
 const IconLinkGroup = styled.ul`
