@@ -4,19 +4,23 @@ import { BodyTextSmall } from "./Typography"
 
 const ReviewContainer = styled.div `
   padding: ${({ theme }) => theme.spacing.xsmall};
-  width: 350px;
   height: 220px;
   display: flex;
+  flex: 0 0 350px; 
   flex-direction: column;
+  box-sizing: border-box;
   gap: ${({ theme }) => theme.spacing.xxsmall};
-  overflow-x: scroll; 
-  scroll-snap-type: x mandatory;
+  scroll-snap-align: start; //for the snapscroll
 `;
 
 const RatingContainer = styled.div `
   display: flex;
   flex-direction: row;
   gap: ${({ theme }) => theme.spacing.xxsmall};
+`;
+
+const ReviewText = styled.div `
+
 `;
 
 const StarIcon = styled.img`
@@ -34,10 +38,6 @@ const SubjectText = styled(BodyTextSmall)`
 font-weight: 700;
 `;
 
-const SnapBox = styled.div `
-  flex: 0 0 auto; 
-  scroll-snap-align: start; 
-`;
 
 export const ReviewCard = ({ rating, name, subject, review, date, country }) => {
 
@@ -50,20 +50,18 @@ export const ReviewCard = ({ rating, name, subject, review, date, country }) => 
 
   return (
     <ReviewContainer >
-    <SnapBox> 
     <RatingContainer>
     {starIcons}    
     <BodyTextSmall>{name}</BodyTextSmall>
     </RatingContainer>
-    <div> 
+    <ReviewText> 
     <SubjectText>{subject}</SubjectText>
     <BodyTextSmall>{review}</BodyTextSmall>
-    </div>
+    </ReviewText>
     <DateContainer>
     <BodyTextSmall>{date}</BodyTextSmall>
     <BodyTextSmall>{country}</BodyTextSmall>  
     </DateContainer>
-    </SnapBox>
     </ReviewContainer> 
     );
 };
