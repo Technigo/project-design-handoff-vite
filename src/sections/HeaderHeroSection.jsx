@@ -1,7 +1,6 @@
-import styled from "styled-components";
-import { Grid } from "../ui/Grid";
-import { HeaderBig, BodyTextWithBackground } from "../ui/Typography";
-import Button from "../ui/Button";
+import styled from 'styled-components';
+import { HeaderBig, BodyTextWithBackground } from '../ui/Typography';
+import Button from '../ui/Button';
 
 const StyledHeroSection = styled.section`
   width: 100%;

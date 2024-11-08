@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 export const LogoImage = styled.img`
   height: 2.8125rem;

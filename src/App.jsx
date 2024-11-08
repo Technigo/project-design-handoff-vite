@@ -10,14 +10,12 @@ const App = () => {
   return (
     <>
       <GlobalStyles />
-      <div>
-        <HeaderSection />
-        <HeaderHeroSection />
-        <Welcome />
-        <SupportgroupSection />
-        <CarouselSection />
-        <FooterSection />
-      </div>
+      <HeaderSection />
+      <HeaderHeroSection />
+      <Welcome />
+      <SupportgroupSection />
+      <CarouselSection />
+      <FooterSection />
     </>
   );
 };

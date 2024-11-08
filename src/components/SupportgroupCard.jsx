@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react"
-import styled from "styled-components"
-import { SupportgroupImage } from "../ui/SupportgroupImage"
-import { SupportgroupTextContainer } from "../ui/SupportgroupTextContainer"
-import { HeaderText } from "../ui/Typography"
-import supportgroupData from "../supportgroups.json"
+import { useState, useEffect } from 'react';
+import styled from 'styled-components';
+import { SupportgroupImage } from '../ui/SupportgroupImage';
+import { SupportgroupTextContainer } from '../ui/SupportgroupTextContainer';
+import { HeaderText } from '../ui/Typography';
+import supportgroupData from '../supportgroups.json';
 
 const SupportgroupCardStyle = styled.div`
 display: flex;
@@ -17,14 +17,12 @@ box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
 overflow: hidden;
 margin-bottom: 2.5rem;
 
-  
 &:hover {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     border: var(--sds-size-stroke-border) solid #000;
     cursor: pointer;
   }`
-
 
 const SupportgroupCardContainerStyle = styled.div`
 display: flex;
@@ -39,11 +37,11 @@ export const SupportgroupCard = () => {
   useEffect(() => {
     setSupportgroups(supportgroupData)
     console.log(supportgroupData)
-  }, [])
+  }, []);
 
   const handleCardClick = (supportgroup) => {
     console.log(`Card clicked: ${supportgroup.title}`)
-  }
+  };
 
   return (
     <>

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const WelcomeCard = styled.div`
   grid-column: span 4;
@@ -16,4 +16,4 @@ export const WelcomeCard = styled.div`
   @media (min-width: 1200px) {
     grid-column: span 12;
   }
-`;
+`
