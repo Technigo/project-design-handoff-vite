@@ -27,11 +27,11 @@ export const HeaderSection = () => {
   return (
     <StyledHeaderSection>
       <LeftSection>
-        <Logo src="../../public/assets/HeaderSun" alt="Kindness & Compassion logo" />
+        <Logo src="/public/assets/HeaderSun.png" alt="Kindness & Compassion logo" />
         <HeaderText>Kindness & Compassion</HeaderText>
       </LeftSection>
       <RightSection>
-        <Icon src="../../src/assets/Search.svg" alt="Search" />
+        <Icon src="/assets/Search.svg" alt="Search" />
         <Icon src="../../src/assets/Menu.svg" alt="Menu" />
       </RightSection>
     </StyledHeaderSection>
