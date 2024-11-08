@@ -1,16 +1,16 @@
 [
     {
-        "supportgroupImage": "../../public/supportgroup-stress.png",
+        "supportgroupImage": "/supportgroup-stress.png",
         "alt": "",
         "title": "Utmattning och stress"
     },
     {
-        "supportgroupImage": "../../public/supportgroup-psych.png",
+        "supportgroupImage": "/supportgroup-psych.png",
         "alt": "",
         "title": "Psykisk ohälsa - BTS"
     },
     {
-        "supportgroupImage": "../../public/supportgroup-cancer.png",
+        "supportgroupImage": "/supportgroup-cancer.png",
         "alt": "",
         "title": "Bröstcancer"
     }
