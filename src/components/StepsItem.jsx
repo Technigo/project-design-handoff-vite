@@ -20,6 +20,7 @@ const ImgContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 36px;
 `;
 
 export const StepItem = ({ text, index }) => {

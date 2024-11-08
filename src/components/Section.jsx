@@ -9,7 +9,7 @@ const StyledSection = styled.section`
 
     ${breakpoints("padding", "", [
       {
-        0: `${theme.spacing[$paddingTop]} ${theme.spacing.small} ${theme.spacing.medium}`,
+        0: `${theme.spacing[$paddingTop]} ${theme.spacing.small} 8px`,
       },
       {
         1024: `${theme.spacing[$paddingTop]} ${theme.spacing.xlarge} ${theme.spacing.medium}`,
