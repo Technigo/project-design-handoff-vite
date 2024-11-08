@@ -1,31 +1,17 @@
-# Design Handoff Project
+# Random Acts of Kindness
 
-Replace this readme with your own information about your project.
+Our mission was to create a landing page for the fictional app Random Act of Kindness. This was a collaboration with the a UX designer from the UX Bootcamp. The goal was to use Styled Components and also to follow the given design as close as possible. It also meant to practice using Figma Dev Mode and to communicate and collaborate with our UX designer.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+## The Project
 
-## Getting Started with the Project
+We started out by setting up the project together using LiveShare. Beforehand we had decided on a folder and component structure, so it was easy to set it all up. After creating all the files we started by adding global CSS and a theme with all our colors, spacings and fonts. We also started to define the typography components.
 
-### Dependency Installation & Startup Development Server
+After our initial setup we created a to-do list in Slack where we assigned ourselves to different tasks. This ensured we knew who worked on what.
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
+We didn't really encounter any big hurdles. It was a quite straight forward project and fun design to implement.
 
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
+One thing I (Helene), struggled a little bit with in the beginning was the transient props when using Styled Components. I took a while to figure out what was causing the error messages.
 
-```bash
-npm i && code . && npm run dev
-```
+## View it live
 
-### The Problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-### View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+[https://random-acts-of-kindness.netlify.app](https://random-acts-of-kindness.netlify.app/)
