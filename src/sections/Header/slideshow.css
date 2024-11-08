@@ -13,9 +13,8 @@
   }
   
   .slide {
-    width: 100%; /* Full width for each image */
-    max-width: 200px; /* Adjusts image size */
-    margin-right: 16px; /* Space between images */
-    flex-shrink: 0; /* Prevents images from shrinking */
-    border-radius: 8px; /* Optional rounded corners */
+    width: 24.375rem;
+    height: 24.375rem;
+    /* flex-shrink: 0; */
+    object-fit: cover;
   }
