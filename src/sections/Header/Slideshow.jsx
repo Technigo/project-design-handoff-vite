@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import "../header/slideshow.css"
 
+
 const images = [
   "/images/img1.png",
   "/images/img2.png",
