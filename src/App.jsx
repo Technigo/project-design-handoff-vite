@@ -4,9 +4,9 @@ import { Intro } from "./components/Intro";
 import { theme } from "./styles/theme";
 import { About } from "./components/About";
 // import { Header } from "./components/Header";
-import {Contact} from "./components/Contact";
+import { Dogs } from "./components/Dogs"
+import { Contact } from "./components/Contact";
 import { ImageCarousel } from "./components/ImageCarousel";
-
 
 export const App = () => {
   return (
@@ -16,6 +16,7 @@ export const App = () => {
         {/* <Header /> */}
         <Intro />
         <About />
+        <Dogs />
         <Contact />
         <ImageCarousel />
       </main>

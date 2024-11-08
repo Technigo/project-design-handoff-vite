@@ -3,7 +3,7 @@
 
 
 .carousel-container {
-  padding: 3rem 0rem;
+  padding: 3rem 0re;
   width: 100%;
   margin: 0 auto;
   overflow: hidden;
@@ -33,6 +33,6 @@ display: inline-flex;
 }
 
 .slick-track {
-display: flex;
-gap: 1rem;
+  display: flex;
+  gap: 1.5rem;
 }
