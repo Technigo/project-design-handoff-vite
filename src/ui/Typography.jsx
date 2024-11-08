@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import styled, {css} from 'styled-components';
+import styled from 'styled-components';
 
 
 const Level1 = styled.h1` //H1 styling
@@ -26,7 +26,6 @@ font-size: 2.25rem;
 font-style: normal;
 font-weight: 400;
 margin: 0;
-
 `
 
 const Level3 = styled.h3` //Heading pop-up
@@ -36,6 +35,7 @@ font-size: 1.25rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+
 
 `
 
@@ -103,3 +103,4 @@ export const Typography = ({ typography, level = 2, className }) => {
                 : `h${level}`; // Use `h2`, `h3` directly for levels 2 and 3
   return <Tag className={`typography typography${level} ${className}`}>{typography}</Tag>
 };
+

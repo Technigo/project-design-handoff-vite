@@ -90,8 +90,9 @@ const MenuBox = styled.div`
 
   //Tablet
   @media (min-width: 768px) {
-    width: 11rem; 
-    height: 14rem;
+    width: 14rem; 
+    height: 16rem;
+    top: 2.84rem;
   
 
   li {

@@ -74,12 +74,13 @@ const PopupOverlay = styled.div`
 `;
 
 const PopupContent = styled.div`
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
-  width: 300px;
+  background-color: #EEE7EB;
+  padding: 0.81rem 1rem 2.56rem 1rem;
+  border-radius: 1.125rem;
+  width: 328px;
   text-align: center;
   position: relative; 
+  box-shadow: 0px 0px 8px 0px rgba(54, 12, 37, 0.50) inset, 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
 `;
 
 const SparkleImg = styled.img`

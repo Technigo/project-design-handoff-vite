@@ -103,43 +103,43 @@ const PopupContent = styled.div`
 
 
 export const PersonalizedSpells = ({ quotesData }) => {
-    const title = "Personalized Spells"
-    const bodyText = "Unlock the magic within with spells crafted uniquely for your needs!"
+  const title = "Personalized Spells"
+  const bodyText = "Unlock the magic within with spells crafted uniquely for your needs!"
 
-    /* const [selectedSpell, setSelectedSpell] = useState(null);
+  /* const [selectedSpell, setSelectedSpell] = useState(null);
 
-    const handleCardClick = (spell) => {
-        setSelectedSpell(spell);
-    };
+  const handleCardClick = (spell) => {
+      setSelectedSpell(spell);
+  };
 
-    const closePopup = () => {
-        setSelectedSpell(null);
-    }; */
+  const closePopup = () => {
+      setSelectedSpell(null);
+  }; */
 
-    return (
-        <CarouselBackground>
-            <PersTitle>
-                <Typography typography={title} level={2} />
-            </PersTitle>
+  return (
+    <CarouselBackground>
+      <PersTitle id="personal-spells">
+        <Typography typography={title} level={2} />
+      </PersTitle>
 
-            <PersInfoSection>
-                <Typography typography={bodyText} level={4} />
-            </PersInfoSection>
+      <PersInfoSection>
+        <Typography typography={bodyText} level={4} />
+      </PersInfoSection>
 
-            <Button text="Get the power" />
+      <Button text="Get the power" />
 
-            <PersGrid>
-                {quotesData.quotes.map((quote, index) => (
-                    <CarouselCard
-                        key={index}
-                        text={quote.text}
-                    />
-                ))}
-            </PersGrid>
+      <PersGrid>
+        {quotesData.quotes.map((quote, index) => (
+          <CarouselCard
+            key={index}
+            text={quote.text}
+          />
+        ))}
+      </PersGrid>
 
-            <PersBackgroundImage src={flower} alt="Flower in background" />
+      <PersBackgroundImage src={flower} alt="Flower in background" />
 
-        </CarouselBackground>
+    </CarouselBackground>
 
-    );
+  );
 };
