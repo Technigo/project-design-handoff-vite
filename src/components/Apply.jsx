@@ -38,7 +38,6 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   align-items: center;
 
-  /* Space above the button */
   button {
     margin-top: 1rem;
   }
