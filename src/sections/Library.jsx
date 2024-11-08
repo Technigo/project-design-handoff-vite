@@ -12,19 +12,23 @@ const CardContainer = styled.div`
 display: grid;
 grid-template-columns: repeat(4, 1fr);
 max-width: 655px;
-// height: 427px;
-align-items: flex-start;
-align-content: flex-start;
 gap: 22px 21px;
 flex-shrink: 0;
 flex-wrap: wrap;
 overflow-x: auto;
-padding: 0px 0px 77px 18px;
+padding: 0 0 77px 18px;
 
+&::-webkit-scrollbar {
+    display: none;
+  }
 
+  @media (min-width: 650px) {
+  justify-items: center;
+  padding: 0 0 77px 0;
+  margin: 0 auto;
+  width: 100%;
+  }
 `
-
-
 
 export const Library = () => {
   return (

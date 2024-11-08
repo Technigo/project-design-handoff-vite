@@ -5,21 +5,21 @@ import { FooterP } from "../UI/Typography";
 import { FooterLink } from "../UI/Typography";
 
 const FooterDiv = styled.div`
-display: flex;
-justify-content: space-between;
-height: 3.5rem;
-padding: 0.625rem;
-align-items: center;
-gap: 0.625rem;
-flex-shrink: 0;
-background-color: black;
-`
+  display: flex;
+  justify-content: space-between;
+  height: 3.5rem;
+  padding: 0.625rem;
+  align-items: center;
+  gap: 0.625rem;
+  flex-shrink: 0;
+  background-color: ${props => props.theme.colors.Font2};
+`;
 
 const FooterLinksRight = styled.div`
-display: flex;
-flex-direction: column;
-text-align: right;
-`
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+`;
 
 export const Footer = () => {
   return (

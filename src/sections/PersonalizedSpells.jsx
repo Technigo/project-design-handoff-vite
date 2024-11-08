@@ -81,11 +81,9 @@ const QuoteContainer = styled.div`
   padding-bottom: 200px;
 
 
-    /* Media query för mobil 320px */
+    /* Media query for mobile 320px */
     @media (min-width: 320px) and (max-width: 390px) {
-    /* Justerar marginalen för mindre skärmar */
     width:200px;
-  width: 230px;
   }
 `
 
@@ -127,4 +125,3 @@ export const PersonalizedSpells = () => {
     </>
   );
 };
-

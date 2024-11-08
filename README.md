@@ -1,37 +1,15 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
+In this task, we will collaborate to transform a UX design student's mobile wireframe into a functional React application. Our focus will be on creating a responsive, mobile-first design that adheres closely to the provided specifications. We will utilize Styled Components for styling and explore npm packages to enhance the user experience with features like image carousels or animations. This project will emphasize effective communication and collaboration with designers while addressing potential implementation challenges.run dev
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
 ```
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+During our project, we encountered several challenges while working with Styled Components, particularly since it was a new styling methodology for our team. The learning curve added extra time to our development process as we adjusted to this new way of handling styles. Debugging became a bit more difficult because the generated class names do not always clearly indicate their associated styles, making it challenging to trace issues back to specific components.
 
 ### View it live
 
 Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
 
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>

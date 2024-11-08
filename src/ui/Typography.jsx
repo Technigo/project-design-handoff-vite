@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const H1 = styled.h1`
-  color: #000;
+  color: ${props => props.theme.colors.Font2};
   text-align: center;
   font-family: "Yeseva One";
   font-size: 48px;
@@ -13,7 +13,7 @@ export const H1 = styled.h1`
 `
 
 export const H2 = styled.h2`
-  color: #FFF;
+  color: ${props => props.theme.colors.Font1};
   text-align: center;
   font-family: "Yeseva One";
   font-size: 24px;
@@ -23,7 +23,7 @@ export const H2 = styled.h2`
 `
 
 export const H3 = styled.h3`
-  color: #000;
+  color: ${props => props.theme.colors.Font2};
   text-align: center;
   font-family: "Josefin Sans";
   font-size: 24px;
@@ -31,10 +31,14 @@ export const H3 = styled.h3`
   font-weight: 300;
   line-height: 130%;
   margin: 55px 55px 59px 55px;
+
+&.custom-margin {
+    margin-top: 35px;
+  }
 `
 
 export const CardP = styled.p`
-  color: #000;
+  color: ${props => props.theme.colors.Font2};
   text-align: center;
   font-family: "Josefin Sans";
   font-size: 16px;
@@ -44,16 +48,20 @@ export const CardP = styled.p`
 `
 
 export const QuotesP = styled.p`
-  color: #000;
+  color: ${props => props.theme.colors.Font2};
   text-align: center;
   font-family: "Josefin Sans";
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
   line-height: 150%;
+
+  @media (min-width: 650px) { 
+    font-size: 20px;
+  }
 `
 export const FooterP = styled.p`
-  color: #FFF;
+  color: ${props => props.theme.colors.Font1};
   font-family: "Josefin Sans";
   font-size: 12px;
   font-style: normal;
@@ -64,7 +72,7 @@ export const FooterP = styled.p`
 `
 
 export const FooterLink = styled.a`
-color: #FFF;
+color: ${props => props.theme.colors.Font1};
 font-family: "Josefin Sans";
 font-size: 12px;
 font-style: normal;
@@ -73,7 +81,7 @@ line-height: 110%;
 text-align: right;
 `
 export const ButtonP = styled.p`
-color: #FFF;
+color: ${props => props.theme.colors.Font1};
 text-align: center;
 font-family: "Josefin Sans";
 font-size: 24px;
