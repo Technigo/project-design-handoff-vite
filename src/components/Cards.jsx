@@ -70,7 +70,7 @@ const Button = styled.button`
   }
 `;
 
-const Card = ({ icon, title, description, buttonText }) => (
+export const Card = ({ icon, title, description, buttonText }) => (
   <CardContainer>
     <Circle>
       <IconWrapper>{icon}</IconWrapper>
@@ -81,4 +81,3 @@ const Card = ({ icon, title, description, buttonText }) => (
   </CardContainer>
 );
 
-export default Card;
