@@ -9,7 +9,6 @@ import { DailySpells } from "./sections/DailySpells";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
-
 export const App = () => {
   return (
     <main>

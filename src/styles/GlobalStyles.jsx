@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
   * {
@@ -33,4 +33,4 @@ main {
     background: linear-gradient(180deg, #360C25 0%, #E1C9D8 6.67%, #E1C9D8 75%, #360C25 94.17%);
   }
 }
-`
+`;

@@ -1,7 +1,7 @@
 // Card.jsx
 
 import styled from "styled-components"
-import { CardP } from "../UI/Typography";
+import { CardP } from "../ui/Typography";
 
 const CardStyle = styled.div`
   display: flex;

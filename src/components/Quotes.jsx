@@ -1,7 +1,7 @@
 // Quotes.jsx
 
-import styled from "styled-components"
-import { QuotesP } from "../UI/Typography";
+import styled from "styled-components";
+import { QuotesP } from "../ui/Typography";
 
 const QuotesCard = styled.div`
   height: 6.875rem;

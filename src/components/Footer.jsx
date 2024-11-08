@@ -1,8 +1,8 @@
 // Footer.jsx
 
 import styled from "styled-components"
-import { FooterP } from "../UI/Typography";
-import { FooterLink } from "../UI/Typography";
+import { FooterP } from "../ui/Typography";
+import { FooterLink } from "../ui/Typography";
 
 const FooterDiv = styled.div`
   display: flex;
