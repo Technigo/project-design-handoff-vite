@@ -7,9 +7,10 @@ const ScrollContainer = styled.div `
   overflow-x: auto; 
   scroll-snap-type: x mandatory;
 
-  &::-webkit-scrollbar {
-    /* height: 8px;  */
-  }
+   &::-webkit-scrollbar {
+    display: none;
+     /* height: 8px;   */
+  } 
 `;
 
 export const SocialProof = () => {
