@@ -94,6 +94,8 @@ export const Header = () => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
   const title = "Daily spells"
   const bodyText = "Your go-to guide for everyday magic."
+  const heading3 = "Paper cut no more"
+  const popup = "By paper's edge, so sharp and sly,May fingers pass and never cry.With careful hands and nimble grace,Let no cut leave a single trace!"
 
   // Toggle the popup visibility
   const togglePopup = () => {
@@ -120,8 +122,8 @@ export const Header = () => {
       {isPopupOpen && (
         <PopupOverlay onClick={togglePopup}>
           <PopupContent onClick={(e) => e.stopPropagation()}>
-            <h2>Spell Generator</h2>
-            <p>By paper's edge, so sharp and sly,May fingers pass and never cry.With careful hands and nimble grace,Let no cut leave a single trace!</p>
+            <Typography typography={heading3} level={3} />
+            <Typography typography={popup} level={7} />
             <CloseButton onClick={togglePopup}>X</CloseButton>
           </PopupContent>
         </PopupOverlay>
@@ -129,7 +131,3 @@ export const Header = () => {
     </header>
   )
 }
-
-
-
-
