@@ -1,31 +1,22 @@
 import styled from "styled-components";
-import { H2 } from "./Typography";
+import { H3 } from "./Typography";
     
 // Define styled button component
-    const StyledButton = styled.button`
-    display: flex;
-    align-items: center;
-    padding: 10px 15px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+// Define styled button component
+const StyledButton = styled.button`
+  background-color: ${({ theme }) => theme.backgrounds.highlight};
 
-    // Example of hover effect
-    &:hover {
-      background-color: #0056b3;
-    }
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-decoration-color: #F93701;
+  border: none;
+  /* width: 100%;
+  height: auto; */
 
-    // Style the text and icon separately
-    span {
-      margin-right: 8px;
-    }
 
-    img {
-      width: 20px;
-      height: 20px;
-    }
   `;
 
 export const Button2 = ({
@@ -37,15 +28,9 @@ export const Button2 = ({
     window.open(link, "_blank");
   };
 
-
-
-  return (
-
-      
+  return (      
       <StyledButton onClick={onClick || handleClick}>
-        <H2>{text}</H2>
+        <H3>{text}</H3>
       </StyledButton>
-
-
   );
 };
