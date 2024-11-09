@@ -1,14 +1,16 @@
 
 import { Introcontent } from "./Introcontent";
 import { Slideshow } from "./Slideshow" 
-import { StartTodayButton1 } from "../main/StartTodayButton1"; 
+import { StartTodayButton } from "../footer/SocialLinks";
+
+
 
 export const Header = () => {
     return (
         <section>
             <Introcontent/>
             <Slideshow/>
-            <StartTodayButton1/>
+            <StartTodayButton showFinePrint = {false} />
         </section>
     )
 }
