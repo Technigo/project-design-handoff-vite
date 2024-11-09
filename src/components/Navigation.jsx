@@ -3,6 +3,12 @@ import styled from "styled-components";
 import HeaderLogo from "../assets/HeaderLogo.png";
 import MenuIcon from "../assets/MenuIcon.svg";
 
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 // Container for navigation bar
 const NavContainer = styled.div`
   display: flex;
@@ -63,15 +69,17 @@ export const Navigation = () => {
   };
 
   return (
-    <NavContainer>
-      <StyledHeaderLogo src={HeaderLogo} alt="Räddningsmissionen logo in orange and grey colors" />
-      <StyledMenuIcon src={MenuIcon} alt="Hamburger menu" onClick={handleMenuClick} />
-      {/* Pass $isOpen instead of isOpen */}
-      <StyledMenu $isOpen={isMenuOpen}>
-        <StyledMenuItem>Home</StyledMenuItem>
-        <StyledMenuItem>About</StyledMenuItem>
-        <StyledMenuItem>Contact</StyledMenuItem>
-      </StyledMenu>
-    </NavContainer>
+    <Wrapper>
+      <NavContainer>
+        <StyledHeaderLogo src={HeaderLogo} alt="Räddningsmissionen logo in orange and grey colors" />
+        <StyledMenuIcon src={MenuIcon} alt="Hamburger menu" onClick={handleMenuClick} />
+        {/* Pass $isOpen instead of isOpen */}
+        <StyledMenu $isOpen={isMenuOpen}>
+          <StyledMenuItem>Home</StyledMenuItem>
+          <StyledMenuItem>About</StyledMenuItem>
+          <StyledMenuItem>Contact</StyledMenuItem>
+        </StyledMenu>
+      </NavContainer>
+    </Wrapper>
   );
 };

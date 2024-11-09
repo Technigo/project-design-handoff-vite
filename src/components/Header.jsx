@@ -2,6 +2,12 @@ import React from "react";
 import styled from "styled-components";
 import HeroImage from "../assets/Heroimage.jpeg";
 
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 // Container for the hero image and h1 text
 const HeroContainer = styled.div`
   display: flex;
@@ -50,15 +56,17 @@ const StyledSpan = styled.span`
 
 export const Header = () => {
   return (
-    <HeroContainer>
-      <StyledHeroImage src={HeroImage} alt="Two children looking out the window" />
-      <StyledTextContainer>
-        <StyledHeaderText>
-          <StyledSpan>Tomten</StyledSpan> 
-          <StyledSpan>kommer inte</StyledSpan> 
-          <StyledSpan>till alla barn</StyledSpan>
-        </StyledHeaderText>
-      </StyledTextContainer>
-    </HeroContainer>
+    <Wrapper>
+      <HeroContainer>
+        <StyledHeroImage src={HeroImage} alt="Two children looking out the window" />
+        <StyledTextContainer>
+          <StyledHeaderText>
+            <StyledSpan>Tomten</StyledSpan> 
+            <StyledSpan>kommer inte</StyledSpan> 
+            <StyledSpan>till alla barn</StyledSpan>
+          </StyledHeaderText>
+        </StyledTextContainer>
+      </HeroContainer>
+    </Wrapper>
   );
 };
