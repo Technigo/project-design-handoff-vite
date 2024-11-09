@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const CardContainer = styled.div`
   background-color: #FDF8F5;
@@ -12,6 +12,7 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
 `;
 
 const Circle = styled.div`
@@ -52,6 +53,13 @@ const Description = styled.p`
   margin: 16px 0;
 `;
 
+/* Snowflake animation */
+const snowingEffect = keyframes`
+  0% { transform: translateY(-20px); opacity: 1; }
+  100% { transform: translateY(80px); opacity: 0; }
+`;
+
+/* Button styling */
 const Button = styled.button`
   background-color: #E07C3E;
   color: #FFF;
@@ -66,11 +74,11 @@ const Button = styled.button`
   align-items: center;
   gap: 10px;
   width: 330px;
-  height: 40px; /* General button height for better visibility */
-
-  /* Mobile font-size */
+  height: 40px;
   font-size: 18px;
   padding: 10px;
+  position: relative;
+  overflow: hidden;
 
   /* Tablet adjustments */
   @media (min-width: 768px) {
@@ -84,8 +92,57 @@ const Button = styled.button`
     font-size: 20px;
   }
 
+  /* Hover effects */
   &:hover {
     background-color: #C25A1A;
+    box-shadow: 0 0 15px rgba(248, 173, 127, 0.6);
+    transform: scale(1.05);
+  }
+
+  /* Snowflakes appear in the :hover state */
+  &:hover::before,
+  &:hover::after,
+  &:hover span::before {
+    content: "❄️";
+    position: absolute;
+    font-size: 16px;
+    color: #FFF;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.8));
+    animation: ${snowingEffect} 1.5s linear infinite;
+  }
+
+  &:hover::before {
+    top: -20px;
+    left: 20%;
+    animation-delay: 0s;
+  }
+  &:hover::after {
+    top: -20px;
+    left: 60%;
+    animation-delay: 0.5s;
+  }
+  &:hover span::before {
+    top: -20px;
+    left: 80%;
+    animation-delay: 1s;
+  }
+
+  /* Additional falling snowflakes on hover */
+  &:hover span::after {
+    content: "❄️";
+    position: absolute;
+    font-size: 16px;
+    color: #FFF;
+    top: -20px;
+    left: 40%;
+    animation: ${snowingEffect} 1.5s linear infinite;
+    animation-delay: 0.75s;
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.8));
+  }
+
+  /* Change background color on click */
+  &:active {
+    background-color: #F8AD7F;
   }
 `;
 
@@ -96,6 +153,8 @@ export const Card = ({ icon, title, description, buttonText }) => (
     </Circle>
     <Title>{title}</Title>
     <Description>{description}</Description>
-    <Button>{buttonText}</Button>
+    <Button>
+      <span>{buttonText}</span>
+    </Button>
   </CardContainer>
 );
