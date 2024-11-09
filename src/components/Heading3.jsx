@@ -10,6 +10,7 @@ const Heading3 = ({ children }) => {
     fontWeight: '400',
     lineHeight: '32px', // 88.889%
     letterSpacing: '-0.72px',
+    padding: '0 16px'
   };
 
   return <h3 style={style}>{children}</h3>;

@@ -7,44 +7,32 @@ const CardGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   gap: 32px;
-  padding: 0 16px;
+  padding: 0 16px; /* Mobile padding */
 
-  /* Tablet and larger screens (768px and up) */
+  /* Tablet (min-width: 768px) */
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    gap: 32px 46px; /* Row gap: 32px, Column gap: 46px */
-    padding: 0 31.5px;
-    
-    /* Make the fourth card span across all columns */
-    & > :nth-child(4) {
-      grid-column: 1 / -1;
-      margin-top: 90px;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    gap: 23px;
+    padding: 0 19px;
   }
 
-  /* Desktop screens (1025px and up) */
+  /* Desktop (min-width: 1025px) */
   @media (min-width: 1025px) {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px 13px; /* Row gap: 32px, Column gap: 13px */
-    padding: 0 65px;
-
-    & > :nth-child(4) {
-      grid-column: 1 / -1;
-      margin-top: 90px;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 0 64px; /* Balance padding left and right */
   }
 
-  /* Large desktop screens (1441px and up) */
-  @media (min-width: 1441px) {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px 13px;
-    padding: 0 66px;
+  /* Large Desktop (min-width: 1440px) */
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    padding: 0 64px; /* Keep it consistent with desktop */
+  }
 
-    & > :nth-child(4) {
-      grid-column: 1 / -1;
-      margin-top: 90px;
-    }
+  /* Extra Large Screens (max-width: 1600px) */
+  @media (min-width: 1600px) {
+    padding: 0 100px; /* Increase padding for larger screens */
   }
 `;
 

@@ -5,8 +5,9 @@ const CardContainer = styled.div`
   background-color: #FDF8F5;
   border: 1px solid #e6e6e6;
   border-radius: 10px;
-  padding: 32px 0px;
-  width: 380px;
+  padding: 32px 16px;
+  width: 100%;
+  max-width: 380px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
@@ -14,7 +15,7 @@ const CardContainer = styled.div`
 `;
 
 const Circle = styled.div`
-  border-radius: 117px;
+  border-radius: 50%;
   background: #55A4A1;
   width: 234px;
   height: 234px;
@@ -27,7 +28,6 @@ const Circle = styled.div`
 const IconWrapper = styled.div`
   width: 91px;
   height: 106px;
-  flex-shrink: 0 0 91 106;
 `;
 
 const Title = styled.h2`
@@ -35,10 +35,10 @@ const Title = styled.h2`
   text-align: center;
   font-family: Cabin;
   font-size: 24px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 32px; 
+  line-height: 32px;
   letter-spacing: -0.48px;
+  margin: 16px 0;
 `;
 
 const Description = styled.p`
@@ -46,23 +46,43 @@ const Description = styled.p`
   text-align: center;
   font-family: "Open Sans";
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 28px; /* 175% */
+  line-height: 28px;
   letter-spacing: -0.32px;
-  padding: 16px;
+  margin: 16px 0;
 `;
 
 const Button = styled.button`
   background-color: #E07C3E;
-  color: white;
-  padding: 10px 20px;
+  color: #FFF;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s;
+  font-family: "Open Sans";
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 330px;
+  height: 40px; /* General button height for better visibility */
+
+  /* Mobile font-size */
+  font-size: 18px;
+  padding: 10px;
+
+  /* Tablet adjustments */
+  @media (min-width: 768px) {
+    height: 45px;
+    font-size: 18px;
+  }
+
+  /* Desktop adjustments */
+  @media (min-width: 1025px) {
+    height: 48px;
+    font-size: 20px;
+  }
 
   &:hover {
     background-color: #C25A1A;
@@ -79,4 +99,3 @@ export const Card = ({ icon, title, description, buttonText }) => (
     <Button>{buttonText}</Button>
   </CardContainer>
 );
-
