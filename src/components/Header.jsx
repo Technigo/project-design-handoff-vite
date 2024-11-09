@@ -1,13 +1,13 @@
 import styled from "styled-components";
-import HeaderImg from "../assets/header-img.svg";
+import HeaderImg from "../assets/HeaderImage.jpeg";
 
 const HeaderContainer = styled.div`
   align-items: flex-end;
   background-size: cover;
   display: flex;
-  height: 100vh; /* Hela höjden på skärmen */
-  position: relative; /* Behåller bilden och texten i samma lager */
-  z-index: 1; /* Placeras ovanför andra komponenter */
+  height: 100vh; 
+  position: relative; 
+  z-index: 1; 
 `;
 
 const HeaderImage = styled.img`
@@ -15,38 +15,41 @@ const HeaderImage = styled.img`
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%; /* Anpassar sig efter hela HeaderContainer */
+  height: 100%; 
   object-fit: cover;
-  z-index: -1; /* Bilden hamnar bakom texten */
+  z-index: -1; 
+  
+   @media (min-width: 768px) {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%; 
+    object-fit: cover;
+    z-index: -1; 
 `;
 
 const HeaderText = styled.h1`
   color: #ffffff;
   font-family: "Cabin", sans-serif;
-  font-size: 24px;
+  font-size: 42px;
   font-weight: 500;
-  letter-spacing: -0.96px;
-  line-height: 28px;
   text-align: left;
   position: absolute;
   margin: 0;
-  bottom: 18px;
+  bottom: 65px;
   left: 24px;
 
   @media (min-width: 768px) {
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 62px;
     padding-left: 16px;
-    bottom: 16px;
-    left: 16px;
+    bottom: 250px;
   }
 
   @media (min-width: 1024px) {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 80px;
     padding-left: 24px;
-    bottom: 24px;
-    left: 24px;
+    bottom: 250px;
   }
 `;
 
