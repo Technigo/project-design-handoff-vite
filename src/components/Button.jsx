@@ -20,9 +20,11 @@ const StyledButtonLink = styled.a`
       transition: letter-spacing 0.25s cubic-bezier(0.175, 0.885, 0.320, 1.275);
     }
 
-    &:hover {
-      > * {
-        letter-spacing: 0.5rem;
+    @media (hover: hover) {
+      &:hover {
+        > * {
+          letter-spacing: 0.5rem;
+        }
       }
     }
 

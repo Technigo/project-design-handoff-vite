@@ -71,9 +71,11 @@ const Link = styled.a`
     transition: letter-spacing 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
-  &:hover {
-    > * {
-      letter-spacing: 0.35rem;
+  @media (hover: hover) {
+    &:hover {
+      > * {
+        letter-spacing: 0.35rem;
+      }
     }
   }
 `;
@@ -102,9 +104,11 @@ const IconLink = styled.a`
     transform-origin: center;
   }
 
-  &:hover {
-    svg {
-      animation: ${rotate} 4s linear infinite;
+  @media (hover: hover) {
+    &:hover {
+      svg {
+        animation: ${rotate} 4s linear infinite;
+      }
     }
   }
 `;
