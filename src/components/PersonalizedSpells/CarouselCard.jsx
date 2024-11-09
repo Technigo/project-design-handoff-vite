@@ -1,8 +1,6 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components"
-import { useState } from "react"
-import { Typography } from "../../ui/Typography"
-import { Button } from "../../ui/Button"
+import { Typography } from "../../ui/Typography" // cant get typography to work with map()-method, keep trying!
 
 
 
