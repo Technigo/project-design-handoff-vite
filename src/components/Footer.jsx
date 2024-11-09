@@ -42,7 +42,7 @@ const StyledFooter = styled.footer`
 
     ${breakpoints("padding", "", [
       {
-        0: `${theme.spacing.xxxlarge} ${theme.spacing.small} ${theme.spacing.medium}`,
+        0: `${theme.spacing.xxxlarge} ${theme.spacing.small} ${theme.spacing.xxxlarge}`,
       },
       {
         1024: `${theme.spacing.xxxxlarge} ${theme.spacing.xxlarge} ${theme.spacing.xxlarge}`,
