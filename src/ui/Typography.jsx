@@ -71,14 +71,21 @@ font-weight: 300;
 line-height: 1.95rem;
 `;
 
-const Typography6 = styled.p` //Quotes typography
-color: #000;
-text-align: center;
+export const Typography6 = styled.p` //Quotes typography, exported this to be able to use white color
+color: ${(props) => (props.isWhite ? '#fff' : '#000')}; // default black - choise to be white
+text-align: ${(props) => (props.isCentered ? 'left' : 'center')};
 font-family: "Josefin Sans";
-font-size: 1rem;
-font-style: italic;
-font-weight: 400;
-line-height: 1.5rem; 
+font-size: 0.75rem;
+font-style: ${(props) => (props.noItalic ? 'normal' : 'italic')};
+font-weight: 300;
+line-height: 1.1rem; 
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem; 
+  }
+
 `;
 
 const Typography7 = styled.p`  //Footer 

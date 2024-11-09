@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
-import styled from 'styled-components';
-import { Typography } from '../../ui/Typography';
+import styled from "styled-components"
+import { useState } from "react"
+import { Typography } from "../../ui/Typography"
+import { Button } from "../../ui/Button"
 
 
 
@@ -18,9 +20,6 @@ const Card = styled.article`
 	background: #EEE7EB;
 	z-index: 1;
 
-  /* &:hover {
-    transform: scale(1.05);   
-  } */
 `;
 
 const P = styled.p`
@@ -36,6 +35,7 @@ const P = styled.p`
 
 
 export const CarouselCard = ({ text }) => {
+
 
   return (
     <Card>
