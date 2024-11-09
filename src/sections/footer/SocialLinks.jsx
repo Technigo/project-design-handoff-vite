@@ -2,29 +2,32 @@ import { Button } from "../../re-components/Button"
 import { Button2 } from "../../re-components/Button2";
 import { Button3 } from "../../re-components/Button3";
 import weblinks from "../../data/links.json"
-import { FinePrint } from "../../re-components/Typography";
+import { FinePrintFooter } from "../../re-components/Typography";
 import styled from "styled-components";
 
 // Define the styled-components directly in SocialLinks
 
 const StartTodayContainer = styled.div`
+padding-top: ${({ theme }) => theme.spacing.small};
+padding-left: ${({ theme }) => theme.spacing.xsmall};
 display: flex;
 width: 24.375rem;
-padding: var(--Text-Fine-print, 1.5rem) var(--Gutter, 2rem) 0.5rem 1rem;
 align-items: center;
 gap: 1rem;
-background-color: black;
+
+box-sizing: border-box;
 `;
 
 const LinkButtonsContainer = styled.div`
 background-color: ${({ theme }) => theme.backgrounds.highlight};
 padding-bottom: ${({ theme }) => theme.spacing.xxsmall};
 padding-top: ${({ theme }) => theme.spacing.xxsmall};
+padding-left: ${({ theme }) => theme.spacing.xsmall};
 display: flex;
 width: 24.375rem;
-padding: 0rem 1rem;
 flex-direction: column;
 align-items: flex-start;
+box-sizing: border-box;
 `;
 
 const SocialLinksContainer = styled.div`
@@ -38,8 +41,15 @@ align-self: stretch;
 
 // Define button styles for individual buttons
 const ButtonStyle1 = styled.div`
-  padding: 10px;
-  background-color: lightblue;
+  background-color: ${({ theme }) => theme.backgrounds.highlight};
+
+  display: flex;
+  width: 21.375rem;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 const ButtonStyle2 = styled.div`
@@ -48,7 +58,6 @@ const ButtonStyle2 = styled.div`
   align-items: center;
   gap: 0.625rem;
   align-self: stretch;
-
 `;
 
 const ButtonStyle3 = styled.div`
@@ -74,7 +83,7 @@ export const SocialLinks = () => {
                 icon={item.icon}
                 link={item.link}
               />
-              <FinePrint>No cost, just kindness*</FinePrint>
+              <FinePrintFooter>No cost, just kindness*</FinePrintFooter>
             </ButtonStyle1>
           ))}
       </StartTodayContainer>
