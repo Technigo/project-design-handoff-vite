@@ -13,6 +13,7 @@ const StyledButton = styled.button`
   text-underline-offset: auto;
   text-decoration-color: #F93701;
   border: none;
+ 
   /* width: 100%;
   height: auto; */
 
