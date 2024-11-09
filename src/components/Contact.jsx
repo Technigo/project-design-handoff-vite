@@ -13,6 +13,7 @@ const ContactSectionImage = styled.div`
   background-position: center;
   width: 100%;
   height: 13.75rem;
+  width: 24.375rem;
   flex-shrink: 0;
 
   display: flex;
