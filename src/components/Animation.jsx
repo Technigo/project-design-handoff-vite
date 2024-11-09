@@ -18,6 +18,18 @@ const AnimationContainer = styled.div`
   border-radius: 20px;
   background: #FDF8F5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  // Media Queries - Removes animation on tablet and desktop
+      // Tablets
+  @media (min-width: 768px) and (max-width: 1023px) {
+    display: none;
+  }
+
+  // Desktop
+  @media (min-width: 1024px) and (max-width: 1600px) {
+    display: none;
+  }
+
 `;
 
 const TextContainer = styled.div`

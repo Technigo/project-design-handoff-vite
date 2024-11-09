@@ -3,16 +3,20 @@ import styled from "styled-components";
 import HeaderLogo from "../assets/HeaderLogo.png";
 import MenuIcon from "../assets/MenuIcon.svg";
 
+const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;  
+  width: 100%;
+`;
+
 // Container for navigation bar
 const NavContainer = styled.div`
   display: flex;
-  width: 100vw; // Full viewport width for NavContainer
+  width: 100vw; 
   height: 53px;
   justify-content: space-between;
   align-items: center;
-  background: #fdf8f5;
-  padding: 0 16px; // Padding for consistent spacing on both sides
-  box-sizing: border-box; // Ensures padding doesn’t add to width
+  background: #FDF8F5;
   position: relative;
 `;
 
@@ -21,6 +25,7 @@ const StyledHeaderLogo = styled.img`
   width: 171px;
   height: 23px;
   flex-shrink: 0;
+  padding-left: 16px;
 `;
 
 // Menu icon styling
@@ -29,6 +34,7 @@ const StyledMenuIcon = styled.img`
   height: 45px;
   flex-shrink: 0;
   cursor: pointer;
+  padding-right: 16px;
 `;
 
 // Menu styling for dropdown
@@ -39,7 +45,7 @@ const StyledMenu = styled.div`
   width: 60px;
   height: auto;
   top: 53px;
-  right: 16px; // Align menu to the right edge with padding
+  right: 16px; // Align menu to the right edge with 
   background-color: #fdf8f5;
   padding: 16px;
   z-index: 1;
@@ -64,21 +70,23 @@ export const Navigation = () => {
   };
 
   return (
-    <NavContainer>
-      <StyledHeaderLogo
-        src={HeaderLogo}
-        alt="Räddningsmissionen logo in orange and grey colors"
-      />
-      <StyledMenuIcon
-        src={MenuIcon}
-        alt="Hamburger menu"
-        onClick={handleMenuClick}
-      />
-      <StyledMenu $isOpen={isMenuOpen}>
-        <StyledMenuItem>Home</StyledMenuItem>
-        <StyledMenuItem>About</StyledMenuItem>
-        <StyledMenuItem>Contact</StyledMenuItem>
-      </StyledMenu>
-    </NavContainer>
+    <Wrapper>
+      <NavContainer>
+        <StyledHeaderLogo
+          src={HeaderLogo}
+          alt="Räddningsmissionen logo in orange and grey colors"
+        />
+        <StyledMenuIcon
+          src={MenuIcon}
+          alt="Hamburger menu"
+          onClick={handleMenuClick}
+        />
+        <StyledMenu $isOpen={isMenuOpen}>
+          <StyledMenuItem>Home</StyledMenuItem>
+          <StyledMenuItem>About</StyledMenuItem>
+          <StyledMenuItem>Contact</StyledMenuItem>
+        </StyledMenu>
+      </NavContainer>
+    </Wrapper>
   );
 };

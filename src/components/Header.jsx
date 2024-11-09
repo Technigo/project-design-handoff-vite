@@ -6,6 +6,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 `;
 
 // Container for the hero image and h1 text
@@ -19,6 +20,25 @@ const HeroContainer = styled.div`
   gap: 10px;
   flex-shrink: 0;
   margin: 0;
+
+  // Small phone
+  @media (min-width: 320px) and (max-width: 411px) {
+    width: 320px;;
+    height: 310px;
+  }
+
+  // Tablets
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 512px;;
+    height: 500px;
+  }
+
+  // Desktop
+  @media (min-width: 1024px) and (max-width: 1600px) {
+    width: 612px;;
+    height: 600px;
+  }
+
 `;
 
 // Hero image styling
@@ -36,7 +56,7 @@ const StyledTextContainer = styled.div`
     padding-left: 24px;
 `;
 
-// H1 text styling (Maybe create a Tyopgraphy component and move this styling)
+// H1 text styling 
 const StyledHeaderText = styled.h1`
   color: #FFF;
   font-family: Cabin;
