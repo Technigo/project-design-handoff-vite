@@ -4,7 +4,7 @@
       "_id": "1",
       "name": "arrow",
       "text": "start today",
-      "icon": "public/icons/arrow-icon.svg",
+      "icon": "icons/arrow-icon.svg",
       "link": "https://www.google.com/"
     },
     {
@@ -28,19 +28,19 @@
     {
       "_id": "5",
       "name": "instagram",
-      "icon": "public/icons/instagram.svg",
+      "icon": "icons/instagram.svg",
       "link": "https://www.google.com/"
     },
     {
       "_id": "6",
       "name": "tiktok",
-      "icon": "public/icons/tiktok.svg",
+      "icon": "icons/tiktok.svg",
       "link": "https://www.google.com/"
     },
     {
       "_id": "7",
       "name": "share",
-      "icon": "public/icons/share.svg",
+      "icon": "icons/share.svg",
       "link": "https://www.google.com/"
     }
   ]
