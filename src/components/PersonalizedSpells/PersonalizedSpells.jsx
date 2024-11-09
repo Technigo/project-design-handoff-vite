@@ -7,7 +7,6 @@ import { useMediaQuery } from "./MediaQuery"
 import { SignUpForm } from "./SignUpForm";
 import styled from "styled-components";
 import flower from "../../assets/Flower.png";
-import sparkle from "../../assets/Sparkle.png"
 /* import quotesData from "../../quotes.json" */
 
 
@@ -75,23 +74,6 @@ const PersGrid = styled.section`
   padding: 5rem 0;
   z-index: 1;
   max-width: 100%;
-
-    /* display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    grid-auto-flow: column;
-    gap: 81px;
-    overflow-x: auto;
-    padding: 5rem 0;
-    z-index: 1;
-
-    @media (min-width: 768px) {
-        grid-auto-flow: row;
-    } */
-
-    /* @media screen and (min-width: 1200px) {
-        grid-auto-flow: column;
-        padding: 12rem 0;
-    }  */
 `;
 
 
@@ -116,7 +98,7 @@ const handleNextQuote = () => {
 /* Next quote function */
 
 
-  const PopupOverlay = styled.div`
+  /* const PopupOverlay = styled.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -157,7 +139,7 @@ const handleNextQuote = () => {
   height: 2.72081rem;
   transform: rotate(-23.252deg);
   flex-shrink: 0;
-`;
+`; */
 
   const SparkleImgBottomLeftSmall = styled.img` //Smaller sparkle 
   position: absolute;
@@ -252,6 +234,9 @@ const handleNextQuote = () => {
       <div>
         <Button text="Get the power" onClick={togglePopup} />
       </div>
+
+      {/* Render the SignUpPopup if isPopupOpen is true */}
+      {isPopupOpen && <SignUpForm onClose={togglePopup} />}
 
 
       <PersGrid isMobile={isMobile}>
