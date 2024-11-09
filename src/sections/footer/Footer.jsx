@@ -5,6 +5,7 @@ import { SocialLinks } from "./SocialLinks"
 
 const FooterWrapper = styled.div`
 background-color: ${({ theme }) => theme.backgrounds.highlight};
+padding-top: ${({ theme }) => theme.spacing.small};
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -23,6 +24,5 @@ export const Footer = () => {
       <FinePrintFooter>** Acts of kindness are highly contagious  © 2024</FinePrintFooter>
     </FooterWrapper>
     </>
-
   )
 }
