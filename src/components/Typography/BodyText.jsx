@@ -20,7 +20,7 @@ export const BodyXSmall = styled.p`
     { 768: 1.5 },
     { 1200: 1.75 },
   ])};
-  font-weight: ${props => props.bold ? 700 : 400};
+  font-weight: ${(props) => (props.bold ? 700 : 400)};
   line-height: 115%;
   letter-spacing: 0.0125rem;
 `;

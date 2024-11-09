@@ -35,7 +35,7 @@ export const TestimonialCard = ({ stars, name, title, text, date }) => {
         <BodyXSmall>{name}</BodyXSmall>
       </StarsContainer>
       <TextContainer>
-        <BodyXSmall bold>{title}</BodyXSmall>
+        <BodyXSmall $bold>{title}</BodyXSmall>
         <BodyXSmall>{text}</BodyXSmall>
       </TextContainer>
       <FooterContainer>

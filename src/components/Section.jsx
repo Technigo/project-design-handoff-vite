@@ -20,7 +20,10 @@ const StyledSection = styled.section`
 
 export const Section = ({ children, colorTheme, paddingTop = "large" }) => {
   return (
-    <StyledSection $colorTheme={colorTheme} $paddingTop={paddingTop}>
+    <StyledSection
+      $colorTheme={colorTheme}
+      $paddingTop={paddingTop}
+    >
       {children}
     </StyledSection>
   );
@@ -36,6 +39,7 @@ Section.propTypes = {
     "large",
     "xlarge",
     "xxlarge",
+    "xxxlarge",
     "xxxxlarge",
   ]),
 };
