@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import swish from "../assets/swishicon.svg";
+import swish from "../assets/Swishicon.svg";
 import insamling from "../assets/insamlingskontroll.svg";
 
 
