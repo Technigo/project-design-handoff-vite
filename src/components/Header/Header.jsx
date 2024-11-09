@@ -14,7 +14,6 @@ const HeaderFlex = styled.section`
     align-items: center;  
     gap: 16px;   
     overflow-x: hidden;
-    margin-bottom: 8rem; 
 
     @media (min-width: 768px) {
     flex-direction: row; 

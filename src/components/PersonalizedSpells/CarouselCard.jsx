@@ -32,10 +32,7 @@ const P = styled.p`
 	line-height: 150%; /* 24px */
 `;
 
-
-
 export const CarouselCard = ({ text }) => {
-
 
   return (
     <Card>
