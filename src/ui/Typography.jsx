@@ -26,7 +26,6 @@ font-size: 2.25rem;
 font-style: normal;
 font-weight: 400;
 margin: 0;
-
 `
 
 const Level3 = styled.h3` //Heading pop-up
@@ -36,6 +35,7 @@ font-size: 1.25rem;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+
 
 `
 

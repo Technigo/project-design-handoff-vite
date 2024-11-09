@@ -9,7 +9,7 @@ const LibraryTitle = styled.section`
     display: flex;
     width: 100%;
     height: auto;
-    padding: 0 10px;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     gap: 10px;
@@ -22,6 +22,11 @@ const LibraryInfoSection = styled.section`
     display: flex;
     width: 295px;
     margin: 3rem auto;
+
+    @media screen and (min-width: 1200px) {
+        width: 40rem;
+        margin: 3rem auto;
+    }
 `;
 
 const LibraryGrid = styled.section`
@@ -34,6 +39,8 @@ const LibraryGrid = styled.section`
 
     @media screen and (min-width: 768px) {
         grid-template-rows: repeat(1, 1fr);
+        gap: 16px 66px;
+        margin: 3rem 0;
     }
 `;
 

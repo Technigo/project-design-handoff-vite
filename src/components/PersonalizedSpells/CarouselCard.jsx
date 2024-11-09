@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import styled from 'styled-components';
-import { Button } from '../../ui/Button';
 import { Typography } from '../../ui/Typography';
 
 

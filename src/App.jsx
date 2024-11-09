@@ -1,6 +1,6 @@
 import { Header } from "./components/Header/Header"
 import { PersonalizedSpells } from "./components/PersonalizedSpells/PersonalizedSpells"
-// import { Footer } from "./components/Footer/Footer"
+import { Footer } from "./components/Footer/Footer"
 import spellsData from "./spells.json";
 import quotesData from "./quotes.json"
 import { GlobalStyle } from "./styles/GlobalStyle"
@@ -14,7 +14,7 @@ export const App = () => {
       <Header />
       <Library spellsData={spellsData} />
       <PersonalizedSpells quotesData={quotesData} />
-      {/* <Footer />  */}
+      <Footer />
     </>
   )
 }
