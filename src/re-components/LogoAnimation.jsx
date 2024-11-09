@@ -5,8 +5,8 @@ import heartslogo from "../../public/logo/heartslogo.svg"
 // Container for the logo
 const LogoContainer = styled.div`
   width: 252px;
-height: 252px;
-flex-shrink: 0;
+  height: 252px;
+  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
