@@ -13,9 +13,9 @@ flex-shrink: 0;
 
 
 export const Footer = () => {
-    return (
-            <FooterSection>
-                <h2>Footer</h2>
-            </FooterSection>
-    );
+  return (
+    <FooterSection>
+      <h2>Footer</h2>
+    </FooterSection>
+  );
 };
