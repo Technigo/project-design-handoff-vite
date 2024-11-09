@@ -19,8 +19,8 @@ const StyledTextContainer = styled.div`
 
   // Tablets
   @media (min-width: 768px) and (max-width: 1023px) {
-    width: 571px;;
-    height: 234px;
+    width: 512px;
+    height: 200px;
   }
 
   // Desktop
