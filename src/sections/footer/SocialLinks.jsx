@@ -34,7 +34,7 @@ box-sizing: border-box;
 const SocialLinksContainer = styled.div`
 background-color: ${({ theme }) => theme.backgrounds.highlight};
 display: flex;
-padding-left: 1rem;
+/* padding-left: 1rem; */
 align-items: center;
 gap: var(--Gutter, 2rem);
 align-self: stretch;
