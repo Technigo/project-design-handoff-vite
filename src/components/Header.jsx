@@ -15,7 +15,6 @@ const HeroContainer = styled.div`
   position: relative;
   width: 412px;
   height: 402.374px;
-  // padding: 18px 24px;
   align-items: flex-end;
   gap: 10px;
   flex-shrink: 0;
