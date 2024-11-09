@@ -1,12 +1,4 @@
 export const themes = {
-  // colors: {
-  //   white: "#FFFCFB",
-  //   black: "#1E1E1E",
-  //   lavaRed: "#F93701",
-  //   tintedWhite: "#FFF6F4",
-  //   mellowYellow: "#FFE675"
-  // },
-
   backgrounds: {
     primary: "#FFF6F4", //tinted
     secondary: "#F93701", //lava 
@@ -25,14 +17,14 @@ export const themes = {
   },
 
   fontSizes: {
-    h1: "92px",
-    h2: "64px",
-    subH1: "40px",
-    h3: "32px",
-    bodyLarge: "24px",
-    bodySmallBold: "20px",
-    bodySmall: "20px",
-    finePrint: "18px"
+    h1: "5.75rem",
+    h2: "4rem",
+    subH1: "2.5rem",
+    h3: "2rem",
+    bodyLarge: "1.5rem",
+    bodySmallBold: "1.25rem",
+    bodySmall: "1.25rem",
+    finePrint: "1.125rem"
   },
 
   lineHeights: {
@@ -46,17 +38,19 @@ export const themes = {
   },
 
   spacing: {
-    xxsmall:"8px",
-    xsmall:"16px", 
-    small: "24px", //fine-print
-    medium: "32px", //gutter
-    large: "48px",
-    xlarge: "56px",
-    xxlarge: "64px",
-    xxxlarge: "80px"
+    xxsmall:"0.5rem",
+    xsmall:"1rem", 
+    small: "1.5rem", //fine-print
+    medium: "2rem", //gutter
+    large: "3rem",
+    xlarge: "3.5rem",
+    xxlarge: "4rem",
+    xxxlarge: "5rem"
   },
 
   breakpoints: {
+    xsmall: "320px";
+    small: "390px";
 
   }
 };
