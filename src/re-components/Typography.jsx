@@ -17,6 +17,7 @@ export const H2 = styled.h2`
   font-family: ${({ theme }) => theme.fonts.heading};
   font-size: ${({ theme }) => theme.fontSizes.h2};
   line-height: ${({ theme }) => theme.lineHeights.h2};
+  /* padding-bottom: ${({ theme }) => theme.spacing.xsmall}; */
 `;
 
 export const H3 = styled.h3 `
