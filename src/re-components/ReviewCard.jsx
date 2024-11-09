@@ -4,9 +4,9 @@ import { BodyTextSmall } from "./Typography"
 
 const ReviewContainer = styled.div `
   padding: ${({ theme }) => theme.spacing.xsmall};
-  height: 220px;
+  height: 13.75rem;
   display: flex;
-  flex: 0 0 350px; 
+  flex: 0 0 21.875rem; 
   flex-direction: column;
   box-sizing: border-box;
   gap: ${({ theme }) => theme.spacing.xxsmall};

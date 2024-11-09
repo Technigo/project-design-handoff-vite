@@ -5,7 +5,7 @@ import { SocialProof } from "./Socialproof";
 const SectionContainer = styled.div `
 display: flex;
 flex-direction: column;
-gap: 40px; //Combined the spacing for xsmall and fine-print = 40px
+gap: 2.5rem; //Combined the spacing for xsmall and fine-print = 2.5rem
 margin-bottom: ${({ theme }) => theme.spacing.medium}; 
 `;
 
