@@ -1,6 +1,5 @@
 // Footer.jsx
 
-import React from "react";
 import styled from "styled-components";
 import { FooterP, FooterTitle, FooterInfo } from "../UI/Typography";
 
@@ -22,15 +21,28 @@ export const Footer = () => {
 
             <FooterInfo>
                 <strong>Om oss</strong>
+                <br />
+                <br />
                 <div>Vår Vision</div>
+                <br />
                 <div>Rörelsen Pay it forward</div>
+                <br />
 
                 <strong>Engagera dig</strong>
+                <br />
+                <br />
                 <div>Bli volontär</div>
+                <br />
                 <div>Hitta din stödgrupp</div>
+                <br />
 
                 <strong>Kontakta oss</strong>
+                <br />
+                <br />
+                <br />
                 <div>info@kindnessandcompassion.se</div>
+                <br />
+                <br />
             </FooterInfo>
 
             <SocialIcons>
@@ -65,6 +77,7 @@ const Logo = styled.img`
     width: 78px;
     height: 78px;
     flex-shrink: 0;
+    margin-bottom: 50px;
 `;
 
 const SocialIcons = styled.div`
@@ -78,8 +91,7 @@ const SocialIcons = styled.div`
 `;
 
 const SocialIcon = styled.img`
-    width: 24px; /* Adjust size if needed */
-    height: 24px;
+    size:48px;
 `;
 
 

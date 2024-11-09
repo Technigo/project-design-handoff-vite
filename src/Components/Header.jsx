@@ -4,25 +4,25 @@ import styled from "styled-components";
 import { HeroButton } from "../UI/Button";
 
 export const Header = () => {
-    return (
-        <HeaderContainer>
-            <NavBar>
-                <Logo src="/Images/KC-logo.png" alt="Picture of Logo" />
-                <NavText>Kindness & Compassion</NavText>
-                <SearchIcon src="/Images/search-icon.svg" alt="Search Icon" />
-                <MenuIcon src="/Images/hamburger-menu.svg" alt="Hamburger Menu Icon" />
-            </NavBar>
+  return (
+    <HeaderContainer>
+      <NavBar>
+        <Logo src="/Images/KC-logo.png" alt="Picture of Logo" />
+        <NavText>Kindness & Compassion</NavText>
+        <SearchIcon src="/Images/search-icon.svg" alt="Search Icon" />
+        <MenuIcon src="/Images/hamburger-menu.svg" alt="Hamburger Menu Icon" />
+      </NavBar>
 
-            <HeroContainer>
-                <HeroImage src="/Images/Hero-image.png" alt="Hero" />
-                <HeroText>
-                    <HeroTitle>Sprid en god <br />gärning för en <br />vänligare värld</HeroTitle>
-                    <HeroSubtitle>Vi skapar mötesplatser för äkta <br /> samtal och goda handlingar</HeroSubtitle>
-                    <HeroButton>Läs mer om oss</HeroButton>
-                </HeroText>
-            </HeroContainer>
-        </HeaderContainer>
-    );
+      <HeroContainer>
+        <HeroImage src="/Images/Hero-image.png" alt="Hero" />
+        <HeroText>
+          <HeroTitle>Sprid en god <br />gärning för en <br />vänligare värld</HeroTitle>
+          <HeroSubtitle>Vi skapar mötesplatser för äkta <br /> samtal och goda handlingar</HeroSubtitle>
+          <HeroButton>Läs mer om oss</HeroButton>
+        </HeroText>
+      </HeroContainer>
+    </HeaderContainer>
+  );
 };
 
 // Styled Components
@@ -63,7 +63,7 @@ const MenuIcon = styled.img`
   padding: 10px;
   margin-top: 10px;
   margin-left: auto;
-
+fill: black;
 `;
 
 const SearchIcon = styled.img`
