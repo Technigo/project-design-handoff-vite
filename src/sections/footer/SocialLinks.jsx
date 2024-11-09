@@ -8,6 +8,7 @@ import styled from "styled-components";
 // Define the styled-components directly in SocialLinks
 
 const StartTodayContainer = styled.div`
+background-color: ${({ theme }) => theme.backgrounds.highlight};
 padding-top: ${({ theme }) => theme.spacing.small};
 padding-left: ${({ theme }) => theme.spacing.xsmall};
 display: flex;
@@ -31,6 +32,7 @@ box-sizing: border-box;
 `;
 
 const SocialLinksContainer = styled.div`
+background-color: ${({ theme }) => theme.backgrounds.highlight};
 display: flex;
 padding-left: 1rem;
 align-items: center;
