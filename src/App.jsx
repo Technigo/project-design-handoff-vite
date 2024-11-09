@@ -1,3 +1,19 @@
+import { Footer } from "./components/Footer";
+import { Navigation } from "./components/Navigation";
+import { Header } from "./components/Header";
+import { TopInfo } from "./components/TopInfo";
+import AnimatedTextComponent from "./components/Animation";
+import CardComponent from "./components/Card";
+
 export const App = () => {
-  return <div>Find me in src/app.jsx!</div>;
+  return (
+    <>
+      <Navigation />
+      <Header />
+      <TopInfo />
+      <CardComponent />
+      <AnimatedTextComponent />
+      <Footer />
+    </>
+  );
 };
