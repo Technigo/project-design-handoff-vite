@@ -35,7 +35,7 @@ export const App = () => {
         <Section colorTheme="red" paddingTop="xlarge">
           <Heading2>Kind words</Heading2>
         </Section>
-        <Section colorTheme="white" paddingTop="large">
+        <Section colorTheme="white" paddingTop="xxxlarge">
           <Testimonials />
         </Section>
       </main>
