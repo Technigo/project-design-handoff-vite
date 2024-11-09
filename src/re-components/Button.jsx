@@ -17,8 +17,10 @@ import { H2 } from "./Typography";
     text-underline-position: from-font;
     display: flex;
     align-items: center;
-    gap: 2.37556rem;
+    gap: 1rem;
     border: none;
+    width: auto;
+    height: auto;
 
     cursor: pointer;
     
