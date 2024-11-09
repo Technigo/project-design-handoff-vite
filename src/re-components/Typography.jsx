@@ -56,4 +56,7 @@ export const FinePrintFooter = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.finePrint};
   line-height: ${({ theme }) => theme.lineHeights.finePrint};
   color: ${({ theme }) => theme.text.accent};
+  padding-top: ${({ theme }) => theme.spacing.medium};
+  padding-bottom: ${({ theme }) => theme.spacing.medium};
+  ;
 `;
