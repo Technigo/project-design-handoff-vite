@@ -81,14 +81,13 @@ font-weight: 400;
 line-height: 1.5rem; 
 `;
 
-const Typography7 = styled.p`  //Pop-up font-styling
-color: #000;
-text-align: center;
+const Typography7 = styled.p`  //Footer 
+color: #FFF;
 font-family: "Josefin Sans";
-font-size: 1rem;
-font-style: italic;
+font-size: 0.75rem;
+font-style: normal;
 font-weight: 300;
-line-height: 1.2rem;
+line-height: 0.825rem;
 `;
 
 export const Typography = ({ typography, level = 2, className }) => {
