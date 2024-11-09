@@ -50,7 +50,7 @@ export const themes = {
 
   breakpoints: {
     xsmall: "320px",
-    small: "390px",
-
+    small: "389px", 
   }
+
 };

@@ -7,6 +7,8 @@ export const GlobalStyles = createGlobalStyle `
   }
 body {
   box-sizing: border-box;
+  max-width: 390px;
+  margin: 0 auto;
 }
 
 h1,
@@ -33,4 +35,4 @@ letter-spacing: 0.2px;
     max-width: 100%;
   }
 
-`
+`;
