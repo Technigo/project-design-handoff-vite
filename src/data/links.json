@@ -40,7 +40,7 @@
     {
       "_id": "7",
       "name": "share",
-      "icon": "public/icons/instagram.svg",
+      "icon": "public/icons/share.svg",
       "link": "https://www.google.com/"
     }
   ]
