@@ -28,6 +28,11 @@ import { H2 } from "./Typography";
       width: 2.37556rem;
       height: 2.37488rem;
       flex-shrink: 0;
+
+      @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
+        width: 3.51163rem;
+        height: 3.51056rem;
+      }
     }
 
     :hover {
