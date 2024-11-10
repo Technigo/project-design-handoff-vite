@@ -137,3 +137,40 @@ export const FooterContactInfo = styled.p`
     font-size: 0.9rem;
   }
 `;
+
+export const CalendarTitle = styled.h2`
+  font-family: Inter, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #000;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+`;
+
+export const CalendarCardTitle = styled.h3`
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem; 
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+`;
+
+export const CalendarCardText = styled.p`
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem; 
+  margin: 0.5rem 0; 
+`;
+
+export const CalendarButton = styled.button`
+  background: none;
+  border: none;
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+`;
