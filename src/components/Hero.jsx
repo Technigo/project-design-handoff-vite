@@ -1,15 +1,13 @@
-// src/components/Hero.jsx
 import styled from "styled-components";
 import heroImage from "/assets/dog-images/hero-image.webp";
-import icon from "/assets/logo-images/header-logo.svg";
+import icon from "/assets/logo-images/hero-logo.svg";
 
 const HeroSection = styled.section`
   background-image: url(${heroImage});
   position: relative;
   width: 100%;
-  height: 60vh;
+  height: 36.625rem;
   min-height: 320px;
-
   background-size: cover;
   background-position: center;
   display: flex;
@@ -28,22 +26,20 @@ const HeroSection = styled.section`
 
 const Overlay = styled.div`
   position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -10%);
+  top: 2.88rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(238, 223, 202, 0.7);
-  border-radius: 51% / 48%;
-  width: 99vw;
-  height: 54vw;
-  flex-shrink: 0;
+  width: 100%;
+`;
 
-  /* Adjust for larger screens */
+const Icon = styled.img`
+  width: 99%;
+  object-fit: contain;
+
   @media (min-width: 768px) {
-    width: 70vw;
-    height: 38vw;
+    width: 60vw;
+    height: 30vw;
   }
 
   @media (min-width: 1600px) {
@@ -52,17 +48,11 @@ const Overlay = styled.div`
   }
 `;
 
-const Icon = styled.img`
-  width: 80%;
-  height: 80%;
-  object-fit: contain;
-`;
-
 export const Hero = () => {
   return (
     <HeroSection>
       <Overlay>
-        <Icon src={icon} alt="Hero Icon" />
+        <Icon src={icon} alt="Thorondor's kennel logo" />
       </Overlay>
     </HeroSection>
   );

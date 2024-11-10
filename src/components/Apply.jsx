@@ -1,10 +1,10 @@
+import styled from "styled-components";
 import { StyledBody } from "../ui/Typography";
 import { Layout } from "../ui/Layout";
 import { Divider } from "../ui/Divider";
 import { Button } from "../ui/Button";
-import { media } from "../styles/media";
 import applySectionImage from "../../public/assets/dog-images/apply-section.webp";
-import styled from "styled-components";
+import { media } from "../styles/media";
 
 // Container for the image background
 const ApplySectionImage = styled.div`
@@ -16,12 +16,10 @@ const ApplySectionImage = styled.div`
   height: 13.75rem;
   background-size: contain;
   background-repeat: no-repeat;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   position: relative;
   z-index: 1;
 
@@ -34,8 +32,10 @@ const ApplySectionImage = styled.div`
     width: 55rem;
   }
 `;
+
 // Wrapper for the text and dividers below the image
 const ContentWrapper = styled.div`
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,7 +51,6 @@ const ContentWrapper = styled.div`
 
   @media ${media.tablet} {
     width: 35rem;
-    /* height: 8.875rem; */
   }
 
   @media ${media.desktop} {
@@ -62,7 +61,7 @@ const ContentWrapper = styled.div`
 export const Apply = () => {
   return (
     <Layout $top="70%" $left="50%" $rotation="-20deg">
-      <ApplySectionImage></ApplySectionImage>
+      <ApplySectionImage alt="dog" />
       <ContentWrapper>
         <Divider />
         <StyledBody>

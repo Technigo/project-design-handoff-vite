@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import footerLogo from "/public/assets/logo-images/footer-logo.svg";
-import copyright from "/public/assets/social.media-images/copyright.svg";
+import copyright from "/public/assets/social-media-images/copyright.svg";
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -23,7 +23,6 @@ const FooterLogo = styled.img`
 `;
 
 const TextBox = styled.div`
-  // width: 108px;
   display: inline-flex;
   height: 1.875rem;
   padding: 0rem 1rem 0rem 0.5rem;
@@ -31,7 +30,7 @@ const TextBox = styled.div`
   line-height: 8px;
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.secondary};
-  font-size: 7px;
+  font-size: 10px;
   text-align: center;
 `;
 

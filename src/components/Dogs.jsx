@@ -1,9 +1,9 @@
+import styled from "styled-components";
 import { Layout } from "../ui/Layout";
 import { Divider } from "../ui/Divider";
 import { Button } from "../ui/Button";
-import { media } from "../styles/media";
 import dogSectionImage from "../../public/assets/dog-images/dogs-section-image.webp";
-import styled from "styled-components";
+import { media } from "../styles/media";
 
 const DogSectionImage = styled.div`
   background-image: url(${dogSectionImage});
@@ -13,12 +13,10 @@ const DogSectionImage = styled.div`
   max-width: 100%;
   width: 24.375rem;
   height: 13.75rem;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   position: relative;
   z-index: 1;
 
@@ -33,6 +31,7 @@ const DogSectionImage = styled.div`
 `;
 
 const ContentWrapper = styled.div`
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,7 +52,7 @@ const ContentWrapper = styled.div`
 export const Dogs = () => {
   return (
     <Layout $top="80%" $left="80%" $rotation="28deg">
-      <DogSectionImage />
+      <DogSectionImage alt="dogs" />
       <ContentWrapper>
         <Divider $variant="rotateX" />
         <Button>Våra hundar</Button>

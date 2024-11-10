@@ -1,8 +1,8 @@
+import styled from "styled-components";
 import { StyledH1, StyledBody } from "../ui/Typography";
 import { Layout } from "../ui/Layout";
 import { Divider } from "../ui/Divider";
 import { SocialMediaIcons } from "../ui/SocialMediaIcons";
-import styled from "styled-components";
 import { media } from "../styles/media";
 
 // Style for Content Wrapper
@@ -19,7 +19,6 @@ const ContentWrapper = styled.div`
 
   @media ${media.tablet} {
     width: 35rem;
-    /* height: 8.875rem; */
   }
 
   @media ${media.desktop} {
