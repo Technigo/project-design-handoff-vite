@@ -6,7 +6,6 @@ export const WelcomeCard = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 2rem;
   background-color: #fff;
 
   @media (min-width: 768px) {

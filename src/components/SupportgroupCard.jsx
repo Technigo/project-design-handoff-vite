@@ -30,6 +30,15 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 grid-column: span 4;
+max-width: 700px;
+
+@media (min-width: 768px){
+    grid-column: span 8;
+  }
+
+@media (min-width: 1200px){
+    grid-column: span 12;
+  }
 `
 
 export const SupportgroupCard = () => {
