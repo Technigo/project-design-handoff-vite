@@ -6,6 +6,10 @@ export const Headline1 = styled.h1`
   font-size: 2rem;
   font-weight: 700;
   line-height: 130%;
+
+  @media (min-width: 1200px){
+    font-size: 2.25rem;
+  }
 `;
 
 export const Headline2 = styled.h2`
@@ -14,6 +18,10 @@ export const Headline2 = styled.h2`
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 130%;
+
+  @media (min-width: 1200px){
+    font-size: 1.5rem;
+  }
 `;
 
 export const Headline3 = styled.h3`
@@ -22,6 +30,10 @@ export const Headline3 = styled.h3`
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 130%;
+
+  @media (min-width: 1200px){
+    font-size: 1.5rem;
+  }
 `;
 
 export const BodyText = styled.p`
@@ -96,11 +108,6 @@ export const FooterTitle = styled.h2`
   font-size: 1.5rem;
   text-align: center;
   margin: 0;
-
-  @media (max-width: 768px) {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
 `;
 
 export const FooterText = styled.p`
@@ -108,11 +115,6 @@ export const FooterText = styled.p`
   line-height: 1.5;
   text-align: left;
   font-family: 'Inter', sans-serif;
-
-  @media (max-width: 768px) {
-    font-size: 0.9rem;
-    margin: 0.8rem 0;
-  }
 `;
 
 export const FooterSectionTitle = styled.h3`
@@ -121,10 +123,6 @@ export const FooterSectionTitle = styled.h3`
   margin: 1rem 0 0.5rem 0;
   font-size: 1rem;
   text-align: left;
-
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
 `;
 
 export const FooterContactInfo = styled.p`
@@ -132,9 +130,32 @@ export const FooterContactInfo = styled.p`
   font-size: 1rem;
   margin-top: 1rem;
   text-align: left;
+`;
+
+export const CircleText = styled.span`
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+`;
+
+export const CircleLabel = styled.p`
+  margin-top: 0.5rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+`;
+
+export const AchievementsTitle = styled.h2`
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 1rem;
 
   @media (max-width: 768px) {
-    font-size: 0.9rem;
+    font-size: 1.25rem;
   }
 `;
 

@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 import { HeaderBig, BodyTextWithBackground } from '../ui/Typography';
 import Button from '../ui/Button';
+import heroImage from '../../src/assets/Hero.png';
 
 const StyledHeroSection = styled.section`
   width: 100%;
-  background-image: url("../../src/assets/hero.png");
+  background-image: url(${heroImage});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

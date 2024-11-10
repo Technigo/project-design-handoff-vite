@@ -10,23 +10,22 @@ const StyledWelcomeContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
+  grid-column: span 4;
 
-  @media (max-width: 768px) {
-    padding: 0.5rem 0.25rem 0.5rem 0.25rem; 
+  @media (min-width: 768px) {
+    grid-column: span 8;
+  }
+
+  @media (min-width: 1200px){
+    grid-column: span 12;
   }
 `;
 
 const WelcomeContent = styled.div`
   max-width: 700px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-
-  @media (max-width: 768px) {
-    text-align: left;
-    padding: 0 1rem;
-  }
 `;
 
 export const Welcome = () => {
