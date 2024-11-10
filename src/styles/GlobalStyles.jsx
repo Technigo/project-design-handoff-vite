@@ -6,7 +6,7 @@ export const GlobalStyles = createGlobalStyle `
   padding: 0;
   }
 body {
-max-width: 100%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -20,18 +20,8 @@ h3 {
   letter-spacing: 1px;
 }
 
-
 p {
 letter-spacing: 0.2px;
 }
-
- img,
-  picture,
-  video,
-  canvas,
-  svg {
-    display: block;
-    max-width: 100%;
-  }
 
 `;

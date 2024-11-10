@@ -59,7 +59,6 @@ const SubjectText = styled(BodyTextSmall)`
 font-weight: 700;
 `;
 
-
 export const ReviewCard = ({ rating, name, subject, review, date, country }) => {
 
   const starIcons = [];

@@ -18,10 +18,10 @@ const IntroContainer = styled.div`
     padding-bottom: ${({ theme }) => theme.spacing.small};
   }
   @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
-  padding-top: 8.75rem;
-  padding-left: 2.625rem; 
-  padding-right: ${({ theme }) => theme.spacing.xsmall}; 
-  padding-bottom: ${({ theme }) => theme.spacing.small};
+    padding-top: 8.75rem;
+    padding-left: 2.625rem; 
+    padding-right: ${({ theme }) => theme.spacing.xsmall}; 
+    padding-bottom: ${({ theme }) => theme.spacing.small};
   }
 `;
 
@@ -32,5 +32,5 @@ export const Introcontent = () => {
     <SubH1>WITH SMALL, SIMPLE ACTS </SubH1>
     <FinePrint>Natural Magic*</FinePrint>
     </IntroContainer>
-  )
-}
+  );
+};

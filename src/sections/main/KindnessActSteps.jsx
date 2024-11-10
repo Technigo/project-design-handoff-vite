@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import kindstepsData from "../../data/steps.json";
-import { StepCard } from "../../re-components/StepCard"
+import { StepCard } from "../../re-components/StepCard";
 
 const KindnessStepContainer = styled.div `
   background-color: ${({ theme }) => theme.backgrounds.primary};  
