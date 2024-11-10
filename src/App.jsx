@@ -5,6 +5,7 @@ import { HeaderHeroSection } from './sections/HeaderHeroSection';
 import { FooterSection } from './sections/Footer';
 import { SupportgroupSection } from './sections/Supportgroup';
 import { CarouselSection } from './sections/Carousel';
+import { Achievements } from './sections/Achievements';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Welcome />
       <SupportgroupSection />
       <CarouselSection />
+      <Achievements />
       <FooterSection />
     </>
   );

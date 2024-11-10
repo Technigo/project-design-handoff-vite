@@ -131,3 +131,30 @@ export const FooterContactInfo = styled.p`
   margin-top: 1rem;
   text-align: left;
 `;
+
+export const CircleText = styled.span`
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+`;
+
+export const CircleLabel = styled.p`
+  margin-top: 0.5rem;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+`;
+
+export const AchievementsTitle = styled.h2`
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.3;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+`;
