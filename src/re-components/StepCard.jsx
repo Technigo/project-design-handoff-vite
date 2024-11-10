@@ -7,17 +7,24 @@ const StepContainer = styled.div`
   padding-left: ${({ theme }) => theme.spacing.xsmall}; 
   padding-right: ${({ theme }) => theme.spacing.xsmall}; 
 
-  @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
+  @media (min-width: ${({ theme }) => theme.breakpoints.medium}) {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around
+    justify-content: space-between;
   }
 `;
+
 const Instructions = styled.div `
   display: flex;
   flex-direction: row;
   gap: ${({ theme }) => theme.spacing.xsmall};
 `;
+
+const StepIcon = styled.div`
+  width: 2.75rem;
+  height: 2.75rem;
+  flex-shrink: 0;
+`;
+
 const StepImg = styled.div `
   display: flex;
   justify-content: center;
@@ -27,11 +34,15 @@ const StepImg = styled.div `
   }
 `;
 
+
+
 export const StepCard = ({icon, step, doodle}) => {
  return (
     <StepContainer>
       <Instructions> 
-      <img src={icon} alt="icon" />
+        <StepIcon>
+          <img src={icon} alt="icon" />
+        </StepIcon>
       <BodyTextLarge>{step}</BodyTextLarge>
       </Instructions>
       <StepImg> 
