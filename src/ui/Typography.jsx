@@ -101,7 +101,7 @@ line-height: 1.1rem;
 
 `;
 
-const Typography7 = styled.p`  //Footer 
+export const Typography7 = styled.p`  //Footer 
 color: #FFF;
 font-family: "Josefin Sans";
 font-size: 0.75rem;

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Typography6 } from "../../ui/Typography";
+import { Typography6, Typography7 } from "../../ui/Typography";
 
 
 
@@ -29,6 +29,7 @@ const AboutSec = styled.section `
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    text-align: end;
     width: 30%;
 `;
 
@@ -41,8 +42,8 @@ export const Footer = () => {
                 </InfoSec>
 
                 <AboutSec>
-                    <Typography6 isWhite={true} noItalic={true}>Terms of Use</Typography6>
-                    <Typography6 isWhite={true} noItalic={true}>About Daily Spells</Typography6>
+                    <Typography7 isWhite={true} noItalic={true}>Terms of Use</Typography7>
+                    <Typography7 isWhite={true} noItalic={true}>About Daily Spells</Typography7>
                 </AboutSec>
             </FooterSection>
     );

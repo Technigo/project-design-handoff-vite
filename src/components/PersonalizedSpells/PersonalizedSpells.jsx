@@ -16,6 +16,10 @@ const CarouselBackground = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
 `;
 
 const PersBackgroundImage = styled.img`
@@ -61,11 +65,17 @@ const PersInfoSection = styled.section`
   margin: 3rem auto 0;
   z-index: 1;
 
-  @media screen and (min-width: 1048px) {
+  @media screen and (min-width: 1200px) {
     width: 40rem;
     margin: 3rem 2rem;
   }
 `;
+
+const DivButton = styled.div `
+    @media screen and (min-width: 1200px) {
+        margin: 0 2rem;
+    }
+`
 
 const PersGrid = styled.section`
   display: flex;
@@ -77,7 +87,12 @@ const PersGrid = styled.section`
   padding: 5rem 1rem;
   z-index: 1;
   max-width: 100%;
+
+  @media screen and (min-width: 1200px) {
+        margin: 0 auto;
+    }
 `;
+
 
 export const PersonalizedSpells = ({ quotesData }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
@@ -110,9 +125,9 @@ export const PersonalizedSpells = ({ quotesData }) => {
         <Typography typography="Unlock the magic within with spells crafted uniquely for your needs!" level={4} />
       </PersInfoSection>
 
-      <div>
+      <DivButton>
         <Button text="Get the power" onClick={togglePopup} />
-      </div>
+      </DivButton>
 
       {/* Render the SignUpPopup if isPopupOpen is true */}
       {isPopupOpen && <SignUpForm onClose={togglePopup} />}
