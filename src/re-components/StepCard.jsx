@@ -6,6 +6,12 @@ const StepContainer = styled.div`
   background-color: ${({ theme }) => theme.backgrounds.primary};  
   padding-left: ${({ theme }) => theme.spacing.xsmall}; 
   padding-right: ${({ theme }) => theme.spacing.xsmall}; 
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around
+  }
 `;
 const Instructions = styled.div `
   display: flex;
