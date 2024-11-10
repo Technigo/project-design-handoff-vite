@@ -25,8 +25,6 @@ export const SubH1 = styled.h1 `
   line-height: ${({ theme }) => theme.lineHeights.subH1};
   color: ${({ theme }) => theme.text.secondary};
 
-
-
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
   font-size: 1.625rem;
   }
@@ -97,7 +95,7 @@ export const BodyTextSmall = styled.p `
   font-family: ${({ theme }) => theme.fonts.body};
   font-size: ${({ theme }) => theme.fontSizes.bodySmall};
   line-height: ${({ theme }) => theme.lineHeights.bodySmall};
-
+  font-weight: 400;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: ${({ theme }) => theme.fontSizes.bodySmall};

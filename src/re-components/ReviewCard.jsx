@@ -13,7 +13,7 @@ const ReviewContainer = styled.div `
   scroll-snap-align: start; //for the snapscroll
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
-  flex: 0 0 18.75rem; 
+  flex: 0 0 20rem; 
   }
 `;
 
@@ -25,8 +25,19 @@ const RatingContainer = styled.div `
 `;
 
 const ReviewText = styled.div `
+  display: -webkit-box;
+ -webkit-line-clamp: 4;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ position: relative;
+ max-height: calc(5 * 1.25rem);
+  line-height: 1.4375rem; 
 
-`;
+ @media (max-width: ${({ theme }) => theme.breakpoints.large}) {
+  max-height: calc(6 * 1.25rem);
+ } 
+`; 
 
 const StarContainer = styled.div`
 display: flex;
