@@ -6,13 +6,9 @@ export const H1 = styled.h1 `
   line-height: ${({ theme }) => theme.lineHeights.h1};
   color: ${({ theme }) => theme.text.secondary};
 
-
-
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: 4.25rem; 
   }
-
-
 
   @media (min-width: ${({ theme }) => theme.breakpoints.medium}) {
     font-size: 8.25rem; 
@@ -103,9 +99,6 @@ export const BodyTextSmall = styled.p `
   line-height: ${({ theme }) => theme.lineHeights.bodySmall};
 
 
-
-
-
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: ${({ theme }) => theme.fontSizes.bodySmall};
   }
@@ -116,10 +109,6 @@ export const FinePrint = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.finePrint};
   line-height: ${({ theme }) => theme.lineHeights.finePrint};
   color: ${({ theme }) => theme.text.secondary};
-
-
-
-
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
   font-size: 1rem;
@@ -136,10 +125,6 @@ export const FinePrintFooter = styled.p`
   line-height: ${({ theme }) => theme.lineHeights.finePrint};
   color: ${({ theme }) => theme.text.accent};
   padding-bottom: ${({ theme }) => theme.spacing.medium};
-
- 
-
-
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
   font-size: 1rem;

@@ -23,12 +23,22 @@ gap: 1rem;
 align-self: stretch;
 `;
 
+const FooterStyling = styled.div `
+@media (min-width: ${({ theme }) => theme.breakpoints.large}) { 
+ display: flex;
+ flex-direction: row;
+}
+
+`;
+
 export const Footer = () => {
   return (
     <FooterContainer>
       <StartTodayButton/>
-      <SocialLinks/>
-      <LogoSection/>
+      <FooterStyling>
+       <SocialLinks/>
+      <LogoSection/>  
+      </FooterStyling>
       <FooterWrapper>
         <FinePrintFooter>** Acts of kindness are highly contagious  © 2024</FinePrintFooter>
       </FooterWrapper>
