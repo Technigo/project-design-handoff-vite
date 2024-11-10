@@ -15,7 +15,6 @@ const StyledTextContainer = styled.div`
     width: 80%;
     height: auto;
     padding-top: 12px
-    padding-bottom: 32px;
   }
 
   // Tablets
@@ -26,14 +25,14 @@ const StyledTextContainer = styled.div`
 
   // Desktop
   @media (min-width: 1024px) and (max-width: 1600px) {
-    width: 571px;;
-    height: 200px;
+    width: 485px;
+    height: 160px;
   }
 
   /* Large Desktop (above 1600px) */
   @media (min-width: 1600px) {
-    width: 571px;;
-    height: 200px;
+    width: 485px;
+    height: 160px;
   }
 `;
 
@@ -48,7 +47,14 @@ const StyledParagraph = styled.p`
     letter-spacing: -0.16px;
     margin: 0;
 
-  // Tablets
+  
+  // Small phone
+  @media (min-width: 320px) and (max-width: 411px) {
+  padding-bottom: 16px;
+  padding-top: 16px;
+  }
+  
+    // Tablets
   @media (min-width: 768px) and (max-width: 1023px) {
     font-size: 18px;
     line-height: 42px;
@@ -57,15 +63,15 @@ const StyledParagraph = styled.p`
 
   // Desktop
   @media (min-width: 1024px) and (max-width: 1600px) {
-    font-size: 24px;
-    line-height: 42px; 
+    font-size: 18px;
+    line-height: 42px;
     letter-spacing: -0.2px;
   }
 
   /* Large Desktop (above 1600px) */
   @media (min-width: 1600px) {
-    font-size: 24px;
-    line-height: 42px; 
+    font-size: 18px;
+    line-height: 42px;
     letter-spacing: -0.2px;
   }
 `;

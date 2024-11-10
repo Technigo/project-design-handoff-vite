@@ -19,21 +19,26 @@ const AnimationContainer = styled.div`
   background: #FDF8F5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
-  // Media Queries - 
-  // Small phone
+  // Media Queries - Small phone
   @media (min-width: 320px) and (max-width: 411px) {
     width: 285px;
     height: 150px;
   }
 
-  // Media Queries - Removes animation on tablet and desktop
-      // Tablets
+  // Media Queries - Tablet 
+  //Removes animation on tablet and desktop
   @media (min-width: 768px) and (max-width: 1023px) {
     display: none;
   }
 
-  // Desktop- Removes animation on tablet and desktop
+  // Media Queries - Desktop
+  //Removes animation on tablet and desktop
   @media (min-width: 1024px) and (max-width: 1600px) {
+    display: none;
+  }
+
+  /* Large Desktop (above 1600px) */
+  @media (min-width: 1600px) {
     display: none;
   }
 `;

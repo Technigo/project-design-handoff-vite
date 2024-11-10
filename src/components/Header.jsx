@@ -13,7 +13,8 @@ const Wrapper = styled.div`
 const HeroContainer = styled.div`
   display: flex;
   position: relative;
-  width: 412px;
+  // width: 412px;
+  max-width: 500px;
   height: 402.374px;
   align-items: flex-end;
   gap: 10px;
@@ -21,9 +22,17 @@ const HeroContainer = styled.div`
   margin: 0;
 
   // Small phone
-  @media (min-width: 320px) and (max-width: 411px) {
-    width: 320px;;
-    height: 310px;
+  @media (min-width: 320px) and (max-width: 412px) {
+    width: 100vw;
+    height: auto;
+    max-width: 411px;
+  }
+
+  // Medium phones
+  @media (min-width: 413px) and (max-width: 767px) {
+    width: 100vw;
+    height: auto;
+    max-width: 767px;
   }
 
   // Tablets
@@ -34,14 +43,14 @@ const HeroContainer = styled.div`
 
   // Desktop
   @media (min-width: 1024px) and (max-width: 1600px) {
-    width: 612px;;
-    height: 600px;
+    width: 512px;;
+    height: 500px;
   }
 
-    /* Large Desktop (above 1600px) */
+  /* Large Desktop (above 1600px) */
   @media (min-width: 1600px) {
-    width: 612px;;
-    height: 600px;
+    width: 512px;;
+    height: 500px;
   }
 `;
 
@@ -71,6 +80,12 @@ const StyledHeaderText = styled.h1`
   letter-spacing: -0.96px;
   padding-bottom: 18px;
   margin: 0;
+
+  // Small phone
+  @media (min-width: 320px) and (max-width: 412px) {
+  font-size: 36px;
+  line-height: 36px;
+  }
 `;
 
 // Styling to separate the H1 text in three lines
