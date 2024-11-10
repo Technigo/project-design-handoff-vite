@@ -1,9 +1,5 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components"
-import { useState } from "react"
-import { Typography } from "../../ui/Typography"
-import { Button } from "../../ui/Button"
-
 
 
 const Card = styled.article`
@@ -34,10 +30,9 @@ const P = styled.p`
 
 export const CarouselCard = ({ text }) => {
 
-  return (
-    <Card>
-      <P>{text}</P>
-      {/* <Typography text={text} level={4} /> */}
-    </Card>
-  );
+	return (
+		<Card>
+			<P>{text}</P>
+		</Card>
+	);
 };

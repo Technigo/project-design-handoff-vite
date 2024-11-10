@@ -6,32 +6,20 @@
 
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+This week we should follow a design from a UX student. We should also use styled and reusable components.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We started of with the planning of components and what could be reusable. Another aim was to keep the app.jsx file as clean and concise as possible which I think we achieved. We have followed the design as close as we could but our main problems was the linear gradient which changed depending on screen device and the footer was floating in some screens. We haven't solved the problem completely.
+
+Tools and techniques that we used apart from reusable and styled components is that we created a global styles file for universal styles that apply across the entire app. We also created json files for the quotes and spells to store structured data that that can easily be accessed and keep the code clean.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+https://dailyspells.netlify.app/
 
-## Instructions
+Collaborators:
+Anna Hansen
+Erika Olsson
 
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+[Anna2024WebDev,erikamolsson]
