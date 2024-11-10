@@ -1,0 +1,47 @@
+{
+  "weblinks": [
+    {
+      "_id": "1",
+      "name": "arrow",
+      "text": "start today",
+      "icon": "icons/arrow-icon.svg",
+      "link": "https://www.google.com/"
+    },
+    {
+      "_id": "2",
+      "name": "story",
+      "text": "our story",
+      "link": "https://www.google.com/"
+    },
+    {
+      "_id": "3",
+      "name": "contact information",
+      "text": "contact",
+      "link": "https://www.google.com/"
+    },
+    {
+      "_id": "4",
+      "name": "q&a",
+      "text": "faq",
+      "link": "https://www.google.com/"
+    },
+    {
+      "_id": "5",
+      "name": "instagram",
+      "icon": "icons/instagram.svg",
+      "link": "https://www.google.com/"
+    },
+    {
+      "_id": "6",
+      "name": "tiktok",
+      "icon": "icons/tiktok.svg",
+      "link": "https://www.google.com/"
+    },
+    {
+      "_id": "7",
+      "name": "share",
+      "icon": "icons/share.svg",
+      "link": "https://www.google.com/"
+    }
+  ]
+}

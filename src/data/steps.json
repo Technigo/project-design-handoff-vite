@@ -1,0 +1,22 @@
+{
+  "kindsteps": [
+    {
+      "_id": "1",
+      "icon": "/icons/check-icon.svg",
+      "step": "We’ll send you random acts of kindness",
+      "doodle": "/doodles/Doodles_Step1.png"
+    },
+    {
+      "_id": "2",
+      "icon": "/icons/check-icon.svg",
+      "step": "You perform the act",
+      "doodle": "/doodles/Doodles_Step2.png"
+    },
+    {
+      "_id": "3",
+      "icon": "/icons/check-icon.svg",
+      "step": "You feel good and track",
+      "doodle": "/doodles/Doodles_Step3.png"
+    }
+  ]
+}
