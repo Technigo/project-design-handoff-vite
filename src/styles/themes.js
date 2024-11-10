@@ -27,6 +27,7 @@ export const themes = {
     finePrint: "1.125rem"
   },
 
+
   lineHeights: {
     h1: "100%",
     h2: "105%",
@@ -50,7 +51,10 @@ export const themes = {
 
   breakpoints: {
     xsmall: "320px",
-    small: "389px", 
+    small: "390px",
+    medium: "768px",
+    large: "1067px", //quickfix för att få h2 att få plats på en rad (ist för 1024px -designen är också alldeles för stor för 1024px)...
+    xlarge: "1600px"
   }
 
 };

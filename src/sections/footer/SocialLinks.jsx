@@ -12,11 +12,20 @@ background-color: ${({ theme }) => theme.backgrounds.highlight};
 padding-top: ${({ theme }) => theme.spacing.small};
 padding-left: ${({ theme }) => theme.spacing.xsmall};
 display: flex;
-width: 24.375rem;
+width: 100%;
 align-items: center;
 gap: 1rem;
-
 box-sizing: border-box;
+
+margin: 1,5rem, 1rem, 0.5rem, 1rem;
+
+/* display: flex;
+padding: var(--T-Margin, 1.5rem) var(--lr-margin, 1rem) var(--B-Margin, 0.5rem) var(--lr-margin, 1rem);
+align-items: center;
+gap: 1rem;
+align-self: stretch; */
+
+
 `;
 
 const LinkButtonsContainer = styled.div`
@@ -25,7 +34,8 @@ padding-bottom: ${({ theme }) => theme.spacing.xxsmall};
 padding-top: ${({ theme }) => theme.spacing.xxsmall};
 padding-left: ${({ theme }) => theme.spacing.xsmall};
 display: flex;
-width: 24.375rem;
+width: 100%;
+height: auto;
 flex-direction: column;
 align-items: flex-start;
 box-sizing: border-box;
@@ -44,14 +54,21 @@ align-self: stretch;
 // Define button styles for individual buttons
 const ButtonStyle1 = styled.div`
   background-color: ${({ theme }) => theme.backgrounds.highlight};
-
+  /* margin: 1,5rem, 1rem, 0.5rem, 1rem; */
   display: flex;
-  width: 21.375rem;
+  width: 100%;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   flex-shrink: 0;
   flex-direction: column;
   align-items: flex-start;
+
+  /* display: flex;
+width: var(--Breakpoint, 24.375rem);
+padding: var(--T-Margin, 1.5rem) var(--lr-margin, 1rem) var(--B-Margin, 0.5rem) var(--lr-margin, 1rem);
+flex-direction: column;
+align-items: flex-start;
+gap: 0.625rem; */
 `;
 
 const ButtonStyle2 = styled.div`
@@ -71,7 +88,7 @@ align-self: stretch;
 `;
 
 
-export const SocialLinks = () => {
+export const StartTodayButton = ({ showFinePrint = true, applyPadding = false}) => {
   return (
     <>
       {/* Render StartTodayContainer for _id === "1" */}
@@ -84,12 +101,21 @@ export const SocialLinks = () => {
                 text={item.text}
                 icon={item.icon}
                 link={item.link}
+                applyPadding={applyPadding} // ApplyPadding prop here 
               />
-              <FinePrintFooter>No cost, just kindness*</FinePrintFooter>
+              {showFinePrint && ( 
+                <FinePrintFooter>No cost, just kindness*</FinePrintFooter>
+              )}
             </ButtonStyle1>
           ))}
       </StartTodayContainer>
+    </>
+  )
+}
 
+export const SocialLinks = () => {
+  return (
+    <>
       {/* Render LinkButtonsContainer for _id "2", "3", and "4" */}
       <LinkButtonsContainer>
         {weblinks.weblinks
