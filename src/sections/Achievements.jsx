@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { AchievementElement } from '../ui/AchievementElement';
 import { AchievementsTitle } from '../ui/Typography';
@@ -8,15 +7,19 @@ const AchievementsSection = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 2rem;
-  max-width: 500px;
+  max-width: 700px;
   margin: 0 auto;
 `;
 
 const AchievementsContainer = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   gap: 1.5rem;
-  width: 100%; 
+  width: 100%;
+
+ @media (max-width: 400px){
+gap: 0.5rem;
+ }
 `;
 
 export const Achievements = () => {
