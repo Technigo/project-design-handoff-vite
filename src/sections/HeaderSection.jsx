@@ -9,6 +9,13 @@ const StyledHeaderSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media (max-width: 400px) {
+    padding: 0rem 0rem;
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+  }
 `;
 
 const LeftSection = styled.div`

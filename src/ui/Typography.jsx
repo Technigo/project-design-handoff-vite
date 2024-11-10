@@ -144,6 +144,11 @@ export const CircleLabel = styled.p`
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
+
+  @media (max-width: 400px){
+    max-width: 80px;
+    word-wrap: break-word
+  }
 `;
 
 export const AchievementsTitle = styled.h2`

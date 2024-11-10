@@ -1,6 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
-import { CircleText, CircleLabel, AchievementsTitle } from './Typography';
+import PropTypes from 'prop-types';
+import { CircleText, CircleLabel } from './Typography';
 
 const Circle = styled.div`
   display: flex;
@@ -25,4 +25,10 @@ export const AchievementElement = ({ number, label, color }) => {
       <CircleLabel>{label}</CircleLabel>
     </div>
   );
+};
+
+AchievementElement.propTypes = {
+  number: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
+  color: PropTypes.string,
 };
