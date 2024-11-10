@@ -16,10 +16,6 @@ const FooterContainer = styled.footer`
   color: black;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
-
-  @media (max-width: 768px) {
-    padding: 1.5rem 1rem;
-  }
 `;
 
 const LogoContainer = styled.div`
@@ -41,10 +37,6 @@ const SocialIconsContainer = styled.div`
   justify-content: flex-end;
   gap: 2rem;
   margin-top: 1.5rem;
-
-  @media (max-width: 768px) {
-    margin-top: 1rem;
-  }
 `;
 
 export const FooterSection = () => {
