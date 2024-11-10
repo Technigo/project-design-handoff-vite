@@ -56,4 +56,5 @@ export const themes = {
     large: "1067px", //quickfix för att få h2 att få plats på en rad (ist för 1024px -designen är också alldeles för stor för 1024px)...
     xlarge: "1600px"
   }
+
 };

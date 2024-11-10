@@ -8,14 +8,6 @@ export const H1 = styled.h1 `
 
 
 
-
-
-
-
-
-
-
-
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: 4.25rem; 
   }
@@ -30,14 +22,12 @@ export const H1 = styled.h1 `
     font-size: 8.25rem; 
   }
 `;
+
 export const SubH1 = styled.h1 `
   font-family: ${({ theme }) => theme.fonts.heading};
   font-size: ${({ theme }) => theme.fontSizes.subH1};
   line-height: ${({ theme }) => theme.lineHeights.subH1};
   color: ${({ theme }) => theme.text.secondary};
-
-
-
 
 
 
@@ -58,10 +48,6 @@ export const H2 = styled.h2`
   font-family: ${({ theme }) => theme.fonts.heading};
   font-size: ${({ theme }) => theme.fontSizes.h2};
   line-height: ${({ theme }) => theme.lineHeights.h2};
-
-
-
-
 
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
@@ -85,11 +71,6 @@ export const H3 = styled.h3 `
 
 
 
-
-
-
-
-
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
   font-size: 1.625rem;
   }
@@ -105,8 +86,6 @@ export const BodyTextLarge = styled.p `
   font-family: ${({ theme }) => theme.fonts.body};
   font-size: ${({ theme }) => theme.fontSizes.bodyLarge};
   line-height: ${({ theme }) => theme.lineHeights.bodyLarge};
-
-
 
 
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
@@ -127,9 +106,6 @@ export const BodyTextSmall = styled.p `
 
 
 
-
-
-
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
     font-size: ${({ theme }) => theme.fontSizes.bodySmall};
   }
@@ -140,9 +116,6 @@ export const FinePrint = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.finePrint};
   line-height: ${({ theme }) => theme.lineHeights.finePrint};
   color: ${({ theme }) => theme.text.secondary};
-
-
-
 
 
 
@@ -163,14 +136,8 @@ export const FinePrintFooter = styled.p`
   line-height: ${({ theme }) => theme.lineHeights.finePrint};
   color: ${({ theme }) => theme.text.accent};
   padding-bottom: ${({ theme }) => theme.spacing.medium};
-  ;
 
-
-
-
-
-
-
+ 
 
 
 

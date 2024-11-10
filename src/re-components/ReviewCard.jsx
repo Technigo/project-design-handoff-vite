@@ -11,12 +11,17 @@ const ReviewContainer = styled.div `
   box-sizing: border-box;
   gap: ${({ theme }) => theme.spacing.xxsmall};
   scroll-snap-align: start; //for the snapscroll
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
+  flex: 0 0 18.75rem; 
+  }
 `;
 
 const RatingContainer = styled.div `
   display: flex;
   flex-direction: row;
   gap: ${({ theme }) => theme.spacing.xxsmall};
+  align-items: center;
 `;
 
 const ReviewText = styled.div `
@@ -42,7 +47,7 @@ font-weight: 700;
 export const ReviewCard = ({ rating, name, subject, review, date, country }) => {
 
   const starIcons = [];
-  const numStars = 4;
+  const numStars = 5;
 
   for (let i = 0; i < numStars; i++) {
     starIcons.push(<StarIcon key={i} src={rating} alt="star" />);
@@ -51,7 +56,7 @@ export const ReviewCard = ({ rating, name, subject, review, date, country }) => 
   return (
     <ReviewContainer >
     <RatingContainer>
-    {starIcons}    
+    {starIcons}       
     <BodyTextSmall>{name}</BodyTextSmall>
     </RatingContainer>
     <ReviewText> 
