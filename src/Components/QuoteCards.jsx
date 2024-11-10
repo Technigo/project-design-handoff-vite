@@ -41,13 +41,14 @@ export const QuoteCards = () => {
                 ))}
             </RadioButtons>
 
-            <DashedLine /> {/* Add the dashed line here */}
-
+            <DashedLine />
         </QuoteCardContainer>
     );
 };
 
-// Styled Components
+
+//styling
+
 const QuoteCardContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -58,12 +59,19 @@ const QuoteCardContainer = styled.div`
 
 const CardsContainer = styled.div`
     display: flex;
-    width: 320px;  /* Adjusted to show more of the second card */
-    height: 278px; /* Fixed height for consistent layout */
+    width: 320px;  
+    height: 278px; 
 
-    /* Apply translation based on activeIndex and full card width */
     transform: ${({ activeIndex }) => `translateX(-${activeIndex * 220}px)`}; 
     transition: transform 0.5s ease;
+
+    @media (min-width: 768px) {
+        width: 100%;
+        padding-left: 100px; 
+    }
+        @media (min-width: 1024px) {
+    margin-left:250px;
+  }
 `;
 
 const Card = styled.div`
@@ -86,32 +94,38 @@ const RadioButtons = styled.div`
     gap: 10px;
     margin-top: 32px;
     margin-bottom: 32px;
-
 `;
 
 const RadioButton = styled.input.attrs({ type: 'radio' })`
-appearance: none;
-width: 16px;
-height: 16px;
-border: 1px solid #F77AE7;
-border-radius: 50%;
-cursor: pointer;
-outline: none;
-transition: border-color 0.3s ease, background-color 0.3s ease;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #F77AE7;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 
-&:hover {
-    border-color: #D9D9D9;
-}
+    &:hover {
+        border-color: #D9D9D9;
+    }
 
-&:checked {
-    background-color: #D9D9D9; 
-}
+    &:checked {
+        background-color: #D9D9D9; 
+    }
 `;
 
 const DashedLine = styled.div`
     width: 270px;
     border-top: 2px dashed #333;
-    margin: 20px 0; 
+    margin: 20px 0;
+
+    @media (min-width: 768px) {
+        width: 600px;
+    }
+          @media (min-width: 1024px) {
+    width: 1100px;
+  }
 `;
 
 export default QuoteCards;

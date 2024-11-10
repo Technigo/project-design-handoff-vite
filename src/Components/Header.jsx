@@ -1,5 +1,3 @@
-// Header.jsx
-
 import styled from "styled-components";
 import { HeroButton } from "../UI/Button";
 
@@ -9,8 +7,8 @@ export const Header = () => {
       <NavBar>
         <Logo src="/Images/KC-logo.png" alt="Picture of Logo" />
         <NavText>Kindness & Compassion</NavText>
-        <SearchIcon src="/Images/search-icon.svg" alt="Search Icon" />
-        <MenuIcon src="/Images/hamburger-menu.svg" alt="Hamburger Menu Icon" />
+        <SearchIcon src="/Images/search-icon.png" alt="Search Icon" />
+        <MenuIcon src="/Images/menu-icon.png" alt="Menu Icon" />
       </NavBar>
 
       <HeroContainer>
@@ -25,7 +23,8 @@ export const Header = () => {
   );
 };
 
-// Styled Components
+
+// Styling
 
 const HeaderContainer = styled.div`
   width: 100%;
@@ -42,6 +41,14 @@ const NavBar = styled.nav`
   height: 55px;
   padding: 10px;
   gap: 10px;
+
+  @media (min-width: 768px) {
+        margin-left: 230px;
+  }
+
+  @media (min-width: 1024px) {
+   margin-left: 500px;
+   }
 `;
 
 const Logo = styled.img`
@@ -57,22 +64,11 @@ const NavText = styled.p`
 `;
 
 const MenuIcon = styled.img`
-  width: 21px;
-  height: 18px;
-  flex-shrink: 0;
-  padding: 10px;
-  margin-top: 10px;
-  margin-left: auto;
-fill: black;
+ margin-left: 30px;
 `;
 
 const SearchIcon = styled.img`
-  width: 21.75px;
-  height: 21.75px;
-  flex-shrink: 0;
-  padding: 10px;
-  margin-top: 8.5px;
-  color: black;
+ margin-left: 10px;
 `;
 
 const HeroContainer = styled.div`
@@ -88,6 +84,7 @@ const HeroImage = styled.img`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  
 `;
 
 const HeroText = styled.div`
@@ -98,26 +95,30 @@ const HeroText = styled.div`
   text-align: center;
   color: white;
   padding: 20px;
+  margin-top: 10px;
+
 
 `;
 
 const HeroTitle = styled.h1`
-  font-size: 2rem;
+font-size: 40px;
   margin-bottom: 25px;
+  margin-top: 30px;
+
 
 `;
 
 const HeroSubtitle = styled.p`
-  font-size: 1.2rem;
-  color: #fff;
-  background-color: #00000033;
+ font-size: 24px;
+ color: #fff;
+background-color: #00000033;
 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.18);
-  font-family: "Roboto Serif", serif;
-  font-style: italic;
-  font-weight: 500;
-  line-height: 130%;
-  width: 393px;
-  margin-bottom: 100px;
+font-family: "Roboto Serif", serif;
+font-style: italic;
+font-weight: 500;
+line-height: 130%;
+width: 393px;
+margin-bottom: 32px;
 
 `;
 

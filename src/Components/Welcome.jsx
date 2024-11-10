@@ -21,7 +21,6 @@ export const Welcome = () => {
                 Ingen kan göra allt, men alla kan göra något. Tillsammans skapar vi en mer inkluderande värld.`}
             </TextP>
 
-            {/* Styled link component */}
             <StyledLink href="https://example.com">
                 Var med och gör skillnad
             </StyledLink>
@@ -29,9 +28,12 @@ export const Welcome = () => {
     );
 };
 
-// Styled Components
+
+
+// Styling
 const Container = styled.div`
 padding:16px;
+
 `;
 
 const StyledLink = styled.a`
@@ -53,6 +55,15 @@ const StyledLink = styled.a`
     &:hover {
         text-decoration: none;
     }
+
+    @media (min-width: 768px) {
+        margin-left: 300px;
+        
+  }
+        @media (min-width: 1024px) {
+    margin-left: 620px;
+    
+  }
 `;
 
 export default Welcome;

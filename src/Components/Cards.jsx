@@ -11,6 +11,8 @@ import { CardsButton3 } from "../UI/Button";
 export const Cards = () => {
     return (
         <CardsContainer>
+            <br />
+            <br />
             <H3>Delta i våra samtalsgrupper</H3>
 
 
@@ -39,15 +41,11 @@ export const Cards = () => {
             </CardsContent>
 
 
-            {/*Link styled component */}
             <StyledLink href="https://example.com">
                 Flera aktiva stödgrupper
             </StyledLink>
 
             <br />
-
-
-
 
 
 
@@ -61,11 +59,15 @@ export const Cards = () => {
 
 
 
-// Styled Components
 
 /*Background style - colour*/
 const CardsContainer = styled.div`
   background-color: #FFCAF8;
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+  
   
 `;
 
@@ -89,14 +91,20 @@ const StyledLink = styled.a`
     &:hover {
         text-decoration: none;
     }
+    @media (min-width: 768px) {
+        margin-left: 300px;
+  }
+           @media (min-width: 1024px) {
+    margin-left: 620px;
+    
+  }
 `;
 
 
-// Styled component for images
 const StyledImage = styled.img`
-    margin: 0 auto; /* Centers the image horizontally */
+    margin: 0 auto; 
     padding: 0;
-    display: block; /* Required for margin: auto to work */
+    display: block; 
 `;
 
 

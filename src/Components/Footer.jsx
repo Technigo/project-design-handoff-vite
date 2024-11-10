@@ -1,5 +1,3 @@
-// Footer.jsx
-
 import styled from "styled-components";
 import { FooterP, FooterTitle, FooterInfo } from "../UI/Typography";
 
@@ -57,7 +55,8 @@ export const Footer = () => {
     );
 };
 
-// Styled Components
+
+// Styling
 const FooterContent = styled.div`
     background-color: #FFCAF8;
     padding: 24px 0;
@@ -78,6 +77,8 @@ const Logo = styled.img`
     height: 78px;
     flex-shrink: 0;
     margin-bottom: 50px;
+
+  
 `;
 
 const SocialIcons = styled.div`
@@ -88,10 +89,16 @@ const SocialIcons = styled.div`
     align-items: flex-end;
     gap: 24px;
     flex-shrink: 0;
+
+    @media (min-width: 1024px) {
+   margin-left: 400px;
+   }
 `;
 
 const SocialIcon = styled.img`
     size:48px;
+
+    
 `;
 
 
