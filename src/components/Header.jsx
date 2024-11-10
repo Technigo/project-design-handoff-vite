@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import HeroImage from "../assets/Heroimage.jpeg";
+import HeroImage from "../assets/HeroImage.jpeg";
 
 const Wrapper = styled.div`
   display: flex;
