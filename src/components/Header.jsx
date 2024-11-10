@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import kennelLogo from "/public/assets/logo-images/kennel-logo.svg";
-
+import kennelLogo from "/public/assets/logo-images/kennel-logo2.svg";
 
 // Main header container
 const HeaderContainer = styled.header`
@@ -29,14 +28,13 @@ const MenuContainer = styled.nav`
   gap: 1rem;
 `;
 
-
 // "hamburger" container
 const HamburgerIcon = styled.div`
   display: flex;
   flex-direction: column;
   padding: 23px 21px;
   width: 48.432px;
-  gap: 20px; 
+  gap: 20px;
   align-items: center;
   flex-shrink: 0;
 `;
@@ -56,11 +54,14 @@ export const Header = () => {
 
       {/* Right menu */}
       <MenuContainer>
-
         {/* "hamburger" Icon*/}
         <HamburgerIcon>
           {/* Secondary line hamburger icon */}
-          <Line xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 2" fill="none">
+          <Line
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 51 2"
+            fill="none"
+          >
             <path
               d="M1 1H49.4316"
               stroke="#EFDFC5"
@@ -71,7 +72,11 @@ export const Header = () => {
           </Line>
 
           {/* Secondary line hamburger icon */}
-          <Line xmlns="http://www.w3.org/2000/svg" viewBox="0 0 51 2" fill="none">
+          <Line
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 51 2"
+            fill="none"
+          >
             <path
               d="M1 1H49.4316"
               stroke="#EFDFC5"

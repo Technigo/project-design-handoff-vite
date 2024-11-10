@@ -14,9 +14,10 @@ const ContentWrapper = styled.div`
 `;
 
 const StyledImage = styled.img`
-  width: 100%;
+  max-width: 100%;
   height: 13.75rem;
   width: 24.375rem;
+  object-fit: contain;
 `;
 
 export const Dogs = () => {

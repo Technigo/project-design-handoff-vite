@@ -1,8 +1,6 @@
-import React from "react";
 import styled from "styled-components";
 import footerLogo from "/public/assets/logo-images/footer-logo.svg";
-
-
+import copyright from "/public/assets/social.media-images/copyright.svg";
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -24,26 +22,34 @@ const FooterLogo = styled.img`
   left: 300px;
 `;
 
-// 
 const TextBox = styled.div`
-    width: 108px;
+  // width: 108px;
+  display: inline-flex;
+  height: 1.875rem;
+  padding: 0rem 1rem 0rem 0.5rem;
+  align-items: center;
   line-height: 8px;
   color: ${({ theme }) => theme.colors.primary};
   font-family: ${({ theme }) => theme.fonts.secondary};
   font-size: 7px;
   text-align: center;
-    
 `;
 
-
-
+const StyledCopyright = styled.img`
+  width: 1rem;
+  height: 1rem;
+  vertical-align: middle;
+`;
 
 export const Footer = () => {
   return (
     <FooterContainer>
       <FooterLogo src={footerLogo} alt="Footer Logo" />
       <TextBox>
-        <p>THORONDOR'S KENNEL©2024</p>
+        <p>
+          THORONDOR&apos;S KENNEL <StyledCopyright src={copyright} alt="" />
+          &nbsp;2024
+        </p>
       </TextBox>
     </FooterContainer>
   );
