@@ -54,21 +54,21 @@ align-self: stretch;
 // Define button styles for individual buttons
 const ButtonStyle1 = styled.div`
   background-color: ${({ theme }) => theme.backgrounds.highlight};
-
+  /* margin: 1,5rem, 1rem, 0.5rem, 1rem; */
   display: flex;
-  width: 21.375rem;
+  width: 100%;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   flex-shrink: 0;
   flex-direction: column;
   align-items: flex-start;
 
-  display: flex;
+  /* display: flex;
 width: var(--Breakpoint, 24.375rem);
 padding: var(--T-Margin, 1.5rem) var(--lr-margin, 1rem) var(--B-Margin, 0.5rem) var(--lr-margin, 1rem);
 flex-direction: column;
 align-items: flex-start;
-gap: 0.625rem;
+gap: 0.625rem; */
 `;
 
 const ButtonStyle2 = styled.div`
@@ -88,7 +88,7 @@ align-self: stretch;
 `;
 
 
-export const StartTodayButton = ({ showFinePrint = true}) => {
+export const StartTodayButton = ({ showFinePrint = true, applyPadding = false}) => {
   return (
     <>
       {/* Render StartTodayContainer for _id === "1" */}
@@ -101,8 +101,9 @@ export const StartTodayButton = ({ showFinePrint = true}) => {
                 text={item.text}
                 icon={item.icon}
                 link={item.link}
+                applyPadding={applyPadding} // ApplyPadding prop here 
               />
-              {showFinePrint && (
+              {showFinePrint && ( 
                 <FinePrintFooter>No cost, just kindness*</FinePrintFooter>
               )}
             </ButtonStyle1>

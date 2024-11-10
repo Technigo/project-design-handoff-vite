@@ -19,6 +19,10 @@ const StyledButton = styled.button`
 
   cursor: pointer;
 
+  :hover {
+      transition: letter-spacing 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      letter-spacing: 5px; /*Adjust the spacing on hover for the transition effect*/
+    }
 
   `;
 

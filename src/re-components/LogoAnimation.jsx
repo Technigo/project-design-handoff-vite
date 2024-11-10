@@ -10,6 +10,11 @@ const LogoContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.medium}) {
+  width: 33.6875rem;
+  height: 33.9375rem;
+  }
 `;
 
 const HeartLogo = styled.img`
