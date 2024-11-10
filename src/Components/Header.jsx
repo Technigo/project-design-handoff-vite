@@ -5,14 +5,14 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <NavBar>
-        <Logo src="/Images/KC-logo.png" alt="Picture of Logo" />
+        <Logo src="Images/KC-logo.png" alt="Picture of Logo" />
         <NavText>Kindness & Compassion</NavText>
-        <SearchIcon src="/Images/search-icon.png" alt="Search Icon" />
-        <MenuIcon src="/Images/menu-icon.png" alt="Menu Icon" />
+        <SearchIcon src="Images/search-icon.png" alt="Search Icon" />
+        <MenuIcon src="Images/menu-icon.png" alt="Menu Icon" />
       </NavBar>
 
       <HeroContainer>
-        <HeroImage src="/Images/Hero-image.png" alt="Hero" />
+        <HeroImage src="Images/hero-image.png" alt="Hero" />
         <HeroText>
           <HeroTitle>Sprid en god <br />gärning för en <br />vänligare värld</HeroTitle>
           <HeroSubtitle>Vi skapar mötesplatser för äkta <br /> samtal och goda handlingar</HeroSubtitle>

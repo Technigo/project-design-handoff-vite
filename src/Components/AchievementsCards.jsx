@@ -10,15 +10,15 @@ export const AchievementsCards = () => {
             <H2>Vår Spridning</H2>
             <IconRow>
                 <IconCard>
-                    <IconImage src="../Images/samtalsgrupp-icon.png" alt="Samtalsgrupper" />
+                    <IconImage src="Images/samtalsgrupp-icon.png" alt="Samtalsgrupper" />
                     <Label>Samtalsgrupper</Label>
                 </IconCard>
                 <IconCard>
-                    <IconImage src="../Images/volounter-icon.png" alt="Volontärer" />
+                    <IconImage src="Images/volounter-icon.png" alt="Volontärer" />
                     <Label>Volontärer</Label>
                 </IconCard>
                 <IconCard>
-                    <IconImage src="../Images/activity-icon.png" alt="Aktiviteter" />
+                    <IconImage src="Images/activity-icon.png" alt="Aktiviteter" />
                     <Label>Aktiviteter</Label>
                 </IconCard>
             </IconRow>
@@ -33,8 +33,14 @@ const DashedLine = styled.div`
     display: flex;
     align-items: center;
 
+
+    /*Styling for tablet*/
     @media (min-width: 768px) {
     width: 600px;
+}
+
+
+    /*Styling for desktop*/
 
     @media (min-width: 1024px) {
     width: 1100px;

@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { H4 } from '../UI/Typography';
-import activityImage1 from '../../Images/activity-image1.png';
-import activityImage2 from '../../Images/activity-image2.png';
 
 const Section = styled.section`
     display: flex;
@@ -22,8 +20,7 @@ const Card = styled.article`
 
     &:hover {
         cursor: pointer; 
-    };
-
+    }
 `;
 
 const ImageContainer = styled.figure`
@@ -81,7 +78,7 @@ const StyledLink = styled.a`
 
     &:hover {
         text-decoration: none;
-    };
+    }
 `;
 
 const ActivityCard = ({ image, title, place, time, ageGroup }) => {
@@ -99,7 +96,7 @@ const ActivityCard = ({ image, title, place, time, ageGroup }) => {
                         </>
                     ) : (
                         title
-                    )};
+                    )}
                 </Title>
                 <br />
                 <Text>Plats: {place}</Text>
@@ -114,23 +111,19 @@ export const ActivityCards = () => {
         <Section>
             <H4>Aktiviteter</H4>
             <ActivityCard
-                image={activityImage1}
+                image="/Images/activity-image1.png" // Direct path to public folder image
                 title="Film och samtal: Sliding Doors"
                 place="Downtown Camper"
                 time="18.45"
                 ageGroup="M"
             />
             <ActivityCard
-                image={activityImage2}
+                image="/Images/activity-image2.png" // Direct path to public folder image
                 title="Army-träff"
                 place="Downtown Camper"
                 time="14-16.30"
             />
             <StyledLink href="https://example.com">Fler aktiviteter</StyledLink>
         </Section>
-
-
-
     );
 };
-
