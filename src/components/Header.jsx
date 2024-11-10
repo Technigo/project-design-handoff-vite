@@ -38,6 +38,11 @@ const HeroContainer = styled.div`
     height: 600px;
   }
 
+    /* Large Desktop (above 1600px) */
+  @media (min-width: 1600px) {
+    width: 612px;;
+    height: 600px;
+  }
 `;
 
 // Hero image styling

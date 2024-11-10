@@ -7,7 +7,6 @@ const StyledTextContainer = styled.div`
     flex-shrink: 0;
     padding-left: 16px;
     padding-right: 16px;
-    // padding-bottom: 32px;
     padding-top: 32px;
     margin: 0 auto;
 
@@ -21,14 +20,20 @@ const StyledTextContainer = styled.div`
 
   // Tablets
   @media (min-width: 768px) and (max-width: 1023px) {
-    width: 512px;
-    height: 200px;
+    width: 485px;
+    height: 160px;
   }
 
   // Desktop
   @media (min-width: 1024px) and (max-width: 1600px) {
     width: 571px;;
-    height: 234px;
+    height: 200px;
+  }
+
+  /* Large Desktop (above 1600px) */
+  @media (min-width: 1600px) {
+    width: 571px;;
+    height: 200px;
   }
 `;
 
@@ -45,12 +50,23 @@ const StyledParagraph = styled.p`
 
   // Tablets
   @media (min-width: 768px) and (max-width: 1023px) {
-    font-size: 24px;
+    font-size: 18px;
+    line-height: 42px;
+    letter-spacing: -0.2px;
   }
 
   // Desktop
   @media (min-width: 1024px) and (max-width: 1600px) {
     font-size: 24px;
+    line-height: 42px; 
+    letter-spacing: -0.2px;
+  }
+
+  /* Large Desktop (above 1600px) */
+  @media (min-width: 1600px) {
+    font-size: 24px;
+    line-height: 42px; 
+    letter-spacing: -0.2px;
   }
 `;
 

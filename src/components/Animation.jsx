@@ -19,17 +19,23 @@ const AnimationContainer = styled.div`
   background: #FDF8F5;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
+  // Media Queries - 
+  // Small phone
+  @media (min-width: 320px) and (max-width: 411px) {
+    width: 285px;
+    height: 150px;
+  }
+
   // Media Queries - Removes animation on tablet and desktop
       // Tablets
   @media (min-width: 768px) and (max-width: 1023px) {
     display: none;
   }
 
-  // Desktop
+  // Desktop- Removes animation on tablet and desktop
   @media (min-width: 1024px) and (max-width: 1600px) {
     display: none;
   }
-
 `;
 
 const TextContainer = styled.div`
@@ -38,6 +44,13 @@ const TextContainer = styled.div`
   align-items: center; /* Centers StaticText */
   width: 351px;
   height: 76px;
+
+  // Media Queries - 
+  // Small phone
+  @media (min-width: 320px) and (max-width: 411px) {
+    width: 260px;
+  }
+
 `;
 
 const StaticText = styled.div`
@@ -49,6 +62,13 @@ const StaticText = styled.div`
   line-height: 36px; /* 225% */
   letter-spacing: -0.16px;
   align-self: flex-start;
+
+  // Media Queries - 
+  // Small phone
+  @media (min-width: 320px) and (max-width: 411px) {
+    font-size: 12px;
+  }
+
 `;
 
 const DynamicText = styled.div`
@@ -61,6 +81,13 @@ const DynamicText = styled.div`
   letter-spacing: -0.24px;
   align-self: flex-start;
   // margin-left: 30px;
+
+  // Media Queries - 
+  // Small phone
+  @media (min-width: 320px) and (max-width: 411px) {
+    font-size: 20px;
+  }
+
 `;
 
 export const Animation = () => {
