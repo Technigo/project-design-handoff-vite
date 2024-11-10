@@ -11,17 +11,19 @@ import styled from "styled-components";
      ===================================== */
 }
 
-
 const DividerImage = styled.img`
   width: 100%; /* Full width of the container */
   margin: 1.5rem 1rem; /* Space above and below the divider */
-  z-index: 1;
+  z-index: 2;
   transform: ${({ $variant }) =>
-    $variant === "rotateY" ? "rotateY(180deg)" :
-    $variant === "rotate" ? "rotate(180deg)" :
-    $variant === "rotateX" ? "rotateX(180deg)" :
-    "none"}; 
-    // Apply transformation based on variant
+    $variant === "rotateY"
+      ? "rotateY(180deg)"
+      : $variant === "rotate"
+      ? "rotate(180deg)"
+      : $variant === "rotateX"
+      ? "rotateX(180deg)"
+      : "none"};
+  // Apply transformation based on variant
 `;
 
 // export const Divider = () => {

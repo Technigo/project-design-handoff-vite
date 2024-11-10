@@ -6,6 +6,7 @@ import { About } from "./components/About";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Dogs } from "./components/Dogs"
+import { Apply } from "./components/Apply";
 import { Contact } from "./components/Contact";
 import { ImageCarousel } from "./components/ImageCarousel";
 import { Footer } from "./components/Footer";
@@ -20,6 +21,7 @@ export const App = () => {
         <Intro />
         <About />
         <Dogs />
+        <Apply />
         <Contact />
         <ImageCarousel />
       </main>
@@ -27,4 +29,4 @@ export const App = () => {
       <GlobalStyles />
     </ThemeProvider>
   );
-}
+};
