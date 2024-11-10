@@ -2,10 +2,10 @@ import { StyledBody } from "../ui/Typography";
 import { Layout } from "../ui/Layout";
 import { Divider } from "../ui/Divider";
 import { Button } from "../ui/Button";
-
+import { media } from "../styles/media";
 import applySectionImage from "../../public/assets/dog-images/apply-section.webp";
-
 import styled from "styled-components";
+
 // Container for the image background
 const ApplySectionImage = styled.div`
   background-image: url(${applySectionImage});
@@ -13,8 +13,9 @@ const ApplySectionImage = styled.div`
   background-position: center;
   max-width: 100%;
   width: 24.375rem;
-  /* height: 13.75rem; */
-  flex-shrink: 0;
+  height: 13.75rem;
+  background-size: contain;
+  background-repeat: no-repeat;
 
   display: flex;
   flex-direction: column;
@@ -23,6 +24,15 @@ const ApplySectionImage = styled.div`
 
   position: relative;
   z-index: 1;
+
+  @media ${media.tablet} {
+    width: 44.0625rem;
+    height: 24.75rem;
+  }
+
+  @media ${media.desktop} {
+    width: 55rem;
+  }
 `;
 // Wrapper for the text and dividers below the image
 const ContentWrapper = styled.div`
@@ -38,7 +48,17 @@ const ContentWrapper = styled.div`
     margin-top: 1rem;
     margin-bottom: 2.5rem;
   }
+
+  @media ${media.tablet} {
+    width: 35rem;
+    /* height: 8.875rem; */
+  }
+
+  @media ${media.desktop} {
+    width: 45rem;
+  }
 `;
+
 export const Apply = () => {
   return (
     <Layout $top="70%" $left="50%" $rotation="-20deg">

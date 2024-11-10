@@ -2,20 +2,19 @@ import { StyledH2 } from "../ui/Typography";
 import { Layout } from "../ui/Layout";
 import { Divider } from "../ui/Divider";
 import { Button } from "../ui/Button";
-
+import { media } from "../styles/media";
 import aboutSectionImage from "../../public/assets/dog-images/about-section-image.webp";
-
 import styled from "styled-components";
 
 // Container for the image background
 const AboutSectionImage = styled.div`
   background-image: url(${aboutSectionImage});
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   background-position: center;
   max-width: 100%;
   width: 24.375rem;
   height: 13.75rem;
-  flex-shrink: 0;
 
   display: flex;
   flex-direction: column;
@@ -24,6 +23,15 @@ const AboutSectionImage = styled.div`
 
   position: relative;
   z-index: 1;
+
+  @media ${media.tablet} {
+    width: 44.0625rem;
+    height: 24.75rem;
+  }
+
+  @media ${media.desktop} {
+    width: 55rem;
+  }
 `;
 
 // Wrapper for the text and dividers below the image
@@ -36,10 +44,18 @@ const ContentWrapper = styled.div`
   max-width: 100%;
   z-index: 1;
 
-  /* Space above the button */
   button {
     margin-top: 2rem;
-    /* margin-bottom: 1rem; */
+    width: auto;
+  }
+
+  @media ${media.tablet} {
+    width: 35rem;
+    /* height: 8.875rem; */
+  }
+
+  @media ${media.desktop} {
+    width: 45rem;
   }
 `;
 export const About = () => {
