@@ -6,13 +6,19 @@ const CardContainer = styled.div`
   border: 1px solid #e6e6e6;
   border-radius: 10px;
   padding: 32px 16px;
-  width: 100%;
+  width: 80%;
   max-width: 380px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  min-height: 538px; 
+  flex-grow: 1;   
+
+  @media (min-width: 1600px) {
+    min-height: 565px;
+  }
 `;
 
 const Circle = styled.div`
@@ -51,6 +57,7 @@ const Description = styled.p`
   line-height: 28px;
   letter-spacing: -0.32px;
   margin: 16px 0;
+  flex-grow: 1;
 `;
 
 /* Snowflake animation */
@@ -73,7 +80,7 @@ const Button = styled.button`
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 330px;
+  width: 280px;
   height: 40px;
   font-size: 18px;
   padding: 10px;

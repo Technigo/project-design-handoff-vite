@@ -13,8 +13,10 @@ const StyledTextContainer = styled.div`
 
   // Small phone
   @media (min-width: 320px) and (max-width: 411px) {
-    width: 320px;;
-    height: 500px;
+    width: 80%;
+    height: auto;
+    padding-top: 12px
+    padding-bottom: 32px;
   }
 
   // Tablets

@@ -6,6 +6,10 @@ import Icon from './Icon';
 const CardGrid = styled.div`
   display: grid;
   gap: 32px; /* Space between cards */
+  margin: 0 auto;
+  max-width: 100%;
+  justify-items: center;
+  align-items: start;
 
   /* Mobile (320px to 767px) */
   @media (min-width: 320px) and (max-width: 767px) {
