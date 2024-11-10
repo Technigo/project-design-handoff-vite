@@ -28,6 +28,11 @@ const ReviewText = styled.div `
 
 `;
 
+const StarContainer = styled.div`
+display: flex;
+flex-direction: row;
+`;
+
 const StarIcon = styled.img`
   width: 8.323px;
   height: 7.925px;
@@ -56,7 +61,9 @@ export const ReviewCard = ({ rating, name, subject, review, date, country }) => 
   return (
     <ReviewContainer >
     <RatingContainer>
-    {starIcons}       
+      <StarContainer>
+      {starIcons}       
+      </StarContainer>
     <BodyTextSmall>{name}</BodyTextSmall>
     </RatingContainer>
     <ReviewText> 

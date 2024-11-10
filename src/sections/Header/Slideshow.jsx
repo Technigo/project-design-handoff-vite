@@ -41,11 +41,16 @@ const Slide = styled.img`
 const SlideshowInner = styled.div `
     display: flex;
     width: calc(500%); 
-    animation: ${slideAnimation} 20s infinite linear;
+    animation: ${slideAnimation} 11s infinite linear;
     
+    @media (min-width: ${({ theme }) => theme.breakpoints.medium}) {
+      width: calc(300%); 
+      animation: ${slideAnimation} 15s infinite linear;
+    }
+    @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
+      animation: ${slideAnimation} 10s infinite linear;
+    }
     `;
-
-
 
   export const Slideshow = () => {
     return (
