@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import heartslogo from "../../public/logo/heartslogo.svg"
 
-
 // Container for the logo
 const LogoContainer = styled.div`
   width: 15.75rem;
@@ -26,7 +25,6 @@ width: 100%;
 height: 100%;
 `;
 
-
 export const LogoAnimation = () => {
   return (
     <LogoContainer>
@@ -34,8 +32,3 @@ export const LogoAnimation = () => {
     </LogoContainer>
   );
 };
-
-
-
-
-

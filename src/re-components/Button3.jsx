@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-    
 // Define styled button component
     const StyledButton = styled.button`
     background-color: ${({ theme }) => theme.backgrounds.highlight};
@@ -25,17 +24,12 @@ export const Button3 = ({
     window.open(link, "_blank");
   };
 
-
-
   return (
-
-
       <StyledButton onClick={onClick || handleClick}>
         <img
           src={icon}
           aria-hidden="true" // Hide the icon from assistive technologies
         />
       </StyledButton>
- 
   );
 };

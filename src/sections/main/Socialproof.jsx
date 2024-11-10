@@ -9,7 +9,6 @@ const ScrollContainer = styled.div `
 
    &::-webkit-scrollbar {
     display: none;
-     /* height: 8px;   */
   } 
 `;
 

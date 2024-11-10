@@ -63,8 +63,6 @@ export const H3 = styled.h3 `
   line-height: ${({ theme }) => theme.lineHeights.h3};
   color: ${({ theme }) => theme.text.accent};
 
-
-
   @media (max-width: ${({ theme }) => theme.breakpoints.small}) {
   font-size: 1.625rem;
   }
@@ -132,4 +130,3 @@ export const FinePrintFooter = styled.p`
     font-size: 1.25rem; 
   }
 `;
-

@@ -37,8 +37,6 @@ const StepImg = styled.div `
   }
 `;
 
-
-
 export const StepCard = ({icon, step, doodle}) => {
  return (
     <StepContainer>

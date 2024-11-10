@@ -18,10 +18,10 @@ const slideAnimation = keyframes`
 `;
 
 const SlideshowContainer = styled.div `
-    overflow: hidden; 
-    width: 100%; 
-    margin: auto; 
-    position: relative;
+  overflow: hidden; 
+  width: 100%; 
+  margin: auto; 
+  position: relative;
 `;
 
 const Slide = styled.img`
@@ -39,18 +39,18 @@ const Slide = styled.img`
 `;
 
 const SlideshowInner = styled.div `
-    display: flex;
-    width: calc(500%); 
-    animation: ${slideAnimation} 11s infinite linear;
-    
-    @media (min-width: ${({ theme }) => theme.breakpoints.medium}) {
-      width: calc(300%); 
-      animation: ${slideAnimation} 15s infinite linear;
-    }
-    @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
-      animation: ${slideAnimation} 10s infinite linear;
-    }
-    `;
+  display: flex;
+  width: calc(500%); 
+  animation: ${slideAnimation} 11s infinite linear;
+  
+  @media (min-width: ${({ theme }) => theme.breakpoints.medium}) {
+    width: calc(300%); 
+    animation: ${slideAnimation} 15s infinite linear;
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
+    animation: ${slideAnimation} 10s infinite linear;
+  }
+  `;
 
   export const Slideshow = () => {
     return (
@@ -66,12 +66,3 @@ const SlideshowInner = styled.div `
       </SlideshowContainer>
     );
   };
-  
-
-
-
-
-
-
-
-  
