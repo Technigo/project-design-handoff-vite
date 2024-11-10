@@ -16,7 +16,7 @@ const HeroSection = styled.section`
 
   /* Adjust for larger screens */
   @media (min-width: 450px) {
-    height: 70vh;
+    height: 100vh;
   }
 
   @media (min-width: 1600px) {
