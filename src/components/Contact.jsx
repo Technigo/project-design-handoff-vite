@@ -11,7 +11,7 @@ const ContactSectionImage = styled.div`
   background-image: url(${contactSectionImage});
   background-size: cover;
   background-position: center;
-  width: 100%;
+  max-width: 100%;
   height: 13.75rem;
   width: 24.375rem;
   flex-shrink: 0;

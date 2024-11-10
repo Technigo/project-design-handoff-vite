@@ -12,7 +12,7 @@ const AboutSectionImage = styled.div`
   background-image: url(${aboutSectionImage});
   background-size: cover;
   background-position: center;
-  /* width: 100%; */
+  max-width: 100%;
   width: 24.375rem;
   height: 13.75rem;
   flex-shrink: 0;
