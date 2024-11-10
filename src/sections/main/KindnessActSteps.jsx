@@ -8,12 +8,6 @@ const KindnessStepContainer = styled.div `
   padding-top: ${({ theme }) => theme.spacing.xlarge}; 
   padding-bottom: ${({ theme }) => theme.spacing.large}; 
   gap: ${({ theme }) => theme.spacing.medium}; 
-
-  @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
-    display: flex;
-    max-width: 100%;
-  }
-
 `;
 
 export const KindnessSteps = () => {

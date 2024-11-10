@@ -13,12 +13,11 @@ const IntroContainer = styled.div`
 `;
 
 export const Introcontent = () => {
-    return (
-      <IntroContainer>
-      <H1>START SPREADING SMILES</H1>
-      <SubH1>WITH SMALL, SIMPLE ACTS </SubH1>
-      <FinePrint>Natural Magic*</FinePrint>
-      </IntroContainer>
-      
-    )
+  return (
+    <IntroContainer>
+    <H1>START<br />SPREADING<br />SMILES</H1>
+    <SubH1>WITH SMALL, SIMPLE ACTS </SubH1>
+    <FinePrint>Natural Magic*</FinePrint>
+    </IntroContainer>
+  )
 }

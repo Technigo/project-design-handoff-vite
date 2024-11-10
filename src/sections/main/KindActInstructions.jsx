@@ -5,8 +5,6 @@ import { StartTodayButton } from "../footer/SocialLinks";
 import styled from "styled-components";
 
 const DesktopSectionTitle = styled.div`
-
-
   @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
     display: flex;
     flex-direction: row; /* Row layout on large screens */
