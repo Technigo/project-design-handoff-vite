@@ -13,7 +13,8 @@ export const Layout = styled.section`
   width: 100%;
   max-width: 100vw;
   z-index: 1;
-  box-sizing: border-box;
+
+  overflow: hidden;
 
   &::before {
     content: "";
@@ -29,6 +30,6 @@ export const Layout = styled.section`
     height: 20rem;
     opacity: 0.5;
     z-index: 0;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 `;
