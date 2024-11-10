@@ -26,11 +26,16 @@ const SlideshowContainer = styled.div `
 
 const Slide = styled.img`
   width: 100%; 
-    height: 100%;
-    flex-shrink: 0;
-    width: 24.375rem;
-    height: 24.375rem;
-    object-fit: cover;
+  height: 100%;
+  flex-shrink: 0;
+  width: 24.375rem;
+  height: 24.375rem;
+  object-fit: cover;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
+    width: 48rem;
+    height: 48rem;
+  }
 `;
 
 const SlideshowInner = styled.div `

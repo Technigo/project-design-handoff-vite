@@ -10,6 +10,8 @@ const StepContainer = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.medium}) {
     display: flex;
     justify-content: space-between;
+    padding-left: ${({ theme }) => theme.spacing.xlarge}; 
+    padding-right: ${({ theme }) => theme.spacing.xlarge}; 
   }
 `;
 
