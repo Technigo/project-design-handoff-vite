@@ -47,16 +47,11 @@ const Line = styled.svg`
 export const Header = () => {
   return (
     <HeaderContainer>
-      {/* Logo en SVG a la izquierda */}
       <Logo>
         <img src={kennelLogo} alt="Logo" />
       </Logo>
-
-      {/* Right menu */}
       <MenuContainer>
-        {/* "hamburger" Icon*/}
         <HamburgerIcon>
-          {/* Secondary line hamburger icon */}
           <Line
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 51 2"

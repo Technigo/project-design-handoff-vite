@@ -10,5 +10,11 @@ export const theme = {
   fonts: {
     primary: "Poppins",
     secondary: "Italiana",
-  }
+  },
+
+  breakpoints: {
+    mobile: "550px",
+    tablet: "700px",
+    desktop: "1000px",
+  },
 };

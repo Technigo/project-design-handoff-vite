@@ -1,37 +1,14 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
-
 # Design Handoff Project
 
-Replace this readme with your own information about your project.
-
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
-
-## Getting Started with the Project
-
-### Dependency Installation & Startup Development Server
-
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
+This React project involves collaboration among three developers and a designer to closely replicate a provided design. The focus is on using styled components and creating reusable components to ensure consistency and maintainability.
 
 ### The Problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
+We approached the project by starting with a to-do list of basic tasks, which we expanded as the project progressed. Each task was assigned to a team member, and we tracked progress by checking off completed items. Our workflow included frequent team meetings and active communication through a Slack group chat to divide tasks and provide feedback. We utilized Git with feature branches for collaborative development and created a detailed step-by-step guide for the Git workflow in Notion.
+
+For tools and technologies, we used React for the core development and styled-components for creating reusable and consistent styles. Figma served as our reference for design details, allowing us to ask questions and accurately replicate spacing and layout values. React-Slick was implemented for the image carousel feature. Additionally, we leveraged YouTube, community resources, and AI tools for guidance and problem-solving.
+Looking forward, if given more time, we would enhance the layout for tablet and desktop views to improve responsiveness. We would also explore implementing a feature to display the most recent seven Instagram images for the dog kennel, which would require resolving API permissions.
 
 ### View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+https://thorondors-kennel.netlify.app/

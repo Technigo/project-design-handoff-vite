@@ -15,6 +15,7 @@ const DividerImage = styled.img`
   width: 100%; /* Full width of the container */
   margin: 1.5rem 1rem; /* Space above and below the divider */
   z-index: 2;
+  // Apply transformation based on variant
   transform: ${({ $variant }) =>
     $variant === "rotateY"
       ? "rotateY(180deg)"
@@ -23,12 +24,8 @@ const DividerImage = styled.img`
       : $variant === "rotateX"
       ? "rotateX(180deg)"
       : "none"};
-  // Apply transformation based on variant
 `;
 
-// export const Divider = () => {
-//   return <DividerImage src="/assets/divider.svg" alt="Section Divider" />;
-// };
 export const Divider = ({ $variant = "original" }) => {
   return (
     <DividerImage

@@ -1,12 +1,12 @@
+import styled from "styled-components";
 import Slider from "react-slick";
 import { Layout } from "../ui/Layout";
 import { SocialMediaIcons } from "../ui/SocialMediaIcons";
+import atIcon from "/assets/social-media-images/atSymbol.svg";
 import "./ImageCarousel.css";
 
-import styled from "styled-components";
-import atIcon from "/assets/social-media-images/atSymbol.svg";
-
 const settings = {
+  touchThreshold: 3,
   infinite: true,
   speed: 500,
   slidesToShow: 5.1,

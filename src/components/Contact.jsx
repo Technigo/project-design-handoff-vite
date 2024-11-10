@@ -1,11 +1,9 @@
+import styled from "styled-components";
 import { StyledBody } from "../ui/Typography";
 import { Layout } from "../ui/Layout";
 import { Divider } from "../ui/Divider";
-// import { SocialMediaIcons } from "../ui/SocialMediaIcons";
-
 import contactSectionImage from "../../public/assets/dog-images/contact-section.webp";
-import styled from "styled-components";
-// import atIcon from "/assets/social-media-images/atSymbol.svg";
+import { media } from "../styles/media";
 
 const ContactSectionImage = styled.div`
   background-image: url(${contactSectionImage});
@@ -14,18 +12,28 @@ const ContactSectionImage = styled.div`
   max-width: 100%;
   height: 13.75rem;
   width: 24.375rem;
-  flex-shrink: 0;
-
   display: flex;
+  background-size: contain;
+  background-repeat: no-repeat;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-
   position: relative;
   z-index: 1;
+  justify-content: center;
+
+  @media ${media.tablet} {
+    width: 44.0625rem;
+    height: 24.75rem;
+  }
+
+  @media ${media.desktop} {
+    width: 55rem;
+  }
 `;
+
 // Style for Content Wrapper
 const ContentWrapper = styled.div`
+  padding: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +41,14 @@ const ContentWrapper = styled.div`
   width: 24.375rem;
   max-width: 100%;
   z-index: 1;
+
+  @media ${media.tablet} {
+    width: 35rem;
+  }
+
+  @media ${media.desktop} {
+    width: 45rem;
+  }
 `;
 
 export const Contact = () => {
@@ -41,7 +57,7 @@ export const Contact = () => {
     // Set $top and $left to adjust the paw's position within its container
     // Use $rotation to rotate the paw
     <Layout $top="60%" $left="27%" $rotation="28deg">
-      <ContactSectionImage></ContactSectionImage>
+      <ContactSectionImage alt="dog" />
       <ContentWrapper>
         <Divider $variant="rotateX" />
         <StyledBody>
