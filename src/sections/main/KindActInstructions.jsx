@@ -6,12 +6,11 @@ import styled from "styled-components";
 
 const DesktopSectionTitle = styled.div`
   @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
-    display: flex;
-    flex-direction: row; /* Row layout on large screens */
-    justify-content: space-between; /* Space out items evenly */
+      display: grid;
+      grid-template-columns: repeat(8, 1fr); /* 8 equal columns */
 
-    & > * {
-      width: 50%; /* Each child takes up 50% on large screens */
+      & > * {
+      grid-column: span 4;
     }
   }
 `;
