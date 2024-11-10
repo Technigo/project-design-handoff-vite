@@ -7,12 +7,13 @@ import applySectionImage from "../../public/assets/dog-images/apply-section.webp
 
 import styled from "styled-components";
 // Container for the image background
-const AboutContent = styled.div`
+const ApplySectionImage = styled.div`
   background-image: url(${applySectionImage});
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 15.75rem;
+  height: 13.75rem;
+  width: 24.375rem;
   flex-shrink: 0;
 
   display: flex;
@@ -25,27 +26,23 @@ const AboutContent = styled.div`
 `;
 // Wrapper for the text and dividers below the image
 const ContentWrapper = styled.div`
-  padding: 1.5rem;
-  text-align: center;
-  border-radius: 0 0 8px 8px;
-  /* max-width: 24.375rem; */
-  margin-top: -1rem; /* Optional: To slightly overlap the button over the image */
-  z-index: 0;
-  position: relative;
-
-  /* Center the button */
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  width: 24.375rem;
+  max-width: 100%;
+  z-index: 1;
 
   button {
     margin-top: 1rem;
+    margin-bottom: 2.5rem;
   }
 `;
 export const Apply = () => {
   return (
     <Layout $top="70%" $left="50%" $rotation="-20deg">
-      <AboutContent />
+      <ApplySectionImage></ApplySectionImage>
       <ContentWrapper>
         <Divider />
         <StyledBody>

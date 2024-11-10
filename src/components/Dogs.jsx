@@ -9,26 +9,26 @@ const ContentWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-padding: 1.2rem 1rem; 
+  padding: 1.2rem 1rem;
   z-index: 1;
 `;
 
 const StyledImage = styled.img`
-width: 100%;
-height: 13.75rem;
+  width: 100%;
+  height: 13.75rem;
+  width: 24.375rem;
 `;
 
 export const Dogs = () => {
   return (
-    <Layout  $top="80%" $left="80%" $rotation="28deg">
+    <Layout $top="80%" $left="80%" $rotation="28deg">
+      <StyledImage src="assets/dog-images/dogs-section-image.webp" alt="Dogs" />
 
-      <StyledImage src="assets/dog-images/dogs-section-image.webp" alt="Dogs"/>
-
-    <ContentWrapper>
-      <Divider $variant="rotateX" />
-      <Button>Våra hundar</Button>
-      <Divider $variant="rotate" />
-    </ContentWrapper>
+      <ContentWrapper>
+        <Divider $variant="rotateX" />
+        <Button>Våra hundar</Button>
+        <Divider $variant="rotate" />
+      </ContentWrapper>
     </Layout>
-  )
-}
+  );
+};
