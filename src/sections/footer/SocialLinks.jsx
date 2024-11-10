@@ -54,11 +54,11 @@ align-self: stretch;
 // Define button styles for individual buttons
 const ButtonStyle1 = styled.div`
   background-color: ${({ theme }) => theme.backgrounds.highlight};
-  margin: 1,5rem, 1rem, 0.5rem, 1rem;
+  /* margin: 1,5rem, 1rem, 0.5rem, 1rem; */
   display: flex;
-  width: 21.375rem;
+  width: 100%;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   flex-shrink: 0;
   flex-direction: column;
   align-items: flex-start;

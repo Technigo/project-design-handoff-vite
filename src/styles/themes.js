@@ -27,6 +27,7 @@ export const themes = {
     finePrint: "1.125rem"
   },
 
+
   lineHeights: {
     h1: "100%",
     h2: "105%",
@@ -51,6 +52,9 @@ export const themes = {
   breakpoints: {
     xsmall: "320px",
     small: "390px",
+    medium: "769px",
+    large: "1024px",
+    xlarge: "1600px"
 
   }
 };

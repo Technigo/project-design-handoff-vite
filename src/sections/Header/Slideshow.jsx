@@ -10,7 +10,7 @@ const images = [
 
 const slideAnimation = keyframes`
   from {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   to {
     transform: translateX(-100%);
@@ -36,7 +36,9 @@ const Slide = styled.img`
 const SlideshowInner = styled.div `
     display: flex;
     width: calc(500%); 
-    animation: ${slideAnimation} 11s linear infinite;`;
+    animation: ${slideAnimation} 20s infinite linear;
+    
+    `;
 
 
 
@@ -54,4 +56,12 @@ const SlideshowInner = styled.div `
       </SlideshowContainer>
     );
   };
+  
+
+
+
+
+
+
+
   

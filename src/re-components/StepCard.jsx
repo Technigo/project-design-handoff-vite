@@ -15,6 +15,10 @@ const Instructions = styled.div `
 const StepImg = styled.div `
   display: flex;
   justify-content: center;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
+    width: 18.75rem;
+  }
 `;
 
 export const StepCard = ({icon, step, doodle}) => {
