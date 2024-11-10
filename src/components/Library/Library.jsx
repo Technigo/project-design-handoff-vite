@@ -16,6 +16,11 @@ const LibraryTitle = styled.section`
     flex-shrink: 0;
     background: #111010;
     color: #fff;
+
+    @media screen and (min-width: 1200px) {
+        justify-content: flex-start;
+        padding: 1rem 2rem;
+    }
 `;
 
 const LibraryInfoSection = styled.section`
@@ -25,7 +30,7 @@ const LibraryInfoSection = styled.section`
 
     @media screen and (min-width: 1200px) {
         width: 40rem;
-        margin: 3rem auto;
+        margin: 3rem 2rem;
     }
 `;
 

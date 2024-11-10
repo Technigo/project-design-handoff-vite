@@ -20,20 +20,20 @@ const CarouselBackground = styled.section`
 
 const PersBackgroundImage = styled.img`
   width: 100%;
-  height: 70vh;
+  height: 50vh;
   position: absolute;
   z-index: -1;
   bottom: -100px;
   right: -140px;
 
   @media (min-width: 768px) {
-    height: 80vh;
-    width: 110%;
+    height: 60vh;
+    width: 75%;
   }
 
   @media (min-width: 1200px) {
-    height: 85vh;
-    width: 80%;
+    height: 65vh;
+    width: 75%;
     right: -390px;
   }
 `;
@@ -49,6 +49,11 @@ const PersTitle = styled.section`
   background: #111010;
   color: #fff;
   z-index: 1;
+
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+  }
 `;
 
 const PersInfoSection = styled.section`
@@ -56,9 +61,9 @@ const PersInfoSection = styled.section`
   margin: 3rem auto 0;
   z-index: 1;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1048px) {
     width: 40rem;
-    margin: 3rem auto;
+    margin: 3rem 2rem;
   }
 `;
 
@@ -69,7 +74,7 @@ const PersGrid = styled.section`
   justify-content: ${({ isMobile }) => (isMobile ? 'center' : 'flex-start')};
   gap: 81px;
   overflow-x: ${({ isMobile }) => (isMobile ? 'hidden' : 'auto')};
-  padding: 5rem 0;
+  padding: 5rem 1rem;
   z-index: 1;
   max-width: 100%;
 `;

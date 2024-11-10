@@ -4,13 +4,20 @@ import { Typography6 } from "../../ui/Typography";
 
 
 const FooterSection = styled.footer`
-display: flex;
-align-items: center;
-gap: 0;
-padding: 0.5rem;
-background: #111010; 
-width: 100%;
-height: 8.213rem;
+    display: flex;
+    align-items: center;
+    gap: 0;
+    padding: 0.5rem;
+    background: #111010; 
+    width: 100%;
+
+    @media (min-width: 768px) {
+        height: 4.5rem;
+    }
+    @media (min-width: 1200px) {
+        height: 8.213rem;
+    }
+
 
 `;
 

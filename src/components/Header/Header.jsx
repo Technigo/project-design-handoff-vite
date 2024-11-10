@@ -17,8 +17,11 @@ const HeaderFlex = styled.section`
 
     @media (min-width: 768px) {
     flex-direction: row; 
-    margin-bottom: 0; 
-
+    justify-content: flex-end;
+    margin: 2rem 0; 
+    }
+    @media (min-width: 1048px) {
+      margin: 5rem 0; 
     }
 `;
 
@@ -30,10 +33,10 @@ const HeaderImg = styled.img`
 
     //Tablet
     @media (min-width: 768px) {
-    position: absolute; 
-    left: -20px;
-    top: 0;
-  }
+      position: absolute; 
+      left: -20px;
+      top: 0;
+    }
 
      //Desktop styling
      @media (min-width: 1200px) {
@@ -50,11 +53,15 @@ const HeaderContent = styled.article`
     align-items: center;  
     width: 18.75rem;
 
-     //Desktop styling
+     //ipad styling
+     @media (min-width: 768px) {
+      margin-right: 12%;
+    }
+
+    //Desktop styling
      @media (min-width: 1200px) {
       width: 42rem;
-      margin: 8rem 0rem 0rem 10rem; 
-
+      margin-right: 13%;
     }
     
 `;
