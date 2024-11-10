@@ -10,6 +10,19 @@ const IntroContainer = styled.div`
   gap: ${({ theme }) => theme.spacing.xxsmall};
   display: flex;
   flex-direction: column;
+
+  @media (min-width: ${({ theme }) => theme.breakpoints.medium}) {
+    padding-top: 6rem;
+    padding-left: ${({ theme }) => theme.spacing.large}; 
+    padding-right: ${({ theme }) => theme.spacing.large}; 
+    padding-bottom: ${({ theme }) => theme.spacing.small};
+  }
+  @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
+  padding-top: 8.75rem;
+  padding-left: 2.625rem; 
+  padding-right: ${({ theme }) => theme.spacing.xsmall}; 
+  padding-bottom: ${({ theme }) => theme.spacing.small};
+  }
 `;
 
 export const Introcontent = () => {

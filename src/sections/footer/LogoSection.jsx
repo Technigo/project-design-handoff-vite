@@ -12,7 +12,8 @@ padding-bottom: ${({ theme }) => theme.spacing.xlarge};
 
 @media (min-width: ${({ theme }) => theme.breakpoints.large}) {
  padding: 0;
-  } 
+align-self: right;
+ } 
 `;
 
 export const LogoSection = () => {
