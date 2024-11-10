@@ -60,7 +60,7 @@ export const CardInfo = () => {
       iconName: "ValfrittBeloppIcon", 
       title: "Valfritt belopp",
       description: "Varje gåva spelar roll - stora som små donationer hjälper barnfamiljer att klara vintern och fira en varm jul. Swisha ett valfritt belopp och gör skillnad för de som behöver det mest.",
-      buttonText: "Swishat valt belopp"
+      buttonText: "Swisha valfritt belopp"
     },
   ];
 
