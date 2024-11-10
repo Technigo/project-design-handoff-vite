@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 
 const StyledHeroSection = styled.section`
   width: 100%;
-  background-image: url("../public/hero.png");
+  background-image: url("/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
