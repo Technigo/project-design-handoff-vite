@@ -70,7 +70,7 @@ const MenuBox = styled.div`
   ul {
     list-style: none;
     padding: 0;
-    text-align: center;
+    text-align: right;
   }
 
   li {
