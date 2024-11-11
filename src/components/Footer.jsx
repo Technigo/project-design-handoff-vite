@@ -181,6 +181,7 @@ export const Footer = ({ colorTheme }) => {
             <IconLink
               href="#"
               $colorTheme={colorTheme}
+              aria-label="Random Acts of Kindness on Instagram"
             >
               <Instagram />
             </IconLink>
@@ -189,6 +190,7 @@ export const Footer = ({ colorTheme }) => {
             <IconLink
               href="#"
               $colorTheme={colorTheme}
+              aria-label="Random Acts of Kindness on TikTok"
             >
               <TikTok />
             </IconLink>
@@ -197,6 +199,7 @@ export const Footer = ({ colorTheme }) => {
             <IconLink
               href="#"
               $colorTheme={colorTheme}
+              aria-label="Share a link to Random Acts of Kindness"
             >
               <Share />
             </IconLink>
