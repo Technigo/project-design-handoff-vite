@@ -6,7 +6,7 @@ import InsamlingIcon from "../assets/InsamlingIcon.svg";
 const StyledFooter = styled.footer`
   display: flex;
   flex-direction: column;
-  align-items: center; /* Optional: Centers icons horizontally */
+  align-items: center; 
 `;
 
 const StyledSwishImage = styled.img`

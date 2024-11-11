@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 const AnimationBox = styled.div`
   padding-top: 58px;
@@ -26,18 +26,19 @@ const AnimationContainer = styled.div`
   }
 
   // Media Queries - Tablet 
-  //Removes animation on tablet and desktop
+  //Removes animation
   @media (min-width: 768px) and (max-width: 1023px) {
     display: none;
   }
 
   // Media Queries - Desktop
-  //Removes animation on tablet and desktop
+  //Removes animation
   @media (min-width: 1024px) and (max-width: 1600px) {
     display: none;
   }
 
-  /* Large Desktop (above 1600px) */
+  // Media Queries - Large Desktop (above 1600px)
+  //Removes animation
   @media (min-width: 1600px) {
     display: none;
   }
@@ -50,12 +51,10 @@ const TextContainer = styled.div`
   width: 351px;
   height: 76px;
 
-  // Media Queries - 
-  // Small phone
+  // Media Queries - Small phone
   @media (min-width: 320px) and (max-width: 411px) {
     width: 260px;
   }
-
 `;
 
 const StaticText = styled.div`
@@ -68,12 +67,10 @@ const StaticText = styled.div`
   letter-spacing: -0.16px;
   align-self: flex-start;
 
-  // Media Queries - 
-  // Small phone
+  // Media Queries - Small phone
   @media (min-width: 320px) and (max-width: 411px) {
     font-size: 12px;
   }
-
 `;
 
 const DynamicText = styled.div`
@@ -85,14 +82,11 @@ const DynamicText = styled.div`
   line-height: 36px; /* 150% */
   letter-spacing: -0.24px;
   align-self: flex-start;
-  // margin-left: 30px;
 
-  // Media Queries - 
-  // Small phone
+  // Media Queries - Small phone
   @media (min-width: 320px) and (max-width: 411px) {
     font-size: 20px;
   }
-
 `;
 
 export const Animation = () => {

@@ -10,6 +10,7 @@ const StyledTextContainer = styled.div`
     padding-top: 32px;
     margin: 0 auto;
 
+  // Media Queries
   // Small phone
   @media (min-width: 320px) and (max-width: 411px) {
     width: 80%;
@@ -29,7 +30,7 @@ const StyledTextContainer = styled.div`
     height: 160px;
   }
 
-  /* Large Desktop (above 1600px) */
+  // Large Desktop (above 1600px)
   @media (min-width: 1600px) {
     width: 485px;
     height: 160px;
@@ -47,14 +48,14 @@ const StyledParagraph = styled.p`
     letter-spacing: -0.16px;
     margin: 0;
 
-  
+  // Media Queries  
   // Small phone
   @media (min-width: 320px) and (max-width: 411px) {
-  padding-bottom: 16px;
-  padding-top: 16px;
+    padding-bottom: 16px;
+    padding-top: 16px;
   }
   
-    // Tablets
+  // Tablets
   @media (min-width: 768px) and (max-width: 1023px) {
     font-size: 18px;
     line-height: 42px;
@@ -68,7 +69,7 @@ const StyledParagraph = styled.p`
     letter-spacing: -0.2px;
   }
 
-  /* Large Desktop (above 1600px) */
+  // Large Desktop (above 1600px)
   @media (min-width: 1600px) {
     font-size: 18px;
     line-height: 42px;

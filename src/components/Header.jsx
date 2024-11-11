@@ -13,7 +13,6 @@ const Wrapper = styled.div`
 const HeroContainer = styled.div`
   display: flex;
   position: relative;
-  // width: 412px;
   max-width: 500px;
   height: 402.374px;
   align-items: flex-end;
