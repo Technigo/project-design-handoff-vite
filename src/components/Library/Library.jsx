@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { LibraryCard } from "./LibraryCard"
 import { Typography } from '../../ui/Typography';
 import styled from 'styled-components';
-/* import spellsData from "../src/spells.json"; */
+
 
 const LibraryTitle = styled.section`
     display: flex;

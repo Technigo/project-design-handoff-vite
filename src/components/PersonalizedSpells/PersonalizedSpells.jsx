@@ -71,7 +71,7 @@ const PersInfoSection = styled.section`
   }
 `;
 
-const DivButton = styled.div `
+const DivButton = styled.div`
     @media screen and (min-width: 1200px) {
         margin: 0 2rem;
     }
