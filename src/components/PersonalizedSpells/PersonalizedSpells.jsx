@@ -65,7 +65,7 @@ const PersInfoSection = styled.section`
   margin: 3rem auto 0;
   z-index: 1;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1048px) {
     width: 40rem;
     margin: 3rem 2rem;
   }

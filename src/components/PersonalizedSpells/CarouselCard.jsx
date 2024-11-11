@@ -1,5 +1,7 @@
 /* eslint-disable react/prop-types */
 import styled from "styled-components"
+import { Typography } from "../../ui/Typography" // cant get typography to work with map()-method, keep trying!
+
 
 
 const Card = styled.article`

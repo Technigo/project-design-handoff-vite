@@ -25,7 +25,7 @@ body {
   background: linear-gradient(180deg, #360C25 4.67%, #E1C9D8 18%, #E1C9D8 75%, #360C25 100%);
   background: -webkit-linear-gradient(180deg, #360C25 0%, #E1C9D8 50%, #360C25 100%);
   background: -moz-linear-gradient(180deg, #360C25 0%, #E1C9D8 50%, #360C25 100%);
-  background: linear-gradient(180deg, #360C25 4.67%, #E1C9D8 18%, #E1C9D8 75%, #360C25 100%);
+  background: linear-gradient(180deg, #360C25 0%, #E1C9D8 50%, #360C25 100%);
   width: 100%;
   height: 2300px;
 
