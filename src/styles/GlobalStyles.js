@@ -10,6 +10,20 @@ export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
   }
+
+  *:focus {
+    outline: none;
+  }
+
+  *:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+
+    > svg {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }
+  }
     
   body {
     font-family: ${({ theme }) => theme.fonts.body};
