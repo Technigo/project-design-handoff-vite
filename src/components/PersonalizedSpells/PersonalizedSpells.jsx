@@ -103,7 +103,7 @@ export const PersonalizedSpells = ({ quotesData }) => {
     setIsPopupOpen(!isPopupOpen);
   };
 
-  // Automatisk uppdatering av citat var 3 sekund
+  // Automatically update quotes every 3 second. 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
@@ -111,7 +111,7 @@ export const PersonalizedSpells = ({ quotesData }) => {
       );
     }, 3000); // Interval for automatic quote rotation
 
-    // Rensa intervallet när komponenten avmonteras
+    // Clear interval when component is unmounted. 
     return () => clearInterval(interval);
   }, [quotesData.quotes.length]); // Dependence on quotes data length for update
 
