@@ -132,6 +132,7 @@ export const PersonalizedSpells = ({ quotesData }) => {
       {/* Render the SignUpPopup if isPopupOpen is true */}
       {isPopupOpen && <SignUpForm onClose={togglePopup} />}
 
+     {/* Show the grid depending on if its mobil or ipad/desktop  */}
       <PersGrid isMobile={isMobile}>
         {isMobile ? (
           <CarouselCard

@@ -2,75 +2,35 @@
     "spells": [
       {
         "name": "Bye morning breath",
-        "image": "/assets/Breath.png",
-        "tags": [
-          "HTML5",
-          "CSS3",
-          "JavaScript"
-        ]
+        "image": "/assets/Breath.png"
       },
       {
         "name": "Understand a manual",
-        "image": "/assets/Manual.png",
-        "tags": [
-          "HTML5",
-          "CSS3",
-          "JavaScript"
-        ]
+        "image": "/assets/Manual.png"
       },
       {
         "name": "Finding keys in messy bag",
-        "image": "/assets/Bag.png",
-        "tags": [
-          "HTML5",
-          "CSS3",
-          "JavaScript"
-        ]
+        "image": "/assets/Bag.png"
       },
       {
         "name": "Cooking perfect pasta",
-        "image": "/assets/Pasta.png",
-        "tags": [
-          "HTML5",
-          "CSS3",
-          "JavaScript"
-        ]
+        "image": "/assets/Pasta.png"
       },
       {
         "name": "Getting a seat on the bus",
-        "image": "/assets/Bus.png",
-        "tags": [
-          "HTML5",
-          "CSS3",
-          "JavaScript"
-        ]
+        "image": "/assets/Bus.png"
       },
       {
         "name": "Having a good hair day",
-        "image": "/assets/Hair.png",
-        "tags": [
-          "HTML5",
-          "CSS3",
-          "JavaScript"
-        ]
+        "image": "/assets/Hair.png"
       },
       {
         "name": "5 min extra in your day",
-        "image": "/assets/Time.png",
-        "tags": [
-          "HTML5",
-          "CSS3",
-          "JavaScript"
-        ]
+        "image": "/assets/Time.png"
       },
       {
         "name": "High heel skills",
-        "image": "/assets/Shoe.png",
-        "tags": [
-          "HTML5",
-          "CSS3",
-          "JavaScript"
-        ]
+        "image": "/assets/Shoe.png"
       }
     ]
   }

@@ -74,6 +74,7 @@ export const Library = ({ spellsData }) => {
     const title = "Library"
     const bodyText = "In need of a temporary spell to help you through the day? Check out our library of commonly used spells."
 
+    // popup function for when clicking a card
     const [selectedSpell, setSelectedSpell] = useState(null);
 
     const handleCardClick = (spell) => {
