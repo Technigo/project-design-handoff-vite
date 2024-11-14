@@ -17,6 +17,10 @@ box-shadow: 1px 4px 4px 0px rgba(0, 0, 0, 0.25);
 overflow: hidden;
 margin-bottom: 2.5rem;
 
+@media(max-width: 360px){
+  width: 18rem;
+}
+
 &:hover {
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;

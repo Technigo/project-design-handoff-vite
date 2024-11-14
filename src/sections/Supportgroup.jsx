@@ -28,7 +28,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 background: #FFCAF8;
-padding: 0rem 1rem 2.5rem 1rem;
+padding: 0rem 0rem 2.5rem 0rem;
 
 @media (min-width: 768px){
     grid-column: span 8;
