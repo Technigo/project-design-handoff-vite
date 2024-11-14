@@ -8,35 +8,29 @@ const StyledHeaderSection = styled.section`
   padding: 1rem 2rem;
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
 
   @media (max-width: 400px) {
     padding: 0rem 0rem;
     display: flex;
     flex-direction: row;
-    gap: 0.25rem;
+    gap: 0.2rem;
   }
-`;
-
-const LeftSection = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 1rem; 
 `;
 
 const RightSection = styled.div`
   display: flex;
   align-items: center;
   gap: 1rem; 
+  margin-right: 5px;
 `;
 
 export const HeaderSection = () => {
   return (
     <StyledHeaderSection>
-      <LeftSection>
-        <Logo src="/assets/HeaderSun.png" alt="Kindness & Compassion logo" />
-        <HeaderText>Kindness & Compassion</HeaderText>
-      </LeftSection>
+      <Logo src="/assets/HeaderSun.png" alt="Kindness & Compassion logo" />
+      <HeaderText>Kindness & Compassion</HeaderText>
       <RightSection>
         <Icon src="/assets/Search.svg" alt="Search" />
         <Icon src="/assets/Menu.svg" alt="Menu" />

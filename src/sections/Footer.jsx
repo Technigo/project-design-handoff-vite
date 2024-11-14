@@ -16,6 +16,9 @@ const FooterContainer = styled.footer`
   color: black;
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const LogoContainer = styled.div`
@@ -38,32 +41,40 @@ const SocialIconsContainer = styled.div`
   gap: 2rem;
   margin-top: 1.5rem;
 `;
+const FooterTextContainer = styled.div`
+max-width: 700px;
+display: flex;
+flex-direction: column;
+`
 
 export const FooterSection = () => {
   return (
     <FooterContainer>
-      <LogoContainer>
-        <Icon src="/assets/HeaderSun.png" alt="Kindness & Compassion logo" size="60px" />
-      </LogoContainer>
-      <FooterTitle>Kindness & Compassion</FooterTitle>
-      <FooterText>
-        Vi vill skapa en vänligare och mer inkluderande värld genom att skapa mötesplatser där människor kan mötas och prata om det som är viktigt på riktigt.
-      </FooterText>
-      <FooterText>
-        Samtidigt skapar vi en rörelse av goda handlingar människor emellan för att sprida vänlighet, värme och hopp!
-      </FooterText>
-      <FooterSectionTitle>Om oss</FooterSectionTitle>
-      <FooterText>Vår Vision</FooterText>
-      <FooterText>Rörelsen Pay it forward</FooterText>
-      <FooterSectionTitle>Engagera dig</FooterSectionTitle>
-      <FooterText>Bli volontär</FooterText>
-      <FooterText>Hitta din stödgrupp</FooterText>
-      <FooterSectionTitle>Kontakta oss</FooterSectionTitle>
-      <FooterContactInfo>info@kindnessandcompassion.se</FooterContactInfo>
-      <SocialIconsContainer>
-        <FacebookIcon />
-        <InstagramIcon />
-      </SocialIconsContainer>
+      <FooterTextContainer>
+        <LogoContainer>
+          <Icon src="/assets/HeaderSun.png" alt="Kindness & Compassion logo" size="60px" />
+        </LogoContainer>
+        <FooterTitle>Kindness & Compassion</FooterTitle>
+        <FooterText>
+          Vi vill skapa en vänligare och mer inkluderande värld genom att skapa mötesplatser där människor kan mötas och prata om det som är viktigt på riktigt.
+        </FooterText>
+        <FooterText>
+          Samtidigt skapar vi en rörelse av goda handlingar människor emellan för att sprida vänlighet, värme och hopp!
+        </FooterText>
+        <FooterSectionTitle>Om oss</FooterSectionTitle>
+        <FooterText>Vår Vision</FooterText>
+        <FooterText>Rörelsen Pay it forward</FooterText>
+        <FooterSectionTitle>Engagera dig</FooterSectionTitle>
+        <FooterText>Bli volontär</FooterText>
+        <FooterText>Hitta din stödgrupp</FooterText>
+        <FooterSectionTitle>Kontakta oss</FooterSectionTitle>
+        <FooterContactInfo>info@kindnessandcompassion.se</FooterContactInfo>
+
+        <SocialIconsContainer>
+          <FacebookIcon />
+          <InstagramIcon />
+        </SocialIconsContainer>
+      </FooterTextContainer>
     </FooterContainer>
   );
 };
