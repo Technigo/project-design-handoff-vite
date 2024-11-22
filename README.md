@@ -27,3 +27,6 @@ React Swipeable: To implement swipeable functionality for mobile devices.
 React Hooks: For managing state and lifecycle in a functional programming style.
 
 Responsive Design: The app is fully responsive, ensuring a seamless experience across mobile, tablet, and desktop devices.
+
+# View live:
+https://project-design-handoff.netlify.app/
