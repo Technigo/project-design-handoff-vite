@@ -1,37 +1,29 @@
-<h1 align="center">
-  <a href="">
-    <img src="/src/assets/design-handoff.svg" alt="Project Banner Image">
-  </a>
-</h1>
+# Kindness & Compassion - A Social Support Platform
+This project is a collaboration between two developer students and one UX design student as part of Technigo Bootcamp. The website serves as a community hub where users can engage in meaningful conversations, find support groups, and stay updated on activities designed to foster kindness and compassion.
 
-# Design Handoff Project
+# Features & Structure
+## Global Styles: 
+The project uses styled-components for a modular and responsive design, with a focus on accessibility and smooth user experience across devices.
+## Hero Section: 
+A visually engaging hero section promotes the platform’s mission, inviting users to learn more about spreading good deeds for a better world.
+## Support Groups: 
+The platform features a section for users to join or start support groups, both online and offline, for personal connection and growth.
+## Carousel Section: 
+A dynamic carousel displays testimonials and community stories, allowing users to swipe through inspiring content.
+## Calendar of Events: 
+The platform includes a calendar with upcoming activities, offering users easy access to relevant events.
+## Achievements Section: 
+A visually appealing section showcases key metrics, like the number of volunteer groups, events, and activities, illustrating the platform's impact.
+## Footer: 
+A footer with social media links, contact information, and a brief overview of the platform’s mission and vision, further encouraging community engagement.
 
-Replace this readme with your own information about your project.
+# Technologies Used
+React: For building the user interface and managing application state.
 
-Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
+Styled Components: For styling the app with scoped, reusable components.
 
-## Getting Started with the Project
+React Swipeable: To implement swipeable functionality for mobile devices.
 
-### Dependency Installation & Startup Development Server
+React Hooks: For managing state and lifecycle in a functional programming style.
 
-Once cloned, navigate to the project's root directory and this project uses npm (Node Package Manager) to manage its dependencies.
-
-The command below is a combination of installing dependencies, opening up the project on VS Code and it will run a development server on your terminal.
-
-```bash
-npm i && code . && npm run dev
-```
-
-### The Problem
-
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
-### View it live
-
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
-
-## Instructions
-
-<a href="instructions.md">
-   See instructions of this project
-  </a>
+Responsive Design: The app is fully responsive, ensuring a seamless experience across mobile, tablet, and desktop devices.
