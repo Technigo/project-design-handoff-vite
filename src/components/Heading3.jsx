@@ -1,4 +1,3 @@
-import React from 'react';
 
 const Heading3 = ({ children }) => {
   const style = {
@@ -10,7 +9,7 @@ const Heading3 = ({ children }) => {
     fontWeight: '400',
     lineHeight: '32px', // 88.889%
     letterSpacing: '-0.72px',
-    padding: '0 0 32px 0',
+    padding: '0 0 80px 0',
     maxWidth: '90%',
     margin: '20px 28px 0 28px',
   };

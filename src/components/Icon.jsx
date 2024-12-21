@@ -1,4 +1,3 @@
-import React from 'react';
 import JulklapparIcon from '../assets/JulklapparIcon.svg';
 import VinterkladerIcon from '../assets/VinterkladerIcon.svg';
 import JulmatskasseIcon from '../assets/JulmatskasseIcon.svg';

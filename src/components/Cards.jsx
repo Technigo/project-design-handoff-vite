@@ -1,4 +1,3 @@
-import React from 'react';
 import styled, { keyframes } from 'styled-components';
 
 const CardContainer = styled.div`
@@ -12,6 +11,7 @@ const CardContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 0 auto;
   min-height: 538px; 
   flex-grow: 1;   
@@ -86,6 +86,14 @@ const Button = styled.button`
   padding: 10px;
   position: relative;
   overflow: hidden;
+
+    /*  Added new media query smaller phones */
+   /* Small phone adjustments */
+  @media (min-width: 320px) and (max-width: 430px) {
+    width: 176px;
+    font-size: 14px;
+  }
+  
 
   /* Tablet adjustments */
   @media (min-width: 768px) {

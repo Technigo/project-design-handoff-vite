@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import SwishIcon from "../assets/SwishIcon.jpeg";
 import InsamlingIcon from "../assets/InsamlingIcon.svg";

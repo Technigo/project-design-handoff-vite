@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import HeaderLogo from "../assets/HeaderLogo.png";
 import MenuIcon from "../assets/MenuIcon.svg";

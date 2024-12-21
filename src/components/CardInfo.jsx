@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 import { Card } from './Cards';
 import Icon from './Icon';
@@ -9,7 +8,7 @@ const CardGrid = styled.div`
   margin: 0 auto;
   max-width: 100%;
   justify-items: center;
-  align-items: start;
+  align-items: center;
 
   /* Mobile (320px to 767px) */
   @media (min-width: 320px) and (max-width: 767px) {
